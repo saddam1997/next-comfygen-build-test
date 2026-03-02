@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { MdStars } from "react-icons/md";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 interface CardItem {
   CardItem?: string;
@@ -10,7 +12,7 @@ interface CardItem {
 }
 
 interface FaqItem {
-  id?: string; 
+  id?: string;
   title?: string;
   desc?: string;
   decs?: string;
@@ -52,15 +54,14 @@ export default function FaqSection({
 
           {/* Heading */}
           <div className="text-center space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              {title && title.trim() !== ""
-                ? title
-                : "Frequently Asked Questions"}
-            </h2>
+            <HeadingTwo color={"black"} text={title && title.trim() !== ""
+              ? title
+              : "Frequently Asked Questions"} />
+
             {description && (
-              <p className="text-gray-600 text-sm md:text-base" >
-                {description}
-              </p>
+
+              <ParagraphText color={"black"} text={description} />
+              
             )}
           </div>
 
@@ -81,8 +82,8 @@ export default function FaqSection({
                       setCurrentIndex(isOpen ? null : index)
                     }
                     className={`flex items-center justify-between w-full px-5 py-4 text-left font-medium transition-colors duration-200 ${isOpen
-                        ? "bg-[#5556D1]/10 text-[#212121]"
-                        : "bg-white text-[#212121]"
+                      ? "bg-[#5556D1]/10 text-[#212121]"
+                      : "bg-white text-[#212121]"
                       }`}
                   >
                     <span className="text-sm md:text-lg font-semibold">
@@ -101,8 +102,8 @@ export default function FaqSection({
                   {/* Content */}
                   <div
                     className={`transition-all duration-300 ease-in-out ${isOpen
-                        ? "max-h-[1000px] opacity-100 px-5 pb-5"
-                        : "max-h-0 opacity-0 overflow-hidden px-5"
+                      ? "max-h-[1000px] opacity-100 px-5 pb-5"
+                      : "max-h-0 opacity-0 overflow-hidden px-5"
                       }`}
                   >
                     <div className="space-y-3 text-sm md:text-base text-gray-800">

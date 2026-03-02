@@ -3,43 +3,39 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import LazyLoad from "react-lazy-load";
 import Image from "next/image";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
-const HireDeveloper = ({HireDeveloper}:any) => {
-const {heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading} = HireDeveloper
+const HireDeveloper = ({ HireDeveloper }: any) => {
+  const { heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
 
 
 
-    
+
   return (
     <section className="lg:py-16 py-10 bg-[#fff]">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#17162B] rounded-[24px]">
         <div className="lg:px-14 px-8 lg:flex gap-8">
           <div className="lg:w-[60%] w-full lg:py-16 py-6">
             <div className="space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#fff] mt-3 font-semibold">
-                {heading}
-              </h2>
+              <HeadingTwo color={"white"} text={heading} />
+
               <div className="space-y-2">
-                <p
-                  className="text-base text-white"
-                  dangerouslySetInnerHTML={{ __html: text }}
-                />
+                <ParagraphText color={"white"} text={text} />
+
 
                 {
                   text1 && (
-                    <p
-                      className="text-base text-white"
-                      dangerouslySetInnerHTML={{ __html: text1 }}
-                    />
+
+                    <ParagraphText color={"white"} text={text1} />
+
                   )
                 }
 
                 {
                   text2 && (
-                    <p
-                      className="text-base text-white"
-                      dangerouslySetInnerHTML={{ __html: text2 }}
-                    />
+                    <ParagraphText color={"white"} text={text2} />
+
                   )
                 }
 
@@ -48,7 +44,8 @@ const {heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, 
               </div>
 
               <div className="text-semibold text- text-white">
-                <p dangerouslySetInnerHTML={{ __html: listheading }} />
+                 <ParagraphText color={"white"} text={listheading} />
+              
               </div>
 
               {listItems.length > 0 && (

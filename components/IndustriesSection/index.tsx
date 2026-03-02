@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import ImageSection from '../ui/ImageSection';
+import HeadingTwo from '../ui/HeadingTwo';
+import ParagraphText from '../ui/ParagraphText';
 
 const defaultSliderData = {
     "heading": "Industries We Serve As Best Mobile App Development Company",
@@ -236,12 +238,10 @@ function IndustriesServe({ Industries = defaultSliderData }: any) {
         return (
             <section className="lg:py-5 py-10">
                 <div className="mx-auto max-w-[1440px] xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
-                    <h2 className="text-3xl xl:text-4xl font-bold text-[#212121]">
-                        {finalHeading}
-                    </h2>
-                    <p className="text-base xl:text-lg text-[#212121]" dangerouslySetInnerHTML={{ __html: finalDescription }}>
-                        {/* {finalDescription} */}
-                    </p>
+                    <HeadingTwo color={"black"} text={finalHeading} />
+                    <ParagraphText color={"black"} text={finalDescription} />
+
+
                 </div>
             </section>
         );
@@ -255,12 +255,10 @@ function IndustriesServe({ Industries = defaultSliderData }: any) {
                 {/* HEADER */}
                 <div className="flex justify-between gap-4 mb-6">
                     <div>
-                        <h2 className="text-3xl xl:text-4xl font-bold text-[#212121]">
-                            {finalHeading}
-                        </h2>
-                        <p className="text-base xl:text-lg text-[#212121]" dangerouslySetInnerHTML={{ __html: finalDescription }}>
 
-                        </p>
+                        <HeadingTwo color={"black"} text={finalHeading} />
+                        <ParagraphText color={"black"} text={finalDescription} />
+
                     </div>
 
                     <div className="hidden md:flex gap-4">

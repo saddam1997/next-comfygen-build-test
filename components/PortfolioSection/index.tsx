@@ -4,15 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, useMemo } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 const CARD_WIDTH = 900;
 const GAP = 20;
 const SWIPE_THRESHOLD = CARD_WIDTH * 0.15;
 const DRAG_START_THRESHOLD = 6;
 
-export default function Portfolio({Portfoliodata }: any) {
+export default function Portfolio({ Portfoliodata }: any) {
 
-    const {portfolio, heading, description} = Portfoliodata
+  const { portfolio, heading, description } = Portfoliodata
   /* ---------- refs ---------- */
   const startX = useRef(0);
   const deltaX = useRef(0);
@@ -69,12 +71,12 @@ export default function Portfolio({Portfoliodata }: any) {
     preventClick.current = false;
     isDragging.current = true;
 
-     const target = e.target as HTMLElement;
+    const target = e.target as HTMLElement;
 
-  // 🚀 If clicking on link or button → DO NOT START DRAG
-  if (target.closest("a, button")) {
-    return;
-  }
+    // 🚀 If clicking on link or button → DO NOT START DRAG
+    if (target.closest("a, button")) {
+      return;
+    }
 
     (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
     setEnableTransition(false);
@@ -118,26 +120,20 @@ export default function Portfolio({Portfoliodata }: any) {
 
   return (
     <section className="relative w-full overflow-hidden py-8 bg-gray-50">
-      
+
       {/* Heading */}
       <div className="text-center mx-auto max-w-7xl space-y-3 py-8">
-        <h2 className="xl:text-4xl text-2xl md:text-3xl text-[#212121] font-bold">
-          {heading}
-        </h2>
+        <HeadingTwo color={"black"} text={heading} />
+        <ParagraphText color={"black"} text={description} />
 
-        <p
-          className="text-base font-normal "
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
       </div>
 
       {/* ================= DESKTOP ================= */}
       <div
         className="hidden md:flex cursor-grab active:cursor-grabbing select-none"
         style={{
-          transform: `translateX(calc(50% - ${
-            index * (CARD_WIDTH + GAP) + CARD_WIDTH / 2
-          }px + ${dragOffset}px))`,
+          transform: `translateX(calc(50% - ${index * (CARD_WIDTH + GAP) + CARD_WIDTH / 2
+            }px + ${dragOffset}px))`,
           transition: enableTransition
             ? "transform 0.6s cubic-bezier(0.4,0,0.2,1)"
             : "none",
@@ -198,7 +194,7 @@ export default function Portfolio({Portfoliodata }: any) {
         {slides.map((item: any, i: number) => (
           <div key={i} className="shrink-0 w-[90vw] max-w-sm snap-center">
             <div className="rounded-3xl bg-gray-100 shadow-xl p-4 flex flex-col gap-5">
-              
+
               <div className="relative w-full aspect-[4/3]">
                 <Image
                   src={item.image}
@@ -222,7 +218,7 @@ export default function Portfolio({Portfoliodata }: any) {
               </p>
 
               <Link href={item.link} aria-label={`View ${item.title} Case Study`}>
-                
+
                 <span className="inline-flex items-center gap-2 border border-[#2821a8]
                   text-[#322bbd] px-4 py-2 rounded-full text-xs
                   hover:bg-[#6C63FF] hover:text-white transition">

@@ -10,6 +10,7 @@ import {
   Maximize,
   RotateCcw,
 } from "lucide-react";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 export default function ClientStories() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -212,9 +213,8 @@ export default function ClientStories() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
           {/* Left Column */}
           <div className="space-y-6 sm:space-y-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-              Stories from Our Happy Clients
-            </h2>
+                <HeadingTwo color={"black"} text="Stories from Our Happy Clients" />
+           
 
             <div className="space-y-2 sm:space-y-3">
               {benefits.map((benefit, i) => (
