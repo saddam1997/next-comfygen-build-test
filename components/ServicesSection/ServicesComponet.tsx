@@ -60,15 +60,17 @@ function ServiceContent({ service }) {
         <div className="flex justify-center w-full md:justify-start items-start relative md:px-14 px-6 py-12 text-white">
             <div className="xl:space-y-5 space-y-3 w-full">
                 <div className="space-y-2">
-                    <p>{service.subtitle}</p>
+                    <ParagraphText color={"black"} text={service.subtitle} />
+
+
 
                     <h3
                         className="text-3xl font-bold"
                         dangerouslySetInnerHTML={{ __html: service.title }}
                     />
+                    <ParagraphText color={"white"} text={service.description} />
+                    <ParagraphText color={"white"} text={service.description1} />
 
-                    <p dangerouslySetInnerHTML={{ __html: service.description }} />
-                    <p dangerouslySetInnerHTML={{ __html: service.description1 }} />
                 </div>
 
                 {service.features?.length > 0 && (

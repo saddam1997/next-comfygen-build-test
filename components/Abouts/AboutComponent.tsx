@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
-import HeadingOne from "../ui/HeadingOne";
 import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 
 const AboutComponent = ({ AboutData }) => {
@@ -31,41 +31,30 @@ const AboutComponent = ({ AboutData }) => {
               <div>
 
 
-                <HeadingTwo color={"#212121"} text= {AboutData.heading} />
+                <HeadingTwo color={"#212121"} text={AboutData.heading} />
                 {/* <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
                   {AboutData.heading}
                 </h2> */}
               </div>
               <div className="space-y-4">
                 {AboutData.description1 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description1 }}
-                  />
+                  <ParagraphText color={"black"} text={AboutData.description1} />
                 )}
                 {AboutData.description2 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description2 }}
-                  />
+                   <ParagraphText color={"black"} text={AboutData.description2} />
+                 
                 )}
                 {AboutData.description3 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description3 }}
-                  />
+                   <ParagraphText color={"black"} text={AboutData.description3} />
+                  
                 )}
                 {AboutData.description4 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description4 }}
-                  />
+                  <ParagraphText color={"black"} text={AboutData.description4} />
+                 
                 )}
                 {AboutData.description5 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description5 }}
-                  />
+                  <ParagraphText color={"black"} text={AboutData.description5} />
+                 
                 )}
                 {AboutData.points && AboutData.points.length > 0 && (
                   <ul className="space-y-2">
@@ -81,10 +70,8 @@ const AboutComponent = ({ AboutData }) => {
                   </ul>
                 )}
                 {AboutData.description6 && (
-                  <p
-                    className="xl:text-base text-sm text-black"
-                    dangerouslySetInnerHTML={{ __html: AboutData.description6 }}
-                  />
+                   <ParagraphText color={"black"} text={AboutData.description6} />
+                  
                 )}
               </div>
             </div>
