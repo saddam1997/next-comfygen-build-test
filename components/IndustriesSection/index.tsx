@@ -294,6 +294,7 @@ function IndustriesServe({ Industries = defaultSliderData }: any) {
                                         height={360}
                                     />
                                     <h3 className="mt-4 font-semibold">{item.title}</h3>
+                                    
                                     <div
                                         className="text-sm mt-2"
                                         dangerouslySetInnerHTML={{ __html: item.description }}

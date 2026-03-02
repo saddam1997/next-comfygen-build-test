@@ -159,10 +159,9 @@ export default function Portfolio({ Portfoliodata }: any) {
               <div className="flex-1 space-y-6">
                 <h3 className="text-3xl font-semibold">{item.title}</h3>
 
-                <p
-                  className="text-gray-800 font-medium text-sm leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: item.description }}
-                />
+
+                <ParagraphText color={"black"} text={item.description} />
+
 
                 <Link href={item.link} aria-label={`View ${item.title} Case Study`}>
                   <span className="inline-flex items-center mt-4 gap-2 border border-[#453de3]
@@ -210,12 +209,12 @@ export default function Portfolio({ Portfoliodata }: any) {
 
               <h3 className="text-sm font-semibold">{item.title}</h3>
 
-              <p className="text-xs font-medium text-gray-900">
-                {truncateText(
-                  item.description.replace(/<[^>]*>?/gm, ""),
-                  200
-                )}
-              </p>
+              <ParagraphText color={"black"} text={truncateText(
+                item.description.replace(/<[^>]*>?/gm, ""),
+                200
+              )} />
+
+
 
               <Link href={item.link} aria-label={`View ${item.title} Case Study`}>
 
