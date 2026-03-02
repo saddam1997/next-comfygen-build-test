@@ -279,11 +279,11 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Smart Contract MLM Software Development Company | Comfygen
+        <title>Smart Contract MLM Software Development Services | Blockchain development Solutions
         </title>
         <meta
           name="description"
-          content="A leading Smart Contract MLM Software Development company. Launch customized MLM solutions on Ethereum, BSC, Solana, and Polygon with instant payouts, transparent transactions, and global participation."
+          content="Build secure and transparent MLM platforms with Comfygen. We deliver scalable, automated, and blockchain-powered smart contract MLM development solutions."
         />
         <link
           rel="canonical"

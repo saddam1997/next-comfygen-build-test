@@ -122,11 +122,11 @@ export default function Blockchain(props) {
     <div className="overflow-hidden">
       <Head>
         <title>
-          Blockchain App Development Company | Secure dApps & Smart Contracts – Comfygen
+          Blockchain App Development Company | Custom dApp Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a trusted blockchain app development company delivering secure, scalable, and custom blockchain applications. We build dApps, DeFi platforms, and enterprise blockchain systems."
+          content="As  a leading blockchain app development company to build secure, scalable, and high-performance dApps, smart contracts, and enterprise blockchain solutions."
         />
         <link
           rel="canonical"
@@ -203,7 +203,7 @@ export default function Blockchain(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Trusted Blockchain App Development Company In India"
+          heading="Best Blockchain App Development Company In India and USA"
           subhead='Looking for a blockchain app development service?'
           ptag="Comfygen is the best blockchain app development company in Jaipur, India, delivering secure, scalable, and production-ready decentralized solutions for startups to enterprises. Our expert blockchain developers in India build customized applications that enhance transparency, automate operations, and ensure advanced data security using cutting-edge blockchain technologies."
           ptag1='We offer end-to-end blockchain development services in the USA, the Middle East, Africa, and India, from ideation and architecture to deployment and maintenance, ensuring every blockchain app solution aligns perfectly with your business goals.'

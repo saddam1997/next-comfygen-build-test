@@ -88,7 +88,7 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          AI & ML Mobile App Development Company | Custom AI Solutions India
+          AI & ML Mobile App Development Services in India | Comfygen
         </title>
         <meta
           property="og:title"
@@ -96,7 +96,7 @@ export default function Mobile(props: any) {
         />
         <meta
           name="description"
-          content="Comfygen offers custom AI and ML mobile app development in India, delivering intelligent apps, machine learning models, and AI-powered solutions to automate processes and drive business growth."
+          content="Comfygen offers AI & ML mobile app development services in India to build intelligent, scalable apps with predictive analytics, smart automation, and personalized experiences."
         />
         <meta
           name="keywords"

@@ -174,25 +174,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -222,75 +204,7 @@ export default function Ecommerce(props) {
       ]
     },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -419,10 +333,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Telemedicine App Development Company in India | Comfygen</title>
+        <title>Top Telemedicine App Development Company | Healthcare Solutions</title>
         <meta
           name="description"
-          content="Comfygen Technologies is a leading telemedicine app development company in India, offering secure, scalable apps with video consultations and e-prescriptions."
+          content="As a top telemedicine app development company, we build secure, scalable, and user-friendly healthcare apps with video consultations and real-time patient care."
         />
         <meta
           name="keywords"
@@ -517,7 +431,7 @@ export default function Ecommerce(props) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Telemedicine App Development Company in India"
+          heading="Best Telemedicine App Development Company"
           ptag="A trusted Telemedicine App Development Company in India focused on delivering secure, scalable, and user-centric digital healthcare solutions. Comfygen Technologies specializes in building advanced telemedicine apps that enable virtual consultations, appointment scheduling, real-time video calls, e-prescriptions, and secure patient data management. Our expert team develops compliant, high-performance telemedicine platforms with intuitive UI/UX and seamless integrations, helping hospitals, clinics, and healthcare startups expand access to quality care while accelerating digital transformation."
           li="Virtual Doctor Consultations"
           li1="Appointment Scheduling & Management"

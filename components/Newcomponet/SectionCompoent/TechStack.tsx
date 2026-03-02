@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import HeadingTwo from "../../ui/HeadingTwo";
 
   const defaultTechData = {
     "backend": [
@@ -70,7 +71,8 @@ export default function Tech({
 
           <div>
             <div className="py-4">
-              <h2 className="font-bold md:text-2xl text-lg text-white">{title}</h2>
+                <HeadingTwo color={"white"} text={title} />
+             
               <p className="text-lg mt-2 text-white" dangerouslySetInnerHTML={{ __html: description }} />
             </div>
             <div className="mt-4">

@@ -1,0 +1,807 @@
+[
+  {
+    "id": 1,
+    "title": "Development",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/development.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Mobile Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Mobile app Development",
+            "url": "/mobile-app-development"
+          },
+          {
+            "num": "2",
+            "name": "Application Consulting Service",
+            "url": "/ca/application-consulting-services"
+          },
+          {
+            "num": "3",
+            "name": "Hybrid Mobile App Development",
+            "url": "/hybrid-mobile-app-development"
+          },
+          {
+            "num": "4",
+            "name": "iOS App Development",
+            "url": "/ios-app-development"
+          },
+          {
+            "num": "5",
+            "name": "Android App Development",
+            "url": "/android-app-development"
+          },
+          {
+            "num": "6",
+            "name": "Flutter Development",
+            "url": "/flutter-development-company"
+          },
+          {
+            "num": "7",
+            "name": "News & Web App Development",
+            "url": "/news-application-development"
+          },
+          {
+            "num": "8",
+            "name": "Cricket Fast Line App Development",
+            "url": "/live-line-cricket-mobile-app-development"
+          },
+          {
+            "num": "9",
+            "name": "E-Commerce App Development",
+            "url": "/e-commerce-app-development"
+          },
+          {
+            "num": "10",
+            "name": "Taxi App Development ",
+            "url": "/taxi-app-development-company"
+          },
+          {
+            "num": "11",
+            "name": "Food Delivery App Development ",
+            "url": "/food-delivery-app-development"
+          },
+          {
+            "num": "12",
+            "name": "Startup App Development ",
+            "url": "/ca/startup-app-development"
+          },
+          {
+            "num": "13",
+            "name": "Dating App Development  ",
+            "url": "/dating-app-development"
+          },
+          {
+            "num": "14",
+            "name": "Doctor Appointment App Development  ",
+            "url": "/doctor-appointment-app-development"
+          },
+          {
+            "num": "15",
+            "name": "Clinical App Development ",
+            "url": "/clinical-application-development"
+          },
+          {
+            "num": "16",
+            "name": "Pharmacy App Development ",
+            "url": "/pharmacy-app-development"
+          },
+          {
+            "num": "17",
+            "name": "Telemedicine App Development ",
+            "url": "/telemedicine-app-development"
+          },
+          {
+            "num": "18",
+            "name": "Medicine Delivery App Development",
+            "url": "/medicine-delivery-app-development"
+          },
+          {
+            "num": "19",
+            "name": "Medicine Ordering App Development",
+            "url": "/medicine-app-development"
+          },
+          {
+            "num": "20",
+            "name": "Laboratory App Development",
+            "url": "/laboratory-app-development"
+          },
+          {
+            "num": "21",
+            "name": "News Application Development",
+            "url": "/news-application-development"
+          },
+          {
+            "num": "22",
+            "name": "Education App Development",
+            "url": "/ca/education-app-development-company"
+          },
+          {
+            "num": "23",
+            "name": "Magazine App Development",
+            "url": "/ca/magazine-app-development-company"
+          },
+          {
+            "num": "24",
+            "name": "E-Learning App Development",
+            "url": "/e-learning-app-development"
+          },
+          {
+            "num": "25",
+            "name": "Tutor App Development",
+            "url": "/tutor-app-development"
+          },
+          {
+            "num": "26",
+            "name": " Astrology App Development",
+            "url": "/astrology-app-development"
+          },
+          {
+            "num": "27",
+            "name": " Mobile Banking App Development",
+            "url": "/mobile-banking-app-development"
+          },
+          {
+            "num": "28",
+            "name": " UPI Payment App Development",
+            "url": "/upi-payment-app-development"
+          },
+          {
+            "num": "29",
+            "name": " NeoBank App Development",
+            "url": "/neo-bank-app-development"
+          },
+          {
+            "num": "30",
+            "name": " Banking Software Development",
+            "url": "/banking-software-development"
+          },
+          {
+            "num": "31",
+            "name": "Insurance App Development",
+            "url": "/insurance-app-development"
+          },
+          {
+            "num": "32",
+            "name": "Quick Commerce App Development",
+            "url": "/quick-commerce-app-development"
+          },
+          {
+            "num": "32",
+            "name": "White Label Mobile App Development",
+            "url": "/white-label-mobile-app-development"
+          },
+          {
+            "num": "34",
+            "name": "Personal Finance App Development",
+            "url": "/personal-finance-app-development"
+          },
+          {
+            "num": "35",
+            "name": "Car Finance App Development",
+            "url": "/car-finance-app-development"
+          },
+          {
+            "num": "36",
+            "name": "Roadside Assistance App Development",
+            "url": "/roadside-assistance-app-development"
+          },
+          {
+            "num": "37",
+            "name": "Truck Finance App Development",
+            "url": "/truck-finance-app-development"
+          },
+          {
+            "num": "38",
+            "name": "Milk Delivery App Development",
+            "url": "/milk-delivery-app-development"
+          },
+          {
+            "num": "39",
+            "name": "Flower Delivery App Development",
+            "url": "/flower-delivery-app-development"
+          },
+          {
+            "num": "40",
+            "name": "Business Directory App Development",
+            "url": "/business-directory-app-development"
+          },
+          {
+            "num": "41",
+            "name": "Home Service App Development",
+            "url": "/home-service-app-development"
+          },
+          {
+            "num": "42",
+            "name": "Logistics App Development",
+            "url": "/logistics-app-development"
+          },
+          {
+            "num": "43",
+            "name": "Health Tracking App Development",
+            "url": "/health-tracking-app-development"
+          },
+          {
+            "num": "44",
+            "name": "Delivery App Development",
+            "url": "/delivery-app-development"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Web Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Website Development",
+            "url": "/web-development"
+          },
+          {
+            "num": "2",
+            "name": "Website Design",
+            "url": "/web-design"
+          },
+          {
+            "num": "3",
+            "name": "MERN stack development",
+            "url": "/mern-stack-development"
+          },
+          {
+            "num": "4",
+            "name": "Node JS Development",
+            "url": "/node-js-development"
+          },
+          {
+            "num": "5",
+            "name": "React JS Development",
+            "url": "/react-js-development"
+          },
+          {
+            "num": "6",
+            "name": "Next JS Development",
+            "url": "/next-js-development"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Blockchain",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/blockchain.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Blockchain Services",
+        "items": [
+          {
+            "num": "1",
+            "name": "Blockchain Development company",
+            "url": "/blockchain-development"
+          },
+          {
+            "num": "2",
+            "name": "Custom Blockchain Development",
+            "url": "/custom-blockchain-development-company"
+          },
+          {
+            "num": "3",
+            "name": "Blockchain Consulting Service",
+            "url": "/blockchain-consulting-services"
+          },
+          {
+            "num": "4",
+            "name": "Substrate Development Company",
+            "url": "/substrate-development-company"
+          },
+          {
+            "num": "5",
+            "name": "polygon Blockchain development",
+            "url": "/polygon-blockchain-development"
+          },
+          {
+            "num": "6",
+            "name": "Hyperledger Blockchain Development",
+            "url": "/hyperledger-blockchain-development"
+          },
+          {
+            "num": "7",
+            "name": "Multichain Blockchain",
+            "url": "/multichain-blockchain-development"
+          },
+          {
+            "num": "8",
+            "name": "Solana Blockchain Development",
+            "url": "/solana-blockchain-development-company"
+          },
+          {
+            "num": "9",
+            "name": "Stellar Blockchain Development",
+            "url": "/stellar-blockchain-development-company"
+          },
+          {
+            "num": "10",
+            "name": "Cardano Blockchain Development",
+            "url": "/cardano-blockchain-development-company"
+          },
+          {
+            "num": "11",
+            "name": "Ethereum Blockchain Development",
+            "url": "/ethereum-blockchain-development-company"
+          },
+          {
+            "num": "12",
+            "name": "Hire Blockchain Developer",
+            "url": "/hire-blockchain-developer"
+          },
+          {
+            "num": "13",
+            "name": "POW Blockchain Development",
+            "url": "/pow-blockchain-development-company"
+          },
+          {
+            "num": "14",
+            "name": "POA Blockchain Development",
+            "url": "/poa-blockchain-development-company"
+          },
+          {
+            "num": "15",
+            "name": "DPOS Blockchain Development",
+            "url": "/ca/dpos-blockchain-development-company"
+          },
+          {
+            "num": "16",
+            "name": "Private Blockchain Development Company",
+            "url": "/private-blockchain-development"
+          },
+          {
+            "num": "17",
+            "name": "Enterprise Blockchain Development Company",
+            "url": "/enterprise-blockchain-development"
+          },
+          {
+            "num": "18",
+            "name": "Blockchain Wallet Development Company",
+            "url": "/blockchain-wallet-development"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "AI Development",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/Ai development.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "AI Services",
+        "items": [
+          {
+            "num": "1",
+            "name": "Ai Development",
+            "url": "/ai-development"
+          },
+          {
+            "num": "2",
+            "name": "Generative AI Development",
+            "url": "/generative-ai-development"
+          },
+          {
+            "num": "3",
+            "name": "AI Interview Scheduling Software Development",
+            "url": "/ai-interview-scheduling-software-development"
+          },
+          {
+            "num": "4",
+            "name": "Data Service",
+            "url": "/data"
+          },
+          {
+            "num": "5",
+            "name": "Data Analytics",
+            "url": "/data/analytics-service-provider"
+          },
+          {
+            "num": "6",
+            "name": "Tableau Consulting Services",
+            "url": "/data/tableau-consulting-services"
+          },
+          {
+            "num": "7",
+            "name": "Hire Data Scientist",
+            "url": "/data/hire-data-scientist"
+          },
+          {
+            "num": "8",
+            "name": "AWS Analytics Service",
+            "url": "/data/aws-analytics-services"
+          },
+          {
+            "num": "9",
+            "name": "Business Intelligence",
+            "url": "/data/business-intelligence"
+          },
+          {
+            "num": "10",
+            "name": "Power BI Consulting Services",
+            "url": "/data/power-bi-consulting-services"
+          },
+          {
+            "num": "11",
+            "name": "Sales Performance Dashboard",
+            "url": "/data/sales-dashboard"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Stack Development",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/stack development.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Stack Services",
+        "items": [
+          {
+            "num": "1",
+            "name": "React Native Development",
+            "url": "/react-native-development"
+          },
+          {
+            "num": "2",
+            "name": "Python Development",
+            "url": "/python-development"
+          },
+          {
+            "num": "3",
+            "name": "IoT Development",
+            "url": "/iot-development-company"
+          },
+          {
+            "num": "4",
+            "name": "Hire Mobile App Developer",
+            "url": "/hire-mobile-app-developer"
+          },
+          {
+            "num": "5",
+            "name": "Social Media App Development",
+            "url": "/social-media-app-development"
+          },
+          {
+            "num": "6",
+            "name": "Finance   App Developer",
+            "url": "/finance-app-development"
+          },
+          {
+            "num": "7",
+            "name": "Healthcare App Development",
+            "url": "/healthcare-app-development"
+          },
+          {
+            "num": "8",
+            "name": "Mobile game Development",
+            "url": "/mobile-game-development-company"
+          },
+          {
+            "num": "9",
+            "name": "Hire .Net Developer",
+            "url": "/hire-dot-net-developer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Game Development",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/game.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Game Services",
+        "items": [
+          {
+            "num": "1",
+            "name": "Game Development Company",
+            "url": "/game-development-company"
+          },
+          {
+            "num": "2",
+            "name": "Ludo Game Development",
+            "url": "/ludo-game-development"
+          },
+          {
+            "num": "3",
+            "name": "Poker Game Development",
+            "url": "/poker-game-development"
+          },
+          {
+            "num": "4",
+            "name": "Rummy Game Development",
+            "url": "/rummy-game-development"
+          },
+          {
+            "num": "5",
+            "name": "Baccarat Game Development",
+            "url": "/baccarat-game-development"
+          },
+          {
+            "num": "7",
+            "name": "Video Game Development",
+            "url": "/video-game-development"
+          },
+          {
+            "num": "8",
+            "name": "Blackjack Game Development",
+            "url": "/blackjack-game-development"
+          },
+          {
+            "num": "9",
+            "name": "Omaha Poker Game development",
+            "url": "/omaha-poker-game-development"
+          },
+          {
+            "num": "10",
+            "name": "Chess Game development",
+            "url": "/chess-game-development"
+          },
+          {
+            "num": "11",
+            "name": "Multigaming Platform App Development",
+            "url": "/multigaming-platform-app-development"
+          },
+          {
+            "num": "12",
+            "name": "NFT Game Development",
+            "url": "/nft-game-development-company"
+          },
+          {
+            "num": "13",
+            "name": "Metaverse Game Development",
+            "url": "/metaverse-game-development-company"
+          },
+          {
+            "num": "14",
+            "name": "Board Game Development",
+            "url": "/board-game-development"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Industries ",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/industries.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Ecommerce Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Ecommerce",
+            "url": "/ecommerce"
+          },
+          {
+            "num": "2",
+            "name": "Ecommerce App Development",
+            "url": "/e-commerce-app-development"
+          },
+          {
+            "num": "3",
+            "name": "FMCG",
+            "url": "/ecommerce/fmcg"
+          },
+          {
+            "num": "4",
+            "name": "Fashion App Development",
+            "url": "/ecommerce/fashion"
+          },
+          {
+            "num": "5",
+            "name": "Food Delivery App Development",
+            "url": "/food-delivery-app-development"
+          },
+          {
+            "num": "6",
+            "name": "Quick Commerce App Development",
+            "url": "/quick-commerce-app-development"
+          },
+          {
+            "num": "7",
+            "name": "Grocery App Development",
+            "url": "/ecommerce/grocery"
+          },
+          {
+            "num": "8",
+            "name": "Water Delivery App Development",
+            "url": "/water-delivery-app-development"
+          },
+          {
+            "num": "9",
+            "name": "Pizza Delivery App Development",
+            "url": "/pizza-delivery-app-development"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Healthcare Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Healthcare App Development",
+            "url": "/healthcare-app-development"
+          },
+          {
+            "num": "2",
+            "name": "Doctor Appointment App Development  ",
+            "url": "/doctor-appointment-app-development"
+          },
+          {
+            "num": "3",
+            "name": "Medicine Delivery App Development ",
+            "url": "/medicine-delivery-app-development"
+          },
+          {
+            "num": "4",
+            "name": "Medicine Ordering App Development ",
+            "url": "/medicine-app-development"
+          },
+          {
+            "num": "5",
+            "name": "Clinical App Development ",
+            "url": "/clinical-application-development"
+          },
+          {
+            "num": "6",
+            "name": "Pharmacy App Development ",
+            "url": "/pharmacy-app-development"
+          },
+          {
+            "num": "7",
+            "name": "Telemedicine App Development",
+            "url": "/telemedicine-app-development"
+          },
+          {
+            "num": "8",
+            "name": "Laboratory App Development",
+            "url": "/laboratory-app-development"
+          },
+          {
+            "num": "9",
+            "name": "Health Tracking App Development",
+            "url": "/health-tracking-app-development"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Finance Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Finance App Development",
+            "url": "/finance-app-development"
+          },
+          {
+            "num": "2",
+            "name": "Personal Finance App Development",
+            "url": "/personal-finance-app-development"
+          },
+          {
+            "num": "3",
+            "name": " Mobile Banking App Development",
+            "url": "/mobile-banking-app-development"
+          },
+          {
+            "num": "4",
+            "name": " UPI Payment App Development",
+            "url": "/upi-payment-app-development"
+          },
+          {
+            "num": "5",
+            "name": " NeoBank App Development",
+            "url": "/neo-bank-app-development"
+          },
+          {
+            "num": "6",
+            "name": " Banking Software Development",
+            "url": "/banking-software-development"
+          },
+          {
+            "num": "7",
+            "name": "Insurance App Development",
+            "url": "/insurance-app-development"
+          },
+          {
+            "num": "8",
+            "name": "Islamic Banking App Development",
+            "url": "/islamic-bank-app-development"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "label": "EducationApp Development",
+        "items": [
+          {
+            "num": "1",
+            "name": "Education App Development",
+            "url": "/ca/education-app-development-company"
+          },
+          {
+            "num": "2",
+            "name": "E-Learning App Development",
+            "url": "/e-learning-app-development"
+          },
+          {
+            "num": "3",
+            "name": "Tutor App Development",
+            "url": "/tutor-app-development"
+          },
+          {
+            "num": "4",
+            "name": "Language learnig App Development",
+            "url": "/language-learning-app-development"
+          },
+          {
+            "num": "5",
+            "name": "Exam Preparation App Development",
+            "url": "/exam-preparation-app-development"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Our Company",
+    "icon": "https://www.comfygen.com/comfygen-images/Icons/our company.webp",
+    "sections": [
+      {
+        "id": 1,
+        "label": "Company",
+        "items": [
+          {
+            "num": "1",
+            "name": "About us",
+            "url": "/about-us"
+          },
+          {
+            "num": "2",
+            "name": "Our Portfolio",
+            "url": "/portfolio"
+          },
+          {
+            "num": "3",
+            "name": "Career at Comfygen",
+            "url": "/career"
+          },
+          {
+            "num": "4",
+            "name": "Life at Comfygen",
+            "url": "/life-at-comfygen"
+          },
+          {
+            "num": "5",
+            "name": "Client testimonial",
+            "url": "/client-testimonials"
+          },
+          {
+            "num": "6",
+            "name": "Contact us",
+            "url": "/contact-us"
+          }
+        ]
+      }
+    ]
+  }
+]

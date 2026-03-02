@@ -62,11 +62,11 @@ export default function rummy(props) {
     <>
       <Head>
         <title>
-          Best Multigaming Platform App Development Company In India & The USA
+          Top Multigaming Platform App Development Company | Gaming App Experts
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading multigaming platform app development company In India & The USA. Our expert programmers craft custom apps like MPL, Winzo & Hago, integrating 25+ popular games. Hire us for the best multigaming experience!"
+          content="Comfygen offers multigaming platform app development services to build scalable, interactive, and secure gaming apps with multiplayer functionality, real-time leaderboards, and immersive gameplay."
         />
         <link
           rel="canonical"
@@ -160,7 +160,7 @@ export default function rummy(props) {
       <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages
-            heading="Multigaming Platform App Development Company"
+            heading="Multigaming Platform App Development Company In India and USA"
             ptag="At comfygen, the ideal multigaming platform app development company In Canada & The USA improvement business enterprise. With an ardor for gaming and a dedication to innovation, we focus on creating wonderful multigaming apps that bring immersive and tasty studies to gamers worldwide. Our proficient team of specialists combines cutting-edge generation, seamless consumer experiences, and a deep knowledge of the gaming industry to deliver top-notch game development services & solutions tailored to your unique gaming imaginative and prescient. Be a part of us as we unlock the countless capability of multigaming and redefine the manner players join, compete, and discover in the virtual gaming realm."
             btnName="Talk With Expert"
             btnLink="/contact-us"

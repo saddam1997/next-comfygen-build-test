@@ -155,7 +155,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Best Custom Dating App Development Company in India"
-          ptag="Looking to build a high-performance dating app like Tinder, Bumble, or Hinge? Comfygen is a trusted dating app development company delivering secure, scalable, and feature-rich dating applications for startups, SMEs, and enterprises worldwide. With 8+ years of experience, we specialize in high-quality custom dating app development services, powered by AI/ML, modern UI/UX, and robust backend architecture to help you launch market-ready dating platforms faster."
+          ptag="Looking to develop a high-performance dating app like Tinder, Bumble, or Hinge? Comfygen is a trusted dating app development company delivering secure, scalable, and feature-rich dating applications for startups, SMEs, and enterprises worldwide. With 8+ years of experience, we specialize in high-quality custom dating app development services, powered by AI/ML, modern UI/UX, and robust backend architecture to help you launch market-ready dating platforms faster."
           li="Build a Dating App for a Specific Community"
           li1="Custom & Scalable Dating App Solutions"
           li2="AI-Based Matchmaking & Real-Time Chat"

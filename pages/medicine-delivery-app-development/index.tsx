@@ -10,6 +10,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import BusinessSolustion from "../../components/Newcomponet/SectionCompoent/BusinessSolustion";
 import AppcardSlider from "../../components/Newcomponet/SectionCompoent/AppcardSlider";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+// import TechStackSection from "../../components/TechStackSection";
 
 const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 const Milestones = dynamic(
@@ -98,7 +99,7 @@ const BlogSection = dynamic(
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
 
@@ -118,11 +119,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-        Medicine Delivery App Development Company | Comfygen
+           AI-Powered Medicine Delivery App Development Company in India
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a trusted medicine delivery app development company offering secure, scalable apps with prescription upload, tracking, and payments."
+          content="Comfygen is the top medicine delivery app development company that builds AI-based medicine delivery apps for pharmacies and startups."
         />
 
         <meta
@@ -275,10 +276,10 @@ export default function Ecommerce(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-            Our Full-Stack Medicine Delivery App Development Services
+                Our Full-Stack Medicine Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
-              Comfygen Technologies is one of the top custom medicine delivery app development companies, providing exceptional AI-driven pharmacy delivery app development services to startups, pharmacies, and healthcare businesses. Our qualified medicine app developers have years of experience in the pharmacy industry and build high-quality medicine delivery apps. These solutions are designed to meet real customer needs while fully complying with healthcare regulations and standards.
+                Comfygen Technologies is one of the top custom medicine delivery app development companies, providing exceptional AI-driven pharmacy delivery app development services to startups, pharmacies, and healthcare businesses. Our qualified medicine app developers have years of experience in the pharmacy industry and build high-quality medicine delivery apps. These solutions are designed to meet real customer needs while fully complying with healthcare regulations and standards.
               </p>
             </div>
             <div className="">
@@ -298,8 +299,7 @@ export default function Ecommerce(props) {
           linkText="Contact Us Now"
         />
 
-      
-
+        {/* <TechStackSection/> */}
         <BusinessSolustion
           imageSrc="https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/aI-powered-medicine-delivery-app-development.webp"
           BusinessSolustion={JSON_DATA.BusinessSolustion}
@@ -393,10 +393,10 @@ export default function Ecommerce(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our Agile Development Process For Building High-Performing Medicine Delivery Apps
+                Our Agile Development Process For Building High-Performing Medicine Delivery Apps
               </h2>
               <p className="text-base font-normal mt-2">
-               We follow a streamlined and agile development process to build secure, scalable, and high-performing medicine delivery apps. Our approach ensures faster delivery, smooth communication, and continuous improvements throughout the project. From understanding your business goals to launching a fully functional online pharmacy app, we keep everything transparent and efficient.
+                We follow a streamlined and agile development process to build secure, scalable, and high-performing medicine delivery apps. Our approach ensures faster delivery, smooth communication, and continuous improvements throughout the project. From understanding your business goals to launching a fully functional online pharmacy app, we keep everything transparent and efficient.
               </p>
             </div>
             <ProcessSec processSlides={JSON_DATA.Process} />
@@ -440,7 +440,7 @@ export default function Ecommerce(props) {
         />
         <Faq faqData={JSON_DATA.Frequently} />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

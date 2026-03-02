@@ -234,12 +234,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-        Substrate Blockchain Development Services | Comfygen
-
+          Substrate Blockchain Development Company | Custom Polkadot Solutions
         </title>
         <meta
           property="og:title"
-          content="Substrate blockchain development services for custom blockchains, dApps, Polkadot integration, and Rust-based substrate blockchain solutions."
+          content="Build scalable and secure blockchain networks with our Substrate blockchain development services. We create custom Polkadot-based solutions, parachains, and decentralized applications."
         />
         <meta
           name="description"
@@ -361,7 +360,7 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/herosection/substrate-development-company.webp"
         />
-        <Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -467,7 +466,7 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

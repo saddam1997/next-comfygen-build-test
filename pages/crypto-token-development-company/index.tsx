@@ -256,11 +256,11 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Crypto Token Development Company | Ethereum, BSC & Polygon – Comfygen
+        <title>Best Crypto Token Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content=" Comfygen is a leading crypto token development company delivering custom token design, multi-blockchain deployment, secure and compliant solutions, and end-to-end support for businesses and startups."
+          content="As the best crypto token development company, Comfygen delivers secure, scalable, and feature-rich blockchain tokens with smart contracts, ICO, DeFi, and NFT support."
         />
 
         <meta name="keywords" content="Crypto Token Development, Utility Token Development, Security Token Development, DeFi Token Development, Custom Blockchain Token Solutions, Blockchain Token Development Company, Token Creation Services, Cryptocurrency Token Development, Tokenomics Development, Smart Contract Token Development, ERC20 Token Development, BEP20 Token Development" />
@@ -300,7 +300,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden pt-20">
         <HeroSectionForAllPages
-          heading="Crypto Token Development Service"
+          heading="Best Crypto Token Development Company"
           subhead=''
           ptag="Comfygen is a trusted crypto token development company offering end-to-end cryptocurrency token development services for blockchain startups, enterprises, and businesses worldwide. Our token development service fully compliant crypto tokens across multiple blockchain networks, including Ethereum, Binance Smart Chain, Solana, Polygon, and more."
           ptag1="Comfygen’s blockchain development team designed and developed custom tokens according to your business goal, Either you're building utility tokens, security tokens, NFTs, governance tokens, or DeFi tokens. Our crypto token development service includes smart contract development, tokenomics design, security audits, and exchange listing support."

@@ -3,6 +3,8 @@
 
 import Image from "next/image";
 import ServicesTabs from "./ServicesTabs";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 export default function ServicesComponet({ servicesData }) {
 
@@ -11,13 +13,12 @@ export default function ServicesComponet({ servicesData }) {
         <section className="lg:py-16 py-10 bg-[#F5F5F9 ">
 
             <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-                <div className="space-y-2">
-                    <h2 className="xl:text-4xl text-lg text-[#212121] text-center font-bold" dangerouslySetInnerHTML={{ __html: servicesData.heading }}>
+                <div className="space-y-2 text-center">
 
-                    </h2>
-                    <p className="text-base text-center font-normal" dangerouslySetInnerHTML={{ __html: servicesData.description }}>
+                    <HeadingTwo color={"black"} text={servicesData.heading} />
+                    <ParagraphText color={"black"} text={servicesData.description} />
 
-                    </p>
+
                 </div>
                 <div className="">
                     <div className="flex flex-col lg:flex-row pt-10 lg:space-x-6 relative items-stretch">

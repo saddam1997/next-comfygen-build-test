@@ -148,119 +148,8 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Crypto Exchange Admin Panel Development | Secure & Custom Backend Solutions",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Private Limited",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
-      "url": "https://www.comfygen.com/crypto-exchange-admin-panel-development",
-      "mainEntityOfPage": " https://www.comfygen.com/crypto-exchange-admin-panel-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "Crypto Exchange Admin Panel Development",
-        "Crypto Exchange Admin Panel",
-        "Crypto Admin Panel Development Services",
-        "Custom Crypto Exchange Admin Panel",
-        "Crypto Exchange Backend Development"
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies/",
-        "https://www.linkedin.com/company/comfygen-technologies"
-
-
-
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
+ 
+ 
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -351,11 +240,11 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Crypto Exchange Admin Panel Development Service | Comfygen
+        <title>Crypto Exchange Admin Panel Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen provides crypto exchange admin panel development services with real-time monitoring, user management, advanced security, and analytics dashboards."
+          content="A leading crypto exchange admin panel development company, to build secure, scalable, and feature-rich admin dashboards with real-time analytics, user management, and advanced controls."
         />
         <link
           rel="canonical"
@@ -433,7 +322,7 @@ export default function Ecommerce(props) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Crypto Exchange Admin Panel Development Service"
+          heading="Crypto Exchange Admin Panel Development Company"
           ptag="Comfygen provides crypto exchange admin panel development services to give you complete control over your trading platform. Our Crypto Exchange Admin Panel Development solutions provide real-time monitoring, user and transaction management, advanced security, and analytics dashboards for efficient decision-making. Fully customizable and scalable, our Crypto Exchange admin panels are designed for centralized or decentralized exchanges, ensuring smooth operations, regulatory compliance, and enhanced user experience."
           li="Real-time monitoring & analytics dashboards"
           li1="User & transaction management"

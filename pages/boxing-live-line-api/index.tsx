@@ -291,10 +291,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Boxing Live Line API Provider | Comfygen Technologies</title>
+        <title>Boxing Live Line API Development Service | Real-Time Sports Data</title>
         <meta
           name="description"
-          content="Comfygen provides expert Boxing Live Line API with real-time scores, odds, stats, and fight updates. Get boxing API integration for gamming, apps, and sports websites."
+          content="Our Boxing Live Line API development service provides instant boxing scores, player stats, and real-time updates to enhance sports apps, fantasy platforms, and analytics tools."
         />
         <meta
           name="keywords"
@@ -425,7 +425,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Boxing Live Line API Provider"
+          heading="Boxing Live Line API development Service"
           subhead="Deliver Real-Time Knockouts with Our Boxing Live Line API Integration"
           ptag="Step into the ring with Comfygen – your trusted partner for Boxing Live Line API. With 10+ years of experience, we deliver fast, accurate, and real-time boxing data solutions for gamming apps, broadcasters, sports platforms, and analytics portals."
           ptag1="Our Boxing API includes live scores, round stats, fighter profiles, historical results, and updated odds. From World Championship fights to local events, we offer reliable data via Boxing Odds API, Fixtures API, and Fights Odds API Integration."

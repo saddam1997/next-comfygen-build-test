@@ -264,11 +264,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          DPoS Blockchain Development Company for Enterprises | Comfygen
+        DPoS Blockchain Development Company In Canada for Enterprises | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen offers DPoS blockchain development services to build secure, scalable, and high-performance blockchain solutions for enterprises."
+          content="DPoS blockchain development Company provide secure, scalable, and high-performance blockchain app development solutions for enterprises."
         />
         <link
           rel="canonical"
@@ -340,7 +340,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="DPoS Blockchain Development Company"
+          heading="DPoS Blockchain Development Company In Canada"
           subhead='Secure, Scalable & High-Performance Blockchain DPoS Development Solutions'
           ptag="Comfygen offers expert Delegated Proof of Stake (DPoS) blockchain development services to help businesses build fast, secure, and scalable decentralized systems. Our DPoS solutions are designed for enterprise-grade applications, delivering efficient consensus, high transaction throughput, and strong data security. With optimized performance and reliable network governance, we help you deploy future-ready blockchain solutions that scale with your business needs."
           li="Robust Data Security"

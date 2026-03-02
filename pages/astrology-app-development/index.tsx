@@ -108,11 +108,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Astrology App Development Company in India
+          Astrology App Development Company in India | Comfygen
         </title>
         <meta
           name="description"
-          content="Are you looking for an astrology app development company in India to take your business online? Comfygen offers advanced astrology app development services with AI-powered & Blockchain for startups."
+          content="Looking for an astrology app development company in India to take your astrology business online? Comfygen offers advanced astrology app development services with AI-powered & Blockchain for startups."
         />
         <link
           rel="canonical"

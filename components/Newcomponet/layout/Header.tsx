@@ -1,7 +1,8 @@
 import DesktopNav from "./DesktopNav";
-import MobileNav from "./MobileNav";
+// import MobileNav from "./MobileNav";
 // import DesktopNavnew from "./DesktopNavnew"
 // import BreadCume from "../home/component/BreadCume";
+import Mobileview from "../../../components/HeaderSection/Mobileview"
 
 
 export default function Header(props: any) {
@@ -14,7 +15,8 @@ export default function Header(props: any) {
             <DesktopNav />
           </div>
           <div className="block lg:hidden">
-            <MobileNav />
+            {/* <MobileNav /> */}
+            <Mobileview/>
           </div>
         </header>
 

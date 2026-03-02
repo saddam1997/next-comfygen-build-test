@@ -1,8 +1,8 @@
 
 import Image from "next/image";
-import Heading from "../ui/Heading";
-import Paragraph from "../ui/Paragraph";
 import HeroClientCTA from "./HeroClientCTA";
+import HeadingOne from "../ui/HeadingOne";
+import ParagraphText from "../ui/ParagraphText"
 
 export default function HeroSection({ herosection }: any) {
 
@@ -17,7 +17,7 @@ export default function HeroSection({ herosection }: any) {
 
 
     return (
-        <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-8 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
+        <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-8 lg:mt-16 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
 
         >
 
@@ -57,43 +57,28 @@ export default function HeroSection({ herosection }: any) {
                             </span>
                         </h1>
                     ) : (
-                        <>
-                            <Heading as={1} className="text-white ">
-                                {herosection.heading}
-                            </Heading>
-
-
-
-
-                        </>
+               
+                        <HeadingOne color={"white"} text={herosection.heading}/>
+                        
                     )}
 
 
                     {herosection?.subhead && (
-                        <Paragraph size="sm" className="text-white">
-                            <span className="font-semibold"> {herosection.subhead}</span>
-                        </Paragraph>
+
+                        <ParagraphText color={"white"} text={herosection.subhead}/>
                     )}
 
 
                     {/* ================= DESCRIPTION ================= */}
 
-                    <Paragraph size="sm" className="text-white">
-                        {herosection.ptag}
-                    </Paragraph>
-
+                     <ParagraphText color={"white"} text={herosection.ptag}/>
 
                     {herosection.ptag1 && (
-                        <Paragraph size="sm" className="text-white">
-                            {herosection.ptag1}
-                        </Paragraph>
+                        <ParagraphText color={"white"} text={herosection.ptag1}/>
                     )}
 
-
                     {herosection.ptag3 && (
-                        <Paragraph size="sm" className="text-white">
-                            {herosection.ptag3}
-                        </Paragraph>
+                         <ParagraphText color={"white"} text={herosection.ptag3}/>
                     )}
 
                     {herosection?.listItems.length > 0 && (

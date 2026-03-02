@@ -2,14 +2,16 @@ import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
+import HeadingOne from "../ui/HeadingOne";
+import HeadingTwo from "../ui/HeadingTwo";
 
 
-const AboutComponent = ({AboutData}) => {
+const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
 
   return (
     <section className="bg-white lg:py-16 py-4">
-    
+
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
           <div className="">
@@ -27,9 +29,12 @@ const AboutComponent = ({AboutData}) => {
           <div>
             <div className="space-y-4">
               <div>
-                <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
+
+
+                <HeadingTwo color={"#212121"} text= {AboutData.heading} />
+                {/* <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
                   {AboutData.heading}
-                </h2>
+                </h2> */}
               </div>
               <div className="space-y-4">
                 {AboutData.description1 && (

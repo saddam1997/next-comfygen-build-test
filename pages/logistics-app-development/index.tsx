@@ -328,10 +328,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Best Logistics App Development Company in India | Comfygen</title>
+        <title>Logistics App Development Company | Smart Transport Solutions</title>
         <meta
           name="description"
-          content="Comfygen is a trusted logistics app development company in India offering custom transport and logistics app development services with AI-powered, GPS tracking and fleet management solutions."
+          content="Transform your supply chain with best logistics app development company. We build scalable delivery, fleet management, and tracking apps with seamless user experience."
         />
         <link
           rel="canonical"
@@ -449,7 +449,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top-Notch Logistics App Development Company in India"
+            heading="Trusted Logistics App Development Company in India and USA"
             subhead="Build Smart, Scalable & Future-Ready Logistics Apps with Comfygen"
             ptag="Comfygen is a leading logistics app development company in India, providing comprehensive end-to-end custom logistics and transportation app development services for startups, enterprises, and supply chain businesses. We build powerful logistics app solutions with real-time GPS tracking, intelligent route optimization, fleet & driver management, and advanced analytics to streamline operations, reduce costs, and improve delivery efficiency across Android, iOS, and web platforms."
             li="Real-Time GPS & Shipment Tracking"

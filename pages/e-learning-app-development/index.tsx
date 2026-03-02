@@ -346,10 +346,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Custom eLearning App Development Company in India & USA | Comfygen</title>
+        <title>eLearning App Development Company | Custom Education App Solutions</title>
         <meta
           name="description"
-          content="Looking for a top eLearning app development company? Comfygen builds custom online elearning apps with AI, AR/VR, live classes, and advanced analytics for schools, coaching centers, and corporate training."
+          content="Hire an eLearning app development company to create interactive, secure, and scalable learning apps with live classes, smart scheduling, and personalized learning experiences."
         />
         <link
           rel="canonical"
@@ -460,7 +460,7 @@ export default function ClinicalApp(props: any) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top eLearning App Development Company in India & USA"
+          heading="Best eLearning App Development Company in India & USA"
           ptag="Comfygen is a leading eLearning app development company delivering custom online learning apps for schools, coaching centers, and corporate training. We integrate AI-driven learning, AR/VR classrooms, analytics, and secure scalable platforms to create interactive and future-ready EdTech solutions. Hire expert eLearning app developers to transform your learning ideas into reality."
           ptag1=""
           li="AI-powered personalized learning experiences"

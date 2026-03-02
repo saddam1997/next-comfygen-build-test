@@ -287,9 +287,9 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-  <title>Sports Solution Development | Custom Sports Software & App Development Company</title>
+  <title>Custom Sports Solution Development | Sports Software & App Experts | Comfygen</title>
 
-  <meta name="description" content="Get expert sports solution development services from Comfygen Technologies. We build custom sports software, fantasy apps platforms, APIs & analytics tools." />
+  <meta name="description" content="Comfygen delivers custom sports solution development, including sports software, fantasy apps, mobile platforms, APIs, and analytics tools to boost fan engagement and performance." />
   <link rel="canonical" href="https://www.comfygen.com/sports-solution-development" />
 
   <meta name="keywords" content="Sports solution development, Sports software development, Sports app development, Sports technology solutions, Sports software company, Custom sports software development, Fantasy sports app development, Sports data API integration for apps, Sports analytics software development" />

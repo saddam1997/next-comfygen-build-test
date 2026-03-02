@@ -233,11 +233,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title> No. 1 Courier Delivery App Development Company in India
+        <title>Best Courier Delivery App Development Company | Comfygen 
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a leading courier delivery app development company. We provide courier delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
+          content="Comfygen is the best courier delivery app development company. We provide custom courier delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
         />
 
         <meta name="keywords" content="On-demand Courier Delivery App Development, Parcel Delivery App Development, Last-mile Delivery App Development, Courier Dispatch & Tracking App Development, White-label Courier App Development Solutions, Courier App Development for Carriers, Haulage Courier App Development, Freight Forwarding Courier App Development, Courier Marketplace App Development, Courier App Development for Delivery Chains" />
@@ -277,7 +277,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Courier Delivery App Development Company"
+            heading="Top Rated Courier Delivery App Development Company"
             ptag="Comfygen is a trusted courier delivery app development company that provides comprehensive courier delivery app development services to help businesses manage deliveries more efficiently and effectively. We create smart and fully customized courier apps with features like real-time tracking, quick parcel updates, automated delivery management, and secure payments."
             ptag1="Whether you want an on-demand courier app, last-mile delivery solution, or a full parcel tracking system, our delivery app development team builds the perfect app to match your best business needs."
             ptag2="Make your excellent courier service faster and smarter with a custom app solution from Comfygen."

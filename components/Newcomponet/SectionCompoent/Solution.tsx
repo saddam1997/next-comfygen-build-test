@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdStars } from "react-icons/md";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 const Solution = ({ heading, subheading, techData = [] }) => {
   const [showAll, setShowAll] = useState(false);
@@ -9,13 +10,13 @@ const Solution = ({ heading, subheading, techData = [] }) => {
   const toggleShow = () => setShowAll(!showAll);
 
   return (
-    <section className="lg:py-16 py-10 bg-[#fff]">
+    <section className="lg:py-8 py-10 bg-[#fff]">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
         <div className="space-y-4 text-center">
           <div className="flex flex-col justify-center text-center lg:w-5/6 mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#212121] leading-[3rem]">
-              {heading}
-            </h2>
+
+           <HeadingTwo color={"#212121"} text= {heading} />
+          
             <p className="pt-4" dangerouslySetInnerHTML={{ __html: subheading }} />
           </div>
 

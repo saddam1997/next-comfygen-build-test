@@ -175,11 +175,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          POA Blockchain Development Company In India & The USA | Comfygen
+          POA Blockchain Development Company | Secure & Scalable Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen provide Readymade or custumzation POA Blockchain Development services In India & The USA. Contact us today for Hire expert POA blockchain developers.!"
+          content="As leading POA blockchain development company to build secure, fast, and scalable blockchain platforms using Proof of Authority consensus for enterprises and startups."
         />
         <link
           rel="canonical"

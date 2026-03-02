@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeadingTwo from "../../ui/HeadingTwo";
 
 const WhyChoose = ({
   title = "",
@@ -17,7 +18,8 @@ const WhyChoose = ({
     <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
       <div className="lg:flex space-y-3 items-center justify-between gap-10">
         <div>
-          <h2 className="xl:text-4xl text-3xl text-black font-bold">{title}</h2>
+            <HeadingTwo color={"black"} text={title} />
+         
           {description && (
             <p
               className="text-base text-black font-normal mt-2 w-full"

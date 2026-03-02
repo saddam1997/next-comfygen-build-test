@@ -122,10 +122,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Custom Android App Development Company | Hire Android Developers</title>
+        <title>Android App Development Company | Custom Android App Solutions</title>
         <meta
           name="description"
-          content="Hire expert Android app developers to build user-friendly, secure, and scalable mobile applications. Comfygen offers end-to-end Android app development services."
+          content="As a leading Android App Development Company, we build secure, scalable, and user-friendly mobile applications tailored to startups, enterprises, and growing businesses."
         />
         <link
           rel="canonical"
@@ -195,7 +195,7 @@ export default function Mobile(props: any) {
       </div>
       <div className="overflow-hidden lg:pt-[40px]">
         <HeroSectionForAllPages
-          heading="Custom Android App Development Company"
+          heading="Best Android App Development Company India and USA"
           ptag="Comfygen is a professional Android app development company in Jaipur, India, helping startups and small businesses build reliable, scalable, and performance-driven Android applications. Our skilled Android developers create secure and intuitive mobile apps that deliver seamless user experiences and measurable business results."
           ptag1="We manage the complete Android app development lifecycle—from strategy and design to development and Google Play launch—ensuring your app is built for growth, engagement, and long-term success."
           li="Experienced Android App Developers"

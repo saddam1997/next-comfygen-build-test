@@ -204,115 +204,11 @@ export default function Blockchain(props: any) {
   const closeModal = () => {
     setTalkToExpertModal(false);
   };
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What are Hyperledger Blockchain Development Services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hyperledger Blockchain Development Services encompass a range of solutions for building and deploying secure, scalable, enterprise-grade blockchain networks using various Hyperledger frameworks. These services include consulting, implementation, and ongoing support tailored to your business needs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does a Hyperledger Blockchain Development company differ from other blockchain service providers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A Hyperledger Blockchain Development company specializes in implementing Hyperledger frameworks—such as Fabric, Sawtooth, and Iroha—to deliver expert consultancy, custom solution development, and comprehensive support. This focused approach ensures superior performance, enhanced security, and scalability compared to general blockchain providers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why should my business invest in Hyperledger Blockchain Development Services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Investing in Hyperledger Blockchain Development Services enables businesses to leverage secure, transparent, and efficient blockchain solutions that drive digital transformation, streamline operations, and provide a competitive advantage in today's market."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should I look for when hiring a Hyperledger Blockchain Development company?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "When hiring a Hyperledger Blockchain Development company, consider their expertise with various Hyperledger frameworks, proven track record of successful projects, and the ability to deliver customized, secure, and scalable blockchain solutions aligned with your business objectives."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do Hyperledger Blockchain Development Services support enterprise digital transformation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hyperledger Blockchain Development Services support digital transformation by integrating blockchain technology into existing systems, enhancing data security, increasing transparency, and streamlining business processes to improve overall operational efficiency."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which Hyperledger frameworks are commonly used by Hyperledger Blockchain Development companies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Leading Hyperledger Blockchain Development companies typically utilize frameworks like Hyperledger Fabric, Hyperledger Sawtooth, and Hyperledger Iroha. These frameworks provide flexibility, robust security, and scalability to create customized blockchain solutions for diverse business needs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How secure are Hyperledger Blockchain Development Services for enterprise applications?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hyperledger Blockchain Development Services are built with enterprise-grade security features including data encryption, strict access controls, and robust consensus mechanisms, ensuring that your blockchain applications remain secure and resilient against threats."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can Hyperledger Blockchain Development Services be customized to meet specific business requirements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Hyperledger Blockchain Development Services offer a high degree of customization. They allow businesses to design and implement blockchain solutions that address unique operational challenges and industry-specific needs, ensuring a perfect fit for your organizational goals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries benefit most from Hyperledger Blockchain Development Services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Industries such as finance, supply chain, healthcare, and government benefit greatly from Hyperledger Blockchain Development Services. These sectors demand robust security, enhanced transparency, and operational efficiency, which are effectively delivered by tailored blockchain solutions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I get started with a Hyperledger Blockchain Development company for my project?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "To get started with a Hyperledger Blockchain Development company, schedule a consultation to discuss your project requirements, evaluate the most suitable Hyperledger frameworks, and develop a customized roadmap for implementing secure and scalable blockchain solutions."
-        }
-      }
-    ]
-  };
 
 
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
 
     {
       "@context": "https://schema.org",
@@ -354,74 +250,6 @@ export default function Blockchain(props: any) {
       ]
     },
 
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -504,12 +332,12 @@ export default function Blockchain(props: any) {
   return (
     <>
       <Head>
-        <title>Hyperledger Blockchain Development Services | Enterprise Solutions
+        <title>Hyperledger Blockchain Development Services | Solutions
         </title>
 
         <meta
           name="description"
-          content=" Hyperledger blockchain development services for secure, permissioned enterprise networks with AI integration and scalability Hyperledger blockchain development solution."
+          content="Hyperledger blockchain development service for secure, permissioned enterprise networks with AI integration and scalability Hyperledger blockchain development solution."
         />
 
         <link
@@ -605,7 +433,7 @@ export default function Blockchain(props: any) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hyperledger Blockchain Development Company"
+          heading="Hyperledger blockchain development service"
           ptag="Comfygen delivers secure, scalable, and AI-enabled Hyperledger blockchain development services built for enterprise use. Our blockchain development team works with Hyperledger Fabric, Sawtooth, and Indy to create permissioned networks that prioritize privacy, transparency, and trust. By integrating AI capabilities, we help businesses improve automation, enable predictive insights, and strengthen fraud detection for smarter, data-driven decisions."
           li="Secure, permissioned Hyperledger frameworks for enterprises"
           li1="AI integration for intelligent automation and predictive analytics"

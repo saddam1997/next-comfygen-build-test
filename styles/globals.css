@@ -26,6 +26,10 @@ html {
   overflow-y: scroll;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 
 
 @keyframes move {
