@@ -299,12 +299,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-           Solana Token Development Company | Custom Tokens & Smart Contracts – Comfygen
+        Solana Token Development Service | Custom Tokens & Smart Contracts
 
         </title>
         <meta
           name="description"
-          content="Comfygen offers secure, scalable Solana token development services, including custom token creation, NFT development, smart contract integration, and high-performance solutions for DeFi and dApps."
+          content="Comfygen Provide Best Solana token development service, that including custom token creation, NFT development, smart contract integration, and high-performance solutions for DeFi and dApps."
         />
         <link
           rel="canonical"
@@ -373,9 +373,9 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Solana Token Development Service"
+          heading="Top-Notch Solana Token Development Service"
           subhead='Looking for top solana token development company?'
-          ptag="Comfygen provides premium Solana token development services to create secure, scalable, and high-performance tokens on the Solana blockchain. As a trusted Solana token development company, we help businesses leverage Solana’s speed, low-cost transactions, and scalability for DeFi platforms, NFTs, and decentralized applications. Our expert developers deliver customized token solutions, smart contract integration, and seamless deployment to meet the unique requirements of your project."
+          ptag="Comfygen provides top-notch solana token development service to create secure, scalable, and high-performance tokens on the Solana blockchain. As a trusted Solana token development company, we help businesses leverage Solana’s speed, low-cost transactions, and scalability for DeFi platforms, NFTs, and decentralized applications. Our expert developers deliver customized token solutions, smart contract integration, and seamless deployment to meet the unique requirements of your project."
           li="Custom Solana Token Creation"
           li1="Solana Smart Contract Development"
           li2="NFT Token Development on Solana"

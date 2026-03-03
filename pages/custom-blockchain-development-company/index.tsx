@@ -293,10 +293,10 @@ export default function Blockchain(props: any) {
   return (
     <>
       <Head>
-        <title>Custom Blockchain App Development Company | Tailored Blockchain Solutions</title>
+        <title>Custom Blockchain App Development Company | Secure DApp Solutions</title>
         <meta
           name="description"
-          content="Looking for a reliable custom blockchain app development company? We build secure, scalable, and efficient blockchain solutions including dApps, smart contracts, NFT marketplaces, and DeFi platforms."
+          content="Comfygen is a custom blockchain app development company building scalable, secure & transparent blockchain and decentralized applications for enterprises."
         />
         <meta
           name="keywords"
@@ -331,8 +331,8 @@ export default function Blockchain(props: any) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Custom Blockchain App Development Company"
-          ptag="As a trusted custom blockchain app development company, Comfygen builds and designs scalable, and transparent blockchain ecosystems that help businesses move faster and innovate securely. Our custom blockchain app development solutions are crafted around real business needs, from enterprise-level blockchain applications that improve financial transparency to decentralized applications that enable safe and reliable digital transactions."
+          heading="Best Custom Blockchain App Development Company"
+          ptag="As the best custom blockchain app development company, Comfygen builds and designs scalable, and transparent blockchain ecosystems that help businesses move faster and innovate securely. Our trusted custom blockchain app development solutions are crafted around real business needs, from enterprise-level blockchain applications that improve financial transparency to decentralized applications that enable safe and reliable digital transactions."
           li="Custom Blockchain Solution Development"
           li1="Enterprise Blockchain Application Development"
           li2="Smart Contract Design and Integration"

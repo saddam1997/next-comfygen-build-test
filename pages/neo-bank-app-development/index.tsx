@@ -252,11 +252,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Custom NeoBank App Development Company | Digital Banking
+          Trusted NeoBank App Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies is a custom NeoBank app development company delivering secure, scalable digital banking solutions for fintech startups and banks."
+          content="Comfygen is a trusted NeoBank app development company, delivering secure, scalable, and feature-rich digital banking apps. Build apps with real-time payments, seamless user experience, and advanced financial features."
         />
 
         <meta name="keywords" content="NeoBank app development, NeoBank software development, Digital banking app development, Fintech app development, Custom NeoBank app solutions, NeoBank MVP development, NPCI and Bank API Integration, Digital Wallet Integration" />
@@ -365,7 +365,7 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="NeoBank App Development Company"
+          heading="Trusted NeoBank App Development Company"
           ptag="Comfygen Technologies is a trusted NeoBank app development company delivering secure, scalable, and user-centric digital banking solutions. We specialize in NeoBank app development, fintech software engineering, and custom NeoBank app solutions with seamless API, NPCI, and digital wallet integrations to help startups and enterprises launch future-ready digital banking platforms faster."
           li="MVP to Enterprise Launch"
           li1="Custom NeoBank Solutions"

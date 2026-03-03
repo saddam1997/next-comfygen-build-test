@@ -220,13 +220,13 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-       Doctor Appointment App Development service for healthcare professionals
+       Best Doctor Appointment App Development Company | Comfygen
 
         </title>
 
         <meta
           name="description"
-          content="Comfygen is a trusted doctor appointment app development company offering secure, scalable telemedicine and online Appointment solutions for the healthcare industry."
+          content="Comfygen is the best doctor appointment app development company offering secure, scalable telemedicine and online Appointment solutions for the healthcare industry."
         />
 
 
@@ -276,7 +276,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Doctor Appointment App Development Company"
+          heading="Best Doctor Appointment App Development Company"
           ptag="Comfygen Technologies is a reliable and top-rated doctor appointment app development company, delivering online appointment app development solutions for the healthcare industry."
           ptag1="Comfyen’s custom doctor appointment app development service simplifies patient scheduling, allows real-time video consultations, provides e-prescriptions, and secures data. With AI, blockchain, and cloud integration, we help the healthcare industry to enhance patient experience and streamline operations. "
           btnName="Talk With Expert"

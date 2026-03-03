@@ -303,12 +303,12 @@ export default function Mobile(props: any) {
     <>
       <Head>
         <title>
-          Best Web Design Company in Jaipur, India | Custom Website Design Services
+          Best Web Design Company in Jaipur, India | Best Website Design Services
         </title>
 
         <meta
           name="description"
-          content="Comfygen is a top-rated web design company in Jaipur, India, offering responsive, SEO-friendly, and custom websites for startups, enterprises, and global brands. 300+ projects delivered."
+          content="Comfygen is a trusted web design company in Jaipur, India, offering responsive, and custom websites design Service for startups, enterprises, and global brands."
         />
         <meta
           name="keywords"
@@ -435,8 +435,9 @@ export default function Mobile(props: any) {
 
         <div className="">
           <HeroSectionForAllPages
-            heading="Web Design Company in Jaipur, India | Creative Web Designers"
-            ptag="Comfygen is a web design company in Jaipur, India offering creative, responsive, and user-friendly website design services for businesses. "
+            heading="Best Web Design Company in Jaipur"
+            subhead="We Build Websites That Win in Jaipur."
+            ptag=" Award-winning web design & development company in Jaipur crafting high-performance, SEO-ready websites for businesses across world. From startups to enterprises — we design digital experiences that convert."
             li="Custom & Creative Website Design Solutions"
             li1="Responsive, Mobile-First & User-Friendly Designs"
             li2="UI/UX-Focused for Better Engagement & Conversions"

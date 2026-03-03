@@ -355,10 +355,10 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Top On-Demand Home Services App Development Company | Comfygen</title>
+        <title>Top Home Services App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Looking for a top on-demand home services app development company? Comfygen delivers custom and white-label home services app development services with real-time booking, tracking, and secure payments for Android & iOS."
+          content="Top home services app development company offering real-time booking, tracking, secure payments, and scalable multi-vendor apps to boost customer engagement and business growth."
         />
         <meta
           name="keywords"
@@ -478,8 +478,8 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="On-Demand Home Services App Development Company"
-            ptag="Comfygen Technologies is a trusted on-demand home services app development company helping startups and enterprises build high-performing home service booking apps. We deliver custom, white-label home services app development services with real-time booking, live service tracking, secure payments, and scalable admin control—designed to increase customer engagement and business revenue."
+            heading="Best Home Services App Development Company"
+            ptag="Comfygen is a top-rated home services app development company helping startups and enterprises build high-performing home service booking apps. We deliver result-oriented custom home services app development services with real-time booking, live service tracking, secure payments, and scalable admin control—designed to increase customer engagement and business revenue."
             li="Real-time booking, tracking & notifications"
             li1="Multi-service & multi-vendor app architecture"
             li2="Secure payment gateway integration"

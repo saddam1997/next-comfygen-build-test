@@ -252,16 +252,11 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>
-          Best Mobile App Development Company in Jaipur, India | Comfygen
-
-
-
-        </title>
+        <title>Mobile App Development Company in Jaipur | Comfygen</title>
 
         <meta
           name="description"
-          content="Comfygen Technologies is the best mobile app development company in Jaipur. We provide custom mobile app development services for cross platforms to startups and enterprise-level companies."
+          content="Comfygen is a leading mobile app development company in Jaipur, delivering secure, scalable, and feature-rich iOS and Android apps with seamless UI/UX and advanced functionality."
         />
 
         <meta
@@ -388,7 +383,7 @@ export default function Mobile(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSection
-            heading="Best Mobile App Development Company in Jaipur"
+            heading="Award Winning Mobile App Development Company in Jaipur"
             ptag="Grow your business with smart, secure, and user-friendly mobile applications built to perform. Comfygen Technologies is a trusted mobile app development company in Jaipur delivering innovative Android, iOS, and cross-platform app development solutions that enhance customer experience and drive business success. We turn your ideas into high-quality Mobile apps with seamless functionality and beautiful design."
             li="Custom Android & iOS App Development"
             li1="Cross-Platform & Scalable Mobile Solutions"

@@ -280,10 +280,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Football Live Line API Provider - Comfygen</title>
+        <title>Best Football Live Line API Provider Company | Comfygen</title>
         <meta
           name="description"
-          content="Get real-time football scores, fixtures & stats with our Football Live Line API. Start integrating today and boost user engagement effortlessly!"
+          content="Get real-time football scores, fixtures, and stats with Comfygen’s Football Live Line API. Integrate instantly to boost engagement and user experience."
         />
         <meta name="keywords" content="Football Live Line API Development, Real-Time Football Score API, Live Football Odds API, Sports Betting API Integration, Fantasy Football API Development, Live Match Statistics API, White Label Sports API Solutions"/>
 
@@ -384,7 +384,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Football Live Line API "
+          heading="Football Live Line API Provide Company"
           subhead="Supercharge Your Sports App with Real-Time Football Data APIs"
           ptag1="Welcome to Comfygen – your one-stop destination for Football Live Line API Integration Services. We specialize in providing scalable, real-time, and developer-friendly football API integration solutions for startups, enterprises, and developers looking to build robust sports platforms."
           ptag2="Whether you're developing a fantasy sports application, a live football score app, or an advanced analytics dashboard, our football data APIs empower your digital products with live scores, match events, player stats, team insights, league data, and more. Experience the power of the fastest football API service trusted by leading fantasy platforms and gamming apps."

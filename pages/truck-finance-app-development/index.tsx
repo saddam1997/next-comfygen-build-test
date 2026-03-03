@@ -345,12 +345,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-         Custom Truck Finance App Development Company | Comfygen Technologies
+        Custom Truck Finance App Development Company | Comfygen
 
         </title>
         <meta
           name="description"
-          content="Truck finance app development company offering secure, scalable solutions for truck loans, EMI tracking, KYC integration, and digital lending for fleet businesses."
+          content="Truck finance app development company offering secure, scalable finance app development solutions for truck loans, EMI tracking, KYC integration, and digital lending for fleet businesses."
         />
         <link
           rel="canonical"
@@ -464,7 +464,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Truck Finance App Development Company"
+            heading="Best Truck Finance App Development Company"
             ptag="Build a secure, scalable, and user-friendly truck finance app with Comfygen Technologies. As a trusted truck finance app development company, we help lenders, fleet owners, and transport businesses digitize truck loans with seamless EMI management, real-time tracking, and secure KYC integrations. Our custom truck finance app solutions are designed to simplify loan processing, improve transparency, and accelerate business growth."
             li="Secure KYC, Banking & Document Integration"
             li1="Custom Truck Loan & Vehicle Finance App Development"

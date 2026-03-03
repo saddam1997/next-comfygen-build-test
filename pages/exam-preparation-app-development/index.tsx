@@ -298,11 +298,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-         Best Exam Preparation App Development Company
+         Exam Preparation App Development Company | Custom Test Prep App Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies delivers exam preparation app development services with smart assessments, analytics, and scalable digital learning solutions."
+          content="Comfygen offers expert exam preparation app development services with AI learning paths, mock tests, live classes, and performance analytics to build powerful NEET, JEE, UPSC & test prep apps."
         />
 
         <meta name="keywords" content="Exam Preparation App Development, Custom Test Prep App, NEET App Development, JEE Coaching App, UPSC Exam App, AI Learning App, Mock Test App, EdTech App Development, Live Class App, Student Performance Tracking App" />
@@ -391,12 +391,12 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top Exam Preparation App Development Company"
-          ptag="Comfygen Technologies specializes in building modern and engaging exam preparation applications that help students prepare effectively for exams. Our exam prep app development services focus on interactive learning, smart assessments, and performance-driven insights. From test series apps to full-featured exam preparation platforms, we deliver secure, scalable solutions tailored to EdTech startups, institutes, and enterprises seeking digital learning excellence."
-          li="Cross-platform mobile & web app solutions"
-          li1="Interactive learning with analytics & insights"
-          li2="Feature-rich exam preparation app development"
-          li3="Test series, quizzes & question bank management"
+          heading="Exam Preparation App Development Services That Empower Learners"
+          ptag="Comfygen is top exam preparation app development company, we builds high-performance exam preparation apps designed to improve learning outcomes. Our custom exam preparation app development services offer AI-powered personalized study paths, intuitive interfaces, live class integration, interactive mock tests, and real-time performance analytics. Launch a scalable exam prep app tailored to your educational goals."
+          li="AI-Powered Personalized Learning"
+          li1="Real-Time Performance Analytics"
+          li2="Interactive Mock Tests & Quizzes"
+          li3="Seamless Live Class Integration"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

@@ -130,12 +130,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>
-        Best Custom Finance App Development Company in India
-        </title>
+        <title>Best Finance App Development Company in India | Custom FinTech Solutions</title>
         <meta
           name="description"
-          content="Comfygen is a top finance app development company in India. We offer custom finance app development services, from mobile banking to investment apps, with secure and high-performance FinTech solutions."
+          content="Best finance app development company in India delivering custom FinTech apps, mobile banking solutions & secure investment platforms."
         />
         <link
           rel="canonical"
@@ -208,9 +206,9 @@ export default function Mobile(props: any) {
 
         <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Best Custom Finance App Development Company in India"
+            heading="Best Finance App Development Company in India"
             subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
-            ptag="Partner with a leading Finance app development company in India that has delivered top-notch finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
+            ptag="Partner with a leading Finance app development company in India that has delivered top-notch, fully functional finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
             li="10+ Trusted Fintech Developers"
             li1="Customized Fintech Solutions Delivered"
             li2="08+ years of experience in Development"

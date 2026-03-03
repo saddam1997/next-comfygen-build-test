@@ -154,13 +154,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>
-          Hire Data Scientists | Comfygen Data Science & Analytics Services
-
-        </title>
+        <title>Hire the Best Data Scientists in India | Dedicated Data Experts</title>
         <meta
           name="description"
-          content="Hire data scientists from Comfygen to turn complex data into actionable insights. Our experts deliver advanced analytics, predictive modeling, and data-driven solutions."
+          content="Hire the best data scientists in India from Comfygen. Build expert data teams for ML, AI & analytics to drive smarter, data-driven business decisions."
         />
         <meta
           name="keywords"
@@ -229,9 +226,10 @@ export default function Mobile(props: any) {
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages
-          heading="Hire Data Scientists"
+          heading="Hire the Best Data Scientists in India"
           subhead='Want to hire data scientists who can actually turn data into results? '
-          ptag="At Comfygen, we help businesses hire data scientists and build skilled data teams without delays or overhead. Our experts include data scientists, machine learning engineers, AI developers, data engineers, and Python developers with strong hands-on experience in statistical modeling, data mining, feature engineering, and exploratory data analysis. They manage everything from data cleaning and structuring to building ML models and delivering actionable insights that drive smarter decisions across industries like healthcare, fintech, retail, and SaaS."
+          ptag="Looking to hire data scientists in India who can truly transform raw data into measurable business outcomes? At Comfygen, we help companies build high-performing data teams with top-tier Indian talent—without delays or unnecessary overhead."
+          ptag1='Our experts include skilled data scientists, machine learning engineers, AI developers, data engineers, and Python developers with deep hands-on experience in statistical modeling, data mining, feature engineering, and exploratory data analysis. From data cleaning and structuring to developing advanced ML models and delivering actionable insights, our professionals empower businesses across healthcare, fintech, retail, and SaaS to make smarter, data-driven decisions.'
           li="Flexible hiring contracts with transparent pricing"
           li1="Strong adherence to data security and compliance practices"
           li2="Time zone and language alignment for smooth collaboration"

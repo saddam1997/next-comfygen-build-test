@@ -602,8 +602,8 @@ export default function rummy(props: any) {
     <>
       <>
         <Head>
-          <title>Enterprise Blockchain Development Company | Secure Solutions</title>
-          <meta name="description" content="Comfygen is an enterprise blockchain development company delivering secure, scalable blockchain solutions including private networks and DApps." />
+          <title>Trusted Enterprise Blockchain Development Company | Comfygen</title>
+          <meta name="description" content="Comfygen is trusted enterprise blockchain development company delivering secure, scalable blockchain solutions including private networks and DApps." />
 
           <meta name="keywords" content="enterprise blockchain development services, enterprise blockchain app development company, enterprise blockchain development company, enterprise blockchain development, enterprise blockchain services, enterprise blockchain consulting company USA, enterprise blockchain consulting, blockchain for enterprise, enterprise blockchain solutions, custom enterprise blockchain development, enterprise blockchain consulting company" />
 
@@ -680,7 +680,7 @@ export default function rummy(props: any) {
         <BlockChainHeader />
         <div className="overflow-hidden lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Enterprise Blockchain Development Service"
+            heading="Trusted Enterprise Blockchain Development Company"
             subhead='Secure, Scalable & Custom Blockchain Solutions for Enterprises'
             ptag="Comfygen Technologies is a trusted enterprise blockchain development company delivering secure, scalable, and customized blockchain solutions for modern businesses. We build enterprise-grade blockchain systems that streamline workflows, enhance data integrity, and ensure complete operational transparency. From private blockchain networks to full-scale DApp development, our expert team helps organizations adopt future-ready blockchain technology that drives innovation, reduces costs, and strengthens competitive advantage."
             li="Enterprise-Grade Blockchain Architecture"

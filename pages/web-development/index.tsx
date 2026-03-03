@@ -151,13 +151,10 @@ export default function Webdevelopment(props) {
   return (
     <>
       <Head>
-        <title>
-         Web Development Company in Jaipur | Custom Website Experts
-
-        </title>
+        <title>Web Development Company in Jaipur | Responsive & SEO-Optimized Websites</title>
         <meta
           name="description"
-          content="Comfygen is a web development company in Jaipur offering custom, responsive, and SEO-friendly websites to help businesses grow online."
+          content="Comfygen is an award-winning web development company in Jaipur building responsive, SEO-friendly websites and scalable web apps to boost engagement & conversions."
         />
         <link rel="canonical" href="https://www.comfygen.com/web-development" />
         <meta property="og:locale" content="en_US" />
@@ -272,8 +269,8 @@ export default function Webdevelopment(props) {
       <div className="overflow-hidden">
         <div className="">
           <HeroSectionForAllPages
-            heading="Web Development Company in Jaipur"
-            ptag="Comfygen is a trusted web development company in Jaipur delivering modern, easy-to-use, and performance-driven websites for businesses of all sizes. We build responsive, SEO-optimized websites and scalable web applications that help you attract more customers, improve engagement, and increase conversions. Whether you need a business website, eCommerce platform, or custom web development solution, our team delivers results that support your growth goals."
+            heading="Award Winning Web Development Company in Jaipur"
+            ptag="Comfygen is an Award Winning Web Development Company in Jaipurdelivering modern, easy-to-use, and performance-driven websites for businesses of all sizes. We build responsive, SEO-optimized websites and scalable web applications that help you attract more customers, improve engagement, and increase conversions. Whether you need a business website, eCommerce platform, or custom web development solution, our team delivers results that support your growth goals."
             ptag1=""
             li="Custom Website & Web App Development"
             li1="Responsive, Mobile-First Design"

@@ -237,12 +237,12 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-           NFT Token Development Company | Marketplace, Smart Contracts & Cross-Chain – Comfygen
+          NFT Token Development Service | Blockchain Solutions | Comfygen
 
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading NFT token development company delivering secure, scalable NFTs, smart contracts, NFT marketplaces, wallet integration, and cross-chain solutions on Ethereum, Polygon, Solana, and BSC."
+          content="Comfygen offers NFT token development services to create secure, scalable, and custom NFTs, marketplaces, and smart contracts for innovative blockchain projects."
         />
         <link
           rel="canonical"
@@ -332,7 +332,7 @@ export default function Ecommerce(props:any) {
       <div className="overflow-hidden lg:pt-[100px]">
 
         <HeroSectionForAllPages
-          heading="NFT Token Development Company"
+          heading="NFT Token Development Service"
           ptag="Comfygen is a leading NFT token development company, delivering secure, scalable, and feature-rich NFTs for businesses, creators, and entrepreneurs worldwide. We specialize in tokenizing digital art, virtual real estate, collectibles, in-game assets, and more. Using advanced blockchain technologies, our NFT solutions are unique, verifiable, and easily transferable."
           ptag1="Our NFT development teams in India and the USA provide end-to-end services for gaming, art, music, fashion, and real estate industries, focusing on transparency, security, and seamless functionality."
           li="Custom NFT Token Development"

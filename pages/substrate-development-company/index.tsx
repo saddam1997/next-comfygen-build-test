@@ -345,7 +345,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[100px]">
 
         <HeroSectionForAllPages
-          heading="Substrate Blockchain Development Services"
+          heading="Substrate Blockchain Development Company"
           ptag="Our Substrate blockchain development team builds scalable, custom blockchain solutions using the Substrate SDK and Rust. We create secure, future-ready dApps and blockchain networks tailored to complex business needs. With 200+ digital solutions and 50+ blockchain projects delivered, Comfygen brings proven Substrate and blockchain consulting expertise."
           li='Custom Substrate Blockchain Development'
           li1='Runtime & Pallet Development'

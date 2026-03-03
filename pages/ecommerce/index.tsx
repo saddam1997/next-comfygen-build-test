@@ -288,78 +288,6 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies",
       ],
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar  ",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        // "areaServed": "US, IN",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
 
     {
       "@context": "http://www.schema.org",
@@ -438,11 +366,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-           Custom eCommerce Development Company | Online Store Solutions
+          Top-Rated eCommerce Development Company | eCommerce development Solutuion
         </title>
         <meta
           name="description"
-          content="Looking for an eCommerce development company? Comfygen builds high-performance online stores, eCommerce apps, and web solutions tailored to your business growth."
+          content="Comfygen is a top-rated eCommerce development company delivering secure, scalable, and feature-rich online stores. Build custom eCommerce websites and apps to boost sales and user engagement."
         />
 
         <meta
@@ -519,7 +447,7 @@ export default function ClinicalApp(props: any) {
       <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Top-rated eCommerce development company for small businesses"
+          heading="Top-Rated eCommerce development company for Startups and enterprises "
           ptag="Comfygen is a trusted eCommerce development company helping businesses build secure, scalable, and high-performing online stores. We design and develop custom eCommerce websites, mobile apps, and web applications that deliver seamless shopping experiences and drive higher conversions."
           ptag1="Our expert eCommerce developers work with leading platforms like Shopify, Magento, and WooCommerce, integrating modern technologies such as AI-driven recommendations, advanced analytics, and secure payment systems to help your brand grow in competitive digital markets."
           li="Custom eCommerce Website & App Development"

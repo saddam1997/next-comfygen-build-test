@@ -237,12 +237,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>
-         Top Pharmacy App Development Company | Comfygen
-        </title>
+        <title>Best Pharmacy App Development Company | ePharmacy App Solutions</title>
         <meta
           name="description"
-          content="Get top-rated Pharmacy App Development Services from a leading Pharmacy App Development Company. We build secure, fast, and custom medicine delivery apps to grow your pharmacy business."
+          content="Best pharmacy app development company building secure ePharmacy & medicine delivery apps with ePrescriptions, payments & real-time tracking."
         />
         <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development ">
         </meta>
@@ -279,8 +277,9 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Premier Pharmacy App Development Company"
-          ptag="Grow your digital pharmacy with a trusted pharmacy app development company in India offering top-rated online pharmacy app development services. We build best-in-class online medicine ordering apps and websites that help customers order medicines online, upload prescriptions instantly, track deliveries in real-time, and make safe payments without hassle."
+          heading="Pharmacy App Development Company"
+          subhead="Custom ePharmacy & Medicine Delivery Solutions."
+          ptag="Grow your digital pharmacy with a Best pharmacy app development company in India offering top-rated online pharmacy app development services. We build best-in-class online medicine ordering apps and websites that help customers order medicines online, upload prescriptions instantly, track deliveries in real-time, and make safe payments without hassle."
           ptag1="Our top expert pharmaceutical software development team creates the best pharmacy apps like PharmEasy and Apollo that improve your business operations, increase customer satisfaction, and ensure complete data security and compliance."
           li="Secure online medicine ordering"
           li1="AI-based medicine suggestions"

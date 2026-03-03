@@ -113,8 +113,8 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Hockey Live Line API Provider – NHL & Global Stats</title>
-        <meta name="description" content="Get fast, reliable Hockey Live Line APIs with NHL & global match coverage, 6000+ integrations, expert developers & 99.9% uptime. Start your integration today." />
+        <title>Best Custom Banking Software Development Services</title>
+        <meta name="description" content="We provide leading custom banking software development services in India to help banks and fintechs go digital. Comfygen Technologies offers blockchain based finance banking software solutions." />
         <meta name="keywords" content="Hockey Live Line API, NHL API, Live Hockey Scores, Hockey Stats API, Real-time Hockey Data" />
         <link rel="canonical" href="https://www.comfygen.com/hockey-live-line-api-development" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -189,9 +189,13 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Hockey Live Line API "
-          ptag="Empower Your Sports App with Real-Time Hockey Data
-          Build fast, reliable, and scalable sports platforms using our Hockey Live Line API solutions. As a leading Hockey Live Line API provider, we specialize in delivering lightning-fast match updates, live scores, and play-by-play commentary for National Hockey League (NHL), Hockey Pro League, and global tournaments. Whether you're a fantasy sports operator, sports broadcaster, or app developer, our Hockey Data Feed API helps you stand out in the competitive sports tech space."
+          heading="Best Banking Software Development services"
+          ptag="Comfygen Technologies is a top banking software development company that creates secure, scalable, and future-ready finance banking software solutions. We build everything from core banking systems and AI-powered mobile banking apps to blockchain-enabled platforms and cloud-native digital banking solutions."
+          ptag1="As a leading custom banking software development services India, we help banks, credit unions, and fintech startups modernize their operations, improve customer experience, and accelerate digital transformation with next-gen technology."
+          li="Core Banking Software Development"
+          li1="Mobile & Internet Banking App Development"
+          li2="AI & Automation Solutions"
+          li3="Blockchain & Secure Payment Systems"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

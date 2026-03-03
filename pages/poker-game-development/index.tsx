@@ -142,76 +142,8 @@ const technologyData = [
   },
 ];
 
-const Organization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen Technologies",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "contactOption": "WhatsApp",
-    "telephone": "+91 9587867258",
-    // "areaServed": "US, IN",
-    "email": "sales@comfygen.com",
-    "areaServed": ["IN", "US", "CA", "GB"],
 
-    "availableLanguage": "en, in"
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies"
-  ]
-}
 
-const LocalBusiness = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Comfygen Technologies",
-  "image": "https://www.comfygen.com/svg/Logo1.svg",
-  "@id": "Comfygen Technologies",
-  "url": "https://www.comfygen.com/",
-  "telephone": "+91-958-786-7258",
-  "priceRange": "$",
-  "address": [{
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-    "addressLocality": "Jaipur",
-    "postalCode": "302006",
-    "addressCountry": "IN"
-  }, {
-    "@type": "PostalAddress",
-    "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-    "addressLocality": "Toronto",
-    "postalCode": "M1G3S7",
-    "addressCountry": "Canada"
-  }
-  ],
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "00:00",
-    "closes": "23:59"
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://www.comfygen.com/"
-  ]
-}
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -327,10 +259,10 @@ export default function PokerGame(props) {
   return (
     <>
       <Head>
-        <title>No. 1 Poker Game Development Company In India & The USA</title>
+        <title>Poker Game Development Company in India and USA | Comfygen</title>
         <meta
           name="description"
-          content="Comfygen is the No.1 poker game development company in India and the USA, offering customized poker game development services. Hire expert poker game developers for scalable, secure, and engaging poker platforms. Get in touch today!"
+          content="Comfygen is the No.1 poker game development company in India and the USA, offering customized poker game development services. Hire comfygen developers for scalable, secure, and engaging poker platforms."
         />
         <link
           rel="canonical"
@@ -441,14 +373,7 @@ export default function PokerGame(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrum) }}
@@ -468,7 +393,7 @@ export default function PokerGame(props) {
       <div className="overflow-hidden">
         <div className="lg:pt-[90px]">
           <HeroSectionForAllPages
-            heading="No. 1 Poker Game Development Company"
+            heading="Poker Game Development Company In India & The USA"
             ptag="Comfygen is the leading poker game development company in India and the USA, catering to excellent and user-friendly app solutions with a seamless navigational experience. We have been developing super-fantastic games for years and delivering robust and engaging apps. Our talented and skilled game developers are renowned to build authentic applications with ground-breaking designs. We provide seamless poker game development services with advancements and next level techniques."
             btnName="Talk With Expert"
             btnLink="/contact-us"

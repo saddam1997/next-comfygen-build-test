@@ -288,13 +288,14 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Sports Live Line API Provider | Real-Time Cricket, Football & More –
-          Comfygen
+           
+ 	
+Best Sports Live Line API Provider Company | Real-Time Sports data
         </title>
 
         <meta
           name="description"
-          content="Comfygen is your trusted Sports Live Line API provider, delivering lightning-fast real-time data for cricket, football, NBA, tennis & more. Hire expert API developers today."
+          content="Comfygen is Sports Live Line API provider company, delivering lightning-fast real-time data for cricket, football, NBA, tennis & more. Hire expert API developers today."
         />
         <link
           rel="canonical"
@@ -491,7 +492,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden pt-16">
 
           <HeroSectionForAllPages
-            heading="Sports Live Line API Provider"
+            heading="Sports Live Line API Provider Company"
             subhead="Your Trusted Cricket Live Line Api  Provider Company In India & The USA."
             ptag="Looking for a reliable Sports Live Line API provider that delivers lightning-fast, real-time sports data? Comfygen has you covered. With over 10 years of experience in a high-performance software provider, we create custom Live Line APIs designed for fantasy apps, sports platforms, and live score dashboards. Our APIs are lightweight, fast, secure, and easy to integrate across mobile and web platforms."
             ptag1="As a leading Live Line API provider company, we cover all major sports—cricket, football, tennis, basketball, horse racing, and more. Every second counts in live sports, and our APIs ensure your users get accurate data instantly."

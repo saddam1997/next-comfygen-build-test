@@ -61,16 +61,6 @@ const BlogSection = dynamic(
 );
 
 
-// import NewSection from "../Newcomponet/comman/NewSection"
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ModelsSec from '../Newcomponet/SectionCompoent/ModelsSec'
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
 
 
 import {
@@ -245,11 +235,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Ethereum Token Development Services | Comfygen
+          Top Ethereum Token Development Company
         </title>
         <meta
           name="description"
-          content="Comfygen provides secure and scalable Ethereum token development services, including ERC20, ERC721, ERC1155 tokens, smart contract integration, ICO & DeFi token launches, and wallet support."
+          content="Comfygen is a top Ethereum Token Development Company offering secure, scalable ERC20, ERC721, and ERC1155 token development services. Get expert smart contract and tokenomics design."
         />
         <link
           rel="canonical"
@@ -314,12 +304,12 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[100px]">
 
         <HeroSectionForAllPages
-          heading="Ethereum Token Development Services"
-          ptag="Comfygen is a leading Ethereum token development company, specializing in creating secure, scalable, and fully customized tokens on the Ethereum blockchain. We offer complete token development solutions, including ERC20, ERC721, and ERC1155 tokens, ideal for DeFi platforms, NFTs, ICOs, and other blockchain projects. Our team ensures robust smart contract integration, token security, and smooth deployment. From utility tokens to NFTs and multi-token ecosystems, we deliver high-performance, compliant Ethereum tokens designed to meet your business goals."
-          li="Development of ERC20, ERC721, and ERC1155 Tokens"
-          li1="Smart Contract Creation & Security Audits"
-          li2="ICO and DeFi Token Launch Services"
-          li3="Wallet Integration and Technical Support"
+          heading="Leading Ethereum Token Development Company"
+          ptag="Reduce risks and accelerate your Web3 transformation with our enterprise-grade Ethereum token development services. We build secure, high-performance ERC-20, ERC-721, and ERC-1155 tokens tailored for businesses, startups, and global blockchain ecosystems. Our expert Solidity developers ensure seamless deployment, optimized gas usage, and future-ready token architecture."
+          li="ERC-20 Token Development"
+          li1="ERC-721 NFT Development"
+          li2="ERC-1155 Multi-Token Development"
+          li3="Smart Contract Development"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
