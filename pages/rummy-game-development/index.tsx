@@ -171,51 +171,7 @@ export default function rummy(props:any) {
 
   const [showContent, setShowContent] = useState(false);
 
-  const ratingData = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    brand: {
-      "@type": "Brand",
-      name: "Rummy Game App Development Company | Rummy Game Development Company",
-    },
-    description:
-      "Comfygen is your dependable partner for the creation of a top Rummy app development company in UK, USA and UAE, We specialize in offering top-notch rummy game app developing services as a reputed rummy game development company in USA. We provide specialized rummy game app development solutions because we have a thorough understanding of the Rummy game's popularity and complexities.",
-    image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-    name: "Custom and Readymade Rummy Game App Development Company | Comfygen",
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "5",
-        },
-        author: {
-          "@type": "Person",
-          name: "Mr. Saddam Husen",
-        },
-      },
-      {
-        "@type": "Review",
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: "4.9",
-        },
-        author: {
-          "@type": "Person",
-          name: "Mr. Saddam Husen",
-        },
-      },
-    ],
-    offers: {
-      "@type": "Offer",
-      url: "https://www.comfygen.com/rummy-game-development",
-      priceCurrency: "USD",
-      seller: {
-        "@type": "Organization",
-        name: "Comfygen Private Limited",
-      },
-    },
-  };
+
   const jsonLdData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -376,11 +332,11 @@ export default function rummy(props:any) {
     <>
       <Head>
         <title>
-          No. 1 Rummy Game App Development Company In India & The USA | Comfygen
+          Best Rummy Game App Development Company In India and USA | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen, a reliable Rummy Game Development Company in India and the USA, delivers high-quality and feature-rich card game development solutions for iOS, Android, and the Web platform. Transform your gaming vision into reality with our expert development services."
+          content="Comfygen is a Top Rated Rummy Game Development Company in India and USA, delivers high-quality and feature-rich game development solutions for iOS, Android, and the Web platform."
         />
         <link
           rel="canonical"
@@ -531,7 +487,7 @@ export default function rummy(props:any) {
       <div className="overflow-hidden">
         <div className="">
           <HeroSectionForAllPages
-            heading="Rummy Game Development Company  "
+            heading="Trusted Rummy Game Development Company"
             ptag="Meet the expertised online game app developers to build agile rummy game applications. Comfygen is specialized in building realistic rummy game applications  with the integrations of some latest advancements and tech trends. The clientele base will receive a range of gaming development solutions; such as Point Rummy, Pool Rummy, or Deal Rummy. Being the one best leading rummy game app development company In Canada & The USA; we believe in elevating one’s experience during their gameplay with some exciting stages. Be ready to be the dominated competitor to other gaming development platforms, and accelerate with your application in the marketplace."
             btnName="Talk With Expert"
             btnLink="/contact-us"

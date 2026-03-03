@@ -105,11 +105,11 @@ export default function MultiChain(props: any) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <title>
-          Flutter App Development Company in India | Hire Flutter Developers
+         Best Flutter App Development Company in India | Custom Cross-Platform Apps
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Flutter app development company in India delivering scalable, secure cross-platform apps for Android and iOS with expert Flutter developers."
+          content="Comfygen is the best Flutter app development company in India building secure, scalable cross-platform apps for Android, iOS & web."
         />
         <link
           rel="canonical"
@@ -151,8 +151,8 @@ export default function MultiChain(props: any) {
       </LazyLoad>
       <div className="overflow-hidden">
         <HeroSectionForAllPages
-          heading="Flutter App Development Company in India "
-          ptag="Comfygen is a trusted Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market."
+          heading="Best Flutter App Development Company in India"
+          ptag="Comfygen is the Best Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market."
           ptag1="We focus on custom Flutter app development that supports long-term growth, smooth UI/UX, and seamless performance across devices. From MVPs to enterprise-grade applications, our Flutter solutions are designed to meet your business goals and evolving digital needs."
           li="Custom Cross-Platform App Development Services"
           li1="Scalable, Secure & High-Performance Flutter Apps"

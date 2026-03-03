@@ -274,10 +274,10 @@ export default function Ecommerce(props: any) {
   return (
     <>
       <Head>
-        <title>Basketball Live Line API | Real-Time Score & Stats</title>
+        <title>Basketball Live Line API Development Company | Real-Time Score API</title>
         <meta
           name="description"
-          content="Get real-time scores, player stats & match updates with our Basketball Live Line API. Scalable, fast & secure integration for sports platforms."
+          content="Comfygen is a leading Basketball Live Line API development company offering real-time scores, match stats & scalable sports data API integration."
         />
         <meta
           name="keywords"
@@ -386,8 +386,13 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSection
-          heading="Basketball Live Line API"
-          ptag="Bring real-time excitement to your platform with our Basketball Live Line API solutions. At Comfygen, we offer scalable and developer-friendly basketball data APIs that deliver live scores, match stats, player updates, and game insights straight to your app or website. Whether you’re powering a sports portal, analytics dashboard, our APIs ensure ultra-low latency, high availability, and accurate basketball coverage across global leagues and events. Experience seamless Basketball Score API integration backed by expert support and flexible data customization. Start delivering real-time game action your users will love."
+          heading="Bring Real-Time Basketball Action to Your Platform"
+          subhead=""
+          ptag="Comfygen is a leading Basketball Live Line API development company, delivering scalable and developer-friendly APIs that provide live scores, player stats, match updates, and game insights directly to your app or website."
+          li="Ultra-low latency and high availability"
+          li1="Accurate coverage of global leagues and events"
+          li2="Flexible data integration & customization"
+          li3="Expert support for seamless API deployment"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           bgImage="https://www.comfygen.com/comfygen-images/basketball-live-line-api-development/basketball-api-hero.webp"

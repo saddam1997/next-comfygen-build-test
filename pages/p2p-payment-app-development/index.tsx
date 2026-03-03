@@ -193,10 +193,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best P2P Payment App Development Company | Comfygen</title>
+        <title>Best P2P Payment App Development Company | Secure Fintech Solutions</title>
         <meta
           name="description"
-          content="Best P2P payment app development company in India offering secure, scalable, and real-time peer-to-peer payment app development solutions for fintech startups and businesses."
+          content="Comfygen offers secure P2P payment app development servcie with real-time transfers, mobile wallet integration, and scalable fintech solutions."
         />
         <meta
           name="keywords"
@@ -302,8 +302,9 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="P2P Payment App Development Company"
-          ptag="Comfygen Technologies is a trusted P2P payment app development company delivering secure, scalable, and feature-rich peer-to-peer payment app development solutions for fintech startups, enterprises, and banks. We design and develop advanced P2P payment applications that enable real-time money transfers, mobile wallet integration, and seamless digital transactions."
+          heading="Best P2P Payment App Development Service"
+          subhead="Build Secure, Scalable & Real-Time Peer-to-Peer Payment Applications"
+          ptag="Comfygen delivers advanced P2P payment app development service for fintech startups, banks, and enterprises. We build secure, feature-rich peer-to-peer payment apps with real-time money transfers, mobile wallet integration, multi-layer security, and seamless digital transactions to power the future of fintech."
           ptag1='Our fintech experts utilize cutting-edge technologies, secure APIs, and industry-leading security standards to develop reliable P2P payment apps. These apps are designed to enhance user experience, ensure regulatory compliance, and drive business growth within the digital payments ecosystem.'
           li="Custom P2P payment app development"
           li1="Cross-platform, cloud-native mobile solutions"

@@ -446,11 +446,12 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>NFT Wallet Development Company | Secure & Scalable NFT Wallets
+        <title> 
+ 	Best NFT Wallet Development Company | Secure & Scalable NFT Wallets
         </title>
         <meta
           name="description"
-          content="Comfygen, best NFT wallet development company, builds secure, scalable, and feature-rich NFT wallets with multi-chain support, user-friendly portfolio management, and white-label customization for startups and enterprises."
+          content="Comfygen is the best NFT wallet development company, delivering secure, scalable, and feature-rich wallets for managing, and trading NFTs. Get blockchain-integrated wallets with advanced security."
         />
         <link
           rel="canonical"
@@ -506,7 +507,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="NFT Wallet Development Company"
+            heading="Best NFT Wallet Development Company"
             ptag="Comfygen, The Best NFT wallet development company, builds secure, scalable, and feature-rich NFT Crypto wallets that allow users to store, trade, and manage digital assets. Our NFT Wallet development solutions provide top-level security, multi-chain NFT wallet support across all blockchain platforms like Ethereum, Solana, and Polygon, user-friendly portfolio management on both web and mobile platforms, and white-label customization for startups and enterprises seeking fast and reliable NFT wallet deployment."
             li="Enterprise-grade NFT wallet security "
             li1="Multi-chain NFT wallet development "

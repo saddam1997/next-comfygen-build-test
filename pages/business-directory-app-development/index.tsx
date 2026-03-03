@@ -133,81 +133,6 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-958-786-7258",
-      priceRange: "$",
-      address: [
-        {
-          "@type": "PostalAddress",
-          streetAddress:
-            "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          addressLocality: "Jaipur",
-          postalCode: "302006",
-          addressCountry: "IN",
-        },
-        {
-          "@type": "PostalAddress",
-          streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-          addressLocality: "Toronto",
-          postalCode: "M1G3S7",
-          addressCountry: "Canada",
-        },
-      ],
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "00:00",
-        closes: "23:59",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/",
-      ],
-    },
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -237,8 +162,7 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies"
 
       ]
-    }
-    ,
+    },
 
     {
       "@context": "http://www.schema.org",
@@ -252,9 +176,7 @@ export default function ClinicalApp(props: any) {
         "ratingValue": "4.9",
         "reviewCount": "400"
       }
-    }
-    ,
-
+    },
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
@@ -270,8 +192,7 @@ export default function ClinicalApp(props: any) {
         "item": "https://www.comfygen.com/business-directory-app-development"
 
       }]
-    }
-    ,
+    },
 
     {
       "@context": "https://schema.org",
@@ -325,10 +246,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Business Directory App Development Company | Comfygen</title>
+        <title>Trusted Business Directory App Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Comfygen is a trusted business directory app development company offering custom business listing app solutions with smart search, maps, reviews, and scalable features."
+          content="Comfygen is the best business directory app development company offering custom business listing app development solutions with smart search, maps, reviews, and scalable features."
         />
 
         <meta
@@ -402,7 +323,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top Business Directory App Development Company"
+            heading="Best Business Directory App Development Company"
             ptag="Build a scalable and high-performance business listing app that helps users discover nearby businesses effortlessly. As a trusted business directory app development company, we create custom location-based directory apps for startups and enterprises, inspired by platforms like Yelp, Justdial, and IndiaMART. Our directory app development solutions are secure, feature-rich, and designed to drive real user engagement and business growth."
             li="Smart business listings with advanced filters"
             li1="Location-based search & map integration"

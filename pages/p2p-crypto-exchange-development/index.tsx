@@ -323,12 +323,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          P2P Crypto Exchange Development Company | Comfygen
+         P2P Crypto Exchange Development Company | Secure Trading Platform
 
         </title>
         <meta
           name="description"
-          content="Comfygen provides secure, scalable P2P crypto exchange development services, including multi-currency trading, escrow systems, KYC/AML integration, and custom or white-label platforms for startups and enterprises."
+          content="Comfygen is the best P2P crypto exchange development company building secure, scalable & decentralized crypto trading platforms with high liquidity."
         />
         <link
           rel="canonical"
@@ -437,7 +437,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="P2P Crypto Exchange Development Service"
+          heading="P2P Crypto Exchange Development Company"
           subhead='Looking for the best P2P crypto exchange development company?'
           ptag="Comfygen is a leading P2P crypto exchange development company, delivering secure, decentralized platforms tailored for modern trading. We help startups, enterprises, and crypto businesses launch feature-rich exchanges where users can trade cryptocurrencies directly, without intermediaries."
           ptag1="Our blockchain experts build scalable P2P architectures with high liquidity, advanced security, and seamless user experiences. Whether you need a custom solution or a white-label platform, we provide end-to-end development and deployment services."

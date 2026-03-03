@@ -333,12 +333,12 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-       Top-Rated Solana Blockchain Development Service | Comfyen
+     Best Solana Blockchain Development Company| Comfygen
 
         </title>
         <meta
           name="description"
-          content=" Comfygen is a leading Solana blockchain development company providing Solana blockchain development service for DApps, NFT marketplaces, DeFi platforms. "
+          content="Comfygen is the best solana blockchain development company providing Solana blockchain development service for DApps, NFT marketplaces, DeFi platforms."
         />
 
         {/* keywords */}
@@ -438,7 +438,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Solana Blockchain Development Company"
+          heading="Best Solana Blockchain Development Company"
           ptag="Comfygen is the best Solana blockchain development company, specializing in providing blockchain app development solutions for businesses worldwide. We leverage Solana's high-speed, low-cost infrastructure to deliver scalable, secure, and innovative blockchain applications designed according to your business requirements. With proven expertise in Solana blockchain development, we help organizations take advantage of the fastest blockchain networks. Our team has experienced blockchain developers that combines technical expertise with industry best practices to create ana blockchain solutions that drive real business value."
           ptag1=""
           li="Expert Solana DApp Development"

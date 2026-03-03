@@ -273,8 +273,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title> Best Tutor App Development Company | Comfygen</title>
-        <meta name="description" content="Comfygen Technologies is a top tutor app development company delivering live tutoring, smart scheduling, and scalable solutions to digitize education." />
+        <title>Tutor App Development Company | Online Learning & Education Apps</title>
+        <meta name="description" content="Comfygen is a top tutor app development company, creating secure, scalable, and interactive education apps with live classes, smart scheduling, and AI-based learning." />
         <link rel="canonical" href="https://www.comfygen.com/tutor-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -310,8 +310,8 @@ export default function ClinicalApp(props: any) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name='og:title' content='Top-Rated On-Demand Tutor App Development Company' />
         <meta name='og:type' content='website' />
-      
-      
+
+
         <meta name='og:site_name' content='Comfygen Private Limited' />
         <meta name='og:description' content='Comfygen is a top-rated on-demand tutor app development company, offering custom tutor booking app development solutions with AI, AR/VR, and blockchain integration to enhance learning experiences.' />
         <meta name='fb:page_id' content='110909321596135' />
@@ -341,8 +341,10 @@ export default function ClinicalApp(props: any) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Tutor app development company"
-          ptag="Comfygen is a trusted tutor app development company providing advanced featured reach and scalable tutor app development solutions for the digital education industry that  include EdTech startups, institutes, teachers and educators. We develop feature-rich tutor apps that enable one-to-one tutoring, live classes, scheduling, and secure payments. Our best tutor mobile app development expert focuses on intuitive UI/UX, real-time communication, and performance-driven architecture to create engaging learning experiences. From on-demand tutor apps to complete online tutoring platforms."
+          subhead=" Build Secure, Scalable & Real-Time Peer-to-Peer Payment Applications"
+
+          heading="Best Tutor app development company"
+          ptag="Comfygen delivers advanced P2P payment app development service for fintech startups, banks, and enterprises. We build secure, feature-rich peer-to-peer payment apps with real-time money transfers, mobile wallet integration, multi-layer security, and seamless digital transactions to power the future of fintech."
           li="Custom tutor app development for web & mobile"
           li1="Live video classes and real-time chat integration"
           li2="Tutor scheduling, session booking & management"

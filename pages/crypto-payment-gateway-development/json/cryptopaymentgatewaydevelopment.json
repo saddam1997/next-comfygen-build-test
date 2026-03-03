@@ -69,7 +69,7 @@
     },
     {
       "title": "Multi-Currency Wallet Integration",
-      "description": "Our developers integrate secure, multi-currency crypto wallets supporting both hot and cold storage to handle diverse tokens and provide real-time transaction updates and user wallet management. We support stablecoins like <a href='/stablecoin' class='text-white font-semibold underline'>USDT, USDC, BUSD</a> to reduce volatility. For details, check our comprehensive guide <a href='https://www.comfygen.com/blog/stablecoin-development-a-comprehensive-guide-to-the-future-of-digital-finance/' target='_blank' rel='noopener noreferrer' class='text-white font-semibold underline'>here</a>.",
+      "description": "Our developers integrate secure, multi-currency crypto wallets supporting both hot and cold storage to handle diverse tokens and provide real-time transaction updates and user wallet management. We support stablecoins like USDT, USDC, BUSD to reduce volatility. For details, check our comprehensive guide <a href='https://www.comfygen.com/blog/stablecoin-development-a-comprehensive-guide-to-the-future-of-digital-finance/' target='_blank' rel='noopener noreferrer' class='text-white font-semibold underline'>here</a>.",
       "features": [
         "Hot & cold wallet integration (custodial/non-custodial)",
         "Multi-asset support: BTC, ETH, SOL, BNB, TRX, USDT, etc.",

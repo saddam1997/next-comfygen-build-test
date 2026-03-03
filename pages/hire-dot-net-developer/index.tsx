@@ -89,11 +89,11 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Hire Dedicated .NET Developers in India | ASP.NET & .NET Core Experts
+         Hire Dedicated .NET Developers | ASP.NET & .NET Core Experts | Comfygen
         </title>
         <meta
           name="description"
-          content="Looking to hire .NET developers in India? Comfygen provides skilled ASP.NET and .NET Core developers for secure, high-performance business applications."
+          content="Hire skilled .NET developers from India, Comfygen. Our ASP.NET and .NET Core experts build secure, scalable, and high-performance business applications tailored to your needs."
         />
         <link
           rel="canonical"
@@ -172,7 +172,7 @@ export default function Mobile(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Hire Best .NET Developers in India"
+          heading="Hire Best .NET Developers From India"
           ptag="Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs."
           ptag1="From custom .NET application development to system integration and modernization, our full-stack .NET developers deliver robust solutions using ASP.NET, .NET Core, MVC, and cloud-based architectures. Partner with Comfygen to streamline workflows, enhance security, and drive long-term growth."
           li="Expert .NET Developers for Hire"

@@ -403,10 +403,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Stock Trading App Development Company</title>
+        <title>Best Stock Trading App Development Service</title>
         <meta
           name="description"
-          content="Comfygen is a trusted stock trading app development company that builds secure, real-time, and AI-driven trading apps. We create stock, crypto, and hybrid platforms tailored for fintech startups and brokerages."
+          content="Comfygen provide stock trading app development service that builds secure, real-time, and AI-driven trading apps. We create stock, crypto, and hybrid platforms tailored for fintech startups and brokerages."
         />
 
         <meta
@@ -557,7 +557,7 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
           <HeroSectionForAllPages
-            heading="Stock Trading App Development Company"
+            heading="Stock Trading App Development Service"
             ptag="Looking to launch your own stock trading app? Comfygen is a leading stock trading app development company offering custom-built, secure, and easy-to-use trading platforms. Our expert team delivers smart stock trading app development services that help you stay ahead—whether you're a startup or a large brokerage."
             ptag1="We create apps with real-time stock updates, AI-powered insights, smooth performance, and strong security. You’ll get a modern, user-friendly app your customers will love—backed by our 10+ years of experience in fintech."
             li="Real-Time Trading Features"

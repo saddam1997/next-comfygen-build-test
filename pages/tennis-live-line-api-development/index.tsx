@@ -272,10 +272,10 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Tennis Live Line API | Real-Time Tennis Score API Provider</title>
+        <title>Tennis Live Line API Development Company| Real-Time Tennis Score API Provider</title>
         <meta
           name="description"
-          content="Get real-time tennis scores and data with our Tennis Live Line API. Seamless integration, accurate updates, and customizable solutions for your platform."
+          content="Get real-time tennis scores and data with our Tennis Live Line API Development Service. Seamless integration, accurate updates, and customizable solutions for your platform."
         />
         <meta name="keywords" content="Tennis Live Line API Development, Real-Time Tennis Score API, Live Tennis Odds API, Sports Betting API Integration, Fantasy Sports API Development, Live Match Statistics API, White Label Sports API Solutions" />
 
@@ -377,7 +377,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Tennis Live Line API"
+          heading="Tennis Live Line API Development Company"
           subhead="Real-Time Tennis Live Line API for Developers and Businesses"
           ptag="Experience the power of Fast Tennis Live Line API that delivers instant score updates, player stats, and match events. At Comfygen, we specialize in developing and integrating highly efficient Tennis API Data Feeds for businesses, sports apps, and platforms looking to provide real-time tennis data."
           ptag1="Whether you're building a live score app, live tennis platform, or an analytics dashboard, our solution offers reliable, scalable, and low-latency data access. With support for API for Tennis, seamless integration, and global event coverage, our APIs can transform your digital product experience."

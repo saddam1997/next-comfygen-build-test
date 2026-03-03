@@ -235,80 +235,6 @@ export default function Ecommerce(props) {
         "reviewCount": "450"
       }
     },
-
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    }
-    ,
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-    ,
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -338,8 +264,6 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -417,7 +341,7 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          CryptoCurrency MLM software development Service
+          CryptoCurrency MLM Software Development Service | Comfygen
         </title>
         <link
           rel="canonical"
@@ -541,7 +465,7 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[100px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="CryptoCurrency MLM software development Company"
+          heading="CryptoCurrency MLM software development Service"
           ptag="Comfygen is a premier CryptoCurrency MLM software development company, delivering scalable, secure, and fully customizable CryptoCurrency multi-level marketing solutions powered by blockchain technology. Our Blockchain development expert team develops software for token-based MLM platforms, smart contract integration, and automated commission management to help businesses maximize ROI. Whether you’re a startup or an established enterprise, our CryptoCurrency MLM software development solutions ensure transparency, security, and efficiency in crypto MLM operations."
           li="Custom Crypto MLM Software Development"
           li1="Blockchain-Powered Smart Contract Integration"

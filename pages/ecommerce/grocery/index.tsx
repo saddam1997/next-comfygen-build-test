@@ -571,11 +571,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Grocery Delivery App Development Company. Readymade Grocery app provider
+          Grocery Delivery App Development Company | Ready-Made Grocery App
         </title>
         <meta
           name="description"
-          content="leading on-demand grocery delivery app development company, Get readymade grocery delivery app source code for crossplatform developed by dedicated developers."
+          content="Comfygen leading on-demand grocery delivery app development company, Get Ready-Made grocery delivery app source code for custom cross platform development solution."
         />
 
         <meta
