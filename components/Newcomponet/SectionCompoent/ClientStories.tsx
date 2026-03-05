@@ -46,7 +46,7 @@ export default function ClientStories() {
   const testimonials = [
     {
       videoUrl: "https://www.youtube.com/watch?v=kedGnt6T-DI",
-      thumbnail: "https://www.comfygen.com/comfygen-images/thumbnail/bookmytuterappreviewthumbnail.webp",
+      thumbnail: "https://www.comfygen.com/comfygen-images/ClientStories/testimonial.webp",
       clientName: "Nitesh Rajput",
       company: "Book My Tuter",
     },

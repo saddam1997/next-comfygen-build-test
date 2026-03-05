@@ -99,44 +99,8 @@ const Process = [
 
 
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebPage",
-  "@id": "#WebPage",
-  "url": "https://www.comfygen.com/handball-live-line-api-development",
-  "name": "Boxing Live Line API"
-
-};
 
 
-const organizationData = {
-  "@context": "https://schema.org/",
-  "@type": "Organization",
-  "@id": "#Organization",
-  "url": "https://www.comfygen.com/",
-  "legalName": "Comfygen Technologies",
-  "name": "Comfygen",
-  "description": "Comfygen provides expert Boxing Live Line API with real-time scores, odds, stats, and fight updates. Get boxing API integration for gamming, apps, and sports websites.",
-  "image": "https://www.comfygen.com/svg/Logo1.svg",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "telephone": "9587867258",
-  "email": "sales@comfygen.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",
-    "addressLocality": "Ajmer Rd",
-    "addressRegion": "Jaipur, Rajasthan",
-    "addressCountry": "India",
-    "postalCode": "302006"
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen",
-    "https://www.youtube.com/@ComfygenBusiness",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited/",
-    "https://x.com/comfygentech"
-  ]
-};
 
 
 const productData = {
@@ -371,39 +335,8 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/boxing-live-line-api/boxing-live-line-api-og-image.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Boxing Live Line API",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "SportsApplication",
-            offers: {
-              "@type": "Offer",
-              price: "Contact Us - 9587867258",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock"
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "300"
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen"
-            }
-          })}
-        </script>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}

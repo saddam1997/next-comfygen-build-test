@@ -85,11 +85,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-          Custom Banking Software Development Company | Secure Fintech Solutions
+          Best Custom Banking Software Development Services
         </title>
         <meta
           name="description"
-          content="Partner with Comfygen, a leading custom banking software development company. We deliver secure fintech solutions including core banking systems, AI-driven mobile apps and blockchain for banks, credit unions, and fintech startups."
+          content="We provide leading custom banking software development services in India to help banks and fintechs go digital. Comfygen Technologies offers blockchain based finance banking software solutions."
         />
 
         <meta name="keywords" content="Custom Core Banking Solutions, Mobile Banking App Development, Digital Wallet & Payment Gateway Integration, Loan & Credit Management Software Development, Bank Management Software Development, Banking CRM Software Development, Custom ATM Software Development, Custom EMV Software Development Services, AI-powered banking software development, Blockchain Based Banking Software Development, Online Banking Management System" />
@@ -202,12 +202,13 @@ export default function ClinicalApp(props: any) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSection
-          heading="Banking Software Development Company"
-          ptag="Comfygen Technologies is a top banking software development company that builds secure, scalable, and future-ready fintech banking software development solutions. We specialize in core bank software development, AI-powered mobile apps, blockchain development, and cloud-native platforms. As the best banking software development company empower banks, credit unions, and fintech startups with next-gen technology for digital transformation and growth."
-          li="Custom Core Banking Software"
-          li1="Secure, Cloud-Native & Scalable Platforms"
-          li2="AI, ML & Blockchain Banking Solutions"
-          li3="24/7 Dedicated Support & Maintenance"
+          heading="Best Banking Software Development services"
+          ptag="Comfygen Technologies is a top banking software development company that creates secure, scalable, and future-ready finance banking software solutions. We build everything from core banking systems and AI-powered mobile banking apps to blockchain-enabled platforms and cloud-native digital banking solutions."
+          ptag1="As a leading custom banking software development services India, we help banks, credit unions, and fintech startups modernize their operations, improve customer experience, and accelerate digital transformation with next-gen technology."
+          li="Core Banking Software Development"
+          li1="Mobile & Internet Banking App Development"
+          li2="AI & Automation Solutions"
+          li3="Blockchain & Secure Payment Systems"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           bgImage="https://www.comfygen.com/comfygen-images/banking-software-development/banking-software-development-hero.webp"

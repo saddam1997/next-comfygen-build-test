@@ -484,10 +484,10 @@ export default function Blockchain(props) {
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>Blockchain Wallet Development Company | Secure Crypto Wallets</title>
+        <title>Blockchain Wallet Development Services | Comfygen</title>
         <meta
           name="description"
-          content="Comfygen is a blockchain wallet development company building secure, multi-chain crypto wallets with advanced encryption for web and mobile."
+          content="Comfygen is a leading blockchain wallet development company offering secure, scalable blockchain wallet development services with non-custodial, multi-chain, and white-label solutions for easy crypto asset management."
         />
         <link
           rel="canonical"
@@ -561,13 +561,13 @@ export default function Blockchain(props) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Blockchain Wallet Development Company"
+          heading="Blockchain Wallet Development Services"
           subhead='Secure, Multi-Chain & User-Friendly Blockchain Wallet Solutions'
-          ptag="Comfygen is a trusted blockchain wallet development company helping businesses launch secure, high-performance crypto wallets with seamless user experiences. We build non-custodial and enterprise-grade blockchain wallets with true multi-chain support, advanced encryption, and intuitive interfaces across mobile and web platforms. From white-label wallet development solutions to fully customized blockchain wallet development, our solutions are designed to meet modern security, speed, and scalability requirements."
-          li="Unmatched Security & User Privacy"
-          li1="Cross-Platform Wallet Development (Web & Mobile)"
-          li2="Multi-Chain & Advanced Blockchain Integration"
-          li3=" White-Label & Custom Wallet Development Solutions"
+          ptag="Comfygen is a trusted blockchain wallet development company that helps businesses create secure and user-friendly crypto wallets. We build non-custodial and multi-chain wallets with strong encryption, fast performance, and smooth experiences on mobile and web. Whether you need a white-label wallet or a fully custom solution, our blockchain wallet development services are designed to deliver high security, easy usability, and reliable scalability."
+          li="Non-Custodial Wallets"
+          li1="Multi-Chain Wallets"
+          li2="Strong Security & Encryption"
+          li3="DApp, NFT & DeFi Integration"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
