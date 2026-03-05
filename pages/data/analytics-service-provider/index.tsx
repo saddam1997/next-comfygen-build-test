@@ -221,14 +221,14 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-        <title> Data Analytics Service Provider | Enterprise Data Analytics & Consulting</title>
+        <title>Data Analytics Services Provider Company | Data Analytics Consulting </title>
         <meta
           property="og:title"
           content="Best Data Analytics Service Company"
         />
         <meta
           name="description"
-          content="Comfygen is a trusted Data Analytics Service Provider offering end-to-end data analytics, consulting, and scalable solutions to help businesses turn data into actionable insights."
+          content="Comfygen is a leading data analytics services provider company delivering custom data analytics solutions, big data analytics, predictive insights, and business intelligence services to help businesses make smarter data-driven decisions."
         />
         <meta
           name="og:description"
@@ -297,14 +297,13 @@ export default function Mobile(props) {
 
       <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Enterprise Data Analytics Service Provider"
-          ptag=""
-          ptag1="Comfygen helps businesses transform raw data into actionable insights through end-to-end data analytics services. As a trusted data analytics service provider, we offer data management, warehousing, governance, quality management, BI dashboard development, and AI-driven analytics. Using tools like Power BI, Tableau, Python, and cloud platforms such as Snowflake and BigQuery, we analyze structured and unstructured data to uncover opportunities, improve performance, and drive business growth."
-          li="Actionable Insights for Better Decision-Making"
-          li1="Advanced BI Dashboard Development"
-          li2="Data Governance, Management & Quality Solutions"
-          li3="AI-Driven Analytics & Predictive Modeling"
-          li4='Expert Guidance for Business Growth'
+          heading="Data Analytics Services Provider Company for Data-Driven Business Growth"
+          ptag="Transform your raw business data into powerful insights with our advanced data analytics services. Comfygen is a trusted data analytics services provider company in India, we help startups, small business and enterprises unlock valuable patterns, predict trends, and make smarter decisions using AI-powered analytics and business intelligence solutions."
+          ptag1="Our experts deliver custom data analytics solutions that allow real-time reporting, predictive forecasting and interactive dashboards to improve operational efficiency and accelerate business growth."
+          li="AI-Driven Data Analytics Solutions"
+          li1="Real-Time Business Insights & Reporting"
+          li2="Custom Data Analytics Services for Enterprises"
+          li3="Scalable & Secure Analytics Infrastructure"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

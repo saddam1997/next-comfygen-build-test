@@ -119,7 +119,7 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-           AI-Powered Medicine Delivery App Development Company in India
+            Medicine Delivery Development Company | Medicine Delivery App Design Services
         </title>
         <meta
           name="description"
@@ -254,7 +254,7 @@ export default function Ecommerce(props:any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="AI-Powered Medicine Delivery App Development Company"
+          heading="Advanced Medicine Delivery App Development Services"
           ptag="As a leading AI-powered medicine delivery app development company in India, we help pharmacies, startups and healthcare brands launch reliable and easy-to-use online medicine delivery apps. "
           ptag1="Comfygen Technologies provides advanced medicine delivery app development services for businesses looking to build powerful pharmacy app solutions. Our developed top-tier pharmacy apps are designed to simplify prescription uploads, enable real-time order tracking, and ensure seamless doorstep delivery—making your online pharmacy business more efficient, organized, and customer-focused."
           li="Custom & White-Label Solutions"

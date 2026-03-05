@@ -2,21 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/startApp.json";
-import LazyLoad from "react-lazy-load";
-import {
-  IconBox,
-  IconCloud,
-  IconCloudComputing,
-  IconCode,
-  IconDeviceImacPause,
-  IconLock,
-  IconRecordMail,
-  IconRobot,
-  IconSettings,
-  IconShield,
-  IconWifi,
-  IconWorldWww,
-} from "@tabler/icons-react";
+
 
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
@@ -293,11 +279,11 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Startup App Development Company | Hire Startup App Developers
+           Top Startup App Development Company in Canada | App Development For Startup
         </title>
         <meta
           name="description"
-          content="Comfygen is a trusted startup app development company offering custom mobile, web, MVP, and SaaS app solutions to scale startup businesses globally."
+          content="Comfygen is a leading startup app development company in Canada offering scalable startup app development services, MVP development, and custom mobile apps to help founders launch and grow faster."
         />
 
         <meta name="keywords" content="startup business app development, startup app development, mvp app development for startups, product development for startups, startup software development, startup web app development, custom application development for startups, saas product development for startups, ui ux design for startup apps"/>
@@ -340,11 +326,13 @@ export default function Mobile(props) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Startup App Development Company"
-          ptag="We are a trusted startup app development company helping startups turn ideas into powerful digital products. Our expert team delivers custom app development for startups, including mobile apps, web applications, and MVP solutions that are secure, scalable, and market-ready. From idea validation to launch and growth, we support startups at every stage with cost-effective and future-ready app development services."
-          li="Boosting Startups with Smart App Solutions"
-          li1="10+ Yr Expert developers"
-          li2="Secure your Idea and data"
+          heading="Best Startup App Development Company in Canada"
+          ptag="Launch and scale your business idea with a trusted startup app development company in Canada. At Comfygen, we provide innovative startup app development services to help founders transform ideas into high-performance mobile applications. From validating your startup concept to building scalable MVPs and full-featured apps, our expert startup app developers canada deliver secure, ai powered digital solutions for modern startups."
+          ptag1="We specialize in building custom iOS, Android, and web applications that help startups attract users, raise funding, and grow faster in competitive markets."
+          li="MVP development to quickly validate your startup idea"
+          li1="Scalable mobile app solutions built for rapid startup growth"
+          li2="Expert startup app developers with modern tech expertise"
+          li3="End-to-end development from idea validation to app launch"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

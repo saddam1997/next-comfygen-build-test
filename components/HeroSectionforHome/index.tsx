@@ -1,20 +1,14 @@
 
 import Image from "next/image";
-import HeroClientCTA from "./HeroClientCTA";
+const HeroClientCTA = dynamic(() => import("./HeroClientCTA"), {
+  ssr: false,
+});
 import HeadingOne from "../ui/HeadingOne";
 import ParagraphText from "../ui/ParagraphText"
+import dynamic from "next/dynamic";
 
 export default function HeroSection({ herosection }: any) {
-
-
-
     const imageAlt = herosection?.altTag || herosection?.heading || "Hero background image";
-
-
-
-
-    /* ================= LOADER ================= */
-
 
     return (
         <section className="relative flex  min-h-[600px] lg:min-h-[700px] items-center overflow-hidden bg-[#5951cd] pt-8 lg:mt-16 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-24"
@@ -30,19 +24,12 @@ export default function HeroSection({ herosection }: any) {
                     fill
                     priority
                     fetchPriority="high"
-                    sizes="(max-width: 768px) 0px"
+                   sizes="100vw"
                     quality={60}
                     className="object-cover object-center"
                 />
             </div>
             {/* mobile */}
-
-
-
-
-
-
-
             {/* ================= CONTENT ================= */}
             <div className=" relative   w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col   justify-center"
             >
@@ -81,7 +68,7 @@ export default function HeroSection({ herosection }: any) {
                          <ParagraphText color={"white"} text={herosection.ptag3}/>
                     )}
 
-                    {herosection?.listItems.length > 0 && (
+                    {herosection?.listItems?.length > 0 && (
                         <ul className="text-white grid md:grid-cols-1 gap-2 text-base font-normal">
                             {herosection?.listItems.map((item: any, index: any) => (
                                 <li key={index} className="flex items-start gap-2">

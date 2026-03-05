@@ -1,0 +1,90 @@
+{
+ "col1" : [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Water Delivery App Development.webp",
+    "title": "Water Delivery",
+    "link": "https://www.comfygen.com/water-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Pizza Delivery App Development.webp",
+    "title": "Pizza Delivery",
+    "link": "https://www.comfygen.com/pizza-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Pet food Delivery App Development.webp",
+    "title": "Pet food Delivery",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Parcel Delivery App Development.webp",
+    "title": "Parcel Delivery",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Milk Delivery App Development.webp",
+    "title": "Milk Delivery App",
+    "link": "https://www.comfygen.com/milk-delivery-app-development"
+  }
+],
+
+ "col2" :[
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Medicine Delivery App Development.webp",
+    "title": "Medicine Delivery App Development",
+    "link": "https://www.comfygen.com/medicine-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Ice-cream Delivery App Development.webp",
+    "title": "Ice-cream Delivery App Development",
+    "link": "https://www.comfygen.com/ice-cream-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Hyper local Delivery App Development.webp",
+    "title": "Hyper local Delivery App Development",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Grocery Delivery App Development.webp",
+    "title": "Grocery Delivery App Development",
+    "link": "https://www.comfygen.com/ecommerce/grocery"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Fuel Delivery App Development.webp",
+    "title": "Fuel Delivery App Development",
+    "link": "https://www.comfygen.com/fuel-delivery-app-development"
+  }
+],
+
+ "col3": [
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Flower Delivery App Development.webp",
+    "title": "Flower Delivery App Development",
+    "link": "https://www.comfygen.com/flower-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Fish Delivery App Development.webp",
+    "title": "Fish Delivery App Development",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Delivery App Development.webp",
+    "title": "Delivery App Development",
+    "link": ""
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Courier Delivery App Development.webp",
+    "title": "Courier Delivery App Development",
+    "link": "https://www.comfygen.com/courier-delivery-app-development"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Cake Delivery App Developmen.webp",
+    "title": "Cake Delivery App Developmen",
+    "link": "#"
+  },
+  {
+    "image": "https://www.comfygen.com/comfygen-images/Delivery/Alcohol Delivery App Development.webp",
+    "title": "Alcohol Delivery App Development",
+    "link": "https://www.comfygen.com/alcohol-delivery-app-development"
+  }
+]
+}
