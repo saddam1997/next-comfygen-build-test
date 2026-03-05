@@ -93,31 +93,7 @@ const Process = [
   },
 ];
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Golf Live Line Api Provider",
-  url: "https://www.comfygen.com/golf-live-line-api",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
 
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen - Best Golf Live Line API Service Provider",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
 
 const productData = {
   "@context": "http://www.schema.org",
@@ -367,40 +343,8 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/golf-live-line-api-development/golf-api-og-image.webp"
         />
         <meta name="twitter:site" content="@comfygentech" />
-        {/* Updated JSON-LD schema for SoftwareApplication */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Golf Live Line API",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "SportsApplication",
-            offers: {
-              "@type": "Offer",
-              price: "Contact Us - 9587867258",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "300",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen",
-            },
-          })}
-        </script>
-        {/* Structured data scripts */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
+
+       
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
