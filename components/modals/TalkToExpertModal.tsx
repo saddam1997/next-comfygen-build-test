@@ -19,22 +19,55 @@ export default function TalkToExpertModal({
   onClose,
 }: TalkToExpertModalProps) {
   /* ================= Scroll Lock + ESC Close ================= */
+  // useEffect(() => {
+  //   if (!isOpen) return;
+
+  //   document.body.style.overflow = "hidden";
+
+  //   const handleEsc = (e: KeyboardEvent) => {
+  //     if (e.key === "Escape") onClose();
+  //   };
+
+  //   window.addEventListener("keydown", handleEsc);
+
+  //   return () => {
+  //     document.body.style.overflow = "auto";
+  //     window.removeEventListener("keydown", handleEsc);
+  //   };
+  // }, [isOpen, onClose]);
+
   useEffect(() => {
-    if (!isOpen) return;
+  if (!isOpen) return;
 
-    document.body.style.overflow = "hidden";
+  // Save current scroll position
+  const scrollY = window.scrollY;
 
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
+  // Lock scroll properly
+  document.documentElement.style.position = "fixed";
+  document.documentElement.style.top = `-${scrollY}px`;
+  document.documentElement.style.left = "0";
+  document.documentElement.style.right = "0";
 
-    window.addEventListener("keydown", handleEsc);
+  const handleEsc = (e: KeyboardEvent) => {
+    if (e.key === "Escape") onClose();
+  };
 
-    return () => {
-      document.body.style.overflow = "auto";
-      window.removeEventListener("keydown", handleEsc);
-    };
-  }, [isOpen, onClose]);
+  window.addEventListener("keydown", handleEsc);
+
+  return () => {
+    // Restore scroll
+    const top = document.documentElement.style.top;
+
+    document.documentElement.style.position = "";
+    document.documentElement.style.top = "";
+    document.documentElement.style.left = "";
+    document.documentElement.style.right = "";
+
+    window.scrollTo(0, parseInt(top || "0") * -1);
+
+    window.removeEventListener("keydown", handleEsc);
+  };
+}, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

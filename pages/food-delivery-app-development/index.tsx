@@ -6,7 +6,8 @@ import NEW_JSON_DATA from "./json/fooddel.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-import Appdevelopmentcost from "./component/appdevelopmentcost";
+import TechStackSection from "../../components/TechStackSection";
+
 
 
 const Milestones = dynamic(
@@ -434,11 +435,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Best Food Delivery App Development Company | Readymade Delivery App Solution
+          Best Food Delivery App Development Company in India
         </title>
         <meta
           name="description"
-          content="Best on-demand food delivery app development company in India offering readymade food delivery app solutions with Android & iOS source code to launch your app fast."
+          content="Comfygen is a award-winning food delivery app development company in India offering readymade food delivery app solutions with Android & iOS source code to launch your food ordering app fast."
         />
         <link
           rel="canonical"
@@ -549,7 +550,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className=" ">
           <HeroSectionForAllPages
-            heading="Best Food Delivery App Development Company in India"
+            heading="Top Food Delivery App Development Company"
             ptag="Comfygen is a trusted food delivery app development company in India, offering customizable and ready-made food delivery app solutions to help you grow your business. Our highly rated food delivery apps make it easy to manage restaurants, track orders in real time, handle delivery partners, enable secure online/offline payments, and improve customer satisfaction with smooth and intuitive features."
             ptag1='We deliver the best food delivery app development services for food startups, restaurant chains, cloud kitchens, and enterprise brands seeking to establish a strong online presence and scale more quickly in the competitive food delivery industry.'
             li="Custom & Ready-Made Food Delivery App Solutions"
@@ -740,7 +741,10 @@ export default function Ecommerce(props: any) {
           listheading="Why India-based development works:"
         />
 
-        <DeliverySection hideUrl="https://www.comfygen.com/food-delivery-app-development" />
+        {/* <DeliverySection hideUrl="https://www.comfygen.com/food-delivery-app-development" /> */}
+
+
+        <TechStackSection/>
 
 
         <div className="py-10">

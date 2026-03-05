@@ -252,3 +252,32 @@ export default function Portfolio({ Portfoliodata }: any) {
 
 
 
+// import HeadingTwo from "../ui/HeadingTwo";
+// import ParagraphText from "../ui/ParagraphText";
+// import PortfolioDesktop from "./PortfolioDesktop";
+// import PortfolioMobile from "./PortfolioMobile";
+
+// export default function Portfolio({ Portfoliodata }: any) {
+//   const { portfolio, heading, description } = Portfoliodata || {};
+//   const safePortfolio = Array.isArray(portfolio) ? portfolio : [];
+
+//   return (
+//     <section className="relative w-full overflow-hidden py-8 bg-gray-50">
+//       <div className="text-center mx-auto max-w-7xl space-y-3 py-8">
+//         <HeadingTwo color="black" text={heading} />
+//         <ParagraphText color="black" text={description} />
+//       </div>
+
+//       {safePortfolio.length > 0 && (
+//         <>
+//           <PortfolioDesktop Portfoliodata={safePortfolio} />
+//           <PortfolioMobile Portfoliodata={safePortfolio} />
+//         </>
+//       )}
+//     </section>
+//   );
+// }
+
+
+
+

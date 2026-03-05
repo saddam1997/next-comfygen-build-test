@@ -506,7 +506,7 @@ export default function Ecommerce(props:any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/ico-development/ico-development-hero1.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/ico-development/ICO.webp"
         />
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
 

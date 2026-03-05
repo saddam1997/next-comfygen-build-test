@@ -1,6 +1,6 @@
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TalkToExpertModal from "../modals/TalkToExpertModal";
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
@@ -8,6 +8,26 @@ import styles from "./HeroSection.module.css";
 export default function HeroClientCTA() {
 
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
+
+    // const openModal = () => {
+    //     setTalkToExpertModal(true);
+    // };
+
+    // const closeModal = () => {
+    //     setTalkToExpertModal(false);
+    // };
+
+     useEffect(() => {
+        if (talkToExpertModal) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [talkToExpertModal]);
 
     const openModal = () => {
         setTalkToExpertModal(true);
