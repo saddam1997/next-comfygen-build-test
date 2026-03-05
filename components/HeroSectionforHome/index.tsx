@@ -37,7 +37,7 @@ export default function HeroSection({ herosection }: any) {
                 >
                     {/* ================= HEADING ================= */}
                     {herosection.isHome ? (
-                        <h1 className="text-white text-2xl lg:text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
+                        <h1 className="text-white text-3xl sm:text-4xl lg:text-3xl xl:text-5xl font-bold xl:leading-[4rem] ">
                             <b className="block ">AI-Based Mobile App & Web </b>
                             <span className="block text-xl xl:text-4xl font-medium">
                                 Development Company
