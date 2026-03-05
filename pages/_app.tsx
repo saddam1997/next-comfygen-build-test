@@ -41,12 +41,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <ContactLinks />
         <Talkchat />
       </div>
-      {/* <MainLayout>
-        <Component {...pageProps} />
-      </MainLayout>
-      <GoogleTagManager />
-      <ContactLinks />
-      <Talkchat /> */}
+      
     </>
   );
 }

@@ -222,7 +222,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         <title>
-         Exam Preparation App Development Company | Custom Test Prep App Solutions
+          Exam Preparation App Development Company | Custom Test Prep App Solutions
         </title>
         <meta
           name="description"
@@ -335,7 +335,7 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Comprehensive Exam Preparation App Development Services to Boost Learning Success</h2>
-              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
+              <p className="text-base text-center font-normal">Our skilled exam preparation app development team builds next-generation exam preparation apps that combine AI-driven intelligence, intuitive design, and seamless functionality. We empower institutes, educators, and EdTech businesses with customized digital learning solutions engineered to boost student performance and streamline exam readiness.</p>
             </div>
             <div className="">
               <ServicesSec servicesData={JSON_DATA.servicesData} />
@@ -426,7 +426,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>
