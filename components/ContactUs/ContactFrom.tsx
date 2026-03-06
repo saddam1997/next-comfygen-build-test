@@ -288,7 +288,7 @@ class ContactFrom extends Component<{}, any> {
           <button
             type="button"
             onClick={this.createContactUs}
-            className="bg-[#5556D1] text-white px-6 py-2 rounded-full"
+            className="bg-[#5556D1] text-white px-6 py-2 rounded-full border border-white flex justify-center mx-auto"
           >
             {submitted ? "Submitting..." : "Send Message"}
           </button>
