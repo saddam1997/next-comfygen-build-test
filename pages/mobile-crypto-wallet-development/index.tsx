@@ -189,25 +189,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+   
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -239,77 +221,6 @@ export default function ClinicalApp(props: any) {
         "best mobile crypto wallet"
 
       ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
@@ -519,7 +430,7 @@ export default function ClinicalApp(props: any) {
         <HeroSectionForAllPages
           heading="Best Mobile Crypto Wallet Development Company"
           ptag="Build AI based mobile cryptocurrency wallet apps with a trusted mobile crypto wallet development company. We help startups, fintech businesses, and enterprises launch powerful mobile crypto wallets app with multi-currency support, advanced blockchain security, and seamless digital asset transactions. Our best custom crypto wallet app development services make sure a user-friendly interface, robust encryption, and smooth crypto payments for global users."
-          ptag1="Experience advanced wallet development service according to your needs. Our mobile crypto wallet development service offers strong security with multi-factor authentication, seamless multi-currency support, and an intuitive interface that simplifies cryptocurrency management for users of all levels. Whether you’re launching a DeFi app or need enterprise-grade wallet development solutions, our expert developers build scalable apps optimized for performance and privacy."
+          ptag1=""
           li="Multi-currency crypto support (Bitcoin, Ethereum & more)"
           li1="Advanced blockchain security & private key encryption"
           li2="Seamless crypto transactions and QR payments"

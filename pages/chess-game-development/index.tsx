@@ -416,10 +416,10 @@ export default function Altcoin(props) {
   return (
     <>
       <Head>
-        <title>Cricket Live Line API Provider Company | Real-Time Cricket Scores</title>
+        <title>Best Chess Game Development Company | Custom Chess App Development</title>
         <meta
           name="description"
-          content="Comfygen is the best Cricket Live Line API provider company offering fast, developer-friendly APIs for IPL, T20, ODI, and Test matches. Deliver real-time ball-by-ball updates, live scores, and match statistics seamlessly across apps and websites."
+          content="Comfygen is the best chess game development company, creating interactive, multiplayer, and AI-powered chess games for startups, gaming studios, and enterprises. Build secure, scalable, and engaging chess apps"
         />
         <link
           rel="canonical"
@@ -589,10 +589,10 @@ export default function Altcoin(props) {
       <div className="overflow-hidden lg:pt-[120px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Cricket Live Line API Provider"
-            subhead="Your Trusted Cricket Live Line Api Provider Company."
+            heading="Best Chess Game Development Company"
+            subhead=""
 
-            ptag="Cricket is not just a sport, but it is a native emotion of view.Looking to integrate real-time cricket scores into your app or website? At Comfygen, we offer a fast, developer-friendly Cricket Live Line API that delivers ball-by-ball updates, live scores, and match statistics for IPL, T20, ODI, Test, and more. Our API supports seamless integration with live score widgets and dynamic sports platforms, ensuring a smooth experience across devices."
+            ptag="Comfygen is the best chess game development company delivering custom, high-performance chess games for startups, gaming studios, and enterprises. Our expert developers create interactive, multiplayer, and AI-powered chess games with seamless gameplay, intuitive UI, and advanced features to engage players and enhance the digital gaming experience. "
             ptag1="Whether you're building a sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
             li="Multiplayer chess game development for web and mobile"
             li1="AI-powered smart opponents for realistic gameplay"

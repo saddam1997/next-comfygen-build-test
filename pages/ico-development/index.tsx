@@ -178,24 +178,7 @@ const jsonLdData = [
       "reviewCount": "1748"
     }
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-    "addressLocality": "Jaipur, Rajasthan",
-    "addressRegion": "India",
-    "postalCode": "302006",
-    "telephone": "+91-958-786-7258"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "PostalAddress",
-    "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-    "addressLocality": "Toronto",
-    "addressRegion": "Canada",
-    "postalCode": "M1G3S7",
-    "telephone": "+1 579-977-4475"
-  },
+
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -221,77 +204,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-private-limited"
     ]
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Comfygen",
-    "image": "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "telephone": "+91-958-786-7258",
-    "priceRange": "$",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      },
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.youtube.com/@ComfygenBusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/svg/Logo1.svg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "sales",
-      "contactOption": "Voice",
-      "telephone": "+91 9587867258",
-      "areaServed": [
-        "IN", "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU",
-        "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL",
-        "HK", "IS", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM",
-        "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG",
-        "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"
-      ],
-      "availableLanguage": ["en", "in"]
-    },
-    "sameAs": [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://youtube.com/@comfygenbusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/"
-    ]
-  },
+
 
   {
     "@context": "https://schema.org",
@@ -494,7 +407,7 @@ export default function Ecommerce(props:any) {
 
         <HeroSectionForAllPages
           heading="Best ICO Development Company"
-          subhead='Secure, Scalable & End-to-End ICO Launch Solutions'
+          subhead=''
           ptag="Comfygen is a trusted ICO development company delivering secure, scalable, and fully customized Initial Coin Offering (ICO) development solutions for startups and enterprises. We provide top-rated ICO development services, including token creation, smart contract development, investor dashboards, and launch support. Our experts ensure audited smart contracts, compliant tokenomics, and seamless fundraising execution—helping you launch your ICO with confidence and transparency."
           li="End-to-End ICO Development Services"
           li1="Secure & Audited Smart Contract Development"

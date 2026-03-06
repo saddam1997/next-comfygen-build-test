@@ -386,8 +386,8 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSection
-          heading="Bring Real-Time Basketball Action to Your Platform"
-          subhead=""
+          heading="Basketball Live Line API development Company "
+          subhead="Bring Real-Time Basketball Action to Your Platform"
           ptag="Comfygen is a leading Basketball Live Line API development company, delivering scalable and developer-friendly APIs that provide live scores, player stats, match updates, and game insights directly to your app or website."
           li="Ultra-low latency and high availability"
           li1="Accurate coverage of global leagues and events"

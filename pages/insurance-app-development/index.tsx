@@ -450,7 +450,7 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="custom insurance mobile app development company"
+          heading="Custom Insurance Mobile App Development Company"
           ptag="Comfygen is the best Insurance Mobile App Development Company that helps businesses turn their insurance app development ideas into powerful digital solution. We provide on-demad insurance mobile app development services that are secure, scalable, and easy to use for startups, insurance brokers, and enterprises. As a leading lnsurance app development company, we build feature-rich applications with advanced solutions such as insurance claims management, policy tracking, premium calculation, and customer engagement tools. Our expert developers focus on creating high-performance insurance mobile apps that improve user experience, streamline operations, and support business growth in the digital insurance industry."
           li="Custom Insurance App Development for Startups, Brokers & Enterprises"
           li1="Secure, Compliant & Scalable Architecture"
