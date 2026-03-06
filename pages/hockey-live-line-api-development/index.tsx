@@ -113,8 +113,8 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-        <title>Best Custom Banking Software Development Services</title>
-        <meta name="description" content="We provide leading custom banking software development services in India to help banks and fintechs go digital. Comfygen Technologies offers blockchain based finance banking software solutions." />
+        <title>Hockey Live Line API Services | Real-Time Hockey Scores API</title>
+        <meta name="description" content="Get real-time hockey scores, live match updates, player stats, and play-by-play data with our Hockey Live Line API services. Reliable NHL and global league coverage for sports apps and websites. Request a free API demo today." />
         <meta name="keywords" content="Hockey Live Line API, NHL API, Live Hockey Scores, Hockey Stats API, Real-time Hockey Data" />
         <link rel="canonical" href="https://www.comfygen.com/hockey-live-line-api-development" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -189,13 +189,14 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Best Banking Software Development services"
-          ptag="Comfygen Technologies is a top banking software development company that creates secure, scalable, and future-ready finance banking software solutions. We build everything from core banking systems and AI-powered mobile banking apps to blockchain-enabled platforms and cloud-native digital banking solutions."
-          ptag1="As a leading custom banking software development services India, we help banks, credit unions, and fintech startups modernize their operations, improve customer experience, and accelerate digital transformation with next-gen technology."
-          li="Core Banking Software Development"
-          li1="Mobile & Internet Banking App Development"
-          li2="AI & Automation Solutions"
-          li3="Blockchain & Secure Payment Systems"
+          heading="Hockey Live Line API Services"
+          ptag="Get real-time hockey updates for your sports app with our fast and reliable Hockey Live Line API. We provide instant scores, live match updates, player stats, and play-by-play details for NHL, Hockey Pro League, and major hockey tournaments around the world."
+          ptag1="Whether you run a fantasy sports app and website, our fast Hockey Data API helps you deliver accurate and lightning-fast hockey information to your users."
+          li="Live Scores & Match Updates"
+          li1="NHL & Global League Coverage"
+          li2="Player Stats & Match Insights"
+          li3="Play-by-Play Commentary"
+          li4="Easy API Integration"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

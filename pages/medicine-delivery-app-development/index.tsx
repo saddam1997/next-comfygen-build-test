@@ -123,7 +123,7 @@ export default function Ecommerce(props:any) {
         </title>
         <meta
           name="description"
-          content="Comfygen is the top medicine delivery app development company that builds AI-based medicine delivery apps for pharmacies and startups."
+          content="Hire pharmcy delivery app developer - We are one of the Best medicine delivery development companies in India. Reliable  medicine delivery clone app development services and scripts."
         />
 
         <meta
