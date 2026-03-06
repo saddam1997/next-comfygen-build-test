@@ -73,6 +73,7 @@ const BlogSection = dynamic(
 
 
 import ConsultancyApproach from "../../components/Newcomponet/SectionCompoent/ConsultancyApproach"
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 
@@ -319,22 +320,22 @@ export default function MultiChain(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        
-          <HeroSectionForAllPages
-            heading="Crypto White Paper Writing Services"
-            ptag="Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
-            li="Investor-Ready Whitepaper Creation"
-            li1="Tokenomics & Market Research"
-            li2="Technical Documentation & Compliance"
-            li3="Clear, Engaging, and Professional Writing"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp"
-          />
+
+        <HeroSectionForAllPages
+          heading="Crypto White Paper development Service"
+          ptag="Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
+          li="Investor-Ready Whitepaper Creation"
+          li1="Tokenomics & Market Research"
+          li2="Technical Documentation & Compliance"
+          li3="Clear, Engaging, and Professional Writing"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp"
+        />
 
         <AboutSection
           title="About Company"
@@ -430,7 +431,7 @@ export default function MultiChain(props: any) {
           title="Our Cryptocurrency Development Technology Stack"
           description=""
         />
-
+        <ClientStories />
 
         <Faq
           faqData={JSON_DATA.Frequently}

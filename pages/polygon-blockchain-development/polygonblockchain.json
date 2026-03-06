@@ -12,72 +12,72 @@
   "servicesData" :[
     {
       "title": "Polygon Blockchain Consulting",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our team has the knowledge needed to guide you through your Polygon development project. We know how daunting it is and that’s why we want to help create an ideal strategy to achieve your goals.",
       "features": ["Expert Help", "Customized Plan", "Easy Development" ,"Smooth Integration" , "Success Focus"]
     },
     {
       "title": "Polygon Token Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Using our expertise in Polygon blockchain, you’ll be able to improve the cost benefits and security of your digital assets at a faster pace.",
       "features": ["Cost-Effective", "Better Security", "Faster Transactions" , "Expert Guidance" , 
       "Scalable Solutions"]
     },
     {
       "title": "Smart Contracts Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Building smart contracts doesn’t have to be as hard as it sounds. Our team has mastered creating modular, scalable and secure smart contracts that will make everything simple.",
       "features": ["Easy to Build", "Modular Design", "Scalable Solutions" , "Secure Contracts" , "Expert Team"]
     },
     {
       "title": "Decentralized Application Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Finding resources for creating a high-performance dApp on the Polygon blockchain can feel like trying to find Waldo. But with our help, it’s not nearly as hard.",
       "features": ["Expert in Polygon Blockchain", "Easy to Use", "Fast and Efficient" , "Safe and Scalable" , "Affordable" , "Custom Solutions"]
     },
     {
       "title": "Polygon NFT Marketplace",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Creating your own NFT marketplace sounds like something only pros do. However, with us, it’s simple, customizable and secure — giving you more advantages than others.",
       "features": ["Easy to Create", "Customizable", "Secure" , "User-Friendly" , "Scalable" , "Efficient"]
     } ,
     {
       "title": "Smart Contracts Audit",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Earning the trust of customers typically takes a lot of time but with professional audit services from us, you’ll get there a lot quicker.",
       "features": ["Build Trust Quickly", "Security Check", "Improve Performance" , "Follow the Rules" , "Reduce Risks" , "Clear Reports" , "Reliable and Safe"]
     }
     ,
     {
       "title": "DeFi Application Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Make your mark in the DeFi ecosystem with an intuitive DeFi application development tailored to your business goals with the assurance of scalability and affordability.",
       "features": ["Custom Solutions", "Easy to Use", "Secure" , "Blockchain Connected" , "Ready for the Future"]
     }
     ,
     {
       "title": "Web3 Games Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our team will help in creating the next generation of immersive web3 games development with different models and flexibility for integrating Polygon Blochain NFTs marketplace development.",
       "features": ["Create Web3 Games", "Flexible Options", "NFTs in Games" , "Better Experience" , "Custom-built"]
     },
     {
       "title": "Web3 Application Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Join the web3 revolution with a seamless transition of legacy apps to web3, or create your web3 apps on Polygon blockchain powered by our expertise.",
       "features": ["Seamless Web3 Transition", "New Web3 App Creation", "Expert Support" , "Unlock Decentralized Potential"]
     }
     ,
     {
       "title": "Polygon Wallet Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Make the most of our expertise as a trusted Polygon development company to create blockchain-based wallets as mobile apps, browser extensions or web portals.",
       "features": ["Custom Wallet Development", "Polygon Integration", "Secure Transactions" , "User-Friendly Design" , "Scalable Solutions"]
     }
     ,
     {
       "title": "Polygon Integration Services",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Use our Polygon integration services for a seamless transition to the Polygon ecosystem with end-to-end code reconfiguration and migration to access the benefits of Polygon.",
       "features": ["Easy Transition", "Access Polygon Benefits", "Expert Help" , "Better Performance"]
     }

@@ -6,6 +6,7 @@ import JSON_DATA from "./meat-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const loader = () => (
@@ -609,6 +610,7 @@ export default function ClinicalApp(props: any) {
             "Fast delivery with full support"
           ]}
         />
+        <ClientStories/>
 
         <ClientTestimonials
           heading="Testimonials from Our Clients"

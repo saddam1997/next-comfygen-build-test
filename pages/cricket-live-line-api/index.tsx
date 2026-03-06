@@ -7,6 +7,7 @@ import JSON_DATA from "./json/cricketliveline.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -193,9 +194,9 @@ export default function Ecommerce(props) {
   return (
     <>
       <Head>
-      <title>Cricket Live Line API – Real-Time Cricket Score API with Ball-by-Ball Updates</title>
+      <title>Cricket Live Line API Provider Company | Real-Time Cricket Scores</title>
 
-        <meta name="description" content="Get real-time cricket scores with our Live Line API. Easy integration, fast response, ball-by-ball updates – perfect for apps and websites." />
+        <meta name="description" content="Comfygen is the best Cricket Live Line API provider company offering fast, developer-friendly APIs for IPL, T20, ODI, and Test matches. Deliver real-time ball-by-ball updates, live scores, and match statistics seamlessly across apps and websites." />
         <link rel="canonical" href="https://www.comfygen.com/cricket-live-line-api" />
 
         <meta name="keywords" content="Cricket Live Line API, Cricket Live Score API, Cricket Live Streaming API, Cricket Data API, Cricket Stats API, Cricket Live Line App, Cricket Live Line Widget, Cricket Live Line Integration, Cricket Live Line Provider, Cricket Live Line Service" />
@@ -279,11 +280,11 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Cricket Live Line API"
-          subhead="Your Trusted Cricket Live Line Api  Provider Company In India & The USA."
+          heading="Cricket Live Line API Provider"
+          subhead="Your Trusted Cricket Live Line Api Provider Company."
           ptag="Cricket is not just a sport, but it is a native emotion of view.Looking to integrate real-time cricket scores into your app or website? At Comfygen, we offer a fast, developer-friendly Cricket Live Line API that delivers ball-by-ball updates, live scores, and match statistics for IPL, T20, ODI, Test, and more. Our API supports seamless integration with live score widgets and dynamic sports platforms, ensuring a smooth experience across devices."
-          ptag1="Whether you're building a fantasy sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
-          ptag2="Get in touch with our expert cricket API developers today to start your integration."
+          ptag1="Whether you're building a sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
+          ptag2=""
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -294,6 +295,17 @@ export default function Ecommerce(props) {
         />
 
         <Milestones />
+                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Reap the Privilege of the Top-notch Cricket Live Score API Services</h2>
+              <p className="text-base text-center font-normal"></p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
         <AboutSection
           title="About Company"
           heading="Skyrocket your Experience with Best Cricket Live Line API"
@@ -306,17 +318,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Reap the Privilege of the Top-notch Cricket Live Score API Services</h2>
-              <p className="text-base text-center font-normal"></p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
 
@@ -378,6 +380,7 @@ export default function Ecommerce(props) {
           ]}
           
         />
+        <ClientStories/>
 
         <Faq
           faqData={JSON_DATA.Frequently}

@@ -10,7 +10,7 @@ export default function ServicesSec({ servicesData = [] }) {
     <div className="flex flex-col lg:flex-row pt-10 lg:space-x-6 relative items-stretch">
       
       {/* LEFT SIDE TABS */}
-      <ServicesTabsClient servicesData={servicesData} />
+      <ServicesTabsClient servicesData={servicesData}/>
 
       {/* RIGHT SIDE */}
       <div className="hidden lg:block w-[70%] h-[34rem] overflow-hidden relative bg-gradient-to-r from-[#272868] to-[#5556D1]">

@@ -277,7 +277,7 @@ export default function Mobile(props: any) {
             heading="Hire Blockchain Developers for Secure and Scalable Blockchain App Development"
             subhead=""
             ptag="Comfygen is trusted partner to hire blockchain developers who build secure, scalable, and high-performance blockchain applications. Our experts developers deliver end-to-end blockchain app development services, including smart contract development, decentralized apps (DApps), cryptocurrency solutions, and enterprise blockchain platforms. With Comfygen, startups and enterprises get custom blockchain solutions tailored to their business goals, ensuring seamless integration, robust security, and long-term scalability in the fast-evolving blockchain ecosystem."
-            ptag1="Our full-stack blockchain developers specialize in building custom smart contracts, decentralized applications (dApps), and enterprise-grade blockchain solutions that improve security, transparency, and transaction efficiency. Partner with Comfygen to streamline operations and future-proof your business with trusted blockchain technology."
+            ptag1=""
             li="Skilled Blockchain Developers for Hire"
             li1="Full-Stack Blockchain & dApp Development"
             li2="Custom Smart Contract Solutions"

@@ -56,31 +56,31 @@
   "servicesData" :[
     {
       "title": "ERC20 Token Creation",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Comfygen offers expert ERC20 token creation services on the Ethereum blockchain. Our team specializes in designing secure, scalable, and customizable tokens for ICOs, DeFi projects, and fundraising campaigns. We ensure seamless smart contract development, wallet integration, and DEX compatibility, providing reliable token solutions that meet your business needs while maintaining high security and performance standards.",
       "features": ["ERC20 Token Design & Creation", "Smart Contract Development" , "Scalable Token Solutions" , "Custom Features & Integration" , "Ethereum Network Compatibility"]
     },
     {
       "title": "ICO Development",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Comfygen offers end-to-end ICO development solutions to simplify your Initial Coin Offering launch. Our expert team builds intuitive fundraising platforms with seamless ERC20 token development and smart contract integration, ensuring secure and transparent token sales. By leveraging blockchain networks like Ethereum, we enable efficient token distribution, compliant fundraising, and real-time investment tracking for startups and enterprises.",
       "features": ["ICO Platform Design & Development", "Token Creation" , "Smart Contract Integration" , "Customizable ICO Features" , "Security & Compliance for ICOs"]
     },
     {
       "title": "Token Wallet Design",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Our ERC20 token development services include custom <a class='text-blue-600' href='/crypto-wallet-development'>crypto wallet design</a>  for secure and efficient token management. We build user-friendly, intuitive wallets that support seamless integration with ERC20 tokens, ensuring safe storage, easy transfers, and smooth token transactions. With advanced encryption and multi-layer security, we help businesses offer reliable crypto asset management solutions.",
       "features": ["Custom Token Wallet Developmen" , "Secure Wallet Solutions", "Multi-Currency & ERC20 Compatibility" , "User-Friendly Interface Design" , "Wallet Integration with Blockchain Networks"]
     },
     {
       "title": "ERC20 Token Transfer",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "Comfygen provides reliable ERC20 token transfer solutions for fast, secure, and seamless transactions within your blockchain ecosystem. Our services ensure efficient token distribution, support peer-to-peer transfers, and maintain compliance with Ethereum network protocols. With enhanced security measures, we help businesses streamline token management and facilitate smooth asset transfers.",
       "features": ["Seamless Token Transfer Solutions", "Secure Transaction Protocols" , "Efficient Token Management" , "Scalable Transfer Solutions" , "Integration with Blockchain Networks"]
     },
     {
       "title": "DApp Integration",
-      "subtitle": "All Service And Solutions At One Place",
+      "subtitle": "",
       "description": "At Comfygen, we offer seamless DApp integration services to connect decentralized applications with blockchain networks for enhanced functionality and user experience. Our team ensures smooth interaction between smart contracts and user interfaces, enabling businesses to leverage decentralized technology for improved efficiency, transparency, and security in their blockchain ecosystems.",
       "features": ["Custom DApp Development", "Smart Contract Integration" , "Cross-Platform Compatibility" , "Scalable DApp Solutions" , "Secure User Experience"]
     } 

@@ -562,7 +562,7 @@ export default function Blockchain(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
           heading="Blockchain Wallet Development Services"
-          subhead='Secure, Multi-Chain & User-Friendly Blockchain Wallet Solutions'
+          subhead=''
           ptag="Comfygen is a trusted blockchain wallet development company that helps businesses create secure and user-friendly crypto wallets. We build non-custodial and multi-chain wallets with strong encryption, fast performance, and smooth experiences on mobile and web. Whether you need a white-label wallet or a fully custom solution, our blockchain wallet development services are designed to deliver high security, easy usability, and reliable scalability."
           li="Non-Custodial Wallets"
           li1="Multi-Chain Wallets"
@@ -681,8 +681,8 @@ export default function Blockchain(props) {
         />
 
         <TechStack
-          title="Technology Stack Used by Blockchain Development Company"
-          description="We leverage a cutting-edge, battle-tested technology stack to build secure, scalable, and feature-rich blockchain wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project."
+          title="Technology Stack Used by Blockchain Wallet Development Solution"
+          description="We leverage a cutting-edge, battle-tested technology stack to build best blockchain crypto wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project."
           customTechData={JSON_DATA.defaultTechData}
         />
 
