@@ -93,35 +93,11 @@ const Process = [
 
 ];
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Best Cricket Live Line API Provider Company | Comfygen",
-  url: "https://www.comfygen.com/cricket-live-line-api",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
 
 
 
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  description: "Best Cricket Live Line API Service Provider",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
 
-};
+
 
 
 const productData = {
@@ -263,91 +239,12 @@ export default function Ecommerce(props) {
         <meta name="HandheldFriendly" content="true" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="fb:page_id" content="110909321596135" />
-        <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "WebSite",
-          name: "Top Cricket Live Line API Provider | Comfygen",
-          url: "https://www.comfygen.com/",
-          potentialAction: {
-            "@type": "SearchAction",
-            target: "https://www.comfygen.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        })}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Comfygen",
-          legalName: "Comfygen Pvt. Ltd.",
-          url: "https://www.comfygen.com/",
-          logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-          foundingDate: "2019",
-          founders: [
-            {
-              "@type": "Person",
-              name: "Saddam Husen"
-            }
-          ],
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-            addressLocality: "Vaishali Nagar",
-            addressRegion: "Rajasthan",
-            postalCode: "302021",
-            addressCountry: "IN"
-          },
-          contactPoint: {
-            "@type": "ContactPoint",
-            contactType: "customer support",
-            telephone: "+91 9587867258",
-            email: "sales@comfygen.com"
-          },
-          areaServed: [
-            "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU",
-            "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR",
-            "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG",
-            "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA",
-            "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA",
-            "UM", "AE"
-          ],
-          sameAs: [
-            "https://twitter.com/comfygentech",
-            "https://www.instagram.com/comfygen_/?hl=en",
-            "https://www.linkedin.com/company/comfygen-private-limited",
-            "https://www.facebook.com/comfygen"
-          ]
-        })}
-      </script>
 
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          name: "Cricket Live Line API",
-          operatingSystem: "Web, Android, iOS",
-          applicationCategory: "SportsApplication",
-          offers: {
-            "@type": "Offer",
-            price: "0.00", // Replace with actual price if known
-            priceCurrency: "INR",
-            availability: "https://schema.org/InStock"
-          },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.8",
-            reviewCount: "256"
-          },
-          publisher: {
-            "@type": "Organization",
-            name: "Comfygen"
-          }
-        })}
-      </script>
+ 
+
+
+
       <script type="application/ld+json">
         {JSON.stringify({
          "@context": "https://schema.org/",
@@ -366,14 +263,7 @@ export default function Ecommerce(props) {
         })}
       </script>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
+ 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}

@@ -17,6 +17,7 @@ import {
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -186,30 +187,7 @@ const breadCrum = {
   ],
 };
 
-const organization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen Technologies",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/svg/Logo1.svg",
-  contactPoint: {
-    "@type": "ContactPoint",
-    contactType: "sales",
-    contactOption: "WhatsApp",
-    telephone: "+91 9587867258",
-    // "areaServed": "US, IN",
-    email: "sales@comfygen.com",
-    areaServed: ["IN", "US", "CA", "GB"],
 
-    availableLanguage: "en, in",
-  },
-  sameAs: [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies",
-  ],
-};
 
 const product = {
   "@context": "http://www.schema.org",
@@ -438,10 +416,10 @@ export default function Altcoin(props) {
   return (
     <>
       <Head>
-        <title>Chess Game Development Company</title>
+        <title>Cricket Live Line API Provider Company | Real-Time Cricket Scores</title>
         <meta
           name="description"
-          content="Comfygen is a Top Chess Game Development Company In India & The USA. We have a team of expert. Hire dedicated Chess Game Developers at fair-minded prices. Contact us Today!"
+          content="Comfygen is the best Cricket Live Line API provider company offering fast, developer-friendly APIs for IPL, T20, ODI, and Test matches. Deliver real-time ball-by-ball updates, live scores, and match statistics seamlessly across apps and websites."
         />
         <link
           rel="canonical"
@@ -588,10 +566,7 @@ export default function Altcoin(props) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
-        />
+    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
@@ -614,9 +589,15 @@ export default function Altcoin(props) {
       <div className="overflow-hidden lg:pt-[120px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Chess Game Development Company"
-            ptag="Welcome to Comfygen - Your Ultimate Chess Game Development Partner"
-            ptag1="Are you looking for a trustworthy and creative chess game development company In India and the USA, to help you realize your virtual chess vision? There is no need to look any further. Comfygen is a forerunner in the chess game development industry, with a proficiency of skilled chess software developers and a track record of producing great chess game development services & solutions."
+            heading="Cricket Live Line API Provider"
+            subhead="Your Trusted Cricket Live Line Api Provider Company."
+
+            ptag="Cricket is not just a sport, but it is a native emotion of view.Looking to integrate real-time cricket scores into your app or website? At Comfygen, we offer a fast, developer-friendly Cricket Live Line API that delivers ball-by-ball updates, live scores, and match statistics for IPL, T20, ODI, Test, and more. Our API supports seamless integration with live score widgets and dynamic sports platforms, ensuring a smooth experience across devices."
+            ptag1="Whether you're building a sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
+            li="Multiplayer chess game development for web and mobile"
+            li1="AI-powered smart opponents for realistic gameplay"
+            li2="Custom themes, boards, and animations"
+            li3="Secure and scalable game architecture"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -626,18 +607,6 @@ export default function Altcoin(props) {
             bgImage="https://www.comfygen.com/herosection/chess-game-development-hero-img.webp"
           />
         </div>
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title=""
-          heading="Comfygen An Online Chess Game Development Company: Crafting Winning Moves in the Gaming World"
-          description1="Welcome to Comfygen, your ultimate destination for innovative and engaging online chess game development solutions. As a leading chess game development company, we have established ourselves as a pioneer in the chess game development industry, driven by an unwavering passion for chess and an innate understanding of game dynamics."
-          points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/chess-game-development/chess-game-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -654,6 +623,20 @@ export default function Altcoin(props) {
             </div>
           </div>
         </section>
+
+        <NewSection NewSection={JSON_DATA.NewSections} />
+        <AboutSection
+          title=""
+          heading="Comfygen An Online Chess Game Development Company: Crafting Winning Moves in the Gaming World"
+          description1="Welcome to Comfygen, your ultimate destination for innovative and engaging online chess game development solutions. As a leading chess game development company, we have established ourselves as a pioneer in the chess game development industry, driven by an unwavering passion for chess and an innate understanding of game dynamics."
+          points={[]}
+          imageSrc="https://www.comfygen.com/comfygen-images/chess-game-development/chess-game-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
 
 
@@ -677,10 +660,10 @@ export default function Altcoin(props) {
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center space-y-4">
               <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Unveiling Our Chess Game Development Process: A Game Development Journey
+                Unveiling Our Chess Game Development Process: A Game Development Journey
               </h2>
               <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-              Embark on a journey through the meticulous Chess Game Development process at ComfyGen, an esteemed Chess Game Development Company in India. Our approach is a step-by-step roadmap that brings your gaming dreams to life, leveraging the expertise of Chess Game App Developers, Chess Game Developers, and Chess Software Providers.
+                Embark on a journey through the meticulous Chess Game Development process at ComfyGen, an esteemed Chess Game Development Company in India. Our approach is a step-by-step roadmap that brings your gaming dreams to life, leveraging the expertise of Chess Game App Developers, Chess Game Developers, and Chess Software Providers.
               </p>
             </div>
             <ProcessSec processSlides={Processs} />
@@ -743,10 +726,12 @@ export default function Altcoin(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
+        <ClientStories />
+
 
         <Faq faqData={Frequently} title="" />
 
- <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

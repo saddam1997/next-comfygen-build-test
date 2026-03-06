@@ -79,6 +79,7 @@ const BlogSection = dynamic(
 import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKey, } from '@tabler/icons-react';
 import Script from "next/script";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 
@@ -327,10 +328,10 @@ export default function Ecommerce(props: any) {
   return (
     <>
       <Head>
-        <title>ERC20 Token Development Company | Ethereum Smart Contract Solutions</title>
+        <title>Truted ERC20 Token Development Company | Secure & Custom Ethereum Tokens</title>
         <meta
           name="description"
-          content="Comfygen is a leading ERC20 token development company offering secure, scalable Ethereum-based token creation, smart contract integration, and customizable solutions for ICOs and DeFi projects."
+          content="Comfygen is a trusted ERC20 token development company, offering secure, and scalable token solutions on the Ethereum network. Build high-performance ERC20 tokens with seamless smart contract integration."
         />
         <link
           rel="canonical"
@@ -368,8 +369,8 @@ export default function Ecommerce(props: any) {
         {/* <Header /> */}
         <HeroSectionForAllPages
           HeroSectionForAllPages
-          heading="ERC20 Token Development Company"
-          ptag="Comfygen is the best ERC20 token development company delivering secure, scalable, and customizable token development solutions on the Ethereum network. Our expert developers create high-performance ERC20 tokens with seamless smart contract integration and full compliance with the ERC-20 standard. "
+          heading="Trusted ERC20 Token Development Company"
+          ptag="Comfygen is a trusted ERC20 token development company delivering secure, scalable, and customizable token development solutions on the Ethereum network. Our expert developers create high-performance ERC20 tokens with seamless smart contract integration and full compliance with the ERC-20 standard."
           ptag1=""
           li="Industry-Leading ERC20 Token Development Services"
           li1="Secure Ethereum Smart Contract Integration"
@@ -536,6 +537,8 @@ export default function Ecommerce(props: any) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
+
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

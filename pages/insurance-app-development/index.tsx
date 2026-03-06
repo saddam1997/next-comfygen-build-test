@@ -349,11 +349,11 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Insurance Mobile App Development Company | Comfygen</title>
+        <title>Comfygen custom Insurance Mobile App Development Company</title>
 
         <meta
           name="description"
-          content="Comfygen is a leading insurance mobile app development company delivering AI-powered underwriting, blockchain claims, and on-demand digital insurance apps."
+          content="Build secure and scalable insurance apps with the best insurance mobile app development company. We develop custom insurtech apps with claims management, policy tracking, and seamless user experience."
         />
         <meta
           name="keywords"
@@ -450,8 +450,8 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Insurance Mobile App Development Company"
-          ptag="Comfygen is a top-ranking insurance Mobile application development Company that assists in realizing your insurance ideas. We provide secure, easy-to-use, and non-compliant insurance mobile application development services to startups, brokers, and enterprises. We also provide solutions to address your business requirements, such as claims management, policy tracking, and customer engagement, and make sure that the experience of your users is flawless."
+          heading="custom insurance mobile app development company"
+          ptag="Comfygen is the best Insurance Mobile App Development Company that helps businesses turn their insurance app development ideas into powerful digital solution. We provide on-demad insurance mobile app development services that are secure, scalable, and easy to use for startups, insurance brokers, and enterprises. As a leading lnsurance app development company, we build feature-rich applications with advanced solutions such as insurance claims management, policy tracking, premium calculation, and customer engagement tools. Our expert developers focus on creating high-performance insurance mobile apps that improve user experience, streamline operations, and support business growth in the digital insurance industry."
           li="Custom Insurance App Development for Startups, Brokers & Enterprises"
           li1="Secure, Compliant & Scalable Architecture"
           li2="Advanced Features for Claims, Policy & Customer Management"

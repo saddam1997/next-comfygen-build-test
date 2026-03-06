@@ -125,8 +125,8 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-        <title>AWS Analytics Services | Data Engineering & AI/ML Solutions – Comfygen</title>
-        <meta name="description" content="Comfygen provides AWS analytics services, offering secure, scalable, and cost-efficient data pipelines, real-time analytics, AI/ML integration, and cloud-native solutions to drive smarter business decisions." />
+        <title>AWS Data Analytics Services Company | End-to-End AWS Analytics</title>
+        <meta name="description" content="Comfygen is a trusted AWS data analytics services company delivering scalable AWS analytics solutions, real-time data processing, data lakes, and BI dashboards for businesses." />
 
         <meta name="keywords" content="Data Engineering on AWS, Real-Time Analytics, Cloud Data Warehousing, BI Dashboard Development, ETL Pipeline Automation" />
 
@@ -163,13 +163,13 @@ export default function Mobile(props) {
 
       <div className="pt-16">
         <HeroSectionForAllPages
-          heading="AWS Analytics Services"
-          ptag="At Comfygen Technologies, we help businesses transform data into actionable insights with secure, scalable, and cost-efficient AWS Analytics services. Our AWS-certified experts design cloud-native solutions, from advanced data pipelines to real-time analytics, enabling startups and enterprises to make smarter, faster business decisions."
-          li="End-to-End AWS Data Analytics & Engineering Solutions"
-          li1="Real-Time Analytics for Smarter Decisions"
-          li2="Serverless & Scalable Cloud Architecture"
-          li3="AI & ML Integration with Amazon SageMaker"
-          li4="Secure, Compliant, and Governed Data Infrastructure"
+          heading="End-to-End AWS Data Analytics Service Provider Company"
+          ptag="Unlock the true value of your business data with our powerful AWS Data Analytics Services. At Comfygen, we help businesses collect, process, and analyze large datasets using advanced AWS analytics tools to deliver real-time insights and smarter decision-making."
+          ptag1="As a trusted AWS data analytics service provider company, we build cloud-based AWS analytics solutions including data lakes, data warehouses, and interactive dashboards that turn complex data into actionable business intelligence."
+          li="Scalable AWS Data Analytics Solutions"
+          li1="Real-Time Data Processing & Insights"
+          li2="Secure Cloud-Based Data Infrastructure"
+          li3="Custom AWS Analytics Consulting"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

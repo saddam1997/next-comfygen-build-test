@@ -67,11 +67,11 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          Baseball Live Line API | Real-Time MLB Scores, Stats & Odds
+          Baseball Live Line API Provider Company | Real-Time Baseball API
         </title>
         <meta
           name="description"
-          content="Get powerful Baseball Live Line API services. Access real-time MLB stats, scores, and odds. Custom APIs for sports apps."
+          content="Get real-time scores, match updates, and statistics with our Baseball Live Line API. Reliable API solutions for sports apps, betting platforms, and fantasy sports platforms."
         />
         <meta
           name="keywords"
@@ -203,7 +203,7 @@ export default function Ecommerce(props:any) {
       <Header />
       <div className="overflow-hidden  lg:pt-[110px]">
         <HeroSection
-          heading="Baseball Live Line API"
+          heading="Baseball Live Line API Provider Company"
           subhead="Custom Baseball Live Line API for Real-Time Sports Insights"
           ptag="Unlock the power of real-time baseball data with our robust Baseball Live Line API services. Whether you're building a sports analytics tool, our solution offers accurate and lightning-fast MLB stats, scores, and odds. Designed to scale with your application and built on modern, secure infrastructure, our baseball APIs are tailored for performance."
           ptag1="From live game updates to historical MLB odds, our service empowers developers and businesses alike to create data-rich sports experiences. Need a customized Baseball data API? We’ve got you covered."

@@ -346,7 +346,7 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Meat Delivery App Development Company | On-Demand Solutions</title>
+        <title>Meat Delivery App Development Company | On-Demand Meat delivery App</title>
         <meta
           name="description"
           content="Comfygen is a leading meat delivery app development company building custom, on-demand meat ordering apps with tracking, subscriptions & secure payments."
@@ -451,7 +451,7 @@ export default function ClinicalApp(props: any) {
         <div className="">
           <HeroSectionForAllPages
             heading="Meat Delivery App Development Company"
-            ptag="Build a powerful on-demand meat delivery app with Comfygen, a trusted meat delivery app development company for startups, butcher shops, and enterprises. We create fast, secure, and scalable meat ordering apps with real-time tracking, subscription management, multi-vendor support, and seamless online payments—helping you deliver fresh meat faster and grow your business online."
+            ptag="Develop a powerful on-demand meat delivery app with Comfygen, a leading meat delivery app development company serving startups, butcher shops, and enterprises. We develop fast, secure, and scalable meat delivery apps featuring real-time order tracking, subscription management, multi-vendor support, and seamless online payments. Our meat delivery app development solutions help you deliver fresh meat efficiently, enhance customer experience, and grow your business in the digital marketplace."
             li="Custom Meat Ordering Apps"
             li1="Real-Time Order Tracking"
             li2="Subscription & Multi-Vendor Support"

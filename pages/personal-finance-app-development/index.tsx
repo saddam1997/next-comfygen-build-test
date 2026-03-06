@@ -7,6 +7,7 @@ import JSON_DATA from "./PersonalFinance.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -432,10 +433,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Personal Finance App Development Company</title>
+        <title>Personal Finance App Development Company | Scalable Finance Apps</title>
         <meta
           name="description"
-          content="Looking for a reliable personal finance app development company? We build secure, user-friendly finance apps to track spending, manage budgets, and grow savings. Get custom personal finance software tailored for startups, banks & enterprises."
+          content="Comfygen is a top-rated personal finance app development company offering secure, scalable, and user-friendly finance apps for startups, fintech firms, and enterprises."
         />
         <link
           rel="canonical"
@@ -547,8 +548,8 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages
-          heading="Personal Finance App Development Company"
-          ptag="Comfygen Technologies is a leading Personal Finance App Development Company offering advanced Personal Finance App Development services for startups, fintech firms, and enterprises. We create secure, scalable, and user-friendly finance apps that simplify budgeting, expense tracking, and money management, helping businesses deliver exceptional financial solutions and enhance user engagement across Android, iOS, and web platforms."
+          heading="Top Rated Personal Finance App Development Company"
+          ptag="Comfygen Technologies is a top rated personal finance app development company offering advanced Personal Finance App Development services for startups, fintech firms, and enterprises. We create secure, scalable, and user-friendly finance apps that simplify budgeting, expense tracking, and money management, helping businesses deliver exceptional financial solutions and enhance user engagement across Android, iOS, and web platforms."
           li="Simple and intuitive UI/UX for finance apps"
           li1="Secure bank & wallet integrations"
           li2="Real-time expense tracking and budgeting"
@@ -747,6 +748,7 @@ export default function ClinicalApp(props: any) {
             "Focus on security (AES-256, Biometric Auth)",
           ]}
         />
+        <ClientStories/>
         <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}

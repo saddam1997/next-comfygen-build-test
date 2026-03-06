@@ -9,6 +9,7 @@ import { IconShoppingCart, } from '@tabler/icons-react';
 
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { ssr: true}
@@ -112,11 +113,11 @@ export default function Altcoin(props) {
     <>
       <Head>
         <title>
-          Blackjack Game Development Company In India & The USA | Comfygen
+          Blackjack Game Development Company | Custom Blackjack Game Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is an Ultimate Blackjack Game Development Company in India and the USA. We have a team of expert. Hire our dedicated BlackJack Game Developers at fair-minded prices."
+          content="Comfygen is a leading blackjack game development company with expert developers delivering custom, business-ready blackjack software. we provide engaging gameplay and an exceptional digital entertainment experience"
         />
         <link
           rel="canonical"
@@ -227,8 +228,8 @@ export default function Altcoin(props) {
       <div className="overflow-hidden ">
         <div className="lg:pt-[110px]">
           <HeroSectionForAllPages
-            heading="Blackjack Game Development Company"
-            ptag="Hit the Jackpot with the Ultimate Blackjack Game Development Company In India & The USA - Comfygen is one of the best mobile and game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them."
+            heading="Best Blackjack Game Development Company"
+            ptag="Comfygen is one of the best blackjack game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them."
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -303,6 +304,7 @@ export default function Altcoin(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Video Game Development"

@@ -9,6 +9,7 @@ import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const loader = () => (
@@ -393,11 +394,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Smart Contract Development Company
+         Top Rated Smart Contract Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen is a smart contract development company delivering secure, scalable blockchain solutions for DeFi, NFTs, and enterprises."
+          content="Comfygen is a top rated smart contract development company delivering secure, scalable blockchain solutions for DeFi, NFTs, and enterprises."
         />
         <link
           rel="canonical"
@@ -503,8 +504,8 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="smart contract development company"
-          ptag="Comfygen is a leading smart contract development company. We help enterprises build secure, reliable, and high-performance smart contracts that automate complex processes on the blockchain. Our expert blockchain developers design custom smart contract development solutions with a strong focus on precision, security, and scalability. developing NFT ecosystems, or automating enterprise workflows. Each smart contract is engineered to reduce risk, ensure transparency, and align seamlessly with your business objectives."
+          heading="Top Rated Smart Contract Development Company"
+          ptag="Comfygen is a top rated smart contract development company. We help enterprises build secure, reliable, and high-performance smart contracts that automate complex processes on the blockchain. Our expert blockchain developers design custom smart contract development solutions with a strong focus on precision, security, and scalability. developing NFT ecosystems, or automating enterprise workflows. Each smart contract is engineered to reduce risk, ensure transparency, and align seamlessly with your business objectives."
           li="Expert Blockchain & Smart Contract Developers"
           li1="Custom-Tailored Smart Contract Solutions"
           li2="Secure, Efficient & Automated Transactions"
@@ -658,6 +659,7 @@ export default function Ecommerce(props: any) {
           title="Technologies & Platforms We Work On"
           description="At Comfygen, our smart contract development services cover a wide range of blockchain networks to meet diverse business needs. Our team of multi-chain smart contract developers is skilled in building, deploying, and optimizing smart contracts."
         />
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

@@ -17,8 +17,8 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
             key={feature.id}
             className={`rounded-full flex justify-center border cursor-pointer ${
               activeId === feature.id
-                ? "bg-white text-black border-gray-300"
-                : "bg-[#5556D1] text-white border-[#5556D1]"
+                ? " bg-[#5556D1] text-white border-gray-300"
+                : "bg-white text-black border-[#5556D1]"
             }`}
           >
             <button
