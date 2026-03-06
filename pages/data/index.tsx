@@ -283,10 +283,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Data Services Company | Analytics, AI/ML & Big Data Solutions – Comfygen</title>
+        <title>Data Consulting Services & Data Development Company | Comfygen</title>
         <meta
           name="description"
-          content="Comfygen provides comprehensive data services including analytics, AI/ML integration, big data engineering, and real-time dashboards to deliver secure, scalable, and business-tailored solutions."
+          content="Looking for reliable data consulting services? Comfygen provides custom data development solutions, advanced analytics, AI-powered insights, and scalable data infrastructure for businesses."
         />
         <meta
           name="keywords"
@@ -339,12 +339,13 @@ export default function ClinicalApp(props: any) {
       </LazyLoad>
       <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
-          heading="Comprehensive Data Services According to Your Business"
-          ptag="Unlock the full potential of your business data with Comfygen Technologies. As a trusted data services company, we provide end-to-end solutions in data analytics, engineering, visualization, AI/ML, and big data. Whether you are a startup, enterprise, or government organization, we deliver secure, scalable, and future-ready data solutions customized to your needs."
-          li="Custom Data Analytics & Engineering Solutions"
-          li1="AI & Machine Learning Integration"
-          li2="Secure, Scalable, Cloud-Based Data Infrastructure"
-          li3="Real-Time Dashboards & Business Intelligence Reporting"
+          heading="Data Consulting and Development Services for Intelligent Business Decisions"
+          ptag="Unlock the full potential of your business data with our expert data consulting and development services company. At Comfygen, we help all startups and enterprises transform complex data into actionable insights through advanced data analytics, data engineering, AI-driven data solutions, and business intelligence platforms."
+          ptag1="We design data development solutions that lead to better decisions, greater efficiency and long-term growth for businesses."
+          li="End-to-End Data Consulting & Strategy"
+          li1="AI & Machine Learning-Powered Data Solutions"
+          li2="Real-Time Data Analytics & Interactive Dashboards"
+          li3="Secure Cloud-Based Data Infrastructure"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

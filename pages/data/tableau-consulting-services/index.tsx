@@ -169,10 +169,10 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Tableau Consulting Service Provider | Tableau Dashboard & Analytics Experts</title>
+        <title>Best Tableau Consulting Service Provider | Data Visualization & BI Solutions</title>
         <meta
           name="description"
-          content="Looking for a trusted Tableau Consulting Service Provider? Comfygen delivers custom Tableau dashboards, data integration, reporting, and analytics to turn complex data into actionable business insights."
+          content="Comfygen is a leading Tableau consulting service provider, offering expert data visualization, business intelligence, and analytics solutions. Transform your data into actionable insights with our professional Tableau consulting services"
         />
 
         <link
@@ -246,8 +246,8 @@ export default function Mobile(props: any) {
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages
-          heading="Tableau Consulting Service Provider"
-          ptag="Comfygen is a leading Tableau Consulting Service Provider helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions."
+          heading="Expert Tableau Consulting Service Provider for Analytics & BI"
+          ptag="Comfygen is a expert tableau consulting service provider company helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions."
           li="Tailored Dashboards That Drive Action"
           li1="Interactive Visuals That Simplify Data"
           li2="Real-Time KPIs & Analytics at a Glance"

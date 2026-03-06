@@ -314,11 +314,11 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-          Best Education App Development Company in Canada | Comfygen
+           Education App Development Company in Canada | eLearning App Services
         </title>
         <meta
           name="description"
-          content="Looking for a top education app development company in Canada? Comfygen builds AI-powered, engaging, scalable learning apps for schools, colleges & EdTech startups"
+          content="Comfygen is a leading education app development company in Canada offering custom eLearning app development services for universities and EdTech startups. Build scalable learning apps."
         />
         <link
           rel="canonical"
@@ -416,8 +416,8 @@ export default function Mobile(props) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Top Education App Development Company in Canada"
-            ptag="Comfygen is a leading education app development company in Canada, creating innovative and engaging apps for schools, colleges, and EdTech startups. Our expert developers deliver high-performance, user-friendly learning apps tailored to your needs, helping you engage students, streamline learning, and grow your EdTech business."
+            heading="Award winning Education App Development Company in Canada"
+            ptag="Comfygen is the best education app development company in Canada offering innovative and reliable education app development services to universities, and EdTech startups. Our expert developers build custom eLearning apps with high performance, intuitive design, and advanced features to enhance the digital learning experience. As a leading education aap development company in canada we focus on creating scalable and user-friendly solutions that help institutions increase student engagement, streamline learning management, and grow their EdTech platforms in the competitive digital education market."
             li="Custom Learning App Solutions"
             li1="Expert EdTech App Development"
             li2="Engaging & Interactive Design"
@@ -438,10 +438,10 @@ export default function Mobile(props) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Offer Best Educational App Development Services
+                Comprehensive Education App Development Services In Canada for Modern Learning
               </h2>
               <p className="text-base text-center font-normal">
-                We provide end-to-end education app development services for schools, EdTech startups, and enterprises. As a trusted education app development company, we build scalable, secure, and engaging mobile learning solutions tailored to your business goals.
+                We deliver end-to-end education app development services designed for schools, universities, EdTech startups, and enterprises. As a reliable education app development company In Canada, we create secure, scalable, and interactive learning applications that enhance digital education. Our elearning app development solutions are built with advanced features, intuitive design, and high performance to improve student engagement, simplify learning management, and support the growth of your EdTech platform in today’s competitive market.
               </p>
             </div>
             <div className="">

@@ -84,8 +84,8 @@ export default function BlogSection(props: any) {
                         dangerouslySetInnerHTML={{ __html: element?.title }}
                       />
                       {element?.description && (
-                        <p className="text-base text-black line-clamp-3">
-                          {element.description}
+                        <p className="text-base text-black line-clamp-3" dangerouslySetInnerHTML={{ __html: element.description }}>
+                          {/* {element.description} */}
                         </p>
                       )}
                     </div>

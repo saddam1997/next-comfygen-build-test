@@ -42,8 +42,8 @@ const CardWallets = ({ featuresData = [], grid, heading, description }) => {
               key={feature.id}
               className={`rounded-full flex justify-center border cursor-pointer ${
                 openedFeature?.id === feature.id
-                  ? "bg-white hover:bg-gray-100 text-black border-[#5556D1]"
-                  : "bg-[#5556D1] text-white border-[#5556D1]"
+                  ? "bg-[#5556D1] text-white border-[#5556D1]"
+                  : "  bg-white hover:bg-gray-100 text-black border-[#5556D1]"
               }`}
             >
               <button

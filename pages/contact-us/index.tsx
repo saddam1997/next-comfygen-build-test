@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react'
 import Header from "../../components/Newcomponet/layout/Header"
+import ContactUs from "../../components/ContactUs"
 import GetinTouch from '../../components/Newcomponet/SectionCompoent/GetinTouch';
 import LazyLoad from 'react-lazy-load';
 import Image from 'next/image';
@@ -30,8 +31,9 @@ export default function Contact() {
         <Header />
       </LazyLoad>
       <div className="overflow-hidden">
+        <ContactUs/>
 
-        <section className="relative lg:py-[7rem] py-[5rem] flex items-center justify-center overflow-hidden">
+        {/* <section className="relative lg:py-[7rem] py-[5rem] flex items-center justify-center overflow-hidden">
 
           <Image
             src="https://www.comfygen.com/image/contact-us-hero-bg.webp"
@@ -49,7 +51,7 @@ export default function Contact() {
             </h1>
           </div>
 
-        </section>
+        </section> */}
 
       </div>
 

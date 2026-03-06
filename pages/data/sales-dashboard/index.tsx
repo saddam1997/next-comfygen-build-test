@@ -13,6 +13,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 
 import dynamic from "next/dynamic";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -113,77 +114,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-technologies",
     ],
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Comfygen Technologies",
-    image: "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen Technologies",
-    url: "https://www.comfygen.com/",
-    telephone: "+91-958-786-7258",
-    priceRange: "$",
-    address: [
-      {
-        "@type": "PostalAddress",
-        streetAddress:
-          "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar  ",
-        addressLocality: "Jaipur",
-        postalCode: "302006",
-        addressCountry: "IN",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        addressLocality: "Toronto",
-        postalCode: "M1G3S7",
-        addressCountry: "Canada",
-      },
-    ],
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    sameAs: [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies",
-      "https://www.comfygen.com/",
-    ],
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Comfygen Technologies",
-    url: "https://www.comfygen.com/",
-    logo: "https://www.comfygen.com/svg/Logo1.svg",
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      contactOption: "WhatsApp",
-      telephone: "+91 9587867258",
-      email: "sales@comfygen.com",
-      areaServed: ["IN", "US", "CA", "GB"],
-
-      availableLanguage: "en, in",
-    },
-    sameAs: [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies",
-    ],
-  },
+ 
 
   {
     "@context": "http://www.schema.org",
@@ -367,11 +298,11 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Sales Performance Dashboards with Microsoft Power BI | Comfygen</title>
+        <title>Sales Performance Dashboards Using Microsoft Power BI solution | Comfygen</title>
 
         <meta
           name="description"
-          content="Get custom Microsoft Power BI sales dashboards to monitor KPIs, sales funnel performance, and revenue trends with real-time, actionable insights."
+          content="Comfygen offers interactive sales performance dashboards using Microsoft Power BI to help sales teams track leads, monitor KPIs, and optimize the sales funnel."
         />
         <meta
           name="keywords"
@@ -486,8 +417,8 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[120px]">
         <HeroSectionForAllPages
-          heading="Sales Performance Dashboards with Microsoft Power BI"
-          ptag="Sales Performance Dashboards with Microsoft Power BI enable sales teams to track and optimize every stage of the sales funnel—from lead generation to revenue conversion. These interactive dashboards provide real-time visibility into sales performance, key KPIs, and emerging trends, empowering businesses to make data-driven decisions, improve forecasting accuracy, and accelerate sustainable revenue growth."
+          heading="Sales Performance Dashboards Using Microsoft Power BI"
+          ptag="Sales Performance Dashboards Using Microsoft Power BI sales teams to track and optimize every stage of the sales funnel—from lead generation to revenue conversion. These interactive dashboards provide real-time visibility into sales performance, key KPIs, and emerging trends, empowering businesses to make data-driven decisions, improve forecasting accuracy, and accelerate sustainable revenue growth."
           li='Real-Time Sales Analytics'
           li1='KPI Tracking & Trend Analysis'
           li2='Funnel Performance Monitoring'
@@ -649,6 +580,8 @@ export default function Mobile(props: any) {
           subheading="Implementing a powerful, real-time Power BI Sales Dashboard with Comfygen is simple, efficient, and fully tailored to your business needs. Here's a closer look at the journey from raw data to actionable insights:"
           techData={latesttech}
         /> */}
+
+        <ClientStories/>
 
         <ClientTestimonials
           heading="What Our Clients Say About Comfygen's Power BI Solutions"

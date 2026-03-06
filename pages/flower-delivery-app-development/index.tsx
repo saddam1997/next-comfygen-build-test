@@ -53,7 +53,7 @@ const DeliverySection = dynamic(() => import("../../components/Newcomponet/comma
   ssr: true,
 });
 
-const HireDeveloper = dynamic(() => import( "../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
+const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
@@ -62,7 +62,7 @@ const ClientTestimonials = dynamic(() => import("../../components/Newcomponet/Se
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
-const Faq = dynamic(() => import( "../../components/Newcomponet/SectionCompoent/Faq"), {
+const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
 });
@@ -372,10 +372,10 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Flower Delivery App Development Company | On-Demand Floral App Solutions</title>
+        <title>Flower Delivery App Development Company | Comfygen</title>
         <meta
           name="description"
-          content=" Comfygen is a reliable flower delivery app development company offering custom and white-label on-demand flower delivery apps with real-time tracking, secure payments, and scalable features for florists and startups."
+          content="Comfygen is the best flower delivery app development company offering custom and on-demand flower delivery apps with real-time tracking, secure payments, and scalable features for florists and startups."
         />
         <meta
           name="keywords"
@@ -490,7 +490,7 @@ export default function ClinicalApp(props: any) {
           <HeroSectionForAllPages
             heading="Flower Delivery App Development Company"
             // ptag="Launch Your Own Flower Delivery App with Ease"
-            ptag1="Grow your floral business online with Comfygen, a trusted flower delivery app development company. We build custom, white-label, and on-demand flower delivery apps with real-time order tracking, secure payments, and smart features that help florists increase sales and manage deliveries with ease."
+            ptag1="Comfygen is the best flower delivery app development company that provide flower delivery app development solution for florists, startups, and delivery businesses. Our flower apps feature real-time tracking, secure payments, and scalable functionalities to ensure seamless user experience and efficient business operations. With Comfygen, you can launch a robust and user-friendly flower delivery app that delights customers and grows your business."
             li="Custom & White-Label Flower Delivery App Development"
             li1="Real-Time Order Tracking & Delivery Management"
             li2="Secure Payment Gateway & Multi-Vendor Support"
@@ -504,13 +504,13 @@ export default function ClinicalApp(props: any) {
             bgImage="https://www.comfygen.com/comfygen-images/flower-delivery-app-development/hero2.webp"
           />
         </div>
-<Milestones/>
+        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Top-notch Flower Delivery App Development Services
+                Our Top-notch Flower Delivery App Development Services
               </h2>
               <p className="text-base text-center font-normal">
                 Comfygen Technologies offers top-notch flower delivery app development services for florists, flower shops, startups, and bouquet subscription businesses. Our custom flower delivery mobile app development solutions help you streamline deliveries, increase customer engagement, and grow your business.
@@ -529,7 +529,7 @@ export default function ClinicalApp(props: any) {
           description2="Whether you're a florist shop, event flower vendor, startup, entrepreneur, or a bouquet subscription service, a flower delivery app development solution can transform your business with automation, real-time tracking, and personalised user experiences."
           description3="With Comfygen’s advanced flower delivery app development services, we help you digitise your business, boost operational efficiency, and enhance customer loyalty."
           points={[
-           
+
           ]}
           imageSrc="https://www.comfygen.com/comfygen-images/flower-delivery-app-development/about.webp"
           link="/about-us"
@@ -618,7 +618,7 @@ export default function ClinicalApp(props: any) {
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
-  <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
 
       </div>
     </>

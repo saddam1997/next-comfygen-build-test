@@ -402,10 +402,10 @@ export default function Ecommerce(props:any) {
   return (
     <>
       <Head>
-        <title>ICO Development Company | Secure & Scalable ICO Solutions</title>
+        <title>Top ICO Development Company | ICO Services Provider</title>
         <meta
           name="description"
-          content="Comfygen is an ICO development company providing secure, end-to-end ICO solutions including token creation, smart contracts, and dashboards."
+          content="Comfygen is an top-rated ICO development company providing secure, end-to-end ICO solutions including token creation, smart contracts, and dashboards."
         />
         <link rel="canonical" href="https://www.comfygen.com/ico-development" />
 
@@ -493,9 +493,9 @@ export default function Ecommerce(props:any) {
 
 
         <HeroSectionForAllPages
-          heading="ICO Development Service "
+          heading="Best ICO Development Company"
           subhead='Secure, Scalable & End-to-End ICO Launch Solutions'
-          ptag="Comfygen is a trusted ICO development company delivering secure, scalable, and fully customized Initial Coin Offering (ICO) solutions for startups and enterprises. We provide end-to-end ICO development services, including token creation, smart contract development, investor dashboards, and launch support. Our experts ensure audited smart contracts, compliant tokenomics, and seamless fundraising execution—helping you launch your ICO with confidence and transparency."
+          ptag="Comfygen is a trusted ICO development company delivering secure, scalable, and fully customized Initial Coin Offering (ICO) development solutions for startups and enterprises. We provide top-rated ICO development services, including token creation, smart contract development, investor dashboards, and launch support. Our experts ensure audited smart contracts, compliant tokenomics, and seamless fundraising execution—helping you launch your ICO with confidence and transparency."
           li="End-to-End ICO Development Services"
           li1="Secure & Audited Smart Contract Development"
           li2="Custom Token Creation & Deployment"

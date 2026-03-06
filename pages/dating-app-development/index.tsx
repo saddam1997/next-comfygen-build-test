@@ -166,7 +166,7 @@ export default function Ecommerce(props: any) {
           talkToExpertModal={talkToExpertModal}
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-dev-hero-img-optimized.webp"
+          bgImage="https://www.comfygen.com/comfygen-images/dating-app-development/dating.webp"
         />
 
         <Milestones />

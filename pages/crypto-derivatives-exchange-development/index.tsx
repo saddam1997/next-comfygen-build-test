@@ -5,6 +5,7 @@ import JSON_DATA from "./json/cryptoderivativesexchangedevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -132,24 +133,7 @@ export default function Ecommerce(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -176,72 +160,6 @@ export default function Ecommerce(props: any) {
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
 
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
     },
     {
       "@context": "http://www.schema.org",
@@ -333,13 +251,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Crypto Derivatives Exchange Development | Futures Trading Platform
-
-
+          Crypto Derivatives Exchange Development Company | Comfygen
         </title>
         <meta
           name="description"
-          content="Develops secure and scalable crypto derivatives exchanges, supporting futures, options, swaps, and margin trading. Launch your high-performance derivatives trading platform with advanced risk management infrastructure."
+          content="Comfygen is the best crypto derivatives exchange development company, offering secure and scalable platforms for futures, options, perpetual contracts, and margin trading with advanced features and real-time risk management."
         />
         <link
           rel="canonical"
@@ -382,32 +298,7 @@ export default function Ecommerce(props: any) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-development.webp" />
         <meta property="og:image:alt" content="Crypto Derivatives Exchange Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Crypto Derivatives Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/crypto-derivatives-exchange-development",
-              description:
-                "Comfygen is a leading crypto derivatives exchange development company delivering secure, scalable and feature-rich derivatives trading software tailored for global markets.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image: "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-og.webp"
-            })
-          }}
-        />
+     
 
         <script
           type="application/ld+json"
@@ -421,9 +312,9 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden pt-16">
 
         <HeroSectionForAllPages
-          heading="Best Crypto Derivatives Exchange Development Company"
-          ptag="Comfygen is the best derivatives exchange development company, building powerful crypto platforms for futures, options, perpetual contracts, and margin trading. Our crypto derivatives exchange development solutions include high-performance order matching, multi-currency and multi-chain support, advanced security, and compliance-ready features. Derivatives Designed for startups and enterprises, our customizable crypto derivatives exchange software ensures liquidity integration, real-time risk management, and seamless user experiences."
-          ptag1=""
+          heading="Crypto Derivatives Exchange Development Company"
+          ptag="Comfygen is the best crypto derivatives exchange development company, building secure and high-performance platforms for futures, options, perpetual contracts, and margin trading. Our crypto derivatives exchange development solutions feature multi-currency support, advanced security, compliance-ready systems, and high-speed order matching."
+          ptag1="Tailored for startups and enterprises, our customizable crypto derivatives exchange software ensures liquidity integration, real-time risk management, and a seamless user experience, helping you launch a robust and scalable trading platform."
           li='Futures, options & perpetual contracts support'
           li1='Liquidity integration & advanced risk management'
           li2='Bank-grade security & regulatory compliance'
@@ -521,7 +412,7 @@ export default function Ecommerce(props: any) {
             grid={2} />
         </div>
 
-     
+
 
         <TechStack
           title="Our Crypto Derivatives Exchange Development Tech Stack"
@@ -551,12 +442,14 @@ export default function Ecommerce(props: any) {
 
         />
 
+        <ClientStories/>
+
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.testimonials}
         />
         <Faq faqData={JSON_DATA.Frequently} />
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

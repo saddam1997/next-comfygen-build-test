@@ -443,9 +443,9 @@ export default function Ecommerce(props: any) {
       <Head>
 
         <title>
-          Wallet Development Company | E-Wallet & Crypto Wallet Solutions – Comfygen
+          On-Demand Wallet Development Service | Custom Digital Wallet App
         </title>
-        <meta name="description" content="Comfygen is a leading wallet development company delivering secure, scalable, and user-friendly e-wallets and crypto wallets. From mobile payment wallets to enterprise crypto solutions, we build custom and white-label wallets with advanced security, multi-currency support, and seamless integrations." />
+        <meta name="description" content="Launch a secure digital wallet with our on-demand wallet development service. We build scalable wallet apps with payments, transfers, and advanced security features." />
 
         <meta name="keywords" content="E-Wallet Development, Crypto Wallet Development, NFT Wallet Development, DeFi Wallet Development, Enterprise Wallet Solutions, Mobile Wallet App Development, White Label Wallet Development" />
 
@@ -478,8 +478,8 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="Best Wallet development company"
-          ptag="Comfygen is the best wallet development company that develops safe,  secure, scalable, and user-friendly e-wallets and crypto wallets. Our wallet development solution helps businesses and their customers manage digital transactions. Whether you want to develop a mobile e-wallet for everyday payments, a crypto wallet for secure asset storage and trading, or an enterprise-level wallet for large-scale financial transactions, our wallets are designed based on your business goal. From startups to global brands, we deliver wallet development services that keep you ahead in the digital economy."
+          heading="On-Demand Wallet development Service"
+          ptag="Comfygen is the best wallet development company that builds safe, secure, scalable, and user-friendly e-wallet and crypto wallets. Our wallet development service allow businesses and their customers to manage digital transactions smoothly and securely. even if you want to create a mobile e-wallet, crypto wallet, or an enterprise-level wallet, our expert wallet development team delivers solutions tailored to your business goals. From startups to global enterprises, we provide reliable wallet development services designed to help businesses stay competitive in the fast-growing digital economy."
           ptag1=""
           li="Multi-layer authentication with advanced encryption"
           li1="Wallet development for mobile, web, and enterprise systems"
