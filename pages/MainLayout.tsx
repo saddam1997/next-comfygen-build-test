@@ -6,18 +6,18 @@ import LazyClientTools from './LazyClientTools';
 import { usePathname } from "next/navigation";
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
 
-  const hideGetInTouch = pathname === "/contact-us";
+  // const hideGetInTouch = pathname === "/contact-us";
   return (
     <>
       <main className="max-w-[1600px] w-full mx-auto overflow-x-hidden">
         {children}
 
 
-        {!hideGetInTouch && <GetinTouch />}
-        {/* <GetinTouch /> */}
+        {/* {!hideGetInTouch && <GetinTouch />} */}
+        <GetinTouch />
         <Footer />
         <LazyClientTools />
       </main>
