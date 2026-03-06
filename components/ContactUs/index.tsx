@@ -6,17 +6,17 @@ import Link from "next/link";
 
 export default function LeadSection() {
     return (
-        <section className="relative lg:py-[7rem] py-[3rem] overflow-hidden">
+        <section className="relative lg:py-[7rem] py-[3rem] bg-[#5951cd] lg:bg-transparent overflow-hidden">
 
             <Image
                 src="https://www.comfygen.com/comfygen-images/contactFormIcons/contact.webp"
                 alt="Contact Us Background"
                 fill
                 priority
-                className="lg:object-center  -z-20"
+                className="lg:object-center hidden lg:block -z-20"
             />
 
-            <div className="absolute inset-0 bg-black/60 -z-10"></div>
+            <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
             <div className="flex flex-col-reverse lg:flex-row items-start lg:items-center justify-center max-w-7xl mx-auto px-4 gap-8">
 
@@ -80,26 +80,28 @@ export default function LeadSection() {
                             Start Your Project With Us<br></br>
                         </h2>
                         <p className=" text-white mb-3 font-semibold">We’re here to turn your idea into a real product.</p>
-                        <div className="py-2">
-                            <p className="text-white">Trusted by</p>
-                            <div className="grid grid-cols-4 items-center">
-                                <Link href={"https://clutch.co/profile/comfygen-technologies"}>
-                                    <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/clutch.webp"} alt="" className="object-contain" width={640} height={340} />
-                                </Link>
-                                <Link href={"https://www.designrush.com/agency/profile/comfygen"}>
-                                    <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
-                                </Link>
-                                <Link href={"https://www.goodfirms.co/company/comfygen"}>
-                                    <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
-                                </Link>
-                                <Link href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
-                                    <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/selected firms top ecommerce development company.webp"} alt="" className="object-contain" width={640} height={340} />
-                                </Link>
-
-                            </div>
-                        </div>
+                        
                     </div>
                     <ContactFrom />
+
+                     <div className="py-2 lg:hidden">
+                        <p className="text-white">Trusted by</p>
+                        <div className="grid grid-cols-4 items-center">
+                            <Link href={"https://clutch.co/profile/comfygen-technologies"}>
+                                <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/clutch.webp"} alt="" className="object-contain" width={640} height={340} />
+                            </Link>
+                            <Link href={"https://www.designrush.com/agency/profile/comfygen"}>
+                                <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
+                            </Link>
+                            <Link href={"https://www.goodfirms.co/company/comfygen"}>
+                                <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
+                            </Link>
+                            <Link href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
+                                <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/selected firms top ecommerce development company.webp"} alt="" className="object-contain" width={640} height={340} />
+                            </Link>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>
