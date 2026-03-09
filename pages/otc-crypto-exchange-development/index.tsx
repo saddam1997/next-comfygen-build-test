@@ -80,46 +80,10 @@ const BlogSection = dynamic(
 
 
 
-const Processs = [
-  {
-    title: "Requirement Gathering & Planning",
-    description:
-      "Understanding your business needs and regulatory requirements to design a tailored OTC platform.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Developing an intuitive, responsive interface for an effortless trading experience across devices.",
-  },
-  {
-    title: "Core Software Development",
-    description:
-      "Building secure backend and frontend systems with advanced features like multi-layer security and liquidity management.",
-  },
-  {
-    title: "Integration of Compliance Tools",
-    description:
-      "Implementing KYC, AML, and audit trails to maintain regulatory standards.",
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description:
-      "Conducting thorough functional and security tests to ensure reliability and performance.",
-  },
-  {
-    title: "Deployment & Integration",
-    description:
-      "Launching the OTC platform and connecting with wallets, payment gateways, and APIs.",
-  },
-  {
-    title: "Ongoing Support & Maintenance",
-    description:
-      "Providing continuous updates, monitoring, and technical support to keep your platform secure and efficient.",
-  },
-];
 
 
-export default function Ecommerce(props:any) {
+
+export default function Page(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -129,142 +93,7 @@ export default function Ecommerce(props:any) {
     setTalkToExpertModal(false);
   };
 
-  const jsonLdData = [
-  
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Best OTC Crypto Exchange Development Company",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
-      "url": "https://www.comfygen.com/otc-crypto-exchange-development",
-      "mainEntityOfPage": "https://www.comfygen.com/otc-crypto-exchange-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "OTC crypto exchange development company",
-        "OTC crypto exchange development",
-        "Best OTC crypto exchange",
-        "Crypto OTC trading platform",
-        "OTC crypto exchange",
-        "OTC platform"
-      ],
 
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-
-
-    },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Best OTC Crypto Exchange Development Company | Custom OTC Trading Platform",
-      "image": "https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp",
-      "description": "Partner with a leading OTC crypto exchange development company to build a tailored OTC trading platform. Benefit from robust security, high liquidity, and regulatory adherence for your crypto OTC business.!",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
-
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is OTC crypto exchange software?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "OTC crypto exchange software facilitates direct, private cryptocurrency trades between buyers and sellers, especially for large-volume transactions, ensuring security and minimal market impact."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why choose an OTC platform over a regular crypto exchange?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "OTC platforms offer privacy, better liquidity, and reduced price slippage for large trades, making them ideal for institutional investors and high-net-worth individuals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What features are essential in OTC crypto exchange development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Key features include secure escrow services, customizable trade matching, multi-currency support, compliance with KYC/AML regulations, and user-friendly dashboards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to develop an OTC crypto exchange platform?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Development time varies based on features and complexity, but typically ranges from 8 to 16 weeks for a fully functional, secure OTC platform."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can OTC crypto exchange software be customized?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, OTC exchange software can be tailored to specific business needs, including custom workflows, branding, security protocols, and integration with external APIs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is OTC crypto exchange software secure?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "When developed with best security practices, including encryption, two-factor authentication, and compliance with regulatory standards, OTC platforms are highly secure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who can benefit from OTC crypto exchange development services?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Institutional investors, crypto brokers, hedge funds, corporate treasury teams, and OTC trading desks benefit from OTC crypto exchange platforms."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What technologies are used in OTC crypto exchange development?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Common tech stacks include blockchain integration, secure backend frameworks, APIs for liquidity providers, and front-end technologies ensuring a smooth user experience."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do OTC platforms handle regulatory compliance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "OTC platforms incorporate KYC (Know Your Customer) and AML (Anti-Money Laundering) protocols to comply with legal standards and ensure secure transactions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why hire a professional OTC crypto exchange development company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Professional developers ensure robust, scalable, and compliant platforms with advanced features, reducing risks and accelerating time to market for your OTC exchange."
-          }
-        }
-      ]
-    }
-
-
-
-  ];
 
   return (
     <>
@@ -364,7 +193,7 @@ export default function Ecommerce(props:any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
@@ -445,7 +274,7 @@ export default function Ecommerce(props:any) {
 
               </p>
             </div>
-            <ProcessSec processSlides={Processs} />
+            <ProcessSec processSlides={JSON_DATA.Processs} />
           </div>
         </section>
 

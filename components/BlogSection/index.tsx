@@ -57,16 +57,13 @@ export default function BlogSection(props: any) {
 
 
                       <Image
-                        {...props}
                         src={element?.og_image}
                         alt={element?.title}
                         width={1280}
                         height={720}
                         loading="lazy"
-
                         quality={70}        // ✅ optimal balance
                         placeholder="empty" // ✅ remove heavy blur
-                       
                       />
                     </div>
 

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -71,7 +71,7 @@ const BlogSection = dynamic(
 
 
 
-export default function rummy(props: any) {
+export default function Page(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -81,539 +81,14 @@ export default function rummy(props: any) {
     setTalkToExpertModal(false);
   };
 
-  const Process = [
-    {
-      title: "Discovery & Requirements",
-      description:
-        "Understand your business goals, compliance needs, and desired private blockchain development outcomes in stakeholder sessions.",
-    },
-    {
-      title: "Blockchain Type Selection",
-      description:
-        "Recommend the best types of private blockchain (consortium, enterprise, permissioned) matched to your industry and use‑case.",
-    },
-    {
-      title: "Architecture & Consensus Design",
-      description:
-        "Design network topology, consensus algorithm, and node distribution with scalability in mind.",
-    },
-    {
-      title: "Smart Contract Development",
-      description:
-        "Code, test, and validate smart contracts or chaincode for business logic and asset control.",
-    },
-    {
-      title: "App & API Integration",
-      description:
-        "Build front‑end apps and API endpoints that interact seamlessly with the private ledger back‑end.",
-    },
-    {
-      title: "Deployment & Security Setup",
-      description:
-        "Deploy nodes, enable encryption, set up access controls, and perform security audits.",
-    },
-    {
-      title: "Testing, Training & Support",
-      description:
-        "Conduct thorough testing, onboarding sessions, and set up SLA‑based maintenance and monitoring.",
-    },
-  ];
 
-  const privateBlockchainFeatures = [
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core1.svg",
-      title: "Permissioned Access Control",
-      description:
-        "Only authorized participants can access the network, ensuring complete control over data visibility, participation, and transaction flow.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core2.svg",
-      title: "Enhanced Data Privacy",
-      description:
-        "Data is shared on a need-to-know basis, allowing enterprises to maintain confidentiality while leveraging blockchain’s benefits.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core3.svg",
-      title: "High Scalability",
-      description:
-        "Private blockchains are optimized for performance, enabling high throughput and faster transactions, even with complex enterprise processes.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core4.svg",
-      title: "Customizable Consensus Mechanisms",
-      description:
-        "Enterprises can select consensus models (like RAFT, PBFT) suited for their speed, trust, and governance requirements.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core5.svg",
-      title: "Smart Contract Automation",
-      description:
-        "Automate workflows with smart contracts tailored to your business rules—reducing human error and operational delays.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core6.svg",
-      title: "Seamless Integration with Existing Systems",
-      description:
-        "Private blockchains easily connect with CRMs, ERPs, and cloud platforms via APIs or middleware for unified workflows.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core7.svg",
-      title: "Role-Based User Management",
-      description:
-        "Define user roles and permissions at multiple levels to enhance governance and prevent unauthorized actions on the network.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core8.svg",
-      title: "Data Immutability & Audit Trails",
-      description:
-        "Every transaction is securely recorded, ensuring traceability, compliance, and audit-readiness across all departments.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core9.svg",
-      title: "Regulatory Compliance Support",
-      description:
-        "Frameworks like GDPR, HIPAA, and industry-specific standards are easier to meet through customized data handling and security layers.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core10.svg",
-      title: "Enterprise-Grade Security Architecture",
-      description:
-        "End-to-end encryption, multi-factor authentication, and secure key management keep the system safe from internal and external threats.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core11.svg",
-      title: "Flexible Deployment Options",
-      description:
-        "Private blockchains can be deployed on-premises, in hybrid environments, or in the cloud based on IT and compliance needs.",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/core12.svg",
-      title: "Real-Time Monitoring & Maintenance",
-      description:
-        "Built-in tools and dashboards allow proactive performance tracking, issue resolution, and ongoing network optimization.",
-    },
-  ];
 
-  const benefitCards = [
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b1.svg",
-      name: "Enhanced Data Privacy and Control",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b2.svg",
-      name: "Permissioned Network Access",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b3.svg",
-      name: "Faster Transaction Processing",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b4.svg",
-      name: "Cost-Efficient Operations",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b5.svg",
-      name: "Regulatory Compliance Readiness",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b6.svg",
-      name: "Seamless System Integration",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b7.svg",
-      name: "Business Process Automation",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b8.svg",
-      name: "High Scalability and Flexibility",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b9.svg",
-      name: "Custom Governance Models",
-    },
-    {
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/b10.svg",
-      name: "Real-Time Data Sharing and Traceability",
-    },
-  ];
 
-  const IndustriesData = [
-    {
-      title: "Healthcare",
-      description:
-        "Private blockchain ensures secure patient data sharing, medical record management, and compliance with health regulations like HIPAA.",
-      points: [
-        "Immutable electronic health records (EHRs)",
-        "Consent-based data access",
-        "Medical supply chain transparency",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/healthcare.svg",
-      alt: "Blockchain in Healthcare",
-    },
-    {
-      title: "Retail & eCommerce",
-      description:
-        "Improve trust and transparency in transactions, inventory tracking, and customer loyalty programs with blockchain-powered solutions.",
-      points: [
-        "Tamper-proof transaction logs",
-        "Verified product sourcing",
-        "Smart contract-based loyalty systems",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/retail.svg",
-      alt: "Blockchain in Retail",
-    },
-    {
-      title: "Financial Services (Fintech)",
-      description:
-        "Streamline operations, automate compliance, and enable secure peer-to-peer transactions in a regulated environment.",
-      points: [
-        "KYC/AML on blockchain",
-        "Automated settlements with smart contracts",
-        "Secure, private asset tokenization",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/finance.svg",
-      alt: "Blockchain in Fintech",
-    },
-    {
-      title: "Supply Chain & Logistics",
-      description:
-        "Track goods in real time, prevent fraud, and ensure supply chain accountability using permissioned ledgers.",
-      points: [
-        "Real-time product tracking",
-        "Vendor verification and authentication",
-        "Automated contract enforcement",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/supply-chain.svg",
-      alt: "Blockchain in Logistics",
-    },
-    {
-      title: "Real Estate",
-      description:
-        "Digitize property records, simplify title transfers, and enable transparent, fraud-proof real estate deals.",
-      points: [
-        "Tokenized property ownership",
-        "Smart contract-driven sales agreements",
-        "Immutable title and deed records",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/real-estate.svg",
-      alt: "Blockchain in Real Estate",
-    },
-    {
-      title: "Insurance",
-      description:
-        "Speed up claim processing, prevent fraud, and ensure transparent policy management with private blockchain apps.",
-      points: [
-        "Automated claim validation",
-        "Fraud-resistant policy issuance",
-        "Customer identity verification",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/insurance.svg",
-      alt: "Blockchain in Insurance",
-    },
-    {
-      title: "Manufacturing",
-      description:
-        "Ensure traceability, quality control, and secure supplier collaboration across production lines and global facilities.",
-      points: [
-        "Provenance tracking",
-        "Smart inventory automation",
-        "Vendor compliance monitoring",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/manufacturing.svg",
-      alt: "Blockchain in Manufacturing",
-    },
-    {
-      title: "Energy & Utilities",
-      description:
-        "Enable secure energy trading, grid monitoring, and data privacy for utility customers and providers.",
-      points: [
-        "Peer-to-peer energy trading",
-        "Smart metering and billing",
-        "Grid asset tracking and automation",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/energy.svg",
-      alt: "Blockchain in Energy",
-    },
-    {
-      title: "Government & Public Sector",
-      description:
-        "Promote transparency, streamline public services, and secure identity verification systems with blockchain-based governance.",
-      points: [
-        "Digital ID verification",
-        "Transparent public recordkeeping",
-        "Blockchain voting systems",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/government.svg",
-      alt: "Blockchain in Government",
-    },
-    {
-      title: "Telecommunications",
-      description:
-        "Manage data integrity, automate service agreements, and secure user identity in telecom operations.",
-      points: [
-        "Fraud prevention for roaming and billing",
-        "Secure subscriber identity management",
-        "Smart contract-based SLAs",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/telecom.svg",
-      alt: "Blockchain in Telecom",
-    },
-    {
-      title: "Education & EdTech",
-      description:
-        "Create verifiable academic credentials, prevent certificate fraud, and support lifelong learning records.",
-      points: [
-        "Blockchain-verified diplomas",
-        "Decentralized student records",
-        "Skill-based smart certification",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/education.svg",
-      alt: "Blockchain in Education",
-    },
-    {
-      title: "Travel & Hospitality",
-      description:
-        "Enhance guest experience with secure bookings, loyalty programs, and verified identity processes.",
-      points: [
-        "Verified traveler identity",
-        "Blockchain-enabled rewards programs",
-        "Seamless booking authentication",
-      ],
-      image: "https://www.comfygen.com/comfygen-images/private-blockchain-development/travel.svg",
-      alt: "Blockchain in Travel",
-    },
-  ];
 
-  const jsonLdData = [
-   
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Private Blockchain Development Company",
-      url: "https://www.comfygen.com/private-blockchain-development",
-      description:
-        "ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire.",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-        logo: {
-          "@type": "ImageObject",
-          url: "add o image",
-        },
-      },
-      areaServed: {
-        "@type": "Place",
-        name: "Global",
-      },
-      serviceType: "Private Blockchain Development Services",
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Private Blockchain Development Services",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Custom Private Blockchain Development",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Private Blockchain Smart Contract Development",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Private Blockchain App Development",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Deployment & Node Setup",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Security & Compliance Audit",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Private Blockchain Integration",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Ongoing Support & Maintenance",
-            },
-          },
-        ],
-      },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://www.comfygen.com/private-blockchain-development",
-      },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: "Private Blockchain Development Company",
-      image:
-        "https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp",
-      description:
-        "ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire.",
-      brand: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "1124",
-      },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id":
-        "https://www.comfygen.com/private-blockchain-development/#breadcrumb",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Private Blockchain Development",
-          item: "https://www.comfygen.com/private-blockchain-development/",
-        },
-      ],
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is private blockchain development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Private blockchain development refers to building permissioned blockchain networks where only authorized participants can access, validate, or manage transactions. It ensures more control, privacy, and security for enterprises.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How is a private blockchain different from a public blockchain?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "A private blockchain is permissioned and limited to invited users, while a public blockchain like Bitcoin or Ethereum is open to anyone. Private networks offer faster transactions and better regulatory compliance.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Who should use a private blockchain solution?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Businesses in finance, healthcare, logistics, and government sectors use private blockchains to protect sensitive data, automate operations, and ensure trust within controlled environments.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Why should I hire ComfyGen Technologies for private blockchain development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "We’re a private blockchain development company with over 10 years of experience, delivering custom blockchain applications with enterprise-grade security, scalability, and long-term support.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What platforms do you use for private blockchain development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "We build private blockchain solutions using Hyperledger Fabric, Quorum, Corda, and custom frameworks tailored to your business and compliance needs.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you integrate blockchain with our existing systems?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we specialize in blockchain integration with ERP, CRM, IoT, and legacy systems using APIs, middleware, and custom modules for seamless data flow.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are the key benefits of a private blockchain for enterprises?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Private blockchains provide permissioned access, enhanced security, faster consensus, smart contract automation, and regulatory alignment—ideal for enterprise environments.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How long does it take to develop a private blockchain application?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Timelines vary, but a typical private blockchain app development project takes 8 to 16 weeks, depending on features, complexity, and platform choice.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do you offer support and maintenance after deployment?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we provide full post-launch support, monitoring, upgrades, and SLA-based maintenance to keep your blockchain network secure and optimized.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I hire dedicated private blockchain developers from your team?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Absolutely. You can hire private blockchain developers on flexible models—hourly, monthly, or project-based—to suit your development needs and budget.",
-          },
-        },
-      ],
-    },
-  ];
+
+ 
+
+
 
   return (
     <>
@@ -731,7 +206,7 @@ export default function rummy(props: any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData),
+            __html: JSON.stringify(JSON_DATA.jsonLdData),
           }}
         />
       </Head>
@@ -799,7 +274,7 @@ export default function rummy(props: any) {
         <CoreFeatureBlockchain
           heading="Core Features of Private Blockchain Development That Make It Enterprise -Ready"
           description="Private blockchain development offers the ideal foundation for enterprises seeking secure, scalable, and permissioned blockchain solutions. With fine-tuned access control, high performance, and built-in compliance, these features empower businesses to maintain trust, integrity, and efficiency across critical operations. Explore the key features that make private blockchains a perfect fit for enterprise-grade applications."
-          cards={privateBlockchainFeatures}
+          cards={JSON_DATA.privateBlockchainFeatures}
         />
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -809,13 +284,13 @@ export default function rummy(props: any) {
               </h2>
               <p className="text-base font-normal mt-2"></p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
         <BenifitBlockchain
           heading="Key Benefits of Private Blockchain Development for Enterprises"
           description=""
-          cards={benefitCards}
+          cards={JSON_DATA.benefitCards}
         />
 
         <TechStack
@@ -828,7 +303,7 @@ export default function rummy(props: any) {
         <IndustriesBlockchain
           heading="Industries We Serve with Private Blockchain Solutions"
           description="With our enterprise-focused approach to private blockchain development, Comfygen Technologies empowers businesses in regulated and data-sensitive sectors to digitize trust, optimize workflows, and enable secure collaboration across multiple stakeholders. Whether it's financial transparency, healthcare compliance, or supply chain traceability, our solutions are designed for scalability, privacy, and governance."
-          cards={IndustriesData}
+          cards={JSON_DATA.IndustriesData}
         />
 
         <WhyChoose

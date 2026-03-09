@@ -3,17 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
-import {
-  IconCurrencyDollar,
-  IconFileCode,
-  IconLock,
-  IconNetwork,
-  IconShieldCheck,
-  IconWallet,
-} from "@tabler/icons-react";
-
 import Header from "../../components/Newcomponet/layout/Header";
-
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
@@ -74,7 +64,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-export default function Ecommerce(props:any) {
+export default function Page(props:any) {
   let { initialData } = props;
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -85,163 +75,10 @@ export default function Ecommerce(props:any) {
     setTalkToExpertModal(false);
   };
 
-  const Process = [
-    {
-      title: "Planning and Consulting",
-      description:
-        "We begin with an in-depth consultation to understand your business vision, target audience, and platform requirements. Our experts analyze market trends, competitor strategies, and blockchain feasibility to create a solid development roadmap.",
-    },
-    {
-      title: "Visual and Technical Design",
-      description:
-        "Our design team creates a user-friendly UI/UX interface and technical architecture to enhance engagement and platform efficiency. We ensure intuitive navigation, responsive layouts, and seamless NFT transactions.",
-    },
-    {
-      title: "Development",
-      description:
-        "Our developers build the smart contracts, back, and frontend using advanced blockchain technologies. We integrate essential features like multi-wallet support, NFT minting, real-time trading engines, and secure payment gateways.",
-    },
-    {
-      title: "Deployment",
-      description:
-        "Once development and rigorous testing are complete, we deploy your NFT marketplace on the chosen blockchain network (Ethereum, Binance Smart Chain, Polygon, Solana, etc.), ensuring a smooth and secure launch.",
-    },
-    {
-      title: "Upgrades",
-      description:
-        "We provide continuous improvements by adding new features, optimizing smart contracts, and enhancing the user experience based on market trends and technological advancements.",
-    },
-    {
-      title: "Performance Optimization",
-      description:
-        "Our team ensures that the platform operates at peak efficiency by optimizing load times, transaction processing speeds, and blockchain interactions for seamless performance.",
-    },
-    {
-      title: "Ongoing Support and Maintenance",
-      description:
-        "Post-launch, we offer technical support, security monitoring, and regular updates. Our team promptly resolves issues, provides security patches, and integrates new functionalities to ensure long-term success.",
-    },
-  ];
 
-  const technologyData = [
-    {
-      img: <IconNetwork stroke={1.5} className="w-12 h-12" />,
-      title: "Multi-Blockchain Compatibility",
-      desc: "Seamless integration with Ethereum, Binance Smart Chain, Polygon, Solana, and more, allows users to trade NFTs across multiple networks.",
-    },
-    {
-      img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-      title: "Secure & Audited Smart Contracts",
-      desc: "Our NFT marketplace is powered by self-executing smart contracts, ensuring secure, automated, and transparent transactions without intermediaries.",
-    },
-    {
-      img: <IconFileCode stroke={1.5} className="w-12 h-12" />,
-      title: "Advanced NFT Minting & Trading",
-      desc: "Users can mint, buy, sell, and trade NFTs with flexible options, including fixed-price sales, timed auctions, and bidding mechanisms.",
-    },
-    {
-      img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-      title: "Multi-Wallet Integration",
-      desc: "Supports MetaMask, WalletConnect, Trust Wallet, and Coinbase Wallet, ensuring seamless transactions and accessibility for global users.",
-    },
-    {
-      img: <IconCurrencyDollar stroke={1.5} className="w-12 h-12" />,
-      title: "Built-In Royalty Mechanism",
-      desc: "Enables automatic royalty distribution to NFT creators, ensuring passive income on secondary sales without manual intervention.",
-    },
-    {
-      img: <IconLock stroke={1.5} className="w-12 h-12" />,
-      title: "Robust Security & Compliance",
-      desc: "Advanced security features like KYC verification, AML compliance, two-factor authentication, and SSL encryption protect users and assets.",
-    },
-  ];
+ 
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is NFT Marketplace Development?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "NFT marketplace development is the process of building a platform where users can create, buy, sell, and trade NFTs (Non-Fungible Tokens). These marketplaces are powered by blockchain technology, ensuring transparency, security, and ownership authenticity.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much will NFT marketplace development cost in 2025?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost of NFT marketplace development in 2025 depends on factors such as blockchain integration, features, and security. A basic NFT marketplace may start at $25,000 - $50,000, while high-end custom platforms can range from $80,000 to $200,000+.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the objective of the NFT marketplace?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The main objective of an NFT marketplace is to provide a secure and decentralized platform where users can mint, buy, sell, and trade NFTs with verified ownership and smart contract automation.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is the NFT marketplace profitable?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, NFT marketplaces can be highly profitable through transaction fees, listing fees, premium memberships, advertisements, and auction commissions. Leading NFT marketplaces generate millions in monthly revenue.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the structure of the NFT marketplace?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "An NFT marketplace typically consists of a frontend interface, smart contracts, database & storage, crypto wallet integration, an auction & bidding system, and an admin panel for user and transaction management.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does it cost to create an NFT?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost to create an NFT depends on blockchain gas fees and platform charges. Ethereum NFTs may cost $30 - $150 per NFT, while Polygon & Solana offer low-cost minting at $0.01 - $5 per NFT.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the NFT marketplace?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "An NFT marketplace is a digital platform where users can buy, sell, and trade NFTs securely on a blockchain. Popular examples include OpenSea, Rarible, and Blur.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is NFT legal in India?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, NFTs are legal in India but not regulated by the government. Taxation policies apply, and income from NFT sales may be subject to capital gains tax.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What exactly does NFT do?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "NFTs represent unique digital assets on the blockchain. They are used for digital art, gaming assets, virtual real estate, music, videos, and tokenized real-world assets.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who is the biggest NFT marketplace in 2025?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "As of 2025, leading NFT marketplaces include Blur, OpenSea, Magic Eden, and LooksRare, with Blur dominating NFT trading volume.",
-        },
-      },
-    ],
-  };
+
 
   return (
     <>
@@ -342,7 +179,7 @@ export default function Ecommerce(props:any) {
         <meta name="twitter:site" content="@comfygentech" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqSchema) }}
         />
       </Head>
 
@@ -437,7 +274,7 @@ export default function Ecommerce(props:any) {
         <SolutionSec
           heading="Features of Our NFT Marketplace Development"
           subheading="At Comfygen, we build secure, scalable, and feature-rich NFT marketplace platforms tailored to diverse industries such as art, gaming, real estate, and collectibles. Our custom NFT marketplace development services ensure seamless trading, enhanced security, and multi-chain compatibility to provide a next-gen NFT experience."
-          techData={technologyData}
+          techData={JSON_DATA.technologyData}
         />
         <section className="bg-[#F5F5F9] lg:py-16 py-10 ">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -452,7 +289,7 @@ export default function Ecommerce(props:any) {
                 user experience, high performance, and future-ready solutions.
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
         <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />

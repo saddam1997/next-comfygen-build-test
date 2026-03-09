@@ -1,16 +1,9 @@
-import Image from "next/image";
+
 import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-import {
-  IconApps,
-  IconBrain,
-  IconCloud,
-  IconCurrencyBitcoin,
-  IconReportSearch,
-  IconSignal5g,
-} from "@tabler/icons-react";
+
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
@@ -89,114 +82,16 @@ const BlogSection = dynamic(
 
 
 
-const latesttech = [
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Support",
-    desc: "Store, send, and receive Bitcoin, Ethereum, stablecoins, and altcoins in one secure, easy-to-use multicurrency wallet.",
-  },
-  {
-    img: <IconReportSearch stroke={1.5} className="w-12 h-12" />,
-    title: "Advanced Security",
-    desc: "Protect your assets with two-factor authentication, biometric login, and end-to-end encryption for secure multicurrency wallet transactions.",
-  },
-  {
-    img: <IconSignal5g stroke={1.5} className="w-12 h-12" />,
-    title: "Smart Payments",
-    desc: "Enable fast, seamless crypto transactions with QR code scanning, contactless payments, and in-app digital currency transfers.",
-  },
-  {
-    img: <IconCloud stroke={1.5} className="w-12 h-12" />,
-    title: "Built-In Trading",
-    desc: "Trade cryptocurrencies directly within the wallet with in-app swaps, eliminating the need for external exchange platforms.",
-  },
-  {
-    img: <IconCurrencyBitcoin stroke={1.5} className="w-12 h-12" />,
-    title: "Cold & Hot Wallet Integration",
-    desc: "Securely store cryptocurrencies offline with cold wallets while enabling quick access and transactions via hot wallets.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Tracking",
-    desc: "Track all cryptocurrency balances, transactions, and live market prices instantly, ensuring complete transparency and up-to-date portfolio management.",
-  },
-];
 
 
-const Process = [
-  {
-    title: "Requirement Analysis",
-    description: " Understand business goals, target audience, and wallet functionality to create a tailored solution."
-  },
-  {
-    title: "UI/UX Design",
-    description: "Craft intuitive and engaging interfaces for seamless user experiences across web and mobile platforms."
-  },
-  {
-    title: "Blockchain and Backend Development",
-    description: "Build strong backend systems with secure blockchain integration for reliable asset management."
-  },
-  {
-    title: "Integration & API Development ",
-    description: "Connect wallets with exchanges, payment gateways, and third-party services for full functionality."
-  },
-  {
-    title: "Smart Contract Development",
-    description: "Implement secure and efficient smart contracts to manage transactions and automated operations."
-  },
-  {
-    title: "Testing & Deployment ",
-    description: "Conduct thorough testing to ensure performance, security, and regulatory compliance before launch."
-  },
-  {
-    title: "Ongoing Support & Upgrades",
-    description: "Provide continuous maintenance, feature updates, and technical support to ensure smooth wallet operations."
-  }
-]
+
 
 
 export default function Ecommerce(props) {
   let { initialData } = props;
-  const slider: any = useRef();
-  const next = () => {
-    slider.current.slickNext();
-  };
-  const previous = () => {
-    slider.current.slickPrev();
-  };
-  const settingstwo = {
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+ 
+
+
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -207,114 +102,7 @@ export default function Ecommerce(props) {
   };
 
 
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Multicurrency Wallet Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Comfygen offers expert multicurrency wallet development services. Build secure, scalable, and customizable wallets supporting Bitcoin, Ethereum, stablecoins, NFTs, and DeFi for startups, fintechs, and exchanges.",
-      "url": "https://www.comfygen.com/multi-currency-wallet-development-company",
-      "mainEntityOfPage": "https://www.comfygen.com/multi-currency-wallet-development-company",
-      "areaServed": "Global",
-      "serviceType": [
-        "Custom Multicurrency Wallet Development",
-        "White Label Multicurrency Wallet Solutions",
-        "NFT Wallet Integration",
-        "DeFi Wallet Development",
-        "Cryptocurrency Payment Gateway Integration",
-        "Regulatory-Compliant Wallet Development"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is a multicurrency wallet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A multicurrency wallet is a digital platform that allows users to store, send, and receive multiple cryptocurrencies, such as Bitcoin, Ethereum, stablecoins, and altcoins, all in one secure wallet."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How secure is a multicurrency wallet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our wallets use enterprise-grade security, including multi-signature approvals, biometric authentication, and end-to-end encryption, ensuring complete protection against hacks and unauthorized access."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to build a multicurrency wallet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The development timeline depends on the features and customization level. Typically, a full-featured multicurrency wallet can be developed in 6–12 weeks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I integrate DeFi or NFT features into my wallet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Our multicurrency wallet development services include integration of DeFi protocols, NFT management, staking, and other Web3 functionalities to expand your wallet’s capabilities."
-          }
-        }
-      ]
 
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Multicurrency Wallet Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_hero.webp",
-      "description": "Comfygen offers secure, scalable, and fully customizable multicurrency wallet development services supporting Bitcoin, Ethereum, stablecoins, NFT & DeFi integration for startups, fintechs, and exchanges.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "245"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.comfygen.com/ "
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Wallet development company",
-          "item": "https://www.comfygen.com/wallet-development-company  "
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": " Multicurrency Wallet Development Company",
-          "item": "https://www.comfygen.com/multi-currency-wallet-development-company  "
-        }
-
-      ]
-    }
-    ,
-  ];
 
   return (
     <>
@@ -434,7 +222,7 @@ export default function Ecommerce(props) {
         /> */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
@@ -526,7 +314,7 @@ export default function Ecommerce(props) {
           heading="Key Features of Our Multicurrency Wallets"
           subheading="Comfygen multicurrency wallet development services are designed to deliver safe, secure, scalable, and user-friendly solutions that meet the needs of individuals, startups, and enterprises. Each wallet comes equipped with advanced features that make managing digital assets simple, safe, and efficient.
 "
-          techData={latesttech}
+          techData={JSON_DATA.latesttech}
         />
 
 
@@ -542,7 +330,7 @@ export default function Ecommerce(props) {
 
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
+            <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
 
