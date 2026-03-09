@@ -4,7 +4,7 @@ import React from "react";
 
 import { MdOutlineNavigateNext } from "react-icons/md";
 
-export default function BlogSection(props: any) {
+export default function BlogSection(props:any) {
   return (
     <section className="bg-[#F3F4F6] lg:py-16 py-10">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
@@ -56,16 +56,13 @@ export default function BlogSection(props: any) {
 
 
                       <Image
-                        {...props}
                         src={element?.og_image}
                         alt={element?.title}
                         width={1280}
                         height={720}
                         loading="lazy"
-
                         quality={70}        // ✅ optimal balance
                         placeholder="empty" // ✅ remove heavy blur
-                       
                       />
                     </div>
 

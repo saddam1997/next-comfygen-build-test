@@ -1,42 +1,5 @@
 {
-  "ModusOperandi": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Defi Platforms",
-      "desc": "We can help you create outstanding DeFi development platforms to help you manage your financial transactions through a properly layered structure and composable building blocks."
-    },
-    {
-      "num": "02",
-      "bg": "#9A4ECC1A",
-      "title": "Supply Chain Management Systems",
-      "desc": "We can integrate Substrate blockchain development technology to build ideal supply chain management systems, using which you can document your production updates over a unified shared ledger."
-    },
-    {
-      "num": "03",
-      "bg": "#2390FB1A",
-      "title": "Identity and Access Management Solutions",
-      "desc": "With Comfygen, managing digital identities is not that big a deal anymore, as our Substrate blockchain development would help you use a solution that’s cost-effective and safe at the same time."
-    },
-    {
-      "num": "04",
-      "bg": "#82AB101A",
-      "title": "Gaming and Gambling Platforms",
-      "desc": "We have been creating gaming or gambling platforms over the Substrate blockchain development concept to enable your players to use cryptocurrency development to place their bids or bets easily."
-    },
-    {
-      "num": "05",
-      "bg": "#F45F391A",
-      "title": "Social Media and Content Sharing Networks",
-      "desc": "Our Substrate blockchain development solutions have been implemented across social media or content-sharing application projects, adding decentralization to their general operations. "
-    },
-    {
-      "num": "06",
-      "bg": "#FFA0001A",
-      "title": "Voting and Governance Systems",
-      "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
-    }
-  ],
+
   "servicesData": [
     {
       "title": "NFT Marketplace Website Development",
@@ -205,8 +168,6 @@
       "li4": "LooksRare – Community-driven marketplace with rewards"
     }
   ],
-
-
   "portfoliodata": [
     {
       "image": "https://www.comfygen.com/image/hero-image-nft-gaming-marketplace-development.webp",
@@ -225,101 +186,27 @@
   "cardData": [
     {
       "title": "Experience",
-      "desc": "With years of experience in blockchain and NFT marketplace development, we have successfully built next-gen NFT platforms for clients worldwide. Our deep understanding of NFT trading mechanisms, DeFi integration, and blockchain security ensures that we create robust, scalable, and future-ready solutions tailored to your business needs."
+      "decs": "With years of experience in blockchain and NFT marketplace development, we have successfully built next-gen NFT platforms for clients worldwide. Our deep understanding of NFT trading mechanisms, DeFi integration, and blockchain security ensures that we create robust, scalable, and future-ready solutions tailored to your business needs."
     },
     {
       "title": "Expertise",
-      "desc": "Our team of highly skilled NFT marketplace developers is proficient in blockchain architecture, smart contract programming, AI-powered automation, and DeFi-enabled solutions. We implement cutting-edge technologies such as gas fee optimization, multi-chain interoperability, KYC integration, and AI-based NFT recommendations, ensuring a seamless user experience."
+      "decs": "Our team of highly skilled NFT marketplace developers is proficient in blockchain architecture, smart contract programming, AI-powered automation, and DeFi-enabled solutions. We implement cutting-edge technologies such as gas fee optimization, multi-chain interoperability, KYC integration, and AI-based NFT recommendations, ensuring a seamless user experience."
     },
     {
       "title": "Commitment to Quality",
-      "desc": "At Comfygen, we follow strict coding standards, perform rigorous smart contract audits, and conduct multi-layer security tests to eliminate vulnerabilities. Our NFT marketplace solutions include end-to-end encryption, fraud prevention mechanisms, and highly scalable infrastructure, ensuring smooth performance, security, and regulatory compliance."
+      "decs": "At Comfygen, we follow strict coding standards, perform rigorous smart contract audits, and conduct multi-layer security tests to eliminate vulnerabilities. Our NFT marketplace solutions include end-to-end encryption, fraud prevention mechanisms, and highly scalable infrastructure, ensuring smooth performance, security, and regulatory compliance."
     },
     {
       "title": "Scalability & Cross-Chain Compatibility",
-      "desc": "We build highly scalable NFT marketplace solutions that can grow with your business. Our platforms support Ethereum, Binance Smart Chain, Solana, Avalanche, and other blockchain networks, allowing for fast, low-cost, and interoperable NFT transactions. With multi-wallet integrations and seamless API connectivity, users can easily trade, stake, and manage NFTs across various blockchain ecosystems."
+      "decs": "We build highly scalable NFT marketplace solutions that can grow with your business. Our platforms support Ethereum, Binance Smart Chain, Solana, Avalanche, and other blockchain networks, allowing for fast, low-cost, and interoperable NFT transactions. With multi-wallet integrations and seamless API connectivity, users can easily trade, stake, and manage NFTs across various blockchain ecosystems."
     },
     {
       "title": "Ongoing Support & Innovation",
-      "desc": "Our commitment doesn’t end with deployment. We offer 24/7 technical support, regular software updates, and cutting-edge enhancements to keep your NFT marketplace ahead of the competition. Whether it's integrating new blockchain protocols, AI-driven analytics, or Metaverse compatibility, we ensure that your platform remains future-proof and high-performing."
+      "decs": "Our commitment doesn’t end with deployment. We offer 24/7 technical support, regular software updates, and cutting-edge enhancements to keep your NFT marketplace ahead of the competition. Whether it's integrating new blockchain protocols, AI-driven analytics, or Metaverse compatibility, we ensure that your platform remains future-proof and high-performing."
     },
     {
       "title": "Customization & White-Label Solutions",
-      "desc": "Every business has unique needs, and we deliver tailor-made NFT marketplace solutions that align with your vision. Whether you need a custom-built NFT marketplace from scratch or a ready-to-deploy white-label NFT marketplace, we ensure seamless branding, robust security, and advanced functionality to help you gain a competitive edge."
-    }
-  ],
-  "Modus": {
-    "title": "We Build a Varying Range of Applications Using Substrate Blockchain Technology!",
-    "decs": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it:"
-  },
-  "LaunchSteps": [
-    {
-      "num": "01",
-      "title": "Flexibility with WASM",
-      "desc": "Substrate is a highly flexible blockchain development framework that can be easily used for constructing a new blockchain or building new logic for business."
-    },
-    {
-      "num": "02",
-      "title": "Highly Popular",
-      "desc": "Substrate is one of the most popular open-source frameworks that has been used for making some of the most popular blockchain development, such as Polkadot development. "
-    },
-    {
-      "num": "03",
-      "title": "Immensely Customizable",
-      "desc": "Substrate comes with data type flexibility, which enables this framework to support the system libraries, supporting high customization."
-    },
-    {
-      "num": "04",
-      "title": "Account-Level Locking",
-      "desc": "Enable a hierarchical system for management of the settings, with the use of account-level locking embedded with Substrate development company."
-    },
-    {
-      "num": "05",
-      "title": "Universal UI",
-      "desc": "It is a built-in feature within the Substrate development framework, built on the RxJS and React.js, used for minimizing the overall development time. "
-    },
-    {
-      "num": "06",
-      "title": "Multi-Level Permissions",
-      "desc": "Advanced level authentication can be achieved by invoking multiple levels within the permissions aspects for specific Substrate products."
-    }
-  ],
-  "myList2": [
-    "Centralized exchanges offer pairs of fiat to cryptocurrency or crypto to cryptocurrency trading. Binance and Coinbase are two options to consider.",
-    "An exchange that uses intelligent contracts is referred to as a decentralized exchange and offers crypto-to-crypto trading pairs. A few examples include Uniswap, 0x, and Kybernet.",
-    "A combination of CEXs and DEXs allows traders to exchange fiat for crypto and maintain their private keys.",
-    "Get a free 30-minute consultation from our cryptocurrency exchange development team!"
-  ],
-  "myList1": [
-    "Instantaneous transactions",
-    "Scalable in nature",
-    "Testing has been rigorously conducted before deployment",
-    "Features of customization",
-    "Onboarding of projects is faster",
-    "Integrating crypto wallets with crypto exchanges",
-    "Multi-platform performance without glitches",
-    "Crypto wallet operation is user-friendly"
-  ],
-  "TypesCrypto": [
-    {
-      "num": "01",
-      "title": "A Wallet For Coinbase",
-      "desc": "It supports 500 cryptocurrency assets and is easy to navigate for beginners."
-    },
-    {
-      "num": "02",
-      "title": "BNB",
-      "desc": "More than 150 cryptos are available on this cross-compatible platform."
-    },
-    {
-      "num": "03",
-      "title": "The Electrum",
-      "desc": "It is best to choose a Bitcoin wallet that is highly customizable and offers greater security."
-    },
-    {
-      "num": "04",
-      "title": "The Mycelium",
-      "desc": "A secure crypto wallet that provides advanced transaction details and focuses on security."
+      "decs": "Every business has unique needs, and we deliver tailor-made NFT marketplace solutions that align with your vision. Whether you need a custom-built NFT marketplace from scratch or a ready-to-deploy white-label NFT marketplace, we ensure seamless branding, robust security, and advanced functionality to help you gain a competitive edge."
     }
   ],
   "Qa": [
@@ -363,138 +250,163 @@
       "desc": "Next-gen smart contracts now allow seamless upgrades without disrupting existing functionalities, enhancing NFT marketplace adaptability and longevity."
     }
   ],
-  "Hire": [
+
+   "Process": [
     {
-      "num": "1",
-      "title": "We Have the Best Skilled and Experienced Substrate Blockchain Developers for Your Diverse Projects! ",
-      "desc": "Our Substrate blockchain developers at Comfygen have impeccable prior experience in the domain and are also aggressively training themselves with modern trends and innovations within the Substrate blockchain domain. Depending on various requirements associated with the clients’ Substrate development services needs, our experts implement dedicated approaches to meet them without compromising on quality or deadlines.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
+      "title": "Planning and Consulting",
+      "description":
+        "We begin with an in-depth consultation to understand your business vision, target audience, and platform requirements. Our experts analyze market trends, competitor strategies, and blockchain feasibility to create a solid development roadmap."
+    },
+    {
+      "title": "Visual and Technical Design",
+      "description":
+        "Our design team creates a user-friendly UI/UX interface and technical architecture to enhance engagement and platform efficiency. We ensure intuitive navigation, responsive layouts, and seamless NFT transactions."
+    },
+    {
+      "title": "Development",
+      "description":
+        "Our developers build the smart contracts, back, and frontend using advanced blockchain technologies. We integrate essential features like multi-wallet support, NFT minting, real-time trading engines, and secure payment gateways."
+    },
+    {
+      "title": "Deployment",
+      "description":
+        "Once development and rigorous testing are complete, we deploy your NFT marketplace on the chosen blockchain network (Ethereum, Binance Smart Chain, Polygon, Solana, etc.), ensuring a smooth and secure launch."
+    },
+    {
+      "title": "Upgrades",
+      "description":
+        "We provide continuous improvements by adding new features, optimizing smart contracts, and enhancing the user experience based on market trends and technological advancements."
+    },
+    {
+      "title": "Performance Optimization",
+      "description":
+        "Our team ensures that the platform operates at peak efficiency by optimizing load times, transaction processing speeds, and blockchain interactions for seamless performance."
+    },
+    {
+      "title": "Ongoing Support and Maintenance",
+      "description":
+        "Post-launch, we offer technical support, security monitoring, and regular updates. Our team promptly resolves issues, provides security patches, and integrates new functionalities to ensure long-term success."
     }
   ],
-  "myList": [
-    "We have the best team of proficient Substrate blockchain developers.",
-    "All our experts have undergone tough certification courses to earn their expertise in the domain.",
-    "Our professionals are actively available to address our client's concerns or queries at any time of the day. ",
-    "Our Substrate developers will make use of the latest technology Substrate blockchain development services to help curate the perfect Substrate blockchain application development services for you."
-  ],
-  "WhyChoose": [
+
+   "technologyData":[
     {
-      "num": "01",
-      "title": "Experience",
-      "decs": "In the consistently developing world of technology, Comfygen's staff of knowledgeable and proficient NFT marketplace developers has a wealth of experience and competence. We have effectively developed and introduced numerous NFT marketplaces for our esteemed customers by applying our in-depth knowledge of the most recent developments and trends. You may be confident that we have the knowledge and experience needed to complete your project precisely, regardless of how complicated or challenging it may be."
+      "img": "<IconNetwork stroke={1.5} className='w-12 h-12' />",
+      "title": "Multi-Blockchain Compatibility",
+      "desc": "Seamless integration with Ethereum, Binance Smart Chain, Polygon, Solana, and more, allows users to trade NFTs across multiple networks."
     },
     {
-      "num": "02",
-      "title": "Expertise",
-      "decs": "At Comfygen, we are experts in NFT marketplace development. Customized design, smart contract creation, payment gateway integration, security and performance testing, deployment, and maintenance are all included in our services. We always stay abreast of the most recent NFT developments in order to develop creative and intuitive marketplaces."
+      "img": "<IconShieldCheck stroke={1.5} className='w-12 h-12' />",
+      "title": "Secure & Audited Smart Contracts",
+      "desc": "Our NFT marketplace is powered by self-executing smart contracts, ensuring secure, automated, and transparent transactions without intermediaries."
     },
     {
-      "num": "03",
-      "title": "Commitment to Quality",
-      "decs": "Our goal at Comfygen is to deliver exceptional and dependable NFT marketplaces. We employ a thorough development process that includes close attention to detail and extensive testing before release. To guarantee seamless and continued operation, we also provide ongoing maintenance and support."
+      "img": "<IconFileCode stroke={1.5} className='w-12 h-12' />",
+      "title": "Advanced NFT Minting & Trading",
+      "desc": "Users can mint, buy, sell, and trade NFTs with flexible options, including fixed-price sales, timed auctions, and bidding mechanisms."
+    },
+    {
+      "img":" <IconWallet stroke={1.5} className='w-12 h-12' />",
+      "title": "Multi-Wallet Integration",
+      "desc": "Supports MetaMask, WalletConnect, Trust Wallet, and Coinbase Wallet, ensuring seamless transactions and accessibility for global users."
+    },
+    {
+      "img": "<IconCurrencyDollar stroke={1.5} className='w-12 h-12'/>",
+      "title": "Built-In Royalty Mechanism",
+      "desc": "Enables automatic royalty distribution to NFT creators, ensuring passive income on secondary sales without manual intervention."
+    },
+    {
+      "img": "<IconLock stroke={1.5} className='w-12 h-12'/>",
+      "title": "Robust Security & Compliance",
+      "desc": "Advanced security features like KYC verification, AML compliance, two-factor authentication, and SSL encryption protect users and assets."
     }
   ],
-  "myList3": [
-    "Consumer Electronics",
-    "Healthcare",
-    "Logistics",
-    "Financial Markets",
-    "Startup",
-    "Manufacturing"
-  ],
-  "Major": [
-    {
-      "num": "01",
-      "title": "Which Major Industry Leverages DeFi Development Services?",
-      "decs": "Our DeFi development services could address the requirements of businesses in different industries."
-    }
-  ],
-  "Service": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/education.webp",
-      "title": "Education"
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/cryptocurrency.webp",
-      "title": "Cryptocurrency"
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/gaming.webp",
-      "title": "Gaming"
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/finance.webp",
-      "title": "Finance"
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/real-state.webp",
-      "title": "Real Estate"
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/healthcare.webp",
-      "title": "Healthcare"
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/img/logistics.webp",
-      "title": "Logistics"
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/img/insurance.webp",
-      "title": "Insurance"
-    },
-    {
-      "num": "09",
-      "img": "https://www.comfygen.com/img/e-commerce.webp",
-      "title": "E-commerce "
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/img/agriculture.webp",
-      "title": "Agriculture"
-    }
-  ],
-  "TecnologisStack": [
-    {
-      "num": "1",
-      "title": "Cross-Chain Compatibility:",
-      "stack": "Incorporating cross-chain compatibility into an NFT marketplace has a number of benefits. These consist of growing the user base, improving liquidity, lowering gas prices, and improving the user experience all around."
-    },
-    {
-      "num": "2",
-      "title": "Layer-2 Scaling Solutions:",
-      "stack": "There are several advantages to integrating Layer-2 scaling technologies with NFT marketplace development. They make it possible to execute transactions more quickly, which is necessary to manage large numbers of transactions at once. Through off-chain transaction batching, they also lower gas prices. Additionally, they improve the scalability of the NFT marketplace by effectively handling a large number of transactions without taxing the capacity of the underlying blockchain platform."
-    },
-    {
-      "num": "3",
-      "title": "Enhanced Metadata and Royalties:",
-      "stack": "Improved metadata helps with informed transactions by giving information about the creation, ownership, and origin of NFTs. Additionally, it makes marketplace search and filtering possible. Royalties are paid to inventors upon resale; markets distribute them automatically."
-    },
-    {
-      "num": "4",
-      "title": "Integration of DeFi Features:",
-      "stack": "The development of the NFT marketplace may benefit from the incorporation of DeFi characteristics in a number of ways, such as:",
-      "stack1": "More ways to make money: By offering DeFi services like lending, borrowing, and yield farming, NFT marketplaces can generate additional revenue.",
-      "stack2": "Improved user experience: DeFi features open up additional liquidity options and make managing NFT portfolios easier.",
-      "stack3": "A greater number of participants in the market: DeFi features have the potential to draw new users to NFT markets and stimulate market participation."
-    },
-    {
-      "num": "5",
-      "title": "Fractional Ownership:",
-      "stack": "The concept of fractional ownership for NFTs presents opportunities for market expansion through increased accessibility, increased liquidity, and additional revenue streams from trading and fractionalization fees."
-    },
-    {
-      "num": "6",
-      "title": "Artificial Intelligence (AI) and Machine Learning (ML):",
-      "stack": "AI and ML integration can enhance NFT marketplace development by improving user experience, detecting and preventing fraud, analyzing pricing data, and developing new features such as virtual reality browsing and innovative trading algorithms."
-    }
-  ]
+
+  "faqSchema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is NFT Marketplace Development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NFT marketplace development is the process of building a platform where users can create, buy, sell, and trade NFTs (Non-Fungible Tokens). These marketplaces are powered by blockchain technology, ensuring transparency, security, and ownership authenticity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much will NFT marketplace development cost in 2025?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of NFT marketplace development in 2025 depends on factors such as blockchain integration, features, and security. A basic NFT marketplace may start at $25,000 - $50,000, while high-end custom platforms can range from $80,000 to $200,000+."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the objective of the NFT marketplace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The main objective of an NFT marketplace is to provide a secure and decentralized platform where users can mint, buy, sell, and trade NFTs with verified ownership and smart contract automation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the NFT marketplace profitable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, NFT marketplaces can be highly profitable through transaction fees, listing fees, premium memberships, advertisements, and auction commissions. Leading NFT marketplaces generate millions in monthly revenue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the structure of the NFT marketplace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An NFT marketplace typically consists of a frontend interface, smart contracts, database & storage, crypto wallet integration, an auction & bidding system, and an admin panel for user and transaction management."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to create an NFT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost to create an NFT depends on blockchain gas fees and platform charges. Ethereum NFTs may cost $30 - $150 per NFT, while Polygon & Solana offer low-cost minting at $0.01 - $5 per NFT."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the NFT marketplace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An NFT marketplace is a digital platform where users can buy, sell, and trade NFTs securely on a blockchain. Popular examples include OpenSea, Rarible, and Blur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is NFT legal in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, NFTs are legal in India but not regulated by the government. Taxation policies apply, and income from NFT sales may be subject to capital gains tax."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What exactly does NFT do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NFTs represent unique digital assets on the blockchain. They are used for digital art, gaming assets, virtual real estate, music, videos, and tokenized real-world assets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is the biggest NFT marketplace in 2025?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of 2025, leading NFT marketplaces include Blur, OpenSea, Magic Eden, and LooksRare, with Blur dominating NFT trading volume."
+        }
+      }
+    ]
+  }
+
 }

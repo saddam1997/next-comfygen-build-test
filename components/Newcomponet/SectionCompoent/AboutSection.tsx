@@ -39,9 +39,11 @@ const AboutSection = (props: any) => {
               height={762}
               quality={60}
               loading="lazy"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="w-full h-auto object-contain"
+              sizes="(max-width:768px) 100vw, (max-width:1024px) 50vw, 343px"
+              className="w-full h-auto object-cover"
             />
+
+
           </div>
           <div>
             <div className="space-y-4">
