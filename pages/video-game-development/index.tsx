@@ -178,7 +178,7 @@ const techDataForPage1 = {
 export default function rummy(props) {
   let { initialData } = props;
 
-  let {} = JSON_DATA;
+  let { } = JSON_DATA;
 
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -193,11 +193,11 @@ export default function rummy(props) {
     <>
       <Head>
         <title>
-          Best Video Game development company In India & The USA | Comfygen
+          Top Video Game Development Company | Mobile, Console & VR Games
         </title>
         <meta
           name="description"
-          content="Want to develop Video Game Development Services is our specialty at Comfygen is a leading Video Game Development Company In India & The USA. We offers best online video game development services with top-rated video game developers."
+          content="Comfygen is a top video game development company delivering immersive and high-quality mobile, console, and VR games with innovative design, advanced technology, and engaging gameplay."
         />
         <link
           rel="canonical"
@@ -301,8 +301,8 @@ export default function rummy(props) {
       <div className="overflow-hidden">
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Video Game Development Service"
-            ptag="Our video game development service is dedicated to creating immersive, high-quality gaming experiences that captivate players and stand out in the competitive market. We combine innovative design, advanced technologies, and a passion for gaming to deliver games that are both engaging and visually stunning. Whether it’s a mobile game, console game, or VR experience, we offer end-to-end development to bring your vision to life."
+            heading="Top Video Game Development Company"
+            ptag="Comfygen is top video game development company is dedicated to creating immersive, high-quality gaming experiences that captivate players and stand out in the competitive market. We combine innovative design, advanced technologies, and a passion for gaming to deliver games that are both engaging and visually stunning. Whether it’s a mobile game, console game, or VR experience, we offer end-to-end development to bring your vision to life."
             li="Advanced Video Game Engines (e.g., Unity, Unreal Engine)"
             li1="Immersive Graphics and Realistic Audio"
             li2="AI-Driven Gameplay Mechanics"
@@ -317,16 +317,6 @@ export default function rummy(props) {
             bgImage="https://www.comfygen.com/herosection/video-game-development-hero-img.webp"
           />
         </div>
-        <AboutSection
-          title="About Company"
-          heading="Expertise in Video Game Development Services"
-          description1="The Comfygen team offers innovative and exciting video game development services, bringing your game ideas to life. Our video game development company specializes in creating immersive experiences for players across genres and platforms supported by sophisticated technology."
-          description2="Our gaming team consists of experienced developers, designers and tech-savvy enthusiasts. We work closely together from concept to launch to ensure each performance is unique."
-          description3="Our team specializes in developing games for mobile, console, PC and AR/VR platforms. From creating amazing console games to designing immersive AR/VR experiences, we meet your business goals with custom gaming solutions that engage players for."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -339,6 +329,18 @@ export default function rummy(props) {
             </div>
           </div>
         </section>
+        <AboutSection
+          title="About Company"
+          heading="Expertise in Video Game Development Services"
+          description1="The Comfygen team offers innovative and exciting video game development services, bringing your game ideas to life. Our video game development company specializes in creating immersive experiences for players across genres and platforms supported by sophisticated technology."
+          description2="Our gaming team consists of experienced developers, designers and tech-savvy enthusiasts. We work closely together from concept to launch to ensure each performance is unique."
+          description3="Our team specializes in developing games for mobile, console, PC and AR/VR platforms. From creating amazing console games to designing immersive AR/VR experiences, we meet your business goals with custom gaming solutions that engage players for."
+          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
         <SolutionSec
           heading="Specialized Video Game Types We Have Developed"
           subheading=""
@@ -381,7 +383,7 @@ export default function rummy(props) {
           faqData={JSON_DATA.Frequently}
           title="Video Game Development"
         />
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

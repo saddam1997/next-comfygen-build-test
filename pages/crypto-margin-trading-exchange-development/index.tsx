@@ -138,24 +138,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+
     {
       "@type": "Service",
       "name": "Margin Trading Exchange Development Company",
@@ -179,72 +162,6 @@ export default function Ecommerce(props) {
       "sameAs": [
         "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
       ]
     },
     {
@@ -338,11 +255,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-          Margin Trading Exchange Development Company | Comfygen
+          Best Margin Trading Exchange Development Company | Secure Trading Platform
         </title>
         <meta
           name="description"
-          content="Comfygen margin trading exchange development services provide high-performance platforms, multi-asset support, advanced risk management, and regulatory compliance."
+          content="Comfygen is the best margin trading exchange development company building secure, scalable platforms with leveraged trading, real-time order matching, multi-asset support, and advanced risk management."
         />
         <link
           rel="canonical"
@@ -393,33 +310,7 @@ export default function Ecommerce(props) {
         />
         <meta property="og:image:alt" content="Crypto Margin Trading Exchange Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Margin Trading Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/crypto-margin-trading-exchange-development",
-              description:
-                "Comfygen is a leading crypto margin trading exchange development company delivering secure, compliant, and feature-rich platforms with leverage, real-time analytics, and risk management tools.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-og.webp"
-            })
-          }}
-        />
+    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
@@ -431,9 +322,8 @@ export default function Ecommerce(props) {
       <div className="overflow-hidden lg:pt-[110px]">
 
         <HeroSectionForAllPages
-          heading="Margin Trading Exchange Development"
-          ptag="Comfygen specializes in margin trading exchange development, creating secure, high-performance platforms for leveraged trading. Our solutions provide real-time order matching, multi-asset support, advanced risk management, and regulatory compliance. Fully customizable and scalable, our software enables fast deployment with seamless user experiences for both retail and institutional traders."
-
+          heading="Best Margin Trading Exchange Development Company"
+          ptag="Comfygen is the best margin trading exchange development Comapny, creating secure, high-performance platforms for leveraged trading. Our Margin Trading Exchange Development solutions provide real-time order matching, multi-asset support, advanced risk management, and regulatory compliance. Fully customizable and scalable, our software enables fast deployment with seamless user experiences for both retail and institutional traders."
           li="Leveraged trading for multiple crypto assets"
           li1="Advanced risk management & compliance"
           li2="High-speed order matching & liquidity integration"
@@ -446,26 +336,6 @@ export default function Ecommerce(props) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-hero.webp"
-        />
-
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title=""
-          heading="Enterprise-Grade Margin Trading Software to Empower Your Exchange"
-          description1="TUnlock the full potential of your crypto trading business with our enterprise-grade margin trading software. Built for performance, compliance, and scalability, our solution helps exchanges deliver powerful leveraged trading experiences with maximum security and control."
-          points={[
-            "Enterprise-ready margin trading infrastructure",
-            "End-to-end secure leverage trading platform",
-            "Customizable crypto margin trading architecture",
-            "Proven expertise in scalable exchange development solutions",
-            "Compliant crypto margin exchange development for the USA",
-            "Trusted white label crypto margin trading provider",
-          ]}
-
-          imageSrc="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
         />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
@@ -485,6 +355,28 @@ export default function Ecommerce(props) {
         </section>
 
 
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <AboutSection
+          title=""
+          heading="Enterprise-Grade Margin Trading Software to Empower Your Exchange"
+          description1="TUnlock the full potential of your crypto trading business with our enterprise-grade margin trading software. Built for performance, compliance, and scalability, our solution helps exchanges deliver powerful leveraged trading experiences with maximum security and control."
+          points={[
+            "Enterprise-ready margin trading infrastructure",
+            "End-to-end secure leverage trading platform",
+            "Customizable crypto margin trading architecture",
+            "Proven expertise in scalable exchange development solutions",
+            "Compliant crypto margin exchange development for the USA",
+            "Trusted white label crypto margin trading provider",
+          ]}
+
+          imageSrc="https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
+
 
         <SolutionsFeature
           title="Use Cases & Industry Applications of Crypto Margin Trading Exchange Development"
@@ -501,7 +393,7 @@ export default function Ecommerce(props) {
                 Our End-to-End Process of Crypto Margin Trading Exchanges Development
               </h2>
               <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-               Building a robust and secure crypto margin trading exchange requires a well-structured, step-by-step development process. At Comfygen, we follow industry best practices and agile methodologies to deliver scalable, 
+                Building a robust and secure crypto margin trading exchange requires a well-structured, step-by-step development process. At Comfygen, we follow industry best practices and agile methodologies to deliver scalable,
 
               </p>
             </div>
@@ -526,7 +418,7 @@ export default function Ecommerce(props) {
           />
         </section>
 
- 
+
 
         <TrendsSection heading="Benefits of Choosing Our Crypto Margin Trading Exchange Development Services "
           subtitle="Partnering with Comfygen for your crypto margin trading exchange development ensures you gain a competitive edge with future-ready technology, expert developers, and robust security protocols. From custom leverage management to post-launch support, our end-to-end services are designed to help you launch faster, scale efficiently, and trade with confidence."

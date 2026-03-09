@@ -176,72 +176,7 @@ export default function Ecommerce(props: any) {
 
       ]
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
+
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -332,11 +267,11 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-          Top NFT Exchange Development Company | Custom Crypto NFT Marketplace Solutions
+          Trusted NFT Exchange Development Service | NFT Trading Platform
         </title>
         <meta
           name="description"
-          content="Get secure, scalable NFT exchange development with custom crypto marketplace solutions. Multi-chain support, wallet integration, and top security."
+          content="Comfygen provide trusted NFT exchange development service delivering secure, scalable NFT trading platforms with multi-chain support, wallet integration, high liquidity, and advanced security."
         />
         <link
           rel="canonical"
@@ -378,33 +313,7 @@ export default function Ecommerce(props: any) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/nft-exchange-development/crypto-nft-exchange-development.webp" />
         <meta property="og:image:alt" content="NFT Exchange Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "NFT Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/crypto-nft-exchange-development",
-              description:
-                "Comfygen is a top NFT exchange development company offering secure and scalable crypto NFT marketplace solutions. We build multi-chain, customizable, and wallet-integrated NFT platforms for trading and minting.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/nft-exchange-development/nft-exchange-development-og.webp"
-            })
-          }}
-        />
+    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
@@ -416,9 +325,8 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Best NFT Exchange Development Company"
-          ptag="Comfygen, the best NFT exchange development company, builds secure, scalable, and feature-rich crypto platforms designed for modern digital asset trading. Our NFT Exchange Development solutions come with multi-chain support, advanced security protocols, high liquidity, and smooth trading experiences. Whether you’re a startup or enterprise, we deliver fully customizable platforms with wallet integration, auction modules, and cross-platform compatibility."
-
+          heading="Trusted NFT Exchange Development Service"
+          ptag="Comfygen provide Trusted NFT exchange development service, that builds secure, scalable, and feature-rich crypto platforms designed for modern digital asset trading. Our NFT Exchange Development solutions come with multi-chain support, advanced security protocols, high liquidity, and smooth trading experiences. Whether you’re a startup or enterprise, we deliver fully customizable platforms with wallet integration, auction modules, and cross-platform compatibility."
           li="Multi-chain & cross-platform compatibility"
           li1="Advanced security & compliance features"
           li2="High liquidity & fast transactions"
@@ -431,24 +339,6 @@ export default function Ecommerce(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/nft-exchange-development/nft-exchange-development-hero.webp"
-        />
-
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title=""
-          heading="Why Crypto NFT Exchange Development Is a Profitable Business Move"
-          description1="The NFT market is booming, creating huge opportunities for businesses to build custom NFT exchange platforms. With growing demand from creators and collectors, launching your own crypto NFT exchange lets you tap into this fast-growing digital economy."
-          points={[
-            "Access a multi-billion-dollar market with rising NFT trading volumes",
-            "Earn revenue through transaction fees, minting, and premium features",
-            "Full control over platform design, fees, and user experience",
-            "Benefit from secure, transparent blockchain technology",
-            "Expand globally with cross-chain support",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/nft-exchange-development/nft-exchange-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
         />
 
 
@@ -467,6 +357,27 @@ export default function Ecommerce(props: any) {
             </div>
           </div>
         </section>
+
+
+        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
+        <AboutSection
+          title=""
+          heading="Why Crypto NFT Exchange Development Is a Profitable Business Move"
+          description1="The NFT market is booming, creating huge opportunities for businesses to build custom NFT exchange platforms. With growing demand from creators and collectors, launching your own crypto NFT exchange lets you tap into this fast-growing digital economy."
+          points={[
+            "Access a multi-billion-dollar market with rising NFT trading volumes",
+            "Earn revenue through transaction fees, minting, and premium features",
+            "Full control over platform design, fees, and user experience",
+            "Benefit from secure, transparent blockchain technology",
+            "Expand globally with cross-chain support",
+          ]}
+          imageSrc="https://www.comfygen.com/comfygen-images/nft-exchange-development/nft-exchange-development-about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
+
 
 
 

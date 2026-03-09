@@ -2,7 +2,7 @@
  "servicesData": [
   {
     "title": "Mobile Video Game Development",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Provide an engaging gaming experience with our professional mobile video game development services for Android and iOS platforms. We focus on intuitive gameplay, stunning graphics and high levels of storage to meet the demands of the ever-growing mobile gaming industry.",
     "features": [
       "High-Performance Mobile Games",
@@ -12,7 +12,7 @@
   },
   {
     "title": "Multiplayer and Online Video Game Development",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Our services include multiplayer video games and online games that provide seamless real-time interaction. Whether it’s competitive gaming or cooperative gaming, we create immersive online experiences with robust server support, ensuring efficiency and enjoyable gameplay for the entire world.",
     "features": [
       "Real-Time Multiplayer Gameplay",
@@ -22,7 +22,7 @@
   },
   {
     "title": "AR/VR Game Development",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "We specialize in developing augmented and virtual reality games that deliver next-level immersive experiences. By integrating AR and VR technologies, we create games where players can interact with virtual environments in innovative ways, offering a deeper and more engaging gameplay experience.",
     "features": [
       "Augmented Reality Gaming Experiences",
@@ -32,7 +32,7 @@
   },
   {
     "title": "Metaverse Game Development",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Explore limitless possibilities with our Metaverse Video Game Development services. We craft vast, interactive virtual worlds where players can socialize, create, and engage. By integrating VR, AR, and blockchain technologies, we bring futuristic gaming environments to life.",
     "features": [
       "Interactive Virtual Worlds",
@@ -42,7 +42,7 @@
   },
   {
     "title": "NFT Game Development",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Leverage the power of blockchain with our NFT Game Development services, enabling players to own, trade, and monetize unique in-game digital assets. We create secure, transparent platforms that redefine virtual economies and enhance player ownership.",
     "features": [
       "Secure In-Game Asset Ownership",
@@ -52,7 +52,7 @@
   },
   {
     "title": "Blockchain Integration",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "Our blockchain integration services enhance gaming operations through the use of integrated systems for gaming transactions, asset ownership, and secure gaming Through blockchain, we ensure transparency, security, and presence in gaming real properties, we elevate the player experience, and we create new revenue models .",
     "features": [
       "Decentralized Systems for Games",
@@ -62,7 +62,7 @@
   },
   {
     "title": "Cross-Platform Game Porting",
-    "subtitle": "All Service And Solutions At One Place",
+    "subtitle": "",
     "description": "We offer cross-platform game porting services, allowing your game to reach a broader audience. Our team ensures your game functions seamlessly across multiple platforms, including mobile, PC, and console, ensuring consistency in performance, features, and user experience.",
     "features": [
       "Seamless Multi-Platform Functionality",
@@ -147,25 +147,25 @@
       "num": "1",
       "title": "Blockchain and Smart Contracts",
       "img": "https://www.comfygen.com/img/our-experties.webp",
-      "desc": "We integrate blockchain technology and smart contracts into game development to create secure, transparent, and decentralized in-game economies. This allows players to own digital assets, trade items, and enjoy a trustless gaming experience, enhancing player interaction and game value."
+      "decs": "We integrate blockchain technology and smart contracts into game development to create secure, transparent, and decentralized in-game economies. This allows players to own digital assets, trade items, and enjoy a trustless gaming experience, enhancing player interaction and game value."
     },
     {
       "num": "2",
       "title": "Procedural Content Generation",
       "img": "https://www.comfygen.com/img/comprehension-game-design.webp",
-      "desc": "Our use of procedural content generation allows for endless worlds and dynamic environments. By automating the creation of content such as maps, levels, and scenarios, we provide players with unique and ever-changing experiences, enhancing replayability and game longevity."
+      "decs": "Our use of procedural content generation allows for endless worlds and dynamic environments. By automating the creation of content such as maps, levels, and scenarios, we provide players with unique and ever-changing experiences, enhancing replayability and game longevity."
     },
     {
       "num": "3",
       "title": "Real-Time Multiplayer Networking",
       "img": "https://www.comfygen.com/img/quality-assurance.webp",
-      "desc": "We specialize in building real-time multiplayer games with seamless networking. Our solutions ensure smooth online interactions, reducing lag and latency issues, and providing players with a stable and enjoyable experience, whether they’re teaming up or competing in competitive multiplayer games."
+      "decs": "We specialize in building real-time multiplayer games with seamless networking. Our solutions ensure smooth online interactions, reducing lag and latency issues, and providing players with a stable and enjoyable experience, whether they’re teaming up or competing in competitive multiplayer games."
     },
     {
       "num": "4",
       "title": "Metaverse Compatibility",
       "img": "https://www.comfygen.com/img/customization-and-innovation.webp",
-      "desc": "Our game development services extend to creating metaverse-compatible experiences, integrating virtual worlds, avatars, and digital assets. By leveraging emerging technologies, we help you build games that are ready for the next evolution of gaming, allowing for cross-platform interaction and a connected virtual universe."
+      "decs": "Our game development services extend to creating metaverse-compatible experiences, integrating virtual worlds, avatars, and digital assets. By leveraging emerging technologies, we help you build games that are ready for the next evolution of gaming, allowing for cross-platform interaction and a connected virtual universe."
     }
   ],
   "ModusOperandi": [

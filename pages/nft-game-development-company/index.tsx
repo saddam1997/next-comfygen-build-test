@@ -87,7 +87,7 @@ const Processs = [
   }
 
 ];
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   const [showContent, setShowContent] = useState(false);
   let { initialData } = props;
 
@@ -103,11 +103,11 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          Best NFT Game Development Company In India & The USA | Comfygen
+          Best NFT Game Development Company | NFT Game Development Services
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading NFT Game Development Company In India & The USA that delivers the end-to-end finest NFT Game Development Services to build state-of-the-art NFT games. Contact us today!"
+          content="Comfygen is the best NFT game development company offering secure, scalable, and engaging NFT games with smart contract integration, tokenized assets, and interactive gameplay for startups and enterprises."
         />
         <link
           rel="canonical"
@@ -203,9 +203,13 @@ export default function Ecommerce(props:any) {
       {/* hero section */}
       <div className="">
         <HeroSectionForAllPages
-          heading="NFT Game Development Company"
-          ptag1="What’s left to wait now? Call us, and discuss about the ideas and plans striking your head. Consult about the decentralized gaming ideologies with experienced IT Experts; who can suggest for the best NFT Game Development Services & solutions resulting profitability in your software."
-          ptag="NFT Game Development is booming at vastest scale, and its user’s count is constantly rising unimaginably. Comfygen is the one-stop NFT Game Development Company In India & The USA provides agile development solutions and user-friendly UX/UI for seamless gameplay. We have skilled NFT Game Developers integrate some latest technologies, use advanced blockchain frameworks, and take leverages from tokenisation standards in the gaming development platforms."
+          heading="Best NFT Game Development Company"
+          ptag1="NFT gaming is transforming the gaming industry by enabling players to own, trade, and monetize in-game assets. As the best NFT game development company, Comfygen builds secure, scalable, and engaging blockchain-powered NFT games with advanced technology and seamless user experiences."
+          ptag=""
+          li="Custom NFT Game Development"
+          li1="Smart Contract Integration"
+          li2="Tokenized Gaming Economy"
+          li3="Interactive UI/UX Design"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -215,15 +219,7 @@ export default function Ecommerce(props:any) {
           bgImage="https://www.comfygen.com/herosection/nft-game-development-company-hero-img.webp"
         />
       </div>
-      <AboutSection
-        title="About Company"
-        heading="Presenting The Reliable NFT Game Development Company"
-        description1="We are pioneers in the creation of immersive NFT games that will take you to a whole new world of excitement and adventure. We specialize in producing innovative and exciting gaming experiences powered by non-fungible tokens as a leading game development firm. We bring to life virtual landscapes where you can unleash your imagination and go on fascinating expeditions using our knowledge and ingenuity. Join us on this remarkable trip as our cutting-edge NFT games transform the gaming market."
-        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-  
+
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="space-y-2">
@@ -234,6 +230,16 @@ export default function Ecommerce(props:any) {
           </div>
         </div>
       </section>
+      <AboutSection
+        title="About Company"
+        heading="Presenting The Reliable NFT Game Development Company"
+        description1="We are pioneers in the creation of immersive NFT games that will take you to a whole new world of excitement and adventure. We specialize in producing innovative and exciting gaming experiences powered by non-fungible tokens as a leading game development firm. We bring to life virtual landscapes where you can unleash your imagination and go on fascinating expeditions using our knowledge and ingenuity. Join us on this remarkable trip as our cutting-edge NFT games transform the gaming market."
+        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
+        link="/about-us"
+        linkText="Explore More"
+      />
+
+
       <InfoSectionLeft
         heading="WHITE LABEL NFT GAME DEVELOPMENT SOLUTIONS"
         description1="Using a white label NFT game development solution can transform the journey of prospective game creators. These solutions include a pre-built game engine, a diverse variety of NFT assets, and tools for managing the economy of your game. Saving time and money by not having to create a custom NFT game from scratch is one of the benefits. Using current materials, you may easily construct a professional-looking game. These solutions also provide a high level of flexibility, allowing you to select from a variety of game templates and modify them to your exact requirements and creative vision. You may also use your own logo and artwork to give your game a personal touch. Finally, white label solutions are user-friendly, making them available to everyone, regardless of prior game development knowledge. Even beginners may design and launch their own NFT game with confidence."

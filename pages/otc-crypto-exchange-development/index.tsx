@@ -130,24 +130,7 @@ export default function Ecommerce(props:any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+  
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -177,72 +160,7 @@ export default function Ecommerce(props:any) {
 
 
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
+
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -352,11 +270,11 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          OTC Crypto Exchange Development Company | Comfygen
+          Best OTC Crypto Exchange Development Company | OTC Trading Platform
         </title>
         <meta
           name="description"
-          content="Comfygen offers secure and scalable OTC crypto exchange development services with instant trade execution, bank-grade security, transparent pricing, and custom features. Launch your OTC trading platform with confidence."
+          content="Comfygen is the best OTC crypto exchange development company delivering secure, scalable OTC trading platforms with transparent pricing, and advanced security for enterprises and startups."
         />
         <link
           rel="canonical"
@@ -441,33 +359,7 @@ export default function Ecommerce(props:any) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development.webp" />
         <meta property="og:image:alt" content="OTC Crypto Exchange Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "OTC Crypto Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/otc-crypto-exchange-development",
-              description:
-                "Comfygen is a top OTC crypto exchange development company offering secure and scalable OTC trading platforms. We build custom OTC solutions with high liquidity, compliance features, and institutional-grade security.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-og-image.webp"
-            })
-          }}
-        />
+
 
 
         <script
@@ -479,8 +371,8 @@ export default function Ecommerce(props:any) {
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="OTC Crypto Exchange Development Company"
-          ptag="Comfygen, OTC Crypto Exchange Development Service, is specially developed for enterprises and startups looking to simplify high-volume digital asset trading. Our OTC Crypto Exchange Development solutions eliminate slippage, ensure transparent pricing, and provide a seamless trading experience for both institutional investors and retail users. With advanced security measures, customizable features, and compliance-ready architecture, we help you launch and scale confidently in the global crypto market."
+          heading="Best OTC Crypto Exchange Development Company"
+          ptag="Comfygen is the best OTC crypto exchange development company specialized in developing Platform for enterprises and startups looking to simplify high-volume digital asset trading. Our OTC Crypto Exchange Development solutions eliminate slippage, ensure transparent pricing, and provide a seamless trading experience for both institutional investors and retail users. With advanced security measures, customizable features, and compliance-ready architecture, we help you launch and scale confidently in the global crypto market."
 
           li="Instant large-volume trade execution"
           li1="Top-security and KYC/AML compliance"
@@ -496,6 +388,21 @@ export default function Ecommerce(props:any) {
           bgImage="https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-hero.webp"
         />
 
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Custom OTC Crypto Exchange Development Solutions
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we design and deliver highly customizable OTC crypto exchange development solutions tailored for institutional clients, crypto startups, and enterprises seeking secure, scalable, and compliant platforms. Our solutions integrate the latest technology trends such as AI-powered execution, regulatory automation, and <a className="text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases">Private Blockchain</a> –  infrastructure to provide a cutting-edge trading experience that meets the demands of 2025 and beyond.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
 
@@ -515,21 +422,7 @@ export default function Ecommerce(props:any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Custom OTC Crypto Exchange Development Solutions
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we design and deliver highly customizable OTC crypto exchange development solutions tailored for institutional clients, crypto startups, and enterprises seeking secure, scalable, and compliant platforms. Our solutions integrate the latest technology trends such as AI-powered execution, regulatory automation, and <a className="text-blue-500 font-semibold' href='https://www.comfygen.com/blog/enterprise-blockchain-explained-types-benefits-use-cases">Private Blockchain</a> –  infrastructure to provide a cutting-edge trading experience that meets the demands of 2025 and beyond.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
 
 
 
