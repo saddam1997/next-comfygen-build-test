@@ -12,6 +12,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -307,11 +308,11 @@ export default function ClinicalApp(props) {
     <>
       <Head>
         <title>
-          Best Laboratory App Development Company | Comfygen
+          Best Laboratory App Development Company | Secure & Scalable Lab Apps
         </title>
         <meta
           name="description"
-          content="Comfygen Technologies delivers secure and scalable laboratory app development solutions for diagnostic labs with test management and digital reporting."
+          content="Comfygen is the best laboratory app development company delivering secure, scalable, and efficient lab applications for diagnostic labs, pathology centers, and healthcare organizations with advanced features and intuitive UI/UX."
         />
         <link
           rel="canonical"
@@ -394,8 +395,8 @@ export default function ClinicalApp(props) {
 
       <div className="overflow-hidden pt-10 lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Laboratory App Development Company"
-          ptag="A reliable Laboratory App Development Company delivering secure, scalable, and efficient digital solutions for diagnostic labs, pathology centers, and healthcare organizations. Comfygen Technologies specializes in building advanced laboratory applications that streamline test management, sample tracking, report generation, and patient data handling. Our expert developers focus on compliance, data security, and intuitive UI/UX to create high-performance lab apps that improve operational efficiency, enhance patient experiences, and support long-term business growth."
+          heading="Best Laboratory App Development Company"
+          ptag="Comfygen is the best Laboratory App Development Company delivering secure, scalable, and efficient digital solutions for diagnostic labs, pathology centers, and healthcare organizations. Comfygen Technologies specializes in building advanced laboratory applications that streamline test management, sample tracking, report generation, and patient data handling. Our expert developers focus on compliance, data security, and intuitive UI/UX to create high-performance lab apps that improve operational efficiency, enhance patient experiences, and support long-term business growth."
           li="Test & Sample Management"
           li1="Digital Report Generation & Sharing"
           li2="Appointment Booking & Status Updates"
@@ -587,6 +588,7 @@ export default function ClinicalApp(props) {
             "Available to work dedicatedly on your project"
           ]}
         />
+        <ClientStories/>
 
    <ClientTestimonials
           heading="Testimonials from Our Clients"

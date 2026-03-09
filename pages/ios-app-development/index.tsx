@@ -111,11 +111,11 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Custom iOS App Development Company | Hire iOS Developers</title>
+        <title>Best iOS App Development Company | Custom iPhone App Developers</title>
 
         <meta
           name="description"
-          content="Hire expert iOS app developers to build scalable, secure, and user-friendly iPhone and iPad applications. Comfygen offers end-to-end iOS app development services."
+          content="Comfygen is the best iOS app development company delivering custom iPhone, iPad, and iOS applications with modern UI/UX, scalable architecture, and high-performance mobile solutions."
         />
 
         {/* <!-- Twitter Card Tags -->  */}
@@ -170,8 +170,8 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSection
-          heading="IOS App Development Company "
-          ptag="Create powerful, secure, and high-performance iOS applications with Comfygen, a trusted iOS app development company. We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards."
+          heading="Best IOS App Development Company"
+          ptag="Create powerful, secure, and high-performance iOS applications with Comfygen, the Best iOS App Development Company.We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards."
           ptag1="From intuitive UI/UX design to scalable architecture and App Store deployment, our iOS developers deliver seamless user experiences, optimized performance, and long-term app reliability tailored to your business goals."
           li="Custom iOS App Development for Startups & Enterprises"
           li1="Native iPhone, iPad & macOS App Solutions"

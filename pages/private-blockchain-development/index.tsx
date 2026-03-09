@@ -71,7 +71,7 @@ const BlogSection = dynamic(
 
 
 
-export default function rummy(props:any) {
+export default function rummy(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -407,46 +407,7 @@ export default function rummy(props:any) {
   ];
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.comfygen.com/#website",
-      url: "https://www.comfygen.com/",
-      name: "Blockchain Technology, Mobility, AI and IoT Development Company",
-      description: "Trusted Blockchain AI IoT Development Company",
-      inLanguage: "en-US",
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: "https://www.comfygen.com/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-    },
+   
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -530,129 +491,6 @@ export default function rummy(props:any) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Comfygen Technologies",
-      image: "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "https://maps.app.goo.gl/WRvQs16yDQ624dda6",
-      url: "https://www.comfygen.com/",
-      telephone: "+91-9587867258",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd",
-        addressLocality: "Jaipur",
-        postalCode: "302019",
-        addressCountry: "IN",
-        addressRegion: "IN",
-      },
-      priceRange: "Contact Us",
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://www.instagram.com/comfygen_technologies/",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.threads.com/@comfygen_technologies",
-      ],
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Friday", "Thursday", "Wednesday", "Tuesday", "Monday"],
-          opens: "09:00",
-          closes: "19:30",
-        },
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-      alternateName: "Comfygen Technologies",
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://www.instagram.com/comfygen_technologies/",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.threads.com/@comfygen_technologies",
-      ],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+91-9587867258",
-          contactType: "sales",
-          email: "sales@comfygen.com",
-          areaServed: [
-            "US",
-            "CA",
-            "GB",
-            "AD",
-            "AU",
-            "AT",
-            "BS",
-            "BH",
-            "IO",
-            "KM",
-            "CU",
-            "AR",
-            "CW",
-            "CY",
-            "DK",
-            "DM",
-            "EG",
-            "FK",
-            "FI",
-            "FR",
-            "DE",
-            "GR",
-            "GL",
-            "HK",
-            "IS",
-            "IN",
-            "ID",
-            "IT",
-            "JP",
-            "JE",
-            "JO",
-            "KW",
-            "KG",
-            "KR",
-            "MX",
-            "FM",
-            "NZ",
-            "NI",
-            "OM",
-            "PE",
-            "PH",
-            "PL",
-            "PT",
-            "QA",
-            "RO",
-            "RU",
-            "SA",
-            "SG",
-            "SE",
-            "SZ",
-            "CH",
-            "TH",
-            "TR",
-            "TN",
-            "UA",
-            "UM",
-            "AE",
-            "039",
-            "155",
-            "154",
-            "151",
-            "150",
-          ],
-          availableLanguage: ["en", "hi"],
-        },
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
       "@type": "Product",
       name: "Private Blockchain Development Company",
       image:
@@ -669,56 +507,6 @@ export default function rummy(props:any) {
         ratingValue: "4.9",
         reviewCount: "1124",
       },
-    },
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://www.comfygen.com/private-blockchain-development/",
-          url: "https://www.comfygen.com/private-blockchain-development/",
-          name: "Private Blockchain Development Company",
-          isPartOf: {
-            "@id": "https://www.comfygen.com/#website",
-          },
-          primaryImageOfPage: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          },
-          image: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          },
-          thumbnailUrl:
-            "https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp",
-          description:
-            "ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire.",
-          breadcrumb: {
-            "@id":
-              "https://www.comfygen.com/private-blockchain-development/#breadcrumb",
-          },
-          inLanguage: "en-US",
-          potentialAction: [
-            {
-              "@type": "ReadAction",
-              target: [
-                "https://www.comfygen.com/private-blockchain-development/",
-              ],
-            },
-          ],
-        },
-        {
-          "@type": "ImageObject",
-          "@id":
-            "https://www.comfygen.com/private-blockchain-development/#primaryimage",
-          inLanguage: "en-US",
-          url: "https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp",
-          contentUrl:
-            "https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp",
-          width: 1080,
-          height: 600,
-        },
-      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -830,10 +618,10 @@ export default function rummy(props:any) {
   return (
     <>
       <Head>
-        <title>Private Blockchain Development Company | Enterprise Solutions</title>
+        <title>Trusted Private Blockchain Development Company | Enterprise Solutions</title>
         <meta
           name="description"
-          content="Comfygen is a private blockchain development company delivering secure, scalable permissioned blockchain solutions using Hyperledger, Quorum, and Corda."
+          content="Comfygen is a best private blockchain development company delivering secure, scalable permissioned blockchain solutions using Hyperledger, Quorum, and Corda."
         />
         <meta
           name="keywords"
@@ -952,13 +740,13 @@ export default function rummy(props:any) {
       </div>
       <div className="overflow-hidden lg:pt-[110px]">
         <HeroSectionForAllPages
-          heading="Private Blockchain Development Service"
+          heading="Private Blockchain Development Company for Secure Enterprise Solutions"
           subhead='Secure, Scalable & Permissioned Blockchain Solutions for Enterprises'
-          ptag="Comfygen Technologies is a trusted private blockchain development company delivering secure, scalable, and fully customized permissioned blockchain solutions. Our expert private blockchain developers build enterprise-grade networks using Hyperledger, Quorum, and Corda to support industries like finance, healthcare, and logistics. From smart contract development to end-to-end private blockchain application deployment, we help businesses create compliant, future-ready blockchain ecosystems that enhance transparency, security, and operational efficiency."
-          li="Permissioned & Enterprise-Grade Blockchain Networks"
-          li1="Hyperledger, Quorum & Corda Expertise"
-          li2="Secure Smart Contract & App Development"
-          li3=" Scalable, Compliant & Future-Ready Solutions"
+          ptag="Build secure blockchain networks with our private blockchain development services. At Comfygen, we help enterprises, startups, and organizations create custom private blockchain solutions that make sure data privacy, faster transactions, and controlled access. Our expert private blockchain developers design permissioned blockchain networks that integrate seamlessly with your existing business systems while maintaining transparency, security, and operational efficiency."
+          li="Secure permissioned blockchain network development"
+          li1="Enterprise-grade private blockchain solutions"
+          li2="Fully custom private blockchain development"
+          li3="Seamless integration with enterprise systems"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}
@@ -967,8 +755,8 @@ export default function rummy(props:any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/private-blockchain-development/hero.webp"
         />
-        <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
@@ -1007,7 +795,7 @@ export default function rummy(props:any) {
           linkText="Explore More"
         />
         {/* <ContactFromCenter /> */}
-        
+
         <CoreFeatureBlockchain
           heading="Core Features of Private Blockchain Development That Make It Enterprise -Ready"
           description="Private blockchain development offers the ideal foundation for enterprises seeking secure, scalable, and permissioned blockchain solutions. With fine-tuned access control, high performance, and built-in compliance, these features empower businesses to maintain trust, integrity, and efficiency across critical operations. Explore the key features that make private blockchains a perfect fit for enterprise-grade applications."

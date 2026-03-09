@@ -914,7 +914,7 @@
 
  "CardGridData": [
   {
-    "img": "<IconBulb stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/best dating consulting.webp",
     "title": "Best Dating App Consulting Service",
     "desc": "Our <a href='https://www.comfygen.com/ca/application-consulting-services' class='text-blue-600 font-semibold'>dating application consulting</a> team consists of experienced professionals who help you plan and build a successful dating app. We provide complete guidance from the initial idea to final execution.",
     "listItems": [
@@ -925,7 +925,7 @@
     ]
   },
   {
-    "img": "<IconCode stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/best custom dating app.webp",
     "title": "Best Custom Dating App Development",
     "desc": "We offer top-notch dating app development services in India tailored to your unique business needs. Our dedicated dating mobile app developers build highly engaging, secure, and scalable dating apps with AI-based matchmaking, real-time chat, video calls, and geolocation features. Launch a custom dating platform that stands out in the competitive market.",
     "listItems": [
@@ -940,7 +940,7 @@
 
   
   {
-    "img": null,
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/white label dating.webp",
     "title": "White-Label Dating App Development",
     "desc": "As a leading white-label dating app development provider, we help you launch your fully branded dating app quickly, efficiently, and at an affordable cost. Our top-rated <a href='https://www.comfygen.com/white-label-mobile-app-development' class='text-blue-600 font-semibold'>white-label dating app development solutions</a> come with ready-made features, customizable designs, and complete scalability—perfect for startups and businesses aiming for a fast and successful market launch.",
     "listItems": [
@@ -950,7 +950,7 @@
     ]
   },
   {
-    "img": "<IconBrandApple stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/ios dating app.webp",
     "title": "iOS Dating App Development",
     "desc": "We offer professional <a href='https://www.comfygen.com/ios-app-development' class='text-blue-600 font-semibold'>iOS dating app development services</a> that are easy to use, secure, and fully scalable. Our skilled dating app developers in India build modern apps with smart features like AI-based matchmaking, real-time chat, and video calling, giving users a smooth and engaging experience. With our advanced development approach, you can launch a top-quality dating app for both iPhone and iPad users.",
     "listItems": [
@@ -961,7 +961,7 @@
     ]
   },
   {
-    "img": "<IconBrandAndroid stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/android dating app.webp",
     "title": "Android Dating App Development",
     "desc": "Our Android dating app development services are built for scale, flexibility, and a wide global audience. We create fast, feature-rich apps that run smoothly across different Android devices. With enhanced tools like location-based matching, in-app communication, and behavior-driven recommendations, we help you launch a dating app that fits perfectly into the Android market.",
     "listItems": [
@@ -972,7 +972,7 @@
     ]
   },
   {
-    "img": "<IconGlobe stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/material-symbols_devices-outline.webp",
     "title": "Cross-platform App Development",
     "desc": "Expand your reach with our cross-platform dating app development services. We create high-performance dating apps using frameworks like Flutter and React Native, ensuring compatibility across iOS and Android. Enjoy cost-effective development with a single codebase while delivering a native-like experience for all users.",
     "listItems": [
@@ -983,7 +983,7 @@
     ]
   },
   {
-    "img": "<IconBrush stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/dating website.webp",
     "title": "Dating Website Development",
     "desc": "We build responsive and feature-rich dating websites with a modern UI/UX, real-time chat, smart profile matching, and strong security features. Whether you need a standalone dating website or one that works along with a mobile app, our expert <a href='https://www.comfygen.com/web-development' class='text-blue-600 font-semibold'>website app development</a> team ensures a smooth and engaging experience for all users.",
     "listItems": [
@@ -994,7 +994,7 @@
     ]
   },
   {
-    "img": "<IconCheck stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/ux.webp",
     "title": "Top Dating App UI/UX Design Service",
     "desc": "Comfygen specializes in creating cutting-edge UI/UX designs tailored for dating apps, ensuring an exceptional user experience and an engaging interface. Our goal is to help you build a dating app platform that fosters connections, enhances usability, and boosts user retention.",
     "listItems": [
@@ -1004,7 +1004,7 @@
     ]
   },
   {
-    "img": "<IconCheck stroke={1.5} className='w-12 h-12' />",
+    "img": "https://www.comfygen.com/comfygen-images/dating-app-development/uil_rocket.webp",
     "title": "Deployment & Testing",
     "desc": "At Comfygen, we provide end-to-end dating app deployment and testing services to ensure your dating app is not just beautifully designed but also functions flawlessly. Our best dating app development team ensures your dating app is ready to hit the market with confidence, optimized for performance, security, and user experience.",
     "listItems": [

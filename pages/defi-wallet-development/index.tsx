@@ -150,76 +150,6 @@ export default function Ecommerce(props) {
 
   const jsonLdData = [
 
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -354,12 +284,12 @@ export default function Ecommerce(props) {
       <Head>
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <title>
-          Best DeFi Wallet Development Company | Hire Expert DeFi Wallet Developers – Comfygen
+         Best DeFi Wallet Development Services | DeFi Wallet Solutions
 
         </title>
         <meta
           name="description"
-          content="Comfygen is a best DeFi wallet development company specializing in secure, scalable, and customizable crypto wallets. Build your next-gen DeFi wallet with Comfygen today."
+          content="Comfygen provides secure DeFi wallet development services with smart contract integration, advanced security, scalable architecture, and user-friendly design."
         />
 
         <link
@@ -413,13 +343,13 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="Best Defi wallet development company"
-          ptag="Comfygen, the Best DeFi wallet development company, builds secure, scalable, and feature-rich DeFi wallets sepecilly designed for startups, enterprises, and crypto innovators. Our DeFi wallet development solution gives you full control of your digital assets with the best security and smart contract integrations. Intuitive UX/UI designed for both beginners and advanced users, customizable features that your brand needs, and real-time transaction analytics."
+          heading="Best Defi wallet development Service"
+          ptag="Comfygen, Provide  the best DeFi wallet development Service, that builds secure, scalable, and feature-rich DeFi wallets sepecilly designed for startups, enterprises, and crypto innovators. Our DeFi wallet development solution gives you full control of your digital assets with the best security and smart contract integrations. Intuitive UX/UI designed for both beginners and advanced users, customizable features that your brand needs, and real-time transaction analytics."
           ptag1=""
           li="Multi-currency & cross-chain support"
           li1="Advanced security & private key management"
@@ -433,6 +363,23 @@ export default function Ecommerce(props) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/defi-wallet-development/defi_wallet_development_company_hero.webp"
         />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our DeFi Wallet Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                Comfygen is the <a className='text-blue-500' href="https://www.comfygen.com/wallet-development-company">best wallet development company</a>, providing end-to-end DeFi wallet development services designed for startups, enterprises, and crypto innovators. Our Defi Crypto wallets provide security, scalability, and advanced blockchain features, which give users full control to manage their digital assets.
+
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           heading="What is a DeFi Wallet?"
@@ -453,22 +400,7 @@ export default function Ecommerce(props) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our DeFi Wallet Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen is the <a className='text-blue-500' href="https://www.comfygen.com/wallet-development-company">best wallet development company</a>, providing end-to-end DeFi wallet development services designed for startups, enterprises, and crypto innovators. Our Defi Crypto wallets provide security, scalability, and advanced blockchain features, which give users full control to manage their digital assets.
 
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}

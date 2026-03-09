@@ -6,6 +6,7 @@ import JSON_DATA from "./json/cardano.json";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
 
 const AboutSection = dynamic(
@@ -124,24 +125,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -173,77 +157,7 @@ export default function Ecommerce(props) {
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
-    }
-    ,
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "email": "sales@comfygen.com",
-        "areaServed": ["IN", "US", "CA", "GB"],
-
-        "availableLanguage": "en, in"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    }
-    ,
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -322,11 +236,11 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-         Cardano Blockchain Development Company | DApps, NFT & DeFi Solutions
+         Best Cardano Blockchain Development Company | Cardano DApps & Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is a leading Cardano blockchain development company delivering secure, scalable DApps, smart contracts, NFT marketplaces, and DeFi platforms for enterprises and startups worldwide."
+          content="Comfygen is the best Cardano blockchain development company, delivering secure, scalable, and customized Cardano DApps, smart contracts, NFT marketplaces, and DeFi platforms."
         />
         <link rel="canonical" href="https://www.comfygen.com/cardano-blockchain-development-company" />
 
@@ -362,8 +276,8 @@ export default function Ecommerce(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
         <HeroSectionForAllPages
-          heading="Cardano Blockchain Development Company"
-          ptag="Comfygen is a leading Cardano blockchain development company providing secure, scalable, and tailored blockchain solutions for startups and enterprises worldwide. Our experts specialize in developing Cardano DApps, smart contracts, NFT marketplaces, and DeFi platforms, delivering high-performance, future-ready applications. Partner with Comfygen to leverage advanced Cardano technology, enhance transparency, boost security, and streamline your business operations."
+          heading="Best Cardano Blockchain Development Company"
+          ptag="Comfygen is the best Cardano blockchain development company, delivering secure, scalable, and customized blockchain app development solutions for startups and enterprises worldwide. Our blockchain developmnt team of experts specializes in building high-performance Cardano DApps, smart contracts, NFT marketplaces, and DeFi platforms. Partner with Comfygen to harness advanced Cardano technology, enhance transparency, strengthen security, and optimize your business operations for the future."
           li="End-to-End Cardano Blockchain Development Solutions"
           li1="Certified Developers with Proven Expertise"
           li2="Scalable, Secure, High-Performance Decentralized Applications"
@@ -473,6 +387,7 @@ export default function Ecommerce(props) {
             "Your custom requirements are attended to on priority.",
           ]}
         />
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

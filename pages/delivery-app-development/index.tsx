@@ -435,11 +435,11 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Custom Delivery App Development Company in India
+        <title>Top-Rated Delivery App Development Company in India
         </title>
         <meta
           name="description"
-          content="Comfygen is a trusted custom delivery app development company offering AI-powered, secure, and scalable delivery apps for food, grocery, courier, logistics, and medicine businesses with real-time tracking."
+          content="Comfygen is a trusted delivery app development company offering custom delivery app development services for startups and enterprises. Build powerful pickup and delivery apps with real-time tracking and advanced features."
         />
         <link
           rel="canonical"
@@ -557,12 +557,12 @@ export default function ClinicalApp(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
           <HeroSectionForAllPages
-            heading="Custom Delivery App Development Company in India"
-            ptag="Comfygen Technologies is a reliable custom delivery app development company in India, helping businesses launch fast, secure, and scalable delivery applications quickly and efficiently. We build on-demand delivery apps for food, groceries, medicine, courier services, logistics, and multi-service platforms."
+            heading="Top-Rated Delivery App Development Company in India"
+            ptag="Build powerful, scalable, and feature-rich delivery applications with our expert delivery app development company. At Comfygen, we help startups, enterprises, and logistics businesses launch custom on-demand delivery app solutions with real-time tracking, route optimization, secure payments, and seamless user experience. Transform your delivery operations with high-performance mobile apps designed for speed, efficiency, and growth."
             ptag1='Our delivery apps come with AI-powered features, live tracking, and strong security to manage orders smoothly and deliver faster. We build cost-effective delivery apps for startups and enterprises, designed to match your business needs.'
-            li="AI-Powered Features & Smart Automation"
-            li1="Live Order, Driver & Delivery Tracking"
-            li2="Secure, Scalable & Cost-Efficient App Solutions"
+            li="Custom Pickup and Delivery App Development"
+            li1="Real-time Tracking & Route Optimization"
+            li2="Scalable On-Demand Delivery Platforms"
             btnName="Talk With Expert"
             btnLink="/contact-us"
             openModal={openModal}
@@ -578,16 +578,10 @@ export default function ClinicalApp(props: any) {
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide Top-Notch Delivery App Development Services
+                We Offer End-to-End Delivery App Development Services For On-Demand Businesses
               </h2>
               <p className="text-base text-center font-normal">
-                Comfygen Technologies delivers top-rated delivery app
-                development services for startups, enterprises, and
-                entrepreneurs across industries like food, grocery, medicine,
-                courier, and logistics. Our custom delivery app development
-                solutions help you automate operations, enhance customer
-                convenience, and boost revenue with real-time tracking, advanced
-                features, and user-friendly interfaces.
+                Comfygen delivers top-tier on-demand pickup delivery app development services for food, grocery, medicine, courier, and logistics. Our custom delivery mobile app development solutions help you automate operations, enhance customer convenience, and boost revenue with real-time tracking, advanced features, and user-friendly interfaces.
               </p>
             </div>
             <div className="">
@@ -619,7 +613,7 @@ export default function ClinicalApp(props: any) {
 
         <AppCard
           title="Take Your Business to the Next Level with our Custom Delivery App Development Solutions"
-          subtitle="Comfygen is a <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/mobile-app-development'>mobile app development company</a>  that provides custom delivery app development solution for every industries. Whatever your business type, we have scalable delivery apps that boost efficiency, streamline operations, and deliver a smooth user experience with real-time tracking, safe payments, and advanced features."
+          subtitle="Comfygen is a best pickup and delivery <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development company</a> that provides on-demand delivery application development solution for every industries. Whatever your business type, we have ready made delivery apps that boost efficiency, streamline operations, and deliver a smooth user experience with real-time tracking, safe payments, and advanced features."
           cards={CardClone}
           openModal={openModal}
         />

@@ -247,11 +247,11 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-          Best NFT Marketplace Development Company in India | NFT App Developers
+          Best NFT Marketplace Development Company | Custom NFT Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen is the top NFT marketplace development company in India, delivering secure, scalable, and custom NFT marketplace solutions with blockchain expertise."
+          content="Looking for the best NFT marketplace development company? We build secure, scalable NFT platforms with smart contracts, multi-wallet support, and advanced trading features."
         />
         <link
           rel="canonical"
@@ -351,15 +351,12 @@ export default function Ecommerce(props:any) {
       <div className="overflow-hidden pt-[110px]">
         {/* hero section */}
         <HeroSectionForAllPages
-          heading="Top-Notch NFT Marketplace Development Company in India"
-          ptag1="Comfygen is a trusted NFT marketplace development company in India helping startups, creators, and enterprises launch secure, scalable, and feature-rich NFT marketplaces. We deliver custom and white-label NFT marketplace solutions with multi-chain blockchain support, smart contract security, and seamless wallet integration to help you build a profitable NFT trading platform with global reach."
-          li="Custom & White-Label Solutions – Launch from scratch or use a ready-made NFT marketplace platform."
-          li1="Multi-Chain Support – Ethereum, Polygon, Solana, Binance Smart Chain & more."
-          li2="Smart Contract Integration – Secure, automated, and trustless transactions."
-          li3="Multi-Wallet Integration – Supports MetaMask, Trust Wallet, Coinbase Wallet, and others."
-          li4="Auction & Bidding System – Enable fixed-price sales, auctions, and bidding."
-          li5="Gas Fee Optimization – Reduce transaction costs for seamless NFT trading."
-          li6="User-Friendly Dashboard – Intuitive interface for buyers, sellers, and admins."
+          heading="Best NFT Marketplace Development Company"
+          ptag1="Comfygen is the best NFT marketplace development company in India helping startups, creators, and enterprises launch secure, scalable, and feature-rich NFT marketplaces. We deliver custom and white-label NFT marketplace solutions with multi-chain blockchain support, smart contract security, and seamless wallet integration to help you build a profitable NFT trading platform with global reach.  "
+          li="Custom NFT Marketplace Development "
+          li1="Multi-Blockchain Support"
+          li2="Secure Smart Contract Integration "
+          li3="Advanced Trading Features"
           btnName="Talk With Expert"
           btnLink="/contact-us"
           openModal={openModal}

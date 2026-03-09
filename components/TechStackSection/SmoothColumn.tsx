@@ -5,14 +5,17 @@ import Card from "./Card";
 
 const SmoothColumn = ({ items, speed }) => {
     const trackRef = useRef(null);
+   
 
     useEffect(() => {
         const track = trackRef.current;
+       
         let pos = 0;
 
         const animate = () => {
 
             const halfHeight = track.scrollHeight / 2;
+            console.log(halfHeight, "halfHeight")
 
             pos -= speed;
 

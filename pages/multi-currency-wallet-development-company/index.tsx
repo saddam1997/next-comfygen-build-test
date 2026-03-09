@@ -208,80 +208,6 @@ export default function Ecommerce(props) {
 
 
   const jsonLdData = [
-    
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-
- 
-
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -309,9 +235,7 @@ export default function Ecommerce(props) {
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
-    }
-    ,
-
+    },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -350,10 +274,7 @@ export default function Ecommerce(props) {
         }
       ]
 
-    }
-    ,
-
-
+    },
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -366,9 +287,7 @@ export default function Ecommerce(props) {
         "ratingValue": "4.9",
         "reviewCount": "245"
       }
-    }
-    ,
-
+    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -402,11 +321,11 @@ export default function Ecommerce(props) {
       <Head>
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <title>
-          Multicurrency Wallet Development Services | Secure, Scalable Wallet Solutions
+           Multicurrency Wallet Development Services | Secure Wallet Solutions
         </title>
         <meta
           name="description"
-          content="Comfygen offers expert multicurrency wallet development services. Launch secure, scalable, and customizable wallets supporting Bitcoin, Ethereum, stablecoins, NFTs, and DeFi."
+          content="Get secure multicurrency wallet development services from Comfygen. We build advanced crypto wallets that support multiple cryptocurrencies with seamless transactions and strong asset protection."
         />
 
         <link
@@ -524,8 +443,8 @@ export default function Ecommerce(props) {
         {/* hero section */}
         <div className="">
           <HeroSectionForAllPages
-            heading="Best Multicurrency wallet development company"
-            ptag="Comfygen, Best Multicurrency wallet development company specializes in creating multicurrency crypto wallets that allow individuals and enterprises to store, send, and receive multiple cryptocurrencies on a single platform. Designed for both startups and established businesses, our wallets ensure global accessibility, seamless transactions, and maximum protection of digital assets."
+            heading="Best Multicurrency wallet development Service"
+            ptag="Build a secure and feature-rich wallet with our multicurrency wallet development services. At Comfygen, we develop advanced multicurrency wallets that enable users to store, send, and receive multiple cryptocurrencies from a single platform. Our multicurrency wallet development solutions are designed for startups, enterprises, and fintech businesses looking to launch scalable and highly secure digital asset wallets."
             ptag1=""
             li="Manage Bitcoin, Ethereum, stablecoins in one wallet"
             li1="Multi-layered security"
@@ -540,21 +459,6 @@ export default function Ecommerce(props) {
             bgImage="https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_hero.webp"
           />
         </div>
-        <AboutSection
-          heading="What is a Multi-Currency Wallet?"
-          description1="A multi-currency wallet is a <a class='text-blue-500 ' href='https://www.comfygen.com/crypto-wallet-development'>wallet development</a> solution that allows users to transact multiple cryptocurrencies on one platform. Without switching between different wallets, individuals and businesses can manage all their digital assets in a single place."
-          description2="For businesses, a multicurrency wallet development solution offers much more than convenience. They allow cross-border payments, DeFi and NFT integration, and multi-language support for worldwide audiences. With advanced features like biometric authentication, multi-signature approvals, and real-time transaction history, multicurrency wallets provide top-tier security while supporting scalable, global financial operations. By adopting a multi-currency wallet, companies can simplify transactions, attract crypto-savvy users, and gain a competitive edge in digital finance.
-"
-          description3=""
-          points={[
-
-          ]}
-
-
-          imageSrc="https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -572,6 +476,24 @@ export default function Ecommerce(props) {
             </div>
           </div>
         </section>
+
+        <AboutSection
+          heading="What is a Multi-Currency Wallet?"
+          description1="A multi-currency wallet is a <a class='text-blue-500 ' href='https://www.comfygen.com/crypto-wallet-development'>wallet development</a> solution that allows users to transact multiple cryptocurrencies on one platform. Without switching between different wallets, individuals and businesses can manage all their digital assets in a single place."
+          description2="For businesses, a multicurrency wallet development solution offers much more than convenience. They allow cross-border payments, DeFi and NFT integration, and multi-language support for worldwide audiences. With advanced features like biometric authentication, multi-signature approvals, and real-time transaction history, multicurrency wallets provide top-tier security while supporting scalable, global financial operations. By adopting a multi-currency wallet, companies can simplify transactions, attract crypto-savvy users, and gain a competitive edge in digital finance.
+"
+          description3=""
+          points={[
+
+          ]}
+
+
+          imageSrc="https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_about.webp"
+          link="/about-us"
+          linkText="Explore More"
+        />
+
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}

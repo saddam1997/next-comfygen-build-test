@@ -56,16 +56,16 @@ export default function LeadSection() {
                     <div className="py-2">
                         <p className="text-white">Trusted by</p>
                         <div className="grid grid-cols-4 items-center">
-                            <Link href={"https://clutch.co/profile/comfygen-technologies"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://clutch.co/profile/comfygen-technologies"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/clutch.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link href={"https://www.designrush.com/agency/profile/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.designrush.com/agency/profile/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link href={"https://www.goodfirms.co/company/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
                             </Link>
-                            <Link href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/selected firms top ecommerce development company.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
 
@@ -87,16 +87,16 @@ export default function LeadSection() {
                      <div className="py-2 lg:hidden">
                         <p className="text-white">Trusted by</p>
                         <div className="grid grid-cols-4 items-center">
-                            <Link rel="nofollow" href={"https://clutch.co/profile/comfygen-technologies"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://clutch.co/profile/comfygen-technologies"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/clutch.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link rel="nofollow" href={"https://www.designrush.com/agency/profile/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.designrush.com/agency/profile/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link rel="nofollow" href={"https://www.goodfirms.co/company/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
                             </Link>
-                            <Link rel="nofollow" href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/selected firms top ecommerce development company.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
 
