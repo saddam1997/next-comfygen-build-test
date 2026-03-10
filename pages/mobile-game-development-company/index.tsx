@@ -113,14 +113,14 @@ export default function Mobile(props) {
   return (
     <>
       <Head>
-        <title>Mobile Game Development Company in India | Mobile Game Developers</title>
+        <title>Best Mobile Game Development Company in India | Game Developers</title>
         <meta
           property="og:title"
           content="Best Mobile Game Development Company In India & The USA | Comfygen"
         />
         <meta
           name="description"
-          content="Looking for a reliable mobile game development company in India? Comfygen offers custom Android and iOS game development services with engaging gameplay, high performance, and scalable solutions for businesses."
+          content="Comfygen is the best mobile game development company in India delivering high-performance Android and iOS games with stunning graphics, smooth gameplay, and scalable architecture."
         />
         <link
           rel="canonical"
@@ -181,14 +181,14 @@ export default function Mobile(props) {
         />
       </Head>
 
-        <Header />
+      <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
 
         <div className="">
           <HeroSectionForAllPages
-            heading="Top Mobile Game Development Company in India"
-            ptag="Comfygen is a trusted mobile game development company in India delivering engaging, high-performance games for startups and enterprises. Our expert game developers build custom Android and iOS mobile games with stunning graphics, smooth gameplay, and scalable architecture to help businesses grow, engage users, and boost revenue."
+            heading="Best Mobile Game Development Company in India"
+            ptag="Comfygen is the best mobile game development company in India delivering engaging, high-performance games for startups and enterprises. Our expert game developers build custom Android and iOS mobile games with stunning graphics, smooth gameplay, and scalable architecture to help businesses grow, engage users, and boost revenue."
             li="Custom Mobile Game Development"
             li1="High-Quality Graphics & Smooth Gameplay"
             li2="Scalable & Secure Architecture"
@@ -202,8 +202,8 @@ export default function Mobile(props) {
             bgImage="https://www.comfygen.com/herosection/mobile-game-development-company-hero-img.webp"
           />
         </div>
-        <Milestones/>
-<section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <Milestones />
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Offered</h2>
@@ -236,7 +236,7 @@ export default function Mobile(props) {
           linkText="Lets Discuss"
           imagePosition="right"
         />
-        
+
 
         <TechStack
           customTechData={null}
@@ -335,7 +335,7 @@ export default function Mobile(props) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-      
+
         <InfoSection
           heading="Additional Information"
           description1="If you have any additional queries about our services, then you can talk to our experts to learn more about our expertise in mobile gaming app development."
@@ -353,7 +353,7 @@ export default function Mobile(props) {
           faqData={JSON_DATA.Frequently}
           title=" "
         />
- <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

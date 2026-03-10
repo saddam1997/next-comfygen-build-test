@@ -137,26 +137,30 @@
       "desc": "We develop web, mobile, and cloud-based applications with cross-platform compatibility, ensuring seamless financial management and accessibility across devices."
     }
   ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Enterprise-Accounting-Software-Solutions.webp",
-      "title": "Enterprise Accounting Software Solutions",
-      "description": "A comprehensive enterprise accounting platform that streamlines multi-branch operations, automates invoicing, payroll, and tax compliance, and provides real-time financial reporting with seamless integration to ERP, CRM, and banking systems.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Cloud-Based-Accounting-Systems.webp",
-      "title": "Cloud-Based Accounting Systems",
-      "description": "Secure, cloud-based accounting software offering automated workflows, real-time financial insights, AI-driven analytics, and remote access for businesses to manage finances efficiently anytime, anywhere.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/GST-&-Tax-Compliant-Accounting-Software.webp",
-      "title": "GST & Tax-Compliant Accounting Software",
-      "description": "A robust solution for GST/VAT compliance, automated tax calculations, audit-ready reports, and seamless integration with invoicing and payroll systems to ensure accurate and regulation-compliant financial operations.",
-      "link": "https://www.comfygen.com/contact-us"
-    }
-  ],
+  "Portfoliodata": {
+    "heading": "Explore Our Accounting Management Software Development Portfolio",
+    "description": "Explore our accounting software portfolio showcasing secure, scalable, and feature-rich financial solutions designed to automate invoicing, payroll, reporting, and compliance across industries.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Enterprise-Accounting-Software-Solutions.webp",
+        "title": "Enterprise Accounting Software Solutions",
+        "description": "A comprehensive enterprise accounting platform that streamlines multi-branch operations, automates invoicing, payroll, and tax compliance, and provides real-time financial reporting with seamless integration to ERP, CRM, and banking systems.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Cloud-Based-Accounting-Systems.webp",
+        "title": "Cloud-Based Accounting Systems",
+        "description": "Secure, cloud-based accounting software offering automated workflows, real-time financial insights, AI-driven analytics, and remote access for businesses to manage finances efficiently anytime, anywhere.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/GST-&-Tax-Compliant-Accounting-Software.webp",
+        "title": "GST & Tax-Compliant Accounting Software",
+        "description": "A robust solution for GST/VAT compliance, automated tax calculations, audit-ready reports, and seamless integration with invoicing and payroll systems to ensure accurate and regulation-compliant financial operations.",
+        "link": "https://www.comfygen.com/contact-us"
+      }
+    ]
+  },
   "consultancy": {
     "imageSrc": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
     "buttonText": "Let’s Discuss",
@@ -220,6 +224,79 @@
       "desc": "User experience and automation features ensure a clean, intuitive interface that simplifies navigation for finance teams while automating routine accounting workflows. With seamless web and mobile accessibility, users can manage financial tasks, approvals, and reporting anytime, anywhere, improving productivity and operational efficiency."
     }
   ],
+  "customTestimonials": [
+    {
+      "text": "Comfygen Technologies transformed our accounting processes with a custom software solution that perfectly fits our business. Their developers were professional, responsive, and delivered on time. Highly recommended!",
+      "name": "Rohit Sharma, ",
+      "title": "(India)"
+    },
+    {
+      "text": "The team at Comfygen made complex accounting workflows simple and efficient. Their expertise in cloud-based solutions has significantly improved our operational efficiency.",
+      "name": "Anjali Mehta, CEO",
+      "title": "(Mumbai, India)"
+    },
+    {
+      "text": "Hiring developers from Comfygen was the best decision for our startup. They understood our requirements, integrated seamlessly with our systems, and provided ongoing support whenever needed.",
+      "name": "James Smith",
+      "title": "USA"
+    }
+  ],
+  "technologyData": {
+    "heading": "Benefits of Custom Accounting Software Systems",
+    "subheading": "A custom accounting software development company in India enhances business efficiency by automating core financial tasks, minimizing manual errors, and saving valuable time. It delivers tailored financial reporting, seamless integration with existing systems, advanced data security, regulatory compliance, and scalable architecture that adapts to business growth while providing deeper, real-time financial insights.",
+    "tech": [
+      {
+        "img": null,
+        "title": "Increased Efficiency",
+        "desc": "Custom accounting software development automates repetitive financial tasks such as invoicing, reconciliation, payroll processing, and tax calculations, significantly reducing manual effort and enabling finance teams to focus on strategic business activities."
+      },
+      {
+        "img": null,
+        "title": "Reduced Errors",
+        "desc": "By minimizing manual data entry and automating calculations, custom accounting systems improve accuracy in financial records, helping businesses avoid costly mistakes and maintain reliable financial data."
+      },
+      {
+        "img": null,
+        "title": "Tailored Financial Reporting",
+        "desc": "Custom accounting software generates role-based, business-specific reports that deliver actionable financial insights, supporting informed decision-making beyond the limitations of generic accounting tools."
+      },
+      {
+        "img": null,
+        "title": "Seamless System Integration",
+        "desc": "Custom accounting solutions integrate effortlessly with ERP, CRM, inventory management, banking systems, and third-party APIs, creating a unified financial ecosystem and eliminating data silos."
+      },
+      {
+        "img": null,
+        "title": "Enhanced Data Security",
+        "desc": "Advanced security measures such as encryption, role-based access control, and secure authentication protect sensitive financial information while ensuring compliance with industry regulations and data protection standards."
+      },
+      {
+        "img": null,
+        "title": "Scalability for Business Growth",
+        "desc": "Custom accounting software is built with a scalable architecture that adapts to increasing transaction volumes, users, and evolving business requirements without compromising performance."
+      },
+      {
+        "img": null,
+        "title": "Cost Efficiency Over Time",
+        "desc": "Although custom development requires an initial investment, it reduces long-term costs by eliminating unnecessary features, lowering dependency on manual processes, and avoiding recurring licensing fees."
+      },
+      {
+        "img": null,
+        "title": "Regulatory Compliance Support",
+        "desc": "Built-in compliance features simplify adherence to GST, VAT, and financial regulations by automating tax calculations, filings, and audit-ready reporting."
+      },
+      {
+        "img": null,
+        "title": "Improved Financial Visibility",
+        "desc": "Real-time dashboards and automated reports provide clear visibility into cash flow, profitability, and overall financial health, enabling proactive business management."
+      }
+    ]
+  },
+  "TechStack": {
+    "title": "Tech Stack We Use in Accounting Software Development",
+    "description": "We leverage a secure, scalable tech stack with modern frontend and backend frameworks, cloud platforms, and databases to deliver high-performance, compliant, and future-ready accounting solutions for businesses.",
+    "customTechData": []
+  },
   "pageData": {
     "title": "Why Choose Us as Your Accounting Software Development Company",
     "description": "At <a href='https://www.comfygen.com/' class='text-blue-600 font-semibold'>Comfygen Technologies</a>, we specialize in delivering secure, scalable, and business-driven accounting software development solutions tailored to your unique financial workflows. Our expertise helps businesses streamline accounting operations, ensure regulatory compliance, and gain real-time financial visibility with future-ready digital solutions.",
@@ -261,70 +338,6 @@
       }
     ]
   },
-  "customTestimonials": [
-    {
-      "text": "Comfygen Technologies transformed our accounting processes with a custom software solution that perfectly fits our business. Their developers were professional, responsive, and delivered on time. Highly recommended!",
-      "name": "Rohit Sharma, ",
-      "title": "(India)"
-    },
-    {
-      "text": "The team at Comfygen made complex accounting workflows simple and efficient. Their expertise in cloud-based solutions has significantly improved our operational efficiency.",
-      "name": "Anjali Mehta, CEO",
-      "title": "(Mumbai, India)"
-    },
-    {
-      "text": "Hiring developers from Comfygen was the best decision for our startup. They understood our requirements, integrated seamlessly with our systems, and provided ongoing support whenever needed.",
-      "name": "James Smith",
-      "title": "USA"
-    }
-  ],
-  "technologyData": [
-    {
-      "img": null,
-      "title": "Increased Efficiency",
-      "desc": "Custom accounting software development automates repetitive financial tasks such as invoicing, reconciliation, payroll processing, and tax calculations, significantly reducing manual effort and enabling finance teams to focus on strategic business activities."
-    },
-    {
-      "img": null,
-      "title": "Reduced Errors",
-      "desc": "By minimizing manual data entry and automating calculations, custom accounting systems improve accuracy in financial records, helping businesses avoid costly mistakes and maintain reliable financial data."
-    },
-    {
-      "img": null,
-      "title": "Tailored Financial Reporting",
-      "desc": "Custom accounting software generates role-based, business-specific reports that deliver actionable financial insights, supporting informed decision-making beyond the limitations of generic accounting tools."
-    },
-    {
-      "img": null,
-      "title": "Seamless System Integration",
-      "desc": "Custom accounting solutions integrate effortlessly with ERP, CRM, inventory management, banking systems, and third-party APIs, creating a unified financial ecosystem and eliminating data silos."
-    },
-    {
-      "img": null,
-      "title": "Enhanced Data Security",
-      "desc": "Advanced security measures such as encryption, role-based access control, and secure authentication protect sensitive financial information while ensuring compliance with industry regulations and data protection standards."
-    },
-    {
-      "img": null,
-      "title": "Scalability for Business Growth",
-      "desc": "Custom accounting software is built with a scalable architecture that adapts to increasing transaction volumes, users, and evolving business requirements without compromising performance."
-    },
-    {
-      "img": null,
-      "title": "Cost Efficiency Over Time",
-      "desc": "Although custom development requires an initial investment, it reduces long-term costs by eliminating unnecessary features, lowering dependency on manual processes, and avoiding recurring licensing fees."
-    },
-    {
-      "img": null,
-      "title": "Regulatory Compliance Support",
-      "desc": "Built-in compliance features simplify adherence to GST, VAT, and financial regulations by automating tax calculations, filings, and audit-ready reporting."
-    },
-    {
-      "img": null,
-      "title": "Improved Financial Visibility",
-      "desc": "Real-time dashboards and automated reports provide clear visibility into cash flow, profitability, and overall financial health, enabling proactive business management."
-    }
-  ],
   "ProcessData": {
     "heading": "Our Accounting Software Development Process",
     "description": "Our accounting software development process follows a structured, agile methodology to deliver secure, scalable, and efficient financial solutions. From planning and design to deployment and maintenance, we ensure high-quality custom software that meets your business requirements and supports seamless financial operations.",
@@ -389,68 +402,69 @@
       "description": "We provide comprehensive training sessions and detailed documentation to ensure your team can effectively use, manage, and maintain the accounting software, empowering them to maximize productivity and leverage all features efficiently."
     }
   ],
-  "appsadata": [
-    {
-      "title": "Healthcare Accounting Software",
-      "description": "We develop <a href='https://www.comfygen.com/blog/healthcare-accounting-software/' class='text-blue-600 font-semibold'>healthcare accounting software</a> organizations to manage billing, insurance claims payroll, and regulatory compliance with accuracy and data security.",
-      "link": "",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Healthcare-Accounting-Software.webp",
-      "gradient": "from-violet-500 to-purple-500"
-    },
-    {
-      "title": "Retail & E-Commerce Accounting Software",
-      "description": "Our accounting solutions for retail and e-commerce businesses streamline inventory accounting invoicing, tax calculations, and real-time sales reporting.",
-      "link": "",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Retail-&-E-Commerce-Accounting-Software.webp",
-      "gradient": "from-orange-500 to-red-500"
-    },
-    {
-      "title": "Manufacturing Accounting Software",
-      "description": "We build accounting systems that handle cost accounting, production expenses, supplier payments, and multi-location financial management for manufacturing enterprises.",
-      "link": "",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Manufacturing-Accounting-Software.webp",
-      "gradient": "from-green-500 to-teal-500",
-      "key": "food-delivery-app-development"
-    },
-    {
-      "title": "Logistics & Supply Chain Accounting Software",
-      "description": "Our custom accounting software supports freight billing, expense tracking, vendor payments, and financial reporting for logistics and supply chain operations.",
-      "link": "",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Logistics-&-Supply-Chain-Accounting-Software.webp",
-      "gradient": "from-blue-500 to-cyan-500",
-      "key": "grocery-app-development"
-    },
-    {
-      "title": "Real Estate Accounting Software",
-      "description": "We deliver accounting solutions for real estate businesses to manage property accounting, rent collection, expense tracking, and financial reporting efficiently.",
-      "link": "https://www.comfygen.com/medicine-delivery-app-development",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Real-Estate-Accounting-Software.webp",
-      "gradient": "from-sky-500 to-blue-500"
-    },
-    {
-      "title": "Education Accounting Software",
-      "description": "Our accounting software for educational institutions simplifies fee management, payroll, budgeting, and compliance reporting.",
-      "link": "#",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Education-Accounting-Software.webp",
-      "gradient": "from-indigo-500 to-purple-500"
-    },
-    {
-      "title": "Finance & Professional Services Accounting Software",
-      "description": "We develop secure and scalable accounting software for financial service providers to manage client accounts, compliance, invoicing, and advanced financial reporting.",
-      "link": "",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Finance-&-Professional-Services-Accounting-Software.webp",
-      "gradient": "from-pink-500 to-rose-500",
-      "key": "water-delivery-app-development"
-    },
-    {
-      "title": "Startups & Enterprises Accounting Software",
-      "description": "From early-stage startups to large enterprises, our custom accounting software adapts to evolving business models, growth requirements, and complex financial structures.",
-      "link": "#",
-      "image": "https://www.comfygen.com/comfygen-images/accounting-software-development/Startups-&-Enterprises-Accounting-Software.webp",
-      "gradient": "from-purple-500 to-pink-500",
-      "key": "milk-delivery-app-development"
-    }
-  ],
+ 
+  "deliveryApps": {
+    "hedding": "Custom Accounting Software Development for Multiple Business Industries",
+    "description": "At Comfygen Technologies, our custom accounting software development company in India & <a href='https://www.comfygen.com/billing-software-development' class='text-blue-600 font-semibold'>billing software Development</a> company in India solutions are designed to meet the unique financial workflows, compliance requirements, and operational challenges of multiple industries. By tailoring accounting systems to industry-specific needs, we help businesses improve accuracy, automate processes, gain real-time financial insights, and ensure long-term scalability and regulatory compliance.",
+    "delivery": [
+      {
+        "title": "Healthcare Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Healthcare Accounting Software.webp"
+      },
+      {
+        "title": "Retail & E-Commerce Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Real Estate Accounting Software.webp"
+      },
+      {
+        "title": "Manufacturing Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Manufacturing Accounting Software.webp"
+      },
+      {
+        "title": "Logistics & Supply Chain Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Logistics & Supply Chain Accounting Software.webp"
+      },
+      {
+        "title": "Real Estate Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Real Estate Accounting Software.webp"
+      },
+      {
+        "title": "Education Accounting Software",
+        "link": "#",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Education Accounting Software.webp"
+      },
+      {
+        "title": "Finance & Professional Services Accounting Software",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Finance & Professional Services Accounting Software.webp"
+      },
+      {
+        "title": "Startups & Enterprises Accounting Software",
+        "link": "#",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Startups & Enterprises Accounting Software.webp"
+      }
+    ]
+  },
+  "HireDeveloper": {
+    "heading": "Hire Accounting Software Developers For Your Business.",
+    "text": "At Comfygen Technologies, we offer expert accounting software <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>developers</a> who can build, customize, and maintain secure and efficient financial management systems. Our financial software development team specializes in accounting software development for web, mobile, and cloud platforms, ensuring solutions tailored to your startup business workflows, scalability needs, and regulatory compliance. Focus on growth while we handle your accounting software development company with precision and expertise.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Custom Accounting Software Development",
+      "Web, Mobile & Cloud Applications",
+      "Automation & Accuracy Enhancement",
+      "Regulatory Compliance Support",
+      "Seamless Integration with Existing Systems",
+      "Dedicated & Flexible Hiring Models"
+    ]
+  },
   "jsonLdData": [
     {
       "@context": "https://schema.org",

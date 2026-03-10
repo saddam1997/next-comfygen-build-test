@@ -16,7 +16,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/data/analytics-service-provider",
-      permanent: false,
+      permanent: true,
     },
   };
 }

@@ -7,7 +7,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
-
+import TechStackSection from "../../components/TechStackSection";
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse w-full"></div>
 );
@@ -269,12 +269,14 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
+         <TechStackSection deliveryApps={JSON_DATA.deliveryApps}/>
+{/* 
         <DeliverySection
           title="Custom Billing Software Development for Multiple Business Industries"
           description="Comfygen Technologies designs robust, user-friendly billing software tailored for diverse industries. From startups and growing businesses to large enterprises, our custom billing software development solutions are built to align perfectly with your operational requirements and business goals."
           apps={JSON_DATA.appsadata}
           hideUrl="https://www.comfygen.com/billing-software-development"
-        />
+        /> */}
 
         <ClientStories />
 

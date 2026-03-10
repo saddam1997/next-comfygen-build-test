@@ -8,6 +8,7 @@ import { IconHeart, } from '@tabler/icons-react';
 
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/ClientStories";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -379,6 +380,8 @@ export default function rummy(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
+
+        <ClientStories/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Video Game Development"

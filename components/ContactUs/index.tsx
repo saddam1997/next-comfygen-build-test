@@ -22,10 +22,10 @@ export default function LeadSection() {
 
                 {/* left side */}
                 <div className="w-full hidden lg:block">
-                    <h2 className="text-white text-2xl lg:text-4xl font-bold mb-4">
+                    <h1 className="text-white text-2xl lg:text-4xl font-bold mb-4">
                         Start Your Project With Us<br></br>
 
-                    </h2>
+                    </h1>
 
                     <p className=" text-white mb-3 font-semibold">We’re here to turn your idea into a real product.</p>
 
@@ -76,9 +76,9 @@ export default function LeadSection() {
                 {/* right side */}
                 <div className="w-full">
                     <div className="w-full lg:hidden">
-                        <h2 className="text-white text-2xl lg:text-4xl font-bold mb-4">
+                        <h1 className="text-white text-2xl lg:text-4xl font-bold mb-4">
                             Start Your Project With Us<br></br>
-                        </h2>
+                        </h1>
                         <p className=" text-white mb-3 font-semibold">We’re here to turn your idea into a real product.</p>
                         
                     </div>
