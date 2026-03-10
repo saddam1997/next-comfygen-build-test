@@ -91,8 +91,92 @@
       "title": "Food Delivery App Development Company"
     }
   ],
-
-  
+  "deliveryApps": {
+    "hedding":"We Provide Custom Delivery App Development Services in Diverse Sectors",
+    "description":"The Comfygen team creates powerful and easy-to-use delivery apps for a variety of industries. Whether you run a startup, small business, or large enterprise, our custom delivery app development services are made to fit your business needs.",
+    "delivery": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Water Delivery App Development.webp",
+        "title": "Water Delivery",
+        "link": "https://www.comfygen.com/water-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Pizza Delivery App Development.webp",
+        "title": "Pizza Delivery",
+        "link": "https://www.comfygen.com/pizza-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Pet food Delivery App Development.webp",
+        "title": "Pet food Delivery",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Parcel Delivery App Development.webp",
+        "title": "Parcel Delivery",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Milk Delivery App Development.webp",
+        "title": "Milk Delivery App",
+        "link": "https://www.comfygen.com/milk-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Medicine Delivery App Development.webp",
+        "title": "Medicine Delivery App Development",
+        "link": "https://www.comfygen.com/medicine-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Ice-cream Delivery App Development.webp",
+        "title": "Ice-cream Delivery App Development",
+        "link": "https://www.comfygen.com/ice-cream-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Hyper local Delivery App Development.webp",
+        "title": "Hyper local Delivery App Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Grocery Delivery App Development.webp",
+        "title": "Grocery Delivery App Development",
+        "link": "https://www.comfygen.com/ecommerce/grocery"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Fuel Delivery App Development.webp",
+        "title": "Fuel Delivery App Development",
+        "link": "https://www.comfygen.com/fuel-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Flower Delivery App Development.webp",
+        "title": "Flower Delivery App Development",
+        "link": "https://www.comfygen.com/flower-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Fish Delivery App Development.webp",
+        "title": "Fish Delivery App Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Delivery App Development.webp",
+        "title": "Delivery App Development",
+        "link": ""
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Courier Delivery App Development.webp",
+        "title": "Courier Delivery App Development",
+        "link": "https://www.comfygen.com/courier-delivery-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Cake Delivery App Developmen.webp",
+        "title": "Cake Delivery App Developmen",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Alcohol Delivery App Development.webp",
+        "title": "Alcohol Delivery App Development",
+        "link": "https://www.comfygen.com/alcohol-delivery-app-development"
+      }
+    ]
+  },
   "portfoliodata": [
     {
       "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
@@ -107,9 +191,6 @@
       "link": "/portfolio/online-food-ordering-app"
     }
   ],
-
-
-
   "IndustriesServe": [
     {
       "image": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/ubereats-clone-app.webp",
@@ -152,96 +233,192 @@
     {
       "id": 1,
       "title": "Customer Panel",
-      "icon":" <i className='fas fa-shopping-bag text-4xl'></i>",
+      "icon": " <i className='fas fa-shopping-bag text-4xl'></i>",
       "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/customer-panel.webp",
       "additionalDetails": [
-        { "details": "Easy Sign-Up & Social Login", "emoji": "", "content": ""
+        {
+          "details": "Easy Sign-Up & Social Login",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Browse Restaurants & Menus", "emoji": "", "content": ""
+        {
+          "details": "Browse Restaurants & Menus",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Real-Time Order Tracking", "emoji": "", "content": ""
+        {
+          "details": "Real-Time Order Tracking",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Ratings & Reviews for Restaurants", "emoji": "", "content": ""
+        {
+          "details": "Ratings & Reviews for Restaurants",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Multiple Payment Options (Cards, UPI, Wallets, COD)", "emoji": "", "content": ""
+        {
+          "details": "Multiple Payment Options (Cards, UPI, Wallets, COD)",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Reorder & Subscription Plans", "emoji": "", "content": ""
+        {
+          "details": "Reorder & Subscription Plans",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "GPS-Based Restaurant Discovery", "emoji": "", "content": ""
+        {
+          "details": "GPS-Based Restaurant Discovery",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Push Notifications for Offers & Updates", "emoji": "", "content": ""
+        {
+          "details": "Push Notifications for Offers & Updates",
+          "emoji": "",
+          "content": ""
         }
       ]
     },
     {
-    "id": 2,
-    "title": "Restaurant Panel",
-    "icon":" <i className='fas fa-mobile-alt text-4xl'></i>",
-    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
+      "id": 2,
+      "title": "Restaurant Panel",
+      "icon": " <i className='fas fa-mobile-alt text-4xl'></i>",
+      "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
       "additionalDetails": [
-        { "details": "Manage Menus & Pricing", "emoji": "", "content": ""
+        {
+          "details": "Manage Menus & Pricing",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Accept/Reject Orders Instantly", "emoji": "", "content": ""
+        {
+          "details": "Accept/Reject Orders Instantly",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Real-Time Order Alerts & Updates", "emoji": "", "content": ""
+        {
+          "details": "Real-Time Order Alerts & Updates",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Track Deliveries & Assign Drivers", "emoji": "", "content": ""
+        {
+          "details": "Track Deliveries & Assign Drivers",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Revenue & Commission Tracking", "emoji": "", "content": ""
+        {
+          "details": "Revenue & Commission Tracking",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Customer Feedback Management", "emoji": "", "content": ""
+        {
+          "details": "Customer Feedback Management",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Analytics Dashboard for Sales Insights", "emoji": "", "content": ""
+        {
+          "details": "Analytics Dashboard for Sales Insights",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Promotions & Discount Management", "emoji": "", "content": ""
+        {
+          "details": "Promotions & Discount Management",
+          "emoji": "",
+          "content": ""
         }
       ]
     },
     {
-    "id": 3,
-    "title": "Driver Panel",
-    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
-    "icon": "<i className='fas fa-wallet text-4xl'></i>",
+      "id": 3,
+      "title": "Driver Panel",
+      "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
+      "icon": "<i className='fas fa-wallet text-4xl'></i>",
       "additionalDetails": [
-        { "details": "Easy Registration & Profile Setup", "emoji": "", "content": ""
+        {
+          "details": "Easy Registration & Profile Setup",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Accept/Reject Delivery Requests", "emoji": "", "content": ""
+        {
+          "details": "Accept/Reject Delivery Requests",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Optimized GPS Routes & Navigation", "emoji": "", "content": ""
+        {
+          "details": "Optimized GPS Routes & Navigation",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Real-Time Order Pick-Up & Drop Alerts", "emoji": "", "content": ""
+        {
+          "details": "Real-Time Order Pick-Up & Drop Alerts",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Delivery History & Earnings Reports", "emoji": "", "content": ""
+        {
+          "details": "Delivery History & Earnings Reports",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "In-App Chat/Call with Customers", "emoji": "", "content": ""
+        {
+          "details": "In-App Chat/Call with Customers",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Wallet Integration for Payments", "emoji": "", "content": ""
+        {
+          "details": "Wallet Integration for Payments",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Push Notifications for New Orders", "emoji": "", "content": ""
+        {
+          "details": "Push Notifications for New Orders",
+          "emoji": "",
+          "content": ""
         }
       ]
     },
     {
-    "id": 4,
-    "title": "Admin Panel",
-    "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/admin-panel.webp",
-    "icon":" <i className='fas fa-wallet text-4xl'></i>",
+      "id": 4,
+      "title": "Admin Panel",
+      "img": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/admin-panel.webp",
+      "icon": " <i className='fas fa-wallet text-4xl'></i>",
       "additionalDetails": [
-        { "details": "Centralized Dashboard with Key Metrics", "emoji": "", "content": ""
+        {
+          "details": "Centralized Dashboard with Key Metrics",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Manage Customers, Restaurants & Drivers", "emoji": "", "content": ""
+        {
+          "details": "Manage Customers, Restaurants & Drivers",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Order & Delivery Tracking System", "emoji": "", "content": ""
+        {
+          "details": "Order & Delivery Tracking System",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Revenue & Commission Settings", "emoji": "", "content": ""
+        {
+          "details": "Revenue & Commission Settings",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Approve/Reject Vendor Registrations", "emoji": "", "content": ""
+        {
+          "details": "Approve/Reject Vendor Registrations",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "CMS for Content, Offers & Promotions", "emoji": "", "content": ""
+        {
+          "details": "CMS for Content, Offers & Promotions",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Advanced Analytics & Reporting", "emoji": "", "content": ""
+        {
+          "details": "Advanced Analytics & Reporting",
+          "emoji": "",
+          "content": ""
         },
-        { "details": "Multi-Region & Multi-Branch Control", "emoji": "", "content": ""
+        {
+          "details": "Multi-Region & Multi-Branch Control",
+          "emoji": "",
+          "content": ""
         }
       ]
     }
@@ -317,8 +494,6 @@
         "24/7 support for uninterrupted operations"
       ]
     }
-
-    
   ],
   "cardData": [
     {

@@ -3,7 +3,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/e-commerce-app-development",
-      permanent: false,
+      permanent: true,
     },
   };
 }

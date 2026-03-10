@@ -57,6 +57,173 @@
       "link": "https://www.comfygen.com/contact-us"
     }
   ],
+  "deliveryApps": {
+    "hedding": "Custom Billing Software Development for Multiple Business Industries",
+    "description": "Comfygen Technologies designs robust, user-friendly billing software tailored for diverse industries. From startups and growing businesses to large enterprises, our custom billing software development solutions are built to align perfectly with your operational requirements and business goals.",
+    "delivery": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/General billing software.webp",
+        "title": "General Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Sailing and marine activity biling.webp",
+        "title": "Recurring Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Cloud_based_billing_software.webp",
+        "title": "Cloud-Based Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Entreprice billing softawre.webp",
+        "title": "Enterprise Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Point of sale billing software.webp",
+        "title": "Point-of-Sale (POS) Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Utility billing software.webp",
+        "title": "Utility Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Service billing software.webp",
+        "title": "Service Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Whole sale billing and distributing.webp",
+        "title": "Wholesale & Distribution Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Telecop billing sofware.webp",
+        "title": "Telecom Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Automated billing software.webp",
+        "title": "Automated Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Adventure activity billing.webp",
+        "title": "Adventure Activity Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Gym billing software.webp",
+        "title": "Gym Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Medical billing software.webp",
+        "title": "Medical Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Service billing software.webp",
+        "title": "School Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Buggy station billing software.webp",
+        "title": "Buggy Station Billing Software Development",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Treking n hicking billing software.webp",
+        "title": "Trekking & Hiking Billing Software Development",
+        "link": "#"
+      },
+      {
+        "title": "Rock Climbing & Abseiling Billing Software Development",
+        "link": "#",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/rock climbing billing sftware.webp"
+      },
+      {
+        "title": "Mountain Biking Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Mountain biking billing.webp"
+      },
+      {
+        "title": "Wilderness Survival Camp Billing Software Development",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Wilderness survival camp.webp",
+        "link": ""
+      },
+      {
+        "title": "Bungee Jumping Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Bungee jumping and billing.webp"
+      },
+      {
+        "title": "Archaeological Dig Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Archeological dig billing.webp"
+      },
+      {
+        "title": "Camping & Adventure Camp Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Camping and adventure camp billing software.webp"
+      },
+      {
+        "title": "Canoeing & Kayaking Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Camping and adventure camp billing software.webp"
+      },
+      {
+        "title": "Scuba Diving & Snorkeling Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Camping and adventure camp billing software.webp"
+      },
+      {
+        "title": "Swimming & Watersports Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Swimming and water sports.webp"
+      },
+      {
+        "title": "Sailing & Marine Activity Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Sailing and marine activity biling.webp"
+      },
+      {
+        "title": "Skydiving Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Sailing and marine activity biling.webp"
+      },
+      {
+        "title": "Paragliding Billing Software Development",
+        "link": "",
+        "image": "https://www.comfygen.com/comfygen-images/Delivery/Sailing and marine activity biling.webp"
+      },
+      {
+      "title": "Hot-Air Ballooning Billing Software Development",
+      "link": "",
+      "image": "https://www.comfygen.com/comfygen-images/Delivery/Hot air baloon biling.webp"
+    },
+
+    {
+      "title": "Zero-Gravity Experience Billing Software Development",
+      "link": "",
+      "image": "https://www.comfygen.com/comfygen-images/Delivery/Zero Gravity experience billing.webp"
+    },
+    {
+      "title": "Ziplining Billing Software Development",
+      "link": "",
+      "image": "https://www.comfygen.com/comfygen-images/Delivery/Zipline billing software.webp"
+    },
+    {
+      "title": "Rappelling Billing Software Development",
+      "link": "",
+     "image": "https://www.comfygen.com/comfygen-images/Delivery/Rapelling billing software.webp"
+    }
+    ]
+  },
   "servicesData": [
     {
       "title": "Custom Billing Software Development",
@@ -983,65 +1150,59 @@
       "description": "We provide continuous maintenance, upgrades, and technical support to keep your billing system secure, optimized, and future-ready."
     }
   ],
-
-
- "technologyData": [
-  {
-    "img": null,
-    "title": "Tailored to Your Business Needs",
-    "desc": "Custom billing software is designed specifically around your business workflows, pricing structures, tax rules, and reporting needs, ensuring higher efficiency, accuracy, and control without unnecessary or unused features."
-  },
-  {
-    "img": null,
-    "title": "Scalability for Business Growth",
-    "desc": "Our billing software solutions scale effortlessly as your business grows, handling increased users, transactions, and complex billing models without performance issues or the need for frequent system changes."
-  },
-  {
-    "img": null,
-    "title": "Enhanced Accuracy & Automation",
-    "desc": "Automated billing processes reduce manual data entry, eliminate calculation errors, ensure accurate invoicing and tax computation, and maintain consistent financial records across all billing cycles and customer accounts."
-  },
-  {
-    "img": null,
-    "title": "Effortless Integration with Existing Systems",
-    "desc": "Custom billing software integrates seamlessly with ERP, CRM, accounting software, and payment gateways, enabling smooth data flow, centralized financial management, and improved operational efficiency across business systems."
-  },
-  {
-    "img": null,
-    "title": "Improved Security & Data Protection",
-    "desc": "Advanced security measures such as data encryption, role-based access control, and secure payment processing protect sensitive financial information and reduce the risk of fraud or unauthorized access."
-  },
-  {
-    "img": null,
-    "title": "Flexible Pricing & Billing Models",
-    "desc": "The billing system supports multiple pricing models including subscription-based, usage-based, tiered, and hybrid billing, allowing businesses to adapt quickly to changing revenue strategies."
-  },
-  {
-    "img": null,
-    "title": "Better Customer Experience",
-    "desc": "Clear invoices, multiple payment options, automated reminders, and transparent billing processes improve customer satisfaction, reduce disputes, and build long-term trust with clients and partners."
-  },
-  {
-    "img": null,
-    "title": "Cost Efficiency in the Long Run",
-    "desc": "Custom billing software minimizes dependency on third-party tools, reduces licensing costs, automates operations, and lowers long-term operational expenses while maximizing overall return on investment."
-  },
-  {
-    "img": null,
-    "title": "Full Control & Customization",
-    "desc": "Businesses gain complete ownership and control over billing features, updates, integrations, and optimizations, allowing continuous customization as operational requirements and market conditions evolve."
-  },
-  {
-    "img": null,
-    "title": "Competitive Business Advantage",
-    "desc": "Streamlined billing workflows, faster payment cycles, accurate reporting, and automation give businesses a strong competitive edge by improving efficiency, decision-making, and overall financial performance."
-  }
-],
-
-"jsonLdData": [
-    
-
-
+  "technologyData": [
+    {
+      "img": null,
+      "title": "Tailored to Your Business Needs",
+      "desc": "Custom billing software is designed specifically around your business workflows, pricing structures, tax rules, and reporting needs, ensuring higher efficiency, accuracy, and control without unnecessary or unused features."
+    },
+    {
+      "img": null,
+      "title": "Scalability for Business Growth",
+      "desc": "Our billing software solutions scale effortlessly as your business grows, handling increased users, transactions, and complex billing models without performance issues or the need for frequent system changes."
+    },
+    {
+      "img": null,
+      "title": "Enhanced Accuracy & Automation",
+      "desc": "Automated billing processes reduce manual data entry, eliminate calculation errors, ensure accurate invoicing and tax computation, and maintain consistent financial records across all billing cycles and customer accounts."
+    },
+    {
+      "img": null,
+      "title": "Effortless Integration with Existing Systems",
+      "desc": "Custom billing software integrates seamlessly with ERP, CRM, accounting software, and payment gateways, enabling smooth data flow, centralized financial management, and improved operational efficiency across business systems."
+    },
+    {
+      "img": null,
+      "title": "Improved Security & Data Protection",
+      "desc": "Advanced security measures such as data encryption, role-based access control, and secure payment processing protect sensitive financial information and reduce the risk of fraud or unauthorized access."
+    },
+    {
+      "img": null,
+      "title": "Flexible Pricing & Billing Models",
+      "desc": "The billing system supports multiple pricing models including subscription-based, usage-based, tiered, and hybrid billing, allowing businesses to adapt quickly to changing revenue strategies."
+    },
+    {
+      "img": null,
+      "title": "Better Customer Experience",
+      "desc": "Clear invoices, multiple payment options, automated reminders, and transparent billing processes improve customer satisfaction, reduce disputes, and build long-term trust with clients and partners."
+    },
+    {
+      "img": null,
+      "title": "Cost Efficiency in the Long Run",
+      "desc": "Custom billing software minimizes dependency on third-party tools, reduces licensing costs, automates operations, and lowers long-term operational expenses while maximizing overall return on investment."
+    },
+    {
+      "img": null,
+      "title": "Full Control & Customization",
+      "desc": "Businesses gain complete ownership and control over billing features, updates, integrations, and optimizations, allowing continuous customization as operational requirements and market conditions evolve."
+    },
+    {
+      "img": null,
+      "title": "Competitive Business Advantage",
+      "desc": "Streamlined billing workflows, faster payment cycles, accurate reporting, and automation give businesses a strong competitive edge by improving efficiency, decision-making, and overall financial performance."
+    }
+  ],
+  "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1065,18 +1226,14 @@
         "Online billing software development",
         "Cloud Billing Software Development",
         "GST Billing Software Development"
-
       ],
-
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
         "https://www.instagram.com/comfygen_technologies",
         "https://www.linkedin.com/company/comfygen-technologies"
-
       ]
     },
-
     {
       "@context": "http://www.schema.org",
       "@type": "Product",
@@ -1090,24 +1247,24 @@
         "reviewCount": "620"
       }
     },
-
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Billing Software Development",
-        "item": "https://www.comfygen.com/billing-software-development"
-
-      }]
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Billing Software Development",
+          "item": "https://www.comfygen.com/billing-software-development"
+        }
+      ]
     },
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

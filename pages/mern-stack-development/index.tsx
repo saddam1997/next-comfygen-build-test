@@ -3,7 +3,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/mern-stack-development-services",
-      permanent: false,
+      permanent:true,
     },
   };
 }

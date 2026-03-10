@@ -208,9 +208,6 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-
-
-
         <AboutSection
           title="About Company"
           heading="Build Feature-Rich Astrology Apps for Startups & Enterprises"
@@ -223,14 +220,14 @@ export default function ClinicalApp(props: any) {
           linkText="Explore More"
         />
 
-         <AppcardSlider
+        <AppcardSlider
           heading="Explore Our Pre-Built Clones of Popular Astrology Apps for Quick Launch"
           description="Comfygen is a next-gen astrology app development agency in India, offering high-quality, on-demand astrology app solutions inspired by top astrology platforms. Get a customized, feature-rich astrology app tailored to your business needs today!"
           sliderData={JSON_DATA.IndustriesServe}
           openModal={openModal}
         />
 
-       <section className="py-8">
+        <section className="py-8">
           <Portfolio
             projects={JSON_DATA.portfoliodata}
             heading="Our Astrology App Development Portfolio"
@@ -238,7 +235,7 @@ export default function ClinicalApp(props: any) {
           />
         </section>
 
-         <CallToAction
+        <CallToAction
           heading="Start Your Astrology App Project Today"
           text="Bring your astrology app idea to life with Comfygen’s expert astrology software developers. Build feature-rich, AI-powered, and secure astrology apps that engage users and grow your business fast. Don’t wait—turn your idea into reality now!"
           buttonText="Get Started"
@@ -291,7 +288,7 @@ export default function ClinicalApp(props: any) {
         </section>
 
 
-         <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-4 text-center">
               <div className="flex flex-col justify-center text-center  mx-auto">
@@ -310,7 +307,7 @@ export default function ClinicalApp(props: any) {
                       <div
                         className={` flex justify-start gap-2 place-items-center relative`}
                       >
-                       
+
                         <h3 className="sm:text-2xl text-xl font-bold text-[#fff] text-start">
                           {title}
                         </h3>
@@ -341,7 +338,7 @@ export default function ClinicalApp(props: any) {
             <ProcessSec processSlides={JSON_DATA.Process} />
           </div>
         </section>
-         <TechStack
+        <TechStack
           title="Technology Stack We Use for Astrology App Development"
           description="At Comfygen, we leverage cutting-edge technologies to develop high-performance, scalable, and secure astrology app solutions. Our advanced tech stack ensures seamless performance, real-time predictions, and immersive user experiences."
           filterCategory={["crypto"]}
@@ -359,9 +356,9 @@ export default function ClinicalApp(props: any) {
             subtitle="Building an astrology app offers multiple advantages for businesses and users alike. Here are the key benefits:"
             data={JSON_DATA.servicesData1}
           />
-        </section> 
+        </section>
 
-         <HireDeveloper
+        <HireDeveloper
           heading="Hire Our Dedicated Astrology App Developer"
           text="Build a high-performance astrology app with Comfygen’s expert developers. Our dedicated <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>astrology app developers<a> specialize in AI-powered horoscope apps, Kundli platforms, numerology apps, and live consultation solutions. With 8+ years of experience, we deliver scalable, secure, and fully customized astrology app development tailored to your business needs."
           text1=""
@@ -376,17 +373,17 @@ export default function ClinicalApp(props: any) {
             "Secure & High-Performance Apps – Robust architecture with encryption & compliance",
             "Secure architecture with encrypted payments",
           ]}
-        /> 
+        />
 
-<ClientStories/>
+        <ClientStories />
 
-         <ClientTestimonials
+        <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />
         <Faq faqData={Frequently} title="" />
 
-        <BlogSection initialData={initialData} />      
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

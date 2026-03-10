@@ -5,6 +5,7 @@ import JSON_DATA from "./json/cryptonftexchangedevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ClientStories from "../../components/ClientStories";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -446,6 +447,7 @@ export default function Ecommerce(props: any) {
 
           ]}
         />
+        <ClientStories/>
 
         <ClientTestimonials
           heading="What Our Clients Say"

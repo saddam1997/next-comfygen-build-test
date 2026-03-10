@@ -405,8 +405,8 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Best Ethereum Blockchain Development Company | Comfygen</title>
-        <meta name="description" content="Comfygen is the best Ethereum blockchain development company, offering secure, scalable, and customized blockchain solutions. Build smart contracts, DApps, DeFi platforms, and tokenization solutions." />
+        <title>Best Healthcare Mobile App Development Company in India | Comfygen</title>
+        <meta name="description" content="Comfygen is a leading healthcare mobile app development company in India, delivering secure, scalable telemedicine, EHR, and AI healthcare solutions." />
 
         <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development" />
 

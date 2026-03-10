@@ -10,7 +10,7 @@ import HeroSectionforHome from "../components/HeroSectionforHome"
 
 
 const Milestones = dynamic(
-  () => import("../components/Newcomponet/comman/Milestones"),
+  () => import("../components/Milestones"),
   { ssr: true }
 );
 const ServicesComponet = dynamic(
@@ -55,7 +55,7 @@ const WhyChooseSection = dynamic(
 );
 
 const ClientStories = dynamic(
-  () => import("../components/Newcomponet/SectionCompoent/ClientStories"),
+  () => import("../components/ClientStories"),
   { ssr: true }
 );
 

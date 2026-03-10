@@ -1,29 +1,4 @@
-
-
-const stats = [
-  {
-    "id": "experience",
-    "value": "8+",
-    "label": "Years of Experience"
-  },
-  {
-    "id": "projects",
-    "value": "550+",
-    "label": "Projects Delivered"
-  },
-  {
-    "id": "clients",
-    "value": "400+",
-    "label": "Happy Clients"
-  },
-  {
-    "id": "countries",
-    "value": "30+",
-    "label": "Countries Served"
-  }
-]
-
-
+import JSON_DATA from "./miles.json";
 
 const Milestones = () => {
 
@@ -48,7 +23,7 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
         <div className="container mx-auto space-y-4 lg:p-0 p-4">
           {/* ===== CARDS GRID ===== */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {stats?.map((item: any, index: any) => (
+            {JSON_DATA.stats?.map((item: any, index: any) => (
               <div
                 key={index}
                 className={cardClass}

@@ -72,14 +72,6 @@ const BlogSection = dynamic(
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-
-
-
-
-
-
-
-
 export default function Ecommerce(props:any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);

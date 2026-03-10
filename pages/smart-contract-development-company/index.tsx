@@ -2,7 +2,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/smart-contract-development",
-      permanent: false,
+      permanent: true,
     },
   };
 }

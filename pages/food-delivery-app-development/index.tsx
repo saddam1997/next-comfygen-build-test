@@ -30,10 +30,7 @@ const ServicesSec = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const AppcardSlider = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AppcardSlider"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
@@ -72,11 +69,6 @@ const TechStack = dynamic(
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
@@ -744,7 +736,7 @@ export default function Ecommerce(props: any) {
         {/* <DeliverySection hideUrl="https://www.comfygen.com/food-delivery-app-development" /> */}
 
 
-        <TechStackSection/>
+        <TechStackSection deliveryApps={JSON_DATA.deliveryApps}/>
 
 
         <div className="py-10">
