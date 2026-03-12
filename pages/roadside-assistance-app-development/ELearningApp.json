@@ -104,77 +104,77 @@
   {
     "num": "1",
     "title": "AI-Based Predictive Service Requests",
-    "desc2": "Our on-demand roadside assistance apps include AI that predicts common breakdowns using driving behavior, vehicle history, and traffic data—enabling users to request help before issues escalate."
+    "decs": "Our on-demand roadside assistance apps include AI that predicts common breakdowns using driving behavior, vehicle history, and traffic data—enabling users to request help before issues escalate."
   },
   {
     "num": "2",
     "title": "Route Optimization for Tow Trucks",
-    "desc2": "We integrate smart route optimization that helps tow trucks reach users faster, saving time and fuel—crucial for efficient towing and fleet management apps."
+    "decs": "We integrate smart route optimization that helps tow trucks reach users faster, saving time and fuel—crucial for efficient towing and fleet management apps."
   },
   {
     "num": "3",
     "title": "Service Provider Bidding",
-    "desc2": "Allow multiple service providers to bid on a user's request in real time. This increases competition and enhances service quality in on-demand towing apps."
+    "decs": "Allow multiple service providers to bid on a user's request in real time. This increases competition and enhances service quality in on-demand towing apps."
   },
   {
     "num": "4",
     "title": "Offline Service Request Mode",
-    "desc2": "Users can raise service requests even in low-network or offline areas. The app auto-syncs once connectivity is restored for uninterrupted roadside support."
+    "decs": "Users can raise service requests even in low-network or offline areas. The app auto-syncs once connectivity is restored for uninterrupted roadside support."
   },
   {
     "num": "5",
     "title": "Loyalty Points & Referral System",
-    "desc2": "Increase app engagement with loyalty rewards, cashback, and referral bonuses. Our towing app solutions help you retain users and encourage viral sharing."
+    "decs": "Increase app engagement with loyalty rewards, cashback, and referral bonuses. Our towing app solutions help you retain users and encourage viral sharing."
   },
   {
     "num": "6",
     "title": "Car Towing Services",
-    "desc2": "Let users request instant towing services and connect with nearby tow trucks for fast and reliable vehicle recovery during breakdowns or emergencies."
+    "decs": "Let users request instant towing services and connect with nearby tow trucks for fast and reliable vehicle recovery during breakdowns or emergencies."
   },
   {
     "num": "7",
     "title": "Real-Time GPS Location Tracking",
-    "desc2": "Enable users to share and track their live location through GPS, helping service providers reach them with accuracy and speed."
+    "decs": "Enable users to share and track their live location through GPS, helping service providers reach them with accuracy and speed."
   },
   {
     "num": "8",
     "title": "Battery Jumpstart Support",
-    "desc2": "If a user’s car won’t start, they can request a battery jumpstart. The app locates and notifies the nearest available technician for quick assistance."
+    "decs": "If a user’s car won’t start, they can request a battery jumpstart. The app locates and notifies the nearest available technician for quick assistance."
   },
   {
     "num": "9",
     "title": "Fuel Delivery Service",
-    "desc2": "Running out of fuel? Our roadside help app enables users to order fuel with one tap—ensuring quick refueling at any location."
+    "decs": "Running out of fuel? Our roadside help app enables users to order fuel with one tap—ensuring quick refueling at any location."
   },
   {
     "num": "10",
     "title": "Lockout Services",
-    "desc2": "Help users who are locked out of their vehicle by connecting them with local locksmiths via the app for quick entry solutions."
+    "decs": "Help users who are locked out of their vehicle by connecting them with local locksmiths via the app for quick entry solutions."
   },
   {
     "num": "11",
     "title": "Flat Tire Assistance",
-    "desc2": "Users can request instant flat tire help and get connected to nearby service agents offering tire repair or replacement on the spot."
+    "decs": "Users can request instant flat tire help and get connected to nearby service agents offering tire repair or replacement on the spot."
   },
   {
     "num": "12",
     "title": "Nearby Towing Service Finder",
-    "desc2": "Our GPS-powered towing app lists the nearest available tow trucks, making it easy for users to get fast and efficient roadside help."
+    "decs": "Our GPS-powered towing app lists the nearest available tow trucks, making it easy for users to get fast and efficient roadside help."
   },
   {
     "num": "13",
     "title": "In-App Calling & Chat",
-    "desc2": "Enable seamless in-app communication through voice calls or chat, improving real-time coordination between users and service providers."
+    "decs": "Enable seamless in-app communication through voice calls or chat, improving real-time coordination between users and service providers."
   },
   {
     "num": "14",
     "title": "One-Tap SOS Request",
-    "desc2": "With just one tap, users can send an SOS alert to request emergency assistance, ensuring fast support during serious roadside incidents."
+    "decs": "With just one tap, users can send an SOS alert to request emergency assistance, ensuring fast support during serious roadside incidents."
   },
   {
     "num": "15",
     "title": "Live ETA & Service Status",
-    "desc2": "The app provides live updates on service status and estimated arrival time, enhancing user transparency and trust."
+    "decs": "The app provides live updates on service status and estimated arrival time, enhancing user transparency and trust."
   }
 ],
 

@@ -1,14 +1,7 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import HeadingOne from "../ui/HeadingOne";
 import ParagraphText from "../ui/ParagraphText";
-
-const HeroClientCTA = dynamic(() => import("./HeroClientCTA"), {
-  ssr: false,
-  loading: () => (
-    <div className="h-[56px] w-[200px] rounded-full bg-white/20 animate-pulse mt-4" />
-  ),
-});
+import HeroClientCTA from "./HeroClientCTA";
 
 export default function HeroSection({ herosection }: any) {
   const imageAlt =
@@ -20,9 +13,6 @@ export default function HeroSection({ herosection }: any) {
       relative flex items-center overflow-hidden
       bg-[#5951cd]
       min-h-[640px] sm:min-h-[680px] lg:min-h-[720px]
-      pt-12 sm:pt-20 lg:pt-28
-      pb-16 sm:pb-20 lg:pb-24
-      lg:mt-16
       "
     >
       {/* Background Image */}
@@ -33,17 +23,19 @@ export default function HeroSection({ herosection }: any) {
           fill
           priority
           fetchPriority="high"
-          sizes="100vw"
-          quality={60}
+          sizes="(max-width:1024px) 100vw, 1320px"
+          quality={75}
           className="object-cover object-center"
         />
       </div>
 
-      {/* Content Wrapper */}
+      {/* Gradient Overlay (improves text readability) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#5951cd]/90 to-transparent"></div>
+
+      {/* Content */}
       <div
         className="
-        relative
-        w-full
+        relative w-full
         max-w-[1320px]
         mx-auto
         px-4 sm:px-6 lg:px-8
@@ -51,14 +43,8 @@ export default function HeroSection({ herosection }: any) {
         min-h-[420px] sm:min-h-[480px] lg:min-h-[520px]
         "
       >
-        <div
-          className="
-          w-full
-          lg:max-w-[65%]
-          xl:max-w-[58%]
-          space-y-4 sm:space-y-5 lg:space-y-6
-          "
-        >
+        <div className="w-full lg:max-w-[65%] xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6">
+
           {/* Heading */}
           {herosection.isHome ? (
             <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold xl:leading-[4rem]">
@@ -106,7 +92,6 @@ export default function HeroSection({ herosection }: any) {
     </section>
   );
 }
-
 
 
 

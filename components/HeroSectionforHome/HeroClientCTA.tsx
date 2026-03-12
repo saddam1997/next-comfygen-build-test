@@ -11,14 +11,6 @@ export default function HeroClientCTA() {
 
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
-    // const openModal = () => {
-    //     setTalkToExpertModal(true);
-    // };
-
-    // const closeModal = () => {
-    //     setTalkToExpertModal(false);
-    // };
-
     useEffect(() => {
         if (talkToExpertModal) {
             document.body.style.overflow = "hidden";

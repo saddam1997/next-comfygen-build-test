@@ -118,20 +118,20 @@
     "cardData": [
     {
       "title": "Submit your Application",
-      "desc": "First the client has to submit an application to us. You can submit the app requirements and share the ideas & objectives. This will help us to know what the clients are expecting from us."
+      "decs": "First the client has to submit an application to us. You can submit the app requirements and share the ideas & objectives. This will help us to know what the clients are expecting from us."
     },
     {
       "title": "Connect with our Business Analyst",
-      "desc": "Once our team acknowledges your requirement, have a call with our business analyst. Explain briefly about the requirements, references, ideas, plans, and final goals."
+      "decs": "Once our team acknowledges your requirement, have a call with our business analyst. Explain briefly about the requirements, references, ideas, plans, and final goals."
 
     },
     {
       "title": "Discuss about FP and T&M",
-      "desc": "Later discuss what will be the final price (FP) and T&M (Time & Materials) required in developing your project."
+      "decs": "Later discuss what will be the final price (FP) and T&M (Time & Materials) required in developing your project."
     },
     {
       "title": "Hire ASP .Net Developers",
-      "desc": "Once the requirements have been discussed, also the FP and T&M are discussed appropriately; now you can hire .Net Developers in India."
+      "decs": "Once the requirements have been discussed, also the FP and T&M are discussed appropriately; now you can hire .Net Developers in India."
     }
   ],
     "pageData": {

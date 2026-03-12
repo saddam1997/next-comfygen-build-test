@@ -173,32 +173,32 @@
   {
     "num": "1",
     "title": "Smart Contract Audits",
-    "desc": "Thorough audits to identify vulnerabilities and ensure the integrity of your token contracts."
+    "decs": "Thorough audits to identify vulnerabilities and ensure the integrity of your token contracts."
   },
   {
     "num": "2",
     "title": "Encrypted Transactions",
-    "desc": "End-to-end encryption to protect all transactions and sensitive data."
+    "decs": "End-to-end encryption to protect all transactions and sensitive data."
   },
   {
     "num": "3",
     "title": "Two-Factor Authentication",
-    "desc": "Enhanced login security to safeguard accounts and prevent unauthorized access."
+    "decs": "Enhanced login security to safeguard accounts and prevent unauthorized access."
   },
   {
     "num": "4",
     "title": "Cold Wallet Integration",
-    "desc": "Secure offline storage for your funds to protect them from potential hacking attempts."
+    "decs": "Secure offline storage for your funds to protect them from potential hacking attempts."
   },
   {
     "num": "5",
     "title": "DDoS Protection",
-    "desc": "Advanced protection mechanisms to prevent Distributed Denial of Service (DDoS) attacks."
+    "decs": "Advanced protection mechanisms to prevent Distributed Denial of Service (DDoS) attacks."
   },
   {
     "num": "6",
     "title": "Multi-Signature Wallets",
-    "desc": "Increased security with multi-party authorization for significant transactions."
+    "decs": "Increased security with multi-party authorization for significant transactions."
   }
 ],
 
@@ -207,27 +207,27 @@
   {
     "num": "1",
     "title": "Custom Blockchain Solutions",
-    "desc": "We provide custom blockchain solutions tailored to your ICO’s needs, ensuring scalability, security, and seamless integration. Our team builds blockchain infrastructures using the latest technologies, offering robust, future-proof solutions to meet your project’s unique requirements."
+    "decs": "We provide custom blockchain solutions tailored to your ICO’s needs, ensuring scalability, security, and seamless integration. Our team builds blockchain infrastructures using the latest technologies, offering robust, future-proof solutions to meet your project’s unique requirements."
   },
   {
     "num": "2",
     "title": "Tokenomics Design & Strategy",
-    "desc": "We design tailored tokenomics models that align with your ICO’s goals, driving demand and ensuring long-term sustainability. Our strategies focus on token utility, distribution, and compliance to create a solid foundation for your project's growth."
+    "decs": "We design tailored tokenomics models that align with your ICO’s goals, driving demand and ensuring long-term sustainability. Our strategies focus on token utility, distribution, and compliance to create a solid foundation for your project's growth."
   },
   {
     "num": "3",
     "title": "Scalable ICO Platforms",
-    "desc": "We build scalable ICO platforms that grow with your project. Our solutions are designed to handle increasing traffic, token transactions, and investor activity, ensuring smooth performance throughout the entire fundraising process."
+    "decs": "We build scalable ICO platforms that grow with your project. Our solutions are designed to handle increasing traffic, token transactions, and investor activity, ensuring smooth performance throughout the entire fundraising process."
   },
   {
     "num": "4",
     "title": "Security & Compliance Solutions",
-    "desc": "We ensure your ICO platform is secure and fully compliant with global regulations. Our solutions include robust encryption, secure smart contracts, and integration of KYC/AML processes to protect your project and investors while meeting industry standards."
+    "decs": "We ensure your ICO platform is secure and fully compliant with global regulations. Our solutions include robust encryption, secure smart contracts, and integration of KYC/AML processes to protect your project and investors while meeting industry standards."
   },
   {
     "num": "5",
     "title": "Global Fundraising Solutions",
-    "desc": "Our global fundraising solutions help you reach investors from around the world. We provide a seamless, multi-currency platform with integrated payment gateways, enabling you to attract a diverse investor base and raise funds efficiently across borders."
+    "decs": "Our global fundraising solutions help you reach investors from around the world. We provide a seamless, multi-currency platform with integrated payment gateways, enabling you to attract a diverse investor base and raise funds efficiently across borders."
   }
 ],
 

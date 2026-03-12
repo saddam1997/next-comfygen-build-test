@@ -572,27 +572,27 @@
   "cardData": [
     {
       "title": "Immersive 3D Virtual Environments",
-      "desc": "We design high-quality, interactive 3D spaces that replicate real-world experiences using AR/VR technology. These hyper-realistic environments offer businesses the ability to engage users in virtual showrooms, gaming arenas, events, and digital workplaces."
+      "decs": "We design high-quality, interactive 3D spaces that replicate real-world experiences using AR/VR technology. These hyper-realistic environments offer businesses the ability to engage users in virtual showrooms, gaming arenas, events, and digital workplaces."
     },
     {
       "title": "Blockchain-Powered Decentralization",
-      "desc": "Our Metaverse solutions are built on decentralized blockchain networks, ensuring user autonomy, transparent transactions, and secure digital ownership. Smart contracts facilitate automated, trustless transactions, while NFTs and tokenized assets enhance value creation within the ecosystem."
+      "decs": "Our Metaverse solutions are built on decentralized blockchain networks, ensuring user autonomy, transparent transactions, and secure digital ownership. Smart contracts facilitate automated, trustless transactions, while NFTs and tokenized assets enhance value creation within the ecosystem."
     },
     {
       "title": "Seamless Digital Economy & Transactions",
-      "desc": "We integrate crypto-based payment solutions, allowing users to engage in secure, fast, and borderless transactions. Our Metaverse platforms support DeFi services, NFT marketplaces, and tokenized assets, ensuring businesses can monetize their digital assets efficiently."
+      "decs": "We integrate crypto-based payment solutions, allowing users to engage in secure, fast, and borderless transactions. Our Metaverse platforms support DeFi services, NFT marketplaces, and tokenized assets, ensuring businesses can monetize their digital assets efficiently."
     },
     {
       "title": "AI-Driven Personalization & Automation",
-      "desc": "Artificial Intelligence enhances user interactions, predictive analytics, and automated decision-making within the Metaverse. AI-powered avatars, virtual assistants, and machine-learning-based recommendations personalize experiences, boosting engagement and retention."
+      "decs": "Artificial Intelligence enhances user interactions, predictive analytics, and automated decision-making within the Metaverse. AI-powered avatars, virtual assistants, and machine-learning-based recommendations personalize experiences, boosting engagement and retention."
     },
     {
       "title": "Secure & Scalable Infrastructure",
-      "desc": "Our multi-layered security architecture protects user data and transactions through end-to-end encryption, decentralized identity management, and biometric authentication. Our scalable cloud-based infrastructure ensures smooth performance even as user demand grows."
+      "decs": "Our multi-layered security architecture protects user data and transactions through end-to-end encryption, decentralized identity management, and biometric authentication. Our scalable cloud-based infrastructure ensures smooth performance even as user demand grows."
     },
     {
       "title": "Cross-Platform & Interoperable Ecosystem",
-      "desc": "Our Metaverse solutions are designed for cross-platform accessibility, allowing seamless interaction across desktop, mobile, and VR devices. With multi-chain blockchain interoperability, businesses can integrate their Metaverse with Ethereum, Polygon, Solana, and other blockchain networks for enhanced functionality."
+      "decs": "Our Metaverse solutions are designed for cross-platform accessibility, allowing seamless interaction across desktop, mobile, and VR devices. With multi-chain blockchain interoperability, businesses can integrate their Metaverse with Ethereum, Polygon, Solana, and other blockchain networks for enhanced functionality."
     }
   ],
   "ProcessNFT": [

@@ -51,13 +51,7 @@ const InfoSection = dynamic(
   }
 );
 
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),

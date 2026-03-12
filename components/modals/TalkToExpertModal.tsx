@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -18,23 +18,6 @@ export default function TalkToExpertModal({
   isOpen,
   onClose,
 }: TalkToExpertModalProps) {
-  /* ================= Scroll Lock + ESC Close ================= */
-  // useEffect(() => {
-  //   if (!isOpen) return;
-
-  //   document.body.style.overflow = "hidden";
-
-  //   const handleEsc = (e: KeyboardEvent) => {
-  //     if (e.key === "Escape") onClose();
-  //   };
-
-  //   window.addEventListener("keydown", handleEsc);
-
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //     window.removeEventListener("keydown", handleEsc);
-  //   };
-  // }, [isOpen, onClose]);
 
   useEffect(() => {
   if (!isOpen) return;

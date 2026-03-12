@@ -187,32 +187,32 @@
   {
     "num": "1",
     "title": "Multi-Factor Authentication",
-    "desc": "Enhances user account security by requiring multiple forms of verification, such as passwords, OTPs, or biometric data, before access is granted."
+    "decs": "Enhances user account security by requiring multiple forms of verification, such as passwords, OTPs, or biometric data, before access is granted."
   },
   {
     "num": "2",
     "title": "Encrypted Database & Communication Channels",
-    "desc": "We use end-to-end encryption (SSL/TLS) to protect sensitive data transmission and AES-256 to secure stored information, preventing unauthorized data breaches."
+    "decs": "We use end-to-end encryption (SSL/TLS) to protect sensitive data transmission and AES-256 to secure stored information, preventing unauthorized data breaches."
   },
   {
     "num": "3",
     "title": "Cold Wallet Integration",
-    "desc": "Most user funds are stored in cold wallets (offline storage), reducing exposure to hacking risks and ensuring safe asset management."
+    "decs": "Most user funds are stored in cold wallets (offline storage), reducing exposure to hacking risks and ensuring safe asset management."
   },
   {
     "num": "4",
     "title": "DDoS & Anti-Bot Protection",
-    "desc": "Real-time monitoring and mitigation tools defend against distributed denial-of-service attacks and bot-based exploits that can disrupt trading activities."
+    "decs": "Real-time monitoring and mitigation tools defend against distributed denial-of-service attacks and bot-based exploits that can disrupt trading activities."
   },
   {
     "num": "5",
     "title": "Role-Based Access Controls (RBAC)",
-    "desc": "Limits access to critical systems and functions based on user roles, ensuring only authorized personnel can perform sensitive operations."
+    "decs": "Limits access to critical systems and functions based on user roles, ensuring only authorized personnel can perform sensitive operations."
   },
   {
     "num": "6",
     "title": "Regular Security Audits & Penetration Testing",
-    "desc": "We conduct scheduled vulnerability assessments and third-party penetration tests to identify and patch security flaws proactively."
+    "decs": "We conduct scheduled vulnerability assessments and third-party penetration tests to identify and patch security flaws proactively."
   }
 ],
 
@@ -221,32 +221,32 @@
   {
     "num": "1",
     "title": "Blockchain Interoperability Solutions",
-    "desc": "Enable seamless integration across multiple blockchain networks. By allowing users to trade assets across different blockchains, your exchange can offer greater liquidity, flexibility, and access to a wide range of tokens."
+    "decs": "Enable seamless integration across multiple blockchain networks. By allowing users to trade assets across different blockchains, your exchange can offer greater liquidity, flexibility, and access to a wide range of tokens."
   },
   {
     "num": "2",
     "title": "Quantum-Resistant Security Protocols",
-    "desc": "As quantum computing advances, traditional cryptographic methods might be vulnerable. Our quantum-resistant solutions ensure your exchange remains secure against future threats, providing the highest level of asset protection."
+    "decs": "As quantum computing advances, traditional cryptographic methods might be vulnerable. Our quantum-resistant solutions ensure your exchange remains secure against future threats, providing the highest level of asset protection."
   },
   {
     "num": "3",
     "title": "AI-Driven Market Analytics and Trading Bots",
-    "desc": "Leverage artificial intelligence to provide users with predictive market analytics and automated trading. This allows users to make data-driven decisions and execute trades automatically, even in volatile markets."
+    "decs": "Leverage artificial intelligence to provide users with predictive market analytics and automated trading. This allows users to make data-driven decisions and execute trades automatically, even in volatile markets."
   },
   {
     "num": "4",
     "title": "Tailored Cross-Border Payment Solutions",
-    "desc": "Expand your platform's global reach by integrating seamless, low-cost, and fast cross-border payments. Support for multiple currencies and localized payment methods ensures your exchange is accessible to users worldwide."
+    "decs": "Expand your platform's global reach by integrating seamless, low-cost, and fast cross-border payments. Support for multiple currencies and localized payment methods ensures your exchange is accessible to users worldwide."
   },
   {
     "num": "5",
     "title": "Real-Time Blockchain Analytics and Fraud Detection",
-    "desc": "Monitor blockchain activities and detect fraudulent behaviors in real-time. Our advanced analytics and fraud detection system ensure the integrity of transactions and provide early alerts for potential risks."
+    "decs": "Monitor blockchain activities and detect fraudulent behaviors in real-time. Our advanced analytics and fraud detection system ensure the integrity of transactions and provide early alerts for potential risks."
   },
   {
     "num": "6",
     "title": "Multi-Layer Governance and User Participation",
-    "desc": "Implement decentralized governance features, giving users a voice in key decisions regarding the exchange's operations. This creates a transparent and community-driven platform while maintaining centralized control for compliance."
+    "decs": "Implement decentralized governance features, giving users a voice in key decisions regarding the exchange's operations. This creates a transparent and community-driven platform while maintaining centralized control for compliance."
   }
 ],
 
