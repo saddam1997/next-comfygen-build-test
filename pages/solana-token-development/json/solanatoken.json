@@ -2,15 +2,15 @@
   "cardData": [
     {
       "title": "Project-Based Model",
-      "desc": "Opt for our Project-Based Engagement Model when you have clearly defined Solana token development requirements and timelines. Ideal for startups and enterprises, this model delivers end-to-end solutions for custom Solana token creation, from planning and design to deployment. It’s a cost-effective choice for businesses seeking fixed pricing and predictable outcomes."
+      "decs": "Opt for our Project-Based Engagement Model when you have clearly defined Solana token development requirements and timelines. Ideal for startups and enterprises, this model delivers end-to-end solutions for custom Solana token creation, from planning and design to deployment. It’s a cost-effective choice for businesses seeking fixed pricing and predictable outcomes."
     },
     {
       "title": "Team Extension Model",
-      "desc": "Scale your in-house capabilities with our Team Extension Model. Hire expert Solana blockchain developers to complement your existing team and speed up project delivery. Whether you need assistance with SPL token development, smart contracts, or NFT marketplace integration, this flexible model ensures seamless collaboration with your team."
+      "decs": "Scale your in-house capabilities with our Team Extension Model. Hire expert Solana blockchain developers to complement your existing team and speed up project delivery. Whether you need assistance with SPL token development, smart contracts, or NFT marketplace integration, this flexible model ensures seamless collaboration with your team."
     },
     {
       "title": "Dedicated Development Team",
-      "desc": "Leverage a Dedicated Solana Development Team exclusively working on your Solana token development projects. This model offers maximum control, transparency, and scalability. Ideal for long-term Web3 initiatives, our dedicated teams provide full-cycle services, including Solana dApp development, token deployment, and post-launch support."
+      "decs": "Leverage a Dedicated Solana Development Team exclusively working on your Solana token development projects. This model offers maximum control, transparency, and scalability. Ideal for long-term Web3 initiatives, our dedicated teams provide full-cycle services, including Solana dApp development, token deployment, and post-launch support."
     }
   ],
   "Processs": [
