@@ -124,22 +124,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-technologies"
     ]
   },
-  {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": {
-      "@type": "Brand",
-      "name": "Comfygen Technologies"
-    },
-    "name": "Football Live Line API Development Services | Real-Time Scores & Odds",
-    "image": " About Section Image URL ",
-    "description": "Comfygen offers advanced Football Live Line API development services providing real-time football scores, live odds, minute-by-minute match updates, team and player statistics, and seamless integration for sports betting, fantasy football, and live score applications.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "495"
-    }
-  },
+
   {
   "@context": "https://schema.org/", 
   "@type": "BreadcrumbList", 

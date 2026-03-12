@@ -179,20 +179,7 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Auto Loan App Development Solutions",
-      image: "https://www.comfygen.com/comfygen-images/car-finance-app-development/about.webp",
-      description:
-        "Hire professional developers for auto loan app development. Comfygen builds secure car finance apps with real-time credit checks, EMI tools, and admin-user dashboards for complete control and user trust.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "169",
-      },
-    },
+
 
     {
       "@context": "https://schema.org/",

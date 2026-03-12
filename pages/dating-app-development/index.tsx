@@ -4,10 +4,10 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
-
-
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+import Navbar from "../../components/Navbar";
 
 
 const AboutSection = dynamic(
@@ -150,24 +150,13 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-      <Header />
+      <Navbar />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best Custom Dating App Development Company in India"
-          ptag="Looking to develop a high-performance dating app like Tinder, Bumble, or Hinge? Comfygen is a trusted dating app development company delivering secure, scalable, and feature-rich dating applications for startups, SMEs, and enterprises worldwide. With 8+ years of experience, we specialize in high-quality custom dating app development services, powered by AI/ML, modern UI/UX, and robust backend architecture to help you launch market-ready dating platforms faster."
-          li="Build a Dating App for a Specific Community"
-          li1="Custom & Scalable Dating App Solutions"
-          li2="AI-Based Matchmaking & Real-Time Chat"
-          li3="Secure Architecture & Timely Delivery"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/dating-app-development/dating.webp"
-        />
+      <div className="overflow-hidden ">
+
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+
+     
 
         <Milestones />
 

@@ -58,15 +58,7 @@ const BlogSection = dynamic(
 );
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 import {
   IconUserHeart,
@@ -537,24 +529,9 @@ export default function Mobile(props: any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(Organization) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(Organizationschema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(WebsiteSchema) }}
-        />
+     
+    
+ 
       </Head>
 
       <Header />

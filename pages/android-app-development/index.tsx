@@ -78,36 +78,6 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-const ldJson = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  priceRange: "$20-$55",
-  image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "@id": "https://www.comfygen.com/ios-app-development",
-  name: "Best iOS App Development Company India, USA, UAE, Germany",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "F-152, Dayanand Marg, Nemi Nagar,",
-    addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-    addressRegion: "Jaipur, Rajasthan",
-    postalCode: "302021",
-    addressCountry: "IN",
-  },
-  review: {
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "4.9",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: "Saddam husen",
-    },
-  },
-  url: "https://www.comfygen.com/ios-app-development",
-  telephone: "+91 9587867258",
-};
 
 export default function Mobile(props: any) {
   let { initialData } = props;
@@ -160,10 +130,7 @@ export default function Mobile(props: any) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
-        />
+     
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta

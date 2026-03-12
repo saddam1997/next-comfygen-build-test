@@ -562,25 +562,7 @@
           "https://www.linkedin.com/company/comfygen-private-limited"
         ]
       },
-      {
-        "@context": "http://schema.org",
-        "@type": "Product",
-        "name": "Artificial Intelligence Development Services | AI App Development Company",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "worstRating": "3",
-          "bestRating": "5",
-          "reviewCount": "46"
-        },
-        "description": "We offer complete AI development services, including defining a viable AI implementation strategy, deploying, scaling, and scalability.",
-        "image": "https://www.comfygen.com/svg/Logo1.svg",
-        "brand": {
-          "@type": "Organization",
-          "name": "Comfygen",
-          "logo": "https://www.comfygen.com/svg/Logo1.svg"
-        }
-      },
+ 
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",

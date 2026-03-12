@@ -164,19 +164,7 @@ export default function ClinicalApp(props: any) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Business Listing App Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/business-directory-app-development/about.webp",
-      "description": "Comfygen Technologies builds scalable multi-location and niche business directory apps. From UI design to deployment, we deliver complete business directory software development with admin panel and real-time updates.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "400"
-      }
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

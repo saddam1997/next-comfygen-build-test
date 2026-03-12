@@ -345,10 +345,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:site" content="@comfygentech" />
 
        
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}

@@ -250,22 +250,7 @@ export default function Blockchain(props: any) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "Hyperledger Blockchain Development | Enterprise Blockchain Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/hyperledger-blockchain-development-about-img.webp",
-      "description": "Comfygen Technologies offers Hyperledger Blockchain Development services, including Hyperledger Fabric, Sawtooth, Indy, Iroha, and Besu solutions. Build secure permissioned networks, enterprise-grade DApps, and smart contracts with expert blockchain consulting.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "455"
-      }
-    },
+  
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

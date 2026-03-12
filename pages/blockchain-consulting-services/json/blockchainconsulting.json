@@ -670,19 +670,7 @@
         "https://www.linkedin.com/company/comfygen-technologies "
       ]
     },
-    {
-      "@context": "http://www.schema.org ",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Blockchain Consulting Company | Expert Blockchain Consulting Services",
-      "image": "Hero section image",
-      "description": "Comfygen is a leading Blockchain Consulting Company helping enterprises and startups build secure, scalable, and future-ready blockchain solutions. From dApps and DeFi to NFTs and smart contracts, our consulting services cover the full spectrum of blockchain innovation.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "135"
-      }
-    },
+  
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

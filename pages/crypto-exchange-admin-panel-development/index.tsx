@@ -150,20 +150,7 @@ export default function Ecommerce(props) {
   const jsonLdData = [
  
  
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Crypto Exchange Admin Panel Development",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-exchange-admin-panel-development/crypto-exchange-admin-panel-development-about.webp",
-      "description": "Get robust, scalable crypto exchange admin panel development services with advanced security, AI integration, multi-currency support, and real-time monitoring. Trusted by global crypto platforms.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
 
-    },
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

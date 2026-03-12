@@ -1450,18 +1450,7 @@
           "https://www.linkedin.com/company/comfygen-private-limited"
         ]
       },
-      {
-        "@type": "Product",
-        "brand": "Comfygen Private Limited",
-        "name": "Custom Finance App Development Services",
-        "image": "https://www.comfygen.com/image/finance-app-development-og-image.webp",
-        "description": "Get top-notch custom finance app development services with Comfygen. We build AI-powered, secure, and scalable financial apps tailored to your business needs.",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "765"
-        }
-      },
+  
       {
         "@context": "https://schema.org/",
         "@type": "BreadcrumbList",

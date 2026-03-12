@@ -156,30 +156,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/hockey-live-line-api/hockey-live-line-api-og-image.webp" />
 
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            name: "Hockey Live Line API",
-            operatingSystem: "Web, Android, iOS",
-            applicationCategory: "SportsApplication",
-            offers: {
-              "@type": "Offer",
-              price: "Contact Us - 9587867258",
-              priceCurrency: "INR",
-              availability: "https://schema.org/InStock",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "300",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Comfygen",
-            },
-          })}
-        </script>
+        
 
 
       </Head>

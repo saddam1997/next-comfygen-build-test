@@ -155,26 +155,6 @@ export default function Blockchain(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-  
-
-   
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Custom Blockchain Development Company | Secure & Scalable Blockchain Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/blockchain-development-about-image.webp",
-      "description": "Comfygen is a leading custom blockchain development company delivering secure, scalable, and enterprise-grade blockchain solutions. We specialize in private and public blockchain networks, smart contract development, DeFi platforms, token creation, and decentralized application (DApp) development for startups and enterprises.",
-      "url": "https://www.comfygen.com/custom-blockchain-development-company ",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "442"
-      }
-    },
-
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

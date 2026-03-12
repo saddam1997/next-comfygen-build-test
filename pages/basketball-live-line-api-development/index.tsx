@@ -130,22 +130,7 @@ const jsonLdData = [
     "https://www.linkedin.com/company/comfygen-technologies"
   ]
 },
-{
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": {
-    "@type": "Brand",
-    "name": "Comfygen Technologies"
-  },
-  "name": "Basketball Live Line API Development Services | Real-Time Scores & Odds",
-  "image": " About Section Image URL ",
- "description": "Comfygen offers advanced Basketball Live Line API development services providing real-time basketball scores, live odds, play-by-play updates, team and player statistics, and seamless integration for sports betting, fantasy basketball, and live score applications.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.7",
-    "reviewCount": "295"
-  }
-},
+
 {
   "@context": "https://schema.org/", 
   "@type": "BreadcrumbList", 

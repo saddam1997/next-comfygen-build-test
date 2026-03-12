@@ -359,7 +359,7 @@ export default function Ecommerce(props: any) {
         <meta property="og:image" content="https://www.comfygen.com/image/erc20-token-development.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/image/erc20-token-development.webp" />
         <meta property="og:image:alt" content="ERC20 Token Development  | ERC20 Token Development Company" />
-        <Script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      
         <Script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
       <LazyLoad height={80} offset={100}>

@@ -249,19 +249,7 @@ export default function Ecommerce(props) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "AI-Powered eCommerce App Development",
-      "image": "https://www.comfygen.com/gallery/about-images/e-commerce-app-development-about-img.webp",
-      "description": "Upgrade your online business with AI-powered eCommerce app development. Our intelligent apps enable personalized shopping, product recommendations, and faster customer engagement.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1520"
-      }
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

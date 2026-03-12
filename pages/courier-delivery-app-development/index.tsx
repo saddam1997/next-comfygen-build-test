@@ -136,19 +136,7 @@ export default function ClinicalApp(props: any) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Build Your Courier Delivery App | Comfygen Technologies",
-      "image": "https://www.comfygen.com/comfygen-images/courier-delivery-app-development/courier-delivery-app-development-about.webp",
-      "description": "Comfygen Technologies is a trusted courier delivery app development agency. Create easy-to-use apps with live parcel tracking, automated delivery, secure payments, and efficient logistics management.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "250"
-      }
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

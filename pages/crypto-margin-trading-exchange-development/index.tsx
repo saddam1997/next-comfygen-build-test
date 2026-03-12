@@ -164,20 +164,7 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Margin Trading Exchange Development Company | Crypto Margin Trading Solutions USA",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-margin-trading/margin-trading-development-about.webp",
-      "description": "Launch your crypto margin trading exchange with 7+ years of expertise. We build secure, scalable, and compliant platforms for the USA with advanced features like leverage, auto-liquidation, and real-time analytics.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
 
-    },
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",

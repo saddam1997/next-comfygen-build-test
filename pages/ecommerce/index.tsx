@@ -289,21 +289,7 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "eCommerce Development Services",
-      image:
-        "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-about.webp",
-      description:
-        "Boost your online business with Comfygen’s expert eCommerce development services. We build scalable, secure, and high-performing eCommerce websites and apps using Shopify, Magento, WooCommerce, and more.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "745",
-      },
-    },
+ 
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

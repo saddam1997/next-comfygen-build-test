@@ -133,19 +133,7 @@ const jsonLdData = [
 
     ]
   },
-  {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": "Comfygen Technologies",
-    "Name": "Top Startup App Development Company",
-    "image": "https://www.comfygen.com/comfygen-images/startup-app-development/about.webp",
-    "description": "Comfygen delivers end-to-end startup app development services including MVP, SaaS, mobile & web apps for fast growth.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "480"
-    }
-  },
+
   {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",

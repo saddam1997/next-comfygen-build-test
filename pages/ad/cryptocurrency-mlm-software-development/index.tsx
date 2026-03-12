@@ -28,38 +28,7 @@ const HireSection = dynamic(() => import("../../../components/Newcomponet/ad/Hir
   loading: () => <p>Loading...</p>,
 });
 
-const productData = {
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "brand": {
-    "@type": "Brand",
-    "name": "Cryptocurrency MLM Software Development Company"
-  },
-  "description": "Comfygen focuses on creating Bitcoin MLM software and offers a blockchain-based solution to help you make passive income. Smart contracts based on well-known cryptocurrencies like Tron MLM software, Ethereum MLM software, BSC MLM software, SOL MLM software, and Matic MLM software are used by our MLM program.",
-  "image": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "name": "white label cryptocurrency MLM Software Company | Comfygen",
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.9"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Mr. Saddam Husen"
-      }
-    }],
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.comfygen.com/cryptocurrency-mlm-software-development",
-    "priceCurrency": "USD",
-    "seller": {
-      "@type": "Organization",
-      "name": "Comfygen Private Limited"
-    }
-  }
-};
+
 
 const businessData = {
   "@context": "https://schema.org",

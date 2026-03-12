@@ -246,29 +246,9 @@ export default function Ecommerce(props) {
 
 
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-         "@context": "https://schema.org/",
-          "@type": "BreadcrumbList", 
-          "itemListElement": [{
-            "@type": "ListItem", 
-            "position": 1, 
-            "name": "Home",
-            "item": "https://www.comfygen.com/" 
-          },{
-            "@type": "ListItem", 
-            "position": 2, 
-            "name": "Cricket Live Line API",
-            "item": "https://www.comfygen.com/cricket-live-line-api" 
-          }]
-        })}
-      </script>
 
  
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+     
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}

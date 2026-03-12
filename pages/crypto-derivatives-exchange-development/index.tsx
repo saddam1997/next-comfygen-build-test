@@ -162,19 +162,6 @@ export default function Ecommerce(props: any) {
 
     },
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Crypto Derivatives Exchange Development Company | Derivatives Trading Software Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-derivatives-exchange-development/crypto-derivatives-exchange-about.webp",
-      "description": "Launch a secure, scalable crypto derivatives exchange with our expert development services. We build custom derivatives trading software for global markets with advanced features, real-time data & compliance.!",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
-    },
-    {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
       "mainEntity": [

@@ -1234,19 +1234,7 @@
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Billing Software Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/billing-software-development/about.webp",
-      "description": "Comfygen Technologies provides custom billing software development services including invoicing, GST compliance, payment gateway integration, and cloud-based billing solutions.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "620"
-      }
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

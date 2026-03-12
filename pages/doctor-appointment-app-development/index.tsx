@@ -146,19 +146,7 @@ export default function Ecommerce(props) {
 
   const jsonLdData = [
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Next-Gen Doctor Appointment Apps for Healthcare | Comfygen",
-      "image": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/about-two.webp",
-      "description": "Comfygen Technologies develops next-gen doctor appointment apps with telemedicine, AI-driven features, patient notifications, and analytics tools for clinics, hospitals, and healthcare enterprises.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "800"
-      }
-    },
+ 
 
     {
       "@context": "https://schema.org/",

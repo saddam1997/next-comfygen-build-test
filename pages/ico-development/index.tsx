@@ -165,19 +165,7 @@ const Processs = [
 
 
 const jsonLdData = [
-  {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": "Comfygen Private Limited",
-    "Name": "ICO development Services",
-    "image": "Hero section image",
-    "description": "Launch your ICO with Comfygen, a leading ICO development company. We offer comprehensive ICO development services, including token creation, smart contracts, blockchain integration, and post-ICO support. Secure, scalable, and compliant solutions.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1748"
-    }
-  },
+
 
   {
     "@context": "https://schema.org",

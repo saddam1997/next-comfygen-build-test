@@ -136,24 +136,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
+  
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -186,19 +169,6 @@ export default function ClinicalApp(props: any) {
     },
     
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Ecommerce Fashion Web & Mobile App Development Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/fashion/fashion-about.webp",
-      "description": "Get end-to-end ecommerce fashion web & mobile app development solutions from Comfygen. We build scalable, stylish, and feature-rich fashion apps with AR, AI, and cross-platform support to boost your online store’s growth.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "95"
-      }
-    },
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
