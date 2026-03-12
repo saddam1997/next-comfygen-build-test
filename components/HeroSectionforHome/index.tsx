@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 const HeroClientCTA = dynamic(() => import("./HeroClientCTA"), {
   ssr: false,

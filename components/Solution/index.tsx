@@ -38,7 +38,7 @@ const Solution = ({  techData }) => {
                   <p className="text-base font-normal mt-2">{desc1}</p>
                   <p className="text-base font-normal mt-2">{desc2}</p>
                   <ul className="mt-4 space-y-2">
-                    {listItems.map((liItem, idx) => (
+                    {listItems.map((liItem:any, idx:any) => (
                       <li
                         key={idx}
                         className="text-base font-normal flex items-center gap-1"

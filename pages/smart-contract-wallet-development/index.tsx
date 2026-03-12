@@ -173,200 +173,8 @@ export default function Ecommerce(props: any) {
     setTalkToExpertModal(false);
   };
 
-  const faqData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is cryptocurrency wallet development, and why is it important?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Cryptocurrency wallet development involves creating secure digital wallets that allow users to store, send, and receive cryptocurrencies. It is essential because it ensures safe transactions, private key management, and seamless interaction with blockchain networks.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What are the benefits of hiring a cryptocurrency wallet development company?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "A professional cryptocurrency wallet development company provides expert security features, multi-currency support, customized UI/UX, and compliance with industry standards. This ensures that businesses get reliable, scalable, and secure wallet solutions.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What types of cryptocurrency wallets can be developed?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "You can develop different types of cryptocurrency wallets, including web wallets, mobile wallets, desktop wallets, hardware wallets, and multi-signature wallets. Each type offers varying levels of security and accessibility.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How long does it take to develop a cryptocurrency wallet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The development timeline depends on the complexity. A basic crypto wallet can take 2-3 months, while a feature-rich wallet with advanced security and blockchain integrations can take 6 months or longer.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I get a customized cryptocurrency wallet for my business?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, businesses can get a custom cryptocurrency wallet tailored to their needs. Features like white-label branding, multi-currency support, DeFi integration, and biometric authentication can be customized as per requirements.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does it cost to develop a cryptocurrency wallet?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost varies depending on features, security measures, platform compatibility, and additional integrations. A simple wallet may cost around $20,000-$30,000, while an advanced wallet can exceed $100,000.",
-        },
-      },
-    ],
-  };
+
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      addressLocality: "Jaipur, Rajasthan",
-      addressRegion: "India",
-      postalCode: "302006",
-      telephone: "+91-958-786-7258",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      streetAddress: "40 Tuxedo Ct, Toronto, ON",
-      addressLocality: "Toronto",
-      addressRegion: "Canada",
-      postalCode: "M1G3S7",
-      telephone: "+1 579-977-4475",
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: "Comfygen Technologies",
-      url: "https://www.comfygen.com/",
-      logo: "https://www.comfygen.com/svg/Logo1.svg",
-      contactPoint: {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        contactOption: "WhatsApp",
-        telephone: "+91 9587867258",
-        email: "sales@comfygen.com",
-        areaServed: ["IN", "US", "CA", "GB"],
-
-        availableLanguage: "en, in",
-      },
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    }
-    ,
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "Wallet Development Services | Secure E-Wallet & Crypto Wallet Solutions",
-      "image": "https://www.comfygen.com/assets/images/wallet-development-hero.jpg",
-      "description": "Comfygen provides end-to-end wallet development services, including e-wallets, crypto wallets, DeFi wallets, NFT wallets, and enterprise-grade digital payment solutions with security, scalability, and user-friendly features.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "135"
-      }
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Smart Contract Wallet Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Comfygen offers secure, scalable, and customizable smart contract wallet development services with multi-chain support, DeFi integration, automated transactions, and enterprise-grade security.",
-      "url": "https://www.comfygen.com/smart-contract-wallet-development",
-      "mainEntityOfPage": "https://www.comfygen.com/smart-contract-wallet-development",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Global"
-      },
-      "serviceType": [
-        "Smart Contract Wallet Development",
-        "Custom Crypto Wallet Development",
-        "Multi-Chain Wallet Solutions",
-        "DeFi Wallet Integration",
-        "Automated Crypto Wallets",
-        "Enterprise Blockchain Wallet Solutions",
-        "Secure Digital Asset Management"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-      ]
-    },
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -459,11 +267,11 @@ export default function Ecommerce(props: any) {
       <Head>
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <title>
-          Smart Contract Wallet Development Services | Comfygen
+          Best Smart Contract Wallet Development Services | Comfygen
         </title>
         <meta
           name="description"
-          content="Comfygen, a smart contract wallet development company, builds secure, scalable, and multi-chain solutions. Automated transactions, DeFi integration, and custom blockchain solutions for your business."
+          content="Comfygen offers smart contract wallet development services with secure, scalable, and multi-chain solutions. Enable automated transactions, DeFi integration, and advanced blockchain security."
         />
 
         <link
@@ -561,13 +369,6 @@ export default function Ecommerce(props: any) {
         <meta property="og:url" content="https://www.comfygen.com/smart-contract-wallet-development" />
         <meta property="og: title" content=" Expert Smart Contract Wallet Development Company" />
         <meta property="og: description" content="Comfygen builds secure, automated, and multi-chain smart contract wallets for DeFi, NFT platforms, and enterprise blockchain solutions." />
-
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
@@ -578,22 +379,38 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-[110px]">
         {/* hero section */}
 
-          <HeroSectionForAllPages
-            heading="Smart Contract Wallet Development Services"
-            ptag="Smart contract wallets are redefining how digital assets are managed by combining automation, transparency, and security. At Comfygen, we specialize in Smart Contract Wallet Development that helps businesses and individuals to control their crypto holdings without depending on third parties. Our smart contract wallet development solutions support Ethereum smart contract wallets, multi-chain integration, and DeFi wallet development, making them ideal for enterprises, startups, NFT platforms, and exchanges."
-            ptag1=""
-            li="Secure transactions with built-in smart contract execution"
-            li1="Multi-chain and multi-token wallet integration"
-            li2="Customizable features for DeFi, NFT, and enterprise needs"
-            li3="Reliable support and ongoing upgrades"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-              bgImage="https://www.comfygen.com/comfygen-images/smart-contract-wallet-development/smart_contract_wallet_development_hero.webp"
-          />
+        <HeroSectionForAllPages
+          heading="Best Smart Contract Wallet Development Services"
+          ptag="Smart contract wallets are transforming the way digital assets are managed by integrating automation, transparency, and advanced security. At Comfygen, we offer Smart Contract Wallet Development Services designed to help businesses and individuals securely manage their crypto assets without relying on third-party intermediaries. Our Smart contract wallet development solutions support Ethereum-based smart contract wallets, multi-chain integration, and advanced DeFi wallet development, making them ideal for startups, enterprises, NFT platforms, and cryptocurrency exchanges. With our expertise, you can launch secure, scalable, and feature-rich smart contract wallets are designed according to your business needs."
+          ptag1=""
+          li="Secure transactions with built-in smart contract execution"
+          li1="Multi-chain and multi-token wallet integration"
+          li2="Customizable features for DeFi, NFT, and enterprise needs"
+          li3="Reliable support and ongoing upgrades"
+          btnName="Talk With Expert"
+          btnLink="/contact-us"
+          openModal={openModal}
+          talkToExpertModal={talkToExpertModal}
+          setTalkToExpertModal={setTalkToExpertModal}
+          closeModal={closeModal}
+          bgImage="https://www.comfygen.com/comfygen-images/smart-contract-wallet-development/smart_contract_wallet_development_hero.webp"
+        />
+
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="space-y-2">
+              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+                Our Smart Contract Wallet Development Services
+              </h2>
+              <p className="text-base text-center font-normal">
+                At Comfygen, we deliver End-to-End <a className='text-blue-500 underline' href='https://www.comfygen.com/wallet-development-company'>best wallet development services</a> that are specifically designed according to your business needs. From startups to large enterprises, our wallet development team builds secure, scalable, and ready solutions for the evolving blockchain ecosystem.
+              </p>
+            </div>
+            <div className="">
+              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            </div>
+          </div>
+        </section>
 
         <AboutSection
           heading="What is Smart Contract Wallet Development?"
@@ -613,21 +430,7 @@ export default function Ecommerce(props: any) {
           linkText="Explore More"
         />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Smart Contract Wallet Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we deliver End-to-End <a className='text-blue-500 underline' href='https://www.comfygen.com/wallet-development-company'>best wallet development services</a> that are specifically designed according to your business needs. From startups to large enterprises, our wallet development team builds secure, scalable, and ready solutions for the evolving blockchain ecosystem.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
@@ -718,7 +521,7 @@ export default function Ecommerce(props: any) {
           title="Frequently Asked Questions"
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

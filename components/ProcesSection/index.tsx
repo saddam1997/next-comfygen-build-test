@@ -16,8 +16,8 @@ const ProcessComponent = ({ ProcessData }: any) => {
 
                         <HeadingTwo color={"black"} text= {heading} />
                     
-                        <p className="text-base font-normal mt-2">
-                            {description}
+                        <p className="text-base font-normal mt-2" dangerouslySetInnerHTML={{ __html: description }}>
+                           
                         </p>
                     </div>
                     <div className={styles.processContent}>

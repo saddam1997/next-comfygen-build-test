@@ -102,7 +102,7 @@ export default function FaqSection({
                   {/* Content */}
                   <div
                     className={`transition-all duration-300 ease-in-out ${isOpen
-                        ? "max-h-[1000px] opacity-100 px-5 pb-5"
+                        ? "h-full opacity-100 px-5 pb-5"
                         : "max-h-0 opacity-0 overflow-hidden px-5"
                       }`}
                   >
