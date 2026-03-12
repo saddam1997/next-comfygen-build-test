@@ -7,6 +7,7 @@ import JSON_DATA from "./json/webdevelopment.json";
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Script from "next/script";
 const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
@@ -137,7 +138,7 @@ const portfoliodata = [
 
 
 
-export default function Webdevelopment(props) {
+export default function Webdevelopment(props: any) {
   let { initialData } = props;
   let {
   } = JSON_DATA;
@@ -263,31 +264,16 @@ export default function Webdevelopment(props) {
 
       </Head>
 
-      <LazyLoad height={80} offset={100}>
+     
         <Header />
-      </LazyLoad>
-      <div className="overflow-hidden">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Award Winning Web Development Company in Jaipur"
-            ptag="Comfygen is an Award Winning Web Development Company in Jaipurdelivering modern, easy-to-use, and performance-driven websites for businesses of all sizes. We build responsive, SEO-optimized websites and scalable web applications that help you attract more customers, improve engagement, and increase conversions. Whether you need a business website, eCommerce platform, or custom web development solution, our team delivers results that support your growth goals."
-            ptag1=""
-            li="Custom Website & Web App Development"
-            li1="Responsive, Mobile-First Design"
-            li2="SEO-Optimized & Fast-Loading Websites"
-            li3=" Affordable Pricing & Dedicated Support"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage={'https://www.comfygen.com/herosection/website-development-company-hero-img.webp'}
-          />
-        </div>
+
+      <div className="overflow-hidden lg:pt-0 pt-16">
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+
+
         <Milestones />
 
-                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
               <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Professional Website Development Services in Jaipur</h2>
@@ -398,16 +384,16 @@ export default function Webdevelopment(props) {
           ]}
         />
 
-          <ClientTestimonials
-                  heading="Client Testimonial"
-                  testimonials={JSON_DATA.customTestimonials}
-                />
+        <ClientTestimonials
+          heading="Client Testimonial"
+          testimonials={JSON_DATA.customTestimonials}
+        />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
 
-         <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

@@ -5,6 +5,7 @@ import JSON_DATA from "./water-delivery-app-development.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 
 
 const loader = () => (
@@ -487,24 +488,9 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Best Water Delivery App Development Company"
-            ptag="Comfygen provides reliable custom water delivery app development services for startups and enterprises. As a trusted water delivery app development company, we build fast, secure, and user-friendly water delivery apps that simplify bottled, mineral, and packaged water delivery. Our water delivery app development solutions help businesses manage orders, deliveries, and payments smoothly while improving customer experience and growth."
-            li="Quick water ordering & smart scheduling"
-            li1="Real-time delivery tracking"
-            li2="Safe and secure online payment integration"
-            li3="Flexible daily, weekly & monthly subscription plans"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/water-delivery-app-development/hero.webp"
-          />
-        </div>
+      <div className="overflow-hidden lg:pt-0 pt-16">
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+       
         <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">

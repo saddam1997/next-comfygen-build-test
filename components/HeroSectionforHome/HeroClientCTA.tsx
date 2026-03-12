@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import TalkToExpertModal from "../modals/TalkToExpertModal";
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
+import Link from "next/link";
+
 
 export default function HeroClientCTA() {
 
@@ -17,7 +19,7 @@ export default function HeroClientCTA() {
     //     setTalkToExpertModal(false);
     // };
 
-     useEffect(() => {
+    useEffect(() => {
         if (talkToExpertModal) {
             document.body.style.overflow = "hidden";
         } else {
@@ -43,7 +45,7 @@ export default function HeroClientCTA() {
 
 
 
-            <div className="pt-3 sm:pt-4 relative">
+            <div className="pt-3 sm:pt-4 relative hidden lg:block">
 
                 <button
                     onClick={openModal}
@@ -61,6 +63,26 @@ export default function HeroClientCTA() {
                         />
                     </span>
                 </button>
+            </div>
+
+            <div className="pt-3 sm:pt-4 relative lg:hidden ">
+
+                <Link
+                    href="/contact-us"
+                    aria-label="Talk to an expert"
+                    className={`bg-[#fff] w-fit  flex items-center text-sm sm:text-base text-[18px] font-semibold py-1 px-3 rounded-full`}
+                >
+                    Talk to an expert!
+
+                    <span className="bg-transparent  bg-[#5556d1] rounded-full">
+                        <Image src="/unnamed.webp"
+                            alt="heart"
+                            width={20}
+                            height={20}
+                            className="h-[35px] w-[35px] rounded-full"
+                        />
+                    </span>
+                </Link>
             </div>
 
             {talkToExpertModal && (

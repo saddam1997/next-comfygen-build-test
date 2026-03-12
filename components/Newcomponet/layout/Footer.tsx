@@ -79,7 +79,7 @@ export default function Footer() {
       <div className="lg:flex items-center justify-between py-6 text-sm border-t border-white/10 
       2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto  lg:pb-6">
 
-        <p>© 2026 Comfygen Pvt Ltd.</p>
+        <p>© 2026 Comfygen Technologies</p>
 
         <div className="flex items-center lg:space-x-4">
           <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/about-us">About Us</Link>
