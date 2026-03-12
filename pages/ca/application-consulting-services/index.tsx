@@ -2,10 +2,90 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/applicationConsulting.json";
-import Header from "../../../components/Newcomponet/layout/Header";
-import Milestones from "../../../components/Newcomponet/comman/Milestones";
+
+import Navbar from "../../../components/Navbar";
+import HeroSectionforHome from "../../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../../components/Consultancy"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../../components/TechSection"), {
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import("../../../components/LatestTechnology"), {
+  ssr: true,
+});
+
+const IndustriesSection = dynamic(() => import("../../../components/IndustriesSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../../components/ClientStories"), {
+  ssr: true,
+});
+
+
+const HireSection = dynamic(() => import("../../../components/HireSection"), {
+  ssr: true,
+});
+
+const TestimonialSection = dynamic(() => import("../../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const BlogSection = dynamic(
+  () => import("../../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import HeroSection from "../../../components/HeroSection";
-import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -49,14 +129,14 @@ const HireDeveloper = dynamic(
   }
 );
 
-const LatestTechnology = dynamic(
-  () =>
-    import("../../../components/Newcomponet/SectionCompoent/LatestTechnology"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+// const LatestTechnology = dynamic(
+//   () =>
+//     import("../../../components/Newcomponet/SectionCompoent/LatestTechnology"),
+//   {
+//     loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+//     ssr: true,
+//   }
+// );
 
 const WhyChoose = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
@@ -75,10 +155,7 @@ const Faq = dynamic(
 );
 
 
-const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+
 
 
 export default function Mobile(props: any) {
@@ -172,94 +249,25 @@ export default function Mobile(props: any) {
         />
       </Head>
       <div className="">
-        <Header />
+        <Navbar />
       </div>
-      <div className="overflow-hidden lg:pt-[90px] ">
-        <HeroSection
-          heading="Application Development Consulting Services"
-          ptag="Comfygen provides expert Mobile Application Development Consulting Services to help businesses define the right strategy, reduce risks, and build successful digital products. As an experienced mobile app development consulting company, we analyze your business goals, market opportunities, and user expectations to create a clear, result-driven app roadmap."
-          ptag1="Our app consultants and market research experts guide you through ideation, technology selection, feature planning, and scalability strategies—ensuring your mobile application stands out in competitive markets and delivers long-term value."
-          li="Expert Mobile App Development Consulting"
-          li1="Business & User-Centric App Strategy"
-          li2="Innovative, Scalable App Development Ideas"
-          bgImage="https://www.comfygen.com/herosection/application-consulting-services-hero-img.webp"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
 
-        />
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Mobile App Development Consultancy Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                The mobile app development idea and application integration
-                services need to be evaluated in certain ways. Here are the
-                top-notch strategic mobile application development consulting
-                services we provide to assess the app development requirements.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title=""
-          heading="Leading Mobile App Consultancy for a Futuristic Market"
-          description1="Comfygen is an 8+ years experienced application development firm that has acquired the talents of 10 to 15+ years of experienced developers, researchers, and analysts. This company is more focused on delivering quality over quantity. We cater <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile application development</a> consulting services to clients with optimum innovative approaches to development, deployment, and even post-deployment support & maintenance. Our mobile app developers are attentive to cutting-edge technologies and trending techs to build robust mobile applications that carry the potential to engage users in the long run."
-          description2="Not only the expertise we have, but our team of IT engineers also understands every domain, niche, and industrial type. Every industry is revolutionized by technological advancements and unique ideations. Our app development consultants are well-versed in the current revolutions and possible futuristic changes. Therefore, they can comment better on the clientele’s app development idea and suggest bright application consultancy to build a potent mobile application that fulfills every need with vast engagement."
-          description3=""
-          imageSrc="https://www.comfygen.com/gallery/about-images/application-consulting-services-about-us-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <IndustriesSection Industries={JSON_DATA.Industries} />
+        <Consultancy consultancyData={JSON_DATA.consultancyData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <LatestTechnology latesttech={JSON_DATA.latesttech} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
 
-        <IndustriesServe
-          heading="Industries We Serve As Best Mobile App Development Company"
-          description="Comfygen provides custom web and mobile app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
+        <ClientStories />
+        {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
+        <FaqSection faqData={JSON_DATA.Frequently} />
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/application-consulting-services-consultancy-approach.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <HireDeveloper
-          heading="Hire App Development Consulting to success"
-          text="Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers. "
-          text1=" "
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-consulting-img.webp"
-          imageAlt="hire-developer"
-        />
-        <LatestTechnology
-          heading="Adopting the Latest Technology Trends in App Development"
-          subheading="Comfygen is widely known for its extensive knowledge of various technologies essential for application consulting services. Let's delve into a detailed analysis, highlighting crucial aspects:"
-          techData={JSON_DATA.technologyData}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <ClientStories/>
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        {/* <FormSec /> */}
         <BlogSection initialData={initialData} />
-      </div>
+
     </>
   );
 }

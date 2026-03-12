@@ -6,7 +6,7 @@ const Navbar = () => {
  <>
 
       <>
-        <header className=" w-full">
+        <header className="w-full h-16">
           <div className="hidden lg:block">
             <DesktopNav />
           </div>

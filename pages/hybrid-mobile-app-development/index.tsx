@@ -2,11 +2,111 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hybrid.json";
+
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import("../../components/LatestTechnology"), {
+  ssr: true,
+});
+
+const IndustriesSection = dynamic(() => import("../../components/IndustriesSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import LazyLoad from "react-lazy-load";
 import Header from "../../components/Newcomponet/layout/Header";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+
 import HeroSection from "../../components/HeroSection";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -173,23 +273,11 @@ export default function Mobile(props: any) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-      <HeroSection
-        heading="Best Hybrid Mobile App Development Company"
-        subhead="Looking for a Hybrid Mobile App Development Service?"
-        ptag="Comfygen is a trusted hybrid mobile app development company in India and the USA, delivering high-quality, cost-effective app solutions for businesses of all sizes. Our experienced hybrid app developers help you choose the right frameworks and technologies to build scalable, secure, and performance-driven applications."
-        ptag1="With over 5+ years of industry expertise, we develop custom hybrid apps that ensure faster time-to-market, seamless user experience, and cross-platform compatibility—without compromising quality or security."
-        li="5+ Years of Hybrid App Development Experience"
-        li1="Secure Applications with IP Protection"
-        li2="Flexible Hiring & Engagement Models"
-        li3="Timely Delivery with Guaranteed Quality"
-        bgImage="https://www.comfygen.com/herosection/mobile-app-development-hero-section-img.webp"
-        btnName="Talk With Expert"
-        btnLink="/contact-us"
 
-      />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+
+      
       <Milestones />
       <section className="lg:py-16 py-10 bg-[#F5F5F9]">
         <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -258,7 +346,7 @@ export default function Mobile(props: any) {
         mainCardData={JSON_DATA.pageData.mainCardData}
         gridData={JSON_DATA.pageData.gridData}
       />
-      <ClientStories/>
+      <ClientStories />
 
       <HireDeveloper
         heading="Hire Hybrid App Developers"

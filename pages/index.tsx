@@ -177,27 +177,23 @@ export default function Home(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <IndustriesSection Industries={JSON_DATA.Industries} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden lg:pt-0 pt-16">
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <Milestones />
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        <IndustriesSection Industries={JSON_DATA.Industries} />
-        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-        <TechSection TechStack={JSON_DATA.TechStack} />
-        <WhyChooseSection pageData={JSON_DATA.pageData} />
-        <ClientStories />
-        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
-        <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

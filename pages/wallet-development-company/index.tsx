@@ -8,6 +8,7 @@ import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, Ico
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 
 
 const loader = () => (
@@ -475,24 +476,9 @@ export default function Ecommerce(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        {/* hero section */}
-        <HeroSectionForAllPages
-          heading="On-Demand Wallet development Service"
-          ptag="Comfygen is the best wallet development company that builds safe, secure, scalable, and user-friendly e-wallet and crypto wallets. Our wallet development service allow businesses and their customers to manage digital transactions smoothly and securely. even if you want to create a mobile e-wallet, crypto wallet, or an enterprise-level wallet, our expert wallet development team delivers solutions tailored to your business goals. From startups to global enterprises, we provide reliable wallet development services designed to help businesses stay competitive in the fast-growing digital economy."
-          ptag1=""
-          li="Multi-layer authentication with advanced encryption"
-          li1="Wallet development for mobile, web, and enterprise systems"
-          li2="Customized wallet development solutions aligned with business goals"
-          li3="Scalable architecture designed to grow with your business"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
-        />
+      <div className="overflow-hidden lg:pt-0 pt-16">
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+
 
         <AboutSection
           heading="What is Wallet Development?"

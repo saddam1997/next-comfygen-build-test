@@ -1,4 +1,24 @@
 {
+
+  "Herosection": {
+    "heading": "On-Demand Wallet development Service",
+    "isHome": false,
+    "ptag": "Comfygen is the best wallet development company that builds safe, secure, scalable, and user-friendly e-wallet and crypto wallets. Our wallet development service allow businesses and their customers to manage digital transactions smoothly and securely. even if you want to create a mobile e-wallet, crypto wallet, or an enterprise-level wallet, our expert wallet development team delivers solutions tailored to your business goals. From startups to global enterprises, we provide reliable wallet development services designed to help businesses stay competitive in the fast-growing digital economy.",
+    "ptag1": "",
+    "listItems": [
+      "Multi-layer authentication with advanced encryption",
+      "Wallet development for mobile, web, and enterprise systems",
+      "Customized wallet development solutions aligned with business goals",
+      "Scalable architecture designed to grow with your business"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "white-label mobile app development company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
+  },
+
+
+
   "consultancyHead": [
     {
       "num": "1",
