@@ -2,10 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-const Header = dynamic(
-  () => import("../components/Newcomponet/layout/Header"),
-  { ssr: true }
-);
+import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
 
 
@@ -78,7 +75,7 @@ const FaqSection = dynamic(
 
 const BlogSection = dynamic(
   () => import("../components/BlogSection"),
-  {ssr: true}
+  { ssr: true }
 );
 
 
@@ -181,12 +178,12 @@ export default function Home(props: any) {
         />
       </Head>
       <div>
-        <Header />
-      </div> 
+        <Navbar />
+      </div>
 
       <div className="overflow-hidden lg:pt-0 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-         <Milestones />
+        <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
@@ -199,7 +196,7 @@ export default function Home(props: any) {
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
         <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} /> 
+        <BlogSection initialData={initialData} />
       </div>
     </>
   );

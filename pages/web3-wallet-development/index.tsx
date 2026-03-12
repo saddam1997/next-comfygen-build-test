@@ -2,9 +2,115 @@ import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./web3-wallet-development.json";
 import dynamic from "next/dynamic";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const LatestTechnology = dynamic(() => import("../../components/LatestTechnology"), {
+  ssr: true,
+});
+
+const IndustriesSection = dynamic(() => import("../../components/IndustriesSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Emerging from "../../components/Emerging";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -73,10 +179,7 @@ const ConsultancyApproach = dynamic(
   { loading: loader, ssr: true }
 )
 
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+
 
 
 
@@ -774,172 +877,24 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-
-      {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Web3 wallet development company"
-            ptag="Comfygen, the best web3 wallet development company, unlocks decentralized finance's potential with secure, scalable Web3 wallet Development solutions. Experts build non-custodial or multi-chain wallets for seamless digital asset, NFT, and DeFi management across blockchains, featuring advanced encryption, intuitive design, and interoperability. Comfygen crafts fast, effortless wallets with smooth onboarding, token swaps, NFT support, fiat on-ramps, and major blockchain integration."
-            li="Multi-chain and cross-platform wallet integration."
-            li1="Advanced AI-powered security."
-            li2="DeFi, NFT, and token swap functionality"
-            li3="End-to-end Web3 wallet development."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/web3-wallet-development/web3-wallet-development-hero.webp"
-          />
-        </div>
-        <AboutSection
-          title="About Company"
-          heading="Benefits of Partnering with Comfygen for Web3 Wallet Development"
-          description1="As a trusted Web3 wallet development company, Comfygen delivers next-generation <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'>blockchain wallet development</a> solutions especially designed for the decentralized world. Our Web3 wallets go beyond traditional crypto wallets by offering complete control, transparency, and interoperability across multiple blockchains. Our <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallet development</a> solutions empower users with self-custody, eliminating third-party risks while enabling secure management of cryptocurrencies."
-          description2="Businesses worldwide are rapidly adopting Web3 wallet development services that provide users with greater privacy, faster transactions, and seamless multi-chain access. At Comfygen, we specialize in creating secure, scalable, and user-friendly crypto wallets that are designed according to business need, and helping you stay ahead in the evolving decentralized ecosystem."
-          imageSrc="https://www.comfygen.com/comfygen-images/web3-wallet-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[]}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <CallToAction
-          heading="Ready To Launch Your Web3 Wallet Today?"
-          text="Comfygen’s Web3 wallet development services deliver secure, scalable, and feature-rich decentralized wallets for multi-chain crypto, NFTs, and DeFi assets."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/web3-wallet-development/cta.webp"
-          imageAlt="Future of Technology"
-        />
-
-        <section className="py-10 mt-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Core Features of Our Web3 Wallet Development Solutions
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  Comfygen’s Web3 wallet development services build crypto wallets to empower users with seamless, secure, and scalable digital asset management. Our <a href='https://www.comfygen.com/custom-blockchain-development-company' className='underline'>custom blockchain development solutions</a> integrate next-gen technologies that ensure interoperability, decentralization, and user control. Designed for startups and enterprises, our wallets combine AI-powered security, multi-chain compatibility, and intuitive UI/UX design to deliver an exceptional decentralized experience.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div key={title} className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
-                                  src={img}
-                                  className="object-cover"
-                                  width={35}
-                                  height={50}
-                                  alt={title}
-                                /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End Web3 Wallet Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Comfygen trusted <a href='https://www.comfygen.com/wallet-development-company' className='text-blue-500'>wallet development company</a>, follows a proven and transparent Web3 wallet app development process that ensures speed, security, and scalability. Our development process blends deep blockchain expertise with agile methodologies to deliver high-performance decentralized wallets for every business use case. From planning to post-launch support, every stage focuses on innovation, reliability, and user satisfaction.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={portfoliodata}
-            heading="Portfolio of Wallet Development Services"
-            description="Comfygen is a top-rated wallet development company that develops secure, scalable, and high-performance Web3 wallets that cater to various industries. Our portfolio highlights a custom crypto wallet development solution."
-          />
-        </section>
-
-
-        <SolutionSec
-          heading="Types of Web3 Wallets We Develop"
-          subheading="Comfygen offers a diverse range of Web3 wallet development solutions designed to meet the unique needs of modern decentralized ecosystems. Our Web3 wallets are built with advanced security protocols, seamless UI/UX, and interoperability across multiple blockchains. Whether you’re a startup, enterprise, or DeFi platform, our wallets ensure flexibility, scalability, and complete control over digital assets."
-          techData={technologyData}
-        />
-
-        <TechStack
-          customTechData={defaultTechData}
-          title="Tech Stack We Use for Web3 Wallet Development"
-          description="Comfygen top a top-rated Web3 wallet development company, we leverage an advanced Web3 technology stack to build secure, scalable, and high-performing decentralized wallet solutions. Our development process integrates the latest tools and frameworks to ensure interoperability, speed, and user-centric design. Each layer of our tech stack is optimized for blockchain efficiency, data integrity, and next-gen digital asset management."
-        />
-
-        <IndustriesServe
-          heading="Ecommerce App Development for Different Industries"
-          description="Every industry has its own workflows, customer behavior, and operational challenges. That’s why our ecommerce app development services are tailored to meet the specific needs of different business verticals, not forced into a one-size-fits-all solution."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Expert Web3 Wallet Developers"
-          text="Boost your business with Comfygen’s Web3 wallet development services. Our blockchain specialists build secure, scalable, and feature-rich wallets with multi-chain support, DeFi and NFT integration, and smart contract functionality."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Developed 50+ Web3 wallet solutions across industries",
-            "Assigned Project Consultant & Blockchain Architect",
-            "Strict NDA policies for data protection",
-            "Customized wallets aligned with your business goals",
-          ]}
-        />
-
-        <ClientTestimonials
-          heading="What Our Clients Say About Comfygen Web3 Wallet Development"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="" />
+      <Navbar />
+      <div className="overflow-hidden lg:pt-0 pt-16">
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+        <Milestones />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <Consultancy consultancyData={JSON_DATA.consultancyData} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <Emerging emerging={JSON_DATA.EmergingData} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <Solution techData={JSON_DATA.technologyData} />
+        <TechSection TechStack={JSON_DATA.TechStack} />
+        <IndustriesSection Industries={JSON_DATA.Industries} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <ClientStories />
+        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
       </div>
     </>

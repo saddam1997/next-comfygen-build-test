@@ -1,773 +1,247 @@
 {
-  "Solution": [
-    {
-      "num": "1",
-      "url": "/e-commerce-app-development",
-      "img": "https://www.comfygen.com/img/retail-and-ecommerce.webp",
-      "title": "E-Commerce  App Development"
-    },
-    {
-      "num": "2",
-      "url": "/healthcare-app-development",
-      "img": "https://www.comfygen.com/img/healthcare.svg",
-      "title": "Healthcare  App Development"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/logistics.svg",
-      "title": "Logistics  App Development"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/eduction.svg",
-      "title": "Education  App Development"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/transportation.svg",
-      "title": "Transportation  App Development"
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/social-networking.svg",
-      "title": "Social Networking  App Development"
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/traveland-hospitality.svg",
-      "title": "Hospitality  App Development"
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/construction.svg",
-      "title": "Construction  App Development"
-    },
-    {
-      "num": "9",
-      "url": "/game-development-company",
-      "img": "https://www.comfygen.com/img/gaming.svg",
-      "title": "Gaming  App Development"
-    },
-    {
-      "num": "10",
-      "url": "/sports-betting-app-development",
-      "img": "https://www.comfygen.com/img/sports.svg",
-      "title": "Sports Betting  App Development"
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/img/entertainment.svg",
-      "title": "Entertainment  App Development"
-    },
-    {
-      "num": "12",
-      "url": "/blockchain-development",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Blockchain  App Development"
-    },
-    {
-      "num": "13",
-      "url": "/social-media-app-development",
-      "img": "https://www.comfygen.com/img/social-media-app-development-company.webp",
-      "title": "Social Media App Development Company"
-    },
-    {
-      "num": "14",
-      "url": "/finance-app-development",
-      "img": "https://www.comfygen.com/img/finance-app-development-company.webp",
-      "title": "Finance App Development"
-    },
-    {
-      "num": "15",
-      "url": "/dating-app-development",
-      "img": "https://www.comfygen.com/img/dating-app-development-company.webp",
-      "title": "Dating App Development "
-    },
-    {
-      "num": "16",
-      "url": "/food-delivery-app-development",
-      "img": "https://www.comfygen.com/img/food-delivery-app-development-company.webp",
-      "title": "Food Delivery App Development"
-    },
-    {
-      "num": "17",
-      "name": "Delivery App Development",
-      "url": "/delivery-app-development"
-    }
-  ],
-
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Develop Custom Apps That Make Your Business Easier",
-      "desc": "Build custom mobile apps with Comfygen and make your business easier. As a reliable mobile app developer, we specialize in developing custom apps across various sectors that make sure your business meets its unique demands and challenges."
-    }
-  ],
-
-  "MobileSolution": {
-    "num": "1",
-    "head": " Mobile App Solution For Diffrent Industries",
-    "para": " It doesn’t matter under which niche your project falls, from startups to enterprises we have experience in delivering robust mobile application solutions for a wide range of clients across  multiple industries."
+  "Herosection": {
+    "heading": "Best Web Design Company in Jaipur",
+    "subhead": "We Build Websites That Win in Jaipur.",
+    "isHome": false,
+    "ptag": "Award-winning web design & development company in Jaipur crafting high-performance, SEO-ready websites for businesses across world. From startups to enterprises — we design digital experiences that convert.",
+    "ptag1": "",
+    "listItems": [
+      "Custom & Creative Website Design Solutions",
+      "Responsive, Mobile-First & User-Friendly Designs",
+      "UI/UX-Focused for Better Engagement & Conversions",
+      "End-to-End Design Support from Idea to Launch"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "white-label mobile app development company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/website/website-hero1.webp"
   },
-  "TechnoStack": [
-    {
-      "num": "1",
-      "head": "Technology Stack We’re Skilled In",
-      "para": " Our development team follows proven and vital strategies that we follow for a deft development process to make sure that our clients get their software solutions on estimated delivery time. Have a look at our development process model.",
-      "img": "https://www.comfygen.com/img/technical-stack.webp"
-    }
-  ],
-  "High": [
-    {
-      "number": "01",
-      "title": "Requirements Analysis",
-      "decs": "Let s get to know each other",
-      "decs1": "Identifying your needs",
-      "decs2": "Solving a problem"
-    },
-    {
-      "number": "02",
-      "title": " Consultation for app development",
-      "decs": "Competitors should be identified",
-      "decs1": "Establish goals and objectives",
-      "decs2": "Get your feedback"
-    },
-    {
-      "number": "03",
-      "title": "Designing & Wireframing",
-      "decs": "Structure of the blueprint",
-      "decs1": "Each screen should be wireframed",
-      "decs2": "The apps design"
-    },
-    {
-      "number": "04",
-      "title": "Developing",
-      "decs": "The apps coding",
-      "decs1": "Sections of the layout",
-      "decs2": "Id like your feedback"
-    },
-    {
-      "number": "05",
-      "title": "The testing process",
-      "decs": "Testing of applications",
-      "decs1": "Totally bug-free",
-      "decs2": "Obtain your final approval"
-    },
-    {
-      "number": "06",
-      "title": "The deployment process",
-      "decs": "Install the app on your server",
-      "decs1": "App Store deployment",
-      "decs2": "Users can download the app"
-    }
-  ],
-  "Planning": [
-    {
-      "num": "1",
-      "subhead": "Planning",
-      "head": " Our High end Mobile App Development Process"
-    }
-  ],
-  "NativeApp": {
-    "img": "https://www.comfygen.com/img/are-you-interested-in-creating-your-own-native-application.webp",
-    "head": " Are you interested in creating your own native application?",
-    "para": " Over 4400 Android and iOS-based applications have been developed by us. Let's turn your idea into a reality. We are a leading mobile app development company. Schedule your free consultation today",
-    "btn": "Get Free Quotation ",
-    "url": "/contact-us"
+  "ServicesData": {
+    "heading": "We Offer Affordable Website Design Services In Jaipur",
+    "description": "Comfygen is a top creative web design agency in Jaipur, offering a wide range of solutions to enhance your online presence. Our custom web design services are customized to meet your specific business needs, ensuring your website not only looks great but also functions perfectly.",
+    "services": [
+      {
+        "title": "Custom Website Design",
+        "subtitle": "",
+        "description": "As an affordable creative web design company in Jaipur, Comfygen delivers unique, custom website design solutions that align with your business goals. We focus on crafting intuitive, visually stunning websites that reflect your brand and attract your ideal audience.",
+        "features": [
+          "Tailored UI/UX for your business",
+          "SEO-optimized design for better rankings",
+          "Mobile-friendly and lightning-fast pages",
+          "Built for scalability and future upgrades"
+        ]
+      },
+      {
+        "title": "UI/UX Design Services",
+        "subtitle": "",
+        "description": "We’re a Creative Web Design Company focused on intuitive UI/UX. We design interactive, conversion-friendly experiences that improve customer engagement and satisfaction. Perfect for brands looking for modern, professional web solutions.",
+        "features": [
+          "Human-centered design approach",
+          "Interactive prototypes with user flows",
+          "Seamless navigation and clean layouts",
+          "High engagement & conversion-focused designs"
+        ]
+      },
+      {
+        "title": "Responsive Web Design",
+        "subtitle": "",
+        "description": "Our responsive web design company creates websites that adapt to any screen size — from mobile to desktop. We ensure your users enjoy a consistent, high-quality experience, regardless of the device they use.",
+        "features": [
+          "Fluid layouts for any screen size",
+          "Improved SEO & performance",
+          "Consistent experience across devices",
+          "Better loading speed and mobile usability"
+        ]
+      },
+      {
+        "title": "eCommerce Website Design",
+        "subtitle": "",
+        "description": "We are a top-rated <a class='underline font-semibold' href='https://www.comfygen.com/ecommerce' >Ecommerce Web Design Company</a> offering high-converting online stores with secure payment integration, modern product catalogs, and smooth user journeys. Perfect for small businesses & brands.",
+        "features": [
+          "Secure & scalable eCommerce solutions",
+          "Customized product catalogs",
+          "Smooth user journey & intuitive navigation",
+          "Integrated payment gateways & analytics"
+        ]
+      },
+      {
+        "title": "WordPress & CMS Website Design",
+        "subtitle": "",
+        "description": "As a professional WordPress web design company in Jaipur, we provide scalable WordPress and CMS websites that are easy to manage. Ideal for blogs, service websites, and dynamic content platforms. You get full control without any coding skills.",
+        "features": [
+          "WordPress, Webflow, Shopify & more",
+          "Drag-and-drop editing capabilities",
+          "Easy content updates",
+          "SEO-ready structure"
+        ]
+      },
+      {
+        "title": "Website Redesign Services",
+        "subtitle": "",
+        "description": "A Professional Web Design Company like Comfygen helps revamp outdated sites into modern, responsive platforms. Boost performance, improve design, and turn visitors into loyal customers with a full design refresh.",
+        "features": [
+          "Fresh new design based on analytics",
+          "Improved navigation & structure",
+          "Faster loading time",
+          "Mobile and SEO optimized"
+        ]
+      },
+      {
+        "title": "Landing Page Design",
+        "subtitle": "",
+        "description": "We are the Best local web design firm in Jaipur, India for high-converting landing pages. Perfect for marketing, ads, or lead generation campaigns — our landing pages are sleek, strategic, and results-driven.",
+        "features": [
+          "Conversion-focused design elements",
+          "A/B tested layouts and CTAs",
+          "Optimized for ads and campaigns",
+          "Seamless integration with CRM and forms"
+        ]
+      },
+      {
+        "title": "Website Support & Maintenance",
+        "subtitle": "",
+        "description": "As the best website design development services in Jaipur. We provide ongoing support and maintenance to ensure your website stays up-to-date, secure, and performing at its best, giving you peace of mind.",
+        "features": [
+          "Provide regular updates to keep your website secure.",
+          "Offer 24/7 support to address issues quickly.",
+          "Perform routine performance checks and optimizations.",
+          "Ensure data protection with backups and security checks.",
+          "Keep the website fresh with content updates."
+        ]
+      }
+    ]
   },
-  "Banefit": [
-    {
-      "num": "1",
-      "bg": "#F45F391A",
-      "title": "Expertise in conceptualizing",
-      "decs": "Expertise in conceptualizing and implementing about a hundred apps across a wide range of industries."
-    },
-    {
-      "num": "2",
-      "bg": "#6C54DE1A",
-      "title": "Certified and highly experienced",
-      "decs": "We have the best pool of certified and highly experienced Android, iOS, Hybrid, and React Native developers."
-    },
-    {
-      "num": "3",
-      "bg": "#F7F2E2",
-      "title": "We follow Agile Scrum",
-      "decs": "We follow Agile Scrum, Kanban, Feature Driven Development (FDD) and Test Driven Development (TDD) models to deliver high quality, on-time products.    "
-    },
-    {
-      "num": "4",
-      "bg": "#E1F4EC",
-      "title": "Tech Architect",
-      "decs": "Each project is led by a Tech Architect with at least 10 years of experience."
-    },
-    {
-      "num": "5",
-      "bg": "#F7E6F2",
-      "title": "Skilled resources    ",
-      "decs": "There are skilled resources on every project, including BAs, PMs, Tech Architects, UX experts, Devops experts, QA experts, and Digital Marketing experts."
-    },
-    {
-      "num": "6",
-      "bg": "#F7E7E8",
-      "title": "Complete transparency",
-      "decs": "For complete transparency and close involvement, effective reporting through in-house tools is essential."
-    },
-    {
-      "num": "7",
-      "bg": "#E6EDFC",
-      "title": "Implementation of results",
-      "decs": "Implementation of results-oriented development with the right design architecture, code reviews, unit testing, CI-CD, performance and security checks, scrum meetings, etc."
-    },
-    {
-      "num": "8",
-      "bg": "#E0F1FA",
-      "title": "A comprehensive set",
-      "decs": "A comprehensive set of documentation, including Software Requirement Specifications, Architectural Specifications, Sprint Plans, Test Plans, testing scenarios, worksheets, detailed reports, etc. "
-    },
-    {
-      "num": "9",
-      "bg": "#F8ECE2",
-      "title": "Ready to Use    ",
-      "decs": "Using our Ready-To-Use Off-The-Shelf solutions, we can deliver faster and with higher quality."
-    },
-    {
-      "num": "10",
-      "bg": "#82AB101A",
-      "title": "Performance and scalability",
-      "decs": "Performance and scalability are ensured by our robust internal architecture."
-    }
-  ],
-  "Development": [
-    {
-      "bg": "#F45F391A",
-      "number": "01",
-      "title": "Android Application Development"
-    },
-    {
-      "bg": "#F5EDFA",
-      "number": "02",
-      "title": "Ios Application Development"
-    },
-    {
-      "bg": "#E9F4FF",
-      "number": "03",
-      "title": "Hybrid Application Development"
-    },
-    {
-      "bg": "#F2F6E7",
-      "number": "04",
-      "title": "Cross-Platform App Development"
-    },
-    {
-      "bg": "#FEEFEB",
-      "number": "05",
-      "title": "Native App Development"
-    },
-    {
-      "bg": "#FFF5E5",
-      "number": "06",
-      "title": "React Native App Development"
-    },
-    {
-      "bg": "#F6F0FE",
-      "number": "07",
-      "title": "Progressive Web App Development"
-    },
-    {
-      "bg": "#F6F0FE",
-      "number": "08",
-      "title": "Lite App Development"
-    }
-  ],
-
-  "customTestimonials": [
-    {
-      "text": "Comfygen delivered a modern, responsive website that perfectly represents our brand. Their UI/UX approach significantly improved our user engagement and inquiries.",
-      "name": "Rahul Mehta",
-      "title": "India"
-    },
-    {
-      "text": "The team at Comfygen truly understands creative web design. From concept to launch, the process was smooth, transparent, and results-driven.",
-      "name": "Anjali Sharma",
-      "title": "India"
-    }
-
-
-
-   
-  ],
-
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "Can you redesign my existing website?",
-      "desc": "Yes, we specialize in redesigning websites to improve user experience, design aesthetics, and performance. Whether you need a complete overhaul or just a few updates, our team can help refresh your website to meet modern standards and enhance its functionality."
-    },
-    {
-      "num": "2",
-      "title": "How long does it take to design a website?",
-      "desc": "The timeline for website design depends on the complexity and requirements of your project. On average, a custom website design can take anywhere from 2 to 5 weeks, from research and planning to launch. We give priority to providing high-quality work while accepting project deadlines."
-    },
-    {
-      "num": "3",
-      "title": "Can you integrate e-commerce features into my website?",
-      "desc": "Absolutely! We can integrate e-commerce functionality like product catalogs, shopping carts, secure payment gateways, and order management systems. Whether you need a full-fledged online store or just basic e-commerce features, we’ve got you covered."
-    },
-    {
-      "num": "4",
-      "title": "Will my website be optimized for speed?",
-      "desc": "Yes, website speed is a top priority. We optimize images, use efficient coding practices, and implement caching techniques to ensure your website loads quickly. A fast website improves user experience and contributes to better SEO rankings."
-    },
-    {
-      "num": "5",
-      "title": "What kind of businesses do you work with?",
-      "desc": "We work with businesses of all sizes across various industries, including startups, small businesses, e-commerce stores, educational institutions, healthcare providers, and more. Our team customizes each website design to the unique needs and goals of your business."
-    },
-    {
-      "num": "6",
-      "title": "How do I get started with my website design project?",
-      "desc": "To get started, simply reach out to us through our contact form or give us a call. We’ll schedule a consultation to discuss your project needs, goals, and vision, and then provide you with a customized plan to bring your website to life."
-    }
-  ],
-  "AppService": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/mobile-app-consulting-services.webp",
-      "title": "Mobile Application Consulting",
-      "decs": "We provide <a class='text-blue-600 font-bold hover:underline' href='/ca/application-consulting-services'>custom mobile app consulting services</a> that guide through every stage of app development, from initial strategy to post-launch support. We help users make informed decisions about technology stacks, features, and scalability to make sure their mobile app aligns with business goals and meets market demands."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/mobile-app-design-services.webp",
-      "title": "Custom Mobile App Development",
-      "decs": "We create custom mobile applications designed to meet customers' business needs. Our scalable, secure mobile apps provide various use cases, including business tools, eCommerce app development platforms, and customer service solutions."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/native-app-development.webp",
-      "title": "iOS App Development",
-      "decs": "We develop high-performance, user-friendly <a class='text-blue-600 font-bold hover:underline' href='/ios-app-development'>iOS mobile applications</a> optimized for iPhones and iPads. We provide seamless experiences that engage users across all iOS devices by using the latest Apple technologies."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/hybrid-aap-development.webp",
-      "title": "Android App Development",
-      "decs": "Get the best <a class='text-blue-600 font-bold hover:underline' href='/android-app-development'> Android app development services</a> to create responsive and secure mobile apps customized to smartphones, tablets, and wearables devices. We provide the best mobile app development platform that makes sure the app works perfectly across a wide range of devices."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/progressive-web-app-development.webp",
-      "title": "Cross-Platform App Development",
-      "decs": "We develop mobile apps that work on both iOS and Android with a single codebase Using cross-platform frameworks like <a class='text-blue-600 font-bold hover:underline' href='/react-native-development'>React Native</a>  and <a class='text-blue-600 font-bold hover:underline' href='/flutter-development-company'> Flutter</a>. It reduces app development time and costs while expanding your mobile app’s reach."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/mobile-app-api-integration.webp",
-      "title": "App Design ",
-      "decs": "Our <a class='text-blue-600 font-bold hover:underline' href='/web-design'>UI/UX design services</a> create intuitive, visually appealing interfaces that enhance user engagement. We focus on providing perfect user experiences that make sure long-term customer maintenance and satisfaction."
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/img/application-testing-and-quality-assurance.webp",
-      "title": "App Maintenance and Support",
-      "decs": "We provide ongoing app maintenance and support to make sure the mobile app’s performance, security, and functionality remain top-notch. From troubleshooting to updates, we keep that customer's mobile app running smoothly post-launch."
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/img/mvp-app-development.webp",
-      "title": "Backend/API Development",
-      "decs": "We develop secure, scalable backend systems to support complex app functionalities, including data management, user verification, and API integration that ensure mobile apps can handle high user traffic and complex operations."
-    },
-    {
-      "num": "09",
-      "img": "https://www.comfygen.com/img/mobile-app-support-and-maintenance.webp",
-      "title": "dApp Development ",
-      "decs": "We specialize in <a href='/dapp-development-company' class='text-blue-600 font-bold hover:underline'>dApp development</a> that utilizes blockchain technology to develop secure, transparent, and scalable mobile app development solutions for industries like finance, healthcare, and more."
-    },
-    {
-      "num": "09",
-      "img": "https://www.comfygen.com/image/emerging-tech.webp",
-      "title": "Emerging Tech (AI/AR/VR, IoT, Blockchain Integration) ",
-      "decs": "Stay ahead of the curve with cutting-edge technology. Whether it’s AI-powered chatbots, AR/VR, IoT, or blockchain integration. We implement innovative tech to transform users' business."
-    }
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Mobile App Developer From India",
-      "desc": "Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers are knowledgeable and capable of building super-apps though. We adhere to the best and trending technical services to build robust apps, which have the caliber to beat existing market competition. We have helped dozens of companies yet to build a great impression in the marketplace with successful mobile app development.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "We build modern and future technical needs in mobile app development",
-    "Our IT Professionals are experts in working in all domains industry",
-    "We work on futuristic and unique features for user retention",
-    "Integration of third-party APIs with the latest tech involved",
-    "Agile Development Strategies and Project Methodologies",
-    "Futuristic Mobile app development solutions",
-    "Proven records with mind-blowing mobile app development projects"
-  ],
-  "Plateform": [
-    {
-      "num": "01",
-      "url": "/ios-app-development",
-      "img": "https://www.comfygen.com/img/ios-aap-development.webp",
-      "tittle": "iOS App Development",
-      "decs": "Working with iOS  app development services will offer many opportunities, and enable you to work with three devices at a time ‘iPAD app development, iPhone app development, and Apple Watch. Comfgen works for both, and we have dedicated IOS app developers to work with iOS app development leveraging many benefits."
-    },
-    {
-      "num": "02",
-      "url": "/android-app-development",
-      "img": "https://www.comfygen.com/img/android-app-development.webp",
-      "tittle": "Android App Development",
-      "decs": " Android OS app development will help in building many opportunities, but also possess various challenges. We assure that whatever the challenges occur during development, we handle them all for the agile development process, and help your app to rank at top.  "
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/cross-plateform-aap-development.webp",
-      "tittle": "Cross-Platform App Development",
-      "decs": "We manage cross-platform methodologies and technologies, which helps in reducing the launching time, as well as speed up the Mobile app development process. We believe in maintaining and satisfying the user; therefore our approach is very simple to reach every user in any corner through any OS possible. Our team of UI/UX Designers will build super fantastic engagement features to sustain customers."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/wearables-devices-app-development.webp",
-      "tittle": "Wearables Devices App Development",
-      "decs": "We can build your companion apps with wearable devices, which are integrated with smart devices. Our creative minds have the technologies and methodologies in mind, they work with latest and trending techs, strategize plans, and build an app worth experiencing with your wearable device."
-    }
-  ],
-  "AppProcess": [
-    {
-      "num": "01",
-      "title": "Conceptualization",
-      "decs": "First we believe in knowing about our own product. Our agenda is very clear to understand and learn what clients want to build, and later jump into the marketplace to survey competitors to learn about their methods and strategies of success. Product Discovery and Product Research, these two things are significant help in knowing what we need to build."
-    },
-    {
-      "num": "02",
-      "title": "Design ",
-      "decs": "Here our expert minds will use their creative side for UI/UX. We will do wireframing, prototyping, and add engaging aspects to make the users sustain the application. The designers believe in branding for your business or product through its engaging designs, and here you have that with us."
-    },
-    {
-      "num": "03",
-      "title": "Development",
-      "decs": "Now comes the coding, programming languages, adding features, and working on its functionalities. The mobile app developers will write their codes, work on application’s front-end and back-end, and also add required & additional features to make the app work according to the current marketplace standards."
-    },
-    {
-      "num": "04",
-      "title": "Quality Assurance",
-      "decs": "When the mobile application is built completely, afterwards the testers will do quality assurance to know if there are any bugs, technical technical glitches, or any other issue occurred. This is an important stage, where the team will identify issues and resolve them for best possible app delivery. "
-    },
-    {
-      "num": "05",
-      "title": "Deployment",
-      "decs": "You must have decided on a dedicated mobile app deployment platform, either iOS AppStore or Android PlayStore to launch the app. Once the issues are resolved, then developers are supposed to launch your application on the dedicated mobile app deployment platform to market it forward."
-    },
-    {
-      "num": "05",
-      "title": "Support and Maintenance",
-      "decs": "We are responsible for the post-deployment services, which includes support and maintenance after launch. Our team of experts will alter applications based on the market standards and users needs. We will add on more features, change the algorithm, remove bugs, work on the feedback received, and serve more possible post deployment to make the app worth establishing in the marketplace. "
-    }
-  ],
-  "TechTrends": [
-    {
-      "num": "1",
-      "title": "Artificial Intelligence (AI) and Machine Learning (ML)",
-      "stack": "We integrate AI and ML in your mobile applications; which is going to automate many operations; like testing and debugging the glitches inside. Also, get ready to improve the app’s performance and gain maximum user retention with the ultimate user experience. "
-    },
-    {
-      "num": "2",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR) ",
-      "stack": "AR enables the users to try the product or service virtually before finalizing the deal. Whereas, VR will transport the users into a virtual world to gain an immersive experience. This technology will make your app look futuristic, in which the users will pay attention and engage more."
-    },
-    {
-      "num": "3",
-      "title": "5G Technology",
-      "stack": "Build your mobile application enabled with 5G technology, which helps it to process quicker, provide the ultimate user experience, and establish some efficiency among users."
-    },
-    {
-      "num": "4",
-      "title": "Big Data",
-      "stack": "We utilize the new and latest modernized database; such as MongoDB, Cassandra, and Hadoop. It helps in deploying huge data on the cloud, reducing the cost and improving the performance of the application. "
-    },
-    {
-      "num": "5",
-      "title": "Blockchain Integration",
-      "stack": "We assure you that integrating blockchain into your application leads to building your app as the most competitive one in the marketplace afterward. The decentralized applications enable the users, as well as businesses to gain transparency, immutability, more security, helping every transaction to be tracked & safe, and much more."
-    },
-    {
-      "num": "6",
-      "title": "Internet of Things (IoT)",
-      "stack": "We also specialize in building connected applications with your smart devices. We embrace trending solutions, technologies, and ideations. Therefore it is our priority to create something trending to provide the best solutions and gain our own values among the clientele base. "
-    }
-  ],
-  "VariousDomains": [
-    {
-      "num": "01",
-      "title": "Fintech App Development",
-      "decs": "From making money transactions to enterprise-level financial consulting, we can build a fintech application providing all kinds of financial services to users. No matter whether you want budgeting or finance settlements, our apps can do all for you. "
-    },
-    {
-      "num": "02",
-      "title": "Retail & eCommerce App Development",
-      "decs": "We can develop a dedicated online retail store or a full-fledged eCommerce mobile app platform for the users, where they can conveniently shop everything with super smooth navigation and ultimate user experience."
-    },
-    {
-      "num": "03",
-      "title": "Education App Development",
-      "decs": "Mobile applications are not only for entertainment, but they can help for various purposes; such as studying. These can help in keeping track of assignments, educating about subjects, attending online classes, and more. We develop all kinds of education apps; you say it and we make it assured."
-    },
-    {
-      "num": "04",
-      "title": "Healthcare App Development",
-      "decs": "You might have noticed how the healthcare industry is gaining popularity in the mobile app development stream. We can build applications for you, where patients can track their health goals, set reminders for medicines, and gain possible medicinal information. We can build for you any type of healthcare application."
-    }
-  ],
-  "Why": {
-    "title": "Why Choose Comfygen for Mobile App Development Services? ",
-    "decs": "We understand that promising words are not enough to fetch clients' faith in our mobile app development services, especially in a vibrant market like Jaipur, India. Still, we have something to say that proves Comfygen will stand for clients' application standards and beat the market competitions with our agile developments. Our dedication to excellence extends to clients in Jaipur, India, as we strive to provide top-notch mobile app development solutions that meet and exceed industry standards. "
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why We Are the Best Web Designing Company in Jaipur",
+    "description1": "Comfygen stands out as a leading web designing company in Jaipur by combining creativity, strategy, and modern technology. We don’t just design websites — we build digital experiences that are visually stunning, user-centric, and built to perform.",
+    "description2": "Our team of expert UI/UX designers and front-end developers deliver high-quality, responsive web designs that adapt beautifully to every screen. Whether you're a startup, SME, or enterprise, we create custom web",
+    "description3": "solutions that align with your brand, engage users, and drive business growth.",
+    "description4": "With 300+ websites delivered across industries like eCommerce, healthcare, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ca/education-app-development-company' >education</a>, travel, and fintech, we’ve earned the trust of clients across India and globally.",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/website/website-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
   },
-  "Choose": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/security-is-our-key.webp",
-      "title": "Security is our Key",
-      "decs": "We work on General Data Protection Regulation (GDPR), Network Information System Regulations, 114 best practices control, and Biannual External Security Audits. It is our most important priority to secure clients somehow, so that they can uniquely establish their app."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/transparency-what-makes-us-stand.webp",
-      "title": "Transparency What Makes Us Stand",
-      "decs": "We have learnt one thing from our experience, which is to be “Transparent” with clients. The clients proactively follow documentations, want to learn about productivity, high quality solution processing, and more. Our company and experts respect it, and follow the same transparency to gain their trust and more value in the market."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/cost-effective-solution.webp",
-      "title": "Cost Effective Solutions",
-      "decs": "Our mobile app solutions are cost-effective. Do you want to know how? The reason is our knowledge and experience. We have the mind, who knows what is best for the app and business, what is beneficial, what is right, what is just an extra but not worth, and more. Their extensive knowledge is not a sign of extra expense, but it is a sign to have an extraordinary application in right costing.  "
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/always-involved-with-new-tech-trends.webp",
-      "title": "Always Involved with New Tech-Trends",
-      "decs": "You might have noticed nowadays that whoever is upgrading is leading the market. Same goes in all the domains / industries. If you want to lead, you have to upgrade to something new. We have the power, and grant the leverages to clients to meet current unique and latest tech-trends. Our super efficient minds are not only innovative, but adaptable to new things; which we imply in our projects to build great applications."
-    }
-  ],
-
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/img/powe-of-one-news.webp",
-      "title": "News Application",
-      "description": "Power of One News is a dynamic and innovative news website designed to revolutionize the way individuals consume and interact with news content.",
-      "link": "https://www.comfygen.com/portfolio/power-of-one-news"
-    },
-    {
-      "image": "https://www.comfygen.com/img/footer-e-commerce.webp",
-      "title": "E-Commerce",
-      "description": "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products.",
-      "link": "https://www.comfygen.com/portfolio/e-commerce"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/website/astrology.webp",
-      "title": "Love Horoscope App",
-      "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
-      "link": "https://www.comfygen.com/astrology-app-development"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/website/tutor.webp",
-      "title": "On-Demand Tutor Booking App",
-      "description": "Our client wanted a real-time tutor booking app development solution that efficiently connects students with qualified tutors nearby. As a leading tutor mobile app development company, we built an AI-powered, user-friendly platform that ensures seamless tutor-student interactions through automated scheduling, secure payments, and live video sessions.",
-      "link": "https://www.comfygen.com/portfolio/on-demand-tutor-booking-app"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/website/dating.webp",
-      "title": "Casual Dating App",
-      "description": "Our client aimed to create a dynamic Casual Dating App that fosters fun, no-pressure connections while ensuring security and seamless interactions. As a top-rated dating app development company, we built a feature-rich platform with an intuitive interface, AI-driven suggestions, and real-time messaging to enhance user experience and engagement.",
-      "link": "https://www.comfygen.com/portfolio/casual-dating-app"
-    }
-  ],
-
-  "FutureDriven": [
-    {
-      "title": "Increased Revenue Streams",
-      "desc": "By offering wallet services, businesses can generate new revenue models, including transaction fees, staking fees, and premium features."
-    },
-    {
-      "title": "User Retention & Engagement",
-      "desc": "Crypto wallets provide a platform for continuous user interaction, promoting engagement through features like transaction history, portfolio tracking, and social sharing."
-    },
-    {
-      "title": "Improved Brand Loyalty",
-      "desc": "By delivering secure, reliable, and innovative wallet solutions, businesses build trust with users, encouraging long-term loyalty."
-    },
-    {
-      "title": "Access to Global Markets",
-      "desc": "Cryptocurrency wallets offer cross-border transaction capabilities, giving businesses access to international markets and reducing transaction barriers."
-    },
-    {
-      "title": "Competitive Advantage",
-      "desc": "Offering advanced wallet solutions can position your business as a leader in the evolving crypto space, setting you apart from competitors."
-    },
-    {
-      "title": "Increased Investor Confidence",
-      "desc": "A secure, feature-rich crypto wallet demonstrates a commitment to user safety, making it more likely to attract investors and partners."
-    }
-  ],
-
-  "servicesData": [
-    {
-      "title": "Custom Website Design",
-      "subtitle": "",
-      "description": "As an affordable creative web design company in Jaipur, Comfygen delivers unique, custom website design solutions that align with your business goals. We focus on crafting intuitive, visually stunning websites that reflect your brand and attract your ideal audience.",
-      "features": [
-        "Tailored UI/UX for your business",
-        "SEO-optimized design for better rankings",
-        "Mobile-friendly and lightning-fast pages",
-        "Built for scalability and future upgrades"
-      ]
-    },
-    {
-      "title": "UI/UX Design Services",
-      "subtitle": "",
-      "description": "We’re a Creative Web Design Company focused on intuitive UI/UX. We design interactive, conversion-friendly experiences that improve customer engagement and satisfaction. Perfect for brands looking for modern, professional web solutions.",
-      "features": [
-        "Human-centered design approach",
-        "Interactive prototypes with user flows",
-        "Seamless navigation and clean layouts",
-        "High engagement & conversion-focused designs"
-      ]
-    },
-    {
-      "title": "Responsive Web Design",
-      "subtitle": "",
-      "description": "Our responsive web design company creates websites that adapt to any screen size — from mobile to desktop. We ensure your users enjoy a consistent, high-quality experience, regardless of the device they use.",
-      "features": [
-        "Fluid layouts for any screen size",
-        "Improved SEO & performance",
-        "Consistent experience across devices",
-        "Better loading speed and mobile usability"
-      ]
-    },
-    {
-      "title": "eCommerce Website Design",
-      "subtitle": "",
-      "description": "We are a top-rated <a class='underline font-semibold' href='https://www.comfygen.com/ecommerce' >Ecommerce Web Design Company</a> offering high-converting online stores with secure payment integration, modern product catalogs, and smooth user journeys. Perfect for small businesses & brands.",
-      "features": [
-        "Secure & scalable eCommerce solutions",
-        "Customized product catalogs",
-        "Smooth user journey & intuitive navigation",
-        "Integrated payment gateways & analytics"
-      ]
-    },
-    {
-      "title": "WordPress & CMS Website Design",
-      "subtitle": "",
-      "description": "As a professional WordPress web design company in Jaipur, we provide scalable WordPress and CMS websites that are easy to manage. Ideal for blogs, service websites, and dynamic content platforms. You get full control without any coding skills.",
-      "features": [
-        "WordPress, Webflow, Shopify & more",
-        "Drag-and-drop editing capabilities",
-        "Easy content updates",
-        "SEO-ready structure"
-      ]
-    },
-    {
-      "title": "Website Redesign Services",
-      "subtitle": "",
-      "description": "A Professional Web Design Company like Comfygen helps revamp outdated sites into modern, responsive platforms. Boost performance, improve design, and turn visitors into loyal customers with a full design refresh.",
-      "features": [
-        "Fresh new design based on analytics",
-        "Improved navigation & structure",
-        "Faster loading time",
-        "Mobile and SEO optimized"
-      ]
-    },
-    {
-      "title": "Landing Page Design",
-      "subtitle": "",
-      "description": "We are the Best local web design firm in Jaipur, India for high-converting landing pages. Perfect for marketing, ads, or lead generation campaigns — our landing pages are sleek, strategic, and results-driven.",
-      "features": [
-        "Conversion-focused design elements",
-        "A/B tested layouts and CTAs",
-        "Optimized for ads and campaigns",
-        "Seamless integration with CRM and forms"
-      ]
-    },
-    {
-      "title": "Website Support & Maintenance",
-      "subtitle": "",
-      "description": "As the best website design development services in Jaipur. We provide ongoing support and maintenance to ensure your website stays up-to-date, secure, and performing at its best, giving you peace of mind.",
-      "features": [
-        "Provide regular updates to keep your website secure.",
-        "Offer 24/7 support to address issues quickly.",
-        "Perform routine performance checks and optimizations.",
-        "Ensure data protection with backups and security checks.",
-        "Keep the website fresh with content updates."
-      ]
-    }
-  ],
-  "Services": [
-    {
-      "title": "Patient and Hospital Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Custom healthcare mobile applications improve patient management and communication. They enable hospitals to streamline doctor appointment scheduling, access patient records, and increase telemedicine app development services."
-    },
-    {
-      "title": "Mobile Banking, Billing Apps, Wallets",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Banking and billing apps provide secure and efficient financial transactions. Also, simplify payment processing, enhance the user experience, and provide real-time transaction tracking, making financial management hassle-free for users."
-    },
-    {
-      "title": "Telehealth Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Telehealth applications are important in today's healthcare environment. They facilitate remote consultations, medicine management, and health tracking that enable healthcare providers to provide telehealth app development services effectively while ensuring patients' benefit."
-    },
-    {
-      "title": "News Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Stay informed with custom news applications that provide real-time updates, articles, and multimedia content. These mobile apps provide a personalized news experience that makes sure users receive relevant information at their fingertips."
-    },
-    {
-      "title": "Messaging and VoIP Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Communication is key in every business. Messaging and VoIP applications provide secure messaging, voice, and video call functionalities that make it easy for teams and clients to stay connected and collaborate easily."
-    },
-    {
-      "title": "eCommerce Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Transform your market experience with custom eCommerce applications that provide a user-friendly interface, secure payment gateways, and advanced inventory management."
-    },
-    {
-      "title": "Field Service and Mobile BI",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Field service apps improve operational efficiency by authorizing real-time communication, task management, and reporting."
-    },
-    {
-      "title": "Booking and Ticketing Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "From travel to events, we develop booking and ticketing applications. These apps enhance the user experience by offering perfect navigation, secure payments, and instant confirmation."
-    },
-    {
-      "title": "Investment Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Develop your custom investment applications. It helps users manage their portfolios, track market trends, and make informed decisions."
-    },
-    {
-      "title": "Dating Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Develop a dating app with us. We develop attractive dating applications that facilitate meaningful connections."
-    },
-    {
-      "title": "Insurance Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "Custom insurance applications streamline policy management, claim processing, and customer service."
-    },
-    {
-      "title": "IPTV and SVOD Apps",
-      "subtitle": "All Service And Solutions At One Place",
-      "decs": "IPTV and SVOD mobile applications provide seamless streaming experiences that enable users to access their favorite shows and movies anytime, anywhere."
-    }
-  ],
-
+  "Portfoliodata": {
+    "heading": "Our Portfolio – Websites That Speak for Themselves",
+    "description": "At Comfygen, we take pride in crafting high-performing and visually appealing websites for various industries. As a trusted UI/UX  web design and development company, we have delivered custom, responsive, and SEO-optimized websites that help brands grow faster and engage better. Take a look at some of our latest work.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/img/powe-of-one-news.webp",
+        "title": "News Application",
+        "description": "Power of One News is a dynamic and innovative news website designed to revolutionize the way individuals consume and interact with news content.",
+        "link": "https://www.comfygen.com/portfolio/power-of-one-news"
+      },
+      {
+        "image": "https://www.comfygen.com/img/footer-e-commerce.webp",
+        "title": "E-Commerce",
+        "description": "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products.",
+        "link": "https://www.comfygen.com/portfolio/e-commerce"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/website/astrology.webp",
+        "title": "Love Horoscope App",
+        "description": "A personalized love horoscope app development solution that provides daily, weekly, and monthly love predictions based on zodiac compatibility. Integrated with AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features, this app enhances the love and relationship experience for users.",
+        "link": "https://www.comfygen.com/astrology-app-development"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/website/tutor.webp",
+        "title": "On-Demand Tutor Booking App",
+        "description": "Our client wanted a real-time tutor booking app development solution that efficiently connects students with qualified tutors nearby. As a leading tutor mobile app development company, we built an AI-powered, user-friendly platform that ensures seamless tutor-student interactions through automated scheduling, secure payments, and live video sessions.",
+        "link": "https://www.comfygen.com/portfolio/on-demand-tutor-booking-app"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/website/dating.webp",
+        "title": "Casual Dating App",
+        "description": "Our client aimed to create a dynamic Casual Dating App that fosters fun, no-pressure connections while ensuring security and seamless interactions. As a top-rated dating app development company, we built a feature-rich platform with an intuitive interface, AI-driven suggestions, and real-time messaging to enhance user experience and engagement.",
+        "link": "https://www.comfygen.com/portfolio/casual-dating-app"
+      }
+    ]
+  },
+  "technologyData": {
+    "heading": "Experience Across a Wide Variety of Industries",
+    "subheading": " We are a leading Web Design agency in India, delivering custom websites for businesses across industries with creativity, speed, and precision.",
+    "tech": [
+      {
+        "img": null,
+        "title": "Healthcare Web Design",
+        "desc": "We build HIPAA-compliant, responsive <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/healthcare-app-development' >healthcare</a> websites for hospitals, clinics, and health startups—ensuring a smooth patient experience, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/doctor-appointment-app-development'>appointment booking</a>, and trust-building digital presence."
+      },
+      {
+        "img": null,
+        "title": "eCommerce Web Design",
+        "desc": "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-commerce-app-development' >eCommerce</a> websites deliver a seamless shopping experience with product filtering, cart optimization, and secure checkout. Ideal for growing online stores and retail brands."
+      },
+      {
+        "img": null,
+        "title": "Real Estate Web Design",
+        "desc": "We design powerful real estate websites with property listings, map integration, and lead capture features—perfect for brokers, developers, and real estate agents."
+      },
+      {
+        "img": null,
+        "title": "Education Web Design",
+        "desc": "Custom <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/e-learning-app-development' >education websites</a> for schools, institutes, and edtech startups. We focus on content delivery, course integration, and student engagement with modern UI/UX."
+      },
+      {
+        "img": null,
+        "title": "Travel Web Design",
+        "desc": "Responsive websites for travel agencies, tour operators, and booking platforms. We create user-friendly layouts with itineraries, booking engines, and destination guides."
+      },
+      {
+        "img": null,
+        "title": "Finance Web Design",
+        "desc": "Scalable and secure websites for financial institutions, <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/finance-app-development' >fintech</a> startups, and consultants. We emphasize trust, performance, and compliance-driven UI/UX for your finance business."
+      }
+    ]
+  },
+  "CallToAction": {
+    "heading": "Ready to Build a Stunning Website?",
+    "text": "Partner with a leading web design company to grow your digital presence.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "ProcessData": {
+    "heading": "How We Approach the Web Design Process",
+    "description": "As a top website design companies in Jaipur, India, experts in providing cutting-edge web design services in Jaipur, India. We follow a systematic design process to ensure every website we create is not only visually stunning but also highly functional and aligned with the user’s business goals. Here’s how we approach every project",
+    "Process": [
+      {
+        "title": "Research and Discover",
+        "description": "We start by understanding the user’s business, audience, and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-development' >website development</a> industry. Our skilled website designing team conducts in-depth market research to collect insights, study competitors, and define your goals. It ensures that we create a website that meets your needs and stands out in your market."
+      },
+      {
+        "title": "Planning and Strategy",
+        "description": "Once the research is complete, we develop a strategic plan that aligns with the user’s business objectives. We define the project scope, timeline, and key deliverables to ensure we stay on track throughout the design process."
+      },
+      {
+        "title": "Wireframing and Prototyping",
+        "description": "A web design company near me creates wireframes to outline the website’s structure, focusing on layout and functionality. Prototypes are built to visualize the user journey and demonstrate how the website will interact, providing a clear roadmap for design."
+      },
+      {
+        "title": "Visual Design",
+        "description": "Our dedicated website design team starts creating the visual aesthetics, ensuring that the website’s design is consistent with the user’s brand identity. We focus on creating an attractive and engaging user interface that promotes a perfect experience and drives conversions."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "We ensure that the customer’s website is fully responsive, meaning it looks great and functions perfectly on all devices and screen sizes. This step guarantees that the customer’s website provides a smooth experience, whether viewed on desktops, tablets, or smartphones."
+      },
+      {
+        "title": "Feedback and Revision",
+        "description": "We value client input and incorporate feedback at every step of the website design process. After presenting the initial web design, we refine and revise it based on your feedback to ensure the final result exceeds the customer’s expectations."
+      },
+      {
+        "title": "Final Delivery",
+        "description": "Once the website design is approved and polished, we prepare for the final delivery. The client’s website will be fully optimized, tested, and ready to go live, ensuring that all functionalities are in place, and the website design aligns perfectly with the client’s vision."
+      }
+    ]
+  },
+  "TechStack": {
+    "title": "Technologies We Use for Website Design",
+    "description": "Comfygen leverages the latest and most advanced technologies to deliver high-quality web solutions that meet your business needs. Our team of experts is proficient in a wide range of technologies, ensuring that we can provide the best tools and platforms for your project. Here’s a look at some of the key technologies we use",
+    "customTechData": []
+  },
   "pageData": {
     "title": "Why Choose Our Website Design Services for Your Business Success?",
     "description": "Comfygen stands out as the best responsive website design company in Jaipur, India, providing high-quality web design and development services customized to your business needs. Why we’re the best choice for your project",
@@ -808,5 +282,183 @@
         "description": "Our web design and development company provides exceptional support throughout the project and beyond. From initial consultation to post-launch maintenance, we’re here to assist you every step of the way."
       }
     ]
-  }
+  },
+  "HireDeveloper": {
+    "heading": "Hire Web Designer In Jaipur",
+    "text": "Looking to create a user-friendly website that stands out in the digital world? Hire our top website UI/UX designer in Jaipur to bring your vision to life. As a custom web design company in Jaipur, India With years of experience and a passion for innovation. Our web designers specialize in creating visually appealing, responsive, and high-performing websites customized to user’s business needs.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Custom Website Design Solutions",
+      "Responsive Designs",
+      "SEO-Friendly Web Design",
+      "Cost-Effective Services",
+      "Web Design Studio",
+      "Timely Delivery"
+    ]
+  },
+  "customTestimonials": [
+    {
+      "text": "Comfygen delivered a modern, responsive website that perfectly represents our brand. Their UI/UX approach significantly improved our user engagement and inquiries.",
+      "name": "Rahul Mehta",
+      "title": "India"
+    },
+    {
+      "text": "The team at Comfygen truly understands creative web design. From concept to launch, the process was smooth, transparent, and results-driven.",
+      "name": "Anjali Sharma",
+      "title": "India"
+    }
+  ],
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "Can you redesign my existing website?",
+      "desc": "Yes, we specialize in redesigning websites to improve user experience, design aesthetics, and performance. Whether you need a complete overhaul or just a few updates, our team can help refresh your website to meet modern standards and enhance its functionality."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to design a website?",
+      "desc": "The timeline for website design depends on the complexity and requirements of your project. On average, a custom website design can take anywhere from 2 to 5 weeks, from research and planning to launch. We give priority to providing high-quality work while accepting project deadlines."
+    },
+    {
+      "num": "3",
+      "title": "Can you integrate e-commerce features into my website?",
+      "desc": "Absolutely! We can integrate e-commerce functionality like product catalogs, shopping carts, secure payment gateways, and order management systems. Whether you need a full-fledged online store or just basic e-commerce features, we’ve got you covered."
+    },
+    {
+      "num": "4",
+      "title": "Will my website be optimized for speed?",
+      "desc": "Yes, website speed is a top priority. We optimize images, use efficient coding practices, and implement caching techniques to ensure your website loads quickly. A fast website improves user experience and contributes to better SEO rankings."
+    },
+    {
+      "num": "5",
+      "title": "What kind of businesses do you work with?",
+      "desc": "We work with businesses of all sizes across various industries, including startups, small businesses, e-commerce stores, educational institutions, healthcare providers, and more. Our team customizes each website design to the unique needs and goals of your business."
+    },
+    {
+      "num": "6",
+      "title": "How do I get started with my website design project?",
+      "desc": "To get started, simply reach out to us through our contact form or give us a call. We’ll schedule a consultation to discuss your project needs, goals, and vision, and then provide you with a customized plan to bring your website to life."
+    }
+  ],
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Professional Web Design Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a professional web design company offering creative, scalable, and mobile-friendly websites to startups, brands, and enterprises. 100% client satisfaction guaranteed.",
+      "url": "https://www.comfygen.com/web-design",
+      "mainEntityOfPage": "https://www.comfygen.com/web-design",
+      "areaServed": "Global",
+      "serviceType": [
+        "Ecommerce Web Design Service",
+        "WordPress Web Design Service",
+        "Corporate Website Design",
+        "Custom Website Design",
+        "UI/UX Design Services",
+        "Responsive Web Design Service",
+        "Website Redesign Services",
+        "Landing Page Design Services",
+        "B2B Web Design Services"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Affordable Custom Web Design Services",
+      "image": "https://www.comfygen.com/comfygen-images/website/website-about.webp",
+      "description": "Looking for an affordable web design company? Comfygen builds responsive, SEO-friendly websites tailored for businesses across industries. Get a quote today!",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "476"
+      }
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Web Design Company",
+          "item": "https://www.comfygen.com/web-design"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you redesign my existing website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we specialize in redesigning websites to improve user experience, design aesthetics, and performance. Whether you need a complete overhaul or just a few updates, our team can help refresh your website to meet modern standards and enhance its functionality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to design a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The timeline for website design depends on the complexity and requirements of your project. On average, a custom website design can take anywhere from 2 to 5 weeks, from research and planning to launch. We give priority to providing high-quality work while accepting project deadlines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you integrate e-commerce features into my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We can integrate e-commerce functionality like product catalogs, shopping carts, secure payment gateways, and order management systems. Whether you need a full-fledged online store or just basic e-commerce features, we’ve got you covered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my website be optimized for speed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, website speed is a top priority. We optimize images, use efficient coding practices, and implement caching techniques to ensure your website loads quickly. A fast website improves user experience and contributes to better SEO rankings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of businesses do you work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We work with businesses of all sizes across various industries, including startups, small businesses, e-commerce stores, educational institutions, healthcare providers, and more. Our team customizes each website design to the unique needs and goals of your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started with my website design project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To get started, simply reach out to us through our contact form or give us a call. We’ll schedule a consultation to discuss your project needs, goals, and vision, and then provide you with a customized plan to bring your website to life."
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -123,14 +123,14 @@ export default function HeroSectionForAllPages(props: any) {
             </button>
           </div>
         </div>
-        <div className="w-full lg:flex justify-end items-end hidden">
+        {/* <div className="w-full lg:flex justify-end items-end hidden">
           <Image
             src={props.img}
             alt={props.img}
             width={props.Width}
             height={props.Height}
           />
-        </div>
+        </div> */}
         <div>
           {props.talkToExpertModal && (
             <>
