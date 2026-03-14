@@ -339,19 +339,7 @@ export default function Ecommerce(props) {
       ]
 
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Custom eWallet App Development Services",
-      "image": "Hero section image",
-      "description": "Build your custom eWallet app with Comfygen — trusted fintech app developers delivering secure, compliant, and scalable digital wallet solutions for startups and enterprises worldwide.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "140"
-      }
-    },
+
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -514,33 +502,7 @@ export default function Ecommerce(props) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-og-image.webp" />
         <meta property="og:image:alt" content="eWallet App Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "eWallet App Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/ewallet-app-development",
-              description:
-                "Comfygen is a top eWallet app development company offering secure and scalable digital wallet solutions. We build PCI-DSS compliant, UPI/KYC integrated wallets for fintech, retail, and enterprise sectors.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/ewallet-app-development/ewallet-app-development-og-image.webp"
-            })
-          }}
-        />
+  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}

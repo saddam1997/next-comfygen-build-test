@@ -219,33 +219,7 @@ export default function Ecommerce(props) {
           content="AI Crypto Exchange Development by Comfygen"
         />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "AI-Powered Crypto Exchange Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/ai-crypto-exchange-development",
-              description:
-                "Comfygen is a top AI crypto exchange development company offering secure, scalable, and intelligent crypto trading platforms. Leverage AI trading bots, predictive analytics, and blockchain security.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/ai-crypto-exchange/ai-crypto-exchange-og.webp"
-            })
-          }}
-        />
+    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}

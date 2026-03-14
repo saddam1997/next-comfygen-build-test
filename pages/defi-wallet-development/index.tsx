@@ -150,19 +150,7 @@ export default function Ecommerce(props) {
 
   const jsonLdData = [
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "DeFi Wallet Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/defi-wallet-development/defi_wallet_development_company_hero.webp",
-      "description": "The best DeFi wallet development services, Comfygen builds secure, scalable, and customizable crypto wallets with advanced features like multi-chain support, NFT integration, and enterprise-grade security.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "145"
-      }
-    }
+
     ,
     {
       "@context": "https://schema.org",

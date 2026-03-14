@@ -275,19 +275,7 @@ export default function Mobile(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Education App Development Company",
-      "image": "https://www.comfygen.com/image/about-us-image.webp",
-      "description": "Education app development company in Canada offering custom eLearning, LMS, and digital education solutions to build secure, scalable, and engaging learning apps.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "286"
-      }
-    },
+
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

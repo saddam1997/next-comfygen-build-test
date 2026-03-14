@@ -296,9 +296,6 @@ export default function ClinicalApp(props: any) {
 
   const jsonLdData = [
   
-
-
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -349,21 +346,6 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Multi-Delivery App Development Services | Best App Company",
-      image:
-        "https://www.comfygen.com/comfygen-images/delivery-app-development/about2.webp",
-      description:
-        "Launch powerful multi-delivery apps with Comfygen. As a trusted delivery app development firm, we provide end-to-end app solutions for food, grocery, medicine, parcel & more.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "560",
-      },
-    },
 
     {
       "@context": "https://schema.org/",

@@ -508,24 +508,7 @@
       "@id": "https://www.comfygen.com/blockchain-development"
     }
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Best Blockchain Development Company in India | Comfygen Technologies",
-    "image": "https://www.comfygen.com/assets/images/blockchain-development.jpg",
-    "description":
-      "Looking for the best blockchain development company in India? Comfygen delivers custom blockchain development solutions, smart contract development, and blockchain app development services.",
-    "brand": {
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1124"
-    }
-  },
+
 
   {
   "@context": "https://schema.org/", 

@@ -158,19 +158,7 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Cardano Blockchain Development | Smart Contracts, dApps & Token Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/cardano-blockchain-development-company-about-img.webp",
-      "description": "Comfygen delivers secure, scalable, and feature-rich Cardano Blockchain Development services, including smart contracts, dApps, token creation, NFT integration, and enterprise blockchain solutions.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "245"
-      }
-    }
+ 
     ,
     {
       "@context": "https://schema.org",

@@ -96,23 +96,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import NewSection from "../Newcomponet/comman/NewSection"
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TrendsSection from "../Newcomponet/SectionCompoent/TrendsSection";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import CardGrid from "../Newcomponet/SectionCompoent/CardGrid";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import CryptoTradingList from "../Newcomponet/SectionCompoent/CryptoTradingSection";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import CardListMinimal from "../Newcomponet/SectionCompoent/CardListMinimal";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 
 import {
@@ -293,20 +277,7 @@ export default function Ecommerce(props: any) {
     },
  
   
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Crypto Trading Bot Development Services",
-      image: "https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-about.webp",
-      description:
-        "Unlock automated trading with Comfygen’s crypto trading bot development services. We build secure, AI-driven bots for Binance, Coinbase, and Kraken to maximize trading performance.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "1756",
-      }
-    },
+   
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

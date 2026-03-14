@@ -147,24 +147,7 @@ export default function Ecommerce(props) {
   };
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -195,87 +178,8 @@ export default function Ecommerce(props) {
       ]
 
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Top Crypto Payment Gateway Development Company in India & USA",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-payment-gateway-development/crypto-payment-gateway-about.webp",
-      "description": "Leading crypto payment gateway development company in India & USA offering secure blockchain-based solutions to accept Bitcoin, Ethereum & altcoins globally.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
 
-
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -452,33 +356,6 @@ export default function Ecommerce(props) {
         />
         <meta property="og:image:alt" content="Crypto Payment Gateway Development" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Crypto Payment Gateway Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/crypto-payment-gateway-development",
-              description:
-                "Comfygen is a top crypto payment gateway development company in India & USA offering secure and scalable blockchain-based solutions to accept Bitcoin, Ethereum, and altcoins worldwide.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/crypto-payment-gateway-development/crypto-payment-gateway-og.webp"
-            })
-          }}
-        />
 
         <script
           type="application/ld+json"

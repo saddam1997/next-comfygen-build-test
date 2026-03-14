@@ -260,19 +260,7 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "name": "Custom eLearning App Development Services",
-      "image": "https://www.comfygen.com/image/og-image-e-learning-app-development.webp",
-      "description": "Build scalable, mobile-first, and engaging eLearning applications with Comfygen. Our custom eLearning app development services deliver gamified learning, performance analytics, and ROI-driven EdTech solutions for businesses and institutions.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1928"
-      }
-    },
+ 
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
@@ -437,20 +425,7 @@ export default function ClinicalApp(props: any) {
           property="og:description"
           content="Comfygen, a trusted eLearning app development company, creates high-performance EdTech solutions integrating AI, AR/VR, and Blockchain. Transform digital learning with personalized, engaging, and scalable apps."
         />
-        <Script
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
-        />
-        <Script
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
+      
 
         <script
           type="application/ld+json"

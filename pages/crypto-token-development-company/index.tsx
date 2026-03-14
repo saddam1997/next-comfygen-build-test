@@ -85,20 +85,7 @@ const BlogSection = dynamic(
 
 
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import Features from "../Newcomponet/SectionCompoent/Features";
-// import Trending from "../Newcomponet/comman/Trending";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import TechStack from "../Newcomponet/SectionCompoent/TechStack";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import ClientTestimonials from "../Newcomponet/SectionCompoent/ClientTestimonials";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 
 const defaultTestimonials = [
@@ -212,20 +199,6 @@ export default function Ecommerce(props) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Crypto Token Development Company | Custom Blockchain Token Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/crypto-token-development-company-new/crypto-token-development-company-about.webp",
-      "description": "Comfygen is a leading crypto token development company specializing in secure, scalable, and customizable blockchain token solutions. We develop utility tokens, security tokens, DeFi tokens, and NFT tokens on Ethereum, BNB Chain, Polygon, Solana, and more for startups and enterprises.",
-      "url": "https://www.comfygen.com/crypto-token-development-company ",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "557"
-      }
-    },
 
     {
       "@context": "https://schema.org",

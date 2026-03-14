@@ -383,19 +383,7 @@ export default function Ecommerce(props: any) {
         }
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "On-Demand Food Delivery App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/invest-food-delivery-app-development.webp",
-      "description": "Comfygen offers custom food delivery app development services including on-demand food ordering apps, restaurant aggregator platforms, cloud kitchen apps, grocery delivery apps, and hyper-local delivery solutions with real-time tracking and secure payment integration.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1600"
-      }
-    },
+
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

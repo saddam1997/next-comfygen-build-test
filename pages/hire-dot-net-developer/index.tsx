@@ -67,13 +67,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import CardItem from "../Newcomponet/SectionCompoent/CardItem";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 export default function Mobile(props) {
   let { initialData } = props;

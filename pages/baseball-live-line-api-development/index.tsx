@@ -177,18 +177,7 @@ export default function Ecommerce(props:any) {
         <meta name="twitter:site" content="@comfygentech" />
 
         {/* Structured data scripts */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.productData) }}
-        />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.serviceSchema) }}

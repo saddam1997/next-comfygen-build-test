@@ -567,10 +567,7 @@ export default function Altcoin(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
     
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
-        />
+     
 
         <script
           type="application/ld+json"

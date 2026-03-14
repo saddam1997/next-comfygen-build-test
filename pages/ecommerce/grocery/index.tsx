@@ -454,23 +454,7 @@ export default function ClinicalApp(props: any) {
       ],
     },
    
-  
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "On-Demand Grocery Delivery App Development",
-      image:
-        "https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-about.webp",
-      description:
-        "Launch your own on-demand grocery delivery app like Blinkit or Walmart. Comfygen delivers high-performing grocery mobile apps with smart features and fast deployment.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "630",
-      },
-    },
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

@@ -497,19 +497,7 @@
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Accounting Software Development Company",
-      "image": " https://www.comfygen.com/comfygen-images/accounting-software-development/about.webp",
-      "description": "Comfygen is a leading accounting software development company delivering custom, cloud-based, GST-compliant accounting solutions for scalable business growth.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "620"
-      }
-    },
+   
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

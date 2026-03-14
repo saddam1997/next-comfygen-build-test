@@ -349,19 +349,7 @@ export default function rummy(props: any) {
 
   const jsonLdData = [
 
-    {
-      "@type": "WebSite",
-      "@id": "https://www.comfygen.com/#website",
-      "url": "https://www.comfygen.com/",
-      "name": "Custom Blockchain & Mobile App Development Company - Comfygen Technologies",
-      "description": "Comfygen Technologies is a leading software development company. Offering a wide range of mobile apps, blockchain, and web development solutions globally.",
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.comfygen.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
+    
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -443,49 +431,6 @@ export default function rummy(props: any) {
       }
     },
 
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-      "alternateName": "Comfygen Technologies",
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://www.instagram.com/comfygen_technologies/",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.threads.com/@comfygen_technologies"
-      ],
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "+91-9587867258",
-          "contactType": "sales",
-          "email": "sales@comfygen.com",
-          "areaServed": [
-            "US", "CA", "GB", "AD", "AU", "AT", "BS", "BH", "IO", "KM", "CU", "AR", "CW", "CY", "DK", "DM", "EG", "FK", "FI", "FR", "DE", "GR", "GL", "HK", "IS", "IN", "ID", "IT", "JP", "JE", "JO", "KW", "KG", "KR", "MX", "FM", "NZ", "NI", "OM", "PE", "PH", "PL", "PT", "QA", "RO", "RU", "SA", "SG", "SE", "SZ", "CH", "TH", "TR", "TN", "UA", "UM", "AE", "039", "155", "154", "151", "150"], "availableLanguage": ["en", "hi"]
-        }]
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Custom Blockchain Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/og.webp",
-      "description": "Comfygen Technologies is a leading enterprise blockchain development company offering secure and scalable blockchain development services and solutions tailored for modern business needs.",
-      "brand": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1124"
-      }
-    },
  
 
     {

@@ -226,20 +226,7 @@
       ]
     },
    
-    
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Ice Cream Ordering & Delivery App Development Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/ice-cream-delivery-app-development-about.webp",
-      "description": "Comfygen Technologies provides end-to-end ice cream ordering & delivery app development with AI, GPS, and blockchain features to grow your brand digitally.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "200"
-      }
-    },
+
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

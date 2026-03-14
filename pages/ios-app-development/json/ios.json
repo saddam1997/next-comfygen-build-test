@@ -397,21 +397,6 @@
     },
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "iOS App Development Services | Custom iPhone & iPad Applications",
-      "image":
-        "https://www.comfygen.com/gallery/about-images/ios-app-development-about-us-image.webp",
-      "description":
-        "Comfygen offers custom iOS app development services for startups and enterprises. We build high-performance iPhone and iPad applications using Swift, SwiftUI, and the latest Apple frameworks.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "515"
-      }
-    },
-    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [

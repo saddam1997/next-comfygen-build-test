@@ -177,21 +177,6 @@ export default function Ecommerce(props: any) {
 
       ]
     },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Top NFT Exchange Development Company | Custom Crypto NFT Marketplace Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/nft-exchange-development/nft-exchange-development-about.webp",
-      "description": "Get secure, scalable NFT exchange development with custom crypto marketplace solutions. Multi-chain support, wallet integration, and top security.!",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
-
-    },
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",

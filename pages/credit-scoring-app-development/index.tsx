@@ -261,24 +261,7 @@ export default function Mobile(props: any) {
   ];
 
   const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-      "addressLocality": "Jaipur, Rajasthan",
-      "addressRegion": "India",
-      "postalCode": "302006",
-      "telephone": "+91-958-786-7258"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "PostalAddress",
-      "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-      "addressLocality": "Toronto",
-      "addressRegion": "Canada",
-      "postalCode": "M1G3S7",
-      "telephone": "+1 579-977-4475"
-    },
+ 
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -306,85 +289,7 @@ export default function Mobile(props: any) {
       ]
 
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-          "addressLocality": "Jaipur",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7",
-          "addressLocality": "Toronto",
-          "postalCode": "M1G3S7",
-          "addressCountry": "Canada"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://www.youtube.com/@ComfygenBusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Comfygen",
-      "url": "https://www.comfygen.com/",
-      "logo": "https://www.comfygen.com/svg/Logo1.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "contactOption": "WhatsApp",
-        "telephone": "+91 9587867258",
-        "areaServed": ["IN", "US", "CA", "GB", "AU", "DE", "FR"],
-        "email": "sales@comfygen.com",
-        "availableLanguage": ["en", "in"]
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://twitter.com/comfygentech",
-        "https://www.instagram.com/comfygen_/?hl=en",
-        "https://youtube.com/@comfygenbusiness",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-        "https://in.pinterest.com/comfygenpvt/"
-      ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Credit Scoring App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/credit-scoring-app-development-about.webp",
-      "description": "Explore Comfygen’s expert credit scoring app development services designed for fintech startups and enterprises. We deliver secure, AI-powered apps with real-time analytics, credit monitoring, and scalable architecture.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "26"
-      }
-    },
+
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -485,33 +390,7 @@ export default function Mobile(props: any) {
         />
         <meta name="twitter:site" content="@comfygentech" />
 
-        {/* Structured Data Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Credit Scoring App Development",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "FinanceApplication",
-              url: "https://www.comfygen.com/credit-scoring-app-development",
-              description:
-                "Comfygen is a top credit scoring app development company delivering secure, AI-powered fintech solutions. We build scalable credit scoring apps with real-time analytics, data security, and 10+ years of expertise.",
-              author: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited"
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen Private Limited",
-                url: "https://www.comfygen.com"
-              },
-              image:
-                "https://www.comfygen.com/comfygen-images/credit-scoring-app-development/og-credit-scoring-app-development.webp"
-            })
-          }}
-        />
+      
 
         <script
           type="application/ld+json"

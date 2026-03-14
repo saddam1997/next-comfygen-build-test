@@ -220,22 +220,6 @@ export default function Ecommerce(props) {
 
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "CryptoCurrency MLM Software Development | Secure Blockchain MLM Solutions",
-      "image": "https://www.comfygen.com/image/about-us-image.webp",
-      "description": "Comfygen provides advanced CryptoCurrency MLM Software Development services for startups and enterprises. Our blockchain-based MLM platforms support binary, matrix, unilevel, and hybrid MLM plans with integrated crypto wallets, smart contracts, and real-time analytics for secure and scalable operations.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "450"
-      }
-    },
-    {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "CryptoCurrency MLM Software Development Service",
