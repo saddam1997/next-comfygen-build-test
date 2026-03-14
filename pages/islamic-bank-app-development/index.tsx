@@ -33,9 +33,7 @@ const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionC
   { loading: loader, ssr: true }
 );
 
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
+
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
@@ -279,8 +277,7 @@ export default function Mobile(props) {
       ]
     },
  
-
-   
+  
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
