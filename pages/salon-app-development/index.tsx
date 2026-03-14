@@ -212,20 +212,6 @@ export default function ClinicalApp(props: any) {
       ]
 
     },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "Salon App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-about.webp",
-      "description": "Boost your beauty business with our salon app development services. Comfygen builds feature-rich, user-friendly mobile apps for salon and spa businesses. Bookings, payments, and real-time scheduling — all in one seamless solution.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "829"
-      }
-    },
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",

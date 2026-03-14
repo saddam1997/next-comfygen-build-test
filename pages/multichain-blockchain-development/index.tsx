@@ -205,23 +205,6 @@ export default function MultiChain(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-   
-
-   
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "MultiChain Blockchain Development Company | AI-Powered MultiChain Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/multichain-blockchain-development-about-img.webp",
-      "description": "Comfygen Technologies provides AI-powered MultiChain Blockchain Development services, including smart contracts, tokenization, NFT marketplaces, DeFi platforms, and enterprise blockchain solutions for secure and scalable applications.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "385"
-      }
-    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -324,13 +307,6 @@ export default function MultiChain(props) {
         }
       ]
     }
-
-
-
-
-
-
-
   ];
 
   return (

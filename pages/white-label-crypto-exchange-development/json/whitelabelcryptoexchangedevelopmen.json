@@ -521,21 +521,6 @@
       ]
 
     },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "Name": "white label crypto exchange development company",
-      "image": "https://www.comfygen.com/comfygen-images/white-label-crypto-exchange-development/white-label-crypto-exchange-development-about.webp",
-      "description": "Launch your own customizable, secure, and scalable crypto exchange with our white label solutions. Fast deployment and enterprise-grade security. Contact us today!",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1748"
-      }
-
-    },
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",

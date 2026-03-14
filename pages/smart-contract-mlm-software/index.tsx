@@ -9,10 +9,6 @@ import {
   IconLockCode,
   IconHierarchy3,
   IconCurrencyBitcoin,
-  IconWallet,
-  IconUsersGroup,
-  IconDeviceMobile,
-  IconLanguage,
 } from "@tabler/icons-react";
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";

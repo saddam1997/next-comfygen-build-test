@@ -56,11 +56,6 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-
-
-
 const Process = [
   {
     title: "Step 1 – Requirement Discussion",
@@ -98,29 +93,6 @@ const Process = [
       "Our support doesn’t stop after launch. We provide ongoing maintenance, endpoint optimization, version updates, and technical support to ensure your kabaddi API solution remains fast, secure, and reliable."
   }
 ];
-
-
-
-
-
-
-
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Kabaddi Live Line API Provider – Real-Time Scores & Tournament Data",
-  "image": "https://www.comfygen.com/comfygen-images/kabaddi-live-line-api-development/kabaddi-live-line-api-hero.webp",
-  "description": "Integrate live Kabaddi scores, stats, and match updates with our Kabaddi Live Line API. Enhance your sports platform with real-time, reliable data feeds..",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
 
 
 
@@ -324,10 +296,7 @@ export default function Ecommerce(props) {
 
         {/* Structured data scripts */}
       
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}

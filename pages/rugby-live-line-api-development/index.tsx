@@ -100,24 +100,6 @@ const Process = [
 
 
 
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Rugby Live Line API Provider – Real-Time Scores, Odds & Match Data",
-  "image": "https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-live-line-api-hero.webp",
-  "description": "Integrate real-time rugby scores, match events, player stats, and live odds with Comfygen’s Rugby Live Line API. Designed for gaming platforms, fantasy sports apps, and analytics dashboards.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
-
-
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -356,15 +338,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-og-image.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-        {/* Updated JSON-LD schema for SoftwareApplication */}
       
-
-        {/* Structured data scripts */}
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

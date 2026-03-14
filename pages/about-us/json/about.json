@@ -1,4 +1,181 @@
 {
+  "Portfoliodata": {
+    "heading": "Comfygen Technologies Milestones",
+    "description": "",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Icons/8+ Years of Experience.webp",
+        "title": "Years of Experience",
+        "description": "With over 8 years of industry experience, our team has successfully delivered innovative mobile and web solutions across various industries. Our deep technical expertise and proven development processes help businesses build reliable, scalable, and high-performing digital products.",
+        "link": "/portfolio/aria-coin-details"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Icons/550+ Projects Delivered.webp",
+        "title": "550+ Projects Delivered",
+        "description": "We have successfully delivered more than 550 projects for startups, enterprises, and growing businesses worldwide. Our team focuses on quality, performance, and user-focused solutions to ensure every project meets business goals and exceeds expectations.",
+        "link": "/portfolio/great-wallet"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Icons/400+ Happy Clients.webp",
+        "title": "400+ Happy Clients",
+        "description": "Client satisfaction is at the heart of everything we do. With 400+ happy clients globally, we have built long-term partnerships by delivering high-quality solutions, transparent communication, and reliable support throughout every stage of development",
+        "link": "/portfolio/m7-coin"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/Icons/30+ Countries Served.webp",
+        "title": "30+ Countries Served",
+        "description": "Our services extend across more than 30 countries, helping businesses worldwide transform their ideas into powerful digital products. We understand global market needs and deliver solutions that work seamlessly across different regions and industries.",
+        "link": "/portfolio/m7-coin"
+      }
+    ]
+  },
+  "trendingData": [
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    },
+    {
+      "name": "superb",
+      "link": "https://superbcompanies.com/organizations/comfygen-technologies/",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/superb compnies top blockchain development companies in india.webp",
+      "bg": "bg-indigo-100",
+      "alt": "superb"
+    },
+    {
+      "name": "firms top ecommerce",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "firms top ecommerce "
+    },
+    {
+      "name": "firms mobile app development",
+      "link": "https://www.rightfirms.co/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/right firms mobile app development companies in uae.webp",
+      "bg": "bg-pink-100",
+      "alt": "firms mobile app development "
+    },
+    {
+      "name": "mobileappdaily ",
+      "link": "https://www.mobileappdaily.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/mobileappdaily top mobile app development company.webp",
+      "bg": "bg-blue-100",
+      "alt": "mobileappdaily "
+    },
+    {
+      "name": "itrate custom software development",
+      "link": "https://itrate.co/company/comfygen-pvt-ltd",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/itrate custom software development company.webp",
+      "bg": "bg-purple-100",
+      "alt": "itrate custom software development"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "f65 top nft marketplace",
+      "link": "https://www.f6s.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/f65 top nft marketplace development company in canada.webp",
+      "bg": "bg-emerald-100",
+      "alt": "f65 top nft marketplace "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    }
+  ],
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is Comfygen Technologies?",
+      "desc": "Comfygen Technologies is a technology company specializing in AI, blockchain, mobile app development, and custom software solutions that help businesses innovate and grow in the digital world."
+    },
+    {
+      "num": "2",
+      "title": "What makes Comfygen Technologies different?",
+      "desc": "Our experienced team, client-centric approach, innovative solutions, and commitment to quality set us apart. We focus on delivering scalable, secure, and high-performance digital products."
+    },
+    {
+      "num": "3",
+      "title": "How experienced is the Comfygen Technologies team?",
+      "desc": "The team at Comfygen Technologies consists of skilled developers, designers, and technology experts with extensive experience in modern development frameworks and technologies."
+    },
+    {
+      "num": "4",
+      "title": "Does Comfygen Technologies work with startups and enterprises?",
+      "desc": "Yes, Comfygen Technologies collaborates with startups, small businesses, and large enterprises to build scalable and innovative digital solutions."
+    },
+    {
+      "num": "5",
+      "title": "How can I start a project with Comfygen Technologies?",
+      "desc": "You can start your project with Comfygen Technologies by contacting the team through the website, sharing your project requirements, and scheduling a consultation."
+    }
+  ],
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Comfygen Technologies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen Technologies is a technology company specializing in AI, blockchain, mobile app development, and custom software solutions that help businesses innovate and grow in the digital world."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Comfygen Technologies different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our experienced team, client-centric approach, innovative solutions, and commitment to quality set us apart. We focus on delivering scalable, secure, and high-performance digital products."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How experienced is the Comfygen Technologies team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The team at Comfygen Technologies consists of skilled developers, designers, and technology experts with extensive experience in modern development frameworks and technologies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Comfygen Technologies work with startups and enterprises?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Comfygen Technologies collaborates with startups, small businesses, and large enterprises to build scalable and innovative digital solutions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I start a project with Comfygen Technologies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can start your project with Comfygen Technologies by contacting the team through the website, sharing your project requirements, and scheduling a consultation."
+          }
+        }
+      ]
+    }
+  ],
   "Solutions": [
     {
       "num": "1",
@@ -170,7 +347,6 @@
       "decs": "In the realm of gaming, Comfygen stands as a creative powerhouse. Our game development prowess spans from concept ideation to deployment, focusing on delivering captivating and immersive gaming experiences. Whether it's mobile game development, web game development, or console-based game development, we blend cutting-edge game development technology with imaginative storytelling to create games that resonate with audiences worldwide."
     }
   ],
-
   "VisionaryLeader": [
     {
       "num": "1",
@@ -179,7 +355,6 @@
       "decs": "Mr. Saddam Husen, CTO at Comfygen, is a renowned Blockchain expert and IT consultant with extensive experience in blockchain development, crypto wallets, DeFi, ICOs, and smart contracts. Passionate about digital transformation, he helps businesses harness blockchain technology’s potential, driving innovation and enhancing IT infrastructure for global success."
     }
   ],
-
   "TeamMember": [
     {
       "num": "1",
@@ -238,5 +413,4 @@
       "decs": "In the realm of gaming, Comfygen stands as a creative powerhouse. Our game development prowess spans from concept ideation to deployment, focusing on delivering captivating and immersive gaming experiences. it's mobile game development, web game development, or console-based game development, we blend cutting-edge game development technology with imaginative storytelling to create games that resonate with audiences worldwide."
     }
   ]
-  
 }

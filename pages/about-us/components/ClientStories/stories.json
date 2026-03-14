@@ -1,0 +1,26 @@
+{
+ "benefits": [
+    "Dedicated and accountable development resources",
+    "Cost-efficient development with flexible pricing models",
+    "Fast team onboarding with no long-term contract lock-ins",
+    "Easy team scaling based on project needs",
+    "High client retention through consistent delivery",
+    "Strict NDA and data security compliance",
+    "Clear, reliable communication at every stage"
+  ],
+
+ "testimonials": [
+    {
+      "videoUrl": "https://www.youtube.com/watch?v=kedGnt6T-DI",
+      "thumbnail": "https://www.comfygen.com/comfygen-images/ClientStories/testimonial.webp",
+      "clientName": "Nitesh Rajput",
+      "company": "Book My Tuter"
+    },
+    {
+      "videoUrl": "https://www.youtube.com/watch?v=-AkHiORQTjA",
+      "thumbnail": "https://www.comfygen.com/comfygen-images/thumbnail/forgeflexrreviewthambnail.webp",
+      "clientName": "Sayead Shadab Arif",
+      "company": "Froge Flex"
+    }
+  ]
+}

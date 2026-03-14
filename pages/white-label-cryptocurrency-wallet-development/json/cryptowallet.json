@@ -469,19 +469,7 @@
         }
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Crypto Wallet Development Company | Custom Blockchain Wallet Solutions",
-      "image": "https://www.comfygen.com/comfygen-images/white-label-cryptocurrency-wallet-development/White_Label_about.webp",
-      "description": "Comfygen builds powerful crypto wallets tailored for startups and enterprises. Our crypto wallet development services ensure high security, multi-currency support, and smooth integration across mobile, desktop, and web platforms.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "115"
-      }
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

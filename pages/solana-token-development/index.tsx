@@ -198,22 +198,7 @@ export default function Ecommerce(props) {
     setTalkToExpertModal(false);
   };
 
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Solana Token Development Company | Create Token On Solana",
-    "image": "https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp",
-    "description": "Comfygen is a trusted Solana token development company delivering custom crypto token creation and blockchain solutions. Launch secure, scalable Solana tokens with our expert development services.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Comfygen Pvt Ltd."
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1920"
-    }
-  };
+
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -359,10 +344,7 @@ export default function Ecommerce(props) {
         <meta property="og:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
         <meta property="og:image:secure_url" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
         <meta property="og:image:alt" content="Solana Token Development Company | Create Token On Solana" />
-        <Script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-        />
+   
         <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

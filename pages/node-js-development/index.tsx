@@ -53,13 +53,7 @@ const ClientTestimonials = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 
 const Process = [

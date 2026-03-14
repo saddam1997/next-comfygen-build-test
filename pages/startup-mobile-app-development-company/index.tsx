@@ -49,17 +49,7 @@ const BreadcrumbSchema = {
     "item": "https://example.com/books"
   }]
 };
-const ldJson = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Top Mobile App Development Company In India | Comfygen",
-  "url": "https://www.comfygen.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -73,19 +63,7 @@ const structuredData = {
     "https://www.facebook.com/comfygen"
   ]
 };
-const ProductSchema = {
-  "@context": "http://www.schema.org",
-  "@type": "product",
-  "brand": "Comfygen",
-  "name": "Mobile App Development Agency - Mobile Application Development Company",
-  "image": "https://comfygen.com/img/explore-success-with-our-mobile-app-development-agency.webp",
-  "description": "Comfygen is a top mobile application development company. We provide the best Mobile application development services and custom mobile app development services to enterprises & startups worldwide.",
-  "aggregateRating": {
-    "@type": "aggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1124"
-  }
-};
+
 
 export default function Mobile(props) {
 
@@ -139,9 +117,9 @@ export default function Mobile(props) {
         <meta property='og:type' content='Mobile App Development Company In India' />
         <meta name="google-site-verification" content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
+   
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ProductSchema) }} />
+       
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org/", "@type": "WebSite", "name": "Top Mobile App Development Company in India | Comfygen", "url": "https://www.comfygen.com/", "potentialAction": { "@type": "SearchAction", "target": "{search_term_string}", "query-input": "required name=search_term_string" } }) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({

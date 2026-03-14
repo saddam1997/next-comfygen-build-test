@@ -175,19 +175,6 @@ const serviceSchema = {
   ]
 }
 
-const schema = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen Technologies",
-  "Name": "Best Real Cash Poker App Development Services",
-  "image": "Hero section image",
-  "description": "Develop real cash poker games with Comfygen – a top poker game development company in India and the USA. Our poker game development solutions are scalable, legal-compliant, and revenue-ready. Connect with us now!",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "354"
-  }
-};
 
 const breadCrum = {
   "@context": "https://schema.org/",
@@ -365,10 +352,7 @@ export default function PokerGame(props) {
 
 "
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+    
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

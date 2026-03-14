@@ -95,17 +95,6 @@ const Process = [
 ];
 
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "NBA Live Line Api Provider ",
-  "url": "https://www.comfygen.com/nba-live-line-api-development",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
 
 const ServicesSchema = {
   "@context": "https://schema.org",
@@ -135,36 +124,6 @@ const ServicesSchema = {
 
 };
 
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen - Best NBA Live Line API Service Provider",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  "sameAs": [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen"
-  ]
-};
-
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "NBA Live Line API Provider – Real-Time Scores & live Data",
-  "image": "https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-live-line-api-hero.webp",
-  "description": "Access real-time NBA scores, odds, and game updates with Comfygen’s NBA Live Line API. Designed for fantasy apps. and sports analytics solutions.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
 
 
 
@@ -393,18 +352,7 @@ export default function Ecommerce(props:any) {
         </script>
 
         {/* Structured data scripts */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}

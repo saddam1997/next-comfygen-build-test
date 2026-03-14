@@ -231,20 +231,6 @@ export default function ClinicalApp(props: any) {
 
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "name": "On-Demand Tutor App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/news-application-development/about.webp",
-      "description": "Get top-notch on-demand tutor app development services with Comfygen. We build AI-powered tutoring apps with live classes, seamless booking, secure payments & interactive learning.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "928"
-      }
-    },
-
-    {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
       "mainEntity": [

@@ -99,62 +99,6 @@ const Process = [
 
 
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebPage",
-  "@id": "#WebPage",
-  "url": "https://www.comfygen.com/pool-live-line-api-development",
-  "name": "Pool Live Line API"
-
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org/",
-  "@type": "Organization",
-  "@id": "#Organization",
-  "url": "https://www.comfygen.com/",
-  "legalName": "Comfygen Technologies",
-  "name": "Comfygen",
-  "description": "Comfygen is a leading app development company rendering a spectrum of tech solutions globally. Discover exceptional web and app and blockchain software development services.",
-  "image": "https://www.comfygen.com/svg/Logo1.svg",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "telephone": "9587867258",
-  "email": "sales@comfygen.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "A-20 Basement, Samridhi Enclave, Modi Nagar, Nirmohi Nagar",
-    "addressLocality": "Ajmer Rd",
-    "addressRegion": "Jaipur, Rajasthan",
-    "addressCountry": "India",
-    "postalCode": "302006"
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen",
-    "https://www.youtube.com/@ComfygenBusiness",
-    "https://www.instagram.com/comfygen_",
-    "https://www.linkedin.com/company/comfygen-private-limited/",
-    "https://x.com/comfygentech"
-  ]
-
-};
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Pool Live Line API Provider – Real-Time Scores, Odds & Player Stats",
-  "image": "https://www.comfygen.com/comfygen-images/pool-live-line-api-development/pool-live-line-api-hero.webp",
-  "description": "Integrate live pool scores, frame updates, player stats, and real-time odds with our Pool Live Line API. Ideal for gamming platforms, fantasy apps, and sports analytics websites.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
-
-
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -391,19 +335,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:site" content="@comfygentech" />
 
 
-        {/* Structured data scripts */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

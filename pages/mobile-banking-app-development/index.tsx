@@ -183,20 +183,6 @@ export default function ClinicalApp(props: any) {
     },
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "name": "Mobile Banking App Development Services",
-      "image": "https://www.comfygen.com/image/og-image-mobile-banking-app.webp",
-      "description": "Build secure and feature-rich mobile banking apps with Comfygen. Our experts offer AI, blockchain, and core banking integrations tailored to your business needs.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1928"
-      }
-    },
-
-    {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
       "itemListElement": [

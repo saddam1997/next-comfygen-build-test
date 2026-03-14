@@ -667,19 +667,7 @@
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Top-Rated Mobile Application Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/mobile-app/mobile-app-about.webp",
-      "description": "Comfygen offers mobile application development services to help you launch fast, user-friendly, and secure mobile apps. Get custom solutions for iOS, Android, and cross-platform from expert developers.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1895"
-      }
-    },
+
 
     {
       "@context": "https://schema.org/",

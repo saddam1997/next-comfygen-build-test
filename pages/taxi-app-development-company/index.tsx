@@ -136,47 +136,6 @@ export default function Ecommerce(props) {
 
   const jsonLdData = [
 
-
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Taxi App Development Company",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com"
-      },
-      "url": "https://www.comfygen.com/taxi-app-development-company ",
-      "description": "End-to-end taxi app development services including ride-hailing apps, taxi booking solutions, fleet management systems, and white-label taxi app solutions for startups and enterprises.",
-      "areaServed": "Worldwide",
-      "serviceType": [
-        "Taxi Booking App Development",
-        "Ride-Hailing App Development",
-        "Uber-Like App Development",
-        "Fleet Management Software",
-        "On-Demand Taxi App Solutions",
-        "White Label Taxi App Development"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Best Taxi App Development Company | Comfygen Technologies",
-      "image": " About Section Image ",
-      "description": "Looking for the best taxi app development company? Comfygen delivers custom taxi booking app solutions, ride-hailing app development, and scalable mobility solutions for startups and enterprises.",
-      "brand": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "824"
-      }
-    },
-
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

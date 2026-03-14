@@ -143,19 +143,6 @@ export default function ClinicalApp(props: any) {
   const jsonLdData = [
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Peer-to-Peer Payment App Development Experts | Comfygen",
-      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-about.webp",
-      "description": "Build a custom P2P payment app with Comfygen. Our developers specialize in money transfer apps, mobile wallets, and secure financial platforms for modern businesses.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "350"
-      }
-    },
-    {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Custom P2P Payment App Development Services",

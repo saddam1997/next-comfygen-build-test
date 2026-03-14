@@ -211,91 +211,79 @@ export default function ClinicalApp(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
+
     {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen Technologies",
-  "name": "Laboratory App Development Solutions",
-  "image": "https://www.comfygen.com/image/about-us-image.webp",
-  "description": "Build advanced laboratory app development solutions with Comfygen Technologies. Our apps help diagnostic and pathology labs manage samples, workflows, reports, compliance, and secure data efficiently.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1500"
-  }
-},
-{
-  "@context": "https://schema.org/",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.comfygen.com"
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Laboratory App Development",
+          "item": "https://www.comfygen.com/laboratory-app-development"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Laboratory App Development",
-      "item": "https://www.comfygen.com/laboratory-app-development"
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a laboratory app and how does it benefit diagnostic labs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A laboratory app helps diagnostic and pathology labs manage sample tracking, test processing, reports, billing, and workflows digitally, improving efficiency, accuracy, and patient experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of laboratory apps does Comfygen Technologies develop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen develops custom laboratory apps including LIS software, pathology lab apps, diagnostic lab management systems, sample tracking apps, inventory management solutions, and mobile lab applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platforms do you support for laboratory app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We develop laboratory apps for Android, iOS, and web platforms, ensuring seamless performance across devices with cloud-based, scalable, and secure laboratory software solutions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure data security and compliance in laboratory apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We follow HIPAA-compliant architecture, encrypted data storage, role-based access, and secure APIs to protect sensitive laboratory and patient data while meeting healthcare regulatory standards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build a custom laboratory app based on our workflow needs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide custom laboratory app development tailored to your specific diagnostic workflows, lab processes, reporting requirements, and integration needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer post-launch support and maintenance services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Comfygen provides end-to-end post-deployment support including performance optimization, updates, security monitoring, bug fixes, and feature enhancements for long-term reliability."
+          }
+        }
+      ]
     }
-  ]
-},
-{
-  "@context": "https://schema.org/",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a laboratory app and how does it benefit diagnostic labs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A laboratory app helps diagnostic and pathology labs manage sample tracking, test processing, reports, billing, and workflows digitally, improving efficiency, accuracy, and patient experience."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What types of laboratory apps does Comfygen Technologies develop?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Comfygen develops custom laboratory apps including LIS software, pathology lab apps, diagnostic lab management systems, sample tracking apps, inventory management solutions, and mobile lab applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which platforms do you support for laboratory app development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We develop laboratory apps for Android, iOS, and web platforms, ensuring seamless performance across devices with cloud-based, scalable, and secure laboratory software solutions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you ensure data security and compliance in laboratory apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We follow HIPAA-compliant architecture, encrypted data storage, role-based access, and secure APIs to protect sensitive laboratory and patient data while meeting healthcare regulatory standards."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you build a custom laboratory app based on our workflow needs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide custom laboratory app development tailored to your specific diagnostic workflows, lab processes, reporting requirements, and integration needs."
-  }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer post-launch support and maintenance services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Comfygen provides end-to-end post-deployment support including performance optimization, updates, security monitoring, bug fixes, and feature enhancements for long-term reliability."
-      }
-    }
-  ]
-}
 
 
 
@@ -588,9 +576,9 @@ export default function ClinicalApp(props) {
             "Available to work dedicatedly on your project"
           ]}
         />
-        <ClientStories/>
+        <ClientStories />
 
-   <ClientTestimonials
+        <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
         />

@@ -176,20 +176,7 @@ const serviceSchema = {
 
 }
 
-const ldJsonData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen Technologies",
-  "Name": "Ludo Game Development Services",
-  "image": "Hero section image",
-  "description": "Comfygen offers custom Ludo game app development services, delivering fully branded and feature-rich Ludo games for Android, iOS, and web platforms. Our real-money gameplay and multiplayer support ensure maximum player engagement and retention.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "469"
-  }
 
-};
 
 const BreadcrumbList = {
   "@context": "https://schema.org/",
@@ -401,10 +388,7 @@ export default function LudoGame(props:any) {
         <meta name="og:longitude" content="75.787271" />
         <meta name="fb:page_id" content="110909321596135" />
   
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonData) }}
-        />
+     
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

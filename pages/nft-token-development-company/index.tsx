@@ -57,15 +57,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import InfoSection from "../Newcomponet/SectionCompoent/InfoSection";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import ProcessSec from "../Newcomponet/SectionCompoent/ProcessSec";
-// import ConsultancyApproach from "../Newcomponet/SectionCompoent/ConsultancyApproach";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import HireDeveloper from "../Newcomponet/SectionCompoent/HireDeveloper";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
+
 
 
 

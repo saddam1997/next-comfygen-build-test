@@ -289,36 +289,7 @@ export default function rummy(props:any) {
       },
     ],
   };
-  const businessData = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    priceRange: "$200-$5500",
-    image: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-    "@id": "https://www.comfygen.com/rummy-game-development",
-    name: "Best Rummy Game App Development Company India, USA, UAE, Germany",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "F-152, Dayanand Marg, Nemi Nagar,",
-      addressLocality: "Vaishali Nagar, Near D A V Centenary Public School",
-      addressRegion: "Jaipur, Rajasthan",
-      postalCode: "302021",
-      addressCountry: "IN",
-    },
-    review: {
-      "@type": "Review",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "4.9",
-        bestRating: "5",
-      },
-      author: {
-        "@type": "Person",
-        name: "Saddam Husen",
-      },
-    },
-    url: "https://www.comfygen.com/rummy-game-development",
-    telephone: "+91 9587867258",
-  };
+
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -472,10 +443,7 @@ export default function rummy(props:any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessData) }}
-        />
+   
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}

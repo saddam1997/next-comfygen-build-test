@@ -149,19 +149,7 @@ const jsonLdData = [
       "https://www.linkedin.com/company/comfygen-private-limited"
     ]
   },
-  {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": "Comfygen Private Limited",
-    "name": "UPI Payment App Development Services",
-    "image": "https://www.comfygen.com/comfygen-images/mobile-banking-app-development/upi-payment-app-development-hero.webp",
-    "description": "Comfygen is a leading UPI payment app development company, offering secure, scalable, and NPCI-compliant solutions with seamless UI/UX, advanced security, and fast transactions for fintech businesses.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1928"
-    }
-  },
+
   {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",

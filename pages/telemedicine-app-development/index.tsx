@@ -204,20 +204,6 @@ export default function Ecommerce(props) {
       ]
     },
 
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "End-to-End Telemedicine App Development",
-      "image": "https://www.comfygen.com/comfygen-images/telemedicine-app-development-new/telemedicine-app-development-about.webp",
-      "description": "Leverage Comfygen’s expertise in telemedicine app development to create user-friendly, HIPAA-compliant healthcare apps. Enable remote consultations, prescriptions, and virtual health monitoring.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1200"
-      }
-    },
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",

@@ -683,19 +683,7 @@
         "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Private Limited",
-      "name": "News App Development Services",
-      "image": " About Section Image URL ",
-      "description": "Enhance your news platform with our custom news app development services. Comfygen creates feature-rich, user-friendly mobile apps for news organizations, with real-time updates, push notifications, personalized content, and subscription management to elevate your news business.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "585"
-      }
     }
+
   ]
 }

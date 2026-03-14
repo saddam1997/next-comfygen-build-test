@@ -114,58 +114,8 @@ export default function Ecommerce(props:any) {
 
   ];
 
-  const productData = {
-    "@context": "http://www.schema.org",
-    "@type": "product",
-    "brand": "Comfygen",
-    "name": "Best Metaverse App Development Company - Metaverse App Development Services",
-    "image": "https://www.comfygen.com/media/metaverse/tap-in-to-world-of-metaverse.webp",
-    "description": "Comfygen Private Limited is top Metaverse Application Development Company. We provide the best Metaverse application development services to enterprises & startups worldwide.",
-    "aggregateRating": {
-      "@type": "aggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1124"
-    }
-  };
-  const organizationData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Comfygen",
-    "legalName": "Comfygen Pvt. Ltd.",
-    "url": "https://www.comfygen.com/",
-    "logo": "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-    "foundingDate": "2019",
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Saddam Husen"
-      },
-      {
-        "@type": "Person",
-        "name": "Saddam Husen"
-      }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "F-152, Dayanand Marg, Nemi Nagar",
-      "addressLocality": "Vaishali Nagar",
-      "addressRegion": "Jaipur, Rajasthan, India",
-      "postalCode": "302021",
-      "addressCountry": "India"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "+91 9587867258",
-      "email": "sales@comfygen.com"
-    },
-    "sameAs": [
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://www.facebook.com/comfygen"
-    ]
-  }
+
+
   return (
     <>
       <Head>
@@ -201,8 +151,7 @@ export default function Ecommerce(props:any) {
         <meta property='og:type' content='Metaverse Development Service Provider' />
         {metaTags}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }} />
+
       </Head>
 
       {/* hero section */}
