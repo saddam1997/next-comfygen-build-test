@@ -13,12 +13,8 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   return (
     <>
       <main className="max-w-[1600px] w-full mx-auto overflow-x-hidden">
-
         
-
         {children}
-
-
         {/* {!hideGetInTouch && <GetinTouch />} */}
         <GetinTouch />
         <Footer />
