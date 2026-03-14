@@ -358,19 +358,7 @@
       ]
 
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Multicurrency Wallet Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/multi-currency-wallet-development-company/multi_currency_hero.webp",
-      "description": "Comfygen offers secure, scalable, and fully customizable multicurrency wallet development services supporting Bitcoin, Ethereum, stablecoins, NFT & DeFi integration for startups, fintechs, and exchanges.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "245"
-      }
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

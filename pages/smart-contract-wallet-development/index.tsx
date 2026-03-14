@@ -221,19 +221,7 @@ export default function Ecommerce(props: any) {
         }
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Smart Contract Wallet Development Company",
-      "image": "URL-to-hero-section-image",
-      "description": "Comfygen provides top-notch smart contract wallet development services, building secure, scalable, and customizable wallets with multi-chain support, DeFi integration, and enterprise-grade security.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "145"
-      }
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

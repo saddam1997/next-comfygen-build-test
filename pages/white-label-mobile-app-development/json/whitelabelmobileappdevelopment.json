@@ -407,19 +407,7 @@
     }
   ],
   "jsonLdData": [
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Best White Label Mobile App Development",
-      "image": "https://www.comfygen.com/comfygen-images/white-label-mobile-app-development/white-label-mobile-app-development-about.webp",
-      "description": "Looking for a trusted app team? We create branded, ready-made apps that are easy to use, easy to manage, and fast to launch.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "200"
-      }
-    },
+
     {
       "@context": "https://schema.org",
       "@type": "Service",

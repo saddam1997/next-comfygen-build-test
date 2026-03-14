@@ -236,69 +236,6 @@ export default function Ecommerce(props: any) {
 
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Comfygen Technologies",
-      "image": "https://www.comfygen.com/svg/Logo1.svg",
-      "@id": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/",
-      "telephone": "+91-958-786-7258",
-      "priceRange": "$",
-      "address": [{
-        "@type": "PostalAddress",
-        "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-        "addressLocality": "Jaipur",
-        "postalCode": "302006",
-        "addressCountry": "IN"
-      }, {
-        "@type": "PostalAddress",
-        "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        "addressLocality": "Toronto",
-        "postalCode": "M1G3S7",
-        "addressCountry": "Canada"
-      }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-        "https://www.comfygen.com/"
-      ]
-    },
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "Wallet Development Services | Secure E-Wallet & Crypto Wallet Solutions",
-      "image": "https://www.comfygen.com/assets/images/wallet-development-hero.jpg",
-      "description": "Comfygen provides end-to-end wallet development services, including e-wallets, crypto wallets, DeFi wallets, NFT wallets, and enterprise-grade digital payment solutions with security, scalability, and user-friendly features.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "425"
-      }
-    },
-
-    {
-      "@context": "https://schema.org",
       "@type": "Service",
       "name": "Wallet Development Services",
       "provider": {

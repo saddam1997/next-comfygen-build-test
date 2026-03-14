@@ -679,23 +679,7 @@
         "@id": "https://www.comfygen.com/private-blockchain-development"
       }
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Private Blockchain Development Company",
-      "image": "https://www.comfygen.com/comfygen-images/private-blockchain-development/og.webp",
-      "description": "ComfyGen Technologies is a leading private blockchain development company, offering custom private blockchain application development, enterprise solutions, smart contract design, and professional private blockchain developers for hire.",
-      "brand": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1124"
-      }
-    },
+   
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.comfygen.com/private-blockchain-development/#breadcrumb",

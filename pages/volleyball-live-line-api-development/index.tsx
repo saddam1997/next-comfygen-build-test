@@ -128,19 +128,7 @@ const serviceSchema = {
 };
 
 
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Volleyball Live Line API Provider – Real-Time Scores & Betting Data",
-  "image": "https://www.comfygen.com/comfygen-images/volleyball-live-line-api-development/volleyball-live-line-api-hero.webp",
-  "description": "Access real-time volleyball scores, odds, and game updates with Comfygen’s Volleyball Live Line API. Designed for fantasy apps, gaming platforms, and sports analytics solutions.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
+
 
 
 const faqPageSchema = {
@@ -359,11 +347,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/svg/Logo1.svg" />
         <meta name="twitter:site" content="@comfygentech" />
 
-       
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

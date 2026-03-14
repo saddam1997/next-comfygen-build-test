@@ -150,7 +150,7 @@ const technologyData = [
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
   let {
     ChooseComfy,
@@ -198,21 +198,6 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "Solana Blockchain Development Company | AI-Powered Solana Solutions",
-      "image": "https://www.comfygen.com/gallery/about-images/solana-blockchain-development-company-about-img.webp",
-      "description": "Comfygen Technologies provides AI-powered Solana Blockchain Development services, including DApps, NFT marketplaces, DeFi platforms, and smart contract solutions for secure, scalable blockchain applications.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "285"
-      }
-    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -236,8 +221,7 @@ export default function Ecommerce(props) {
           "item": "https://www.comfygen.com/solana-blockchain-development-company "
         }
       ]
-    }
-    ,
+    },
 
     {
       "@context": "https://schema.org",

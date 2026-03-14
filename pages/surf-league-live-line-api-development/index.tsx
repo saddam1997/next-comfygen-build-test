@@ -138,19 +138,7 @@ const serviceSchema = {
 };
 
 
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Surf League Live Line API | Comfygen Technologies",
-  "image": "https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-live-line-api-hero.webp",
-  "description": "Comfygen Technologies offers expert Surf League Live Line API services, providing real-time surfing scores and data integration for your applications.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-};
+
 
 const faqPageSchema = {
   "@context": "https://schema.org",
@@ -371,10 +359,7 @@ export default function Ecommerce(props) {
 
  
       
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+  
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}

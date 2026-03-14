@@ -130,23 +130,6 @@ const jsonLdData = [
   },
 
   {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": {
-      "@type": "Brand",
-      "name": "Comfygen Technologies"
-    },
-    "name": "Tennis Live Line API Development Services | Real-Time Scores & Odds",
-    "image": " About Section Image URL ",
-    "description": "Comfygen offers advanced Tennis Live Line API development services providing real-time live scores, odds, point-by-point match updates, player statistics, and seamless integration for sports betting, fantasy tennis, and live score applications.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "435"
-    }
-  },
-
-  {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
     "itemListElement": [{
@@ -248,9 +231,6 @@ const jsonLdData = [
       }
     ]
   }
-
-
-
 
 ];
 

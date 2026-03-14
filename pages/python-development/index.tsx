@@ -55,45 +55,6 @@ const BlogSection = dynamic(
 
 
 
-
-const Services = [
-  {
-    num: '1',
-    icon: <MdOutlineEngineering className="text-blue-400" size={60} />,
-    title: 'Machine learning solutions',
-    decs: 'ML apps developed by our Python developers enable better business decisions by extracting insights from data.'
-  },
-  {
-    num: '2',
-    icon: <AiOutlineDeploymentUnit className="text-blue-400" size={60} />,
-    title: 'Python CMS development',
-    decs: 'We Make your systems relevant by developing a highly scalable CMS web application using Python.  '
-  },
-  {
-    num: '3',
-    icon: <RiTodoLine className="text-blue-400" size={60} />,
-    title: 'Migration to Python',
-    decs: 'Your existing app or website can be seamlessly updated to Python without affecting your data. '
-  },
-  {
-    num: '4',
-    icon: <RiCustomerService2Fill className="text-blue-400" size={60} />,
-    title: 'Custom Python development',
-    decs: 'Our Python developers can develop a customized solution for your business based on Python. '
-  },
-  {
-    num: '5',
-    icon: <AiOutlineMobile className="text-blue-400" size={60} />,
-    title: 'Python mobile app development',
-    decs: 'Our Python developers will create a perfect mobile app for you to make your business stand out.'
-  },
-  {
-    num: '6',
-    icon: <FaNetworkWired className="text-blue-400" size={60} />,
-    title: 'Django framework development',
-    decs: 'High-quality Django-based web development in Python includes scientific computation, statistical analysis, and data science capabilities.  '
-  },
-]
 export default function Altcoin(props: any) {
 
   let { initialData } = props;

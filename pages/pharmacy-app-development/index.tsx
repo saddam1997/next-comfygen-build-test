@@ -142,7 +142,6 @@ export default function ClinicalApp(props: any) {
 
   const jsonLdData = [
 
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -177,8 +176,6 @@ export default function ClinicalApp(props: any) {
 
       ]
     },
-
-    
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -224,13 +221,6 @@ export default function ClinicalApp(props: any) {
 
       }]
     }
-
-
-
-
-
-
-
   ];
 
 

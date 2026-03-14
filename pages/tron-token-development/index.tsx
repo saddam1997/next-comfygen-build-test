@@ -185,23 +185,6 @@ export default function Tron(props) {
     setTalkToExpertModal(false);
   };
 
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    name: "Tron Token Development Services",
-    image: "Link to relevant service image",
-    description:
-      "Comfygen provides advanced Tron Token Development Services, including TRC10 and TRC20 token creation, smart contract development, and secure Tron wallet integration. Build custom Tron tokens tailored to your business needs with our expert blockchain developers.",
-    brand: {
-      "@type": "Brand",
-      name: "Comfygen",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "1920",
-    },
-  };
 
   const faqsSchema = {
     "@context": "https://schema.org",
@@ -372,10 +355,7 @@ export default function Tron(props) {
           content="Tron Token Development Company | Custom TRC10 & TRC20 Token Services"
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-        />
+ 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqsSchema) }}

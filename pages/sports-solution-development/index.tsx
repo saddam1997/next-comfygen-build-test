@@ -128,60 +128,7 @@ const serviceSchema = {
   ]
 }
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Sports Solution Development",
-  "description": "Explore professional sports solution development services from Comfygen Technologies, including fantasy app development, sports analytics, APIs, and more.",
-  "author": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies"
-  }
-}
 
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Best Cricket Live Line API Provider Company | Comfygen",
-  url: "https://www.comfygen.com/cricket-live-line-api",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
-
-
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  description: "Best Cricket Live Line API Service Provider",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-
-};
-
-
-const productData = {
-  "@context":"http://www.schema.org",
-"@type":"Product",
-"brand":"Comfygen Technologies",
-"Name":"Sports Solution Development",
-"image":"Hero section image",
-"description":"Get expert sports solution development services from Comfygen Technologies. We build custom sports software, fantasy apps platforms, APIs & analytics tools.",
-"aggregateRating":{"@type":"AggregateRating",
-"ratingValue":"4.9",
-"reviewCount":"1748"}
-,
-};
 
 
 const faqPageSchema = {
@@ -328,18 +275,7 @@ export default function Ecommerce(props) {
   <meta name="HandheldFriendly" content="true" />
   <meta name="fb:page_id" content="110909321596135" />
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-  />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-  />
+ 
   <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
@@ -348,10 +284,7 @@ export default function Ecommerce(props) {
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
   />
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-  />
+
 </Head>
 
       {/* <LazyLoad height={80} offset={100}> */}

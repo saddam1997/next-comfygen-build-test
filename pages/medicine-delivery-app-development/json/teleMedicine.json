@@ -1020,21 +1020,6 @@
     },
 
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Pharmacy Chain Medicine Delivery App Development",
-      "image": "https://www.comfygen.com/image/about-us-image.webp",
-      "description":
-        "Streamline your pharmacy operations with Comfygen’s custom medicine delivery apps. Manage multiple branches, real-time deliveries, and secure payments under one digital platform.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1500"
-      }
-    },
-
-    {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
       "itemListElement": [

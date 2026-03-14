@@ -105,43 +105,7 @@ const BlogSection = dynamic(
 import Faq from "../../components/Newcomponet/SectionCompoent/Faq";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
-const Processs = [
-  {
-    title: "Conceptualization",
-    description:
-      "We start by understanding your vision, analyzing market trends, and identifying target audiences. This helps us define the core concept, functionalities, and objectives of your P2P exchange.",
-  },
-  {
-    title: "Build the Blueprint",
-    description:
-      "Our experts design a detailed project roadmap, including technical architecture, wireframes, and user flow diagrams. This blueprint ensures clarity and alignment with your business goals.",
-  },
-  {
-    title: "Development",
-    description:
-      "Our <a class='text-blue-600 font-semibold' href='/hire-blockchain-developer'>blockchain developers</a>  bring your platform to life with advanced coding, integrating features like escrow services, secure wallets, KYC/AML, and multi-currency support. Smart contract creation ensures transparency and trustless transactions.",
-  },
-  {
-    title: "Quality Assurance",
-    description:
-      "Rigorous testing is carried out to verify functionality, security, and performance. We conduct vulnerability assessments, penetration testing, and smart contract audits to eliminate any risks.",
-  },
-  {
-    title: "Time to Launch and Maintain",
-    description:
-      "After successful testing, we deploy the platform on your chosen infrastructure. We ensure a hassle-free launch and provide maintenance services to guarantee smooth operations and platform stability.",
-  },
-  {
-    title: "Post-Launch Monitoring and Updates",
-    description:
-      "We offer continuous monitoring, security updates, and performance optimizations to keep your exchange running efficiently and aligned with industry advancements.",
-  },
-  {
-    title: "Community Engagement and Promotion",
-    description:
-      "We help you engage with the crypto community through strategic marketing and promotional activities to attract traders, build trust, and boost platform adoption.",
-  },
-];
+
 
 const CardGridData = [
   {

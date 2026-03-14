@@ -152,19 +152,6 @@ const jsonLdData = [
   },
 
   {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    "brand": "Comfygen Private Limited",
-    "name": "Neo Bank App Development Services",
-    "image": "https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-hero.webp",
-    "description": "Partner with Comfygen for expert NeoBank app development. We offer secure, scalable, and AI-powered banking apps designed to redefine digital finance.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1928"
-    }
-  },
-  {
     "@context": "https://schema.org/",
     "@type": "BreadcrumbList",
     "itemListElement": [

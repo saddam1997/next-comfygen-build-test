@@ -229,19 +229,6 @@ export default function ClinicalApp(props: any) {
       ]
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "name": "AI-Powered Mobile Crypto Wallet Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/mobile-crypto-wallet-development-about.webp",
-      "description": "Comfygen delivers secure, scalable, and AI-powered mobile crypto wallet solutions for iOS and Android, including multi-currency support, DeFi and NFT integration, cross-chain functionality, and enterprise-grade security.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1405"
-      }
-    },
 
     {
       "@context": "https://schema.org",

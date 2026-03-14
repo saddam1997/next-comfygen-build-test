@@ -149,41 +149,8 @@ const ServiceData = {
   ],
 };
 
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Comfygen",
-  url: "https://www.comfygen.com/",
-  logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-  description: "Best Cricket Live Line API Service Provider",
-  sameAs: [
-    "https://twitter.com/comfygentech",
-    "https://www.instagram.com/comfygen_/?hl=en",
-    "https://www.linkedin.com/company/comfygen-private-limited",
-    "https://www.facebook.com/comfygen",
-  ],
-};
 
-const productData = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Sports Live Line API Provider | Fast & Reliable API Seller – ComfygenTechnologies",
-  brand: {
-    "@type": "Brand",
-    name: "Comfygen",
-  },
-  image:
-    "https://www.comfygen.com/_next/image?url=%2Fimg%2Fskyrocket-your-exprience-with-cricket-live-line-api-development-company.webp&w=640&q=75",
-  description:
-    "Comfygen is a top Sports Live Line API provider offering fast, real-time APIs for cricket, football, NBA & more. Hire expert developers today.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1125",
-    bestRating: "5",
-    worstRating: "1",
-  },
-};
+
 
 const faqPageSchema = {
   "@context": "https://schema.org",
@@ -468,14 +435,7 @@ Best Sports Live Line API Provider Company | Real-Time Sports data
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        />
+      
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}

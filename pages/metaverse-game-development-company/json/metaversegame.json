@@ -832,22 +832,6 @@
       ]
     },
     {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "Metaverse Game App Development Services | AR VR & Web3 Gaming",
-      "image": " About Section Image URL ",
-      "description": "Comfygen offers advanced Metaverse game app development services, delivering immersive AR/VR virtual worlds, blockchain-powered gaming platforms, NFT integration, multiplayer experiences, and scalable Web3 Metaverse solutions for next-generation gaming businesses.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "295"
-      }
-    },
-    {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
       "itemListElement": [

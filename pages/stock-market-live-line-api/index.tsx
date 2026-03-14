@@ -93,61 +93,6 @@ const Process = [
 ];
 
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Stock Market Live Line API Development Company | Comfygen",
-  "url": "https://www.comfygen.com/stock-market-live-line-api",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-};
-
-
-const organizationData = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Comfygen Technologies",
-  "url": "https://www.comfygen.com/",
-  "logo": "https://www.comfygen.com/svg/Logo1.svg",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "sales",
-    "contactOption": "TollFree",
-    "telephone": "+91 9587867258",
-    "email": "sales@comfygen.com",
-    "areaServed": [
-      "IN", "US", "CA", "GB"
-    ],
-    "availableLanguage": ["English", "Hindi"]
-  },
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies",
-    "https://www.linkedin.com/company/comfygen-technologies"
-  ]
-
-};
-
-
-const productData = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  "brand": "Comfygen",
-  "name": "Stock Market Live Line API Development Company - Real-Time Stock Market API Service",
-  "image": "https://www.comfygen.com/img/stock-market-api-service.webp",
-  "description": "Comfygen Private Limited is a leading provider of Stock Market Live Line API solutions. We deliver fast, secure, and scalable stock data API services for web and mobile applications.",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "1125"
-  }
-
-};
 
 
 const faqPageSchema = {
@@ -300,18 +245,6 @@ export default function Ecommerce(props: any) {
         <meta name="og:longitude" content="75.787271°" />
 
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
-        />
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}

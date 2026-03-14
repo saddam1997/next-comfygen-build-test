@@ -869,22 +869,7 @@
         }
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": {
-        "@type": "Brand",
-        "name": "Comfygen Technologies"
-      },
-      "name": "Social Media App Development Services",
-      "image": "https://www.comfygen.com/comfygen-images/social-media-app-development/about-us-image.webp",
-      "description": "Comfygen Technologies offers scalable and secure Social Media App Development Services, including custom social networking apps, AI-powered features, real-time messaging, live streaming, and ongoing support.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "135"
-      }
-    },
+
   
     {
       "@context": "https://schema.org/",

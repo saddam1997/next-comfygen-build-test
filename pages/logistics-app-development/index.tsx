@@ -118,79 +118,9 @@ const Process = [
   }
 ];
 
-const CardClone = [
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
-    title: "Uber Freight Clone App",
-    description:
-      "Launch your own Uber Freight-like app with our robust logistics application development services. We develop freight management apps similar to Uber Freight clone app with real-time load tracking, driver-matching algorithms, and dynamic pricing tools.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
-    title: "DHL Logistics Clone App",
-    description:
-      "Build DHL-like apps with enterprise-grade logistics functionalities. Our DHL Logistics clone app supports international shipping, warehouse integration, and customs tracking for a seamless global logistics network.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
-    title: "Convoy Clone App",
-    description:
-      "We develop digital freight platforms similar to Convoy, focused on efficiency and sustainability. This transportation app development model empowers carriers and shippers with smart automation, real-time analytics, and optimized freight matching.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
-    title: "Shiprocket Clone App",
-    description:
-      "Comfygen is a logistics software development firm that creates apps like Shiprocket are designed for eCommerce businesses and D2C brands. We help you replicate Shiprocket’s core capabilities like multi-carrier support, automated order syncing, and real-time delivery tracking.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
-    title: "Delhivery Clone App",
-    description:
-      "With our Delhivery clone app, you can create a powerful logistics platform that handles hyperlocal deliveries, reverse logistics, and warehouse automation. It’s ideal for companies looking to scale delivery operations through logistics app development services tailored to the Indian market dynamics.",
-    buttonText: "View Demo",
-  },
-  {
-    image:
-      "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
-    title: "BlackBuck Clone App",
-    description:
-      "Our BlackBuck-like logistics mobile app solution is built for large-scale freight movement and B2B trucking. We develop logistics platforms similar to BlackBuck, offering digital tools for long-haul transport, fleet coordination, and driver management.",
-    buttonText: "View Demo",
-  },
-];
 
-const WhoCanStartCards = [
-  {
-    heading: "Logistics Startups",
-    description:
-      "Launch your branded logistics app with real-time tracking, driver assignment, navigation, and automated scheduling. Improve delivery speed, operational visibility, and customer trust with cost-effective solutions.",
-  },
-  {
-    heading: "Enterprises & 3PL Providers",
-    description:
-      "Manage large-scale logistics operations from a centralised dashboard. Integrate ERP systems, automate workflows, track real-time performance, manage multi-warehouse operations, and generate actionable analytics.",
-  },
-  {
-    heading: "Freight Forwarders & Fleet Operators",
-    description:
-      "Track freight and fleet activities with precision, optimise routes, monitor vehicle status, and reduce downtime. Improve coordination and minimise fuel consumption with predictive insights and automated updates.",
-  },
-  {
-    heading: "E-commerce & Retail Businesses",
-    description:
-      "Enable end-to-end smart delivery processes with order tracking, proof of delivery, automated dispatching, customer alerts, and last-mile logistics for a seamless customer experience.",
-  },
-];
+
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
