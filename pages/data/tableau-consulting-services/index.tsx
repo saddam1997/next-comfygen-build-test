@@ -7,6 +7,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSection from "../../../components/HeroSection";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -245,7 +246,7 @@ export default function Mobile(props: any) {
       <Header />
       {/* </LazyLoad> */}
       <div className="pt-16">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Expert Tableau Consulting Service Provider for Analytics & BI"
           ptag="Comfygen is a expert tableau consulting service provider company helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions."
           li="Tailored Dashboards That Drive Action"

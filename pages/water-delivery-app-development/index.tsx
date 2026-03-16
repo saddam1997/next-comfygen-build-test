@@ -400,7 +400,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-0 pt-16">
+      <div className="overflow-hidden lg:pt-20 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
        
         <Milestones />

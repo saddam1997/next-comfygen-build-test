@@ -171,21 +171,7 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "Enterprise Logistics App Development for Transport Businesses",
-      image:
-        "https://www.comfygen.com/comfygen-images/logistics-app-development/about.webp",
-      description:
-        "Comfygen Technologies offers enterprise-grade logistics and transport app development. Build custom solutions for freight, warehouse, courier, and supply chain operations with full post-launch support.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "560",
-      },
-    },
+ 
 
     {
       "@context": "https://schema.org/",

@@ -1,61 +1,56 @@
 {
-"Frequently": [
-  {
-    "num": "1",
-    "title": "What is a Rugby Live Line API?",
-    "desc": "It provides real-time match data like scores, stats, and events for rugby games via API endpoints."
-  },
-  {
-    "num": "2",
-    "title": "Can I use your API for gaming platforms?",
-    "desc": "Yes, we offer rugby API for gaming platforms with real-time odds and match updates."
-  },
-  {
-    "num": "3",
-    "title": "Do you support global rugby leagues?",
-    "desc": "Absolutely! Our rugby leagues live line API covers international and domestic tournaments."
-  },
-  {
-    "num": "4",
-    "title": "Is the Rugby Live Data API customizable?",
-    "desc": "Yes, we offer custom rugby live data API for any app architecture."
-  },
-  {
-    "num": "5",
-    "title": "How quickly can I integrate your API?",
-    "desc": "Most clients complete rugby API integration services in under 7 days with our support."
-  },
-  {
-    "num": "6",
-    "title": "Do you offer post-integration support?",
-    "desc": "Yes, we offer ongoing support and maintenance packages."
-  },
-  {
-    "num": "7",
-    "title": "Is your API developer-friendly?",
-    "desc": "Our rugby API for developers comes with complete documentation and SDKs."
-  },
-  {
-    "num": "8",
-    "title": "Can your API handle high-traffic events?",
-    "desc": "Yes, it’s built on scalable architecture designed for live sports loads."
-  },
-  {
-    "num": "9",
-    "title": "Do you offer data for historical matches?",
-    "desc": "Yes, our rugby data feeds API includes historical stats and scores."
-  },
-  {
-    "num": "10",
-    "title": "Can I get live rugby highlights via API?",
-    "desc": "Yes, our rugby API for highlights delivers video and stat-driven moments."
-  }
-],
-
-
-
-
-
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What is a Rugby Live Line API?",
+      "desc": "It provides real-time match data like scores, stats, and events for rugby games via API endpoints."
+    },
+    {
+      "num": "2",
+      "title": "Can I use your API for gaming platforms?",
+      "desc": "Yes, we offer rugby API for gaming platforms with real-time odds and match updates."
+    },
+    {
+      "num": "3",
+      "title": "Do you support global rugby leagues?",
+      "desc": "Absolutely! Our rugby leagues live line API covers international and domestic tournaments."
+    },
+    {
+      "num": "4",
+      "title": "Is the Rugby Live Data API customizable?",
+      "desc": "Yes, we offer custom rugby live data API for any app architecture."
+    },
+    {
+      "num": "5",
+      "title": "How quickly can I integrate your API?",
+      "desc": "Most clients complete rugby API integration services in under 7 days with our support."
+    },
+    {
+      "num": "6",
+      "title": "Do you offer post-integration support?",
+      "desc": "Yes, we offer ongoing support and maintenance packages."
+    },
+    {
+      "num": "7",
+      "title": "Is your API developer-friendly?",
+      "desc": "Our rugby API for developers comes with complete documentation and SDKs."
+    },
+    {
+      "num": "8",
+      "title": "Can your API handle high-traffic events?",
+      "desc": "Yes, it’s built on scalable architecture designed for live sports loads."
+    },
+    {
+      "num": "9",
+      "title": "Do you offer data for historical matches?",
+      "desc": "Yes, our rugby data feeds API includes historical stats and scores."
+    },
+    {
+      "num": "10",
+      "title": "Can I get live rugby highlights via API?",
+      "desc": "Yes, our rugby API for highlights delivers video and stat-driven moments."
+    }
+  ],
   "servicesData": [
     {
       "title": "Custom Rugby Live Data API",
@@ -118,43 +113,39 @@
       ]
     }
   ],
-
-"consultancyHead" :[
-  {
-    "num": "1",
-    "title": "Features of Our Rugby Live Line API Solutions",
-    "desc": "Discover what sets our Pool Live Line API apart from the competition. Our Cue Sports Data Feed API is packed with real-time match data, detailed frame-by-frame insights, and a scalable architecture. Designed for developers, sports platforms, and broadcasters, it ensures accurate, consistent, and actionable data delivery across pool, snooker, and billiards—every time."
-  }
-],
-
-"consultancyData": [
-  {
-    "title": "Real-Time Score Updates",
-    "desc": "Stay ahead of the game with real-time rugby match data delivered instantly. Our API ensures second-by-second updates, helping platforms engage users with the latest scores, events, and statistics—without delays or data lags."
-  },
-  {
-    "title": "Developer-Centric Design",
-    "desc": "Our APIs are built for developers—simple to use, fully documented, and backed with sample requests and responses. Whether you're building a mobile app or a gaming engine, integration is fast, reliable, and hassle-free."
-  },
-  {
-    "title": "Global League Coverage",
-    "desc": "From local club matches to world-class rugby tournaments, our API covers it all. You get access to comprehensive data across all levels—national, international, and professional leagues—through a unified feed."
-  },
-  {
-    "title": "AI-Powered Highlight Generation",
-    "desc": "Capture the most thrilling moments with AI-driven highlight generation. Automatically extract key plays, turning raw data into engaging video clips and summaries ideal for media, fan apps, and sports news."
-  },
-  {
-    "title": "Secure & Scalable Infrastructure",
-    "desc": "Engineered for peak-time performance, our rugby data API scales effortlessly with traffic demands. Enjoy military-grade security, uptime reliability, and smooth data delivery—even during major global events."
-  },
-  {
-    "title": "Dedicated Support Team",
-    "desc": "Our expert team is here for you 24/7. Whether it's integration help, performance tuning, or bug fixes, we provide responsive and hands-on support to keep your rugby app or platform running flawlessly."
-  }
-],
-
-
+  "consultancyHead": [
+    {
+      "num": "1",
+      "title": "Features of Our Rugby Live Line API Solutions",
+      "desc": "Discover what sets our Pool Live Line API apart from the competition. Our Cue Sports Data Feed API is packed with real-time match data, detailed frame-by-frame insights, and a scalable architecture. Designed for developers, sports platforms, and broadcasters, it ensures accurate, consistent, and actionable data delivery across pool, snooker, and billiards—every time."
+    }
+  ],
+  "consultancyData": [
+    {
+      "title": "Real-Time Score Updates",
+      "desc": "Stay ahead of the game with real-time rugby match data delivered instantly. Our API ensures second-by-second updates, helping platforms engage users with the latest scores, events, and statistics—without delays or data lags."
+    },
+    {
+      "title": "Developer-Centric Design",
+      "desc": "Our APIs are built for developers—simple to use, fully documented, and backed with sample requests and responses. Whether you're building a mobile app or a gaming engine, integration is fast, reliable, and hassle-free."
+    },
+    {
+      "title": "Global League Coverage",
+      "desc": "From local club matches to world-class rugby tournaments, our API covers it all. You get access to comprehensive data across all levels—national, international, and professional leagues—through a unified feed."
+    },
+    {
+      "title": "AI-Powered Highlight Generation",
+      "desc": "Capture the most thrilling moments with AI-driven highlight generation. Automatically extract key plays, turning raw data into engaging video clips and summaries ideal for media, fan apps, and sports news."
+    },
+    {
+      "title": "Secure & Scalable Infrastructure",
+      "desc": "Engineered for peak-time performance, our rugby data API scales effortlessly with traffic demands. Enjoy military-grade security, uptime reliability, and smooth data delivery—even during major global events."
+    },
+    {
+      "title": "Dedicated Support Team",
+      "desc": "Our expert team is here for you 24/7. Whether it's integration help, performance tuning, or bug fixes, we provide responsive and hands-on support to keep your rugby app or platform running flawlessly."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for your Rugby Live Line API ?",
     "description": "With over a decade of experience in API and software development, Comfygen has established itself as a trusted technology partner for sports businesses, startups, and enterprises around the world. Our expertise in Rugby Live Line API ensures that your platform receives accurate, real-time data with seamless integration tailored to your unique needs. We don't just deliver code—we build long-term relationships focused on performance, scalability, and reliability. Our development process is transparent, our support is proactive, and our solutions are designed to grow with your business. Whether you’re launching a sports app, gaming platform, or a scoreboard system, we provide the tech backbone you can count on.",
@@ -163,35 +154,33 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-   "gridData": [
-    {
-    
-      "title": "Expert API Developers",
-      "description": "10+ years in API engineering for real-time data systems."
-    },
-    {
-      "title": "Tailor-Made API Solutions",
-      "description": "We don’t believe in one-size-fits-all. Everything is custom-built."
-    },
-    {
-      "title": "End-to-End Support",
-      "description": "From consultation to post-launch support, we’ve got you covered."
-    },
-    {
-      "title": "Quick Turnaround Time",
-      "description": "We deliver faster without compromising quality."
-    },
-    {
-      "title": "100% Secure Architecture",
-      "description": "SSL encryption, secure tokens, and usage throttling."
-    },
-    {
-      "title": "Full Compliance",
-      "description": "Designed to align with gaming and gaming regulations."
-    }
-  ]
-},
-  
+    "gridData": [
+      {
+        "title": "Expert API Developers",
+        "description": "10+ years in API engineering for real-time data systems."
+      },
+      {
+        "title": "Tailor-Made API Solutions",
+        "description": "We don’t believe in one-size-fits-all. Everything is custom-built."
+      },
+      {
+        "title": "End-to-End Support",
+        "description": "From consultation to post-launch support, we’ve got you covered."
+      },
+      {
+        "title": "Quick Turnaround Time",
+        "description": "We deliver faster without compromising quality."
+      },
+      {
+        "title": "100% Secure Architecture",
+        "description": "SSL encryption, secure tokens, and usage throttling."
+      },
+      {
+        "title": "Full Compliance",
+        "description": "Designed to align with gaming and gaming regulations."
+      }
+    ]
+  },
   "gamedev": [
     {
       "img": "https://www.comfygen.com/img/cricket-live-line-apiI-development.webp",
@@ -278,7 +267,6 @@
       "url": "#"
     }
   ],
-
   "Shaping": [
     {
       "num": "01",
@@ -311,7 +299,6 @@
       "decs": "Push notifications give important updates and instant alerts on all the all cricket match live activities like wicket, century, match results, etc."
     }
   ],
-  
   "WhyCricketLive": [
     {
       "num": "01",
@@ -354,7 +341,6 @@
       "decs": "On-time product delivery before the promised deadline"
     }
   ],
-
   "Hire": [
     {
       "num": "1",
@@ -364,7 +350,6 @@
       "btn": "Hire Developer"
     }
   ],
-
   "myList": [
     "Specialization in mobile app development, bringing a deep understanding of the cricket enthusiast’s unique requirements.",
     "Leveraging the latest technology and tools, our developers create leading-edge apps that outshine.",
@@ -372,7 +357,6 @@
     "Our cricket live line api developers carry a passion for cricket resulting in developing a highly engaging score app that resonates with cricket enthusiasts.",
     "The score update app developers work closely with our clients to understand their specifications and create an app that aligns perfectly with their visions."
   ],
-
   "GameCardData": [
     {
       "num": "1",
@@ -469,6 +453,130 @@
       "img": "https://www.comfygen.com/img/satta-matka-game-development-via-comfygen.webp",
       "url": "/satta-matka-game-app-development-company",
       "title": "Satta Matka Game Development"
+    }
+  ],
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Rugby Live Line API ",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Get custom Rugby Live Line API, live scores, highlights, live line APIs & scoreboard data from Comfygen. Trusted Rugby API integration company with 10+ years’ expertise.",
+      "url": "https://www.comfygen.com/rugby-live-line-api-development",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.comfygen.com/rugby-live-line-api-development"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Global"
+      },
+      "serviceType": [
+        "Custom Rugby Live Data API",
+        "Rugby API for Betting Platforms",
+        "Rugby Match Live Score API Integration",
+        "Rugby Match Live Score API Integration",
+        "Rugby Match Live Score API Integration",
+        "Rugby Feed API for Developers",
+        "Rugby API for Highlights & Media"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies/",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies/",
+        "https://www.youtube.com/@Comfygentechnologies"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Rugby Live Line API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It provides real-time match data like scores, stats, and events for rugby games via API endpoints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use your API for gaming platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer rugby API for gaming platforms with real-time odds and match updates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support global rugby leagues?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Our rugby leagues live line API covers international and domestic tournaments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Rugby Live Data API customizable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer custom rugby live data API Services for any app architecture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can I integrate your API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most clients complete rugby API integration services in under 7 days with our support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer post-integration support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer ongoing support and maintenance packages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is your API developer-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our rugby API for developers comes with complete documentation and SDKs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can your API handle high-traffic events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, it’s built on scalable architecture designed for live sports loads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer data for historical matches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our rugby data feeds API includes historical stats and scores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get live rugby highlights via API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our rugby API for highlights delivers video and stat-driven moments."
+          }
+        }
+      ]
     }
   ]
 }

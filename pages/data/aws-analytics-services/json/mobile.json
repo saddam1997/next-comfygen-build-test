@@ -700,19 +700,7 @@
           "https://www.linkedin.com/company/comfygen-technologies"
         ]
       },
-      {
-        "@context": "http://www.schema.org",
-        "@type": "Product",
-        "brand": "Comfygen Technologies",
-        "Name": "AWS Analytics Services | Real-Time Data Insights with Comfygen",
-        "image": "https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp",
-        "description": "Unlock actionable insights with AWS Analytics Services. From Redshift to Glue and Kinesis, we build custom, scalable solutions for real-time data performance.",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "115"
-        }
-      },
+
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",

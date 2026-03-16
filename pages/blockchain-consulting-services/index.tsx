@@ -3,80 +3,163 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-
 import { MdOutlineArrowOutward } from "react-icons/md";
+
+
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const SolutionSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const CallToAction = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const IndustriesServe = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {  ssr: true }
+  { ssr: true }
 );
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const GuidSectionBlockchain = dynamic(
   () => import("./components/GuidSectionBlockchain"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  {  ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
 
+
+
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 
@@ -97,7 +180,7 @@ export default function rummy(props: any) {
 
 
 
- 
+
 
   return (
     <>
@@ -133,7 +216,7 @@ export default function rummy(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/blockchain-consulting-services/og.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
-     
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
@@ -143,23 +226,9 @@ export default function rummy(props: any) {
         <BlockChainHeader />
       </div>
 
-      <div className="overflow-hidden lg:pt-[100px]">
-        <HeroSectionForAllPages
-          heading="Blockchain Consulting Service Provider In India and USA"
-          ptag="Comfygen is a reliable blockchain consulting service provider helping startups, SMEs, and enterprises plan, validate, and scale blockchain initiatives. Our blockchain consultants work closely with businesses to define the right strategy, assess use cases, and design blockchain solutions that improve operational efficiency, lower costs, and create new revenue opportunities."
-          ptag1=""
-          li1="Tailored Blockchain Strategy & Roadmapping"
-          li2="Enterprise Blockchain Consulting & Architecture"
-          li3="Smart Contract, DeFi, NFT & Web3 Advisory"
-          li4="End-to-End Blockchain Consulting & Support"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/blockchain-consulting-services-img-hero.webp"
-        />
+      <div className="overflow-hidden lg:pt-16 pt-16">
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+
 
         <Milestones />
 
@@ -227,7 +296,7 @@ export default function rummy(props: any) {
         <IndustriesServe
           heading="Industries We Serve as a Blockchain Consulting Service Expert"
           description="At Comfygen, we provide blockchain consulting across industries—finance, healthcare, supply chain, and real estate—delivering tailored solutions that drive digital transformation, boost efficiency, and unlock new business opportunities."
-        
+
         />
 
         <section className="bg-white lg:py-16 py-10">
@@ -263,7 +332,7 @@ export default function rummy(props: any) {
 
         <section
           className="bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95"
-         
+
         >
           <div className="lg:py-16 py-10 bg-gradient-to-r from-[#272868]/95 to-[#5556D1]/95">
             <div className="space-y-4 bg-gradient-to-r from-[#272868] to-[#5556D1] p-8 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto rounded-xl">

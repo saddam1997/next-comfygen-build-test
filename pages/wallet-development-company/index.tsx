@@ -413,7 +413,7 @@ export default function Ecommerce(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-0 pt-16">
+      <div className="overflow-hidden lg:pt-24 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
 
 

@@ -191,20 +191,6 @@ export default function ClinicalApp(props: any) {
       ],
     },
 
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      brand: "Comfygen Technologies",
-      Name: "End-to-End Home Services App Development Solutions",
-      image: "https://www.comfygen.com/comfygen-images/home-services-app-development/about.webp",
-      description:
-        "From idea to launch, Comfygen provides complete home services app development solutions. Our home service mobile apps include booking, tracking, payments, and admin panels — built for performance and business growth.",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "245",
-      },
-    },
 
     {
       "@context": "https://schema.org/",

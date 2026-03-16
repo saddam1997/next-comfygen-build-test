@@ -1,160 +1,151 @@
 {
   "Frequently": [
-  {
-    "num": "1",
-    "title": "What is a Golf Live Line API?",
-    "desc": "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers."
-  },
-  {
-    "num": "2",
-    "title": "How accurate is the data from your Golf API?",
-    "desc": "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time."
-  },
-  {
-    "num": "3",
-    "title": "Can I use this API for fantasy golf platforms?",
-    "desc": "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed."
-  },
-  {
-    "num": "4",
-    "title": "Do you offer custom Golf API solutions?",
-    "desc": "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals."
-  },
-  {
-    "num": "5",
-    "title": "Is your API suitable for betting applications?",
-    "desc": "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms."
-  },
-  {
-    "num": "6",
-    "title": "How long does it take to integrate the API?",
-    "desc": "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment."
-  },
-  {
-    "num": "7",
-    "title": "Will I get post-deployment support?",
-    "desc": "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance."
-  },
-  {
-    "num": "8",
-    "title": "Do you support multi-sport API integration?",
-    "desc": "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs."
-  }
-],
-
-
-
-"servicesData": [
-  {
-    "title": "Live Golf Scores Integration",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Deliver real-time score updates from ongoing tournaments, including shot-by-shot and hole-by-hole data. Our APIs ensure your users never miss a leaderboard change or a birdie putt.",
-    "features": [
-      "Real-time tournament scores",
-      "Shot-by-shot and hole-by-hole updates",
-      "Live leaderboard integration"
-    ]
-  },
-  {
-    "title": "Player Performance & Stats APIs",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Integrate advanced player statistics such as driving distance, fairway hits, putting accuracy, greens in regulation, and round averages—ideal for analytics-driven apps or fantasy platforms.",
-    "features": [
-      "Driving distance and accuracy",
-      "Putting and greens in regulation stats",
-      "Round-by-round player averages"
-    ]
-  },
-  {
-    "title": "Tournament Schedules & Tee Times",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Embed detailed tournament calendars, tee times, course information, and round formats for PGA, LPGA, European Tour, and more—updated in real time.",
-    "features": [
-      "PGA, LPGA, and European Tour data",
-      "Live tee times and round formats",
-      "Course and event scheduling"
-    ]
-  },
-  {
-    "title": "Course & Weather Data APIs",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Add context to live golf events with APIs that provide course details, terrain data, and live weather updates—ensuring a more immersive user experience.",
-    "features": [
-      "Course terrain and layout data",
-      "Real-time weather updates",
-      "Enhanced live event context"
-    ]
-  },
-  {
-    "title": "Historical Golf Data Integration",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Access past tournament results, player win histories, season rankings, and performance trends to fuel predictions, comparisons, and rich storytelling features.",
-    "features": [
-      "Historic tournament results",
-      "Player win/loss records",
-      "Season performance analytics"
-    ]
-  },
-  {
-    "title": "Golf Odds & Betting APIs",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "For platforms focused on betting or fantasy leagues, integrate real-time golf odds, betting lines, and outcome projections for smarter decision-making and deeper engagement.",
-    "features": [
-      "Live golf betting odds",
-      "Outcome prediction data",
-      "Fantasy league support"
-    ]
-  },
-  {
-    "title": "Custom API Support",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "We go beyond off-the-shelf integration. Our team develops custom API endpoints, performs platform-specific optimizations, and provides ongoing technical support to ensure your golf product runs seamlessly.",
-    "features": [
-      "Tailored API endpoints",
-      "Performance-focused integration",
-      "Ongoing technical assistance"
-    ]
-  }
-],
-
-
-
-"consultancyHead" :[
-  {
-    "num": "1",
-    "title": "Key Features of Our Golf Live Line API",
-    "desc": ""
-  }
-],
-
-"consultancyData": [
-  {
-    "title": "Real-Time Data Delivery",
-    "desc": "Our API ensures that users receive live updates with minimal latency, keeping them informed about every development on the course."
-  },
-  {
-    "title": "Comprehensive Player Profiles",
-    "desc": "Access detailed information on players, including biographies, career statistics, and recent performances, enhancing user engagement."
-  },
-  {
-    "title": "Tournament Coverage",
-    "desc": "From major championships to regional tournaments, our API covers a wide range of events, providing extensive data to cater to diverse user interests."
-  },
-  {
-    "title": "Customizable Widgets",
-    "desc": "Easily integrate customizable widgets into your platform, allowing for seamless display of live scores, leaderboards, and player stats."
-  },
-  {
-    "title": "Multi-Language Support",
-    "desc": "Reach a global audience with our API's support for multiple languages, ensuring accessibility and user-friendliness across different regions."
-  },
-  {
-    "title": "Live Event Alerts & Notifications",
-    "desc": "Get notified of major events such as player movement on the leaderboard, eagles, bogeys, disqualifications, or weather delays—trigger automated messages and enhance engagement."
-  }
-],
-
-
+    {
+      "num": "1",
+      "title": "What is a Golf Live Line API?",
+      "desc": "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers."
+    },
+    {
+      "num": "2",
+      "title": "How accurate is the data from your Golf API?",
+      "desc": "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time."
+    },
+    {
+      "num": "3",
+      "title": "Can I use this API for fantasy golf platforms?",
+      "desc": "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed."
+    },
+    {
+      "num": "4",
+      "title": "Do you offer custom Golf API solutions?",
+      "desc": "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals."
+    },
+    {
+      "num": "5",
+      "title": "Is your API suitable for betting applications?",
+      "desc": "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms."
+    },
+    {
+      "num": "6",
+      "title": "How long does it take to integrate the API?",
+      "desc": "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment."
+    },
+    {
+      "num": "7",
+      "title": "Will I get post-deployment support?",
+      "desc": "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance."
+    },
+    {
+      "num": "8",
+      "title": "Do you support multi-sport API integration?",
+      "desc": "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs."
+    }
+  ],
+  "servicesData": [
+    {
+      "title": "Live Golf Scores Integration",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Deliver real-time score updates from ongoing tournaments, including shot-by-shot and hole-by-hole data. Our APIs ensure your users never miss a leaderboard change or a birdie putt.",
+      "features": [
+        "Real-time tournament scores",
+        "Shot-by-shot and hole-by-hole updates",
+        "Live leaderboard integration"
+      ]
+    },
+    {
+      "title": "Player Performance & Stats APIs",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Integrate advanced player statistics such as driving distance, fairway hits, putting accuracy, greens in regulation, and round averages—ideal for analytics-driven apps or fantasy platforms.",
+      "features": [
+        "Driving distance and accuracy",
+        "Putting and greens in regulation stats",
+        "Round-by-round player averages"
+      ]
+    },
+    {
+      "title": "Tournament Schedules & Tee Times",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Embed detailed tournament calendars, tee times, course information, and round formats for PGA, LPGA, European Tour, and more—updated in real time.",
+      "features": [
+        "PGA, LPGA, and European Tour data",
+        "Live tee times and round formats",
+        "Course and event scheduling"
+      ]
+    },
+    {
+      "title": "Course & Weather Data APIs",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Add context to live golf events with APIs that provide course details, terrain data, and live weather updates—ensuring a more immersive user experience.",
+      "features": [
+        "Course terrain and layout data",
+        "Real-time weather updates",
+        "Enhanced live event context"
+      ]
+    },
+    {
+      "title": "Historical Golf Data Integration",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Access past tournament results, player win histories, season rankings, and performance trends to fuel predictions, comparisons, and rich storytelling features.",
+      "features": [
+        "Historic tournament results",
+        "Player win/loss records",
+        "Season performance analytics"
+      ]
+    },
+    {
+      "title": "Golf Odds & Betting APIs",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "For platforms focused on betting or fantasy leagues, integrate real-time golf odds, betting lines, and outcome projections for smarter decision-making and deeper engagement.",
+      "features": [
+        "Live golf betting odds",
+        "Outcome prediction data",
+        "Fantasy league support"
+      ]
+    },
+    {
+      "title": "Custom API Support",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "We go beyond off-the-shelf integration. Our team develops custom API endpoints, performs platform-specific optimizations, and provides ongoing technical support to ensure your golf product runs seamlessly.",
+      "features": [
+        "Tailored API endpoints",
+        "Performance-focused integration",
+        "Ongoing technical assistance"
+      ]
+    }
+  ],
+  "consultancyHead": [
+    {
+      "num": "1",
+      "title": "Key Features of Our Golf Live Line API",
+      "desc": ""
+    }
+  ],
+  "consultancyData": [
+    {
+      "title": "Real-Time Data Delivery",
+      "desc": "Our API ensures that users receive live updates with minimal latency, keeping them informed about every development on the course."
+    },
+    {
+      "title": "Comprehensive Player Profiles",
+      "desc": "Access detailed information on players, including biographies, career statistics, and recent performances, enhancing user engagement."
+    },
+    {
+      "title": "Tournament Coverage",
+      "desc": "From major championships to regional tournaments, our API covers a wide range of events, providing extensive data to cater to diverse user interests."
+    },
+    {
+      "title": "Customizable Widgets",
+      "desc": "Easily integrate customizable widgets into your platform, allowing for seamless display of live scores, leaderboards, and player stats."
+    },
+    {
+      "title": "Multi-Language Support",
+      "desc": "Reach a global audience with our API's support for multiple languages, ensuring accessibility and user-friendliness across different regions."
+    },
+    {
+      "title": "Live Event Alerts & Notifications",
+      "desc": "Get notified of major events such as player movement on the leaderboard, eagles, bogeys, disqualifications, or weather delays—trigger automated messages and enhance engagement."
+    }
+  ],
   "pageData": {
     "title": "Why Choose Comfygen for Golf Live Score API?",
     "description": "When it comes to delivering real-time golf data solutions, Comfygen stands out as a trusted industry leader. Our commitment to precision, scalability, and innovation has made us the go-to partner for startups, enterprises, and sports tech platforms looking for robust Golf Live Line API services. At Comfygen, we understand that golf is a game of inches—and so is technology. That’s why our developers build APIs that offer lightning-fast updates, player-level data insights, tournament metrics, and flawless integration across platforms. We deliver not just an API, but a powerful toolkit that drives engagement, performance, and growth.",
@@ -163,42 +154,39 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-   "gridData": [
-  {
-    "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-    "title": "Expertise in Sports API Integration",
-    "description": "With over a decade of experience in sports app development, our team excels in delivering real-time APIs for golf, football, cricket, and more. We understand the domain inside out—from player stats to leaderboard dynamics."
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expertise in Sports API Integration",
+        "description": "With over a decade of experience in sports app development, our team excels in delivering real-time APIs for golf, football, cricket, and more. We understand the domain inside out—from player stats to leaderboard dynamics."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Real-Time, Low-Latency Golf Data",
+        "description": "Our Golf Live Line API solutions deliver live scores, shot-by-shot updates, player profiles, and tournament stats instantly, ensuring your users stay in sync with every stroke on the green."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Custom Golf API ",
+        "description": "Need features beyond standard scoreboards? We craft custom golf APIs tailored to your application’s needs—whether for fantasy golf apps, sports betting platforms, or live analytics dashboards."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Scalable Infrastructure",
+        "description": "Whether you're serving 1,000 or 1 million users, our APIs are built for scalable performance, ensuring no data lags—even during major tournaments."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Dedicated Support & Maintenance",
+        "description": "From API version updates to technical assistance and post-launch enhancements, our team ensures your app stays modern, stable, and competitive."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "End-to-End Sports App Development",
+        "description": "Looking to build more than just an API connection? Comfygen also offers end-to-end golf app development, covering UI/UX design, backend engineering, and deployment."
+      }
+    ]
   },
-  {
-    "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-    "title": "Real-Time, Low-Latency Golf Data",
-    "description": "Our Golf Live Line API solutions deliver live scores, shot-by-shot updates, player profiles, and tournament stats instantly, ensuring your users stay in sync with every stroke on the green."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-    "title": "Custom Golf API ",
-    "description": "Need features beyond standard scoreboards? We craft custom golf APIs tailored to your application’s needs—whether for fantasy golf apps, sports betting platforms, or live analytics dashboards."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-    "title": "Scalable Infrastructure",
-    "description": "Whether you're serving 1,000 or 1 million users, our APIs are built for scalable performance, ensuring no data lags—even during major tournaments."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-    "title": "Dedicated Support & Maintenance",
-    "description": "From API version updates to technical assistance and post-launch enhancements, our team ensures your app stays modern, stable, and competitive."
-  },
-  {
-    "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-    "title": "End-to-End Sports App Development",
-    "description": "Looking to build more than just an API connection? Comfygen also offers end-to-end golf app development, covering UI/UX design, backend engineering, and deployment."
-  }
-]
-
-
-  },
-  
   "gamedev": [
     {
       "img": "https://www.comfygen.com/img/cricket-live-line-apiI-development.webp",
@@ -285,7 +273,6 @@
       "url": "#"
     }
   ],
-
   "Shaping": [
     {
       "num": "01",
@@ -318,7 +305,6 @@
       "decs": "Push notifications give important updates and instant alerts on all the all cricket match live activities like wicket, century, match results, etc."
     }
   ],
-  
   "WhyCricketLive": [
     {
       "num": "01",
@@ -361,7 +347,6 @@
       "decs": "On-time product delivery before the promised deadline"
     }
   ],
-
   "Hire": [
     {
       "num": "1",
@@ -371,7 +356,6 @@
       "btn": "Hire Developer"
     }
   ],
-
   "myList": [
     "Specialization in mobile app development, bringing a deep understanding of the cricket enthusiast’s unique requirements.",
     "Leveraging the latest technology and tools, our developers create leading-edge apps that outshine.",
@@ -379,7 +363,6 @@
     "Our cricket live line api developers carry a passion for cricket resulting in developing a highly engaging score app that resonates with cricket enthusiasts.",
     "The score update app developers work closely with our clients to understand their specifications and create an app that aligns perfectly with their visions."
   ],
-
   "GameCardData": [
     {
       "num": "1",
@@ -476,6 +459,148 @@
       "img": "https://www.comfygen.com/img/satta-matka-game-development-via-comfygen.webp",
       "url": "/satta-matka-game-app-development-company",
       "title": "Satta Matka Game Development"
+    }
+  ],
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Golf Live Line API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the data from your Golf API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this API for fantasy golf platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer custom Golf API solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is your API suitable for betting applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to integrate the API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I get post-deployment support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support multi-sport API integration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Golf Live Line API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the data from your Golf API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this API for fantasy golf platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer custom Golf API solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is your API suitable for betting applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to integrate the API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I get post-deployment support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support multi-sport API integration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs."
+          }
+        }
+      ]
     }
   ]
 }

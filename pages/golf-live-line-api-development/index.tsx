@@ -140,76 +140,7 @@ const ServicesSchema = {
   ],
 };
 
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is a Golf Live Line API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "A Golf Live Line API is an application programming interface that provides real-time data from professional golf tournaments, including scores, player statistics, leaderboard changes, and live event updates. It’s ideal for fantasy sports apps, betting platforms, and live score trackers.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How accurate is the data from your Golf API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our APIs deliver highly accurate, low-latency golf data sourced from trusted providers and official tournament feeds. You get shot-by-shot updates, tee times, course conditions, and historical records in real-time.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I use this API for fantasy golf platforms?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. Our Golf API is fully equipped to power fantasy golf apps by providing live scoring, player performance metrics, and tournament updates—everything you need to keep your users engaged and informed.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer custom Golf API solutions?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, we do. At Comfygen, we provide tailored Golf API integration services based on your unique use case, platform requirements, and business goals.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is your API suitable for betting applications?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. We offer dedicated Golf Betting API integration that includes live odds, event predictions, and player insights, enabling better decision-making and real-time user interaction for betting platforms.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does it take to integrate the API?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The timeline varies depending on your platform complexity and required features, but most integrations are completed within 1–3 weeks, including testing and deployment.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Will I get post-deployment support?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. Our team provides continuous support, real-time monitoring, and API version updates to ensure long-term stability and performance.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you support multi-sport API integration?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. In addition to golf, Comfygen offers integration services for football, cricket, tennis, basketball, and more—making us your one-stop solution for sports data APIs.",
-      },
-    },
-  ],
-};
+
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -344,15 +275,15 @@ export default function Ecommerce(props) {
         />
         <meta name="twitter:site" content="@comfygentech" />
 
-       
-      
+
+
+ 
+
+
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ServicesSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 

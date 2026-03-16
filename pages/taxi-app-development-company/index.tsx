@@ -11,6 +11,7 @@ import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientSt
 import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
 import Link from "next/link";
 import ComparisonSection from "../../components/Newcomponet/SectionCompoent/ComparisonSection";
+import HeroSection from "../../components/HeroSection";
 
 
 
@@ -292,7 +293,7 @@ export default function Ecommerce(props) {
       </Head>
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+        <HeroSection
           heading={JSON_DATA.Herosection.heading}
           subhead={JSON_DATA.Herosection.subhead}
           ptag={JSON_DATA.Herosection.ptag}

@@ -6,6 +6,7 @@ import JSON_DATA from "./ELearningApp.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../components/HeroSection";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -382,7 +383,7 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
-          <HeroSectionForAllPages
+          <HeroSection
             heading="Flower Delivery App Development Company"
             // ptag="Launch Your Own Flower Delivery App with Ease"
             ptag1="Comfygen is the best flower delivery app development company that provide flower delivery app development solution for florists, startups, and delivery businesses. Our flower apps feature real-time tracking, secure payments, and scalable functionalities to ensure seamless user experience and efficient business operations. With Comfygen, you can launch a robust and user-friendly flower delivery app that delights customers and grows your business."

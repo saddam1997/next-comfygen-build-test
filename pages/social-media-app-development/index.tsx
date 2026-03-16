@@ -228,7 +228,7 @@ export default function Mobile(props:any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
+        
           <HeroSectionForAllPages
             heading="Leading Social Media App Development Company in India"
             ptag="Hiring a social media app development company  is a crucial decision for anyone looking to build a powerful social media platform. Comfygen is a top-notch social media app development company in India that delivers the best social networking app solutions to help businesses create world-class social networking applications. With a proven track record of delivering high-quality projects on time and within budget, Comfygen is the ideal partner for anyone looking to develop a social media app that stands out in a highly competitive market."
@@ -244,7 +244,7 @@ export default function Mobile(props:any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
           />
-        </div>
+    
         <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">

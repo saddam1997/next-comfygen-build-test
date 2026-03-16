@@ -375,7 +375,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden lg:pt-24">
 
         <HeroSectionForAllPages
           heading="Health Tracking App Development Service"

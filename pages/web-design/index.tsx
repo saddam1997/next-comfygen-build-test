@@ -139,45 +139,7 @@ export default function Mobile(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen",
-              legalName: "Comfygen Pvt. Ltd.",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-              foundingDate: "2019",
-              founders: [
-                { "@type": "Person", name: "Saddam Husen" },
-                { "@type": "Person", name: "Saddam Husen" },
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-                addressLocality: "Vaishali Nagar",
-                addressRegion: "Jaipur, Rajasthan, India",
-                postalCode: "302021",
-                addressCountry: "India",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-              },
-              areaServed: ["IN", "US", "CA", "GB", "AE", "DE"],
-              sameAs: [
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-                "https://www.facebook.com/comfygen",
-              ],
-            }),
-          }}
-        />
+       
       </Head>
       <Navbar />
       <div className="overflow-hidden lg:pt-0 pt-16">

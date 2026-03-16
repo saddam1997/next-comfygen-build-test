@@ -100,6 +100,7 @@ const ClientTestimonials = dynamic(
 
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import EcommerceOptions from "../../components/Newcomponet/comman/EcommerceOptions";
+import HeroSection from "../../components/HeroSection";
 
 
 
@@ -415,7 +416,7 @@ export default function Ecommerce(props) {
 
       <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Ecommerce App Development Company"
           ptag="As a leading ecommerce app development company, Comfygen Technologies helps businesses build powerful mobile shopping applications tailored to their brand and audience. Our ecommerce apps support smooth navigation, real-time order tracking, secure transactions, and personalized shopping experiences. With a focus on performance, security, and scalability, we deliver ecommerce solutions that enhance customer satisfaction and maximize online revenue."
           li="Secure payments, carts & order tracking"

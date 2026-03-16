@@ -100,140 +100,19 @@ const Process = [
 
 
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Rugby Live Line API ",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Get custom Rugby Live Line API, live scores, highlights, live line APIs & scoreboard data from Comfygen. Trusted Rugby API integration company with 10+ years’ expertise.",
-  "url": "https://www.comfygen.com/rugby-live-line-api-development",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/rugby-live-line-api-development"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Global"
-  },
-  "serviceType": [
-    "Custom Rugby Live Data API",
-    "Rugby API for Betting Platforms",
-    "Rugby Match Live Score API Integration",
-    "Rugby Match Live Score API Integration",
-    "Rugby Match Live Score API Integration",
-    "Rugby Feed API for Developers",
-    "Rugby API for Highlights & Media"
-
-  ],
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies"
-  ]
-};
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Rugby Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It provides real-time match data like scores, stats, and events for rugby games via API endpoints."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use your API for gaming platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer rugby API for gaming platforms with real-time odds and match updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you support global rugby leagues?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely! Our rugby leagues live line API covers international and domestic tournaments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is the Rugby Live Data API customizable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer custom rugby live data API Services for any app architecture."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How quickly can I integrate your API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most clients complete rugby API integration services in under 7 days with our support."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer post-integration support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer ongoing support and maintenance packages."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is your API developer-friendly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our rugby API for developers comes with complete documentation and SDKs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can your API handle high-traffic events?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, it’s built on scalable architecture designed for live sports loads."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer data for historical matches?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our rugby data feeds API includes historical stats and scores."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get live rugby highlights via API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, our rugby API for highlights delivers video and stat-driven moments."
-      }
-    }
-  ]
-};
 
 
 
 
 
 
-export default function Ecommerce(props) {
+
+
+
+
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
+
 
 
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -338,14 +217,10 @@ export default function Ecommerce(props) {
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-og-image.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
-      
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
 
