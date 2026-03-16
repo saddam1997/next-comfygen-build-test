@@ -117,20 +117,6 @@ const jsonLdData = [
  
 
   {
-    "@context": "http://www.schema.org",
-    "@type": "Product",
-    brand: "Comfygen Technologies",
-    Name: "Microsoft Power BI Sales Dashboards | Real-Time Sales Insights",
-    image: "Hero section image",
-    description:
-      "Track KPIs, analyze performance, and forecast revenue with Comfygen’s Microsoft Power BI Sales Dashboards. Designed for real-time decision-making and sales optimization.",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "115",
-    },
-  },
-  {
     "@context": "https://schema.org/",
     "@type": "FAQPage",
     mainEntity: [

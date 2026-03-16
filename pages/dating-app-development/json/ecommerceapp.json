@@ -418,37 +418,39 @@
     },
     {
       "num": "2",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
+      
+      "img": "https://www.comfygen.com/img/5g-technology.webp",
       "title": "5G technology",
       "decs": "At Comfygen, we are ready to embrace the future with top-notch 5G technology. We use 5G capabilities to increase the connectivity and speed of the app for users so they can quickly interact with their peers."
     },
     {
       "num": "3",
-      "img": "https://www.comfygen.com/img/5g-technology.webp",
+      "img": "https://www.comfygen.com/comfygen-images/dating-app-development/IOT.webp",
       "title": "IoT Integration",
       "decs": "We are also ahead in the <a href='https://www.comfygen.com/iot-development-company' class='underline font-semibold'>IoT integration</a> process and have created channels for integrating the app with wearables. We ensure that users accessing the dating app can use it with any device that they carry with them."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
+      "img": "https://www.comfygen.com/comfygen-images/dating-app-development/AR VR.webp",
       "title": "AR/VR",
       "decs": "AR and VR technologies create immersive virtual dating environments, allowing users to interact in realistic digital spaces and enjoy engaging, next-generation dating experiences with higher interaction levels."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+      
+      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
       "title": "Biometric Authentication",
       "decs": "Biometric authentication such as fingerprint and facial recognition, improves dating app security while simplifying login processes, ensuring safe access, reducing fraud risks, and enhancing user trust."
     },
     {
       "num": "6",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
       "title": "Cloud Integration",
       "decs": "Our cloud-based dating app solutions ensure seamless scalability, enhanced data security, and real-time syncing, allowing users to access their profiles from multiple devices effortlessly."
     },
     {
       "num": "7",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
+      "img": "https://www.comfygen.com/comfygen-images/dating-app-development/big data analytics.webp",
       "title": "Big Data Analytics",
       "decs": "Big <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>Data Analytics</a> helps dating apps analyze large volumes of user data to identify trends, improve match accuracy, and personalize user experiences. It enhances decision-making, boosts engagement, and supports continuous improvement of the dating platform."
     }

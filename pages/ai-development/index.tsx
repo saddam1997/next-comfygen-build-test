@@ -7,6 +7,7 @@ import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSection from "../../components/HeroSection";
 
 
 
@@ -182,7 +183,7 @@ export default function Mobile(props: any) {
         <Header />
       </LazyLoad>
       <div className="">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="AI & ML Mobile App Development Services in India"
           ptag="Next-Gen AI Solutions for Next-Level Success."
           ptag1="Comfygen offers custom AI and ML mobile app development services in Jaipur, India. Our expert developers build intelligent mobile apps, machine learning models, and AI-powered software to help businesses innovate, automate processes, and drive growth. Turn your vision into reality with our AI/ML solutions—request a free consultation today."

@@ -99,133 +99,7 @@ const Process = [
 
 
 
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Surf League Live Line API | Comfygen Technologies",
-  "provider": {
-    "@type": "Organization",
-    "name": "Comfygen Technologies",
-    "url": "https://www.comfygen.com/"
-  },
-  "description": "Comfygen Technologies offers expert Surf League Live Line API services, providing real-time surfing scores and data integration for your applications.",
-  "url": "https://www.comfygen.com/surf-league-live-line-api-development",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.comfygen.com/surf-league-live-line-api-development"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Global"
-  },
-  "serviceType": [
-    "Surf League Live Score API Integration",
-    "Custom API for Surfing Events",
-    "Surfing Data Feed API Services",
-    "Surfing Stats API",
-    "Surfing Scores Integration API",
-    "Surf Event Live Feed API",
-    "Surfing Match Live Updates API"
-  ],
-  "sameAs": [
-    "https://www.facebook.com/comfygen.technologies/",
-    "https://www.linkedin.com/company/comfygen-technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies/",
-    "https://www.youtube.com/@Comfygentechnologies"
-  ]
 
-};
-
-
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a Surf Live Data Feed API, and how does it work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Surf Live Data Feed API provides real-time updates on wave height, swell direction, tides, and wind conditions by integrating with data sources, making it ideal for surf forecasting apps and websites."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I choose Comfygen Technologies for Surf Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer custom Surf Live Line API with real-time accuracy, seamless integration, and 10+ years of software expertise tailored to surfing and weather applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I get a customized Surf Data Feed API for my app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we offer customized Surf Live Data Feed APIs to meet specific app requirements, including swell reports, tide levels, and real-time weather data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What data can be included in the Surf Live Data Feed API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Surf Live Line API can include wave height, swell interval, wind speed, tide data, and location-specific surf conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is your Surf Data API compatible with mobile and web apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolutely. Our Surf Data Feed APIs are fully compatible with both mobile and web platforms for smooth user experiences."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often is the surf data updated in your API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our Surf Live API delivers updates in real-time or at customizable intervals, depending on your application's requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How secure is your Surf Live Data Feed API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We ensure high-level security for all API integrations, using encrypted protocols and token-based authentication."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer maintenance and support for Surf Data Feed API solutions?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, we provide ongoing maintenance and support to keep your Surf Live API running smoothly with the latest updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What industries can benefit from Surf Live Data APIs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Industries such as surf forecasting, sports analytics, marine safety, and travel apps benefit from our Surf Data APIs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to develop a Surf Live Line API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Development time for a Surf Live Line API depends on customization needs but typically ranges from 2 to 4 weeks."
-      }
-    }
-  ]
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -356,17 +230,9 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/svg/Logo1.svg"
         />
         <meta name="twitter:site" content="@comfygentech" />
-
- 
-      
-  
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
       <Header />

@@ -7,6 +7,7 @@ import JSON_DATA from "./json/vollyballlivelineapidevelopment.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSection from "../../components/HeroSection";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -362,7 +363,7 @@ export default function Ecommerce(props) {
 
       <div className="overflow-hidden lg:pt-[110px]">
 
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Volleyball Live Line API"
           ptag="Looking to integrate live volleyball data into your app, platform, or sportsbook? Our Volleyball Live Line API service offers seamless real-time score updates, detailed match insights, and lightning-fast data feeds. With over 10 years of experience in software and sports data, we deliver reliable Volleyball API solutions powering leading apps, websites, and gaming platforms worldwide. Our API provides second-by-second game updates, including odds, player stats, team data, and in-game highlights. Whether you’re building a live score portal or a sports analytics dashboard, our robust and flexible API ensures easy integration—Trust Comfygen Technologies for scalable, secure, and customizable volleyball data API solutions that keep your platform ahead."
           btnName="Talk With Expert"

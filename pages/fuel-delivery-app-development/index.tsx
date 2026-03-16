@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../components/HeroSection";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -179,7 +180,6 @@ export default function ClinicalApp(props: any) {
 
   const jsonLdData = [
 
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -214,11 +214,6 @@ export default function ClinicalApp(props: any) {
 
       ]
     },
-
-
-
-
-
 
     {
       "@context": "https://schema.org/",
@@ -374,11 +369,6 @@ export default function ClinicalApp(props: any) {
         <meta property="og:title" content="Custom Fuel Delivery App Development Company | White-Label Solutions" />
         <meta property="og:description" content="Comfygen Technologies offers custom fuel delivery app development services for startups and enterprises. Get white-label, scalable, and AI-powered fuel ordering apps with real-time tracking and multi-platform support." />
 
-
-
-
-
-
         {/* Structured Data Scripts */}
         <script
           type="application/ld+json"
@@ -390,7 +380,7 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
-          <HeroSectionForAllPages
+          <HeroSection
             heading="Top Fuel Delivery App Development Company"
             ptag="Comfygen is a leading fuel delivery app development company helping startups and enterprises launch secure, scalable, and high-performance on-demand fuel delivery solutions. Our result-driven AI-powered fuel delivery app development services are designed to streamline fuel ordering, dispatch, and delivery with advanced automation, real-time tracking, and seamless digital payments for a smooth customer experience."
             ptag1=""
@@ -441,8 +431,6 @@ export default function ClinicalApp(props: any) {
             " Better customer trust with real-time tracking",
           ]}
         />
-
-
 
         <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Next-Gen-Fuel-delivery-App-development-with-AI-Innovation.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
 

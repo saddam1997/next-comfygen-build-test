@@ -116,6 +116,7 @@ import {
 } from "@tabler/icons-react";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSection from "../../components/HeroSection";
 
 
 
@@ -490,7 +491,7 @@ export default function Ecommerce(props: any) {
       <Header />
 
       <div className="overflow-hidden xl:pt-16">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="High Performing Crypto Trading Bot Development Company"
           subhead="Automate Your Crypto Trading with AI-Powered Trading Bot"
           ptag="Comfygen is a trusted AI crypto trading bot development company specializing in developing AI integrated crypto trading bot development solutions that deliver precision, efficiency, and consistent profitability in volatile cryptocurrency markets. Comfygen’s custom crypto trading bot development services leverage advanced machine learning algorithms, predictive analytics, and real-time market data to execute high-frequency trades with accuracy while minimizing risks and maximizing returns."

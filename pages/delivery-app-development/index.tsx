@@ -7,6 +7,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSection from "../../components/HeroSection";
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -538,7 +539,7 @@ export default function ClinicalApp(props: any) {
 
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
-          <HeroSectionForAllPages
+          <HeroSection
             heading="Top-Rated Delivery App Development Company in India"
             ptag="Build powerful, scalable, and feature-rich delivery applications with our expert delivery app development company. At Comfygen, we help startups, enterprises, and logistics businesses launch custom on-demand delivery app solutions with real-time tracking, route optimization, secure payments, and seamless user experience. Transform your delivery operations with high-performance mobile apps designed for speed, efficiency, and growth."
             ptag1='Our delivery apps come with AI-powered features, live tracking, and strong security to manage orders smoothly and deliver faster. We build cost-effective delivery apps for startups and enterprises, designed to match your business needs.'

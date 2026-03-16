@@ -102,17 +102,7 @@ const Process = [
       "Your API goes live with continuous support, updates, and performance tuning.",
   },
 ];
-const structuredData = {
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  name: "Best Cricket Live Line API Provider Company | Comfygen",
-  url: "https://www.comfygen.com/cricket-live-line-api",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.comfygen.com/search?query={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-};
+
 
 const ServiceData = {
   "@context": "https://schema.org",
@@ -343,98 +333,9 @@ Best Sports Live Line API Provider Company | Real-Time Sports data
         <meta name="fb:page_id" content="110909321596135" />
 
         {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Comfygen - Sports API Provider",
-              url: "https://www.comfygen.com/",
-              potentialAction: {
-                "@type": "SearchAction",
-                target:
-                  "https://www.comfygen.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
+   
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Comfygen",
-              legalName: "Comfygen Pvt. Ltd.",
-              url: "https://www.comfygen.com/",
-              logo: "https://www.comfygen.com/media/svg/comfygen-logo.svg",
-              foundingDate: "2019",
-              founders: [
-                {
-                  "@type": "Person",
-                  name: "Saddam Husen",
-                },
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "F-152, Dayanand Marg, Nemi Nagar",
-                addressLocality: "Vaishali Nagar",
-                addressRegion: "Rajasthan",
-                postalCode: "302021",
-                addressCountry: "IN",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "customer support",
-                telephone: "+91 9587867258",
-                email: "sales@comfygen.com",
-              },
-              sameAs: [
-                "https://twitter.com/comfygentech",
-                "https://www.instagram.com/comfygen_/?hl=en",
-                "https://www.linkedin.com/company/comfygen-private-limited",
-                "https://www.facebook.com/comfygen",
-              ],
-            }),
-          }}
-        />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              name: "Cricket Live Line API",
-              operatingSystem: "Web, Android, iOS",
-              applicationCategory: "SportsApplication",
-              offers: {
-                "@type": "Offer",
-                price: "Contact for pricing",
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.8",
-                reviewCount: "256",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Comfygen",
-              },
-            }),
-          }}
-        />
-
-        {/* Optional pre-rendered structured data if defined elsewhere */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
       
         <script
           type="application/ld+json"

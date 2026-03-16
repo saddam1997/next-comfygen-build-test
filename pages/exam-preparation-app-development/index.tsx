@@ -201,20 +201,8 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies"
 
       ]
-    },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Online Exam App Development Company",
-      "image": "Hero section image",
-      "description": "Comfygen delivers next-gen Online Exam App Development services with AI-driven personalization, adaptive learning, and multilingual support. Build engaging apps for students & coaching centers.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "45"
-      }
     }
+
 
   ];
 

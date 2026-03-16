@@ -16,6 +16,7 @@ import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import CallToAction from "../../components/Newcomponet/SectionCompoent/CallToAction";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSection from "../../components/HeroSection";
 
 
 const loader = () => (
@@ -416,7 +417,7 @@ export default function Ecommerce(props) {
 
       <Header />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+        <HeroSection
           heading="Best Telemedicine App Development Company"
           ptag="A trusted Telemedicine App Development Company in India focused on delivering secure, scalable, and user-centric digital healthcare solutions. Comfygen Technologies specializes in building advanced telemedicine apps that enable virtual consultations, appointment scheduling, real-time video calls, e-prescriptions, and secure patient data management. Our expert team develops compliant, high-performance telemedicine platforms with intuitive UI/UX and seamless integrations, helping hospitals, clinics, and healthcare startups expand access to quality care while accelerating digital transformation."
           li="Virtual Doctor Consultations"

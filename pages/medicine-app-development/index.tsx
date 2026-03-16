@@ -170,19 +170,7 @@ export default function Ecommerce(props) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-    {
-      "@context": "http://www.schema.org",
-      "@type": "Product",
-      "brand": "Comfygen Technologies",
-      "Name": "Medicine Ordering App Development Company | Comfygen",
-      "image": "https://www.comfygen.com/image/about-us-image.webp",
-      "description": "Comfygen Technologies is a leading medicine ordering app development company delivering secure, scalable, and feature-rich solutions for pharmacies and healthcare startups.",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "560"
-      }
-    },
+  
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
