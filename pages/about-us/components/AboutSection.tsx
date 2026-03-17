@@ -15,7 +15,7 @@ export default function AboutSection() {
                 {/* LEFT CONTENT */}
                 <div>
                     <h2 className="text-4xl font-serif text-[#1e3a5f] mb-4">
-                        About Comfyen Technologies –
+                        About Comfygen Technologies –
                     </h2>
 
                     <h3 className="text-xl font-semibold text-[#1e3a5f] mb-6">

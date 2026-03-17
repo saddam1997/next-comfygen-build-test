@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
-import Example from '../components/example/page'
+
 
 const Milestones = dynamic(
   () => import("../components/Milestones"),
@@ -194,9 +194,6 @@ export default function Home(props: any) {
       <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
-
-     
-
     </>
   );
 }
