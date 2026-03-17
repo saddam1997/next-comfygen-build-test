@@ -13,17 +13,17 @@ const AboutComponent = ({ AboutData }) => {
     <section className="bg-white lg:py-16 py-4 lg:p-0 p-4">
 
       <div className="w-full lg:px-4 xl:px-0">
-        <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-14 gap-4">
+        <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-10 gap-4">
           <div className="">
             <Image
               src={AboutData.imageSrc}
               alt={imageAlt}
-              width={720}
-              height={320}
+              width={320}
+              height={120}
               quality={60}
               loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="w-full  h-auto object-contain rounded-md"
+              className="w-full  h-auto xl:object-contain lg:object-cover rounded-md lg:h-[60vh]"
             />
           </div>
           <div>
@@ -36,7 +36,7 @@ const AboutComponent = ({ AboutData }) => {
                   {AboutData.heading}
                 </h2> */}
               </div>
-              <div className="space-y-4">
+              <div className="xl:space-y-4 md:space-y-4 lg:space-y-2 space-y-4">
                 {AboutData.description1 && (
                   <ParagraphText color={"black"} text={AboutData.description1} />
                 )}

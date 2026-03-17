@@ -5,6 +5,7 @@ import JSON_DATA from "./index.json";
 import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
 import IndustryGrid from "../components/IndustryGrid";
+import Trending from "../components/Trending";
 
 
 const Milestones = dynamic(
@@ -187,6 +188,8 @@ export default function Home(props: any) {
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <IndustryGrid/>
+      <Trending trendingData={JSON_DATA.trendingData}
+            heading="Awards, Ratings & Recognitions"/>
       {/* <IndustriesSection Industries={JSON_DATA.Industries} /> */}
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechSection TechStack={JSON_DATA.TechStack} />

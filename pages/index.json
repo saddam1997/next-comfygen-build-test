@@ -135,7 +135,78 @@
       "desc": "Yes, we develop complete delivery solutions with order management, tracking, payments, admin dashboards, ratings, loyalty programs, and analytics for restaurants, couriers, and users."
     }
   ],
-
+  "trendingData": [
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    },
+    {
+      "name": "superb",
+      "link": "https://superbcompanies.com/organizations/comfygen-technologies/",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/superb compnies top blockchain development companies in india.webp",
+      "bg": "bg-indigo-100",
+      "alt": "superb"
+    },
+    {
+      "name": "firms top ecommerce",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "firms top ecommerce "
+    },
+    {
+      "name": "firms mobile app development",
+      "link": "https://www.rightfirms.co/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/right firms mobile app development companies in uae.webp",
+      "bg": "bg-pink-100",
+      "alt": "firms mobile app development "
+    },
+    {
+      "name": "mobileappdaily ",
+      "link": "https://www.mobileappdaily.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/mobileappdaily top mobile app development company.webp",
+      "bg": "bg-blue-100",
+      "alt": "mobileappdaily "
+    },
+    {
+      "name": "itrate custom software development",
+      "link": "https://itrate.co/company/comfygen-pvt-ltd",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/itrate custom software development company.webp",
+      "bg": "bg-purple-100",
+      "alt": "itrate custom software development"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "f65 top nft marketplace",
+      "link": "https://www.f6s.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/f65 top nft marketplace development company in canada.webp",
+      "bg": "bg-emerald-100",
+      "alt": "f65 top nft marketplace "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    }
+  ],
   
   "Portfoliodata": {
     "heading": "Explore Our Mobile App and Web Development Portfolio",
