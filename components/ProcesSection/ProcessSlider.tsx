@@ -1,5 +1,7 @@
 // components/ImageSlider.tsx
 import { useState, useEffect } from "react";
+import HeadingThree from "../ui/HeadingThree";
+import ParagraphText from "../ui/ParagraphText";
 
 interface SlideContent {
   title: string;
@@ -17,7 +19,7 @@ const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
     return <p>No slides available</p>; // Fallback content for prerendering or empty slides
   }
 
- 
+
 
   const handlePrev = (): void => {
     setCurrentIndex((prevIndex) =>
@@ -71,15 +73,8 @@ const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
       onTouchEnd={handleTouchEnd}
     >
       <div className="overflow-hidden p-6 bg-[#26304F] text-white text-center rounded-md min-h-60">
-        <h3 className="text-xl font-bold transition-all duration-500 ease-in-out">
-          {slides[currentIndex].title}
-        </h3>
-        <p
-            className="mt-4 transition-all duration-500 ease-in-out"
-            dangerouslySetInnerHTML={{
-              __html: slides[currentIndex].description || "",
-            }}
-          />
+        <HeadingThree color={"white"} text={slides[currentIndex].title} />
+        <ParagraphText color={"white"} text={slides[currentIndex].description || ""} />
       </div>
 
       <div className="flex justify-center mt-4 space-x-2">

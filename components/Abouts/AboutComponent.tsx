@@ -10,20 +10,20 @@ const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
 
   return (
-    <section className="bg-white lg:py-16 py-4">
+    <section className="bg-white lg:py-16 py-4 lg:p-0 p-4">
 
-      <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-        <div className="grid lg:grid-cols-2 mx-auto items-center gap-14">
+      <div className="w-full lg:px-4 xl:px-0">
+        <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-14 gap-4">
           <div className="">
             <Image
               src={AboutData.imageSrc}
               alt={imageAlt}
-              width={907}
-              height={762}
+              width={720}
+              height={320}
               quality={60}
               loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="w-full h-auto object-contain"
+              className="w-full  h-auto object-contain rounded-md"
             />
           </div>
           <div>

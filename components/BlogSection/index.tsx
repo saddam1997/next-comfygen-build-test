@@ -8,7 +8,7 @@ import ParagraphText from "../ui/ParagraphText";
 
 export default function BlogSection(props: any) {
   return (
-    <section className="bg-[#F3F4F6] lg:py-16 py-10">
+    <section className=" lg:py-16 py-10">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
 
         {/* ================= HEADING ================= */}
