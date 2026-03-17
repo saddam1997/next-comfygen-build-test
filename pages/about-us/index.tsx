@@ -1,9 +1,7 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
-import JSON_DATA from "./json/about.json"
 
+
+import Head from 'next/head';
+import JSON_DATA from "./json/about.json"
 import AboutSection from './components/AboutSection';
 import Navbar from '../../components/Navbar';
 import PortfolioSection from "./components/PortfolioSection"
@@ -14,18 +12,7 @@ import LeadershipSection from './components/LeadershipSection';
 import Trending from './components/Trending';
 import FaqSection from '../../components/FaqSection';
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-
-
-
-
-
 export default function about() {
-
-
   return (
     <div className='overflow-hidden'>
       <Head>

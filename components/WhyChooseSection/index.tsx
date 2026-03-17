@@ -2,8 +2,8 @@ import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 
-const WhyChoose = ({pageData }:any) => {
-const {title, description, mainCardData, gridData} =pageData
+const WhyChoose = ({ pageData }: any) => {
+    const { title, description, mainCardData, gridData } = pageData
     return (
         <section
             className="bg-cover bg-no-repeat mt-8 lg:py-16 py-10 w-full bg-gradient-to-br from-[#FEEBC8]/30 via-[#C4B5FD]/20 to-[#A5B4FC]/20"
@@ -12,11 +12,11 @@ const {title, description, mainCardData, gridData} =pageData
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                 <div className="lg:flex space-y-3 items-center justify-between gap-10">
                     <div>
-                         <HeadingTwo color={"black"} text={title} />
-                      
+                        <HeadingTwo color={"black"} text={title} />
+
                         {description && (
-                               <ParagraphText color={"black"} text={description} />
-                           
+                            <ParagraphText color={"black"} text={description} />
+
                         )}
                     </div>
                     <div>
@@ -42,15 +42,18 @@ const {title, description, mainCardData, gridData} =pageData
 
                         {/* Content Layer */}
                         <div className="relative z-10">
+
+                            
                             <span className="xl:text-xl text-xl text-white font-semibold">
                                 {mainCardData.title}
                             </span>
 
+         
+
                             {mainCardData.description && (
-                                <p
-                                    className="text-base font-normal text-white"
-                                    dangerouslySetInnerHTML={{ __html: mainCardData.description }}
-                                />
+
+                                 <ParagraphText color={"white"} text={mainCardData.description} />
+
                             )}
 
                             <div className="mt-4">
@@ -66,15 +69,14 @@ const {title, description, mainCardData, gridData} =pageData
 
                     <div className="col-span-3">
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
-                            {gridData.slice(0, 6).map((item, index) => (
+                            {gridData.slice(0, 6).map((item:any, index:any) => (
                                 <div key={index} className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                     <div>
                                         <h3 className="text-xl font-semibold">{item.title}</h3>
                                         {item.description && (
-                                            <p
-                                                className="text-sm font-normal"
-                                                dangerouslySetInnerHTML={{ __html: item.description }}
-                                            />
+
+                                            <ParagraphText color={"black"} text={item.description} />
+                                            
                                         )}
                                     </div>
                                 </div>

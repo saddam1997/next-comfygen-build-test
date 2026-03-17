@@ -10,9 +10,9 @@ export default function ServicesComponet({ servicesData }) {
 
 
     return (
-        <section className="lg:py-16 py-10 bg-[#F5F5F9 ">
+        <section className="lg:py-16 py-10 bg-[#F5F5F9 lg:p-0 ">
 
-            <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+            <div className="w-full lg:px-4 xl:px-0">
                 <div className="space-y-2 text-center">
 
                     <HeadingTwo color={"black"} text={servicesData.heading} />
@@ -65,7 +65,7 @@ function ServiceContent({ service }) {
 
 
                     <h3
-                        className="text-3xl font-bold"
+                        className="text-3xl font-bold "
                         dangerouslySetInnerHTML={{ __html: service.title }}
                     />
                     <ParagraphText color={"white"} text={service.description} />
@@ -76,7 +76,7 @@ function ServiceContent({ service }) {
                 {service.features?.length > 0 && (
                     <ul className="space-y-2">
                         {service.features.map((feature: any, index: any) => (
-                            <li key={index} className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links">
+                            <li key={index} className="flex items-center  gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links">
                                 <div className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></div>
                                 <p dangerouslySetInnerHTML={{ __html: feature }} />
                             </li>

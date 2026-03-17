@@ -40,7 +40,7 @@ export default function ServicesTabs({ servicesData = [] }) {
             onClick={() =>
               setActive(active === index ? null : index) // mobile toggle
             }
-            className={`border px-4 py-3 w-full font-medium text-left ${
+            className={`border px-4 py-3 w-full font-medium text-left  ${
               index === active
                 ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
                 : "text-black border-[#00000018] bg-white"
@@ -75,7 +75,7 @@ function MobileServiceContent({ service }) {
 
       {service.features?.length > 0 && (
         <ul className="space-y-2 mt-4">
-          {service.features.map((feature, index) => (
+          {service.features.map((feature:any, index:any) => (
             <li key={index}>
               <p dangerouslySetInnerHTML={{ __html: feature }} />
             </li>

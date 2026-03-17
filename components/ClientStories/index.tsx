@@ -185,7 +185,7 @@ export default function ClientStories() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-2 sm:p-4 md:p-8">
+    <div className=" flex items-center justify-center p-2 sm:p-4 md:p-8">
       <div className="max-w-7xl w-full bg-white rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg sm:shadow-xl md:shadow-2xl p-3 sm:p-6 md:p-8 lg:p-16">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
           {/* Left Column */}

@@ -2,48 +2,50 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
 
-  const defaultTechData = {
-       "title": "Our Advanced Tech Stack for Mobile App and Web Development",
-    "description": "We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth.",
-    "backend": [
-      { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
-      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
-      { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
-      { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
-      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
-      { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
-      { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
-      { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
-    ],
-    "frontend": [
-      { img: "https://www.comfygen.com/media/svg/tech/html5-original.svg", alt: 'Html5', name: "Html5", num: "1" },
-      { img: "https://www.comfygen.com/media/svg/tech/css3-original.svg", alt: 'Css3', name: "Css3", num: "2" },
-      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Nextjs', name: "nextjs", num: "3" },
-      { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React js", num: "4" },
-      { img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", alt: 'Tailwindcss', name: "Tailwindcss", num: "5" },
-      { img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", alt: 'Angularjs', name: "Angular js", num: "6" },
-      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "7" },
-      { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
-      { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
-    ],
+const defaultTechData = {
+  "title": "Our Advanced Tech Stack for Mobile App and Web Development",
+  "description": "We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth.",
+  "backend": [
+    { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
+    { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
+    { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
+    { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
+    { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
+    { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
+    { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
+    { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
+  ],
+  "frontend": [
+    { img: "https://www.comfygen.com/media/svg/tech/html5-original.svg", alt: 'Html5', name: "Html5", num: "1" },
+    { img: "https://www.comfygen.com/media/svg/tech/css3-original.svg", alt: 'Css3', name: "Css3", num: "2" },
+    { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Nextjs', name: "nextjs", num: "3" },
+    { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React js", num: "4" },
+    { img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", alt: 'Tailwindcss', name: "Tailwindcss", num: "5" },
+    { img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", alt: 'Angularjs', name: "Angular js", num: "6" },
+    { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "7" },
+    { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
+    { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
+  ],
 
 
-    "Blockchain network ": [
-      { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
-      { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
-      { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
-      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
-      { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
-    ],
-    "Wallets": [
-      { img: "https://www.comfygen.com/img/stackimg/binance.svg", alt: 'Binance', name: "Binance", num: "1" },
-      { img: "/svg/tech/aws-logo.svg", alt: 'Coinbase', name: "Coinbase", num: "2" },
-      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'trust wallet', name: "trust wallet", num: "3" },
-      { img: "/svg/tech/azure-original.svg", alt: 'Walletconnwect', name: "Walletconnwect", num: "4" },
-    ],
-  };
+  "Blockchain network ": [
+    { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
+    { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
+    { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
+    { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
+    { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
+  ],
+  "Wallets": [
+    { img: "https://www.comfygen.com/img/stackimg/binance.svg", alt: 'Binance', name: "Binance", num: "1" },
+    { img: "/svg/tech/aws-logo.svg", alt: 'Coinbase', name: "Coinbase", num: "2" },
+    { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'trust wallet', name: "trust wallet", num: "3" },
+    { img: "/svg/tech/azure-original.svg", alt: 'Walletconnwect', name: "Walletconnwect", num: "4" },
+  ],
+};
 
 
 export default function Tech({ TechStack }: any) {
@@ -57,8 +59,8 @@ export default function Tech({ TechStack }: any) {
   };
 
 
-   const filteredTechData = Object.keys(techData)
-    
+  const filteredTechData = Object.keys(techData)
+
     .reduce((obj, key) => {
       obj[key] = techData[key];
       return obj;
@@ -70,14 +72,15 @@ export default function Tech({ TechStack }: any) {
   );
 
   return (
-   <section className="lg:py-16 py-10 bg-[#F3F4F6]">
+    <section className="lg:py-16 py-10 ">
       <div className="bg-[#0C0F18] mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 md:py-14 py-8 md:px-10 px-6 rounded-3xl">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
 
           <div>
-            <div className="py-4">
-              <h2 className="font-bold md:text-2xl text-lg text-white">{TechStack.title}</h2>
-              <p className="text-lg mt-2 text-white" dangerouslySetInnerHTML={{ __html: TechStack.description }} />
+            <div className="py-4 space-y-2">
+              <HeadingTwo color={"white"} text={TechStack.title} />
+              <ParagraphText color={"white"} text={TechStack.description} />
+
             </div>
             <div className="mt-4">
 
