@@ -76,29 +76,44 @@ export default function Portfolio({ Portfoliodata }: Props) {
   }, []);
 
   /* ---------- infinite slider fix ---------- */
+  const handleTransitionEnd = () => {
+  if (!portfolio.length) return;
 
-  useEffect(() => {
-    if (!portfolio.length) return;
+  // jump from fake first → real last
+  if (index === 0) {
+    setEnableTransition(false);
+    setIndex(portfolio.length);
+  }
 
-    if (index === 0) {
-      const t = setTimeout(() => {
-        setEnableTransition(false);
-        setIndex(portfolio.length);
-      }, 600);
-      return () => clearTimeout(t);
-    }
+  // jump from fake last → real first
+  if (index === slides.length - 1) {
+    setEnableTransition(false);
+    setIndex(1);
+  }
+};
 
-    if (index === slides.length - 1) {
-      const t = setTimeout(() => {
-        setEnableTransition(false);
-        setIndex(1);
-      }, 600);
-      return () => clearTimeout(t);
-    }
+  // useEffect(() => {
+  //   if (!portfolio.length) return;
 
-    const t = setTimeout(() => setEnableTransition(true), 650);
-    return () => clearTimeout(t);
-  }, [index, portfolio.length, slides.length]);
+  //   if (index === 0) {
+  //     const t = setTimeout(() => {
+  //       setEnableTransition(false);
+  //       setIndex(portfolio.length);
+  //     }, 600);
+  //     return () => clearTimeout(t);
+  //   }
+
+  //   if (index === slides.length - 1) {
+  //     const t = setTimeout(() => {
+  //       setEnableTransition(false);
+  //       setIndex(1);
+  //     }, 600);
+  //     return () => clearTimeout(t);
+  //   }
+
+  //   const t = setTimeout(() => setEnableTransition(true), 650);
+  //   return () => clearTimeout(t);
+  // }, [index, portfolio.length, slides.length]);
 
   /* ---------- pointer events ---------- */
 
@@ -195,6 +210,7 @@ const onPointerMove = (e: React.PointerEvent) => {
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerLeave={onPointerUp}
+          onTransitionEnd={handleTransitionEnd} 
       >
         {slides.map((item, i) => (
           <article
