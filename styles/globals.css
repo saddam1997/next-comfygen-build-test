@@ -41,22 +41,22 @@ html {
 }  
 
 
-.services-tab::before {
+/* .services-tab::before {
   content: "";
   position: absolute;
   right: -22px;
   border-top: 24px solid transparent;
   border-left: 21px solid #5556D1;
   border-bottom: 24px solid transparent;
-}
+} */
 
-@media screen and (max-width: 1023px) {
+/* @media screen and (max-width: 1023px) {
   .services-tab::before {
     content: unset !important;
   }
-}
+} */
 
-.button-scroll::-webkit-scrollbar-track {
+/* .button-scroll::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #F5F5F5;
   border-radius: 20px;
@@ -71,17 +71,17 @@ html {
 .button-scroll::-webkit-scrollbar-thumb {
   background-color: #5556D1;
   border-radius: 20px;
-}
+} */
 
 
 /* Hide scrollbar for mobile horizontal scroll */
-.no-scrollbar::-webkit-scrollbar {
+/* .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
+} */
 
 .head-button {
   position: relative;

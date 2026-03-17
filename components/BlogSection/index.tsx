@@ -30,7 +30,7 @@ export default function BlogSection(props: any) {
             mt-8
             flex gap-4 overflow-x-auto pb-4
             snap-x snap-mandatory
-            no-scrollbar
+           
             md:grid md:overflow-visible md:snap-none
             md:grid-cols-1 lg:grid-cols-3
             xl:gap-14
