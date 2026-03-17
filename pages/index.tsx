@@ -33,10 +33,6 @@ const CallToActionSection = dynamic(
   { ssr: true }
 );
 
-const IndustriesSection = dynamic(
-  () => import("../components/IndustriesSection"),
-  { ssr: true }
-);
 
 const ProcesSection = dynamic(
   () => import("../components/ProcesSection"),
@@ -72,8 +68,6 @@ const FaqSection = dynamic(
   () => import("../components/FaqSection"),
   { ssr: true }
 );
-
-
 
 const BlogSection = dynamic(
   () => import("../components/BlogSection"),
@@ -180,16 +174,18 @@ export default function Home(props: any) {
         />
       </Head>
       <Navbar />
-       {/* <Example /> */}
+      {/* <Example /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <IndustryGrid/>
-      <Trending trendingData={JSON_DATA.trendingData}
-            heading="Awards, Ratings & Recognitions"/>
+      <IndustryGrid />
+      <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
       {/* <IndustriesSection Industries={JSON_DATA.Industries} /> */}
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechSection TechStack={JSON_DATA.TechStack} />

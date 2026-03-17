@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import HeadingTwo from "../../ui/HeadingTwo";
 
+import styles from "./tech.module.css";
+
   const defaultTechData = {
     "backend": [
       { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
@@ -94,7 +96,7 @@ export default function Tech({
           </div>
 
           <div>
-            <div className="flex whitespace-nowrap items-center gap-3 justify-start mt-2 overflow-x-auto button-scroll py-2">
+            <div className={`flex whitespace-nowrap items-center gap-3 justify-start mt-2 overflow-x-auto  ${styles.button_scroll} py-2`}>
               {techCategories.map((key, index) => (
                 <span
                   key={index}
