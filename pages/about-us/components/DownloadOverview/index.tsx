@@ -6,8 +6,8 @@ const DownloadOverview = () => {
   const handleDownload = () => {
     // File should be inside /public folder
     const link = document.createElement("a");
-    link.href = "/Comfygen Portfolio FInal.pdf"; 
-    link.download = "Comfygen Portfolio FInal.pdf";
+    link.href = "https://www.comfygen.com/comfygen-images/pdf/Comfygen Portfolio FInal.pdf"; 
+    link.download = "https://www.comfygen.com/comfygen-images/pdf/Comfygen Portfolio FInal.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
