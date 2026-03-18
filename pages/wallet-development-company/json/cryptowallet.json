@@ -17,6 +17,45 @@
     "bgImage": "https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
   },
 
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "What is Wallet Development?",
+    "description1": "Wallet development is the process of creating digital wallets that allow users to securely store, send, receive, and manage money, loyalty points, or digital assets. An e-wallet can be a simple mobile app for peer-to-peer payments and everyday purchases, while a crypto wallet can be built for holding, trading, and safeguarding digital currencies. On the enterprise side, wallets can be designed to process millions of transactions daily with advanced compliance and security features.",
+    "description2": "As a leading white label <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development company</a>, we help agencies, startups, and enterprises scale faster by providing fully functional, rebrandable mobile apps. You get all the core features, a user-friendly design, and a powerful backend—ready to launch and tailored to your audience.",
+    "description3": "With fast deployment, easy customisation, and end-to-end support, our white label App Development solutions are ideal for anyone looking to save mobile app development time, reduce costs, and stay ahead of the competition.",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/white-label-mobile-app-development/white-label-mobile-app-development-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   "consultancyHead": [

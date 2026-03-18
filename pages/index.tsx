@@ -89,7 +89,7 @@ export default function Home(props: any) {
           name="description"
           content="Comfygen is a AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
         />
-        {/* <!-- Viewport and/ Mobile Optimization → */}
+  
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
@@ -107,10 +107,7 @@ export default function Home(props: any) {
           name="apple-mobile-web-app-title"
           content="Web And App Development Company"
         />
-        <meta
-          name="robots"
-          content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW"
-        />
+ 
         <meta
           name="keywords"
           content="Comfygen Technologies, software development, app development, blockchain development, IT company, custom software solutions"
@@ -129,7 +126,7 @@ export default function Home(props: any) {
         <meta property="og:url" content="https://www.comfygen.com" />
         <meta
           name="og:site_name"
-          content="Custom Blockchain & Mobile App Development Company"
+          content="Coustm Blockchain & Mobile App Development Company"
         />
         <meta
           name="article:publisher"
@@ -163,8 +160,6 @@ export default function Home(props: any) {
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
         {/* ✅ LCP IMAGE PRELOAD */}
-
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}

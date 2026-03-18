@@ -8,6 +8,8 @@ import {
   MdAddCall,
 } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
+
+import styles from "./styles.module.css"
 // import $ from "jquery";
 
 const MobileApp = [
@@ -1874,7 +1876,7 @@ export default function DesktopNav(props: any) {
         {/* Get a Quote Button */}
         <div className="xl:block hidden">
           <Link href="/contact-us" passHref={true} prefetch={false}>
-            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white cursor-pointer transition duration-300 relative flex gap-3 items-center transition-colors duration-150">
+            <span className={`text-base font-medium text-white ${styles.head_button} rounded-full px-8 py-3.5 text-center hover:text-white cursor-pointer   relative flex gap-3 items-center transition-colors duration-150`}>
               Get a Quote
               <Image
                 src="https://www.comfygen.com/image/button-arrow.svg"

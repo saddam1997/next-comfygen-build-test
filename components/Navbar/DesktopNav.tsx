@@ -7,7 +7,7 @@ import {
   MdAddCall,
 } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
-
+import styles from "./styles.module.css"
 import ServicesMnue from "./NavbarMnu/ServicesMnue";
 import SolutionsMnue from "./NavbarMnu/SolutionsMnue"
 import IndustriesMnue from "./NavbarMnu/IndustriesMnue";
@@ -128,7 +128,7 @@ export default function DesktopNav(props: any) {
         </div>
         <div className="hidden xl:block ">
           <Link href="/contact-us" passHref={true}>
-            <span className="text-base font-medium text-white head-button rounded-full px-8 py-3.5 text-center hover:text-white  cursor-pointer transition duration-300 relative flex gap-3 items-center ">
+            <span className={`text-base font-medium text-white ${styles.head_button} rounded-full px-8 py-3.5 text-center hover:text-white  cursor-pointer transition duration-300 relative flex gap-3 items-center`}>
               Get a Quote
               <Image
                 src="https://www.comfygen.com/image/button-arrow.svg"
