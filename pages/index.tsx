@@ -84,10 +84,7 @@ export default function Home(props: any) {
         <title>
           AI-Based Mobile App and Web Development Company
         </title>
-        <meta
-          name="title"
-          content="Custom Blockchain & Mobile App Development Company - Comfygen Technologies"
-        />
+     
         <meta
           name="description"
           content="Comfygen is a AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
