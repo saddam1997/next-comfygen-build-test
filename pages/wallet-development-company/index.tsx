@@ -2,15 +2,22 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
+
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
 import { IconWallet } from "@tabler/icons-react";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
 
-
 import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-
-
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
@@ -81,10 +88,6 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 )
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
 
 
 
@@ -415,8 +418,6 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden lg:pt-24 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-
-
         <AboutSection
           heading="What is Wallet Development?"
           description1="Wallet development is the process of creating digital wallets that allow users to securely store, send, receive, and manage money, loyalty points, or digital assets. An e-wallet can be a simple mobile app for peer-to-peer payments and everyday purchases, while a crypto wallet can be built for holding, trading, and safeguarding digital currencies. On the enterprise side, wallets can be designed to process millions of transactions daily with advanced compliance and security features."

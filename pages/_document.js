@@ -162,7 +162,7 @@ export default function Document() {
         <meta name="apple-mobile-web-app-title" content="Comfygen Technologies" />
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots"  content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
 {/* 
