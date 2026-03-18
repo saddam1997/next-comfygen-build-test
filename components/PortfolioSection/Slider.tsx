@@ -10,6 +10,7 @@ const TRANSITION = 500;
 
 export default function Slider({ Portfoliodata }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  console.log(containerRef, "containerRef")
   const [index, setIndex] = useState(1);
   const [enableTransition, setEnableTransition] = useState(true);
   const [cardWidth, setCardWidth] = useState(300);
@@ -120,9 +121,11 @@ export default function Slider({ Portfoliodata }) {
   /* ---------- RENDER ---------- */
   return (
     <div className="lg:px-4 xl:px-0">
-      <div className="text-center lg:py-16 py-3 space-y-3 lg:px-16">
+      <div className="text-center lg:py-16 py-3 lg:px-16">
 
         <HeadingTwo color={"black"} text={Portfoliodata?.heading} />
+
+
         <ParagraphText color={"black"} text={Portfoliodata?.description} />
 
       </div>
@@ -156,7 +159,7 @@ export default function Slider({ Portfoliodata }) {
           ))}
         </div>
 
-        {/* CONTROLS */}
+       
         <div className="flex justify-center gap-4 mt-6">
           <button onClick={prev} className="w-10 h-10 border rounded-full hover:bg-gray-800 hover:text-white">
             ←

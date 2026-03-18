@@ -194,10 +194,10 @@ export default function Page(props:any) {
       <Navbar />
 
       <div className="overflow-hidden lg:pt-0 pt-16">
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+        <HeroSectionforHome herosection={JSON_DATA.Herosection}/>
         <Milestones />
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData}/>
+        <AboutComponent AboutData={JSON_DATA.AboutSection}/>
         <Consultancy consultancyData={JSON_DATA.consultancyData} />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
