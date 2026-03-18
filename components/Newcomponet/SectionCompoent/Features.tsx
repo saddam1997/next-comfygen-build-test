@@ -77,59 +77,6 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
           </div>
         )}
 
-        {/* <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
-          {featuresData.map((item: any) => (
-            <div
-              key={item.id}
-              className={`${active?.id === item.id ? "grid" : "hidden"
-                } grid-cols-2 gap-8 items-center`}
-            >
-              <Image
-                src={item.img}
-                alt={item.title}
-                width={640}
-                height={360}
-                loading="lazy"
-                sizes="50vw"
-                className="rounded-lg border"
-              />
-
-              <div className="space-y-4">
-                {item.additionalDetails?.map((d: any, i: number) => (
-                  <div key={i} className="flex gap-3 text-black">
-                    <ImArrowRight className="text-[#5556D1] mt-1" />
-                    <span dangerouslySetInnerHTML={{ __html: d.details }} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div> */}
-
-        {/* {active && (
-          <div className="mt-8 px-3 space-y-6">
-            {active.img && (
-              <Image
-                src={active.img}
-                alt={active.title}
-                width={640}
-                height={360}
-                loading="lazy"
-                sizes="100vw"
-                className="rounded-lg border mx-auto"
-              />
-            )}
-
-            <div className="space-y-4 px-4">
-              {active.additionalDetails?.map((d: any, i: number) => (
-                <div key={i} className="flex gap-3 text-black">
-                  <ImArrowRight className="text-[#5556D1] mt-1" />
-                  <span dangerouslySetInnerHTML={{ __html: d.details }} />
-                </div>
-              ))}
-            </div>
-          </div>
-        )} */}
       </div>
 
       {/* ================= DESKTOP ================= */}
@@ -186,28 +133,7 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
             </div>
           ))}
         </div>
-        {/* {active && (
-          <div className="mt-12 grid grid-cols-2 gap-8 items-center mx-auto 2xl:w-10/12 w-11/12">
-            <Image
-              src={active.img}
-              alt={active.title}
-              width={640}
-              height={360}
-              loading="lazy"
-              sizes="50vw"
-              className="rounded-lg border"
-            />
-
-            <div className="space-y-4">
-              {active.additionalDetails?.map((d: any, i: number) => (
-                <div key={i} className="flex gap-3 text-black">
-                  <ImArrowRight className="text-[#5556D1] mt-1" />
-                  <span dangerouslySetInnerHTML={{ __html: d.details }} />
-                </div>
-              ))}
-            </div>
-          </div>
-        )} */}
+       
       </div>
 
       {/* Scrollbar hide */}

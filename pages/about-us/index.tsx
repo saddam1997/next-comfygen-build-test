@@ -11,6 +11,7 @@ import ClientStories from './components/ClientStories';
 import LeadershipSection from './components/LeadershipSection';
 import Trending from './components/Trending';
 import FaqSection from '../../components/FaqSection';
+import DownloadOverview from './components/DownloadOverview';
 
 export default function about() {
   return (
@@ -48,6 +49,7 @@ export default function about() {
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <OurGeography />
         <IndustryGrid />
+        <DownloadOverview/>
         <section className="py-8">
           <Trending
             trendingData={JSON_DATA.trendingData}
