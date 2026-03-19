@@ -1,68 +1,14 @@
-import React, { useRef, useState } from "react";
+
 import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
 import { MdOutlineArrowOutward } from "react-icons/md";
-
-
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
 
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
-  ssr: true,
-});
-
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-});
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
-
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
-
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
-
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-});
-
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
-const ClientStories = dynamic(() => import("../../components/ClientStories"), {
-  ssr: true,
-});
-
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
-  ssr: true,
-});
-
-
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-});
 
 
 const BlogSection = dynamic(
@@ -70,29 +16,6 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 
@@ -165,14 +88,6 @@ const WhyChoose = dynamic(
 
 export default function rummy(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
 
 
 

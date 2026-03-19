@@ -1,6 +1,11 @@
+import { parseHTMLString } from "../../lib/parseHTML"
+
 const HeadingTwo = ({ text, color }) => {
   return (
-    <h2 className={`xl:text-[28px] text-lg text-${color}  font-bold`} dangerouslySetInnerHTML={{ __html: text }}></h2>
+    <h2 className={`xl:text-[28px] text-lg text-${color}  font-bold`} >
+      {parseHTMLString(text)}
+
+    </h2>
   )
 }
 

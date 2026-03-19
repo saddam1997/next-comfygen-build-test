@@ -5,6 +5,7 @@ import React from "react";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
+import { parseHTMLString } from "../../lib/parseHTML"
 
 export default function BlogSection(props: any) {
   return (
@@ -76,13 +77,11 @@ export default function BlogSection(props: any) {
 
                     {/* CONTENT */}
                     <div className="space-y-3">
-                      <h3
-                        className=" font-semibold text-xl text-black hover:text-[#5556D1]"
-                        dangerouslySetInnerHTML={{ __html: element?.title }}
-                      />
+                      <h3 className=" font-semibold text-xl text-black hover:text-[#5556D1]">
+                        {parseHTMLString(element?.title)}</h3>
                       {element?.description && (
-                        <p className="text-base text-black line-clamp-3" dangerouslySetInnerHTML={{ __html: element.description }}>
-                          {/* {element.description} */}
+                        <p className="text-base text-black line-clamp-3" >
+                          {parseHTMLString(element.description)}
                         </p>
                       )}
                     </div>

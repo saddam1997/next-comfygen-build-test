@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MdStars } from "react-icons/md";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
+import { parseHTMLString } from "../../lib/parseHTML"
 
 interface CardItem {
   CardItem?: string;
@@ -61,7 +62,7 @@ export default function FaqSection({
             {description && (
 
               <ParagraphText color={"black"} text={description} />
-              
+
             )}
           </div>
 
@@ -108,11 +109,9 @@ export default function FaqSection({
                   >
                     <div className="space-y-3 text-sm md:text-base text-gray-800">
                       {item.desc && (
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: item.desc,
-                          }}
-                        />
+                        <div>
+                          {parseHTMLString(item.desc)}
+                        </div>
                       )}
 
                       {item.decs && <p>{item.decs}</p>}
