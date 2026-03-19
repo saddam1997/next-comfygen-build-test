@@ -5,6 +5,8 @@ import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 
+import { parseHTMLString } from "../../lib/parseHTML"
+
 
 const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
@@ -41,43 +43,42 @@ const AboutComponent = ({ AboutData }) => {
                   <ParagraphText color={"black"} text={AboutData.description1} />
                 )}
                 {AboutData.description2 && (
-                   <ParagraphText color={"black"} text={AboutData.description2} />
-                 
+                  <ParagraphText color={"black"} text={AboutData.description2} />
+
                 )}
                 {AboutData.description3 && (
-                   <ParagraphText color={"black"} text={AboutData.description3} />
-                  
+                  <ParagraphText color={"black"} text={AboutData.description3} />
+
                 )}
                 {AboutData.description4 && (
                   <ParagraphText color={"black"} text={AboutData.description4} />
-                 
+
                 )}
                 {AboutData.description5 && (
                   <ParagraphText color={"black"} text={AboutData.description5} />
-                 
+
                 )}
                 {AboutData.points && AboutData.points.length > 0 && (
                   <ul className="space-y-2">
                     {AboutData.points.map((point: any, index: any) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
-                        <span
-                          className="xl:text-base text-sm text-black"
-                          dangerouslySetInnerHTML={{ __html: point }}
-                        />
+                        <span className="xl:text-base text-sm text-black">
+                          {parseHTMLString(point)}
+                        </span>
                       </li>
                     ))}
                   </ul>
                 )}
                 {AboutData.description6 && (
-                   <ParagraphText color={"black"} text={AboutData.description6} />
-                  
+                  <ParagraphText color={"black"} text={AboutData.description6} />
+
                 )}
               </div>
             </div>
             {AboutData.link && AboutData.linkText && (
               <div className="mt-7">
-                <Link href={AboutData.link} passHref legacyBehavior>
+                <Link href={AboutData.link} passHref>
                   <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition-colors duration-200">
                     {AboutData.linkText} <MdOutlineArrowOutward />
                   </button>

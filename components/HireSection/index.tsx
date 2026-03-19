@@ -5,6 +5,7 @@ import LazyLoad from "react-lazy-load";
 import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
+import { parseHTMLString } from "../../lib/parseHTML"
 
 const HireDeveloper = ({ HireDeveloper }: any) => {
   const { heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
@@ -50,13 +51,13 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
 
               {listItems.length > 0 && (
                 <ul className="mt-5 space-y-2">
-                  {listItems.map((item, index) => (
+                  {listItems.map((item:any, index:any) => (
                     <li
                       key={index}
                       className="flex items-start  gap-2 text-white"
                     >
                       <div className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1"></div>
-                      <p dangerouslySetInnerHTML={{ __html: item }} />
+                      <p >{parseHTMLString(item)}</p>
                     </li>
                   ))}
                 </ul>

@@ -1,5 +1,4 @@
 {
-
   "Herosection": {
     "heading": "On-Demand Wallet development Service",
     "isHome": false,
@@ -16,18 +15,402 @@
     "altTag": "white-label mobile app development company",
     "bgImage": "https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-hero.webp"
   },
-
   "AboutSection": {
     "title": "About Company",
     "heading": "What is Wallet Development?",
     "description1": "Wallet development is the process of creating digital wallets that allow users to securely store, send, receive, and manage money, loyalty points, or digital assets. An e-wallet can be a simple mobile app for peer-to-peer payments and everyday purchases, while a crypto wallet can be built for holding, trading, and safeguarding digital currencies. On the enterprise side, wallets can be designed to process millions of transactions daily with advanced compliance and security features.",
-    "description2": "As a leading white label <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development company</a>, we help agencies, startups, and enterprises scale faster by providing fully functional, rebrandable mobile apps. You get all the core features, a user-friendly design, and a powerful backend—ready to launch and tailored to your audience.",
-    "description3": "With fast deployment, easy customisation, and end-to-end support, our white label App Development solutions are ideal for anyone looking to save mobile app development time, reduce costs, and stay ahead of the competition.",
-    "points": [],
-    "imageSrc": "https://www.comfygen.com/comfygen-images/white-label-mobile-app-development/white-label-mobile-app-development-about.webp",
+    "points": [
+      "Multi-Currency & Multi-Asset Support",
+      "Advanced Security Features ",
+      "Seamless Payment Integrations ",
+      "Scalable & Customizable Solutions"
+    ],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/wallet-development-company/About_2.webp",
     "link": "/about-us",
     "linkText": "Explore More"
   },
+  "InformationData": {
+    "heading": "How Comfygen Defines Wallet Development",
+    "description1": "At Comfygen, wallet development is not limited only on coding. We focus on developing the best e-wallets and crypto wallets that help businesses to gain customer trust by providing top features. Every wallet we deliver is built on three key principles:",
+    "description2": "Security at the Core – Multi-layer encryption, authentication, and fraud prevention.",
+    "description3": "User-Centric Design – Simple, intuitive interfaces that work for both everyday users and advanced traders.",
+    "description4": "Scalable Architecture – Flexible builds that adapt as your customer base and transaction volume grow.",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More",
+    "imagePosition": "right"
+  },
+  "featuresData": {
+    "heading": "Our End-to-End Wallet Development Services",
+    "grid": "2",
+    "description": "Comfygen specializes in providing end-to-end wallet development solutions that cover both crypto wallets and e-wallets. From startups and enterprises to banks, fintechs, and cryptocurrency exchanges, we design, develop, and deploy wallets tailored to your business needs, industry requirements, and future growth. Whether you need a custom-built wallet or a ready-to-launch <a href='https://www.comfygen.com/white-label-cryptocurrency-wallet-development' class='underline font-semibold'>white-label wallet development</a> solution, we ensure top-notch security, scalability, and user experience.",
+    "features": [
+      {
+        "id": 1,
+        "title": "Crypto Wallet Development Services",
+        "icon": "<i className='fas fa-robot text-4xl'></i>",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "Cryptocurrency Wallet Development",
+            "emoji": "",
+            "content": "Comfygen is a top-rated <a href='https://www.comfygen.com/crypto-wallet-development' class='text-blue-500'>AI-based Cryptocurrency Wallet Development company</a>. Build a secure, scalable, user-friendly Cryptocurrency Wallet Development with multi-layer authentication, detailed transaction tracking, and seamless blockchain integration, designed for your business-specific needs."
+          },
+          {
+            "details": "Multi-Currency Wallet Development",
+            "emoji": "",
+            "content": "Comfygen, <a class='text-blue-500' href='https://www.comfygen.com/multi-currency-wallet-development-company'>Multi-Currency Wallet Development</a> supports multiple cryptocurrencies, tokens, and stablecoins on one platform, ideal for traders, exchanges, and global enterprises."
+          },
+          {
+            "details": "White Label Cryptocurrency Wallet Development",
+            "emoji": "",
+            "content": "Being the <a class='https://www.comfygen.com/white-label-crypto-exchange-development' class='text-blue-500'>best White Label Crypto Wallet Development company</a>, we provide a fully customizable crypto wallet with rapid deployment, branding options, and cost efficiency, perfect for businesses entering the crypto market quickly."
+          },
+          {
+            "details": "DeFi Wallet Development",
+            "emoji": "",
+            "content": "Comfygen, the Best wallet development company, provides Non-Custodial <a href='https://www.comfygen.com/defi-wallet-development' class='text-blue-500'>DeFi Wallet Development</a> Service that allows users to stake, yield farm, and trade on DEXs without intermediaries."
+          },
+          {
+            "details": "NFT Wallet Development",
+            "emoji": "",
+            "content": "Being the best <a href='https://www.comfygen.com/nft-wallet-development' class='text-blue-500'>NFT wallet development company</a>, we develop Secure crypto wallets for storing, trading, and showcasing NFTs, with seamless NFT marketplace integration for collectors, artists, and gamers."
+          },
+          {
+            "details": "Blockchain Wallet Development",
+            "emoji": "",
+            "content": "Comfygen, the <a href='https://www.comfygen.com/blockchain-development' class='text-blue-500'>best blockchain development company</a>, offers <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'> top-notch Blockchain Wallet Development service</a> that includes advanced features like Lightning Network for Bitcoin and ERC-20, ERC-721, and ERC-1155 token support for Ethereum."
+          },
+          {
+            "details": "Mobile Crypto Wallet Development",
+            "emoji": "",
+            "content": "Comfygen provides <a href='https://www.comfygen.com/mobile-crypto-wallet-development' class='text-blue-600'>top-notch mobile crypto wallet development</a> service for iOS and Android with biometric authentication, QR-code payments, and real-time price tracking."
+          },
+          {
+            "details": "Web & Desktop Wallet Development",
+            "emoji": "",
+            "content": "Being the best Wallet Development company, offering Browser-based and desktop crypto wallet development services with analytics dashboards and top security for Windows, Mac, and web platforms."
+          },
+          {
+            "details": "Hardware Wallet Development ",
+            "emoji": "",
+            "content": "Cold storage crypto wallets with air-gapped technology and offline signing for maximum protection and long-term investment."
+          },
+          {
+            "details": "Enterprise Crypto Wallet Development",
+            "emoji": "",
+            "content": "Comfygen is a top-rated Wallet Development company that provides an enterprise crypto wallet development service for corporations, funds, and institutions with multi-user access, high-value approvals, audit trails, and compliance-ready architecture."
+          },
+          {
+            "details": "Payment Gateway Integration",
+            "emoji": "",
+            "content": "Being a trusted wallet development company, we integrate secure crypto payment gateways into wallets to accept and settle crypto payments safely and efficiently."
+          },
+          {
+            "details": "Smart Contract Wallet Development",
+            "emoji": "",
+            "content": "Being a leading best wallet development company, we <a href='https://www.comfygen.com/smart-contract-wallet-development' class='text-blue-500'>develop smart contract crypto wallets</a> with smart contract automation for DAOs, DeFi, and enterprise blockchain workflows."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "E-Wallet Development Services",
+        "icon": "<i className='fas fa-link text-4xl'></i>",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "E-Wallet App Development",
+            "emoji": "",
+            "content": "Being a Best wallet development company, we provide an <a href='https://www.comfygen.com/ewallet-app-development' class='text-blue-500'>E-wallet development solution</a>  that allows peer-to-peer (P2P) payments, bill payments, mobile recharges, and digital banking features with a focus on speed and security."
+          },
+          {
+            "details": "White Label E-Wallet Solutions ",
+            "emoji": "",
+            "content": "Comfygen, a Top-rated wallet development company, offers fully customizable, Ready-to-use e-wallet apps with your branding, designed for startups, banks, and fintechs to deploy quickly and cost-effectively."
+          },
+          {
+            "details": "Mobile Payment Wallet Development",
+            "emoji": "",
+            "content": "Being a trusted E-wallet Development Company, Intuitive <a href='https://www.comfygen.com/upi-payment-app-development' class='text-blue-500'>mobile UPI payment</a> for everyday use with NFC, QR-code payments, biometric authentication, and real-time transaction alerts."
+          },
+          {
+            "details": "Loyalty & Rewards Wallet Development",
+            "emoji": "",
+            "content": "Comfygen, a Top-rated wallet development company, offers fully customizable, Ready-to-use e-wallet apps with your branding, designed for startups, banks, and fintechs to deploy quickly and cost-effectively."
+          },
+          {
+            "details": "Cross-Border E-Wallet Development",
+            "emoji": "",
+            "content": "Comfygen trusted E-wallet Development Company to provide a cross-border e-wallet development solution, enabling international money transfers, multi-currency support, and real-time exchange rates for global businesses."
+          },
+          {
+            "details": "Banking & Enterprise E-Wallet Development",
+            "emoji": "",
+            "content": "Comfygen, the Best wallet development company, develop secure enterprise-level E-wallets for banks, financial institutions, and corporates with compliance-ready infrastructure."
+          },
+          {
+            "details": "Payment Gateway Integration for E-Wallets",
+            "emoji": "",
+            "content": "Comfygen, top-rated wallet development company, seamlessly integrates with the leading <a href='https://www.comfygen.com/crypto-payment-gateway-development' class='text-blue-500'>payment gateway development</a> process, debit cards, credit cards, and UPI payments."
+          },
+          {
+            "details": "P2P E-Wallet Solutions",
+            "emoji": "",
+            "content": "Build a <a href='https://www.comfygen.com/p2p-payment-app-development' class='text-blue-500'>P2P app development</a> for instant peer-to-peer money transfers with secure authentication and transaction transparency."
+          }
+        ]
+      }
+    ]
+  },
+  "featuresData2": {
+    "grid": "4",
+    "heading": "Types of Wallets We Develop",
+    "description": "Comfygen, Best wallet development company, specializes in creating digital, crypto, and next-generation wallets to cater to businesses, enterprises, and individual users. Our wallet development solutions combine security, usability, and advanced features to help you manage digital assets efficiently and safely.",
+      "feature": [
+      {
+        "id": 1,
+        "title": "Digital Wallets",
+        "titlewallet": "Digital Wallets Development (E-Wallets)",
+        "description": "Comfygen provides advanced digital wallet development solutions to streamline payments, enhance security, and provide seamless user experiences. Our custom digital wallet development solution helps businesses, startups, and enterprises modernize transactions, enable fast and secure payments, and provide convenient, reliable digital payment experiences for their customers.",
+        "icon": "<i className='fas fa-robot text-4xl'></i>",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "Mobile Wallets",
+            "emoji": "",
+            "content": "Build secure, scalable, and user-friendly mobile digital wallet apps for iOS and Android, enabling fast, on-the-go transactions with a seamless and unexpected user experience."
+          },
+          {
+            "details": "NFC / Contactless Wallets",
+            "emoji": "",
+            "content": "Develop secure tap-and-pay digital wallets that allow fast, convenient, and contactless payments, perfect for retail, transport, and everyday transactions."
+          },
+          {
+            "details": "Closed, Semi-Closed & Open Wallets ",
+            "emoji": "",
+            "content": "We develop flexible digital wallet solutions that support restricted, semi-restricted, or open-use transactions, catering to businesses, merchants, and individual users with varying transaction requirements."
+          },
+          {
+            "details": "Peer-to-Peer (P2P) Wallets",
+            "emoji": "",
+            "content": "Build secure P2P digital wallets that enable direct cryptocurrency and digital asset transfers between users without intermediaries, ensuring fast, low-cost, and decentralized transactions."
+          },
+          {
+            "details": "Gift Card & Voucher Wallets",
+            "emoji": "",
+            "content": " Create digital wallets for storing and redeeming prepaid credits, gift cards, and vouchers, offering secure, convenient, and seamless transactions for businesses and customers alike."
+          },
+          {
+            "details": "Utility Payment Wallets",
+            "emoji": "",
+            "content": " Develop digital wallets for paying electricity, water, and other utility bills directly, providing secure, fast, and convenient payment solutions for businesses and consumers."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Crypto Wallets",
+        "titlewallet": "Crypto Wallets Development",
+        "icon": "<i className='fas fa-link text-4xl'></i>",
+        "description": "At Comfygen, we specialize in providing secure and feature-rich crypto wallet development solutions for businesses, enterprises, and individual users. Our crypto wallet development solutions are designed to store, send, and manage cryptocurrencies efficiently while providing top-most security, seamless transactions, and multi-chain support.",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "Hot Wallets & Cold Wallets",
+            "emoji": "",
+            "content": "Build secure online (hot) wallets for fast crypto transactions and offline (cold) wallets for maximum security, providing flexible and reliable cryptocurrency storage solutions for users and enterprises."
+          },
+          {
+            "details": "Custodial & Non-Custodial Wallets",
+            "emoji": "",
+            "content": " Develop custodial wallets managed by a trusted provider or non-custodial wallets giving users full control of private keys, ensuring secure, flexible, and user-centric cryptocurrency management."
+          },
+          {
+            "details": "Multi-Currency Wallets",
+            "emoji": "",
+            "content": "ICreate digital wallets that support multiple cryptocurrencies and tokens in a single secure platform, enabling efficient portfolio management and seamless multi-asset transactions for traders and enterprises."
+          },
+          {
+            "details": "DeFi Wallets",
+            "emoji": "",
+            "content": "Build secure decentralized wallets that allow users to access DeFi platforms, staking, yield farming, and decentralized exchanges (DEXs), providing full control, transparency, and seamless participation in the decentralized finance ecosystem."
+          },
+          {
+            "details": "NFT Wallets",
+            "emoji": "",
+            "content": " Develop secure crypto wallets for storing, trading, and showcasing NFTs, with built-in marketplace integration for collectors, artists, and gamers, enabling safe and seamless NFT management across multiple chains."
+          },
+          {
+            "details": "Multi-Signature Wallets",
+            "emoji": "",
+            "content": "Create crypto wallets that require multiple approvals for transactions, ensuring enhanced security, reduced risk of unauthorized access, and safer management of high-value digital assets."
+          },
+          {
+            "details": "Blockchain-Specific Wallets",
+            "emoji": "",
+            "content": " Build custom wallets tailored for specific blockchains like Bitcoin, Ethereum, BSC, Polygon, Solana, and more, offering optimized features, token compatibility, and secure transactions for each network."
+          },
+          {
+            "details": "Cross-Chain Wallets",
+            "emoji": "",
+            "content": " Develop interoperable crypto wallets that allow users to manage assets seamlessly across multiple blockchains, enabling efficient multi-chain transactions, portfolio diversification, and enhanced blockchain accessibility."
+          },
+          {
+            "details": "Smart Contract Wallets",
+            "emoji": "",
+            "content": "Build crypto wallets integrated with smart contracts to automate transactions, agreements, and decentralized operations, enabling secure, efficient, and self-executing workflows for DeFi, DAOs, and enterprise blockchain ecosystems."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Finance & Banking Wallet",
+        "titlewallet": "Finance & Banking Wallet development",
+        "icon": " <i className='fas fa-link text-4xl'></i>",
+        "description": "At Comfygen, we develop finance and banking wallets that enable businesses, banks, and financial institutions to offer secure, fast, and seamless digital transactions. Our Finance & Banking wallets are designed to support mobile banking, corporate finance, and payment bank operations with advanced features for transaction management, compliance, and reporting.",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "Mobile Banking Wallets",
+            "emoji": "",
+            "content": " Create safe, secure, and feature-rich mobile banking wallets that integrate traditional banking services, enabling users to check balances, transfer funds, pay bills, and manage accounts on the go with a seamless mobile experience."
+          },
+          {
+            "details": "Payment Bank Wallets",
+            "emoji": "",
+            "content": "Build Payment Bank wallets for microfinance, remittances, and everyday payments, offering secure, fast, and cost-effective financial transactions for individuals, businesses, and banking institutions."
+          },
+          {
+            "details": "Corporate Finance Wallets",
+            "emoji": "",
+            "content": "Develop safe and secure corporate finance wallets to manage payroll, expenses, vendor payments, and high-value transactions, ensuring compliance, transparency, and efficient financial operations for businesses and organizations."
+          },
+          {
+            "details": "Investment Wallets ",
+            "emoji": "",
+            "content": "Build digital Investment wallets for tracking stocks, mutual funds, and cryptocurrency investments, providing users with real-time portfolio insights, performance analytics, and secure management of diverse financial assets."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Specialized Wallet",
+        "titlewallet": "Specialized Wallet development",
+        "icon": "<i className='fas fa-link text-4xl'></i>",
+        "description": "At Comfygen, we develop innovative, specialized wallets developed for niche industries and unique business needs. Our Specialized Wallet development service provides secure, seamless, and feature-rich digital solutions for gaming, travel, healthcare, loyalty programs, IoT, and more.",
+        "img": "",
+        "additionalDetails": [
+          {
+            "details": "Gaming Wallets Development",
+            "emoji": "",
+            "content": "Create secure gaming wallets for in-game currency storage, purchases, and transaction management, providing gamers and developers with seamless, real-time, and efficient gaming payment solutions."
+          },
+          {
+            "details": "Travel Wallets",
+            "emoji": "",
+            "content": " Build digital travel wallets for travelers with currency conversion, booking payments, and secure transaction management, offering seamless, cashless, and convenient travel experiences worldwide."
+          },
+          {
+            "details": "Healthcare Wallets",
+            "emoji": "",
+            "content": " Develop secure digital healthcare wallets for managing patient payments, insurance claims, and healthcare credits, enabling efficient, transparent, and convenient financial transactions in the healthcare ecosystem."
+          },
+          {
+            "details": "Loyalty & Rewards Wallets",
+            "emoji": "",
+            "content": "Develop loyalty & rewards wallets to track loyalty points, rewards, and cashback programs, offering businesses and customers a seamless, secure, and efficient way to manage incentives and drive engagement."
+          },
+          {
+            "details": "IoT Wallets Development",
+            "emoji": "",
+            "content": " Develop digital IoT wallets for machine-to-machine payments and smart device transactions, enabling secure, automated, and seamless financial interactions in connected IoT ecosystems."
+          },
+          {
+            "details": "Education Wallets",
+            "emoji": "",
+            "content": " Develop digital education wallets for managing tuition, online course payments, and student allowances, providing secure, convenient, and transparent financial solutions for educational institutions and learners."
+          }
+        ]
+      }
+    ]
+  
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,303 +596,6 @@
       "desc": "Users can securely export and import private keys for full control and accessibility of their digital assets."
     }
   ],
-  "featuresData": [
-    {
-      "id": 1,
-      "title": "Crypto Wallet Development Services",
-      "icon": "<i className='fas fa-robot text-4xl'></i>",
-      "img": "",
-      "additionalDetails": [
-        {
-          "details": "Cryptocurrency Wallet Development",
-          "emoji": "",
-          "content": "Comfygen is a top-rated <a href='https://www.comfygen.com/crypto-wallet-development' class='text-blue-500'>AI-based Cryptocurrency Wallet Development company</a>. Build a secure, scalable, user-friendly Cryptocurrency Wallet Development with multi-layer authentication, detailed transaction tracking, and seamless blockchain integration, designed for your business-specific needs."
-        },
-        {
-          "details": "Multi-Currency Wallet Development",
-          "emoji": "",
-          "content": "Comfygen, <a class='text-blue-500' href='https://www.comfygen.com/multi-currency-wallet-development-company'>Multi-Currency Wallet Development</a> supports multiple cryptocurrencies, tokens, and stablecoins on one platform, ideal for traders, exchanges, and global enterprises."
-        },
-        {
-          "details": "White Label Cryptocurrency Wallet Development",
-          "emoji": "",
-          "content": "Being the <a class='https://www.comfygen.com/white-label-crypto-exchange-development' class='text-blue-500'>best White Label Crypto Wallet Development company</a>, we provide a fully customizable crypto wallet with rapid deployment, branding options, and cost efficiency, perfect for businesses entering the crypto market quickly."
-        },
-        {
-          "details": "DeFi Wallet Development",
-          "emoji": "",
-          "content": "Comfygen, the Best wallet development company, provides Non-Custodial <a href='https://www.comfygen.com/defi-wallet-development' class='text-blue-500'>DeFi Wallet Development</a> Service that allows users to stake, yield farm, and trade on DEXs without intermediaries."
-        },
-        {
-          "details": "NFT Wallet Development",
-          "emoji": "",
-          "content": "Being the best <a href='https://www.comfygen.com/nft-wallet-development' class='text-blue-500'>NFT wallet development company</a>, we develop Secure crypto wallets for storing, trading, and showcasing NFTs, with seamless NFT marketplace integration for collectors, artists, and gamers."
-        },
-        {
-          "details": "Blockchain Wallet Development",
-          "emoji": "",
-          "content": "Comfygen, the <a href='https://www.comfygen.com/blockchain-development' class='text-blue-500'>best blockchain development company</a>, offers <a href='https://www.comfygen.com/blockchain-wallet-development' class='text-blue-500'> top-notch Blockchain Wallet Development service</a> that includes advanced features like Lightning Network for Bitcoin and ERC-20, ERC-721, and ERC-1155 token support for Ethereum."
-        },
-        {
-          "details": "Mobile Crypto Wallet Development",
-          "emoji": "",
-          "content": "Comfygen provides <a href='https://www.comfygen.com/mobile-crypto-wallet-development' class='text-blue-600'>top-notch mobile crypto wallet development</a> service for iOS and Android with biometric authentication, QR-code payments, and real-time price tracking."
-        },
-        {
-          "details": "Web & Desktop Wallet Development",
-          "emoji": "",
-          "content": "Being the best Wallet Development company, offering Browser-based and desktop crypto wallet development services with analytics dashboards and top security for Windows, Mac, and web platforms."
-        },
-        {
-          "details": "Hardware Wallet Development ",
-          "emoji": "",
-          "content": "Cold storage crypto wallets with air-gapped technology and offline signing for maximum protection and long-term investment."
-        },
-        {
-          "details": "Enterprise Crypto Wallet Development",
-          "emoji": "",
-          "content": "Comfygen is a top-rated Wallet Development company that provides an enterprise crypto wallet development service for corporations, funds, and institutions with multi-user access, high-value approvals, audit trails, and compliance-ready architecture."
-        },
-        {
-          "details": "Payment Gateway Integration",
-          "emoji": "",
-          "content": "Being a trusted wallet development company, we integrate secure crypto payment gateways into wallets to accept and settle crypto payments safely and efficiently."
-        },
-        {
-          "details": "Smart Contract Wallet Development",
-          "emoji": "",
-          "content": "Being a leading best wallet development company, we <a href='https://www.comfygen.com/smart-contract-wallet-development' class='text-blue-500'>develop smart contract crypto wallets</a> with smart contract automation for DAOs, DeFi, and enterprise blockchain workflows."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "E-Wallet Development Services",
-      "icon": "<i className='fas fa-link text-4xl'></i>",
-      "img": "",
-      "additionalDetails": [
-        {
-          "details": "E-Wallet App Development",
-          "emoji": "",
-          "content": "Being a Best wallet development company, we provide an <a href='https://www.comfygen.com/ewallet-app-development' class='text-blue-500'>E-wallet development solution</a>  that allows peer-to-peer (P2P) payments, bill payments, mobile recharges, and digital banking features with a focus on speed and security."
-        },
-        {
-          "details": "White Label E-Wallet Solutions ",
-          "emoji": "",
-          "content": "Comfygen, a Top-rated wallet development company, offers fully customizable, Ready-to-use e-wallet apps with your branding, designed for startups, banks, and fintechs to deploy quickly and cost-effectively."
-        },
-        {
-          "details": "Mobile Payment Wallet Development",
-          "emoji": "",
-          "content": "Being a trusted E-wallet Development Company, Intuitive <a href='https://www.comfygen.com/upi-payment-app-development' class='text-blue-500'>mobile UPI payment</a> for everyday use with NFC, QR-code payments, biometric authentication, and real-time transaction alerts."
-        },
-        {
-          "details": "Loyalty & Rewards Wallet Development",
-          "emoji": "",
-          "content": "Comfygen, a Top-rated wallet development company, offers fully customizable, Ready-to-use e-wallet apps with your branding, designed for startups, banks, and fintechs to deploy quickly and cost-effectively."
-        },
-        {
-          "details": "Cross-Border E-Wallet Development",
-          "emoji": "",
-          "content": "Comfygen trusted E-wallet Development Company to provide a cross-border e-wallet development solution, enabling international money transfers, multi-currency support, and real-time exchange rates for global businesses."
-        },
-        {
-          "details": "Banking & Enterprise E-Wallet Development",
-          "emoji": "",
-          "content": "Comfygen, the Best wallet development company, develop secure enterprise-level E-wallets for banks, financial institutions, and corporates with compliance-ready infrastructure."
-        },
-        {
-          "details": "Payment Gateway Integration for E-Wallets",
-          "emoji": "",
-          "content": "Comfygen, top-rated wallet development company, seamlessly integrates with the leading <a href='https://www.comfygen.com/crypto-payment-gateway-development' class='text-blue-500'>payment gateway development</a> process, debit cards, credit cards, and UPI payments."
-        },
-        {
-          "details": "P2P E-Wallet Solutions",
-          "emoji": "",
-          "content": "Build a <a href='https://www.comfygen.com/p2p-payment-app-development' class='text-blue-500'>P2P app development</a> for instant peer-to-peer money transfers with secure authentication and transaction transparency."
-        }
-      ]
-    }
-  ],
-
-"featuresData2":[
-  {
-    "id": 1,
-    "title": "Digital Wallets",
-    "titlewallet": "Digital Wallets Development (E-Wallets)",
-    "description": "Comfygen provides advanced digital wallet development solutions to streamline payments, enhance security, and provide seamless user experiences. Our custom digital wallet development solution helps businesses, startups, and enterprises modernize transactions, enable fast and secure payments, and provide convenient, reliable digital payment experiences for their customers.",
-    "icon": "<i className='fas fa-robot text-4xl'></i>",
-    "img": "",
-    "additionalDetails": [
-      {
-        "details": "Mobile Wallets",
-        "emoji": "",
-        "content": "Build secure, scalable, and user-friendly mobile digital wallet apps for iOS and Android, enabling fast, on-the-go transactions with a seamless and unexpected user experience."
-      },
-      {
-        "details": "NFC / Contactless Wallets",
-        "emoji": "",
-        "content": "Develop secure tap-and-pay digital wallets that allow fast, convenient, and contactless payments, perfect for retail, transport, and everyday transactions."
-      },
-      {
-        "details": "Closed, Semi-Closed & Open Wallets ",
-        "emoji": "",
-        "content": "We develop flexible digital wallet solutions that support restricted, semi-restricted, or open-use transactions, catering to businesses, merchants, and individual users with varying transaction requirements."
-      },
-      {
-        "details": "Peer-to-Peer (P2P) Wallets",
-        "emoji": "",
-        "content": "Build secure P2P digital wallets that enable direct cryptocurrency and digital asset transfers between users without intermediaries, ensuring fast, low-cost, and decentralized transactions."
-      },
-      {
-        "details": "Gift Card & Voucher Wallets",
-        "emoji": "",
-        "content": " Create digital wallets for storing and redeeming prepaid credits, gift cards, and vouchers, offering secure, convenient, and seamless transactions for businesses and customers alike."
-      },
-      {
-        "details": "Utility Payment Wallets",
-        "emoji": "",
-        "content": " Develop digital wallets for paying electricity, water, and other utility bills directly, providing secure, fast, and convenient payment solutions for businesses and consumers."
-      }
-
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Crypto Wallets",
-    "titlewallet": "Crypto Wallets Development",
-    "icon": "<i className='fas fa-link text-4xl'></i>",
-    "description": "At Comfygen, we specialize in providing secure and feature-rich crypto wallet development solutions for businesses, enterprises, and individual users. Our crypto wallet development solutions are designed to store, send, and manage cryptocurrencies efficiently while providing top-most security, seamless transactions, and multi-chain support.",
-    "img": "",
-    "additionalDetails": [
-      {
-        "details": "Hot Wallets & Cold Wallets",
-        "emoji": "",
-        "content": "Build secure online (hot) wallets for fast crypto transactions and offline (cold) wallets for maximum security, providing flexible and reliable cryptocurrency storage solutions for users and enterprises."
-      },
-      {
-        "details": "Custodial & Non-Custodial Wallets",
-        "emoji": "",
-        "content": " Develop custodial wallets managed by a trusted provider or non-custodial wallets giving users full control of private keys, ensuring secure, flexible, and user-centric cryptocurrency management."
-      },
-      {
-        "details": "Multi-Currency Wallets",
-        "emoji": "",
-        "content": "ICreate digital wallets that support multiple cryptocurrencies and tokens in a single secure platform, enabling efficient portfolio management and seamless multi-asset transactions for traders and enterprises."
-      },
-      {
-        "details": "DeFi Wallets",
-        "emoji": "",
-        "content": "Build secure decentralized wallets that allow users to access DeFi platforms, staking, yield farming, and decentralized exchanges (DEXs), providing full control, transparency, and seamless participation in the decentralized finance ecosystem."
-      },
-      {
-        "details": "NFT Wallets",
-        "emoji": "",
-        "content": " Develop secure crypto wallets for storing, trading, and showcasing NFTs, with built-in marketplace integration for collectors, artists, and gamers, enabling safe and seamless NFT management across multiple chains."
-      },
-      {
-        "details": "Multi-Signature Wallets",
-        "emoji": "",
-        "content": "Create crypto wallets that require multiple approvals for transactions, ensuring enhanced security, reduced risk of unauthorized access, and safer management of high-value digital assets."
-      },
-      {
-        "details": "Blockchain-Specific Wallets",
-        "emoji": "",
-        "content": " Build custom wallets tailored for specific blockchains like Bitcoin, Ethereum, BSC, Polygon, Solana, and more, offering optimized features, token compatibility, and secure transactions for each network."
-      },
-      {
-        "details": "Cross-Chain Wallets",
-        "emoji": "",
-        "content": " Develop interoperable crypto wallets that allow users to manage assets seamlessly across multiple blockchains, enabling efficient multi-chain transactions, portfolio diversification, and enhanced blockchain accessibility."
-      },
-      {
-        "details": "Smart Contract Wallets",
-        "emoji": "",
-        "content": "Build crypto wallets integrated with smart contracts to automate transactions, agreements, and decentralized operations, enabling secure, efficient, and self-executing workflows for DeFi, DAOs, and enterprise blockchain ecosystems."
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Finance & Banking Wallet",
-    "titlewallet": "Finance & Banking Wallet development",
-    "icon":" <i className='fas fa-link text-4xl'></i>",
-    "description": "At Comfygen, we develop finance and banking wallets that enable businesses, banks, and financial institutions to offer secure, fast, and seamless digital transactions. Our Finance & Banking wallets are designed to support mobile banking, corporate finance, and payment bank operations with advanced features for transaction management, compliance, and reporting.",
-    "img": "",
-    "additionalDetails": [
-      {
-        "details": "Mobile Banking Wallets",
-        "emoji": "",
-        "content": " Create safe, secure, and feature-rich mobile banking wallets that integrate traditional banking services, enabling users to check balances, transfer funds, pay bills, and manage accounts on the go with a seamless mobile experience."
-      },
-      {
-        "details": "Payment Bank Wallets",
-        "emoji": "",
-        "content": "Build Payment Bank wallets for microfinance, remittances, and everyday payments, offering secure, fast, and cost-effective financial transactions for individuals, businesses, and banking institutions."
-      },
-      {
-        "details": "Corporate Finance Wallets",
-        "emoji": "",
-        "content": "Develop safe and secure corporate finance wallets to manage payroll, expenses, vendor payments, and high-value transactions, ensuring compliance, transparency, and efficient financial operations for businesses and organizations."
-      },
-      {
-        "details": "Investment Wallets ",
-        "emoji": "",
-        "content": "Build digital Investment wallets for tracking stocks, mutual funds, and cryptocurrency investments, providing users with real-time portfolio insights, performance analytics, and secure management of diverse financial assets."
-      }
-
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Specialized Wallet",
-    "titlewallet": "Specialized Wallet development",
-    "icon": "<i className='fas fa-link text-4xl'></i>",
-    "description": "At Comfygen, we develop innovative, specialized wallets developed for niche industries and unique business needs. Our Specialized Wallet development service provides secure, seamless, and feature-rich digital solutions for gaming, travel, healthcare, loyalty programs, IoT, and more.",
-    "img": "",
-    "additionalDetails": [
-      {
-        "details": "Gaming Wallets Development",
-        "emoji": "",
-        "content": "Create secure gaming wallets for in-game currency storage, purchases, and transaction management, providing gamers and developers with seamless, real-time, and efficient gaming payment solutions."
-      },
-      {
-        "details": "Travel Wallets",
-        "emoji": "",
-        "content": " Build digital travel wallets for travelers with currency conversion, booking payments, and secure transaction management, offering seamless, cashless, and convenient travel experiences worldwide."
-      },
-      {
-        "details": "Healthcare Wallets",
-        "emoji": "",
-        "content": " Develop secure digital healthcare wallets for managing patient payments, insurance claims, and healthcare credits, enabling efficient, transparent, and convenient financial transactions in the healthcare ecosystem."
-      },
-      {
-        "details": "Loyalty & Rewards Wallets",
-        "emoji": "",
-        "content": "Develop loyalty & rewards wallets to track loyalty points, rewards, and cashback programs, offering businesses and customers a seamless, secure, and efficient way to manage incentives and drive engagement."
-      },
-      {
-        "details": "IoT Wallets Development",
-        "emoji": "",
-        "content": " Develop digital IoT wallets for machine-to-machine payments and smart device transactions, enabling secure, automated, and seamless financial interactions in connected IoT ecosystems."
-      },
-      {
-        "details": "Education Wallets",
-        "emoji": "",
-        "content": " Develop digital education wallets for managing tuition, online course payments, and student allowances, providing secure, convenient, and transparent financial solutions for educational institutions and learners."
-      }
-
-    ]
-  }
-],
-
-
-
-
-
-
-
-
   "servicesData": [
     {
       "title": "Hot Wallet Development",

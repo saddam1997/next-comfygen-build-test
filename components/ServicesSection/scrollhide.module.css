@@ -13,3 +13,8 @@
   background-color: #000000;
   border-radius: 10px;
 }
+.tab_btn.active {
+  border-color: #5556d1;
+  color: #5556d1;
+  background: rgba(85, 86, 209, 0.1);
+}

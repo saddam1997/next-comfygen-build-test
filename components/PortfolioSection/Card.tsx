@@ -8,7 +8,7 @@ export default function Card({ item, isActive }) {
   return (
     <div
       className={`rounded-2xl border bg-white shadow-lg flex flex-col lg:flex-row lg:items-center lg:gap-6
-      p-3 lg:p-4 h-[360px] lg:h-auto  transition-all duration-300 ${isActive ? "scale-100" : "scale-95 opacity-80"}`}
+      p-3 lg:p-4  lg:h-auto  transition-all duration-300 ${isActive ? "scale-100" : "scale-95 opacity-80"}`}
     >
 
       {/* IMAGE */}

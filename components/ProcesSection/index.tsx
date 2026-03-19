@@ -3,6 +3,8 @@ import ParagraphText from "../ui/ParagraphText";
 import ProcessSlider from "./ProcessSlider";
 import styles from "./styles.module.css";
 
+import { parseHTMLString } from "../../lib/parseHTML"
+
 
 
 const ProcessComponent = ({ ProcessData }: any) => {
@@ -137,7 +139,7 @@ const ProcessComponent = ({ ProcessData }: any) => {
                         {Process && Process.length > 0 ? Process?.map((slide:any, index:any) => (
                             <div key={index} className={`${styles.processStep} hidden md:block space-y-2`}>
                                 <h3 className={styles.processStepTitle}>{slide.title}</h3>
-                                <p className={styles.processStepText} dangerouslySetInnerHTML={{ __html: slide.description }} />
+                                <p className={styles.processStepText}>{parseHTMLString(slide.description)}</p>
                             </div>
                         )) : null}
                     </div>

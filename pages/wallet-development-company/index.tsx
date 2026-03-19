@@ -6,6 +6,71 @@ import JSON_DATA from "./json/cryptowallet.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 
+
+
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const InfoSection = dynamic(
+  () => import("../../components/InfoSection"),
+  {  ssr: true }
+);
+
+const CardFeatures = dynamic(
+  () => import("../../components/CardFeatures"),
+  {  ssr: true }
+);
+const CardWallets = dynamic(
+  () => import("../../components/CardWallets"),
+  { ssr: true }
+);
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
@@ -28,20 +93,7 @@ const AboutSection = dynamic(
   { loading: loader, ssr: true }
 );
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  { loading: loader, ssr: true }
-);
 
-const CardFeatures = dynamic(
-  () => import("../../components/Newcomponet/comman/CardFeatures"),
-  { loading: loader, ssr: true }
-);
-
-const CardWallets = dynamic(
-  () => import("../../components/Newcomponet/comman/CardWallets"),
-  { loading: loader, ssr: true }
-);
 
 const SolutionsFeature = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
@@ -191,47 +243,9 @@ export default function Ecommerce(props: any) {
   const previous = () => {
     slider.current.slickPrev();
   };
-  const settingstwo = {
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    slidesToShow: 3,
-    arrows: false,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 4,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
+
 
 
   const jsonLdData = [
@@ -418,51 +432,10 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden lg:pt-24 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <AboutSection
-          heading="What is Wallet Development?"
-          description1="Wallet development is the process of creating digital wallets that allow users to securely store, send, receive, and manage money, loyalty points, or digital assets. An e-wallet can be a simple mobile app for peer-to-peer payments and everyday purchases, while a crypto wallet can be built for holding, trading, and safeguarding digital currencies. On the enterprise side, wallets can be designed to process millions of transactions daily with advanced compliance and security features."
-          description2=""
-          description3=""
-          points={[
-            "Multi-Currency & Multi-Asset Support",
-            "Advanced Security Features ",
-            "Seamless Payment Integrations ",
-            "Scalable & Customizable Solutions",
-          ]}
-
-
-          imageSrc="https://www.comfygen.com/comfygen-images/wallet-development-company/About_2.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <InfoSection
-          heading="How Comfygen Defines Wallet Development"
-          description1="At Comfygen, wallet development is not limited only on coding. We focus on developing the best e-wallets and crypto wallets that help businesses to gain customer trust by providing top features. Every wallet we deliver is built on three key principles:"
-          description2="Security at the Core – Multi-layer encryption, authentication, and fraud prevention."
-          description3="User-Centric Design – Simple, intuitive interfaces that work for both everyday users and advanced traders."
-          dec="Scalable Architecture – Flexible builds that adapt as your customer base and transaction volume grow."
-          points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/wallet-development-company/wallet-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          imagePosition="right"
-        />
-
-
-        <CardFeatures
-          heading="Our End-to-End Wallet Development Services"
-          description="Comfygen specializes in providing end-to-end wallet development solutions that cover both crypto wallets and e-wallets. From startups and enterprises to banks, fintechs, and cryptocurrency exchanges, we design, develop, and deploy wallets tailored to your business needs, industry requirements, and future growth. Whether you need a custom-built wallet or a ready-to-launch <a href='https://www.comfygen.com/white-label-cryptocurrency-wallet-development' class='underline font-semibold'>white-label wallet development</a> solution, we ensure top-notch security, scalability, and user experience."
-          featuresData={JSON_DATA.featuresData}
-          grid="2"
-        />
-
-
-        <CardWallets
-          heading="Types of Wallets We Develop"
-          description="Comfygen, Best wallet development company, specializes in creating digital, crypto, and next-generation wallets to cater to businesses, enterprises, and individual users. Our wallet development solutions combine security, usability, and advanced features to help you manage digital assets efficiently and safely."
-          featuresData={JSON_DATA.featuresData2}
-          grid="4"
-        />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <InfoSection InformationData={JSON_DATA?.InformationData}/>
+        <CardFeatures featuresData={JSON_DATA.featuresData}/>
+        <CardWallets featuresData={JSON_DATA.featuresData2}/>
 
 
 

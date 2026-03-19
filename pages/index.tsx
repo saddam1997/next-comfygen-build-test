@@ -166,19 +166,19 @@ export default function Home(props: any) {
         />
       </Head>
       <Navbar />
-      {/* <Example /> */}
+
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <IndustryGrid />
-      <Trending
+       <Trending
         trendingData={JSON_DATA.trendingData}
         heading="Awards, Ratings & Recognitions"
-      />
-      {/* <IndustriesSection Industries={JSON_DATA.Industries} /> */}
+      /> 
+     
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechSection TechStack={JSON_DATA.TechStack} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
@@ -186,7 +186,7 @@ export default function Home(props: any) {
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
       <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
+      <BlogSection initialData={initialData} /> 
     </>
   );
 }
