@@ -1,194 +1,68 @@
-import React, { useRef, useState } from "react";
-import { useEffect } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/video.json";
-import { IconBolt, IconBook, IconGhost, IconMap, IconPhotoVideo, IconPlayFootball, IconShieldCheck, IconSword, IconVideo, IconWorld, } from '@tabler/icons-react';
-import { IconHeart, } from '@tabler/icons-react';
 
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import ClientStories from "../../components/ClientStories";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const PortfolioSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/PortfolioSec"),
-  { ssr: true }
-);
-
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { ssr: true }
-);
-
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  { ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { ssr: true }
-);
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-const Processs = [
-  {
-    title: "Conceptualization and Idea Generation",
-    description: "Every successful game starts with a strong concept. In this phase, we work closely with our clients to brainstorm ideas, define game objectives, and create a clear vision for the game. We explore unique game mechanics, themes, and art styles to ensure the concept stands out in a competitive market."
-  },
-  {
-    title: "Game Design and Prototyping",
-    description: "Once the concept is defined, we move to the design phase. Our team creates detailed game designs, including storylines, characters, and levels. We develop prototypes to test gameplay mechanics, ensuring the game's core elements are engaging. This stage helps refine the player experience and set the foundation for development."
-  },
-  {
-    title: "Development and Programming",
-    description: "In this phase, our developers bring the game to life. Using the latest technologies, we build the game’s architecture, implement coding, and integrate game mechanics. Our team ensures that the game runs smoothly across platforms, optimizing performance and providing a seamless, enjoyable experience for players."
-  },
-  {
-    title: "Quality Assurance and Testing",
-    description: "Our QA team rigorously tests the game to identify bugs, glitches, and performance issues. Through extensive testing, we ensure the game functions as intended, providing players with a flawless experience. We check gameplay mechanics, user interface, compatibility, and load testing to guarantee the game is ready for launch."
-  },
-  {
-    title: "Deployment and Post-Launch Support",
-    description: "Once the game is ready, we deploy it across the selected platforms, ensuring it meets all store requirements. After launch, our team provides continuous support and updates, fixing bugs, adding new content, and addressing player feedback. This post-launch phase ensures the game remains relevant and engaging for the long term."
-  },
-  {
-    title: "Monetization Strategy and Integration",
-    description: "To maximize your game’s potential, we work with you to create effective monetization strategies, such as in-app purchases, ads, and subscriptions. We seamlessly integrate these features without compromising gameplay quality, ensuring a profitable and enjoyable experience for players."
-  },
-  {
-    title: "User Feedback and Iteration",
-    description: "After the initial launch, we focus on gathering player feedback to refine the game further. This iterative process allows us to implement new features, adjust difficulty levels, and improve overall gameplay based on user preferences, ensuring long-term player retention and success."
-  },
-
-];
-
-const technologyData = [
-  {
-    img: <IconBolt stroke={1.5} className="w-12 h-12" />,
-    title: "Action Video Games",
-    desc: "We specialize in action packed video games including shooters, platformers and fighting games. Our team creates fast-paced, adrenaline-pumping experiences, with exciting game mechanics and a compelling story to ensure players are drawn in and engaged in the action"
-  },
-  {
-    img: <IconMap stroke={1.5} className="w-12 h-12" />,
-    title: "Adventure Video Games",
-    desc: "From text-based adventures to graphic and action-adventure games, we bring stories to life. Games like The Legend of Zelda and Tomb Raider inspire our designs, combining exploration, puzzle-solving, and narrative-driven gameplay to offer rich and memorable experiences."
-  },
-  {
-    img: <IconSword stroke={1.5} className="w-12 h-12" />,
-    title: "Role-Playing Video Games (RPGs)",
-    desc: "We craft immersive RPGs, including action RPGs, tactical RPGs, and MMORPGs, where players can explore expansive worlds, engage in deep storytelling, and develop their characters. Games like Final Fantasy and The Witcher inspire our RPG development, focusing on player choice and narrative depth."
-  },
-  {
-    img: <IconVideo stroke={1.5} className="w-12 h-12" />,
-    title: "Simulation Video Games",
-    desc: "Our simulation games span various types, including life, vehicle, and construction management simulations. Whether it’s recreating real-world scenarios like The Sims or managing large-scale operations like Microsoft Flight Simulator, we ensure rich, interactive experiences that mimic reality."
-  },
-  {
-    img: <IconPhotoVideo stroke={1.5} className="w-12 h-12" />,
-    title: "Strategy Video Games",
-    desc: "We design strategy games, including RTS, TBS, and tower defense. Focusing on tactical decision-making, resource management, and planning, our games like Civilization VI and StarCraft offer players complex challenges and rewarding strategic experiences that demand both skill and foresight."
-  },
-  {
-    img: <IconPlayFootball stroke={1.5} className="w-12 h-12" />,
-    title: "Sports and Racing Video Games",
-    desc: "Our sports and racing games, such as FIFA, NBA 2K, and Gran Turismo, offer realistic simulations of popular sports and racing events. We focus on accurate gameplay mechanics, immersive visuals, and multiplayer experiences to bring sports enthusiasts the ultimate gaming experience."
-  },
-  {
-    img: <IconGhost stroke={1.5} className="w-12 h-12" />,
-    title: "Horror Video Games",
-    desc: "We create spine-chilling horror video games, inspired by classics like Resident Evil and Silent Hill. Combining atmospheric design, intense storytelling, and survival mechanics, we deliver games that keep players on the edge of their seats, ensuring a truly terrifying experience."
-  },
-  {
-    img: <IconWorld stroke={1.5} className="w-12 h-12" />,
-    title: "Sandbox/Open-World Video Games",
-    desc: "Our sandbox and open-world games, such as Minecraft and Grand Theft Auto V, offer players expansive environments to explore and interact with. We focus on creating dynamic, open-ended worlds that give players the freedom to build, explore, and create their own adventures."
-  },
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Educational Video Games",
-    desc: "We develop educational games that make learning fun and interactive. Games like Typing of the Dead and Duolingo Games serve as inspirations, providing engaging ways for players to learn new skills and knowledge while enjoying a game."
-  },
-  {
-    img: <IconHeart stroke={1.5} className="w-12 h-12" />,
-    title: "Indie Video Games",
-    desc: "Our indie games, such as Hollow Knight and Celeste, showcase our creativity and passion for storytelling. We focus on unique gameplay mechanics, artistic designs, and heartfelt narratives, offering players fresh and innovative gaming experiences outside mainstream titles."
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Idle/Incremental Video Games",
-    desc: "We develop addictive idle and incremental games like Cookie Clicker and AdVenture Capitalist, where players engage in gradual progress and rewards. These games keep players hooked with their simple yet satisfying mechanics and rewarding progression systems."
-  }
-];
-
-const techDataForPage1 = {
-  All: [
-    {
-      img: "https://www.comfygen.com/image/video-game-development-portfolio.webp",
-      head: "All in One Games",
-      name: "Comfygen proudly presents All in One Game, a revolutionary application featuring 100 video games in a single platform. This innovative project offers diverse gaming experiences, showcasing our expertise in creating engaging, multi-genre video game solutions.",
-      num: "1",
-      icons: [
-        "https://www.comfygen.com/image/react-portfolio-icon.svg",
-        "https://www.comfygen.com/image/next-js-portfolio-icon.svg",
-        "https://www.comfygen.com/image/tailwind-portfolio-icon.svg",
-        "https://www.comfygen.com/image/figma-portfolio-icon.png",
-        "https://www.comfygen.com/image/html-portfolio-icon.svg"
-      ],
-    }
-  ],
-};
 
 
-
-export default function rummy(props) {
+export default function rummy(props:any) {
   let { initialData } = props;
 
-  let { } = JSON_DATA;
 
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -296,98 +170,22 @@ export default function rummy(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <div className="lg:pt-[100px]">
-        <Header />
-      </div>
-      <div className="overflow-hidden">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Top Video Game Development Company"
-            ptag="Comfygen is top video game development company is dedicated to creating immersive, high-quality gaming experiences that captivate players and stand out in the competitive market. We combine innovative design, advanced technologies, and a passion for gaming to deliver games that are both engaging and visually stunning. Whether it’s a mobile game, console game, or VR experience, we offer end-to-end development to bring your vision to life."
-            li="Advanced Video Game Engines (e.g., Unity, Unreal Engine)"
-            li1="Immersive Graphics and Realistic Audio"
-            li2="AI-Driven Gameplay Mechanics"
-            li3="Monetization Strategies: In-App Purchases & Ads"
-            li4="Cross-Platform Compatibility & Integration"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/video-game-development-hero-img.webp"
-          />
-        </div>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.technologyData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <Solution techData={JSON_DATA.Technologies} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Key Video Game Development Services We Offer</h2>
-              <p className="text-center text-base text-black">Take your gaming ideas to the next level with our cutting-edge video game development services. At Comfygen, we specialize in creating high-performance, engaging, and innovative gaming solutions that cater to diverse platforms and audiences.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Expertise in Video Game Development Services"
-          description1="The Comfygen team offers innovative and exciting video game development services, bringing your game ideas to life. Our video game development company specializes in creating immersive experiences for players across genres and platforms supported by sophisticated technology."
-          description2="Our gaming team consists of experienced developers, designers and tech-savvy enthusiasts. We work closely together from concept to launch to ensure each performance is unique."
-          description3="Our team specializes in developing games for mobile, console, PC and AR/VR platforms. From creating amazing console games to designing immersive AR/VR experiences, we meet your business goals with custom gaming solutions that engage players for."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <SolutionSec
-          heading="Specialized Video Game Types We Have Developed"
-          subheading=""
-          techData={technologyData}
-        />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Video Game Development Process</h2>
-            </div>
-            <ProcessSec processSlides={Processs} />
-          </div>
-        </section>
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <PortfolioSec
-          techData={techDataForPage1}
-          heading="Case Studies and Success Stories"
-          description=""
-        />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CardItem
-          heading="Cutting-Edge Technologies We Develop Video"
-          subheading="We harness the latest advancements in technology to create innovative, engaging, and immersive gaming experiences. Our expertise in blockchain, procedural generation, multiplayer networking, and metaverse compatibility ensures your game stands at the forefront of the industry."
-          techData={JSON_DATA.hiringprocess}
-        />
-        <CallToAction
-          heading="Glance for a Top-class Video Game Programmer?"
-          text="Ready to embark on an epic adventure in game development? Join the ComfyGen family and be part of a team that creates games players love."
-          buttonText="Click Here"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-        <ClientStories/>
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Video Game Development"
-        />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

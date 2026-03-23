@@ -1,32 +1,26 @@
 {
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What is a truck finance app?",
-      "desc": "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place."
-    },
-    {
-      "num": "2",
-      "title": "How much does it cost to develop a truck finance app?",
-      "desc": "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs."
-    },
-    {
-      "num": "3",
-      "title": "How long does it take to build a truck loan app?",
-      "desc": "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support."
-    },
-    {
-      "num": "4",
-      "title": "Do you provide custom truck finance app solutions?",
-      "desc": "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features."
-    },
-    {
-      "num": "5",
-      "title": "Can you integrate third-party APIs like payment gateways or loan calculators?",
-      "desc": "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance."
-    }
-  ],
-  "servicesData": [
+  "Herosection": {
+    "heading": "Best Truck Finance App Development Company",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Build a secure, scalable, and user-friendly truck finance app with Comfygen Technologies. As a trusted truck finance app development company, we help lenders, fleet owners, and transport businesses digitize truck loans with seamless EMI management, real-time tracking, and secure KYC integrations. Our custom truck finance app solutions are designed to simplify loan processing, improve transparency, and accelerate business growth.",
+    "ptag1": "",
+    "listItems": [
+          "Secure KYC, Banking & Document Integration",
+        "Custom Truck Loan & Vehicle Finance App Development",
+        "Seamless EMI, Repayment & Loan Lifecycle Management",
+        "Scalable Fintech Architecture for Growing Fleet Businesses"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Best Truck Finance App Development Company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/hero.webp"
+  },
+
+    "ServicesData": {
+    "heading": "Truck Finance App Development Services We Offer",
+    "description": "Comfygen offers truck finance app development services tailored to transport companies, vehicle dealers, and fintech startups. Our commercial vehicle finance apps simplify the entire  financing process, whether you're managing EMIs, offering truck loans, or handling fleet financing.",
+    "services": [
     {
       "title": "Custom Truck Loan App Development",
       "description": "We develop custom truck loan apps designed to automate and simplify vehicle financing. From loan applications to EMI schedules, our apps provide end-to-end solutions for managing truck finance operations.",
@@ -87,80 +81,34 @@
         "GST, PAN & compliance tools for NBFCs"
       ]
     }
-  ],
-  "servicesData1": [
-    {
-      "title": "Enhanced User Engagement",
-      "description": "Astrology apps allow users to explore their daily horoscopes, Kundli matching, numerology, and personalized insights—all in one place. This keeps them engaged and returning for regular updates.",
-      "features": []
-    },
-    {
-      "title": "Scalable and Personalized Services",
-      "description": "By offering custom astrology solutions, businesses can cater to unique user needs, from love compatibility to career predictions, ensuring a tailored experience for each user.",
-      "features": []
-    },
-    {
-      "title": "Real-Time Astrological Insights",
-      "description": "Astrology apps provide real-time predictions and daily updates powered by AI/ML algorithms, making astrological guidance more accurate and accessible.",
-      "features": []
-    },
-    {
-      "title": "Global Reach and Accessibility",
-      "description": "Astrology apps break geographical barriers, allowing astrologers and businesses to reach users worldwide and offer services in multiple languages and currencies.",
-      "features": []
-    },
-    {
-      "title": "Increased Revenue Opportunities",
-      "description": "Astrology apps can include features like live astrologer consultations, premium content, and eCommerce integration, opening up new revenue streams.",
-      "features": []
-    },
-    {
-      "title": "Data-Driven Decision Making",
-      "description": "With built-in analytics and user behavior insights, businesses can refine their services and enhance app performance for maximum ROI.",
-      "features": []
-    }
-  ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p1.webp",
-      "title": "FleetLoan Pro – Truck Loan Management App",
-      "description": "FleetLoan Pro is a custom-built truck loan app designed for logistics companies to manage loans across their fleet of vehicles. The app includes EMI tracking, document uploads, loan status updates, and real-time notifications.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p2.webp",
-      "title": "TruckLeaseGo – Commercial Vehicle Finance App",
-      "description": "TruckLeaseGo is a complete commercial truck finance app built for NBFCs to handle leasing and vehicle loans. It offers a seamless interface for customers to apply for loans, upload documents, and calculate EMIs.",
-      "link": "#"
-    }
-  ],
-  "FutureDriven2": [
-    {
-      "title": "Rising Demand for Digital Money Management",
-      "desc": "More people now prefer mobile apps to manage their money. A personal finance app helps your business meet this demand by offering users simple tools to track expenses, budgets, and savings digitally."
-    },
-    {
-      "title": "User Engagement Through Data Visualization",
-      "desc": "Finance apps use charts and graphs to show users how they spend and save money. This visual experience keeps users engaged and helps them understand their finances more clearly and easily."
-    },
-    {
-      "title": "Increased Customer Retention with Automation",
-      "desc": "Features like automatic bill reminders, expense tracking, and budget alerts keep users coming back. Automation makes money management easier, which improves customer satisfaction and boosts app retention rates."
-    },
-    {
-      "title": "Brand Loyalty with Intuitive Financial Tools",
-      "desc": "Offering a smart, easy-to-use personal finance app builds trust. Users stick with brands that help them manage money better, increasing brand loyalty and long-term business growth."
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Key Features of Our Truck Finance Apps",
-      "desc": "Our truck finance app development services include powerful and user-friendly features that make managing vehicle loans easier for businesses and borrowers. From KYC to EMI tracking, every feature is designed to streamline your truck financing process and boost efficiency."
-    }
-  ],
-  "consultancyData": [
-    {
+    ]
+  },
+
+    "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Do You Need a Truck Finance App for Your Business?",
+    "description1": "A truck finance app helps your business manage loans, EMI payments, and documents in one place. It makes the loan process faster, easier, and more transparent for both you and your customers. Whether you’re a truck dealer, transport company, or finance provider, this app saves time and improves service.",
+    "description2": "With smart features and real-time updates, you can avoid delays, reduce paperwork, and offer a better loan experience to your users.",
+    "points": [
+     "Easily approve and manage truck loans",
+          "Track EMI payments on time",
+          "Upload and verify KYC documents",
+          "Get alerts for payments and due dates",
+          "Keep all finance records safe and organized"
+    ],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+
+    "consultancyData": {
+    "title": "Key Features of Our Truck Finance Apps",
+    "description": "Our truck finance app development services include powerful and user-friendly features that make managing vehicle loans easier for businesses and borrowers. From KYC to EMI tracking, every feature is designed to streamline your truck financing process and boost efficiency.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/image/tutor-apps-image.webp",
+    "proces": [
+   {
       "title": "User Registration & KYC Verification",
       "desc": "Allow users to register easily and verify their identity through secure eKYC integration. This ensures only verified users access your truck loan platform."
     },
@@ -196,12 +144,89 @@
       "title": "Data Analytics & Reports",
       "desc": "Access detailed reports and insights related to loans, payments, user activity, and overall app performance."
     }
-  ],
-  "pageData": {
+    ]
+  },
+
+    "Portfoliodata": {
+    "heading": "Our Portfolio – Truck Finance App Projects",
+    "description": "Explore how Comfygen delivers innovative, user-friendly, and scalable truck finance app development solutions for businesses across the transportation and finance sectors.",
+    "portfolio": [
+   {
+      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p1.webp",
+      "title": "FleetLoan Pro – Truck Loan Management App",
+      "description": "FleetLoan Pro is a custom-built truck loan app designed for logistics companies to manage loans across their fleet of vehicles. The app includes EMI tracking, document uploads, loan status updates, and real-time notifications.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/truck-finance-app-development/p2.webp",
+      "title": "TruckLeaseGo – Commercial Vehicle Finance App",
+      "description": "TruckLeaseGo is a complete commercial truck finance app built for NBFCs to handle leasing and vehicle loans. It offers a seamless interface for customers to apply for loans, upload documents, and calculate EMIs.",
+      "link": "#"
+    }
+    ]
+  },
+
+    "CallToAction": {
+    "heading": "Want to launch a truck finance app?",
+    "text": "We build custom, secure, and user-friendly truck finance apps tailored to your business needs.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+
+    "ProcessData": {
+    "heading": "Our Process for Truck Finance App Development",
+    "description": " As the best truck finance app development company, we follow a clear and proven process to deliver high-quality, reliable, and  affordable truck finance app development solutions. Whether you're a startup or an established lender, our step-by-step method ensures smooth project execution and on-time delivery.",
+    "Process": [
+    {
+    "title": "Requirement Gathering & Consultation",
+    "description":
+      "We begin by understanding your business goals, target users, and feature needs. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/finance-app-development'>finance app development company</a> listens closely to deliver tailored truck loan app development solutions that match your vision."
+  },
+  {
+    "title": "Market & Competitor Analysis",
+    "description":
+      "Our experts study your industry, competitors, and user behavior to ensure your app stands out. This helps us design user-focused features for on-demand truck finance app development."
+  },
+  {
+    "title": "UI/UX Design",
+    "description":
+      "We create clean, intuitive, and modern app designs that are easy to use. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designs</a> are built for truck dealers, loan agents, and borrowers—focused on smooth navigation and quick access."
+  },
+  {
+    "title": "App Development",
+    "description":
+      "Our skilled on-demand truck finance app developers use the latest technologies to build fast, secure, and scalable apps. As a leading truck loan app development company, we ensure your app meets top industry standards."
+  },
+  {
+    "title": "Third-Party API Integration",
+    "description":
+      "We integrate KYC, credit score, payment gateways, and bank APIs to provide a complete truck finance application development solution. This allows users to apply for loans, upload documents, and make payments in real-time."
+  },
+  {
+    "title": "Testing & Quality Assurance",
+    "description":
+      "Our QA team performs rigorous testing on all devices to ensure your app works perfectly. We fix bugs, improve speed, and test user flow before launching."
+  },
+  {
+    "title": "Launch & Support",
+    "description":
+      "Once approved, we publish your app on Play Store, App Store, or web platforms. We also provide post-launch support, updates, and maintenance to keep your app running smoothly."
+  }
+    ]
+  },
+
+      "TechStack": {
+    "title": "Technology Stack We Use for Truck Finance App Development",
+    "description": "We use the latest and most secure technologies to build reliable, scalable, and high-performance truck finance applications. Across all platforms, we support real-time syncing, fast performance, and secure loan transactions.",
+    "customTechData": []
+  },
+    "pageData": {
     "title": "Why Choose Comfygen for Truck Finance App Development?",
     "description": "Comfygen is a leading <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/personal-finance-app-development' >personal finance app development company</a> trusted by transport businesses, lenders, and fintech startups. We build custom, secure, and user-friendly truck loan apps that simplify financial operations and enhance user satisfaction.",
     "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "imageUrl": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
@@ -238,7 +263,24 @@
       }
     ]
   },
-  "customTestimonials": [
+
+    "HireDeveloper": {
+  "heading": "Hire Our Expert Truck Finance App Developers",
+  "text": "Looking to build a secure, smart, and scalable truck loan finance app? Hire our skilled Truck finance <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> to turn your vision into a feature-rich mobile solution. Our finance app development team understands both financial technology and the transportation industry, making us the perfect fit for your next project.",
+   "text1":"Why Hire Developers from Comfygen?",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+     "Dedicated Fintech Expertise: Our fintech app developers specialize in truck loan app development and understand complex lending workflows.",
+          "Custom & Scalable Solutions: We tailor every app to match your goals, user needs, and compliance standards.",
+          "Cost-Effective Hiring Models: Flexible hiring options—hourly, part-time, or full-time—fit your project and budget.",
+          "Agile Development Approach: Rapid development with clear timelines and milestone tracking.",
+          "Full-Cycle Support: From design to deployment and post-launch maintenance—we handle it all."
+    ]
+  },
+    "customTestimonials": [
     {
       "text": "Comfygen delivered a powerful and secure truck finance app for our logistics business. The team was professional, quick to respond, and exceeded our expectations.",
       "name": "Michael D'Souza",
@@ -255,290 +297,134 @@
       "title": "Canada"
     }
   ],
-  "Solution": [
-    {
-      "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "eLearning app consultancy",
-      "decs": "We create a plan for custom tutoring app development or other custom edtech solutions in the beginning. Our education app developers listen to your ideas, understand your needs, and suggest the best ways to create customized eLearning apps that engage learners. We'll guide you through the whole process, from choosing features to planning your budget, ensuring your app meets the final goals."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/healthcare-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Custom eLearning app development",
-      "decs": "We are attention to custom tutor app development that is uniquely designed. Our developers build education mobile apps that work smoothly and make learning easy. Whether you need a simple on-demand tutoring app or complex education software, we'll develop the best that fits the needs of institutes and learners."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/blockchain-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Pharmacy Aggregator App",
-      "decs": "The Pharmacy Aggregator App connects users with multiple pharmacies in one convenient platform, allowing for an enhanced shopping experience."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/nft-marketplace-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Learning Management System (LMS) Developmen",
-      "decs": "We build unique yet easy-to-use Learning Management Systems that help you organize courses, track learner progress, and manage educational content all in one place. We focus on creating intuitive education apps for educators and learners to provide convenient learning ways."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/ecommerce-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "On-Demand Tutoring app Development",
-      "decs": "Learn from anywhere and anytime through on-demand tutoring apps. We process feasible tutor app development that allows learners to access courses and educational materials whenever they need them. Whether it's video lessons, interactive quizzes, or downloadable resources, our apps make learning fit into busy schedules."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "CRM Integration in Edtech Apps",
-      "decs": "We create CRM integrations with online tutoring platforms that easily manage learner information, track interactions, and personalize the learning experience. It helps you understand your students better, improve your courses, and grow your eLearning business more effectively with deeper insights"
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Edtech App Support and Maintenance",
-      "decs": "We keep monitoring the performance of our eLearning mobile apps. Our team provides regular updates, fixes any issues quickly, and adds new features when the app needs based on the current industry needs. We support and maintain after deployment making sure that the app stays up-to-date, secure, and effective for all learners."
-    }
-  ],
-  "ValuableServices": [
+
+  "Frequently": [
     {
       "num": "1",
-      "img": "https://www.comfygen.com/images/language-learning-app.webp",
-      "title": "Language Learning App",
-      "desc": "Learn new languages at your own pace. Practice speaking, reading, and writing with interactive lessons, games, and quizzes. Chat with native speakers, track your progress, and earn rewards as you improve your language skills."
+      "title": "What is a truck finance app?",
+      "desc": "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place."
     },
     {
       "num": "2",
-      "img": "https://www.comfygen.com/images/virtual-classroom-plateform.webp",
-      "title": "Virtual Classroom Platform",
-      "desc": "Attend classes from anywhere. Join live video lessons, interact with teachers and classmates, and access course materials online. Submit assignments, take tests, and get instant feedback. It's just like being in a real classroom, but more convenient."
+      "title": "How much does it cost to develop a truck finance app?",
+      "desc": "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs."
     },
     {
       "num": "3",
-      "img": "https://www.comfygen.com/images/profesional-skill-training-app.webp",
-      "title": "Professional Skills Training App",
-      "desc": "Boost your career with on-the-go learning. Access short video courses on topics like leadership, public speaking, and time management. Complete practical exercises, earn certificates, and build your professional skills anytime, anywhere."
+      "title": "How long does it take to build a truck loan app?",
+      "desc": "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/images/kids-educational-game-app.webp",
-      "title": "Kids' Educational Game App",
-      "desc": "Make learning fun for children. Colorful games teach math, reading, and science concepts through engaging stories and characters. Parents can track progress and set learning goals. It's education disguised as playtime!"
+      "title": "Do you provide custom truck finance app solutions?",
+      "desc": "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/images/exam-preparation-aap.webp",
-      "title": "Exam Preparation App",
-      "desc": "Ace your tests with personalized study plans. Take practice exams, review flashcards, and watch explanation videos. The app adapts to your strengths and weaknesses, focusing on areas where you need the most help."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/images/collaborate-project-learning-plateform.webp",
-      "title": "Collaborative Project Learning Platform",
-      "desc": "Work on group projects easily. Share ideas, divide tasks, and give feedback in real-time. Use built-in tools like shared documents, video calls, and project timelines. Learn teamwork skills while completing your assignments together."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/images/adult-literacy-aap.webp",
-      "title": "Adult Literacy App",
-      "desc": "Improve reading and writing skills discreetly. Start with basic letters and work up to full sentences and stories. Use voice recognition to practice pronunciation. Gain confidence in your literacy skills at your own pace."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/images/vocational-training-simulator.webp",
-      "title": "Vocational Training Simulator",
-      "desc": "Practice job skills in a safe, virtual environment. Use 3D simulations to learn trades like plumbing, electrical work, or mechanics. Get hands-on experience and instant feedback without the risk of mistakes in real-world situations."
+      "title": "Can you integrate third-party APIs like payment gateways or loan calculators?",
+      "desc": "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance."
     }
   ],
-  "TecnologisStack": [
+ "jsonLdData": [
+
     {
-      "num": "1",
-      "img": "https://www.comfygen.com/images/ai-and-ml.webp",
-      "title": "Artificial Intelligence (AI) and Machine Learning ",
-      "stack": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt content difficulty and suggest tailored resources. AI-powered chatbots provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Custom Truck Finance App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description":
+        "Looking to build a custom truck finance app? Hire expert developers from Comfygen. We develop smart, scalable, and user-friendly truck loan apps for NBFCs and fleet owners.",
+      "url": "https://www.comfygen.com/truck-finance-app-development",
+      "mainEntityOfPage":
+        "https://www.comfygen.com/truck-finance-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Truck Loan App Development",
+        "EMI Calculator App Development",
+        "Fleet Finance Management Solutions",
+        "Truck Leasing App Development",
+        "Loan Management System Integration"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
+
+
+
     {
-      "num": "2",
-      "img": "https://www.comfygen.com/images/ar-and-vr.webp",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "stack": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Truck Finance App Development",
+          "item": "https://www.comfygen.com/truck-finance-app-development"
+        }
+      ]
     },
+
     {
-      "num": "3",
-      "img": "https://www.comfygen.com/images/blockchain-for-credential-verification.webp",
-      "title": "Blockchain for Credential Verification ",
-      "stack": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. Blockchain ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/images/internet-of-things.webp",
-      "title": "Internet of Things (IoT) ",
-      "stack": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/images/big-data-analytics.webp",
-      "title": "Big Data Analytics",
-      "stack": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/images/natural-language-processing.webp",
-      "title": "Natural Language Processing (NLP) ",
-      "stack": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "decs": "Personalized Learning Paths: Adaptive algorithms create unique study plans based on each user's progress and learning style."
-    },
-    {
-      "num": "2",
-      "decs": "Interactive Multimedia Content: Engaging videos, animations, and graphics make complex topics easier to understand and remember."
-    },
-    {
-      "num": "3",
-      "decs": "Real-time Progress Tracking: Detailed analytics show learners and educators exactly where improvements are needed."
-    },
-    {
-      "num": "4",
-      "decs": "Gamification Elements: Points, badges, and leaderboards motivate learners and make education more enjoyable."
-    },
-    {
-      "num": "5",
-      "decs": "Social Learning Features: Discussion forums and group projects encourage collaboration and peer-to-peer learning."
-    },
-    {
-      "num": "6",
-      "decs": "Mobile Compatibility: Access courses on any device, ensuring learning can happen anytime, anywhere."
-    },
-    {
-      "num": "7",
-      "decs": "Offline Mode: Download lessons for areas with poor internet, ensuring uninterrupted learning."
-    },
-    {
-      "num": "8",
-      "decs": "AI-powered Tutoring: Virtual assistants provide instant help and answer questions 24/7."
-    },
-    {
-      "num": "9",
-      "decs": "Accessibility Options: Features like text-to-speech and high-contrast modes make learning inclusive for all users."
-    },
-    {
-      "num": "9",
-      "decs": "Secure Assessment Tools: Cheat-proof online exams with randomized questions and proctoring capabilities."
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Artificial Intelligence (AI) and Machine Learning",
-      "decs": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt to content difficulty and suggest tailored resources. <a href='/ai-development' class='text-blue-600 font-bold hover:underline'>AI-powered eLearning app development services</a> provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
-    },
-    {
-      "num": "02",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "decs": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
-    },
-    {
-      "num": "03",
-      "title": "Blockchain Integration in E-learning App",
-      "decs": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. <a href='/blockchain-development' class='text-blue-600 font-bold hover:underline'>Blockchain development</a> ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "04",
-      "title": "Internet of Things (IoT)",
-      "decs": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "05",
-      "title": "Big Data Analytics",
-      "decs": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "06",
-      "title": "Natural Language Processing (NLP)",
-      "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "AIPowered": [
-    {
-      "num": "01",
-      "title": " AI-Based Astrology Predictions",
-      "decs": "Our AI-driven astrology prediction system analyzes planetary positions and user data to deliver highly accurate, real-time horoscope readings. This feature enhances astrology app development by offering personalized insights, career guidance, and relationship compatibility analysis based on deep learning models."
-    },
-    {
-      "num": "02",
-      "title": " AI-Powered Kundli Generation",
-      "decs": "Our AI-powered Kundli generation system creates detailed birth charts, planetary reports, and Vedic astrology insights with unmatched accuracy. This ensures users receive precise astrological predictions, marriage compatibility analysis, and remedial solutions tailored to their life path."
-    },
-    {
-      "num": "03",
-      "title": "AI-Based Numerology Analysis",
-      "decs": "Comfygen’s AI-driven numerology solutions analyze name numbers, life path numbers, and lucky numbers to provide personalized numerology-based predictions. This feature enhances user engagement by offering automated numerology reports, lucky dates, and career guidance."
-    },
-    {
-      "num": "04",
-      "title": " Chatbot-Powered Astrology Consultation",
-      "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    },
-    {
-      "num": "05",
-      "title": "AI-Driven Compatibility Analysis",
-      "decs": "Our astrology app solutions integrate AI-based compatibility analysis, helping users find zodiac-compatible partners, business partners, and friendships. By using deep learning algorithms, we provide detailed love compatibility, relationship forecasts, and Vedic astrology matchmaking."
-    },
-    {
-      "num": "06",
-      "title": " Personalized Daily Horoscope",
-      "decs": "Our AI-powered horoscope generator provides daily, weekly, and monthly horoscope updates based on real-time planetary movements. This ensures users receive highly accurate and personalized astrology insights tailored to their birth charts."
-    },
-    {
-      "num": "07",
-      "title": "Voice & Image Recognition for Palmistry",
-      "decs": "We integrate AI-driven voice and image recognition for palm reading, allowing users to scan their palms for accurate fortune-telling insights. Our machine-learning algorithms analyze hand lines, mounts, and shapes to deliver detailed palmistry reports in real time."
-    },
-    {
-      "num": "08",
-      "title": "AI-Powered Astrological Remedies",
-      "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
-    }
-  ],
-  "Emerging": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/budgeting-app-development.webp",
-      "title": "Budgeting Apps",
-      "decs": "We develop custom budgeting apps that help users plan and manage their monthly income and expenses. These personal budgeting app solutions offer budget alerts, visual spending charts, and financial goals to improve money habits and promote smarter financial planning."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/expense-tracker-app.webp",
-      "title": "Expense Tracker Apps",
-      "decs": "Our expense tracker app development service allows users to record and categorize daily spending in real-time. These apps provide detailed reports and analytics that help users control their finances and avoid overspending."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/investment-management-app.webp",
-      "title": "Investment Management Apps",
-      "decs": "We create investment management apps that allow users to monitor their portfolio, track market trends, and make informed decisions. These apps support stock, mutual fund, and crypto tracking with real-time updates and alerts."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/bill-payment-app.webp",
-      "title": "Bill Payment Apps",
-      "decs": "Our bill payment app solutions enable users to schedule and pay bills on time. With features like auto-reminders, payment history, and secure gateways, users never miss due dates or fall behind on their financial obligations."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/credit-score-monitoring-app.webp",
-      "title": "Credit Score Monitoring Apps",
-      "decs": "We build credit monitoring apps that allow users to check and track their credit scores securely. These apps offer score improvement tips, credit history tracking, and alerts for any changes in credit reports."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/wealth-management-platform.webp",
-      "title": "Wealth Management Platforms",
-      "decs": "Our wealth management apps help users manage all aspects of personal finance—budgeting, investing, saving, and debt tracking—within a single platform. These solutions are ideal for individuals, families, and financial advisors."
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a truck finance app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A truck finance app helps users apply for truck loans, calculate EMIs, track loan status, and manage financing digitally. It simplifies the loan process for truck owners, drivers, and businesses by offering quick access to loan options, payments, and documentation in one place."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to develop a truck finance app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on app features, platform (Android/iOS), design, and tech stack. On average, developing a custom truck finance app may cost between $10,000 to $50,000. We offer flexible pricing and free consultation based on your specific project needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a truck loan app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The development timeline varies depending on features, design complexity, and integrations. A basic truck finance app can take 4–6 weeks, while advanced apps with AI and payment features may take 10–12 weeks. We ensure timely delivery with complete support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide custom truck finance app solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we build 100% custom truck finance apps tailored to your business model. Whether you're a loan provider, transport company, or startup, we design solutions that fit your goals with a unique UI/UX, secure backend, and smart features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you integrate third-party APIs like payment gateways or loan calculators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We integrate payment gateways, credit score APIs, loan calculators, and document verification tools. These integrations enhance your app’s functionality and deliver a seamless experience for users applying for or managing truck finance."
+          }
+        }
+      ]
     }
   ]
+  
 }
