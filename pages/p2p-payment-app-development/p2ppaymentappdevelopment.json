@@ -101,13 +101,13 @@
 
   "portfoliodata": [
     {
-      "image": "https://www.comfygen.com/comfygen-images/comfygen/p2p-money-transfer-app.webp",
+      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-money.webp",
       "title": "P2P Money Transfer App for Emerging Fintech Startup",
       "description": "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
       "link": "#"
     },
     {
-      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-mobile-wallet-crypto-integration.webp",
+      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-mobile.webp",
       "title": "P2P Mobile Wallet with Crypto Integration",
       "description": "This project involved building a cross-platform mobile wallet app that supports both fiat and cryptocurrencies. Designed for global users, the app includes features like QR code payments, crypto-to-fiat conversion, multi-language support, and blockchain-based transaction security.",
       "link": "#"
