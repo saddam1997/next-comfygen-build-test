@@ -101,7 +101,7 @@
 
   "portfoliodata": [
     {
-      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-money.webp",
+      "image": "https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p_money.webp",
       "title": "P2P Money Transfer App for Emerging Fintech Startup",
       "description": "We developed a robust peer-to-peer money transfer app for a fintech startup aiming to offer instant, secure, and fee-free domestic transfers. The app includes biometric authentication, multi-bank linking, and real-time transaction tracking.",
       "link": "#"
