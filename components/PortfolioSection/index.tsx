@@ -1,12 +1,20 @@
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 import Slider from "./Slider";
+import SliderWrapper from "./SliderWrapper";
 
 export default function Portfolio({ Portfoliodata }) {
 
 
   return (
-    <section className="w-full py-10 ">
-      <Slider Portfoliodata={Portfoliodata} />
-    </section>
+    <div className="w-full py-10 ">
+      <section className="text-center space-y-2 lg:py-16 py-3 lg:px-16">
+        <HeadingTwo color="black" text={Portfoliodata?.heading} />
+        <ParagraphText color="black" text={Portfoliodata?.description} />
+      </section>
+   
+      <SliderWrapper Portfoliodata={Portfoliodata} />
+    </div>
   );
 }
 
