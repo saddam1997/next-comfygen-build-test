@@ -325,7 +325,7 @@ export default function ClinicalApp(props: any) {
           description1="Building a successful payment p2p app solution requires more than just code — it demands a technology partner that understands the financial ecosystem. As the best mobile payment application development company, Comfygen helps fintech startups and enterprises launch secure, scalable, and user-friendly P2P payment apps that drive growth."
           description2="We specialize in custom peer-to-peer payment app development tailored to your business model — whether you're creating a mobile wallet, a social money transfer app, or an enterprise-grade digital payment system. Our team of <a class='text-blue-500 font-semibold' href='/finance-app-development'>fintech app development</a> experts ensures that your mobile payment app meets industry standards for security, compliance, and performance."
           description3="At Comfygen, we combine deep fintech experience with innovative technologies like blockchain, AI, and cloud infrastructure to build a future-proof P2P payment app. From idea validation to post-launch support, we’re here to turn your vision into a high-performing digital payment product."
-          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-about.webp"
           link="/about-us"
           linkText="Explore More"
         />

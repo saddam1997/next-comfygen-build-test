@@ -3,11 +3,11 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
+import Emerging from "../../components/Emerging";
 
-
-
+import Header from "../../components/Newcomponet/layout/Header"
+import IndustryGrid from "../../components/IndustryGrid";
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
@@ -15,12 +15,12 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
 
 const InfoSection = dynamic(
   () => import("../../components/InfoSection"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const CardFeatures = dynamic(
   () => import("../../components/CardFeatures"),
-  {  ssr: true }
+  { ssr: true }
 );
 const CardWallets = dynamic(
   () => import("../../components/CardWallets"),
@@ -77,163 +77,6 @@ const BlogSection = dynamic(
 );
 
 
-
-
-import { IconWallet } from "@tabler/icons-react";
-import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
-
-import Header from "../../components/Newcomponet/layout/Header"
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-
-
-const SolutionsFeature = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/astrology/SolutionsFeature"),
-  { loading: loader, ssr: true }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: loader, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
-
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
-
-
-
-
-
-
-const technologyData = [
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Crypto Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/crypto-wallet-development'>crypto wallet development</a> services provide secure, scalable, and custom-built solutions that put you at the forefront of the Web3 revolution. From intuitive mobile apps to powerful browser extensions, we Develop Crypto Wallets that offer unmatched security, seamless multi-chain access, and a superior user experience—turning your vision into a trusted gateway for the decentralized economy.",
-  },
-  {
-    img: <IconDeviceMobile stroke={1.5} className="w-12 h-12" />,
-    title: "Blockchain Wallet Development Services",
-    desc: "Comfygen <a class='text-blue-500 font-medium' href='https://www.comfygen.com/blockchain-wallet-development'>Blockchain Wallet Development</a> Services develops secure, non-custodial wallets that give users full control of their digital assets. Supporting multiple blockchain technologies like Bitcoin, Ethereum, Solana, and Polygon, our wallets include token swaps, staking, NFT management, and dApp connectivity, delivering a secure, scalable, and user-friendly gateway to the Web3 ecosystem.",
-  },
-  {
-    img: <IconCash stroke={1.5} className="w-12 h-12" />,
-    title: "Decentralized Wallet Development Services",
-    desc: "Comfygen Decentralized Wallet Development Services builds secure, non-custodial  Crypto wallets with full user control, multi-chain support, dApp integration, token swaps, staking, and NFT management. Scalable and secure, they provide a user-friendly gateway into DeFi, Web3, and the broader blockchain ecosystem.",
-  },
-  {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "cryptocurrency wallet development services",
-    desc: "Comfygen Cryptocurrency Wallet Development Services create secure, custom multi-chain wallets that give users full control of their digital assets. Featuring token swaps, staking, NFT management, and dApp integration, they combine security, scalability, and ease of use to provide a reliable gateway into the decentralized economy and Web3 ecosystem.",
-  },
-  {
-    img: <IconWallet stroke={1.5} className="w-12 h-12" />,
-    title: "Multi-Currency Crypto Wallet Development Services",
-    desc: "We deliver Multi-Currency Crypto Wallet Development solutions designed for businesses seeking secure, scalable, and feature-rich platforms. From multi-chain support to token swaps, staking, NFT management, and dApp integration, our wallets open the door to Web3 and decentralized finance.",
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Cryptocurrency Wallet Development Services",
-    desc: "Comfygen Enterprise Cryptocurrency Wallet Development Services offer non-custodial wallets with multi-chain and multi-currency support, integrated token swaps, staking, NFT management, and dApp connectivity, designed for robust security, compliance, and seamless scalability.",
-  },
-
-];
-
-
-const Process = [
-  {
-    title: "Requirement Analysis & Planning",
-    description: " We begin by understanding your business goals, target audience, and wallet use cases. A detailed roadmap is created to define features, security protocols, and compliance needs."
-  },
-  {
-    title: " UI/UX Design",
-    description: " Our design team builds intuitive, user-friendly interfaces with seamless navigation, ensuring both beginners and advanced users can use the wallet with ease."
-  },
-  {
-    title: "Architecture & Technology Selection",
-    description: "We select the right blockchain (Ethereum, Polygon, Solana, etc.), databases, APIs, and frameworks. The wallet’s architecture is designed for scalability, high performance, and multi-platform support."
-  },
-  {
-    title: "Core Development",
-    description: " Our developers code wallet functionalities including user accounts, transaction modules, encryption layers, payment gateways, and blockchain integrations."
-  },
-  {
-    title: "Security Implementation",
-    description: " We integrate multi-layer security features such as biometric authentication, multi-signature approvals, data encryption, fraud detection, and cold storage support."
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description: " The wallet undergoes rigorous functional, security, and performance testing to ensure it works flawlessly across devices and platforms."
-  },
-  {
-    title: "Deployment & Ongoing Support",
-    description: " Once tested, the wallet is deployed to app stores, web, or enterprise environments. We provide continuous monitoring, upgrades, and feature enhancements."
-  }
-]
-
-const testimonialData = [
-  {
-    text: "Comfygen’s custom-built crypto wallet solution was exactly what we needed to secure our digital assets. Their team provided an intuitive, secure, and feature-rich wallet that has significantly improved our user experience and business operations.",
-    name: "Daniel Thompson",
-    title: "UK",
-  },
-  {
-    text: "We hired Comfygen to develop a crypto wallet, and they truly delivered. The wallet is secure, easy to use, and integrates perfectly with our existing systems. It’s a reliable solution, and we’ve seen an increase in user adoption.",
-    name: "Sophia Zhang",
-    title: "China",
-  },
-  {
-    text: "The Comfygen team exceeded our expectations when developing our crypto wallet. They understood the importance of security and seamless user experience, and the final product is exceptional. It has helped streamline our business operations.",
-    name: "Liam O’Connor",
-    title: "Ireland",
-  },
-  {
-    text: "Working with Comfygen was a smooth process from start to finish. They built a secure, multi-platform wallet with all the features we needed. Their customer support and project management were stellar, and we couldn’t be happier with the results.",
-    name: "Olivia Torres",
-    title: "Spain",
-  },
-];
 export default function Ecommerce(props: any) {
   let { initialData } = props;
   const slider: any = useRef();
@@ -433,126 +276,22 @@ export default function Ecommerce(props: any) {
       <div className="overflow-hidden lg:pt-24 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <InfoSection InformationData={JSON_DATA?.InformationData}/>
-        <CardFeatures featuresData={JSON_DATA.featuresData}/>
-        <CardWallets featuresData={JSON_DATA.featuresData2}/>
-
-
-
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Next-Gen Wallet development Company (Emerging Technologies)
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  At Comfygen, we specialize in providing next-generation wallet development services that take advantage of growing technologies to deliver innovative, secure, and futuristic financial solutions. Next-Gen Wallets are designed to meet the evolving demands of digital payments, blockchain technology integration, and multi-asset management.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div key={title} className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
-                                          src={img}
-                                          className="object-cover"
-                                          width={35}
-                                          height={50}
-                                          alt={title}
-                                        /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <SolutionsFeature title="Key Features We Deliver in Wallet Development" subtitle="At Comfygen, we provide wallet development solutions tailored to your business needs, whether it’s an e-wallet or a crypto wallet. Every wallet we develop is packed with features that ensure top-level security, user-friendly design, scalability, and regulatory compliance. Our goal is to deliver best wallets that are not only reliable but also flexible enough to grow with your business:" data={JSON_DATA.servicesData1} />
-
-        <IndustriesServe
-          heading="Industries We Serve as a Wallet Development Company"
-          description="Comfygen, a wallet development company, we provide fully customized crypto, DeFi, and NFT wallet solutions designed for different industries, ensuring secure transactions and digital transformation."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Portfolio of  Wallet Development Services"
-            description="At Comfygen, we develop secure, scalable, and high-performance crypto wallet development solutions that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
-          />
-        </section>
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End Wallet Development Process
-              </h2>
-              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                Comfygen is a Next-gen wallet development company that follows a proven process to build secure, scalable, and AI-powered digital wallets. Whether you need e-wallet or crypto wallet development services for startups, enterprises, or fintechs, our step-by-step approach ensures your success.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Tech stack we use in wallet development"
-          description="At Comfygen, we use a modern, robust tech stack to build secure, scalable, and user-friendly digital and crypto wallets, ensuring smooth performance and seamless integration across mobile, web, and enterprise platforms."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-
-        <HireDeveloper
-          heading="Hire Wallet Developers"
-          text="Looking to develop a secure, scalable, and feature-rich wallet? Hiring dedicated wallet developers ensures your project gets expert attention from design to deployment. Skilled developers can create e-wallets, crypto wallets, multi-currency wallets, DeFi wallets, and NFT wallets tailored to your business needs."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Custom Development",
-            "Advanced Security",
-            "Cross-Platform Expertise ",
-            "Scalable Architecture",
-            "Integration Capabilities ",
-          ]}
-        />
-
-        <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
+        <InfoSection InformationData={JSON_DATA?.InformationData} />
+        <CardFeatures featuresData={JSON_DATA.featuresData} />
+        <CardWallets featuresData={JSON_DATA.featuresData2} />
+        <Emerging emerging={JSON_DATA.EmergingData} />
+        <Solution techData={JSON_DATA.technologyData} />
+        <IndustryGrid />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <TechSection TechStack={JSON_DATA.TechStack} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <TestimonialSection testimonials={JSON_DATA.testimonialData} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
+
+
       </div>
     </>
   );

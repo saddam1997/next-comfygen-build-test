@@ -225,7 +225,7 @@ export default function News(props: any) {
           heading="The Best News App Development Company for Digital Media Platforms"
           description1="Comfygen is a trusted mobile news app development company in India & USA, helping media brands, publishers, and startups build powerful digital news platforms. As a trusted newspaper app development company, we create fast, secure, and feature-rich news applications designed to deliver real-time updates and an engaging reading experience."
           description2="We don’t just build apps—we offer complete support, maintenance, and timely updates so your news platform always runs smoothly and grows with your audience. With expert developers, on-time delivery, and customized solutions, we are your reliable partner for news application & <a href='https://www.comfygen.com/web-development' class='text-blue-600 font-semibold'>website development services</a>."
-          imageSrc="https://www.comfygen.com/comfygen-images/news-application-development/news-about.webp"
+          imageSrc="https://www.comfygen.com/comfygen-images/news-application-development/about_news.webp"
           link="/about-us"
           linkText="Explore More"
         />
