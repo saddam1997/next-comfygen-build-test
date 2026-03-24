@@ -274,14 +274,14 @@ export default function Ecommerce(props: any) {
       <Header />
 
       <div className="overflow-hidden lg:pt-24 pt-16">
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <InfoSection InformationData={JSON_DATA?.InformationData} />
-        <CardFeatures featuresData={JSON_DATA.featuresData} />
-        <CardWallets featuresData={JSON_DATA.featuresData2} />
-        <Emerging emerging={JSON_DATA.EmergingData} />
-        <Solution techData={JSON_DATA.technologyData} />
-        <IndustryGrid />
+         <HeroSectionforHome herosection={JSON_DATA?.Herosection} />
+         <AboutComponent AboutData={JSON_DATA?.AboutSection} />
+        {/* <InfoSection InformationData={JSON_DATA?.InformationData} /> */}
+        <CardFeatures featuresData={JSON_DATA?.featuresData} /> 
+        <CardWallets featuresData={JSON_DATA?.featuresData2} />
+        <Emerging emerging={JSON_DATA?.EmergingData} />
+        <Solution techData={JSON_DATA?.technologyData} /> 
+       <IndustryGrid />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <ProcesSection ProcessData={JSON_DATA.ProcessData} />
         <TechSection TechStack={JSON_DATA.TechStack} />
@@ -289,7 +289,7 @@ export default function Ecommerce(props: any) {
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <TestimonialSection testimonials={JSON_DATA.testimonialData} />
         <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
+        <BlogSection initialData={initialData} /> 
 
 
       </div>

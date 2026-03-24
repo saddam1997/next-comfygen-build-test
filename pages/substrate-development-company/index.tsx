@@ -1,185 +1,71 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/substrate.json";
-// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const LatestTechnology = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const WhyChoosee = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-
-
-import {
-  IconBriefcase,
-  IconCode,
-  IconLayout,
-  IconLock,
-  IconSettings,
-  IconShieldCheck,
-  IconStar,
-  IconUsers,
-} from "@tabler/icons-react";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-
-const Process = [
-  {
-    title: "Comprehend the Requirements",
-    description:
-      "Our journey begins with a thorough consultation with clients to understand their unique business needs. This step involves analyzing the specific benefits of blockchain implementation and identifying practical use cases. Through collaborative discussions, we align the client’s vision with feasible technical solutions, ensuring a clear roadmap for development.",
-  },
-  {
-    title: "Develop the Substrate Node",
-    description:
-      "At this stage, we focus on identifying and customizing the foundational components of the blockchain, such as consensus mechanisms and account management systems. Our team explores default implementations and customizes the genesis block to kickstart the blockchain network, laying a solid foundation for the chain.",
-  },
-  {
-    title: "Create the Frame",
-    description:
-      "Building the frame involves developing a runtime environment tailored to the blockchain's logic. We leverage existing libraries and implement a high degree of control to handle core functionalities effectively. This stage ensures a stable framework to support the blockchain’s operations.",
-  },
-  {
-    title: "Build the Core of Your Substrate",
-    description:
-      "The core development stage enables the integration of the runtime environment with WebAssembly, adhering to Substrate’s block-building protocols. This step ensures seamless interaction between the runtime and the Substrate node, creating a cohesive and functional blockchain ecosystem.",
-  },
-  {
-    title: "Test & Deploy",
-    description:
-      "Our blockchain engineers conduct extensive manual and automated tests to ensure flawless operation. We prioritize load testing and test nets to evaluate performance under real-world conditions. Once all tests are passed, we deploy the nodes on either private or public networks, ready for operational use.",
-  },
-  {
-    title: "Optimize Performance",
-    description:
-      "Post-deployment, we continuously monitor the blockchain’s performance to identify and address any inefficiencies. Updates and optimizations are implemented promptly to ensure the solution runs smoothly and meets evolving business demands.",
-  },
-  {
-    title: "Post-Launch Support and Upgrades",
-    description:
-      "Our commitment doesn’t end with deployment. We offer ongoing support and maintenance to keep the blockchain solution updated and scalable. Regular feature enhancements and security upgrades ensure the solution remains relevant and adaptable to future market trends.",
-  },
-];
-const technologyData = [
-  {
-    title: "Flexibility with WASM",
-    desc: "Substrate is a highly flexible blockchain framework that can be easily used for constructing a new blockchain or building new logic for business.",
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Highly Popular",
-    desc: "Substrate is one of the most popular open-source frameworks that has been used for making some of the most popular blockchains, such as Polkadot.",
-    img: <IconStar stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Immensely Customizable",
-    desc: "Substrate comes with data type flexibility, which enables this framework to support the system libraries, supporting high customization.",
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Account-Level Locking",
-    desc: "Enable a hierarchical system for management of the settings, with the use of account-level locking embedded with Substrate development.",
-    img: <IconLock stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Universal UI",
-    desc: "It is a built-in feature within the Substrate framework, built on the RxJS and React.js, used for minimizing the overall development time.",
-    img: <IconLayout stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Multi-Level Permissions",
-    desc: "Advanced level authentication can be achieved by invoking multiple levels within the permissions aspects for specific Substrate products.",
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-  },
-];
-const SubstrateModel = [
-  {
-    title: "Support Team Extension",
-    desc: "With our team extension engagement model, we have designed an approach to help clients with more workforce to meet their expansion requirements in order to help them meet their specific project needs.",
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Project-Based Model",
-    desc: "We also make a project-centric approach backed by our team of proficient blockchain developers. With this engagement model, our intention is to foster the utmost client collaboration and help achieve specific objectives associated with the project.",
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Dedicated Development Team",
-    desc: "We have the best blockchain engineers who leverage cutting-edge cognitive technologies to deliver completely tailored solutions and high-quality services associated with Substrate development for clients.",
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
-  },
-];
-
+import IndustryGrid from "../../components/IndustryGrid";
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -341,133 +227,24 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[100px]">
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <Solution techData={JSON_DATA.Businesses} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <IndustryGrid />
+      <Solution techData={JSON_DATA.Engagement} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-        <HeroSectionForAllPages
-          heading="Substrate Blockchain Development Company"
-          ptag="Our Substrate blockchain development team builds scalable, custom blockchain solutions using the Substrate SDK and Rust. We create secure, future-ready dApps and blockchain networks tailored to complex business needs. With 200+ digital solutions and 50+ blockchain projects delivered, Comfygen brings proven Substrate and blockchain consulting expertise."
-          li='Custom Substrate Blockchain Development'
-          li1='Runtime & Pallet Development'
-          li2='Polkadot & Cross-Chain Integration'
-          li3='Rust-Based Smart Contracts'
-          li4='Substrate Consulting & Support'
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/substrate-development-company.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Explore Our Dedicated Substrate Development Services
-              </h2>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Our Expertise in Substrate Blockchain Development is Unmatched!"
-          description1="At Comfygen, we take pride in our expertise in Substrate Blockchain Development in India. Using the power of the Substrate framework, we craft blockchain solutions that are not only robust but also scalable. The flexibility of this toolkit allows us to efficiently build essential components, ensuring that your network and application’s consensus function smoothly. We focus on security, adaptability, and making sure everything is customized to fit your specific business needs. Our solutions are designed to be future-ready, helping you stay competitive in the fast-moving world of <a class='text-blue-600' href='/blockchain-development'>Custom Blockchain Software Development</a>. "
-          imageSrc="https://www.comfygen.com/gallery/about-images/substrate-development-company-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <LatestTechnology
-          heading="Why do Businesses Find it Necessary to Seek Substrate Blockchain Development?"
-          subheading=""
-          techData={technologyData}
-        />
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Substrate Blockchain Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a well-defined process to execute
-                Substrate blockchain development with precision and efficiency.
-                As the best Substrate development service provider company in
-                India, we ensure seamless integration, security, and scalability
-                at every stage—from planning and architecture to deployment. Our
-                expertise helps businesses build robust, customized, and
-                future-ready blockchain networks.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Substrate Blockchain Portfolio & Success Stories"
-            description="Explore our accomplished projects in Substrate Development, showcasing our expertise in building scalable, interoperable, and secure blockchain solutions. Each project reflects our commitment to innovation, excellence, and client satisfaction, demonstrating our ability to leverage Substrate for advanced blockchain development."
-          />
-        </section>
-
-        <IndustriesServe
-          heading="Industries We Serve"
-          description=""
-          sliderData={JSON_DATA.customSliderData}
-        />
-        <LatestTechnology
-          heading=" Flexible Engagement Models for Substrate Blockchain Development"
-          subheading=""
-          techData={SubstrateModel}
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <WhyChoosee
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Skilled Substrate Blockchain Developers for Your Custom Projects"
-          text="IOur Substrate blockchain developers at Comfygen have impeccable prior experience in the domain and are also aggressively training themselves with modern trends and innovations within the Substrate blockchain domain. Depending on various requirements associated with the clients’ Substrate development needs, our experts implement dedicated approaches to meet them without compromising on quality or deadlines."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "We have the best team of proficient Substrate blockchain developers.",
-            "All our experts have undergone tough certification courses to earn their expertise in the domain.",
-            "Our professionals are actively available to address our client's concerns or queries at any time of the day.",
-          ]}
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

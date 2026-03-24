@@ -183,7 +183,7 @@ export default function Ecommerce(props: any) {
           imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/dating-app-about.webp"
       
           link="/about-us"
-          linkText="Explore More"
+          linkText="Get a Free Consultation"
         />
         <CardGrid
           heading="Elevate Your Dating App with Our Top-Notch Dating Mobile App Development Services"

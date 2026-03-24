@@ -1,339 +1,319 @@
 {
-  "LaunchSteps": [
-    {
-      "num": "01",
-      "title": "Flexibility",
-      "desc": "When you tend to work over the Stellar network, you are expected to work on diverse operations at the same time. The Stellar blockchain app will provide you with the feasibility of performing multiple operations such as transactions, payments, and others."
-    },
-    {
-      "num": "02",
-      "title": "Security",
-      "desc": "You definitely need a very secure environment for processing the money transfers from source to destination. Stellar network is quite secure as all the information over it is kept a secret and is mostly encrypted between the multiple parties within whom the transaction is being processed."
-    },
-    {
-      "num": "03",
-      "title": "Lower transfer fee",
-      "desc": "With the Stellar blockchain development solutions, you can expect the transaction fees to be set quite low, which will be a small fraction of the overall money being transferred. You will not be able to notice any difference in the transferred money."
-    },
-    {
-      "num": "04",
-      "title": "Reconciling transactions",
-      "desc": "You have the liberty to reverse almost any transaction or freeze any specific problematic part of the Stellar while executing proper steps within the given time. It will help you protect your money from various fraudulent activities. "
-    },
-    {
-      "num": "05",
-      "title": "Optimal payment",
-      "desc": "The Stellar blockchain development solutions are meant to support you with cross-border payments, ensuring frictionless or faster transactions by reducing the overall turnaround time. "
-    },
-    {
-      "num": "06",
-      "title": "Auditable code",
-      "desc": "The Stellar smart contracts are developed with the use of auditable or efficient codes, which further enhances the security of the end outcomes. We conduct systematic and structured reviews of code for the blockchain development project along with manual execution. This process includes the extensive usage of static code analysis tools and strategies."
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "AI-powered Stellar Wallet Development",
-      "subtitle": "",
-      "description": "We build AI-powered Stellar wallets with secure key management, ensuring speed, scalability, and multi-currency support. By combining Generative AI for transaction predictions and Agentic AI for automated risk monitoring, our wallets deliver enhanced security and intelligent features. Ideal for fintech, DeFi, and enterprises, these wallets support stablecoins, cross-border payments, and global accessibility.",
-      "features": [
-        "Generative AI for transaction insights",
-        "Agentic AI-based key protection",
-        "Multi-currency & stablecoin support",
-        "AI-driven fraud detection"
-      ]
-    },
-    {
-      "title": "Stellar Consulting Services",
-      "subtitle": "",
-      "description": "We provide you with expert consultation services to help you determine your requirements associated with Stellar blockchain development. We offer a data-driven and success-centric strategy to our clients and help them with a blueprint of approach for their dedicated Stellar blockchain project.",
-      "features": [
-        "Expert Consultation",
-        "Data-Driven Strategy",
-        "Customised Approach",
-        "Dedicated Support"
-      ]
-    },
-    {
-      "title": "Stellar dApp Development",
-      "subtitle": "",
-      "description": "By using the Horizon, SDKs, and API server of Stellar, we have the proficiency to help you develop secure and robust dApps that integrate with the diverse financial tools of your business. This will help you handle the financial aspects of your system in a more feasible manner.",
-      "features": [
-        "Secure dApp Creation",
-        "Integration with Financial Systems",
-        "Easy Financial Management",
-        "Using Trusted Tools"
-      ]
-    },
-    {
-      "title": "Stellar Token Development",
-      "subtitle": "",
-      "description": "We bring to you simplified yet sophisticated Stellar blockchain development solutions for creating tokens that can be made suitable for diverse use cases, including ICOs and STOs. For instance, you can make custom tokens using Stellar blockchain development solutions for almost all assets, digital currency or fiat currency.",
-      "features": [
-        "Create Custom Tokens",
-        "Support for Different Use Cases",
-        "Works with Digital and Fiat Currency",
-        "Flexible for Various Assets"
-      ]
-    },
-    {
-      "title": "Stellar Smart Contract Development",
-      "subtitle": "",
-      "description": "Our team of professionals, experienced with Stellar blockchain development proficiency, offer you secured and sophisticated smart contracts over private or public blockchains with the use of the Soroban platform. We focus on this composition of executed and connected transactions through various constraints.",
-      "features": [
-        "Experienced Team",
-        "Secure Smart Contracts",
-        "Use of Soroban Platform",
-        "Private or Public Blockchains",
-        "Connected Transactions"
-      ]
-    },
-    {
-      "title": "Stellar Wallet Development",
-      "subtitle": "",
-      "description": "Storing digital currency can now be made easier as we are extending our Stellar blockchain development services to provide you with dedicated wallet applications. Stellar Wallet Development will let users send and receive borderless transactions across the globe at any scale.",
-      "features": [
-        "Easy Digital Currency Storage",
-        "Global Transactions",
-        "Scalable Solutions",
-        "Stellar Blockchain Integration"
-      ]
-    },
-    {
-      "title": "Stellar Maintenance and Upgrades",
-      "subtitle": "",
-      "description": "We take optimal care of providing your Stellar blockchain apps with the highest form of maintenance and dedicated support services to keep the app upgraded without any downtime. Our experts keep an eye on the latest trends and improvements to implement necessary changes.",
-      "features": [
-        "Continuous App Maintenance",
-        "No Downtime",
-        "Regular Upgrades",
-        "Expert Monitoring"
-      ]
-    },
-    {
-      "title": "Stellar DeFi Development",
-      "subtitle": "",
-      "description": "Our team will provide you with the Stellar blockchain development solutions for making DeFi apps, such as lending platforms, NFTs, exchanges, payment solutions, or others. We have successfully developed several DeFi applications with successful results since our business establishment.",
-      "features": [
-        "DeFi App Development",
-        "Proven Success",
-        "Custom Solutions",
-        "Reliable Expertise"
-      ]
-    },
-    {
-      "title": "Stellar ICO/STO Development",
-      "subtitle": "",
-      "description": "We have the capacity to fulfill all the complex requirements that you have linked to the ICO or STO development over the Stellar blockchain. As Stellar blockchain development solutions are considered faster, cheaper, and more scalable, it is quite popular to be used for ICOs or STOs.",
-      "features": [
-        "ICO/STO Development",
-        "Fast, Scalable, and Cost-Effective",
-        "Customized Solutions",
-        "Expertise"
-      ]
-    },
-    {
-      "title": "Stellar P2P Lending App Development",
-      "subtitle": "",
-      "description": "Comfygen provides you with the proficiency to develop peer-to-peer lending applications over the Stellar platform, which will enable the users to either lend or borrow money without depending upon any usual financial institution for tracking the transactions. aiding in direct communication.",
-      "features": [
-        "P2P Lending Apps",
-        "No Middleman",
-        "Direct Communication",
-        "Secure and Scalable",
-        "Efficient and Cost-Effective"
-      ]
-    }
-  ],
-
-
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      "title": "NASDAC Crypto Coin",
-      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      "title": "Mezovest",
-      "description": "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      "title": "Croston",
-      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-      "link": "#"
-    }
-
-  ],
-
-
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Stellar Blockchain development service model for your business ",
-      "desc": "Comfygen offers flexible engagement models tailored to your project needs. Whether you're looking for dedicated resources, project-based work, or a hybrid approach, we provide adaptable solutions to ensure seamless collaboration and successful outcomes. Our models cater to your budget, timeline, and specific goals, ensuring maximum efficiency and quality in every project."
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "1",
-      "title": "Dedicated Development Team",
-      "desc": "At Comfygen, we have a dedicated team of Stellar blockchain developers meant to handle solo projects of clients upon their requests. It means that a specific team will be assigned to you privately to complete your project on priority without taking up any other organizational tasks at Comfygen."
-    },
-    {
-      "num": "2",
-      "title": "Team Extension Model",
-      "desc": "We also provide our experts with the feature of availing team extension services. It means that if your project needs some additional support from core team members or to meet your deployment deadlines. Upon your request, we will be assigning more team members to work collectively on your project."
-    },
-    {
-      "num": "3",
-      "title": "Project-specific Team",
-      "desc": "We also provide a project-specific team to attend to your Stellar blockchain development requirements, with a unique process or method of approach as per your project demands. We will apply customized Stellar blockchain development solutions for different project types based on their necessities."
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Components Used in Stellar Blockchain Development",
-      "desc": "Stellar Blockchain Development depends on a set of core components that ensure secure, fast, and scalable decentralized applications. By integrating AI, Generative AI, and Agentic AI, developers enhance automation, analytics, and predictive capabilities. Key components enable token creation, cross-border payments, and DeFi solutions, making Stellar ideal for fintech, banking, and enterprise applications."
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "Stellar Core",
-      "desc": "The primary backbone of Stellar, validating transactions and ensuring network security, speed, and reliability for AI-driven decentralized applications and tokenized assets."
-    },
-    {
-      "title": "Horizon API ",
-      "desc": "A robust interface that enables developers to build AI-powered wallets, DApps, and real-time analytics for Stellar blockchain applications and DeFi platforms."
-    },
-    {
-      "title": "Stellar SDKs ",
-      "desc": "JavaScript, Java, and Python libraries designed for AI-enhanced smart contract development, token creation, and seamless integration with Stellar’s blockchain ecosystem."
-    },
-    {
-      "title": "Anchors & Bridges",
-      "desc": "Components that facilitate cross-border payments, asset tokenization, and interoperability between Stellar and external financial networks using AI-driven automation."
-    },
-    {
-      "title": "AI Integration Layer ",
-      "desc": "Generative AI and Agentic AI modules embedded to provide predictive analytics, automated transaction monitoring, and intelligent blockchain operations."
-    },
-    {
-      "title": "Consensus Mechanism (SCP)",
-      "desc": "Stellar Consensus Protocol ensures secure, decentralized agreement for transactions, enhancing transparency, scalability, and AI-enabled decision-making across the network."
-    }
-  ],
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What is Stellar Blockchain Development?",
-      "desc": "Stellar Blockchain Development involves creating decentralized applications (dApps) and financial solutions on the Stellar network, enabling fast, secure, and low-cost transactions for businesses."
-    },
-    {
-      "num": "2",
-      "title": "How does AI enhance Stellar Blockchain Development?",
-      "desc": "AI enhances Stellar Blockchain by automating smart contracts, providing predictive analytics, optimizing transactions, detecting anomalies, and delivering data-driven insights for better decision-making.",
-      "li1": ""
-    },
-    {
-      "num": "3",
-      "title": " Why should businesses choose Comfygen for Stellar Blockchain Development services?",
-      "desc": "Comfygen offers secure, scalable, and AI-integrated Stellar Blockchain solutions. Our team customizes dApps, smart contracts, and payment gateways to meet unique business needs efficiently.",
-      "li1": ""
-    },
-    {
-      "num": "4",
-      "title": "What industries can benefit from Stellar Blockchain solutions with AI?",
-      "desc": "Industries such as finance, healthcare, e-commerce, supply chain, real estate, gaming, and government benefit from AI-powered Stellar Blockchain solutions through improved transparency, efficiency, and security.",
-      "li1": ""
-    },
-    {
-      "num": "5",
-      "title": "How does Stellar Blockchain improve financial transactions?",
-      "desc": "Stellar Blockchain enables instant, low-cost cross-border transactions. When combined with AI, it optimizes payment routing, reduces errors, and ensures secure and efficient financial operations."
-    },
-    {
-      "num": "6",
-      "title": "Does Comfygen provide custom AI-powered Stellar Blockchain solutions?",
-      "desc": "Yes. Comfygen develops tailored solutions, including AI-driven smart contracts, asset tokenization, decentralized apps, and secure payment gateways on Stellar Blockchain."
-    },
-    {
-      "num": "7",
-      "title": "How much does it cost to develop a Stellar Blockchain solution?",
-      "desc": "Costs vary depending on project complexity, required features, and AI integration. Contact Comfygen for a personalized consultation and a detailed quote.",
-      "li1": ""
-    },
+  "Herosection": {
+    "heading": "Stellar Blockchain Development Company",
+    "subhead": "Looking for the best Stellar blockchain development company? ",
+    "isHome": false,
+    "ptag": "Comfygen is a leading Stellar blockchain development company helping enterprises build AI-powered decentralized applications, tokenized assets, and secure financial ecosystems. Leveraging Stellar’s fast, low-cost network, we specialize in cross-border payments, stablecoin development, and enterprise-grade blockchain integration. Our experts deliver AI-enabled Stellar wallets, DApps, and smart contracts to improve transparency, efficiency, and scalability for fintech, banking, and global business solutions.",
+    "ptag1": "",
+    "listItems": [
+      "AI-Powered Stellar Blockchain App Development",
+      "Stellar Wallet, Token, and Stablecoin Development",
+      "Cross-Border Payment & Remittance Platforms",
+      "Custom Stellar DApp & DeFi Solutions"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Stellar Blockchain Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/stellar-blockchain-development-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Our Stellar Blockchain Development Services",
+    "description": "company, we deliver end-to-end Stellar Blockchain Development Services enhanced with AI, Generative AI, and Agentic AI solutions to build next-generation decentralized applications. From Stellar wallet development to token creation, stablecoin integration, and DeFi platforms, we craft secure, scalable, and intelligent solutions tailored for fintech, banking, and global enterprises.",
+    "services": [
       {
-      "num": "8",
-      "title": " How can AI improve cross-border payments on Stellar Blockchain?",
-      "desc": "AI optimizes payment paths, predicts currency fluctuations, detects anomalies, and automates transactions, making cross-border payments faster, cheaper, and more reliable.",
-      "li1": ""
-    },
-     {
-      "num": "9",
-      "title": " What are the benefits of AI-powered smart contracts on Stellar Blockchain?",
-      "desc": "AI-powered smart contracts execute automatically based on conditions, adapt to changing data, reduce manual errors, enhance efficiency, and improve transaction security.",
-      "li1": ""
-    },
-     {
-      "num": "10",
-      "title": " How does AI help detect fraud in Stellar Blockchain applications?",
-      "desc": "AI monitors transaction patterns in real time, identifies suspicious behavior, predicts potential risks, and prevents fraudulent activities, enhancing overall blockchain security.",
-      "li1": ""
-    }
-  ],
-  "customSliderData": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance & Banking",
-      "description": "Stellar’s fast and low-cost transactions make it ideal for cross-border payments, decentralized finance (DeFi), and tokenized assets, helping financial institutions improve efficiency and security."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": " Healthcare",
-      "description": "Stellar blockchain enhances data security, ensuring patient records remain private, while also streamlining medical supply chain management and automating insurance claims processing."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Supply Chain & Logistics",
-      "description": "With Stellar blockchain, businesses can track shipments transparently, automate contracts for deliveries, and improve inventory management with real-time data verification."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-for-retail.webp",
-      "title": "Real Estate",
-      "description": "Blockchain-powered property transactions enable secure, tokenized real estate deals, reducing fraud and increasing transparency in leasing and buying agreements."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
-      "title": "E-commerce & Retail",
-      "description": "Stellar allows businesses to offer seamless, low-cost blockchain payments, enhance customer loyalty programs, and strengthen fraud prevention mechanisms."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
-      "title": "Government & Public Services",
-      "description": "Governments can leverage the Stellar blockchain for secure digital identity verification, transparent fund allocation, and blockchain-based voting systems to enhance trust."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": " Gaming & NFTs",
-      "description": "Developers use Stellar to tokenize in-game assets, build NFT marketplaces, and enable secure, fast transactions for digital goods and collectibles."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-      "title": "Insurance",
-      "description": "Blockchain automates insurance claim processing, reduces fraud, and ensures secure identity verification, making policies more efficient and trustworthy."
-    }
-  ],
+        "title": "AI-powered Stellar Wallet Development",
+        "subtitle": "",
+        "description": "We build AI-powered Stellar wallets with secure key management, ensuring speed, scalability, and multi-currency support. By combining Generative AI for transaction predictions and Agentic AI for automated risk monitoring, our wallets deliver enhanced security and intelligent features. Ideal for fintech, DeFi, and enterprises, these wallets support stablecoins, cross-border payments, and global accessibility.",
+        "features": [
+          "Generative AI for transaction insights",
+          "Agentic AI-based key protection",
+          "Multi-currency & stablecoin support",
+          "AI-driven fraud detection"
+        ]
+      },
+      {
+        "title": "Stellar Consulting Services",
+        "subtitle": "",
+        "description": "We provide you with expert consultation services to help you determine your requirements associated with Stellar blockchain development. We offer a data-driven and success-centric strategy to our clients and help them with a blueprint of approach for their dedicated Stellar blockchain project.",
+        "features": [
+          "Expert Consultation",
+          "Data-Driven Strategy",
+          "Customised Approach",
+          "Dedicated Support"
+        ]
+      },
+      {
+        "title": "Stellar dApp Development",
+        "subtitle": "",
+        "description": "By using the Horizon, SDKs, and API server of Stellar, we have the proficiency to help you develop secure and robust dApps that integrate with the diverse financial tools of your business. This will help you handle the financial aspects of your system in a more feasible manner.",
+        "features": [
+          "Secure dApp Creation",
+          "Integration with Financial Systems",
+          "Easy Financial Management",
+          "Using Trusted Tools"
+        ]
+      },
+      {
+        "title": "Stellar Token Development",
+        "subtitle": "",
+        "description": "We bring to you simplified yet sophisticated Stellar blockchain development solutions for creating tokens that can be made suitable for diverse use cases, including ICOs and STOs. For instance, you can make custom tokens using Stellar blockchain development solutions for almost all assets, digital currency or fiat currency.",
+        "features": [
+          "Create Custom Tokens",
+          "Support for Different Use Cases",
+          "Works with Digital and Fiat Currency",
+          "Flexible for Various Assets"
+        ]
+      },
+      {
+        "title": "Stellar Smart Contract Development",
+        "subtitle": "",
+        "description": "Our team of professionals, experienced with Stellar blockchain development proficiency, offer you secured and sophisticated smart contracts over private or public blockchains with the use of the Soroban platform. We focus on this composition of executed and connected transactions through various constraints.",
+        "features": [
+          "Experienced Team",
+          "Secure Smart Contracts",
+          "Use of Soroban Platform",
+          "Private or Public Blockchains",
+          "Connected Transactions"
+        ]
+      },
+      {
+        "title": "Stellar Wallet Development",
+        "subtitle": "",
+        "description": "Storing digital currency can now be made easier as we are extending our Stellar blockchain development services to provide you with dedicated wallet applications. Stellar Wallet Development will let users send and receive borderless transactions across the globe at any scale.",
+        "features": [
+          "Easy Digital Currency Storage",
+          "Global Transactions",
+          "Scalable Solutions",
+          "Stellar Blockchain Integration"
+        ]
+      },
+      {
+        "title": "Stellar Maintenance and Upgrades",
+        "subtitle": "",
+        "description": "We take optimal care of providing your Stellar blockchain apps with the highest form of maintenance and dedicated support services to keep the app upgraded without any downtime. Our experts keep an eye on the latest trends and improvements to implement necessary changes.",
+        "features": [
+          "Continuous App Maintenance",
+          "No Downtime",
+          "Regular Upgrades",
+          "Expert Monitoring"
+        ]
+      },
+      {
+        "title": "Stellar DeFi Development",
+        "subtitle": "",
+        "description": "Our team will provide you with the Stellar blockchain development solutions for making DeFi apps, such as lending platforms, NFTs, exchanges, payment solutions, or others. We have successfully developed several DeFi applications with successful results since our business establishment.",
+        "features": [
+          "DeFi App Development",
+          "Proven Success",
+          "Custom Solutions",
+          "Reliable Expertise"
+        ]
+      },
+      {
+        "title": "Stellar ICO/STO Development",
+        "subtitle": "",
+        "description": "We have the capacity to fulfill all the complex requirements that you have linked to the ICO or STO development over the Stellar blockchain. As Stellar blockchain development solutions are considered faster, cheaper, and more scalable, it is quite popular to be used for ICOs or STOs.",
+        "features": [
+          "ICO/STO Development",
+          "Fast, Scalable, and Cost-Effective",
+          "Customized Solutions",
+          "Expertise"
+        ]
+      },
+      {
+        "title": "Stellar P2P Lending App Development",
+        "subtitle": "",
+        "description": "Comfygen provides you with the proficiency to develop peer-to-peer lending applications over the Stellar platform, which will enable the users to either lend or borrow money without depending upon any usual financial institution for tracking the transactions. aiding in direct communication.",
+        "features": [
+          "P2P Lending Apps",
+          "No Middleman",
+          "Direct Communication",
+          "Secure and Scalable",
+          "Efficient and Cost-Effective"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "How Does Stellar Blockchain Development Use AI Solutions?",
+    "description1": "Stellar Blockchain Development with AI solutions helps businesses to build intelligent, scalable, and secure decentralized applications. By combining <a class='text-blue-600' href='/smart-contract-development'>Artificial Intelligence</a> with Stellar’s fast and low-cost payment network, organizations can streamline cross-border payments, automate financial processes, and strengthen security. AI-driven Stellar smart contracts execute automatically, while predictive analytics detect fraud patterns and optimize global transactions in real time.",
+    "description2": "The integration of AI into the Stellar Blockchain also enhances transparency and scalability. Enterprises gain real-time data insights that support smarter decision-making, reduce operational costs, and accelerate digital transformation.",
+    "points": [
+      "Automates Stellar smart contracts with AI efficiency",
+      "Strengthens fraud detection through predictive analytics",
+      "Lowers costs for secure cross-border transactions",
+      "Provides real-time insights for transparency and growth"
+    ],
+    "imageSrc": "https://www.comfygen.com/gallery/about-images/stellar-blockchain-development-company-about-img.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "Solutions": {
+    "heading": "AI Solutions in Stellar Blockchain Development",
+    "subheading": "Integrating AI solutions into Stellar Blockchain Development enhances automation, security, and efficiency for decentralized applications. Combining AI with Stellar’s fast and low-cost blockchain network enables smarter operations and real-time decision-making for businesses.",
+    "tech": [
+      {
+        "title": "AI-Powered Smart Contracts",
+        "desc": "Automate Stellar smart contracts intelligently, enabling dynamic execution of actions while reducing manual intervention and improving operational efficiency across blockchain applications.",
+        "img": null
+      },
+      {
+        "title": "Predictive Analytics",
+        "desc": "Leverage AI to analyze transaction patterns, forecast trends, and optimize cross-border payments for faster, more accurate, and cost-effective financial operations.",
+        "img": null
+      },
+      {
+        "title": "Fraud Detection",
+        "desc": "Detect unusual patterns and potential fraud in real time using AI, enhancing security and protecting assets across Stellar blockchain transactions.",
+        "img": null
+      },
+      {
+        "title": "Scalability & Transparency ",
+        "desc": "AI enhances Stellar blockchain scalability while providing transparent, data-driven insights that support informed decision-making and efficient enterprise operations.",
+        "img": null
+      },
+      {
+        "title": "Cost Efficiency ",
+        "desc": "Reduce operational costs and improve process efficiency with AI-powered automation across Stellar blockchain applications.",
+        "img": null
+      },
+      {
+        "title": "Real-Time Insights",
+        "desc": "Gain actionable, real-time analytics using AI to make faster, smarter decisions for blockchain-based financial and business processes.",
+        "img": null
+      }
+    ]
+  },
+  "consultancyData": {
+    "title": "Components Used in Stellar Blockchain Development",
+    "description": "Stellar Blockchain Development depends on a set of core components that ensure secure, fast, and scalable decentralized applications. By integrating AI, Generative AI, and Agentic AI, developers enhance automation, analytics, and predictive capabilities. Key components enable token creation, cross-border payments, and DeFi solutions, making Stellar ideal for fintech, banking, and enterprise applications.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/how-do-we-serve-our-clients.webp",
+    "proces": [
+      {
+        "title": "Stellar Core",
+        "desc": "The primary backbone of Stellar, validating transactions and ensuring network security, speed, and reliability for AI-driven decentralized applications and tokenized assets."
+      },
+      {
+        "title": "Horizon API ",
+        "desc": "A robust interface that enables developers to build AI-powered wallets, DApps, and real-time analytics for Stellar blockchain applications and DeFi platforms."
+      },
+      {
+        "title": "Stellar SDKs ",
+        "desc": "JavaScript, Java, and Python libraries designed for AI-enhanced smart contract development, token creation, and seamless integration with Stellar’s blockchain ecosystem."
+      },
+      {
+        "title": "Anchors & Bridges",
+        "desc": "Components that facilitate cross-border payments, asset tokenization, and interoperability between Stellar and external financial networks using AI-driven automation."
+      },
+      {
+        "title": "AI Integration Layer ",
+        "desc": "Generative AI and Agentic AI modules embedded to provide predictive analytics, automated transaction monitoring, and intelligent blockchain operations."
+      },
+      {
+        "title": "Consensus Mechanism (SCP)",
+        "desc": "Stellar Consensus Protocol ensures secure, decentralized agreement for transactions, enhancing transparency, scalability, and AI-enabled decision-making across the network."
+      }
+    ]
+  },
+  "ProcessData": {
+    "heading": "Our Stellar Blockchain Development Process",
+    "description": " At Comfygen, we follow a structured approach to Stellar Blockchain Development, ensuring tailored solutions for businesses leveraging the Stellar network's capabilities. As a Stellar Blockchain Development Company in India. Here’s how we bring your <a class='text-blue-700' href='/blockchain-development'>blockchain development</a>  project to life.",
+    "Process": [
+      {
+        "title": "Feasibility Assessment",
+        "description": "We have a team of experienced blockchain consultants or developers to assess your requirements associated with the use of the Stellar network for creating dedicated blockchain development solutions."
+      },
+      {
+        "title": "Platform Identification",
+        "description": "The consulting team will then determine the ideal blockchain platform to support your business requirements and the type of framework needed to approach the Stellar blockchain development project."
+      },
+      {
+        "title": "User Experience and Technical Design",
+        "description": "We have the proficiency to help you with high-performance designs for the Stellar blockchain development projects, which will ensure optimal user experience for your business. We also carry out the technical design by determining the specific components, platform database, and other such aspects."
+      },
+      {
+        "title": "App development",
+        "description": "We are a leading and trusted Stellar development services company. Our developers hold expertise in developing robust, highly secured and well-performing applications. Our development experts will comment on developing Stellar blockchain apps or smart contracts to deliver you a robust, reliable, and cost-efficient solution."
+      },
+      {
+        "title": "Deployment and testing",
+        "description": "Before the Stellar blockchain app can be deployed, it will be tested with utmost thoroughness to ensure that every module within it is secure and free from all logical flaws. The code for the blockchain network won’t be made available for any commercial usage until the testing aspects are over."
+      },
+      {
+        "title": "After Launch Maintenance",
+        "description": "After the Stellar blockchain solution is launched, we will be monitoring the release of new OS versions or third-party updates, which will provide immense support to your business by scaling the functionality of the Stellar app. Overall, our experts will take care of every aspect of launching and maintenance"
+      },
+      {
+        "title": "Continuous Optimization",
+        "description": "To ensure the long-term success of your Stellar blockchain solution, we offer continuous performance optimization. Through analytics-driven insights, we refine the system to enhance efficiency, scalability, and user experience over time."
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Explore Our Stellar Blockchain Based Portfolio",
+    "description": "Explore our portfolio of successful projects built on the Stellar Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+        "title": "NASDAC Crypto Coin",
+        "description": "NASDAC Crypto Coin is a next-generation cryptocurrency with its own dedicated blockchain, going beyond traditional tokens. Built on a robust 'Four Square' architecture, it emphasizes speed, mining benefits, seamless integration, and predictable growth. Engineered for businesses, NASDAC Coin is stronger, faster, and more secure than Bitcoin, positioning itself as the first true SUPER COIN in the blockchain space.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+        "title": "YatriPay",
+        "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, it ensures secure, efficient, and reliable digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible to users worldwide.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+        "title": "Mezovest",
+        "description": "Mezovest is redefining energy commerce, specializing in LPG and CNG through its innovative F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), enhances safety and efficiency with non-corrosive composite gas cylinders. Its logistics arm, Spatch, optimizes the supply chain and distribution, ensuring a seamless and efficient resource flow. Powered by blockchain technology, Mezovest delivers transparency, security, and streamlined operations, revolutionizing the energy sector.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+        "title": "Croston",
+        "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and long-term value growth. Unlike fiat currency, it leverages blockchain technology for enhanced security, transparency, and decentralized control. Croston facilitates secure transactions and regulated coin issuance while providing convenient purchasing options via credit cards, exchanges, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+        "link": "#"
+      }
+    ]
+  },
+  "Qa": {
+    "title": "Stellar Blockchain development service model for your business",
+    "description": "Comfygen offers flexible engagement models tailored to your project needs. Whether you're looking for dedicated resources, project-based work, or a hybrid approach, we provide adaptable solutions to ensure seamless collaboration and successful outcomes. Our models cater to your budget, timeline, and specific goals, ensuring maximum efficiency and quality in every project.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/how-do-we-serve-our-clients.webp",
+    "proces": [
+      {
+        "num": "1",
+        "title": "Dedicated Development Team",
+        "desc": "At Comfygen, we have a dedicated team of Stellar blockchain developers meant to handle solo projects of clients upon their requests. It means that a specific team will be assigned to you privately to complete your project on priority without taking up any other organizational tasks at Comfygen."
+      },
+      {
+        "num": "2",
+        "title": "Team Extension Model",
+        "desc": "We also provide our experts with the feature of availing team extension services. It means that if your project needs some additional support from core team members or to meet your deployment deadlines. Upon your request, we will be assigning more team members to work collectively on your project."
+      },
+      {
+        "num": "3",
+        "title": "Project-specific Team",
+        "desc": "We also provide a project-specific team to attend to your Stellar blockchain development requirements, with a unique process or method of approach as per your project demands. We will apply customized Stellar blockchain development solutions for different project types based on their necessities."
+      }
+    ]
+  },
+  "CallToAction": {
+    "heading": "Ready to launch AI Stellar Blockchain development?",
+    "text": "Launch AI-powered Stellar Blockchain solutions with secure wallets, tokens, and DeFi platforms. Start your intelligent blockchain journey today.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
   "pageData": {
     "title": "Why Choose Comfygen for Stellar Blockchain Development Services?",
     "description": "As a trusted Stellar Blockchain Development Company in Jaipur, India, we empower businesses to seamlessly integrate blockchain and advanced distributed ledger technologies for scalable and secure Stellar Blockchain Development solutions in India.",
@@ -375,138 +355,77 @@
       }
     ]
   },
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Professional Experts in Stellar Blockchain Development for Web3 Projects",
-      "desc": "At Comfygen, our experts are skilled and trained in handling various complex attributes of Stellar blockchain development, especially for Web3 projects. Irrespective of whether you are a new tech startup or an established enterprise, we provide you with dedicated experts to develop Web3-centric blockchain projects using the Stellar network. The core expertise of our Stellar developer is to strategize, design, engineer, and launch successful digital solutions. Hire our experts today, and you shall find no loopholes making their way into your Stellar blockchain apps.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "End-to-end skillset on approaching blockchain development projects",
-    "Experts will provide you with a detailed requirement analysis.",
-    "Assist you in picking the right technology stack for deriving productive Stellar apps.",
-    "Meet all the compliance or regulatory guidelines while executing Stellar development."
-  ],
-  "LatestTechno": [
-    {
-      "num": "01",
-      "title": "Dedicated Development Team",
-      "decs": "At Comfygen, we have a dedicated team of Stellar blockchain developers meant to handle solo projects of clients upon their requests. It means that a specific team will be assigned to you privately to complete your project on priority without taking up any other organizational tasks at Comfygen."
-    },
-    {
-      "num": "02",
-      "title": "Team Extension Model",
-      "decs": "We also provide our experts with the feature of availing team extension services. It means that if your project needs some additional support from core team members or to meet your deployment deadlines. Upon your request, we will be assigning more team members to work collectively on your project."
-    },
-    {
-      "num": "03",
-      "title": "Project-specific Team",
-      "decs": "We also provide a project-specific team to attend to your Stellar blockchain development requirements, with a unique process or method of approach as per your project demands. We will apply customized Stellar blockchain development solutions for different project types based on their necessities. "
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Years of Experience",
-      "decs": "We have a plethora of experience and advanced expertise in the dedicated arena of Stellar blockchain development for you to get the best of solutions for scaling the financial proficiency of your business."
-    },
-    {
-      "num": "02",
-      "title": "Security",
-      "decs": "Comfygen is a completely trusted Stellar blockchain app development company that employs the best development or coding practices with the utmost security or privacy aspects taken care of."
-    },
-    {
-      "num": "03",
-      "title": "Agile development",
-      "decs": "All our experts are skilled or trained to adopt an agile methodology, allowing them to respond instantly to the slightest change. We will be open to reconsidering the work strategy for meeting every demand. "
-    },
-    {
-      "num": "04",
-      "title": "Clear development roadmap",
-      "decs": "We curate a perfect development roadmap in order to approach the clients’ Stellar blockchain projects in the most proficient manner possible. The clear approach would ensure error-free deployment."
-    },
-    {
-      "num": "05",
-      "title": "Round-the-clock support",
-      "decs": "Comfygen offers 24/7 customer support solutions to our clients to answer their questions or queries associated with the Stellar blockchain development solution . You will get round-the-clock assistance to fix your technical issues."
-    },
-    {
-      "num": "06",
-      "title": "Compliance and governance",
-      "decs": "We will make sure that your Stellar blockchain app meets all the compliance or governance rules specified by the respective authorities.We keep up with the standard regulations and security practices in every stage of development.  "
-    }
-  ],
-  "myList3": [
-    "Healthcare",
-    "Gaming",
-    "Supply Chain Management",
-    "Ecommerce and Retail",
-    "Digital Verification",
-    "Cryptocurrency Trading"
-  ],
-  "Major": {
-    "title": "Core Components Underlying Stellar Blockchain Development",
-    "decs": "Here are some of the core components that we adopt in order to approach the Stellar blockchain development projects:"
+  "HireDeveloper": {
+    "heading": "Hire Professional Experts in Stellar Blockchain Development for Web3 Projects",
+    "text": "At Comfygen, our experts are skilled and trained in handling various complex attributes of Stellar blockchain development, especially for Web3 projects. Irrespective of whether you are a new tech startup or an established enterprise, we provide you with dedicated experts to develop Web3-centric blockchain projects using the Stellar network. The core expertise of our Stellar developer is to strategize, design, engineer, and launch successful digital solutions. Hire our experts today, and you shall find no loopholes making their way into your Stellar blockchain apps.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "End-to-end skillset on approaching blockchain development projects",
+      "Experts will provide you with a detailed requirement analysis.",
+      "Assist you in picking the right technology stack for deriving productive Stellar apps."
+    ]
   },
-  "Service": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/bridge-server.webp",
-      "title": "Bridge Server",
-      "decs": "When it is about simplifying the network, a Bridge Server is considered the best tool for approaching the same. Our developers make use of it in order to create a simple UI for your Stellar network. We will make it easy for you to simplify the complex integration or operations of the Stellar network, which will result in reliable and faster transactions. "
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/horizon.webp",
-      "title": "Horizon",
-      "decs": "Horizon is better known as the Stellar API server, which is used for facing clients. It enables the users to gain access to specific operations such as registering transactions, examining accounts, signing up for different verified happenings, or others. Our team can help you build various apps specific to your business through Stellar Blockchain technology for easily connecting to the network through the Horizon tool. "
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/stellar-core.webp",
-      "title": "Stellar Core",
-      "decs": "Our team considers Stellar core as the backbone or support of the overall Stellar network. The purpose of it is to keep track of all the transactions that take place over the network. All the agreement and validation process goes through the Stellar consensus mechanisms or protocol, and it has also made the entire system more secure or valid for the end users."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/federation-server.webp",
-      "title": "Federation Server",
-      "decs": "The Federation Server is used by our team to extract data from the SQL database. It is one of the best protocol servers that is meant to be directly applied to the existing network framework. This server helps in managing tokens and offers easier access to the directory, subdirectories and files.We make sure to offer authentication and service access to multiple systems in different enterprises. "
-    }
-  ],
-  "TecnologisStack": [
+  "Frequently": [
     {
       "num": "1",
-      "title": "Feasibility Assessment",
-      "stack": "We have a team of experienced blockchain consultants or developers to assess your requirements associated with the use of the Stellar network for creating dedicated blockchain development solutions.  "
+      "title": "What is Stellar Blockchain Development?",
+      "desc": "Stellar Blockchain Development involves creating decentralized applications (dApps) and financial solutions on the Stellar network, enabling fast, secure, and low-cost transactions for businesses."
     },
     {
       "num": "2",
-      "title": "Platform Identification",
-      "stack": "The consulting team will then determine the ideal blockchain platform to support your business requirements and the type of framework needed to approach the Stellar blockchain development project."
+      "title": "How does AI enhance Stellar Blockchain Development?",
+      "desc": "AI enhances Stellar Blockchain by automating smart contracts, providing predictive analytics, optimizing transactions, detecting anomalies, and delivering data-driven insights for better decision-making.",
+      "li1": ""
     },
     {
       "num": "3",
-      "title": "User Experience and Technical Design",
-      "stack": "We have the proficiency to help you with high-performance designs for the Stellar blockchain development projects, which will ensure optimal user experience for your business. We also carry out the technical design by determining the specific components, platform database, and other such aspects."
+      "title": " Why should businesses choose Comfygen for Stellar Blockchain Development services?",
+      "desc": "Comfygen offers secure, scalable, and AI-integrated Stellar Blockchain solutions. Our team customizes dApps, smart contracts, and payment gateways to meet unique business needs efficiently.",
+      "li1": ""
     },
     {
       "num": "4",
-      "title": "App development",
-      "stack": "We are a leading and trusted Stellar development services company. Our developers hold expertise in developing robust, highly secured and well-performing applications. Our development experts will comment on developing Stellar blockchain apps or smart contracts to deliver you a robust, reliable, and cost-efficient solution."
+      "title": "What industries can benefit from Stellar Blockchain solutions with AI?",
+      "desc": "Industries such as finance, healthcare, e-commerce, supply chain, real estate, gaming, and government benefit from AI-powered Stellar Blockchain solutions through improved transparency, efficiency, and security.",
+      "li1": ""
     },
     {
       "num": "5",
-      "title": "Deployment and testing",
-      "stack": "Before the Stellar blockchain app can be deployed, it will be tested with utmost thoroughness to ensure that every module within it is secure and free from all logical flaws. The code for the blockchain network won’t be made available for any commercial usage until the testing aspects are over."
+      "title": "How does Stellar Blockchain improve financial transactions?",
+      "desc": "Stellar Blockchain enables instant, low-cost cross-border transactions. When combined with AI, it optimizes payment routing, reduces errors, and ensures secure and efficient financial operations."
     },
     {
       "num": "6",
-      "title": "After Launch Maintenance",
-      "stack": "After the Stellar blockchain solution is launched, we will be monitoring the release of new OS versions or third-party updates, which will provide immense support to your business by scaling the functionality of the Stellar app. Overall, our experts will take care of every aspect of launching and maintenance."
+      "title": "Does Comfygen provide custom AI-powered Stellar Blockchain solutions?",
+      "desc": "Yes. Comfygen develops tailored solutions, including AI-driven smart contracts, asset tokenization, decentralized apps, and secure payment gateways on Stellar Blockchain."
+    },
+    {
+      "num": "7",
+      "title": "How much does it cost to develop a Stellar Blockchain solution?",
+      "desc": "Costs vary depending on project complexity, required features, and AI integration. Contact Comfygen for a personalized consultation and a detailed quote.",
+      "li1": ""
+    },
+    {
+      "num": "8",
+      "title": " How can AI improve cross-border payments on Stellar Blockchain?",
+      "desc": "AI optimizes payment paths, predicts currency fluctuations, detects anomalies, and automates transactions, making cross-border payments faster, cheaper, and more reliable.",
+      "li1": ""
+    },
+    {
+      "num": "9",
+      "title": " What are the benefits of AI-powered smart contracts on Stellar Blockchain?",
+      "desc": "AI-powered smart contracts execute automatically based on conditions, adapt to changing data, reduce manual errors, enhance efficiency, and improve transaction security.",
+      "li1": ""
+    },
+    {
+      "num": "10",
+      "title": " How does AI help detect fraud in Stellar Blockchain applications?",
+      "desc": "AI monitors transaction patterns in real time, identifies suspicious behavior, predicts potential risks, and prevents fraudulent activities, enhancing overall blockchain security.",
+      "li1": ""
     }
   ]
 }

@@ -3,158 +3,80 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/stellar.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+import BusinessSolustion from "../../components/BusinessSolustion"
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import Emerging from "../../components/Emerging";
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const LatestTechnology = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
-
-
-const Process = [
-  {
-    title: "Feasibility Assessment",
-    description: "We have a team of experienced blockchain consultants or developers to assess your requirements associated with the use of the Stellar network for creating dedicated blockchain development solutions."
-  },
-  {
-    title: "Platform Identification",
-    description: "The consulting team will then determine the ideal blockchain platform to support your business requirements and the type of framework needed to approach the Stellar blockchain development project."
-  },
-  {
-    title: "User Experience and Technical Design",
-    description: "We have the proficiency to help you with high-performance designs for the Stellar blockchain development projects, which will ensure optimal user experience for your business. We also carry out the technical design by determining the specific components, platform database, and other such aspects."
-  },
-  {
-    title: "App development",
-    description: "We are a leading and trusted Stellar development services company. Our developers hold expertise in developing robust, highly secured and well-performing applications. Our development experts will comment on developing Stellar blockchain apps or smart contracts to deliver you a robust, reliable, and cost-efficient solution."
-  },
-  {
-    title: "Deployment and testing",
-    description: "Before the Stellar blockchain app can be deployed, it will be tested with utmost thoroughness to ensure that every module within it is secure and free from all logical flaws. The code for the blockchain network won’t be made available for any commercial usage until the testing aspects are over."
-  },
-  {
-    title: "After Launch Maintenance",
-    description: "After the Stellar blockchain solution is launched, we will be monitoring the release of new OS versions or third-party updates, which will provide immense support to your business by scaling the functionality of the Stellar app. Overall, our experts will take care of every aspect of launching and maintenance"
-  },
-  {
-    title: "Continuous Optimization",
-    description: "To ensure the long-term success of your Stellar blockchain solution, we offer continuous performance optimization. Through analytics-driven insights, we refine the system to enhance efficiency, scalability, and user experience over time."
-  },
-
-];
-
-const technologyData = [
-  {
-    title: "AI-Powered Smart Contracts",
-    desc: "Automate Stellar smart contracts intelligently, enabling dynamic execution of actions while reducing manual intervention and improving operational efficiency across blockchain applications.",
-    img: "",
-  },
-  {
-    title: "Predictive Analytics",
-    desc: "Leverage AI to analyze transaction patterns, forecast trends, and optimize cross-border payments for faster, more accurate, and cost-effective financial operations.",
-    img: "",
-  },
-  {
-    title: "Fraud Detection",
-    desc: "Detect unusual patterns and potential fraud in real time using AI, enhancing security and protecting assets across Stellar blockchain transactions.",
-    img: "",
-  },
-  {
-    title: "Scalability & Transparency ",
-    desc: "AI enhances Stellar blockchain scalability while providing transparent, data-driven insights that support informed decision-making and efficient enterprise operations.",
-    img: "",
-  },
-  {
-    title: "Cost Efficiency ",
-    desc: "Reduce operational costs and improve process efficiency with AI-powered automation across Stellar blockchain applications.",
-    img: "",
-  },
-  {
-    title: "Real-Time Insights",
-    desc: "Gain actionable, real-time analytics using AI to make faster, smarter decisions for blockchain-based financial and business processes.",
-    img: "",
-  },
-];
-
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 export default function Ecommerce(props) {
   let { initialData } = props;
 
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   const jsonLdData = [
 
@@ -416,133 +338,25 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Solutions} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <IndustryGrid />
+      <Consultancy consultancyData={JSON_DATA.Qa} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+     
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
 
-      <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[100px]">
-        <HeroSectionForAllPages
-          heading="Stellar Blockchain Development Company"
-          subhead='Looking for the best Stellar blockchain development company? '
-          ptag="Comfygen is a leading Stellar blockchain development company helping enterprises build AI-powered decentralized applications, tokenized assets, and secure financial ecosystems. Leveraging Stellar’s fast, low-cost network, we specialize in cross-border payments, stablecoin development, and enterprise-grade blockchain integration. Our experts deliver AI-enabled Stellar wallets, DApps, and smart contracts to improve transparency, efficiency, and scalability for fintech, banking, and global business solutions."
-          li="AI-Powered Stellar Blockchain App Development"
-          li1="Stellar Wallet, Token, and Stablecoin Development"
-          li2="Cross-Border Payment & Remittance Platforms"
-          li3="Custom Stellar DApp & DeFi Solutions"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/stellar-blockchain-development-hero-img.webp"
-        />
+      <BlogSection initialData={initialData} />
 
-        <Milestones/>
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Stellar Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen, Best Ai stellet blockchain development company, we deliver end-to-end Stellar Blockchain Development Services enhanced with AI, Generative AI, and Agentic AI solutions to build next-generation decentralized applications. From Stellar wallet development to token creation, stablecoin integration, and DeFi platforms, we craft secure, scalable, and intelligent solutions tailored for fintech, banking, and global enterprises. </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          heading="How Does Stellar Blockchain Development Use AI Solutions?"
-          description1="Stellar Blockchain Development with AI solutions helps businesses to build intelligent, scalable, and secure decentralized applications. By combining <a class='text-blue-600' href='/smart-contract-development'>Artificial Intelligence</a> with Stellar’s fast and low-cost payment network, organizations can streamline cross-border payments, automate financial processes, and strengthen security. AI-driven Stellar smart contracts execute automatically, while predictive analytics detect fraud patterns and optimize global transactions in real time."
-          description2="The integration of AI into the Stellar Blockchain also enhances transparency and scalability. Enterprises gain real-time data insights that support smarter decision-making, reduce operational costs, and accelerate digital transformation. "
-          points={[
-            "Automates Stellar smart contracts with AI efficiency",
-            "Strengthens fraud detection through predictive analytics",
-            "Lowers costs for secure cross-border transactions",
-            "Provides real-time insights for transparency and growth",
-          ]}
-          imageSrc="https://www.comfygen.com/gallery/about-images/stellar-blockchain-development-company-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-
-        <LatestTechnology
-          heading="AI Solutions in Stellar Blockchain Development"
-          techData={technologyData}
-          subheading="Integrating AI solutions into Stellar Blockchain Development enhances automation, security, and efficiency for decentralized applications. Combining AI with Stellar’s fast and low-cost blockchain network enables smarter operations and real-time decision-making for businesses." />
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/how-do-we-serve-our-clients.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Stellar Blockchain Development Process</h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a structured approach to Stellar Blockchain Development, ensuring tailored solutions for businesses leveraging the Stellar network's capabilities. As a Stellar Blockchain Development Company in India. Here’s how we bring your <a className="text-blue-700" href="/blockchain-development">blockchain development</a>  project to life.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Stellar Blockchain Based Portfolio"
-            description="Explore our portfolio of successful projects built on the Stellar Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-          />
-        </section>
-
-
-
-        <IndustriesServe
-          heading="Industries we serve as a Stellar Blockchain development company "
-          description="As a leading Stellar Blockchain Development Company, we provide innovative and tailored solutions across diverse industries, helping businesses thrive with Stellar Blockchain Development Services in India that ensure cutting-edge technology and seamless integrations."
-          sliderData={JSON_DATA.customSliderData}
-        />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CallToAction
-          heading="Ready to launch AI Stellar Blockchain development?"
-          text="Launch AI-powered Stellar Blockchain solutions with secure wallets, tokens, and DeFi platforms. Start your intelligent blockchain journey today."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Professional Experts in Stellar Blockchain Development for Web3 Projects"
-          text="At Comfygen, our experts are skilled and trained in handling various complex attributes of Stellar blockchain development, especially for Web3 projects. Irrespective of whether you are a new tech startup or an established enterprise, we provide you with dedicated experts to develop Web3-centric blockchain projects using the Stellar network. The core expertise of our Stellar developer is to strategize, design, engineer, and launch successful digital solutions. Hire our experts today, and you shall find no loopholes making their way into your Stellar blockchain apps."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "End-to-end skillset on approaching blockchain development projects",
-            "Experts will provide you with a detailed requirement analysis.",
-            "Assist you in picking the right technology stack for deriving productive Stellar apps."
-          ]}
-        />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }
