@@ -25,7 +25,7 @@ export default function IndustryGrid() {
         <section className="py-16 lg:px-4 xl:px-0">
             <div className=" px-6">
 
-                <div className="text-center">
+                <div className="text-center space-y-3">
                     <HeadingTwo color={"black"} text={" Industries We Serve – Comfygen Technologies"} />
                     <ParagraphText color={"black"} text={" At Comfygen Technologies, we deliver innovative digital solutions for various industries, helping businesses leverage technologies like AI, Blockchain, and Web & Mobile App Development to improve efficiency and growth."} />
 

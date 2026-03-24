@@ -208,12 +208,8 @@ export default function ClinicalApp(props: any) {
       <TechSection TechStack={JSON_DATA.TechStack} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-
       <ClientStories />
-
       <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
-
-
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 

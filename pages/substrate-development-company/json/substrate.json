@@ -1,133 +1,324 @@
 {
-  "ModusOperandi": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Defi Platforms",
-      "desc": "We can help you create outstanding DeFi platforms to help you manage your financial transactions through a properly layered structure and composable building blocks."
+  "Herosection": {
+    "heading": "Substrate Blockchain Development Company",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Our Substrate blockchain development team builds scalable, custom blockchain solutions using the Substrate SDK and Rust. We create secure, future-ready dApps and blockchain networks tailored to complex business needs. With 200+ digital solutions and 50+ blockchain projects delivered, Comfygen brings proven Substrate and blockchain consulting expertise.",
+    "ptag1": "",
+    "listItems": [
+      "Custom Substrate Blockchain Development",
+      "Runtime & Pallet Development",
+      " Polkadot & Cross-Chain Integration",
+      " Rust-Based Smart Contracts",
+      " Substrate Consulting & Support"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Substrate Blockchain Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/substrate-development-company.webp"
+  },
+  "ServicesData": {
+    "heading": "Explore Our Dedicated Substrate Development Services",
+    "description": "",
+    "services": [
+      {
+        "title": "Cross-Chain Bridges",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our job is to deliver high-performance and robust cross-chain bridges with the help of the Substrate framework that has XCMP to process the exchange of assets across blockchains. With this, you can ensure seamless asset or information exchange across diverse blockchains.",
+        "features": [
+          "Easy Asset Transfer",
+          "Reliable System",
+          "Connect Blockchains",
+          "Fast and Secure"
+        ]
+      },
+      {
+        "title": "Sidechain Integration",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our proficient developers can support the integration of the current Substrate DeFi app or relay chain with Polkadot or other chains to promote better interoperability. We can incorporate a pre-existing Substrate-powered relay chain to connect to other chains",
+        "features": [
+          "Improved Connectivity",
+          "Smooth Interaction",
+          "Use Existing Chains",
+          "Better Efficiency",
+          "Medical Educational Apps"
+        ]
+      },
+      {
+        "title": "Relay Chain Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Depending on what your specific use cases are, we have the capabilities and skills to tailor the Substrate blockchain development approach accordingly to get you your relay chains. We will enhance scalability by processing transactions in multiple chains.",
+        "features": [
+          "Custom Chains",
+          "Faster Transactions",
+          "Flexible Solutions",
+          "Improved Performance"
+        ]
+      },
+      {
+        "title": "Smart Contract Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Every Substrate developer at Comfygen is aware of using Parity’s ink in order to create or write smart contracts over the dedicated Substrate blockchain. Using this, you will be able to execute your business logic within the relay chain.",
+        "features": [
+          "Smart Contract Creation",
+          "Efficient Execution",
+          "Customized Solutions"
+        ]
+      },
+      {
+        "title": "Parachain Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We build relay chains and para chains with the use of Substrate technology is one among many of our USPs, as we decode every layer of this framework before using them for our blockchain development needs. We ensure to improve interoperability with this development.",
+        "features": [
+          "Parachain Development",
+          "In-depth Understanding",
+          "Better Connectivity"
+        ]
+      },
+      {
+        "title": "Pallets Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "With the use of Rust coding language, we will help you integrate new pallets into the current Substate framework. This will enable you to add new consensus algorithms, which would support you in creating NFTs.",
+        "features": [
+          "Rust Programming",
+          "Integration",
+          "Consensus Algorithms",
+          "NFT Support",
+          "Custom Features",
+          "Scalability"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Our Expertise in Substrate Blockchain Development is Unmatched!",
+    "description1": "At Comfygen, we take pride in our expertise in Substrate Blockchain Development in India. Using the power of the Substrate framework, we craft blockchain solutions that are not only robust but also scalable. The flexibility of this toolkit allows us to efficiently build essential components, ensuring that your network and application’s consensus function smoothly. We focus on security, adaptability, and making sure everything is customized to fit your specific business needs. Our solutions are designed to be future-ready, helping you stay competitive in the fast-moving world of <a class='text-blue-600' href='/blockchain-development'>Custom Blockchain Software Development</a>.",
+    "description2": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/gallery/about-images/substrate-development-company-about-img.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "consultancyData": {
+    "title": "Custom Applications Built with Substrate Blockchain Technology",
+    "description": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+    "proces": [
+      {
+        "title": "DeFi Platforms",
+        "desc": "We can help you create outstanding DeFi platforms to help you manage your financial transactions through a properly layered structure and composable building blocks."
+      },
+      {
+        "title": "Supply Chain Management Systems",
+        "desc": "We can integrate Substrate blockchain technology to build ideal supply chain management systems, using which you can document your production updates over a unified shared ledger."
+      },
+      {
+        "title": "Identity and Access Management Solutions",
+        "desc": "With Comfygen, managing digital identities is not that big a deal anymore, as our Substrate blockchain development would help you use a solution that’s cost-effective and safe at the same time."
+      },
+      {
+        "title": "Gaming and Gambling Platforms",
+        "desc": "We have been creating gaming or gambling platforms over the Substrate blockchain concept to enable your players to use cryptocurrencies to place their bids or bets easily."
+      },
+      {
+        "title": "Social Media and Content Sharing Networks",
+        "desc": "Our Substrate blockchain development solutions have been implemented across social media or content-sharing app projects, adding decentralization to their general operations."
+      },
+      {
+        "title": "Voting and Governance Systems",
+        "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
+      }
+    ]
+  },
+  "Businesses": {
+    "heading": "Why do Businesses Find it Necessary to Seek Substrate Blockchain Development?",
+    "subheading": "",
+    "tech": [
+      {
+        "title": "Flexibility with WASM",
+        "desc": "Substrate is a highly flexible blockchain framework that can be easily used for constructing a new blockchain or building new logic for business.",
+        "img": null
+      },
+      {
+        "title": "Highly Popular",
+        "desc": "Substrate is one of the most popular open-source frameworks that has been used for making some of the most popular blockchains, such as Polkadot.",
+        "img": null
+      },
+      {
+        "title": "Immensely Customizable",
+        "desc": "Substrate comes with data type flexibility, which enables this framework to support the system libraries, supporting high customization.",
+        "img": null
+      },
+      {
+        "title": "Account-Level Locking",
+        "desc": "Enable a hierarchical system for management of the settings, with the use of account-level locking embedded with Substrate development.",
+        "img": null
+      },
+      {
+        "title": "Universal UI",
+        "desc": "It is a built-in feature within the Substrate framework, built on the RxJS and React.js, used for minimizing the overall development time.",
+        "img": null
+      },
+      {
+        "title": "Multi-Level Permissions",
+        "desc": "Advanced level authentication can be achieved by invoking multiple levels within the permissions aspects for specific Substrate products.",
+        "img": null
+      }
+    ]
+  },
+  "ProcessData": {
+    "heading": "Our Substrate Blockchain Development Process",
+    "description": "At Comfygen, we follow a well-defined process to execute Substrate blockchain development with precision and efficiency.  As the best Substrate development service provider company in India, we ensure seamless integration, security, and scalability at every stage—from planning and architecture to deployment. Our expertise helps businesses build robust, customized, and  future-ready blockchain networks.",
+    "Process": [
+      {
+        "title": "Comprehend the Requirements",
+        "description": "Our journey begins with a thorough consultation with clients to understand their unique business needs. This step involves analyzing the specific benefits of blockchain implementation and identifying practical use cases. Through collaborative discussions, we align the client’s vision with feasible technical solutions, ensuring a clear roadmap for development."
+      },
+      {
+        "title": "Develop the Substrate Node",
+        "description": "At this stage, we focus on identifying and customizing the foundational components of the blockchain, such as consensus mechanisms and account management systems. Our team explores default implementations and customizes the genesis block to kickstart the blockchain network, laying a solid foundation for the chain."
+      },
+      {
+        "title": "Create the Frame",
+        "description": "Building the frame involves developing a runtime environment tailored to the blockchain's logic. We leverage existing libraries and implement a high degree of control to handle core functionalities effectively. This stage ensures a stable framework to support the blockchain’s operations."
+      },
+      {
+        "title": "Build the Core of Your Substrate",
+        "description": "The core development stage enables the integration of the runtime environment with WebAssembly, adhering to Substrate’s block-building protocols. This step ensures seamless interaction between the runtime and the Substrate node, creating a cohesive and functional blockchain ecosystem."
+      },
+      {
+        "title": "Test & Deploy",
+        "description": "Our blockchain engineers conduct extensive manual and automated tests to ensure flawless operation. We prioritize load testing and test nets to evaluate performance under real-world conditions. Once all tests are passed, we deploy the nodes on either private or public networks, ready for operational use."
+      },
+      {
+        "title": "Optimize Performance",
+        "description": "Post-deployment, we continuously monitor the blockchain’s performance to identify and address any inefficiencies. Updates and optimizations are implemented promptly to ensure the solution runs smoothly and meets evolving business demands."
+      },
+      {
+        "title": "Post-Launch Support and Upgrades",
+        "description": "Our commitment doesn’t end with deployment. We offer ongoing support and maintenance to keep the blockchain solution updated and scalable. Regular feature enhancements and security upgrades ensure the solution remains relevant and adaptable to future market trends."
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Our Substrate Blockchain Portfolio & Success Stories",
+    "description": "Explore our accomplished projects in Substrate Development, showcasing our expertise in building scalable, interoperable, and secure blockchain solutions. Each project reflects our commitment to innovation, excellence, and client satisfaction, demonstrating our ability to leverage Substrate for advanced blockchain development.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+        "title": "Mezovest",
+        "description": "Mezovest is revolutionizing the energy sector, specializing in LPG and CNG through its F.I.T (Finance, Infrastructure, and Technology) model. Via Mezo Energy Trading Limited (METL), it enhances safety with non-corrosive composite gas cylinders, while its logistics arm, Spatch, optimizes supply and distribution. Leveraging blockchain technology, Mezovest ensures transparency, security, and efficiency in energy commerce.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+        "title": "YatriPay",
+        "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With secure and seamless peer-to-peer transfers, it ensures efficient digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible worldwide.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+        "title": "Croston",
+        "description": "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and value growth. Leveraging blockchain technology, it offers transparent, decentralized control and secure transactions. With easy purchasing via credit card, exchange, or crypto, Croston redefines secure investments and powers a decentralized marketplace with advanced blockchain solutions.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+        "title": "NASDAC Crypto Coin",
+        "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Built on a powerful ‘Four Square’ architecture, it ensures speed, mining benefits, seamless integration, and predictable growth. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is designed for businesses, positioning itself as the first true SUPER COIN in the blockchain space.",
+        "link": "#"
+      }
+    ]
+  },
+  "Engagement": {
+    "heading": "Flexible Engagement Models for Substrate Blockchain Development",
+    "subheading": "",
+    "tech": [
+  
+{
+    "title": "Support Team Extension",
+    "desc": "With our team extension engagement model, we have designed an approach to help clients with more workforce to meet their expansion requirements in order to help them meet their specific project needs.",
+    "img": null
+  },
+  {
+    "title": "Project-Based Model",
+    "desc": "We also make a project-centric approach backed by our team of proficient blockchain developers. With this engagement model, our intention is to foster the utmost client collaboration and help achieve specific objectives associated with the project.",
+   "img": null
+  },
+  {
+    "title": "Dedicated Development Team",
+    "desc": "We have the best blockchain engineers who leverage cutting-edge cognitive technologies to deliver completely tailored solutions and high-quality services associated with Substrate development for clients.",
+     "img": null
+  }
+    ]
+  },
+    "CallToAction": {
+    "heading": "Let’s hear what you have to say?",
+    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+    "pageData": {
+    "title": " Why Choose Substrate for Custom Blockchain Development?",
+    "description": "Comfygen is undoubtedly the best Substrate development company, with a team of skilled experts working tirelessly to analyze your business requirements and give you the best blockchain solutions to meet your needs. But, if you want to know a bit more about why you must choose us over the others for your next Substrate development project:",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-    {
-      "num": "02",
-      "bg": "#9A4ECC1A",
-      "title": "Supply Chain Management Systems",
-      "desc": "We can integrate Substrate blockchain technology to build ideal supply chain management systems, using which you can document your production updates over a unified shared ledger."
-    },
-    {
-      "num": "03",
-      "bg": "#2390FB1A",
-      "title": "Identity and Access Management Solutions",
-      "desc": "With Comfygen, managing digital identities is not that big a deal anymore, as our Substrate blockchain development would help you use a solution that’s cost-effective and safe at the same time."
-    },
-    {
-      "num": "04",
-      "bg": "#82AB101A",
-      "title": "Gaming and Gambling Platforms",
-      "desc": "We have been creating gaming or gambling platforms over the Substrate blockchain concept to enable your players to use cryptocurrencies to place their bids or bets easily. "
-    },
-    {
-      "num": "05",
-      "bg": "#F45F391A",
-      "title": "Social Media and Content Sharing Networks",
-      "desc": "Our Substrate blockchain development solutions have been implemented across social media or content-sharing app projects, adding decentralization to their general operations."
-    },
-    {
-      "num": "06",
-      "bg": "#FFA0001A",
-      "title": "Voting and Governance Systems",
-      "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
-    }
-  ],
-  "customSliderData": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
-      "title": "Supply Chain Management",
-      "description": "Substrate enables the creation of robust supply chain systems that boost visibility, accuracy, and performance. Leveraging blockchain technology allows real-time tracking and verification of goods, ensuring seamless coordination across all stages of the supply chain."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-for-retail.webp",
-      "title": "Identity Management",
-      "description": "With Substrate, you can build decentralized identity management systems that prioritize user control and security. By decentralizing identity data, it eliminates the risks tied to central repositories, offering a safer, more transparent way to manage digital identities."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance",
-      "description": "Substrate powers decentralized finance solutions, enabling secure lending, trading, and asset management. It promotes financial inclusion by removing intermediaries and offering more accessible financial services."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare",
-      "description": "Substrate-based <a class='text-blue-600' href='/healthcare-app-development'>healthcare app solutions</a> ensure secure access and sharing of patient records, research data, and health information, fostering better collaboration between healthcare professionals and driving improved patient care."
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "Cross-Chain Bridges",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our job is to deliver high-performance and robust cross-chain bridges with the help of the Substrate framework that has XCMP to process the exchange of assets across blockchains. With this, you can ensure seamless asset or information exchange across diverse blockchains.",
-      "features": [
-        "Easy Asset Transfer",
-        "Reliable System",
-        "Connect Blockchains",
-        "Fast and Secure"
-      ]
-    },
-    {
-      "title": "Sidechain Integration",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our proficient developers can support the integration of the current Substrate DeFi app or relay chain with Polkadot or other chains to promote better interoperability. We can incorporate a pre-existing Substrate-powered relay chain to connect to other chains",
-      "features": [
-        "Improved Connectivity",
-        "Smooth Interaction",
-        "Use Existing Chains",
-        "Better Efficiency",
-        "Medical Educational Apps"
-      ]
-    },
-    {
-      "title": "Relay Chain Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Depending on what your specific use cases are, we have the capabilities and skills to tailor the Substrate blockchain development approach accordingly to get you your relay chains. We will enhance scalability by processing transactions in multiple chains.",
-      "features": [
-        "Custom Chains",
-        "Faster Transactions",
-        "Flexible Solutions",
-        "Improved Performance"
-      ]
-    },
-    {
-      "title": "Smart Contract Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Every Substrate developer at Comfygen is aware of using Parity’s ink in order to create or write smart contracts over the dedicated Substrate blockchain. Using this, you will be able to execute your business logic within the relay chain.",
-      "features": [
-        "Smart Contract Creation",
-        "Efficient Execution",
-        "Customized Solutions"
-      ]
-    },
-    {
-      "title": "Parachain Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We build relay chains and para chains with the use of Substrate technology is one among many of our USPs, as we decode every layer of this framework before using them for our blockchain development needs. We ensure to improve interoperability with this development.",
-      "features": [
-        "Parachain Development",
-        "In-depth Understanding",
-        "Better Connectivity"
-      ]
-    },
-    {
-      "title": "Pallets Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "With the use of Rust coding language, we will help you integrate new pallets into the current Substate framework. This will enable you to add new consensus algorithms, which would support you in creating NFTs.",
-      "features": [
-        "Rust Programming",
-        "Integration",
-        "Consensus Algorithms",
-        "NFT Support",
-        "Custom Features",
-        "Scalability"
-      ]
-    }
-  ],
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Outstanding Expertise",
+        "description": "Our knowledge in the domain of Substrate-centric development is profound, as our technical team has years of practical experience in creating futuristic blockchain solutions."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Ensured Quality",
+        "description": "With us at your back, you can expect to attain the highest quality Substrate projects for performance and compatibility. We run a complete series of tests to ensure there are no bugs or errors while being deployed."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "End-to-End Development Approach",
+        "description": "Starting from planning your Substrate project to helping you design & implement it, we will be there with you at all phases of the development phase. Irrespective of your needs or demands, we will have you covered."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Secured Approach",
+        "description": "When in the blockchain space, it is important to prioritize security, and we have it very deep in mind! We bring you the industry-best security implementation practices to protect the digital assets of your Substrate application."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Competitive Pricing",
+        "description": "We don’t charge you a fortune for our quality Substrate development services. Instead, we have a very reasonable and competitive pricing in the market to support your budgeting plans."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "24/7 Customer Support",
+        "description": "We are available to attend to your queries or questions at any time of the day to ensure you are satisfied with our services and experience the best performance along with your Substrate blockchain solutions."
+      }
+    ]
+  },
+
+  "HireDeveloper": {
+    "heading": "Hire Skilled Substrate Blockchain Developers for Your Custom Projects",
+    "text": "IOur Substrate blockchain developers at Comfygen have impeccable prior experience in the domain and are also aggressively training themselves with modern trends and innovations within the Substrate blockchain domain. Depending on various requirements associated with the clients’ Substrate development needs, our experts implement dedicated approaches to meet them without compromising on quality or deadlines.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+     "We have the best team of proficient Substrate blockchain developers.",
+          "All our experts have undergone tough certification courses to earn their expertise in the domain.",
+          "Our professionals are actively available to address our client's concerns or queries at any time of the day."
+    ]
+  },
   "Frequently": [
     {
       "num": "1",
@@ -222,259 +413,6 @@
       "num": "15",
       "title": "Why choose Comfygen for Substrate development services?",
       "desc": "Comfygen is highly specialized in blockchain development skills by using a plethora of tech stacks. We can help you develop various successful Substrate projects and can provide complete assistance at all stages of the overall project development. As an integral part of our overall blockchain development services, we also extend assistance for handling blockchain projects right from scratch, allowing you to attain success within the blockchain space."
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Custom Applications Built with Substrate Blockchain Technology",
-      "desc": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it"
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "DeFi Platforms",
-      "desc": "We can help you create outstanding DeFi platforms to help you manage your financial transactions through a properly layered structure and composable building blocks."
-    },
-    {
-      "title": "Supply Chain Management Systems",
-      "desc": "We can integrate Substrate blockchain technology to build ideal supply chain management systems, using which you can document your production updates over a unified shared ledger."
-    },
-    {
-      "title": "Identity and Access Management Solutions",
-      "desc": "With Comfygen, managing digital identities is not that big a deal anymore, as our Substrate blockchain development would help you use a solution that’s cost-effective and safe at the same time."
-    },
-    {
-      "title": "Gaming and Gambling Platforms",
-      "desc": "We have been creating gaming or gambling platforms over the Substrate blockchain concept to enable your players to use cryptocurrencies to place their bids or bets easily."
-    },
-    {
-      "title": "Social Media and Content Sharing Networks",
-      "desc": "Our Substrate blockchain development solutions have been implemented across social media or content-sharing app projects, adding decentralization to their general operations."
-    },
-    {
-      "title": "Voting and Governance Systems",
-      "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
-    }
-  ],
-
-
-
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      "title": "Mezovest",
-      "description": "Mezovest is revolutionizing the energy sector, specializing in LPG and CNG through its F.I.T (Finance, Infrastructure, and Technology) model. Via Mezo Energy Trading Limited (METL), it enhances safety with non-corrosive composite gas cylinders, while its logistics arm, Spatch, optimizes supply and distribution. Leveraging blockchain technology, Mezovest ensures transparency, security, and efficiency in energy commerce.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain, powered by the YatriPay Virtual Machine (YVM). With secure and seamless peer-to-peer transfers, it ensures efficient digital payments. The YatriPay Mobile App simplifies onboarding, making borderless transactions accessible worldwide.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      "title": "Croston",
-      "description": "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and value growth. Leveraging blockchain technology, it offers transparent, decentralized control and secure transactions. With easy purchasing via credit card, exchange, or crypto, Croston redefines secure investments and powers a decentralized marketplace with advanced blockchain solutions.",
-      "link": "#"
-    },
-     {
-      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      "title": "NASDAC Crypto Coin",
-      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Built on a powerful ‘Four Square’ architecture, it ensures speed, mining benefits, seamless integration, and predictable growth. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is designed for businesses, positioning itself as the first true SUPER COIN in the blockchain space.",
-      "link": "#"
-    }
-  ],
-
-
-
-
-
-  "pageData": {
-    "title": " Why Choose Substrate for Custom Blockchain Development?",
-    "description": "Comfygen is undoubtedly the best Substrate development company, with a team of skilled experts working tirelessly to analyze your business requirements and give you the best blockchain solutions to meet your needs. But, if you want to know a bit more about why you must choose us over the others for your next Substrate development project:",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Optimum Outcome Focused",
-      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
-    },
-    "gridData": [
-      {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Outstanding Expertise",
-        "description": "Our knowledge in the domain of Substrate-centric development is profound, as our technical team has years of practical experience in creating futuristic blockchain solutions."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Ensured Quality",
-        "description": "With us at your back, you can expect to attain the highest quality Substrate projects for performance and compatibility. We run a complete series of tests to ensure there are no bugs or errors while being deployed."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "End-to-End Development Approach",
-        "description": "Starting from planning your Substrate project to helping you design & implement it, we will be there with you at all phases of the development phase. Irrespective of your needs or demands, we will have you covered."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Secured Approach",
-        "description": "When in the blockchain space, it is important to prioritize security, and we have it very deep in mind! We bring you the industry-best security implementation practices to protect the digital assets of your Substrate application."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Competitive Pricing",
-        "description": "We don’t charge you a fortune for our quality Substrate development services. Instead, we have a very reasonable and competitive pricing in the market to support your budgeting plans."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "24/7 Customer Support",
-        "description": "We are available to attend to your queries or questions at any time of the day to ensure you are satisfied with our services and experience the best performance along with your Substrate blockchain solutions."
-      }
-    ]
-  },
-  "Modus": {
-    "title": "We Build a Varying Range of Applications Using Substrate Blockchain Technology!",
-    "decs": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it:"
-  },
-  "LaunchSteps": [
-    {
-      "num": "01",
-      "title": "Flexibility with WASM",
-      "desc": "Substrate is a highly flexible blockchain framework that can be easily used for constructing a new blockchain or building new logic for business."
-    },
-    {
-      "num": "02",
-      "title": "Highly Popular",
-      "desc": "Substrate is one of the most popular open-source frameworks that has been used for making some of the most popular blockchains, such as Polkadot."
-    },
-    {
-      "num": "03",
-      "title": "Immensely Customizable",
-      "desc": "Substrate comes with data type flexibility, which enables this framework to support the system libraries, supporting high customization."
-    },
-    {
-      "num": "04",
-      "title": "Account-Level Locking",
-      "desc": "Enable a hierarchical system for management of the settings, with the use of account-level locking embedded with Substrate development."
-    },
-    {
-      "num": "05",
-      "title": "Universal UI",
-      "desc": "It is a built-in feature within the Substrate framework, built on the RxJS and React.js, used for minimizing the overall development time. "
-    },
-    {
-      "num": "06",
-      "title": "Multi-Level Permissions",
-      "desc": "Advanced level authentication can be achieved by invoking multiple levels within the permissions aspects for specific Substrate products."
-    }
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "We Have the Best Skilled and Experienced Substrate Blockchain Developers for Your Diverse Projects!  ",
-      "desc": "Our Substrate blockchain developers at Comfygen have impeccable prior experience in the domain and are also aggressively training themselves with modern trends and innovations within the Substrate blockchain domain. Depending on various requirements associated with the clients’ Substrate development needs, our experts implement dedicated approaches to meet them without compromising on quality or deadlines. ",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "We have the best team of proficient Substrate blockchain developers.",
-    "All our experts have undergone tough certification courses to earn their expertise in the domain. ",
-    "Our professionals are actively available to address our client's concerns or queries at any time of the day. ",
-    "Our developers will make use of the latest technology solutions to help curate the perfect Substrate blockchain app for you."
-  ],
-  "LatestTechno": [
-    {
-      "num": "01",
-      "title": "Support Team Extension",
-      "decs": "With our team extension engagement model, we have designed an approach to help clients with more workforce to meet their expansion requirements in order to help them meet their specific project needs."
-    },
-    {
-      "num": "02",
-      "title": "Project-Based Model",
-      "decs": "We also make a project-centric approach backed by our team of proficient blockchain developers. With this engagement model, our intention is to foster the utmost client collaboration and help achieve specific objectives associated with the project. "
-    },
-    {
-      "num": "03",
-      "title": "Dedicated Development Team",
-      "decs": "We have the best blockchain engineers who leverage cutting-edge cognitive technologies to deliver completely tailored solutions and high-quality services associated with Substrate development for clients."
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Outstanding Expertise",
-      "decs": "Our knowledge in the domain of Substrate-centric development is profound, as our technical team has years of practical experience in creating futuristic blockchain solutions."
-    },
-    {
-      "num": "02",
-      "title": "Ensured Quality",
-      "decs": "With us at your back, you can expect to attain the highest quality Substrate projects for performance and compatibility. We run a complete series of tests to ensure there are no bugs or errors while being deployed."
-    },
-    {
-      "num": "03",
-      "title": "End-to-End Development Approach",
-      "decs": "Starting from planning your Substrate project to helping you design & implement it, we will be there with you at all phases of the development phase. Irrespective of your needs or demands, we will have you covered."
-    },
-    {
-      "num": "04",
-      "title": "Secured Approach",
-      "decs": "When in the blockchain space, it is important to prioritize security, and we have it very deep in mind! We bring you the industry-best security implementation practices to protect the digital assets of your Substrate application. "
-    },
-    {
-      "num": "05",
-      "title": "Competitive Pricing",
-      "decs": "We don’t charge you a fortune for our quality Substrate development services. Instead, we have a very reasonable and competitive pricing in the market to support your budgeting plans.  "
-    },
-    {
-      "num": "06",
-      "title": "24/7 Customer Support",
-      "decs": "We are available to attend to your queries or questions at any time of the day to ensure you are satisfied with our services and experience the best performance along with your Substrate blockchain solutions. "
-    }
-  ],
-  "myList3": [
-    "Consumer Electronics",
-    "Healthcare",
-    "Logistics",
-    "Financial Markets",
-    "Startup",
-    "Manufacturing"
-  ],
-  "TecnologisStack": [
-    {
-      "num": "1",
-      "title": "Comprehend the Requirements",
-      "stack": " Consult the clients to analyze the business requirements.  ",
-      "stack1": "Identify the specific business benefits. ",
-      "stack2": "Work closely with the clients to discuss practical implementations. "
-    },
-    {
-      "num": "2",
-      "title": "Develop the Substrate Node",
-      "stack": "Identify the basic components such as consensus, account management, etc. ",
-      "stack1": "Access the default implementations of all of them.",
-      "stack2": "Look out for customizing the genesis block for initiating the chain."
-    },
-    {
-      "num": "3",
-      "title": "Create the Frame",
-      "stack": "Start building the frame to create a runtime environment.",
-      "stack1": "Existing libraries will be used for the process.",
-      "stack2": "A high degree of control is implemented for handling the blockchain’s logic."
-    },
-    {
-      "num": "4",
-      "title": "Build the Core of Your Substrate",
-      "stack": "Building the core enables our experts to invoke the runtime environment.",
-      "stack1": "We will align the runtime environment along with the WebAssembly, using basic Substrate block-building laws.",
-      "stack2": "Now, we use the runtime with that of the Substrate node."
-    },
-    {
-      "num": "5",
-      "title": "Test & Deploy",
-      "stack": "Both manual and automated tests will be implemented by our blockchain engineers.",
-      "stack1": "Load tests and test nets will be executed on priority to determine the performance of the app.",
-      "stack2": "The nodes will then be deployed over the private or public networks."
     }
   ]
 }

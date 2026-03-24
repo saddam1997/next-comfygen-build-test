@@ -1,137 +1,79 @@
-import { useState } from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./json/taxi.json";
-
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 import dynamic from "next/dynamic";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import CardFeatures from "../../components/Newcomponet/comman/CardFeatures";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
-import Link from "next/link";
-import ComparisonSection from "../../components/Newcomponet/SectionCompoent/ComparisonSection";
-import HeroSection from "../../components/HeroSection";
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+import AppcardSlider from "../../components/AppcardSlider"
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
+
+import ComparisonSection from "../../components/ComparisonSection"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
 
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const Features = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Features"),
-  { loading: loader, ssr: true }
-);
-
-
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
-
-const TeckStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
-
-const AppcardSlider = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AppcardSlider"),
-  { loading: loader, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+const CardFeatures = dynamic(
+  () => import("../../components/CardFeatures"),
   { ssr: true }
 );
 
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
 
 
 export default function Ecommerce(props) {
   let { initialData } = props;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const Process = [
-    {
-      title: "Business Analysis & Planning",
-      description:
-        "Understand your vision, define workflows, target audience, and monetization strategy.",
-    },
-    {
-      title: "Requirement Gathering",
-      description:
-        "Identify features, integrations, platforms, and technical specifications.",
-    },
-    {
-      title: "UI/UX Designing",
-      description:
-        "Create intuitive, engaging, and conversion-focused designs for mobile and web.",
-    },
-    {
-      title: "App Development",
-      description:
-        "Build feature-rich apps with scalable architecture, fast performance, and secure backend.",
-    },
-    {
-      title: "Quality Assurance",
-      description:
-        "Rigorous testing for bugs, usability, security, and a smooth user experience.",
-    },
-    {
-      title: "Deployment",
-      description:
-        "Launch apps on iOS, Android, and web, ensuring seamless performance and stability.",
-    },
-    {
-      title: "Support & Maintenance",
-      description:
-        "Provide updates, new features, bug fixes, and ongoing technical support for growth.",
-    },
-  ];
-
+  
 
 
 
@@ -288,167 +230,30 @@ export default function Ecommerce(props) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSection
-          heading={JSON_DATA.Herosection.heading}
-          subhead={JSON_DATA.Herosection.subhead}
-          ptag={JSON_DATA.Herosection.ptag}
-          li={JSON_DATA.Herosection.li}
-          li2={JSON_DATA.Herosection.li2}
-          li3={JSON_DATA.Herosection.li3}
-          li4={JSON_DATA.Herosection.li4}
-          alt={JSON_DATA.Herosection.alt}
-          title={JSON_DATA.Herosection.title}
-          btnName={JSON_DATA.Herosection.btnName}
-          btnLink={JSON_DATA.Herosection.btnLink}
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage={JSON_DATA.Herosection.bgImage}
-        />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <AppcardSlider SliderDATA={JSON_DATA.Industries} />
+      <Features featuresData={JSON_DATA.featuresData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CardFeatures featuresData={JSON_DATA.featuresCardData} />
+      <ComparisonSection data={JSON_DATA.BookingComparison} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                {JSON_DATA.ServicesData.heading}
-              </h2>
-              <p className="text-base text-center font-normal" dangerouslySetInnerHTML={{ __html: JSON_DATA.ServicesData.description }}>
-
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.ServicesData.services} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          heading={JSON_DATA.AboutSection.heading}
-          description1={JSON_DATA.AboutSection.description1}
-          description2={JSON_DATA.AboutSection.description2}
-          description3={JSON_DATA.AboutSection.description3}
-          alt={JSON_DATA.AboutSection.alt}
-          points={JSON_DATA.AboutSection.points}
-          imageSrc={JSON_DATA.AboutSection.imageSrc}
-          link={JSON_DATA.AboutSection.link}
-          linkText={JSON_DATA.AboutSection.linkText}
-        />
-        {/* <ContactFromCenter /> */}
-
-
-        <CallToAction
-          heading={JSON_DATA.CallToAction.heading}
-          text={JSON_DATA.CallToAction.text}
-          buttonText={JSON_DATA.CallToAction.buttonText}
-          buttonLink={JSON_DATA.CallToAction.buttonLink}
-          imageSrc={JSON_DATA.CallToAction.imageSrc}
-          imageAlt={JSON_DATA.CallToAction.imageAlt}
-
-        />
-
-        <AppcardSlider
-          heading={JSON_DATA.Industries.heading}
-          description={JSON_DATA.Industries.description}
-          sliderData={JSON_DATA.Industries.IndustriesServe}
-          openModal={openModal}
-        />
-        <div className="py-8">
-          <Features
-            heading={JSON_DATA.featuresData.heading}
-            description={JSON_DATA.featuresData.description}
-            featuresData={JSON_DATA.featuresData.features}
-            grid={3} />
-        </div>
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.Portfoliodata.portfolio}
-            heading={JSON_DATA.Portfoliodata.heading}
-            description={JSON_DATA.Portfoliodata.description}
-          />
-        </section>
-
-        <CardFeatures
-          heading={JSON_DATA.featuresData1.heading}
-          description={JSON_DATA.featuresData1.description}
-          featuresData={JSON_DATA.featuresData1.features}
-          grid="2"
-        />
-
-
-        <ComparisonSection data={JSON_DATA.BookingComparison} />
-
-        <CallToAction
-          heading="Looking for a Dedicated Development Partner?"
-          text="Comfygen Technologies offers expert guidance to help businesses build scalable, high-performance taxi booking apps. Connect with our team to discuss your idea and plan your project."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End Taxi App Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                We follow a structured development approach to build efficient, secure, and scalable <Link href={"https://www.comfygen.com/blog/ai-taxi-app-development/"} className="text-blue-600 font-semibold">AI-powered taxi booking apps</Link>. From initial concept to post-launch support, Our process ensures timely delivery and results in business-ready taxi app development solutions designed for long-term success.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TeckStack
-          title="Technologies Powering Our Taxi Booking App Development"
-          description="We leverage cutting-edge technologies to build fast, secure, and scalable taxi booking platforms. Our development approach combines modern backend and frontend technologies, enabling seamless experiences across Android and iOS. Whether it’s native Android and <a href='https://www.comfygen.com/ios-app-development' class='underline font-semibold'>iOS app development</a> or cross-platform solutions."
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <ClientStories />
-
-        <HireDeveloper
-          heading="Hire On-Demand Taxi App Developers"
-          text="Build a taxi app like Uber or Ola with Comfygen by hiring our expert taxi app developers. <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-extrabold'>Hire expert on-demand taxi mobile app developers</a> to create secure, scalable, and feature-rich apps with real-time GPS tracking, AI-powered ride dispatch, multiple payment options, and white-label solutions. For global projects, our offshore taxi app development team ensures seamless communication, timely delivery, and ongoing support."
-          text1=""
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experienced taxi app developers",
-            "AI-based route optimization & ride allocation",
-            "Real-time GPS tracking for rides",
-            "Full support: development, launch, and maintenance",
-          ]}
-        />
-
-        <ClientTestimonials
-          heading="Client Testimonial"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

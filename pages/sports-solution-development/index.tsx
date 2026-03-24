@@ -1,98 +1,73 @@
-import Image from "next/image";
-import React, { useState } from "react";
-import { useEffect } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cricketliveline.json";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+import BusinessSolustion from "../../components/BusinessSolustion"
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+import Emerging from "../../components/Emerging";
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-const Process = [
-  {
-    title: "Requirement Gathering",
-    description: "We start by understanding your goals, users, and desired outcomes."
-  },
-  {
-    title: "Market & Competitor Analysis",
-    description: "We explore what’s trending and who you’re up against to ensure uniqueness."
-  },
-  {
-    title: "UI/UX Design Mockups",
-    description: "Designing interfaces that your users will love and navigate effortlessly."
-  },
-  {
-    title: "Agile Development",
-    description: "Our team builds your product in sprints for faster releases and better flexibility."
-  },
-  {
-    title: "QA & Testing",
-    description: "We ensure every feature works flawlessly with rigorous testing."
-  },
-  {
-    title: "Launch & Deployment",
-    description: "We handle full deployment and app store submissions."
-  },
-  {
-    title: "Maintenance & Support",
-    description: "Post-launch, we monitor, update, and support your product for continued success."
-  }
-];
-;
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -118,7 +93,7 @@ const serviceSchema = {
     "Sports Live Score API Development",
     "Sports  Software Development",
     "Sports Data Integration Services"
-     ],
+  ],
   "sameAs": [
     "https://www.facebook.com/comfygen.technologies/",
     "https://www.linkedin.com/company/comfygen-technologies",
@@ -127,8 +102,6 @@ const serviceSchema = {
     "https://www.youtube.com/@Comfygentechnologies"
   ]
 }
-
-
 
 
 const faqPageSchema = {
@@ -219,178 +192,81 @@ const faqPageSchema = {
 
 };
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
       <Head>
-  <title>Custom Sports Solution Development | Sports Software & App Experts | Comfygen</title>
+        <title>Custom Sports Solution Development | Sports Software & App Experts | Comfygen</title>
 
-  <meta name="description" content="Comfygen delivers custom sports solution development, including sports software, fantasy apps, mobile platforms, APIs, and analytics tools to boost fan engagement and performance." />
-  <link rel="canonical" href="https://www.comfygen.com/sports-solution-development" />
+        <meta name="description" content="Comfygen delivers custom sports solution development, including sports software, fantasy apps, mobile platforms, APIs, and analytics tools to boost fan engagement and performance." />
+        <link rel="canonical" href="https://www.comfygen.com/sports-solution-development" />
 
-  <meta name="keywords" content="Sports solution development, Sports software development, Sports app development, Sports technology solutions, Sports software company, Custom sports software development, Fantasy sports app development, Sports data API integration for apps, Sports analytics software development" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta charSet="UTF-8" />
+        <meta name="keywords" content="Sports solution development, Sports software development, Sports app development, Sports technology solutions, Sports software company, Custom sports software development, Fantasy sports app development, Sports data API integration for apps, Sports analytics software development" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta charSet="UTF-8" />
 
-  <meta property="og:title" content="Sports Solution Development | Custom Sports Software & App Development Company" />
-  <meta property="og:description" content="We specialize in building high-performing sports solutions including apps, fantasy platforms, APIs, and analytics tools for global sports businesses." />
-  <meta property="og:url" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
-  <meta property="og:site_name" content="Comfygen" />
-  <meta name="og:country-name" content="India, USA, UK, UAE" />
-  <meta name="og:latitude" content="26.912434" />
-  <meta name="og:longitude" content="75.787271" />
+        <meta property="og:title" content="Sports Solution Development | Custom Sports Software & App Development Company" />
+        <meta property="og:description" content="We specialize in building high-performing sports solutions including apps, fantasy platforms, APIs, and analytics tools for global sports businesses." />
+        <meta property="og:url" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
+        <meta property="og:site_name" content="Comfygen" />
+        <meta name="og:country-name" content="India, USA, UK, UAE" />
+        <meta name="og:latitude" content="26.912434" />
+        <meta name="og:longitude" content="75.787271" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Custom Sports Software Solutions | Fantasy & Sports App Development" />
-  <meta name="twitter:description" content="Get high-performance sports software and app development solutions tailored for leagues, clubs, and fantasy startups." />
-  <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Custom Sports Software Solutions | Fantasy & Sports App Development" />
+        <meta name="twitter:description" content="Get high-performance sports software and app development solutions tailored for leagues, clubs, and fantasy startups." />
+        <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-og.webp" />
 
-  <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
-  <meta name="reply-to" content="sales@comfygen.com" />
-  <meta name="owner" content="Comfygen Pvt. Ltd." />
-  <meta name="copyright" content="Comfygen Private Limited" />
-  <meta name="language" content="en-us" />
-  <meta name="abstract" content="Custom Sports Software & App Development Company" />
-  <meta name="summary" content="Comfygen is the leading custom sports solution provider trusted by clubs, leagues, and startups worldwide." />
-  <meta name="category" content="Sports Solution Development" />
-  <meta name="coverage" content="Worldwide" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="subtitle" content="Custom sports app development | software experts" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="fb:page_id" content="110909321596135" />
+        <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
+        <meta name="reply-to" content="sales@comfygen.com" />
+        <meta name="owner" content="Comfygen Pvt. Ltd." />
+        <meta name="copyright" content="Comfygen Private Limited" />
+        <meta name="language" content="en-us" />
+        <meta name="abstract" content="Custom Sports Software & App Development Company" />
+        <meta name="summary" content="Comfygen is the leading custom sports solution provider trusted by clubs, leagues, and startups worldwide." />
+        <meta name="category" content="Sports Solution Development" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="subtitle" content="Custom sports app development | software experts" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="fb:page_id" content="110909321596135" />
 
- 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-  />
-   <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-  />
 
-</Head>
-
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden pt-16">
-
-        <HeroSectionForAllPages
-          heading="Sports Solution Development"
-          subhead="Empowering the Future of Sports with Tailored Technology"
-          ptag="Welcome to Comfygen Technologies – where sports meets innovation. As a leading name in sports solution development, we craft dynamic, user-friendly, and scalable sports software and apps for today’s digital-first sports world. From real-time score APIs to AI-powered analytics and immersive fan engagement platforms, our solutions are designed to empower clubs, leagues, startups, and enterprises alike. Whether it's fantasy leagues, fitness tracking apps, or sports management systems, our team delivers with precision, creativity, and passion. We don’t just build software—we create the future of sports. Join us and redefine the game with cutting-edge sports technology solutions."
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-hero.webp"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
 
-
-        <AboutSection
-          title="About Company"
-          heading="Your Vision. Our Technology. One Winning Team."
-          description1="We believe the future of sports lies in innovation, real-time data, and unforgettable digital experiences. That’s why our approach to sports solution development goes beyond basic functionality—we build smart, scalable, and dynamic platforms that revolutionize the way sports are played, managed, and enjoyed by fans across the globe."
-          description2="As a trusted name in sports software development, we craft tailor-made solutions for clubs, leagues, academies, and businesses that want to lead the game with technology. Whether it’s building a seamless sports management software for teams and leagues or launching fantasy sports apps that thrill users, we put your vision at the center of everything."
-          description3="Our expertise covers everything from custom sports app development and AI-powered sports analytics solutions to cloud-based sports platforms and real-time sports data solutions. We empower you to make faster decisions, automate operations, and deliver high-performing experiences across devices."
-          description4="Partnering with us means you’re choosing a sports software company that values innovation, security, and performance. Whether you're exploring how to develop a sports app, need sports live score API development, or require sports event management software—we’re here to elevate your journey in sports tech."
-          imageSrc="https://www.comfygen.com/comfygen-images/sports-solution-development/sports-solution-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Game-Changing Sports Software Solutions Tailored to Every Play, Team & Goal</h2>
-              <p className="text-base text-center font-normal"></p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+      </Head>
 
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Sports Solution Development Process</h2>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Let’s Build Your Next Sports Innovation"
-          text="Are you ready to transform your sports vision into a high-performing digital product?
-          We specialize in building scalable, feature-rich, and user-centric sports technology solutions that match your unique business goals. Whether you're developing a fantasy sports app, need robust sports management software, or want to integrate real-time data APIs, our team brings the innovation, expertise, and commitment to make it happen."
-          text1="We go beyond just writing code—we become your technology partner, ensuring every project we deliver enhances fan engagement, streamlines operations, and gives you a competitive edge. Our proven development processes, agile methodologies, and personalized support ensure that your sports app or platform is future-ready."
-          text2="Here’s what you get when you hire Comfygen Technologies:"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-             "Tailored development services built around your specific needs",
-              "End-to-end support from ideation to deployment",
-             "Access to modern tech stacks like AI, cloud, and mobile",
-             "A results-driven team focused on performance and scalability"
-          ]}
-          
-        />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Cricket Live Line Api"
-        />
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

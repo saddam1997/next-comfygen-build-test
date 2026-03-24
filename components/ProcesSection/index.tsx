@@ -15,7 +15,7 @@ const ProcessComponent = ({ ProcessData }: any) => {
 
             <section className="bg-white lg:py-8 py-10 lg:px-4 xl:px-0">
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                    <div className="text-center">
+                    <div className="text-center space-y-3">
 
                         <HeadingTwo color={"black"} text= {heading} />
                           <ParagraphText color={"black"} text={description} />

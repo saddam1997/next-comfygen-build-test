@@ -1,107 +1,77 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+
 import Head from "next/head";
 
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/livelineapidevelopment.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+import BusinessSolustion from "../../components/BusinessSolustion"
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+import Emerging from "../../components/Emerging";
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const SportsApiSupportSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/SportsApiSupportSection"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+import SportsApiSupport from "../../components/SportsApiSupport"
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-
-
-
-
-const Process = [
-  {
-    title: "Project Consultation",
-    description:
-      "We begin by understanding your platform’s goals, sport focus, and user needs.",
-  },
-  {
-    title: "Requirement Analysis",
-    description:
-      "Our team analyzes your functional and technical requirements in depth.",
-  },
-  {
-    title: "API Architecture Design",
-    description:
-      "We design a secure and scalable architecture tailored to your sport and platform.",
-  },
-  {
-    title: "Development Phase",
-    description:
-      "We write clean, efficient code and create high-performance API endpoints.",
-  },
-  {
-    title: "Integration Support",
-    description:
-      "Our team helps your developers integrate and test the API smoothly.",
-  },
-  {
-    title: "QA & Testing",
-    description:
-      "We run thorough checks to ensure zero downtime, latency, or data mismatches.",
-  },
-  {
-    title: "Deployment & Maintenance",
-    description:
-      "Your API goes live with continuous support, updates, and performance tuning.",
-  },
-];
 
 
 const ServiceData = {
@@ -231,23 +201,15 @@ const faqPageSchema = {
 
 export default function Ecommerce(props) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+ 
 
   return (
     <>
       <Head>
         <title>
-           
- 	
-Best Sports Live Line API Provider Company | Real-Time Sports data
+
+
+          Best Sports Live Line API Provider Company | Real-Time Sports data
         </title>
 
         <meta
@@ -333,10 +295,10 @@ Best Sports Live Line API Provider Company | Real-Time Sports data
         <meta name="fb:page_id" content="110909321596135" />
 
         {/* Structured Data */}
-   
 
 
-      
+
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
@@ -346,110 +308,22 @@ Best Sports Live Line API Provider Company | Real-Time Sports data
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ServiceData) }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <SportsApiSupport GameApiData={JSON_DATA.GameApiData} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
 
+      <ClientStories />
 
-      <Header />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden pt-16">
-
-          <HeroSectionForAllPages
-            heading="Sports Live Line API Provider Company"
-            subhead="Your Trusted Cricket Live Line Api  Provider Company In India & The USA."
-            ptag="Looking for a reliable Sports Live Line API provider that delivers lightning-fast, real-time sports data? Comfygen has you covered. With over 10 years of experience in a high-performance software provider, we create custom Live Line APIs designed for fantasy apps, sports platforms, and live score dashboards. Our APIs are lightweight, fast, secure, and easy to integrate across mobile and web platforms."
-            ptag1="As a leading Live Line API provider company, we cover all major sports—cricket, football, tennis, basketball, horse racing, and more. Every second counts in live sports, and our APIs ensure your users get accurate data instantly."
-            ptag2="We’re more than just a Live Line API developer—we’re your trusted tech partner for growth, scalability, and real-time engagement."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/fantasy-cricket-app-development-hero-img.webp"
-          />
-
-        <AboutSection
-          title="About Company"
-          heading="About Our Sports Live Line API Services"
-          description1="At Comfygen, we specialize in building software that delivers real-time value—fast, accurate, and scalable. With over 10 years of experience, we've empowered startups, sports platforms, and enterprises to launch reliable digital products with seamless Live Line API integration."
-          description2="Our Sports Live Line API services are designed for businesses that require precise live sports data. Whether you're building a fantasy sports app, a real-time score widget, or a media platform, we tailor our APIs to ensure top-tier speed, performance, and compliance."
-          description3="As a leading Live Line API provider, we focus on delivering developer-friendly solutions. From clean documentation and easy onboarding to tested, secure endpoints, our APIs are built for performance. Our tech team leverages the latest stack to ensure low-latency, high-uptime solutions."
-          description4="What makes us a top Live Line provider company? We tackle real-time challenges—like latency, data validation, and system overload—with robust and scalable infrastructure. We don’t just deliver data; we deliver trust."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Live scores faster than TV",
-            "In-depth match stats, odds & commentary",
-            "Smooth integration across web and mobile platforms",
-          ]}
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We offer a complete range of Live Line API services tailored to fit your sports app’s needs:</h2>
-              <p className="text-base text-center font-normal"></p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <SportsApiSupportSection
-          heading="Covers All Sports"
-          description="Whether it's cricket or car racing, our Sports Live Line API services cover it all. At Comfygen, we understand the importance of data in sports tech. That’s why we’ve built robust APIs for all major sports, including Cricket, Football, NBA, Tennis, Golf, Kabaddi, Rugby, and more. You can get match schedules, live updates, scores, stats, and player data in one simple-to-use API endpoint. No matter the sport, we’ve got your data needs covered."
-          gameDevItems={JSON_DATA.gamedev}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Guide to Our Sports Live Line API Integration Process</h2>
-              <p className="text-base font-normal mt-2">
-               We recognize the value of a seamless Cricket Live Line API integration and are committed to supporting you throughout every phase of the process. As a global leader in delivering reliable Cricket Live Line API services, Comfygen ensures a hassle-free experience from start to finish. Follow our step-by-step guide to effortlessly harness the full potential of our Live Line API for your cricket-based applications and platforms.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Expert Live Line API Developers Today"
-          text="Ready to transform your app or platform with real-time sports data? At Comfygen, we’re here to help. Our expert Live Line API developers are ready to bring your idea to life—whether you're building something new or upgrading an existing platform."
-          text1="We understand the urgency and accuracy your users expect. That's why we deliver APIs that are tested, fast, and ready to integrate. When you work with us, you’re choosing a development partner who’s focused on your success."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "10+ years in API and software development",
-            "Fast delivery with high-performance APIs",
-            "Complete post-launch support",
-          ]}
-        />
-
-        <Faq faqData={JSON_DATA.Frequently} title=" Cricket Live Line Api" />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

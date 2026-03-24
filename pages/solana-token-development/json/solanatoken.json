@@ -1,19 +1,386 @@
 {
-  "cardData": [
-    {
-      "title": "Project-Based Model",
-      "decs": "Opt for our Project-Based Engagement Model when you have clearly defined Solana token development requirements and timelines. Ideal for startups and enterprises, this model delivers end-to-end solutions for custom Solana token creation, from planning and design to deployment. It’s a cost-effective choice for businesses seeking fixed pricing and predictable outcomes."
+  "Herosection": {
+    "heading": "Top-Notch Solana Token Development Service",
+    "subhead": "Looking for top solana token development company?",
+    "isHome": false,
+    "ptag": "Comfygen provides top-notch solana token development service to create secure, scalable, and high-performance tokens on the Solana blockchain. As a trusted Solana token development company, we help businesses leverage Solana’s speed, low-cost transactions, and scalability for DeFi platforms, NFTs, and decentralized applications. Our expert developers deliver customized token solutions, smart contract integration, and seamless deployment to meet the unique requirements of your project.",
+    "ptag1": "",
+    "listItems": [
+      "Custom Solana Token Creation",
+      "Solana Smart Contract Development",
+      "NFT Token Development on Solana",
+      "Scalable and High-Performance Token Solutions"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Top-Notch Solana Token Development Service",
+    "bgImage": "https://www.comfygen.com/herosection/solana-token-development-company-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Our Solana Token Development Services",
+    "description": "s a leading Solana Token Development Company, we offer comprehensive and custom-tailored Solana token development services to help businesses and startups launch secure, scalable, and high-performance tokens. Whether you aim to power your DeFi platforms, NFT marketplaces, or Web3 projects, our expert Solana blockchain developers deliver cutting-edge solutions optimized for speed, security, and interoperability.",
+    "services": [
+      {
+        "title": "Solana dApp Development",
+        "subtitle": "",
+        "description": "We build scalable and high-performance decentralized applications on the Solana blockchain. Our team specializes in creating user-friendly dApps with fast transaction speeds and low fees, designed for DeFi, NFT, gaming, and other Web3 solutions. From smart contract development to end-to-end dApp deployment, we offer customized solutions tailored to your project’s needs.",
+        "features": [
+          "Custom DeFi, NFT, and Web3 dApps",
+          "Smart Contract Development and Audits",
+          "High-Speed Transaction Support",
+          "Ongoing Maintenance and Updates"
+        ]
+      },
+      {
+        "title": "Solana NFT Marketplace Development",
+        "subtitle": "",
+        "description": "Launch a fast, scalable, and feature-rich Solana NFT marketplace with our expert development services. As a leading Solana development company, we create NFT marketplaces that offer low transaction fees, lightning-fast speeds, and seamless user experiences. Our Solana blockchain developers build custom NFT platforms for digital collectibles, art, gaming assets, music, real estate, and more, ensuring security, scalability, and interoperability across the Web3 ecosystem.",
+        "features": [
+          "Custom NFT Minting & Trading Functionality",
+          "Integrated Solana Wallet Support (Phantom, Solflare, etc.)",
+          "Advanced Smart Contract Development & Security",
+          "Multi-chain Interoperability & Cross-platform Compatibility"
+        ]
+      },
+      {
+        "title": "SPL Token Development",
+        "subtitle": "",
+        "description": "Create and deploy custom tokens on the Solana blockchain with our comprehensive SPL token solutions. We design high-performance digital assets that power decentralized finance (DeFi), NFT projects, and other Web3 applications. Whether you need a utility token, governance token, or asset-backed token, our team ensures secure, scalable, and efficient token creation tailored to your business needs. Our expertise in Solana-based token development guarantees rapid deployment, minimal transaction costs, and compatibility with popular wallets and decentralized platforms.",
+        "features": [
+          "Customized Token Creation for DeFi, NFTs, and Gaming",
+          "Smart Contract Development and Deployment",
+          "Integration with Wallets like Phantom and Solflare",
+          "Comprehensive Security Audits and Compliance Support"
+        ]
+      },
+      {
+        "title": "Solana Wallet Development",
+        "subtitle": "",
+        "description": "Empower your users with secure and intuitive digital wallet solutions tailored for the Solana blockchain ecosystem. As an experienced Web3 development company, we create custom crypto wallets that allow seamless management of SPL tokens, NFTs, and other digital assets. Whether you're building a DeFi platform or launching an NFT marketplace, our tailored wallet solutions ensure fast transactions, multi-layer security, and effortless integration with decentralized applications (dApps). Our skilled blockchain developers design highly scalable wallets that work across mobile, web, and browser extensions, enabling easy asset transfers and interaction with Solana-powered platforms.",
+        "features": [
+          "Multi-asset Support for SPL Tokens, NFTs, and Custom Digital Assets",
+          "Seamless Integration with dApps, DeFi Protocols, and NFT Marketplaces",
+          "Advanced Security: Multi-Signature, Two-Factor & Biometric Authentication",
+          "Cross-Platform Compatibility: Mobile (iOS & Android), Web, and Browser Extensions"
+        ]
+      },
+      {
+        "title": "Solana Token Swap",
+        "subtitle": "",
+        "description": "Facilitate seamless and lightning-fast token exchanges with our advanced Solana token swap solutions. Designed to enhance liquidity and improve the user experience, our decentralized swap platforms support the exchange of SPL tokens and other Solana-based digital assets with minimal fees and near-instant transaction finality. Whether you’re launching a DeFi protocol or integrating a token-swapping feature into your existing Solana dApp, we offer robust and scalable solutions tailored for both startups and enterprises. Our blockchain experts ensure high-performance swapping mechanisms powered by smart contracts for secure and transparent transactions on the Solana network.",
+        "features": [
+          "Instant & Secure Swapping of SPL Tokens and Custom Assets",
+          "Integration with DeFi Platforms, Liquidity Pools, and AMMs",
+          "Minimal Transaction Fees with High-Speed Processing",
+          "User-Friendly Interface for Seamless Token Exchange"
+        ]
+      },
+      {
+        "title": "Solana Token Lending",
+        "subtitle": "",
+        "description": "Unlock new opportunities in decentralized finance (DeFi) with our secure and scalable Solana token lending platforms. We build lending and borrowing protocols on the Solana blockchain that empower users to earn passive income by lending SPL tokens or accessing liquidity without selling their digital assets. Our Solana-based lending solutions offer low transaction costs, lightning-fast processing, and smart contract automation, ensuring secure, transparent, and efficient asset management. Whether you are a DeFi startup or an established financial institution looking to expand into Web3 lending protocols, we deliver customized solutions tailored to your needs.",
+        "features": [
+          "Decentralized Lending & Borrowing of SPL Tokens",
+          "Smart Contract-Powered Automation for Secure Transactions",
+          "Integration with DeFi Liquidity Pools and Yield Farming Protocols",
+          "Low Fees & High-Speed Transactions on the Solana Network"
+        ]
+      },
+      {
+        "title": "Solana Smart Contract Development",
+        "subtitle": "",
+        "description": "Accelerate your Web3 projects with secure, scalable, and high-performance smart contract development on the Solana blockchain. Our expert blockchain developers specialize in creating automated, self-executing contracts that power decentralized applications (dApps), DeFi protocols, NFT platforms, and token ecosystems. By leveraging Solana’s lightning-fast transactions and low gas fees, we design custom smart contract solutions tailored to your business use case. Whether you’re launching a DeFi lending protocol, an NFT marketplace, or a custom token, our Solana smart contracts ensure security, transparency, and efficiency.",
+        "features": [
+          "Custom Smart Contracts for dApps, DeFi, NFTs, and Tokenization",
+          "High-Speed Execution with Minimal Transaction Costs",
+          "Auditable & Secure Code with Smart Contract Testing",
+          "Integration with Solana Ecosystem: Wallets, dApps, and Protocols"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Trusted Solana Token Development",
+    "description1": "Drive Web3 Success with Trusted Solana Blockchain Development Solutions Unlock the full potential of decentralized technologies with our trusted Solana Blockchain Development services. We design and develop secure, high-performance dApps, smart contracts, and custom tokens on the Solana network to help businesses of all sizes accelerate Web3 adoption. Our experts specialize in creating scalable and interoperable blockchain solutions, ensuring faster transactions, lower costs, and seamless asset tokenization.",
+    "description2": "Whether a startup or an enterprise, our Solana development company empowers you to launch next-generation blockchain applications and tokenized ecosystems with enhanced speed, security, and efficiency.",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "InfoSection": {
+    "heading": "Step-by-Step Guide to Creating a Token on the Solana Blockchain",
+    "description1": "Creating a token on the Solana Blockchain is a streamlined process for businesses and developers aiming to enter the Web3 ecosystem. As a leading Solana Token Development Company, we simplify the process of launching secure, scalable, and interoperable tokens. Whether you’re building DeFi platforms, NFT marketplaces, or custom decentralized applications, Solana token development services offer high-speed transactions and minimal gas fees—perfect for startups and enterprises alike.",
+    "description2": "",
+    "description3": "",
+    "dec": "",
+    "points": [
+      "Set up a Solana-compatible wallet (Phantom, Sollet, etc.)",
+      "Install Solana Command Line Interface (CLI)",
+      "Create and configure a new wallet address",
+      "Obtain SOL tokens for transaction fees",
+      "Install and set up SPL Token CLI",
+      "Create a new token on the Solana blockchain",
+      "Generate an associated token account",
+      "Mint tokens and allocate them to your account",
+      "Verify token creation and manage token distribution",
+      "Customize your token with metadata and advanced features"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/how-to-create-a-token-on-solana-blockchain.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "right"
+  },
+  "Features": {
+    "heading": "Features of Solana Development",
+    "subheading": "Solana, known for its high-speed, low-cost transactions, and scalability, has emerged as a leading blockchain solution for enterprises and developers seeking to build next-generation decentralized applications (dApps). The Solana blockchain provides several features that make it one of the most robust and efficient blockchain platforms, ideal for token creation, DeFi applications, NFTs, and other decentralized solutions. With its unique consensus mechanism, Proof of History (PoH), Solana ensures that transactions are processed in real-time, without compromising on security or decentralization.",
+    "tech": [
+      {
+        "img": null,
+        "title": "High-Speed Transactions",
+        "desc": "Solana is capable of processing over 65,000 transactions per second (TPS), enabling businesses to scale their decentralized applications (dApps) without worrying about transaction bottlenecks."
+      },
+      {
+        "img": null,
+        "title": "Low Transaction Fees",
+        "desc": "With Solana's low transaction fees (as low as $0.00025 per transaction), it becomes an affordable platform for building and launching blockchain solutions, including tokens, dApps, and NFTs."
+      },
+      {
+        "img": null,
+        "title": "Scalable Infrastructure",
+        "desc": "Solana's parallel processing capabilities and Proof of History (PoH) consensus mechanism ensure scalability and reliability, making it ideal for high-demand applications and platforms."
+      },
+      {
+        "img": null,
+        "title": "Decentralization & Security",
+        "desc": "Solana maintains a highly decentralized network without compromising on performance. With a robust security model, the network offers trustless interactions for users."
+      },
+      {
+        "img": null,
+        "title": "Smart Contract Support",
+        "desc": "Solana supports smart contract development, allowing developers to build powerful decentralized applications (dApps) that can operate autonomously on the blockchain."
+      },
+      {
+        "img": null,
+        "title": "NFT and DeFi Capabilities",
+        "desc": "The Solana blockchain provides strong support for NFT development and DeFi applications, making it a go-to platform for the growing blockchain-based finance and art sectors."
+      },
+      {
+        "img": null,
+        "title": "Interoperability",
+        "desc": "Solana ensures cross-chain compatibility, allowing tokens and data to flow seamlessly between different blockchains, thereby enhancing the versatility of your token or application."
+      },
+      {
+        "img": null,
+        "title": "Developer-Friendly Environment",
+        "desc": "Solana's easy-to-use tools and developer-friendly environment enable seamless integration, fast deployment, and continuous development of blockchain-based projects."
+      },
+      {
+        "img": null,
+        "title": "Real-Time Consensus Mechanism (PoH)",
+        "desc": "The Proof of History (PoH) consensus protocol allows Solana to achieve fast transaction finality, making it more efficient compared to traditional Proof of Work (PoW) systems."
+      },
+      {
+        "img": null,
+        "title": "Low Latency",
+        "desc": "Solana minimizes transaction confirmation delays, providing a real-time experience for users interacting with decentralized platforms, tokens, and services."
+      }
+    ]
+  },
+  "Platforms": {
+    "heading": "Why Solana Stands Out Among Blockchain Platforms",
+    "description": "",
+    "items": [
+      {
+      "num": "1",
+      "title": "Lightning-Fast Transaction Speed",
+      "decs": "Solana’s Proof of History (PoH) consensus mechanism allows it to handle 65,000 transactions per second (TPS), a performance that far exceeds that of Ethereum and other popular blockchain platforms. This fast transaction speed makes Solana an ideal choice for high-performance applications, including DeFi, NFTs, and token development.",
+      "points": [
+        "High throughput and quick finality",
+        "Ideal for decentralized applications (dApps) requiring fast transactions"
+      ]
     },
     {
-      "title": "Team Extension Model",
-      "decs": "Scale your in-house capabilities with our Team Extension Model. Hire expert Solana blockchain developers to complement your existing team and speed up project delivery. Whether you need assistance with SPL token development, smart contracts, or NFT marketplace integration, this flexible model ensures seamless collaboration with your team."
+      "num": "2",
+      "title": "Low Transaction Fees",
+      "decs": "One of the standout features of Solana is its extremely low transaction fees, which are as low as $0.00025 per transaction. This cost-effectiveness is ideal for businesses and developers looking to build scalable solutions without breaking the bank on network fees.",
+      "points": [
+        "Affordable for token transfers, DeFi protocols, and NFT transactions",
+        "Allows for microtransactions and small-scale operations"
+      ]
     },
     {
-      "title": "Dedicated Development Team",
-      "decs": "Leverage a Dedicated Solana Development Team exclusively working on your Solana token development projects. This model offers maximum control, transparency, and scalability. Ideal for long-term Web3 initiatives, our dedicated teams provide full-cycle services, including Solana dApp development, token deployment, and post-launch support."
-    }
+      "num": "3",
+      "title": "Highly Scalable Infrastructure",
+      "decs": "Solana offers unparalleled scalability, allowing it to support high volumes of transactions without sacrificing speed or decentralization. Solana’s shard-based architecture and Turbine protocol ensure that the platform can handle increased demand as the number of transactions grows.",
+      "points": [
+        "No bottlenecks, even with high-volume decentralized applications",
+        "Flexible architecture for future scalability"
+      ]
+    },
+    {
+      "num": "4",
+      "title": "Decentralization and Security",
+      "decs": "Solana provides high security while maintaining a decentralized structure, thanks to its Proof of Stake (PoS) and Proof of History (PoH) consensus models. This combination of PoS and PoH ensures the platform is both secure and efficient.",
+      "points": [
+        "Trustless and resilient network",
+        "Secure transactions for users and developers",
+        "Ensures long-term stability and security for blockchain applications"
+      ]
+    }],
+    "buttonText": "Explore More",
+    "buttonLink": "/contact-us"
+  },
+
+  "InfoSection1": {
+    "heading": "Strategies for Successful Solana Token Development",
+    "description1": "Building a successful token on Solana requires more than just technical execution — it demands a well-structured strategy that aligns with blockchain best practices, market demands, and long-term scalability. From tokenomics design to deployment and post-launch support, each step plays a critical role in ensuring your Solana token's success.",
+    "description2": "",
+    "description3": "",
+    "dec": "",
+    "points": [
+        "Define Clear Use Cases and Utility",
+            "Design Robust Tokenomics",
+            "Choose the Right Token Standard (SPL Token)",
+            "Implement Secure Smart Contracts",
+            "Ensure Scalability and Performance",
+            "Integrate Wallet & Exchange Compatibility",
+            "Launch with a Strategic Marketing Plan"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/strategies-for-solana-token-development-projects.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "right"
+  },
+
+    "InfoSection2": {
+    "heading": "Solana Token Development Solutions",
+    "description1": "Comfygen offers comprehensive Solana token development solutions tailored to your project’s unique goals. From creating custom SPL tokens to integrating them with DeFi platforms, NFT marketplaces, and dApps, we ensure high-performance, secure, and scalable solutions powered by Solana’s ultra-fast and low-cost blockchain infrastructure.",
+    "description2": "Accelerate your blockchain journey with our full-suite Solana token development services. Whether you're building a new decentralized finance (DeFi) protocol, launching a utility or governance token, or developing a cross-chain asset, our Solana experts deliver robust, future-ready solutions with seamless smart contract deployment and ecosystem compatibility.",
+    "description3": "",
+    "dec": "",
+    "points": [
+         "Custom SPL Token Development",
+            "Smart Contract Creation & Audit",
+            "Solana Wallet Integration (e.g., Phantom, Solflare)",
+            "Token Launch and Distribution Strategy",
+            "DEX & CEX Listing Support",
+            "Token Migration & Wrapping Solutions",
+            "NFT & Metaverse Token Integration",
+            "Solana Bridge & Cross-Chain Integration"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/solana-token-development-solutions.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "left"
+  },
+
+      "InfoSection3": {
+    "heading": "Best-in-Class Whitelabel Solana Token Services for Web3",
+    "description1": "Accelerate your Web3 journey with our Whitelabel Solana token development services, designed for rapid deployment and seamless scalability. Whether you aim to launch SPL tokens, NFTs, or DeFi tokens, our ready-to-launch solutions help you go live faster without compromising on quality, security, or customization.",
+    "description2": "As a trusted Solana token development company, we provide robust Solana development solutions tailored to your branding and business goals. Our Whitelabel token services support enterprises and startups in launching scalable, secure, and efficient Web3 products on the Solana blockchain.",
+    "description3": "",
+    "dec": "",
+    "points": [
+           "Fully customizable SPL token development",
+            "Pre-audited smart contracts for enhanced security",
+            "Rapid token deployment with minimal time-to-market",
+            "Compatibility with Solana wallets and dApps",
+            "Token listing support on Solana-based DEXs",
+            "Scalable infrastructure for DeFi and NFT projects",
+            "Governance and utility token integration"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/best-in-class-whitelabel-solana-token-solutions-for-web3.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "Right"
+  },
+
+    "Invest": {
+    "heading": "Why Should You Invest in Solana Token Development?",
+    "description": "Solana token development offers a strategic advantage for businesses and blockchain startups looking to launch scalable, efficient, and future-ready crypto tokens. With lightning-fast transactions, minimal fees, and growing adoption in the DeFi and NFT sectors, Solana is an ideal choice for secure and high-performing token creation.",
+    "items": [
+  {
+    "num": "01",
+    "title": "Unmatched Transaction Speed",
+    "decs": "Solana is known for lightning-fast processing, handling up to 65,000 transactions per second (TPS). This makes it ideal for launching high-utility tokens that need real-time execution and scalability."
+  },
+  {
+    "num": "02",
+    "title": "Cost-Effective Token Deployment",
+    "decs": "Unlike Ethereum, Solana offers extremely low gas fees. This ensures affordable token development, transfers, and smart contract executions—especially beneficial for DeFi and gaming platforms."
+
+  },
+  {
+    "num": "03",
+    "title": "Growing Ecosystem & Demand",
+    "decs": "With rising adoption in DeFi, NFTs, Web3, and GameFi, tokens built on Solana enjoy access to a rapidly expanding user base and marketplace integration opportunities."
+
+  },
+  {
+    "num": "04",
+    "title": "Eco-Conscious Blockchain Platform",
+    "decs": "Solana’s hybrid Proof of History and Proof of Stake mechanisms reduce energy consumption, making your token development efforts more sustainable and eco-friendly."
+
+  },
+  {
+    "num": "05",
+    "title": "Enterprise-Ready Architecture",
+    "decs": "Solana’s highly scalable architecture and parallel execution capabilities make it suitable for enterprise-grade solutions, enabling large-scale token utility and mass adoption."
+  },
+  {
+    "num": "06",
+    "title": "Enhanced Security & Transparency",
+    "decs": "Built using Rust and C, Solana supports secure smart contracts, transparent ledger systems, and verifiable token transactions—enhancing trust among token holders."
+
+  }
+  
+  
+  
   ],
-  "Processs": [
+    "buttonText": "Explore More",
+    "buttonLink": "/contact-us"
+  },
+
+    "consultancyData": {
+    "title": "Tech Stack Used for Solana Token Development",
+    "description": "Solana Token development is known for its used Tech Stack. We as a Solana Token development company have quite a good hand on the below mentioned Tech Stack.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+    "proces": [
+    {
+      "title": "Rust programming language",
+      "desc": "If you are wondering how to create solana tokens online, then you must turn towards Rust programming language that offers exceptional safety and high performance for Solana token and smart contract development."
+    },
+    {
+      "title": "DeFi and NFT Ecosystem",
+      "desc": "We also leverage the solana defi app development and NFT ecosystems for defining the design of whitelabel solutions. Our experts also capitalize on innovative solutions in the Solana DeFi app development company and NFT ecosystem to increase visibility of your tokens."
+    },
+    {
+      "title": "Proof of History",
+      "desc": "Proof of History serves as a new and efficient approach for validation of transactions on Solana blockchain development services. It uses a verifiable source of time in the Solana network to improve efficiency and scalability."
+    },
+    {
+      "title": "Sealevel",
+      "desc": "Our experts capitalize on the advantages of Sealevel for creating a Solana token with a hyper-parallelized transaction processing engine. Sealevel serves as the powerful force behind improvements in scalability of Solana."
+    },
+    {
+      "title": "Helix",
+      "desc": "We also facilitate integration with Helix, which allows you to put your newly developed Solana tokens directly in front of your target audience. Our experts offer support for listing your Solana tokens on the exchange."
+    },
+    {
+      "title": "Upgradeable Smart Contracts",
+      "desc": "The flexibility of upgradeable smart contracts in Solana makes the token development process more adaptable and effective. You can add new functionalities to Solana programs and adapt to emerging trends in web3."
+    }
+    ]
+  },
+
+    "ProcessData": {
+    "heading": "Our Process for Solana Token Development Projects",
+    "description": "At our Solana token development company, we follow a streamlined and transparent process to deliver secure, scalable, and customized Solana token development solutions. From ideation to deployment, our expert team ensures your project aligns with your Web3 goals.",
+    "Process": [
     {
       "num": "1",
       "img": "https://www.comfygen.com/img/business-consultation.webp",
@@ -56,40 +423,70 @@
       "title": "Post-Launch Support and Upgrades",
       "description": "Our commitment doesn’t end with the token launch. We offer ongoing support for token maintenance, address emerging challenges, and implement necessary updates to enhance functionality and stay competitive in the dynamic blockchain market."
     }
-  ],
-  "consultancyHead": [
+    ]
+  },
+    "Engagement": {
+    "heading": "Launch Your Custom Solana Token with Flexible Engagement Models",
+    "subheading": "Looking to create a custom Solana token that aligns with your business goals? Our Solana token development services offer tailored solutions, allowing you to hire expert developers through flexible engagement models. Whether you’re a startup, an enterprise, or building a Web3 project, we offer scalable options to suit your budget and timeline. As a leading Solana development company, we ensure transparent collaboration, high-quality deliverables, and end-to-end support—from conceptualization to deployment—empowering you to launch SPL tokens, DeFi assets, or NFTs on the high-speed Solana blockchain.",
+    "tech": [
+    
+    {
+      "img": null,
+      "title": "Project-Based Model",
+      "desc": "Opt for our Project-Based Engagement Model when you have clearly defined Solana token development requirements and timelines. Ideal for startups and enterprises, this model delivers end-to-end solutions for custom Solana token creation, from planning and design to deployment. It’s a cost-effective choice for businesses seeking fixed pricing and predictable outcomes."
+    },
+    {
+      "img": null,
+      "title": "Team Extension Model",
+      "desc": "Scale your in-house capabilities with our Team Extension Model. Hire expert Solana blockchain developers to complement your existing team and speed up project delivery. Whether you need assistance with SPL token development, smart contracts, or NFT marketplace integration, this flexible model ensures seamless collaboration with your team."
+    },
+    {
+      "img": null,
+      "title": "Dedicated Development Team",
+      "desc": "Leverage a Dedicated Solana Development Team exclusively working on your Solana token development projects. This model offers maximum control, transparency, and scalability. Ideal for long-term Web3 initiatives, our dedicated teams provide full-cycle services, including Solana dApp development, token deployment, and post-launch support."
+    }
+    ]
+  },
+
+      "Qa": {
+    "title": "Benefits of Solana Token Development",
+    "description": "Solana token development empowers next-gen blockchain solutions with unmatched speed, scalability, and developer flexibility. Whether you're creating DeFi protocols, gaming assets, or scalable utility tokens, Solana offers an ideal foundation. Backed by a thriving ecosystem and a developer-friendly framework, it helps businesses stay competitive in the evolving Web3 economy.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+    "proces": [
     {
       "num": "1",
-      "title": "Tech Stack Used for Solana Token Development",
-      "desc": "Solana Token development is known for its used Tech Stack. We as a Solana Token development company have quite a good hand on the below mentioned Tech Stack."
+      "title": "Lightning-Fast Transactions",
+      "desc": "Solana’s high throughput architecture allows ultra-fast transaction processing—making it ideal for real-time dApps, exchanges, and token transfers."
+    },
+    {
+      "num": "2",
+      "title": "Elimination of Mempool Bottlenecks",
+      "desc": "Unlike traditional chains, Solana reduces network congestion through parallel transaction execution, enhancing performance and user experience."
+    },
+    {
+      "num": "3",
+      "title": "Simple & Robust Programming Environment",
+      "desc": "Solana supports Rust and C-based development, enabling faster smart contract deployment with fewer vulnerabilities."
+    },
+    {
+      "num": "4",
+      "title": "Expanding Developer Ecosystem",
+      "desc": "With increasing community support, open-source libraries, and toolkits, Solana makes it easy to innovate and scale your project."
+    },
+    {
+      "num": "5",
+      "title": "Scalability Without Compromise",
+      "desc": "Solana’s horizontal scaling ensures consistent performance even under network load—crucial for token adoption and DeFi scalability."
+    },
+    {
+      "num": "6",
+      "title": "Built-In Liquidity Support",
+      "desc": "Tokens built on Solana enjoy easy integration with top Solana-based DEXs, enabling faster listing, trading, and liquidity provisioning."
     }
-  ],
-  "consultancyData": [
-    {
-      "title": "Rust programming language",
-      "desc": "If you are wondering how to create solana tokens online, then you must turn towards Rust programming language that offers exceptional safety and high performance for Solana token and smart contract development."
-    },
-    {
-      "title": "DeFi and NFT Ecosystem",
-      "desc": "We also leverage the solana defi app development and NFT ecosystems for defining the design of whitelabel solutions. Our experts also capitalize on innovative solutions in the Solana DeFi app development company and NFT ecosystem to increase visibility of your tokens."
-    },
-    {
-      "title": "Proof of History",
-      "desc": "Proof of History serves as a new and efficient approach for validation of transactions on Solana blockchain development services. It uses a verifiable source of time in the Solana network to improve efficiency and scalability."
-    },
-    {
-      "title": "Sealevel",
-      "desc": "Our experts capitalize on the advantages of Sealevel for creating a Solana token with a hyper-parallelized transaction processing engine. Sealevel serves as the powerful force behind improvements in scalability of Solana."
-    },
-    {
-      "title": "Helix",
-      "desc": "We also facilitate integration with Helix, which allows you to put your newly developed Solana tokens directly in front of your target audience. Our experts offer support for listing your Solana tokens on the exchange."
-    },
-    {
-      "title": "Upgradeable Smart Contracts",
-      "desc": "The flexibility of upgradeable smart contracts in Solana makes the token development process more adaptable and effective. You can add new functionalities to Solana programs and adapt to emerging trends in web3."
-    }
-  ],
+    ]
+  },
   "pageData": {
     "title": "Why Should You Choose Comfygen for Solana Token Development?",
     "description": "Comfygen is your trusted partner for Solana token development, offering expert solutions designed to leverage the speed, scalability, and security of the Solana blockchain. With a strong track record in blockchain development and an in-depth understanding of the Solana ecosystem, our team ensures the creation of high-performance tokens that meet your business objectives.",
@@ -131,45 +528,42 @@
       }
     ]
   },
-  "Whycomfygen": [
-    {
-      "num": "1",
-      "title": "Lightning-Fast Transactions",
-      "desc": "Solana’s high throughput architecture allows ultra-fast transaction processing—making it ideal for real-time dApps, exchanges, and token transfers."
-    },
-    {
-      "num": "2",
-      "title": "Elimination of Mempool Bottlenecks",
-      "desc": "Unlike traditional chains, Solana reduces network congestion through parallel transaction execution, enhancing performance and user experience."
-    },
-    {
-      "num": "3",
-      "title": "Simple & Robust Programming Environment",
-      "desc": "Solana supports Rust and C-based development, enabling faster smart contract deployment with fewer vulnerabilities."
-    },
-    {
-      "num": "4",
-      "title": "Expanding Developer Ecosystem",
-      "desc": "With increasing community support, open-source libraries, and toolkits, Solana makes it easy to innovate and scale your project."
-    },
-    {
-      "num": "5",
-      "title": "Scalability Without Compromise",
-      "desc": "Solana’s horizontal scaling ensures consistent performance even under network load—crucial for token adoption and DeFi scalability."
-    },
-    {
-      "num": "6",
-      "title": "Built-In Liquidity Support",
-      "desc": "Tokens built on Solana enjoy easy integration with top Solana-based DEXs, enabling faster listing, trading, and liquidity provisioning."
-    }
-  ],
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Benefits of Solana Token Development",
-      "desc": "Solana token development empowers next-gen blockchain solutions with unmatched speed, scalability, and developer flexibility. Whether you're creating DeFi protocols, gaming assets, or scalable utility tokens, Solana offers an ideal foundation. Backed by a thriving ecosystem and a developer-friendly framework, it helps businesses stay competitive in the evolving Web3 economy."
-    }
-  ],
+
+    "HireDeveloper": {
+    "heading": "Hire Our Solana Token Developers for New Web3 Projects",
+    "text": "Unlock the full potential of your Web3 vision with our seasoned Solana token developers. Our dedicated team specializes in crafting secure, scalable, and innovative token solutions on the Solana blockchain. We leverage advanced smart contract development, robust dApp integration, and deep expertise in decentralized finance and NFT ecosystems to transform your ideas into market-ready products. With a focus on transparency, agile processes, and customized strategies, we ensure your project meets the high demands of today's competitive decentralized landscape.",
+    "text1": "Whether you need full-time developers, part-time experts, or a dedicated team for your project, we ensure:",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+     "Extensive experience in Solana blockchain development and token creation",
+          "Comprehensive solutions covering custom token development, smart contracts, and dApp integration",
+          "Scalable, secure, and optimized for DeFi platforms, NFT marketplaces, and more",
+          "Collaborative and transparent development process tailored to your business needs",
+          "Rapid project delivery and agile practices to ensure quick time-to-market"
+    ]
+  },
+
+      "InfoSection4": {
+    "heading": "Do You Have More Questions on Solana Token Development Services?",
+    "description1": "Have additional questions about our Solana token development services? We're here to help! Whether you're curious about our project timelines, security protocols, flexible engagement models, or integration with DeFi and NFT platforms, our experts are ready to provide answers tailored to your needs. Reach out to us or explore our FAQ section for more details.",
+    "description2": "",
+    "description3": "",
+    "dec": "",
+    "points": [
+         "What is the typical timeline for a Solana token development project?",
+            "How do you ensure the security and scalability of smart contracts?",
+            "What flexible engagement models do you offer?",
+            "How can your solutions integrate with existing DeFi and NFT platforms?",
+            "What support and maintenance services are available post-launch?"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/do-you-have-more-questions-on-solana-token-development-services.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "Right"
+  },
   "Frequently": [
     {
       "num": "1",
@@ -217,390 +611,15 @@
       "desc": "Determining the cryptocurrency with the best future in 2025 is subjective and depends on evolving market trends, technological innovation, and regulatory environments. While platforms like Solana and Ethereum continue to innovate with high-performance blockchain solutions, investors and developers should consider overall ecosystem strength, community support, and real-world use cases when assessing long-term potential.."
     }
   ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Our Solana Token Developers for New Web3 Projects",
-      "desc": " Comfygen, the best Solana token development company has skilled token development experts who can help to design high quality secure Solana for any type of businesses. We help to provide ownership to your digital assets and help to tokenize it so that you will be able to increase the liquidity.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "Our experts have an in-depth understanding and practical experience with Solana projects.",
-    "Our team of experts specializes in Solana token creation by investing their efforts in continuous learning and certification.",
-    "Our Solana token development experts help to deliver the project in given TAT.",
-    "Our team of blockchain developers has worked on different types of web3 projects, including smart contracts, dApp, and token development."
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "05",
-      "url": "/blockchain-consulting-services",
-      "img": "https://www.comfygen.com/img/solana-token-blockchain-consulting.webp",
-      "title": "Solana Blockchain Consulting",
-      "decs": "Our Solana blockchain consulting services can help you understand how to build Solana tokens with a strategic roadmap. Our consultants invest their time in finding out your technical and business goals to help you make the most of Solana."
-    },
-    {
-      "num": "06",
-      "url": "/dapp-development-company",
-      "img": "https://www.comfygen.com/img/solana-dApp-development.webp",
-      "title": "Solana dApp Development",
-      "decs": "We offer more than Solana tokenization services with our Solana dApp development services that help you create high-performance dApps on Solana blockchain. Our developers can create Solana dApps for different use cases."
-    },
-    {
-      "num": "07",
-      "url": "/nft-marketplace-development-company",
-      "img": "https://www.comfygen.com/img/solana-nft-marketplace.webp",
-      "title": "Solana NFT Marketplace",
-      "decs": "Our Solana token development experts also specialize in Solana NFT marketplace development for different industries. We support our clients through all stages, from minting NFTs to providing multi-token support on the marketplace."
-    },
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/spl-token-development.webp",
-      "title": "SPL Token Development",
-      "decs": "We offer cutting-edge technology and expertise for Solana token development to all our clients. Our experts create SPL or Solana Program Library tokens that you can exchange effortlessly on different decentralized exchanges."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/spl-token-design.webp",
-      "title": "SPL Token Design",
-      "decs": "Our experience in how to build Solana tokens to reach the target audience has helped us specialize in SPL token design services. You can trust us to design the name, symbol, and other traits, including distribution strategies and supply."
-    },
-    {
-      "num": "08",
-      "url": "/crypto-wallet-development",
-      "img": "https://www.comfygen.com/img/solana-wallet-development.webp",
-      "title": "Solana Wallet Development",
-      "decs": "We add more value to our Solana token development services with expertise in creating Solana wallet apps. You can utilize Solana wallets to access a broad range of digital assets and currencies with innovative features to offer a seamless experience."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/solana-token-swap.webp",
-      "title": "Solana Token Swap",
-      "decs": "As an emerging Solana token development service provider, we also help you add AMM curves that can help end-users exchange your Solana token with token pairings. Our Solana token swap services help you develop new token swap pools."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/solana-token-lending.webp",
-      "title": "Solana Token Lending",
-      "decs": "We also provide services for developing Solana token lending protocols tailored to your business requirements. Create your own lending protocol and dive into the world of DeFi by allowing investors to lend and borrow tokens through decentralized platforms."
-    },
-    {
-      "num": "09",
-      "url": "/smart-contract-development",
-      "img": "https://www.comfygen.com/img/solana-smart-contracts.webp",
-      "title": "Solana Smart Contracts",
-      "decs": "Apart from expertise in Solana token development, we also deliver the value advantages of creating smart contracts on Solana. Our experts can help you create smart contracts on Solana to leverage the benefits of faster transaction speed and security."
-    }
-  ],
-  "customSliderData": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
-      "title": "NFT Marketplaces",
-      "description": "Empower creators and collectors with feature-rich NFT marketplaces powered by Solana blockchain development. Our solutions ensure fast transactions, lower minting fees, and seamless integration of SPL tokens for buying, selling, and trading digital assets."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Gaming",
-      "description": "Enhance in-game economies with Solana token creation for virtual assets, rewards, and NFTs. Our Solana development services help gaming companies and metaverse projects build immersive experiences with scalable token ecosystems and decentralized marketplaces."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare",
-      "description": "Secure patient data and enable transparent healthcare transactions using Solana blockchain solutions. We develop custom tokens for healthcare platforms that ensure fast, reliable, and secure data sharing, facilitating a trustless healthcare environment."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Supply Chain & Logistics",
-      "description": "Streamline operations and ensure transparency in supply chains with Solana-powered tokens. Our Solana token development services help businesses track goods in real time, validate authenticity, and enable token-based transactions for enhanced accountability."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "Real Estate Tokenization",
-      "description": "Simplify real estate investments with Solana tokenization solutions. Convert property assets into SPL tokens to enable fractional ownership, increase liquidity, and make real estate investments accessible to a global audience."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
-      "title": "E-Commerce",
-      "description": "Boost customer engagement with Solana-based tokens for loyalty rewards and digital vouchers. Our Solana development company delivers solutions that enable secure, scalable reward systems with instant token transfers."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
-      "title": "Entertainment & Media",
-      "description": "Monetize content and facilitate transparent royalty distribution with Solana token development solutions. Our services support content creators with secure, efficient tokenized systems for licensing, payments, and fan engagement."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Banking & Financial Services",
-      "description": "Modernize financial services with Solana blockchain for faster cross-border payments, tokenized assets, and secure transactions. Our Solana token development services provide fintech companies with innovative, scalable blockchain infrastructure."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-for-retail.webp",
-      "title": "Energy & Sustainability Projects",
-      "description": "Enable green energy trading and carbon credit tokenization through Solana blockchain development. Our solutions facilitate transparent, eco-friendly initiatives by leveraging Solana’s energy-efficient Proof-of-Stake consensus."
-    }
-  ],
 
-  "AppProcess": [
-    {
-      "num": "01",
-      "title": "Proof of History",
-      "decs": "Proof of History is the primary feature in Solana blockchain and helps in achieving a higher throughput rate in Solana. It offers a verifiable clock for the Solana network."
-    },
-    {
-      "num": "02",
-      "title": "Tower BFT",
-      "decs": "Tower BFT is a powerful consensus mechanism that uses the synchronized clock to achieve consensus in a process where validators vote on the ledger state."
-    },
-    {
-      "num": "03",
-      "title": "Turbine",
-      "decs": "Solana blockchain introduced the Turbine feature for improving efficiency by converting important data into small fragments that would use less bandwidth."
-    },
-    {
-      "num": "04",
-      "title": "Pipeline",
-      "decs": "The pipeline in Solana is a transaction processing unit that helps streamline the optimization processes and also enhances the block validation time. "
-    },
-    {
-      "num": "05",
-      "title": "Gulf Stream",
-      "decs": "Gulf Stream is another advanced technology that ensures faster transaction processing on Solana with the concept of a mempool for advanced validation."
-    },
-    {
-      "num": "06",
-      "title": "Sealevel",
-      "decs": "Sealevel serves as a parallel smart contract execution environment that ensures horizontal scaling of Solana across SSDs and GPUs to offer cost-efficient transactions."
-    },
-    {
-      "num": "07",
-      "title": "Archivers",
-      "decs": "Archivers in Solana are a network of nods to which data is offloaded from different validators. It leverages a proof-of-replication model, which permits replication of information without hardware requirements."
-    },
-    {
-      "num": "08",
-      "title": "Cloudbreak",
-      "decs": "Cloudbreak is the account database of Solana with horizontal scaling that helps in improving iterations by allowing simultaneous reading and writing of data."
-    },
-    {
-      "num": "09",
-      "title": "Helix",
-      "decs": "Helix is a decentralized exchange on Solana blockchain that helps in spot trading and perpetual markets with minimal fees in highly competitive markets.      "
-    },
-    {
-      "num": "10",
-      "title": "Upgradeable Smart Contracts",
-      "decs": "Solana uses upgradeable smart contracts to offer the flexibility to create dApps and tokens with the scope for change to address identified problems."
-    }
-  ],
-  "WhyChooseComfygen": [
-    {
-      "num": "1",
-      "title": "Lightning-Fast Transaction Speed",
-      "decs": "Solana’s Proof of History (PoH) consensus mechanism allows it to handle 65,000 transactions per second (TPS), a performance that far exceeds that of Ethereum and other popular blockchain platforms. This fast transaction speed makes Solana an ideal choice for high-performance applications, including DeFi, NFTs, and token development.",
-      "points": [
-        "High throughput and quick finality",
-        "Ideal for decentralized applications (dApps) requiring fast transactions"
-      ]
-    },
-    {
-      "num": "2",
-      "title": "Low Transaction Fees",
-      "decs": "One of the standout features of Solana is its extremely low transaction fees, which are as low as $0.00025 per transaction. This cost-effectiveness is ideal for businesses and developers looking to build scalable solutions without breaking the bank on network fees.",
-      "points": [
-        "Affordable for token transfers, DeFi protocols, and NFT transactions",
-        "Allows for microtransactions and small-scale operations"
-      ]
-    },
-    {
-      "num": "3",
-      "title": "Highly Scalable Infrastructure",
-      "decs": "Solana offers unparalleled scalability, allowing it to support high volumes of transactions without sacrificing speed or decentralization. Solana’s shard-based architecture and Turbine protocol ensure that the platform can handle increased demand as the number of transactions grows.",
-      "points": [
-        "No bottlenecks, even with high-volume decentralized applications",
-        "Flexible architecture for future scalability"
-      ]
-    },
-    {
-      "num": "4",
-      "title": "Decentralization and Security",
-      "decs": "Solana provides high security while maintaining a decentralized structure, thanks to its Proof of Stake (PoS) and Proof of History (PoH) consensus models. This combination of PoS and PoH ensures the platform is both secure and efficient.",
-      "points": [
-        "Trustless and resilient network",
-        "Secure transactions for users and developers",
-        "Ensures long-term stability and security for blockchain applications"
-      ]
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "Solana dApp Development",
-      "subtitle": "",
-      "description": "We build scalable and high-performance decentralized applications on the Solana blockchain. Our team specializes in creating user-friendly dApps with fast transaction speeds and low fees, designed for DeFi, NFT, gaming, and other Web3 solutions. From smart contract development to end-to-end dApp deployment, we offer customized solutions tailored to your project’s needs.",
-      "features": [
-        "Custom DeFi, NFT, and Web3 dApps",
-        "Smart Contract Development and Audits",
-        "High-Speed Transaction Support",
-        "Ongoing Maintenance and Updates"
-      ]
-    },
- 
-    {
-      "title": "Solana NFT Marketplace Development",
-      "subtitle": "",
-      "description": "Launch a fast, scalable, and feature-rich Solana NFT marketplace with our expert development services. As a leading Solana development company, we create NFT marketplaces that offer low transaction fees, lightning-fast speeds, and seamless user experiences. Our Solana blockchain developers build custom NFT platforms for digital collectibles, art, gaming assets, music, real estate, and more, ensuring security, scalability, and interoperability across the Web3 ecosystem.",
-      "features": [
-        "Custom NFT Minting & Trading Functionality",
-        "Integrated Solana Wallet Support (Phantom, Solflare, etc.)",
-        "Advanced Smart Contract Development & Security",
-        "Multi-chain Interoperability & Cross-platform Compatibility"
-      ]
-    },
-    {
-      "title": "SPL Token Development",
-      "subtitle": "",
-      "description": "Create and deploy custom tokens on the Solana blockchain with our comprehensive SPL token solutions. We design high-performance digital assets that power decentralized finance (DeFi), NFT projects, and other Web3 applications. Whether you need a utility token, governance token, or asset-backed token, our team ensures secure, scalable, and efficient token creation tailored to your business needs. Our expertise in Solana-based token development guarantees rapid deployment, minimal transaction costs, and compatibility with popular wallets and decentralized platforms.",
-      "features": [
-        "Customized Token Creation for DeFi, NFTs, and Gaming",
-        "Smart Contract Development and Deployment",
-        "Integration with Wallets like Phantom and Solflare",
-        "Comprehensive Security Audits and Compliance Support"
-      ]
-    },
-    {
-      "title": "Solana Wallet Development",
-      "subtitle": "",
-      "description": "Empower your users with secure and intuitive digital wallet solutions tailored for the Solana blockchain ecosystem. As an experienced Web3 development company, we create custom crypto wallets that allow seamless management of SPL tokens, NFTs, and other digital assets. Whether you're building a DeFi platform or launching an NFT marketplace, our tailored wallet solutions ensure fast transactions, multi-layer security, and effortless integration with decentralized applications (dApps). Our skilled blockchain developers design highly scalable wallets that work across mobile, web, and browser extensions, enabling easy asset transfers and interaction with Solana-powered platforms.",
-      "features": [
-        "Multi-asset Support for SPL Tokens, NFTs, and Custom Digital Assets",
-        "Seamless Integration with dApps, DeFi Protocols, and NFT Marketplaces",
-        "Advanced Security: Multi-Signature, Two-Factor & Biometric Authentication",
-        "Cross-Platform Compatibility: Mobile (iOS & Android), Web, and Browser Extensions"
-      ]
-    },
-    {
-      "title": "Solana Token Swap",
-      "subtitle": "",
-      "description": "Facilitate seamless and lightning-fast token exchanges with our advanced Solana token swap solutions. Designed to enhance liquidity and improve the user experience, our decentralized swap platforms support the exchange of SPL tokens and other Solana-based digital assets with minimal fees and near-instant transaction finality. Whether you’re launching a DeFi protocol or integrating a token-swapping feature into your existing Solana dApp, we offer robust and scalable solutions tailored for both startups and enterprises. Our blockchain experts ensure high-performance swapping mechanisms powered by smart contracts for secure and transparent transactions on the Solana network.",
-      "features": [
-        "Instant & Secure Swapping of SPL Tokens and Custom Assets",
-        "Integration with DeFi Platforms, Liquidity Pools, and AMMs",
-        "Minimal Transaction Fees with High-Speed Processing",
-        "User-Friendly Interface for Seamless Token Exchange"
-      ]
-    },
-    {
-      "title": "Solana Token Lending",
-      "subtitle": "",
-      "description": "Unlock new opportunities in decentralized finance (DeFi) with our secure and scalable Solana token lending platforms. We build lending and borrowing protocols on the Solana blockchain that empower users to earn passive income by lending SPL tokens or accessing liquidity without selling their digital assets. Our Solana-based lending solutions offer low transaction costs, lightning-fast processing, and smart contract automation, ensuring secure, transparent, and efficient asset management. Whether you are a DeFi startup or an established financial institution looking to expand into Web3 lending protocols, we deliver customized solutions tailored to your needs.",
-      "features": [
-        "Decentralized Lending & Borrowing of SPL Tokens",
-        "Smart Contract-Powered Automation for Secure Transactions",
-        "Integration with DeFi Liquidity Pools and Yield Farming Protocols",
-        "Low Fees & High-Speed Transactions on the Solana Network"
-      ]
-    },
-    {
-      "title": "Solana Smart Contract Development",
-      "subtitle": "",
-      "description": "Accelerate your Web3 projects with secure, scalable, and high-performance smart contract development on the Solana blockchain. Our expert blockchain developers specialize in creating automated, self-executing contracts that power decentralized applications (dApps), DeFi protocols, NFT platforms, and token ecosystems. By leveraging Solana’s lightning-fast transactions and low gas fees, we design custom smart contract solutions tailored to your business use case. Whether you’re launching a DeFi lending protocol, an NFT marketplace, or a custom token, our Solana smart contracts ensure security, transparency, and efficiency.",
-      "features": [
-        "Custom Smart Contracts for dApps, DeFi, NFTs, and Tokenization",
-        "High-Speed Execution with Minimal Transaction Costs",
-        "Auditable & Secure Code with Smart Contract Testing",
-        "Integration with Solana Ecosystem: Wallets, dApps, and Protocols"
-      ]
-    }
-  ],
-  "Solution": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/healthcare.svg",
-      "title": "Healthcare"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/retail-and-ecommerce.webp",
-      "title": "Banking and Finance"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/logistics.svg",
-      "title": "Real estate"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/eduction.svg",
-      "title": "Insurance"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/social-networking.svg",
-      "title": "Transport and logistics"
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/construction.svg",
-      "title": "Media and entertainment"
-    }
-  ],
-  "CustomSolana": [
-    {
-      "num": "01",
-      "title": "Project-based model",
-      "decs": "You can choose our services for specific projects to create Solana tokens within a specified timeframe."
-    },
-    {
-      "num": "02",
-      "title": "Team extension model",
-      "decs": "We also offer team extension services by supporting your team with talented experts according to your project needs."
-    },
-    {
-      "num": "03",
-      "title": "Dedicated development team",
-      "decs": "We can serve you with a dedicated in-house development team for creating Solana tokens, dApps, and smart contracts."
-    }
-  ],
-  "Why": {
-    "title": "Why Should You Choose Comfygen for Solana Token Development?",
-    "decs": "As a leading Solana Token Development company, We provide the best service and help to create crypto tokens with your ownership. You will have complete ownership of your digital assets which helps to increase the liquidity. Our developers will develop as per your requirement at an affordable price and even within your given TAT."
-  },
-  "Choose": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/pioneers-in-blockchain.webp",
-      "title": "Pioneers in blockchain",
-      "decs": "As industry pioneers in blockchain technology, we leverage our extensive experience to serve our clients with the best results."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/security-centric-development.webp",
-      "title": "Security-centric development",
-      "decs": "We follow a security-first approach by following the best practices for safeguarding your Solana tokens with secure coding and audits."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/excellence-in-customization.webp",
-      "title": "Excellence in customization",
-      "decs": "Our experts know how to build Solana tokens according to your unique vision and goals by using the power of two-way communication in the best way possible."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/competitive-pricing.webp",
-      "title": "Competitive Pricing",
-      "decs": "Our competitive and affordable pricing structures ensure that our services are accessible to everyone and deliver promising value on your investments."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/end-to-end-services.webp",
-      "title": "End-to-end services",
-      "decs": "Clients can rely on us for the complete array of Solana token development services, from the ideation stage to deployment and marketing. "
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/responsive-support.webp",
-      "title": "Responsive support",
-      "decs": "Our experts are always available to offer support to our clients to ensure optimal and effective performance of their Solana tokens and other blockchain solutions."
-    }
-  ]
+    "CallToAction": {
+    "heading": "Let’s hear what you have to say?",
+    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  }
+
+
 }

@@ -1,8 +1,11 @@
+import React from "react";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 
-const InfoSection = ({InfoSectionData}:any) => {
+
+
+const InfoSection = ({InfoSectionData}) => {
   return (
     <section className="bg-white lg:py-16 py-10">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -34,7 +37,7 @@ const InfoSection = ({InfoSectionData}:any) => {
                         </li>
                       ))}
                     </ul>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description4}</p>
+                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.dec}</p>
                   </div>
                 </div>
 
@@ -72,7 +75,7 @@ const InfoSection = ({InfoSectionData}:any) => {
                         </li>
                       ))}
                     </ul>
-                    <p className="md:text-base text-sm text-black">{InfoSectionData?.description4}</p>
+                    <p className="md:text-base text-sm text-black">{InfoSectionData?.dec}</p>
                   </div>
                 </div>
 
@@ -106,3 +109,7 @@ InfoSection.defaultProps = {
 };
 
 export default InfoSection;
+
+
+
+
