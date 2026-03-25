@@ -336,7 +336,7 @@ export const Blockchain = [
   },
   {
     num: "8",
-    name: "Ice Cream Delivery Aapp Development",
+    name: "Ice Cream Delivery App Development",
     url: "/ice-cream-delivery-app-development",
   },
   {

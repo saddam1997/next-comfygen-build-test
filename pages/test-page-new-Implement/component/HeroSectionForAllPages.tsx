@@ -1,12 +1,14 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import style from "../Button/button.module.css";
-import HeadingOne from "../../ui/HeadingOne";
-import ParagraphText from "../../ui/ParagraphText";
+import style from "./Button/button.module.css";
+import HeadingOne from "../../../components/ui/HeadingOne";
+import ParagraphText from "../../../components/ui/ParagraphText";
+import ContactFrom from "../../../components/Newcomponet/comman/ContactFrom";
 
-const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
-  ssr: false,
-});
+
+// const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
+//   ssr: false,
+// });
 
 export default function HeroSectionForAllPages(props: any) {
   const imageAlt = props?.altTag || props?.heading || "Hero background image";
@@ -34,7 +36,6 @@ export default function HeroSectionForAllPages(props: any) {
           src={props.bgImage}
           alt={imageAlt}
           fill
-         
           fetchPriority="high"
           quality={60}
           className="object-cover object-center hidden lg:block"

@@ -21,7 +21,7 @@ export default function HeroSection({ herosection }: any) {
           src={herosection.bgImage}
           alt={imageAlt}
           fill
-          priority
+          
           fetchPriority="high"
           sizes="(max-width:1024px) 100vw, 1320px"
           quality={75}
@@ -58,8 +58,13 @@ export default function HeroSection({ herosection }: any) {
           {/* Description */}
           <ParagraphText color={"white"} text={herosection.ptag} />
 
+
+
           {herosection.ptag1 && (
             <ParagraphText color={"white"} text={herosection.ptag1} />
+          )}
+          {herosection.ptag2 && (
+            <ParagraphText color={"white"} text={herosection.ptag2} />
           )}
 
           {herosection.ptag3 && (
