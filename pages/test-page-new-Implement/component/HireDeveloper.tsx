@@ -1,0 +1,104 @@
+import React from "react";
+import Link from "next/link";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import LazyLoad from "react-lazy-load";
+import Image from "next/image";
+import HeadingTwo from "../../../components/ui/HeadingTwo";
+
+
+const HireDeveloper = ({
+  heading = "",
+  text = "",
+  text1 = "",
+  text2 = "",
+  buttonText = "Get Started",
+  buttonLink = "#",
+  imageSrc = "",
+  imageAlt = "Call to Action",
+  listItems = [],
+  listheading = "",
+}) => {
+  return (
+    <section className="lg:py-16 py-10 bg-[#fff]">
+      <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#17162B] rounded-[24px]">
+        <div className="lg:px-14 px-8 lg:flex gap-8">
+          <div className="lg:w-[60%] w-full lg:py-16 py-6">
+            <div className="space-y-4">
+
+               <HeadingTwo color={"white"} text={heading} />
+              
+              <div className="space-y-2">
+                <p
+                  className="text-base text-white"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+
+                {
+                  text1 && (
+                    <p
+                      className="text-base text-white"
+                      dangerouslySetInnerHTML={{ __html: text1 }}
+                    />
+                  )
+                }
+
+                {
+                  text2 && (
+                    <p
+                      className="text-base text-white"
+                      dangerouslySetInnerHTML={{ __html: text2 }}
+                    />
+                  )
+                }
+
+
+
+              </div>
+
+              <div className="text-semibold text- text-white">
+                <p dangerouslySetInnerHTML={{ __html: listheading }} />
+              </div>
+
+              {listItems.length > 0 && (
+                <ul className="mt-5 space-y-2">
+                  {listItems.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-start  gap-2 text-white"
+                    >
+                      <div className="w-3 h-3 border border-white rounded-full flex-shrink-0 mt-1"></div>
+                      <p dangerouslySetInnerHTML={{ __html: item }} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+            <div className="mt-8">
+              <Link href={buttonLink} passHref>
+                <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                  {buttonText} <MdOutlineArrowOutward />
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="lg:w-[40%] w-full mx-auto flex justify-center items-end lg:mt-0 mt-5">
+            {imageSrc ? (
+              <Image
+                className="w-full hidden sm:block"
+                src={imageSrc}
+                alt={imageAlt}
+                width={907}
+                height={762}
+                quality={85}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
+              />
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HireDeveloper;

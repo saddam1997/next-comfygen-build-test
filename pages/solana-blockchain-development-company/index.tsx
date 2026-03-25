@@ -1,171 +1,96 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/solanatoken.json";
 
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+import BusinessSolustion from "../../components/BusinessSolustion"
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import Emerging from "../../components/Emerging";
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-
-
-import {  IconChartPie,  IconSettings, IconShieldCheck, } from '@tabler/icons-react';
-import { IconCashBanknote, IconTools, IconChartBar } from '@tabler/icons-react';
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 
 
 
 
-const Process = [
-  {
-    title: "Workshop discovery",
-    description: "In this process, we will understand your business pain points and goals. After that, our experts will be do multiple brainstorming sessions to prepare a solana blockchain development solution roadmap and future goals."
-  },
-
-  {
-    title: "Designing proper strategy and solution",
-    description: "After gathering requirements, we design a custom strategy, including designing, prototyping, testing, and deploying Solana blockchain applications. AI is leveraged to enhance predictive analysis, workflow automation, and smarter solution planning."
-  },
-  {
-    title: "Solana Blockchain Development phase",
-    description: "Once you approve the design, we will implement the solana blockchain development phase by implementing different programming and coding phase. monitoring each phase for necessary improvements."
-  },
-  {
-    title: " Testing, QA, and AI Validation",
-    description: "We perform in-depth QA testing and validation. AI tools assist in real-time error detection, fraud prevention, and performance optimization, ensuring a market-ready, secure product."
-  },
-  {
-    title: "Launch and Maintenance",
-    description: "Your product will go live after the validation stage. Our experts will publish in live environments and handle all hosting things. Overall, we will take care of launching in different environments."
-  },
-  {
-    title: "After-sales Customer Support",
-    description: "We provide after-live support, ensuring continuous improvement and platform maintenance. We also provide real-time fix support. We also provide real-time fix support. Our team will be available 24/7 to offer technical support."
-  },
-
-  {
-    title: "Continuous Performance Monitoring, Optimization & AI Insights",
-    description: "To ensure longevity and efficiency, we continuously monitor performance. AI-driven analytics and optimization algorithms help maintain scalability, detect anomalies, and adapt the platform to evolving business goals and market trends."
-  },
-
-];
-const technologyData = [
-  {
-    img: <IconCashBanknote stroke={1.5} className="w-12 h-12" />,
-    title: "Lowered Application Fees",
-    desc: "Solana blockchain already has millions of users on its development platform, for which it charges a very low maintenance fee. Thus, widespread adoption is guaranteed! We assure cost-effective development solutions."
-  },
-  {
-    img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-    title: "Seamless Capabilities for Processing Transactions",
-    desc: "Solana blockchain can process nearly 50,000 transactions every second at low transaction fees, ensuring efficiency and affordability. This enables flexibility in processing several transactions simultaneously."
-  },
-  {
-    img: <IconTools stroke={1.5} className="w-12 h-12" />,
-    title: "AI-Powered Blockchain Optimization",
-    desc: "Integrating AI with the Solana blockchain, we enhance smart contract efficiency, automate workflows, detect fraudulent activity, and provide predictive analytics, ensuring intelligent, secure, and optimized blockchain solutions."
-  },
-  {
-    img: <IconChartPie stroke={1.5} className="w-12 h-12" />,
-    title: "Higher Scalability",
-    desc: "Solana blockchain leverages Proof of History (PoH), making it a high-performance, scalable platform. Its modular architecture boosts scalability and supports developers in building and deploying applications."
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Advanced Security",
-    desc: "Solana enhances security proficiency with the Proof of History (PoH) consensus algorithm. This ensures that dApps development services operate with resistance and integrity, following top security standards."
-  },
-  {
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    title: "Immense Customizations",
-    desc: "Our experts offer bespoke customizations using Solana blockchain development services to create smart contracts, dApps, and more. We tailor solutions to meet client-specific requirements with advanced custom tactics."
-  }
-];
 
 
 
 
 
-export default function Ecommerce(props:any) {
+
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  let {
-    ChooseComfy,
-  } = JSON_DATA;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
- 
+
+
+
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -317,7 +242,7 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-     Best Solana Blockchain Development Company| Comfygen
+          Best Solana Blockchain Development Company| Comfygen
 
         </title>
         <meta
@@ -418,161 +343,25 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      {/* <BlockChainHeader /> */}
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Security} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <IndustryGrid />
+      <Solution techData={JSON_DATA.Engagement} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-        <HeroSectionForAllPages
-          heading="Best Solana Blockchain Development Company"
-          ptag="Comfygen is the best Solana blockchain development company, specializing in providing blockchain app development solutions for businesses worldwide. We leverage Solana's high-speed, low-cost infrastructure to deliver scalable, secure, and innovative blockchain applications designed according to your business requirements. With proven expertise in Solana blockchain development, we help organizations take advantage of the fastest blockchain networks. Our team has experienced blockchain developers that combines technical expertise with industry best practices to create ana blockchain solutions that drive real business value."
-          ptag1=""
-          li="Expert Solana DApp Development"
-          li1="NFT & Token Solutions"
-          li2="DeFi Platforms & Crypto Wallet Development"
-          li3="AI-Powered Blockchain Optimization"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/solana-blockchain-development-hero-img.webp"
-        />
-
-        <Milestones/>
-
-         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Solana Blockchain Development Services
-              </h2>
-              <p className="text-base text-center font-normal">We at Comfygen, a reputed Solana Blockchain development company provide the below services to businesses of different sizes from various industries.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-        <AboutSection
-          title="About Company"
-          heading="AI-Powered Blockchain Solutions on Solana"
-          description1="Comfygen Technologies combines the power of AI and Solana blockchain development to deliver intelligent, automated, and secure AI Solana blockchain development solutions for businesses. Our AI-enhanced services ensure that your decentralized applications, NFT platforms, and <a class='text-blue-500 font-normal' href='https://www.comfygen.com/ecommerce/grocery' > DeFi development</a>  solutions perform optimally while reducing risks and maximizing efficiency. Key offerings include"
-          description2=""
-          points={[
-            "AI-Powered Smart Contract Optimization",
-            "Predictive Analytics for DeFi Platforms",
-            "Automated NFT Pricing & Marketplace Insights",
-            "Fraud Detection & Enhanced Security",
-          ]}
-          imageSrc="https://www.comfygen.com/gallery/about-images/solana-blockchain-development-company-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-       
-
-        <SolutionSec
-          heading="Why Are Businesses Adopting Solana Blockchain Development Solutions?"
-          subheading="Solana Blockchain Development Solution is an out-of-the-box platform that offers the best Solana blockchain development features for businesses to scale and grow efficiently. With the integration of AI-powered Solana Blockchain Development solutions, companies can leverage predictive analytics, automated smart contracts, and intelligent workflow optimization, ensuring faster, secure, and highly scalable blockchain applications."
-          techData={technologyData}
-        />
-
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Solana Blockchain Development Process</h2>
-              <p className="text-base font-normal mt-2">At Comfygen, we follow a well-structured execution process to ensure the successful delivery of Solana blockchain development solutions. Here’s an overview of our step-by-step approach:</p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Portfolio of Successful Mobile App Projects"
-            description="Showcasing innovative, user-focused apps crafted with precision and creativity, each project reflects our dedication to excellence and client satisfaction."
-          />
-        </section>
-
-        <IndustriesServe
-          heading="Industries We Serve As an AI-Powered Solana Blockchain Development Company"
-          description="We provide innovative and tailored Solana blockchain development solutions across diverse industries, helping businesses thrive with cutting-edge technology and seamless integrations."
-          sliderData={JSON_DATA.customSliderData}
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Engagement Models for Solana Blockchain Development
-                </h2>
-                <p>We as a leading Solana development company have a experience resources who can handles all your project at ease. Our experts will help you and support you throughout the development process, making the product's launch smooth.</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {ChooseComfy.map((elem) => {
-                  const { img, tittle, decs } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
-                      <h3 className="text-2xl text-[#212121] font-semibold">{tittle}</h3>
-                      <p className=" text-base font-normal mt-2">
-                        {decs}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-
-        <TechStack
-          title="Technology Stack We Use for Solana Blockchain Development"
-          description="At Comfygen Technologies, we leverage a cutting-edge technology stack to deliver high-performance Solana blockchain solutions, integrating AI for smarter and more efficient applications."
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Solana Blockchain Developers"
-          text="Comfygen, the Best Solana Blockchain Development company. Our Blockchain developers are ready to take up both start-up and established business projects associated with Solana blockchain development solutions."
-          text1="So why wait? Connect with our Solana blockchain developers today!"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Developers are skilled and experienced",
-            "Every developer, tester, or project manager has various certification programs.",
-            "Available to attend to the queries or questions of clients"
-          ]}
-        />
-
-        <ClientStories/>
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }
@@ -581,7 +370,7 @@ export default function Ecommerce(props:any) {
 
 
 
- 
+
 
 
 

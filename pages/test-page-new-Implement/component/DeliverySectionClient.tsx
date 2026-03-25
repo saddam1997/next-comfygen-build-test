@@ -3,9 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import HeadingTwo from "../../ui/HeadingTwo";
+import HeadingTwo from "../../../components/ui/HeadingTwo";
 
-const DeliverySectionClient = ({ title, description, apps }: any) => {
+
+const DeliverySectionClient = ({ title, description, apps = [] }: any) => {
 
   const [visibleCount, setVisibleCount] = useState(8);
 
@@ -13,8 +14,8 @@ const DeliverySectionClient = ({ title, description, apps }: any) => {
     setVisibleCount(prev => prev + 8);
   };
 
-  const hasMore = visibleCount < apps.length;
-
+  const hasMore = visibleCount < (apps?.length || 0);
+ if (!apps.length) return null; // 🔥 SSR safety
   return (
     <section className="bg-gradient-to-br mb-10 mt-10 from-slate-50 to-gray-100 lg:py-20 py-12 relative overflow-hidden">
 

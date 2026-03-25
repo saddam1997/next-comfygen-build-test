@@ -393,8 +393,8 @@ export default function Ecommerce(props: any) {
 
         <div className="py-8">
           <Features
-            heading="We Develop Food Delivery Apps With Advanced Panel Features"
-            description=" At Comfygen Technologies, we design powerful food delivery app solutions with smart panel integrations to make sure a smooth experience for customers, restaurants, drivers, and administrators. Our restaurant apps simplify food ordering, improve delivery efficiency, and provide complete control for business owners — all within one robust platform."
+            heading="We Develop Feature-Rich Panels for User and Admin Management"
+            description=" At the core of every successful crypto derivatives exchange is a robust management system. We build powerful, user-friendly panels that empower both traders and administrators to efficiently navigate the platform. Our panels are designed to enhance usability, improve control, and boost overall platform performance."
             featuresData={JSON_DATA.featuresData}
             grid={2} />
         </div>
