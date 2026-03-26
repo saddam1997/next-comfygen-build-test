@@ -12,7 +12,7 @@ export default function HeroSection({ herosection }: any) {
       className="
       relative flex items-center overflow-hidden
       bg-[#5951cd]
-      min-h-[640px] sm:min-h-[680px] lg:min-h-[720px]
+      min-h-[640px] sm:min-h-[680px] lg:min-h-[720px] py-4
       "
     >
       {/* Background Image */}

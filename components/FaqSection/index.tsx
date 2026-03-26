@@ -87,9 +87,9 @@ export default function FaqSection({
                       : "bg-white text-[#212121]"
                       }`}
                   >
-                    <span className="text-sm md:text-lg font-semibold">
+                    <h3 className="text-sm md:text-lg font-semibold">
                       {item.title}
-                    </span>
+                    </h3>
 
                     {/* Icon */}
                     <span
@@ -109,9 +109,9 @@ export default function FaqSection({
                   >
                     <div className="space-y-3 text-sm md:text-base text-gray-800">
                       {item.desc && (
-                        <div>
+                        <p>
                           {parseHTMLString(item.desc)}
-                        </div>
+                        </p>
                       )}
 
                       {item.decs && <p>{item.decs}</p>}

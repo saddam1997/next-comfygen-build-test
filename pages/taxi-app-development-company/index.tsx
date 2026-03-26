@@ -15,12 +15,14 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
-import AppcardSlider from "../../components/AppcardSlider"
+import AppClone from "../../components/AppClone"
+
+import FeaturesNewSection from "../../components/FeaturesNewSection"
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
-import Features from "../../components/Features"
+
 
 import ComparisonSection from "../../components/ComparisonSection"
 
@@ -70,128 +72,17 @@ const BlogSection = dynamic(
 );
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
-
-  
-
-
-
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Mobile App Development",
-          item: "https://www.comfygen.com/mobile-app-development",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Taxi App Development Company",
-          item: "https://www.comfygen.com/taxi-app-development-company",
-        },
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Can I customize my Taxi Booking Application Development Services?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, Comfygen offers fully customizable cab booking app development services. Tailor features, design, and functionalities like branding, real-time tracking, and payment gateways to meet your business needs seamlessly.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much does it cost to build a taxi booking app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Taxi booking app development costs range from $5,000 for a simple app up to $40,000 for complex solutions, depending on the platform, features, app complexity, custom designs, and client needs.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Will Comfygen sign an NDA for the project?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we sign a Non-Disclosure Agreement (NDA) for our clients; so that they feel satisfied and have trust in us for their projects. We ensure the security, confidentiality, and privacy of the project. This NDA is a security, which cannot be breached by our company or experts at all.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Will Comfygen deploy the Uber-like app development solution?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, Comfygen can deploy Uber-like app development solutions customized to your specific requirements. They specialize in creating feature-rich, scalable, and customizable taxi-booking apps.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How long does it take to develop a taxi booking app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The development timeline varies based on the complexity and features of the app. On average, it can take 2-6 months. We provide detailed project timelines after understanding your needs.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What platforms do you develop taxi apps for?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "We develop taxi apps for Android, iOS, and cross-platform solutions, ensuring compatibility across devices.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is the taxi app scalable for future growth?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we build scalable taxi apps that can handle increasing user demands and allow easy integration of new features as your business grows.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can the app support multiple languages and currencies?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we can integrate multiple languages and currency support to make your app accessible to a global audience.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can the app be customized for specific business needs?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Absolutely! Our taxi app solutions are fully customizable to meet your specific requirements, including unique features, branding, and functionality.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Trusted Taxi App Development Company | Taxi App Development Experts</title>
+        <title>Taxi App Development Company | Comfygen Technologies</title>
         <meta
           name="description"
-          content="Trusted taxi app development company to create custom ride-hailing apps with GPS tracking, in-app payments, driver management, and scalable architecture for your business."
+          content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers."
         />
         <link
           rel="canonical"
@@ -213,8 +104,8 @@ export default function Ecommerce(props) {
         />
         {/* <!-- ================= OPEN GRAPH ================= --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Taxi App Development Company | Comfygen" />
-        <meta property="og:description" content="Build scalable taxi booking and ride-hailing apps with Comfygen. We develop secure, feature-rich, and user-friendly taxi solutions for startups and enterprises." />
+        <meta property="og:title" content="Taxi App Development Company | Comfygen Technologies" />
+        <meta property="og:description" content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers." />
         <meta property="og:url" content="https://www.comfygen.com/taxi-app-development-company" />
         <meta property="og:site_name" content="Comfygen Technologies" />
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"></meta>
@@ -222,8 +113,8 @@ export default function Ecommerce(props) {
 
         {/* <!-- ================= TWITT/ER CARD ================= --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Taxi App Development Company | Comfygen" />
-        <meta name="twitter:description" content="Launch scalable taxi booking and ride-hailing apps with Comfygen. Secure, feature-rich, and enterprise-ready taxi app development solutions." />
+        <meta name="twitter:title" content="Taxi App Development Company | Comfygen Technologies" />
+        <meta name="twitter:description" content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
@@ -239,8 +130,9 @@ export default function Ecommerce(props) {
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <AppcardSlider SliderDATA={JSON_DATA.Industries} />
-      <Features featuresData={JSON_DATA.featuresData} />
+      <AppClone SliderDATA={JSON_DATA.Industries}/>
+     <FeaturesNewSection FData={JSON_DATA.FData}/>
+     
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CardFeatures featuresData={JSON_DATA.featuresCardData} />
       <ComparisonSection data={JSON_DATA.BookingComparison} />
