@@ -1,176 +1,80 @@
-import React, { useState } from "react";
-import Image from "next/image";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rummy.json";
-import { IconAdjustmentsStar, IconBubbleText, IconClock, IconDeviceGamepad2, IconLock, IconMoneybag, IconShare, IconShieldCheck, IconTrophy, IconUserCircle } from '@tabler/icons-react';
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { ssr: true }
-);
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import InformationSection from "../../components/InformationSection"
+import BusinessSolustion from "../../components/BusinessSolustion"
 
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  { ssr: true }
-);
+import TechnologiesCard from "../../components/TechnologiesCard"
 
-const InfoSectionRight = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSectionRight"),
-  { ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { ssr: true }
-);
+import Emerging from "../../components/Emerging";
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { ssr: true }
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
-export default function rummy(props:any) {
+export default function rummy(props: any) {
   let { initialData } = props;
-  let {
-    myList,
-    Hire,
-    myList3,
-    myList4,
-    Frequently,
-    GameCardData,
-  } = JSON_DATA;
-
-
-
-  const Processs = [
-    {
-      title: "Planning",
-      description: "The foremost thing our rummy game application developers do is research and market analysis. With the deep knowledge and evaluation of market standards; the developers will be able to create one best application suited to current competitions. Also, this research and analysis will improve the application's process and creativity level though."
-    },
-    {
-      title: "Concept Art and Asset Production",
-      description: "The expert game app developers will craft the art and sketches the design of game applications according to the requirements. The asset production team will gather a team of animators, artists, designers and others to create a super-attractive application with 2D, 3D or high-quality effects."
-    },
-    {
-      title: "Development",
-      description: "Our engineers are at the forefront of innovation, utilizing the latest advancements and technologies to create a dynamic rummy game app. From conceptualization to implementation, the development phase focuses on building a secure, scalable, and feature-rich application. We aim to deliver an intuitive user interface and smooth gameplay experience while ensuring that the app can handle a vast audience."
-    },
-    {
-      title: "Testing",
-      description: "The testing phase is integral to ensuring the app’s quality and performance. Through rigorous quality assurance, we assess the app’s functionality, usability, and security. Our testing process involves identifying bugs, optimizing user interactions, and ensuring compatibility across multiple devices. By prioritizing a flawless user experience, we ensure that the app is ready for launch, providing a seamless and enjoyable experience for all players."
-    },
-    {
-      title: "Support & Maintenance",
-      description: "Once the rummy app game is built, then the real market game is on. After the launch of rummy mobile gaming application, it requires support and maintenance as well to meet the current market standards and levels. Our expert mobile game app developers will update and resolve all the problems with applications and keep a flawless gaming progress."
-    },
-    {
-      title: "Live Gaming Operations",
-      description: "The application must provide special offers, frequent cosmetic improvements and new updates for retaining user’s engagement. Thanks to the highly skilled game developers of Comfygen, who can bring frequent required and engaging changes during Live Gaming Operations to retain users for longer."
-    },
-    {
-      title: "Monetization",
-      description: "When our developers are building such incredible rummy gaming apps, by the time only they believe to process with monetization. The company integrates features and add-ons in the application during development for its monetization process to make the application more successful in the marketplace."
-    }
-
-  ];
-
-  const technologyData = [
-    {
-      img: <IconMoneybag stroke={1.5} className="w-12 h-12" />,
-      title: "Play for Real Money",
-      desc: "On your mobile device, you can play the online rummy game for real money. Our gaming platform."
-    },
-    {
-      img: <IconUserCircle stroke={1.5} className="w-12 h-12" />,
-      title: "Personal Table",
-      desc: "Play in private with your loved ones. Players can create a private table with customized settings."
-    },
-    {
-      img: <IconLock stroke={1.5} className="w-12 h-12" />,
-      title: "Gateways for Safe & Secure Payment",
-      desc: "Transactions may be made instantly and securely on our Rummy Game app. We also incorporate a variety of payment methods, including PayPal, Google Pay, credit and debit cards, etc."
-    },
-    {
-      img: <IconDeviceGamepad2 stroke={1.5} className="w-12 h-12" />,
-      title: "Game Background",
-      desc: "This section contains a thorough history of every rummy game ever played. Additionally, it provides data on both wins and losses."
-    },
-    {
-      img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-      title: "Certified by RNG",
-      desc: "Since all of the rummy cards games are dealt at random in our Rummy game app developed, impartiality and fair play are guaranteed."
-    },
-    {
-      img: <IconClock stroke={1.5} className="w-12 h-12" />,
-      title: "24-hour customer service",
-      desc: "Additionally, we incorporate a customer service tool that allows users to contact you with only a few clicks. The customer service feature is accessible 24/7."
-    },
-    {
-      img: <IconTrophy stroke={1.5} className="w-12 h-12" />,
-      title: "Rummy Competitions",
-      desc: "Users can take part in rummy game competitions where they can compete against gamers from across the globe for a grand prize."
-    },
-    {
-      img: <IconShare stroke={1.5} className="w-12 h-12" />,
-      title: "Integration of social media",
-      desc: "Users can invite their social media acquaintances to the rummy game app by integrating their social media accounts with the rummy gaming platform."
-    },
-    {
-      img: <IconBubbleText stroke={1.5} className="w-12 h-12" />,
-      title: "Live Chat Option",
-      desc: "The live chat function allows players to connect and communicate with one another while playing social video games utilizing voice, text, and emojis."
-    },
-    {
-      img: <IconAdjustmentsStar stroke={1.5} className="w-12 h-12" />,
-      title: "Promote and earn",
-      desc: "Invite your friends and family to the Rummy gaming platform right now, and you'll receive extra benefits each time someone signs up using your referral link."
-    }
-  ];
-
-
-  const [showContent, setShowContent] = useState(false);
-
 
   const jsonLdData = {
     "@context": "https://schema.org",
@@ -291,13 +195,7 @@ export default function rummy(props:any) {
   };
 
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   return (
     <>
@@ -415,199 +313,60 @@ export default function rummy(props:any) {
         />
         {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingData) }} /> */}
 
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.comfygen.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Game",
-          "item": "https://www.comfygen.com/rummy-game-development"
-        }
-      ]
-    })
-  }}
-/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.comfygen.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Game",
+                  "item": "https://www.comfygen.com/rummy-game-development"
+                }
+              ]
+            })
+          }}
+        />
 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-   
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
       </Head>
-      <div className="lg:pt-[100px]">
-        <Header />
-      </div>
-      <div className="overflow-hidden">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Trusted Rummy Game Development Company"
-            ptag="Meet the expertised online game app developers to build agile rummy game applications. Comfygen is specialized in building realistic rummy game applications  with the integrations of some latest advancements and tech trends. The clientele base will receive a range of gaming development solutions; such as Point Rummy, Pool Rummy, or Deal Rummy. Being the one best leading rummy game app development company In Canada & The USA; we believe in elevating one’s experience during their gameplay with some exciting stages. Be ready to be the dominated competitor to other gaming development platforms, and accelerate with your application in the marketplace."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/rummy-game-development-hero-img.webp"
-          />
-        </div>
 
-        <AboutSection
-          title="About Company"
-          heading="Meet the Expert Rummy Game App Developers in USA"
-          description1="Looking to develop a cutting-edge Rummy game app? At Comfygen, our expert Rummy game developers specialize in creating visually stunning, feature-rich, and engaging mobile gaming apps that captivate users and elevate your online business. We focus on delivering innovative interfaces and seamless gameplay to attract a vast audience while ensuring your app stands out in the competitive market. Partner with us to create a profitable and industry-leading Rummy app that keeps players hooked and enhances your brand reputation."
-          points={[
-            "10+ Years of Experienced Mobile Game App Developers",
-            "Talented and Skilled in Specific Area of App Development",
-            "Capable to DEsign Customized Rummy Mobile Game Applications",
-            "Work with Advanced Features, Latest Tech Trends and Integration with AI Properties",
-            "In Budget Cost for Best Rummy Game App Development",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Rummy Game Development Services</h2>
-              <p className="text-base text-center font-normal">Comfygen stands out as a leading Rummy Game Development company in the USA, offering tailored rummy gaming solutions. With expertise in creating immersive mobile games for all platforms, our team leverages current industry trends to deliver exceptional user interfaces and advanced features, ensuring an engaging and competitive gaming experience.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <CardItem
-          heading="Variations of Rummy Mobile Game"
-          subheading="Hey Users; are you ready to dive into the variations of rummy mobile game applications? Here we are available to offer flexible and customized platforms to users with Point Rummy, Pool Rummy, and Deal Rummy."
-          techData={JSON_DATA.Variations}
-        />
-        <InfoSectionRight
-          heading="Rummy Game App Development Solutions We Build"
-          description1="He expert rummy game app developers underwent extensive research and market analysis, and figured out some prominent rummy game app development solutions to design appropriate approaches. These rummy game app development solutions we build are known for their engagement and immersive user experience. Being the top-notch rummy game development company; we believe striving into the next-level rummy game development solutions, as follows are:"
-          points={[
-            "White-Label Rummy Game Development Solutions",
-            "Turnkey Rummy Game Development Solutions",
-            "BitCoin Rummy Game App Development Platform",
-            "Customized and Readymade Rummy Game Development",
-          ]}
-          imageSrc="https://www.comfygen.com/img/rummy-game-app-development-solutions-we-build.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-        />
-        
-        <SolutionSec
-          heading="Features of Rummy Game App Development"
-          subheading=""
-          techData={technologyData}
-        />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Rummy Game App Development Process</h2>
-              <p className="text-center">
-                With a commitment to innovation, quality, and client collaboration, our game Our rummy game development process takes place in a certain process; helping to build an agile and robust rummy gaming app .</p>
-            </div>
-            <ProcessSec processSlides={Processs} />
-          </div>
-        </section>
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-10">
-            <div className="flex flex-col justify-center text-center mx-auto">
-              <h2 className=" py-4 text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-                Technologies to Use for Rummy Game App Development
-              </h2>
-            </div>
-            <div className="grid lg:grid-cols-4 grid-cols-2 border  divide-x-2 divide-y-2">
-              {JSON_DATA.TechnoStack.map((elem) => {
-                const { title, num, img } = elem;
-                return (
-                  <div
-                    key={num}
-                    className="p-4 text-center space-y-2 hover:bg-[#5556D1]/80 cursor-pointer transition-all duration-300 ease-in-out group"
-                  >
-                    <Image
-                      src={img}
-                      alt={title}
-                      className="mx-auto"
-                      width={80}
-                      height={60}
-                    />
-                    <p className="bg-clip-text text-transparent bg-[#5556D1] font-bold text-lg group-hover:text-white">
-                      {title}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-        <CardItem
-          heading="Latest Tech Trends Evolved Around Rummy Gaming App"
-          subheading="The rummy gaming app can become the most demanding gaming application among a vast user-base, if it follows some latest tech trends during rummy game development company."
-          techData={JSON_DATA.cardData}
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <InfoSectionRight
-          heading="How much Does it Cost to Build a Rummy Gaming Application?"
-          description1="Definitely our clientele base wants to know how much to pay to build a rummy gaming application. The cost of rummy game app development starts from $5000, and later it can go upto $50000 and more. The price varies according to the demand of clients. If the demand asks for more rummy game application features, advancements and third party Live line API integration; these add ons in your gaming application will add more cost."
-          description2="That is why, our respective clients are allowed to have an appropriate conversation with expert IT professionals to know how their ideologies will process towards implementation at what cost."
-          imageSrc="https://www.comfygen.com/img/rummy-game-development.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-        />
-        <HireDeveloper
-          heading="Hire Rummy Game Developer?"
-          text="Whether you are an early-stage startup or a multinational enterprise, we give exceptional solutions to your business along with Rummy Game Development Services."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Team Of Experts",
-            "Services Customized To Your Needs",
-            "Support Available 24x7",
-            "A Mission Drives Services",
-            "Experience In Technical Fields"
-          ]}
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Rummy Game Development Technology"
-        />
-      </div>
-       <BlogSection initialData={initialData} />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Security} />
+      <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />
+      <Solution techData={JSON_DATA.Features} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <TechnologiesCard TechnoStack={JSON_DATA.TechnoStack} />
+      <Solution techData={JSON_DATA.Trends} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <InformationSection InfoSectionData={JSON_DATA?.Application} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
     </>
   );
 }

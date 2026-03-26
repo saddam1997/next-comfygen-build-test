@@ -1,187 +1,251 @@
-// components/Slider.tsx
 "use client";
 
-import {
-  useEffect,
-  useRef,
-  useState,
-  useMemo,
-  useCallback,
-} from "react";
+import { useRef } from "react";
 import Card from "./Card";
-import HeadingTwo from "../ui/HeadingTwo";
-import ParagraphText from "../ui/ParagraphText";
-
-const GAP = 5;
-const TRANSITION = 400;
 
 export default function Slider({ Portfoliodata }: any) {
-  const containerRef = useRef<HTMLDivElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
 
-  const [index, setIndex] = useState(1);
-  const [enableTransition, setEnableTransition] = useState(true);
-  const [cardWidth, setCardWidth] = useState(300);
+  const scrollToCard = (dir: "next" | "prev") => {
+    if (!sliderRef.current) return;
 
-  const containerWidthRef = useRef(0);
-  const dragOffsetRef = useRef(0);
-  const startX = useRef(0);
-  const isDragging = useRef(false);
-  const frame = useRef<number | null>(null);
+    const container = sliderRef.current;
+    const card = container.querySelector(".slide-item") as HTMLElement;
+    if (!card) return;
 
-  /* ---------- RESIZE OPTIMIZED ---------- */
-  useEffect(() => {
-    if (!containerRef.current) return;
+    const gap = 10;
+    const scrollAmount = card.offsetWidth + gap;
 
-    const observer = new ResizeObserver(([entry]) => {
-      const width = entry.contentRect.width;
-      containerWidthRef.current = width;
-
-      setCardWidth((prev) => {
-        const newWidth = Math.min(900, width * 0.7);
-        return prev === newWidth ? prev : newWidth;
-      });
+    container.scrollBy({
+      left: dir === "next" ? scrollAmount : -scrollAmount,
+      behavior: "smooth",
     });
+  };
 
-    observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  /* ---------- STABLE SLIDES ---------- */
-  const portfolio = Portfoliodata?.portfolio ?? [];
-
-  const slides = useMemo(() => {
-    if (!portfolio.length) return [];
-    return [portfolio.at(-1), ...portfolio, portfolio[0]];
-  }, [portfolio.length]);
-
-  /* ---------- NAV ---------- */
-  const next = useCallback(() => setIndex((i) => i + 1), []);
-  const prev = useCallback(() => setIndex((i) => i - 1), []);
-
-  /* ---------- TRANSLATE ---------- */
-  const baseTranslate = useMemo(() => {
-    const centerOffset =
-      (containerWidthRef.current - cardWidth) / 2;
-    return -index * (cardWidth + GAP) + centerOffset;
-  }, [index, cardWidth]);
-
-  const sliderStyle = useMemo(
-    () => ({
-      gap: `${GAP}px`,
-      transform: `translateX(${baseTranslate}px)`,
-      transition: enableTransition
-        ? `transform ${TRANSITION}ms ease`
-        : "none",
-    }),
-    [baseTranslate, enableTransition]
-  );
-
-  /* ---------- LOOP ---------- */
-  const handleTransitionEnd = useCallback(() => {
-    const total = slides.length;
-
-    if (index === 0) {
-      setEnableTransition(false);
-      setIndex(total - 2);
-    }
-
-    if (index === total - 1) {
-      setEnableTransition(false);
-      setIndex(1);
-    }
-  }, [index, slides.length]);
-
-  useEffect(() => {
-    if (!enableTransition) {
-      requestAnimationFrame(() => setEnableTransition(true));
-    }
-  }, [enableTransition]);
-
-  /* ---------- DRAG ---------- */
-  const onPointerDown = useCallback((e: any) => {
-    isDragging.current = true;
-    startX.current = e.clientX;
-    setEnableTransition(false);
-  }, []);
-
-  const onPointerMove = useCallback(
-    (e: any) => {
-      if (!isDragging.current) return;
-
-      const delta = e.clientX - startX.current;
-      dragOffsetRef.current = delta;
-
-      if (frame.current) return;
-
-      frame.current = requestAnimationFrame(() => {
-        if (sliderRef.current) {
-          sliderRef.current.style.transform = `translateX(${
-            baseTranslate + delta
-          }px)`;
-        }
-        frame.current = null;
-      });
-    },
-    [baseTranslate]
-  );
-
-  const onPointerUp = useCallback(() => {
-    if (!isDragging.current) return;
-
-    isDragging.current = false;
-    setEnableTransition(true);
-
-    const delta = dragOffsetRef.current;
-
-    if (delta < -80) next();
-    else if (delta > 80) prev();
-
-    dragOffsetRef.current = 0;
-  }, [next, prev]);
-
-  /* ---------- MEMO RENDER ---------- */
-  const renderedSlides = useMemo(() => {
-    return slides.map((item: any, i: number) => (
-      <div
-        key={item.id}
-        className="shrink-0"
-        style={{ width: cardWidth }}
-      >
-        <Card item={item} isActive={i === index} />
-      </div>
-    ));
-  }, [slides, index, cardWidth]);
+  const slides = Portfoliodata?.portfolio ?? [];
 
   return (
-    <div>
-      {/* <div className="text-center py-6">
-        <HeadingTwo color="black" text={Portfoliodata?.heading} />
-        <ParagraphText color="black" text={Portfoliodata?.description} />
-      </div> */}
+    <div className="w-full">
+      {/* SLIDER */}
+     <div ref={sliderRef} className="flex overflow-x-auto snap-x snap-mandatory gap-[10px] px-[5%]" style={{         scrollBehavior: "smooth", scrollbarWidth: "none", }} >
+        {slides.map((item: any, i: number) => (
+          <div key={`${item.title}-${i}`} className="slide-item snap-center shrink-0 w-full lg:max-w-[1200px]">
+            <Card item={item} isActive={true} />
+          </div>
+          ))}
+      </div>
 
-      <div className="w-full overflow-hidden" ref={containerRef}>
-        <div
-          ref={sliderRef}
-          className="flex"
-          style={sliderStyle}
-          onTransitionEnd={handleTransitionEnd}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerLeave={onPointerUp}
-        >
-          {renderedSlides}
-        </div>
-
-        <div className="flex justify-center gap-4 mt-6">
-          <button onClick={prev}>←</button>
-          <button onClick={next}>→</button>
-        </div>
+      {/* BUTTONS */}
+      <div className="flex justify-center gap-4 mt-6">
+        <button className="w-10 h-10 border rounded-full hover:bg-gray-800 hover:text-white" onClick={() => scrollToCard("prev")}>←</button>
+        <button className="w-10 h-10 border rounded-full hover:bg-gray-800 hover:text-white" onClick={() => scrollToCard("next")}>→</button>
       </div>
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // components/Slider.tsx
+// "use client";
+
+// import {
+//   useEffect,
+//   useRef,
+//   useState,
+//   useMemo,
+//   useCallback,
+// } from "react";
+// import Card from "./Card";
+// import HeadingTwo from "../ui/HeadingTwo";
+// import ParagraphText from "../ui/ParagraphText";
+
+// const GAP = 5;
+// const TRANSITION = 400;
+
+// export default function Slider({ Portfoliodata }: any) {
+//   const containerRef = useRef<HTMLDivElement>(null);
+//   const sliderRef = useRef<HTMLDivElement>(null);
+
+//   const [index, setIndex] = useState(1);
+//   const [enableTransition, setEnableTransition] = useState(true);
+//   const [cardWidth, setCardWidth] = useState(300);
+
+//   const containerWidthRef = useRef(0);
+//   const dragOffsetRef = useRef(0);
+//   const startX = useRef(0);
+//   const isDragging = useRef(false);
+//   const frame = useRef<number | null>(null);
+
+//   /* ---------- RESIZE OPTIMIZED ---------- */
+//   useEffect(() => {
+//     if (!containerRef.current) return;
+
+//     const observer = new ResizeObserver(([entry]) => {
+//       const width = entry.contentRect.width;
+//       containerWidthRef.current = width;
+
+//       setCardWidth((prev) => {
+//         const newWidth = Math.min(900, width * 0.7);
+//         return prev === newWidth ? prev : newWidth;
+//       });
+//     });
+
+//     observer.observe(containerRef.current);
+//     return () => observer.disconnect();
+//   }, []);
+
+//   /* ---------- STABLE SLIDES ---------- */
+//   const portfolio = Portfoliodata?.portfolio ?? [];
+
+//   const slides = useMemo(() => {
+//     if (!portfolio.length) return [];
+//     return [portfolio.at(-1), ...portfolio, portfolio[0]];
+//   }, [portfolio.length]);
+
+//   /* ---------- NAV ---------- */
+//   const next = useCallback(() => setIndex((i) => i + 1), []);
+//   const prev = useCallback(() => setIndex((i) => i - 1), []);
+
+//   /* ---------- TRANSLATE ---------- */
+//   const baseTranslate = useMemo(() => {
+//     const centerOffset =
+//       (containerWidthRef.current - cardWidth) / 2;
+//     return -index * (cardWidth + GAP) + centerOffset;
+//   }, [index, cardWidth]);
+
+//   const sliderStyle = useMemo(
+//     () => ({
+//       gap: `${GAP}px`,
+//       transform: `translateX(${baseTranslate}px)`,
+//       transition: enableTransition
+//         ? `transform ${TRANSITION}ms ease`
+//         : "none",
+//     }),
+//     [baseTranslate, enableTransition]
+//   );
+
+//   /* ---------- LOOP ---------- */
+//   const handleTransitionEnd = useCallback(() => {
+//     const total = slides.length;
+
+//     if (index === 0) {
+//       setEnableTransition(false);
+//       setIndex(total - 2);
+//     }
+
+//     if (index === total - 1) {
+//       setEnableTransition(false);
+//       setIndex(1);
+//     }
+//   }, [index, slides.length]);
+
+//   useEffect(() => {
+//     if (!enableTransition) {
+//       requestAnimationFrame(() => setEnableTransition(true));
+//     }
+//   }, [enableTransition]);
+
+//   /* ---------- DRAG ---------- */
+//   const onPointerDown = useCallback((e: any) => {
+//     isDragging.current = true;
+//     startX.current = e.clientX;
+//     setEnableTransition(false);
+//   }, []);
+
+//   const onPointerMove = useCallback(
+//     (e: any) => {
+//       if (!isDragging.current) return;
+
+//       const delta = e.clientX - startX.current;
+//       dragOffsetRef.current = delta;
+
+//       if (frame.current) return;
+
+//       frame.current = requestAnimationFrame(() => {
+//         if (sliderRef.current) {
+//           sliderRef.current.style.transform = `translateX(${
+//             baseTranslate + delta
+//           }px)`;
+//         }
+//         frame.current = null;
+//       });
+//     },
+//     [baseTranslate]
+//   );
+
+//   const onPointerUp = useCallback(() => {
+//     if (!isDragging.current) return;
+
+//     isDragging.current = false;
+//     setEnableTransition(true);
+
+//     const delta = dragOffsetRef.current;
+
+//     if (delta < -80) next();
+//     else if (delta > 80) prev();
+
+//     dragOffsetRef.current = 0;
+//   }, [next, prev]);
+
+//   /* ---------- MEMO RENDER ---------- */
+//   const renderedSlides = useMemo(() => {
+//     return slides.map((item: any, i: number) => (
+//       <div
+//         key={item.id}
+//         className="shrink-0"
+//         style={{ width: cardWidth }}
+//       >
+//         <Card item={item} isActive={i === index} />
+//       </div>
+//     ));
+//   }, [slides, index, cardWidth]);
+
+//   return (
+//     <div>
+//       {/* <div className="text-center py-6">
+//         <HeadingTwo color="black" text={Portfoliodata?.heading} />
+//         <ParagraphText color="black" text={Portfoliodata?.description} />
+//       </div> */}
+
+//       <div className="w-full overflow-hidden" ref={containerRef}>
+//         <div
+//           ref={sliderRef}
+//           className="flex"
+//           style={sliderStyle}
+//           onTransitionEnd={handleTransitionEnd}
+//           onPointerDown={onPointerDown}
+//           onPointerMove={onPointerMove}
+//           onPointerUp={onPointerUp}
+//           onPointerLeave={onPointerUp}
+//         >
+//           {renderedSlides}
+//         </div>
+
+//         <div className="flex justify-center gap-4 mt-6">
+//           <button onClick={prev}>←</button>
+//           <button onClick={next}>→</button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 

@@ -1,137 +1,265 @@
 {
+  "Herosection": {
+    "heading": "Trusted Rummy Game Development Company",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Meet the expertised online game app developers to build agile rummy game applications. Comfygen is specialized in building realistic rummy game applications  with the integrations of some latest advancements and tech trends. The clientele base will receive a range of gaming development solutions; such as Point Rummy, Pool Rummy, or Deal Rummy. Being the one best leading rummy game app development company In Canada & The USA; we believe in elevating one’s experience during their gameplay with some exciting stages. Be ready to be the dominated competitor to other gaming development platforms, and accelerate with your application in the marketplace",
+    "ptag1": "",
+    "listItems": [],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Trusted Rummy Game Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/rummy-game-development-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Rummy Game Development Services",
+    "description": "Comfygen stands out as a leading Rummy Game Development company in the USA, offering tailored rummy gaming solutions. With expertise in creating immersive mobile games for all platforms, our team leverages current industry trends to deliver exceptional user interfaces and advanced features, ensuring an engaging and competitive gaming experience.",
+    "services": [
+      {
+        "title": "Customized Rummy Game Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We specialize in crafting personalized rummy gaming solutions designed to meet your unique requirements. Utilizing the latest technologies, including AI, ML, and Blockchain, we create innovative gaming apps that boost user engagement, enhance player retention, and support business growth in a highly competitive market.",
+        "features": [
+          "Personalized Features and Interfaces",
+          "AI and Blockchain Integration",
+          "Scalable and Secure Platforms"
+        ]
+      },
+      {
+        "title": "Rummy Game Android Applications Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our team excels in developing top-notch Android-based rummy gaming applications. By incorporating cutting-edge features, seamless functionality, and user-friendly interfaces, we ensure players enjoy an exceptional gaming experience, fostering engagement and satisfaction among Android users.",
+        "features": [
+          "Optimized for Android Ecosystem",
+          "Engaging User Experiences",
+          "Cutting-Edge Functionalities"
+        ]
+      },
+      {
+        "title": "Rummy Game iOS Applications Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We offer premium iOS rummy game development services tailored for Apple devices. Our developers focus on delivering high-quality, intuitive applications with smooth gameplay, attractive designs, and advanced security features, ensuring an unparalleled experience for iOS users.",
+        "features": [
+          "Premium Gameplay Experience",
+          "Intuitive User Interfaces",
+          "Advanced-Data Security"
+        ]
+      },
+      {
+        "title": "Rummy Game Web Applications Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our expertise extends to creating dynamic rummy game web applications. These web-based platforms are optimized for all browsers, offering engaging gameplay, responsive designs, and cross-platform compatibility to cater to players seeking a seamless gaming experience across devices.",
+        "features": [
+          "Cross-Platform Browser Compatibility",
+          "Responsive and Scalable Design",
+          "Interactive Web Features"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Meet the Expert Rummy Game App Developers in USA",
+    "description1": "Looking to develop a cutting-edge Rummy game app? At Comfygen, our expert Rummy game developers specialize in creating visually stunning, feature-rich, and engaging mobile gaming apps that captivate users and elevate your online business. We focus on delivering innovative interfaces and seamless gameplay to attract a vast audience while ensuring your app stands out in the competitive market. Partner with us to create a profitable and industry-leading Rummy app that keeps players hooked and enhances your brand reputation.",
+    "description2": "",
+    "points": [
+      "10+ Years of Experienced Mobile Game App Developers",
+      "Talented and Skilled in Specific Area of App Development",
+      "Capable to DEsign Customized Rummy Mobile Game Applications",
+      "Work with Advanced Features, Latest Tech Trends and Integration with AI Properties",
+      "In Budget Cost for Best Rummy Game App Development"
+    ],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "Security": {
+    "heading": "Variations of Rummy Mobile Game",
+    "subheading": "Hey Users; are you ready to dive into the variations of rummy mobile game applications? Here we are available to offer flexible and customized platforms to users with Point Rummy, Pool Rummy, and Deal Rummy",
+    "tech": [
+      {
+        "img": null,
+        "title": "Point Rummy",
+        "desc": "There are 13 cards played in point rummy, and 2-6 players can play with a single or double card deck."
+      },
+      {
+        "img": null,
+        "title": "Pool Rummy",
+        "desc": "In the Pool Rummy Game, the gaming software offers 101 & 201 pool games."
+      },
+      {
+        "img": null,
+        "title": "Deal Rummy",
+        "desc": "The Deal Rummy game is configured with multiple deals with different entry fees."
+      },
+      {
+        "img": null,
+        "title": "Canasta",
+        "desc": "It means basket and is a Spanish kind of game that has different variations and is played in a group."
+      },
+      {
+        "img": null,
+        "title": "13 Rummy Card",
+        "desc": "It is a game of 2 to 6 players in which each player is dealt 13 cards."
+      },
+      {
+        "img": null,
+        "title": "Rummikub",
+        "desc": "It is very popular in Europe and America for 2-4 players with tiles instead of cards."
+      }
+    ]
+  },
+    "InfoSection": {
+    "heading": "Rummy Game App Development Solutions We Build",
+    "description1": "He expert rummy game app developers underwent extensive research and market analysis, and figured out some prominent rummy game app development solutions to design appropriate approaches. These rummy game app development solutions we build are known for their engagement and immersive user experience. Being the top-notch rummy game development company; we believe striving into the next-level rummy game development solutions, as follows are",
 
+    "dec": "",
+    "points": [
+        "White-Label Rummy Game Development Solutions",
+          "Turnkey Rummy Game Development Solutions",
+          "BitCoin Rummy Game App Development Platform",
+          "Customized and Readymade Rummy Game Development"
+    ],
+    "imageSrc": "https://www.comfygen.com/img/rummy-game-app-development-solutions-we-build.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "right"
+  },
+  "Features": {
+    "heading": "Features of Rummy Game App Development",
+    "subheading": "",
+    "tech": [
+    
+    {
+      "img": null,
+      "title": "Play for Real Money",
+      "desc": "On your mobile device, you can play the online rummy game for real money. Our gaming platform."
+    },
+    {
+     "img": null,
+      "title": "Personal Table",
+      "desc": "Play in private with your loved ones. Players can create a private table with customized settings."
+    },
+    {
+   "img": null,
+      "title": "Gateways for Safe & Secure Payment",
+      "desc": "Transactions may be made instantly and securely on our Rummy Game app. We also incorporate a variety of payment methods, including PayPal, Google Pay, credit and debit cards, etc."
+    },
+    {
+     "img": null,
+      "title": "Game Background",
+      "desc": "This section contains a thorough history of every rummy game ever played. Additionally, it provides data on both wins and losses."
+    },
+    {
+     "img": null,
+      "title": "Certified by RNG",
+      "desc": "Since all of the rummy cards games are dealt at random in our Rummy game app developed, impartiality and fair play are guaranteed."
+    },
+    {
+    "img": null,
+      "title": "24-hour customer service",
+      "desc": "Additionally, we incorporate a customer service tool that allows users to contact you with only a few clicks. The customer service feature is accessible 24/7."
+    },
+    {
+    "img": null,
+      "title": "Rummy Competitions",
+      "desc": "Users can take part in rummy game competitions where they can compete against gamers from across the globe for a grand prize."
+    },
+    {
+   "img": null,
+      "title": "Integration of social media",
+      "desc": "Users can invite their social media acquaintances to the rummy game app by integrating their social media accounts with the rummy gaming platform."
+    },
+    {
+     "img": null,
+      "title": "Live Chat Option",
+      "desc": "The live chat function allows players to connect and communicate with one another while playing social video games utilizing voice, text, and emojis."
+    },
+    {
+    "img": null,
+      "title": "Promote and earn",
+      "desc": "Invite your friends and family to the Rummy gaming platform right now, and you'll receive extra benefits each time someone signs up using your referral link."
+    }
+    ]
+  },
 
- "servicesData": [
-  {
-    "title": "Customized Rummy Game Development",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "We specialize in crafting personalized rummy gaming solutions designed to meet your unique requirements. Utilizing the latest technologies, including AI, ML, and Blockchain, we create innovative gaming apps that boost user engagement, enhance player retention, and support business growth in a highly competitive market.",
-    "features": [
-      "Personalized Features and Interfaces",
-      "AI and Blockchain Integration",
-      "Scalable and Secure Platforms"
-    ]
-  },
-  {
-    "title": "Rummy Game Android Applications Development",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Our team excels in developing top-notch Android-based rummy gaming applications. By incorporating cutting-edge features, seamless functionality, and user-friendly interfaces, we ensure players enjoy an exceptional gaming experience, fostering engagement and satisfaction among Android users.",
-    "features": [
-      "Optimized for Android Ecosystem",
-      "Engaging User Experiences",
-      "Cutting-Edge Functionalities"
-    ]
-  },
-  {
-    "title": "Rummy Game iOS Applications Development",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "We offer premium iOS rummy game development services tailored for Apple devices. Our developers focus on delivering high-quality, intuitive applications with smooth gameplay, attractive designs, and advanced security features, ensuring an unparalleled experience for iOS users.",
-    "features": [
-      "Premium Gameplay Experience",
-      "Intuitive User Interfaces",
-      "Advanced-Data Security"
-    ]
-  },
-  {
-    "title": "Rummy Game Web Applications Development",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Our expertise extends to creating dynamic rummy game web applications. These web-based platforms are optimized for all browsers, offering engaging gameplay, responsive designs, and cross-platform compatibility to cater to players seeking a seamless gaming experience across devices.",
-    "features": [
-      "Cross-Platform Browser Compatibility",
-      "Responsive and Scalable Design",
-      "Interactive Web Features"
-    ]
-  }
-],
-"Qa": [
-  {
-    "num": "1",
+    "Whycomfygens": {
     "title": "Add-Ons Features In Rummy Game Applications",
-    "desc": ""
-  }
-],
-"Whycomfygen": [
-  {
-    "num": "1",
-    "title": "The admin dashboard",
-    "desc": "From the admin dashboard, the admin can adjust all game parameters and keep an eye on your rummy game application performance."
+    "description": "",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
+    "proces": [
+   
+    {
+      "num": "1",
+      "title": "The admin dashboard",
+      "desc": "From the admin dashboard, the admin can adjust all game parameters and keep an eye on your rummy game application performance."
+    },
+    {
+      "num": "2",
+      "title": "Management of Game Settings",
+      "desc": "To customize a rummy game application the user experience, the administrator can change a variety of rummy game parameters, such as the language, notifications, noises, etc."
+    },
+    {
+      "num": "3",
+      "title": "User Administration",
+      "desc": "Through the user management tool, keep an eye on all user activities. Any user may be deleted by the administrator if there is any questionable conduct."
+    },
+    {
+      "num": "4",
+      "title": "Leaderboard Administration",
+      "desc": "On your rummy game platform, you may edit and add players to the leaderboard and show the top players."
+    },
+    {
+      "num": "5",
+      "title": "Payment Administration",
+      "desc": "The payment and crypto wallet management offers data on the quantity of coins and chips that users have redeemed."
+    },
+    {
+      "num": "6",
+      "title": "Notification Management",
+      "desc": "The users can manage all the notifications through the ‘Push Notifications’ feature. The admin can engage users with the smart notification feature in application with bonuses and promotions."
+    }
+    ]
   },
-  {
-    "num": "2",
-    "title": "Management of Game Settings",
-    "desc": "To customize a rummy game application the user experience, the administrator can change a variety of rummy game parameters, such as the language, notifications, noises, etc."
-  },
-  {
-    "num": "3",
-    "title": "User Administration",
-    "desc": "Through the user management tool, keep an eye on all user activities. Any user may be deleted by the administrator if there is any questionable conduct."
-  },
-  {
-    "num": "4",
-    "title": "Leaderboard Administration",
-    "desc": "On your rummy game platform, you may edit and add players to the leaderboard and show the top players."
-  },
-  {
-    "num": "5",
-    "title": "Payment Administration",
-    "desc": "The payment and crypto wallet management offers data on the quantity of coins and chips that users have redeemed."
-  },
-  {
-    "num": "6",
-    "title": "Notification Management",
-    "desc": "The users can manage all the notifications through the ‘Push Notifications’ feature. The admin can engage users with the smart notification feature in application with bonuses and promotions."
-  }
-],
 
+  "ProcessData": {
+    "heading": "Rummy Game App Development Process",
+    "description": " With a commitment to innovation, quality, and client collaboration, our game Our rummy game development process takes place in a certain process; helping to build an agile and robust rummy gaming app ",
+    "Process": [
+    {
+      "title": "Planning",
+      "description": "The foremost thing our rummy game application developers do is research and market analysis. With the deep knowledge and evaluation of market standards; the developers will be able to create one best application suited to current competitions. Also, this research and analysis will improve the application's process and creativity level though."
+    },
+    {
+      "title": "Concept Art and Asset Production",
+      "description": "The expert game app developers will craft the art and sketches the design of game applications according to the requirements. The asset production team will gather a team of animators, artists, designers and others to create a super-attractive application with 2D, 3D or high-quality effects."
+    },
+    {
+      "title": "Development",
+      "description": "Our engineers are at the forefront of innovation, utilizing the latest advancements and technologies to create a dynamic rummy game app. From conceptualization to implementation, the development phase focuses on building a secure, scalable, and feature-rich application. We aim to deliver an intuitive user interface and smooth gameplay experience while ensuring that the app can handle a vast audience."
+    },
+    {
+      "title": "Testing",
+      "description": "The testing phase is integral to ensuring the app’s quality and performance. Through rigorous quality assurance, we assess the app’s functionality, usability, and security. Our testing process involves identifying bugs, optimizing user interactions, and ensuring compatibility across multiple devices. By prioritizing a flawless user experience, we ensure that the app is ready for launch, providing a seamless and enjoyable experience for all players."
+    },
+    {
+      "title": "Support & Maintenance",
+      "description": "Once the rummy app game is built, then the real market game is on. After the launch of rummy mobile gaming application, it requires support and maintenance as well to meet the current market standards and levels. Our expert mobile game app developers will update and resolve all the problems with applications and keep a flawless gaming progress."
+    },
+    {
+      "title": "Live Gaming Operations",
+      "description": "The application must provide special offers, frequent cosmetic improvements and new updates for retaining user’s engagement. Thanks to the highly skilled game developers of Comfygen, who can bring frequent required and engaging changes during Live Gaming Operations to retain users for longer."
+    },
+    {
+      "title": "Monetization",
+      "description": "When our developers are building such incredible rummy gaming apps, by the time only they believe to process with monetization. The company integrates features and add-ons in the application during development for its monetization process to make the application more successful in the marketplace."
+    }
+    ]
+  },
 
-
-"Variations":[
-  {
-    "title": "Point Rummy",
-    "decs": "There are 13 cards played in point rummy, and 2-6 players can play with a single or double card deck."
-  },
-  {
-    "title": "Pool Rummy",
-    "decs": "In the Pool Rummy Game, the gaming software offers 101 & 201 pool games."
-
-  },
-  {
-    "title": "Deal Rummy",
-    "decs": "The Deal Rummy game is configured with multiple deals with different entry fees."
-  },
-  {
-    "title": "Canasta",
-    "decs": "It means basket and is a Spanish kind of game that has different variations and is played in a group."
-  },
-  {
-    "title": "13 Rummy Card",
-    "decs": "It is a game of 2 to 6 players in which each player is dealt 13 cards."
-  },
-  {
-    "title": "Rummikub",
-    "decs": "It is very popular in Europe and America for 2-4 players with tiles instead of cards."
-  }
-],
-"cardData": [
-  {
-    "title": "Augmented Reality (AR) & Virtual Reality (VR)",
-    "decs": "Augmented Reality (AR) and Virtual Reality (VR) is now transforming rummy gaming applications. Players can manage their cards in virtual space, and can also see their opponents playing along. The improvised technology made the gaming experience much better, and reduced the cost of development."
-  },
-  {
-    "title": "Artificial Intelligence (AI) Integration",
-    "decs": "The developers can integrate genrative AI into their rummy gaming applications, where the advanced technology will create a very challenging computer opponent for the single player tournaments. These AI opponents adapt for hi-tech methods, strategies, and use knowledge based tactics to make the gaming application experience user friendly and realistic."
-
-  },
-  {
-    "title": "Blockchain Integration",
-    "decs": "The mobile game app developers also use blockchain technology for transparent and secured transactions. The outcome of using blockchain development and other Decentralized Finance DeFi Development Solutions leads to fair and tamper-pref trustworthy environment."
-  },
-  {
-    "title": "Machine-learning",
-    "decs": "Rummy game applications can take leverages from machine learning development company like it helps to understand player’s behavior, tailor customizable rummy game app development experience and also provide seamless gaming structure."
-  }
-],
-  "pageData": {
+    "pageData": {
     "title": "Why to Choose Comfygen for Rummy Game App Development?",
     "description": "Our clientele base is very satisfied from our rummy game app development services. However, we believe in working at a high pace with quality assured. We have cited reasons to choose us as your reliable partner for rummy game app development",
     "mainCardData": {
@@ -167,46 +295,10 @@
       }
     ]
   },
-  
 
-
-
-
-
-  "WhyChooseData": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/our-experties.webp",
-      "title": "Agile Methodologies",
-      "decs": "Our IT Professionals use product-oriented and user-centric methods to build an excellent application. The development team works on advancements to create the best application matching up with current market standards."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/comprehension-game-design.webp",
-      "title": "Flexible Customer Support ",
-      "decs": "The rummy game app development team working with Clmfygen believes to serve clients with best quality, as well as keep them in touch with the project progress for their satisfaction. Therefore, we provide seamless customer support to satisfy our clientele base."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/quality-assurance.webp",
-      "title": "Cost-Effective ",
-      "decs": " We respect our client’s investment on their projects to start new business ventures. That is why we try to provide the best result-oriented app in budgeted estimations. "
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/customization-and-innovation.webp",
-      "title": "Experienced Game Developers ",
-      "decs": "Every rummy game app developer we have in our team is experienced in the stream since years ago. They are talented, knowledgeable and skilled enough to develop super featured applications."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/collaborative-approach.webp",
-      "title": "Super-Impressive Portfolio ",
-      "decs": " Our company holds a manifold portfolio, where the developers have already handled such game development projects at simpler to complex tech stacks."
-    }
-  ],
-
-  "TechnoStack": [
+ "TechnoStack":{
+  "heading":"Technologies to Use for Rummy Game App Development",
+   "Stack": [
     {
       "num": "1",
       "img": "https://www.comfygen.com/images/unity-stack-technology.webp",
@@ -247,15 +339,76 @@
       "img": "https://www.comfygen.com/images/python-stack-technology.webp",
       "title": "Python"
     }
-  ],
-  "myList": [
-    "Team Of Experts",
-    "Services Customized To Your Needs",
-    "Support Available 24x7",
-    "A Mission Drives Services.",
-    "Experience In Technical Fields",
-    "Check availability and work schedule."
-  ],
+  ]
+ },
+
+  "Trends": {
+    "heading": "Latest Tech Trends Evolved Around Rummy Gaming App",
+    "subheading": "The rummy gaming app can become the most demanding gaming application among a vast user-base, if it follows some latest tech trends during rummy game development company.",
+    "tech": [
+    
+    {
+      "img": null,
+      "title": "Augmented Reality (AR) & Virtual Reality (VR)",
+      "desc": "Augmented Reality (AR) and Virtual Reality (VR) is now transforming rummy gaming applications. Players can manage their cards in virtual space, and can also see their opponents playing along. The improvised technology made the gaming experience much better, and reduced the cost of development."
+    },
+    {
+      "img": null,
+      "title": "Artificial Intelligence (AI) Integration",
+      "desc": "The developers can integrate genrative AI into their rummy gaming applications, where the advanced technology will create a very challenging computer opponent for the single player tournaments. These AI opponents adapt for hi-tech methods, strategies, and use knowledge based tactics to make the gaming application experience user friendly and realistic."
+    },
+    {
+      "img": null,
+      "title": "Blockchain Integration",
+      "desc": "The mobile game app developers also use blockchain technology for transparent and secured transactions. The outcome of using blockchain development and other Decentralized Finance DeFi Development Solutions leads to fair and tamper-pref trustworthy environment."
+    },
+    {
+      "img": null,
+      "title": "Machine-learning",
+      "desc": "Rummy game applications can take leverages from machine learning development company like it helps to understand player’s behavior, tailor customizable rummy game app development experience and also provide seamless gaming structure."
+    }
+    ]
+  },
+
+  "CallToAction": {
+    "heading": "Let’s hear what you have to say?",
+    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+
+    "Application": {
+    "heading": "How much Does it Cost to Build a Rummy Gaming Application?",
+    "description1": "Definitely our clientele base wants to know how much to pay to build a rummy gaming application. The cost of rummy game app development starts from $5000, and later it can go upto $50000 and more. The price varies according to the demand of clients. If the demand asks for more rummy game application features, advancements and third party Live line API integration; these add ons in your gaming application will add more cost.",
+    "description2": "That is why, our respective clients are allowed to have an appropriate conversation with expert IT professionals to know how their ideologies will process towards implementation at what cost.",
+    "points": [
+        
+    ],
+    "imageSrc": "https://www.comfygen.com/img/rummy-game-development.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "right"
+  },
+
+  "HireDeveloper": {
+    "heading": "Hire Rummy Game Developer?",
+    "text": "Whether you are an early-stage startup or a multinational enterprise, we give exceptional solutions to your business along with Rummy Game Development Services.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Team Of Experts",
+          "Services Customized To Your Needs",
+          "Support Available 24x7",
+          "A Mission Drives Services",
+          "Experience In Technical Fields"
+    ]
+  },
+
   "Frequently": [
     {
       "num": "1",
@@ -282,119 +435,7 @@
       "title": "Is playing rummy on the mobile gaming applications legalized?",
       "desc": "Every interested client wants to know whether his investment is taking place at the right platform or not. Rummy gaming app development is a right solution; which is definitely legalized. The whole game concept works on strategies, making tactics, knowledge, skillset, experience and more. Therefore, it is a legal application to develop in the marketplace. Still, there are certain countries where these applications are not legal. So before you handover the project for rummy gaming application development for one specific country bounded; ensure to figure out whether it is legal  at the place or not. "
     }
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Rummy Game Developer?",
-      "desc": " Whether you are an early-stage startup or a multinational enterprise, we give exceptional solutions to your business along with Rummy Game Development Services.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList3": [
-    "10+ Years of Experienced Mobile Game App Developers   ",
-    "Talented and Skilled in Specific Area of App Development  ",
-    "Capable to  DEsign Customized Rummy Mobile Game Applications",
-    "Work with Advanced Features, Latest Tech Trends and Integration with AI Properties ",
-    "In Budget Cost for Best Rummy Game App Development"
-  ],
-  "myList4": [
-    "White-Label Rummy Game Development Solutions ",
-    "Turnkey Rummy Game Development Solutions",
-    "BitCoin Rummy Game App Development Platform",
-    "Customized and Readymade Rummy Game Development"
-  ],
-  "GameCardData": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/poker-game-development-via-comfygen.webp",
-      "url": "/poker-game-development",
-      "title": "Poker Game Development"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/baccarat-game-development-via-comfygen.webp",
-      "url": "/baccarat-game-development",
-      "title": "Baccarat Game Development"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/black-jack-dovelabment-via-comfygen.webp",
-      "url": "/blackjack-game-development",
-      "title": "BlackJack Game Development"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
-      "url": "/rummy-game-development",
-      "title": "Rummy Game Development"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/ludo-game-development-via-comfygen.webp",
-      "url": "/ludo-game-development",
-      "title": "Ludo game development"
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/cheses-game-dovelabment-via-comfygen.webp",
-      "url": "/chess-game-development",
-      "title": "Chess Game Development"
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/omaha-game-dovelabment-via-comfygen.webp",
-      "url": "/omaha-poker-game-development",
-      "title": "Omaha poker game development"
-    },
-    {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/board-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "board game development"
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/img/card-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Card Game Development"
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/img/hearts-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Hearts Game Development"
-    },
-    {
-      "num": "12",
-      "img": "https://www.comfygen.com/img/bingo-game-development-via-comfygen.webp",
-      "url": "/",
-      "title": "Bingo Game Development"
-    },
-    {
-      "num": "13",
-      "img": "https://www.comfygen.com/img/888-poker-game-development-via-comfygen.webp",
-      "url": "/",
-      "title": "888 Poker Game Development"
-    },
-    {
-      "num": "14",
-      "img": "https://www.comfygen.com/img/snake-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Snake and Ladder development"
-    },
-    {
-      "num": "15",
-      "img": "https://www.comfygen.com/img/texes-game-dovelabment-via-comfyegn.webp",
-      "url": "/",
-      "title": "Texas Holdem Game Development"
-    },
-    {
-      "num": "16",
-      "img": "https://www.comfygen.com/img/call-breake-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Call Break Game Development"
-    }
   ]
+
+  
 }

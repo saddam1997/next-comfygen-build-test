@@ -574,11 +574,7 @@
     <priority>0.80</priority>
   </url>
 
-  <url>
-    <loc>https://www.comfygen.com/custom-blockchain-development-company</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+  
   <url>
     <loc>https://www.comfygen.com/p2p-crypto-exchange-development</loc>
     <changefreq>daily</changefreq>
@@ -874,21 +870,13 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://www.comfygen.com/private-blockchain-development</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+
   <url>
     <loc>https://www.comfygen.com/data/hire-data-scientist</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://www.comfygen.com/enterprise-blockchain-development</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
+
   <url>
     <loc>https://www.comfygen.com/business-directory-app-development</loc>
     <changefreq>daily</changefreq>
@@ -921,11 +909,6 @@
   </url>
   <url>
     <loc>https://www.comfygen.com/health-tracking-app-development</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.comfygen.com/public-blockchain-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>

@@ -25,7 +25,7 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
               className="text-lg font-medium p-2 w-full"
               onMouseEnter={() => setActiveId(feature.id)}
             >
-              {feature.title}
+             <h3>{feature.title}</h3> 
             </button>
           </div>
         ))}
@@ -46,9 +46,9 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
                   key={index}
                   className="bg-white p-6 rounded-2xl shadow-md"
                 >
-                  <h3 className="text-xl font-semibold mb-2 text-[#272868]" dangerouslySetInnerHTML={{ __html:detail.details }}>
+                  <h4 className="text-xl font-semibold mb-2 text-[#272868]" dangerouslySetInnerHTML={{ __html:detail.details }}>
                     
-                  </h3>
+                  </h4>
                   <p className="text-gray-700" dangerouslySetInnerHTML={{ __html:detail.content }}>
                  
                   </p>
