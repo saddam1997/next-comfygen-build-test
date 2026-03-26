@@ -13,11 +13,7 @@ const BlockchainSer1 = [
     name: "Blockchain Development",
     url: "/blockchain-development",
   },
-  {
-    num: "2",
-    name: "Custom Blockchain Development",
-    url: "/custom-blockchain-development-company",
-  },
+ 
   {
     num: "3",
     name: "Blockchain Consulting Service",
@@ -185,21 +181,7 @@ const Blockchain = [
 const Blockchain2 = [
 
 
-  {
-    num: "10",
-    name: "Private Blockchain Development Company",
-    url: "/private-blockchain-development",
-  },
-  {
-    num: "11",
-    name: "Enterprise Blockchain Development Company",
-    url: "/enterprise-blockchain-development",
-  },
-  {
-    num: "12",
-    name: "Public Blockchain Development Company",
-    url: "/public-blockchain-development",
-  },
+
   {
     num: "13",
     name: "Blockchain Wallet Development Company",
