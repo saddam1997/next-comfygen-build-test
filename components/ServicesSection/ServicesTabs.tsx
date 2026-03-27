@@ -43,12 +43,12 @@ export default function ServicesTabs({ services = [] }) {
             {isActive && (
               <div className="block lg:hidden bg-gradient-to-r from-[#272868] to-[#5556D1] px-6 py-10 text-white">
                 <h3 className="text-2xl font-bold">{service.title}</h3>
-                <p>{service.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: service.description }}></p>
 
                 {service.features?.length > 0 && (
                   <ul className="space-y-2 mt-4">
                     {service.features.map((f:any, i:any) => (
-                      <li key={i}>{f}</li>
+                      <li key={i} dangerouslySetInnerHTML={{ __html: f }}></li>
                     ))}
                   </ul>
                 )}
