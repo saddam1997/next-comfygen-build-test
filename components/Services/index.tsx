@@ -1,31 +1,20 @@
-// components/ServicesComponent.tsx
-import ServicesTabs from "./ServicesTabs";
+import ServicesClient from "./ServicesClient";
 
-export default function ServicesComponent({ servicesData }: any) {
+export default function ServicesSection({ servicesData }: any) {
   return (
-    <section
-      className="lg:py-16 py-10 bg-[#F5F5F9]"
-      aria-labelledby="services-heading"
-    >
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="lg:py-16 py-10 bg-[#F5F5F9]">
 
-        {/* ✅ SEO CONTENT */}
-        <header className="text-center space-y-3">
-          <h2
-            id="services-heading"
-            className="text-2xl lg:text-4xl font-bold"
-          >
-            {servicesData.heading}
-          </h2>
-
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {servicesData.description}
-          </p>
-        </header>
-
-        {/* ✅ CLIENT INTERACTION ONLY */}
-        <ServicesTabs services={servicesData.services} />
+      {/* ✅ SEO CONTENT */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold">{servicesData.heading}</h2>
+        <p className="text-gray-600 mt-2">
+          {servicesData.description}
+        </p>
       </div>
+
+      {/* ✅ Client handles interaction */}
+      <ServicesClient services={servicesData.services} />
+
     </section>
   );
 }

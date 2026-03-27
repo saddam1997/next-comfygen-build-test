@@ -347,7 +347,6 @@ export default function rummy(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
       </Head>
-
       <Navbar />
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />

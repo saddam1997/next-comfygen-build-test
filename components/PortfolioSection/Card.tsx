@@ -19,7 +19,7 @@ const Card = ({ item, isActive }: any) => {
           alt={item.title}
           width={700}
           height={450}
-          className="h-full lg:h-[260px] object-contain"
+          className="h-full lg:h-[260px] "
           draggable={false}
           priority={isActive}
           sizes="(max-width: 768px) 90vw, 500px"
