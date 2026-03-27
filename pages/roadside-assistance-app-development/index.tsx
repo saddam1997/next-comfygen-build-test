@@ -1,157 +1,67 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
 
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
 
-const Features = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Features"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const ClientTestimonials = dynamic(
-  () =>
-    import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-const Process = [
-  {
-    title: "Discovery & Planning",
-    description:
-      "We start by understanding your business model, target audience, and key services like towing, fuel delivery, or jumpstart. Our towing app development team conducts market research, defines app goals, and prepares a custom development roadmap tailored to on-demand towing app development needs.",
-  },
-  {
-    title: "Wireframe & Design",
-    description:
-      "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX design</a> team creates clean, intuitive interfaces for users, drivers, and admins. We focus on user-friendly navigation, emergency-first design, and responsive screens that help users get quick assistance anytime, anywhere.",
-  },
-  {
-    title: "Development & Testing",
-    description:
-      "Our expert <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >mobile app developers</a> code the frontend and backend of the roadside assistance app, integrating features like real-time GPS tracking, SOS alerts, payment gateway, and service history. We rigorously test for performance, speed, and security to deliver a seamless user experience.",
-  },
-  {
-    title: "Content & Service Integration",
-    description:
-      "We integrate real-world services like tow truck dispatching, fuel delivery, and battery jumpstart. This phase ensures your app connects effectively with your service network and provides accurate geo-based results for each user request.",
-  },
-  {
-    title: "Quality Assurance",
-    description:
-      "Our QA team runs multi-device and cross-platform testing to ensure all app panels – user, provider, and admin – perform flawlessly. We test emergency call features, route tracking, and load handling under real-world scenarios.",
-  },
-  {
-    title: "Deployment & Launch",
-    description:
-      "Once tested, we publish your roadside app on iOS, Android, or enterprise platforms. We manage cloud setup, app store listing, and ensure a smooth rollout backed by analytics and performance tracking.",
-  },
-  {
-    title: "Post-Launch Maintenance & Support",
-    description:
-      "We don’t stop at launch. Our roadside app development team offers full-cycle app maintenance, upgrades, and performance tuning. We keep your app updated with new features, platform compatibility, and ensure continuous user satisfaction.",
-  },
-];
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   const jsonLdData = [
 
@@ -366,130 +276,23 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Roadside} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Features featuresData={JSON_DATA.featuresData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-      {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Best Roadside Assistance App Development Company"
-            ptag="Launch a powerful towing vehicle service app with Comfygen. We provide secure, real-time tracking-enabled, on-demand roadside assistance app development services for towing businesses, auto service providers, and startups. Boost your customer experience with fast emergency response features, GPS tracking, digital payments, and 24/7 support."
-            li="Custom On-Demand Roadside Assistance App Development"
-            li1="Real-Time GPS Tracking & Smart Dispatch"
-            li2="Secure Payments & 24/7 Emergency Support"
-            li3="Scalable, AI-Enabled & Cloud-Ready Solutions"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/hero.webp"
-          />
-        </div>
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Top-Notch Roadside App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                We build mobile apps for towing and roadside assistance, helping companies streamline service requests, track vehicles in real time, and provide fast, reliable support. Key features include emergency towing, on-demand bookings, and management dashboards for seamless customer service.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Next-Gen Roadside Assistance App Development for Quick Vehicle Help"
-          description1="Getting roadside help has never been easier. With roadside assistance app development, users can request help anytime, anywhere. Real-time GPS tracking, SOS buttons, and instant alerts connect drivers to the nearest towing or repair service quickly. Whether it’s a flat tire, battery issue, or engine problem, help arrives fast."
-          description2="Comfygen Technologies is a top <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>towing mobile app development company</a>, builds custom, user-friendly mobile apps for towing and roadside services. Our solutions enable businesses to provide 24/7 support, track services live, process secure payments, and grow efficiently. Drive digital transformation in the vehicle emergency services industry with our cutting-edge roadside assistance app development services."
-          imageSrc="https://www.comfygen.com/comfygen-images/roadside-assistance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        {/* <ContactFromCenter /> */}
-        <CardItem
-          heading="Advanced Features of Our Roadside Assistance App"
-          subheading="Our custom-built Roadside Assistance App includes powerful features to ensure drivers get quick help during emergencies. From car towing to fuel delivery, every service is just a tap away. Here’s what makes our app reliable, fast, and user-friendly:"
-          techData={JSON_DATA.cardData2}
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Roadside Assistance App Development Portfolio"
-            description="Explore our feature-rich portfolio of towing and roadside apps built for speed, efficiency, and customer safety. Discover how Comfygen powers mobility with smart technology."
-          />
-        </section>
-
-        <div className="py-8">
-          <Features
-            heading=" Roadside Assistance App Panels We Develop"
-            description="Comfygen creates on-demand roadside assistance apps for customers, service providers, and administrators. These panels help ensure fast service delivery, smooth communication, real-time tracking, and efficient business operations."
-            featuresData={JSON_DATA.Feature}
-            grid={3}
-          />
-        </div>
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Roadside Assistance App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
-                At Comfygen, we follow a strategic, agile, and user-focused
-                approach to roadside assistance app development. From initial
-                discovery to real-time launch and optimization, we ensure your
-                towing and roadside app is fast, scalable, and ready to serve
-                emergency vehicle needs across cities and regions.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Technology Stack We Use for Roadside Assistance App Development"
-          description="At Comfygen, we utilize the latest and most reliable technologies to build powerful, scalable, and high-performance roadside assistance apps. Our comprehensive tech stack guarantees seamless GPS integration, real-time tracking, secure payments, and fast emergency support—ensuring every rescue is just a tap away."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-<ClientStories/>
-        <HireDeveloper
-          heading="Hire Our Experienced Roadside Assistance App Developer"
-          text="Looking to build a powerful, real-time roadside assistance or towing app? Hire expert developers from Comfygen to turn your vision into a fully functional on-demand mobile app. Our developers have deep experience in crafting location-based solutions that deliver quick, reliable, and scalable performance."
-          text1="Why Hire Our Roadside App Developers?"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Domain Expertise in towing, breakdown, and emergency assistance services",
-            "Real-time GPS & Map Integration for accurate location tracking",
-            "AI-powered Features including predictive requests & smart dispatch",
-            "Cross-platform Development for Android & iOS apps",
-          ]}
-        />
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

@@ -1,138 +1,68 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./quick-commerce-app-development.json";
 
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import Link from "next/link";
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStackSection from "../../components/TechStackSection";
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const AppcardSlider = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AppcardSlider"),
-  { loading: loader, ssr: true }
-);
+import AppClone from "../../components/AppClone"
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+import Emerging from "../../components/Emerging";
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
 
-const CoreFeaturesSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const TrendsSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
 
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { loading: loader, ssr: true }
-);
-
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-const Process = [
-  {
-    title: "Idea Discovery & Market Research",
-    description: "We start by understanding your business goals, target audience, and competitors. As a leading quick commerce app development company, we guide you in shaping the perfect app strategy backed by real market insights."
-  },
-  {
-    title: "UI/UX Design & Wireframing",
-    description: "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' >UI/UX designer</a> team crafts intuitive user flows and stunning designs that drive engagement and retention. In this phase of quick commerce app development, we focus on simplicity, speed, and user delight."
-  },
-  {
-    title: "Backend Architecture & Tech Stack Finalization",
-    description: "We choose the right technologies, frameworks, and architecture to support your app's real-time operations. As a trusted quick commerce application development company, our backend ensures speed, scalability, and reliability."
-  },
-  {
-    title: "Agile App Development",
-    description: "Our Qcommerce app developers work in agile sprints, turning your idea into a fully functional product with continuous testing and iteration. You get updates at every stage, ensuring a smooth, error-free build."
-  },
-  {
-    title: "API Integrations & Feature Implementation",
-    description: "From GPS to wallets and CRM tools—we connect everything you need. Our FMCG mobile app development services make sure your FMCG app integrates seamlessly with inventory, logistics, and customer support systems."
-  },
-  {
-    title: "QA Testing & Performance Optimization",
-    description: "We rigorously test for speed, usability, and security. As part of our Qcommerce app development approach, we simulate high-demand conditions to ensure your app performs flawlessly—even at scale."
-  },
-  {
-    title: "Launch & Ongoing Support",
-    description: "Once everything's perfect, we go live. As a reliable quick commerce <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design' > website development</a> partner, we also provide post-launch support, updates, and performance monitoring to keep your platform running at its best."
-  }
-];
-
-
-
 
 
 
@@ -141,21 +71,18 @@ export default function ClinicalApp(props: any) {
   let { initialData } = props;
   let { Frequently } = JSON_DATA;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
+  // const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
 
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
+  // const openModal = () => {
+  //   setTalkToExpertModal(true);
+  // };
 
 
 
   const jsonLdData = [
-   
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -313,162 +240,32 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <AppClone SliderDATA={JSON_DATA.Clones} />
+      {/* <AppcardSlider
+        heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
+        description="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
+        sliderData={JSON_DATA.IndustriesServe}
+        openModal={openModal}
+      /> */}
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Solution techData={JSON_DATA.AIPowered} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-
-          <HeroSectionForAllPages
-            heading="Top Quick Commerce App Development Company "
-            ptag="Build ultra-fast delivery platforms with Comfygen, a leading Quick Commerce App Development Company delivering high-performance Q-commerce solutions for startups and enterprises. We specialize in Quick Commerce App Development for grocery, pharmacy, food, and daily-need brands, enabling 10–30 minute deliveries with real-time operations."
-            ptag1='From apps like Zepto, Blinkit, Dunzo, and Tata 1mg, we design scalable, on-demand quick commerce app solutions that ensure faster order processing, smart inventory control, and seamless customer experiences across iOS, Android, and web platforms.'
-            // li="Real-Time Order Tracking & Route Optimization"
-            // li1="Seamless UI/UX for Instant Checkout & Engagement"
-            // li2="Advanced Inventory, Delivery & Fleet Management"
-            // li3="Multi-platform Solutions (iOS, Android, Web)"
-            // li4="Integrated Payments, CRM & Push Notifications"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development1.webp"
-          />
-   
-
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Best Quick Commerce App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-               A Comfygen Technologies quick commerce app developer builds robust and scalable Q-commerce apps for today's fast-moving delivery market. Our Q-commerce app development solutions streamline the entire order-to-delivery cycle, enhance customer experiences, and support rapid business growth, regardless of your business size. We are one of the leading quick commerce <Link className="text-blue-600 font-semibold" href='https://www.comfygen.com/mobile-app-development'>mobile app development agency</Link>. We focus on performance, usability, and real-time functionality.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Why Quick Commerce is the Future"
-          description1="Quick commerce is transforming the way people shop by delivering essentials—groceries, medicines, and food—within minutes. Today’s consumers demand speed, convenience, and real-time tracking, making Q-commerce a must-have for retail, healthcare, and food brands."
-          description2="The global quick commerce market is expected to reach $162 billion by 2026, with India leading the growth curve, driven by apps like Zepto, Blinkit, and Dunzo, especially in Tier 1 & Tier 2 cities. Rapid smartphone adoption, AI-powered logistics, and micro-fulfillment centers are fueling this surge."
-          description3="Investing in Quick Commerce App Development now lets businesses capitalize on the booming demand for instant delivery, enhanced customer experiences, and scalable hyperlocal operations."
-          description4=""
-          description5=""
-          imageSrc="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/About1.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-        <AppcardSlider
-          heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
-          description="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
-          sliderData={JSON_DATA.IndustriesServe}
-          openModal={openModal}
-        />
-
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Quick Commerce App Development Portfolio"
-            description="At Comfygen Technologies, we’ve delivered high-performance quick commerce apps tailored to diverse industries—from groceries to healthcare. Each project is built with speed, scalability, and seamless UX at its core, helping our clients lead in the 10-minute delivery market."
-          />
-        </section>
-
-        <CallToAction
-          heading="Ready to Launch Your Own 10-Minute Delivery App?"
-          text="Build a blazing-fast Q-commerce app with Comfygen—trusted experts in real-time delivery app development."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-
-
-        {/* <ContactFromCenter /> */}
-
-
-        <CoreFeaturesSection
-          title="AI-Powered Quick Commerce App Development Solution"
-          subtitle="At Comfygen, we integrate cutting-edge AI solutions into our Q-commerce app development to give your business a competitive edge. From smart automation to personalized user journeys, these features streamline delivery workflows, boost efficiency, and improve customer satisfaction."
-          features={JSON_DATA.AIPowered}
-        />
-
-        <TrendsSection
-          heading="Advanced Technology Integration into Quick Commerce App Development"
-          subtitle="Comfygen Technologies develops next-generation quick commerce applications using cutting-edge technologies. In high-speed businesses like groceries, medicine, food, and essentials, we offer solutions that enable ultra-fast delivery, intelligent automation, and real-time operational efficiency."
-          trends={JSON_DATA.Emerging}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development-feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Quick Commerce Application Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                At Comfygen Technologies, we follow a streamlined, collaborative, and transparent process to bring your Q-commerce vision to life. From idea to launch, every phase is focused on speed, scalability, and seamless user experience—because in quick commerce, every second counts.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-        <TechStack
-          title="Tech Stack We Use in Q-Commerce Application Development"
-          description="Comfygen builds fast, secure, and scalable Q-commerce platforms using a modern, flexible, and high-performance technology stack. Our tools are carefully selected to support lightning-fast deliveries, real-time tracking, and intelligent automation across mobile and web."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <DeliverySection />
-        <HireDeveloper
-          heading="Hire Our Dedicated Q-Commerce App Developers"
-          text="Looking to build a high-speed, real-time delivery app? Hire expert Q-commerce app developers from Comfygen Technologies to bring your quick commerce vision to life. We specialize in developing custom, scalable, and performance-driven apps designed for instant deliveries and seamless user experiences."
-          text1="Our quick commerce mobile app developers have hands-on experience in building Q-commerce apps like Zepto, Blinkit, and Swiggy Instamart clones—combining real-time GPS, AI-powered suggestions, and intelligent order workflows."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experts in Hyperlocal & Instant Delivery App Development",
-            "Custom-Built for Grocery, Medicine, Food & Essentials Delivery",
-            "Integrated with Smart Features – Live Tracking, Wallets, Reordering"
-          ]}
-        />
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials} />
-
-        <Faq faqData={Frequently} title="Frequently Asked Questions" />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

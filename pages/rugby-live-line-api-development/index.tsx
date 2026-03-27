@@ -1,109 +1,53 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rugbylivelineapidevelopment.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
-const Process = [
-  {
-    title: "Step 1 – Requirement Analysis",
-    description:
-      "We begin by understanding your business goals, user base, and tech environment. This ensures your Rugby Live Line API aligns perfectly with your platform’s purpose and performance needs."
-  },
-  {
-    title: "Step 2 – Wireframing & Planning",
-    description:
-      "Our team creates a detailed blueprint for your custom rugby data API, outlining architecture, endpoints, and workflows to ensure seamless development and deployment."
-  },
-  {
-    title: "Step 3 – API Development",
-    description:
-      "We build robust, scalable, and secure API endpoints tailored to your use case. Each line of code is optimized for real-time rugby match feed integration and future scalability."
-  },
-  {
-    title: "Step 4 – Integration Testing",
-    description:
-      "Before launch, we rigorously test every API endpoint to confirm accuracy, speed, and compatibility. This phase ensures real-time delivery with minimal delay or data mismatch."
-  },
-  {
-    title: "Step 5 – Client-Side Integration",
-    description:
-      "We assist in connecting your front end—whether it’s a web app or mobile app—to the API. Our developers ensure smooth and reliable rugby API integration services."
-  },
-  {
-    title: "Step 6 – Monitoring & Analytics",
-    description:
-      "Track how your API performs with real-time dashboards. We provide detailed insights into request rates, uptime, and usage metrics to help optimize your platform."
-  },
-  {
-    title: "Step 7 – Ongoing Maintenance",
-    description:
-      "Our job doesn’t end at deployment. We deliver ongoing support, version updates, and security patches to keep your rugby live score API running smoothly."
-  }
-];
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -113,15 +57,6 @@ const Process = [
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
-
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -223,114 +158,22 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-
-      <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-
-        <HeroSectionForAllPages
-          heading="Rugby Live Line API Development Service"
-          ptag="We deliver cutting-edge Rugby Live Line API services tailored for startups, enterprises, and gaming platforms. With over 10 years of experience in software development, we provide real-time, scalable, and seamlessly integrated APIs for rugby live scores, match stats, and data feeds. Whether you're building a live score app, fan platform, our Rugby APIs ensure accuracy and instant updates. From automated highlights to up-to-the-second scoreboards, our APIs simplify integration and boost user engagement. Trust Comfygen Technologies —the expert rugby API provider—to power your platform with reliable, real-time rugby data. Let’s build smarter sports experiences together."
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-hero.webp"
-        />
-
-
-        <AboutSection
-          title="About Company"
-          heading="Delivering Reliable Rugby API Solutions for Every Digital Need"
-          description1="Comfygen is a leading rugby API integration company dedicated to delivering accurate, scalable, and real-time API solutions. We don’t just develop software—we engineer performance-driven rugby live line API services that empower digital experiences across web, mobile, and sports platforms."
-          description2="Our strength lies in building intelligent data bridges between your app and live match data. From rugby data feeds API to custom rugby live data API, we’ve served businesses ranging from sports broadcasters to online gaming operators. Whether you're building a fantasy app, a highlights portal, or a fan stats dashboard, we ensure that every rugby match live line feed API meets the highest standards of accuracy, security, and speed."
-          description3="From API for Blackout Rugby to Rugby API for highlights, we cover it all with one clear focus—helping you build sports applications that engage, inform, and inspire. Our expert team is always ready to build, deploy, and scale the next generation of rugby sports API services."
-
-          imageSrc="https://www.comfygen.com/comfygen-images/rugby-live-line-api-development/rugby-api-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Comprehensive Rugby Live Line API Services</h2>
-              <p className="text-base text-center font-normal"></p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Step-by-Step Roadmap for Rugby Live Line API Integration</h2>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Us for Rugby Live Line API"
-          text="Ready to take your sports platform to the next level? Comfygen is here to help you build high-performance, fully customized rugby live line API solutions tailored to your goals. Whether you're a sports media platform, fantasy app, or live line provider, we offer powerful, real-time data integrations that enhance user engagement and deliver unmatched performance. Our team combines technical expertise with industry knowledge to ensure seamless API functionality, real-time data accuracy, and a smooth user experience. We prioritize your business needs and deliver every project with speed, precision, and ongoing support."
-          text1="When you hire Comfygen, you get more than just development—you gain a reliable technology partner."
-          buttonText="When you hire from Comfygen, you get:"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Fast delivery with zero compromise on quality",
-            "Free consultation to assess your requirements",
-            "Post-deployment support and maintenance included",
-            "Affordable pricing with flexible engagement models"
-          ]}
-
-        />
-
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Rugby Live Line Api "
-        />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }
-
-
 
 
 

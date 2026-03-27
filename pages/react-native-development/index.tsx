@@ -1,91 +1,55 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/reactnative.json";
-import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ConsultingSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultingSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+import InformationSection from "../../components/InformationSection"
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true }
-)
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
+
+
 
 
 
 export default function Altcoin(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
 
   const jsonLdData = [
@@ -138,12 +102,6 @@ export default function Altcoin(props: any) {
       ],
     },
   ];
-
-
-
-
-
-
 
 
   return (
@@ -200,145 +158,35 @@ export default function Altcoin(props: any) {
 
 
       </Head>
-      <div>
-        <Header />
-      </div>
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="React Native App Development Services For Develop Mobile App"
-          ptag="Comfygen provides professional React Native app development services to help businesses build fast, scalable, and cost-effective cross-platform mobile applications. Our experienced React Native developers create high-performance Android and iOS apps using a single codebase, ensuring faster development, reduced costs, and consistent user experience."
-          ptag1="From UI/UX design to API integration and deployment, we deliver end-to-end React Native solutions for startups and enterprises. Our focus on clean architecture, performance optimization, and future-ready scalability ensures your mobile app supports long-term business growth."
-          li="Custom Cross-Platform Mobile App Solutions"
-          li1="Scalable, Secure & High-Performance Apps"
-          li2="End-to-End React Native Development Services"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/react-native-dev-hero-img.webp"
-        />
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our React Native Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                We can help you build a high-performing application utilizing
-                cutting-edge technologies, from designing an intuitive user
-                interface to building multi-platform applications for iOS and
-                Android.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="React Native app Development Company"
-          description1="React Native brings together the best of native development and React, a JavaScript library for building user interfaces. Create Android, iOS, Web, and UWP applications. React Native is flexible and scale able, so you can adapt it as much or aslittle as you need. Boost your distribution and exposure. Get a better understanding of your users data to enhance your marketing efforts and interactions."
-          description2="You can build anything mobile-worthy, whether its a news aggregator, ride-sharing service, or anything else. You will make the right choice when you choose React Native."
-          imageSrc="https://www.comfygen.com/gallery/about-images/react-native-development-about-us-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-          <CallToAction
-          heading="Kickstart Your Dream Project With Us"
-          text="We have worked with some of the best innovative ideas and brands in the world across industries."
-          buttonText="Initiate a Partnership"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />
+      <InformationSection InfoSectionData={JSON_DATA?.Migration} />
+      <InformationSection InfoSectionData={JSON_DATA?.Costof} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
+      {/* <ConsultingSec
+        title="React Native Consulting Services"
+        description="Build cross-platform applications with a native look and feel by hiring React Native consultants. We’ll guide you through a detailed process after understanding your business requirements."
+        image="https://www.comfygen.com/images/react-native-consulting-services.webp"
+        contactNumber="9587867258"
+        ctaText="Get Instant Professional Advice"
+      /> */}
 
 
 
-        {/* <ServicesSec
-          servicesData={JSON_DATA.servicesData}
-          title="Our React Native Development Services"
-          description="We can help you build a high-performing application utilizing cutting-edge technologies, from designing an intuitive user interface to building multi-platform applications for iOS and Android."
-        /> */}
-        <InfoSection
-          heading="React Native Development"
-          description1="The greatest React Native app development firm, Comfygen, stands out for providing top-notch services. When it comes to providing seamless solutions for your mobile app demands, our skilled team excels. We offer thorough consulting and migration services along with React Native app development. You can engage our skilled React Native app developers to ensure the success of your projects."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/images/react-native-dev.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <InfoSection
-          heading="We Provide React Native App Migration Services"
-          description1="As Businesses need to keep up with the technological landscape as it evolves. For modernizing legacy apps, React Native is the best solution. With powerful legacy app modernization services, we can help you re-configure your legacy apps or convert them completely to React Native for better UI and UX. Businesses have benefited from React Native in a number of ways, including"
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-          imagePosition="right"
-        />
-        <InfoSection
-          heading="Cost of React Native App Development"
-          description1="The React Native framework, being free and open-source, provides a versatile platform for developing your idea, whether by assembling your own team or outsourcing the project. However, implementing features will require an investment based on the hourly rates of skilled software developers. The cost of building and developing with React Native often aligns with general software development expenses, making it a practical choice for creating robust and feature-rich applications."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        {/* <ContactFromCenter /> */}
-       
-        <ConsultingSec
-          title="React Native Consulting Services"
-          description="Build cross-platform applications with a native look and feel by hiring React Native consultants. We’ll guide you through a detailed process after understanding your business requirements."
-          image="https://www.comfygen.com/images/react-native-consulting-services.webp"
-          contactNumber="9587867258"
-          ctaText="Get Instant Professional Advice"
-        />
-      
 
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <ClientStories/>
 
-         <HireDeveloper
-          heading="Hire React Native App Developer India"
-          text="With your thoughtfulness, we'll create the best native React Native based mobile apps using the React Native language for reasonable charges."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experienced React Native developers are available for hire",
-            "Dynamic mobile apps can be built with the help of well-versed resources",
-            "NDA confidentiality is 100% guaranteed",
-            "Hire a dedicated React Native developer",
-          ]}
-        />
 
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
 
-        <BlogSection initialData={initialData} />
-      </div>
+
     </>
   );
 }
