@@ -1,221 +1,145 @@
 {
-  "AppService": [
+  "Herosection": {
+    "heading": "Top Quick Commerce App Development Company ",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Build ultra-fast delivery platforms with Comfygen, a leading Quick Commerce App Development Company delivering high-performance Q-commerce solutions for startups and enterprises. We specialize in Quick Commerce App Development for grocery, pharmacy, food, and daily-need brands, enabling 10–30 minute deliveries with real-time operations.",
+    "ptag1": "From apps like Zepto, Blinkit, Dunzo, and Tata 1mg, we design scalable, on-demand quick commerce app solutions that ensure faster order processing, smart inventory control, and seamless customer experiences across iOS, Android, and web platforms.",
+    "listItems": [
+      "Custom On-Demand Roadside Assistance App Development",
+      "Real-Time GPS Tracking & Smart Dispatch",
+      "Secure Payments & 24/7 Emergency Support",
+      "Scalable, AI-Enabled & Cloud-Ready Solutions"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Best Roadside Assistance App Development Company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/quick-commerce-app-development/quick-commerce-app-development1.webp"
+  },
+"ServicesData": {
+  "heading": "Poker Game Development Services",
+  "description": "Your poker gaming experience can skyrocket with great navigational and other useful features. Here are some poker game development services to opt for vast engagement",
+  "services": [
     {
-      "num": "1",
-      "title": "Poker Android Game Development  ",
-      "decs": "We create Android applications for online poker games that let users win real money with just a few clicks of their smartphones and fast internet. We create Android poker game apps like Poker 5 Card Draw, Offline Poker, Mega Hit Poker, Governor of Poker 3, and others using cutting-edge technology and tools.",
-      "url": "/android-app-development"
+      "title": "Custom Poker Game Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our poker game development services offer custom solutions via rendering certain & specific requirements. We work on gaming solutions fulfilling all your playful needs and expectations.",
+      "features": [
+        "Bespoke Poker Game Designs",
+        "Feature-Rich Customization",
+        "Scalability and Security"
+      ]
     },
     {
-      "num": "2",
-      "title": "Poker iOS Game Development ",
-      "decs": "We create outstanding poker game applications for the iOS platform as a top poker software development business using cutting-edge technologies like Corona SDK, SpriteKit, Unit, Cocos2D, CryEngine, and Nextpeer. These tools allow customers to encounter excellent features and wrap up the entire poker game production process.",
-      "url": "/ios-app-development"
+      "title": "Online Poker Software Integration",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Our expert online poker software developers are capable of integrating different software in the game application. We use advancements and the latest technology trends to build user-centric and robust game development solutions.",
+      "features": [
+        "Advanced Software Integration",
+        "Enhanced User Experience",
+        "Custom Functionalities"
+      ]
+    },
+    {
+      "title": "White-Label Poker Software",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "If the client wants turnkey poker gaming applications, then you can opt for white-label poker software. We build fully functional and customizable solutions to launch an incredible poker game.",
+      "features": [
+        "Fully Functional and Customizable",
+        "Quick Deployment Solutions",
+        "Cost-Effective Turnkey Options"
+      ]
+    },
+    {
+      "title": "Poker Game Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "We render poker game development services, which include all the possible poker operator’s needs, and also be convenient to the gamers. We ensure your poker gaming platform stands out in the marketplace with the implementation of some advancements though.",
+      "features": [
+        "Feature-Packed Platforms",
+        "Advanced Gaming Mechanics",
+        "User-Friendly Interfaces"
+      ]
+    },
+    {
+      "title": "Mobile Poker Game Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "The mobile poker game app development allows the operator to reach a vast-scale audience helping to achieve great attention. Also, expert mobile app developers build responsive and user-friendly applications for better navigation and multiple mobile channels possible.",
+      "features": [
+        "Cross-Platform Mobile Compatibility",
+        "Interactive User Interfaces",
+        "Optimized for High Performance"
+      ]
+    },
+    {
+      "title": "Poker Game Website Development",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "We provide poker gaming website and app development services to fulfill all necessary requirements of clients. We ensure to build some mind-blowing featured applications to make the users stay connected with your application.",
+      "features": [
+        "Dynamic Website Features",
+        "Responsive Web Design",
+        "Optimized for User Retention"
+      ]
+    },
+    {
+      "title": "Blockchain-Based Poker Platform",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "The IT Professionals from Comfygen are experts in blockchain development, with a deep understanding of integrating bitcoins and other cryptocurrencies into poker application development. By leveraging blockchain technology, our team is able to create secure and transparent poker gaming solutions. We believe in creating secured and transparent poker gaming solutions.",
+      "features": [
+        "Cryptocurrency Integration",
+        "Secure Blockchain Protocols",
+        "Transparent Gaming Ecosystems"
+      ]
+    },
+    {
+      "title": "Turnkey Poker Game Solutions",
+      "subtitle": "All Service And Solutions At One Place",
+      "description": "Be ready to get hassle-free turnkey solutions to launch an agile poker gameplay platform. We got you from the moment of ideology to its complete poker game deployment and after poker game deployment services are ensured.",
+      "features": [
+        "End-to-End Poker Game Solutions",
+        "Agile Development Processes",
+        "Post-Deployment Support"
+      ]
     }
-  ],
+  ]
+},
 
-"servicesData": [
-  {
-    "title": "Custom Poker Game Development",
-   "subtitle": "All Service And Solutions At One Place",
-    "description": "Our poker game development services offer custom solutions via rendering certain & specific requirements. We work on gaming solutions fulfilling all your playful needs and expectations.",
-    "features": [
-      "Bespoke Poker Game Designs",
-      "Feature-Rich Customization",
-      "Scalability and Security"
-    ]
-  },
-  {
-    "title": "Online Poker Software Integration",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Our expert online poker software developers are capable of integrating different software in the game application. We use advancements and the latest technology trends to build user-centric and robust game development solutions.",
-    "features": [
-      "Advanced Software Integration",
-      "Enhanced User Experience",
-      "Custom Functionalities"
-    ]
-  },
-  {
-    "title": "White-Label Poker Software",
-  "subtitle": "All Service And Solutions At One Place",
-    "description": "If the client wants turnkey poker gaming applications, then you can opt for white-label poker software. We build fully functional and customizable solutions to launch an incredible poker game.",
-    "features": [
-      "Fully Functional and Customizable",
-      "Quick Deployment Solutions",
-      "Cost-Effective Turnkey Options"
-    ]
-  },
-  {
-    "title": "Poker Game Development",
-   "subtitle": "All Service And Solutions At One Place",
-    "description": "We render poker game development services, which include all the possible poker operator’s needs, and also be convenient to the gamers. We ensure your poker gaming platform stands out in the marketplace with the implementation of some advancements though.",
-    "features": [
-      "Feature-Packed Platforms",
-      "Advanced Gaming Mechanics",
-      "User-Friendly Interfaces"
-    ]
-  },
-  {
-    "title": "Mobile Poker Game Development",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "The mobile poker game app development allows the operator to reach a vast-scale audience helping to achieve great attention. Also, expert mobile app developers build responsive and user-friendly applications for better navigation and multiple mobile channels possible.",
-    "features": [
-      "Cross-Platform Mobile Compatibility",
-      "Interactive User Interfaces",
-      "Optimized for High Performance"
-    ]
-  },
-  {
-    "title": "Poker Game Website Development",
-   "subtitle": "All Service And Solutions At One Place",
-    "description": "We provide poker gaming website and app development services to fulfill all necessary requirements of clients. We ensure to build some mind-blowing featured applications to make the users stay connected with your application.",
-    "features": [
-      "Dynamic Website Features",
-      "Responsive Web Design",
-      "Optimized for User Retention"
-    ]
-  },
-  {
-    "title": "Blockchain-Based Poker Platform",
-   "subtitle": "All Service And Solutions At One Place",
-    "description": "The IT Professionals from Comfygen are experts in blockchain development, with a deep understanding of integrating bitcoins and other cryptocurrencies into poker application development. By leveraging blockchain technology, our team is able to create secure and transparent poker gaming solutions. We believe in creating secured and transparent poker gaming solutions.",
-    "features": [
-      "Cryptocurrency Integration",
-      "Secure Blockchain Protocols",
-      "Transparent Gaming Ecosystems"
-    ]
-  },
-  {
-    "title": "Turnkey Poker Game Solutions",
-    "subtitle": "All Service And Solutions At One Place",
-    "description": "Be ready to get hassle-free turnkey solutions to launch an agile poker gameplay platform. We got you from the moment of ideology to its complete poker game deployment and after poker game deployment services are ensured.",
-    "features": [
-      "End-to-End Poker Game Solutions",
-      "Agile Development Processes",
-      "Post-Deployment Support"
-    ]
-  }
-],
+"AboutSection": {
+  "title": "About Company",
+  "heading": "No. 1 Poker Game Development Company",
+  "description1": "Comfygen is the leading poker game development company in India and the USA, catering to excellent and user-friendly app solutions with a seamless navigational experience. We have been developing super-fantastic games for years and delivering robust and engaging apps. Our talented and skilled game developers are renowned to build authentic applications with ground-breaking designs. We provide seamless poker game development services with advancements and next level techniques",
+  "description2": "",
+  "description3": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+  "link": "/about-us",
+  "linkText": "Explore More"
+},
 
-  "pageData": {
-    "title": "Why Comfygen for Poker Game Development?",
-    "description": "You might have the question about choosing the poker game development company in the USA. Well, we are here for your support with maintenance. Comfygen is always available to support building agile and robust poker gaming applications.",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Optimum Outcome Focused",
-      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+ "PokerGame": {
+  "heading": "Poker Game Application Development Services",
+  "subheading": "Our expert Poker game app/ software developers believe in developing cutting-edge Poker Game Development solutions with supremacy features. The engineers works on:",
+  "tech": [
+    {
+      "img": null,
+      "title": "Poker Android Game Development",
+      "desc": "We create Android applications for online poker games that let users win real money with just a few clicks of their smartphones and fast internet. We create Android poker game apps like Poker 5 Card Draw, Offline Poker, Mega Hit Poker, Governor of Poker 3, and others using cutting-edge technology and tools.",
+      "url": "/android-app-development",
+      "num": "1"
     },
-    "gridData": [
-      {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Expertise in Gaming Development",
-        "description": "We boast a team of highly skilled poker app developers with extensive experience in creating top-notch poker gaming applications. Their deep understanding of game mechanics and player engagement sets them apart in the poker game development industry in the USA."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Cutting-Edge Technology Stack",
-        "description": "Comfygen leverages the latest technologies and tools to build robust and scalable poker games. Their commitment to staying updated with emerging trends ensures your online poker game remains competitive and adaptable to evolving player preferences."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Customization and Innovation",
-        "description": "Our IT Professional prioritizes customization, allowing you to tailor your poker game to meet unique requirements and incorporate innovative features. They encourage creative poker game development solutions and are adept at turning your vision into reality."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Seamless Multiplayer Functionality",
-        "description": "We excel in developing poker game apps/software in real-time multiplayer features, essential for poker games. Their expertise ensures that players can seamlessly join games, interact with others, and enjoy a social gaming experience."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Quality Assurance and Support",
-        "description": "Comfygen places a strong influence on quality assurance, conducting rigorous testing to identify and resolve any issues. Their dedicated customer support team is available 24*7 to address user inquiries, ensuring a positive player experience and long-term success for your poker game."
-      }
-    ]
-  },
+    {
+      "img": null,
+      "title": "Poker iOS Game Development",
+      "desc": "We create outstanding poker game applications for the iOS platform as a top poker software development business using cutting-edge technologies like Corona SDK, SpriteKit, Unit, Cocos2D, CryEngine, and Nextpeer. These tools allow customers to encounter excellent features and wrap up the entire poker game production process.",
+      "url": "/ios-app-development",
+      "num": "2"
+    }
+  ]
+},
 
- 
-  "Bestchoice": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Expertise in Gaming Development:",
-      "decs": "We boast a team of highly skilled poker app developers with extensive experience in creating top-notch poker gaming applications. Their deep understanding of game mechanics and player engagement sets them apart in the poker game development industry in the USA.    "
-    },
-    {
-      "num": "02",
-      "bg": "#F7F5FA",
-      "title": "Cutting-Edge Technology Stack:",
-      "decs": "Comfygen leverages the latest technologies and tools to build robust and scalable poker games. Their commitment to staying updated with emerging trends ensures your online poker game remains competitive and adaptable to evolving player preferences.    "
-    },
-    {
-      "num": "03",
-      "bg": "#9A4ECC1A",
-      "title": "Customization and Innovation:",
-      "decs": "Our IT Professional prioritizes customization, allowing you to tailor your poker game to meet unique requirements and incorporate innovative features. They encourage creative poker game development solutions and are adept at turning your vision into reality."
-    },
-    {
-      "num": "04",
-      "bg": "#6C54DE1A",
-      "title": "Seamless Multiplayer Functionality:",
-      "decs": "We excel in developing poker game apps/software in real-time multiplayer features, essential for poker games. Their expertise ensures that players can seamlessly join games, interact with others, and enjoy a social gaming experience."
-    },
-    {
-      "num": "05",
-      "bg": "#F7F5FA",
-      "title": "Quality Assurance and Support:",
-      "decs": "Comfygen places a strong influence on quality assurance, conducting rigorous testing to identify and resolve any issues. Their dedicated customer support team is available 24*7 to address user inquiries, ensuring a positive player experience and long-term success for your poker game."
-    }
-  ],
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What Is Poker Game App Development ?",
-      "desc": "Poker game app development is a process of developing game app interfaces for various mobile devices such as iOS and Android."
-    },
-    {
-      "num": "2",
-      "title": "What Technologies Do You Use To Develop Poker Games ?",
-      "desc": "For the backend, we use Java, and for the database, we rely on MySQL and PostgreSQL. The front end, we use technologies like Vue. Flutter, Reactive Native, JS, Angular, etc"
-    },
-    {
-      "num": "3",
-      "title": "Have You Ever Worked In Game Development Before ?",
-      "desc": "We have developed 1000+ games for a number of clients. YES, we do have specialized in poker game development as per requirements."
-    },
-    {
-      "num": "4",
-      "title": "How Much Does Poker Game App Development Cost ?",
-      "desc": "Connect with our expert to know ballpark estimation. Besides, we provide game development services at pocket-friendly rates."
-    }
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire our Dedicated Poker Game Software Developers ",
-      "desc": "We work hard to give our clients the best option possible and aid in their increased pleasure. We make sure to put better insight into poker game development solutions and walk you through every step of the poker game software development process thanks to our staff of committed Hire poker software developers. To guarantee a seamless poker gaming experience, we implement the best poker gaming techniques and technologies.",
-      "decs": "You may rely on our skilled poker game developers regardless of the type of poker game development you need or the poker software platforms you prefer.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "It is necessary to have on-going software tools and experienced game developers for amazing poker game design.",
-    "Our developers approach their legacy of abundance to deliver satisfied results.",
-    "We can, additionally, could help to build an online poker game for real money using the open source script.",
-    "Faultless conversation with our users",
-    "Affordable and time-saving gaming solutions",
-    "Powerful and secure coding"
-  ],
-  "Whychoose": [
-    {
-      "num": "01",
-      "title": "Why Comfygen for Poker Game Development?    ",
-      "decs": "You might have the question about choosing the poker game development company in the USA. Well, we are here for your support with maintenance. Comfygen is always available to support building agile and robust poker gaming applications. "
-    }
-  ],
-  "GameCardData": [
-    {
+  "GameCardData": {
+    "heading":"Mark Your Presence in Web/App-based Top Cards Games Development via Comfygen",
+    "Game":[
+        {
       "num": "1",
       "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
       "url": "/rummy-game-development",
@@ -305,5 +229,164 @@
       "url": "/",
       "title": "Call Break Game Development"
     }
+    ]
+  },
+"Features": {
+  "heading": "Features of Poker Game App Development",
+  "subheading": "Following the latest tech trends, we integrate the poker game application with some incredible features providing smooth user-experience",
+  "tech": [
+    {
+      "img": null,
+      "title": "Graphic-Rich User Interface",
+      "desc": "When it comes to poker game app development, the most important thing to focus on is its graphics. The application should look much simpler with great navigational features."
+    },
+    {
+      "img": null,
+      "title": "Live Gaming Insights",
+      "desc": "The poker game application built by our experts claims to provide live gaming insights to improve your experience."
+    },
+    {
+      "img": null,
+      "title": "Connect Social Media Friends",
+      "desc": "The poker game application allows the users to integrate their app with social media accounts to play with friends."
+    },
+    {
+      "img": null,
+      "title": "Use of Artificial Intelligence",
+      "desc": "The poker app developers integrate AI features during poker gaming, which enables the users to get suggestions and advice during the real-time gaming."
+    },
+    {
+      "img": null,
+      "title": "Multi-Currency Support",
+      "desc": "The poker game application enables the gamers to use multi-currencies to make the gaming experience flexible and smooth."
+    },
+    {
+      "img": null,
+      "title": "Cross-Platform Functionality",
+      "desc": "Our company suggests the best poker development solutions, and that’s where we prefer our clients to build cross-platform poker game applications to fetch attention from a vast-scale audience."
+    },
+    {
+      "img": null,
+      "title": "Poker Anti-Fraud System",
+      "desc": "We ensure our players play with full-fledged safety and security. We built an anti-fraud system in the app for user’s info security."
+    },
+    {
+      "img": null,
+      "title": "Multi-Games Offering",
+      "desc": "We provide multiple-games offerings; such as five-card Omaha Poker game development, Holdem Poker, Sit & Go and other RNNG Certified Games."
+    }
   ]
+},
+
+"HireDeveloper": {
+  "heading": "Hire our Dedicated Poker Game Software Developers",
+  "text": "At Comfygen, we deliver top-notch poker game development solutions tailored to enhance client satisfaction. Our dedicated team of expert poker software developers ensures a seamless development process, leveraging the latest technologies and proven techniques for an exceptional gaming experience. Whether you need custom poker game development or platform-specific solutions, our skilled developers are your trusted partners for creating engaging and reliable poker software.",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems": [
+    "It is necessary to have on-going software tools and experienced game developers for amazing poker game design.",
+    "Our developers approach their legacy of abundance to deliver satisfied results.",
+    "We can, additionally, could help to build an online poker game for real money using the open source script.",
+    "Faultless conversation with our users",
+    "Affordable and time-saving gaming solutions",
+    "Powerful and secure coding"
+  ]
+},
+"ProcessData": {
+  "heading": "Poker Game App Development Process",
+  "description": "Know the poker game application development process to understand how our experts can serve you with best practices.",
+  "Process": [
+    {
+      "title": "Define Your Poker Game Concept",
+      "description": "To begin, you should have a clear vision of the poker game you want to create. Decide on the type of poker game variant, whether it's Texas Hold'em Poker game development, Omaha Poker Game Development, or another variation. Additionally, consider any unique features or rules that will set your Poker game apart from others in the market. This initial concept will serve as the foundation for the entire Poker game development process."
+    },
+    {
+      "title": "Planning",
+      "description": "Once you have a well-defined concept and market research in hand, create a comprehensive project plan for poker game development. Outline the Poker Game Application Development timeline, set milestones, and allocate resources accordingly. Additionally, establish a budget to ensure that your project remains financially viable. A well-thought-out plan will keep your Poker Game Development efforts on track and within scope."
+    },
+    {
+      "title": "Design and User Interface",
+      "description": "Invest time and effort in designing an intuitive and visually appealing user interface for your poker app. Consider user experience as a top priority. Create wireframes and prototypes to visualize the app's layout, user flow, and interaction design. A well-crafted UI will enhance player engagement and retention."
+    },
+    {
+      "title": "Development",
+      "description": "The backend of a poker app manages game logic, including card dealing, hand evaluation, matchmaking, and secure data storage, ensuring fair and seamless gameplay. Paired with a responsive frontend built using HTML, CSS, and JavaScript, the app delivers smooth player interactions across all devices. A scalable backend and visually appealing, mobile-friendly design are key to enhancing user satisfaction and engagement in your poker game app."
+    },
+    {
+      "title": "Testing",
+      "description": "Testing is a crucial step to identify and rectify any issues in your poker game application. Perform thorough functional testing to ensure that all features work as intended. Conduct usability testing to gather feedback on the user experience. Additionally, security testing is vital to detect vulnerabilities that could be exploited. Addressing these issues before launch is essential for a smooth player experience."
+    },
+    {
+      "title": "Deployment",
+      "description": "Deploy your poker game app to a web server or hosting platform. Configure domain and hosting settings to make your app accessible to users. Ensure that the deployment environment is stable and can handle the expected user load."
+    },
+    {
+      "title": "Support and Maintenance",
+      "description": "Offer responsive customer support to address player inquiries and issues promptly. Continuously monitor and maintain your poker game app to keep it stable and secure. Regular updates and maintenance are essential for long-term success."
+    }
+  ]
+},
+
+  "pageData": {
+    "title": "Why Comfygen for Poker Game Development?",
+    "description": "You might have the question about choosing the poker game development company in the USA. Well, we are here for your support with maintenance. Comfygen is always available to support building agile and robust poker gaming applications.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expertise in Gaming Development",
+        "description": "We boast a team of highly skilled poker app developers with extensive experience in creating top-notch poker gaming applications. Their deep understanding of game mechanics and player engagement sets them apart in the poker game development industry in the USA."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Cutting-Edge Technology Stack",
+        "description": "Comfygen leverages the latest technologies and tools to build robust and scalable poker games. Their commitment to staying updated with emerging trends ensures your online poker game remains competitive and adaptable to evolving player preferences."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Customization and Innovation",
+        "description": "Our IT Professional prioritizes customization, allowing you to tailor your poker game to meet unique requirements and incorporate innovative features. They encourage creative poker game development solutions and are adept at turning your vision into reality."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Seamless Multiplayer Functionality",
+        "description": "We excel in developing poker game apps/software in real-time multiplayer features, essential for poker games. Their expertise ensures that players can seamlessly join games, interact with others, and enjoy a social gaming experience."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Quality Assurance and Support",
+        "description": "Comfygen places a strong influence on quality assurance, conducting rigorous testing to identify and resolve any issues. Their dedicated customer support team is available 24*7 to address user inquiries, ensuring a positive player experience and long-term success for your poker game."
+      }
+    ]
+  },
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "What Is Poker Game App Development ?",
+      "desc": "Poker game app development is a process of developing game app interfaces for various mobile devices such as iOS and Android."
+    },
+    {
+      "num": "2",
+      "title": "What Technologies Do You Use To Develop Poker Games ?",
+      "desc": "For the backend, we use Java, and for the database, we rely on MySQL and PostgreSQL. The front end, we use technologies like Vue. Flutter, Reactive Native, JS, Angular, etc"
+    },
+    {
+      "num": "3",
+      "title": "Have You Ever Worked In Game Development Before ?",
+      "desc": "We have developed 1000+ games for a number of clients. YES, we do have specialized in poker game development as per requirements."
+    },
+    {
+      "num": "4",
+      "title": "How Much Does Poker Game App Development Cost ?",
+      "desc": "Connect with our expert to know ballpark estimation. Besides, we provide game development services at pocket-friendly rates."
+    }
+  ]
+
+
 }

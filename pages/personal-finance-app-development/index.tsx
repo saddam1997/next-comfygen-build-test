@@ -4,10 +4,107 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./PersonalFinance.json";
 
 
+import Features from "../../components/Features"
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+import Emerging from "../../components/Emerging";
+
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+import AppCardClones from "../../components/AppCardClones"
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+import ClientTestimonials from "../../components/TestimonialSection";
+import ClientStories from "../../components/ClientStories";
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -62,21 +159,16 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 )
 
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
+// const ClientTestimonials = dynamic(
+//   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
+//   { loading: loader, ssr: true }
+// )
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 
 )
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
 
 
 
@@ -368,218 +460,28 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Emerging emerging={JSON_DATA.Technologies} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <Solution techData={JSON_DATA.Business} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientTestimonials
+        heading="What Our Clients Say About"
+        testimonials={JSON_DATA.customTestimonials}
+      />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden pt-16">
-        <HeroSectionForAllPages
-          heading="Top Rated Personal Finance App Development Company"
-          ptag="Comfygen Technologies is a top rated personal finance app development company offering advanced Personal Finance App Development services for startups, fintech firms, and enterprises. We create secure, scalable, and user-friendly finance apps that simplify budgeting, expense tracking, and money management, helping businesses deliver exceptional financial solutions and enhance user engagement across Android, iOS, and web platforms."
-          li="Simple and intuitive UI/UX for finance apps"
-          li1="Secure bank & wallet integrations"
-          li2="Real-time expense tracking and budgeting"
-          li3="AI-powered financial reports and insights"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/personal-finance-app-development/hero.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Provide the Best Personal Finance App Development Services for Startups
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen Technologies, we offer end-to-end personal finance app development services to help startups, banks, and fintech companies launch powerful money management applications. Our custom solutions empower users to track expenses, manage budgets, and plan financial goals anytime, anywhere.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-        <AboutSection
-          title="About Company"
-          heading="Why Should You Invest in Personal Finance App Development?"
-          description1="Investing in personal finance app development offers strong business potential due to rapidly growing global demand for digital money management solutions. The personal finance app market was valued in the tens of billions in 2026 and is projected to exceed $100 billion by 2030–2035, growing at a 15–25% CAGR. Rising smartphone adoption, financial awareness, and AI-driven automation fuel recurring revenue through subscriptions, ads, and premium features, making it a highly profitable and scalable investment opportunity."
-          description2=""
-          points={[
-            "High market growth",
-            "Strong user demand",
-            "AI-driven innovation",
-            "Recurring revenue models",
-            "Scalable business opportunity",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/personal-finance-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Personal Finance App Development Portfolio"
-            description="Our personal finance app development portfolio showcases a diverse range of secure, scalable, and user-centric finance applications. As a trusted personal finance app development company, we deliver innovative solutions for budgeting, expense tracking, and intelligent money management across multiple platforms."
-          />
-        </section>
-
-
-
-        <CallToAction
-          heading="Ready to Build Your Personal Finance App?"
-          text="Have an idea for a smart money management app? Our expert team is here to turn your vision into a secure and user-friendly solution. Let's create something amazing together."
-          buttonText="Request a Proposal"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/comfygen-images/personal-finance-app-development/call.webp"
-          imageAlt="Get in touch now."
-        />
-
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Types of Personal Finance Apps We Build
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  We specialize in building a wide range of personal finance
-                  apps that help users take full control of their financial
-                  life. Whether it’s budgeting, tracking expenses, managing
-                  investments, or monitoring credit scores, we create secure and
-                  scalable apps for all your financial needs.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
-                          src={img}
-                          className="object-cover"
-                          width={35}
-                          height={50}
-                          alt={title}
-                        /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Personal Finance App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
-                As a trusted personal finance app development company, we follow a streamlined and agile development process to build secure, scalable, and user-centric finance applications. Our personal finance app development services ensure transparency, quality, and timely delivery at every stage.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-        <TechStack
-          title="Technology Stack We Use for Personal Finance App Development"
-          description="We use the latest and most reliable technologies to build secure, scalable, and high-performance personal finance apps. Our advanced tech stack supports real-time syncing, smooth performance, and secure financial operations for users across platforms."
-        />
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Why Your Business Needs a Personal Finance App
-                </h2>
-                <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                  With the rapid shift toward digital money management, personal finance app development has become a strategic investment for modern businesses. A well-designed finance app helps companies attract users, build trust, and deliver smart financial tools that enhance customer experience and long-term engagement.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
-                {JSON_DATA.FutureDriven2.map((elem) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
-                      <h3
-                        className="text-2xl text-[#212121] font-semibold"
-                        dangerouslySetInnerHTML={{ __html: title }}
-                      />
-                      <p
-                        className=" text-base font-normal mt-2"
-                        dangerouslySetInnerHTML={{ __html: desc }}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Personal Finance App Developers"
-          text="Hire skilled personal finance app developers from Comfygen Technologies to build secure, intuitive, and scalable finance applications. Our team focuses on smart budgeting, expense tracking, and financial insights that enhance user experience. With proven personal finance app development services, we help startups and enterprises launch high-performing apps that support long-term business growth."
-          text1=""
-          text2="Why Choose Our Personal Finance App Developers?"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Experienced in fintech and banking solutions",
-            "Skilled in cross-platform development (Flutter, React Native)",
-            "Experts in API integration (Plaid, Yodlee, Razorpay)",
-            "Focus on security (AES-256, Biometric Auth)",
-          ]}
-        />
-        <ClientStories/>
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

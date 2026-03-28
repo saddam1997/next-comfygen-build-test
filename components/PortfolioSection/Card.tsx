@@ -13,20 +13,20 @@ const Card = ({ item, isActive }: any) => {
       p-3 lg:p-4 transition-all duration-300 ${isActive ? "scale-100" : "scale-95 opacity-80"
         }`}
     >
-      <div className="flex justify-center">
+      <div className=" w-full">
         <Image
           src={item.image}
           alt={item.title}
           width={700}
           height={450}
-          className="h-full lg:h-[260px] "
+          className="object-contain h-80 "
           draggable={false}
           priority={isActive}
-          sizes="(max-width: 768px) 90vw, 500px"
+         
         />
       </div>
 
-      <div>
+      <div className="w-full">
         <HeadingThree color="black" text={item.title} />
         <ParagraphText color="black" text={item.description} />
 

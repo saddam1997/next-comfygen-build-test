@@ -1,66 +1,186 @@
 {
-  "NewSections": {
-    "title": "Best Python App and Web Development",
-    "decs": "Leading Python development company Comfygen offers complete Python web development services. Our skilled team, which is based in India and specializes in Python development, provides tailored solutions to fit your company's needs. We offer a wide range of services as a reputable Python software development firm, including Python app development, custom programming, and web development services. You can use our knowledgeable Python experts who have knowledge about the most recent Python technology. By working with Comfygen for your Python development needs, you can fully utilize this flexible programming language."
-  },
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Python Developers In India",
-      "desc": "For full-time projects, short-term tasks, and recurring projects, Comfortygen has carefully selected a team of dedicated Python developers.With over a decade of experience developing Python solutions, our dedicated developers have developed high-performance, flexible and scalable apps for diverse industries, catering to their business needs. Using the latest web technologies, they will create a simple yet intricate and complex software based on concise programming and minimalist designs. Comfygen's Python developers are skilled professionals whose expertise goes beyond coding. With seasoned developers who have worked on a vast array of challenging projects, we can create solutions that are not only developed in accordance with best practices, but also competitive.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
+"Herosection": {
+  "heading": "Best Python Development Company In India",
+  "subhead": "",
+  "isHome": false,
+  "ptag": "Comfygen is the best Python development company in India, delivering scalable, secure, and high-performance web and mobile applications. Our experienced Python developers provide custom python development solutions using modern frameworks to meet diverse business requirements across multiple industries.",
+  "ptag1": "From startups to enterprises, we develop robust and flexible Python-based applications that ensure smooth performance, seamless integration, and long-term scalability. Our Python development services in India help businesses build reliable digital products and achieve sustainable growth in today’s competitive market.",
+  "listItems": [
+    "Custom Python Web & App Development",
+    "Skilled Python Developers for Hire",
+    "Secure, Scalable & Flexible Solutions",
+    "Business-Focused, Result-Driven Development"
   ],
+  "btnName": "Talk With Expert",
+  "btnLink": "/contact-us",
+  "altTag": "Best Python Development Company In India",
+  "bgImage": "https://www.comfygen.com/herosection/python-development-company-hero-img.webp"
+},
 
-  "servicesData" :[
+"ServicesData": {
+  "heading": "Custom Python Development Services in India for Startups and Enterprises",
+  "description": "We provide custom Python development services in India for startups and enterprises. Our team builds secure, scalable, and high-performance Python applications that ensure seamless integration, smooth performance, and long-term business growth.",
+  "services": [
     {
       "title": "Machine Learning Solutions",
       "subtitle": "",
       "description": "Our Python-based machine learning solutions empower businesses to make data-driven decisions by uncovering patterns and insights. We create intelligent applications tailored to specific industry needs, ensuring high efficiency, improved accuracy, and enhanced user experience.",
-      "features": ["Data preprocessing and analysis", "Predictive analytics and modeling", "Natural Language Processing (NLP) solutions" , "Recommendation systems development" , "Image and video processing solutions" ]
+      "features": [
+        "Data preprocessing and analysis",
+        "Predictive analytics and modeling",
+        "Natural Language Processing (NLP) solutions",
+        "Recommendation systems development",
+        "Image and video processing solutions"
+      ]
     },
     {
       "title": "Python CMS Development",
       "subtitle": "",
       "description": "We develop highly scalable and efficient CMS web applications using Python, ensuring robust performance and easy content management. Our solutions are tailored to meet diverse business needs, providing flexibility, security, and a seamless user experience.",
-      "features": ["Custom CMS design and development", "Integration with third-party tools", "Scalable and modular architecture" , "Enhanced security features" , "Ongoing support and maintenance" ]
+      "features": [
+        "Custom CMS design and development",
+        "Integration with third-party tools",
+        "Scalable and modular architecture",
+        "Enhanced security features",
+        "Ongoing support and maintenance"
+      ]
     },
     {
       "title": "Migration to Python",
       "subtitle": "",
       "description": "We ensure a seamless migration of your existing app or website to Python, preserving all data and functionality while enhancing performance and scalability. Our process minimizes downtime and ensures a smooth transition with no disruptions to your operations.",
-      "features": ["Comprehensive migration planning", "Data integrity assurance", "Compatibility testing and debugging" , "Enhanced performance optimization" , "Post-migration support and updates" ]
+      "features": [
+        "Comprehensive migration planning",
+        "Data integrity assurance",
+        "Compatibility testing and debugging",
+        "Enhanced performance optimization",
+        "Post-migration support and updates"
+      ]
     },
     {
       "title": "Custom Python Development",
       "subtitle": "",
       "description": "Our Python developers craft tailored solutions to meet your unique business requirements, leveraging Python's versatility and scalability. We ensure that the solution aligns with your goals and enhances efficiency, adaptability, and performance.",
-      "features": ["Bespoke application design and development", "Advanced functionality integration", "Cross-platform compatibility" , "Scalable architecture for growth" , "Ongoing customization and support" ]
+      "features": [
+        "Bespoke application design and development",
+        "Advanced functionality integration",
+        "Cross-platform compatibility",
+        "Scalable architecture for growth",
+        "Ongoing customization and support"
+      ]
     },
     {
       "title": "Python Mobile App Developmen",
       "subtitle": "",
       "description": "Our Python developers specialize in creating high-quality mobile applications that help your business stand out. With a focus on functionality, performance, and user experience, we deliver mobile apps tailored to your specific needs.",
-      "features": ["Custom mobile app design and development", "Cross-platform compatibility using frameworks like Kivy" , "Integration of advanced features and APIs" , "High-performance app architectur" , "Ongoing maintenance and updates for optimal performance"]
-    } ,
+      "features": [
+        "Custom mobile app design and development",
+        "Cross-platform compatibility using frameworks like Kivy",
+        "Integration of advanced features and APIs",
+        "High-performance app architectur",
+        "Ongoing maintenance and updates for optimal performance"
+      ]
+    },
     {
       "title": "Django Framework Development",
       "subtitle": "",
       "description": "We offer high-quality Django-based web development services in Python, delivering robust solutions tailored to your business needs. Our expertise extends to scientific computation, statistical analysis, and data science capabilities, ensuring versatile and scalable web applications.",
-      "features": ["End-to-end Django web application development", "Integration of scientific and statistical computation modules", "RESTful API development using Django REST Framework" , "Secure, scalable, and maintainable web architectures" , "Customizable solutions for data-driven business models"]
+      "features": [
+        "End-to-end Django web application development",
+        "Integration of scientific and statistical computation modules",
+        "RESTful API development using Django REST Framework",
+        "Secure, scalable, and maintainable web architectures",
+        "Customizable solutions for data-driven business models"
+      ]
     }
-  
-  ],
+  ]
+},
 
-  "myList": [
+"AboutSection": {
+  "title": "We are Python Development Company",
+  "heading": "Best python web development company",
+  "description1": "We are one of the top Python development companies that deliver cutting-edge websites, mobile apps, and web apps using advanced Python frameworks, tools, and programming languages. We ensure error-free product development with innovative project management tools and collaborative tools. You will get seamless integration with APIs and other codes from our development team because we strictly follow international coding standards. Comfygen offers top-notch Python development services for next-generation mobile and web apps. Our solutions are highly scalable, customizable, and responsive due to the use of best-in-class libraries, frameworks, and technologies.",
+  "description2": "",
+  "description3": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+  "link": "/about-us",
+  "linkText": "Explore More"
+},
+
+"InfoSection": {
+  "heading": "Python App Development company",
+  "description1": "With over a decade of experience delivering Python solutions, Comfygen has delivered everything from dynamic websites to sophisticated, avant-garde web apps. You can get your dream web or app development project done with Python, an open-source, clear, and powerful object-oriented programming language.By leveraging advanced Python development frameworks, programming languages, and front-end tools, Comfygen delivers high-quality websites, web apps, and mobile applications. We have developers who are proficient in Python web development frameworks such as Django. There are similar frameworks for Python web apps such as Flask, Zope, and Pyramid, among others.",
+  "description2": "",
+  "description3": "",
+  "dec": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/img/python app.webp",
+  "link": "/contact-us",
+  "linkText": "LET'S CONNECT ",
+  "imagePosition": "right"
+},
+"Development": {
+  "heading": "python development firm",
+  "description1": "With decades of experience working across domains, we specialize in Python development services. With end-to-end Python development capabilities, we help clients unlock value and gain efficiencies. Offering Python development solutions and best-in-class consulting services, we partner with clients to achieve business objectives. The latest features and functionality of your web applications can be included with our expertise in Python frameworks such as Django & Flask. Building web apps quickly, efficiently, and with less coding requires the use of several Python frameworks.",
+  "description2": "",
+  "description3": "",
+  "dec": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/img/python-development.webp",
+  "link": "/contact-us",
+  "linkText": "LET'S CONNECT ",
+  "imagePosition": "left"
+},
+"Leading": {
+  "heading": "Leading Python Development Company In India",
+  "description1": "Comfygen uses Django Python and Angular 2 for frontend technologies to enable entrepreneurs to build successful start-up businesses.Through the integrated platform, entrepreneurs could confirm start-up ideas through discussion, meet investors to get seed funding, and find competent talent via an integrated recruitment portal. Multi-funding sources are integrated into the platform, all based on cryptocurrencies and blockchain technology. As a result, all three profiles of a creator, a backer, and an employee are seamlessly combined. To nurture ideas and turn them into profitable businesses, the solution brings entrepreneurs, investors, and employees together.",
+  "description2": "",
+  "description3": "",
+  "dec": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/img/python-develop.webp",
+  "link": "/contact-us",
+  "linkText": "LET'S CONNECT ",
+  "imagePosition": "right"
+},
+"HireDeveloper": {
+  "heading": "Hire Python Developers In India",
+  "text": "Comfygen offers a team of expert Python developers with over a decade of experience in delivering high-performance, scalable, and flexible solutions for diverse industries. Whether for full-time projects, short-term tasks, or recurring assignments, our dedicated developers excel in creating minimalist, feature-rich applications using the latest web technologies. Beyond coding, our skilled professionals follow best practices to build competitive software tailored to your business needs. Partner with Comfygen for innovative Python development that drives success.",
+  "text1": "",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems": [
     "Identify your requirements",
     "Look for a reliable recruitment agency",
     "Check the developers' qualifications and experience",
     "Review their portfolio and projects",
-    "Conduct technical interviews",
-    "Negotiate the terms and conditions."
-  ],
+    "Conduct technical interviews"
+  ]
+},
+
+"ChooseUs": {
+  "heading": "Why Choose Us As Your Python Development Company?",
+  "description1": "Comfygen offers our clients the latest and most futuristic Python Development by incorporating it into their projects. Object-oriented programming languages, such as Python, are high-level languages with dynamic semantics. Comfygen is a prominent Python development company with top-of-the-line Python developers who can develop complex Python-driven web applications with in-depth knowledge and experience. As a Python Django web development company, we have experience delivering large-scale projects. We strive to build Python desktop and web applications with state-of-the-art industry practices. If you choose Comfygen as your Python development partner, you will get out-of-the-box web solutions based on Python 3.7.0, Django, Web2py, and Flask frameworks. Our Python web development expertise can help you build a Python web development project. Moreover, we can help identify bottlenecks and optimize your Python application's performance.",
+  "description2": "",
+  "description3": "",
+  "dec": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/img/why-choose-us python-developer.webp",
+  "link": "/contact-us",
+  "linkText": "LET'S CONNECT ",
+  "imagePosition": "left"
+},
+    "CallToAction": {
+    "heading": "Let’s hear what you have to say?",
+    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
   "Frequently": [
     {
       "num": "1",
@@ -78,4 +198,6 @@
       "desc": "We will dedicate our developers to your project solely as your employees. With your convenient communication platform, you will have total access and control over them."
     }
   ]
+
+
 }

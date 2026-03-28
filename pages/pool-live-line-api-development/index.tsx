@@ -1,101 +1,50 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/poollivelineapidevelopment.json";
 
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-const Process = [
-  {
-    title: "Step 1 – Requirement Analysis",
-    description:
-      "Understand project goals, user types, and integration scope to ensure alignment with cue sports platform needs."
-  },
-  {
-    title: "Step 2 – API Endpoint Planning",
-    description:
-      "Design endpoints for scores, stats, live odds, and filters to deliver structured, actionable data across all cue sports."
-  },
-  {
-    title: "Step 3 – Interface Design & Documentation",
-    description:
-      "Create a clear API structure and detailed usage guide tailored for developers, ensuring easy implementation and reduced onboarding time."
-  },
-  {
-    title: "Step 4 – Development & Integration",
-    description:
-      "Code, build, and test the core modules and endpoints with smooth integration across your web, mobile, or third-party systems."
-  },
-  {
-    title: "Step 5 – Testing & Data Accuracy",
-    description:
-      "Ensure live accuracy through match simulations and comprehensive test coverage including unit, functional, and regression testing."
-  },
-  {
-    title: "Step 6 – Deployment & API Launch",
-    description:
-      "Deploy in your production environment with flexible staging options, ensuring high availability and optimized performance."
-  },
-  {
-    title: "Step 7 – Ongoing Support & Optimization",
-    description:
-      "24/7 monitoring, bug fixes, and continual endpoint improvements to maintain reliability and support evolving platform needs."
-  }
-];
 
 
 
@@ -228,17 +177,8 @@ const faqPageSchema = {
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -335,7 +275,7 @@ export default function Ecommerce(props) {
         <meta name="twitter:site" content="@comfygentech" />
 
 
-      
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -346,108 +286,19 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-          <HeroSectionForAllPages
-            heading="Pool Live Line API"
-            subhead="Deliver Real-Time Pool Scores Stats with Confidence"
-            ptag="At Comfygen, we bring Pool Live Line API into the hands of developers and sports platforms ready to offer live, accurate, and detailed data for cue sports. Whether you're running a live score tracking platform, a fantasy app, our Pool Live Score API delivers real-time updates, historical data, and player statistics across global tournaments. With seamless integration and full customization, our Pool Live Line API empowers you to provide a rich user experience."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/pool-live-line-api-development/pool-api-hero.webp"
-          />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-
-        <AboutSection
-          title="About Company"
-          heading="About Our Pool Live Line API"
-          description1="Our Pool Live Line API is built for speed, precision, and reliability. Designed for developers, sports analytics providers, gammimg platforms, and sports companies, this API offers a complete suite of live match data, historical scores, odds, and player insights from international and regional pool tournaments."
-          description2="From real-time frame-by-frame scoring to cue performance analytics, our API lets you enhance user engagement by delivering the exact data fans and bettors need. Built with scalable endpoints, the Pool Data Feed API covers top events in pool, billiards, and snooker. The interface supports seamless frontend/backend integration with mobile and web applications."
-          description3="We understand the critical importance of data speed and accuracy in sports applications. That’s why we guarantee high uptime, 24/7 monitoring, and custom data filters. Whether you're building a simple live scoreboard or a complete gamming interface, Comfygen’s Pool Live Score API adapts to your vision."
-
-          imageSrc="https://www.comfygen.com/comfygen-images/pool-live-line-api-development/pool-api-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-
-        />
-
-  
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Custom Pool Live Line API Service for Real-Time Score and Stats</h2>
-              <p className="text-base text-center font-normal">We offer modular, scalable API services that meet the exact needs of pool and billiards sports platforms.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Integration Process Of Pool Live Line API</h2>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire a Pool Live Line API Developer"
-          text="Looking to launch or enhance your pool scoring or gamming app? Comfygen is your go-to Pool Live Line API Provider Company with a dedicated team that brings data to life in real time. Our tailored solutions ensure you get exactly what your audience demands — speed, accuracy, and dependability."
-          text1="From API planning to integration and post-deployment support, we handle the full lifecycle. You can hire us to build from scratch or optimize your current system with secure and scalable Pool Data Feed APIs."
-          text2="We’ve successfully helped apps and platforms scale with:"
-          buttonText="When you hire from Comfygen, you get:"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Live Pool Score API",
-
-            "Historical Pool Match Stats.",
-            "Fantasy Game Stats Feed."
-          ]}
-
-        />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Pool Live Line Api"
-        />
-
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import HeadingTwo from "../ui/HeadingTwo";
 import { parseHTMLString } from "../../lib/parseHTML";
+import ReviewCard from "./ReviewCard";
 
 const ClientTestimonials = ({
   testimonials = [],
@@ -78,6 +79,7 @@ const ClientTestimonials = ({
 
       
       </div>
+      {/* <ReviewCard/> */}
     </section>
   );
 };
