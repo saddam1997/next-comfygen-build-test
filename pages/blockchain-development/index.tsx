@@ -180,30 +180,30 @@ export default function Blockchain(props) {
 
       </Head>
       <BlockChainHeader />
-          <div className="overflow-hidden lg:pt-[110px]"> 
+      <div className="overflow-hidden lg:pt-[110px]">
 
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
-      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Solution techData={JSON_DATA.Customized} />
-      <CardwithImageSection PlatformsData={JSON_DATA.PlatformsData} />
-      <Consultancy consultancyData={JSON_DATA.consultancyData} />
-      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <IndustryGrid />
-      <TechSection TechStack={JSON_DATA.TechStack} />
-      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <WhyChooseSection pageData={JSON_DATA.pageData} />
- <TestimonialSection testimonials={JSON_DATA.testimonialData} />
-      {/* <GuidSectionBlockchain /> */}
-            <FaqSection faqData={JSON_DATA.Frequently} title="" />
-      <BlogSection initialData={initialData} />
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+        <Milestones />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <Solution techData={JSON_DATA.Customized} />
+        <CardwithImageSection PlatformsData={JSON_DATA.PlatformsData} />
+        <Consultancy consultancyData={JSON_DATA.consultancyData} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <IndustryGrid />
+        <TechSection TechStack={JSON_DATA.TechStack} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <TestimonialSection testimonials={JSON_DATA.testimonialData} />
+        {/* <GuidSectionBlockchain /> */}
+        <FaqSection faqData={JSON_DATA.Frequently} title="" />
+        <BlogSection initialData={initialData} />
 
 
-            
-          </div>
+
+      </div>
 
     </div>
 

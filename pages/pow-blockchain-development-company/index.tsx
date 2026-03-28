@@ -1,118 +1,55 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
-import { IconBriefcase, IconChisel, IconDatabase, IconDeviceDesktopAnalytics, IconFileCode, IconSettings, } from '@tabler/icons-react';
-import JSON_DATA from "./json/pow.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
 import dynamic from "next/dynamic";
+import JSON_DATA from "./json/pow.json";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+import InformationSection from "../../components/InformationSection"
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  { loading: loader, ssr: true }
-);
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
- 
 
-
-
-
-const technologyData = [
-  {
-    img: <IconFileCode stroke={1.5} className="w-12 h-12" />,
-    title: "Smart Contract Support",
-    desc: "The best reason to choose a POW blockchain development service provider globally is the assurance of smart contract support. POW blockchains could also support smart contracts for automation of tedious tasks alongside ensuring faster operations. We can help you create POW blockchains with support for smart contract programmability."
-  },
-  {
-    img: <IconChisel stroke={1.5} className="w-12 h-12" />,
-    title: "Higher Scalability",
-    desc: "Proof of Work blockchains such as Bitcoin and public blockchain networks still struggle with issues due to the lack of scalability. On the other hand, custom POW blockchain development solutions could help in overcoming the problem and ensuring the best results for scalability."
-  },
-  {
-    img: <IconDatabase stroke={1.5} className="w-12 h-12" />,
-    title: "Distributed Ledger",
-    desc: "Another reason to choose POW blockchain development services for your business is the opportunity to capitalize on distributed ledger technology. Proof of Work blockchains allows every participant to maintain copies of transactions on the blockchain, thereby ensuring complete transparency."
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Enterprise Support",
-    desc: "The services of a POW blockchain development solution provider could help you find the ideal blockchain solution for enterprise applications. You could capitalize on the benefits of scalability, security, and privacy for business use cases and achieve the true potential of POW blockchains."
-  },
-  {
-    img: <IconDeviceDesktopAnalytics stroke={1.5} className="w-12 h-12" />,
-    title: "Peer-to-Peer Architecture",
-    desc: "The primary benefit of POW blockchain solutions is the assurance of peer-to-peer architecture. It offers the flexibility of creating applications that are accessible only to participants involved in transactions. POW blockchains could serve formidable improvement in security alongside safeguarding transparency."
-  },
-  {
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    title: "Pluggable Consensus",
-    desc: "The next important detail about POW blockchain development service is the benefit of pluggable consensus. It helps in delegating the ordering of transactions to a modular component that is isolated from the peers responsible for executing transactions. The flexibility for integrating custom consensus algorithms in POW networks can serve crucial value-based improvements."
-  }
-];
-
-export default function Ecommerce(props) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  let { LatestTechno, WhyChoose, Service, Offer } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
-
-
 
   return (
     <>
@@ -220,165 +157,18 @@ export default function Ecommerce(props) {
       </Head>
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="PoW Blockchain Development Service"
-          subhead='Secure & Decentralized Blockchain Solutions for Web3'
-          ptag="Comfygen provides Proof-of-Work (PoW) blockchain development services to help businesses build reliable and transparent Web3 platforms. We develop secure PoW blockchain solutions for dApps, NFTs, DeFi applications, DAOs, and Web3 games with strong cryptographic security, immutable ledgers, and decentralized architecture. Our PoW-based systems eliminate intermediaries and ensure scalability, trust, and long-term network stability."
-          li="Decentralized Blockchain Development"
-          li1="Secure & Scalable Web3 Applications"
-          li2="Immutable and Transparent Ledgers"
-          li3="Enterprise-Grade PoW Solutions"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/pow-blockchain-deve-hero-img.webp"
-        />
-        <Milestones/>
-
-                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >POW Blockchain Development Services</h2>
-              <p className="text-center text-base">We are a trusted platform for mobile game development services specializing in creating high-fidelity games for different mobile platforms. Our developers have honed their skills in working with different game development technologies and frameworks to offer a comprehensive collection of game development services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Company"
-          heading="How Do POW Blockchain Platforms Empower Digital Trust Solutions?"
-          description1="The foremost advantage of the POW blockchain development solution revolves around creating blockchain solutions that could manage significantly confidential information."
-          description2="Proof of Work blockchains prioritize the elements of privacy, security, and scalability. With a trusted Proof of Work blockchain development company at your side, you can develop web3 solutions and apps for your business."
-          description3="On top of it, the fast pace of changes in the blockchain industry requires precision, scalability, and efficiency to support the growth of your business."
-          imageSrc="https://www.comfygen.com/comfygen-images/pow-blockchain-development-company/pow-blockchain-development-companyabout.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <InfoSection
-          heading="What is POW Blockchain?"
-          description1="Before you make the most of our POW blockchain development service, you must clear your doubts regarding POW blockchains. POW is the abbreviation for Proof of Work consensus mechanism, which is an essential trait of every blockchain network. As the name implies, POW blockchain features a group of miners who are responsible for adding valid blocks of transactions to the chain. The concept of POW or Proof of Work gained attention as the preferred consensus mechanism for Bitcoin. Miners have to generate the hash which matches the goal hash of the current block. While the process of finding the hash is challenging due to the need for an extensive amount of computing resources and efforts of miners, it offers a straightforward approach for verifying transactions. Most important of all, the mining process poses formidable challenges to manipulation of the system."
-          description2=''
-          description3=''
-          dec=''
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/what-is-pow-blockchain.webp"
-          link="/contact-us"
-          linkText="Lets Discuss"
-          imagePosition="right"
-        />
-
-
-
-
-
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-gradient-to-r from-[#272868] to-[#5556D1] ">
-          <div className="w-11/12 mx-auto space-y-10 2xl:w-9/12 xl:w-5/6">
-            <div className="w-full flex flex-col justify-center items-center text-center space-y-2">
-              <h2 className=" font-bold 2xl:text-4xl xl:text-3xl text-2xl text-[#fff] text-center">
-                Proof of Work Web3 Solutions
-              </h2>
-              <p className="text-base text-white">
-                Our custom Proof of Work blockchain development solutions also
-                have the capability to accommodate new web3 solutions. We can
-                help you create POW-based web3 solutions such as web3 games,
-                DeFi solutions, DAOs, and NFTs, alongside ensuring secure
-                peer-to-peer transactions on POW blockchains.
-              </p>
-            </div>
-            <div className="grid  gap-10 lg:grid-cols-3 md:grid-cols-2">
-              {Service.map((elem: any) => {
-                const { title, decs, num, img } = elem;
-                return (
-                  <div
-                    key={num}
-                    className="p-4 rounded-lg border-2 bg-[#fff] space-y-2"
-                  >
-                    <div className="flex items-center  space-x-2">
-                      <div className="flex items-center justify-center ">
-                        <Image src={img} alt={title} width="60" height="60" />
-                      </div>
-                      <h3 className="text-lg font-bold text-black">
-                        {title}
-                      </h3>
-                    </div>
-                    <div>
-                      <p>{decs}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        <SolutionSec
-          heading="Why Should You Develop POW Blockchains?"
-          subheading="POW or Proof of Work blockchains are often associated with criticisms due to transaction speed and lack of interoperability. However, times have changed, and new trends empower POW blockchains with multiple value advantages."
-          techData={technologyData}
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our POW Blockchain Based Portfolio"
-            description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
-          />
-        </section>
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Reasons to Choose Us for POW Blockchain Development
-                </h2>
-                <p>We at Comfygen strive for excellence in POW blockchain development services with the additional benefit of some crucial traits.</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-2">
-                {JSON_DATA.FutureDriven.map((elem, index) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div key={index} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p className=" text-base font-normal mt-2">
-                        {desc}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" "
-        />
+        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+        <Milestones />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />
+        <Solution techData={JSON_DATA.AIPowered} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <Solution techData={JSON_DATA.Develop} />
+        <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <Solution techData={JSON_DATA.AIPowered} />
+        <FaqSection faqData={JSON_DATA.Frequently} title="" />
         <BlogSection initialData={initialData} />
       </div>
     </>

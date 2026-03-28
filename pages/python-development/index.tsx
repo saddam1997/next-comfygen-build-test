@@ -1,72 +1,45 @@
-import React, { useState } from "react";
-import { MdOutlineEngineering } from 'react-icons/md';
-import { FaNetworkWired } from "react-icons/fa";
+
 import Head from "next/head";
-import { RiCustomerService2Fill, RiTodoLine } from "react-icons/ri";
-import { AiOutlineDeploymentUnit, AiOutlineMobile } from "react-icons/ai";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/python.json"
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+import InformationSection from "../../components/InformationSection"
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const NewSection = dynamic(
-  () => import("../../components/Newcomponet/comman/NewSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
 
 
 
 export default function Altcoin(props: any) {
 
   let { initialData } = props;
-  let { NewSections, Hire, myList, Frequently } = JSON_DATA
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -93,132 +66,20 @@ export default function Altcoin(props: any) {
         <meta name='language' content='en-us' />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />
+      <InformationSection InfoSectionData={JSON_DATA?.Development} />
+      <InformationSection InfoSectionData={JSON_DATA?.Leading} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <InformationSection InfoSectionData={JSON_DATA?.ChooseUs} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-      <div className='overflow-hidden lg:pt-[100px]'>
-        <div className="">
-          <div>
-            <div className="">
-              <HeroSectionForAllPages
-                heading='Best Python Development Company In India'
-                ptag="Comfygen is the best Python development company in India, delivering scalable, secure, and high-performance web and mobile applications. Our experienced Python developers provide custom python development solutions using modern frameworks to meet diverse business requirements across multiple industries."
-                ptag1='From startups to enterprises, we develop robust and flexible Python-based applications that ensure smooth performance, seamless integration, and long-term scalability. Our Python development services in India help businesses build reliable digital products and achieve sustainable growth in today’s competitive market.'
-                li="Custom Python Web & App Development"
-                li1="Skilled Python Developers for Hire"
-                li2="Secure, Scalable & Flexible Solutions"
-                li3="Business-Focused, Result-Driven Development"
-                btnName="Talk With Expert"
-                btnLink="/contact-us"
-                openModal={openModal}
-                talkToExpertModal={talkToExpertModal}
-                setTalkToExpertModal={setTalkToExpertModal}
-                closeModal={closeModal}
-                bgImage="https://www.comfygen.com/herosection/python-development-company-hero-img.webp"
-              />
-            </div>
-          </div>
-        </div>
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Custom Python Development Services in India for Startups and Enterprises </h2>
-              <p className="text-base text-center font-normal">We provide custom Python development services in India for startups and enterprises. Our team builds secure, scalable, and high-performance Python applications that ensure seamless integration, smooth performance, and long-term business growth.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        {/* <NewSection NewSection={NewSections} /> */}
-        <AboutSection
-          title="We are Python Development Company"
-          heading="Best python web development company"
-          description1="We are one of the top Python development companies that deliver cutting-edge websites, mobile apps, and web apps using advanced Python frameworks, tools, and programming languages. We ensure error-free product development with innovative project management tools and collaborative tools. You will get seamless integration with APIs and other codes from our development team because we strictly follow international coding standards. Comfygen offers top-notch Python development services for next-generation mobile and web apps. Our solutions are highly scalable, customizable, and responsive due to the use of best-in-class libraries, frameworks, and technologies."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-        <InfoSection
-          heading="Python App Development company"
-          description1="With over a decade of experience delivering Python solutions, Comfygen has delivered everything from dynamic websites to sophisticated, avant-garde web apps. You can get your dream web or app development project done with Python, an open-source, clear, and powerful object-oriented programming language.By leveraging advanced Python development frameworks, programming languages, and front-end tools, Comfygen delivers high-quality websites, web apps, and mobile applications. We have developers who are proficient in Python web development frameworks such as Django. There are similar frameworks for Python web apps such as Flask, Zope, and Pyramid, among others."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/python app.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition="right"
-        />
-
-        <InfoSection
-          heading="python development firm"
-          description1="With decades of experience working across domains, we specialize in Python development services. With end-to-end Python development capabilities, we help clients unlock value and gain efficiencies. Offering Python development solutions and best-in-class consulting services, we partner with clients to achieve business objectives. The latest features and functionality of your web applications can be included with our expertise in Python frameworks such as Django & Flask. Building web apps quickly, efficiently, and with less coding requires the use of several Python frameworks."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/python-development.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <InfoSection
-          heading="Leading Python Development Company In India"
-          description1="Comfygen uses Django Python and Angular 2 for frontend technologies to enable entrepreneurs to build successful start-up businesses.Through the integrated platform, entrepreneurs could confirm start-up ideas through discussion, meet investors to get seed funding, and find competent talent via an integrated recruitment portal. Multi-funding sources are integrated into the platform, all based on cryptocurrencies and blockchain technology. As a result, all three profiles of a creator, a backer, and an employee are seamlessly combined. To nurture ideas and turn them into profitable businesses, the solution brings entrepreneurs, investors, and employees together."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/python-develop.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition="right"
-        />
-        <HireDeveloper
-          heading="Hire Python Developers In India"
-          text="Comfygen offers a team of expert Python developers with over a decade of experience in delivering high-performance, scalable, and flexible solutions for diverse industries. Whether for full-time projects, short-term tasks, or recurring assignments, our dedicated developers excel in creating minimalist, feature-rich applications using the latest web technologies. Beyond coding, our skilled professionals follow best practices to build competitive software tailored to your business needs. Partner with Comfygen for innovative Python development that drives success."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Identify your requirements",
-            "Look for a reliable recruitment agency",
-            "Check the developers' qualifications and experience",
-            "Review their portfolio and projects",
-            "Conduct technical interviews"
-          ]}
-        />
-        <InfoSection
-          heading="Why Choose Us As Your Python Development Company?"
-          description1="Comfygen offers our clients the latest and most futuristic Python Development by incorporating it into their projects. Object-oriented programming languages, such as Python, are high-level languages with dynamic semantics. Comfygen is a prominent Python development company with top-of-the-line Python developers who can develop complex Python-driven web applications with in-depth knowledge and experience. As a Python Django web development company, we have experience delivering large-scale projects. We strive to build Python desktop and web applications with state-of-the-art industry practices. If you choose Comfygen as your Python development partner, you will get out-of-the-box web solutions based on Python 3.7.0, Django, Web2py, and Flask frameworks. Our Python web development expertise can help you build a Python web development project. Moreover, we can help identify bottlenecks and optimize your Python application's performance."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/img/why-choose-us python-developer.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   )
 }
