@@ -65,7 +65,7 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
             </div>
             <div className="mt-8">
               <Link href={buttonLink} passHref>
-                <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-4 lg:px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
                   {buttonText} <MdOutlineArrowOutward />
                 </button>
               </Link>

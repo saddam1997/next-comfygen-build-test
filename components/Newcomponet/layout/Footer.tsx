@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="space-y-8 md:px-4 py-10 lg:space-y-8 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
 
         {/* ===== Footer CTA Section ===== */}
-        <div className="relative overflow-hidden rounded-2xl p-10 min-h-[300px] md:min-h-[350px]">
+        <div className="relative overflow-hidden rounded-2xl lg:p-10 min-h-[300px] md:min-h-[350px]">
           
           {/* Background Image (Optimized) */}
           <Image
