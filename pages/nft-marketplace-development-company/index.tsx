@@ -1,84 +1,63 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
-import Header from "../../components/Newcomponet/layout/Header";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome";
 
-const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  { loading: loader, ssr: true }
-);
+import InformationSection from "../../components/InformationSection"
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: loader, ssr: true }
-);
 
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const Guidance = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Guidance"),
-  { loading: loader, ssr: true }
-);
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-export default function Page(props:any) {
+
+
+const Guidance = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/Guidance"),
+  { ssr: true }
+);
+
+
+
+export default function Page(props: any) {
   let { initialData } = props;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
- 
-
-
 
   return (
     <>
@@ -183,137 +162,25 @@ export default function Page(props:any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <Milestones />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <InformationSection InfoSectionData={JSON_DATA?.NFTvsCrypto} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Solution techData={JSON_DATA.NFTBenefits} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <Consultancy consultancyData={JSON_DATA.NFTTechnologies} />
+      <Solution techData={JSON_DATA.Marketplace} />
+      <InformationSection InfoSectionData={JSON_DATA?.OwnNFT} />
 
-      <div className="overflow-hidden pt-[110px]">
-        {/* hero section */}
-        <HeroSectionForAllPages
-          heading="Best NFT Marketplace Development Company"
-          ptag1="Comfygen is the best NFT marketplace development company in India helping startups, creators, and enterprises launch secure, scalable, and feature-rich NFT marketplaces. We deliver custom and white-label NFT marketplace solutions with multi-chain blockchain support, smart contract security, and seamless wallet integration to help you build a profitable NFT trading platform with global reach.  "
-          li="Custom NFT Marketplace Development "
-          li1="Multi-Blockchain Support"
-          li2="Secure Smart Contract Integration "
-          li3="Advanced Trading Features"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/nft-marketplace-development-company-hero-img.webp"
-        />
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our NFT Marketplace Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we offer a comprehensive range of NFT marketplace
-                development services to help businesses launch secure, scalable,
-                and feature-rich platforms. Our expertise spans multiple
-                blockchain networks, ensuring seamless transactions, advanced
-                security, and top-tier user experience.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="NFT Marketplace Development"
-          description1="An NFT marketplace is a blockchain-based platform that enables users to create, buy, sell, and trade digital assets such as artwork, music, virtual real estate, and gaming items. These platforms operate using smart contracts, ensuring security, transparency, and automation in transactions. At Comfygen, we provide end-to-end NFT marketplace development solutions, catering to businesses, artists, and game developers looking to launch a scalable and user-friendly NFT marketplace. "
-          points={[
-            "Decentralized Ownership & Trading ",
-            "Multi-Blockchain Compatibility ",
-            "NFT Minting & Smart Contracts ",
-            "User-Friendly Interface ",
-            "Wallet Integration ",
-            "Multiple Revenue Models ",
-            "White Label NFT Marketplace Development ",
-            "Scalable Architecture ",
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
 
-        <InfoSection
-          heading="White Label NFT Marketplace Development"
-          description1="At Comfygen, we offer white-label NFT marketplace development solutions that enable businesses to launch a fully functional, customizable, and scalable NFT marketplace in no time. Whether you want to create an NFT platform for art, gaming, real estate, or collectibles, our pre-built solution is tailored to meet your needs."
-          description2=""
-          description3=""
-          dec=""
-          points={[
-            "Fully Customizable UI/UX ",
-            "Multi-Blockchain Support ",
-            "Integrated Smart Contracts ",
-            "Multi-Wallet Compatibility  ",
-            "Advanced NFT Minting & Auction System",
-            "Royalty & Revenue Sharing ",
-            "KYC & Security Protocols ",
-            "Mobile-Friendly & Responsive Design ",
-          ]}
-          imageSrc="https://www.comfygen.com/img/white-label-nft-marketplace-development.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
+      <Guidance />
+        <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our NFT marketplace development Portfolio"
-            description="At Comfygen, we have successfully developed custom NFT marketplace solutions that empower businesses to tokenize digital assets seamlessly. Our expertise spans secure smart contract integration, multi-chain compatibility, and advanced trading features, ensuring a scalable and high-performance NFT marketplace. With a focus on user-friendly design, high-speed transactions, and enhanced security, we have delivered NFT marketplaces for real estate, gaming, art, collectibles, and more. Whether you're looking for a custom-built solution or a white-label NFT marketplace, our team ensures a seamless development process from ideation to deployment."
-          />
-        </section>
 
-        <SolutionSec
-          heading="Features of Our NFT Marketplace Development"
-          subheading="At Comfygen, we build secure, scalable, and feature-rich NFT marketplace platforms tailored to diverse industries such as art, gaming, real estate, and collectibles. Our custom NFT marketplace development services ensure seamless trading, enhanced security, and multi-chain compatibility to provide a next-gen NFT experience."
-          techData={JSON_DATA.technologyData}
-        />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10 ">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our NFT Marketplace Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a structured and efficient NFT
-                marketplace development process to build a robust, secure, and
-                scalable platform. Our step-by-step approach ensures a seamless
-                user experience, high performance, and future-ready solutions.
-              </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CardItem
-          heading="What Makes Us the Best NFT Marketplace Development Company?"
-          subheading="At Comfygen, we specialize in developing secure, feature-rich, and scalable NFT marketplace solutions that cater to various industries, including art, gaming, real estate, music, and collectibles. Our expertise in blockchain technology, smart contract development, and cross-chain integration allows us to deliver custom and white-label NFT marketplace solutions that align with the latest industry trends."
-          techData={JSON_DATA.cardData}
-        />
-        <InfoSection
-          heading="Create Your Own NFT Marketplace with Comfygen"
-          description1="Comfygen is a team of knowledgeable developers that specializes in NFT marketplaces a nd provides excellent services at a reasonable cost. Custom design, smart contract development, payment gateway integration, security testing, and maintenance are among the services they offer. For reputable and high-quality NFT marketplaces, trust Comfygen. Select Comfygen for the development of your own NFT marketplace because they possess the know-how, dedication, and experience necessary to build a successful platform that suits your particular requirements."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/metaverse/do-you-want-other-information-aboutour-metaverse-development-services.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <Guidance />
-        <Faq faqData={JSON_DATA.Frequently} title="" />
-  <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }
