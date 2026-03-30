@@ -565,7 +565,7 @@ export const EducationApp = [
   },
   {
     num: "4",
-    name: "Language learnig App Development",
+    name: "Language learning App Development",
     url: "/language-learning-app-development",
   },
 
@@ -762,7 +762,7 @@ export const Sports = [
   {
     num: "6",
     img: "https://www.comfygen.com/comfygen-images/volleyball-live-line-api-development/vollyball-api-hero-icon.svg",
-    name: "Vollyball live line API",
+    name: "Volleyball live line API",
     dec: "Real-Time Vollyball  Updates API",
     url: "/volleyball-live-line-api-development",
   },
