@@ -6,7 +6,7 @@ import style from "./scrollhide.module.css"
 
 export default function ServicesComponet({ servicesData }) {
     return (
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <section className="lg:py-16 lg:px-5 xl:px-10 2xl:px-0 py-10 bg-[#F5F5F9]">
             <div className="w-full lg:px-4 xl:px-0">
 
                 {/* SEO Heading */}

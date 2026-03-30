@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Card({ Data }: any) {
   return (
-    <section className="bg-white py-10 lg:py-16 px-3 sm:px-4 lg:px-0">
+    <section className="bg-white py-10 lg:py-16 px-3 sm:px-4 lg:px-20 xl:px-10">
       <div className="mx-auto space-y-12 lg:space-y-16">
 
         {Data?.infData?.map((item: any) => {

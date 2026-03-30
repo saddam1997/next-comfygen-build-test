@@ -1,178 +1,73 @@
 
-import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./nft-wallet-development.json";
-
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+import AppCardClones from "../../components/AppCardClones"
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+import ClientTestimonials from "../../components/TestimonialSection";
+import ClientStories from "../../components/ClientStories";
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-)
-
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-)
-
-
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-)
-
-
-
-
-
-import { IconBolt, IconBriefcase, IconBus, } from "@tabler/icons-react";
-import { MdManageHistory } from "react-icons/md";
-import { GiCrossedChains } from "react-icons/gi";
-import { AiOutlineSolution } from "react-icons/ai";
-
-
-
-
-
-const Process = [
-  {
-    title: "Discovery & Requirement Analysis",
-    description: "Understand your business goals, NFT use cases, target audience, and technical requirements to design a tailored solution.",
-  },
-  {
-    title: "Project Planning & Strategy",
-    description: "Define the roadmap, timelines, technology stack, and feature set for your custom NFT wallet development.",
-  },
-  {
-    title: "UI/UX Design & Prototyping",
-    description: "Create an intuitive, user-friendly interface for seamless NFT management across web and mobile platforms.",
-  },
-  {
-    title: "Blockchain & Smart Contract Development",
-    description: "Build robust NFT wallet architecture with multi-chain support, secure smart contracts, and reliable transaction handling.",
-  },
-  {
-    title: "Integration & Marketplace Connectivity ",
-    description: "Connect your wallet to NFT marketplaces and other platforms for smooth minting, trading, and asset management.",
-  },
-  {
-    title: "Wallet Testing & Security Audit",
-    description: "Conduct thorough testing and audits to ensure enterprise-grade security, bug-free performance, and compliance with blockchain standards.",
-  },
-  {
-    title: "Deployment & Ongoing Support ",
-    description: "Launch your NFT wallet on scalable infrastructure and provide continuous updates, maintenance, and technical support for a reliable, future-ready solution.",
-  },
-];
-
-const latesttech = [
-  {
-    img: <MdManageHistory className="w-12 h-12" />,
-    title: "Secure Digital Asset Management",
-    desc: "Safely store, transfer, and manage NFTs with high security, encrypted storage, and private key protection, ensuring your digital assets remain fully secure and reliable.",
-  },
-  {
-    img: <GiCrossedChains className="w-12 h-12" />,
-    title: "Multi-Chain Compatibility ",
-    desc: "Facilitate seamless NFT transactions across Ethereum, Solana, Polygon, and other blockchain networks, enabling cross-chain asset management, wider user reach, and enhanced flexibility for your NFT wallet solution.",
-  },
-  {
-    img: <AiOutlineSolution className="w-12 h-12" />,
-    title: "Enhanced User Engagement ",
-    desc: "Provide a user-friendly NFT wallet interface with real-time notifications, portfolio tracking, and intuitive navigation, keeping users informed, engaged, and confident in managing their digital assets.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Customizable and Scalable Solutions",
-    desc: "Build NFT wallets with tailored features and functionality, offering scalable architecture that grows with your business and adapts to increasing users and transaction volumes.",
-  },
-  {
-    img: <IconBolt stroke={1.5} className="w-12 h-12" />,
-    title: "Marketplace Integration",
-    desc: "Seamlessly connect your NFT wallet with popular marketplaces, enabling users to mint, buy, sell, and trade NFTs directly, ensuring smooth and efficient digital asset management.",
-  },
-  {
-    img: <IconBus stroke={1.5} className="w-12 h-12" />,
-    title: "Revenue Opportunities",
-    desc: "Maximize business potential with your NFT wallet by enabling trading, royalties, and marketplace participation, creating new monetization channels, and driving additional revenue streams from digital assets.",
-  },
-
-];
-
-
-
-
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   const jsonLdData = [
 
- 
+
 
     {
       "@context": "https://schema.org",
@@ -280,8 +175,8 @@ export default function ClinicalApp(props: any) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title> 
- 	Best NFT Wallet Development Company | Secure & Scalable NFT Wallets
+        <title>
+          Best NFT Wallet Development Company | Secure & Scalable NFT Wallets
         </title>
         <meta
           name="description"
@@ -335,140 +230,25 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[100px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Best NFT Wallet Development Company"
-            ptag="Comfygen, The Best NFT wallet development company, builds secure, scalable, and feature-rich NFT Crypto wallets that allow users to store, trade, and manage digital assets. Our NFT Wallet development solutions provide top-level security, multi-chain NFT wallet support across all blockchain platforms like Ethereum, Solana, and Polygon, user-friendly portfolio management on both web and mobile platforms, and white-label customization for startups and enterprises seeking fast and reliable NFT wallet deployment."
-            li="Enterprise-grade NFT wallet security "
-            li1="Multi-chain NFT wallet development "
-            li2="User-friendly NFT portfolio management "
-            li3="White-label NFT wallet solutions"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/nft-wallet-development/nft-wallet-development-company.webp"
-          />
-        </div>
-        <AboutSection
-          title="About Company"
-          heading="Why Your Business Needs an NFT Wallet Deployment solution?"
-          description1="In the fast-growing digital world, a custom <a class='text-blue-500 ' href='https://www.comfygen.com/wallet-development-company' >wallet development solution</a> is essential for businesses that want to securely store, trade, and manage their digital collectibles. An NFT wallet for enterprises provides seamless NFT transactions, protects digital assets with enterprise-level security, supports multi-chain platforms like Ethereum, Solana, and Polygon, and provides scalable, customizable solutions that enhance user trust and open new revenue opportunities for your brand."
-          imageSrc="https://www.comfygen.com/comfygen-images/nft-wallet-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Enterprise-grade security",
-            "Multi-chain support",
-            "Seamless NFT transactions",
-            "Scalable, customizable solutions",
-          ]}
-        />
+
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <Solution techData={JSON_DATA.Business} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
 
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our NFT Wallet Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Our NFT Wallet Development Services deliver safe, scalable, and multi-chain crypto wallets with NFT trading, DeFi integration, and user-friendly design—ideal for startups, enterprises, and marketplaces to drive Web3 growth.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/exclusive-features-image.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-        <CallToAction
-          heading="Ready To Launch Your NFT Wallet Today ?"
-          text="Ready to enter the digital asset ecosystem with a secure and feature-rich NFT wallet? Contact us today for a free consultation and let’s build a custom NFT wallet solution tailored to your business needs"
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our NFT Wallet Development portfolio"
-            description="Explore our selection of accomplished projects that showcase our expertise in POW Blockchain solutions, online services, and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction, demonstrating the power of blockchain technology in transforming industries."
-          />
-        </section>
-
-
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our NFT Wallet Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                The NFT wallet development company Comfygen focuses on providing scalable, secure, and feature-rich solutions for its clients by following the following procedures:
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <SolutionSec
-          heading="Benefits of NFT Wallet Development"
-          subheading="Custom NFT Wallet Development Company lets businesses securely store, trade, and manage digital assets while improving user engagement. With multi-chain support, marketplace integration, and scalable, customizable features, it streamlines transactions and unlocks new revenue opportunities through NFT trading and monetization."
-          techData={latesttech}
-        />
-        <TechStack
-          title="Tech Stack We Use in NFT Wallet Development"
-          description="At Comfygen, we leverage a cutting-edge technology stack to build secure, scalable, and feature-rich NFT wallets. Our NFT wallet development exports ensure seamless performance, multi-chain support, and robust security for all digital assets."
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire NFT Wallet Developers"
-          text="Looking for a top NFT wallet development company? At Comfygen, our experienced developers build secure, scalable, and user-friendly NFT wallets specific to your business. We deliver multi-chain support, smart contract integration, marketplace connectivity, and real-time notifications, all on time and within budget."
-          buttonText="Hire Delivery"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "10+ Years of Experience Developers",
-            "Diverse Industry Expertise",
-            "Innovative Features",
-            "24/7 Support"
-
-          ]}
-        />
-
-        <Faq faqData={Frequently} title="Frequently Asked Questions" />
-  <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }
