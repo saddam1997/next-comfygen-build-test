@@ -1,145 +1,71 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./p2ppaymentappdevelopment.json";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+import Emerging from "../../components/Emerging";
 
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+import AppCardClones from "../../components/AppCardClones"
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-
-const CoreFeaturesSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
-  { loading: loader, ssr: true }
-);
-
-const TrendsSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+import ClientTestimonials from "../../components/TestimonialSection";
+import ClientStories from "../../components/ClientStories";
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
 
-
-
-
-const Process = [
-  {
-    title: "Discovery & Planning",
-    description:
-      "We begin with in-depth discovery and planning sessions to understand your business objectives, target audience, and compliance requirements. Our team defines clear milestones, technical architecture, and a product roadmap that aligns with your vision and industry standards.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Our best <a class='text-blue-500 font-semibold' href='/web-design'>p2p payment UI/UX design</a> team creates user-friendly, intuitive interfaces that ensure seamless navigation and frictionless transactions. From wireframes to high-fidelity prototypes, we focus on delivering a responsive and engaging design tailored for mobile-first payment experiences.",
-  },
-  {
-    title: "Core Wallet & Payment Gateway Integration",
-    description:
-      "We create a best money transfer app system and integrate leading payment gateways for real-time money transfers. Our APIs support bank transfers, card payments, UPI, and crypto wallets, ensuring compatibility with various financial networks.",
-  },
-  {
-    title: "Security Features (KYC/AML, Two-Factor Authentication)",
-    description:
-      "Security is central to our mobile payment app development. We integrate features like KYC/AML verification, two-factor authentication, biometric login, and data encryption to protect user data, prevent fraud, and comply with global fintech regulations.",
-  },
-  {
-    title: "Testing & Compliance",
-    description:
-      "Our QA team rigorously tests your app across all devices and platforms to ensure performance, reliability, and usability. We verify compliance with PCI DSS, GDPR, and other regional data protection laws for a legally secure launch.",
-  },
-  {
-    title: "Launch & Post-Launch Support",
-    description:
-      "We handle end-to-end deployment, including app store submission, backend configuration, and performance monitoring. After launch, we provide continuous maintenance, updates, and 24×7 technical support to ensure your app remains fast, secure, and scalable.",
-  },
-  {
-    title: "Performance Optimization & Scaling",
-    description:
-      "After deployment, we monitor app performance and scale resources based on user demand. Using tools like real-time analytics and load balancing, we ensure your payment mobile app handles growing traffic, supports new features, and delivers consistent speed and uptime.",
-  },
-];
-
-
-
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
+ 
   const jsonLdData = [
 
     {
@@ -284,141 +210,27 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Solution techData={JSON_DATA.Business} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <Emerging emerging={JSON_DATA.Emerging} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <ClientTestimonials
+        heading="Testimonials from Our Clients"
+        testimonials={JSON_DATA.customTestimonials}
+      />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-      <Header />
-
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best P2P Payment App Development Service"
-          subhead="Build Secure, Scalable & Real-Time Peer-to-Peer Payment Applications"
-          ptag="Comfygen delivers advanced P2P payment app development service for fintech startups, banks, and enterprises. We build secure, feature-rich peer-to-peer payment apps with real-time money transfers, mobile wallet integration, multi-layer security, and seamless digital transactions to power the future of fintech."
-          ptag1=''
-          li="Custom P2P payment app development"
-          li1="Cross-platform, cloud-native mobile solutions"
-          li2="End-to-end fintech compliance & data security"
-          li3="Expertise in wallets, APIs & blockchain integration"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          bgImage="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-hero.webp"
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Best-in-Class Payment P2P App Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, we offer end-to-end P2P payment app development services tailored to meet the growing demand for secure, fast, and user-friendly digital payment solutions. Our experienced peer-to-peer payment app developers build feature-rich peer-to-peer payment apps that support seamless money transfers, wallet functionalities, and real-time processing — all with a focus on scalability, compliance, and innovation.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Company"
-          heading="The Best Peer-to-Peer Payment App Development Company Will Help Your Business Grow"
-          description1="Building a successful payment p2p app solution requires more than just code — it demands a technology partner that understands the financial ecosystem. As the best mobile payment application development company, Comfygen helps fintech startups and enterprises launch secure, scalable, and user-friendly P2P payment apps that drive growth."
-          description2="We specialize in custom peer-to-peer payment app development tailored to your business model — whether you're creating a mobile wallet, a social money transfer app, or an enterprise-grade digital payment system. Our team of <a class='text-blue-500 font-semibold' href='/finance-app-development'>fintech app development</a> experts ensures that your mobile payment app meets industry standards for security, compliance, and performance."
-          description3="At Comfygen, we combine deep fintech experience with innovative technologies like blockchain, AI, and cloud infrastructure to build a future-proof P2P payment app. From idea validation to post-launch support, we’re here to turn your vision into a high-performing digital payment product."
-          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment_app_about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Mobile Payment Application Development Portfolio"
-            description="Comfygen delivers innovative, user-friendly, and secure mobile payment applications tailored to meet the demands of today’s digital economy. Below are two standout projects from our portfolio that highlight our expertise in building high-performance P2P and mobile payment solutions."
-          />
-        </section>
-
-
-
-        <CoreFeaturesSection
-          title="Key Features of Our P2P Money Transfer Apps"
-          subtitle="At Comfygen, we design P2P money transfer apps with a focus on speed, security, and seamless user experience. Our money transfer app development solutions are packed with advanced features that cater to the needs of modern users and keep your money transfer app competitive in the digital payment landscape."
-          features={JSON_DATA.AIPowered}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/p2p-payment-app/p2p-payment-app-development-consultancy.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-        <TrendsSection
-          heading="Emerging Tech That Drives the Future of Mobile Payment App Development"
-          subtitle="At Comfygen, we integrate the latest technologies to develop secure, scalable, and future-ready mobile payment applications. Our tech-first approach ensures seamless payment processing, robust user security, and intelligent performance that meets the demands of today’s fast-paced digital economy."
-          trends={JSON_DATA.Emerging}
-        />
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Build a P2P Payment App</h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a transparent, agile, and secure development process tailored to create feature-rich, regulation-compliant P2P payment applications. Our end-to-end approach ensures your app is fast, scalable, and fully equipped for today’s digital payment landscape.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-        <TechStack
-          title="Tech Stack That We Use for Mobile Payment Application Development"
-          description="At Comfygen, we use a powerful, flexible tech stack to create secure, scalable, high-performing mobile payment applications. Our technology choices ensure rapid development, real-time processing, and seamless integrations to deliver smooth and future-ready payment solutions."
-          filterCategory={["crypto"]}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Our Dedicated Payment P2P App Developers for Your Business"
-          text="Need a secure, scalable P2P payment app? At Comfygen, our expert p2p payment app developers specialize in building custom money transfer and mobile wallet apps tailored to your business."
-          text1="With 10+ years in fintech, we deliver secure, compliant, and high-performance solutions using the latest technologies. Whether you want a Venmo clone or a unique payment app, our team ensures fast delivery and seamless functionality."
-          text2="Why hire our developers?"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Custom payment apps built for your needs",
-            "Strong security with KYC, AML & encryption",
-            "Scalable, cross-platform solutions",
-            "Expertise in React Native, Flutter, Node.js, and payment APIs",
-            "Agile development for quick launch",
-            "Ongoing support and updates"
-          ]}
-
-        />
-        <ClientStories />
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
-        <Faq faqData={Frequently} title="" />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

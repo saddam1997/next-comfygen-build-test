@@ -8,7 +8,7 @@ const Index = ({ FData }) => {
     return (
         <div>
 
-            <header className="text-center max-w-7xl mx-auto space-y-3  mb-4">
+            <header className="text-center max-w-7xl mx-auto space-y-3  mb-4 lg:px-20 xl:px-10">
                 <HeadingTwo color="black" text={FData.heading} />
                 <ParagraphText color="black" text={FData.description} />
             </header>

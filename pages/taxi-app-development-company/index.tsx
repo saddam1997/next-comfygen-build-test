@@ -132,7 +132,6 @@ export default function Ecommerce(props:any) {
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <AppClone SliderDATA={JSON_DATA.Industries}/>
      <FeaturesNewSection FData={JSON_DATA.FData}/>
-     
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CardFeatures featuresData={JSON_DATA.featuresCardData} />
       <ComparisonSection data={JSON_DATA.BookingComparison} />

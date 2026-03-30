@@ -15,7 +15,7 @@ shadow-[0_8px_25px_rgba(85,86,209,0.35)]
 
       <section
         aria-labelledby="milestones-heading"
-        className="py-6 lg:px-4 xl:px-0"
+        className="py-6 px-2 lg:px-5 xl:px-10 2xl:px-0"
       >
 
 
