@@ -164,8 +164,9 @@ export default function Page(props: any) {
 
       <Navbar />
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <Milestones />
+     
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <InformationSection InfoSectionData={JSON_DATA?.NFTvsCrypto} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />

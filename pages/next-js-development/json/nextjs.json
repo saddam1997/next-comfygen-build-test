@@ -1,4 +1,310 @@
 {
+"Herosection": {
+  "heading": "Next.js Development Company",
+  "isHome": false,
+  "subhead": "",
+  "ptag": "Build fast, scalable, and SEO-friendly web applications with Comfygen, a trusted Next.js development company. Our experienced Next.js developers leverage server-side rendering and modern JavaScript architecture to deliver high-performance, secure, and business-ready web solutions.",
+  "ptag1": "From custom web applications to enterprise-grade platforms, we create Next.js solutions with seamless navigation, optimized performance, and future-ready scalability to help your business grow.",
+  "listItems": [
+    "High-Performance Server-Rendered Applications",
+    "Custom Next.js Web & App Development",
+    "SEO-Optimized, User-Friendly Interfaces",
+    "Expert Next.js Developers for Scalable Solutions"
+  ],
+  "btnName": "Talk With Expert",
+  "btnLink": "/contact-us",
+  "altTag": "next js development company",
+  "bgImage": "https://www.comfygen.com/herosection/next-js-development-company-hero-img.webp"
+},
+"ServicesData": {
+  "heading": "Next.JS Development Services",
+  "description": "We offer high-quality development services using Next.js to meet the diverse needs of our clients worldwide. We build high-performance, SEO-friendly, and scalable web applications.",
+  "services": [
+    {
+      "title": "Next.js Web Applications Development",
+      "subtitle": "",
+      "description": "Our Next.js web application development services focus on creating high-performance static and dynamic web applications. With Next.js, we ensure faster page load times, quicker time-to-market, and ease of updating, enabling your business to stay agile and competitive in the digital landscape.",
+      "features": [
+        "Static & Dynamic Website Development",
+        "Fast Page Load Times",
+        "Improved SEO Performance",
+        "Seamless Content Updates",
+        "Mobile-Responsive Design",
+        "Advanced Performance Optimization"
+      ]
+    },
+    {
+      "title": "Strategy and Planning",
+      "subtitle": "",
+      "description": "We work closely with you to develop a comprehensive strategy that aligns with your business goals and objectives, ensuring the best possible outcomes. Our approach is data-driven, focused on delivering targeted solutions that maximize efficiency, performance, and results, setting your company on a path to sustained success.",
+      "features": [
+        "Business Goal Alignment",
+        "Market Research & Analysis",
+        "Performance Tracking & Analytics",
+        "Risk Assessment & Mitigation",
+        "Resource Allocation Planning"
+      ]
+    },
+    {
+      "title": "Services for App Upgrades",
+      "subtitle": "",
+      "description": "Fast and effective app upgrades ensure your application remains competitive and functional in a constantly evolving tech landscape. In order to ensure that your apps are updated with the latest features, security patches, and performance enhancements, our team works efficiently and effectively.",
+      "features": [
+        "Feature Enhancements & Additions",
+        "Security Patches & Vulnerability Fixes",
+        "Performance Optimization",
+        "UI/UX Enhancements",
+        "Platform Updates (iOS, Android, Web)",
+        "Bug Fixes & Error Resolution"
+      ]
+    },
+    {
+      "title": "Development of Plugins",
+      "subtitle": "",
+      "description": "To enhance the functionality and performance of your application, we provide customized plugin development services tailored to your specific needs. Whether you need unique features or optimizations, we ensure seamless integration with your platform.",
+      "features": [
+        "Custom Plugin Development",
+        "Third-Party Plugin Integration",
+        "Performance Optimization Plugins",
+        "Automated Task Management",
+        "Scalability and Flexibility",
+        "Ongoing Support & Maintenance"
+      ]
+    },
+    {
+      "title": "Services for Developing SSRs (Server-Side Rendering)",
+      "subtitle": "",
+      "description": "We offer Server-Side Rendering (SSR) development services to create high-quality, SEO-friendly apps and websites. Our SSR solutions are designed to improve performance, user engagement, and conversion rates by delivering fast and optimized content rendering.",
+      "features": [
+        "SEO Optimization",
+        "Faster Load Times",
+        "Improved User Engagement",
+        "Better Conversion Rates",
+        "Scalable Solutions for Growing Apps",
+        "Mobile Optimization",
+        "SEO-Friendly Dynamic Content Rendering"
+      ]
+    },
+    {
+      "title": "Maintenance and Support",
+      "subtitle": "",
+      "description": "We provide 24x7 maintenance and support services to ensure that your product consistently performs at its best. Our dedicated team works to maintain the high quality of your product, address any technical issues, and ensure smooth functionality, allowing your business to run efficiently at all times.",
+      "features": [
+        "Proactive Issue Resolution",
+        "Regular Updates & Patches",
+        "Scalable Solutions for Growing Needs",
+        "Security Enhancements",
+        "System Upgrades & Enhancements",
+        "Dedicated Support Team"
+      ]
+    }
+  ]
+},
+"AboutSection": {
+  "title": "About Company",
+  "heading": "Next.JS Development Services in India",
+  "description1": "Comfygen provides fast and scalable server-side application development services using Next.js, one of the fastest JavaScript frameworks. Using Next.js, our developers build applications that are feature-rich, high-speed, and customized for your business. The main goal of our company is to create interactive, innovative, and bespoke applications for your business. The entire development process at Comfygen is designed to be smooth, high-performing, and scalable. Hot reloading, reusable elements, pre-rendering, and other features of Next.js are utilized. Get a robust business solution for your business with Comfygen's Next.js development service. Comfygen offers a variety of engagement models depending on your budget and requirements. You can get the best solutions from us irrespective of the domain or industry you're in.",
+  "description2": "",
+  "description3": "",
+  "description4": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+  "link": "/about-us",
+  "linkText": "Explore More"
+},
+"Technologies": {
+  "heading": "Our Top Next.JS Development Services",
+  "subheading": "By creating a tailored user experience focused on targeted users, Next JS increases conversion rates and enhances sales. In addition, it has other advantages.",
+  "tech": [
+    {
+      "title": "Apps that are adaptable and responsive",
+      "desc": "It is possible to run Next Js applications on any device and view them on any screen"
+    },
+    {
+      "title": "Security of data",
+      "desc": "Data, dependencies, users, and other sensitive information are not directly accessible by static web apps."
+    },
+    {
+      "title": "Launching faster",
+      "desc": "MVPs can be developed more quickly with NextJS` predesigned components."
+    },
+    {
+      "title": "Channels of distribution",
+      "desc": "Apps built with NextJS facilitate multi-channel sales of your products and services."
+    },
+    {
+      "title": "Page loading is faster",
+      "desc": "Improved performance of static websites enhances customer engagement."
+    },
+    {
+      "title": "On-demand support",
+      "desc": "The development and support of Next Js apps can be handled by a Next Js app development agency."
+    }
+  ]
+},
+"Nextechnologies": {
+  "title": "Advantages Of Using Next.JS",
+  "description": "By creating a tailored user experience focused on targeted users, Next JS increases conversion rates and enhances sales. There are also other advantages to it.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+  "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+  "proces": [
+    {
+      "num": "1",
+      "title": "Reloading of hot codes",
+      "desc": "This mode explains that each player’s moves are forced by the cards the player is dealt"
+    },
+    {
+      "num": "2",
+      "title": "Baccarat Chemin De Fer",
+      "desc": "When Next JS detects any changes saved to the disk, it automatically reloads the page. It’s this feature that sets Next JS apart from the rest!"
+    },
+    {
+      "num": "3",
+      "title": "Server-side rendering",
+      "desc": "React components can be rendered on the server side using Next JS. Before the HTML is sent to the client, it can be checked."
+    },
+    {
+      "num": "4",
+      "title": "Elements that can be reused",
+      "desc": "In addition to React, Next JS elements can also be reused multiple times to build more UI instances."
+    },
+    {
+      "num": "5",
+      "title": "Rendering in advance",
+      "desc": "Creating data-driven and server-rendered applications has never been easier thanks to Next JS!"
+    },
+    {
+      "num": "6",
+      "title": "Adaptability",
+      "desc": "Scalability is a key feature of Next JS. Small build size and faster dev compilation are amazing features!"
+    }
+  ]
+},
+
+ "Software": {
+  "heading": "Next.js Software Development",
+  "description1": "Bringing your vision to life with our expertise We at Comfortygen focus on satisfying our clients at every step of the process while delivering more than their expectations. Using the latest technology, we develop and deploy web services, always focusing on the big picture!",
+  "description2": "",
+  "description3": "",
+  "dec": "",
+  "points": [],
+  "imageSrc": "https://www.comfygen.com/img/next.js-software-development.webp",
+  "link": "/contact-us",
+  "linkText": "Lets Discuss",
+  "imagePosition": "right"
+},
+"HireNFTDeveloper": {
+  "heading": "Hire Next.JS Developers",
+  "text": "Next.js is one of the most popular frameworks for building high-performance web applications, thanks to its speed and scalability. Many companies prefer it for backend development to create outstanding applications. Hiring expert Next.js developers can cost between $22 and $80 per hour, with annual salaries ranging from $31,680 to $150,000, depending on experience and location. These professionals require skills in React.js, server-side rendering (SSR), API integration, and advanced JavaScript. Understanding these factors helps businesses make informed decisions when hiring remote Next.js developers for their projects.",
+  "text1": "",
+  "text2": "",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems": [
+    "Thinking like a designer.",
+    "JavaScript proficiency is required",
+    "Expertise in Next.js.",
+    "Understanding mobile and web delivery platforms is essential."
+  ]
+},
+
+  "pageData": {
+    "title": "What Makes Us Your Next.JS Development Company of Choice?",
+    "description": "We help you achieve faster time-to-market by leveraging Next.Js.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "An approach that is user-oriented",
+        "description": "End-users are at the heart of all applications developed by our team."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "A transparent process",
+        "description": "Our clients can count on us for honesty and openness in all that we do, from pricing to discussing project objectives."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Solutions tailored to your needs",
+        "description": "We are flexible in meeting the needs of each business because we have years of experience in adapting to every unique idea."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Technology that is cutting-edge",
+        "description": "Make sure your apps are secure, fast, and perform flawlessly by using proven technologies, frameworks, and libraries."
+      }
+  
+    ]
+  },
+  "CallToAction": {
+    "heading": "Let’s hear what you have to say?",
+    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "Next Js is used for what ?",
+      "desc": "With Next Js, you can create powerful static and dynamic web pages that are highly scalable, cost-effective, and highly performant for a wide range of vertical industries."
+    },
+    {
+      "num": "2",
+      "title": "What are the features of Next Js ?",
+      "desc": "Rendering on the server, Reloading hot codes, Splitting the code ,SEO that works better , A high level of performance"
+    },
+    {
+      "num": "3",
+      "title": "What are the benefits of Next Js for SEO ?",
+      "desc": "Next.Js helps you build websites and applications that are more search engine-friendly and indexable with features such as server-side rendering"
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "NewSections": {
     "title": "Best Next.js development Services ",
     "decs": "Leading and reputable Next.js development company Comfygen provides all-inclusive NextJS development services. We provide high-performance and feature-rich solutions as experts in developing Next.js online applications. Our team of skilled Next.js developers is available for hire and offers professional Next.js development services catered to your unique requirements. We are a favored option for consumers looking for dependable and affordable solutions as an Indian-based Next.js development firm. "
@@ -86,38 +392,7 @@
   ],
 
 
-  "pageData": {
-    "title": "What Makes Us Your Next.JS Development Company of Choice?",
-    "description": "We help you achieve faster time-to-market by leveraging Next.Js.",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Optimum Outcome Focused",
-      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
-    },
-    "gridData": [
-      {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "An approach that is user-oriented",
-        "description": "End-users are at the heart of all applications developed by our team."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "A transparent process",
-        "description": "Our clients can count on us for honesty and openness in all that we do, from pricing to discussing project objectives."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Solutions tailored to your needs",
-        "description": "We are flexible in meeting the needs of each business because we have years of experience in adapting to every unique idea."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Technology that is cutting-edge",
-        "description": "Make sure your apps are secure, fast, and perform flawlessly by using proven technologies, frameworks, and libraries."
-      }
-  
-    ]
-  },
+
   "Hire": [
     {
       "num": "1",
@@ -135,22 +410,6 @@
     "Understanding mobile and web delivery platforms is essential.",
     "Front-end technology expertise",
     "Integration of modules and debugging of existing bugs are essential skills"
-  ],
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "Next Js is used for what ?",
-      "desc": "With Next Js, you can create powerful static and dynamic web pages that are highly scalable, cost-effective, and highly performant for a wide range of vertical industries."
-    },
-    {
-      "num": "2",
-      "title": "What are the features of Next Js ?",
-      "desc": "Rendering on the server, Reloading hot codes, Splitting the code ,SEO that works better , A high level of performance"
-    },
-    {
-      "num": "3",
-      "title": "What are the benefits of Next Js for SEO ?",
-      "desc": "Next.Js helps you build websites and applications that are more search engine-friendly and indexable with features such as server-side rendering"
-    }
   ]
+
 }

@@ -1,4 +1,154 @@
 {
+"Herosection": {
+  "heading": "NBA Live Line API",
+  "subhead": "",
+  "isHome": false,
+  "ptag": "Are you looking for a fast, reliable, and scalable NBA Live Line API to power real-time scores, stats, and performance insights? Comfygen specializes in custom NBA API solutions tailored for sports platforms, fantasy leagues, data aggregators, and  apps. With over 10 years of software development expertise, we deliver precision-driven NBA Data Feed APIs—including scores, stats, odds, and live updates. Our APIs offer guaranteed uptime, seamless integration, and lightning-fast performance. Whether you need a free NBA API to test or a premium plan for full coverage, Comfygen provides flexible, developer-friendly options to elevate your platform’s sports data experience.",
+  "ptag1": "",
+  "listItems": [],
+  "btnName": "Talk With Expert",
+  "btnLink": "/contact-us",
+  "altTag": "nba live line api",
+  "bgImage": "https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-hero.webp"
+},
+"ServicesData": {
+  "heading": "NBA Live Line API Integration Services That Redefine Real-Time Engagement",
+  "description": "",
+  "services": [
+    {
+      "title": "Custom NBA Live Line API",
+      "subtitle": "",
+      "description": "Tailor your NBA data integration with custom endpoints built around your business requirements. We align the API flow with your frontend/backend setup for maximum performance.",
+      "features": [
+        "Custom endpoints based on your app logic",
+        "Scalable architecture for long-term growth",
+        "Seamless integration with any tech stack"
+      ]
+    },
+    {
+      "title": "NBA Scores API Integration",
+      "subtitle": "",
+      "description": "Provide your users with instant, accurate score updates as they happen. Our NBA Scores API delivers real-time match events and frame-by-frame details.",
+      "features": [
+        "Ultra-low latency live score updates",
+        "Supports mobile, web, and third-party platforms",
+        "Instant notifications for key game events"
+      ]
+    },
+    {
+      "title": "NBA Odds API & Historical Odds Access",
+      "subtitle": "",
+      "description": "Boost your platform with real-time and historical NBA odds. Ideal for betting and analytics apps aiming for data accuracy and deeper engagement.",
+      "features": [
+        "Live odds synced with game progression",
+        "Access to past odds for predictive modeling",
+        "Ideal for sportsbooks and betting tools"
+      ]
+    },
+    {
+      "title": "NBA Fantasy Data API",
+      "subtitle": "",
+      "description": "Serve your fantasy sports users with rich player stats, game logs, and performance metrics. Our NBA Fantasy Data API fuels immersive and strategic gameplay.",
+      "features": [
+        "Real-time player stats and fantasy points",
+        "Match insights for fantasy predictions",
+        "Optimized for daily and season-long formats"
+      ]
+    },
+    {
+      "title": "Developer-Friendly NBA API for Developers",
+      "subtitle": "",
+      "description": "Build faster with developer-focused tools. Our API features detailed documentation, sandbox access, and a dedicated support team for smooth integration.",
+      "features": [
+        "RESTful API with secure access",
+        "Comprehensive guides and SDKs",
+        "Dedicated developer onboarding support"
+      ]
+    },
+    {
+      "title": "NBA Data Feed API Solutions",
+      "subtitle": "",
+      "description": "Streamline your app with a complete NBA data feed, covering live stats, schedules, team data, and more—delivered with accuracy and speed.",
+      "features": [
+        "Real-time and historical data sync",
+        "Full game coverage with player and team stats",
+        "Compatible with any backend system"
+      ]
+    },
+    {
+      "title": "API Maintenance & Support",
+      "subtitle": "",
+      "description": "Enjoy uninterrupted services with 24/7 support, regular updates, and real-time monitoring. We keep your API secure, optimized, and future-ready.",
+      "features": [
+        "Continuous monitoring and performance tuning",
+        "Version control and scheduled updates",
+        "Dedicated support for bug fixes and scaling"
+      ]
+    }
+  ]
+},
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Invest in Custom NeoBank App Development?",
+    "description1": "Investing in custom NeoBank app development presents a powerful growth opportunity as the global neobank market is expected to expand significantly in the coming years. This surge is driven by the rising demand for digital-first banking, personalized financial experiences, and branchless banking models.",
+    "description2": "A custom NeoBank app helps reduce operational costs, enables rapid scalability, unlocks diverse revenue streams, and strengthens customer retention—making it a future-ready and high-ROI investment for businesses entering the digital banking space.",
+    "points": [
+      "Lower Costs, Higher ROI",
+      "Digital-First Banking Demand",
+      "High-Growth Market Opportunity",
+      "Scalable & Revenue-Driven Model"
+    ],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "Frequently": [
   {
     "num": "1",

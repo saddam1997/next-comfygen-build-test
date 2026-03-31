@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import { MdOutlineArrowOutward } from 'react-icons/md';
 
-const index = ({GameCardData}) => {
+const GameCard = ({GameCardData}) => {
      const [showContent, setShowContent] = useState(false);
   return (
 
@@ -97,4 +97,4 @@ const index = ({GameCardData}) => {
   )
 }
 
-export default index
+export default GameCard
