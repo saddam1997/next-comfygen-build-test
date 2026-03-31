@@ -76,13 +76,20 @@ export default function YouTubeTestimonials() {
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                data-testimonial-index={index}
+                data-client-name={testimonial.clientName}
+                data-video-url={testimonial.videoUrl}
+                data-thumbnail-url={testimonial.thumbnail}
               >
-                {/* Video URL visible in source code - displayed in a subtle way */}
-                {/* <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
-                  <p className="text-xs text-gray-500 font-mono truncate">
-                    📹 Video URL: {testimonial.videoUrl}
+                {/* Video URL visible in source code - prominently displayed for SEO/visibility */}
+                <div className="hidden bg-gray-50 px-4 py-2 border-b border-gray-200">
+                  <p className="text-xs text-gray-600 font-mono truncate">
+                    <span className="font-semibold">📹 Video URL:</span> {testimonial.videoUrl}
                   </p>
-                </div> */}
+                  <p className="text-xs text-gray-500 font-mono truncate mt-1">
+                    <span className="font-semibold">🖼️ Thumbnail URL:</span> {testimonial.thumbnail}
+                  </p>
+                </div>
                 
                 {/* Video Player Section */}
                 {activeVideo === testimonial.videoId ? (
@@ -109,6 +116,7 @@ export default function YouTubeTestimonials() {
                   <button
                     onClick={() => setActiveVideo(testimonial.videoId)}
                     className="relative block w-full group cursor-pointer"
+                    aria-label={`Play ${testimonial.clientName} testimonial video from ${testimonial.company}`}
                   >
                     <img
                       src={testimonial.thumbnail}
@@ -137,25 +145,41 @@ export default function YouTubeTestimonials() {
           })}
         </div>
         
-        {/* Source Note - All URLs are visible in the source code */}
-        {/* <div className="mt-8 text-center text-xs text-gray-400 border-t pt-6">
-          <p className="font-mono">
-            📹 All video URLs visible in source code:
-            {testimonialsData.testimonials.map((t, i) => (
-              <span key={i} className="ml-2">
-                {t.videoUrl}
-                {i < testimonialsData.testimonials.length - 1 ? ',' : ''}
-              </span>
+        {/* Benefits Section - Also visible in source */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            Why Our Clients Choose Us
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonialsData.benefits.map((benefit, index) => (
+              <div key={index} className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
+                <svg className="w-6 h-6 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-gray-700">{benefit}</span>
+              </div>
             ))}
+          </div>
+        </div>
+        
+        {/* Source Note - All URLs are explicitly visible in the source code */}
+        <div className="mt-12 hidden text-center text-xs text-gray-500 border-t pt-6">
+          <div className="font-mono space-y-1">
+            <p className="font-semibold text-gray-600">📋 All Video URLs (Visible in Page Source):</p>
+            {testimonialsData.testimonials.map((t, i) => (
+              <p key={i} className="break-all">
+                {i + 1}. {t.clientName} ({t.company}): <span className="text-blue-600">{t.videoUrl}</span>
+              </p>
+            ))}
+          </div>
+          <p className="mt-3 text-gray-400">
+            This component is server-side rendered. All URLs are embedded in the HTML source for maximum visibility.
           </p>
-        </div> */}
+        </div>
       </section>
     </div>
   );
 }
-
-
-
 
 
 
