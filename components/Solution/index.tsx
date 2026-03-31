@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdStars } from "react-icons/md";
 import HeadingTwo from "../ui/HeadingTwo";
 
-const Solution = ({  techData }) => {
+const Solution = ({ techData }) => {
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? techData.tech : techData.tech.slice(0, 6);
@@ -15,13 +15,13 @@ const Solution = ({  techData }) => {
         <div className="space-y-4 text-center">
           <div className="flex flex-col justify-center text-center lg:w-5/6 mx-auto">
 
-           <HeadingTwo color={"#212121"} text= {techData.heading} />
-          
+            <HeadingTwo color={"#212121"} text={techData.heading} />
+
             <p className="pt-4" dangerouslySetInnerHTML={{ __html: techData?.subheading }} />
           </div>
 
           <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-            {visibleItems.map((item, index) => {
+            {visibleItems.map((item: any, index: any) => {
               const { title, desc, desc1, desc2, listItems = [] } = item;
               return (
                 <div
@@ -29,7 +29,7 @@ const Solution = ({  techData }) => {
                   className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/40 rounded-2xl"
                 >
                   <h3 className="text-2xl text-[#212121] font-semibold" dangerouslySetInnerHTML={{ __html: title }}>
-              
+
                   </h3>
                   <p
                     className="text-base font-normal mt-2"
@@ -37,16 +37,22 @@ const Solution = ({  techData }) => {
                   />
                   <p className="text-base font-normal mt-2">{desc1}</p>
                   <p className="text-base font-normal mt-2">{desc2}</p>
-                  <ul className="mt-4 space-y-2">
-                    {listItems.map((liItem:any, idx:any) => (
-                      <li
-                        key={idx}
-                        className="text-base font-normal flex items-center gap-1"
-                      >
-                        <MdStars /> {liItem}
-                      </li>
-                    ))}
-                  </ul>
+
+                  {listItems.length > 0 && (
+                    <ul className="mt-4 space-y-3">
+                      {listItems.map((liItem: any, idx: any) => (
+                        <li
+                          key={idx}
+                          className="flex items-start gap-3 text-base font-normal leading-relaxed"
+                        >
+                          <span className="mt-[8px] w-1.5 h-1.5 bg-black rounded-full flex-shrink-0"></span>
+                          <span>{liItem}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+
                 </div>
               );
             })}

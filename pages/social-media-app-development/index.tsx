@@ -172,9 +172,6 @@ export default function Mobile(props:any) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
-
-
-
       </Head>
       <Navbar />
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />

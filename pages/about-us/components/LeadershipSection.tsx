@@ -22,11 +22,11 @@ export default function LeadershipSection() {
                         </h2>
 
                         <p className="mt-2 text-white font-medium">
-                            (Comfygen Technology CTO)
+                            (Comfygen Technologies Founder And CTO)
                         </p>
 
                         <p className="mt-6 text-white font-medium leading-relaxed text-sm">
-                            Mr. Saddam Husen, CTO at Comfygen, is a renowned Blockchain expert and IT consultant with extensive experience in blockchain development, crypto wallets, DeFi, ICOs, and smart contracts. Passionate about digital transformation, he helps businesses harness blockchain technology’s potential, driving innovation and enhancing IT infrastructure for global success
+                            Mr. Saddam Husen, Founder and CTO at Comfygen, is a renowned Blockchain expert and IT consultant with extensive experience in blockchain development, crypto wallets, DeFi, ICOs, and smart contracts. Passionate about digital transformation, he helps businesses harness blockchain technology’s potential, driving innovation and enhancing IT infrastructure for global success
                         </p>
                         <button className='text-base mt-4 font-medium  border border-white rounded-full px-6 py-1 text-center hover:text-white cursor-pointer transition duration-300 relative '>
                             <Link className='flex gap-3 items-center' target='_blank' href={'https://in.linkedin.com/in/saddam-husen'}>
@@ -51,7 +51,7 @@ export default function LeadershipSection() {
                         <div className="text-white text-center mt-4">
                             <p className="font-semibold">Mr. Saddam Husen </p>
                             <p className="text-sm text-white font-medium">
-                                (Comfygen Technology CTO)
+                                (Comfygen Technologies Founder And CTO)
                             </p>
                         </div>
                     </div>

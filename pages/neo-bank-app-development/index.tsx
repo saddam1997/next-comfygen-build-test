@@ -1,116 +1,76 @@
-import { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/neobankappdevelopment.json";
 
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+import BusinessSolustion from "../../components/BusinessSolustion"
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import Emerging from "../../components/Emerging";
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ClientTestimonials from "../../components/TestimonialSection";
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const CoreFeaturesSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
-  { loading: loader, ssr: true }
-);
-
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-
-const TrendsSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
-
-const Process = [
-  {
-    title: "Discovery & Planning",
-    description:
-      "We analyze your goals, target users, and compliance needs to create a detailed project roadmap. This phase ensures your NeoBank app is strategically planned for market success.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "We design intuitive, mobile-first banking interfaces with user-friendly navigation. Our UI/UX enhances customer engagement, ensuring your NeoBank app delivers seamless, secure, and enjoyable digital experiences.",
-  },
-  {
-    title: "Backend Architecture",
-    description:
-      "Our developers build a secure, high-performance backend to manage data, transactions, and users. This architecture ensures your NeoBank app is scalable, reliable, and ready for real-time operations.",
-  },
-  {
-    title: "API & Fintech Integrations",
-    description:
-      "We integrate essential APIs including KYC, payments, and banking services. These enable your NeoBank app to deliver core financial functionalities and seamless ecosystem connectivity for users.",
-  },
-  {
-    title: "Compliance & Testing",
-    description:
-      "We ensure full compliance with PCI DSS, GDPR, and other standards. Rigorous testing guarantees your NeoBank app is secure, stable, and ready for public launch.",
-  },
-  {
-    title: "Launch & Deployment",
-    description:
-      "After testing, we deploy your NeoBank app to app stores and cloud environments. Our team manages a smooth launch with minimal downtime and complete technical documentation.",
-  },
-  {
-    title: "Maintenance & Continuous Support",
-    description:
-      "Post-launch, we offer 24/7 support, system monitoring, and regular updates. Our services keep your NeoBank app optimized, secure, and aligned with evolving user and compliance requirements.",
-  }
-];
 
 
 
@@ -224,17 +184,7 @@ const jsonLdData = [
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
-  let { Hire, myList, WhyChoosed } = JSON_DATA;
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-  const [show, setshow] = useState(true);
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
   return (
     <>
       <Head>
@@ -348,126 +298,24 @@ export default function Ecommerce(props: any) {
 
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Features} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <ClientTestimonials
+        testimonials={JSON_DATA.customTestimonials} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Trusted NeoBank App Development Company"
-          ptag="Comfygen Technologies is a trusted NeoBank app development company delivering secure, scalable, and user-centric digital banking solutions. We specialize in NeoBank app development, fintech software engineering, and custom NeoBank app solutions with seamless API, NPCI, and digital wallet integrations to help startups and enterprises launch future-ready digital banking platforms faster."
-          li="MVP to Enterprise Launch"
-          li1="Custom NeoBank Solutions"
-          li2="NPCI & Bank API Integration"
-          li3="Secure & Scalable Architecture"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-hero.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Secure and Scalable NeoBank App Development Services</h2>
-              <p className="text-base text-center font-normal">As a premier NeoBank app development company, we specialize in creating secure, scalable, and feature-rich banking solutions that redefine digital finance. Our team leverages advanced technologies such as AI/ML, Blockchain, and open banking APIs to craft apps that ensure seamless user experiences and strong security.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          heading="Why Invest in Custom NeoBank App Development?"
-          description1="Investing in custom NeoBank app development presents a powerful growth opportunity as the global neobank market is expected to expand from USD 261.4 billion in 2026 to over USD 1.77 trillion by 2030, growing at a remarkable 46%+ CAGR. This surge is driven by rising demand for digital-first banking, personalized financial experiences, and branchless banking models. A custom NeoBank app reduces operational costs, enables rapid scalability, unlocks diverse revenue streams, and strengthens customer retention—making it a future-ready, high-ROI investment."
-          imageSrc="https://www.comfygen.com/comfygen-images/neo-bank-app-development/neo-bank-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Lower Costs, Higher ROI",
-            "Digital-First Banking Demand",
-            "High-Growth Market Opportunity",
-            "Scalable & Revenue-Driven Model",
-          ]}
-        />
-
-        <CoreFeaturesSection
-          title="Our NeoBank App Development Solutions Come Packed with Powerful Features"
-          subtitle="At Comfygen, we design NeoBank applications that offer more than just digital banking—they deliver a complete, user-centric financial experience. Our NeoBanking app development solutions are tailored to meet modern customer expectations with seamless, secure, and intuitive features."
-          features={JSON_DATA.LeadingSoftware} />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our NeoBank Apps Portfolio"
-            description="Explore Comfygen’s NeoBank app portfolio showcasing secure, scalable NeoBank app development solutions. Our digital banking and fintech applications feature API integration, real-time payments, and compliance-ready architecture to power modern, customer-centric, branchless banking platforms."
-          />
-        </section>
-
-
-        <TrendsSection
-          heading="Advanced Tech We Integrate in NeoBank Apps"
-          subtitle="At Comfygen, we empower every NeoBank app with advanced technologies to deliver secure, smart, and scalable digital banking solutions. Here’s how we future-proof your app:"
-          trends={JSON_DATA.FoodAppMaker}
-        />
-
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our NeoBanking Development Process</h2>
-              <p className="text-base font-normal mt-2">
-                Our NeoBank app development process is a strategic, end-to-end approach focused on building secure, scalable, and innovative digital banking solutions tailored to your fintech vision.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-        <TechStack
-          title="Tech Stack We Use for NeoBank App Development"
-          description="We utilize modern, secure, and scalable technologies to build high-performing NeoBank apps that meet industry standards and exceed user expectations.
-"
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire FinTech Developers to Build Your NeoBank Clone App"
-          text="Looking to launch a scalable and secure digital bank? Hire expert FinTech developers at Comfygen to build a feature-rich NeoBank clone app tailored to your business model. With advanced tech, industry compliance, and exceptional performance, we help you bring your idea to life with NeoBank MVP and online banking app development."
-          text1="Whether you're building a full-fledged NeoBank or a custom MVP, our team ensures fast delivery, bank-grade security, and seamless user experience."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "10+ Years of FinTech Development Expertise",
-            "Expertise in AI, Blockchain & Banking APIs",
-            "On-Time Delivery, Every Time",
-            "Scalable, Compliant & Secure Architecture",
-          ]}
-        />
-        <ClientTestimonials
-          heading="What Our Clients Say"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }
