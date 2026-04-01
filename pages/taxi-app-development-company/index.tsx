@@ -25,6 +25,12 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
 
 
 import ComparisonSection from "../../components/ComparisonSection"
+import Trending from "../../components/Trending";
+import TechStacks from "../../components/TechStacks";
+import GoogleReviewCard from "../../components/ReviewCard";
+import ReviewCard from "../../components/ReviewCard";
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import ComparisonTable from "../../components/ComparisonTable";
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
@@ -72,26 +78,23 @@ const BlogSection = dynamic(
 );
 
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
 
   return (
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>Taxi App Development Company | Comfygen Technologies</title>
+        <title>Taxi App Development Company in India | Comfygen Technologies</title>
         <meta
           name="description"
-          content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers."
+          content="Leading taxi app development company in India. We build custom, white-label & on demand taxi booking apps for startups and enterprises. Get a free quote today."
         />
         <link
           rel="canonical"
           href="https://www.comfygen.com/taxi-app-development-company"
         />
-        <meta
-          name="keywords"
-          content="White-Label Taxi App Development, Custom Taxi Booking App Development, Cab Booking App Development, Uber Ride Booking App Development, Car Rental App Development"
-        />
+        <meta name="keywords" content="taxi app development company, taxi booking app development, taxi app development, taxi app developer, taxi booking app development company, white label taxi booking app, taxi application development company, taxi app development services, build taxi booking app, taxi booking app development services, taxi booking mobile app development, customizable taxi app development, custom taxi app development, on demand taxi app development company, cab booking app development company, ride hailing app development company, hire taxi app developer, taxi app development solutions, taxi app development agency, taxi app development India, taxi app developers for hire" />
         <meta
           name="robots"
           content="max-image-preview:large, max-snippet:-1, max-video-preview:-1, index, follow"
@@ -104,8 +107,8 @@ export default function Ecommerce(props:any) {
         />
         {/* <!-- ================= OPEN GRAPH ================= --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Taxi App Development Company | Comfygen Technologies" />
-        <meta property="og:description" content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers." />
+        <meta property="og:title" content="Taxi App Development Company in India | Comfygen Technologies" />
+        <meta property="og:description" content="Leading taxi app development company in India. We build custom, white-label & on demand taxi booking apps for startups and enterprises. Get a free quote today." />
         <meta property="og:url" content="https://www.comfygen.com/taxi-app-development-company" />
         <meta property="og:site_name" content="Comfygen Technologies" />
         <meta property="og:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp"></meta>
@@ -113,8 +116,8 @@ export default function Ecommerce(props:any) {
 
         {/* <!-- ================= TWITT/ER CARD ================= --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Taxi App Development Company | Comfygen Technologies" />
-        <meta name="twitter:description" content="Build a custom taxi booking app with Comfygen — Trusted ride-hailing app development company. White-label taxi app development solutions, clone apps & expert developers." />
+        <meta name="twitter:title" content="Taxi App Development Company in India | Comfygen Technologies" />
+        <meta name="twitter:description" content="Leading taxi app development company in India. We build custom, white-label & on demand taxi booking apps for startups and enterprises. Get a free quote today." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/taxi-app-development-company/taxi-app-development-company.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
@@ -125,26 +128,32 @@ export default function Ecommerce(props:any) {
         />
       </Head>
       <Navbar />
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <AppClone SliderDATA={JSON_DATA.Industries}/>
-     <FeaturesNewSection FData={JSON_DATA.FData}/>
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
+    
+      <AppClone SliderDATA={JSON_DATA.Industries} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <FeaturesNewSection FData={JSON_DATA.FData} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CardFeatures featuresData={JSON_DATA.featuresCardData} />
-      <ComparisonSection data={JSON_DATA.BookingComparison} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      {/* <ComparisonSection data={JSON_DATA.BookingComparison} /> */}
+      <ComparisonTable/>
+      <CallToActionSection CallToAction={JSON_DATA.CallToActionOne} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
+      <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
-
     </>
   );
 }

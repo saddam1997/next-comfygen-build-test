@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeadingOne from "../ui/HeadingOne";
 import ParagraphText from "../ui/ParagraphText";
 import HeroClientCTA from "./HeroClientCTA";
+import StatsBanner from "./StatsBanner";
 
 export default function HeroSection({ herosection }: any) {
   const imageAlt =
@@ -12,7 +13,7 @@ export default function HeroSection({ herosection }: any) {
       className="
       relative flex items-center overflow-hidden
       bg-[#5951cd]
-      min-h-[640px] sm:min-h-[680px] lg:min-h-[720px] py-4
+      min-h-[640px] sm:min-h-[680px] lg:min-h-[740px] py-
       "
     >
       {/* Background Image */}
@@ -32,7 +33,7 @@ export default function HeroSection({ herosection }: any) {
       <div className="absolute inset-0 bg-gradient-to-r from-[#5951cd]/90 to-transparent"></div>
 
       {/* Content */}
-      <div className="relative w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center
+      <div className="relative w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-2 flex flex-col justify-center
         min-h-[420px] sm:min-h-[480px] lg:min-h-[520px]"
       >
         <div className="w-full lg:max-w-[65%] xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6">
@@ -69,6 +70,9 @@ export default function HeroSection({ herosection }: any) {
           {herosection.ptag3 && (
             <ParagraphText color={"white"} text={herosection.ptag3} />
           )}
+         <div className="-ml-5">
+           <StatsBanner/>
+         </div>
 
           {/* List */}
           {herosection?.listItems?.length > 0 && (

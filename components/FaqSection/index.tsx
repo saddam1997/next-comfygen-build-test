@@ -127,13 +127,13 @@ export default function FaqSection({
                         item.li6 ||
                         item.li7) && (
                           <ul className="list-disc pl-5 space-y-1">
-                            {item.li1 && <li>{item.li1}</li>}
-                            {item.li2 && <li>{item.li2}</li>}
-                            {item.li3 && <li>{item.li3}</li>}
-                            {item.li4 && <li>{item.li4}</li>}
-                            {item.li5 && <li>{item.li5}</li>}
-                            {item.li6 && <li>{item.li6}</li>}
-                            {item.li7 && <li>{item.li7}</li>}
+                            {item.li1 && <li dangerouslySetInnerHTML={{ __html: item.li1 }} />}
+                            {item.li2 && <li dangerouslySetInnerHTML={{ __html: item.li2 }} />}
+                            {item.li3 && <li dangerouslySetInnerHTML={{ __html: item.li3 }} />}
+                            {item.li4 && <li dangerouslySetInnerHTML={{ __html: item.li4 }} />}
+                            {item.li5 && <li dangerouslySetInnerHTML={{ __html: item.li5 }} />}
+                            {item.li6 && <li dangerouslySetInnerHTML={{ __html: item.li6 }} />}
+                            {item.li7 && <li dangerouslySetInnerHTML={{ __html: item.li7 }} />}
                           </ul>
                         )}
 

@@ -41,9 +41,9 @@ const Trending = ({ trendingData, heading }) => {
                                         />
 
                                     </div>
-                                    <p className="text-sm font-semibold text-white text-center">
+                                    {/* <p className="text-sm font-semibold text-white text-center">
                                         {token.name}
-                                    </p>
+                                    </p> */}
                                 </div>
                             </Link>
                         ))}

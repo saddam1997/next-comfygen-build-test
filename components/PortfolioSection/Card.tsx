@@ -21,8 +21,9 @@ const Card = ({ item, isActive }: any) => {
           height={450}
           className="object-contain h-80 "
           draggable={false}
-          priority={isActive}
-         
+          loading="lazy"
+          fetchPriority="low"
+
         />
       </div>
 

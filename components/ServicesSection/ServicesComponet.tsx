@@ -29,6 +29,8 @@ export default function ServicesComponet({ servicesData }) {
                             alt="services background"
                             width={200}
                             height={200}
+                            loading="lazy"
+                            fetchPriority="low"
                             className="absolute bottom-0 right-0 pointer-events-none"
                         />
 

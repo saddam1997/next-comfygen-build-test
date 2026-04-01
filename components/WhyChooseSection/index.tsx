@@ -38,21 +38,22 @@ const WhyChoose = ({ pageData }: any) => {
                             className="object-cover object-left"
                             sizes="(min-width: 1024px) 25vw"
                             loading="lazy"
+                            fetchPriority="low"
                         />
 
                         {/* Content Layer */}
                         <div className="relative z-10">
 
-                            
+
                             <span className="xl:text-xl text-xl text-white font-semibold">
                                 {mainCardData.title}
                             </span>
 
-         
+
 
                             {mainCardData.description && (
 
-                                 <ParagraphText color={"white"} text={mainCardData.description} />
+                                <ParagraphText color={"white"} text={mainCardData.description} />
 
                             )}
 
@@ -69,14 +70,14 @@ const WhyChoose = ({ pageData }: any) => {
 
                     <div className="col-span-3">
                         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4">
-                            {gridData.slice(0, 6).map((item:any, index:any) => (
+                            {gridData.slice(0, 6).map((item: any, index: any) => (
                                 <div key={index} className="border bg-white border-[#5556D1]/20 lg:p-8 p-4 rounded-lg space-y-2">
                                     <div>
                                         <h3 className="text-xl font-semibold">{item.title}</h3>
                                         {item.description && (
 
                                             <ParagraphText color={"black"} text={item.description} />
-                                            
+
                                         )}
                                     </div>
                                 </div>

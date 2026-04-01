@@ -45,13 +45,13 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
               </div>
 
               <div className="text-semibold text- text-white">
-                 <ParagraphText color={"white"} text={listheading} />
-              
+                <ParagraphText color={"white"} text={listheading} />
+
               </div>
 
               {listItems.length > 0 && (
                 <ul className="mt-5 space-y-2">
-                  {listItems.map((item:any, index:any) => (
+                  {listItems.map((item: any, index: any) => (
                     <li
                       key={index}
                       className="flex items-start  gap-2 text-white"
@@ -81,6 +81,7 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
                 height={762}
                 quality={85}
                 loading="lazy"
+                fetchPriority="low"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 907px"
               />
             ) : null}
