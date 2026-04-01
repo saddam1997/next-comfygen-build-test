@@ -16,12 +16,12 @@ export default function BlogSection(props: any) {
         <div className="flex items-center justify-center">
           <div className="space-y-3 max-w-3xl text-center">
 
-             <HeadingTwo color={"black"} text="Our Latest Blog" />
-               <ParagraphText color={"black"} text="We have the knowledge and skills to work on diverse niches with
+            <HeadingTwo color={"black"} text="Our Latest Blog" />
+            <ParagraphText color={"black"} text="We have the knowledge and skills to work on diverse niches with
               high-performing solutions. Get insights about the tech revolutions
               and their significance through our updated blogs." />
-       
-           
+
+
           </div>
         </div>
 
@@ -62,8 +62,10 @@ export default function BlogSection(props: any) {
                         alt={element?.title}
                         width={1280}
                         height={720}
+
+                        quality={70}
                         loading="lazy"
-                        quality={70}        // ✅ optimal balance
+                        fetchPriority="low"      // ✅ optimal balance
                         placeholder="empty" // ✅ remove heavy blur
                       />
                     </div>

@@ -146,7 +146,7 @@ export default function YouTubeTestimonials() {
         </div>
         
         {/* Benefits Section - Also visible in source */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Why Our Clients Choose Us
           </h3>
@@ -160,7 +160,7 @@ export default function YouTubeTestimonials() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         
         {/* Source Note - All URLs are explicitly visible in the source code */}
         <div className="mt-12 hidden text-center text-xs text-gray-500 border-t pt-6">

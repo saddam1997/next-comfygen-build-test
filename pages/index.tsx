@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
+import LazyLoad from "../hooks/LazyLoad";
 
 
 const Milestones = dynamic(
@@ -84,12 +85,12 @@ export default function Home(props: any) {
         <title>
           AI-Based Mobile App and Web Development Company
         </title>
-     
+
         <meta
           name="description"
           content="Comfygen is a AI-based mobile app and web development company delivering scalable, secure, and high-performance digital solutions for startups and enterprises."
         />
-  
+
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no"
@@ -107,7 +108,7 @@ export default function Home(props: any) {
           name="apple-mobile-web-app-title"
           content="Web And App Development Company"
         />
- 
+
         <meta
           name="keywords"
           content="Comfygen Technologies, software development, app development, blockchain development, IT company, custom software solutions"
@@ -168,25 +169,26 @@ export default function Home(props: any) {
       <Navbar />
 
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-       <Milestones />
-      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <IndustryGrid />
-       <Trending
-        trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
-      /> 
-     
-      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
-      <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <ClientStories />
-      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
-      <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} /> 
+      <Milestones />
+      <LazyLoad>
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <IndustryGrid />
+        <Trending
+          trendingData={JSON_DATA.trendingData}
+          heading="Awards, Ratings & Recognitions"
+        />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <TechSection TechStack={JSON_DATA.TechStack} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <ClientStories />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
+        <BlogSection initialData={initialData} />
+      </LazyLoad>
     </>
   );
 }

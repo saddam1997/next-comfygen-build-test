@@ -32,7 +32,7 @@ export default function AboutSection() {
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-white shadow">
 
                     <Image
-                        src="/sadam.webp"
+                        src="https://www.comfygen.com/comfygen-images/home-image/saddam husan comfygen technologies founder and cto.webp"
                         alt="ScienceSoft Team"
                         width={1240}
                         height={820}

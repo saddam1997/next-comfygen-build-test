@@ -5,8 +5,8 @@ import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 
 
-export default function CallToAction({ CallToAction }:any) {
-  
+export default function CallToAction({ CallToAction }: any) {
+
     return (
         <section className="lg:py-16 bg-white">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#0C0F18] rounded-[24px] overflow-hidden">
@@ -18,7 +18,7 @@ export default function CallToAction({ CallToAction }:any) {
 
                         <HeadingTwo color={"white"} text={CallToAction?.heading} />
                         <ParagraphText color={"white"} text={CallToAction?.text} />
-                    
+
 
                         <div className="mt-7">
                             <Link
@@ -39,6 +39,7 @@ export default function CallToAction({ CallToAction }:any) {
                             width={400}
                             height={225}
                             loading="lazy"
+                            fetchPriority="low"
                             sizes="(max-width: 768px) 100vw,"
                             className="hidden sm:block"
                         />

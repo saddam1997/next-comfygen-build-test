@@ -130,6 +130,7 @@ export default function Tech({ TechStack }: any) {
                       height={50}
                       quality={50}
                       loading="lazy"
+                      fetchPriority="low"
                     />
                   </div>
                   <h3 className="sm:text-lg text-sm sm:font-semibold font-medium text-white sm:ml-3">{elem.name}</h3>

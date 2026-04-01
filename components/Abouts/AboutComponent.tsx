@@ -24,6 +24,7 @@ const AboutComponent = ({ AboutData }) => {
               height={120}
               quality={60}
               loading="lazy"
+              fetchPriority="low"
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full  h-auto xl:object-contain lg:object-cover rounded-md lg:h-[60vh]"
             />
