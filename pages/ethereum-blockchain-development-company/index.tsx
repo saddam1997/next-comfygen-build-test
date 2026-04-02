@@ -71,6 +71,7 @@ const BlogSection = dynamic(
 
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 export default function Ecommerce(props:any) {
   let { initialData } = props;
@@ -299,6 +300,7 @@ export default function Ecommerce(props:any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
         <Faq
           faqData={JSON_DATA.Frequently}

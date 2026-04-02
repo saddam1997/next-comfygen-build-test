@@ -19,6 +19,7 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
 });
 
 import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
@@ -280,7 +281,7 @@ export default function Ecommerce(props: any) {
       <Consultancy consultancyData={JSON_DATA.NFTTechnologies} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
-
+  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

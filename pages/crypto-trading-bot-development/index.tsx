@@ -117,6 +117,7 @@ import {
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import HeroSection from "../../components/HeroSection";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -683,11 +684,12 @@ export default function Ecommerce(props: any) {
 
 
         <ClientStories />
-
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+{/* 
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.testimonials}
-        />
+        /> */}
 
         <Faq faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />

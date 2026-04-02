@@ -27,7 +27,7 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
-
+import ReviewCard from "../../components/ReviewCard";
 
 const LatestTechnology = dynamic(() => import("../../components/LatestTechnology"), {
   ssr: true,
@@ -229,7 +229,7 @@ export default function Mobile(props: any) {
         <WhyChooseSection pageData={JSON_DATA.pageData} />
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <ClientStories />
-        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+       <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
 

@@ -8,6 +8,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -16,7 +17,7 @@ const AboutSection = dynamic(
 
 const ServicesSec = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const Portfolio = dynamic(
@@ -292,8 +293,8 @@ export default function Mobile(props) {
 
 
       </Head>
-    
-        <Header />
+
+      <Header />
 
       <div className="lg:pt-[110px]">
         <HeroSectionForAllPages
@@ -419,7 +420,7 @@ export default function Mobile(props) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <ClientStories/>
+        <ClientStories />
 
         <HireDeveloper
           heading="Hire Data Analytics Experts for business growth "
@@ -431,14 +432,14 @@ export default function Mobile(props) {
         />
 
 
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
 
 
-
-
+        {/* 
         <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title="FAQs for Our Data Analytics Services "

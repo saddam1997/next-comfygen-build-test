@@ -93,6 +93,7 @@ export default function Footer() {
             Our Blog
           </a>
           <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/disclaimer">Disclaimer</Link>
+           <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/sitemap">Sitemap</Link>
         </div>
 
         <p>

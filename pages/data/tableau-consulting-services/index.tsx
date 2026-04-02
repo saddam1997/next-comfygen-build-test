@@ -8,6 +8,7 @@ import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 import HeroSection from "../../../components/HeroSection";
+import ReviewCard from "../../../components/ReviewCard";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -367,10 +368,11 @@ export default function Mobile(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
-        <ClientTestimonials
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"

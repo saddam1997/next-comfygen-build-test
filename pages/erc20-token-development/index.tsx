@@ -80,6 +80,7 @@ import { IconCode, IconCodeCircle2, IconCoin, IconExchange, IconFileCode, IconKe
 import Script from "next/script";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -539,6 +540,7 @@ export default function Ecommerce(props: any) {
         />
 
         <ClientStories/>
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

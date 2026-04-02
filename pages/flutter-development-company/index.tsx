@@ -54,6 +54,8 @@ const HireDeveloper = dynamic(
   }
 );
 
+import ReviewCard from "../../components/ReviewCard";
+
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   {
@@ -267,6 +269,7 @@ export default function MultiChain(props: any) {
         />
 
         <ClientStories/>
+        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
         <Faq
           faqData={JSON_DATA.Frequently}

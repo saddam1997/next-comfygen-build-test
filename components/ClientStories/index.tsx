@@ -3,6 +3,7 @@
 // All video URLs are clearly visible in the source code as requested
 
 import { Play, X } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 // Data is embedded directly in the component source code as requested
@@ -21,7 +22,7 @@ const testimonialsData = {
     {
       // Video URL: https://www.youtube.com/watch?v=kedGnt6T-DI
       videoUrl: "https://www.youtube.com/watch?v=kedGnt6T-DI",
-      thumbnail: "https://www.comfygen.com/comfygen-images/ClientStories/testimonial.webp",
+      thumbnail: "https://www.comfygen.com/comfygen-images/comfygen/Nitesh Rajput.webp",
       clientName: "Nitesh Rajput",
       company: "Book My Tuter",
       // Extract video ID from URL for embedding: kedGnt6T-DI
@@ -30,7 +31,7 @@ const testimonialsData = {
     {
       // Video URL: https://www.youtube.com/watch?v=-AkHiORQTjA
       videoUrl: "https://www.youtube.com/watch?v=-AkHiORQTjA",
-      thumbnail: "https://www.comfygen.com/comfygen-images/thumbnail/forgeflexrreviewthambnail.webp",
+      thumbnail: "https://www.comfygen.com/comfygen-images/comfygen/Sayead Shadab Arif.webp",
       clientName: "Sayead Shadab Arif",
       company: "Froge Flex",
       // Extract video ID from URL for embedding: -AkHiORQTjA
@@ -118,7 +119,10 @@ export default function YouTubeTestimonials() {
                     className="relative block w-full group cursor-pointer"
                     aria-label={`Play ${testimonial.clientName} testimonial video from ${testimonial.company}`}
                   >
-                    <img
+                    <Image
+               
+                    width={800}
+                    height={450}
                       src={testimonial.thumbnail}
                       alt={`${testimonial.clientName} from ${testimonial.company} testimonial video`}
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"

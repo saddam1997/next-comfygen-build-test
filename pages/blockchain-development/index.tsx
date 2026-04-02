@@ -86,6 +86,7 @@ const GuidSectionBlockchain = dynamic(
   }
 );
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import ReviewCard from "../../components/ReviewCard";
 
 export default function Blockchain(props) {
   let { initialData } = props;
@@ -196,7 +197,8 @@ export default function Blockchain(props) {
         <TechSection TechStack={JSON_DATA.TechStack} />
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <WhyChooseSection pageData={JSON_DATA.pageData} />
-        <TestimonialSection testimonials={JSON_DATA.testimonialData} />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <TestimonialSection testimonials={JSON_DATA.testimonialData} /> */}
         {/* <GuidSectionBlockchain /> */}
         <FaqSection faqData={JSON_DATA.Frequently} title="" />
         <BlogSection initialData={initialData} />

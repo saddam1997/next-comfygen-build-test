@@ -11,6 +11,8 @@ const ServicesComponet = dynamic(() => import("../../components/ServicesSection/
   ssr: true,
 });
 
+import ReviewCard from "../../components/ReviewCard";
+
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
@@ -289,7 +291,8 @@ export default function ClinicalApp(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ClientStories />
-      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
+       <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 

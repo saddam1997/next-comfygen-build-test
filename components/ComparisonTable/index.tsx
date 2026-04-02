@@ -35,7 +35,7 @@ export default function ComparisonTable() {
     ];
 
     return (
-        <div className="w-full py-20">
+        <div className="w-full py-20 lg:px-20 2xl:px-0">
 
             <div className="text-center max-w-6xl mx-auto mb-12">
                 <h2 className="text-xl md:text-3xl font-bold text-gray-900">

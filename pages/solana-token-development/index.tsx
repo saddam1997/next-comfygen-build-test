@@ -78,6 +78,7 @@ const BlogSection = dynamic(
 
 import Script from "next/script";
 import IndustryGrid from "../../components/IndustryGrid";
+import ReviewCard from "../../components/ReviewCard";
 
 
 export default function Ecommerce(props) {
@@ -255,7 +256,7 @@ export default function Ecommerce(props) {
       <InformationSection InfoSectionData={JSON_DATA?.InfoSection4} />
       <ClientStories />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
 
       <BlogSection initialData={initialData} />

@@ -7,6 +7,7 @@ import Header from "../../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 
 const AboutSection = dynamic(
@@ -479,10 +480,11 @@ export default function ClinicalApp(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
-        <ClientTestimonials
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq faqData={Frequently} title="" />
 
          <BlogSection initialData={initialData} />

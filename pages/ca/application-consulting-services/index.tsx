@@ -19,6 +19,7 @@ const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutCom
 const Consultancy = dynamic(() => import("../../../components/Consultancy"), {
   ssr: true,
 });
+import ReviewCard from "../../../components/ReviewCard";
 
 const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"), {
   ssr: true,
@@ -182,6 +183,7 @@ export default function Mobile(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
 
         <ClientStories />
+         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
         <FaqSection faqData={JSON_DATA.Frequently} />
 

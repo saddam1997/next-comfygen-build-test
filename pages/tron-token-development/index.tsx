@@ -86,6 +86,7 @@ import {
   IconTools,
 } from "@tabler/icons-react";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -637,6 +638,7 @@ export default function Tron(props) {
           imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
           imageAlt="Get in touch now."
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq faqData={JSON_DATA.Frequently} title="" />
         <BlogSection initialData={initialData} />
       </div>

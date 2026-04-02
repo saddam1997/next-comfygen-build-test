@@ -12,6 +12,8 @@ const ServicesComponet = dynamic(() => import("../../components/ServicesSection/
   ssr: true,
 });
 
+import ReviewCard from "../../components/ReviewCard";
+
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
@@ -363,6 +365,7 @@ export default function Mobile(props: any) {
         ]}
       />
       <IndustriesServe />
+       <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
 
       <BlogSection initialData={initialData} />

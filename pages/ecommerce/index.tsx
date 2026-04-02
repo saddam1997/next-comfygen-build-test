@@ -17,6 +17,8 @@ const AboutSection = dynamic(
   }
 );
 
+import ReviewCard from "../../components/ReviewCard";
+
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
   {
@@ -607,10 +609,11 @@ export default function ClinicalApp(props: any) {
             "Custom Development for B2C, B2B, and Multi-Vendor Platforms",
           ]}
         />
-        <ClientTestimonials
+        {/* <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
+        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 
