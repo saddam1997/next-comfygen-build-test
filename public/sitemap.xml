@@ -1124,7 +1124,13 @@
   </url>
 
     <url>
-    <loc>http://comfygen.com/hire-dot-net-developer </loc>
+    <loc>http://comfygen.com/hire-dot-net-developer</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>http://comfygen.com/sitemap-app</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
