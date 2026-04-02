@@ -1,0 +1,805 @@
+{
+  "sitemapData": [
+    {
+      "title": "Mobile App Development",
+      "links": [
+        {
+          "label": "Mobile App Development",
+          "href": "/mobile-app-development"
+        },
+        {
+          "label": "Application Consulting Service",
+          "href": "/ca/application-consulting-services"
+        },
+        {
+          "label": "Hybrid Mobile App Development",
+          "href": "/hybrid-mobile-app-development"
+        },
+        {
+          "label": "IOS App Development",
+          "href": "/ios-app-development"
+        },
+        {
+          "label": "Android App Development",
+          "href": "/android-app-development"
+        },
+        {
+          "label": "Flutter Development",
+          "href": "/flutter-development-company"
+        },
+        {
+          "label": "React Native Development",
+          "href": "/react-native-development"
+        },
+        {
+          "label": "E-Commerce",
+          "href": "/ecommerce"
+        },
+        {
+          "label": "Startup App Development",
+          "href": "/ca/startup-app-development"
+        },
+        {
+          "label": "White Label Mobile App Development",
+          "href": "/white-label-mobile-app-development"
+        },
+        {
+          "label": "Roadside Assistance App Development",
+          "href": "/roadside-assistance-app-development"
+        }
+      ]
+    },
+    {
+      "title": "On Demand Mobile App",
+      "links": [
+        {
+          "label": "Delivery App Development",
+          "href": "/delivery-app-development"
+        },
+        {
+          "label": "Food Delivery App Development ",
+          "href": "/food-delivery-app-development"
+        },
+        {
+          "label": "Pizza Delivery App Development",
+          "href": "/pizza-delivery-app-development"
+        },
+        {
+          "label": "Milk Delivery App Development",
+          "href": "/milk-delivery-app-development"
+        },
+        {
+          "label": "Flower Delivery App Development",
+          "href": "/flower-delivery-app-development"
+        },
+        {
+          "label": "Water Delivery App Development",
+          "href": "/water-delivery-app-development"
+        },
+        {
+          "label": "Taxi App Development",
+          "href": "/taxi-app-development-company"
+        },
+        {
+          "label": "Astrology App Development",
+          "href": "/astrology-app-development"
+        },
+        {
+          "label": "Ice Cream Delivery App Development",
+          "href": "/ice-cream-delivery-app-development"
+        },
+        {
+          "label": "Fuel Delivery App Development",
+          "href": "/fuel-delivery-app-development"
+        },
+        {
+          "label": "Dating App Development",
+          "href": "/dating-app-development"
+        },
+        {
+          "label": "Salon App Development",
+          "href": "/salon-app-development"
+        },
+        {
+          "label": "Business Directory App Development",
+          "href": "/business-directory-app-development"
+        },
+        {
+          "label": "Logistics App Development",
+          "href": "/logistics-app-development"
+        },
+        {
+          "label": "Home Service App Development",
+          "href": "/home-service-app-development"
+        },
+        {
+          "label": "Meat Delivery App Development",
+          "href": "/meat-delivery-app-development"
+        },
+        {
+          "label": "Alcohol Delivery App Development",
+          "href": "/alcohol-delivery-app-development"
+        },
+        {
+          "label": "Courier Delivery App Development",
+          "href": "/courier-delivery-app-development"
+        },
+        {
+          "label": "Billing Software Development",
+          "href": "/billing-software-development"
+        },
+        {
+          "label": "Accounting Software Development",
+          "href": "/accounting-software-development"
+        }
+      ]
+    },
+    {
+      "title": "AI & Data Services",
+      "links": [
+        {
+          "label": "AI Development",
+          "href": "/ai-development"
+        },
+        {
+          "label": "Generative AI Development",
+          "href": "/generative-ai-development"
+        },
+        {
+          "label": "AI Interview Scheduling Software Development",
+          "href": "/ai-interview-scheduling-software-development"
+        },
+        {
+          "label": "Data Service",
+          "href": "/data"
+        },
+        {
+          "label": "Data Analytics",
+          "href": "/data/analytics-service-provider"
+        },
+        {
+          "label": "Tableau Consulting Services",
+          "href": "/data/tableau-consulting-services"
+        },
+        {
+          "label": "Hire Data Scientist",
+          "href": "/data/hire-data-scientist"
+        },
+        {
+          "label": "AWS Analytics Service",
+          "href": "/data/aws-analytics-services"
+        },
+        {
+          "label": "Business Intelligence",
+          "href": "/data/business-intelligence"
+        },
+        {
+          "label": "Power BI Consulting Services",
+          "href": "/data/power-bi-consulting-services"
+        },
+        {
+          "label": "Sales Performance Dashboard",
+          "href": "/data/sales-dashboard"
+        }
+      ]
+    },
+    {
+      "title": "Blockchain Services",
+      "links": [
+        {
+          "label": "Blockchain Development",
+          "href": "/blockchain-development"
+        },
+        {
+          "label": "Custom Blockchain Development",
+          "href": "/custom-blockchain-development-company"
+        },
+        {
+          "label": "Blockchain Consulting Service",
+          "href": "/blockchain-consulting-services"
+        },
+        {
+          "label": "Substrate Development Company",
+          "href": "/substrate-development-company"
+        },
+        {
+          "label": "Polygon Blockchain Development",
+          "href": "/polygon-blockchain-development"
+        },
+        {
+          "label": "Hyperledger Blockchain Development",
+          "href": "/hyperledger-blockchain-development"
+        },
+        {
+          "label": "Multichain Blockchain Development",
+          "href": "/multichain-blockchain-development"
+        },
+        {
+          "label": "Solana Blockchain Development",
+          "href": "/solana-blockchain-development-company"
+        },
+        {
+          "label": "Stellar Blockchain Development",
+          "href": "/stellar-blockchain-development-company"
+        },
+        {
+          "label": "Cardano Blockchain Development",
+          "href": "/cardano-blockchain-development-company"
+        },
+        {
+          "label": "Ethereum Blockchain Development",
+          "href": "/ethereum-blockchain-development-company"
+        },
+        {
+          "label": "POW Blockchain Development",
+          "href": "/pow-blockchain-development-company"
+        },
+        {
+          "label": "POA Blockchain Development",
+          "href": "/poa-blockchain-development-company"
+        },
+        {
+          "label": "DPOS Blockchain Development",
+          "href": "/ca/dpos-blockchain-development-company"
+        },
+        {
+          "label": "DApp Development Company",
+          "href": "/dapp-development-company"
+        },
+        {
+          "label": "DeFi Development Company",
+          "href": "/defi-development-company"
+        },
+        {
+          "label": "DeFi Smart Contract Development",
+          "href": "/defi-smart-contract-development"
+        },
+        {
+          "label": "Smart Contract Development",
+          "href": "/smart-contract-development"
+        },
+        {
+          "label": "Smart Contract MLM Software",
+          "href": "/smart-contract-mlm-software"
+        },
+        {
+          "label": "ICO Development Company",
+          "href": "/ico-development"
+        }
+      ]
+    },
+    {
+      "title": "Crypto & Token Development",
+      "links": [
+        {
+          "label": "Crypto Token Development",
+          "href": "/crypto-token-development-company"
+        },
+        {
+          "label": "ERC-20 Token Development",
+          "href": "/erc20-token-development"
+        },
+        {
+          "label": "Ethereum Token Development",
+          "href": "/ethereum-token-development"
+        },
+        {
+          "label": "Solana Token Development",
+          "href": "/solana-token-development"
+        },
+        {
+          "label": "Tron Token Development",
+          "href": "/tron-token-development"
+        },
+        {
+          "label": "NFT Token Development",
+          "href": "/nft-token-development-company"
+        },
+        {
+          "label": "Altcoin Development Services",
+          "href": "/altcoin-development-services"
+        },
+        {
+          "label": "P2P Crypto Exchange Development",
+          "href": "/p2p-crypto-exchange-development"
+        },
+        {
+          "label": "Crypto Trading Bot Development",
+          "href": "/crypto-trading-bot-development"
+        },
+        {
+          "label": "Wallet Development Company",
+          "href": "/wallet-development-company"
+        },
+        {
+          "label": "Crypto Wallet Development",
+          "href": "/crypto-wallet-development"
+        },
+        {
+          "label": "Crypto Exchange Services",
+          "href": "/cryptocurrency-exchange-development"
+        },
+        {
+          "label": "Crypto MLM Software Development",
+          "href": "/cryptocurrency-mlm-software-development"
+        },
+        {
+          "label": "Crypto White Paper Development",
+          "href": "/crypto-white-paper-development"
+        },
+        {
+          "label": "Decentralized Exchange Development",
+          "href": "/decentralized-exchange-development"
+        },
+        {
+          "label": "White Label Crypto Exchange Development",
+          "href": "/white-label-crypto-exchange-development"
+        },
+        {
+          "label": "Hybrid Crypto Exchange Development",
+          "href": "/hybrid-crypto-exchange-development"
+        },
+        {
+          "label": "Centralized Crypto Exchange Development",
+          "href": "/centralized-crypto-exchange-development"
+        },
+        {
+          "label": "Crypto Launchpad Development",
+          "href": "/crypto-launchpad-development"
+        },
+        {
+          "label": "OTC Crypto Exchange Development",
+          "href": "/otc-crypto-exchange-development"
+        },
+        {
+          "label": "Crypto NFT Exchange Development",
+          "href": "/crypto-nft-exchange-development"
+        },
+        {
+          "label": "Mobile Crypto Wallet Development",
+          "href": "/mobile-crypto-wallet-development"
+        },
+        {
+          "label": "Web3 Wallet Development",
+          "href": "/web3-wallet-development"
+        },
+        {
+          "label": "Crypto Derivatives Exchange Development",
+          "href": "/crypto-derivatives-exchange-development"
+        },
+        {
+          "label": "Margin Trading Exchange Development",
+          "href": "/crypto-margin-trading-exchange-development"
+        },
+        {
+          "label": "Crypto Exchange Admin Panel Development",
+          "href": "/crypto-exchange-admin-panel-development"
+        },
+        {
+          "label": "AI Crypto Exchange Development",
+          "href": "/ai-crypto-exchange-development"
+        },
+        {
+          "label": "Crypto Payment Gateway Development",
+          "href": "/crypto-payment-gateway-development"
+        },
+        {
+          "label": "Decentralized Wallet Development",
+          "href": "/decentralized-wallet-development"
+        },
+        {
+          "label": "NFT Wallet Development Company",
+          "href": "/nft-wallet-development"
+        },
+        {
+          "label": "White Label Cryptocurrency Wallet Development",
+          "href": "/white-label-cryptocurrency-wallet-development"
+        },
+        {
+          "label": "Multi Currency Wallet Development Company",
+          "href": "/multi-currency-wallet-development-company"
+        },
+        {
+          "label": "Defi Wallet Development",
+          "href": "/defi-wallet-development"
+        },
+        {
+          "label": "Smart Contract Wallet Development",
+          "href": "/smart-contract-wallet-development"
+        },
+        {
+          "label": "Blockchain Wallet Development",
+          "href": "/blockchain-wallet-development"
+        }
+      ]
+    },
+    {
+      "title": "Web & Full Stack Development",
+      "links": [
+        {
+          "label": "Website Development",
+          "href": "/web-development"
+        },
+        {
+          "label": "Website Design",
+          "href": "/web-design"
+        },
+        {
+          "label": "MERN Stack Development",
+          "href": "/mern-stack-development"
+        },
+        {
+          "label": "Node JS Development",
+          "href": "/node-js-development"
+        },
+        {
+          "label": "React JS Development",
+          "href": "/react-js-development"
+        },
+        {
+          "label": "Next JS Development",
+          "href": "/next-js-development"
+        },
+        {
+          "label": "Python Development",
+          "href": "/python-development"
+        }
+      ]
+    },
+    {
+      "title": "Hire Developers",
+      "links": [
+        {
+          "label": "Hire Mobile App Developer",
+          "href": "/hire-mobile-app-developer"
+        },
+        {
+          "label": "Hire .Net Developer",
+          "href": "/hire-dot-net-developer"
+        },
+        {
+          "label": "Hire Blockchain Developer",
+          "href": "/hire-blockchain-developer"
+        }
+      ]
+    },
+    {
+      "title": "Ecommerce & Fashion Apps",
+      "links": [
+        {
+          "label": "Ecommerce App Development",
+          "href": "/e-commerce-app-development"
+        },
+        {
+          "label": "Fashion App Development",
+          "href": "/ecommerce/fashion"
+        },
+        {
+          "label": "Quick Ecommerce Development",
+          "href": "/quick-commerce-app-development"
+        },
+        {
+          "label": "Food Delivery App Development",
+          "href": "/food-delivery-app-development"
+        },
+        {
+          "label": "Grocery App Development",
+          "href": "/ecommerce/grocery"
+        },
+        {
+          "label": "FMCG App Development",
+          "href": "/ecommerce/fmcg"
+        }
+      ]
+    },
+    {
+      "title": "Education Apps",
+      "links": [
+        {
+          "label": "Education App Development",
+          "href": "/ca/education-app-development-company"
+        },
+        {
+          "label": "E-Learning App Development",
+          "href": "/e-learning-app-development"
+        },
+        {
+          "label": "Tutor App Development",
+          "href": "/tutor-app-development"
+        },
+        {
+          "label": "Language Learning App Development",
+          "href": "/language-learning-app-development"
+        },
+        {
+          "label": "Exam Preparation App Development",
+          "href": "/exam-preparation-app-development"
+        }
+      ]
+    },
+    {
+      "title": "Mobile App Solutions",
+      "links": [
+        {
+          "label": "Social Media App Development",
+          "href": "/social-media-app-development"
+        },
+        {
+          "label": "IoT Development",
+          "href": "/iot-development-company"
+        },
+        {
+          "label": "Mobile Game Development",
+          "href": "/mobile-game-development-company"
+        },
+        {
+          "label": "News & Web App Development",
+          "href": "/news-application-development"
+        },
+        {
+          "label": "Cricket Fast Line App Development",
+          "href": "/live-line-cricket-mobile-app-development"
+        },
+        {
+          "label": "Magazine App Development",
+          "href": "/ca/magazine-app-development-company"
+        }
+      ]
+    },
+    {
+      "title": "Healthcare App Development",
+      "links": [
+        {
+          "label": "Healthcare App Development",
+          "href": "/healthcare-app-development"
+        },
+        {
+          "label": "Doctor Appointment App Development",
+          "href": "/doctor-appointment-app-development"
+        },
+        {
+          "label": "Medicine Delivery App Development",
+          "href": "/medicine-delivery-app-development"
+        },
+        {
+          "label": "Medicine Ordering App Development",
+          "href": "/medicine-app-development"
+        },
+        {
+          "label": "Clinical App Development",
+          "href": "/clinical-application-development"
+        },
+        {
+          "label": "Pharmacy App Development",
+          "href": "/pharmacy-app-development"
+        },
+        {
+          "label": "Telemedicine App Development",
+          "href": "/telemedicine-app-development"
+        },
+        {
+          "label": "Laboratory App Development",
+          "href": "/laboratory-app-development"
+        },
+        {
+          "label": "Health Tracking App Development",
+          "href": "/health-tracking-app-development"
+        }
+      ]
+    },
+    {
+      "title": "Finance App Development",
+      "links": [
+        {
+          "label": "Finance App Development",
+          "href": "/finance-app-development"
+        },
+        {
+          "label": "Personal Finance App Development",
+          "href": "/personal-finance-app-development"
+        },
+        {
+          "label": "Mobile Banking App Development",
+          "href": "/mobile-banking-app-development"
+        },
+        {
+          "label": "UPI Payment App Development",
+          "href": "/upi-payment-app-development"
+        },
+        {
+          "label": "NeoBank App Development",
+          "href": "/neo-bank-app-development"
+        },
+        {
+          "label": "Banking Software Development",
+          "href": "/banking-software-development"
+        },
+        {
+          "label": "Insurance App Development",
+          "href": "/insurance-app-development"
+        },
+        {
+          "label": "Islamic Banking App Development",
+          "href": "/islamic-bank-app-development"
+        },
+        {
+          "label": "Credit Scoring App Development",
+          "href": "/credit-scoring-app-development"
+        },
+        {
+          "label": "P2P Payment App Development",
+          "href": "/p2p-payment-app-development"
+        },
+        {
+          "label": "Car Finance App Development",
+          "href": "/car-finance-app-development"
+        },
+        {
+          "label": "Truck Finance App Development",
+          "href": "/truck-finance-app-development"
+        },
+        {
+          "label": "eWallet App Development",
+          "href": "/ewallet-app-development"
+        }
+      ]
+    },
+    {
+      "title": "Stock App Development",
+      "links": [
+        {
+          "label": "Stock Trading App Development",
+          "href": "/stock-trading-app-development"
+        },
+        {
+          "label": "Stock Market Live Line API",
+          "href": "/stock-market-live-line-api"
+        }
+      ]
+    },
+    {
+      "title": "Metaverse & NFT",
+      "links": [
+        {
+          "label": "Metaverse Development Company",
+          "href": "/metaverse-development"
+        },
+        {
+          "label": "NFT Marketplace Development",
+          "href": "/nft-marketplace-development-company"
+        }
+      ]
+    },
+    {
+      "title": "Sports & Live API",
+      "links": [
+        {
+          "label": "Baseball Live Line API",
+          "href": "/baseball-live-line-api-development"
+        },
+        {
+          "label": "Horse Racing Live Line API",
+          "href": "/horse-racing-live-line-api-development"
+        },
+        {
+          "label": "Pool Live Line API",
+          "href": "/pool-live-line-api-development"
+        },
+        {
+          "label": "Rugby Live Line API",
+          "href": "/rugby-live-line-api-development"
+        },
+        {
+          "label": "NBA Live Line API",
+          "href": "/nba-live-line-api-development"
+        },
+        {
+          "label": "Volleyball Live Line API",
+          "href": "/volleyball-live-line-api-development"
+        },
+        {
+          "label": "Handball Live Line API",
+          "href": "/handball-live-line-api-development"
+        },
+        {
+          "label": "Cricket Live Line API",
+          "href": "/cricket-live-line-api"
+        },
+        {
+          "label": "Football Live Line API",
+          "href": "/football-live-line-api-development"
+        },
+        {
+          "label": "Hockey Live Line API",
+          "href": "/hockey-live-line-api-development"
+        },
+        {
+          "label": "Golf Live Line API",
+          "href": "/golf-live-line-api-development"
+        },
+        {
+          "label": "Kabaddi Live Line API",
+          "href": "/kabaddi-live-line-api-development"
+        },
+        {
+          "label": "Basketball Live Line API",
+          "href": "/basketball-live-line-api-development"
+        },
+        {
+          "label": "Tennis Live Line API",
+          "href": "/tennis-live-line-api-development"
+        },
+        {
+          "label": "Auto Racing Live Line API",
+          "href": "/auto-racing-live-line-api-development"
+        },
+        {
+          "label": "Surf League Live Line API",
+          "href": "/surf-league-live-line-api-development"
+        },
+        {
+          "label": "Boxing Live Line API",
+          "href": "/boxing-live-line-api"
+        },
+        {
+          "label": "Sports Solution Development",
+          "href": "/sports-solution-development"
+        },
+        {
+          "label": "Sports Live Line API",
+          "href": "/sports-live-line-api"
+        },
+        {
+          "label": " surf-league-live-line-api-development",
+          "href": "/surf-league-live-line-api-development"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/about-us"
+        },
+        {
+          "label": "Our Portfolio",
+          "href": "/portfolio"
+        },
+        {
+          "label": "Career",
+          "href": "/career"
+        },
+        {
+          "label": "Life at Comfygen",
+          "href": "/life-at-comfygen"
+        },
+        {
+          "label": "Client Testimonials",
+          "href": "/client-testimonials"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us"
+        },
+        {
+          "label": "Blog",
+          "href": "https://www.comfygen.com/blog/"
+        },
+        {
+          "label": "Life at Comfygen",
+          "href": "/life-at-comfygen"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/disclaimer"
+        },
+        {
+          "label": "privacy policy",
+          "href": "/privacy-policy"
+        }
+         
+      ]
+    }
+  ]
+}

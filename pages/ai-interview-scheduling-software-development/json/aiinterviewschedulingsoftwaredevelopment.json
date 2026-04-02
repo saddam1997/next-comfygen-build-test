@@ -75,6 +75,101 @@
       "desc": "Development timelines usually range between 10 to 24 weeks, based on the project scope, platform (web/mobile), AI functionality, and integrations. Simple versions may take less time, while enterprise-grade solutions with ATS/HRMS integrations and custom AI features require longer development and testing cycles for best performance and security."
     }
   ],
+
+    "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+         "Source":"Google",
+        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "CardGridData": [
     {
       "img": "<IconRobot stroke={1.5} className='w-12 h-12'/>",

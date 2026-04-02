@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/reactnative.json";
 import dynamic from "next/dynamic";
-
+import ReviewCard from "../../components/ReviewCard";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
@@ -170,6 +170,7 @@ export default function Altcoin(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
       {/* <ConsultingSec

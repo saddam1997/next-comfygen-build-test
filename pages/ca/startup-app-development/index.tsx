@@ -17,6 +17,8 @@ const AboutSection = dynamic(() => import("../../../components/Newcomponet/Secti
   ssr: true,
 });
 
+import ReviewCard from "../../../components/ReviewCard";
+
 const ServicesSec = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
@@ -476,10 +478,12 @@ export default function Mobile(props) {
           ]}
         />
 
-        <ClientTestimonials
+         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+
+        {/* <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
 
         <Faq
           faqData={JSON_DATA.Frequently}

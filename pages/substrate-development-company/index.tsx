@@ -61,6 +61,7 @@ const BlogSection = dynamic(
 );
 
 import IndustryGrid from "../../components/IndustryGrid";
+import ReviewCard from "../../components/ReviewCard";
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
@@ -242,6 +243,7 @@ export default function Ecommerce(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ClientStories />
+        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 

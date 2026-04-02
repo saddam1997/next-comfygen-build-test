@@ -6,8 +6,6 @@ import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
-import LazyLoad from "../hooks/LazyLoad";
-
 
 const Milestones = dynamic(
   () => import("../components/Milestones"),
@@ -160,6 +158,9 @@ export default function Home(props: any) {
         <meta name="twitter:title" content="Comfygen Technologies – Digital Transformation Partner" />
         <meta name="twitter:description" content="Join hands with Comfygen for robust software and mobile solutions that scale." />
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
+
+
+        <link rel="preload" as="image" href="https://www.comfygen.com/comfygen-images/home/web development company home.webp" />
         {/* ✅ LCP IMAGE PRELOAD */}
         <script
           type="application/ld+json"
@@ -170,7 +171,7 @@ export default function Home(props: any) {
 
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
-      <LazyLoad>
+
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
@@ -188,7 +189,7 @@ export default function Home(props: any) {
         <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
         <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
-      </LazyLoad>
+
     </>
   );
 }

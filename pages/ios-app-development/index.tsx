@@ -4,6 +4,8 @@ import JSON_DATA from "./json/ios.json";
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSection from "../../components/HeroSection";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+
+import ReviewCard from "../../components/ReviewCard";
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   {
@@ -289,6 +291,9 @@ export default function Mobile(props: any) {
             "Post-launch support",
           ]}
         />
+
+ <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+
         <Faq faqData={JSON_DATA.Frequently} title=" " />
 
         <BlogSection initialData={initialData} />

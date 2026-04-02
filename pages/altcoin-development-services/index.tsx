@@ -7,6 +7,7 @@ import JSON_DATA from "./json/altcoin.json";
 import Header from '../../components/Newcomponet/layout/Header'
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -391,6 +392,7 @@ export default function Altcoin(props: any) {
             "Post-launch maintenance, upgrades, and scalability solutions"
           ]}
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq
           faqData={JSON_DATA.Frequently}
         />

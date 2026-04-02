@@ -14,6 +14,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 import dynamic from "next/dynamic";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -568,11 +569,11 @@ export default function Mobile(props: any) {
         /> */}
 
         <ClientStories/>
-
-        <ClientTestimonials
+  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           heading="What Our Clients Say About Comfygen's Power BI Solutions"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions"

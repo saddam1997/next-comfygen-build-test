@@ -72,6 +72,7 @@ import {
   IconBuildingBridge2,
 } from '@tabler/icons-react';
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -506,6 +507,7 @@ export default function Ecommerce(props: any) {
           faqData={JSON_DATA.Frequently}
           title=""
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
   <BlogSection initialData={initialData} />
 
       </div>

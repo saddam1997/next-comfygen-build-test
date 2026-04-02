@@ -66,6 +66,7 @@ const BlogSection = dynamic(
 
 
 import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
+import ReviewCard from "../../components/ReviewCard";
 
 
 const technologyData = [
@@ -565,6 +566,7 @@ export default function MultiChain(props) {
           title="Our Cryptocurrency Development Technology Stack"
           description=""
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

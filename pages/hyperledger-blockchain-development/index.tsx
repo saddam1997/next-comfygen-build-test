@@ -74,6 +74,7 @@ const BlogSection = dynamic(
 import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -536,6 +537,7 @@ export default function Blockchain(props: any) {
             "Use of Advanced and Latest Tech Trends"
           ]}
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
 
         <Faq

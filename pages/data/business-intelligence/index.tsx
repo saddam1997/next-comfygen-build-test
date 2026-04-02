@@ -8,6 +8,7 @@ import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompo
 import dynamic from "next/dynamic";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -313,10 +314,11 @@ export default function ClinicalApp(props: any) {
             "Fast project delivery with full-time technical support and post-launch optimization",
           ]}
         />
-        <ClientTestimonials
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq faqData={Frequently} title="" />
         <BlogSection initialData={initialData} />
       </div>

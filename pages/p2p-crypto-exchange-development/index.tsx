@@ -5,6 +5,7 @@ import JSON_DATA from "./json/p2pcryptoexchangedevelopment.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
+import ReviewCard from "../../components/ReviewCard";
 
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -275,6 +276,7 @@ export default function Ecommerce(props) {
       <TechSection TechStack={JSON_DATA.TechStack} />
       <Solution techData={JSON_DATA.Reliable} />
       <Solution techData={JSON_DATA.Revenue} />
+        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

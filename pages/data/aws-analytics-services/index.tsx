@@ -7,6 +7,7 @@ import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 
 
@@ -264,6 +265,7 @@ export default function Mobile(props) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
         <Faq
           faqData={JSON_DATA.Frequently}

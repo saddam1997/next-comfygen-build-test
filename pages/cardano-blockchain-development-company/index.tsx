@@ -7,6 +7,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../components/ReviewCard";
 
 
 const AboutSection = dynamic(
@@ -376,6 +377,7 @@ export default function Ecommerce(props) {
           ]}
         />
         <ClientStories/>
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

@@ -17,6 +17,7 @@ const BlogSection = dynamic(
 );
 
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import ReviewCard from "../../components/ReviewCard";
 
 
 const AboutSection = dynamic(
@@ -334,11 +335,11 @@ export default function rummy(props: any) {
           faqData={JSON_DATA.Frequently}
           title="Frequently Asked Questions (FAQs)"
         />
-
-        <ClientTestimonials
+  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           testimonials={JSON_DATA.testimonialData}
           heading="What Our Clients Say"
-        />
+        /> */}
 
         <BlogSection initialData={initialData} />
       </div>

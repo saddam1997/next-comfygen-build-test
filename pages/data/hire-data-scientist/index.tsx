@@ -6,6 +6,7 @@ import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import ReviewCard from "../../../components/ReviewCard";
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -330,9 +331,9 @@ export default function Mobile(props: any) {
           imageAlt="hire-developer"
         />
 
+  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
 
-
-        <ClientTestimonials testimonials={JSON_DATA.defaultTestimonials} />
+        {/* <ClientTestimonials testimonials={JSON_DATA.defaultTestimonials} /> */}
 
         <Faq
           faqData={JSON_DATA.Frequently}

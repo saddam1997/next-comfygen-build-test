@@ -8,7 +8,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import Header from "../../components/Newcomponet/layout/Header";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-
+import ReviewCard from "../../components/ReviewCard";
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   {
@@ -251,6 +251,7 @@ export default function Mobile(props: any) {
             "NDA confidentiality is 100% guaranteed",
           ]}
         />
+         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq faqData={JSON_DATA.Frequently} title=" " />
         <BlogSection initialData={initialData} />
       </div>

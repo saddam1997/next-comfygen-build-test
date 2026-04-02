@@ -31,7 +31,8 @@ export default function LazyLoad({ children }) {
         transition: "all 0.4s ease",
       }}
     >
-      {children} {/* ✅ ALWAYS RENDER */}
+       {visible ? children : null}
+      {/* {children} ✅ ALWAYS RENDER */}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import JSON_DATA from "./json/whitelabelmobileappdevelopment.json";
 import dynamic from "next/dynamic";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
+import ReviewCard from "../../components/ReviewCard";
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
@@ -195,7 +196,8 @@ export default function Mobile(props: any) {
         <WhyChooseSection pageData={JSON_DATA.pageData} />
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <ClientStories />
-        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+        {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
+         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <FaqSection faqData={JSON_DATA.Frequently} />
 
         <BlogSection initialData={initialData} />

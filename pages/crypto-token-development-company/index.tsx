@@ -6,6 +6,7 @@ import { useState } from "react";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
+import ReviewCard from "../../components/ReviewCard";
 
 
 const AboutSection = dynamic(
@@ -468,8 +469,8 @@ export default function Ecommerce(props) {
             "Full project support"
           ]}
         />
-        <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
-
+        {/* <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} /> */}
+  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

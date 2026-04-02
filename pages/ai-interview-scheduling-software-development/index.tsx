@@ -14,6 +14,7 @@ const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
+import ReviewCard from "../../components/ReviewCard";
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
@@ -300,10 +301,11 @@ export default function Ecommerce(props:any) {
             "Intuitive UI/UX with Self-Scheduling Options",
           ]}
         />
-        <ClientTestimonials
+         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        {/* <ClientTestimonials
           heading="Testimonials from Our Clients"
           testimonials={JSON_DATA.customTestimonials}
-        />
+        /> */}
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""

@@ -52,6 +52,7 @@ const BlogSection = dynamic(
 
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import ClientStories from "../../components/ClientStories";
+import ReviewCard from "../../components/ReviewCard";
 
 export default function Polygon(props:any) {
   let { initialData } = props;
@@ -179,6 +180,7 @@ export default function Polygon(props:any) {
         <WhyChooseSection pageData={JSON_DATA.pageData} />
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <ClientStories />
+          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
          <FaqSection faqData={JSON_DATA.Frequently} title="" />
    
         <BlogSection initialData={initialData} />
