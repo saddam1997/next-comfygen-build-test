@@ -57,8 +57,6 @@ const BlogSection = dynamic(
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
-
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -281,7 +279,7 @@ export default function Ecommerce(props: any) {
       <Consultancy consultancyData={JSON_DATA.NFTTechnologies} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
-  <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

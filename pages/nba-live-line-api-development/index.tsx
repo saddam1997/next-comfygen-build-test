@@ -474,7 +474,7 @@ export default function Ecommerce(props: any) {
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-   <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <AboutSection
         title="About Company"
         heading="Level Up Your App with the Leading NBA Live Line API Provider"

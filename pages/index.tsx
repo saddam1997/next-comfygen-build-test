@@ -15,7 +15,7 @@ const ServicesComponet = dynamic(
   () => import("../components/ServicesSection/ServicesComponet"),
   { ssr: true }
 );
-
+import ReviewCard from "../components/ReviewCard";
 
 const AboutComponent = dynamic(
   () => import("../components/Abouts/AboutComponent"),
@@ -172,23 +172,24 @@ export default function Home(props: any) {
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
 
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        <IndustryGrid />
-        <Trending
-          trendingData={JSON_DATA.trendingData}
-          heading="Awards, Ratings & Recognitions"
-        />
-        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-        <TechSection TechStack={JSON_DATA.TechStack} />
-        <WhyChooseSection pageData={JSON_DATA.pageData} />
-        <ClientStories />
-        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-        <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
-        <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <IndustryGrid />
+      <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechSection TechStack={JSON_DATA.TechStack} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
     </>
   );

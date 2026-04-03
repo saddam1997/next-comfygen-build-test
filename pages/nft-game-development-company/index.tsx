@@ -1,103 +1,61 @@
-import Image from "next/image";
-import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
-import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome";
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { ssr: true }
-);
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const InfoSectionLeft = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSectionLeft"),
-  { ssr: true }
-);
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { ssr: true }
-);
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
+import GameCard from "../../components/GameCard";
 
-const Processs = [
-  {
-    title: "Research and content creation",
-    description: "Our team conducts comprehensive study and exploration into game development, including concept development, user flow, wire-frames, and value generation. We enhance game concepts with new ideas and features, allowing them to reach their full potential as immersive digital adventures."
-  },
-  {
-    title: "Art and Design Production",
-    description: "Our team crafts an engrossing game concept that fully engages players with its dynamic core loop, while also curating a diverse selection of assets that are tailored to your desired art style and personal tastes."
-  },
-  {
-    title: "Game development",
-    description: "Our professional NFT developers at Comfygen work their magic by effortlessly integrating several game modules and implementing all of the fantastic features stated in the technical specifications. They do comprehensive testing with painstaking attention to detail to ensure a faultless user experience."
-  },
-  {
-    title: "Blockchain & Tokenomics",
-    description: "Our company takes pride in deploying the blockchain technology that best meets your demands. We have Ethereum, Solana, Binance, and Tezos covered. To maintain a functioning economy, we combine numerous tokenomics ideas that encourage balance and sustainability. Trust us to bring your blockchain vision to life."
-  },
-  {
-    title: "Security and Testing",
-    description: "Our team of quality analysis professionals at Comfygen painstakingly investigates every component of the game, leaving no stone untouched. They carry out extensive verification and validation methods to ensure that the game not only meets but surpasses the highest security standards. You can rest confident that your gaming experience is in good hands with us."
-  },
-  {
-    title: "Game Launch and Marketing",
-    description: "We assist you in the seamless launch of your NFT game across multiple platforms, ensuring visibility and market readiness. Our marketing experts create tailored campaigns to attract the right audience and boost engagement, setting the stage for a successful entry into the gaming world."
-  },
-  {
-    title: "Maintainance and support",
-    description: "We go above and above to ensure that your game flourishes long after it has been developed. Our dedicated team provides extensive post-development assistance, including professional monetization methods, concept design, and server monitoring. Your game will have a longer and more successful life cycle with our help."
-  }
-
-];
 export default function Ecommerce(props: any) {
-  const [showContent, setShowContent] = useState(false);
   let { initialData } = props;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   return (
     <>
@@ -197,206 +155,20 @@ export default function Ecommerce(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <div className="lg:pt-[90px]">
-        <Header />
-      </div>
-      {/* hero section */}
-      <div className="">
-        <HeroSectionForAllPages
-          heading="Best NFT Game Development Company"
-          ptag1="NFT gaming is transforming the gaming industry by enabling players to own, trade, and monetize in-game assets. As the best NFT game development company, Comfygen builds secure, scalable, and engaging blockchain-powered NFT games with advanced technology and seamless user experiences."
-          ptag=""
-          li="Custom NFT Game Development"
-          li1="Smart Contract Integration"
-          li2="Tokenized Gaming Economy"
-          li3="Interactive UI/UX Design"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/nft-game-development-company-hero-img.webp"
-        />
-      </div>
-
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >NFT Game Development Services</h2>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
-      <AboutSection
-        title="About Company"
-        heading="Presenting The Reliable NFT Game Development Company"
-        description1="We are pioneers in the creation of immersive NFT games that will take you to a whole new world of excitement and adventure. We specialize in producing innovative and exciting gaming experiences powered by non-fungible tokens as a leading game development firm. We bring to life virtual landscapes where you can unleash your imagination and go on fascinating expeditions using our knowledge and ingenuity. Join us on this remarkable trip as our cutting-edge NFT games transform the gaming market."
-        imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-
-
-      <InfoSectionLeft
-        heading="WHITE LABEL NFT GAME DEVELOPMENT SOLUTIONS"
-        description1="Using a white label NFT game development solution can transform the journey of prospective game creators. These solutions include a pre-built game engine, a diverse variety of NFT assets, and tools for managing the economy of your game. Saving time and money by not having to create a custom NFT game from scratch is one of the benefits. Using current materials, you may easily construct a professional-looking game. These solutions also provide a high level of flexibility, allowing you to select from a variety of game templates and modify them to your exact requirements and creative vision. You may also use your own logo and artwork to give your game a personal touch. Finally, white label solutions are user-friendly, making them available to everyone, regardless of prior game development knowledge. Even beginners may design and launch their own NFT game with confidence."
-        imageSrc="https://www.comfygen.com/img/white-label-nft-game-development-solutions.webp"
-        link="/contact-us"
-        linkText="LET'S CONNECT "
-      />
-      <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-      <section className="space-y-4 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py-10">
-        <div className="flex flex-col justify-center text-center">
-          <h2 className="py-4 text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem] lg:w-[70%] w-full mx-auto capitalize">
-            New technologies have been implemented in the development of NFT
-            games
-          </h2>
-        </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 divide-y divide-x">
-          {JSON_DATA.TecnologisStack.map((nftmarketplace) => {
-            return (
-              <div
-                key={nftmarketplace.num}
-                className="p-6 text-center bg-white space-y-2 hover:bg-[#5556D1] transition-all duration-300 ease-in-out group"
-              >
-                <Image
-                  src={nftmarketplace.img}
-                  alt={nftmarketplace.title}
-                  className="mx-auto"
-                  width={400}
-                  height={200}
-                />
-                <h3 className="text-[#212121] font-bold lg:text-xl text-lg group-hover:text-white">
-                  {nftmarketplace.title}
-                </h3>
-                <p className="group-hover:text-white">
-                  {" "}
-                  {nftmarketplace.stack}{" "}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-      <section className="bg-[#F5F5F9] lg:py-16 py-10">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <div className="text-center">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">NFT Game Development Process</h2>
-          </div>
-          <ProcessSec processSlides={Processs} />
-        </div>
-      </section>
-      <HireDeveloper
-        heading="Hire NFT Game Developers"
-        text="Find skilled developers with examples of previous work before beginning an NFT game development project. Ascertain that they have the relevant talents, such as 3D game development. Employ effective communicators who understand your vision and provide regular updates. Set a budget and solicit quotations from several developers. Inquire with them about their method and vision. Have a written contract that specifies the scope, timeline, and payment terms."
-        buttonText="Hire Developer"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "We have the best team of proficient Substrate blockchain developers.",
-          "All our experts have undergone tough certification courses to earn their expertise in the domain.",
-          "Our professionals are actively available to address our client's concerns or queries at any time of the day.",
-          "Our Substrate developers will make use of the latest technology Substrate blockchain development services to help curate the perfect Substrate blockchain application development services for you."
-        ]}
-      />
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-      <div className="lg:py-16 py-10 space-y-4 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-        <div className="flex flex-col justify-center text-center">
-          <h2 className="py-4 text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem]">
-            We Develop Other Games{" "}
-          </h2>
-        </div>
-        <div className="grid gap-4 text-left lg:grid-cols-3 md:grid-cols-2 xl:gap-6 ">
-          {JSON_DATA.GameCardData.slice(0, 6).map((elem) => {
-            const { title, url, img } = elem;
-            return (
-              <div className="w-full ">
-                <Link href={url} passHref={true}>
-                  <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-                    <Image
-                      src={img}
-                      alt={title}
-                      width={730}
-                      height={419}
-                      className="w-full"
-                    />
-                    <div className=" p-4 bg-[#5556D1]/90 flex flex-col">
-                      <div>
-                        <h5 className="text-white text-2xl font-bold leading-none capitalize text-center">
-                          {title}
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
-
-          {showContent ? (
-            <>
-              {JSON_DATA.GameCardData.slice(6, 17).map((elem) => {
-                const { title, url, img } = elem;
-                return (
-                  <div className="w-full ">
-                    <Link href={url} passHref={true}>
-                      <div className="bg-white rounded-lg p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-                        <Image
-                          src={img}
-                          alt={title}
-                          width={730}
-                          height={419}
-                          className="w-full"
-                        />
-                        <div className=" p-4 bg-[#5556D1]/90 flex flex-col">
-                          <div>
-                            <h5 className="text-white text-2xl font-bold leading-none capitalize text-center">
-                              {title}
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                );
-              })}
-            </>
-          ) : null}
-        </div>
-
-        {showContent ? (
-          <div className="flex justify-center items-center mt-8">
-            <button
-              className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative "
-              onClick={() => setShowContent(!showContent)}
-            >
-              Load Less <MdOutlineArrowOutward />
-            </button>
-          </div>
-        ) : (
-          <div className="flex justify-center items-center mt-8">
-            <button
-              className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative  "
-              onClick={() => setShowContent(!showContent)}
-            >
-              Load More <MdOutlineArrowOutward />
-            </button>
-          </div>
-        )}
-      </div>
-      <Faq
-        faqData={JSON_DATA.Frequently}
-        title=" NFT Game Development"
-      />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />
+      <Consultancy consultancyData={JSON_DATA.WhyNFTs} />
+      <Solution techData={JSON_DATA.NFTBenefits} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <GameCard GameCardData={JSON_DATA.GameCardData} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
     </>
   );
