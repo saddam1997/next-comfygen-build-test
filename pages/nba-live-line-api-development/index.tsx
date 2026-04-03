@@ -118,6 +118,7 @@ const BlogSection = dynamic(
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import ReviewCard from "../../components/ReviewCard";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -475,83 +476,13 @@ export default function Ecommerce(props: any) {
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <AboutSection
-        title="About Company"
-        heading="Level Up Your App with the Leading NBA Live Line API Provider"
-        description1="At Comfygen, we understand the fast-paced, data-driven demands of modern sports platforms. Our NBA Data API delivers real-time scores, team stats, historical data, and  odds in a structured, scalable format. Whether you're a startup or an enterprise, we offer flexible, high-performance solutions with easy integration. Built on a robust backend, our API supports live feeds, player performance, injury updates, and predictive analytics using NBA historical odds. Developers benefit from RESTful endpoints, full documentation, and quick setup. For fantasy platforms, our NBA Fantasy Data API provides lineup insights and live match updates. Start with our free NBA API test version and scale effortlessly with Comfygen’s intelligent NBA Data Feed API."
-        points={[
-          "Real-time NBA data",
-          "Historical stats & odds",
-          "RESTful API integration",
-          "Scalable & reliable feeds"
-
-        ]}
-        imageSrc="https://www.comfygen.com/comfygen-images/nba-live-line-api-development/nba-api-about.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-
-
-
-
-      <ConsultancyApproach
-        Head={JSON_DATA.consultancyHead}
-        ItemData={JSON_DATA.consultancyData}
-        imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-        buttonText="Let’s Discuss"
-        buttonLink="/contact-us"
-      />
-      <CallToAction
-        heading="Let’s hear what you have to say?"
-        text="Get in touch with us and discuss your needs and requirements with our experts."
-        buttonText="Get Started"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Get in touch now."
-      />
-
-
-      <section className="bg-[#F5F5F9] lg:py-16 py-10">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <div className="text-center">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step API Integration Process</h2>
-          </div>
-          <ProcessSec processSlides={Process} />
-        </div>
-      </section>
-
-
-
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-      <HireDeveloper
-        heading="Hire NBA API Experts Today"
-        text="Are you ready to upgrade your platform for sports with reliable NBA Live Line API Integration Services? At Comfygen, we bring over a decade of expertise in crafting real-time, high-performance sports APIs tailored to your business goals. Whether you're building a fantasy league,  platform, or a live score dashboard, our expert API developers ensure your project runs seamlessly, updates in real time, and scales as your user base grows."
-        text1="We understand the unique needs of sports platforms and provide end-to-end development, from planning and integration to maintenance and upgrades. With flexible engagement models and transparent pricing, we make it easier than ever to launch your NBA-powered product."
-        text2="Why hire Comfygen’s NBA API developers?"
-        buttonText="When you hire from Comfygen, you get:"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Fast and smooth integration for quick time-to-market",
-          "Dedicated development team with hands-on sports data experience",
-          "Custom plans for every budget to fit startups and enterprises",
-          "Scalable and secure infrastructure built for peak traffic performance"
-        ]}
-
-      />
-
-
-      <Faq
-        faqData={JSON_DATA.Frequently}
-        title="NBA Live Line Api"
-      />
-
+      <Consultancy consultancyData={JSON_DATA.Nextechnologies} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 
     </>
