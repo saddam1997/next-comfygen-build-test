@@ -32,7 +32,7 @@ const Index = ({ testimonials }: any) => {
 
   return (
     <section className="py-6 bg-white">
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto container px-4">
 
         {/* Heading */}
         <div className="text-center mb-6">

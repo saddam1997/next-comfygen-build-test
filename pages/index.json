@@ -480,8 +480,7 @@
     "description": "We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth.",
     "customTechData": []
   },
-
-      "ReviewData": {
+  "ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
     "Review": [
@@ -569,8 +568,8 @@
         "name": "Tom Baker",
         "location": "Germany",
         "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
         "image": "/Google - Original.png"
       }
     ]

@@ -193,7 +193,6 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Navbar />
-
       <div className="overflow-hidden lg:pt-0 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

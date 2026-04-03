@@ -1,8 +1,16 @@
 import Image from "next/image";
 import HeadingOne from "../ui/HeadingOne";
 import ParagraphText from "../ui/ParagraphText";
-import HeroClientCTA from "./HeroClientCTA";
-import StatsBanner from "./StatsBanner";
+
+
+import dynamic from "next/dynamic";
+const StatsBanner = dynamic(() => import("./StatsBanner"), {
+  ssr: false,
+});
+const HeroClientCTA = dynamic(() => import("./HeroClientCTA"), {
+  ssr: false,
+});
+
 
 export default function HeroSection({ herosection }: any) {
   const imageAlt =
@@ -17,7 +25,7 @@ export default function HeroSection({ herosection }: any) {
       "
     >
       {/* Background Image */}
-      <div className="absolute inset-0 hidden lg:block">
+ 
         <Image
           src={herosection.bgImage}
           alt={imageAlt}
@@ -25,9 +33,9 @@ export default function HeroSection({ herosection }: any) {
           fetchPriority="high"
           sizes="(max-width:1024px) 100vw, 1320px"
           quality={75}
-          className="object-cover object-center"
+          className="object-cover object-center absolute inset-0 hidden lg:block"
         />
-      </div>
+
 
       {/* Gradient Overlay (improves text readability) */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#5951cd]/90 to-transparent"></div>
@@ -70,9 +78,12 @@ export default function HeroSection({ herosection }: any) {
           {herosection.ptag3 && (
             <ParagraphText color={"white"} text={herosection.ptag3} />
           )}
-         <div className="-ml-5">
+          {typeof window !== "undefined" && window.innerWidth >= 1024 && (
+            <StatsBanner />
+          )}
+          {/* <div className="-ml-5">
            <StatsBanner/>
-         </div>
+         </div> */}
 
           {/* List */}
           {herosection?.listItems?.length > 0 && (

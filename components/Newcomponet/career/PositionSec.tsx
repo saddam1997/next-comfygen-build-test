@@ -321,10 +321,10 @@ export default function Tech() {
 
       {modalOpen && (
         <div className="fixed top-0 left-0 flex items-center justify-center w-full h-screen bg-black/70 px-4 z-50">
-          <div className="flex justify-center bg-white  rounded-xl shadow-lg  mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 overflow-hidden">
-            <div className="w-[40%] hidden relative  bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end p-8 ">
+          <div className="flex justify-center items-center bg-white  rounded-xl shadow-lg h-[700px]  mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 overflow-hidden">
+            <div className="w-[40%] hidden relative h-full bg-no-repeat bg-cover lg:flex rounded-tl-xl rounded-bl-xl  items-end ">
 
-              <div className="w-full h-full rounded-tl-xl rounded-bl-xl overflow-hidden">
+              <div className="w-full h-[700px] rounded-tl-xl rounded-bl-xl overflow-hidden">
                 <Image
                   src="https://www.comfygen.com/image/apply-form-img.webp"
                   alt="Contact Background"
@@ -353,7 +353,7 @@ export default function Tech() {
                 <div className="flex gap-3 items-center">
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/comfygen"
+                    href="https://www.facebook.com/comfygen.technologies"
                     aria-label="Visit Comfygen Facebook Page"
                   >
                     <Image
@@ -366,7 +366,7 @@ export default function Tech() {
 
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/company/comfygen-private-limited"
+                    href="https://www.linkedin.com/company/comfygen-technologies"
                     aria-label="Visit Comfygen LinkedIn Page"
                   >
                     <Image
@@ -378,18 +378,7 @@ export default function Tech() {
                   </a>
 
 
-                  <a
-                    target="_blank"
-                    href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
-                    aria-label="Join Comfygen on Teams"
-                  >
-                    <Image
-                      alt="Teams Icon"
-                      src="https://www.comfygen.com/image/join-comfygen-on-teams.svg"
-                      height={40}
-                      width={40}
-                    />
-                  </a>
+                  
                   <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=919587867258"
@@ -405,7 +394,7 @@ export default function Tech() {
 
                   <a
                     target="_blank"
-                    href="https://twitter.com/comfygentech"
+                    href="https://x.com/Comfygen_Tech"
                     aria-label="Follow Comfygen on Twitter"
                   >
                     <Image
@@ -418,14 +407,14 @@ export default function Tech() {
                 </div>
               </div>
             </div>
-            <div className="lg:w-[60%] w-full ">
-              <div>
+            <div className="lg:w-[60%] w-full p-8 bg-white   overflow-y-auto lg:h-full h-[700px]">
+              <div className="h-full">
                 {/* <ContactFrom /> */}
                 <form
                   onSubmit={handleSubmit}
-                  className="w-full text-left bg-white  rounded-xl shadow-2xl"
+                  className="w-full text-left "
                 >
-                  <div className="flex justify-between items-start lg:p-8 p-4">
+                  <div className="flex justify-between items-start p-4">
                     <h3 className="text-2xl font-semibold text-[#282828]">
                       Fill the form
                     </h3>
@@ -436,7 +425,7 @@ export default function Tech() {
                       />
                     </div>
                   </div>
-                  <div className="grid grid-cols-1 gap-4 lg:p-8 p-4 md:grid-cols-2  lg:h-fit h-[600px]  overflow-hidden overflow-y-auto">
+                  <div className="grid grid-cols-1 gap-4  md:grid-cols-2 ">
                     <div className="space-y-2">
                       <label htmlFor="name" className="md:text-base text-sm">
                         {" "}
