@@ -8,6 +8,9 @@ export default function SitemapPage() {
     return (
 
         <>
+
+
+        
             <Head>
                 <title>Sitemap - ComfyGen</title>
                 <meta name="description" content="Explore the sitemap of ComfyGen to easily navigate through our website and find the information you need about our AI solutions, services, and resources." />
