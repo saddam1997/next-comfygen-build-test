@@ -1,26 +1,26 @@
-
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HeadingTwo from "../ui/HeadingTwo";
-import { parseHTMLString } from "../../lib/parseHTML";
-
 import Card from "./Card";
 
-const Index = ({testimonials}:any) => {
+const Index = ({ testimonials }: any) => {
   const [current, setCurrent] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(1);
 
-  // detect slides per view using CSS breakpoint logic
-  const getSlidesToShow = () => {
-    if (typeof window === "undefined") return 1; // SSR safe default
-    return window.innerWidth < 1024 ? 1 : 1;
-  };
+  // ✅ Handle responsive slides
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) setSlidesToShow(1);   // mobile
+      else setSlidesToShow(2);                           // tablet + desktop
+    };
 
-  const slidesToShow = getSlidesToShow();
+    handleResize(); // initial
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  const maxIndex = Math.max(
-    testimonials.Review.length - slidesToShow,
-    0
-  );
+  const totalSlides = testimonials?.Review?.length || 0;
+
+  const maxIndex = Math.max(totalSlides - slidesToShow, 0);
 
   const next = () => {
     setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -31,49 +31,141 @@ const Index = ({testimonials}:any) => {
   };
 
   return (
-    <section className="py-4 lg:py-4 bg-white">
-      <div className="mx-auto ">
-        <div className="text-center">
+    <section className="py-6 bg-white">
+      <div className="mx-auto max-w-7xl px-4">
+
+        {/* Heading */}
+        <div className="text-center mb-6">
           <HeadingTwo color="black" text={testimonials?.heading} />
         </div>
 
-        {/* SLIDER */}
-        <div className="overflow-hidden mt-2">
+        {/* Slider */}
+        <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
-              transform: `translateX(-${
-                (current * 100) / slidesToShow
-              }%)`,
+              transform: `translateX(-${(current * 100) / slidesToShow}%)`,
             }}
           >
-            {testimonials.Review.map((item:any, i:any) => (
+            {testimonials?.Review?.map((item: any, i: number) => (
               <div
                 key={i}
-                className="px-3 shrink-0 w-full "
+                className="px-3 shrink-0"
+                style={{ width: `${100 / slidesToShow}%` }}
               >
-                <Card item={item}/>
-                
+                <Card item={item} />
               </div>
             ))}
           </div>
         </div>
 
-        {/* BUTTONS */}
-        <div className="flex justify-center gap-4 ">
-          <button className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white" onClick={prev}>←</button>
-          <button className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white" onClick={next}>→</button>
+        {/* Buttons */}
+        <div className="flex justify-center gap-4 mt-6">
+          <button
+            onClick={prev}
+            className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition"
+          >
+            ←
+          </button>
+          <button
+            onClick={next}
+            className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition"
+          >
+            →
+          </button>
         </div>
 
-
-      
       </div>
-      {/* <ReviewCard/> */}
     </section>
   );
 };
 
 export default Index;
+
+
+
+
+
+
+
+
+
+
+
+// import { useState } from "react";
+// import HeadingTwo from "../ui/HeadingTwo";
+// import { parseHTMLString } from "../../lib/parseHTML";
+
+// import Card from "./Card";
+
+// const Index = ({testimonials}:any) => {
+//   const [current, setCurrent] = useState(0);
+
+//   // detect slides per view using CSS breakpoint logic
+//   const getSlidesToShow = () => {
+//     if (typeof window === "undefined") return 1; // SSR safe default
+//     return window.innerWidth < 1024 ? 1 : 1;
+//   };
+
+//   const slidesToShow = getSlidesToShow();
+
+//   const maxIndex = Math.max(
+//     testimonials.Review.length - slidesToShow,
+//     0
+//   );
+
+//   const next = () => {
+//     setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
+//   };
+
+//   const prev = () => {
+//     setCurrent((prev) => (prev <= 0 ? maxIndex : prev - 1));
+//   };
+
+//   return (
+//     <section className="py-4 lg:py-4 bg-white">
+//       <div className="mx-auto ">
+//         <div className="text-center">
+//           <HeadingTwo color="black" text={testimonials?.heading} />
+//         </div>
+
+//         {/* SLIDER */}
+//         <div className="overflow-hidden mt-2">
+//           <div
+//             className="flex transition-transform duration-500 ease-in-out"
+//             style={{
+//               transform: `translateX(-${
+//                 (current * 100) / slidesToShow
+//               }%)`,
+//             }}
+//           >
+//             {testimonials.Review.map((item:any, i:any) => (
+//               <div
+//                 key={i}
+//                 className="px-3 shrink-0 w-full "
+//               >
+//                 <Card item={item}/>
+                
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* BUTTONS */}
+//         <div className="flex justify-center gap-4 ">
+//           <button className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white" onClick={prev}>←</button>
+//           <button className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white" onClick={next}>→</button>
+//         </div>
+
+
+      
+//       </div>
+//       {/* <ReviewCard/> */}
+//     </section>
+//   );
+// };
+
+// export default Index;
 
 
 
