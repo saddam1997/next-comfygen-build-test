@@ -101,7 +101,7 @@ export default function HeroSectionForAllPages(props: any) {
           {props.talkToExpertModal && (
             <>
               <div
-                className={`fixed inset-0 z-50 overflow-y-auto max-w-[1600px] mx-auto mx-4 ${props.talkToExpertModal ? "block" : "hidden"}`}
+                className={`fixed inset-0 z-50 overflow-y-auto max-w-[1600px] mx-auto  ${props.talkToExpertModal ? "block" : "hidden"}`}
                 role="dialog"
                 aria-modal="true"
               >

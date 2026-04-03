@@ -83,7 +83,7 @@ export default function ContactUs() {
                             { icon: <FaFacebookF />,   href:"https://www.facebook.com/comfygen.technologies"},
                             { icon: <FaXTwitter />, href: "https://x.com/Comfygen_Tech" },
                             { icon: <FaInstagram />, href: "https://www.instagram.com/comfygen_technologies" },
-                            { icon: <FaThreads />, href: "https://www.threads.com/@comfygen_technologies" },
+                            // { icon: <FaThreads />, href: "https://www.threads.com/@comfygen_technologies" },
                             { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/comfygen-technologies" },
                             { icon: <FaYoutube />, href: "https://www.youtube.com/@Comfygentechnologies" },
                         ].map((item, index) => (

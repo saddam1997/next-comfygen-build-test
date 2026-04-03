@@ -7,7 +7,7 @@ import ParagraphText from "../ui/ParagraphText";
 export default function Card({ item }: any) {
   return (
     <div className="h-full">
-      <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 h-full flex flex-col justify-between shadow-sm hover:shadow-md transition duration-300">
+      <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 h-full flex flex-col justify-between shadow-sm hover:shadow-md transition duration-300 relative">
 
         {/* Top Section */}
         <div>
@@ -26,25 +26,45 @@ export default function Card({ item }: any) {
         </div>
 
         {/* Bottom Badge */}
-        <div className="mt-4">
+        <div className="mt-4  absolute top-0 right-2">
           <Link
             href={item.URL}
             target="_blank"
             rel="nofollow noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition"
+            className="flex items-center  w-fit gap-2 bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition"
           >
             <Image
               src={item.image}
               alt={item.Source}
               width={80}
               height={40}
-              className="h-4 w-auto object-contain"
+              className="h-5 w-auto object-contain"
             />
-            <span className="text-xs text-gray-600 font-medium">
-              {item.Source} Review
-            </span>
+            <p className="text-xs mt-0.5 text-gray-600 font-medium">
+              {/* {item.Source}  */}
+              Review
+            </p>
           </Link>
         </div>
+        {/* <div className="mt-4 lg:hidden ">
+          <Link
+            href={item.URL}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="flex items-center  w-fit gap-2 bg-gray-50 border border-gray-200 px-3 py-1.5 rounded-lg hover:bg-gray-100 transition"
+          >
+            <Image
+              src={item.image}
+              alt={item.Source}
+              width={80}
+              height={40}
+              className="h-5 w-auto object-contain"
+            />
+            <p className="text-xs mt-0.5 text-gray-600 font-medium">
+              {item.Source} Review
+            </p>
+          </Link>
+        </div> */}
 
       </div>
     </div>

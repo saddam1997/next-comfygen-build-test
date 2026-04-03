@@ -1,455 +1,467 @@
 {
-  "Frequently": [
+  "Herosection": {
+    "heading": "Top Logistics App Development Company",
+    "isHome": false,
+    "ptag": "Running a logistics business without the right technology costs you time, money, and customers. Comfygen is a specialist logistics app development company in India, helping transport operators, courier agencies, freight companies, and supply chain businesses build custom mobile and web applications that actually get used — by drivers, dispatchers, and customers alike.",
+    "ptag1": "Whether you need to build a logistics app from scratch, replicate a platform like Shiprocket or Lalamove, or integrate your existing ERP with a custom mobile interface. ",
+    "listItems": [],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "logistics app development company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/logistics-app-development/hero1.webp"
+  },
+  "ServicesData": {
+    "heading": "Core Logistics App Development Services",
+    "description": "Comfygen is among the <a target='blank' rel='nofollow' href='https://selectedfirms.co/companies/ecommerce-app-development/canada' class='text-blue-600 font-semibold'>Top eCommerce App Development Firms</a>, offering end-to-end logistics app developmemnt solutions in India. Our apps feature real-time tracking, smart automation, and scalable architecture to streamline operations, reduce costs, and drive faster, more efficient business growth in a competitive market.",
+    "services": [
+      {
+        "title": "On-Demand Logistics App Development",
+        "description": "Get your logistics business off the ground fast with a ready-to-launch, fully branded app. We build on-demand logistics platforms that handle shipment tracking, driver assignment, live route navigation, and customer notifications — giving your clients the transparency they expect and your team the automation they need. Ideal for courier startups, same-day delivery services, and last-mile operators.",
+        "features": [
+          "Branded customer & driver apps (iOS + Android)",
+          "Real-time shipment status updates & push notifications",
+          "Automated order dispatching & proof-of-delivery capture"
+        ]
+      },
+      {
+        "title": "Enterprise Logistics & Supply Chain App Development",
+        "description": "Simplify complex multi-location logistics operations with an enterprise-grade platform built around your workflows. We build custom supply chain management systems that integrate with your ERP (SAP, Oracle, Tally), automate warehouse tasks, manage multiple delivery agents from a central dashboard, and provide real-time performance analytics for better decision-making.",
+        "features": [
+          "ERP/TMS/WMS integration via REST API",
+          "Multi-warehouse & multi-carrier management dashboard",
+          "Real-time KPI reporting & advanced analytics"
+        ]
+      },
+      {
+        "title": "Fleet Management App Development",
+        "description": "Track every vehicle in your fleet in real time, cut fuel costs, and ensure your drivers stay compliant with transport regulations. Our fleet management app development services deliver GPS-powered dashboards that give dispatchers live vehicle visibility, automated maintenance alerts, driver behaviour scoring, and intelligent route optimisation to reduce mileage by up to 20%.",
+        "features": [
+          "Live GPS vehicle tracking & geo-fencing alerts",
+          "AI-powered route optimisation & fuel efficiency reporting",
+          "Driver performance scoring & regulatory compliance logs"
+        ]
+      },
+      {
+        "title": "Last-Mile Delivery App Development",
+        "description": "The last mile is where customer experience is won or lost. We build last-mile delivery apps for eCommerce, retail, and FMCG businesses that handle automated dispatch, real-time tracking links for customers, digital proof of delivery (ePOD), and failed-delivery management — reducing delivery exceptions and boosting customer satisfaction scores.",
+        "features": [
+          "Automated order dispatch & multi-stop route planning",
+          "Customer-facing live tracking page with ETA",
+          "Digital ePOD: signature, photo, OTP, and QR verification"
+        ]
+      },
+      {
+        "title": "Freight & Transport Management System (TMS) Development",
+        "description": "For freight forwarders, 3PLs, and trucking companies handling large-scale shipments, we build Transport Management Systems that automate load planning, carrier selection, shipment scheduling, and freight cost optimisation. Our TMS solutions reduce manual coordination overhead and give your operations team complete end-to-end shipment visibility.",
+        "features": [
+          "Freight booking, load optimisation & carrier comparison",
+          "Shipment scheduling & multi-modal transport coordination",
+          "Freight cost analytics & billing automation"
+        ]
+      },
+      {
+        "title": "Logistics App with ERP Integration",
+        "description": "Already running SAP, Oracle, Tally, or a custom ERP? We build logistics apps that integrate natively with your existing systems — syncing orders, inventory, and customer data in real time so your operations and IT teams work from a single source of truth. No more manual data entry, no more reconciliation errors.",
+        "features": [
+          "REST API / webhook integration with SAP, Oracle, Tally, Zoho",
+          "Bi-directional data sync: orders, inventory, invoices",
+          "Custom middleware development for legacy system integration"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Invest in Logistics App Development?",
+    "description1": "The logistics industry is no longer just about moving goods from A to B. It is a technology race — and the businesses that invest in custom logistics software today are pulling ahead of those still managing fleets on spreadsheets and coordinating deliveries over phone calls.The global logistics software market was valued at $17.82 billion in 2025 and is projected to ",
+    "description2": "reach $35.84 billion by 2033,  <a target='blank' rel='nofollow' href='https://www.snsinsider.com/reports/logistics-software-market-9135' class='text-blue-600 font-semibold'>growing at a CAGR of 9.18%</a>. The overall logistics industry — valued at $5.9 trillion in 2025 — is under more pressure than ever from rising fuel costs, tightening delivery windows, labour shortages, and customers who expect Amazon-level visibility on every shipment.",
+    "description3": "A custom logistics app is not an IT expense. It is an operational asset that reduces cost, eliminates manual errors, gives your team real-time control, and gives your customers the transparency they now expect as standard. Here is why logistics businesses of every size are prioritising app development in 2026.",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/about.webp",
+    "link": "/about-us",
+    "linkText": "Get Free Consulting"
+  },
+  "Industries": {
+    "heading": "Transport & Logistics App Clone Solutions We Provide",
+    "description": "Comfygen is a top logistics app development company with strong expertise in logistics <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile application development</a>. We provide custom and white-label logistics app development solutions inspired by <a href='https://www.comfygen.com/blog/types-of-logistics-apps/' class='text-blue-600 font-semibold'>popular logistics apps<a/> like Shiprocket, Lalamove, FedEx and KeepTruckin. Our transport & logistics clone apps offer similar core features while being fully customized to match your business model, region, and growth plans.",
+    "IndustriesServe": [
+      {
+        "imgSrc": null,
+        "title": "Shiprocket Alternative App Development",
+        "description": "Build a powerful logistics aggregation platform similar to Shiprocket that connects multiple courier partners in one system. We develop apps with automated shipping, real-time tracking, bulk order processing, rate comparison, and seamless eCommerce integrations—helping businesses simplify shipping and improve delivery efficiency.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": null,
+        "title": "Build App Like Lalamove",
+        "description": "Create an on-demand delivery app like Lalamove designed for instant logistics services. Our solutions include live driver tracking, dynamic pricing, route optimization, instant booking, and multi-vehicle support—ideal for same-day and hyperlocal delivery businesses.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": null,
+        "title": "Logistics App Like FedEx (Clone Development)",
+        "description": "Develop an enterprise-grade logistics solution inspired by FedEx with advanced shipment tracking, fleet management, delivery scheduling, and automated workflows. Perfect for courier companies and large-scale logistics providers aiming for reliability and global scalability.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": null,
+        "title": "KeepTruckin Alternative Development",
+        "description": "Build a fleet management and telematics platform like KeepTruckin (now Motive) with features like GPS tracking, driver behavior monitoring, ELD compliance, route analytics, and fuel optimization—helping transport companies enhance safety, compliance, and operational control.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": null,
+        "title": "Delhivery Clone App",
+        "description": "Build a Delhivery-like logistics app designed for the Indian market, supporting hyperlocal deliveries, warehouse operations, reverse logistics, and real-time order updates.",
+        "buttonText": "View Demo"
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Our Result-Oriented Logistics App Development Portfolio",
+    "description": "Comfygen has successfully delivered top-notch logistics app development solutions for startups and enterprises. Our portfolio showcases apps built with real-time tracking, route optimization, fleet management, and automated delivery features. Each project demonstrates our commitment to scalable, user-friendly, and result-driven logistics apps.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p1.webp",
+        "title": "Uber Freight-Style Transport App",
+        "description": "A powerful freight management app built for a regional trucking company to digitize load booking and automate driver assignments. The platform matches available trucks with nearby loads and enables real-time route tracking and e-documentation—similar to the Uber Freight model.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p2.webp",
+        "title": "Courier & Parcel Delivery App for Urban Logistics",
+        "description": "A custom courier delivery solution developed for a same-day urban delivery startup. The app features dynamic order assignment, GPS tracking, digital proof of delivery, and an intuitive dispatcher dashboard, helping streamline hyperlocal delivery operations.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p3.webp",
+        "title": "Fleet & Warehouse Management System",
+        "description": "An enterprise-grade fleet and warehouse management app for a logistics company managing cross-border supply chains. The system provides real-time fleet visibility, smart inventory controls, and integrated maintenance logs—all from a unified dashboard.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p4.webp",
+        "title": "White-Label Last-Mile Delivery App",
+        "description": "A white-label logistics app solution delivered to a retail aggregator for managing last-mile deliveries across multiple cities. The app allows businesses to onboard delivery agents, assign orders, and track performance using real-time analytics.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p5.webp",
+        "title": "Custom Transportation App for FMCG Distribution",
+        "description": "Built for a large FMCG distributor, this transportation app automates delivery scheduling, route optimization, and driver task assignments. The app integrates seamlessly with the company’s ERP system to sync orders, inventory, and customer addresses for faster fulfillment.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
+        "title": "Logistics & Delivery Service",
+        "description": "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
+        "link": "/portfolio/logistics-delivery-taxi-app"
+      }
+    ]
+  },
+  "CallToAction": {
+    "heading": "Build Your Smart Logistics App Today",
+    "text": "Ready to streamline operations, reduce delivery costs, and gain real-time visibility? Partner with Comfygen Technologies to build a world-class transport and logistics app tailored to your business needs.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "featuresData": {
+    "heading": "Excellent Features To Add To Your Logistics App",
+    "description": "Comfygen is a leading AI logistics app development company that delivers feature-rich apps for managers, drivers, and customers. Our logistics management software development solutions streamline logistics operations, reduce costs, and improve delivery efficiency with real-time tracking, automated dispatch, route optimization, and advanced analytics.",
+    "grid": "4",
+    "feature": [
+      {
+        "id": 1,
+        "title": "Customer Panel",
+        "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/customer.webp",
+        "additionalDetails": [
+          {
+            "details": "Easy order booking and shipment scheduling",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-time shipment tracking with ETA",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "In-app payments and invoice generation",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery status notifications & alerts",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Rate and review deliveries and drivers",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order history and rebooking options",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Address book and saved preferences",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Multi-language and multi-currency support",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Driver Panel",
+        "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/driver.webp",
+        "additionalDetails": [
+          {
+            "details": "Accept or reject delivery assignments",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-time navigation and optimized route guidance",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Track delivery progress and update status",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "In-app communication with dispatchers and customers",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Proof of delivery with photos and digital signatures",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "View daily, weekly, and monthly delivery history",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Dispatcher/Manager Panel",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/manager.webp",
+        "additionalDetails": [
+          {
+            "details": "Assign orders to drivers efficiently",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Monitor fleet and driver performance in real-time",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Track shipment status and delivery timelines",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Manage schedules, routes, and driver availability",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Generate performance and operational reports",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Alerts for delays, exceptions, and critical updates",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Admin Panel",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/admin.webp",
+        "additionalDetails": [
+          {
+            "details": "Centralized control over all operations and users",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Analytics dashboard for shipments, deliveries, and drivers",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Manage fleet, warehouses, and inventory",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Configure pricing, zones, and delivery policies",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Integration with ERP, CRM, and payment systems",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Role-based access management for admins, managers, and staff",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  "trendingData": [
     {
-      "num": "1",
-      "title": "How much does it cost to develop a logistics app?",
-      "desc": "The <a href='https://www.comfygen.com/blog/logistics-app-development-cost/' class='font-semibold text-blue-600 underline'> cost of logistics app development </a> depends on factors like app complexity, features, tech stack, and development timeline. A basic logistics mobile app development cost may start from $10,000, while advanced logistics solutions with real-time tracking and warehouse integrations can cost $25,000 or more. We offer flexible pricing based on your project scope and needs."
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
     },
     {
-      "num": "2",
-      "title": "How long does it take to build a logistics application?",
-      "desc": "Building a custom logistics application typically takes 3 to 6 months, depending on the features, platform (iOS, Android, or both), and integrations required. For white-label logistics app solutions, the timeline can be shorter. We follow an agile development process to ensure on-time delivery without compromising quality."
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
     },
     {
-      "num": "3",
-      "title": "Do you offer white-label logistics solutions?",
-      "desc": "Yes, we provide fully customizable white-label logistics mobile app development solutions. These apps are ready for quick deployment and can be branded with your company name, logo, and colors. Our white-label offerings are ideal for startups and transport aggregators looking for fast, cost-effective market entry."
+      "name": "Selectedfirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "Selectedfirms"
     },
     {
-      "num": "4",
-      "title": "Can I track vehicles and shipments in real-time?",
-      "desc": "Absolutely. Real-time tracking is one of the core features of our transportation app development. Using GPS and geofencing technologies, we enable businesses to monitor vehicles, delivery agents, and shipments with live status updates, route optimization, and geo-alerts—all through a user-friendly logistics dashboard."
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
     },
     {
-      "num": "5",
-      "title": "Will you provide post-launch support?",
-      "desc": "Yes, Comfygen offers dedicated post-launch support and maintenance for all our logistics app development services. We help with bug fixes, system updates, feature upgrades, performance optimization, and security patches to ensure your app remains stable, secure, and up-to-date in the long run."
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    },
+    {
+      "name": "superb",
+      "link": "https://superbcompanies.com/organizations/comfygen-technologies/",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/superb compnies top blockchain development companies in india.webp",
+      "bg": "bg-indigo-100",
+      "alt": "superb"
+    },
+    {
+      "name": "firms top ecommerce",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "firms top ecommerce "
+    },
+    {
+      "name": "firms mobile app development",
+      "link": "https://www.rightfirms.co/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/right firms mobile app development companies in uae.webp",
+      "bg": "bg-pink-100",
+      "alt": "firms mobile app development "
+    },
+    {
+      "name": "mobileappdaily ",
+      "link": "https://www.mobileappdaily.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/mobileappdaily top mobile app development company.webp",
+      "bg": "bg-blue-100",
+      "alt": "mobileappdaily "
+    },
+    {
+      "name": "itrate custom software development",
+      "link": "https://itrate.co/company/comfygen-pvt-ltd",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/itrate custom software development company.webp",
+      "bg": "bg-purple-100",
+      "alt": "itrate custom software development"
+    },
+    
+    {
+      "name": "f65 top nft marketplace",
+      "link": "https://www.f6s.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/f65 top nft marketplace development company in canada.webp",
+      "bg": "bg-emerald-100",
+      "alt": "f65 top nft marketplace "
+    },
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
     }
   ],
-  "featuresData": [
-    {
-      "id": 1,
-      "title": "Customer Panel",
-      "icon": " <i className='fas fa-shopping-bag text-4xl'></i>",
-      "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/customer.webp",
-      "additionalDetails": [
-        {
-          "details": "Easy order booking and shipment scheduling",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Real-time shipment tracking with ETA",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "In-app payments and invoice generation",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Delivery status notifications & alerts",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Rate and review deliveries and drivers",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Order history and rebooking options",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Address book and saved preferences",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Multi-language and multi-currency support",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Driver Panel",
-      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/driver.webp",
-      "additionalDetails": [
-        {
-          "details": "Accept or reject delivery assignments",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Real-time navigation and optimized route guidance",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Track delivery progress and update status",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "In-app communication with dispatchers and customers",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Proof of delivery with photos and digital signatures",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "View daily, weekly, and monthly delivery history",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Dispatcher/Manager Panel",
-      "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/manager.webp",
-      "icon": " <i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "Assign orders to drivers efficiently",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Monitor fleet and driver performance in real-time",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Track shipment status and delivery timelines",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Manage schedules, routes, and driver availability",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Generate performance and operational reports",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Alerts for delays, exceptions, and critical updates",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Admin Panel",
-      "img": "https://www.comfygen.com/comfygen-images/logistics-app-development/admin.webp",
-      "icon": " <i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "Centralized control over all operations and users",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Analytics dashboard for shipments, deliveries, and drivers",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Manage fleet, warehouses, and inventory",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Configure pricing, zones, and delivery policies",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Integration with ERP, CRM, and payment systems",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Role-based access management for admins, managers, and staff",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "Logistics App Consultancy",
-      "description": "Our logistics <a href='https://www.comfygen.com/ca/application-consulting-services' class='font-semibold underline'>application consultancy</a> service help businesses plan and execute successful digital transformation. We analyze your logistics workflows, select the right technology stack, and define a scalable roadmap aligned with your business goals.",
-      "features": [
-        "In-depth project planning",
-        "Automated dispatch & order allocation",
-        "Secure in-app payments",
-        "Android, iOS & web app support"
-      ]
-    },
-    {
-      "title": "On-Demand Logistics App Development",
-      "description": "We build on-demand logistics apps that manage everything from booking to delivery in real time. Ideal for courier services and transport startups, our logistics app development services ensure smooth order handling, route optimization, and customer satisfaction.",
-      "features": [
-        "Real-time delivery & order tracking",
-        "Automated dispatch & order allocation",
-        "Secure in-app payments",
-        "Android, iOS & web app support"
-      ]
-    },
-    {
-      "title": "Freight & Fleet Management App Development",
-      "description": "Our freight and fleet management app development services help logistics businesses streamline operations, reduce costs, and improve vehicle usage. From GPS tracking to driver logs, we deliver powerful logistics and transportation software development tailored to your fleet size and freight needs.",
-      "features": [
-        "Real-time fleet location tracking",
-        "Trip scheduling & route planning",
-        "Maintenance & fuel tracking",
-        "Driver performance dashboard"
-      ]
-    },
-    {
-      "title": "Courier Delivery App Development",
-      "description": "We offer the best custom <a href='https://www.comfygen.com/courier-delivery-app-development' class='font-semibold underline'>courier delivery app development</a> that supports live tracking, automated dispatch, proof of delivery, and more. Our courier delivery app development solutions are designed for fast, accurate, and customer-friendly deliveries across platforms.",
-      "features": [
-        "Barcode & QR scanning",
-        "Driver-customer chat module",
-        "Real-time courier status updates",
-        "Electronic proof of delivery"
-      ]
-    },
-    {
-      "title": "Warehouse Management System (WMS) App Development",
-      "description": "Streamline inventory and storage operations with our warehouse management system app development services. These logistics apps help logistics businesses automate inventory control, order processing, and space optimization.",
-      "features": [
-        "Real-time inventory monitoring",
-        "Barcode & RFID integration",
-        "Smart space optimization",
-        "Centralized admin dashboard"
-      ]
-    },
-    {
-      "title": "Transportation App Development",
-      "description": "We create powerful transportation app solutions for logistics, freight, and passenger transport. Our prime logistics and transportation apps provide real-time vehicle tracking, route management, driver scheduling, and customer feedback modules, offering enhanced control and visibility.",
-      "features": [
-        "Live GPS vehicle tracking",
-        "AI-based route optimization",
-        "Trip history & driver reports",
-        "User-friendly customer interface"
-      ]
-    },
-    {
-      "title": "Supply Chain App Development",
-      "description": "Our supply chain app development services provide complete visibility across procurement, warehousing, distribution, and delivery—empowering enterprises with data-driven logistics decisions.",
-      "features": [
-        "ERP & CRM integrations",
-        "Inventory & demand forecasting",
-        "Real-time order status updates",
-        "Multi-location warehouse support"
-      ]
-    },
-    {
-      "title": "Real-Time Shipment Tracking App Development",
-      "description": "Boost transparency and customer trust with real-time shipment tracking app development. Our logistic app development solutions provide live location updates, smart alerts, and accurate delivery estimates.",
-      "features": [
-        "Live GPS & route updates",
-        "Customer tracking interface",
-        "Smart delivery notifications",
-        "Geofencing and status alerts"
-      ]
-    },
-    {
-      "title": "Custom Logistics Software Development Solutions",
-      "description": "Comfygen’s team provided the best custom logistics software development services tailored to your specific business operations. Whether you need multi-vendor logistics support or enterprise fleet automation, we deliver robust, scalable solutions that simplify your workflows.",
-      "features": [
-        "Tailored modules for your operations",
-        "Seamless third-party API integration",
-        "Real-time analytics and reporting",
-        "Flexible user roles and permissions"
-      ]
-    },
-    {
-      "title": "White-Label Logistics Mobile App Development",
-      "description": "Launch your logistics application for your business with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='font-semibold underline'>white-label logistics app development services</a>. Fully customizable and scalable, these logistics applications help startups and courier companies go live quickly.",
-      "features": [
-        "Brand-ready UI & UX",
-        "Pre-built, launch-ready framework",
-        "Multi-language & region support",
-        "Cost-effective & scalable architecture"
-      ]
-    },
-    {
-      "title": "Last-Mile Delivery App Development",
-      "description": "We develop last-mile delivery app solutions that ensure fast, accurate, and cost-efficient deliveries for <a href='https://www.comfygen.com/ecommerce' class='underline font-semibold'>eCommerce</a>, <a href='https://www.comfygen.com/food-delivery-app-development' class='underline font-semibold'>food</a>, <a href='https://www.comfygen.com/ecommerce/grocery' class='underline font-semibold'>grocery</a>, and courier businesses.",
-      "features": [
-        "Smart delivery routing",
-        "Real-time driver tracking",
-        "Delivery slot management",
-        "Customer notifications & ratings"
-      ]
-    },
-    {
-      "title": "Logistics ERP & System Integration",
-      "description": "The best logistics software developed by us integrates seamlessly with existing <a href='https://www.comfygen.com/blog/develop-a-erp-software/' class='font-semibold underline'>ERP</a>, TMS, CRM, and accounting systems, enabling centralized operations and real-time data synchronization.",
-      "features": [
-        "ERP & accounting system integration",
-        "Automated data flow",
-        "Centralized reporting dashboard",
-        "Scalable enterprise architecture"
-      ]
-    }
-  ],
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card1.webp",
-      "title": "Uber Freight Clone App",
-      "description": "Create an Uber Freight–like app with freight booking, carrier matching, real-time shipment tracking, and transparent pricing to simplify logistics operations for shippers and transporters.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card2.webp",
-      "title": "DHL Logistics Clone App",
-      "description": "Build a DHL-style logistics app that supports shipment tracking, warehouse coordination, customs updates, and global delivery management for smooth international logistics operations.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card3.webp",
-      "title": "Convoy Clone App",
-      "description": "Develop a Convoy-like digital freight app focused on smart freight matching, route optimization, real-time insights, and efficient communication between shippers and carriers.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card4.webp",
-      "title": "Shiprocket Clone App",
-      "description": "Create a Shiprocket-style logistics app for eCommerce businesses with multi-carrier support, order automation, real-time delivery tracking, and easy returns management.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card5.webp",
-      "title": "Delhivery Clone App",
-      "description": "Build a Delhivery-like logistics app designed for the Indian market, supporting hyperlocal deliveries, warehouse operations, reverse logistics, and real-time order updates.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/logistics-app-development/card6.webp",
-      "title": "BlackBuck Clone App",
-      "description": "Develop a BlackBuck-style trucking app that helps manage freight booking, fleet operations, driver coordination, and long-haul transportation efficiently.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
-      "title": "Logistics & Delivery Service Taxi App",
-      "description": "Build Smart, Scalable & Future-Ready Logistics Apps with Comfygen",
-      "buttonText": "View Demo"
-    }
-  ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p1.webp",
-      "title": "Uber Freight-Style Transport App",
-      "description": "A powerful freight management app built for a regional trucking company to digitize load booking and automate driver assignments. The platform matches available trucks with nearby loads and enables real-time route tracking and e-documentation—similar to the Uber Freight model.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p2.webp",
-      "title": "Courier & Parcel Delivery App for Urban Logistics",
-      "description": "A custom courier delivery solution developed for a same-day urban delivery startup. The app features dynamic order assignment, GPS tracking, digital proof of delivery, and an intuitive dispatcher dashboard, helping streamline hyperlocal delivery operations.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p3.webp",
-      "title": "Fleet & Warehouse Management System",
-      "description": "An enterprise-grade fleet and warehouse management app for a logistics company managing cross-border supply chains. The system provides real-time fleet visibility, smart inventory controls, and integrated maintenance logs—all from a unified dashboard.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p4.webp",
-      "title": "White-Label Last-Mile Delivery App",
-      "description": "A white-label logistics app solution delivered to a retail aggregator for managing last-mile deliveries across multiple cities. The app allows businesses to onboard delivery agents, assign orders, and track performance using real-time analytics.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/logistics-app-development/p5.webp",
-      "title": "Custom Transportation App for FMCG Distribution",
-      "description": "Built for a large <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/ecommerce/fmcg' >FMCG</a> distributor, this transportation app automates delivery scheduling, route optimization, and driver task assignments. The app integrates seamlessly with the company’s ERP system to sync orders, inventory, and customer addresses for faster fulfillment.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/image/hero-image-logistics-delivery-taxi-app.webp",
-      "title": "Logistics & Delivery Service",
-      "description": "Challenge: A logistics company required a solution for last-mile delivery and fleet management.",
-      "link": "/portfolio/logistics-delivery-taxi-app"
-    }
-  ],
-  "servicesData1": [
-    {
-      "title": "Simplifies the Loan Process",
-      "description": "Users can easily apply for car loans, check EMI, upload documents, and track loan status—all from a single car finance app, anytime and anywhere.",
-      "features": []
-    },
-    {
-      "title": "Boosts Customer Engagement",
-      "description": "Engage users with loan calculators, status alerts, and push notifications that keep them updated and connected with your car finance services.",
-      "features": []
-    },
-    {
-      "title": "Reduces Paperwork",
-      "description": "The car finance app allows digital document upload and auto-verification, removing the need for physical paperwork and speeding up the loan process for users and admins.",
-      "features": []
-    },
-    {
-      "title": "Speeds Up Loan Approvals",
-      "description": "Built-in <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/credit-scoring-app-development' >credit score</a> checks and automated systems help approve loans faster, reduce delays, and improve customer satisfaction with instant loan updates.",
-      "features": []
-    },
-    {
-      "title": "Builds Trust and Transparency",
-      "description": "Users can see loan terms, track progress, and get real-time updates, which builds trust and gives a transparent car loan experience.",
-      "features": []
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Benefits of Milk Delivery App for Your Business",
-      "desc": "Investing in a milk delivery app development solution brings unmatched advantages to modern dairy businesses. From streamlining operations to enhancing customer loyalty, our milk delivery apps help you grow faster, serve better, and manage smarter — all in one place."
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "Improved Operational Efficiency",
-      "desc": "A milk delivery app automates routine tasks, such as order processing, delivery scheduling, and inventory updates. This reduces manual errors, saves time, and ensures smoother daily operations—helping your dairy business run more efficiently with fewer resources and better productivity."
-    },
-    {
-      "title": "Real-Time Order Management",
-      "desc": "With real-time order tracking, you can monitor customer orders and deliveries from start to finish. This ensures transparency, improves delivery accuracy, and helps you respond quickly to any issues, resulting in better service and higher customer satisfaction."
-    },
-    {
-      "title": "Better Customer Engagement",
-      "desc": "Give your customers the convenience of mobile ordering, flexible subscriptions, and timely updates. A milk delivery app enhances customer experience, builds brand loyalty, and keeps users engaged with offers, reminders, and personalized communication."
-    },
-    {
-      "title": "Contactless Payments",
-      "desc": "Integrated digital payment gateways offer secure and easy payment options like <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/upi-payment-app-development'>UPI</a>, wallets, debit/credit cards, and net banking. This enables smooth, contactless transactions and builds customer trust while reducing dependency on cash handling."
-    },
-    {
-      "title": "Data-Driven Business Insights",
-      "desc": "Track orders, user behavior, revenue, and inventory with powerful <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> dashboards. These insights help you make smarter business decisions, optimize delivery operations, and plan offers or product launches based on real-time data and trends."
-    }
-  ],
+  "ProcessData": {
+    "heading": "Our Logistics App Development Process",
+    "description": "Comfygen’s logistics management app development team delivers scalable, feature-rich logistics apps through a structured and agile logistics app development process. Every app we build is intuitive, performance-driven, and tailored to your business goals.",
+    "Process": [
+      {
+        "title": "Requirement Analysis",
+        "description": "We begin by mapping your business model, target audience, and logistics operations. Our team collects technical and functional requirements to define the project scope and architecture."
+      },
+      {
+        "title": "Wireframing & UI/UX Design",
+        "description": "Our UI/UX designers create wireframes and app layouts focused on user experience and brand identity. We design responsive interfaces that simplify delivery tracking, driver management, and warehouse operations."
+      },
+      {
+        "title": "Development & Testing",
+        "description": "Using a modern technology stack, we write clean, scalable code while our QA team performs continuous testing for performance, security, and functionality — ensuring a stable, bug-free release."
+      },
+      {
+        "title": "Data Security & Compliance",
+        "description": "We implement strict security protocols and comply with global regulations including GDPR and HIPAA. Your logistics data remains encrypted, secure, and accessible only to authorized personnel."
+      },
+      {
+        "title": "API Integration",
+        "description": "We connect third-party APIs for GPS tracking, route optimization, payment gateways, SMS alerts, and ERP/CRM systems — creating a fully connected, real-time logistics platform."
+      },
+      {
+        "title": "Deployment & Launch",
+        "description": "After thorough testing, we deploy your logistics app to app stores and hosting platforms, ensuring optimal performance, scalability, and full compliance at launch."
+      },
+      {
+        "title": "Post-Launch Support & Maintenance",
+        "description": "Our support extends beyond launch. We provide regular updates, maintenance, and technical assistance to keep your app aligned with market trends and evolving user needs."
+      }
+    ]
+  },
+  "TechStack": {
+    "title": "Tech Stack We Use in Logistics App Development",
+    "description": "Comfygen builds secure, high-performance, and scalable transportation and logistics apps. We choose the right tech stack based on your business goals, workflows, and real-time tracking needs to ensure smooth performance across all devices and platforms.",
+    "customTechData": []
+  },
   "pageData": {
     "title": "Why We’re a Trusted Logistics App Development Company in India",
     "description": "Comfygen is a reliable logistics app development agency in India known for delivering secure, scalable, and business-focused solutions. Our experience, technical expertise, and customer-first approach help logistics businesses build powerful mobile apps with confidence.",
@@ -491,6 +503,20 @@
       }
     ]
   },
+  "HireDeveloper": {
+    "heading": "Hire Dedicated Logistics App Developers",
+    "text": "Hire dedicated logistics app developers from Comfygen to build future-ready logistics applications. Our experienced <a href='https://www.comfygen.com/hire-mobile-app-developer' class='font-semibold underline'>logistics app developers</a> work as an extension of your in-house team, ensuring full transparency, flexibility, and control throughout the development process.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Flexible hourly & monthly hiring",
+      "100% NDA & data security",
+      "Dedicated developer support",
+      "Fast onboarding process"
+    ]
+  },
   "customTestimonials": [
     {
       "text": "Comfygen developed a fully customized logistics app for our local courier business. Their attention to detail and real-time tracking features helped us streamline our delivery operations and boost customer satisfaction.",
@@ -518,290 +544,232 @@
       "title": "Sydney"
     }
   ],
-  "Solution": [
-    {
-      "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "eLearning app consultancy",
-      "decs": "We create a plan for custom tutoring app development or other custom edtech solutions in the beginning. Our education app developers listen to your ideas, understand your needs, and suggest the best ways to create customized eLearning apps that engage learners. We'll guide you through the whole process, from choosing features to planning your budget, ensuring your app meets the final goals."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/healthcare-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Custom eLearning app development",
-      "decs": "We are attention to custom tutor app development that is uniquely designed. Our developers build education mobile apps that work smoothly and make learning easy. Whether you need a simple on-demand tutoring app or complex education software, we'll develop the best that fits the needs of institutes and learners."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/blockchain-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Pharmacy Aggregator App",
-      "decs": "The Pharmacy Aggregator App connects users with multiple pharmacies in one convenient platform, allowing for an enhanced shopping experience."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/nft-marketplace-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Learning Management System (LMS) Developmen",
-      "decs": "We build unique yet easy-to-use Learning Management Systems that help you organize courses, track learner progress, and manage educational content all in one place. We focus on creating intuitive education apps for educators and learners to provide convenient learning ways."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/ecommerce-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "On-Demand Tutoring app Development",
-      "decs": "Learn from anywhere and anytime through on-demand tutoring apps. We process feasible tutor app development that allows learners to access courses and educational materials whenever they need them. Whether it's video lessons, interactive quizzes, or downloadable resources, our apps make learning fit into busy schedules."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "CRM Integration in Edtech Apps",
-      "decs": "We create CRM integrations with online tutoring platforms that easily manage learner information, track interactions, and personalize the learning experience. It helps you understand your students better, improve your courses, and grow your eLearning business more effectively with deeper insights"
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Edtech App Support and Maintenance",
-      "decs": "We keep monitoring the performance of our eLearning mobile apps. Our team provides regular updates, fixes any issues quickly, and adds new features when the app needs based on the current industry needs. We support and maintain after deployment making sure that the app stays up-to-date, secure, and effective for all learners."
-    }
-  ],
-  "ValuableServices": [
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
+  "Frequently": [
     {
       "num": "1",
-      "img": "https://www.comfygen.com/images/language-learning-app.webp",
-      "title": "Language Learning App",
-      "desc": "Learn new languages at your own pace. Practice speaking, reading, and writing with interactive lessons, games, and quizzes. Chat with native speakers, track your progress, and earn rewards as you improve your language skills."
+      "title": "How much does it cost to develop a logistics app?",
+      "desc": "Logistics app development costs range from $8,000 for a basic courier app to $150,000+ for an enterprise-grade TMS with full ERP integration. The main cost drivers are the number of user panels (customer, driver, dispatcher, admin), the complexity of real-time tracking features, third-party API integrations, and whether you need iOS, Android, or both. Contact us for a free, detailed estimate based on your specific requirements."
     },
     {
       "num": "2",
-      "img": "https://www.comfygen.com/images/virtual-classroom-plateform.webp",
-      "title": "Virtual Classroom Platform",
-      "desc": "Attend classes from anywhere. Join live video lessons, interact with teachers and classmates, and access course materials online. Submit assignments, take tests, and get instant feedback. It's just like being in a real classroom, but more convenient."
+      "title": "How long does it take to build a logistics app?",
+      "desc": "A basic on-demand delivery app typically takes 6–12 weeks. A full-featured logistics platform with fleet management, ERP integration, and multi-panel dashboards takes 16–24 weeks. We work in agile 2-week sprints so you see working software throughout the process, not just at the end."
     },
     {
       "num": "3",
-      "img": "https://www.comfygen.com/images/profesional-skill-training-app.webp",
-      "title": "Professional Skills Training App",
-      "desc": "Boost your career with on-the-go learning. Access short video courses on topics like leadership, public speaking, and time management. Complete practical exercises, earn certificates, and build your professional skills anytime, anywhere."
+      "title": "Can you integrate a logistics app with our existing ERP system?",
+      "desc": "Yes. We regularly build logistics apps that integrate with SAP, Oracle, Tally, Zoho, and custom legacy ERPs via REST APIs, webhooks, or custom middleware. We map your existing data flows and build the integration layer without requiring you to replace your current ERP."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/images/kids-educational-game-app.webp",
-      "title": "Kids' Educational Game App",
-      "desc": "Make learning fun for children. Colorful games teach math, reading, and science concepts through engaging stories and characters. Parents can track progress and set learning goals. It's education disguised as playtime!"
+      "title": "Do you build iOS and Android logistics apps?",
+      "desc": "We build cross-platform logistics apps using React Native and Flutter, which means you get both iOS and Android apps from a single codebase — reducing cost and keeping both apps in sync. For enterprise clients with specific performance requirements, we also offer native iOS (Swift) and Android (Kotlin) development."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/images/exam-preparation-aap.webp",
-      "title": "Exam Preparation App",
-      "desc": "Ace your tests with personalized study plans. Take practice exams, review flashcards, and watch explanation videos. The app adapts to your strengths and weaknesses, focusing on areas where you need the most help."
+      "title": "What is the difference between a TMS and a WMS?",
+      "desc": "A Transport Management System (TMS) manages the movement of goods — including carrier selection, route planning, freight booking, and shipment tracking. A Warehouse Management System (WMS) focuses on warehouse operations such as inventory management, picking, packing, and dispatch. Many businesses require both systems integrated into a single logistics platform."
     },
     {
       "num": "6",
-      "img": "https://www.comfygen.com/images/collaborate-project-learning-plateform.webp",
-      "title": "Collaborative Project Learning Platform",
-      "desc": "Work on group projects easily. Share ideas, divide tasks, and give feedback in real-time. Use built-in tools like shared documents, video calls, and project timelines. Learn teamwork skills while completing your assignments together."
+      "title": "Do you provide post-launch support for logistics apps?",
+      "desc": "Yes. We offer 3, 6, and 12-month post-launch support packages that include bug fixes, OS updates, performance monitoring, and feature enhancements. Our team ensures your logistics app stays secure, updated, and optimized for long-term success."
     },
     {
       "num": "7",
-      "img": "https://www.comfygen.com/images/adult-literacy-aap.webp",
-      "title": "Adult Literacy App",
-      "desc": "Improve reading and writing skills discreetly. Start with basic letters and work up to full sentences and stories. Use voice recognition to practice pronunciation. Gain confidence in your literacy skills at your own pace."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/images/vocational-training-simulator.webp",
-      "title": "Vocational Training Simulator",
-      "desc": "Practice job skills in a safe, virtual environment. Use 3D simulations to learn trades like plumbing, electrical work, or mechanics. Get hands-on experience and instant feedback without the risk of mistakes in real-world situations."
+      "title": "Can you build a white-label logistics app?",
+      "desc": "Yes. We develop fully customizable white-label logistics platforms for aggregators, franchises, and SaaS businesses. You get a ready-to-launch, branded solution that can be deployed for multiple clients under your own brand."
     }
   ],
-  "TecnologisStack": [
+  "jsonLdData": [
     {
-      "num": "1",
-      "img": "https://www.comfygen.com/images/ai-and-ml.webp",
-      "title": "Artificial Intelligence (AI) and Machine Learning ",
-      "stack": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt content difficulty and suggest tailored resources. AI-powered chatbots provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Transportation & Logistics App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Build scalable transportation and logistics apps and websites with Comfygen. We offer complete mobile app development for freight, courier, supply chain, and fleet management businesses.",
+      "url": "https://www.comfygen.com/logistics-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/logistics-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Logistics App Consultancy",
+        "On-Demand Logistics App Development",
+        "Freight & Fleet Management App Development",
+        "Courier Delivery App Development",
+        "Warehouse Management System App Development",
+        "Supply Chain App Development",
+        "Real-time Shipment Tracking App Development",
+        "Custom Logistics Software Development Solutions",
+        "White-Label Logistics Mobile App Development"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
     {
-      "num": "2",
-      "img": "https://www.comfygen.com/images/ar-and-vr.webp",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "stack": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Logistics App Development",
+          "item": "https://www.comfygen.com/logistics-app-development"
+        }
+      ]
     },
     {
-      "num": "3",
-      "img": "https://www.comfygen.com/images/blockchain-for-credential-verification.webp",
-      "title": "Blockchain for Credential Verification ",
-      "stack": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. Blockchain ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/images/internet-of-things.webp",
-      "title": "Internet of Things (IoT) ",
-      "stack": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/images/big-data-analytics.webp",
-      "title": "Big Data Analytics",
-      "stack": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/images/natural-language-processing.webp",
-      "title": "Natural Language Processing (NLP) ",
-      "stack": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "decs": "Personalized Learning Paths: Adaptive algorithms create unique study plans based on each user's progress and learning style."
-    },
-    {
-      "num": "2",
-      "decs": "Interactive Multimedia Content: Engaging videos, animations, and graphics make complex topics easier to understand and remember."
-    },
-    {
-      "num": "3",
-      "decs": "Real-time Progress Tracking: Detailed analytics show learners and educators exactly where improvements are needed."
-    },
-    {
-      "num": "4",
-      "decs": "Gamification Elements: Points, badges, and leaderboards motivate learners and make education more enjoyable."
-    },
-    {
-      "num": "5",
-      "decs": "Social Learning Features: Discussion forums and group projects encourage collaboration and peer-to-peer learning."
-    },
-    {
-      "num": "6",
-      "decs": "Mobile Compatibility: Access courses on any device, ensuring learning can happen anytime, anywhere."
-    },
-    {
-      "num": "7",
-      "decs": "Offline Mode: Download lessons for areas with poor internet, ensuring uninterrupted learning."
-    },
-    {
-      "num": "8",
-      "decs": "AI-powered Tutoring: Virtual assistants provide instant help and answer questions 24/7."
-    },
-    {
-      "num": "9",
-      "decs": "Accessibility Options: Features like text-to-speech and high-contrast modes make learning inclusive for all users."
-    },
-    {
-      "num": "9",
-      "decs": "Secure Assessment Tools: Cheat-proof online exams with randomized questions and proctoring capabilities."
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Artificial Intelligence (AI) and Machine Learning",
-      "decs": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt to content difficulty and suggest tailored resources. <a href='/ai-development' class='text-blue-600 font-bold hover:underline'>AI-powered eLearning app development services</a> provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
-    },
-    {
-      "num": "02",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "decs": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
-    },
-    {
-      "num": "03",
-      "title": "Blockchain Integration in E-learning App",
-      "decs": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. <a href='/blockchain-development' class='text-blue-600 font-bold hover:underline'>Blockchain development</a> ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "04",
-      "title": "Internet of Things (IoT)",
-      "decs": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "05",
-      "title": "Big Data Analytics",
-      "decs": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "06",
-      "title": "Natural Language Processing (NLP)",
-      "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "AIPowered": [
-    {
-      "num": "01",
-      "title": " AI-Based Astrology Predictions",
-      "decs": "Our AI-driven astrology prediction system analyzes planetary positions and user data to deliver highly accurate, real-time horoscope readings. This feature enhances astrology app development by offering personalized insights, career guidance, and relationship compatibility analysis based on deep learning models."
-    },
-    {
-      "num": "02",
-      "title": " AI-Powered Kundli Generation",
-      "decs": "Our AI-powered Kundli generation system creates detailed birth charts, planetary reports, and Vedic astrology insights with unmatched accuracy. This ensures users receive precise astrological predictions, marriage compatibility analysis, and remedial solutions tailored to their life path."
-    },
-    {
-      "num": "03",
-      "title": "AI-Based Numerology Analysis",
-      "decs": "Comfygen’s AI-driven numerology solutions analyze name numbers, life path numbers, and lucky numbers to provide personalized numerology-based predictions. This feature enhances user engagement by offering automated numerology reports, lucky dates, and career guidance."
-    },
-    {
-      "num": "04",
-      "title": " Chatbot-Powered Astrology Consultation",
-      "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    },
-    {
-      "num": "05",
-      "title": "AI-Driven Compatibility Analysis",
-      "decs": "Our astrology app solutions integrate AI-based compatibility analysis, helping users find zodiac-compatible partners, business partners, and friendships. By using deep learning algorithms, we provide detailed love compatibility, relationship forecasts, and Vedic astrology matchmaking."
-    },
-    {
-      "num": "06",
-      "title": " Personalized Daily Horoscope",
-      "decs": "Our AI-powered horoscope generator provides daily, weekly, and monthly horoscope updates based on real-time planetary movements. This ensures users receive highly accurate and personalized astrology insights tailored to their birth charts."
-    },
-    {
-      "num": "07",
-      "title": "Voice & Image Recognition for Palmistry",
-      "decs": "We integrate AI-driven voice and image recognition for palm reading, allowing users to scan their palms for accurate fortune-telling insights. Our machine-learning algorithms analyze hand lines, mounts, and shapes to deliver detailed palmistry reports in real time."
-    },
-    {
-      "num": "08",
-      "title": "AI-Powered Astrological Remedies",
-      "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
-    }
-  ],
-  "Emerging": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "Artificial Intelligence (AI)",
-      "decs": "<a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>Artificial Intelligence (AI)</a> powers smart route optimization, demand forecasting, and automated decision-making, helping logistics businesses reduce delivery time and operational costs."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "Internet of Things (IoT)",
-      "decs": "<a href='https://www.comfygen.com/iot-development-company' class='font-semibold underline'>Internet of Things (IoT)</a> enables real-time vehicle monitoring, fleet tracking, and predictive maintenance, ensuring smooth and safe logistics operations across all transportation modes."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "Blockchain Technology",
-      "decs": "<a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain</a> ensures secure, transparent, and tamper-proof transactions, improving trust and accountability in supply chain management and shipment documentation."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/cloud-icon.webp",
-      "title": "Cloud Computing",
-      "decs": "Cloud Computing provides scalable infrastructure, allowing seamless data storage, accessibility, and collaboration for logistics businesses of any size."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-      "title": "Big Data Analytics",
-      "decs": "Big <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>Data Analytics</a> delivers actionable insights from operational data, helping managers optimize routes, monitor performance, and make data-driven decisions to improve efficiency."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/5g-technology.webp",
-      "title": "GPS & Geofencing",
-      "decs": "GPS & Geofencing offer precise location tracking, route planning, and automated alerts, ensuring timely deliveries and enhanced customer satisfaction across all logistics operations."
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to develop a logistics app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of logistics app development depends on factors like app complexity, features, tech stack, and development timeline. A basic logistics mobile app development cost may start from $10,000, while advanced logistics solutions with real-time tracking and warehouse integrations can cost $25,000 or more. We offer flexible pricing based on your project scope and needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a logistics application?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Building a custom logistics application typically takes 3 to 6 months, depending on the features, platform (iOS, Android, or both), and integrations required. For white-label logistics app solutions, the timeline can be shorter. We follow an agile development process to ensure on-time delivery without compromising quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer white-label logistics solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide fully customizable white-label logistics mobile app development solutions. These apps are ready for quick deployment and can be branded with your company name, logo, and colors. Our white-label offerings are ideal for startups and transport aggregators looking for fast, cost-effective market entry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I track vehicles and shipments in real-time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Real-time tracking is one of the core features of our transportation app development. Using GPS and geofencing technologies, we enable businesses to monitor vehicles, delivery agents, and shipments with live status updates, route optimization, and geo-alerts—all through a user-friendly logistics dashboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will you provide post-launch support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Comfygen offers dedicated post-launch support and maintenance for all our logistics app development services. We help with bug fixes, system updates, feature upgrades, performance optimization, and security patches to ensure your app remains stable, secure, and up-to-date in the long run."
+          }
+        }
+      ]
     }
   ]
 }

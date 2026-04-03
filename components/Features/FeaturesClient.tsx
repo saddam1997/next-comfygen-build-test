@@ -94,7 +94,7 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
         </div>
 
         {/* DETAIL SECTION */}
-        <div className="mt-12 mx-auto 2xl:w-10/12 w-11/12">
+        <div className="mt-12 mx-auto ">
 
           {/* ✅ Only render active item (INP improvement) */}
           {active && (
@@ -106,8 +106,8 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
                   src={active.img}
                   alt={active.title}
                   fill
-                  sizes="50vw"
-                  className="rounded-lg border object-cover"
+                  sizes="100vw"
+                  className="rounded-lg border object-contain"
                 />
               </div>
 

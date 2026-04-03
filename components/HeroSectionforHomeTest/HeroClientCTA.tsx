@@ -1,26 +1,30 @@
 
 
 import { useEffect, useState } from "react";
-import TalkToExpertModal from "../modals/TalkToExpertModal";
+
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 import Link from "next/link";
-
+import dynamic from "next/dynamic";
+const TalkToExpertModal = dynamic(() => import("../modals/TalkToExpertModal"), {
+  ssr: false,
+});
 
 export default function HeroClientCTA() {
 
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
     useEffect(() => {
-        if (talkToExpertModal) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+         document.body.style.overflow = talkToExpertModal ? "hidden" : "";
+        // if (talkToExpertModal) {
+        //     document.body.style.overflow = "hidden";
+        // } else {
+        //     document.body.style.overflow = "";
+        // }
 
-        return () => {
-            document.body.style.overflow = "";
-        };
+        // return () => {
+        //     document.body.style.overflow = "";
+        // };
     }, [talkToExpertModal]);
 
     const openModal = () => {

@@ -12,9 +12,9 @@ const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
 
   return (
-    <section className="bg-white lg:py-16 py-4 lg:p-0 p-4">
+    <section className="bg-white h-full lg:py-16 py-4 lg:p-0 p-4">
 
-      <div className="w-full lg:px-4 xl:px-0">
+      <div className="w-full lg:px-4 xl:px-0 h-full">
         <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-10 gap-4">
           <div className="">
             <Image
@@ -26,7 +26,7 @@ const AboutComponent = ({ AboutData }) => {
               loading="lazy"
               fetchPriority="low"
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="w-full  h-auto xl:object-contain lg:object-cover rounded-md lg:h-[60vh]"
+              className="w-full  h-auto xl:object-contain lg:object-cover rounded-md "
             />
           </div>
           <div>

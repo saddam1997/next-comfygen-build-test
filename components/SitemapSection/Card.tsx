@@ -28,16 +28,16 @@ function SitemapLinkItem({ link }: { link: SitemapLink }) {
     <li>
       <Link
         href={link.href}
-        className="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
+        className="block underline rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
       >
         <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
           {link.label}
         </p>
-        {link.description && (
+        {/* {link.description && (
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
             {link.description}
           </p>
-        )}
+        )} */}
       </Link>
     </li>
   );
@@ -47,15 +47,16 @@ function SitemapLinkItem({ link }: { link: SitemapLink }) {
 
 function SitemapSection({ section }: { section: SitemapSectionType }) {
   return (
-    <div className={`group rounded-2xl border border-zinc-200  bg-black backdrop-blur p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-y-auto h-96 ${style.scrollbar_hide}`}>
+    <div className={`group rounded-2xl border border-zinc-200   backdrop-blur p-4 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300  `}>
       
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
         {/* <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-zinc-100  text-lg">
           {section.icon}
         </div> */}
-        <h2 className="text-lg underline font-semibold text-zinc-800 dark:text-zinc-200">
-          {section.title}{section.links.length > 0 ? ` - ${section.links.length} ` : ""}
+        <h2 className="text-lg  font-semibold text-zinc-800 dark:text-zinc-200">
+          {section.title}
+          {/* {section.links.length > 0 ? ` - ${section.links.length} ` : ""} */}
         </h2>
       </div>
 
