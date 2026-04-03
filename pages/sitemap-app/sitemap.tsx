@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar'
 import Head from 'next/head'
 import JSON_DATA from "./sitemap.json"
 
-const index = () => {
+export default function SitemapPage() {
     return (
 
         <>
@@ -19,4 +19,4 @@ const index = () => {
     )
 }
 
-export default index
+

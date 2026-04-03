@@ -82,6 +82,7 @@ export default function Footer() {
         <p>© 2026 Comfygen Technologies</p>
 
         <div className="flex items-center lg:space-x-4">
+           <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/sitemap-app/sitemap">Sitemap</Link>
           <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/about-us">About Us</Link>
           <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/career">Career</Link>
           <a
@@ -93,7 +94,7 @@ export default function Footer() {
             Our Blog
           </a>
           <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/disclaimer">Disclaimer</Link>
-           {/* <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/sitemap-app/sitemap">Sitemap</Link> */}
+
         </div>
 
         <p>
@@ -101,7 +102,7 @@ export default function Footer() {
           <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/terms-and-conditions">Terms & Conditions</Link> ~{" "}
           <Link   className="px-2 py-3 text-sm sm:text-base hover:underline" href="/privacy-policy">Privacy Policy</Link>
         </p>
-         <Link className="px-2 py-3 text-sm sm:text-base hover:underline" href="/sitemap-app/sitemap">Sitemap</Link>
+        
       </div>
     </footer>
   );
