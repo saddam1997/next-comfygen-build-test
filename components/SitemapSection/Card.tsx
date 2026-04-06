@@ -28,9 +28,9 @@ function SitemapLinkItem({ link }: { link: SitemapLink }) {
     <li>
       <Link
         href={link.href}
-        className="block underline rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition"
+        className="block underline rounded-lg px-3 py-2   transition"
       >
-        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
+        <p className="text-sm font-medium text-white ">
           {link.label}
         </p>
         {/* {link.description && (
@@ -54,7 +54,7 @@ function SitemapSection({ section }: { section: SitemapSectionType }) {
         {/* <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-zinc-100  text-lg">
           {section.icon}
         </div> */}
-        <h2 className="text-lg  font-semibold text-zinc-800 dark:text-zinc-200">
+        <h2 className="text-lg  font-semibold text-white">
           {section.title}
           {/* {section.links.length > 0 ? ` - ${section.links.length} ` : ""} */}
         </h2>
