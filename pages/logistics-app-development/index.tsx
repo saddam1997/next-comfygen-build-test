@@ -188,7 +188,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Navbar />
-         <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
       {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
@@ -206,9 +206,6 @@ export default function ClinicalApp(props: any) {
         heading="Awards, Ratings & Recognitions"
       />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-
-
-
       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
