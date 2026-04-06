@@ -31,9 +31,9 @@
   animation: move 1s ease infinite;
 }
 
-.btnFix:hover span {
-  transform: translateX(-186px); /* tweak if needed */
-}
+/* .btnFix:hover span {
+  transform: translateX(-186px); 
+} */
 
 
 

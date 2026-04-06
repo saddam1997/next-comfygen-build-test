@@ -8,7 +8,7 @@ import ParagraphText from "../ui/ParagraphText";
 import { parseHTMLString } from "../../lib/parseHTML"
 
 const HireDeveloper = ({ HireDeveloper }: any) => {
-  const { heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
+  const { heading, text, text1, text2, text3, text4, text5, text6, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
 
 
 
@@ -39,6 +39,28 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
 
                   )
                 }
+
+                {
+                  text3 && (
+                    <ParagraphText color={"white"} text={text3} />
+
+                  )
+                }
+                {
+                  text4 && (
+                    <ParagraphText color={"white"} text={text4} />
+
+                  )
+                }
+
+                     {
+                  text5 && (
+                    <ParagraphText color={"white"} text={text5} />
+
+                  )
+                }
+
+
 
 
 
