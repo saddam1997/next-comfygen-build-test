@@ -6,6 +6,10 @@ import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSection from "../../components/HeroSection";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import Trending from "../../components/Trending";
+import TechStacks from "../../components/TechStacks";
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -83,10 +87,12 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
-
-
-
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -376,28 +382,10 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSection
-            heading="Top Fuel Delivery App Development Company"
-            ptag="Comfygen is a leading fuel delivery app development company helping startups and enterprises launch secure, scalable, and high-performance on-demand fuel delivery solutions. Our result-driven AI-powered fuel delivery app development services are designed to streamline fuel ordering, dispatch, and delivery with advanced automation, real-time tracking, and seamless digital payments for a smooth customer experience."
-            ptag1=""
-            li="100% Customizable Fuel Delivery App"
-            li1="White-label & Business-ready Apps"
-            li2="AI-powered Features & Automation"
-            li3="End-to-End Development & Support"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/fuel-delivery-app-development-hero.webp"
-          />
-        </div>
-        <Milestones />
+  
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -434,7 +422,10 @@ export default function ClinicalApp(props: any) {
 
         <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Next-Gen-Fuel-delivery-App-development-with-AI-Innovation.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
 
-
+      <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
         {/* <ContactFromCenter /> */}
 
         <AppCard
@@ -534,10 +525,12 @@ export default function ClinicalApp(props: any) {
           </div>
         </section>
 
-        <TeckStack
+          <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+
+        {/* <TeckStack
           title="Tech Stack We Use in Fuel Delivery App Development"
           description="At Comfygen, we use a tech stack to develop high-performance gasoline delivery apps. Our tech stack ensures smooth app performance, real-time fuel tracking, seamless payments, and a reliable experience for users, drivers, and vendors."
-        />
+        /> */}
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -563,14 +556,12 @@ export default function ClinicalApp(props: any) {
 
         <DeliverySection hideUrl="https://www.comfygen.com/fuel-delivery-app-development" />
 
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
+  <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
         <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
         <BlogSection initialData={initialData} />
 
-      </div>
+
     </>
   );
 }
