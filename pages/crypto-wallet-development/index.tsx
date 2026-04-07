@@ -4,10 +4,11 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 import { IconCash, IconDeviceMobile, IconLayoutDashboard, IconMessageCircle, IconUsers } from "@tabler/icons-react";
 import { IconWallet, } from "@tabler/icons-react";
-
+import HeroSectionforcls from "../../components/HeroSectionforcls"
 
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import Navbar from "../../components/Navbar";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -226,9 +227,9 @@ export default function Ecommerce(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
- 
-  
-   
+
+
+
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -354,7 +355,7 @@ export default function Ecommerce(props: any) {
       <Head>
 
         <title>
-        AI-Powered Crypto Wallet Development Company | Secure Wallet Solutions
+          AI-Powered Crypto Wallet Development Company | Secure Wallet Solutions
         </title>
 
         <meta
@@ -450,11 +451,12 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforcls herosection={JSON_DATA.Herosection} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        {/* hero section */}
-        <HeroSectionForAllPages
+
+      {/* hero section */}
+      {/* <HeroSectionForAllPages
           heading="AI-Powered Crypto Wallet Development Company"
           ptag="Empower your users with next-generation crypto wallet development services that combine advanced blockchain security, seamless user experience, and multi-chain support. Whether you need a custom crypto wallet app, DeFi wallet, or NFT-compatible digital wallet, our blockchain development experts deliver tailor-made crypto wallet development solutions for startups and enterprises alike."
           ptag1=""
@@ -469,155 +471,155 @@ export default function Ecommerce(props: any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp"
-        />
+        /> */}
 
-        <AboutSection
-          heading="Why Your Business Needs a Cryptocurrency Wallet"
-          description1="In today’s digital world, <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-600 font-semibold'>wallet development</a> is essential for every type of business because wallets are not only used for storing cryptocurrency but also a gateway to the decentralized world of finance. Whether you run a fintech startup, an e-commerce platform, or a blockchain-based business, a custom cryptocurrency wallet development service helps your business securely manage digital transactions, increase transparency, and build trust among users."
-          description2=""
-          description3=""
-          points={[
-            "Secure Digital Asset Management",
-            "Faster & Borderless Payments",
-            "Integration with DeFi & Web3 Ecosystems",
-            "Brand Credibility & Innovation",
-            "New Revenue Opportunities"
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our AI-Powered Crypto Wallet Development Services
+      <AboutSection
+        heading="Why Your Business Needs a Cryptocurrency Wallet"
+        description1="In today’s digital world, <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-600 font-semibold'>wallet development</a> is essential for every type of business because wallets are not only used for storing cryptocurrency but also a gateway to the decentralized world of finance. Whether you run a fintech startup, an e-commerce platform, or a blockchain-based business, a custom cryptocurrency wallet development service helps your business securely manage digital transactions, increase transparency, and build trust among users."
+        description2=""
+        description3=""
+        points={[
+          "Secure Digital Asset Management",
+          "Faster & Borderless Payments",
+          "Integration with DeFi & Web3 Ecosystems",
+          "Brand Credibility & Innovation",
+          "New Revenue Opportunities"
+        ]}
+        imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about.webp"
+        link="/about-us"
+        linkText="Explore More"
+      />
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+              Our AI-Powered Crypto Wallet Development Services
+            </h2>
+            <p className="text-base text-center font-normal">
+              At Comfygen, we deliver a complete suite of AI-driven cryptocurrency wallet development services that combine the intelligence of Artificial Intelligence, the transparency of Blockchain, and the innovation of Web3. Our crypto wallet development solutions are designed to make digital asset management smarter, safer, and more efficient for businesses of all sizes.
+            </p>
+          </div>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
+          </div>
+        </div>
+      </section>
+
+      <CallToAction
+        heading="Ready to Launch Your Own AI-Powered Crypto Wallet?"
+        text="Take your digital asset business to the next level with Comfygen’s secure, intelligent, and scalable crypto wallet solutions."
+        buttonText="Get Started"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+        imageAlt="Future of Technology"
+      />
+
+      <SolutionSec
+        heading="Essential Security Features of Our Crypto Wallet Solutions"
+        subheading="Security is the backbone of every cryptocurrency wallet, and at Comfygen, we design wallets that protect digital assets with advance technology while providing a seamless user experience. Our AI-powered crypto wallets combine advanced encryption, blockchain transparency, and intelligent threat detection to ensure your funds are always safe."
+        techData={technologyData}
+      />
+
+
+
+      <section className="lg:py-16 py-10 bg-[#fff]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-4 text-center">
+            <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
+              <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
+                Smart Features of Our AI Crypto Wallet development solution
               </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we deliver a complete suite of AI-driven cryptocurrency wallet development services that combine the intelligence of Artificial Intelligence, the transparency of Blockchain, and the innovation of Web3. Our crypto wallet development solutions are designed to make digital asset management smarter, safer, and more efficient for businesses of all sizes.
+              <p className="text-base text-center lg:max-w-5xl mt-2 mx-auto w-full">
+                At Comfygen, we design crypto wallets that combine artificial intelligence, blockchain technology, and advanced encryption to deliver a smarter, safer, and faster digital asset experience. Each feature of crypto wallet is built to enhance security, streamline transactions, and empower users with intelligent insights.
               </p>
             </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
+            <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
+              {JSON_DATA.FutureDriven2.map((elem) => {
+                const { title, desc } = elem;
+                return (
+                  <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
+                    <h3 className="text-2xl text-[#212121] font-semibold">
+                      {title}
+                    </h3>
+                    <p className=" text-base font-normal mt-2" dangerouslySetInnerHTML={{ __html: desc }} />
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <CallToAction
-          heading="Ready to Launch Your Own AI-Powered Crypto Wallet?"
-          text="Take your digital asset business to the next level with Comfygen’s secure, intelligent, and scalable crypto wallet solutions."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
+
+
+      <section className="py-8">
+        <Portfolio
+          projects={JSON_DATA.portfoliodata}
+          heading="Our Crypto Wallet Development Portfolio"
+          description="Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
         />
+      </section>
 
-        <SolutionSec
-          heading="Essential Security Features of Our Crypto Wallet Solutions"
-          subheading="Security is the backbone of every cryptocurrency wallet, and at Comfygen, we design wallets that protect digital assets with advance technology while providing a seamless user experience. Our AI-powered crypto wallets combine advanced encryption, blockchain transparency, and intelligent threat detection to ensure your funds are always safe."
-          techData={technologyData}
-        />
+      {/* <ContactFromCenter /> */}
 
 
+      <section className="bg-white lg:py-16 py-10">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+          <div className="text-center space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              Our End-to-End AI-Driven Cryptocurrency Wallet Development Process
+            </h2>
+            <p className="text-base text-center lg:w-2/3 mx-auto w-full">
+              At Comfygen, we follow a transparent, data-driven, and agile crypto wallet development process that blends Artificial Intelligence, Blockchain, and Web3 innovation to deliver intelligent and secure crypto wallet solutions. Every stage is meticulously planned to ensure reliability, scalability, and exceptional performance.
 
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Smart Features of Our AI Crypto Wallet development solution
-                </h2>
-                <p className="text-base text-center lg:max-w-5xl mt-2 mx-auto w-full">
-                  At Comfygen, we design crypto wallets that combine artificial intelligence, blockchain technology, and advanced encryption to deliver a smarter, safer, and faster digital asset experience. Each feature of crypto wallet is built to enhance security, streamline transactions, and empower users with intelligent insights.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 ">
-                {JSON_DATA.FutureDriven2.map((elem) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div key={title} className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-2xl">
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p className=" text-base font-normal mt-2" dangerouslySetInnerHTML={{ __html: desc }} />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+            </p>
           </div>
-        </section>
+          <ProcessSec processSlides={Process} />
+        </div>
+      </section>
 
+      <TechStack
+        title="Tech stack we use in AI Crypto wallet development"
+        description="As a leading AI cryptocurrency wallet development company, Comfygen brings together deep blockchain expertise and advanced artificial intelligence capabilities to create secure, intelligent, and scalable Crypto wallet development solutions. Our <a href='https://www.comfygen.com/blockchain-development' class='underline'> Blockchain Development</a> team leverages cutting-edge technologies to deliver crypto wallets that go beyond basic functionality, offering real-time insights, predictive analytics, and robust security."
+      />
+      <IndustriesServe
+        heading="Industries We Serve as a leading cryptocurrency wallet development company"
+        description="Comfygen’s crypto wallet development services cater to a wide range of industries, helping businesses securely manage digital Currency and offer seamless cryptocurrency wallet experiences to their users"
+        sliderData={JSON_DATA.IndustriesServe}
+      />
 
+      <WhyChoose
+        title={JSON_DATA.pageData.title}
+        description={JSON_DATA.pageData.description}
+        mainCardData={JSON_DATA.pageData.mainCardData}
+        gridData={JSON_DATA.pageData.gridData}
+      />
 
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Crypto Wallet Development Portfolio"
-            description="Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution."
-          />
-        </section>
+      <HireDeveloper
+        heading="Hire AI-Powered Cryptocurrency Wallet Developers"
+        text="Looking to build a next-generation cryptocurrency wallet powered by artificial intelligence? Hire AI crypto wallet developers from Comfygen and bring intelligence, automation, and security into your digital asset solutions. "
+        buttonText="Hire Developer"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Flexible Hiring Models ",
+          "AI Expertise Across Platforms",
+          "Faster Time-to-Market ",
+          "Cost-Effective Solutions",
+          "Direct Developer Access",
+        ]}
+      />
+      <ClientTestimonials
+        testimonials={testimonialData}
+        heading="What Our Clients Say"
+      />
+      <Faq
+        faqData={JSON_DATA.Frequently}
+        title=""
+      />
+      <BlogSection initialData={initialData} />
 
-        {/* <ContactFromCenter /> */}
-
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End AI-Driven Cryptocurrency Wallet Development Process
-              </h2>
-              <p className="text-base text-center lg:w-2/3 mx-auto w-full">
-                At Comfygen, we follow a transparent, data-driven, and agile crypto wallet development process that blends Artificial Intelligence, Blockchain, and Web3 innovation to deliver intelligent and secure crypto wallet solutions. Every stage is meticulously planned to ensure reliability, scalability, and exceptional performance.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Tech stack we use in AI Crypto wallet development"
-          description="As a leading AI cryptocurrency wallet development company, Comfygen brings together deep blockchain expertise and advanced artificial intelligence capabilities to create secure, intelligent, and scalable Crypto wallet development solutions. Our <a href='https://www.comfygen.com/blockchain-development' class='underline'> Blockchain Development</a> team leverages cutting-edge technologies to deliver crypto wallets that go beyond basic functionality, offering real-time insights, predictive analytics, and robust security."
-        />
-        <IndustriesServe
-          heading="Industries We Serve as a leading cryptocurrency wallet development company"
-          description="Comfygen’s crypto wallet development services cater to a wide range of industries, helping businesses securely manage digital Currency and offer seamless cryptocurrency wallet experiences to their users"
-          sliderData={JSON_DATA.IndustriesServe}
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire AI-Powered Cryptocurrency Wallet Developers"
-          text="Looking to build a next-generation cryptocurrency wallet powered by artificial intelligence? Hire AI crypto wallet developers from Comfygen and bring intelligence, automation, and security into your digital asset solutions. "
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Flexible Hiring Models ",
-            "AI Expertise Across Platforms",
-            "Faster Time-to-Market ",
-            "Cost-Effective Solutions",
-            "Direct Developer Access",
-          ]}
-        />
-        <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

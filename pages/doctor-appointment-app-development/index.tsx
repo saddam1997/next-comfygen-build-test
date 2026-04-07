@@ -316,7 +316,7 @@ export default function Ecommerce(props) {
 
          <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
 
 

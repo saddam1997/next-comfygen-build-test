@@ -28,7 +28,7 @@ export default function DesktopNav(props: any) {
   function toggleSlideover() { }
 
   return (
-    <div className={`fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto`}>
+    <div className={`fixed top-0 w-full bg-white z-20 max-w-[1600px] mx-auto`}>
       <div className="flex gap-6 justify-end mx-10">
         <p className="hidden lg:block">
           <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">

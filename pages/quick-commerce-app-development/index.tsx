@@ -248,13 +248,12 @@ export default function ClinicalApp(props: any) {
 
       <Navbar />
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
-      <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <AppClone SliderDATA={JSON_DATA.Clones} />
        <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+       heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       {/* <AppcardSlider
         heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
@@ -268,9 +267,10 @@ export default function ClinicalApp(props: any) {
       <Emerging emerging={JSON_DATA.EmergingData} />
       <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+       
       {/* <TechStackSection deliveryApps={JSON_DATA.deliveryApps} /> */}
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ClientStories />

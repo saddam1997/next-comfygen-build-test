@@ -718,50 +718,21 @@
     }
   ],
     "Tabs": [
-    "Frontend",
+    "Mobile App Development",
+     "Web Development",
     "Backend",
     "Database",
     "Real-Time Tracking & Maps",
     "Cloud/DevOps",
-    "Payments",
-    "Security",
-    "Advanced Technologies"
+    "Payments"
+
   ],
     "TechstackData": {
     "heading": "Tech Stack We Use",
     "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
     "TechItems": {
-      "Frontend": [
-        {
-          "img": "https://www.comfygen.com/image/next-js-icon.svg",
-          "alt": "Nextjs",
-          "name": "nextjs",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
-          "alt": "React",
-          "name": "React js",
-          "num": "4"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
-          "alt": "Angularjs",
-          "name": "Angular js",
-          "num": "6"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
-          "alt": "Javascript",
-          "name": "Javascript",
-          "num": "7"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
-          "alt": "Typescript",
-          "name": "Typescript",
-          "num": "8"
-        },
+      "Mobile App Development": [
+      
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
           "alt": " React Native",
@@ -786,6 +757,40 @@
           "name": "Kotlin (Android)",
           "num": "13"
         }
+      ],
+      "Web Development": [
+
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "9"
+        }
+        
       ],
       "Backend": [
         {
@@ -937,49 +942,12 @@
         },
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
-          "alt": "Klarna",
-          "name": "Klarna",
+          "alt": "Digital Wallets",
+          "name": "Digital Wallets",
           "num": "8"
         }
-      ],
-      "Security": [
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
-          "alt": "End-to-End Encryption",
-          "name": "End-to-End Encryption",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
-          "alt": "OAuth Authentication",
-          "name": "OAuth Authentication",
-          "num": "2"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
-          "alt": "JWT Authentication",
-          "name": "JWT Authentication",
-          "num": "3"
-        }
-        
-       
-        
-      ],
-      "Advanced Technologies": [
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
-          "alt": "AI & Machine Learning",
-          "name": "AI & Machine Learning",
-          "num": "1"
-        },
-        
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Blockchain Technology",
-          "name": "Blockchain Technology",
-          "num": "3"
-        }
       ]
+
 
     }
   },

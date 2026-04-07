@@ -75,9 +75,9 @@ export default function IndustryGrid() {
               </h3>
 
               {/* CTA */}
-              <span className="mt-2 text-xs text-gray-500 group-hover:text-blue-600 transition">
+              {/* <span className="mt-2 text-xs text-gray-500 group-hover:text-blue-600 transition">
                 Learn More →
-              </span>
+              </span> */}
 
               {/* Bottom Animation Line */}
               <div className="mt-3 h-[2px] w-0 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-10 transition-all duration-300"></div>
