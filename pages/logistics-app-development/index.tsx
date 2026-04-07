@@ -206,7 +206,7 @@ export default function ClinicalApp(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ClientStories />

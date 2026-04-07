@@ -70,12 +70,12 @@ export default function StatsBanner() {
         </div>
 
         {/* Middle — Clients */}
-        <Link  href={"https://www.comfygen.com/client-testimonials"} className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">
+        <div className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">
           {/* Overlapping avatars */}
           <div className="flex items-center">
             {avatars.map((src, i) => (
-              <div
-             
+              <Link
+              href={"https://www.comfygen.com/client-testimonials"}
                 key={i}
                 className="w-12 h-12 rounded-full border-2 border-white overflow-hidden flex-shrink-0"
                 style={{ marginLeft: i === 0 ? 0 : "-10px", zIndex: i }}
@@ -87,13 +87,13 @@ export default function StatsBanner() {
                   height={100}
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </Link>
             ))}
           </div>
           <p className="text-white font-semibold text-sm leading-tight">
             400+ Happy<br />Clients
           </p>
-        </Link>
+        </div>
 
         {/* Right — Countries */}
         <div className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">

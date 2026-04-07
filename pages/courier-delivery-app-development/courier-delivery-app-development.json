@@ -21,6 +21,7 @@
 
   "Tabs": [
     "Mobile App Development",
+    "Backend",
     "Web Development",
     "Database",
     "Real-Time Tracking & Maps",
@@ -56,6 +57,44 @@
           "alt": "Kotlin (Android)",
           "name": "Kotlin (Android)",
           "num": "13"
+        }
+      ],
+            "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
         }
       ],
       "Web Development": [

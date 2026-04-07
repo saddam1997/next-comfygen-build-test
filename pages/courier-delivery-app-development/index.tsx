@@ -78,6 +78,10 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -404,7 +408,7 @@ export default function ClinicalApp(props: any) {
 
             <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
 
       <HireDeveloper
@@ -423,7 +427,7 @@ export default function ClinicalApp(props: any) {
       />
 
       <DeliverySection hideUrl="https://www.comfygen.com/courier-delivery-app-development" />
-
+<ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
 
       <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />

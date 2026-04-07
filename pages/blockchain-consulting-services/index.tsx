@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
+import HeroSectionforcls from "../../components/HeroSectionforcls"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
@@ -143,7 +144,7 @@ export default function rummy(props: any) {
       </div>
 
       <div className="overflow-hidden lg:pt-16 pt-16">
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+        <HeroSectionforcls herosection={JSON_DATA.Herosection} />
 
 
         <Milestones />

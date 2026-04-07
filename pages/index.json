@@ -475,6 +475,280 @@
       }
     ]
   },
+
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Advanced Technologies"
+  ],
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vue js.webp",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "13"
+        },
+         {
+          "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
+          "alt": " Tailwind CSS",
+          "name": " Tailwind CSS",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        },
+          {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Net.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        },
+         {
+          "img": "https://www.comfygen.com/media/svg/tech/express-js-icon.svg",
+          "alt": "Express.js",
+          "name": "Express.js",
+          "num": "6"
+        }
+      ],
+      "Database": [
+    
+         {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+            {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Firebase Realtime Database.webp",
+          "alt": "Firebase ",
+          "name": "Firebase ",
+          "num": "3"
+        },
+         {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis ",
+          "name": "Redis ",
+          "num": "3"
+        }
+      ],
+   
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+       
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+        
+       
+        
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+      
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
+
+    }
+  },
+
+
   "TechStack": {
     "title": "Our Advanced Tech Stack for Mobile App and Web Development",
     "description": "We leverage a modern and advanced tech stack to develop secure, scalable, and high-performance web and mobile applications. Our focus is on delivering future-ready digital solutions that drive sustainable business growth.",

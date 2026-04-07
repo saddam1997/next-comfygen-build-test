@@ -730,11 +730,11 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/crypto-derivatives-exchange-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.comfygen.com/p2p-payment-app-development</loc>
     <changefreq>daily</changefreq>
@@ -750,31 +750,31 @@
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/ai-crypto-exchange-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.comfygen.com/exam-preparation-app-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/crypto-margin-trading-exchange-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.comfygen.com/ai-interview-scheduling-software-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/crypto-exchange-admin-panel-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.comfygen.com/boxing-live-line-api</loc>
     <changefreq>daily</changefreq>

@@ -690,10 +690,10 @@ export default function ClinicalApp(props: any) {
           cards={productCard}
         />
 
-           <Trending
-        trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
-      />
+        <Trending
+          trendingData={JSON_DATA.trendingData}
+          heading="Top-Rated App Development Company Recognized by Global Platforms"
+        />
 
         {/* <CallToAction
           heading="Ready to Build Your Grocery Delivery App?"
@@ -795,7 +795,7 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         /> */}
 
-             <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
         {/* <TechStack
           title="Technology Stack for Grocery Delivery App Development"
@@ -809,7 +809,7 @@ export default function ClinicalApp(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <ClientStories />
+        {/* <ClientStories /> */}
 
         <DeliverySection hideUrl={"grocery-app-development"} />
 
@@ -827,8 +827,8 @@ export default function ClinicalApp(props: any) {
             "Expertise in Flutter, React Native, Node.js, and more",
           ]}
         />
-  <ClientStories />
-      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        <ClientStories />
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 

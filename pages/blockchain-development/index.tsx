@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
-
+import HeroSectionforcls from "../../components/HeroSectionforcls"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
@@ -183,8 +183,8 @@ export default function Blockchain(props) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
 
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <Milestones />
+        <HeroSectionforcls herosection={JSON_DATA.Herosection} />
+        {/* <Milestones /> */}
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />

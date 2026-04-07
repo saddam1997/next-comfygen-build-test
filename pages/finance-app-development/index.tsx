@@ -87,6 +87,7 @@ const BlogSection = dynamic(
 );
 import ReviewCard from "../../components/ReviewCard";
 import TechStacks from "../../components/TechStacks";
+import IndustryGrid from "../../components/IndustryGrid";
 
 const Process = [
   {
@@ -213,161 +214,162 @@ export default function Mobile(props: any) {
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Finance App Development Services Are Tailored to Meet Your Specific Business Requirements</h2>
-              <p className="text-center text-base">Comfygen offers the top-tier fintech app development services to banks, fintech companies, and startups. Our 10+ year experienced fintech mobile app developers craft secure, scalable, and AI-driven financial app development solutions that streamline operations and enhance user experiences.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
+      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Finance App Development Services Are Tailored to Meet Your Specific Business Requirements</h2>
+            <p className="text-center text-base">Comfygen offers the top-tier fintech app development services to banks, fintech companies, and startups. Our 10+ year experienced fintech mobile app developers craft secure, scalable, and AI-driven financial app development solutions that streamline operations and enhance user experiences.</p>
           </div>
-        </section>
-
-        <AboutSection
-          title=""
-          heading="Top-Rated Finance App Development Company That Builds Next-Gen FinTech Apps for Startups & Enterprises"
-          description1="Comfygen is a reliable financial app development company in India, specializing in innovative and secure fintech solutions. We offer custom FinTech app development services tailored to meet the unique needs of banks, financial institutions, and fintech startups."
-          description2="Our FinTech app developers make sure seamless integration of cutting-edge technologies like AI, blockchain, and cloud computing to create scalable, high-performance finance mobile apps. We offer secure, user-friendly solutions that enhance financial operations, from mobile banking to investment platforms. We can help you build a fintech application that drives success."
-          imageSrc="https://www.comfygen.com/image/finance-app-development-company-about-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py10">
-          <div className="flex flex-col justify-center text-center  mx-auto">
-            <h2 className=" text-2xl lg:text-4xl font-bold leading-[2rem] lg:leading-[3rem] text-[#212121]">
-              Best Practices for Secure Fintech Mobile Application Development
-            </h2>
-            <p className="text-black text-base">Some significant integrations that empower our best fintech mobile app development solutions and cater to more seamless user-friendly experiences.</p>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
           </div>
-          <WildSolution faqData={JSON_DATA.Solutions} title={""} />
         </div>
+      </section>
 
-
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our FinTech Software Development Portfolio"
-            description="Our brilliant fintech software development team at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
-          />
-        </section>
-
-           <Trending
-        trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+      <AboutSection
+        title=""
+        heading="Top-Rated Finance App Development Company That Builds Next-Gen FinTech Apps for Startups & Enterprises"
+        description1="Comfygen is a reliable financial app development company in India, specializing in innovative and secure fintech solutions. We offer custom FinTech app development services tailored to meet the unique needs of banks, financial institutions, and fintech startups."
+        description2="Our FinTech app developers make sure seamless integration of cutting-edge technologies like AI, blockchain, and cloud computing to create scalable, high-performance finance mobile apps. We offer secure, user-friendly solutions that enhance financial operations, from mobile banking to investment platforms. We can help you build a fintech application that drives success."
+        imageSrc="https://www.comfygen.com/image/finance-app-development-company-about-image.webp"
+        link="/about-us"
+        linkText="Explore More"
       />
 
 
-        <CallToAction
-          heading="Looking for a Reliable Finance App Development Partner?"
-          text="Work with experienced fintech app developers who understand compliance, security, and scalability. Let’s build a finance app your users can trust."
-          buttonText="Start Your FinTech Project"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
+      <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py10">
+        <div className="flex flex-col justify-center text-center  mx-auto">
+          <h2 className=" text-2xl lg:text-4xl font-bold leading-[2rem] lg:leading-[3rem] text-[#212121]">
+            Best Practices for Secure Fintech Mobile Application Development
+          </h2>
+          <p className="text-black text-base">Some significant integrations that empower our best fintech mobile app development solutions and cater to more seamless user-friendly experiences.</p>
+        </div>
+        <WildSolution faqData={JSON_DATA.Solutions} title={""} />
+      </div>
 
-        <div className="py-8">
-          <Features
-            heading=" We Develop FinTech Apps With Advanced Panel Features"
-            description="At Comfygen, we specialize in Custom Finance App Development,
+
+
+      {/* portfoliodata */}
+      <section className="py-8">
+        <Portfolio
+          projects={JSON_DATA.portfoliodata}
+          heading="Our FinTech Software Development Portfolio"
+          description="Our brilliant fintech software development team at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
+        />
+      </section>
+
+      <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
+
+
+      <CallToAction
+        heading="Looking for a Reliable Finance App Development Partner?"
+        text="Work with experienced fintech app developers who understand compliance, security, and scalability. Let’s build a finance app your users can trust."
+        buttonText="Start Your FinTech Project"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+        imageAlt="Future of Technology"
+      />
+
+      <div className="py-8">
+        <Features
+          heading=" We Develop FinTech Apps With Advanced Panel Features"
+          description="At Comfygen, we specialize in Custom Finance App Development,
           integrating advanced panel features to enhance user experience,
           security, and operational efficiency. Our Fintech App Development
           Services are tailored for banks, financial institutions, and startups,
           ensuring seamless transactions, AI-driven insights, and high-end
           security protocols."
-            featuresData={JSON_DATA.featuresData}
-            grid={3} />
-        </div>
+          featuresData={JSON_DATA.featuresData}
+          grid={3} />
+      </div>
 
 
-        <section className="py-10 lg:py-16  bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="space-y-4 text-center 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="flex flex-col justify-center text-center  mx-auto">
-              <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize ">
-                Modern Technologies We Implement To Create Your Fintech App
-              </h2>
-              <p className="text-base text-white text-center">Comfygen is a next-level finance app development company in India that has delivered top-notch financial apps. We make sure seamless functionality, top-tier security, and a great user experience for your finance app with our expert team of <a className="font-semibold" href="/hire-mobile-app-developer">FinTech mobile app developers</a> .</p>
-            </div>
-            <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-              {JSON_DATA.FoodAppMaker.map((elem, index) => {
-                const { img, title, decs } = elem;
-                return (
-                  <div key={index} className={` relative`}>
-                    <div className={` flex justify-start gap-2 place-items-center relative`}>
-                      <h3 className="text-2xl font-bold text-[#fff] text-start">
-                        {title}
-                      </h3>
-                    </div>
-
-                    <div className="mt-3">
-                      <p className=" text-white text-start " dangerouslySetInnerHTML={{ __html: decs }}>
-
-                      </p>
-                    </div>
+      <section className="py-10 lg:py-16  bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <div className="space-y-4 text-center 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="flex flex-col justify-center text-center  mx-auto">
+            <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize ">
+              Modern Technologies We Implement To Create Your Fintech App
+            </h2>
+            <p className="text-base text-white text-center">Comfygen is a next-level finance app development company in India that has delivered top-notch financial apps. We make sure seamless functionality, top-tier security, and a great user experience for your finance app with our expert team of <a className="font-semibold" href="/hire-mobile-app-developer">FinTech mobile app developers</a> .</p>
+          </div>
+          <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+            {JSON_DATA.FoodAppMaker.map((elem, index) => {
+              const { img, title, decs } = elem;
+              return (
+                <div key={index} className={` relative`}>
+                  <div className={` flex justify-start gap-2 place-items-center relative`}>
+                    <h3 className="text-2xl font-bold text-[#fff] text-start">
+                      {title}
+                    </h3>
                   </div>
-                );
-              })}
-            </div>
+
+                  <div className="mt-3">
+                    <p className=" text-white text-start " dangerouslySetInnerHTML={{ __html: decs }}>
+
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        </section>
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Finance App Development Approach</h2>
-              <p className="text-base font-normal mt-2">
-            Hire Fintech Developers from Comfygen who follow the agile methodologies and strategic process to create secure Fintech apps. Our finance app development process will fulfill business purposes and lead to an intuitive user interface.
+        </div>
+      </section>
+      <section className="bg-white lg:py-16 py-10">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+          <div className="text-center">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our End-to-End Finance App Development Approach</h2>
+            <p className="text-base font-normal mt-2">
+              Hire Fintech Developers from Comfygen who follow the agile methodologies and strategic process to create secure Fintech apps. Our finance app development process will fulfill business purposes and lead to an intuitive user interface.
 
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
+            </p>
           </div>
-        </section>
-        <IndustriesServe
-          heading="Industry-Specific Finance App Development Solution"
-          description="At Comfygen, we provide custom financial app development solutions tailored to various financial sectors. Our expertise spans across multiple industries, ensuring secure, scalable, and regulatory-compliant applications that enhance financial operations and customer experiences."
-          sliderData={JSON_DATA.customSliderData}
-        />
+          <ProcessSec processSlides={Process} />
+        </div>
+      </section>
+       <IndustryGrid />
+      {/* <IndustriesServe
+        heading="Industry-Specific Finance App Development Solution"
+        description="At Comfygen, we provide custom financial app development solutions tailored to various financial sectors. Our expertise spans across multiple industries, ensuring secure, scalable, and regulatory-compliant applications that enhance financial operations and customer experiences."
+        sliderData={JSON_DATA.customSliderData}
+      /> */}
 
- <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
-        {/* <TechStack
+      {/* <TechStack
           title="We Use Cutting-edge Tech Stacks of FinTech"
           description="Comfygen builds secure, scalable, and high-performance fintech applications using cutting-edge technologies. Our custom fintech app development approach make sure seamless integration, robust security, and an intuitive user experience."
         /> */}
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Most Trusted Fintech App Developers For Your Project"
-          text="You can find the opportunity to work with the highly rated fintech mobile app developers with us at Comfygen. Our dedicated finance app developers utilise the latest technologies for powering FinTech apps and stay updated with recent trends in fintech that can offer a competitive advantage to your business."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Comprehensive selection process of experts.",
-            "Prioritization of client’s needs and preferences.",
-            "Continuous and transparent communication with clients.",
-            "Experience in different financial app development projects.",
-            "Adaptability to new industry trends and emerging requirements."
-          ]}
-        />
- <ClientStories />
+      <WhyChoose
+        title={JSON_DATA.pageData.title}
+        description={JSON_DATA.pageData.description}
+        mainCardData={JSON_DATA.pageData.mainCardData}
+        gridData={JSON_DATA.pageData.gridData}
+      />
+      <HireDeveloper
+        heading="Hire Most Trusted Fintech App Developers For Your Project"
+        text="You can find the opportunity to work with the highly rated fintech mobile app developers with us at Comfygen. Our dedicated finance app developers utilise the latest technologies for powering FinTech apps and stay updated with recent trends in fintech that can offer a competitive advantage to your business."
+        buttonText="Hire Developer"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Comprehensive selection process of experts.",
+          "Prioritization of client’s needs and preferences.",
+          "Continuous and transparent communication with clients.",
+          "Experience in different financial app development projects.",
+          "Adaptability to new industry trends and emerging requirements."
+        ]}
+      />
+      <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
+      <Faq
+        faqData={JSON_DATA.Frequently}
+        title=""
+      />
+      <BlogSection initialData={initialData} />
 
     </>
   );
