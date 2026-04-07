@@ -10,6 +10,8 @@ import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Navbar from "../../components/Navbar";
 
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
@@ -452,7 +454,8 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <Navbar />
-      <HeroSectionforcls herosection={JSON_DATA.Herosection} />
+      {/* <HeroSectionforcls herosection={JSON_DATA.Herosection} /> */}
+      <HeroSectionNewCls/>
 
 
       {/* hero section */}
@@ -472,6 +475,21 @@ export default function Ecommerce(props: any) {
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp"
         /> */}
+              <section className="lg:py-16 py-10 bg-[#F5F5F9]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-2">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
+              Our AI-Powered Crypto Wallet Development Services
+            </h2>
+            <p className="text-base text-center font-normal">
+              At Comfygen, we deliver a complete suite of AI-driven cryptocurrency wallet development services that combine the intelligence of Artificial Intelligence, the transparency of Blockchain, and the innovation of Web3. Our crypto wallet development solutions are designed to make digital asset management smarter, safer, and more efficient for businesses of all sizes.
+            </p>
+          </div>
+          <div className="">
+            <ServicesSec servicesData={JSON_DATA.servicesData} />
+          </div>
+        </div>
+      </section>
 
       <AboutSection
         heading="Why Your Business Needs a Cryptocurrency Wallet"
@@ -489,21 +507,7 @@ export default function Ecommerce(props: any) {
         link="/about-us"
         linkText="Explore More"
       />
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our AI-Powered Crypto Wallet Development Services
-            </h2>
-            <p className="text-base text-center font-normal">
-              At Comfygen, we deliver a complete suite of AI-driven cryptocurrency wallet development services that combine the intelligence of Artificial Intelligence, the transparency of Blockchain, and the innovation of Web3. Our crypto wallet development solutions are designed to make digital asset management smarter, safer, and more efficient for businesses of all sizes.
-            </p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
+
 
       <CallToAction
         heading="Ready to Launch Your Own AI-Powered Crypto Wallet?"
