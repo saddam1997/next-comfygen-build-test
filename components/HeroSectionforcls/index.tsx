@@ -46,7 +46,7 @@ export default function HeroSection({ herosection }: any) {
       {/* Content Wrapper */}
       <div
         className="
-        relative z-20 w-full max-w-[1320px]
+        relative  w-full max-w-[1320px]
         mx-auto px-4 sm:px-6 lg:px-2
         flex flex-col justify-center h-full
       "
