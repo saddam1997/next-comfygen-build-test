@@ -503,7 +503,7 @@ export default function Ecommerce(props: any) {
           "Brand Credibility & Innovation",
           "New Revenue Opportunities"
         ]}
-        imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about.webp"
+        imageSrc="https://www.comfygen.com/comfygen-images/crypto-wallet-development/about-imge.webp"
         link="/about-us"
         linkText="Explore More"
       />

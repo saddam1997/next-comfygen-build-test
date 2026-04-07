@@ -9,7 +9,7 @@ export default function HeroSection() {
 
         {/*  Background Image (SSR + CLS SAFE) */}
         <Image
-          src="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp"
+          src="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company.webp"
           alt="AI Development Company"
           fill
           priority
