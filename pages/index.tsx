@@ -179,7 +179,7 @@ export default function Home(props: any) {
       <IndustryGrid />
       <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+       heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
          <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />

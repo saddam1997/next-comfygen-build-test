@@ -127,13 +127,12 @@ export default function Ecommerce(props: any) {
       <Consultancy consultancyData={JSON_DATA.NFTTechnologies} />
       <Solution techData={JSON_DATA.ExchangeSolutions} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-            <IndustryGrid />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <AppClone SliderDATA={JSON_DATA.Industries} />
+       <IndustryGrid />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
