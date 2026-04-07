@@ -7,7 +7,9 @@ import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import ClientTestimonials from "../../components/Newcomponet/SectionCompoent/ClientTestimonials";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
-
+import Navbar from "../../components/Navbar";
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import Trending from "../../components/Trending";
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
@@ -36,6 +38,11 @@ const Portfolio = dynamic(
 const Features = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Features"),
   { loading: loader, ssr: true }
+);
+
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
 );
 
 const ProcessSec = dynamic(
@@ -78,6 +85,8 @@ const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
+import ReviewCard from "../../components/ReviewCard";
+import TechStacks from "../../components/TechStacks";
 
 const Process = [
   {
@@ -200,31 +209,9 @@ export default function Mobile(props: any) {
         />
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
-      {/* </LazyLoad> */}
-      <div className=" overflow-hidden">
+      <Navbar />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
-        <div className="lg:pt-[110px]">
-          <HeroSectionForAllPages
-            heading="Best Finance App Development Company in India"
-            subhead="“Empower Your Business with Cutting-Edge Finance App Development”"
-            ptag="Partner with a leading Finance app development company in India that has delivered top-notch, fully functional finance apps. We offer world-class finance app development services. We use latest technologies that empower you to give next-gen FinTech apps. Whether you need mobile banking solutions or investment platforms, we offer bespoke, high-quality custom finance app development services tailored to your unique business requirements."
-            li="10+ Trusted Fintech Developers"
-            li1="Customized Fintech Solutions Delivered"
-            li2="08+ years of experience in Development"
-            li3="Cutting-edge technologies used"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/finance-app-development/finance-app-development.webp"
-          />
-
-        </div>
-
-        <Milestones />
 
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -269,6 +256,11 @@ export default function Mobile(props: any) {
             description="Our brilliant fintech software development team at Comfygen takes pride in delivering high-performance fintech applications that transform financial services with innovation, security, and user-friendly interfaces. Our financial app development portfolio includes a variety of custom finance apps, such as mobile banking and blockchain-based solutions."
           />
         </section>
+
+           <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
 
 
         <CallToAction
@@ -341,10 +333,13 @@ export default function Mobile(props: any) {
           description="At Comfygen, we provide custom financial app development solutions tailored to various financial sectors. Our expertise spans across multiple industries, ensuring secure, scalable, and regulatory-compliant applications that enhance financial operations and customer experiences."
           sliderData={JSON_DATA.customSliderData}
         />
-        <TechStack
+
+ <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+
+        {/* <TechStack
           title="We Use Cutting-edge Tech Stacks of FinTech"
           description="Comfygen builds secure, scalable, and high-performance fintech applications using cutting-edge technologies. Our custom fintech app development approach make sure seamless integration, robust security, and an intuitive user experience."
-        />
+        /> */}
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -366,16 +361,14 @@ export default function Mobile(props: any) {
             "Adaptability to new industry trends and emerging requirements."
           ]}
         />
-        {/* <ClientTestimonials
-          heading="Client Testimonial"
-          testimonials={JSON_DATA.customTestimonials}
-        /> */}
+ <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
         <BlogSection initialData={initialData} />
-      </div>
+
     </>
   );
 }

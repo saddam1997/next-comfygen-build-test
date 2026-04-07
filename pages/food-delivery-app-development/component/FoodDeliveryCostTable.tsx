@@ -78,7 +78,7 @@ export default function AppPricingTable({ FoodDeliveryCost}) {
                 </div>
 
                 {/* POINTS */}
-                {FoodDeliveryCost?.points?.length > 0 && (
+                {/* {FoodDeliveryCost?.points?.length > 0 && (
                     <div className="py-8 max-w-5xl mx-auto text-center">
                         <HeadingThree color="black" text={FoodDeliveryCost?.subheading} />
 
@@ -95,7 +95,7 @@ export default function AppPricingTable({ FoodDeliveryCost}) {
                             ))}
                         </ul>
                     </div>
-                )}
+                )} */}
             </div>
         </section>
     );

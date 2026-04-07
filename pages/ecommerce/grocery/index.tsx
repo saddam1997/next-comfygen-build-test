@@ -7,10 +7,12 @@ import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHea
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import GroceryAppScreens from "../../../components/Newcomponet/SectionCompoent/GroceryAppScreens";
-import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
 
+import HeroSectionforHomeTest from "../../../components/HeroSectionforHomeTest";
+import Trending from "../../../components/Trending";
+import TechStacks from "../../../components/TechStacks";
 const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
-
+import ReviewCard from "../../../components/ReviewCard";
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
   { loading: loader, ssr: true }
@@ -34,6 +36,11 @@ const CallToAction = dynamic(
 const TrendsSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/TrendsSection"),
   { loading: loader, ssr: true }
+);
+
+const ClientStories = dynamic(
+  () => import("../../../components/ClientStories"),
+  { ssr: true }
 );
 
 const Portfolio = dynamic(
@@ -360,38 +367,38 @@ const productCard = [
 
 
 const customTechData = {
-    "backend": [
-      { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
-      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
-      { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
-      { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
-      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
-      { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
-      { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
-      { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
-    ],
-    "frontend": [
-      { img: "https://www.comfygen.com/media/svg/tech/html5-original.svg", alt: 'Html5', name: "Html5", num: "1" },
-      { img: "https://www.comfygen.com/media/svg/tech/css3-original.svg", alt: 'Css3', name: "Css3", num: "2" },
-      { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Nextjs', name: "nextjs", num: "3" },
-      { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React js", num: "4" },
-      { img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", alt: 'Tailwindcss', name: "Tailwindcss", num: "5" },
-      { img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", alt: 'Angularjs', name: "Angular js", num: "6" },
-      { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "7" },
-      { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
-      { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
-    ],
+  "backend": [
+    { img: "https://www.comfygen.com/media/svg/tech/nodejs-original.svg", alt: 'Nodejs', name: "Nodejs", num: "1" },
+    { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "2" },
+    { img: "https://www.comfygen.com/media/svg/tech/express-js-icon.svg", alt: 'Express js', name: "Express js", num: "3" },
+    { img: "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg", alt: 'Sails js', name: "Sails js", num: "4" },
+    { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Next js', name: "Next js", num: "5" },
+    { img: "https://www.comfygen.com/media/svg/tech/django-icon.svg", alt: 'Django', name: "Django", num: "6" },
+    { img: "https://www.comfygen.com/media/svg/tech/Python-icon.svg", alt: 'Python', name: "Python", num: "7" },
+    { img: "https://www.comfygen.com/media/svg/tech/php-icon.svg", alt: 'PHP', name: "PHP", num: "8" },
+  ],
+  "frontend": [
+    { img: "https://www.comfygen.com/media/svg/tech/html5-original.svg", alt: 'Html5', name: "Html5", num: "1" },
+    { img: "https://www.comfygen.com/media/svg/tech/css3-original.svg", alt: 'Css3', name: "Css3", num: "2" },
+    { img: "https://www.comfygen.com/image/next-js-icon.svg", alt: 'Nextjs', name: "nextjs", num: "3" },
+    { img: "https://www.comfygen.com/media/svg/tech/react-original.svg", alt: 'React', name: "React js", num: "4" },
+    { img: "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg", alt: 'Tailwindcss', name: "Tailwindcss", num: "5" },
+    { img: "https://www.comfygen.com/media/svg/tech/angularjs-original.svg", alt: 'Angularjs', name: "Angular js", num: "6" },
+    { img: "https://www.comfygen.com/media/svg/tech/javascript-original.svg", alt: 'Javascript', name: "Javascript", num: "7" },
+    { img: "https://www.comfygen.com/media/svg/tech/typescript-original.svg", alt: 'Typescript', name: "Typescript", num: "8" },
+    { img: "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg", alt: 'Bootstrap', name: "Bootstrap", num: "9" },
+  ],
 
 
-    "Blockchain network ": [
-      { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
-      { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
-      { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
-      { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
-      { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
-    ]
-   
-  };
+  "Blockchain network ": [
+    { img: "/svg/tech/aws-logo.svg", alt: 'Ethereum', name: "Ethereum", num: "1" },
+    { img: "/svg/tech/googlecloud-original.svg", alt: 'Polygon', name: "Polygon", num: "2" },
+    { img: "https://www.comfygen.com/img/stackimg/solona.svg", alt: 'Solana', name: "Solana", num: "3" },
+    { img: "https://www.comfygen.com/img/stackimg/cardano.svg", alt: 'Cardano', name: "Cardano", num: "4" },
+    { img: "https://www.comfygen.com/img/stackimg/eos.svg", alt: 'EOS', name: "EOS", num: "5" },
+  ]
+
+};
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -408,7 +415,7 @@ export default function ClinicalApp(props: any) {
   };
 
   const jsonLdData = [
-    
+
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -453,7 +460,7 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-technologies",
       ],
     },
-   
+
 
     {
       "@context": "https://schema.org/",
@@ -643,25 +650,9 @@ export default function ClinicalApp(props: any) {
       </Head>
       <EcommerceHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Grocery Delivery App Development Company"
-          subhead=""
-          ptag="Comfygen is a leading grocery delivery app development company specializing in providing powerful, scalable, and revenue-driven grocery app development solutions for startups, supermarkets, and enterprise retailers. Whether you're starting a new online grocery business or expanding your costume base of an existing grocery delivery business , our grocery delivery app development expert creates secure, high-performance grocery applications designed for sustainable growth and profitability."
-          ptag1="Our developed the best grocery delivery app provides top-notch features like streamline order management, optimize vendor coordination, and deliver seamless shopping experiences from product browsing to doorstep delivery."
-          li="Real-time order tracking for customers and admins"
-          li1="Smart inventory and order management system"
-          li3="Push notifications for order updates and promotions"
-          li4='Advanced analytics and reports to track performance and growth'
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/grocery-app-development/grocery-app-development-hero5.webp"
-        />
+        <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
-        <Milestones />
+
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -698,6 +689,11 @@ export default function ClinicalApp(props: any) {
           subtitle="As a trusted grocery app development provider, we build Readymade Grocery App Development solutions that simplify online grocery shopping while giving store owners full operational control."
           cards={productCard}
         />
+
+           <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
 
         {/* <CallToAction
           heading="Ready to Build Your Grocery Delivery App?"
@@ -799,11 +795,13 @@ export default function ClinicalApp(props: any) {
           trends={JSON_DATA.Emerging}
         /> */}
 
-        <TechStack
+             <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+
+        {/* <TechStack
           title="Technology Stack for Grocery Delivery App Development"
           description="The success of any grocery delivery app development project depends heavily on the technology stack behind it. A strong stack ensures speed, scalability, security, and seamless real-time operations. As a reliable grocery delivery app development company, we select technologies based on performance requirements, traffic expectations, and long-term growth plans."
           customTechData={customTechData}
-        />
+        /> */}
         <WhyChoose
           title={JSON_DATA.pageData.title}
           description={JSON_DATA.pageData.description}
@@ -829,11 +827,8 @@ export default function ClinicalApp(props: any) {
             "Expertise in Flutter, React Native, Node.js, and more",
           ]}
         />
-
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
+  <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
 
         <Faq faqData={Frequently} title="Frequently Asked Questions" />
 

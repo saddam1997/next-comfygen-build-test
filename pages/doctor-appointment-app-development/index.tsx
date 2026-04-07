@@ -6,9 +6,14 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import JSON_DATA from "./doctor-appointment-app-development/doctor.json";
 
 import Header from "../../components/Newcomponet/layout/Header"
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+
+import Navbar from "../../components/Navbar";
+import Trending from "../../components/Trending";
+import TechStacks from "../../components/TechStacks";
+import ReviewCard from "../../components/ReviewCard";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
@@ -72,6 +77,10 @@ const ClientTestimonials = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
   { loading: loader, ssr: true }
 )
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
@@ -260,26 +269,10 @@ export default function Ecommerce(props) {
 
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best Doctor Appointment App Development Company"
-          ptag="Comfygen Technologies is a reliable and top-rated doctor appointment app development company, delivering online appointment app development solutions for the healthcare industry."
-          ptag1="Comfyen’s custom doctor appointment app development service simplifies patient scheduling, allows real-time video consultations, provides e-prescriptions, and secures data. With AI, blockchain, and cloud integration, we help the healthcare industry to enhance patient experience and streamline operations. "
-          btnName="Talk With Expert"
-          li="AI-powered doctor search & smart appointment scheduling"
-          li1="HIPAA-compliant, scalable healthcare app architecture"
-          li2="Telemedicine & Video Consultation"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/doctor-appointment-development-app-hero-imfg.webp"
-        />
-
-        <Milestones />
+  
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">
@@ -320,6 +313,11 @@ export default function Ecommerce(props) {
             featuresData={JSON_DATA.featuresData}
             grid={3} />
         </div>
+
+         <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
 
 
         <div className="mt-10">
@@ -492,10 +490,12 @@ export default function Ecommerce(props) {
             </section>
           </div>
         </div>
-        <TechStack
+        {/* <TechStack
           title="Technology Stack for Doctor Appointment App Development"
           description="Comfygen Technologies creates secure, scalable, and high-performing doctor appointment apps using the latest technology. Our cutting-edge technology stack make sure seamless functionality, a smooth user experience, and top-tier security."
-        />
+        /> */}
+
+          <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
         <WhyChoose
           title={JSON_DATA.pageData.title}
@@ -523,21 +523,15 @@ export default function Ecommerce(props) {
 
 
 
-
-        <ClientStories />
-
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
+  <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
         <Faq
           faqData={JSON_DATA.Frequently}
           title=" "
         />
         <BlogSection initialData={initialData} />
 
-      </div>
+  
     </>
   );
 }

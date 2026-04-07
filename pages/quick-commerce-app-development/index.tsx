@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./quick-commerce-app-development.json";
-
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
@@ -25,7 +25,7 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
   ssr: true,
 });
 
-
+import ReviewCard from "../../components/ReviewCard";
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
 });
@@ -37,6 +37,8 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 import Emerging from "../../components/Emerging";
+import TechStacks from "../../components/TechStacks";
+import Trending from "../../components/Trending";
 const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
@@ -64,6 +66,10 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 
 
@@ -241,11 +247,15 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Navbar />
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <AppClone SliderDATA={JSON_DATA.Clones} />
+       <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Awards, Ratings & Recognitions"
+      />
       {/* <AppcardSlider
         heading="We Have Already Developed Clones of Popular Instant Delivery Apps"
         description="At Comfygen Technologies, we provide industry-specific quick commerce app development solutions inspired by top global brands. Whether you're building a grocery delivery app, a medicine delivery platform, or an on-demand courier system, we develop quick commerce clone apps tailored to your business goals."
@@ -260,9 +270,11 @@ export default function ClinicalApp(props: any) {
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechSection TechStack={JSON_DATA.TechStack} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
+       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      {/* <TechStackSection deliveryApps={JSON_DATA.deliveryApps} /> */}
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <TestimonialSection testimonials={JSON_DATA.customTestimonials} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 
