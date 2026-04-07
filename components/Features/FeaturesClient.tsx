@@ -77,7 +77,7 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
       <div className="hidden lg:block">
 
         {/* BUTTON GRID */}
-        <div className={`grid grid-cols-${gridCols} gap-4 mx-auto mt-10 2xl:w-10/12 w-11/12`}>
+        <div className={`grid grid-cols-${gridCols} gap- mx-auto mt-10 2xl:w-10/12 w-11/12`}>
           {featuresData.map((item: any) => (
             <button
               key={item.id}

@@ -83,8 +83,8 @@ export default function AppPricingTable({ FoodDeliveryCost}) {
                         <HeadingThree color="black" text={FoodDeliveryCost?.subheading} />
 
                         <ul className="space-y-3 mt-4">
-                            {FoodDeliveryCost.points.map((point, index) => (
-                                <li key={index} className="flex items-start gap-2 justify-center">
+                            {FoodDeliveryCost.points.map((point:any, index:any) => (
+                                <li key={index} className="flex items-start gap-2 ">
                                     <div className="w-[10px] h-[10px] border-2 border-black rounded-full mt-1.5"></div>
 
                                     <span

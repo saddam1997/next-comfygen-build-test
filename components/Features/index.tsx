@@ -6,7 +6,7 @@ const FeaturesServer = ({ featuresData }: any) => {
     <section className="bg-[#F5F5F9] lg:py-16 py-10">
 
       {/* HEADER */}
-      <div className="text-center space-y-2 max-w-6xl mx-auto px-4">
+      <div className="text-center space-y-2 max-w-6xl mx-auto px-2">
         <h2 className="xl:text-4xl text-xl font-bold text-black">
           {featuresData?.heading}
         </h2>
