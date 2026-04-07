@@ -273,8 +273,8 @@
     ]
   },
   "Portfoliodata": {
-    "heading": "Food Delivery App Development Project Delivered Successfully by Comfygen",
-    "description": "Explore our diverse portfolio of food delivery application development solution projects designed to meet evolving business needs. From real-time order tracking to AI-powered recommendations and seamless user experiences, our food ordering apps are crafted to elevate customer satisfaction and streamline restaurant operations.",
+    "heading": "Our Food Delivery Success Stories",
+    "description": "Explore how we’ve helped food businesses grow with powerful, on-demand delivery app solutions—crafted to deliver seamless experiences and real business impact.",
     "portfolio": [
       {
         "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
@@ -292,7 +292,7 @@
   },
   "CallToAction": {
     "heading": "Ready to Dominate the Food Delivery Market?",
-    "text": "Partner with Comfygen, the best food ordering mobile app development company, and bring your vision to life.",
+    "text": "We build custom food delivery apps that boost orders, retain customers, and help you scale your business faster.",
     "buttonText": "Talk to Experts Now",
     "buttonLink": "/contact-us",
     "imageSrc": "https://www.comfygen.com/comfygen-images/home/future-technology-actual-400w.webp",
@@ -499,39 +499,41 @@
   },
   "AIPoweredFood": {
     "heading": "AI-Powered Food Delivery App Development",
-    "subheading": "Modern food delivery apps compete on intelligence, not just features. Comfygen's <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/ class='text-blue-600 font-semibold''>AI-powered food delivery app development</a> integrates machine learning directly into the core ordering, logistics, and support workflows — not as an add-on, but as a built-in advantage",
-    "tech": [
-      {
-        "num": "01",
-        "title": "Personalized Recommendations",
-        "desc": "As a top food delivery app development firm in India. Using intelligent algorithms, our apps analyze customer preferences and order history to provide personalized meal suggestions, increasing engagement and repeat orders."
-      },
-      {
-        "num": "02",
-        "title": "Smart Delivery Management",
-        "desc": "AI helps optimize delivery routes, predict preparation times, and manage driver assignments efficiently. This ensures faster deliveries and higher customer satisfaction."
-      },
-      {
-        "num": "03",
-        "title": "Demand Forecasting",
-        "desc": "Our <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>AI food ordering app development solutions</a> can predict peak ordering times and menu demand trends. Restaurants and food businesses can plan inventory, reduce waste, and improve operational efficiency."
-      },
-      {
-        "num": "04",
-        "title": "Enhanced Customer Support",
-        "desc": "AI-driven chatbots and virtual assistants provide instant responses to user queries, order tracking updates, and issue resolution, creating a seamless support experience."
-      },
-      {
-        "num": "05",
-        "title": "Data-Driven Insights",
-        "desc": "AI analyzes user behavior and operational data to generate actionable insights. Businesses can make informed decisions to refine menus, promotions, and marketing strategies."
-      },
-      {
-        "num": "06",
-        "title": "Predictive Sales & Growth Optimization",
-        "desc": "Our AI tools can forecast sales trends and identify opportunities for business growth. Restaurants can proactively launch promotions, expand services, and maximize revenue potential."
-      }
-    ]
+    "subheading": "Modern food delivery apps compete on intelligence, not just features. Comfygen's <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>AI-powered food delivery app development</a> integrates machine learning directly into the core ordering, logistics, and support workflows — not as an add-on, but as a built-in advantage.",
+
+  "tech": [
+    {
+      "num": "01",
+      "title": "Personalized Recommendations",
+      "desc": "Analyzes order history, time-of-day patterns, and dietary preferences to suggest meals the user is most likely to order — increasing average order value"
+    },
+    {
+      "num": "02",
+      "title": "Smart Delivery Route Optimization",
+      "desc": "Assigns the nearest available driver, calculates the most efficient multi-stop route, and adjusts in real time for traffic — reducing average delivery time"
+    },
+    {
+      "num": "03",
+      "title": "Demand Forecasting",
+      "desc": "Predicts peak order windows and popular items by location, allowing restaurants to prep ahead and reduce cancellations due to stockouts."
+    },
+    {
+      "num": "04",
+      "title": "AI Chatbot & Support",
+      "desc": "Handles order status queries, refund requests, and FAQs automatically — reducing support ticket volume by up to 60%."
+    },
+    {
+      "num": "05",
+      "title": "Dynamic Pricing Engine",
+      "desc": "Applies surge pricing during peak hours and discount logic during off-peak hours — automatically balancing supply and demand."
+    },
+    {
+      "num": "06",
+      "title": "Predictive Reorder",
+      "desc": "Detects recurring order patterns and prompts users to reorder their usual meals with a single tap — boosting retention."
+    }
+  ]
+
   },
   "FoodDeliveryCost": {
     "heading": "Food Delivery App Development Cost",
@@ -572,11 +574,11 @@
         "title": "Food & Delivery Industry Compliance",
         "desc": "Our solutions are developed keeping global food safety and delivery regulations in mind, helping businesses operate smoothly across different regions.",
         "listItems": [
-          "FSSAI (India): Supports food labeling, hygiene, and end-to-end safety compliance",
-          "FDA FSMA (USA): Enables food traceability and preventive safety controls",
-          "EFSA (Europe): Aligns with hygiene and food handling standards",
-          "Codex Alimentarius (WHO/FAO): Follows globally accepted food safety guidelines",
-          "Local Transport & Packaging Laws: Ensures proper temperature control, timing, and delivery safety"
+          "<b>FSSAI (India)</b>: Supports food labeling, hygiene, and end-to-end safety compliance",
+          "<b>FDA FSMA (USA)</b>: Enables food traceability and preventive safety controls",
+          "<b>EFSA (Europe)</b>: Aligns with hygiene and food handling standards",
+          "<b>Codex Alimentarius (WHO/FAO)</b>: Follows globally accepted food safety guidelines",
+          "<b>Local Transport & Packaging Laws</b>: Ensures proper temperature control, timing, and delivery safety"
         ]
       },
       {
@@ -584,11 +586,11 @@
         "title": "Data Privacy & Security Standards",
         "desc": "We design systems with privacy-first architecture so your platform can support modern data protection expectations across different regions.",
         "listItems": [
-          "GDPR (EU/UK): Data consent, user rights, and secure data handling",
-          "CCPA / CPRA (USA): Transparency in data collection and sharing",
-          "PDPL (Saudi Arabia): Compliance with regional data protection laws",
-          "APRA CPS 234 & ACSC (Australia): Strong cybersecurity practices and risk management",
-          "PIPEDA & Quebec Law 25 (Canada): Privacy-focused data governance"
+          "<b>GDPR (EU/UK)</b>: Data consent, user rights, and secure data handling",
+          "<b>CCPA / CPRA (USA)</b>: Transparency in data collection and sharing",
+          "<b>PDPL (Saudi Arabia)</b>: Compliance with regional data protection laws",
+          "<b>APRA CPS 234 & ACSC (Australia)</b>: Strong cybersecurity practices and risk management",
+          "<b>PIPEDA & Quebec Law 25 (Canada)</b>: Privacy-focused data governance"
         ]
       }
     ]
@@ -879,11 +881,11 @@
   },
   "HireDeveloper": {
     "heading": "Hire Dedicated Food Delivery App Developers",
-    "text": "Looking to hire experienced food delivery app developers? Comfygen helps you build scalable, high-performance on-demand apps with flexible hiring models tailored to your project needs and budget.",
-    "text1": "Our developers specialize in building fast, secure, and user-friendly food delivery solutions for startups, restaurants, cloud kitchens, and enterprises.",
-    "text2": "<b>Fixed Price Model</b> : Best for projects with clear requirements and a defined scope. A fixed cost, structured milestones, and timely delivery ensure complete clarity from start to finish.",
-    "text3": "<b>Dedicated Developer Model</b> Hire dedicated <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>food delivery mobile app developers</a> who work exclusively on your project. Ideal for long-term development, scaling teams, and continuous improvements.",
-    "text4": "<b>Time & Material Model</b> : Perfect for evolving projects and MVPs. Pay only for the actual work done with full transparency, regular updates, and flexible timelines.",
+    "text": "Looking to build a powerful food delivery app? Comfygen offers expert developers to create on-demand food ordering app solutions tailored to your needs.",
+    "text1": "We serve startups, restaurants, cloud kitchens, and enterprises with flexible hiring models:",
+    "text2": "<b>Fixed Price Model</b> : Ideal for clear project scopes with defined timelines and costs.",
+    "text3": "<b>Dedicated Developer Model</b>: <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>Hire dedicated food delivery app developers</a> focused solely on your project.",
+    "text4": "<b>Time & Material Model</b> : Best for evolving projects and MVPs with flexible scope and transparent billing.",
     "buttonText": "Hire a Crypto Exchange Developer",
     "buttonLink": "/contact-us",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",

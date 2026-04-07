@@ -37,8 +37,8 @@ const CardGrid = ({ techData }) => {
                 </div>
 
                 {/* GRID */}
-                <div className="grid py-10 md:grid-cols-2 gap-4">
-                    {visibleData.map((techItem, index) => (
+                <div className="grid py-10 md:grid-cols-2 gap-2">
+                    {visibleData.map((techItem:any, index:any) => (
                         <div
                             key={index}
                             className="bg-[#FAFAFA] p-6 border rounded-md space-y-4 hover:bg-[#5556D1]/10 transition"
@@ -59,10 +59,10 @@ const CardGrid = ({ techData }) => {
                             {Array.isArray(techItem?.listItems) &&
                                 techItem.listItems.length > 0 && (
                                     <ul className="mt-4 space-y-2">
-                                        {techItem.listItems.map((item, idx) => (
+                                        {techItem.listItems.map((item:any, idx:any) => (
                                             <li
                                                 key={idx}
-                                                className="text-base flex gap-2"
+                                                className="text-sm  gap-1"
                                                 dangerouslySetInnerHTML={{ __html: item }}
                                             />
                                         ))}
