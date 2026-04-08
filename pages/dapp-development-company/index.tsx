@@ -407,7 +407,7 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden lg:pt-[110px] pt-16">
         <div className="">
    <HeroSectionNewCls Data={JSON_DATA.Herosection} />
 

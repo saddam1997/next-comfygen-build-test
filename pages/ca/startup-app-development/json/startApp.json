@@ -1,4 +1,40 @@
 {
+  "Herosection": {
+    "heading": "Best Startup App Development Company in Canada",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Launch and scale your business idea with a trusted startup app development company in Canada. At Comfygen, we provide innovative startup app development services to help founders transform ideas into high-performance mobile applications. From validating your startup concept to building scalable MVPs and full-featured apps, our expert startup app developers canada deliver secure, ai powered digital solutions for modern startups.",
+    "ptag2": "We specialize in building custom iOS, Android, and web applications that help startups attract users, raise funding, and grow faster in competitive markets.",
+    "listItems": [
+      "MVP development to quickly validate your startup idea",
+      "Scalable mobile app solutions built for rapid startup growth",
+      "Expert startup app developers with modern tech expertise",
+      "End-to-end development from idea validation to app launch"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "openModal": "openModal",
+    "talkToExpertModal": "talkToExpertModal",
+    "setTalkToExpertModal": "setTalkToExpertModal",
+    "closeModal": "closeModal",
+    "altTag": "Best Startup App Development Company in Canada",
+    "bgImage": "https://www.comfygen.com/herosection/startup-mobile-app-dev-hero-img.webp"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "Solution": [
     {
       "num": "1",

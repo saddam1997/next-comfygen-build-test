@@ -175,7 +175,7 @@ export default function Blockchain(props) {
         />
       </Head>
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden lg:pt-[110px] pt-16">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         {/* <HeroSectionforcls herosection={JSON_DATA.Herosection} /> */}
         {/* <Milestones /> */}

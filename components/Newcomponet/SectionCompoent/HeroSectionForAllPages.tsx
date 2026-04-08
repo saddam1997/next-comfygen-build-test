@@ -24,9 +24,7 @@ export default function HeroSectionForAllPages(props: any) {
   ].filter(Boolean);
 
   return (
-    <section className="relative flex items-center overflow-hidden
-      bg-[#5951cd]
-      min-h-[640px] sm:min-h-[680px] lg:min-h-[720px]">
+    <section className="relative pt-20 pb-6 sm:pt-20 sm:pb-10 lg:pt-[70px] lg:pb-[70px] h-full flex flex-col justify-center overflow-hidden bg-[#5951cd]">
 
       {/* Background Image */}
       <div className="absolute inset-0 hidden lg:block">
