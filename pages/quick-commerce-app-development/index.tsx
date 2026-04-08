@@ -291,7 +291,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=quick-commerce-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");
@@ -311,3 +311,4 @@ export async function getStaticProps() {
     };
   }
 }
+
