@@ -210,7 +210,7 @@ export default function Blockchain(props) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=blockchain-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

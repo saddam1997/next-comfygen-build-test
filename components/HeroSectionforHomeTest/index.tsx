@@ -41,7 +41,7 @@ export default function HeroSection({ herosection }: any) {
       <div className="absolute inset-0 bg-gradient-to-r from-[#5951cd]/90 to-transparent"></div>
 
       {/* Content */}
-      <div className="relative w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-2 flex flex-col justify-center
+      <div className="relative z-20 w-full max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-2 flex flex-col justify-center
         min-h-[420px] sm:min-h-[480px] lg:min-h-[520px]"
       >
         <div className="w-full lg:max-w-[65%] xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6">
