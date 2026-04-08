@@ -185,7 +185,7 @@ export default function Ecommerce(props:any) {
       </Head>
 
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden lg:pt-[100px] pt-16">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         {/* <HeroSectionForAllPages
           heading="Best Ethereum Blockchain Development Company"

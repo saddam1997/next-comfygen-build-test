@@ -271,7 +271,7 @@ export default function Mobile(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden lg:pt-[110px] pt-16">
         <div className="">
 
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />
