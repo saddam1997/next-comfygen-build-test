@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -273,7 +273,9 @@ export default function Mobile(props: any) {
 
       <div className="overflow-hidden lg:pt-[100px]">
         <div className="">
-          <HeroSectionForAllPages
+
+          <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+          {/* <HeroSectionForAllPages
             heading="Hire Blockchain Developers for Secure and Scalable Blockchain App Development"
             subhead=""
             ptag="Comfygen is trusted partner to hire blockchain developers who build secure, scalable, and high-performance blockchain applications. Our experts developers deliver end-to-end blockchain app development services, including smart contract development, decentralized apps (DApps), cryptocurrency solutions, and enterprise blockchain platforms. With Comfygen, startups and enterprises get custom blockchain solutions tailored to their business goals, ensuring seamless integration, robust security, and long-term scalability in the fast-evolving blockchain ecosystem."
@@ -289,9 +291,9 @@ export default function Mobile(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             bgImage='https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp'
-          />
+          /> */}
         </div>
-        <Milestones />
+        {/* <Milestones /> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

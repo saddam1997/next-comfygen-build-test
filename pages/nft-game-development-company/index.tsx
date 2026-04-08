@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
@@ -156,8 +156,9 @@ export default function Ecommerce(props: any) {
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
       <Navbar />
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
+       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <InformationSection InfoSectionData={JSON_DATA?.InfoSection} />

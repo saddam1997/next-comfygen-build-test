@@ -1,4 +1,36 @@
 {
+
+  "Herosection": {
+    "heading": "Blockchain DApp Development Company",
+    "isHome": false,
+    "ptag": "Grow your business with Comfygen’s expert DApp development services. As a leading decentralized application development company, we build secure, scalable, and user-friendly blockchain applications for DeFi platforms, NFT marketplaces, metaverse projects, gaming, and enterprise use cases. Our blockchain experts deliver high-performance smart contracts and seamless Web3 integration to ensure reliability, scalability, and future-ready innovation.",
+    "ptag1": " ",
+    "listItems": [
+      "End-to-End Custom DApp Development",
+      "Secure & Scalable Blockchain Integration",
+      "Expertise in DeFi, NFT & Web3 Solutions",
+      "Cross-Platform Decentralized App Development"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Blockchain DApp Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "ModusOperandi": [
     {
       "num": "01",

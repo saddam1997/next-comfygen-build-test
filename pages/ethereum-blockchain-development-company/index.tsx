@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
 
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -186,8 +186,8 @@ export default function Ecommerce(props:any) {
 
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[100px]">
-      
-        <HeroSectionForAllPages
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        {/* <HeroSectionForAllPages
           heading="Best Ethereum Blockchain Development Company"
           ptag="Comfygen is a leading Ethereum blockchain development company delivering secure, scalable, and high-performance ethereum blockchain solutions for modern businesses. Our blockchain experts specialize in custom Ethereum DApps, smart contracts, NFT marketplaces, and enterprise-grade integrations, building future-ready applications that drive transparency, innovation, and business growth."
           li="Custom Ethereum DApp Development"
@@ -202,8 +202,8 @@ export default function Ecommerce(props:any) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
           bgImage="https://www.comfygen.com/comfygen-images/ethereum-blockchain-development-company/ethereum-blockchain-development-company.webp"
-        />
-        <Milestones/>
+        /> */}
+        {/* <Milestones/> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="space-y-2">

@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
 import Header from "../../components/Newcomponet/layout/Header"
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Navbar from "../../components/Navbar";
@@ -154,8 +154,8 @@ export default function Ecommerce(props: any) {
 
       <div className="overflow-hidden ">
 
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-
+        {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
+<HeroSectionNewCls Data={JSON_DATA.Herosection} />
      
 
         <Milestones />

@@ -1,108 +1,86 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
 import Navbar from "../../components/Navbar";
-import ReviewCard from "../../components/ReviewCard";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-import TechStacks from "../../components/TechStacks";
+import AppClone from "../../components/AppClone"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+import FeaturesNewSection from "../../components/FeaturesNewSection"
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 import Trending from "../../components/Trending";
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true }
 );
 
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const Features = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Features"),
-  { loading: loader, ssr: true }
-);
+import TechStacks from "../../components/TechStacks";
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const TeckStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { loading: loader, ssr: true }
-);
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-);
-
-const BusinessSolustion = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
-  { loading: loader, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
 const ClientStories = dynamic(
   () => import("../../components/ClientStories"),
   { ssr: true }
 );
 
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+import ReviewCard from "../../components/ReviewCard";
+
+
+const DeliverySection = dynamic(
+  () => import("../../components/Newcomponet/comman/DeliverySection"),
   { ssr: true }
 );
 
 
+import DeliveryCostTable from "./components/DeliveryCostTable";
+
+const BusinessSolustion = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
+  { ssr: true }
+);
+
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+ 
 
   const jsonLdData = [
 
@@ -160,67 +138,53 @@ export default function ClinicalApp(props: any) {
 
       }]
     },
+   {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is the cost of developing a courier delivery app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of courier delivery app development depends on app complexity, features, platform, and technology stack. At Comfygen, we provide customized solutions for startups and enterprises, ensuring affordable development without compromising on scalability, security, and advanced AI-powered features."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to develop a courier delivery app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Development time for a courier delivery app typically ranges from 8 to 16 weeks. Factors like feature set, integrations, and design complexity affect timelines. Our team follows agile development to deliver robust, scalable, and user-friendly apps efficiently."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Why Invest in Courier Delivery App Development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Investing in a courier delivery app helps businesses streamline logistics, reduce delivery time, and increase customer satisfaction. With AI-powered route optimization, real-time tracking, and secure payments, your business gains a competitive edge in the growing courier and logistics industry."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which technologies are used for on-demand courier app development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We use cutting-edge technologies including React Native, Flutter, Node.js, Python, AWS, Google Maps API, AI & IoT tools to build scalable, secure, and feature-rich courier delivery apps optimized for Android, iOS, and web platforms."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can the courier delivery app be scaled for large operations?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our courier delivery app development solutions are highly scalable. They can handle multiple branches, large fleets, high-volume deliveries, and advanced logistics operations while maintaining performance, real-time tracking, and a seamless user experience."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Does the app support real-time tracking and notifications?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Our on-demand courier apps come with GPS-enabled real-time parcel tracking, push notifications, and instant alerts for users, drivers, and admins, ensuring transparency, faster deliveries, and improved customer satisfaction."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can I integrate multiple payment options in the app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, our courier app development services include secure payment gateway integration, supporting multiple options like credit/debit cards, e-wallets, and online banking, ensuring smooth, safe, and convenient transactions for customers and businesses."
-        }
-
-
-      }]
+      "@type": "Question",
+      "name": "How much does courier delivery app development cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Courier delivery app development costs vary based on features, platforms, and complexity. A basic on-demand courier app typically starts from $5,000–$12,000, while a full-featured AI-powered courier platform can range from $25,000 to $50,000+. At Comfygen, we provide transparent, milestone-based pricing with no hidden charges. Contact us for a detailed cost estimate tailored to your specific requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to develop a courier delivery app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Development timelines depend on the app's scope and complexity. A standard courier app for both Android and iOS typically takes 10–14 weeks. An advanced platform with AI features, multi-branch support, and complex integrations can take 16–20 weeks. We follow agile sprints with weekly deliverables so you always know where your project stands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between an on-demand courier app and a standard courier app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A standard courier app handles pre-scheduled deliveries and order management. An on-demand courier delivery app is built for real-time, instant-booking use cases — where customers request a pickup and a driver is dispatched immediately, similar to how ride-hailing apps work. Comfygen builds both, and can combine both models in a single platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a white-label courier app that I can brand as my own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our white-label courier app development solutions give you a fully functional, pre-built courier platform that can be branded, customized, and launched under your company name. This significantly reduces development time and cost while giving you full ownership and flexibility to modify features as your business grows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you develop courier apps for both Android and iOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We develop native Android and iOS apps as well as cross-platform solutions using Flutter and React Native. Cross-platform development reduces cost and time while delivering near-native performance on both platforms. We help you choose the right approach based on your audience and budget."
+      }
     }
+  ]
+}
+
 
   ];
 
@@ -232,7 +196,7 @@ export default function ClinicalApp(props: any) {
         </title>
         <meta
           name="description"
-          content="Comfygen is the best courier delivery app development company. We provide custom courier delivery app development services with AI-powered, real-time tracking, automated delivery, and online payment features."
+          content=" Build a scalable courier delivery app with Comfygen. Custom courier app development services with AI dispatch, real-time tracking & secure payments. Get a free quote."
         />
 
         <meta name="keywords" content="On-demand Courier Delivery App Development, Parcel Delivery App Development, Last-mile Delivery App Development, Courier Dispatch & Tracking App Development, White-label Courier App Development Solutions, Courier App Development for Carriers, Haulage Courier App Development, Freight Forwarding Courier App Development, Courier Marketplace App Development, Courier App Development for Delivery Chains" />
@@ -245,7 +209,7 @@ export default function ClinicalApp(props: any) {
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reliable Courier Delivery App Development | Comfygen Technologies" />
-        <meta name="twitter:description" content="Build your own courier delivery app with Comfygen Technologies. Our best courier delivery apps offer real-time tracking, automated dispatch, secure payments, and easy-to-use features for fast, reliable deliveries." />
+        <meta name="twitter:description" content=" Build a scalable courier delivery app with Comfygen. Custom courier app development services with AI dispatch, real-time tracking & secure payments. Get a free quote." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/courier-delivery-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
@@ -255,7 +219,8 @@ export default function ClinicalApp(props: any) {
         <meta property="og:image:alt" content="Courier Delivery App Development" />
         <meta property="og:url" content="https://www.comfygen.com/courier-delivery-app-development" />
         <meta property="og:title" content="On-Demand Courier App Development Company" />
-        <meta property="og:description" content="Comfygen Technologies develops custom on-demand courier delivery apps for startups and businesses. Get secure, scalable, and user-friendly courier apps with AI-powered tracking and smooth delivery management." />
+        <meta property="og:description" content=" Build a scalable courier delivery app with Comfygen. Custom courier app development services with AI dispatch, real-time tracking & secure payments. Get a free quote.
+" />
 
 
 
@@ -267,170 +232,31 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       {/* <LazyLoad height={80} offset={100}> */}
-       <Navbar />
+      <Navbar />
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
-
-
-
-
-
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              We Offer Best Courier Delivery App Development Services for Courier Delivery Businesses
-            </h2>
-            <p className="text-base text-center font-normal">
-              As a trusted courier delivery app development company, Comfygen provides customized courier delivery app development services that help businesses improve delivery speed, real-time tracking, workflow automation, and overall customer satisfaction.
-            </p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
-      <AboutSection
-        title="About Company"
-        heading="Boost Your Courier Business with Our On-Demand Courier Delivery App Solution"
-        description1="Customers today require goods and packages to be delivered fast and correctly. A courier delivery application assists your business to fulfill these expectations besides optimizing operations. Regardless of whether you operate a local courier service, e-commerce deliveries, or logistics on the large scale, investing in a courier delivery app facilitates the process, decreases error rates, and enhances customer satisfaction."
-        description2="Comfygen Technologies is a trusted courier management software development firm that builds feature-rich logistics and courier apps to make it easier to manage parcels, dispatch package management, and offer real-time tracking. By developing its courier service app solutions, which are results-driven, your customers can experience hassle-free delivery experiences, and your business can grow faster."
-        imageSrc="https://www.comfygen.com/comfygen-images/courier-delivery-app-development/courier-delivery-app-development-about.webp"
-        link="/about-us"
-        linkText="Talk to Our Experts"
-        points={[]}
-      />
-
-
-
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <FeaturesNewSection FData={JSON_DATA.FData} />
+      {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
 
-      {/* portfoliodata */}
-      <section className="py-8">
-        <Portfolio
-          projects={JSON_DATA.portfoliodata}
-          heading="Our Courier App Development Portfolio"
-          description="We have developed high-quality courier and delivery apps for startups, logistics companies, and enterprise-level businesses around the world. Here are some of our featured projects that show how Comfygen transforms delivery operations with smooth, fast, and reliable mobile app solutions."
-        />
-      </section>
-
-
-      <CallToAction
-        heading="Looking for the Best Courier App Development Partner?"
-        text="We build scalable courier applications that make your deliveries smoother and smarter."
-        buttonText=" Request a Free Project Estimate"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Get in touch now."
-      />
-
-
-
-      <div className="py-8">
-        <Features
-          heading="AI-Driven Courier Delivery App Features That Drive Success for All Stakeholders"
-          description="The AI-based courier delivery application has smart features designed to cater to all users, such as customers, drivers, admins, as well as business owners. Such functions enhance the speed of delivery, decrease the amount of manual labor, increase the accuracy of tracking, and make the process of a courier more efficient and reliable."
-          featuresData={JSON_DATA.featuresData}
-          grid={3} />
-      </div>
-
-
-      <section className="py-10 mt-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-4 text-center">
-            <div className="flex flex-col justify-center text-center  mx-auto">
-              <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                Advanced Tech Integration for Courier Delivery App Development
-              </h2>
-              <p className="text-center text-white lg:w-10/12 mx-auto">
-                Using next-gen technology, we provide the best courier delivery app development solutions that enhance logistics operations, increase transparency, and provide businesses with scalable and secure courier app development services.
-              </p>
-            </div>
-            <div className="grid gap-8 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-              {JSON_DATA.Emerging.map((elem) => {
-                const { img, title, decs } = elem;
-                return (
-                  <div key={title} className={` relative`}>
-                    <div
-                      className={` flex justify-start gap-2 place-items-center relative`}
-                    >
-                      {/* <Image
-                                  src={img}
-                                  className="object-cover"
-                                  width={35}
-                                  height={50}
-                                  alt={title}
-                                /> */}
-                      <h3 className="text-2xl font-bold text-[#fff] text-start">
-                        {title}
-                      </h3>
-                    </div>
-
-                    <div className="mt-3">
-                      <p
-                        className="break-all text-white text-start "
-                        dangerouslySetInnerHTML={{ __html: decs }}
-                      ></p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white lg:py-16 py-10">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <div className="text-center space-y-4">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              End-to-End  Courier Delivery App Development Process
-            </h2>
-            <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-              Comfygen is one of the top custom courier delivery app development companies who undergo a well-structured and well-planned courier app development process to create high-quality courier delivery apps, which are smooth, fast, and reliable. Each step will be aimed at making sure that your app is completed in the due time and works well with every user.
-            </p>
-          </div>
-          <ProcessSec processSlides={JSON_DATA.Process} />
-        </div>
-      </section>
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
-      {/* <TeckStack
-        title="Technology Stack We Use for On-Demand Courier App Development"
-        description="At Comfygen, we utilize the latest and most reliable technologies to build on-demand courier delivery apps that are fast, scalable, and highly secure. Our advanced courier app development tech stack ensures smooth performance, real-time tracking, seamless payments, and exceptional user experience across Android, iOS, and web platforms."
-      /> */}
-
-      <WhyChoose
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
-
-            <Trending
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <Trending
         trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
-
-      <HireDeveloper
-        heading="Hire Online Courier Delivery App Developers"
-        text="Looking to launch your own courier delivery business? Hire expert courier delivery app developers from Comfygen to build a secure, scalable, and feature-rich mobile app tailored to your brand. Our skilled <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>mobile app developers</a> specialize in creating on-demand courier apps with AI-powered dispatching, real-time GPS tracking, multiple payment options, and white-label courier solutions for startups, enterprises, and courier delivery chains."
-        buttonText="Why Hire Our Delivery App Builder?"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Dedicated experts in custom courier delivery app development",
-          "AI-driven route optimization & smart courier dispatch system",
-          "Real-time courier & parcel tracking with GPS integration",
-          "End-to-end development from design to deployment"
-        ]}
-      />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
 
       <DeliverySection hideUrl="https://www.comfygen.com/courier-delivery-app-development" />
-<ClientStories />
+      <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
 
-      <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
       <BlogSection initialData={initialData} />
 
     </>
