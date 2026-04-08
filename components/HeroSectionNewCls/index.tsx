@@ -2,14 +2,14 @@ import Image from "next/image";
 import HeroClient from "./HeroClient";
 import StatsBanner from "./StatsBanner";
 
-export default function HeroSection() {
+export default function HeroSection({Data}:any) {
   return (
     <>
       <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
 
         {/*  Background Image (SSR + CLS SAFE) */}
         <Image
-          src="https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company.webp"
+          src={Data?.bgImage}
           alt="AI Development Company"
           fill
           priority
@@ -25,11 +25,11 @@ export default function HeroSection() {
           <div className="max-w-[600px] space-y-4">
 
             <h1 className="text-white text-3xl sm:text-4xl lg:text-3xl font-bold leading-tight">
-              AI-Powered Crypto Wallet Development Company
+              {Data?.heading}
             </h1>
 
             <p className="text-white text-sm sm:text-base min-h-[60px]">
-              Empower your users with next-generation crypto wallet development services that combine advanced blockchain security, seamless user experience, and multi-chain support. Whether you need a custom crypto wallet app, DeFi wallet, or NFT-compatible digital wallet, our blockchain development experts deliver tailor-made crypto wallet development solutions for startups and enterprises alike.
+              {Data?.ptag}
             </p>
 
             {/*  CLIENT CTA (only this part hydrates) */}

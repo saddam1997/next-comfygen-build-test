@@ -1,4 +1,40 @@
 {
+
+
+
+
+
+
+  "Herosection": {
+    "heading": "Best DeFi Development Service",
+    "isHome": false,
+    "ptag": "Comfygen is a leading DeFi development company delivering secure, scalable, and high-performance decentralized finance solutions for startups and enterprises. We specialize in building DeFi platforms including decentralized exchanges (DEXs), DeFi tokens, lending and borrowing protocols, and yield-based ecosystems. Our expert DeFi developers ensure robust smart contract security, seamless blockchain integration, and optimized architecture that removes intermediaries, reduces transaction costs, and gives users full control.",
+    "ptag1": "",
+    "listItems": [
+      "DeFi Lending & Borrowing Platform Development",
+      "Decentralized Exchange (DEX) Development",
+      "Yield Farming & Staking Solutions",
+      "Smart Contract Development & Auditing"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Best DeFi Development Service",
+    "bgImage": "https://www.comfygen.com/herosection/defi-development-company-hero-img.webp"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "ModusOperandi": [
     {
       "num": "01",

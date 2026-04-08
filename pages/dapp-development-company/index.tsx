@@ -4,6 +4,7 @@ import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AboutSection from "../../components/Newcomponet/SectionCompoent/AboutSection";
@@ -408,7 +409,9 @@ export default function Ecommerce(props: any) {
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
         <div className="">
-          <HeroSectionForAllPages
+   <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+
+          {/* <HeroSectionForAllPages
             heading="Blockchain DApp Development Company"
             ptag="Grow your business with Comfygen’s expert DApp development services. As a leading decentralized application development company, we build secure, scalable, and user-friendly blockchain applications for DeFi platforms, NFT marketplaces, metaverse projects, gaming, and enterprise use cases. Our blockchain experts deliver high-performance smart contracts and seamless Web3 integration to ensure reliability, scalability, and future-ready innovation."
             li="End-to-End Custom DApp Development"
@@ -422,7 +425,7 @@ export default function Ecommerce(props: any) {
             setTalkToExpertModal={setTalkToExpertModal}
             closeModal={closeModal}
             bgImage="https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp"
-          />
+          /> */}
         </div>
         <Milestones />
 

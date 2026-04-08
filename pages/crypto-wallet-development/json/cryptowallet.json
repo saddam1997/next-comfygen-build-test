@@ -1,7 +1,4 @@
 {
-
-
-
   "Herosection": {
     "heading": "AI-Powered Crypto Wallet Development Company",
     "isHome": false,
@@ -13,400 +10,589 @@
     "altTag": "AI-Powered Crypto Wallet Development Company",
     "bgImage": "https://www.comfygen.com/comfygen-images/crypto-wallet-development/crypto-development-company-hero1.webp"
   },
-
-
-
-
-
-
-
-
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Security Features of Crypto Wallet Development",
-      "desc": "Ensuring the security of digital assets is a top priority in cryptocurrency wallet development. Our solutions are built with advanced security protocols to protect your wallet and users’ assets from theft, fraud, and hacking attempts."
-    }
+  "ServicesData": {
+    "heading": "Our AI-Powered Crypto Wallet Development Services",
+    "description": "At Comfygen, we deliver a complete suite of AI-driven cryptocurrency wallet development services that combine the intelligence of Artificial Intelligence, the transparency of Blockchain, and the innovation of Web3. Our crypto wallet development solutions are designed to make digital asset management smarter, safer, and more efficient for businesses of all sizes.",
+    "services": [
+      {
+        "title": "Hot Wallet Development",
+        "subtitle": "",
+        "description": "Crypto web and mobile wallets are developed for frequent transactions. These cryptocurrency wallets give instant access, support multiple cryptocurrencies, and are integrated with real-time transaction monitoring to ensure speed and security for everyday crypto operations.",
+        "features": [
+          "Multi-currency and multi-chain support",
+          "Real-time transaction monitoring",
+          "Seamless integration with exchanges",
+          "Biometric login and two-factor authentication"
+        ]
+      },
+      {
+        "title": "Cold Wallet Development",
+        "subtitle": "",
+        "description": "Offline and hardware wallets that offer maximum protection for long-term storage of digital assets. Ideal for institutional investors and high-net-worth individuals, these wallets safeguard private keys from online threats and cyber attacks.",
+        "features": [
+          "Air-gapped storage",
+          "Private key protection",
+          "Multi-layer encryption",
+          "Ideal for institutional investors"
+        ]
+      },
+      {
+        "title": "Desktop Wallet Development",
+        "subtitle": "",
+        "description": "Safe and powerful wallets for Windows, macOS, and Linux. They support many types of cryptocurrencies, have strong security, and can store coins offline. These wallets are great for expert traders and businesses that handle many digital assets.",
+        "features": [
+          "Advanced security protocols",
+          "Multi-currency and multi-chain support",
+          "Offline backup and recovery",
+          "User-friendly interface"
+        ]
+      },
+      {
+        "title": "Web Wallet Development",
+        "subtitle": "",
+        "description": "Browser-based crypto wallets that allow easy access without software installation. They provide convenience for casual users and online platforms while maintaining strong security with SSL encryption, private key protection, and two-factor authentication.",
+        "features": [
+          "SSL encryption and secure session management",
+          "Easy access across devices with cloud synchronization",
+          "Two-factor authentication and private key protection",
+          "Real-time balances, transaction history, and notifications"
+        ]
+      },
+      {
+        "title": "Custodial & Non-Custodial Wallets",
+        "subtitle": "",
+        "description": "Development solutions for managed wallets, where the platform retains control of private keys, and non-custodial wallets, where users maintain complete ownership. This flexibility allows businesses to offer wallets that fit different user preferences and risk profiles.",
+        "features": [
+          "Flexible wallet management",
+          "Full control for non-custodial users, convenience for custodial users",
+          "Multi-signature approvals for sensitive transactions",
+          "Compliance-ready architecture supporting KYC/AML"
+        ]
+      },
+      {
+        "title": "Multi-Signature Wallet Development",
+        "subtitle": "",
+        "description": "This type of wallet requires multiple approvals for transactions, providing an extra layer of security. Perfect for corporate accounts, exchanges, and high-value wallets, these solutions prevent unauthorized access and reduce the risk of internal fraud.",
+        "features": [
+          "Enhanced security for corporate accounts",
+          "Reduces risk of unauthorized transactions",
+          "Supports collaborative approval workflows",
+          "Compatible with web, mobile, and desktop wallets"
+        ]
+      },
+      {
+        "title": "DeFi & NFT Wallet Integration",
+        "subtitle": "",
+        "description": "Enable seamless interaction with decentralized finance protocols, staking, yield farming, and <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/nft-marketplace-development-company'>NFT marketplaces</a>. Users can trade, stake, and manage assets directly from their wallets without relying on third-party platforms.",
+        "features": [
+          "Access staking, yield farming, and liquidity pools",
+          "Trade and manage NFTs within the wallet",
+          "Seamless integration with decentralized exchanges",
+          "Real-time portfolio tracking and notifications"
+        ]
+      },
+      {
+        "title": "Wallet Security & Compliance",
+        "subtitle": "",
+        "description": "Advanced encryption, biometric authentication, two-factor authentication, and regulatory-ready architecture ensure that wallets comply with global KYC/AML standards while providing enterprise-grade security.",
+        "features": [
+          "Multi-layer encryption to protect data and keys",
+          "Biometric authentication & two-factor authentication (2FA)",
+          "KYC/AML-ready architecture for regulatory compliance",
+          "Real-time monitoring and fraud detection"
+        ]
+      },
+      {
+        "title": "In-App Crypto Exchange & Token Swaps",
+        "subtitle": "",
+        "description": "Integrated exchange functionality allows users to swap tokens, buy/sell cryptocurrencies, and manage their portfolios without leaving the wallet, improving engagement and retention.",
+        "features": [
+          "Swap tokens and trade cryptocurrencies seamlessly",
+          "Integration with exchanges for liquidity",
+          "Real-time portfolio tracking",
+          "User-friendly interface for multiple assets"
+        ]
+      },
+      {
+        "title": "Custom White-Label Wallet Development",
+        "subtitle": "",
+        "description": "Fully branded and customizable wallet solutions tailored to your business. <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/white-label-crypto-exchange-development'>White-label crypto</a> wallets enable quick deployment with personalized design, features, and integration capabilities to match your brand identity.",
+        "features": [
+          "Personalized UI/UX to reflect brand identity",
+          "Rapid deployment with scalable architecture",
+          "Supports multi-currency, DeFi, and NFT features",
+          "Secure, regulatory-compliant, and future-ready"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Your Business Needs a Cryptocurrency Wallet",
+    "description1": "In today’s digital world, <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-600 font-semibold'>wallet development</a> is essential for every type of business because wallets are not only used for storing cryptocurrency but also a gateway to the decentralized world of finance. Whether you run a fintech startup, an e-commerce platform, or a blockchain-based business, a custom cryptocurrency wallet development service helps your business securely manage digital transactions, increase transparency, and build trust among users.",
+    "description2": "",
+    "description3": "",
+    "description4": "",
+    "points": [
+      "Secure Digital Asset Management",
+      "Faster & Borderless Payments",
+      "Integration with DeFi & Web3 Ecosystems",
+      "Brand Credibility & Innovation",
+      "New Revenue Opportunities"
+    ],
+    "imageSrc": "https://www.comfygen.com/comfygen-images/crypto-wallet-development/about-imge.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "CallToAction": {
+    "heading": "Ready to Launch Your Own AI-Powered Crypto Wallet?",
+    "text": "Take your digital asset business to the next level with Comfygen’s secure, intelligent, and scalable crypto wallet solutions.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "NFTBenefits": {
+    "heading": "Essential Security Features of Our Crypto Wallet Solutions",
+    "subheading": "Security is the backbone of every cryptocurrency wallet, and at Comfygen, we design wallets that protect digital assets with advance technology while providing a seamless user experience. Our AI-powered crypto wallets combine advanced encryption, blockchain transparency, and intelligent threat detection to ensure your funds are always safe.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Anti-DDoS Protection",
+        "desc": "Our cryprto wallets are fortified with AI-driven anti-DDoS mechanisms that actively detect and mitigate high-volume attack attempts in real time. This ensures that your crypto wallet remains fully operational and accessible, even under targeted disruption attempts, safeguarding platform reliability for your users."
+      },
+      {
+        "num": "02",
+        "title": "Multi-Signature Authentication",
+        "desc": "To enhance transaction security, we implement multi-signature authentication, requiring multiple cryptographic approvals from different parties to complete a transaction. This layered security ensures that even if one key is compromised, your digital assets remain fully protected."
+      },
+      {
+        "num": "03",
+        "title": "Data Encryption",
+        "desc": "We use state-of-the-art encryption protocols, including AES-256, to protect wallet data both in transit and at rest. Sensitive information, such as private keys and transaction history, stays confidential and secure, reducing the risk of breaches and maintaining asset integrity."
+      },
+      {
+        "num": "04",
+        "title": "Cold Storage Integration",
+        "desc": "Comfygen developed crypto wallets support cold storage solutions, keeping private keys offline and away from internet exposure. This method is critical for safeguarding large amounts of digital assets, providing a secure option for long-term storage."
+      },
+      {
+        "num": "05",
+        "title": "Two-Factor Authentication",
+        "desc": "We integrate two-factor authentication to add an extra layer of protection. Even if a password or primary credential is compromised, unauthorized access is prevented, ensuring that your wallet and funds remain safe."
+      },
+      {
+        "num": "06",
+        "title": "Regular Security Audits and Updates",
+        "desc": "Our team conducts regular AI-powered security audits and applies the latest updates to maintain peak security standards. Vulnerabilities are proactively detected and mitigated, ensuring your wallet remains resilient against emerging threats and cyberattacks."
+      }
+    ]
+  },
+  "AICrypto": {
+    "heading": "Smart Features of Our AI Crypto Wallet development solution",
+    "subheading": "At Comfygen, we design crypto wallets that combine artificial intelligence, blockchain technology, and advanced encryption to deliver a smarter, safer, and faster digital asset experience. Each feature of crypto wallet is built to enhance security, streamline transactions, and empower users with intelligent insights.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Multi-currency & Multi-chain Support",
+        "desc": "Seamlessly manage Bitcoin, Ethereum, BNB, Stablecoins, and custom tokens. Our crypto wallets support multiple blockchains, enabling users to store, send, and receive a wide range of digital assets from a single platform."
+      },
+      {
+        "num": "02",
+        "title": "Biometric & AI-based Authentication",
+        "desc": "Advanced Multi-layer security using facial recognition, fingerprints, and AI-driven identity verification."
+      },
+      {
+        "num": "03",
+        "title": "Non-Custodial Private Key Management",
+        "desc": "Empower users with full control and ownership of their private keys, ensuring maximum security and privacy."
+      },
+      {
+        "num": "04",
+        "title": "QR Code & NFC Payments",
+        "desc": "Make crypto transactions fast and convenient. Users can send and receive payments instantly by scanning QR codes or using NFC technology."
+      },
+      {
+        "num": "05",
+        "title": "Real-time Balance & Transaction History",
+        "desc": "Track all digital assets in real time. Users can view detailed transaction logs, monitor balances, and analyze spending patterns."
+      },
+      {
+        "num": "06",
+        "title": "In-App Crypto Swaps & Exchange Integration",
+        "desc": "Enable seamless asset swapping, trading, and portfolio management without leaving the wallet. Integration with <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/blog/best-crypto-exchange-in-india-compare-trade-grow-in-2025' >crypto exchanges</a> ensures smooth liquidity and trading."
+      },
+      {
+        "num": "07",
+        "title": "Push Notifications & Alerts",
+        "desc": "Keep users informed with instant notifications for transactions, deposits, withdrawals, and security updates."
+      },
+      {
+        "num": "08",
+        "title": "Multi-Signature Authentication",
+        "desc": "Strengthen security with multi-signature approvals, ensuring that large or sensitive transactions require multiple authorizations."
+      },
+      {
+        "num": "09",
+        "title": "DeFi & NFT Integration",
+        "desc": "Access <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/defi-development-company' >decentralized finance</a> protocols, staking opportunities, yield farming, and NFT management directly from the wallet. Users can interact with DeFi apps and NFT marketplaces securely and effortlessly."
+      },
+      {
+        "num": "10",
+        "title": "Customizable UI/UX",
+        "desc": "Tailor the wallet interface to reflect your brand identity while ensuring intuitive navigation and enhanced user engagement."
+      },
+      {
+        "num": "11",
+        "title": "Compliance & Regulatory Features",
+        "desc": "Built-in KYC/AML integration and compliance-ready architecture to meet global cryptocurrency regulations."
+      },
+      {
+        "num": "12",
+        "title": "Scalable Architecture",
+        "desc": "Designed to handle growing user bases and transaction volumes without compromising speed or security."
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Our Crypto Wallet Development Portfolio",
+    "description": "Comfygen, Crypto Wallet Developoment Company develop secure, scalable, and high-performance crypto wallets that focus to various industries. Our portfolio highlights custom crypto wallet development solution.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+        "title": "Aria Coin Cryptocurrency",
+        "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
+        "link": "/portfolio/aria-coin-details"
+      },
+      {
+        "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+        "title": "Great Wallet Application",
+        "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
+        "link": "/portfolio/great-wallet"
+      },
+      {
+        "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+        "title": "M7Coin Web Wallet",
+        "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
+        "link": "/portfolio/m7-coin"
+      }
+    ]
+  },
+  "NFTProcessData": {
+    "heading": "Our End-to-End AI-Driven Cryptocurrency Wallet Development Process",
+    "description": "At Comfygen, we follow a transparent, data-driven, and agile crypto wallet development process that blends Artificial Intelligence, Blockchain, and Web3 innovation to deliver intelligent and secure crypto wallet solutions. Every stage is meticulously planned to ensure reliability, scalability, and exceptional performance.",
+    "Process": [
+      {
+        "title": "Requirement Gathering & Planning",
+        "description": "We analyze your business goals, define key features, and create a roadmap for AI crypto wallet development."
+      },
+      {
+        "title": "UI/UX Wireframing & Prototyping",
+        "description": "User-friendly interfaces designed for intuitive navigation and seamless digital asset management."
+      },
+      {
+        "title": "AI Integration & Wallet Architecture",
+        "description": "Building strong architecture with AI-driven fraud detection, predictive analytics, and automation."
+      },
+      {
+        "title": "Smart Contract Development & Blockchain Integration",
+        "description": "Secure transactions powered by customized smart contracts across multiple blockchains."
+      },
+      {
+        "title": "Testing & Quality Assurance",
+        "description": "Rigorous functional, performance, and AI-powered security testing to eliminate risks before launch."
+      },
+      {
+        "title": "Deployment & Launch",
+        "description": "Smooth rollout with optimized performance on web, iOS, and Android platforms."
+      },
+      {
+        "title": "Post-launch Monitoring & Support",
+        "description": "Continuous updates, AI-driven bug detection, and 24/7 technical support."
+      }
+    ]
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
   ],
-  "consultancyData": [
-    {
-      "title": "End-to-End Encryption",
-      "desc": "Encrypts data from sender to receiver, ensuring that only authorized parties can access sensitive information."
-    },
-    {
-      "title": "Two-Factor Authentication",
-      "desc": "Adds an extra layer of protection by requiring users to verify their identity through two methods—typically a password and a verification code."
-    },
-    {
-      "title": "Biometric Authentication",
-      "desc": "Uses fingerprint or facial recognition to secure wallet access, providing an additional level of convenience and security."
-    },
-    {
-      "title": "Multi-Signature Technology",
-      "desc": "Requires multiple approvals for transactions, enhancing security for businesses and large-scale investors."
-    },
-    {
-      "title": "Cold Storage",
-      "desc": "Private keys are stored offline, ensuring that they are not vulnerable to online hacking attempts."
-    },
-    {
-      "title": "Secure Backup & Recovery Options",
-      "desc": "Offers encrypted backup solutions and a secure recovery process in case of lost or stolen data."
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
+        }
+      ]
     }
-  ],
-  "ModusOperandi": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Custom Token:",
-      "desc": "Users can manually add and manage tokens not automatically supported by the wallet."
-    },
-    {
-      "num": "02",
-      "bg": "#9A4ECC1A",
-      "title": "Address Book: ",
-      "desc": "Users can save and manage frequently used cryptocurrency addresses using the platform. "
-    },
-    {
-      "num": "03",
-      "bg": "#2390FB1A",
-      "title": "Referral :",
-      "desc": "Users can invite others and earn rewards through the referral feature."
-    },
-    {
-      "num": "04",
-      "bg": "#82AB101A",
-      "title": "Wallet Connect: ",
-      "desc": "Permits safe interaction and communication between a mobile cryptocurrency wallet and a web DApp."
-    },
-    {
-      "num": "05",
-      "bg": "#F45F391A",
-      "title": "NFT Collectables:",
-      "desc": "The wallet supports Non-Fungible Tokens, representing ownership of assets or physical items."
-    },
-    {
-      "num": "06",
-      "bg": "#FFA0001A",
-      "title": "2-Factor Authentication:",
-      "desc": "Provides an extra layer of security with one-time passwords or biometric authentication."
-    },
-    {
-      "num": "07",
-      "bg": "#F45F391A",
-      "title": "Multi Wallet Support:",
-      "desc": "Users can create and manage multiple wallets for specific purposes within the same application."
-    },
-    {
-      "num": "08",
-      "bg": "#FFA0001A",
-      "title": "Native Fiat Currency Selection:",
-      "desc": "Users can choose their native fiat currency and value for conversion."
-    },
-    {
-      "num": "09",
-      "bg": "#F5ECFA",
-      "title": "Ledger Wallet Integration:",
-      "desc": "The wallet is integrated with Ledger Hardware wallet for enhanced security."
-    },
-    {
-      "num": "10",
-      "bg": "#2390FB1A",
-      "title": "Watch-Only Wallet:",
-      "desc": "Users can monitor their crypto balance and transactions without private keys."
-    },
-    {
-      "num": "11",
-      "bg": "#F45F391A",
-      "title": "Crypto Staking:",
-      "desc": "Users can participate in various networks and earn rewards directly from the wallet."
-    },
-    {
-      "num": "12",
-      "bg": "#F2F7E8",
-      "title": "Export/Import Private Keys:",
-      "desc": "Users can securely export and import private keys for full control and accessibility of their digital assets."
-    }
-  ],
-
-  "servicesData": [
-    {
-      "title": "Hot Wallet Development",
-      "subtitle": "",
-      "description": "Crypto web and mobile wallets are developed for frequent transactions. These cryptocurrency wallets give instant access, support multiple cryptocurrencies, and are integrated with real-time transaction monitoring to ensure speed and security for everyday crypto operations.",
-      "features": [
-        "Multi-currency and multi-chain support",
-        "Real-time transaction monitoring",
-        "Seamless integration with exchanges",
-        "Biometric login and two-factor authentication"
-      ]
-    },
-    {
-      "title": "Cold Wallet Development",
-      "subtitle": "",
-      "description": "Offline and hardware wallets that offer maximum protection for long-term storage of digital assets. Ideal for institutional investors and high-net-worth individuals, these wallets safeguard private keys from online threats and cyber attacks.",
-      "features": [
-        "Air-gapped storage",
-        "Private key protection",
-        "Multi-layer encryption",
-        "Ideal for institutional investors"
-      ]
-    },
-    {
-      "title": "Desktop Wallet Development",
-      "subtitle": "",
-      "description": "Safe and powerful wallets for Windows, macOS, and Linux. They support many types of cryptocurrencies, have strong security, and can store coins offline. These wallets are great for expert traders and businesses that handle many digital assets.",
-      "features": [
-        "Advanced security protocols",
-        "Multi-currency and multi-chain support",
-        "Offline backup and recovery",
-        "User-friendly interface"
-      ]
-    },
-    {
-      "title": "Web Wallet Development",
-      "subtitle": "",
-      "description": "Browser-based crypto wallets that allow easy access without software installation. They provide convenience for casual users and online platforms while maintaining strong security with SSL encryption, private key protection, and two-factor authentication.",
-      "features": [
-        "SSL encryption and secure session management",
-        "Easy access across devices with cloud synchronization",
-        "Two-factor authentication and private key protection",
-        "Real-time balances, transaction history, and notifications"
-      ]
-    },
-    {
-      "title": "Custodial & Non-Custodial Wallets",
-      "subtitle": "",
-      "description": "Development solutions for managed wallets, where the platform retains control of private keys, and non-custodial wallets, where users maintain complete ownership. This flexibility allows businesses to offer wallets that fit different user preferences and risk profiles.",
-      "features": [
-        "Flexible wallet management",
-        "Full control for non-custodial users, convenience for custodial users",
-        "Multi-signature approvals for sensitive transactions",
-        "Compliance-ready architecture supporting KYC/AML"
-      ]
-    },
-    {
-      "title": "Multi-Signature Wallet Development",
-      "subtitle": "",
-      "description": "This type of wallet requires multiple approvals for transactions, providing an extra layer of security. Perfect for corporate accounts, exchanges, and high-value wallets, these solutions prevent unauthorized access and reduce the risk of internal fraud.",
-      "features": [
-        "Enhanced security for corporate accounts",
-        "Reduces risk of unauthorized transactions",
-        "Supports collaborative approval workflows",
-        "Compatible with web, mobile, and desktop wallets"
-      ]
-    },
-    {
-      "title": "DeFi & NFT Wallet Integration",
-      "subtitle": "",
-      "description": "Enable seamless interaction with decentralized finance protocols, staking, yield farming, and <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/nft-marketplace-development-company' >NFT marketplaces</a>. Users can trade, stake, and manage assets directly from their wallets without relying on third-party platforms.",
-      "features": [
-        "Access staking, yield farming, and liquidity pools",
-        "Trade and manage NFTs within the wallet",
-        "Seamless integration with decentralized exchanges",
-        "Real-time portfolio tracking and notifications"
-      ]
-    },
-    {
-      "title": "Wallet Security & Compliance",
-      "subtitle": "",
-      "description": "Advanced encryption, biometric authentication, two-factor authentication, and regulatory-ready architecture ensure that wallets comply with global KYC/AML standards while providing enterprise-grade security.",
-      "features": [
-        "Multi-layer encryption to protect data and keys",
-        "Biometric authentication & two-factor authentication (2FA)",
-        "KYC/AML-ready architecture for regulatory compliance",
-        "Real-time monitoring and fraud detection"
-      ]
-    },
-    {
-      "title": "In-App Crypto Exchange & Token Swaps",
-      "subtitle": "",
-      "description": "Integrated exchange functionality allows users to swap tokens, buy/sell cryptocurrencies, and manage their portfolios without leaving the wallet, improving engagement and retention.",
-      "features": [
-        "Swap tokens and trade cryptocurrencies seamlessly",
-        "Integration with exchanges for liquidity",
-        "Real-time portfolio tracking",
-        "User-friendly interface for multiple assets"
-      ]
-    },
-    {
-      "title": "Custom White-Label Wallet Development",
-      "subtitle": "",
-      "description": "Fully branded and customizable wallet solutions tailored to your business. <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/white-label-crypto-exchange-development' >White-label crypto</a> wallets enable quick deployment with personalized design, features, and integration capabilities to match your brand identity.",
-      "features": [
-        "Personalized UI/UX to reflect brand identity",
-        "Rapid deployment with scalable architecture",
-        "Supports multi-currency, DeFi, and NFT features",
-        "Secure, regulatory-compliant, and future-ready"
-      ]
-    }
-  ],
-
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Hot Wallets (Web & Mobile)",
-      "decs": "Accessible anytime via web or mobile devices, hot wallets are perfect for frequent trading and transactions. They support multiple currencies, real-time transaction tracking, and easy integration with exchanges. Ideal for crypto platforms, trading apps, and fintech services."
-    },
-    {
-      "num": "02",
-      "title": "Cold Wallets (Hardware & Offline)",
-      "decs": "Offline wallets provide the highest level of security for long-term storage of digital assets. They are protected from online threats, phishing attacks, and hacking attempts, making them essential for institutional investors, high-net-worth users, and enterprise solutions."
-    },
-    {
-      "num": "03",
-      "title": "Desktop Wallets (Windows, macOS, Linux)",
-      "decs": "Installed directly on computers, desktop wallets combine security and control with user-friendly interfaces. They offer advanced features such as multi-signature approvals, encrypted storage, and offline backup options for serious crypto users."
-    },
-    {
-      "num": "04",
-      "title": "Web Wallets",
-      "decs": "Browser-based wallets allow instant access without installing software, making them convenient for casual users and eCommerce integration. They can include features like real-time balances, in-browser transactions, and wallet-to-wallet transfers."
-    },
-    {
-      "num": "05",
-      "title": "Custodial & Non-Custodial Wallets",
-      "decs": "Custodial wallets are managed by the platform, simplifying user experience but requiring trust in the provider. Non-custodial wallets give users full control over private keys, enhancing security and ownership. We build both types to suit different business models."
-    },
-    {
-      "num": "06",
-      "title": "Multi-signature Wallets",
-      "decs": "These wallets require multiple approvals for transactions, adding a critical layer of security. Perfect for corporate wallets, crypto exchanges, or high-value accounts where authorization by multiple stakeholders is required."
-    },
-    {
-      "num": "07",
-      "title": "DeFi & NFT Wallets",
-      "decs": "Fully integrated wallets that allow users to interact with decentralized finance platforms, stake tokens, participate in yield farming, and manage NFT assets. They combine flexibility, security, and seamless access to the growing DeFi and NFT ecosystem."
-    }
-  ],
-
-  "FutureDriven": [
-    {
-      "title": "Increased Revenue Streams",
-      "desc": "By offering wallet services, businesses can generate new revenue models, including transaction fees, staking fees, and premium features."
-    },
-    {
-      "title": "User Retention & Engagement",
-      "desc": "Crypto wallets provide a platform for continuous user interaction, promoting engagement through features like transaction history, portfolio tracking, and social sharing."
-    },
-    {
-      "title": "Improved Brand Loyalty",
-      "desc": "By delivering secure, reliable, and innovative wallet solutions, businesses build trust with users, encouraging long-term loyalty."
-    },
-    {
-      "title": "Access to Global Markets",
-      "desc": "Cryptocurrency wallets offer cross-border transaction capabilities, giving businesses access to international markets and reducing transaction barriers."
-    },
-    {
-      "title": "Competitive Advantage",
-      "desc": "Offering advanced wallet solutions can position your business as a leader in the evolving crypto space, setting you apart from competitors."
-    },
-    {
-      "title": "Increased Investor Confidence",
-      "desc": "A secure, feature-rich crypto wallet demonstrates a commitment to user safety, making it more likely to attract investors and partners."
-    }
-  ],
-
-  "FutureDriven2": [
-    {
-      "title": "Multi-currency & Multi-chain Support",
-      "desc": "Seamlessly manage Bitcoin, Ethereum, BNB, Stablecoins, and custom tokens. Our crypto wallets support multiple blockchains, enabling users to store, send, and receive a wide range of digital assets from a single platform."
-    },
-    {
-      "title": "Biometric & AI-based Authentication",
-      "desc": "Advanced Multi-layer security using facial recognition, fingerprints, and AI-driven identity verification."
-    },
-    {
-      "title": "Non-Custodial Private Key Management",
-      "desc": "Empower users with full control and ownership of their private keys, ensuring maximum security and privacy."
-    },
-    {
-      "title": "QR Code & NFC Payments",
-      "desc": "Make crypto transactions fast and convenient. Users can send and receive payments instantly by scanning QR codes or using NFC technology."
-    },
-    {
-      "title": "Real-time Balance & Transaction History",
-      "desc": "Track all digital assets in real time. Users can view detailed transaction logs, monitor balances, and analyze spending patterns."
-    },
-    {
-      "title": "In-App Crypto Swaps & Exchange Integration",
-      "desc": "Enable seamless asset swapping, trading, and portfolio management without leaving the wallet. Integration with <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/blog/best-crypto-exchange-in-india-compare-trade-grow-in-2025' >crypto exchanges</a> ensures smooth liquidity and trading."
-    },
-    {
-      "title": "Push Notifications & Alerts",
-      "desc": "Keep users informed with instant notifications for transactions, deposits, withdrawals, and security updates."
-    },
-    {
-      "title": "Multi-Signature Authentication",
-      "desc": "Strengthen security with multi-signature approvals, ensuring that large or sensitive transactions require multiple authorizations."
-    },
-    {
-      "title": "DeFi & NFT Integration",
-      "desc": "Access <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/defi-development-company' >decentralized finance</a> protocols, staking opportunities, yield farming, and NFT management directly from the wallet. Users can interact with DeFi apps and NFT marketplaces securely and effortlessly."
-    },
-    {
-      "title": "Customizable UI/UX",
-      "desc": "Tailor the wallet interface to reflect your brand identity while ensuring intuitive navigation and enhanced user engagement."
-    },
-    {
-      "title": "Compliance & Regulatory Features",
-      "desc": "Built-in KYC/AML integration and compliance-ready architecture to meet global cryptocurrency regulations."
-    },
-    {
-      "title": "Scalable Architecture",
-      "desc": "Designed to handle growing user bases and transaction volumes without compromising speed or security."
-    }
-  ],
-
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-      "title": "Aria Coin Cryptocurrency",
-      "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
-      "link": "/portfolio/aria-coin-details"
-    },
-    {
-      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-      "title": "Great Wallet Application",
-      "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
-      "link": "/portfolio/great-wallet"
-    },
-    {
-      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-      "title": "M7Coin Web Wallet",
-      "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
-      "link": "/portfolio/m7-coin"
-    }
-  ],
-
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Crypto Exchanges",
-      "description": "Build crypto wallets that integrate smoothly with trading platforms, supporting multiple <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/cryptocurrency-exchange-development' >cryptocurrency exchanges</a>, instant transactions, and advanced portfolio management for both retail and institutional traders."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Fintech & Banking",
-      "description": "Enable banks, <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/portfolio/blockchain-based-fintech-app' >fintech startups</a>, and financial institutions to offer crypto services with secure wallet infrastructure, regulatory compliance, and features like <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/crypto-token-development-company' >Crypto token</a> swaps, staking, and multi-currency support."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Gaming & Metaverse",
-      "description": "Provide wallets tailored for gaming ecosystems, virtual currencies, and NFT assets, ensuring fast, secure transactions and easy asset management within <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/metaverse-development' >metaverse-developed</a> platforms."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "eCommerce & Retail",
-      "description": "Integrate crypto wallets for digital payments, loyalty programs, and tokenized rewards, allowing merchants and customers to transact effortlessly while expanding adoption of digital assets."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Healthcare & Supply Chain",
-      "description": "Ensure secure management of digital tokens for patient data, supply chain payments, and asset tracking, providing transparency, traceability, and compliance with industry standards."
-    }
-  ],
-
+  },
   "pageData": {
     "title": "Why Choose Comfygen as an AI-Powered Crypto Wallet Development Company?",
     "description": "At Comfygen, we specialize in developing secure, user-friendly, and feature-rich cryptocurrency wallets. With extensive experience, technical expertise, and a customer-first approach, we’re a trusted partner for blockchain wallet development. Here's why businesses choose us:",
@@ -431,7 +617,6 @@
         "title": "95% Proven Customer Satisfaction Rate",
         "description": "With a 95% customer satisfaction rate, we consistently exceed client expectations by delivering customized, high-quality crypto wallet solutions that solve real-world business challenges."
       },
-
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
         "title": "400+ Projects Delivered",
@@ -449,122 +634,117 @@
       }
     ]
   },
-
-  "Modus": {
-    "title": "Top-Notch Crypto Wallet Software Features ",
-    "desc": ""
+  "HireNFTDeveloper": {
+    "heading": "Hire AI-Powered Cryptocurrency Wallet Developers",
+    "text": "Looking to build a next-generation cryptocurrency wallet powered by artificial intelligence? Hire AI crypto wallet developers from Comfygen and bring intelligence, automation, and security into your digital asset solutions. ",
+    "text1": "",
+    "text2": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Flexible Hiring Models ",
+      "AI Expertise Across Platforms",
+      "Faster Time-to-Market ",
+      "Cost-Effective Solutions",
+      "Direct Developer Access"
+    ]
   },
-  "LaunchSteps": [
-    {
-      "num": "01",
-      "title": "Assessment",
-      "desc": "The first step in our process is conducting an initial assessment, which involves meeting with the client to gather necessary information and outline a course of action for the project."
-    },
-    {
-      "num": "02",
-      "title": "Discovery of Solution",
-      "desc": "If a proprietary solution is deemed the best option, we move into the Discovery and Architecture phase. During this phase, we aim to build a comprehensive understanding of the solution, identify required custom features and functionalities, and design an optimal solution architecture."
-    },
-    {
-      "num": "03",
-      "title": "Excellence in Smart contract",
-      "desc": "Smart contract development is a crucial aspect of our process, as it powers any special features and functionalities required for the proprietary solution. Our team excels at smart contract development and prioritizes security by working with leading auditing firms."
-    },
-    {
-      "num": "04",
-      "title": "Cooperation within Development",
-      "desc": "Backend and frontend development is where the bulk of the product takes shape. The backend infrastructure handles interactions between the blockchain and frontend, as well as smart contract execution. The frontend determines how users interact with the solution"
-    },
-    {
-      "num": "05",
-      "title": "UI/UX Design",
-      "desc": "Our dedicated Web3 UX and UI design team ensures that the wallet provides a smooth user experience and interface.      "
-    },
-    {
-      "num": "06",
-      "title": "Testing",
-      "desc": "Rigorous testing is conducted before deployment to ensure the wallet functions as intended and is free of bugs and potential exploits."
-    },
-    {
-      "num": "07",
-      "title": "Final Publishing",
-      "desc": "Create and test a cryptocurrency wallet, make sure it's secure, get rid of any problems, offer support materials and translations, and plan your marketing. Create a developer account if necessary, then publish once authorized. Assist continuously, keep an eye on security, and safeguard money."
-    }
-  ],
-  "myList2": [
-    "Centralized exchanges offer pairs of fiat to cryptocurrency or crypto to cryptocurrency trading. Binance and Coinbase are two options to consider.",
-    "An exchange that uses intelligent contracts is referred to as a decentralized exchange and offers crypto-to-crypto trading pairs. A few examples include Uniswap, 0x, and Kybernet.",
-    "A combination of CEXs and DEXs allows traders to exchange fiat for crypto and maintain their private keys.",
-    "Get a free 30-minute consultation from our cryptocurrency exchange development team!"
-  ],
-  "myList1": [
-    "Instantaneous transactions",
-    "Scalable in nature",
-    "Testing has been rigorously conducted before deployment",
-    "Features of customization",
-    "Onboarding of projects is faster",
-    "Integrating crypto wallets with crypto exchanges",
-    "Multi-platform performance without glitches",
-    "Crypto wallet operation is user-friendly"
-  ],
-  "TypesCrypto": [
-    {
-      "num": "01",
-      "title": "A Wallet For Coinbase",
-      "desc": "It supports 500 cryptocurrency assets and is easy to navigate for beginners."
-    },
-    {
-      "num": "02",
-      "title": "BNB",
-      "desc": "More than 150 cryptos are available on this cross-compatible platform."
-    },
-    {
-      "num": "03",
-      "title": "The Electrum",
-      "desc": "It is best to choose a Bitcoin wallet that is highly customizable and offers greater security."
-    },
-    {
-      "num": "04",
-      "title": "The Mycelium",
-      "desc": "A secure crypto wallet that provides advanced transaction details and focuses on security."
-    }
-  ],
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Reasons to Choose our Crypto Wallet App Solution",
-      "desc": "Comfygen offers impeccable Cryptocurrency Wallet Development Services with its financial and technical expertise. In trading investments, we strive for superior outcomes. Cryptocurrency wallet apps created by us are highly secure.",
-      "url": "/contact-us",
-      "btn": "Meet Now"
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "01",
-      "title": "What Is A Crypto Wallet? What Is The Cost Of Developing A Crypto Wallet?",
-      "desc": "Our experts are capable of developing cryptocurrency exchange platforms that can be integrated seamlessly. As a result, virtual transactions can be made without error to prevent fraudulent activities."
-    },
-    {
-      "num": "02",
-      "title": "We Are A Professional Team",
-      "desc": "We Have a team of skilled Cryptocurrency wallet developers who are aware of the newest trends in the industry. Cryptocurrency wallets are fast, secure, and robust and have been used by several businesses in the past."
-    },
-    {
-      "num": "03",
-      "title": "A Quick Response",
-      "desc": "Our cryptocurrency wallet developers are talented and enthusiastic. All issues are resolved quickly, and our response time is speedy. In this way, businesses can achieve their goals more quickly."
-    },
-    {
-      "num": "04",
-      "title": "A Reliable And Timely Service",
-      "desc": "We Timely delivery of projects is essential. With the help of our cryptocurrency developers, we deliver excellent results in less time."
-    },
-    {
-      "num": "05",
-      "title": "Excellence In Technical Skills",
-      "desc": "Our Cryptocurrency Wallet App Development Company developers are skilled. As part of their app development services, they stay up-to-date on all the latest trends in Bitcoin wallet apps. This allows the company to remain a step ahead of its competition."
-    }
-  ],
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "01",
@@ -642,91 +822,155 @@
       "desc": "Add TOTP-based 2FA to cryptocurrency wallets to increase security. Access security settings, select TOTP-based 2FA, scan the QR code, and enter the code to validate in order to activate. Support for multiple signatures, hardware wallet integration, safe coding, and frequent audits are further security measures."
     }
   ],
-  "Hire": [
+  "jsonLdData": [
     {
-      "num": "1",
-      "title": "Hire Cryptowallet Developers for Your Business with Comfygen",
-      "desc": " Do you want an advanced cryptowallet software? Well, this is the right platform to discuss, because Comfygen has the most skilled and experienced decentralized software developers, who can build an agile solution for businesses. They can work on all the blockchain network; such as Ethereum, TRON, Crypto, DeFi, etc. So let’s connect and have a conversation to know which can be the best solution for your firm.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "A range of hiring alternatives to suit diverse requirements and tastes ",
-    "Availability of professional advice to guarantee the finest hiring choices are made",
-    "Constant assistance offered to resolve any questions or problems that may come up",
-    "Customized solutions to satisfy certain needs and objectives",
-    "An extensive and dependable support network to help during the employment process"
-  ],
-  "LatestTechno": [
-    {
-      "num": "01",
-      "title": "Decentralized Wallets: ",
-      "decs": "Integrating Decentralised wallets with DEXes, lending platforms, and other dApps can improve security, functionality, and Privacy of cryptowallet software. "
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI-Based Crypto Wallet Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen specializes in AI-based crypto wallet development, delivering secure, intelligent, and scalable blockchain wallet solutions. Our services include AI-powered transaction monitoring, real-time fraud detection, behavioral analytics, DeFi wallet integration, multi-chain support, biometric security, and custom white-label solutions for startups, enterprises, and fintech companies worldwide.",
+      "url": "https://www.comfygen.com/crypto-wallet-development ",
+      "mainEntityOfPage": "https://www.comfygen.com/crypto-wallet-development ",
+      "areaServed": "Global",
+      "serviceType": [
+        "AI Crypto Wallet Development",
+        "Cryptocurrency Wallet Development",
+        "Crypto Wallet Development",
+        "Smart Wallet Analytics",
+        "Fraud Detection with AI",
+        "Custom AI Crypto Wallet Solutions",
+        "Blockchain Wallet Security Solutions",
+        "DeFi Wallet Integration",
+        "Multi-Chain Crypto Wallets",
+        "AI-Driven Transaction Monitoring",
+        "Biometric Authentication Wallets",
+        "Predictive Analytics for Crypto Wallets",
+        "Crypto Wallet App Development",
+        "AI in Blockchain Security",
+        "White-Label Crypto Wallet Solutions",
+        "Crypto Wallet for Fintech Startups",
+        "AI-Based Cold Wallet and Hot Wallet Solutions"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
     {
-      "num": "02",
-      "title": "Multi-signature Wallets:",
-      "decs": "Using multiple signatures to authorise transaction in multi signature wallets makes it difficult for hackers to steal funds. Moreover, these wallets can enhance user privacy and can be integrated with other cryptocurrency applications."
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/ "
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Wallet Development Company",
+          "item": "https://www.comfygen.com/wallet-development-company  "
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI Cryptocurrency wallet Development Company",
+          "item": "https://www.comfygen.com/crypto-wallet-development  "
+        }
+      ]
     },
     {
-      "num": "03",
-      "title": "Hardware Wallet Integration:",
-      "decs": "Security and privacy are improved when hardware wallets are integrated with cryptocurrency wallet software. This is due to the fact that hardware wallets lower the possibility of theft and hacking by storing private keys offline. Additionally, hardware wallets protect users' privacy by enabling transaction signature without disclosing the private keys."
-    },
-    {
-      "num": "04",
-      "title": "Biometric Authentication:",
-      "decs": "Software for cryptocurrency wallets is more convenient and secure when biometric verification is used. Unlike conventional password-based techniques, it is more difficult to hack, thus users don't have to remember or write complex passwords. This makes it easier for consumers to access their wallets and lowers the chance of fraud."
-    },
-    {
-      "num": "05",
-      "title": "Off-chain Transactions: ",
-      "decs": "Improving cryptocurrency wallet software can be achieved through off-chain transaxctions. Atomic swaps, payment channel, and sidechains are some ways to integrate off-chain transactions, which can enhance scalability, performance, security, privacy, and functionality."
-    },
-    {
-      "num": "06",
-      "title": "Cold Storage Solutions:",
-      "decs": "Cold storage solutions enhance the security of cryptocurrency wallet software by storing cryptocurrency keys offline. This ensures that hackers cannot access the keys, even if they manage to hack into the wallet software. Hardware wallets and paper wallets are among the cryptocurrency wallet software that incorporate cold storage solutions."
-    },
-    {
-      "num": "07",
-      "title": "Smart Contract Wallets:",
-      "decs": "By incorporating self-executing contracts, boosting security, expanding transaction flexibility, and simplifying the user interface, smart contract wallets elevate bitcoin applications. They open the door to a cryptocurrency environment that is more adaptable, safe, and user-friendly."
-    },
-    {
-      "num": "08",
-      "title": "Web and Mobile Wallet Integration:",
-      "decs": "Benefits of integrating web and mobile wallets with cryptocurrency software include simplified trading and exchange of different cryptocurrencies, faster and more affordable transactions through off-chain processing, improved security with 2FA and biometric authentication, and on-the-go financial management"
-    },
-    {
-      "num": "09",
-      "title": "Improved Transaction Privacy:",
-      "decs": "Protecting user identity and financial information, stopping price manipulation, and enabling cutting-edge use cases like privacy-preserving smart contracts and micropayments are just a few advantages of improving transaction privacy in bitcoin wallets."
-    },
-    {
-      "num": "09",
-      "title": "Integration with DeFi Protocols: ",
-      "decs": "Direct access to financial services is provided by DeFi protocols, and wallets for cryptocurrencies can be integrated with them for increased efficacy and cost savings. Users can now access cutting-edge use cases in the newest financial services thanks to this."
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Cost-effective software development solutions:",
-      "decs": "We provide low-cost software development solutions without sacrificing effectiveness. To get the most out of your investment, our staff places a high priority on both economy and quality. You may rely on us to provide excellent solutions that are reasonably priced."
-    },
-    {
-      "num": "02",
-      "title": "High-quality development:",
-      "decs": "Our skilled developers deliver top-notch software solutions with a strong commitment to quality, industry best practices, and cutting-edge technologies. We guarantee our software will exceed your expectations and drive your business forward. Trust us for high-quality solutions."
-    },
-    {
-      "num": "03",
-      "title": "Customized solutions:",
-      "decs": "Our software development services are tailored to your unique project needs. We collaborate closely with you to understand your requirements and deliver a solution that exceeds expectations. Trust our dedicated team to provide customized attention for your success."
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an AI-based cryptocurrency wallet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI-based cryptocurrency wallet is a digital wallet that uses artificial intelligence to enhance security, improve transaction efficiency, provide predictive analytics, and enable personalized features. It can detect fraudulent activity in real time, automate backups, and offer insights into user spending or investment patterns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does AI improve the security of crypto wallets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI enhances wallet security by detecting suspicious activity through behavioral analysis, identifying phishing or hacking attempts, enabling biometric authentication, and learning from patterns to block unauthorized transactions proactively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What features are included in your AI crypto wallet development services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our AI crypto wallet development services include features like real-time fraud detection, smart transaction alerts, predictive analytics, biometric authentication, multi-chain and DeFi support, white-label customization, and in-app AI chat assistant for user support."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who can benefit from AI-powered crypto wallet solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Startups, fintech companies, crypto exchanges, DeFi platforms, and enterprises looking to offer secure, scalable, and intelligent wallet solutions can benefit from AI-powered crypto wallet development."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer white-label AI crypto wallet solutions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide fully customizable white-label AI crypto wallet solutions that can be branded and tailored to your business requirements. This allows you to launch your product faster with reduced development time and cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is multi-chain support available in your AI wallets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Our AI-powered wallets support multiple blockchains such as Ethereum, Binance Smart Chain, Solana, Polygon, and more, making it easy for users to manage assets across various networks from a single interface."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies are used in AI crypto wallet development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use a combination of blockchain technologies (like Solidity, Rust, Web3), AI/ML frameworks (like TensorFlow, PyTorch), encryption standards, biometric authentication APIs, and cloud infrastructure to build advanced crypto wallets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to develop an AI-based cryptocurrency wallet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Development time can vary depending on features, integrations, and customization. Typically, a fully functional AI-powered crypto wallet can take between 4 to 12 weeks from planning to deployment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to build an AI cryptocurrency wallet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of developing an AI-based crypto wallet depends on the complexity, features, tech stack, and customization required. We offer custom quotes after understanding your business goals and technical requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose Comfygen Technologies for AI crypto wallet development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfygen Technologies combines expertise in AI and blockchain to deliver intelligent, secure, and scalable crypto wallet solutions. With experience in building multi-chain, white-label, and DeFi-integrated wallets, we help you stay ahead in the evolving Web3 ecosystem."
+          }
+        }
+      ]
     }
   ]
-
-  
 }

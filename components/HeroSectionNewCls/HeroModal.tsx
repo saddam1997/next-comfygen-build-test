@@ -37,7 +37,7 @@ export default function TalkToExpertModal({
                         {/* LEFT IMAGE */}
                         <div className="relative hidden lg:block w-[45%] h-full">
                             <Image
-                                src="https://www.comfygen.com/comfygen-images/home/contect-form.webp"
+                                src="https://www.comfygen.com/comfygen-images/home/form.webp"
                                 alt="Contact"
                                 fill
                                 className="object-cover"

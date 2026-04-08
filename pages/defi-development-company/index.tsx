@@ -15,7 +15,7 @@ import Head from "next/head";
 import JSON_DATA from "./json/defidevelopment.json";
 import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import dynamic from "next/dynamic";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -345,7 +345,9 @@ export default function Ecommerce(props) {
 
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
+
+           <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        {/* <HeroSectionForAllPages
           heading="Best DeFi Development Service"
           ptag="Comfygen is a leading DeFi development company delivering secure, scalable, and high-performance decentralized finance solutions for startups and enterprises. We specialize in building DeFi platforms including decentralized exchanges (DEXs), DeFi tokens, lending and borrowing protocols, and yield-based ecosystems. Our expert DeFi developers ensure robust smart contract security, seamless blockchain integration, and optimized architecture that removes intermediaries, reduces transaction costs, and gives users full control."
           li="DeFi Lending & Borrowing Platform Development"
@@ -359,9 +361,9 @@ export default function Ecommerce(props) {
           setTalkToExpertModal={setTalkToExpertModal}
           closeModal={closeModal}
           bgImage='https://www.comfygen.com/herosection/defi-development-company-hero-img.webp'
-        />
+        /> */}
 
-        <Milestones/>
+        {/* <Milestones/> */}
 
 
                 <section className="lg:py-16 py-10 bg-[#F5F5F9]">

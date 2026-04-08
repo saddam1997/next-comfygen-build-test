@@ -64,8 +64,8 @@ const AboutComponent = ({ AboutData }) => {
                     {AboutData.points.map((point: any, index: any) => (
                       <li key={index} className="flex items-start gap-2">
                         <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
-                        <span className="xl:text-base text-sm text-black">
-                          {parseHTMLString(point)}
+                        <span className="xl:text-base text-sm text-black" dangerouslySetInnerHTML={{ __html: point }}>
+                         
                         </span>
                       </li>
                     ))}
