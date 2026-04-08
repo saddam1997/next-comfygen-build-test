@@ -67,11 +67,11 @@ export default function BlogSection(props:any) {
                     </div>
 
                     {/* CATEGORY */}
-                    <div className="flex justify-between items-center">
+                    {/* <div className="flex justify-between items-center">
                       <button className="text-sm border border-black rounded-full px-4 py-1">
                         Categories
                       </button>
-                    </div>
+                    </div> */}
 
                     {/* CONTENT */}
                     <div className="space-y-3">
