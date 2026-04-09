@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
 
-      <div className={`${poppins.className} max-w-[1600px] w-full mx-auto overflow-hidden` } >
+      <div className={`${poppins.className} overflow-hidden` } >
         <MainLayout>
           {!hideSchema && <GlobalSchema />}
           <Component {...pageProps} />

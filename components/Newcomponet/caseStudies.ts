@@ -20,7 +20,7 @@ export const caseStudies = [
     logo: "🤖",
     logoText: "NeuralOps",
     title: "NeuralOps",
-   description: "We deliver secure and compliant <a href='https://www.comfygen.com/healthcare-app-development'>healthcare mobile apps</a> and <a href='https://www.comfygen.com/medicine-app-development' class='text-blue-600 font-semibold'>medical software development solutions</a> including telemedicine apps, EHR systems, fitness apps, and patient management platforms.",
+   description: "We deliver secure and compliant <a href='https://www.comfygen.com/healthcare-app-development'>healthcare mobile apps</a> and medical software development solutions including telemedicine apps, EHR systems, fitness apps, and patient management platforms.",
     link: "/healthcare-app-development",
     stat1: { value: "500+", label: "Enterprises" },
     stat2: { value: "60%", label: "Cost Reduction" },

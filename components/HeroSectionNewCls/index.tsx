@@ -9,15 +9,30 @@ export default function HeroSection({ Data }: any) {
     <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
       
       {/* Hero Background */}
-      <Image
+
+   <div className="absolute inset-0 hidden lg:block">
+        <Image
+          src={Data.bgImage}
+          alt={Data.imageAlt}
+          fill
+         
+          fetchPriority="high"
+          quality={60}
+          className="object-cover object-center hidden lg:block"
+        />
+      </div>
+
+
+
+      {/* <Image
         src={Data?.bgImage}
         alt="AI Development Company"
         fill
         priority
         sizes="100vw"
         className="object-cover"
-fetchPriority="high"
-      />
+       
+      /> */}
 
       {/* Optional Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/90 to-transparent" />

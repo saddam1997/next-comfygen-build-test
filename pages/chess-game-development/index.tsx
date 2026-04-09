@@ -1,418 +1,71 @@
-import React, { useState } from "react";
-import Image from "next/image";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/chess.json";
-import {
-  IconApps,
-  IconAtom,
-  IconBook,
-  IconBrain,
-  IconBriefcase,
-  IconClipboardCheck,
-  IconHeartbeat,
-  IconLanguage,
-  IconSchool,
-} from "@tabler/icons-react";
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+import Features from "../../components/Features"
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
 
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+import Emerging from "../../components/Emerging";
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
-
-
-
-const NewSection = dynamic(
-  () => import("../../components/Newcomponet/comman/NewSection"),
-  { loading: loader, ssr: true }
-);
-
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
 );
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
 
-
-
-const Processs = [
-  {
-    title: "Creative Ideation",
-    description:
-      "The process of development begins with brainstorming sessions where our Chess Game Developers, Chess Game App Developers, and creative minds gather to ideate this process is the beginning of the development arc. Drawing inspiration from years of experience in Chess Game Development Services, we conceptualize captivating ideas.",
-  },
-  {
-    title: "Strategic Blueprint",
-    description:
-      "Design development takes center stage as our Chess Game App Developers blueprint the gameplay mechanics and visuals. The result? An intricate design that captures the essence of chess while integrating innovation.",
-  },
-  {
-    title: "Development Mastery",
-    description:
-      "Our Chess Game Software Developers develop designs into functional code by combining their experience in Chess Game Software Development with chess strategy complexities. Every piece, movement, and component is carefully set up.",
-  },
-  {
-    title: "Rigorous Testing",
-    description:
-      "Quality assurance is essential. The Chess Game App Development Company does thorough testing to guarantee that the game runs properly. Our chess game developers identify and correct every bug, leaving no room for inaccuracies.",
-  },
-  {
-    title: "Iterative Excellence",
-    description:
-      "Evolution is the main goal of our development company. Multiple iterations refine gameplay, integrating feedback from Chess Game Developers, Chess Game App Developers, and players. This iterative approach guarantees an exceptional gaming experience.",
-  },
-  {
-    title: "Artistic Polishing",
-    description:
-      "Our Chess Game App Developers devote particular focus to design aesthetics. Illustrations, visuals, and interfaces have been refined to generate a visually appealing experience that gamers would like.",
-  },
-  {
-    title: "Seamless Deployment",
-    description:
-      "With every detail perfected, deployment takes place. Our Chess Game Development Services extend to platform optimization, ensuring smooth compatibility across devices and platforms.",
-  },
-];
-
-const technologyData = [
-  {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
-    title: "Fantasy Quest Adventures: Embark on Epic Journeys",
-    desc: "Imagine stepping into fantastical realms where adventure knows no bounds. Our expertise in chess game software development converges with captivating storytelling to create epic quests that transport you to magical worlds filled with intrigue and discovery.",
-  },
-  {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
-    title: "Space Odyssey: Explore the Cosmos",
-    desc: "Let your imagination soar as you take command of spacecraft and journey through the stars. Our Chess Game Developers extend their creative talents to the far reaches of space, allowing you to engage in thrilling space battles and uncover cosmic mysteries.",
-  },
-  {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
-    title: "Match-Master Mania: A Twist on Strategy",
-    desc: "Beyond chess, our developers infuse strategy into the realm of match-3 puzzles. Brace yourself for a whirlwind of colors, cascades, and cunning tactics that challenge your mind and keep you engaged for hours.",
-  },
-  {
-    img: <IconAtom stroke={1.5} className="w-12 h-12" />,
-    title: "Endless Runner Rush: Speed and Reflexes",
-    desc: "Feel the adrenaline rush in an endless runner adventure that tests your reflexes and speed. Our chess game development services take on a new dimension as you navigate obstacles, race against time, and set new records.",
-  },
-  {
-    img: <IconLanguage stroke={1.5} className="w-12 h-12" />,
-    title: "Puzzle Solitaire Haven: Tranquil Moments",
-    desc: "Seek tranquility in the world of puzzle solitaire. A testament to our chess game software developers' versatility, this soothing game offers intricate layouts and visuals that provide a peaceful escape from the ordinary.",
-  },
-  {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Tactical Warfare Strategies: Lead Your Armies",
-    desc: "Harness the strategic insights of chess in battles that demand your tactical brilliance. Our chess game app developers blend strategy and warfare, allowing you to lead armies with skill and precision on virtual battlefields.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Underwater Treasure Hunt: Dive into Discovery",
-    desc: "Uncover treasures hidden beneath the waves as you embark on an exciting underwater treasure hunt. Our development expertise takes you deep below the surface, where adventures await at every turn.",
-  },
-  {
-    img: <IconApps stroke={1.5} className="w-12 h-12" />,
-    title: "Word Puzzle Chronicles: Test Your Mind",
-    desc: "Challenge your mind with word puzzles brought to life by our Chess Game Development Company. Enhance your vocabulary and problem-solving skills while immersing yourself in engaging gameplay.",
-  },
-  {
-    img: <IconHeartbeat stroke={1.5} className="w-12 h-12" />,
-    title: "Racing Rivals Showdown: Fuel Your Competitive Spirit",
-    desc: "Our chess game development services extend to the fast-paced world of racing. Show off your skills, customize your ride, and compete against rivals in a high-octane showdown that keeps you on the edge of your seat.",
-  },
-];
-
-const breadCrum = {
-  "@context": "https://schema.org/",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://www.comfygen.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Game Development",
-      item: "https://www.comfygen.com/chess-game-development",
-    },
-  ],
-};
-
-
-
-const product = {
-  "@context": "http://www.schema.org",
-  "@type": "Product",
-  brand: "Comfygen Technologies",
-  Name: "AI Chess Game Development Services",
-  image: "https://www.comfygen.com/comfygen-images/chess-game-development/chess-game-development-about.webp",
-  description:
-    "Create intelligent and interactive chess games with Comfygen – a trusted AI chess game development company in India & the USA. Leverage AI for real-time analysis, move suggestions & smarter gameplay.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "544",
-  },
-};
-
-const serviceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Chess Game Development Services",
-  provider: {
-    "@type": "Organization",
-    name: "Comfygen Technologies",
-    url: "https://www.comfygen.com/",
-  },
-  description:
-    "Launch your chess game on Android, iOS & Web with Comfygen’s cross-platform chess game development services. We deliver robust, scalable, and engaging chess solutions tailored to your vision.",
-  url: "https://www.comfygen.com/chess-game-development",
-  mainEntityOfPage: "https://www.comfygen.com/chess-game-development",
-  areaServed: "Global",
-  serviceType: [
-    "Custom Chess Game Development Services",
-    "Chess Game Development Solution",
-    "Blockchain-Based Chess Game Development",
-    "AI-Based Chess Game Development",
-  ],
-
-  sameAs: [
-    "https://www.facebook.com/comfygen.technologies",
-    "https://x.com/Comfygen_Tech",
-    "https://www.instagram.com/comfygen_technologies",
-    "https://www.linkedin.com/company/comfygen-technologies",
-  ],
-};
-
-const faqSchema = {
-  "@context": "https://schema.org/",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What sets Comfygen apart as a Chess Game Development Company?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Comfygen stands out with its blend of expertise, innovation, and dedication to crafting exceptional chess gaming experiences.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What platforms do you develop chess games for?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We specialize in cross-platform development, ensuring compatibility with mobile, desktop, and web platforms.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How can I customize my chess game?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our Chess Game App Developers offer customization options, allowing you to personalize themes, boards, and more",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I expect ongoing support after the game is launched?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely. Our Chess Game Software Developers provide continuous support and updates to keep your game engaging and fresh.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you implement AI algorithms in your games?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Chess Game Developers integrate advanced AI algorithms that challenge players across different skill levels.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What security measures are in place to protect player data?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We prioritize data security, and our Chess Game Development Services include robust measures to ensure a safe gaming environment.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do you ensure a realistic gameplay experience?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our Chess Game App Developers use accurate physics simulations and intricate design to ensure each move and strategy is authentic.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you offer multiplayer options in your chess games?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Chess Game Development Services include multiplayer capabilities that allow players to engage in real-time matches globally.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I hire Chess Game Developers for a specific project?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Absolutely, we offer Hire Chess Game Developers services for customized projects that cater to your unique requirements.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What technologies do you specialize in?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our Chess Game App Development Company excels in Unity Engine, AI integration, cross-platform development, and more",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do you ensure a user-friendly interface?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our Chess Game App Developers follow a user-centric design approach, making interfaces intuitive and engaging",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I expect regular updates and enhancements to my game?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Chess Game Software Developers ensure regular updates and new features to keep your game captivating.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you incorporate augmented reality (AR) in your chess games?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, our Chess Game App Development Company integrates AR technology to offer an immersive and dynamic gaming experience.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the process for hiring Chess Game Developers from Comfygen?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "You can connect with us to discuss your project requirements, and we'll provide you with skilled developers tailored to your needs.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do you strike a balance between innovation and tradition in chess games?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Our Chess Game Developers blend innovative features while preserving the strategic essence of chess.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can you create chess games for educational purposes?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Certainly, our Chess Game Development Services can cater to educational games that teach chess strategies and skills.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Comfygen's Chess Game Development restricted to India?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "While based in India, our services are accessible globally, delivering captivating chess games to players worldwide.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you provide post-launch marketing and promotion assistance?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "While not our primary focus, we can offer guidance on marketing strategies for your chess game.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What's the typical timeline for developing a chess game?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The timeline varies based on the complexity of the project. We provide tailored estimates after understanding your requirements.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How can I get started with Chess Game Development at Comfygen?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Simply reach out to us through our website, and our team will be more than happy to guide you through the process.",
-      },
-    },
-  ],
-};
-
-export default function Altcoin(props) {
-  const [showContent, setShowContent] = useState(false);
+export default function Altcoin(props:any) {
+ 
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
+ 
   return (
     <>
       <Head>
@@ -562,174 +215,34 @@ export default function Altcoin(props) {
           name="google-site-verification"
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-        />
-    
-     
+      
+
+
+
+
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrum) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(JSON_DATA?.jsonLdData)
+          }}
         />
       </Head>
-      <div className="">
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.NFTBenefits} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-        <Header />
-
-      </div>
-      <div className="overflow-hidden lg:pt-[120px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Best Chess Game Development Company"
-            subhead=""
-
-            ptag="Comfygen is the best chess game development company delivering custom, high-performance chess games for startups, gaming studios, and enterprises. Our expert developers create interactive, multiplayer, and AI-powered chess games with seamless gameplay, intuitive UI, and advanced features to engage players and enhance the digital gaming experience. "
-            ptag1="Whether you're building a sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
-            li="Multiplayer chess game development for web and mobile"
-            li1="AI-powered smart opponents for realistic gameplay"
-            li2="Custom themes, boards, and animations"
-            li3="Secure and scalable game architecture"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/chess-game-development-hero-img.webp"
-          />
-        </div>
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Top Chess Game Development Services By Comfygen
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen offers A1 Chess Game Development Services, providing a seamless and engaging gaming experience for chess enthusiasts. With a talented team of Programmers and a focus on innovation, Comfygen ensures the creation of high-quality chess game development services with exceptional features and functionalities.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <NewSection NewSection={JSON_DATA.NewSections} />
-        <AboutSection
-          title=""
-          heading="Comfygen An Online Chess Game Development Company: Crafting Winning Moves in the Gaming World"
-          description1="Welcome to Comfygen, your ultimate destination for innovative and engaging online chess game development solutions. As a leading chess game development company, we have established ourselves as a pioneer in the chess game development industry, driven by an unwavering passion for chess and an innate understanding of game dynamics."
-          points={[]}
-          imageSrc="https://www.comfygen.com/comfygen-images/chess-game-development/chess-game-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-
-
-
-        <SolutionSec
-          heading="Other Games Developed By Us: Beyond Chess Game Development Discover a World of Gaming Beyond Chess with Comfygen"
-          subheading="At ComfyGen, we're not just a Chess Game Development Company – we're developers of immersive gaming experiences that go far beyond the chessboard. While we excel in Chess Game Software Development, our journey doesn't stop there. We're passionate about crafting diverse games that bring joy, challenge, and excitement to players of all kinds.Some of the other games developed by us include:"
-          techData={technologyData}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/image/tutor-apps-image.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Unveiling Our Chess Game Development Process: A Game Development Journey
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Embark on a journey through the meticulous Chess Game Development process at ComfyGen, an esteemed Chess Game Development Company in India. Our approach is a step-by-step roadmap that brings your gaming dreams to life, leveraging the expertise of Chess Game App Developers, Chess Game Developers, and Chess Software Providers.
-              </p>
-            </div>
-            <ProcessSec processSlides={Processs} />
-          </div>
-        </section>
-
-
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Overview of the Technologies and Frameworks used for Chess Game development
-                </h2>
-                <p className="text-center text-white lg:w-1/2 mx-auto">Comfygen, a distinguished chess <a className="underline font-semibold" href="https://www.comfygen.com/game-development-company" >game development company</a> in India, stands as a beacon of innovation and expertise in the realm of game development. Our chess game app developers employ an array of cutting-edge technologies and tools to bring the timeless game of chess to life on digital platforms.</p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        <Image
-                          src={img}
-                          className="object-cover"
-                          width={35}
-                          height={50}
-                          alt={title}
-                        />
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p className="break-all text-white text-start ">
-                          {decs}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <TechStack
-          title="Tech Stack We Use in Chess Game Development"
-          description="Behind the scenes of every captivating chess game lies a meticulously crafted tech stack that powers the experience. Here's a glimpse into the technical details and tech stack that drive our chess game development process:"
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <ClientStories />
-
-
-        <Faq faqData={Frequently} title="" />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }
