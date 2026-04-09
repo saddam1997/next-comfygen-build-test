@@ -1,275 +1,69 @@
-import { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/centralizedcryptoexchangedevelopment.json";
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
 );
-
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const CardItem = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  { loading: loader, ssr: true }
-);
-
-const ModelsSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: loader, ssr: true }
-);
-
-
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
 
-
-const defaultTestimonials = [
-  {
-    text: "“Comfygen’s expertise in centralized exchange development has been a game-changer for us. From technical architecture to regulatory compliance, their team guided us throughout the process, ensuring a smooth and successful launch of our platform. We are extremely satisfied with the results!”",
-    name: "Ravi Kumar",
-    title: "India",
-  },
-  {
-    text: "“We had a great experience working with Comfygen. Their developers delivered a secure and scalable centralized crypto exchange that met all of our business needs. The integration of third-party services was seamless, and we couldn't be happier with the outcome!”",
-    name: "Samantha Lee",
-    title: "USA",
-  },
-  {
-    text: "“The team at Comfygen helped us build a fully customized crypto exchange with high-end security features. Their attention to detail and commitment to delivering on time were outstanding. Our platform is now live and performing better than expected.”",
-    name: "David Fernandez",
-    title: "Spain",
-  },
-  {
-    text: "“Comfygen’s team of developers exceeded our expectations. They designed our centralized exchange from scratch, ensuring that we had a user-friendly interface and robust security features. We felt supported every step of the way, and the results speak for themselves!”",
-    name: "Maya Patel",
-    title: "UK",
-  },
-  {
-    text: "“We entrusted Comfygen with the development of our centralized exchange, and they did not disappoint. The platform they built is secure, feature-rich, and scalable, allowing us to enter the market with confidence. Their post-launch support has been excellent as well.”",
-    name: "Michael Harris",
-    title: "Australia",
-  }
-];
-
-const Processs = [
-  {
-    title: "Requirement Analysis & Strategy Formation",
-    description: "In this initial phase, we dive deep into understanding your business needs, goals, and target audience. Our team works with you to define the key features, functionalities, and regulatory requirements."
-  },
-  {
-    title: "UX/UI Design & Prototyping",
-    description: "User experience is crucial in crypto exchange platforms. Our design team creates wireframes and prototypes, focusing on intuitive navigation and ease of use while ensuring the interface is sleek and modern."
-  },
-  {
-    title: "Development & Platform Architecture",
-    description: "This phase focuses on backend and frontend development. Our team builds the architecture using scalable technologies and ensures a secure, reliable, and fast-performing platform."
-  },
-  {
-    title: "Integration of Security Features",
-    description: "Security is the top priority for us. During this phase, we implement robust security features to protect user data, transactions, and assets."
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description: "We conduct rigorous testing at every stage of development to ensure the platform is flawless, secure, and functional under real-world conditions."
-  },
-  {
-    title: "Deployment & Go-Live",
-    description: "Once the exchange is fully developed and tested, we deploy the platform on a production server. We ensure everything is up and running smoothly, allowing you to officially launch your exchange to the public."
-  },
-  {
-    title: "Ongoing Maintenance & Support",
-    description: "Our partnership doesn’t end at launch. We provide continuous support, updates, and improvements to keep your exchange running smoothly and securely."
-  }
-];
-
-
-
-
-
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Top Centralized Crypto Exchange Development Company",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Launch your own secure and scalable centralized crypto exchange like Binance or Coinbase with Comfygen. Our CEX development services include KYC/AML, advanced trading engines, and custom clone solutions. Hire top blockchain experts today!",
-      "url": "https://www.comfygen.com/centralized-crypto-exchange-development",
-      "mainEntityOfPage": "https://www.comfygen.com/centralized-crypto-exchange-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "centralized crypto exchange",
-        "centralized exchange",
-        "centralized exchange crypto",
-        "centralized exchanges",
-        "centralized cryptocurrency exchange",
-        "best centralized crypto exchange"
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-
-    },
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is a centralized crypto exchange, and how does it work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A centralized crypto exchange (CEX) is a digital asset trading platform managed by a central authority. Users register, deposit funds, and trade cryptocurrencies using the platform's internal systems. The exchange handles custody, order matching, and security to ensure smooth transactions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why should I choose a centralized exchange over a decentralized one?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Centralized exchanges offer faster transactions, better liquidity, user-friendly interfaces, and robust customer support. They are ideal for beginners and businesses aiming for scalability, regulatory compliance, and integrated fiat support."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does it cost to develop a centralized cryptocurrency exchange in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The development cost varies based on features, tech stack, and customizations. On average, it ranges between $30,000 to $200,000+, depending on functionalities like KYC/AML, trading engine complexity, wallet integrations, and third-party APIs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to build a centralized crypto exchange platform?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The timeline typically ranges from 3 to 6 months. However, with white-label solutions or clone scripts (e.g., Binance or Coinbase clone), the time can be reduced significantly to 4–8 weeks, depending on customization needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What security features should a centralized crypto exchange have?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A secure exchange must include 2FA, SSL encryption, cold wallet integration, anti-DDoS, KYC/AML compliance, and real-time monitoring. At Comfygen, we implement multi-layered security protocols for user and fund protection."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I launch a Binance or Coinbase-like exchange with your clone solutions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We offer customizable Binance, Coinbase, Kraken, and other popular exchange clones tailored to your business model. These white-label solutions are scalable, secure, and quick to deploy."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide post-launch technical support and maintenance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We offer 24/7 technical support, ongoing updates, server monitoring, and feature upgrades to keep your exchange secure and operational even after launch."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is your centralized exchange development compliant with global crypto regulations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. We integrate KYC/AML modules and help clients comply with local and international laws. Our legal team offers guidance on crypto licensing, privacy policies, and token classifications to ensure regulatory compliance."
-          }
-        }
-      ]
-    }
-
-
-  ];
-
+ 
   return (
     <>
       <Head>
@@ -310,153 +104,27 @@ export default function Ecommerce(props:any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData)
+            __html: JSON.stringify(JSON_DATA?.jsonLdData)
           }}
         />
       </Head>
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.NFTBenefits} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <Solution techData={JSON_DATA.Security} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-
-      <Header />
-
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best Centralized Crypto Exchange Development Company"
-          ptag="Comfygen is the best centralized crypto exchange development company delivering secure, scalable, and high-performance trading platforms. We build custom centralized crypto exchanges with lightning-fast trading engines, enterprise-level security, and attractive user interfaces. From startups to global enterprises, our centralized crypto exchange development solutions help you launch, grow, and dominate the crypto market with confidence."
-          li="High-speed trading engine"
-          li1="Bank-grade security protocols"
-          li2="User-friendly interface design"
-          li3="Custom features & integrations"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/centralized-crypto-exchange/cex-development-hero.webp"
-        />
-
-        <AboutSection
-          title="About Company"
-          heading="Build Your Centralized Crypto Exchange with a Trusted Development Partner"
-          description1="Building a centralized crypto exchange requires expertise, a robust technological infrastructure, and a deep understanding of the regulatory landscape. At Comfygen, we specialize in centralized crypto exchange development that empowers you to launch a secure, scalable, and highly functional trading platform. By partnering with us, you ensure that your exchange is designed with the latest advancements in blockchain technology, offering an exceptional user experience, cutting-edge security features, and market competitiveness."
-          points={[
-            "Deep Industry Knowledge",
-            "End-to-End Development",
-            "Robust Security Framework",
-            "Regulatory Compliance",
-            "Scalable Solutions"
-          ]
-          }
-          imageSrc="https://www.comfygen.com/comfygen-images/centralized-crypto-exchange/cex-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Centralized Crypto Exchange Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we provide robust, scalable, and fully secure centralized <a className='text-blue-500 font-semibold' href='/cryptocurrency-exchange-development'  >cryptocurrency exchange development services</a>  tailored to your business model. From technical architecture to legal compliance, our end-to-end offerings empower you to build a trustworthy, high-performance exchange platform that stands out in a competitive market.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-
-
-        <CardItem
-          heading="Our End-to-End Centralized Crypto Exchange Development Solutions"
-          subheading="At Comfygen, we offer comprehensive, end-to-end centralized crypto exchange development solutions designed to empower businesses with secure, scalable, and high-performance trading platforms. Our services cover every aspect of the exchange development lifecycle, from initial consulting and strategic planning to post-launch support and maintenance. Our solutions are tailored to meet the unique needs of your business, ensuring that your platform operates smoothly, securely, and in full compliance with industry regulations."
-          techData={JSON_DATA.cardData2}
-
-        />
-
-
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />/
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <CardItem
-          heading="Security Features Implemented in Centralized Crypto Exchange Development"
-          subheading="At Comfygen, we understand that security is the backbone of any centralized crypto exchange. That’s why our development process integrates advanced security layers at every stage, ensuring user trust, platform integrity, and protection against all forms of cyber threats."
-          techData={JSON_DATA.cardData}
-
-        />
-
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-              Our Step-by-Step Centralized Crypto Exchange Development Process
-              </h2>
-              <p className="text-base  mt-4">
-               At Comfygen, we follow a well-structured, results-driven process for developing centralized crypto exchanges. We aim to provide you with a fully secure, feature-rich platform that delivers a seamless user experience and meets the latest industry standards. Here’s how we build your centralized crypto exchange, step by step:
-              </p>
-            </div>
-            <ProcessSec processSlides={Processs} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Our Centralized Exchange Development Technology Stack"
-          description="We leverage cutting-edge technologies to ensure your crypto exchange is secure, scalable, and efficient."
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Our Centralized Crypto Exchange Developer"
-          text="Looking to build a high-performance centralized crypto exchange? At Comfygen, we offer expert centralized exchange development services with a team of skilled developers who specialize in creating secure, scalable, and user-friendly platforms. Here’s why hiring our developers is the right choice for your business:"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Highly Skilled and Experienced Developers",
-            "Tailored Solutions for Your Business Needs",
-            "Focus on Security and Compliance",
-            "Efficient Project Management",
-            "Post-Launch Support",
-            "Seamless Integration with Third-Party Services"
-          ]}
-        />
-
-
-        <ClientTestimonials heading="What Our Clients Say" testimonials={defaultTestimonials} />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

@@ -3,6 +3,112 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import LazyLoad from "react-lazy-load";
 import JSON_DATA from "./json/creditscoringappdevelopment1.json";
+
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import {
   IconCloudComputing,
   IconLock,
@@ -86,10 +192,6 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 )
 
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
 
 
 

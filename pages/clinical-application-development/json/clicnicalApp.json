@@ -1,108 +1,584 @@
 {
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "1. Who Can Take Our Clinical Apps Development Solutions?",
-      "desc": "Our reputation as one of the most reliable clinical application development firms in India revolves around our capabilities to offer diverse solutions. We aim to offer clinical application development services solutions that can become an integral aspect of the broader healthcare ecosystem. Our team has gained expertise by working with different clients, including doctors booking app development , pharmacies app development and patients app development. We have also helped transform pharmacies, prescription systems, EHR mechanisms, and medical delivery app development systems with the value of customisation. Our clinical mobile app development services and solutions can help you create the following types of clinical application development services."
-    },
-    {
-      "num": "2",
-      "title": "2. Do you have expertise in creating clinical MVPs?",
-      "desc": "Yes, we specialize in clinical MVP development to help healthcare businesses validate ideas quickly, reduce risks, and launch secure, scalable clinical applications with essential features."
-    },
-    {
-      "num": "3",
-      "title": "3. What is the ideal time required to develop a clinical app?",
-      "desc": "The development timeline of a clinical application typically ranges from 8 to 20 weeks, depending on app complexity, integrations, compliance requirements, and customization needs."
-    },
-    {
-      "num": "4",
-      "title": "4. What is the cost of building a clinical application?",
-      "desc": "Clinical app development costs vary based on features, platforms, integrations, and regulatory requirements. We offer flexible pricing models tailored to healthcare startups and enterprises."
-    },
-    {
-      "num": "5",
-      "title": "5. Do you offer security assurance for clinical applications?",
-      "desc": "Yes, we follow HIPAA-compliant clinical application development practices with robust security measures, including data encryption, secure authentication, role-based access control, and regular security testing."
-    }
+  "Herosection": {
+    "heading": "Clinical Application Development Company",
+    "isHome": false,
+    "ptag": "A reliable Clinical Application Development Company focused on transforming healthcare operations through secure, innovative, and user-friendly digital solutions. Comfygen Technologies specializes in building advanced clinical applications that automate workflows, improve patient outcomes, and ensure data security and regulatory compliance. Our expert developers create scalable, high-performance clinical apps with seamless integrations and intuitive UI/UX, empowering doctors, clinics, and healthcare providers to deliver better care while driving sustainable business growth.",
+    "ptag1": "",
+    "listItems": [
+      "Intuitive UI/UX for Healthcare Users",
+      "Scalable & Future-Ready Technology",
+      "Secure & Compliant Solutions",
+      "Custom Clinical Application Development"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Clinical Application Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/clinical-application-development-company-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Our Clinical App Development Services",
+    "description": "At Comfygen Technologies, we deliver end-to-end clinical app development services tailored to modern healthcare needs. From strategy and UI/UX design to secure development, deployment, and ongoing support, we build scalable, HIPAA-compliant clinical applications that enhance patient care, streamline workflows, and improve clinical outcomes.",
+    "services": [
+      {
+        "title": "Clinical App Consulting Service",
+        "subtitle": "",
+        "description": "Our clinical app consulting service helps healthcare providers define clear requirements, choose the right technology stack, and create a strategic roadmap for successful clinical application development with reduced risks and faster delivery.",
+        "features": [
+          "In-depth Requirement Analysis and Planning",
+          "Customized Solutions for Clinical Application Needs",
+          "Expert Guidance on Technology and Features",
+          "Development Timeline Optimization",
+          "End-to-end consulting for Smooth Project Execution"
+        ]
+      },
+      {
+        "title": "Custom Clinical App Development",
+        "subtitle": "",
+        "description": "Our custom clinical app development services deliver secure, scalable, and high-performance applications integrated with EHR and EMR systems, enabling real-time data access, improved clinical workflows, and better patient outcomes.",
+        "features": [
+          "Secure Architecture",
+          "EHR/EMR Integration",
+          "Scalable Solutions",
+          "Real-Time Data"
+        ]
+      },
+      {
+        "title": "Clinical App UI/UX Design",
+        "subtitle": "",
+        "description": "We design intuitive and compliant clinical app UI/UX that improves usability for clinicians and patients, ensuring seamless navigation, accessibility standards, and optimized workflows across mobile and web clinical applications.",
+        "features": [
+          "User-Centric Design",
+          "Intuitive Interfaces",
+          "Accessibility Standards",
+          "Workflow Optimization"
+        ]
+      },
+      {
+        "title": "Clinical App Integration Services",
+        "subtitle": "",
+        "description": "We provide clinical app integration services with EHR, EMR, APIs, wearable devices, and healthcare systems using HL7 and FHIR standards to ensure interoperability, data accuracy, and seamless clinical data exchange.",
+        "features": [
+          "HL7/FHIR Integration",
+          "API Connectivity",
+          "Wearable Integration",
+          "Seamless Interoperability"
+        ]
+      },
+      {
+        "title": "Clinical App Deployment & Implementation",
+        "subtitle": "",
+        "description": "We offer secure clinical app deployment and implementation services across cloud and on-premise environments, ensuring performance optimization, data security, and smooth adoption within existing healthcare infrastructure.",
+        "features": [
+          "Secure Deployment",
+          "Cloud & On-Premise",
+          "Performance Optimization",
+          "Smooth Implementation"
+        ]
+      },
+      {
+        "title": " Clinical App Support & Maintenance",
+        "subtitle": "",
+        "description": "Our clinical app support and maintenance services provide continuous monitoring, updates, security patches, and compliance enhancements, ensuring long-term performance, reliability, and regulatory adherence of clinical applications.",
+        "features": [
+          "Continuous Monitoring",
+          "Security Updates",
+          "Compliance Maintenance",
+          "Performance Enhancement"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Should You Invest in Clinical Application Development?",
+    "description1": "Investing in clinical application development offers strong business growth opportunities as digital healthcare adoption accelerates worldwide. With rising demand for remote care, data-driven clinical solutions, and operational efficiency, healthcare organizations increasingly rely on secure clinical apps. The global healthcare app market is projected to surpass $300 billion by 2026, making this sector highly profitable for investors. Clinical app development delivers scalable revenue, long-term ROI, recurring service demand, and innovation-driven market expansion.",
+    "description2": "",
+    "description3": "",
+    "description4": "",
+    "points": [
+      "High ROI Potential",
+      "Rapid Market Growth",
+      "Recurring Revenue Streams",
+      "Digital Healthcare Demand",
+      "Scalable Business Model"
+    ],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "NFTBenefits": {
+    "heading": "Our Top-Notch Custom Clinical Application Development Solutions",
+    "subheading": "At Comfygen Technologies, we deliver custom clinical application development solutions designed to improve patient care, streamline clinical workflows, and ensure secure, scalable, and compliance-ready digital healthcare systems for modern medical organizations.",
+    "tech": [
+      {
+        "num": "1",
+        "title": "Clinical Mobile App Development",
+        "desc": "We provide secure and scalable clinical mobile app development solutions that enable healthcare providers to manage patient data, clinical workflows, and real-time communication while ensuring HIPAA compliance and improved patient engagement."
+      },
+      {
+        "num": "2",
+        "title": "Clinical Wearable Apps Development",
+        "desc": "Our clinical wearable app development services integrate wearable devices with healthcare systems to monitor patient vitals, track health data in real time, and support proactive clinical decision-making through data-driven insights."
+      },
+      {
+        "num": "3",
+        "title": "Clinical Web App Development",
+        "desc": "We build robust clinical web applications that offer seamless access to patient records, appointment management, and clinical analytics, helping healthcare organizations enhance operational efficiency and deliver consistent digital healthcare experiences."
+      },
+      {
+        "num": "4",
+        "title": "Telemedicine App Development",
+        "desc": "Our telemedicine app development solutions enable secure virtual consultations, remote diagnosis, and digital prescriptions, helping healthcare providers expand care accessibility while reducing operational costs and improving patient satisfaction."
+      },
+      {
+        "num": "5",
+        "title": "Remote Patient Monitoring Apps",
+        "desc": "We develop remote patient monitoring applications that allow clinicians to track patient health data remotely, detect early health risks, and deliver continuous care using connected devices and secure clinical data platforms."
+      },
+      {
+        "num": "6",
+        "title": "Clinical CRM Solution Development",
+        "desc": "We create custom clinical CRM solutions to help healthcare organizations manage patient relationships, automate communication, improve engagement, and streamline clinical operations through centralized and data-driven healthcare platforms."
+      },
+      {
+        "num": "7",
+        "title": "Patient Data Management App Development",
+        "desc": "Our patient data management app development services ensure secure storage, access, and sharing of clinical data, enabling healthcare providers to maintain accuracy, compliance, and seamless coordination across medical departments."
+      },
+      {
+        "num": "8",
+        "title": "Clinic Management App Development",
+        "desc": "We develop clinical management applications that simplify appointment scheduling, staff coordination, billing workflows, and clinical operations, helping healthcare facilities improve efficiency, productivity, and overall patient care delivery."
+      },
+      {
+        "num": "9",
+        "title": "Custom Clinical Software Development",
+        "desc": "Our custom clinical software development solutions are tailored to specific healthcare requirements, offering scalable, secure, and interoperable systems that integrate seamlessly with existing clinical infrastructure and healthcare technologies."
+      }
+    ]
+  },
+  "CallToAction": {
+    "heading": "Turn Your Clinical App Idea into a Market-Ready Solution",
+    "text": "Partner with a trusted clinical application development company to design, develop, and deploy high-performance healthcare solutions that deliver measurable ROI and long-term scalability.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Get in touch now."
+  },
+  "featuresData": {
+    "heading": "Advanced Clinical Application Panels for Smarter Healthcare Management",
+    "description": "Our advanced clinical application panels provide centralized dashboards, real-time patient data access, role-based controls, and secure workflow management, helping healthcare organizations streamline operations and deliver efficient, data-driven clinical care.",
+    "grid": "3",
+    "feature": [
+      {
+        "id": 1,
+        "title": "Clinical Apps for Admin",
+        "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical apps for admin.webp",
+        "additionalDetails": [
+          {
+            "details": "Billing Applications.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Wearable tech applications.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Time-table scheduling apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Clinical assistance apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medical device data collection platforms.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Electronic Health Record Systems.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Drug inventory tracking apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Health management software.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Clinical Apps for Medical Professionals",
+        "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical app for medical professional.webp",
+        "additionalDetails": [
+          {
+            "details": "Healthcare practice management apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medical research apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Remote patient monitoring apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "HER data aggregation and analysis apps.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Clinical Apps for Patients",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical app for patients.webp",
+        "additionalDetails": [
+          {
+            "details": "Mental health apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Patient engagement apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Telemedicine apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Appointment scheduling apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Symptom checker apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Fitness and wellness apps.",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medication intake tracking apps.",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
   ],
-  "servicesData": [
-    {
-      "title": "Clinical App Consulting Service",
-      "subtitle": "",
-      "description": "Our clinical app consulting service helps healthcare providers define clear requirements, choose the right technology stack, and create a strategic roadmap for successful clinical application development with reduced risks and faster delivery.",
-      "features": [
-        "In-depth Requirement Analysis and Planning",
-        "Customized Solutions for Clinical Application Needs",
-        "Expert Guidance on Technology and Features",
-        "Development Timeline Optimization",
-        "End-to-end consulting for Smooth Project Execution"
-      ]
-    },
-    {
-      "title": "Custom Clinical App Development",
-      "subtitle": "",
-      "description": "Our custom clinical app development services deliver secure, scalable, and high-performance applications integrated with EHR and EMR systems, enabling real-time data access, improved clinical workflows, and better patient outcomes.",
-      "features": [
-        "Secure Architecture",
-        "EHR/EMR Integration",
-        "Scalable Solutions",
-        "Real-Time Data"
-      ]
-    },
-    {
-      "title": "Clinical App UI/UX Design",
-      "subtitle": "",
-      "description": "We design intuitive and compliant clinical app UI/UX that improves usability for clinicians and patients, ensuring seamless navigation, accessibility standards, and optimized workflows across mobile and web clinical applications.",
-      "features": [
-        "User-Centric Design",
-        "Intuitive Interfaces",
-        "Accessibility Standards",
-        "Workflow Optimization"
-      ]
-    },
-    {
-      "title": "Clinical App Integration Services",
-      "subtitle": "",
-      "description": "We provide clinical app integration services with EHR, EMR, APIs, wearable devices, and healthcare systems using HL7 and FHIR standards to ensure interoperability, data accuracy, and seamless clinical data exchange.",
-      "features": [
-        "HL7/FHIR Integration",
-        "API Connectivity",
-        "Wearable Integration",
-        "Seamless Interoperability"
-      ]
-    },
-    {
-      "title": "Clinical App Deployment & Implementation",
-      "subtitle": "",
-      "description": "We offer secure clinical app deployment and implementation services across cloud and on-premise environments, ensuring performance optimization, data security, and smooth adoption within existing healthcare infrastructure.",
-      "features": [
-        "Secure Deployment",
-        "Cloud & On-Premise",
-        "Performance Optimization",
-        "Smooth Implementation"
-      ]
-    },
-    {
-      "title": " Clinical App Support & Maintenance",
-      "subtitle": "",
-      "description": "Our clinical app support and maintenance services provide continuous monitoring, updates, security patches, and compliance enhancements, ensuring long-term performance, reliability, and regulatory adherence of clinical applications.",
-      "features": [
-        "Continuous Monitoring",
-        "Security Updates",
-        "Compliance Maintenance",
-        "Performance Enhancement"
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
+        }
       ]
     }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Why Do Businesses Want to Use Clinical Application Development ?",
-      "desc": "Businesses in the domain of healthcare can use our clinical application development services to create new clinical apps that redefine productivity, efficiency, resource usage and patient experiences. You can use our healthcare app development services to make the most of the following advantages."
-    }
-  ],
-  "consultancyData": [
+  },
+"consultancyData": {
+  "title": "Why Do Businesses Want to Use Clinical Application Development ?",
+  "description": "Businesses in the domain of healthcare can use our clinical application development services to create new clinical apps that redefine productivity, efficiency, resource usage and patient experiences. You can use our healthcare app development services to make the most of the following advantages.",
+  "buttonText": "Let’s Discuss",
+  "buttonLink": "/contact-us",
+  "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+  "proces": [
     {
       "title": "EHR/EMR Connectivity",
       "desc": "Our clinical software development expertise allows you to create clinical apps that can integrate seamlessly with EHR/EMR systems. It can help businesses in the healthcare app development industry find access to relevant medical app development information about patients, thereby improving the pace and quality of treatment."
@@ -123,128 +599,42 @@
       "title": "Legacy Modernisation",
       "desc": "The most important reason for the growing popularity of clinical applications is the benefit of legacy modernisation. One of the prominent reasons for growth of the clinical application development industry in the USA is the need for a radical transformation of existing healthcare systems and infrastructure. Clinical apps can help transform legacy systems into modern tools for healthcare that are accessible through different platforms."
     }
-  ],
-  "featuresData": [
+  ]
+},
+"NFTProcessData": {
+  "heading": "Our Clinical Application Development Process",
+  "description": "We follow a structured, compliance-driven clinical application development process to design, develop, test, and deploy secure healthcare solutions that meet regulatory standards and business goals.",
+  "Process": [
     {
-      "id": 1,
-      "title": "Clinical Apps for Admin",
-      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-      "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical apps for admin.webp",
-      "additionalDetails": [
-        {
-          "details": "Billing Applications.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Wearable tech applications.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Time-table scheduling apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Clinical assistance apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Medical device data collection platforms.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Electronic Health Record Systems.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Drug inventory tracking apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Health management software.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
+      "title": "Requirement Analysis & Clinical Research",
+      "description": "We analyze clinical workflows, healthcare requirements, user expectations, and regulatory standards to define a clear project scope, reduce risks, and build a strong foundation for successful clinical application development."
     },
     {
-      "id": 2,
-      "title": "Clinical Apps for Medical Professionals",
-      "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical app for medical professional.webp",
-      "additionalDetails": [
-        {
-          "details": "Healthcare practice management apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Medical research apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Remote patient monitoring apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "HER data aggregation and analysis apps.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
+      "title": "UI/UX Design & Prototyping",
+      "description": "Our designers create intuitive clinical app <a href='https://www.comfygen.com/web-design' class='text-blue-600 font-semibold'>UI/UX Design</a> and interactive prototypes focused on usability, accessibility, and seamless navigation, ensuring efficient workflows for patients, clinicians, and healthcare staff."
     },
     {
-      "id": 3,
-      "title": "Clinical Apps for Patients",
-      "img": "https://www.comfygen.com/comfygen-images/clinical application development2/Clinical app for patients.webp",
-      "icon": "<i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "Mental health apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Patient engagement apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Telemedicine apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Appointment scheduling apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Symptom checker apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Fitness and wellness apps.",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Medication intake tracking apps.",
-          "emoji": "",
-          "content": ""
-        }
-      ]
+      "title": "Custom Clinical App Development",
+      "description": "We develop secure, scalable, and high-performance clinical applications using modern technologies, enabling seamless EHR and EMR integration while supporting real-time data access and compliance-driven healthcare solutions."
+    },
+    {
+      "title": "Integration & Interoperability",
+      "description": "Our team integrates clinical applications with EHR systems, APIs, medical devices, and third-party platforms using HL7 and FHIR standards to ensure secure, accurate, and seamless healthcare data exchange."
+    },
+    {
+      "title": "Testing & Quality Assurance",
+      "description": "We perform comprehensive clinical app testing including functional, performance, security, and compliance validation to ensure reliable, error-free, and regulation-ready healthcare applications across multiple platforms."
+    },
+    {
+      "title": "Deployment & Implementation",
+      "description": "We deploy clinical applications across cloud, on-premise, or hybrid environments with secure configuration, performance optimization, and smooth implementation to support uninterrupted healthcare operations."
+    },
+    {
+      "title": "Support, Maintenance & Optimization",
+      "description": "Our clinical app support and maintenance services include continuous monitoring, updates, security patches, and performance enhancements to ensure long-term scalability, regulatory compliance, and optimal healthcare application performance."
     }
-  ],
+  ]
+},
   "pageData": {
     "title": "Why Choose Comfygen for Clinical Application Development?",
     "description": "Comfygen Technologies is a trusted clinical application development company delivering secure, scalable, and compliance-ready healthcare solutions. With deep domain expertise, modern technologies, and a quality-driven approach, we help healthcare businesses build innovative clinical applications that improve patient care and operational efficiency.",
@@ -286,294 +676,144 @@
       }
     ]
   },
-  "Streamline": [
+"HireDeveloper": {
+  "heading": "Hire Expert Clinical Application Developers",
+  "text": "Hire Expert Clinical Application Developers at Comfygen Technologies to build secure, scalable, and compliance-ready healthcare solutions. Our skilled clinical app developers specialize in custom clinical application development, EHR and EMR integration, HIPAA compliance, and modern healthcare technologies to deliver high-performing digital health applications that drive innovation and business growth.",
+  "text1": "",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems": [
+    "HIPAA-Compliant Development",
+    "Healthcare Domain Experts",
+    "Scalable Clinical Solutions",
+    "Seamless EHR Integration",
+    "Dedicated Development Team"
+  ]
+},
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
+ "Frequently": [
     {
       "num": "1",
-      "title": "Clinical Apps for Healthcare App Development Service Providers",
-      "decs": "We specialise in creating clinical apps for healthcare providers to address different types of functionalities. Our experts specialise in clinical software development and help you create the following variants of clinical apps.",
-      "features": [
-        " Billing Applications.",
-        "Wearable tech applications.",
-        "    Time-table scheduling apps.",
-        "Clinical assistance apps.",
-        "Medical device data collection platforms.",
-        " Electronic Health Record Systems.",
-        " Drug inventory tracking apps.",
-        " Health management software."
-      ]
+      "title": "1. Who Can Take Our Clinical Apps Development Solutions?",
+      "desc": "Our reputation as one of the most reliable clinical application development firms in India revolves around our capabilities to offer diverse solutions. We aim to offer clinical application development services solutions that can become an integral aspect of the broader healthcare ecosystem. Our team has gained expertise by working with different clients, including doctors booking app development , pharmacies app development and patients app development. We have also helped transform pharmacies, prescription systems, EHR mechanisms, and medical delivery app development systems with the value of customisation. Our clinical mobile app development services and solutions can help you create the following types of clinical application development services."
     },
     {
       "num": "2",
-      "title": "Clinical Apps for Medical Professionals ",
-      "decs": "You can rely on our clinical application development company in Jaipur, India to develop feature-rich clinical applications development services for medical professionals. We can help you create the following clinical applications that can simplify the job of medical professionals.",
-      "features": [
-        " Healthcare practice management apps.",
-        "Medical research apps.",
-        "Remote patient monitoring apps.",
-        "HER data aggregation and analysis apps."
-      ]
+      "title": "2. Do you have expertise in creating clinical MVPs?",
+      "desc": "Yes, we specialize in clinical MVP development to help healthcare businesses validate ideas quickly, reduce risks, and launch secure, scalable clinical applications with essential features."
     },
     {
       "num": "3",
-      "title": "Clinical Apps for Patients",
-      "decs": "We are the most popular destination for creating patient-facing apps that blend usability with efficiency and productivity. You can leverage our expertise to create the following types of apps for patients.",
-      "features": [
-        " Mental health apps.",
-        "Patient engagement apps.",
-        "Telemedicine apps.",
-        "Appointment scheduling apps.",
-        "Symptom checker apps.",
-        "Fitness and wellness apps.",
-        "Medication intake tracking apps."
-      ]
-    }
-  ],
-  "CryptoUser": [
-    {
-      "num": "1",
-      "title": "For Patients",
-      "decs": "You can develop powerful clinical application development for patients with our mobile app experts. Our clinical application development services can help to upload and make medical records easier to access. You can use our clinical apps to help patients connect with doctors directly through their smartphones. Our clinical apps can serve different features, such as",
-      "img": "https://www.comfygen.com/img/for-patients-img.webp",
-      "item": "Collecting and analysing health records in real time.",
-      "item1": "Scheduling and management of patient appointments.",
-      "item2": "Sending medication reminders and notifications for prescription refills.",
-      "item3": "Accessibility of Electronic Health Records.",
-      "item4": "Collaboration with patient’s health insurance companies.",
-      "item5": "Remote diagnostic features with wearables.",
-      "item6": "Remote consultation with best professionals."
-    },
-    {
-      "num": "2",
-      "title": "For Medical Staff",
-      "decs": "Our clinical application development company can offer an innovative solution for doctors and healthcare app development service providers to offer quality healthcare. An effective healthcare app can offer multiple features that can help medical staff alongside improving patient experiences.",
-      "img": "https://www.comfygen.com/img/for-medical-staff.webp",
-      "item1": "Remote accessibility of medical records.",
-      "item2": "Facility of online prescriptions.",
-      "item3": "Access to video appointments.",
-      "item4": "Remote delivery of health education.",
-      "item5": "Easier collaboration with healthcare staff.",
-      "item6": "Scheduling team meetings and patient appointments.",
-      "item7": "Flexible patient consultations."
-    },
-    {
-      "num": "3",
-      "title": "For Clinics",
-      "decs": "The features of clinical apps would also differ significantly from the perspective of clinics. Clinics can utilise clinical apps to collect data from patients, staff, and visitors to improve their experiences while streamlining the work of doctors. ",
-      "img": "https://www.comfygen.com/img/for-clients.webp",
-      "item": "Automation of medical instrument inventory control.",
-      "item1": "Scheduling of doctor and staff shifts.",
-      "item2": "Automation of pharmaceutical inventory.",
-      "item3": "Tracking of medical equipment and clinic assets.",
-      "item4": "Remote provision of patient status to relatives.",
-      "item5": "Resolution of invoicing and insurance claims.",
-      "item6": "Creation of smart hospitals with limited contact.",
-      "item7": "Streamlining of internal workflows."
-    }
-  ],
-  "OnDemandDoctor": [
-    {
-      "num": "01",
-      "title": "EHR/EMR Connectivity",
-      "decs": "Our clinical software development expertise allows you to create clinical apps that can integrate seamlessly with EHR/EMR systems. It can help businesses in the healthcare app development industry find access to relevant medical app development information about patients, thereby improving the pace and quality of treatment."
-    },
-    {
-      "num": "02",
-      "title": "Compliance Enablement",
-      "decs": "Clinical apps are also another trusted choice for ensuring compliance with all types of laws in the domain of healthcare. In addition, clinical app development can also help you ensure the design of healthcare systems that ensure compliance with data security and confidentiality laws."
-    },
-    {
-      "num": "03",
-      "title": "Analytics & Reporting",
-      "decs": "Another notable reason why businesses in healthcare and clinics must focus on the clinical application development industry is flexibility of analytics and reporting. Apps can record patient data and patterns in patient behaviour alongside documenting their medical history. With flexible access to different data points related to customers, clinical apps can provide benefits of analytics and reporting."
-    },
-    {
-      "num": "04",
-      "title": "Interoperability Testing",
-      "decs": "Clinical apps can help healthcare businesses overcome interoperability problems. You can use clinical software development as an alternative to dive into different areas of healthcare and improve the quality of healthcare. Our apps can work across different platforms and devices, thereby enabling everyone with a smartphone to have access to quality healthcare."
-    },
-    {
-      "num": "05",
-      "title": "Legacy Modernisation",
-      "decs": "The most important reason for the growing popularity of clinical applications is the benefit of legacy modernisation. One of the prominent reasons for growth of the clinical application development industry in the USA is the need for a radical transformation of existing healthcare systems and infrastructure. Clinical apps can help transform legacy systems into modern tools for healthcare that are accessible through different platforms."
-    }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/consultation-and-planning.webp",
-      "title": "Front-end Programming Languages",
-      "decs": "We can create an immersive and user-friendly interface for your clinical apps by using the best front-end technologies in clinical mobile app development processes. Our experts use the ideal technologies to create visually appealing frontends that offer easier interaction and superior user experiences. We use programming languages such as JavaScript, HTML and CSS. Some of the notable JavaScript frameworks we use for clinical app development include Angular, Meteor,  <a href='' class='font-bold text-blue-600 hover:'/react-js-development'>React JS,</a> Vue, Next and Ember."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/app-design-and-user-experience.webp",
-      "title": "Backend Programming Languages",
-      "decs": "Our healthcare app development expertise also focuses on the use of selected backend programming languages. We choose backend programming languages that can help in effective definition of logic for clinical apps. We ensure the use of backend programming languages that can improve reliability and performance while offering seamless support to the server side and the overall functionality of the app. Our experts utilise programming languages such as Go, <a href='' class='font-bold text-blue-600 hover:'/node-js-development'>Node.Js,</a>,  Microsoft.NET, Java, PHP and <a href='' class='font-bold text-blue-600 hover:'/python-development'>Python</a> for backend development."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/app-development.webp",
-      "title": "Mobile Development Tools",
-      "decs": "We have become a top clinical application development company on the basis of our expertise in mobile development tools. Our experts can create powerful mobile apps by using robust programming stacks personalised to the requirements of different mobile platforms. We utilise the ideal mobile development tools to ensure seamless user interface and comprehensive functionalities in clinical apps. At Comfygen, we can utilise mobile development frameworks such as Android, Flutter, Ionic, Cordiva,  <a href='' class='font-bold text-blue-600 hover:'/ios-app-development'>iOS,</a> and Xamarin."
+      "title": "3. What is the ideal time required to develop a clinical app?",
+      "desc": "The development timeline of a clinical application typically ranges from 8 to 20 weeks, depending on app complexity, integrations, compliance requirements, and customization needs."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/img/backend-development-icon.webp",
-      "title": "Desktop Development Tools",
-      "decs": "We also use a hand-picked selection of desktop development tools in our programming stack. Our stack helps in offering feature-rich and high-performance solutions for creating clinical desktop apps that offer effective and seamless desktop app experiences. The notable examples of tools in the programming stack that can be used to create desktop apps include C++, Python, and Objective C. "
+      "title": "4. What is the cost of building a clinical application?",
+      "desc": "Clinical app development costs vary based on features, platforms, integrations, and regulatory requirements. We offer flexible pricing models tailored to healthcare startups and enterprises."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/img/testing-and-quality-assurance-icon.webp",
-      "title": "Cloud Database and Warehouses",
-      "decs": "Our reputation as a top online clinical application development company stands strong on the foundation of our capabilities to use cloud databases and warehouses. We build our stack for cloud databases, storage solutions, and warehouses by emphasising efficiency, scalability, and security. Our cloud database and warehousing solutions guarantee exceptional performance and seamless integration in cloud environments. We leverage the cloud storage options provided by top providers such as AWS, Azure, and Google Cloud Platform to offer multiple choices to our clients."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/core-data-icon.webp",
-      "title": "DevOps",
-      "decs": "We also specialise in DevOps to ensure the development of powerful clinical apps that can adapt to emerging trends. Our DevOps programming stack can help streamline development, testing, and deployment while fostering collaboration and effectiveness through the SDLC. We use different tools for containerisation, automation, monitoring, and CI/CD."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/maintenance-and-support.webp",
-      "title": "Wearable Integration Kit",
-      "decs": "We have an in-depth understanding of the requirement of wearables in the domain of clinical app development for personalised healthcare. Our experience in the field of wearable and kit integration has boosted our specialisation in developing clinical apps tailored for different smart devices. We leverage the most advanced programming stacks to ensure seamless integration of wearables into smart devices, thereby unlocking new possibilities for innovation. "
+      "title": "5. Do you offer security assurance for clinical applications?",
+      "desc": "Yes, we follow HIPAA-compliant clinical application development practices with robust security measures, including data encryption, secure authentication, role-based access control, and regular security testing."
     }
   ],
-  "myList": [
-    "All our clinical app developers are certified.",
-    "The portfolio of projects serves as proof of the success of our developers.",
-    "Our developers also stay updated with the latest Web3 Trends.",
-    "Our clinical app development experts specialise in latest technology stack. ",
-    "We offer the value of experience earned from working on different projects.",
-    "Our developers emphasise transparency and integrity in our services."
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Our Expert Developers to Enhance Your clinical application Development Projects",
-      "decs": "Healthcare applications are an effective solution to the sustainability of healthcare businesses in the digital era. You can hire our expert developers to create a unique clinical app that works across different platforms and devices. Our clinical app development experts can leverage the power of innovation to create scalable and customised healthcare apps and develop new types of clinical apps. With a proven track record in service excellence, we have helped multiple clients achieve their desired objectives with clinical apps.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "Methodology": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/dating-and-social-netwok.webp",
-      "title": "Requirements Analysis",
-      "decs": "The first step in our clinical application development workflow starts with collection of client requirements. Our consultants review your requirements for developing a clinical app and determine the resources required to create such an app."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/prototyping -wireframing.webp",
-      "title": "Prototyping & Wireframing",
-      "decs": "After finalising the important requirements for creating your clinical app, we design the prototype for the app. It also involves wireframing the important components of the app and establishing a connection between them alongside verifying how they deliver innovative functionalities."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/hospitality-and-tourism.webp",
-      "title": "System Architecture",
-      "decs": "We move to the next stage of clinical app development by creating the system architecture. The MVP for the clinical app can help you understand how your app would perform in different scenarios. The effective design of the system architecture helps you find out which features work best for your app."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/education-and-professional-networking.webp",
-      "title": "Development & Testing",
-      "decs": "In the development stage, our experts create your clinical app by using the different tools in our technology stack. One of the important aspects of the development process is testing and quality assurance. Testing can help us check the functionalities of your app before deploying it.  "
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/entertainment-and-lifestyle.webp",
-      "title": "Deployment & Support",
-      "decs": "The final stage of clinical application development involves deploying your clinical app to target platforms such as Google Play Store and Apple App Store. We also take care of long-term maintenance and support requirements for your clinical app to ensure that the app functions as per your needs."
-    }
-  ],
-  "High1": [
-    {
-      "num": "01",
-      "title": "Project-based Model",
-      "decs": "The project-based engagement model is the most resource-effective choice for businesses which want to create a new clinical app for specific functions. It allows you to hire our resources to work on a specific project without additional responsibilities."
-    },
-    {
-      "num": "02",
-      "title": "Dedicated Development Team",
-      "decs": "You can also get a dedicated development team for clinical software development projects that you want to run for the long term. Our dedicated experts can work as in-house team members in your company to develop powerful and feature-rich clinical apps."
-    },
-    {
-      "num": "03",
-      "title": "Team Extension",
-      "decs": "Our team extension engagement model is a trusted solution to expand your team with the expertise of our team members. We offer the flexibility of choosing resources from our company to boost the power of your app development teams with diverse value benefits. "
-    }
-  ],
-  "Arena": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/technical-expertise.webp",
-      "title": "Technical Expertise",
-      "decs": "The expertise of our developers in clinical application development comes from years of experience in using different types of technologies. Our technology stack offers powerful solutions to tailor clinical apps according to your requirements."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/comprehensive-testing-process.webp",
-      "title": "Comprehensive Testing Process",
-      "decs": "Another promising reason to trust our process for developing clinical apps is that we follow a comprehensive testing process. Our testing process involves detailed steps for quality assurance and testing under different conditions to evaluate app performance."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/faster-development-lifecycle.webp",
-      "title": "Faster Development Lifecycle",
-      "decs": "We are different from other clinical application development firms in terms of dedication to client services. Our experts specialise in development of clinical apps with the assurance of faster development without any conflicts."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/service-excellence.webp",
-      "title": "Service Excellence",
-      "decs": "All of our experts have honed their skills in technologies for developing clinical apps tailored to different requirements. With years of experience, our app development experts have achieved fluency in the art of delivering quality services."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/updated-on-latest-technologies.webp",
-      "title": "Updated on Latest Technologies",
-      "decs": "Our experts stay updated with latest technologies, such as IoT, blockchain, AI and ML, to deliver modern solutions for all clients. Our clinical app development technology stack is the best example of our commitment to learning about new technologies."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/premium-service-quality.webp",
-      "title": "Premium Service Quality",
-      "decs": "We have redefined the standards of service quality by offering different value advantages in our services to create clinical apps. Our experts not only create clinical apps with latest technologies but also follow a client-centric approach to ensure your satisfaction at all costs."
-    }
-  ],
-  "TecnologisStack": [
-    {
-      "num": "1",
-      "title": "Clinical App Consulting service:",
-      "urlLink": "ca/application-consulting-services",
-      "stack": "We provide customized clinical application development through our Clinical mobile app consulting service. Our consultant will understand your requirement and help to develop a proper plan and working progress for you so that you will get your app delivered in the given timeframe."
-    },
-    {
-      "num": "2",
-      "title": "Clinical App & Software Designing Service",
-      "stack": "Once we understand your requirements, we will start the designing process. Our experienced designer will design the front end and we will take approval from you before passing it to the development phase."
-    },
-    {
-      "num": "3",
-      "title": "Clinical App & Software Development Service",
-      "stack": "We offer a variety of development services for different types of mobile applications development. You can take our clinical application development service to develop your customized clinical app for <a href='/android-app-development' class='text-blue-600 font-bold hover:underline'>Android app development</a> , iOS app development or for Web development as well. Once you approve the design, our experienced <a href='/hire-mobile-app-developer' class='text-blue-600 font-bold hover:underline'>mobile app developer</a>  will start working on the coding part."
-    },
-    {
-      "num": "4",
-      "title": "Clinical App & Software Deployment service",
-      "stack": "Once development is over, we will do different types of testing to make sure that there will be not a single instance of bugs or error. First we test in our local server and all different environments. Once we get positive results from all the testing team then we will start the deployment process in your server or environment."
-    },
-    {
-      "num": "5",
-      "title": "Clinical App & Software Support & Maintenance",
-      "stack": "Once everything is done, there is a chance that you will face some issue in the application while using it or there will be some update which needs to be implemented in your app. With our support and maintenance service you will get a complete solution for your clinical application development throughout the years."
-    }
-  ],
-  "jsonLdData": [
+    "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -671,4 +911,5 @@
       ]
     }
   ]
+
 }

@@ -556,11 +556,11 @@
     <priority>0.80</priority>
   </url>
 
-  <url>
+  <!-- <url>
     <loc>https://www.comfygen.com/medicine-app-development</loc>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
-  </url>
+  </url> -->
 
   <url>
     <loc>https://www.comfygen.com/ca/dpos-blockchain-development-company</loc>
