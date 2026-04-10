@@ -1,98 +1,72 @@
 import React, { useState } from "react";
 import Head from "next/head";
-
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cricketliveline.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import AppClone from "../../components/AppClone"
+const Milestones = dynamic(() => import("../../components/Milestones"), {
+  ssr: true,
+});
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
+import FeaturesNewSection from "../../components/FeaturesNewSection"
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+import Trending from "../../components/Trending";
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true }
 );
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+import TechStacks from "../../components/TechStacks";
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const TechSection = dynamic(() => import("../../components/TechSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
 );
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-
-const SportsApiSupportSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/SportsApiSupportSection"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
-
-
-
-
-
-const Process = [
-  {
-    title: "Conceptualization & Market Research",
-    description: "Defining the applications purpose.Conducting deep market research. Analysing the competition"
-  },
-  {
-    title: "Discussion & Planning",
-    description: "Creating wireframes , Planning the features and functionalities , Assigning the resources and team"
-  },
-  {
-    title: "Intigration",
-    description: "Writing the Back-end codes , Live Cricket Streaming API Integration. ,Payment Gateway Integration"
-  },
-  {
-    title: "Designing",
-    description: "Creating a mock-up for the app’s layout , Designing the prototype of the app design."
-  },
-  {
-    title: "Testing and Q&A",
-    description: "Check for functionality and overall performance , Fixing bugs and glitches"
-  },
-  {
-    title: "Deployment",
-    description: "Product launch on app/play stores , App Store Guidelines Approval"
-  },
-  {
-    title: "Maintenance and Customer Support",
-    description: "Post-launch maintenance , Timely upgrading"
-  }
-
-];
+import ReviewCard from "../../components/ReviewCard";
 
 
 
@@ -101,26 +75,36 @@ const Process = [
 
 
 
-const productData = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Cricket Live Line API Provider Company - Cricket Live Line API Integration Service",
-  brand: {
-    "@type": "Brand",
-    name: "Comfygen",
-  },
-  image:
-    "https://www.comfygen.com/_next/image?url=%2Fimg%2Fskyrocket-your-exprience-with-cricket-live-line-api-development-company.webp&w=640&q=75",
-  description:
-    "Comfygen Private Limited is a top Cricket Live Line API Provider Company. We provide the best Cricket Live Line Api services to enterprises & startups worldwide.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1125",
-    bestRating: "5",
-    worstRating: "1"
-  },
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const faqPageSchema = {
@@ -181,20 +165,11 @@ const faqPageSchema = {
 
 export default function Ecommerce(props) {
   let { initialData } = props;
-  const [showContent, setShowContent] = useState(false);
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
       <Head>
-      <title>Cricket Live Line API Provider Company | Real-Time Cricket Scores</title>
+        <title>Cricket Live Line API Provider Company | Real-Time Cricket Scores</title>
 
         <meta name="description" content="Comfygen is the best Cricket Live Line API provider company offering fast, developer-friendly APIs for IPL, T20, ODI, and Test matches. Deliver real-time ball-by-ball updates, live scores, and match statistics seamlessly across apps and websites." />
         <link rel="canonical" href="https://www.comfygen.com/cricket-live-line-api" />
@@ -206,7 +181,7 @@ export default function Ecommerce(props) {
         <meta name="robots" content="INDEX, FOLLOW, MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1" />
         <meta charSet="UTF-8" />
 
-       
+
         <meta property="og:title" content="Cricket Live Line API | Live Cricket Data API for real-time Cricket Score, Stats & Feed" />
         <meta property="og:description" content="When you partner with Comfygen, you can trust that you'll have accurate and up-to-date data at your fingertips. Our cricket data APIs are meticulously maintained to ensure the highest quality and reliability." />
         <meta property="og:url" content="https://www.comfygen.com/cricket-live-line-api" />
@@ -217,13 +192,13 @@ export default function Ecommerce(props) {
         <meta name="og:latitude" content="26.912434" />
         <meta name="og:longitude" content="75.787271" />
 
-       
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top Cricket Live Line API | Live Cricket Data API | Best cricket live streaming API for Up to date real-time Cricket Score, Stats & Feed" />
         <meta name="twitter:description" content="Build the next generation of cricket apps by integrating our powerful Cricket Live Line APIs. Elevate your cricket blog, fantasy app, performance analysis tool, or chatbot using our data-rich APIs." />
         <meta name="twitter:image" content="https://www.comfygen.com/media/images/cricket-api-og-image.jpg" />
 
-        
+
         <meta name="author" content="Mr. Saddam Husen, sales@comfygen.com" />
         <meta name="reply-to" content="sales@comfygen.com" />
         <meta name="owner" content="Comfygen Pvt. Ltd." />
@@ -242,131 +217,33 @@ export default function Ecommerce(props) {
         <meta name="fb:page_id" content="110909321596135" />
 
 
- 
 
 
 
 
- 
-     
+
+
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
-        /> 
+        />
       </Head>
-      {/* <LazyLoad height={80} offset={100}> */}
-        <Header />
-      {/* </LazyLoad> */}
-      <div className="overflow-hidden lg:pt-[110px]">
 
-        <HeroSectionForAllPages
-          heading="Cricket Live Line API Provider"
-          subhead="Your Trusted Cricket Live Line Api Provider Company."
-          ptag="Cricket is not just a sport, but it is a native emotion of view.Looking to integrate real-time cricket scores into your app or website? At Comfygen, we offer a fast, developer-friendly Cricket Live Line API that delivers ball-by-ball updates, live scores, and match statistics for IPL, T20, ODI, Test, and more. Our API supports seamless integration with live score widgets and dynamic sports platforms, ensuring a smooth experience across devices."
-          ptag1="Whether you're building a sports app, or a live score portal, our powerful API ensures high-speed performance and reliable data delivery."
-          ptag2=""
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/fantasy-cricket-app-development-hero-img.webp"
-        />
+      <Navbar />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <ClientStories />
 
-        <Milestones />
-                <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Reap the Privilege of the Top-notch Cricket Live Score API Services</h2>
-              <p className="text-base text-center font-normal"></p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Skyrocket your Experience with Best Cricket Live Line API"
-          description1="Comfygen believes the fact that cricket is not just a sport; it’s an emotion for cricket enthusiasts all around the globe. We’re here to cater to your emotional connection with our best-in-class mobile app services and live cricket API solutions. Our unmatched cricket live line api provider ensures users never miss out on a moment of action, whether in the stadium or thousands of miles away."
-          description2="Comfygen takes pride in possessing a team that is a rich tapestry of diverse professionals who bring together a world of expertise to build an app with cricket live score api that's nothing short of extraordinary"
-          description3="We offer custom cricket live line api solutions leveraging cutting-edge technology to ensure your cricket live score api and your cricket live streaming api is visually appealing giving an engaging user experience."
-          description4="If you’re looking to step into the sports  app provider industry, let us be your partner. Because when it comes to creating a  top-notch cricket live line Api and live cricket API, we stand head and shoulders above the rest with a guarantee to skyrocket your web experience. Partner with the best Cricket API provider in the USA, the UK, and let's mark upon a cricket history together."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-
-
-        
-        <SportsApiSupportSection 
-          heading="Beyond Cricket: Our Live Line API Score Website Covers a Wide Sports Spectrum" 
-          description="We truly are sports enthusiasts ourselves who believe in the spirit of sports live cricket app, therefore, Comfygen offers custom live cricket streaming API for almost all major sports to reach a global audience of sports enthusiasts. As a trusted cricket API provider in India, we ensure smooth and scalable live cricket score widget integration as part of our cricket live line API  services. Our cricket live line API  service provider cater to multiple sports including:" 
-          gameDevItems={JSON_DATA.gamedev} />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step by Step Guide of Our Cricket Live Line API Process</h2>
-              <p className="text-base font-normal mt-2">We recognize the value of a seamless Cricket Live Line API integration and are committed to supporting you throughout every phase of the process. As a global leader in delivering reliable Cricket Live Line API services, Comfygen ensures a hassle-free experience from start to finish. Follow our step-by-step guide to effortlessly harness the full potential of our Live Line API for your cricket-based applications and platforms.</p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-
-
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire a Cricket Live Line API Provider"
-          text="When it comes to developing cutting-edge cricket live line Api, you don’t have to look any further. Our Cricket Live Line Api Providers are not your typical coders; they are visionaries who bring your concept to life with hands-on knowledge in developing bespoke cricket live score Api solutions. Equipped with the latest technology trends, apt at seamless API integrations—including ICC Cricket API—and creative at mobile app creation, they go past the ordinary to deliver user-centric Api solutions that are finely tuned to meet your unique requirements."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Specialization in mobile app, bringing a deep understanding of the cricket enthusiast’s unique requirements with support from a trusted cricket API provider in India.",
-            "Leveraging the latest technology and tools, our developers create leading-edge apps that outshine.",
-            "User experience is our cricket live line api top priority during the integration process, ensuring a seamless and captivating app.",
-            "Our cricket live line API seller carry a passion for cricket resulting in provideing a highly engaging api for cricket live score that resonates with cricket enthusiasts."
-          ]}
-          
-        />
-        <ClientStories/>
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Cricket Live Line Api"
-        />
-      </div>
+ 
     </>
   );
 }

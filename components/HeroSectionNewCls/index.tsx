@@ -2,59 +2,56 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import StatsBanner from "./StatsBanner";
 
-const HeroClient = dynamic(() => import("./HeroClient"), { ssr: true });
+const HeroClient = dynamic(() => import("./HeroClient"), {
+  ssr: true,
+});
 
 export default function HeroSection({ Data }: any) {
   return (
-    <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
-      
-      {/* Hero Background */}
+    <section className="relative w-full min-h-[520px] sm:min-h-[620px] lg:min-h-[720px] overflow-hidden bg-[#1a1a4f]">
 
-   <div className="absolute inset-0 hidden lg:block">
+      {/* Background Image Layer (stable LCP layer) */}
+      <div className="absolute inset-0">
         <Image
           src={Data.bgImage}
           alt={Data.imageAlt}
           fill
-         
+          priority
           fetchPriority="high"
+          sizes="100vw"
           quality={60}
-          className="object-cover object-center hidden lg:block"
+          className="object-cover"
         />
       </div>
 
-
-
-      {/* <Image
-        src={Data?.bgImage}
-        alt="AI Development Company"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-       
-      /> */}
-
-      {/* Optional Overlay */}
+      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/90 to-transparent" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-[1200px] xl:px-0 px-4 mx-auto h-full flex items-center">
-        <div className="max-w-[600px] space-y-4">
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-3xl font-bold leading-tight">
+      {/* Content Layer */}
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 lg:px-0 py-12 sm:py-16 lg:py-20 min-h-[520px] sm:min-h-[620px] lg:min-h-[720px] flex items-center">
+
+        <div className="max-w-[600px] space-y-5">
+
+          {/* Heading */}
+          <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             {Data?.heading}
           </h1>
 
-          <p className="text-white text-sm sm:text-base min-h-[60px]">
+          {/* Paragraph (stable height prevents CLS) */}
+          <p className="text-white text-sm sm:text-base leading-relaxed min-h-[60px]">
             {Data?.ptag}
           </p>
 
-          {/* Hero CTA */}
-          <div className="min-h-[50px]">
+          {/* CTA (reserved space avoids shift when hydrated) */}
+          <div className="min-h-[50px] flex items-center">
             <HeroClient />
           </div>
 
-          {/* Stats Banner */}
-          <StatsBanner />
+          {/* Stats (desktop only but layout-safe) */}
+          <div className="mt-6">
+            <StatsBanner />
+          </div>
+
         </div>
       </div>
     </section>
@@ -74,49 +71,52 @@ export default function HeroSection({ Data }: any) {
 
 
 
-
-
-
 // import Image from "next/image";
-// import HeroClient from "./HeroClient";
+// import dynamic from "next/dynamic";
 // import StatsBanner from "./StatsBanner";
 
-// export default function HeroSection({Data}:any) {
-//   return (
-   
-//       <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px]  bg-[#1a1a4f] overflow-hidden">
+// const HeroClient = dynamic(() => import("./HeroClient"), { ssr: true });
 
-//         {/*  Background Image (SSR + CLS SAFE) */}
+// export default function HeroSection({ Data }: any) {
+//   return (
+//     <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
+      
+//       {/* Hero Background */}
+
 //         <Image
-//           src={Data?.bgImage}
-//           alt="AI Development Company"
+//           src={Data.bgImage}
+//           alt={Data.imageAlt}
 //           fill
-//           priority
-//           sizes="100vw"
-//           className="object-cover"
+//           fetchPriority="high"
+//            priority
+//           quality={60}
+//           className="object-cover "
 //         />
 
-//         {/* Overlay */}
-//         {/* <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/90 to-transparent" /> */}
 
-//         {/*  Content (VISIBLE IN VIEW SOURCE) */}
-//         <div className="relative z-10 max-w-[1200px] xl:px-0 px-4 mx-auto  h-full flex items-center">
-//           <div className="max-w-[600px] space-y-4">
+//       {/* Optional Overlay */}
+//       <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/90 to-transparent" />
 
-//             <h1 className="text-white text-3xl sm:text-4xl lg:text-3xl font-bold leading-tight">
-//               {Data?.heading}
-//             </h1>
+//       {/* Content */}
+//       <div className="relative z-10 max-w-[1200px] xl:px-0 px-4 mx-auto h-full flex items-center">
+//         <div className="max-w-[600px] space-y-4 min-h-[60px]">
+//           <h1 className="text-white text-3xl sm:text-4xl lg:text-3xl font-bold leading-tight">
+//             {Data?.heading}
+//           </h1>
 
-//             <p className="text-white text-sm sm:text-base min-h-[60px]">
-//               {Data?.ptag}
-//             </p>
+//           <p className="text-white text-sm sm:text-base ">
+//             {Data?.ptag}
+//           </p>
 
-//             {/*  CLIENT CTA (only this part hydrates) */}
+//           {/* Hero CTA */}
+//           <div className="min-h-[50px]">
 //             <HeroClient />
-//             <StatsBanner />
 //           </div>
+
+//           {/* Stats Banner */}
+//           <StatsBanner />
 //         </div>
-//       </section>
-   
+//       </div>
+//     </section>
 //   );
 // }
