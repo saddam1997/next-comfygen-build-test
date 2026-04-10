@@ -33,7 +33,7 @@ export default function HeroSection({ Data }: any) {
         <div className="max-w-[600px] space-y-5">
 
           {/* Heading */}
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+          <h1 className="text-white text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
             {Data?.heading}
           </h1>
 

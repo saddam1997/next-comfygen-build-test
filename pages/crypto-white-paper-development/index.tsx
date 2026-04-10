@@ -3,13 +3,132 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowhitepaper.json";
 
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+import Emerging from "../../components/Emerging";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+import IndustryGrid from "../../components/IndustryGrid";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />
 );
-
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -39,9 +158,6 @@ const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: loader, ssr: true }
 )
-
-
-
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
   { loading: loader, ssr: true }
@@ -52,28 +168,15 @@ const HireDeveloper = dynamic(
   { loading: loader, ssr: true }
 )
 
-
-
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 )
 
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-
-
-
-
 
 
 import ConsultancyApproach from "../../components/Newcomponet/SectionCompoent/ConsultancyApproach"
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+
 
 
 
@@ -90,9 +193,6 @@ export default function MultiChain(props: any) {
 
 
   const jsonLdData = [
-
- 
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -230,129 +330,27 @@ export default function MultiChain(props: any) {
         />
       </Head>
 
-      <Header />
-
-      <div className="overflow-hidden lg:pt-[110px]">
-
-        <HeroSectionForAllPages
-          heading="Crypto White Paper development Service"
-          ptag="Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards."
-          li="Investor-Ready Whitepaper Creation"
-          li1="Tokenomics & Market Research"
-          li2="Technical Documentation & Compliance"
-          li3="Clear, Engaging, and Professional Writing"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp"
-        />
-
-        <AboutSection
-          title="About Company"
-          heading="Your Trusted Crypto White Paper Development Company"
-          description1="A strong white paper does more than explain tech details—it tells your project’s story and wins investor trust. That takes research, domain knowledge, and clear writing."
-          description2="At Comfygen India, we create impactful Crypto, ICO, and IDO White Papers that simplify complex blockchain ideas, highlight your vision, and make your project stand out. From DeFi to NFTs, we turn concepts into persuasive documents that attract serious investors."
-          points={[
-            "In-depth research and analysis tailored to your project",
-            "Clear, engaging writing that makes complex ideas simple",
-            "Strategic structure designed to appeal to investors",
-            "Experience across crypto, DeFi, NFT, and blockchain projects"
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Comprehensive Crypto Whitepaper Writing Services</h2>
-              <p className="text-base text-center font-normal">Comfygen offers professional Crypto White Paper Development Services to help businesses effectively present their cryptocurrency-related projects. Our skilled Crypto Whitepaper Writing company crafts compelling, well-researched documents tailored to your needs, ensuring clarity, credibility, and investor confidence.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Crypto Whitepaper Based Portfolio"
-            description="Propelling innovation and achievement through visionary design and development. A reflection of our unwavering passion for creativity and excellence."
-          />
-        </section>
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+<HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+<WhyChooseSection pageData={JSON_DATA.pageData} />
+ <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">How We Create Your Crypto Whitepaper Writing Process</h2>
-              <p className="text-base font-normal mt-2">
-                A successful Crypto Whitepaper Writing services combine technical depth with simplicity, so even non-technical investors can understand and trust your project. Here’s how we do it:
-              </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Processs} />
-          </div>
-        </section>
+
+      <ClientStories />
+
+  <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
 
-        <ConsultancyApproach
-          imageSrc="https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp"
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <CallToAction
-          heading="Launch Your Crypto White Paper Today"
-          text="Ready to present your <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain Development</a> project with clarity and impact? Connect with us for a free consultation, and let’s craft a professional white paper that attracts investors and builds trust."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-
-        <HireDeveloper
-          heading="Hire Cryptocurrency White Paper Writers"
-          text="Comfygen provides quality whitepaper writing services by proficient whitepaper writers who do research for each project. Our whitepapers cover all business sectors with high-end security, including crypto and non-crypto"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Using our expert writers, we will create a white paper that will meet the business people's needs.",
-            "focus on the information that will be convenient for the business.",
-            "The writers of our whitepapers also take note of the data's style, layouts, and anything else that needs to be designed.",
-            "Having worked in the Whitepaper Writing field for 14 years, Comfygen writers have a lot of experience",
-            "More than 600 white papers have been completed"
-          ]}
-        />
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <TechStack
-          title="Our Cryptocurrency Development Technology Stack"
-          description=""
-        />
-        <ClientStories />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }

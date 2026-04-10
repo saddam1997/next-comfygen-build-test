@@ -1,161 +1,214 @@
 {
-  "NewSections": {
-    "title": "Crypto White Paper Development Company",
-    "decs": "Comfygen is a reputable White Paper Development Company that provides all-inclusive services for the creation of cryptocurrency white papers. Our talented writers are experts in crafting interesting and educational white papers that clearly explain your cryptocurrency concept. We guarantee a competent and thorough approach when writing your white paper using our white paper writing services. We have the knowledge to suit your demands, whether you require assistance with White Paper Creation, Crypto White Paper Writing, or the hiring of Cryptocurrency White Paper Writers."
+
+  "Herosection": {
+    "heading": "Crypto White Paper development Service",
+    "isHome": false,
+    "ptag": "Comfygen provide the best crypto white paper writing services specifically developed for ICOs, STOs, DeFi, NFTs, and blockchain development projects. Our crypto white paper writing development expert writers craft clear, persuasive, and investor-ready white papers that explain your project’s vision, technology, tokenomics, and roadmap with precision. A well-structured whitepaper builds credibility, attracts investors, and ensures compliance with industry standards.",
+    "ptag1": "",
+    "listItems": [
+      "Investor-Ready Whitepaper Creation",
+      "Tokenomics & Market Research",
+      "Technical Documentation & Compliance",
+      "Clear, Engaging, and Professional Writing"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Crypto White Paper development Service",
+    "bgImage": "https://www.comfygen.com/herosection/crypto-white-paper-dev-hero-img.webp"
   },
-  "Whycomfygen": [
-    {
-      "num": "01",
-      "title": "The fundamentals",
-      "desc": "From the imagination phase to completion at a certain point, this explains how you plan to accomplish your project. Your whitepaper design will be based on this, and you'll need the best minds for it. "
-    },
-    {
-      "num": "02",
-      "title": "Analyses of the market   ",
-      "desc": "To convince investors that your project is viable, you should include a market analysis in your whitepaper. Your project's market analysis is a comprehensive assessment of the ma"
-    },
-    {
-      "num": "03",
-      "title": "Structure of white papers",
-      "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
-    }
-  ],
 
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
-      "title": "Aria Coin Cryptocurrency",
-      "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
-      "link": "/portfolio/aria-coin-details"
-    },
-    {
-      "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
-      "title": "Great Wallet Application",
-      "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
-      "link": "/portfolio/great-wallet"
-    },
-    {
-      "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
-      "title": "M7Coin Web Wallet",
-      "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
-      "link": "/portfolio/m7-coin"
-    }
-  ],
+  "ServicesData": {
+    "heading": "Our Comprehensive Crypto Whitepaper Writing Services",
+    "description": "Comfygen offers professional Crypto White Paper Development Services to help businesses effectively present their cryptocurrency-related projects. Our skilled Crypto Whitepaper Writing company crafts compelling, well-researched documents tailored to your needs, ensuring clarity, credibility, and investor confidence.",
+    "services": [
+      {
+        "title": "Cryptocurrency White Paper Writing",
+        "subtitle": "",
+        "description": "Our expert writers provide clear and concise explanations of cryptocurrency use cases. With a focus on functionality and real-world applications, our whitepapers help position your project as a viable and innovative solution.",
+        "features": [
+          "Detailed Use Case Explanation",
+          "Professional and Persuasive Content",
+          "Tailored to Your Project Goals"
+        ]
+      },
+      {
+        "title": "ICO White Paper Writing",
+        "subtitle": "",
+        "description": "Raise funds effectively with our ICO white paper writing services. We create engaging and elegant whitepapers that highlight your ICO platform’s value, encouraging investor participation.",
+        "features": [
+          "Fundraising Optimization",
+          "Strategic and Concise Messaging",
+          "Comprehensive Project Overview"
+        ]
+      },
+      {
+        "title": "Crypto Exchange White Paper Writing",
+        "subtitle": "",
+        "description": "Our crypto exchange white paper writing services rejuvenate your crypto exchange platform by showcasing its features, benefits, and growth potential to investors and stakeholders.",
+        "features": [
+          "Feature-Focused Content",
+          "Investor-Centric Messaging",
+          "Market Competitiveness Highlight"
+        ]
+      },
+      {
+        "title": "NFT White Paper Writing",
+        "subtitle": "",
+        "description": "Promote your NFT project with confidence through our NFT white paper writing services. We provide clear explanations of your project’s uniqueness, value proposition, and market potential to attract interest.",
+        "features": [
+          "Unique Value Proposition",
+          "Hassle-Free Execution",
+          "Tailored to the NFT Market"
+        ]
+      },
+      {
+        "title": "DeFi White Paper Writing",
+        "subtitle": "",
+        "description": "Convince investors why your DeFi platform is the right choice with our DeFi white paper writing services. We deliver stunning, well-articulated documents that emphasize your platform’s advantages and investment potential.",
+        "features": [
+          "Compelling Investment Narrative",
+          "Focus on Innovation and Security",
+          "Comprehensive Value Proposition"
+        ]
+      },
+      {
+        "title": "STO White Paper Writing",
+        "subtitle": "",
+        "description": "Achieve your business goals efficiently with our STO white paper writing services. We provide detailed, professional whitepapers designed to attract attention and inspire confidence in your Security Token Offering.",
+        "features": [
+          "Timely and Targeted Content",
+          "Compliance and Security Emphasis",
+          "Business Growth Alignment"
+        ]
+      }
+    ]
+  },
+
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Your Trusted Crypto White Paper Development Company",
+    "description1": "A strong white paper does more than explain tech details—it tells your project’s story and wins investor trust. That takes research, domain knowledge, and clear writing.",
+    "description2": "At Comfygen India, we create impactful Crypto, ICO, and IDO White Papers that simplify complex blockchain ideas, highlight your vision, and make your project stand out. From DeFi to NFTs, we turn concepts into persuasive documents that attract serious investors.",
+    "description3": "",
+    "description4": "",
+    "points": [
+      "In-depth research and analysis tailored to your project",
+      "Clear, engaging writing that makes complex ideas simple",
+      "Strategic structure designed to appeal to investors",
+      "Experience across crypto, DeFi, NFT, and blockchain projects"
+    ],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
 
 
-  "Processs": [
-    {
-      "title": "Project Understanding",
-      "description": "We begin by learning about your project in detail—the problem you’re solving, your solution, technical framework, and business model."
-    },
-    {
-      "title": "Research & Data Collection",
-      "description": "Our team conducts in-depth research to validate your concept, gathering authoritative data, market insights, and competitor analysis to strengthen your white paper."
-    },
-    {
-      "title": "Structuring the Content",
-      "description": "We design a clear outline that organises technical details, business strategy, tokenomics, and roadmap into a logical flow that investors can easily follow."
-    },
-    {
-      "title": "Technical Writing",
-      "description": "With the structure in place, we craft crisp, accurate, and easy-to-read content that explains complex blockchain ideas in a way that resonates with both experts and beginners."
-    },
-    {
-      "title": " Visual Design & Branding",
-      "description": "Our creative designers balance text with visuals—charts, infographics, and illustrations—while aligning the document with your brand identity through colors, typography, and style."
-    },
-    {
-      "title": "Review & Refinement",
-      "description": "Every draft goes through multiple reviews to ensure accuracy, clarity, and persuasive tone. We refine until your white paper is both authoritative and engaging."
-    },
-    {
-      "title": " Final Delivery",
-      "description": "You receive a polished, investor-ready white paper that communicates your vision, validates your project, and inspires confidence."
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Benefits of Crypto White Paper Writing Services",
-      "desc": "Your whitepaper should include certain important points clearly and explicitly. You won't be able to submit your paper if any of these items are missing."
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "The fundamentals",
-      "desc": "From the imagination phase to completion at a certain point, this explains how you plan to accomplish your project. Your whitepaper design will be based on this, and you'll need the best minds for it."
-    },
-    {
-      "title": "Analyses of the market",
-      "desc": "To convince investors that your project is viable, you should include a market analysis in your whitepaper. Your project's market analysis is a comprehensive assessment"
-    },
-    {
-      "title": "Structure of white papers",
-      "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "Cryptocurrency White Paper Writing",
-      "subtitle": "",
-      "description": "Our expert writers provide clear and concise explanations of cryptocurrency use cases. With a focus on functionality and real-world applications, our whitepapers help position your project as a viable and innovative solution.",
-      "features": [
-        "Detailed Use Case Explanation",
-        "Professional and Persuasive Content",
-        "Tailored to Your Project Goals"
-      ]
-    },
-    {
-      "title": "ICO White Paper Writing",
-      "subtitle": "",
-      "description": "Raise funds effectively with our ICO white paper writing services. We create engaging and elegant whitepapers that highlight your ICO platform’s value, encouraging investor participation.",
-      "features": [
-        "Fundraising Optimization",
-        "Strategic and Concise Messaging",
-        "Comprehensive Project Overview"
-      ]
-    },
-    {
-      "title": "Crypto Exchange White Paper Writing",
-      "subtitle": "",
-      "description": "Our crypto exchange white paper writing services rejuvenate your crypto exchange platform by showcasing its features, benefits, and growth potential to investors and stakeholders.",
-      "features": [
-        "Feature-Focused Content",
-        "Investor-Centric Messaging",
-        "Market Competitiveness Highlight"
-      ]
-    },
-    {
-      "title": "NFT White Paper Writing",
-      "subtitle": "",
-      "description": "Promote your NFT project with confidence through our NFT white paper writing services. We provide clear explanations of your project’s uniqueness, value proposition, and market potential to attract interest.",
-      "features": [
-        "Unique Value Proposition",
-        "Hassle-Free Execution",
-        "Tailored to the NFT Market"
-      ]
-    },
-    {
-      "title": "DeFi White Paper Writing",
-      "subtitle": "",
-      "description": "Convince investors why your DeFi platform is the right choice with our DeFi white paper writing services. We deliver stunning, well-articulated documents that emphasize your platform’s advantages and investment potential.",
-      "features": [
-        "Compelling Investment Narrative",
-        "Focus on Innovation and Security",
-        "Comprehensive Value Proposition"
-      ]
-    },
-    {
-      "title": "STO White Paper Writing",
-      "subtitle": "",
-      "description": "Achieve your business goals efficiently with our STO white paper writing services. We provide detailed, professional whitepapers designed to attract attention and inspire confidence in your Security Token Offering.",
-      "features": [
-        "Timely and Targeted Content",
-        "Compliance and Security Emphasis",
-        "Business Growth Alignment"
-      ]
-    }
-  ],
+  "Portfoliodata": {
+    "heading": "Explore Our Crypto Whitepaper Based Portfolio",
+    "description": "Propelling innovation and achievement through visionary design and development. A reflection of our unwavering passion for creativity and excellence.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/img/aria-coin-cryptocurrency.webp",
+        "title": "Aria Coin Cryptocurrency",
+        "description": "ARIA Coin is reshaping digital finance with a secure, decentralized platform for global transactions. Focused on accessibility, transparency, and efficiency, it empowers individuals and businesses with seamless, borderless financial interactions.",
+        "link": "/portfolio/aria-coin-details"
+      },
+      {
+        "image": "https://www.comfygen.com/img/footer-image-great-wallet.webp",
+        "title": "Great Wallet Application",
+        "description": "Great Wallet is an advanced iOS wallet for the Great Crypto Network, leveraging blockchain, AI, and machine learning. Designed for economic transformation, it ensures secure, transparent, and efficient digital transactions in a decentralized ecosystem.",
+        "link": "/portfolio/great-wallet"
+      },
+      {
+        "image": "https://www.comfygen.com/img/hero-bg-m7-coin.webp",
+        "title": "M7Coin Web Wallet",
+        "description": "M7Coin Web Wallet offers a secure and intuitive way to manage cryptocurrency assets. With seamless storage, sending, and receiving features, it simplifies digital transactions while ensuring top-tier security and ease of use.",
+        "link": "/portfolio/m7-coin"
+      }
+    ]
+  },
+
+  "NFTProcessData": {
+    "heading": "How We Create Your Crypto Whitepaper Writing Process",
+    "description": "A successful Crypto Whitepaper Writing services combine technical depth with simplicity, so even non-technical investors can understand and trust your project. Here’s how we do it:",
+    "Process": [
+      {
+        "title": "Project Understanding",
+        "description": "We begin by learning about your project in detail—the problem you’re solving, your solution, technical framework, and business model."
+      },
+      {
+        "title": "Research & Data Collection",
+        "description": "Our team conducts in-depth research to validate your concept, gathering authoritative data, market insights, and competitor analysis to strengthen your white paper."
+      },
+      {
+        "title": "Structuring the Content",
+        "description": "We design a clear outline that organises technical details, business strategy, tokenomics, and roadmap into a logical flow that investors can easily follow."
+      },
+      {
+        "title": "Technical Writing",
+        "description": "With the structure in place, we craft crisp, accurate, and easy-to-read content that explains complex blockchain ideas in a way that resonates with both experts and beginners."
+      },
+      {
+        "title": " Visual Design & Branding",
+        "description": "Our creative designers balance text with visuals—charts, infographics, and illustrations—while aligning the document with your brand identity through colors, typography, and style."
+      },
+      {
+        "title": "Review & Refinement",
+        "description": "Every draft goes through multiple reviews to ensure accuracy, clarity, and persuasive tone. We refine until your white paper is both authoritative and engaging."
+      },
+      {
+        "title": " Final Delivery",
+        "description": "You receive a polished, investor-ready white paper that communicates your vision, validates your project, and inspires confidence."
+      }
+    ]
+  },
+
+  "Whycomfygens": {
+    "title": "Benefits of Crypto White Paper Writing Services",
+    "description": "Your whitepaper should include certain important points clearly and explicitly. You won't be able to submit your paper if any of these items are missing.",
+    "buttonText": "",
+    "buttonLink": "",
+    "image": "https://www.comfygen.com/comfygen-images/mobile-crypto-wallet-development/benefit-section-image.webp",
+    "proces": [
+      {
+        "title": "The fundamentals",
+        "desc": "From the imagination phase to completion at a certain point, this explains how you plan to accomplish your project. Your whitepaper design will be based on this, and you'll need the best minds for it."
+      },
+      {
+        "title": "Analyses of the market",
+        "desc": "To convince investors that your project is viable, you should include a market analysis in your whitepaper. Your project's market analysis is a comprehensive assessment"
+      },
+      {
+        "title": "Structure of white papers",
+        "desc": "The summary will highlight what your project is all about. In the body of the paper, the project, market data, statistics, and solutions will be discussed in detail."
+      }
+    ]
+  },
+  "CallToAction": {
+    "heading": "Launch Your Crypto White Paper Today",
+    "text": "Ready to present your <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibold'>Blockchain Development</a> project with clarity and impact? Connect with us for a free consultation, and let’s craft a professional white paper that attracts investors and builds trust.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Get in touch now."
+  },  
+
+  "HireDeveloper": {
+    "heading": "Hire Cryptocurrency White Paper Writers",
+    "text": "Comfygen provides quality whitepaper writing services by proficient whitepaper writers who do research for each project. Our whitepapers cover all business sectors with high-end security, including crypto and non-crypto",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Using our expert writers, we will create a white paper that will meet the business people's needs.",
+      "focus on the information that will be convenient for the business.",
+      "The writers of our whitepapers also take note of the data's style, layouts, and anything else that needs to be designed.",
+      "Having worked in the Whitepaper Writing field for 14 years, Comfygen writers have a lot of experience",
+      "More than 600 white papers have been completed"
+    ]
+  },
   "pageData": {
     "title": "Why Choose Us As a White Paper Writing Services Provider",
     "description": "With the most advanced technologies, Comfygen strives to provide innovative and better results. Count on us for dependability, trust, and reliability. Keeping up with the latest trends and anticipating changes, we ensure that crypto white paper development is enforced in a way that empowers you digitally.",
@@ -187,36 +240,383 @@
       }
     ]
   },
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Benefits of Crypto White Paper Writing Services",
-      "desc": "Your whitepaper should include certain important points clearly and explicitly. You won't be able to submit your paper if any of these items are missing."
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
+  ],
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
+        }
+      ]
     }
-  ],
-  "myList1": [
-    "To strengthen and validate the information provided in the white paper, we conduct rigorous research related to your project, ensuring the crypto white paper development is backed by accurate, authoritative data.",
-    "After conducting thorough research and armed with complete information, we create crisp, clear, and comprehensible content that educates and informs your potential investors about the key information of your project, making it accessible through our expert white paper writing services.",
-    "Once the technical writing for the white paper is complete, we move on to designing it. With our creative designers, we create a perfect balance between text and graphics while incorporating elements that align with your brand, such as color theme, typography, and icons—making your crypto white paper visually appealing to investors.",
-    "To create your white paper, we begin by understanding your project - including the problem you are addressing, your proposed solution, technical details, and your business plan."
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Cryptocurrency White Paper Writers",
-      "desc": " Comfygen provides quality whitepaper writing services by proficient whitepaper writers who do research for each project. Our whitepapers cover all business sectors with high-end security, including crypto and non-crypto ",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "Using our expert writers, we will create a white paper that will meet the business people's needs.",
-    "focus on the information that will be convenient for the business.",
-    "The writers of our whitepapers also take note of the data's style, layouts, and anything else that needs to be designed.",
-    "Having worked in the Whitepaper Writing field for 14 years, Comfygen writers have a lot of experience",
-    "More than 600 white papers have been completed"
-  ],
-  "Frequently": [
+  },
+
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
+"Frequently": [
     {
       "num": "1",
       "title": "What is white paper development?",
@@ -233,4 +633,5 @@
       "desc": "As a product designer, a white paper often explains the philosophy and operation of a product in a marketplace or technology context."
     }
   ]
+  
 }

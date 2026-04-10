@@ -17,8 +17,8 @@ const ProcessComponent = ({ ProcessData }: any) => {
                 <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
                     <div className="text-center space-y-3">
 
-                        <HeadingTwo color={"black"} text= {heading} />
-                          <ParagraphText color={"black"} text={description} />
+                        <HeadingTwo color={"black"} text={heading}/>
+                          <ParagraphText color={"black"} text={description}/>
                     </div>
                     <div className={styles.processContent}>
                         <div className={styles.processAnimation}>
