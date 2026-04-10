@@ -5,9 +5,6 @@ import JSON_DATA from "./courier-delivery-app-development.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-
-
-
 import AppClone from "../../components/AppClone"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -85,111 +82,7 @@ export default function ClinicalApp(props: any) {
   let { initialData } = props;
  
 
-  const jsonLdData = [
 
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Custom Courier Delivery App Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Launch a feature-rich courier delivery app with Comfygen Technologies. Our Parcel Delivery App Development team creates easy, secure, and scalable apps with live tracking, smart route optimization, and fast payment integration.",
-      "url": "https://www.comfygen.com/courier-delivery-app-development",
-      "mainEntityOfPage": "https://www.comfygen.com/courier-delivery-app-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "On-demand Courier Delivery App Development",
-        "Parcel Delivery App Development",
-        "Last-mile Delivery App Development",
-        "Courier Dispatch & Tracking App Development",
-        "White-label Courier App Development Solutions",
-        "Courier App Development for Carriers",
-        "Haulage Courier App Development",
-        "Freight Forwarding Courier App Development",
-        "Courier Marketplace App Development",
-        "Courier App Development for Delivery Chains"
-
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-
-      ]
-    },
-
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Courier Delivery App Development",
-        "item": "https://www.comfygen.com/courier-delivery-app-development"
-
-      }]
-    },
-   {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does courier delivery app development cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Courier delivery app development costs vary based on features, platforms, and complexity. A basic on-demand courier app typically starts from $5,000–$12,000, while a full-featured AI-powered courier platform can range from $25,000 to $50,000+. At Comfygen, we provide transparent, milestone-based pricing with no hidden charges. Contact us for a detailed cost estimate tailored to your specific requirements."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to develop a courier delivery app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Development timelines depend on the app's scope and complexity. A standard courier app for both Android and iOS typically takes 10–14 weeks. An advanced platform with AI features, multi-branch support, and complex integrations can take 16–20 weeks. We follow agile sprints with weekly deliverables so you always know where your project stands."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between an on-demand courier app and a standard courier app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A standard courier app handles pre-scheduled deliveries and order management. An on-demand courier delivery app is built for real-time, instant-booking use cases — where customers request a pickup and a driver is dispatched immediately, similar to how ride-hailing apps work. Comfygen builds both, and can combine both models in a single platform."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you build a white-label courier app that I can brand as my own?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our white-label courier app development solutions give you a fully functional, pre-built courier platform that can be branded, customized, and launched under your company name. This significantly reduces development time and cost while giving you full ownership and flexibility to modify features as your business grows."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you develop courier apps for both Android and iOS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We develop native Android and iOS apps as well as cross-platform solutions using Flutter and React Native. Cross-platform development reduces cost and time while delivering near-native performance on both platforms. We help you choose the right approach based on your audience and budget."
-      }
-    }
-  ]
-}
-
-
-  ];
 
   return (
     <>
@@ -230,7 +123,7 @@ export default function ClinicalApp(props: any) {
         {/* Structured Data Scripts */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
 
