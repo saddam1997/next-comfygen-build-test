@@ -36,7 +36,9 @@ export default function Emerging({ emerging }: any) {
               return (
                 <div key={title} className="relative">
                   <div className="flex justify-start gap-2 place-items-center relative">
-                    <Image src={elem.img} alt={elem.title} width={300} height={100} className="w-8 h-8 object-contain" />
+                   { elem.img && (
+                     <Image src={elem.img} alt={elem.title} width={300} height={100} className="w-8 h-8 object-contain" />
+                   )}
                     <h3 className="text-2xl font-bold text-[#fff] text-start">
                       {title}
                     </h3>

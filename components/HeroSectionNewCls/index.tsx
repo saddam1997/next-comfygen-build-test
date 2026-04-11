@@ -9,12 +9,12 @@ const HeroClient = dynamic(() => import("./HeroClient"), {
 export default function HeroSection({ Data }: any) {
   return (
     <section
-      className="relative w-full min-h-[520px] sm:min-h-[620px] lg:min-h-[720px] overflow-hidden"
-      style={{
-        backgroundImage: `url(${Data.bgImage})`, // UX layer
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative w-full min-h-[520px] sm:min-h-[620px] lg:min-h-[720px] overflow-hidden  bg-[#1a1a4f]"
+      // style={{
+      //   backgroundImage: `url(${Data.bgImage})`, // UX layer
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       {/* LCP layer */}
       <Image
