@@ -1,28 +1,23 @@
 import Image from 'next/image';
 import React from 'react'
 
-const Index = ({JSON_DATA}) => {
+const Index = ({Data}:any) => {
   return (
         <section className="lg:py-16 py-4 bg-[#F5F5F9]">
           <div className=" space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="">
-              {JSON_DATA.Major.map((elem: any) => {
-                const { title, num, decs } = elem;
-                return (
-                  <div
-                    key={num}
+               <div
+                    
                     className="w-full flex flex-col justify-center items-center text-center space-y-2"
                   >
                     <h2 className=" font-bold 2xl:text-4xl xl:text-3xl text-2xl text-[#212121] text-center">
-                      {title}
+                      {Data?.title}
                     </h2>
-                    <p className="text-base text-slate-800">{decs}</p>
+                    <p className="text-base text-slate-800">{Data?.description}</p>
                   </div>
-                );
-              })}
             </div>
             <div className="grid  gap-10 lg:grid-cols-3 md:grid-cols-2">
-              {JSON_DATA.Service.map((elem: any) => {
+              {Data.Service.map((elem: any) => {
                 const { title, decs, num, img } = elem;
                 return (
                   <div
