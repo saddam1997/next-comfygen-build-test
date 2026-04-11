@@ -4,7 +4,144 @@ import Head from "next/head";
 import { BsFillStarFill } from "react-icons/bs";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
+
+
+import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+import Networks from "../../components/Networks"
+
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+import Emerging from "../../components/Emerging";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+import IndustryGrid from "../../components/IndustryGrid";
+
+
+
+// const CardListMinimal = dynamic(
+//   () => import("./components/CardListMinimal"),
+//   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import AboutSection from "../../components/Newcomponet/SectionCompoent/AboutSection";
@@ -61,10 +198,7 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+
 
 
 
@@ -156,7 +290,7 @@ export default function Ecommerce(props: any) {
   };
 
   const jsonLdData = [
-  
+
 
     {
       "@context": "https://schema.org",
@@ -408,65 +542,14 @@ export default function Ecommerce(props: any) {
 
       <BlockChainHeader />
       <div className="overflow-hidden lg:pt-[110px] pt-16">
-        <div className="">
-   <HeroSectionNewCls Data={JSON_DATA.Herosection} />
 
-          {/* <HeroSectionForAllPages
-            heading="Blockchain DApp Development Company"
-            ptag="Grow your business with Comfygen’s expert DApp development services. As a leading decentralized application development company, we build secure, scalable, and user-friendly blockchain applications for DeFi platforms, NFT marketplaces, metaverse projects, gaming, and enterprise use cases. Our blockchain experts deliver high-performance smart contracts and seamless Web3 integration to ensure reliability, scalability, and future-ready innovation."
-            li="End-to-End Custom DApp Development"
-            li1="Secure & Scalable Blockchain Integration"
-            li2=" Expertise in DeFi, NFT & Web3 Solutions"
-            li3="Cross-Platform Decentralized App Development"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp"
-          /> */}
-        </div>
-        <Milestones />
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <Solution techData={JSON_DATA.Trading} />
+        {/* <Networks Data={JSON_DATA.BlockchainNetworks}/> */}
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Expert dApp Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                <a className="text-blue-600" href="https://www.comfygen.com/">
-                  Comfygen
-                </a>
-                stands as a leading dApp Development Company, offering a wide
-                range of expert dApp development services to help businesses
-                create innovative and high-performance decentralized
-                applications. With our proficiency in custom dApp development
-                across multiple domains, we assist you in transforming your
-                ideas into reality while ensuring business growth.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Experience Unmatched dApp Development Services with Our Expertise!"
-          description1="We are one of the pioneers in delivering dApp development services with a client-centric approach. Our experience in creating backend code for dApps and intuitive, user-friendly interfaces enhances the quality of our dApp development solutions. We also leverage our business acumen to provide custom dApp development services that help your business grow. You can rely on our decentralized application development expertise to translate your ideas into ready-to-use dApps with seamless user experiences."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <SolutionSec
-          heading="Advantages of Choosing Our dApp Development Services"
-          subheading="When you choose Comfygen for your decentralized application (dApp) development, you're tapping into a team that delivers tailored solutions with the latest technology. Here’s why partnering with us can make a real difference for your business"
-          techData={technologyData}
-        />
+{/* 
         <section className="lg:py-16 py-4 bg-[#F5F5F9]">
           <div className=" space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="">
@@ -509,7 +592,7 @@ export default function Ecommerce(props: any) {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}

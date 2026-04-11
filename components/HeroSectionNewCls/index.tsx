@@ -69,8 +69,6 @@ export default function HeroSection({ Data }: any) {
 
 
 
-
-
 // import Image from "next/image";
 // import dynamic from "next/dynamic";
 // import StatsBanner from "./StatsBanner";

@@ -1,5 +1,4 @@
 {
-
   "Herosection": {
     "heading": "Blockchain DApp Development Company",
     "isHome": false,
@@ -16,6 +15,270 @@
     "altTag": "Blockchain DApp Development Company",
     "bgImage": "https://www.comfygen.com/herosection/dapp-development-company-hero-img.webp"
   },
+  "ServicesData": {
+    "heading": "Our Expert dApp Development Services",
+    "description": "Comfygen stands as a leading dApp Development Company, offering a wide range of expert dApp development services to help businesses create innovative and high-performance decentralized applications. With our proficiency in custom dApp development across multiple domains, we assist you in transforming your ideas into reality while ensuring business growth.",
+    "services": [
+      {
+        "title": "MVP Consulting",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We stand out from the crowd in offering exceptional MVP consulting services to our clients for dApp development projects. Our dApp development experts use their knowledge of new market trends to analyse the probabilities of success with your ideas. We can also help you in the identification of potential stakeholders, the definition of technical components, and the selection of an ideal blockchain platform according to client requirements.",
+        "features": [
+          "Identifying potential stakeholders",
+          "Defining technical components",
+          "Selecting the ideal blockchain platform based on business needs"
+        ]
+      },
+      {
+        "title": "UI Design",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our approach to build a dApp gives the additional advantage of a systematic and structured process for designing the user interface of the dApps. We aim to create user interfaces that are simple and easy to understand. You can onboard users to your dApps effectively with flexible options for navigating different features through the user interface. We focus on the target audience and implement the design approaches accordingly.",
+        "features": [
+          "Simple, accessible, and clean UI designs",
+          "Seamless onboarding experience for users",
+          "Flexible navigation options for enhanced usability"
+        ]
+      },
+      {
+        "title": "DEX Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our team has great expertise and extensive knowledge of the DEX development process. We can help you create customised and scalable decentralized exchanges or DEX platforms with support for peer-to-peer transactions. Our custom dApp development expertise helps us create DEX platforms that can adapt to different business use cases. Our DEX platforms could support connectivity with external exchanges through APIs and shared order books.",
+        "features": [
+          "Integration with external exchanges via APIs",
+          "Shared order books for liquidity",
+          "Adaptive to various business use cases"
+        ]
+      },
+      {
+        "title": "dApp Consultation",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our dApp consultation services could help you create a dApp with the efficient use of resources. You can talk to our experts about your idea for a decentralized app to find the chances of success. We guide you through the technical and business aspects of the project, alongside helping you identify the ideal blockchain platform for developing dApps.",
+        "features": [
+          "Technical and business guidance",
+          "Selection of the ideal blockchain platform",
+          "Expert advice on efficient resource use and project success"
+        ]
+      },
+      {
+        "title": "Smart Contract Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Decentralized application development projects rely on smart contracts, and we specialise in custom smart contract development tasks. Our developers specialise in writing the code, developing, integrating, testing and deploying smart contracts on different blockchain networks. You can also rely on us for optimization of existing smart contracts to achieve specific features. We will also handle the launch and after-maintenance of the development.",
+        "features": [
+          "Smart contract writing, testing, and deployment",
+          "Optimization of existing contracts",
+          "Post-launch maintenance and updates"
+        ]
+      },
+      {
+        "title": "Gaming App Development",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We help you leverage our dApp game development expertise to step into the domain of web3 gaming. Our gaming app development services include the use of AR and VR alongside spatial computing technologies for creating immersive games. We also utilise 3D creation tools and techniques for creating engaging and interactive gaming apps with support for play-to-earn and play-to-own models.",
+        "features": [
+          "Augmented Reality (AR) and Virtual Reality (VR) integration",
+          "3D creation tools and play-to-earn models",
+          "Customizable gaming mechanics and engaging visuals"
+        ]
+      },
+      {
+        "title": "dApp Maintenance",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "Our relationship with clients does not end with the delivery of dApp development solutions according to their requirements. We also support our clients after product delivery with end-to-end maintenance services. You can capitalise on our dApp maintenance services to ensure that your dApp works seamlessly in all scenarios without any complications. We will be available 24/7 to offer maintenance support.",
+        "features": [
+          "24/7 support and troubleshooting",
+          "Seamless updates and bug fixes",
+          "Ensuring uninterrupted operation in various scenarios"
+        ]
+      },
+      {
+        "title": "dApp Upgrade Services",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "We also provide dApp upgrade services that have been tailored to help you ensure that your dApps are up-to-date with the latest features. Our seamless upgrades are essential for ensuring minimal downtime for your dApps alongside extracting maximum performance from the dApp. We will conduct timely upgrades to ensure that your dApp stays on top in a rapidly evolving market.",
+        "features": [
+          "Implement the latest features and functionalities",
+          "Ensure minimal downtime during upgrades",
+          "Optimize performance and user experience"
+        ]
+      },
+      {
+        "title": "dApp Porting",
+        "subtitle": "All Service And Solutions At One Place",
+        "description": "You can rely on our decentralized application development services for porting your existing dApps into different blockchains. It helps you in exploring new markets and reaching new audiences. Our team of dApp development experts can use their experience working with different blockchain platforms and advanced tools for porting dApps to new environments.",
+        "features": [
+          "Explore new markets",
+          "Reach a broader audience",
+          "Leverage advanced tools for seamless porting"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Experience Unmatched dApp Development Services with Our Expertise!",
+    "description1": "We are one of the pioneers in delivering dApp development services with a client-centric approach. Our experience in creating backend code for dApps and intuitive, user-friendly interfaces enhances the quality of our dApp development solutions. We also leverage our business acumen to provide custom dApp development services that help your business grow. You can rely on our decentralized application development expertise to translate your ideas into ready-to-use dApps with seamless user experiences.",
+    "description2": "",
+    "description3": "",
+    "description4": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "Trading": {
+    "heading": "Advantages of Choosing Our dApp Development Services",
+    "subheading": "When you choose Comfygen for your decentralized application (dApp) development, you're tapping into a team that delivers tailored solutions with the latest technology. Here’s why partnering with us can make a real difference for your business",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Identity Management",
+        "desc": "Decentralized app development could serve as a competitive advantage to businesses by helping them prove their identity as a leader in embracing new technologies."
+      },
+      {
+        "num": "02",
+        "title": "Seamless Product Exchange",
+        "desc": "The working of dApps involves optimization of resource usage alongside accelerating the processing phase, thereby enabling seamless product exchange."
+      },
+      {
+        "num": "03",
+        "title": "Immutable Security",
+        "desc": "dApps ensure that all the changes are documented in immutable records, safeguarded by the consensus model and in-built cryptographic security."
+      },
+      {
+        "num": "04",
+        "title": "Consistent Uptime",
+        "desc": "Decentralized apps run on blockchain networks with multiple devices that ensure freedom from hardware failures and glitches in software."
+      },
+      {
+        "num": "05",
+        "title": "Supports Trustless Transactions",
+        "desc": "Users don’t have to depend on third parties or trust each other for transactions in dApps with the facility of blockchain explorers and audit trails."
+      },
+      {
+        "num": "06",
+        "title": "Self-Managing App",
+        "desc": "Decentralized applications require limited management intervention and support as compared to traditional applications with management support from communities."
+      },
+      {
+        "num": "07",
+        "title": "Fault-Tolerance",
+        "desc": "Decentralized applications do not have a single point of failure, which improves their fault tolerance and ensures immediate recognition of faults."
+      },
+      {
+        "num": "08",
+        "title": "Implements Automation",
+        "desc": "Smart contracts in dApps could help in automated execution of transactions without the involvement of central intermediaries or authorities."
+      },
+      {
+        "num": "09",
+        "title": "Provides Incentivization Mechanism",
+        "desc": "Decentralized apps could also feature incentivization mechanisms for rewarding users for participation or ensuring positive behaviour."
+      },
+      {
+        "num": "10",
+        "title": "Promotes User Governance",
+        "desc": "Decentralized apps promote user governance by providing an equal stake to all participants in the decision-making process for the future of dApp."
+      },
+      {
+        "num": "11",
+        "title": "Better Transparency",
+        "desc": "Decentralized apps can guarantee better transparency with the facility of audit and data trails that also ensure internal accountability and regulatory compliance."
+      }
+    ]
+  },
+  "BlockchainNetworks": {
+    "title": " Blockchain Networks We Support for dApp Development",
+    "description": "",
+    "Service": [
+      {
+        "num": "01",
+        "img": "https://www.comfygen.com/img/cardano-ethereum.webp",
+        "title": "Ethereum",
+        "decs": "Ethereum is an open-source and decentralized public blockchain with the facility of smart contract programming."
+      },
+      {
+        "num": "02",
+        "img": "https://www.comfygen.com/img/cardano-polygon.webp",
+        "title": "Polygon",
+        "decs": "Polygon is an emerging blockchain platform with advantages of interoperability, scalability and low gas fees."
+      },
+      {
+        "num": "03",
+        "img": "https://www.comfygen.com/img/cardano-polkadot.webp",
+        "title": "Polkadot",
+        "decs": "Polkadot is a trusted next-generation blockchain platform that helps in regulation of interoperable dApps."
+      },
+      {
+        "num": "04",
+        "title": "Cardano",
+        "img": "https://www.comfygen.com/img/aptos.webp",
+        "decs": "Cardano is an ideal pick for decentralized application development with the benefits of security and scalability."
+      },
+      {
+        "num": "05",
+        "img": "https://www.comfygen.com/img/near.webp",
+        "title": "NEAR",
+        "decs": "NEAR is a secure, simple and sustainable blockchain platform which relies on the multi-chain network."
+      },
+      {
+        "num": "06",
+        "img": "https://www.comfygen.com/img/hyperledger.webp",
+        "title": "Cosmos",
+        "decs": "Cosmos is a popular decentralized network, including different blockchains, powered by the BFT consensus mechanism."
+      },
+      {
+        "num": "07",
+        "img": "https://www.comfygen.com/img/solana.webp",
+        "title": "Solana",
+        "decs": "Solana is a public blockchain network that uses the Proof of History consensus for efficient management of thousands of transactions."
+      },
+      {
+        "num": "08",
+        "img": "https://www.comfygen.com/img/stellar.webp",
+        "title": "Stellar",
+        "decs": "Stellar is a public blockchain platform that serves as the ideal choice for building dApps in the domain of finance."
+      },
+      {
+        "num": "09",
+        "img": "https://www.comfygen.com/img/sui.webp",
+        "title": "XDC",
+        "decs": "XDC is a hybrid blockchain platform which provides the assurance of stability, security and performance in dApp development. "
+      },
+      {
+        "num": "10",
+        "img": "https://www.comfygen.com/img/cardano-binance-smart-chain.webp",
+        "title": "Binance",
+        "decs": "Binance is one of the most popular decentralized networks with easier usability and efficient consensus mechanisms."
+      },
+      {
+        "num": "11",
+        "img": "https://www.comfygen.com/img/arbitrum.webp",
+        "title": "EOS",
+        "decs": "EOS is the top blockchain platform for DeFi dApp development, with high-speed transactions and zero transaction fees."
+      },
+      {
+        "num": "12",
+        "img": "https://www.comfygen.com/img/avalanche.webp",
+        "title": "Avalanche",
+        "decs": "Avalanche is a trusted dApp development platform that offers fast transactions and a unique consensus protocol"
+      },
+      {
+        "num": "13",
+        "img": "https://www.comfygen.com/img/cardano-hedera-hashgraph.webp",
+        "title": "MoonBeam",
+        "decs": "MoonBeam is another reliable option for blockchain dApp development with transparency and interoperability that guarantee better productivity."
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -525,93 +788,6 @@
     "Cybersecurity ",
     "Pharmaceuticals",
     "Digital identity"
-  ],
-  "Major": [
-    {
-      "num": "01",
-      "title": " Blockchain Networks We Support for dApp Development",
-      "decs": ""
-    }
-  ],
-  "Service": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/cardano-ethereum.webp",
-      "title": "Ethereum",
-      "decs": "Ethereum is an open-source and decentralized public blockchain with the facility of smart contract programming."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/cardano-polygon.webp",
-      "title": "Polygon",
-      "decs": "Polygon is an emerging blockchain platform with advantages of interoperability, scalability and low gas fees."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/cardano-polkadot.webp",
-      "title": "Polkadot",
-      "decs": "Polkadot is a trusted next-generation blockchain platform that helps in regulation of interoperable dApps."
-    },
-    {
-      "num": "04",
-      "title": "Cardano",
-      "img": "https://www.comfygen.com/img/aptos.webp",
-      "decs": "Cardano is an ideal pick for decentralized application development with the benefits of security and scalability."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/near.webp",
-      "title": "NEAR",
-      "decs": "NEAR is a secure, simple and sustainable blockchain platform which relies on the multi-chain network."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/hyperledger.webp",
-      "title": "Cosmos",
-      "decs": "Cosmos is a popular decentralized network, including different blockchains, powered by the BFT consensus mechanism."
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/img/solana.webp",
-      "title": "Solana",
-      "decs": "Solana is a public blockchain network that uses the Proof of History consensus for efficient management of thousands of transactions."
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/img/stellar.webp",
-      "title": "Stellar",
-      "decs": "Stellar is a public blockchain platform that serves as the ideal choice for building dApps in the domain of finance."
-    },
-    {
-      "num": "09",
-      "img": "https://www.comfygen.com/img/sui.webp",
-      "title": "XDC",
-      "decs": "XDC is a hybrid blockchain platform which provides the assurance of stability, security and performance in dApp development. "
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/img/cardano-binance-smart-chain.webp",
-      "title": "Binance",
-      "decs": "Binance is one of the most popular decentralized networks with easier usability and efficient consensus mechanisms."
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/img/arbitrum.webp",
-      "title": "EOS",
-      "decs": "EOS is the top blockchain platform for DeFi dApp development, with high-speed transactions and zero transaction fees."
-    },
-    {
-      "num": "12",
-      "img": "https://www.comfygen.com/img/avalanche.webp",
-      "title": "Avalanche",
-      "decs": "Avalanche is a trusted dApp development platform that offers fast transactions and a unique consensus protocol"
-    },
-    {
-      "num": "13",
-      "img": "https://www.comfygen.com/img/cardano-hedera-hashgraph.webp",
-      "title": "MoonBeam",
-      "decs": "MoonBeam is another reliable option for blockchain dApp development with transparency and interoperability that guarantee better productivity."
-    }
   ],
   "TecnologisStack": [
     {
