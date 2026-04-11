@@ -61,7 +61,7 @@ import IndustryGrid from "../../components/IndustryGrid";
 export default function Ecommerce(props: any) {
   let { initialData } = props;
 
- 
+
 
 
 
@@ -167,7 +167,9 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <Navbar />
+
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Solution techData={JSON_DATA.NFTBenefits} />

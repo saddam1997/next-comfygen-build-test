@@ -10,6 +10,10 @@ const ContactLinks = dynamic(
   () => import("../components/Newcomponet/comman/ContactLinks"),
   { ssr: false }
 );
+// const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
+//   ssr: false,
+// });
+
 
 export default function LazyClientTools() {
   const [load, setLoad] = useState(false);
@@ -39,6 +43,8 @@ export default function LazyClientTools() {
     <div className="fixed bottom-5 right-5 z-50">
       <Talkchat />
     </div>
+
+   
   </>
   );
 }

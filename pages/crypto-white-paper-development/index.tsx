@@ -338,15 +338,11 @@ export default function MultiChain(props: any) {
       <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
       <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-<HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-<WhyChooseSection pageData={JSON_DATA.pageData} />
- <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-
-
-
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <ClientStories />
-
-  <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

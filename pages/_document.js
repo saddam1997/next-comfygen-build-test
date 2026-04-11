@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-const GTM_ID = "GTM-M6QT7LCW";
+// const GTM_ID = "GTM-M6QT7LCW";
 
 export default function Document() {
 
@@ -29,14 +29,14 @@ export default function Document() {
   
       </Head>
       <body>
-        <noscript>
+        {/* <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
+        </noscript>  */}
         
         <Main />
         <NextScript />
