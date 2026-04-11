@@ -268,254 +268,405 @@
       }
     ]
   },
+  "Whycomfygens": {
+    "title": "Tools & Technologies We Use for Scalable dApp Solutions",
+    "description": "",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+    "proces": [
+      {
+        "title": "Ethereum Geth",
+        "desc": "Our blockchain dApp development services utilise Geth for launching Ethereum nodes, transferring funds between addresses and exploring block history. It also helps in mining Ether and creating contracts."
+      },
+      {
+        "title": "Zeppelin",
+        "desc": "Zeppelin is a trusted library of tools that can help in performing security audits for smart contracts. It can also support the efficient management of reusable smart contracts."
+      },
+      {
+        "title": "TestNet",
+        "desc": "We utilise TestNet to ensure that your dApp functions according to your desired specifications. Testing the dApp on Testnet before the launch helps in identifying critical bugs and issues."
+      },
+      {
+        "title": "Blockstack",
+        "desc": "Our blockchain dApp development services involve the use of Blockstack for building scalable dApps. The platform helps in scripting dApps in any desired programming language."
+      },
+      {
+        "title": "Truffle",
+        "desc": "We rely on Truffle as a trusted and powerful development environment which also offers asset pipelines for creating Ethereum applications. It supports custom dApp deployment for public and private networks."
+      },
+      {
+        "title": "Remix",
+        "desc": "Our dApp development experts use Remix IDE for creating, deploying, debugging and testing smart contracts in Solidity. It supports connection with Ethereum through the Metamask wallet."
+      }
+    ]
+  },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "ModusOperandi": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Defi Platforms",
-      "desc": "We can help you create outstanding DeFi development platforms to help you manage your financial transactions through a properly layered structure and composable building blocks."
-    },
-    {
-      "num": "02",
-      "bg": "#9A4ECC1A",
-      "title": "Supply Chain Management Systems",
-      "desc": "We can integrate Substrate blockchain development technology to build ideal supply chain management systems, using which you can document your production updates over a unified shared ledger."
-    },
-    {
-      "num": "03",
-      "bg": "#2390FB1A",
-      "title": "Identity and Access Management Solutions",
-      "desc": "With Comfygen, managing digital identities is not that big a deal anymore, as our Substrate blockchain development would help you use a solution that’s cost-effective and safe at the same time."
-    },
-    {
-      "num": "04",
-      "bg": "#82AB101A",
-      "title": "Gaming and Gambling Platforms",
-      "desc": "We have been creating gaming or gambling platforms over the Substrate blockchain development concept to enable your players to use cryptocurrency development to place their bids or bets easily."
-    },
-    {
-      "num": "05",
-      "bg": "#F45F391A",
-      "title": "Social Media and Content Sharing Networks",
-      "desc": "Our Substrate blockchain development solutions have been implemented across social media or content-sharing application projects, adding decentralization to their general operations. "
-    },
-    {
-      "num": "06",
-      "bg": "#FFA0001A",
-      "title": "Voting and Governance Systems",
-      "desc": "We have handled clients with requests for developing apps on voting or governance systems to prevent unwanted tampers or security breaches, ensuring the underlying protocols are adhered to."
-    }
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
   ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/gaming-based-dapp.webp",
-      "title": "Gaming-based dApp Development",
-      "description": "Unlock the potential of blockchain gaming with our cutting-edge gaming-based dApp development services. We create decentralized gaming applications that offer secure transactions, true asset ownership, and immersive gameplay experiences. From NFT integration to play-to-earn mechanics, our expert developers build innovative gaming dApps tailored to your vision.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/finance-based-dApp-development.webp",
-      "title": "Finance-based dApp Development",
-      "description": "Revolutionize financial transactions with our finance-based dApp development services. We build secure, transparent, and decentralized applications that enhance financial operations, enabling seamless transactions, smart contract automation, and DeFi solutions. Whether it's lending, staking, or asset management, our dApps empower businesses with blockchain-driven financial innovations.",
-      "link": "#"
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
+        }
+      ]
     }
-  ],
-  "servicesData": [
-    {
-      "title": "MVP Consulting",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We stand out from the crowd in offering exceptional MVP consulting services to our clients for dApp development projects. Our dApp development experts use their knowledge of new market trends to analyse the probabilities of success with your ideas. We can also help you in the identification of potential stakeholders, the definition of technical components, and the selection of an ideal blockchain platform according to client requirements.",
-      "features": [
-        "Identifying potential stakeholders",
-        "Defining technical components",
-        "Selecting the ideal blockchain platform based on business needs"
-      ]
-    },
-    {
-      "title": "UI Design",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our approach to build a dApp gives the additional advantage of a systematic and structured process for designing the user interface of the dApps. We aim to create user interfaces that are simple and easy to understand. You can onboard users to your dApps effectively with flexible options for navigating different features through the user interface. We focus on the target audience and implement the design approaches accordingly.",
-      "features": [
-        "Simple, accessible, and clean UI designs",
-        "Seamless onboarding experience for users",
-        "Flexible navigation options for enhanced usability"
-      ]
-    },
-    {
-      "title": "DEX Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our team has great expertise and extensive knowledge of the DEX development process. We can help you create customised and scalable decentralized exchanges or DEX platforms with support for peer-to-peer transactions. Our custom dApp development expertise helps us create DEX platforms that can adapt to different business use cases. Our DEX platforms could support connectivity with external exchanges through APIs and shared order books.",
-      "features": [
-        "Integration with external exchanges via APIs",
-        "Shared order books for liquidity",
-        "Adaptive to various business use cases"
-      ]
-    },
-    {
-      "title": "dApp Consultation",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our dApp consultation services could help you create a dApp with the efficient use of resources. You can talk to our experts about your idea for a decentralized app to find the chances of success. We guide you through the technical and business aspects of the project, alongside helping you identify the ideal blockchain platform for developing dApps.",
-      "features": [
-        "Technical and business guidance",
-        "Selection of the ideal blockchain platform",
-        "Expert advice on efficient resource use and project success"
-      ]
-    },
-    {
-      "title": "Smart Contract Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Decentralized application development projects rely on smart contracts, and we specialise in custom smart contract development tasks. Our developers specialise in writing the code, developing, integrating, testing and deploying smart contracts on different blockchain networks. You can also rely on us for optimization of existing smart contracts to achieve specific features. We will also handle the launch and after-maintenance of the development.",
-      "features": [
-        "Smart contract writing, testing, and deployment",
-        "Optimization of existing contracts",
-        "Post-launch maintenance and updates"
-      ]
-    },
-    {
-      "title": "Gaming App Development",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We help you leverage our dApp game development expertise to step into the domain of web3 gaming. Our gaming app development services include the use of AR and VR alongside spatial computing technologies for creating immersive games. We also utilise 3D creation tools and techniques for creating engaging and interactive gaming apps with support for play-to-earn and play-to-own models.",
-      "features": [
-        "Augmented Reality (AR) and Virtual Reality (VR) integration",
-        "3D creation tools and play-to-earn models",
-        "Customizable gaming mechanics and engaging visuals"
-      ]
-    },
-    {
-      "title": "dApp Maintenance",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "Our relationship with clients does not end with the delivery of dApp development solutions according to their requirements. We also support our clients after product delivery with end-to-end maintenance services. You can capitalise on our dApp maintenance services to ensure that your dApp works seamlessly in all scenarios without any complications. We will be available 24/7 to offer maintenance support.",
-      "features": [
-        "24/7 support and troubleshooting",
-        "Seamless updates and bug fixes",
-        "Ensuring uninterrupted operation in various scenarios"
-      ]
-    },
-    {
-      "title": "dApp Upgrade Services",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "We also provide dApp upgrade services that have been tailored to help you ensure that your dApps are up-to-date with the latest features. Our seamless upgrades are essential for ensuring minimal downtime for your dApps alongside extracting maximum performance from the dApp. We will conduct timely upgrades to ensure that your dApp stays on top in a rapidly evolving market.",
-      "features": [
-        "Implement the latest features and functionalities",
-        "Ensure minimal downtime during upgrades",
-        "Optimize performance and user experience"
-      ]
-    },
-    {
-      "title": "dApp Porting",
-      "subtitle": "All Service And Solutions At One Place",
-      "description": "You can rely on our decentralized application development services for porting your existing dApps into different blockchains. It helps you in exploring new markets and reaching new audiences. Our team of dApp development experts can use their experience working with different blockchain platforms and advanced tools for porting dApps to new environments.",
-      "features": [
-        "Explore new markets",
-        "Reach a broader audience",
-        "Leverage advanced tools for seamless porting"
-      ]
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Tools & Technologies We Use for Scalable dApp Solutions"
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "Ethereum Geth",
-      "desc": "Our blockchain dApp development services utilise Geth for launching Ethereum nodes, transferring funds between addresses and exploring block history. It also helps in mining Ether and creating contracts."
-    },
-    {
-      "title": "Zeppelin",
-      "desc": "Zeppelin is a trusted library of tools that can help in performing security audits for smart contracts. It can also support the efficient management of reusable smart contracts."
-    },
-    {
-      "title": "TestNet",
-      "desc": "We utilise TestNet to ensure that your dApp functions according to your desired specifications. Testing the dApp on Testnet before the launch helps in identifying critical bugs and issues."
-    },
-    {
-      "title": "Blockstack",
-      "desc": "Our blockchain dApp development services involve the use of BlockStack for building scalable dApps. The platform helps in scripting dApps in any desired programming language."
-    },
-    {
-      "title": "Truffle",
-      "desc": "We rely on Truffle as a trusted and powerful development environment which also offers asset pipelines for creating Ethereum applications. It supports custom dApp deployment for public and private networks."
-    },
-    {
-      "title": "Remix",
-      "desc": "Our dApp development experts use Remix IDE for creating, deploying, debugging and testing smart contracts in Solidity. It supports connection with Ethereum through the Metamask wallet."
-    }
-  ],
-  "customSliderData": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance & Banking",
-      "description": "At Comfygen, we build decentralized applications (dApps) that improve secure transactions, empower DeFi platforms, and enable automated lending, making financial services more transparent and efficient. Our blockchain expertise ensures we deliver robust, industry-specific solutions for the financial sector."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Logistics",
-      "description": "At Comfygen, we deliver Custom dApp solutions for the logistics industry, focusing on improving supply chain efficiency, enhancing tracking accuracy, and ensuring secure, transparent operations. Our blockchain-powered applications help logistics companies stay ahead in a fast-moving industry."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare",
-      "description": "Specializing in healthcare applications, we develop dApps that secure patient information, optimize hospital management, and improve the overall patient experience. By integrating blockchain, we bring efficiency, transparency, and security to the healthcare sector."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "Construction",
-      "description": "We create decentralized applications for the construction industry that automate workflows, track building materials, and ensure compliance with regulations. Blockchain technology drives the transparency and efficiency needed for a modern, streamlined construction process."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Game",
-      "description": "Specializing in gaming, we develop blockchain-powered dApps that offer true asset ownership, create secure virtual economies, and ensure transparency in gaming transactions. We harness the potential of blockchain to bring innovative solutions to the gaming world."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-      "title": "Entertainment",
-      "description": "At Comfygen, we create innovative dApps that enhance the entertainment sector by offering secure digital rights management, content monetization, and real-time fan engagement. By integrating blockchain, we help reshape the way content is consumed and creators are rewarded."
-    }
-  ],
-  "FutureDriven": [
-    {
-      "title": "Dedicated Team of Experts",
-      "desc": "You can rely on a dedicated team of experts completely devoted to your dApp development project for high-quality and customised solutions."
-    },
-    {
-      "title": "Team Extension Model",
-      "desc": "You can also add new members to your existing dApp development team to capitalise on our industry expertise for specific projects."
-    },
-    {
-      "title": "Project-based Model",
-      "desc": "You could choose our project-based model for achieving specific objectives of the dApp development project with advantages of seamless collaboration."
-    }
-  ],
+  },
+
+  "Portfoliodata": {
+    "heading": "Our Artificial Intelligence Success Stories",
+    "description": "At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/image/gaming-based-dapp.webp",
+        "title": "Gaming-based dApp Development",
+        "description": "Unlock the potential of blockchain gaming with our cutting-edge gaming-based dApp development services. We create decentralized gaming applications that offer secure transactions, true asset ownership, and immersive gameplay experiences. From NFT integration to play-to-earn mechanics, our expert developers build innovative gaming dApps tailored to your vision.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/image/finance-based-dApp-development.webp",
+        "title": "Finance-based dApp Development",
+        "description": "Revolutionize financial transactions with our finance-based dApp development services. We build secure, transparent, and decentralized applications that enhance financial operations, enabling seamless transactions, smart contract automation, and DeFi solutions. Whether it's lending, staking, or asset management, our dApps empower businesses with blockchain-driven financial innovations.",
+        "link": "#"
+      }
+    ]
+  },
+
+  "EmergingData": {
+    "heading": "Have a Closer Look at Our Methodology for Developing Your dApps!",
+    "description": "",
+    "Emerging": [
+      {
+        "num": "01",
+        "img": "https://www.comfygen.com/images/analyse-the-business-requirements.webp",
+        "title": "Analyse the Business Requirements",
+        "decs": "<ul><li>Brainstorming ideas and business requirements.</li><li>Identification of migration requirements.</li><li>Prioritisation of use cases.</li><li>Definition of off-chain and on-chain business stakeholders.</li><li>Definition of technical components and product roadmap.</li></ul>"
+      },
+      {
+        "num": "02",
+        "img": "https://www.comfygen.com/images/decide-on-preferred-blockchain-and-develop-poc.webp",
+        "title": "Decide on Preferred Blockchain and Develop PoC",
+        "decs": "<ul><li>Identification of blockchain technology such as Ethereum, Hyperledger, Lightning Network or HashGraph.</li><li>Selection of the simplest and essential use cases for the POC.</li><li>Development of POC or Proof of Concept.</li><li>Deployment of the POC</li><li>Final testing and validation</li></ul>"
+      },
+      {
+        "num": "03",
+        "img": "https://www.comfygen.com/images/carry-out-the-technical-design.webp",
+        "title": "Carry Out the Technical Design",
+        "decs": "<ul><li>Creation of user interface for all software components.</li><li>Designing the technical architecture.</li><li>Identification of priorities for security and scalability.</li><li>Documentation of technical GDPR compliance requirements.</li><li>Creation of sprints and delivery milestones.</li></ul>"
+      },
+      {
+        "num": "04",
+        "img": "https://www.comfygen.com/images/get-started-with-development.webp",
+        "title": "Get Started with Development",
+        "decs": "<ul><li>Pre-alpha development stage.</li><li>Alpha stage of development.</li><li>Development of Beta stage of dApp.</li><li>Release candidate for the dApp.</li><li>Development of dApp in the production stage.</li></ul>"
+      },
+      {
+        "num": "05",
+        "img": "https://www.comfygen.com/images/deploy-the-solution.webp",
+        "title": "Deploy the Solution",
+        "decs": "<ul><li>Provision of dApps with essential resources.</li><li>Deployment on the main chain.</li><li>Deployment on cloud for hybrid solutions.</li><li>App store deployment.</li><li>Move forward for further required deployments</li></ul>"
+      },
+      {
+        "num": "06",
+        "img": "https://www.comfygen.com/images/continuous-monitoring.webp",
+        "title": "Continuous Monitoring",
+        "decs": "<ul><li>Gathering requirements.</li><li>Prioritisation of backlogs.</li><li>Implementation of new upgrades.</li><li>Resolution of bugs.</li><li>Tracking the changes</li></ul>"
+      }
+    ]
+  },
+
+  "BusinessOriented": {
+    "heading": "Explore Our Business-Oriented Engagement Models",
+    "subheading": "We provide flexible business-centric engagement models that help you choose the best path for your business to leverage our dApp development services, backed by our expertise as a leading dApp development company, ensuring optimal use of resources and maximum efficiency.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Dedicated Team of Experts",
+        "desc": "You can rely on a dedicated team of experts completely devoted to your dApp development project for high-quality and customised solutions."
+      },
+      {
+        "num": "02",
+        "title": "Team Extension Model",
+        "desc": "You can also add new members to your existing dApp development team to capitalise on our industry expertise for specific projects."
+      },
+      {
+        "num": "03",
+        "title": "Project-based Model",
+        "desc": "You could choose our project-based model for achieving specific objectives of the dApp development project with advantages of seamless collaboration."
+      }
+    ]
+  },
   "pageData": {
     "title": "Reasons to Choose Comfygen as Your Leading dApp Development Company",
     "description": "Comfygen is a leading dApp development company, offering innovative, secure, and scalable decentralized applications tailored to your business needs. Our expert team combines blockchain expertise with a customer-first approach to bring your ideas to life. With a proven track record across various industries, we ensure efficient and transparent development, helping your business succeed in the decentralized world.",
@@ -557,122 +708,128 @@
       }
     ]
   },
-  "Modus": {
-    "title": "We Build a Varying Range of Applications Using Substrate Blockchain Technology!",
-    "decs": "Irrespective of what type of requirements you have from us associated with Substrate blockchain development technology, we have the right tools and expertise to help provide you with it:"
+
+
+  "HireDeveloper": {
+    "heading": "Hire Our DApp Developers",
+    "text": "As the best dApp development company, we empower businesses with high-performance, secure, and scalable solutions tailored to their needs. Hire dApp developers from our team, leaders in DeFi, gaming Apps, and smart contract development, who bring extensive experience and innovation to every project. With a focus on quality and precision, we deliver best-in-class dApps, helping clients seamlessly navigate the blockchain and Web3 landscape to achieve their business goals.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Extensive industry knowledge.",
+      "Experience working on multiple dApp projects.",
+      "Client-centric approach to development",
+      "Timely and relevant support.",
+      "Guidance for achieving success with dApps.",
+      "Collaboration with technical and business stakeholders."
+    ]
   },
-  "LaunchSteps": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/ethereum-geth.webp",
-      "title": "Ethereum Geth",
-      "desc": "Our blockchain dApp development services utilise Geth for launching Ethereum nodes, transferring funds between addresses and exploring block history. It also helps in mining Ether and creating contracts."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/zeppelin.webp",
-      "title": "Zeppelin",
-      "desc": "Zeppelin is a trusted library of tools that can help in performing security audits for smart contracts. It can also support the efficient management of reusable smart contracts. "
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/testnet.webp",
-      "title": "TestNet",
-      "desc": "We utilise TestNet to ensure that your dApp functions according to your desired specifications. Testing the dApp on Testnet before the launch helps in identifying critical bugs and issues."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/blockstack.webp",
-      "title": "Blockstack",
-      "desc": "Our blockchain dApp development services involve the use of BlockStack for building scalable dApps. The platform helps in scripting dApps in any desired programming language."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/truffle.webp",
-      "title": "Truffle",
-      "desc": "We rely on Truffle as a trusted and powerful development environment which also offers asset pipelines for creating Ethereum applications. It supports custom dApp deployment for public and private networks."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/remix.webp",
-      "title": "Remix",
-      "desc": "Our dApp development experts use Remix IDE for creating, deploying, debugging and testing smart contracts in Solidity. It supports connection with Ethereum through the Metamask wallet."
-    }
-  ],
-  "myList2": [
-    "Centralized exchanges offer pairs of fiat to cryptocurrency or crypto to cryptocurrency trading. Binance and Coinbase are two options to consider.",
-    "An exchange that uses intelligent contracts is referred to as a decentralized exchange and offers crypto-to-crypto trading pairs. A few examples include Uniswap, 0x, and Kybernet.",
-    "A combination of CEXs and DEXs allows traders to exchange fiat for crypto and maintain their private keys.",
-    "Get a free 30-minute consultation from our cryptocurrency exchange development team!"
-  ],
-  "myList1": [
-    "Instantaneous transactions",
-    "Scalable in nature",
-    "Testing has been rigorously conducted before deployment",
-    "Features of customization",
-    "Onboarding of projects is faster",
-    "Integrating crypto wallets with crypto exchanges",
-    "Multi-platform performance without glitches",
-    "Crypto wallet operation is user-friendly"
-  ],
-  "TypesCrypto": [
-    {
-      "num": "01",
-      "title": "A Wallet For Coinbase",
-      "desc": "It supports 500 cryptocurrency assets and is easy to navigate for beginners."
-    },
-    {
-      "num": "02",
-      "title": "BNB",
-      "desc": "More than 150 cryptos are available on this cross-compatible platform."
-    },
-    {
-      "num": "03",
-      "title": "The Electrum",
-      "desc": "It is best to choose a Bitcoin wallet that is highly customizable and offers greater security."
-    },
-    {
-      "num": "04",
-      "title": "The Mycelium",
-      "desc": "A secure crypto wallet that provides advanced transaction details and focuses on security."
-    }
-  ],
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Reasons to Choose our Crypto Wallet App Solution",
-      "desc": "Comfygen offers impeccable Cryptocurrency Wallet Development Services with its financial and technical expertise. In trading investments, we strive for superior outcomes. Cryptocurrency wallet apps created by us are highly secure.",
-      "url": "/contact-us",
-      "btn": "Meet Now"
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "01",
-      "title": "What Is A Crypto Wallet? What Is The Cost Of Developing A Crypto Wallet?",
-      "desc": "Our experts are capable of developing cryptocurrency exchange platforms that can be integrated seamlessly. As a result, virtual transactions can be made without error to prevent fraudulent activities."
-    },
-    {
-      "num": "02",
-      "title": "We Are A Professional Team",
-      "desc": "We Have a team of skilled Cryptocurrency wallet developers who are aware of the newest trends in the industry. Cryptocurrency wallets are fast, secure, and robust and have been used by several businesses in the past."
-    },
-    {
-      "num": "03",
-      "title": "A Quick Response",
-      "desc": "Our cryptocurrency wallet developers are talented and enthusiastic. All issues are resolved quickly, and our response time is speedy. In this way, businesses can achieve their goals more quickly."
-    },
-    {
-      "num": "04",
-      "title": "A Reliable And Timely Service",
-      "desc": "We Timely delivery of projects is essential. With the help of our cryptocurrency developers, we deliver excellent results in less time."
-    },
-    {
-      "num": "05",
-      "title": "Excellence In Technical Skills",
-      "desc": "Our Cryptocurrency Wallet App Development Company developers are skilled. As part of their app development services, they stay up-to-date on all the latest trends in Bitcoin wallet apps. This allows the company to remain a step ahead of its competition."
-    }
-  ],
+
+  "CallToAction": {
+    "heading": "Is There Any Other Information We Can Help You With?",
+    "text": "We are a trusted choice among top dApp development platforms with a broad range of services. You can explore the details of our services, such as dApp consultation and porting, to learn more about the depth of our expertise in dApp development. If you want any other information, then you can reach out to us through your preferred channels right now.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Get in touch now."
+  },
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "01",
@@ -710,323 +867,132 @@
       "desc": "Decentralized apps could interact with conventional centralized systems and databases by using middleware or APIs. However, it would need additional development efforts and could introduce the element of centralization in the dApp. Therefore, it is important to review the trade-offs during integration with conventional systems."
     }
   ],
-  "Hire": [
+ "jsonLdData" :[
+
+
     {
-      "num": "1",
-      "title": "Hire Our Proficient Developers and Get the Best dApps Developed, Backed by Superior Experts!",
-      "desc": "Our dApp development services attract the attention of clients with multiple value advantages. You can also have a high-performance, secure and scalable dApp on your hands with our dApp development experts. We have emerged as a top industry leader in DeFi dApp development, gaming dApp development and smart contract development, with comprehensive training and experience in different projects. Hire our developers to tap into the world of blockchain and web3 with best-in-class dApps for your business.",
-      "decs": "Why Our Experts Claim to Deliver the Best dApps Among Others? Our experts have built the foundations of our success by delivering the best dApps to our clients. We are proud to have a team of expert dApp developers with unmatchable traits.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "Extensive industry knowledge.",
-    "Experience working on multiple dApp projects.",
-    "Client-centric approach for development.",
-    "Timely and relevant support.",
-    "Collaboration with technical and business stakeholders.",
-    "Guidance for achieving success with dApps."
-  ],
-  "LatestTechno": [
-    {
-      "num": "01",
-      "title": "Dedicated Team of Experts",
-      "decs": "You can rely on a dedicated team of experts completely devoted to your dApp development project for high-quality and customised solutions."
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Best dApp Development Company",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com "
+      },
+      "description":
+        "Comfygen, the best dApp development company, designs and develops secure, scalable decentralized applications (dApps) with unmatched user experience. From DeFi platforms to NFT marketplaces, we bring your blockchain vision to life on Ethereum, Solana, Polygon, BNB Chain, and more.",
+      "url": "https://www.comfygen.com/dapp-development-company",
+      "mainEntityOfPage": "https://www.comfygen.com/dapp-development-company  ",
+      "areaServed": "Global",
+      "serviceType": [
+        "dApp Development Services",
+        "Decentralized Application Development",
+        "Custom dApp Development",
+        "Best dApp Development Company",
+        "DeFi Platform Development",
+        "NFT Marketplace Development",
+        "Web3 Application Development",
+        "Ethereum dApp Development",
+        "Solana dApp Development",
+        "Polygon dApp Development",
+        "BNB Chain dApp Development",
+        "Smart Contract Development",
+        "Blockchain App Development"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies ",
+        "https://x.com/Comfygen_Tech ",
+        "https://www.instagram.com/comfygen_technologies ",
+        "https://www.linkedin.com/company/comfygen-technologies "
+      ]
     },
+
     {
-      "num": "02",
-      "title": "Team Extension Model",
-      "decs": "You can also add new members to your existing dApp development team to capitalise on our industry expertise for specific projects."
-    },
-    {
-      "num": "03",
-      "title": "Project-based Model",
-      "decs": "You could choose our project-based model for achieving specific objectives of the dApp development project with advantages of seamless collaboration."
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Heightened Technical Expertise",
-      "decs": "Comfygen is a top destination to create a dApp with the support of a team of industry experts with comprehensive knowledge of blockchain and smart contract expertise."
-    },
-    {
-      "num": "02",
-      "title": "Enhanced Focus on Security",
-      "decs": "We pay attention to security in blockchain dApp development services by ensuring comprehensive tests for decentralized applications before deploying them on main networks."
-    },
-    {
-      "num": "03",
-      "title": "Ensure Customer Satisfaction",
-      "decs": "Our client-centric approach to develop decentralized applications helps us pay attention to all the important requirements of clients and ensure personalization of dApps to their needs."
-    },
-    {
-      "num": "04",
-      "title": "Timely Delivery",
-      "decs": "We also stand out from the crowd for dApp development projects by following a well-defined timeline for the project. Our commitment to timely delivery of dApp projects helps us deliver efficient results within specified timeframes."
-    },
-    {
-      "num": "05",
-      "title": "Widened Industry Expertise",
-      "decs": "Our team of dApp development experts has in-depth industry expertise gained through experience from working on different projects with different blockchains, libraries and codebases. "
-    },
-    {
-      "num": "06",
-      "title": "Consistent Support",
-      "decs": "We are a reliable partner for accessing dApp development services with the assurance of responsive support mechanisms. Our support team is always available to answer your questions alongside serving technical assistance for your dApps."
-    }
-  ],
-  "myList3": [
-    "Healthcare",
-    "IoT",
-    "Automotive",
-    "Fintech",
-    "Logistics",
-    "Real estate",
-    "Energy",
-    "Cybersecurity ",
-    "Pharmaceuticals",
-    "Digital identity"
-  ],
-  "TecnologisStack": [
-    {
-      "num": "1",
-      "title": "Solidity",
-      "stack": "We stand out for DeFi dApp development services with our expertise in using Solidity for writing smart code for different use cases. Solidity is the preferred smart contract programming language, which offers support for libraries, user-defined types and inheritance."
-    },
-    {
-      "num": "2",
-      "title": "Golang",
-      "stack": "Our expertise as a blockchain dApp development company is also visible in our capabilities for using Golang. We use Golang for creating smart contract codes in Hyperledger Fabric by utilising the open-source nature of the programming language."
-    },
-    {
-      "num": "3",
-      "title": "Rust",
-      "stack": "Rust is a statically typed, multi-paradigm language tailored for achieving higher performance. It focuses on performance and safety while supporting developers in creating resilient, stable and scalable dApps."
-    },
-    {
-      "num": "4",
-      "title": "JavaScript",
-      "stack": "We utilise JavaScript in DeFi dApp development for storing the code of decentralized apps. It is a prototype-based, dynamic language which offers support for declarative and object-oriented styles of programming."
-    },
-    {
-      "num": "5",
-      "title": "Java",
-      "stack": "Java is a trusted programming language for creating the backend code for microservices architecture required in certain dApps. We also utilise Java for writing SDKs for different blockchain platforms."
-    },
-    {
-      "num": "5",
-      "title": "Node.js",
-      "stack": "Node.js is a popular JavaScript library which supports dApp development projects. Our dApp development experts utilise Node.js for creating the backend for real-time decentralized applications involving multiple users."
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/images/analyse-the-business-requirements.webp",
-      "title": "Analyse the Business Requirements",
-      "pList": [
-        "Brainstorming ideas and business requirements.",
-        "Identification of migration requirements.",
-        "Prioritisation of use cases.",
-        "Definition of off-chain and on-chain business stakeholders.",
-        "Definition of technical components and product roadmap."
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.comfygen.com/dapp-development-company",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blockchain Development",
+          "item": "https://www.comfygen.com/blockchain-development"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "dApp Development Company",
+          "item": "https://www.comfygen.com/dapp-development-company"
+        }
       ]
     },
     {
-      "num": "02",
-      "img": "https://www.comfygen.com/images/decide-on-preferred-blockchain-and-develop-poc.webp",
-      "title": "Decide on Preferred Blockchain and Develop PoC",
-      "pList": [
-        "Identification of blockchain technology such as Ethereum, Hyperledger, Lightning Network or HashGraph.",
-        "Selection of the simplest and essential use cases for the POC.",
-        "Development of POC or Proof of Concept. ",
-        "Deployment of the POC",
-        "Final testing and validation  "
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are decentralized applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Decentralized applications are the decentralized alternatives to conventional applications. They run on peer-to-peer networks rather than a single computer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the advantages of dApps over conventional apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "dApps ensure immutability of transaction records, run autonomously without centralized intervention, depend on consensus mechanisms, and have no single point of failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of dApp development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on the complexity of the app and number of features, as well as factors such as the blockchain platform, consensus mechanism, security layers, API integrations, and UI/UX requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the notable examples of dApps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Popular examples include decentralized exchanges, NFT marketplaces, and DAOs. Industry-specific dApps include insurance dApps and money management dApps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can you choose a dApp development company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evaluate past projects, check developer skillsets, and assess expertise with different dApp development technologies before selecting a dApp development company."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the average time for completing a dApp development project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On average, a dApp development project may take 4 to 12 months, depending on the complexity and the number of basic and advanced features required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can dApps interact with conventional systems and databases?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "dApps can interact with conventional systems and databases using middleware or APIs. However, this requires additional development and may introduce centralization trade-offs."
+          }
+        }
       ]
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/images/carry-out-the-technical-design.webp",
-      "title": "Carry Out the Technical Design",
-      "pList": [
-        "Creation of user interface for all software components.",
-        "Designing the technical architecture.",
-        "Identification of priorities for security and scalability.",
-        "Documentation of technical GDPR compliance requirements.",
-        "Creation of sprints and delivery milestones."
-      ]
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/images/get-started-with-development.webp",
-      "title": "Get Started with Development",
-      "pList": [
-        "Pre-alpha development stage.",
-        "Alpha stage of development.",
-        "Development of Beta stage of dApp.",
-        "Release candidate for the dApp.",
-        "Development of dApp in the production stage."
-      ]
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/images/deploy-the-solution.webp",
-      "title": "Deploy the Solution",
-      "pList": [
-        "Provision of dApps with essential resources.",
-        "Deployment on the main chain.",
-        "Deployment on cloud for hybrid solutions.",
-        "App store deployment.",
-        "Move forward for further required deployments        "
-      ]
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/images/continuous-monitoring.webp",
-      "title": "Continuous Monitoring",
-      "pList": [
-        "Gathering requirements.",
-        "Prioritisation of backlogs.",
-        "Implementation of new upgrades.",
-        "Resolution of bugs.",
-        "Tracking the changes"
-      ]
-    }
-  ],
-  "FrontEnd": [
-    {
-      "num": "01",
-      "title": "The Front-End Development Stack We Count on For Our dApp Development!",
-      "decs": ""
-    }
-  ],
-  "Stack": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/stackimg/angular-js.svg",
-      "title": "Angular.js",
-      "decs": "We rely on Angular.js, a feature-rich JavaScript framework for simplifying the development process of dynamic dApps for the web."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/jquery.webp",
-      "title": "jQuery",
-      "decs": "jQuery is a lightweight front-end development tool with support for different plugins to incorporate special visual aspects in dApps."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/bootstrap.webp",
-      "title": "Bootstrap",
-      "decs": "Bootstrap is the open-source toolkit for developing a responsive, decentralized website by leveraging HTML, JavaScript and CSS."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/react.webp",
-      "title": "React",
-      "decs": "React is the most popular open-source JavaScript library for building user interfaces of dApps with flexibility for managing the view layer."
-    }
-  ],
-  "Cloud": [
-    {
-      "num": "01",
-      "title": "Explore Our Stand-Out Cloud Services to Launch & Manage dApps for Enterprises",
-      "decs": ""
-    }
-  ],
-  "DataBase": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/aws.webp",
-      "title": "AWS",
-      "decs": "Our dApp development solutions can guarantee better results for enterprises with the use of AWS for deploying dApps on different blockchain platforms with a simple process."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/google-cloud.webp",
-      "title": "Google Cloud",
-      "decs": "We can capitalise on the Blockchain Kit of Google Cloud for blockchain dApp development and deployment with the unique ‘pay-as-you-go’ feature."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/digital-ocean.webp",
-      "title": "Digital Ocean",
-      "decs": "Digital Ocean is a trusted cloud hosting platform that empowers our blockchain dApp development company with cloud computing resources and Infrastructure as a Service or IaaS solutions."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/node-explorer.webp",
-      "title": "Microsoft Azure",
-      "decs": "Our dApp development experts utilise the Azure Blockchain Development kit for deploying and managing dApps with multi-party workflows specified by smart contracts."
-    }
-  ],
-  "Benefits": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/images/identity-management.webp",
-      "tittle": "Identity Management",
-      "decs": "Decentralized app development could serve as a competitive advantage to businesses by helping them prove their identity as a leader in embracing new technologies."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/blueprinting.webp",
-      "tittle": "Seamless Product Exchange",
-      "decs": "The working of dApps involves optimization of resource usage alongside accelerating the processing phase, thereby enabling seamless product exchange."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/images/immutable-security.webp",
-      "tittle": "Immutable Security",
-      "decs": "dApps ensure that all the changes are documented in immutable records, safeguarded by the consensus model and in-built cryptographic security."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/images/consistent-uptime.webp",
-      "tittle": "Consistent Uptime",
-      "decs": "Decentralized apps run on blockchain networks with multiple devices that ensure freedom from hardware failures and glitches in software."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/images/supports-trustless-transactions.webp",
-      "tittle": "Supports Trustless Transactions",
-      "decs": "Users don’t have to depend on third parties or trust each other for transactions in dApps with the facility of blockchain explorers and audit trails."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/images/self-managing-app.webp",
-      "tittle": "Self-Managing App",
-      "decs": "Decentralized applications require limited management intervention and support as compared to traditional applications with management support from communities."
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/images/fault-tolerance.webp",
-      "tittle": "Fault-Tolerance",
-      "decs": "Decentralized applications do not have a single point of failure, which improves their fault tolerance and ensures immediate recognition of faults."
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/images/implements-automation.webp",
-      "tittle": "Implements Automation",
-      "decs": "Smart contracts in dApps could help in automated execution of transactions without the involvement of central intermediaries or authorities."
-    },
-    {
-      "num": "09",
-      "img": "https://www.comfygen.com/images/provides-incentivization-mechanism.webp",
-      "tittle": "Provides Incentivization Mechanism",
-      "decs": "Decentralized apps could also feature incentivization mechanisms for rewarding users for participation or ensuring positive behaviour."
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/images/promotes-user-governance.webp",
-      "tittle": "Promotes User Governance",
-      "decs": "Decentralized apps promote user governance by providing an equal stake to all participants in the decision-making process for the future of dApp."
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/images/better-transparency.webp",
-      "tittle": "Better Transparency",
-      "decs": "Decentralized apps can guarantee better transparency with the facility of audit and data trails that also ensure internal accountability and regulatory compliance."
     }
   ]
 }

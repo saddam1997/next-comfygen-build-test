@@ -578,12 +578,11 @@
     "Frontend",
     "Backend",
     "Database",
-    "Real-Time Tracking & Maps",
-    "Mobile App Development",
+    "Maps & Routing",
     "Cloud/DevOps",
     "Payments",
-    "Security",
-    "Data & Analytics"
+    "AI/ML"
+   
   ],
   "TechstackData": {
     "heading": "Tech Stack We Use",
@@ -603,9 +602,9 @@
           "num": "6"
         },
         {
-          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
-          "alt": "Vue.js",
-          "name": "Vue.js",
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "React Native",
+          "name": "React Native",
           "num": "4"
         },
         {
@@ -711,7 +710,7 @@
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Maps & Routing": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",
@@ -821,37 +820,32 @@
           "num": "3"
         }
       ],
-      "Data & Analytics": [
+      "AI/ML": [
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
-          "alt": "Apache",
-          "name": "Apache",
+          "img": "https://www.comfygen.com/comfygen-images/icons/TensorFlow.webp",
+          "alt": "TensorFlow",
+          "name": "TensorFlow",
           "num": "1"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Hadoop",
-          "name": "Hadoop",
+          "img": "https://www.comfygen.com/comfygen-images/icons/chatgpt.webp",
+          "alt": "OpenAI APIs",
+          "name": "OpenAI APIs",
           "num": "3"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "img": "https://www.comfygen.com/comfygen-images/icons/pytorch.webp",
           "alt": "Spark",
           "name": "Spark",
           "num": "3"
         },
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Real-time Analytics",
-          "name": "Real-time Analytics",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Business Intelligence Tools",
-          "name": "Business Intelligence Tools",
+          "alt": "PyTorch",
+          "name": "PyTorch",
           "num": "3"
         }
+   
       ]
     }
   },
