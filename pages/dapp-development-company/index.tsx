@@ -547,10 +547,10 @@ export default function Ecommerce(props: any) {
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <Solution techData={JSON_DATA.Trading} />
-        {/* <Networks Data={JSON_DATA.BlockchainNetworks}/> */}
+        <Networks Data={JSON_DATA.BlockchainNetworks}/>
 
-{/* 
-        <section className="lg:py-16 py-4 bg-[#F5F5F9]">
+ 
+        {/* <section className="lg:py-16 py-4 bg-[#F5F5F9]">
           <div className=" space-y-10 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
             <div className="">
               {JSON_DATA.Major.map((elem: any) => {
@@ -592,7 +592,7 @@ export default function Ecommerce(props: any) {
               })}
             </div>
           </div>
-        </section> */}
+        </section>  */}
         <ConsultancyApproach
           Head={JSON_DATA.consultancyHead}
           ItemData={JSON_DATA.consultancyData}
