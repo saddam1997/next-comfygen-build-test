@@ -174,7 +174,7 @@ export default function ClinicalApp(props: any) {
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <IndustryGrid />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
+ 
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
 
