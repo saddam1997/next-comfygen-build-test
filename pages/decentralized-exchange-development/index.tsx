@@ -63,7 +63,7 @@ import IndustryGrid from "../../components/IndustryGrid";
 
 
 
-export default function Ecommerce(props) {
+export default function Ecommerce(props:any) {
   let { initialData } = props;
 
 
