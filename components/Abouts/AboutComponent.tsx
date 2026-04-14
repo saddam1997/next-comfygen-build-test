@@ -12,84 +12,68 @@ const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
 
   return (
-    <section className="bg-white h-full lg:py-16 py-4 lg:p-0 p-4">
+<section className="bg-white lg:py-16 py-4 px-4">
+  <div className="w-full lg:px-4 xl:px-0">
+    <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-10 gap-4">
 
-      <div className="w-full lg:px-4 xl:px-0 h-full">
-        <div className="grid lg:grid-cols-2 mx-auto items-center lg:gap-10 gap-4">
-          <div className="">
-            <Image
-              src={AboutData.imageSrc}
-              alt={imageAlt}
-              width={320}
-              height={120}
-              quality={60}
-              loading="lazy"
-              fetchPriority="low"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="w-full  h-auto xl:object-contain lg:object-cover rounded-md "
-            />
-          </div>
-          <div>
-            <div className="space-y-4">
-              <div>
+      {/* Image */}
+      <div className="relative w-full aspect-[4/3]">
+        <Image
+          src={AboutData.imageSrc}
+          alt={imageAlt}
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="lg:object-contain object-cover rounded-md"
+        />
+      </div>
 
+      {/* Content */}
+      <div className="min-h-[300px]">
+        <div className="space-y-4">
 
-                <HeadingTwo color={"#212121"} text={AboutData.heading} />
-                {/* <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                  {AboutData.heading}
-                </h2> */}
-              </div>
-              <div className="xl:space-y-4 md:space-y-4 lg:space-y-2 space-y-4">
-                {AboutData.description1 && (
-                  <ParagraphText color={"black"} text={AboutData.description1} />
-                )}
-                {AboutData.description2 && (
-                  <ParagraphText color={"black"} text={AboutData.description2} />
+          <HeadingTwo color="#212121" text={AboutData.heading} />
 
-                )}
-                {AboutData.description3 && (
-                  <ParagraphText color={"black"} text={AboutData.description3} />
+          <div className="space-y-4">
+            {AboutData.description1 && <ParagraphText color="black" text={AboutData.description1} />}
+            {AboutData.description2 && <ParagraphText color="black" text={AboutData.description2} />}
+            {AboutData.description3 && <ParagraphText color="black" text={AboutData.description3} />}
+            {AboutData.description4 && <ParagraphText color="black" text={AboutData.description4} />}
+            {AboutData.description5 && <ParagraphText color="black" text={AboutData.description5} />}
 
-                )}
-                {AboutData.description4 && (
-                  <ParagraphText color={"black"} text={AboutData.description4} />
-
-                )}
-                {AboutData.description5 && (
-                  <ParagraphText color={"black"} text={AboutData.description5} />
-
-                )}
-                {AboutData.points && AboutData.points.length > 0 && (
-                  <ul className="space-y-2">
-                    {AboutData.points.map((point: any, index: any) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <div className="min-w-[10px] min-h-[10px] w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
-                        <span className="xl:text-base text-sm text-black" dangerouslySetInnerHTML={{ __html: point }}>
-                         
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                {AboutData.description6 && (
-                  <ParagraphText color={"black"} text={AboutData.description6} />
-
-                )}
-              </div>
-            </div>
-            {AboutData.link && AboutData.linkText && (
-              <div className="mt-7">
-                <Link href={AboutData.link} passHref>
-                  <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition-colors duration-200">
-                    {AboutData.linkText} <MdOutlineArrowOutward />
-                  </button>
-                </Link>
-              </div>
+            {AboutData.points?.length > 0 && (
+              <ul className="space-y-2">
+                {AboutData.points.map((point: any, index: any) => (
+                  <li key={index} className="flex items-start gap-2 min-h-[24px]">
+                    <div className="w-[10px] h-[10px] border-2 border-[#5556D1] rounded-full mt-1.5"></div>
+                    <span
+                      className="xl:text-base text-sm text-black"
+                      dangerouslySetInnerHTML={{ __html: point }}
+                    />
+                  </li>
+                ))}
+              </ul>
             )}
+
+            {AboutData.description6 && <ParagraphText color="black" text={AboutData.description6} />}
           </div>
         </div>
+
+        {/* Button */}
+        <div className="mt-7 min-h-[50px]">
+          {AboutData.link && AboutData.linkText && (
+            <Link
+              href={AboutData.link}
+              className="text-[#5556D1] hover:bg-[#5556D1] hover:text-white border border-[#5556D1] w-fit px-10 py-2 text-lg font-semibold rounded-full flex items-center gap-1 transition-colors duration-200"
+            >
+              {AboutData.linkText} <MdOutlineArrowOutward />
+            </Link>
+          )}
+        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
   );
 };
 
