@@ -119,12 +119,6 @@ export default function Ecommerce(props:any) {
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
         <Solution techData={JSON_DATA.Trading} />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        {/* <EcommerceOptions
-          heading="Choose Your Ecommerce App Development Option"
-          description="We offer flexible ecommerce app development services tailored to your business needs, so you can select the model that best fits your goals."
-          optionsdata={JSON_DATA.optionsdata}
-        /> */}
-
         <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
         <Features featuresData={JSON_DATA.featuresData} />
         <Solution techData={JSON_DATA.Industries} />
