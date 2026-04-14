@@ -1,8 +1,101 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./desktop-wallet-development/taxi.json";
-
 import { useState } from "react";
+
+
+
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+import Emerging from "../../components/Emerging";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+import IndustryGrid from "../../components/IndustryGrid";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 import Header from "../../components/Newcomponet/layout/Header"
@@ -95,10 +188,6 @@ const Faq = dynamic(
   { loading: loader, ssr: true }
 );
 
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
 
 
 import {
@@ -240,7 +329,7 @@ export default function Ecommerce(props: any) {
       ]
     },
 
-  
+
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -407,147 +496,53 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <Header />
-
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <div className="">
-            <HeroSectionForAllPages
-              heading="Crypto Desktop Wallet Development Service"
-              ptag="Comfygen specializes in Crypto Desktop Wallet Development that helps businesses, traders, and enterprises with secure, scalable, and user-friendly multi-platform crypto wallets. Our crypto web & desktop wallet development solutions combine enterprise-level security with seamless accessibility across web browsers and desktop applications, ensuring users can manage, trade, and store digital assets without compromise."
-              li="Multi-currency & multi-chain wallet development"
-              li1="Advanced security with encryption, 2FA & biometrics"
-              li2="Cross-platform compatibility (Windows, macOS, Linux, Web)"
-              li3="Custom DeFi, NFT & exchange integrations"
-              li4=""
-              btnName="Talk With Expert"
-              btnLink="/contact-us"
-              openModal={openModal}
-              talkToExpertModal={talkToExpertModal}
-              setTalkToExpertModal={setTalkToExpertModal}
-              closeModal={closeModal}
-              bgImage="https://www.comfygen.com/comfygen-images/taxi-app-development-company/h1.webp"
-            />
-          </div>
-        </div>
-        <AboutSection
-          heading="Why Choose Crypto Web & Desktop Wallets?"
-          description1="As the crypto system evolves, businesses and traders need crypto wallets that combine accessibility, security, and flexibility. A <a href='https://www.comfygen.com/wallet-development-company' class='text-blue-500'>Wallet development company</a> is the ideal choice for users to manage digital assets across multiple environments without compromising safety or convenience."
-          description2="<b>Accessibility Across Devices</b> – Users can seamlessly manage, send, and receive assets through web browsers or dedicated desktop applications."
-          description3="<b>Enterprise-level Security</b> – Crypto desktop wallets provide strong protection with features like encryption, multi-signature support, and offline storage options, making them ideal for institutions and high-volume traders."
-          description4="<b>Multi-Currency & Multi-Chain Support</b> – Manage Bitcoin, Ethereum, stablecoins, and emerging tokens in a single crypto wallet with full blockchain compatibility."
-          description5="<b>Perfect for All Use Cases</b> – From individual traders and DeFi platforms to crypto exchanges and large-scale businesses, web & desktop wallets deliver reliability, scalability, and efficiency."
-
-          imageSrc="https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <section className="lg:py-16 py-10 bg-[#F3F4F6]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Crypto Web & Desktop Wallet Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen delivers end-to-end Crypto Web & Desktop Wallet Development Services designed to meet the unique needs of startups, enterprises, and financial institutions. Our <a href='https://www.comfygen.com/crypto-wallet-development' className='text-blue-500'>AI-based crypto wallet development solutions</a> are built with security, scalability, and performance at the core, enabling users to manage their digital assets with confidence.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <CallToAction
-          heading="Ready to Launch Your Crypto Desktop Wallet Today"
-          text="Build a secure, multi-feature desktop wallet with Comfygen. Perfect for startups, enterprises, and exchanges."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Portfolio of Mobile Crypto Wallet Development Services"
-            description="Comfygen, a trusted wallet development company, creates secure, scalable, and high-performance AI-based mobile crypto wallet development solutions tailored to the unique needs of various industries. Our wallet development portfolio showcases a wide range of projects, highlighting our expertise in building custom mobile crypto wallets that combine usability, security, and advanced features."
-          />
-        </section>
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <Solution techData={JSON_DATA.Technologies} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <IndustryGrid />
 
 
 
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End Web & Desktop Wallet Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a structured, end-to-end crypto desktop development process to create secure, scalable, and feature-rich web and desktop crypto wallets. Our approach ensures high-quality solutions that meet your business goals while maintaining robust security and compliance standards.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
 
-        <SolutionSec
-          heading="Benefits of Crypto Desktop Wallet Development"
-          subheading="<b>Web & Desktop Crypto Wallet</b> Development offers numerous advantages for businesses, traders, and enterprises seeking secure and scalable solutions for digital asset management."
-          techData={latesttech}
-        />
-        <TechStack
-          title="Tech Stack We Use to develop a crypto desktop wallet development"
-          description="At Comfygen, we leverage a strong and modern tech stack to build secure, scalable, and high-performance Web & Crypto  Desktop Wallet development. Our choice of technologies ensures seamless multi-platform functionality, enterprise-grade security, and smooth user experiences."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
 
-        <IndustriesServe
-          heading="Industries We Serve as a top wallet development company "
-          description="At Comfygen, our Web & Crypto Desktop Wallet Development Services cater to a wide range of industries, providing Crypto desktop development solutions that meet unique business requirements. We help organizations securely manage digital assets, streamline transactions, and leverage blockchain technology for growth and innovation."
-          sliderData={JSON_DATA.IndustriesServe}
-        />
+      <IndustriesServe
+        heading="Industries We Serve as a top wallet development company "
+        description="At Comfygen, our Web & Crypto Desktop Wallet Development Services cater to a wide range of industries, providing Crypto desktop development solutions that meet unique business requirements. We help organizations securely manage digital assets, streamline transactions, and leverage blockchain technology for growth and innovation."
+        sliderData={JSON_DATA.IndustriesServe}
+      />
 
-        <HireDeveloper
-          heading="Hire Web & Desktop Crypto Wallet Developers"
-          text="Looking to build a secure and feature-rich crypto wallet for web or desktop platforms? Comfygen provides experienced crypto wallet developers who can turn your vision into reality. Our blockchain development team specializes in blockchain technology, DeFi integration, NFT support, and multi-currency wallet solutions, ensuring your wallet is future-ready, scalable, and competitive in the rapidly evolving crypto market."
-          text1=""
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Expertise Across Blockchain Platforms ",
-            "Custom Wallet Development",
-            "Advanced Security Implementation",
-            "Faster Time-to-Market ",
-            "Ongoing Support & Maintenance"
-          ]}
-        />
+      <HireDeveloper
+        heading="Hire Web & Desktop Crypto Wallet Developers"
+        text="Looking to build a secure and feature-rich crypto wallet for web or desktop platforms? Comfygen provides experienced crypto wallet developers who can turn your vision into reality. Our blockchain development team specializes in blockchain technology, DeFi integration, NFT support, and multi-currency wallet solutions, ensuring your wallet is future-ready, scalable, and competitive in the rapidly evolving crypto market."
+        text1=""
+        buttonText="Hire Developer"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Expertise Across Blockchain Platforms ",
+          "Custom Wallet Development",
+          "Advanced Security Implementation",
+          "Faster Time-to-Market ",
+          "Ongoing Support & Maintenance"
+        ]}
+      />
 
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="ReactJS Development Technology"
-        />
-        <BlogSection initialData={initialData} />
+      <Faq
+        faqData={JSON_DATA.Frequently}
+        title="ReactJS Development Technology"
+      />
+      <BlogSection initialData={initialData} />
 
-      </div>
     </>
   );
 }
