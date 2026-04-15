@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 
-const GTM_ID = "GTM-M6QT7LCW";
+// const GTM_ID = "GTM-M6QT7LCW";
+
+const GTM_ID = "GTM-5K96GNBB";
+
+
+
 
 // export default function GoogleTagManager() {
 //   useEffect(() => {
