@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-const GTM_ID = "GTM-M6QT7LCW";
+// const GTM_ID = "GTM-M6QT7LCW";
 
 export default function Document() {
 

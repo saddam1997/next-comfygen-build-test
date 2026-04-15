@@ -62,7 +62,7 @@ export default function YouTubeTestimonials() {
       {/* Testimonials Section */}
       <section>
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
-          Client Success Stories
+        Video-based Client Success Stories
         </h2>
         <p className="text-center text-gray-600 mb-12">
           Hear what our clients have to say about their experience working with us
