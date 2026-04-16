@@ -49,13 +49,13 @@ const AppCard = ({Data}) => {
                 />
               </div>
 
-              <a
+              {/* <a
                 href={"/contact-us"}
               
                 className="mt-4 inline-block border hover:bg-white transition text-white bg-[#5556D1] hover:border-[#5556D1] hover:text-[#5556D1] border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full"
               >
                 {card.buttonText}
-              </a>
+              </a> */}
             </div>
           </div>
         ))}

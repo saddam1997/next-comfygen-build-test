@@ -89,7 +89,7 @@ const BusinessSolustion = dynamic(
 
 export default function Ecommerce(props) {
   let { initialData } = props;
- 
+
 
 
   const jsonLdData = [
@@ -113,52 +113,95 @@ export default function Ecommerce(props) {
       }]
     },
 
-   {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "How much does it cost to build a doctor appointment app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Doctor appointment app development cost ranges from $10,000 for a basic MVP with single-platform booking to over $100,000 for a full enterprise marketplace with AI features, EHR integration, and multi-specialty management. A standard iOS and Android app with telemedicine typically falls between $18,000 and $35,000. We provide a fixed-cost proposal after a free scoping call — no ambiguity, no surprise invoices."
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does it cost to build a doctor appointment app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Doctor appointment app development cost ranges from $10,000 for a basic MVP with single-platform booking to over $100,000 for a full enterprise marketplace with AI features, EHR integration, and multi-specialty management. A standard iOS and Android app with telemedicine typically falls between $18,000 and $35,000. We provide a fixed-cost proposal after a free scoping call — no ambiguity, no surprise invoices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a doctor appointment booking app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A basic doctor appointment booking app development project takes 6–10 weeks. A standard multi-platform app with telemedicine and payments takes 10–16 weeks. A full hospital appointment management or doctor marketplace platform takes 20–36 weeks. Timeline depends on feature complexity, third-party integrations, and how quickly your team can provide feedback on design iterations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Comfygen a top doctor appointment app development company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are a specialist healthcare app development company — not a generalist agency that does healthcare on the side. Our team has built doctor scheduling software, telemedicine platforms, e-prescription systems, and hospital appointment management apps across India, the USA, UAE, and Canada. We hold HIPAA compliance as a non-negotiable standard and every project includes a dedicated QA cycle for healthcare-specific edge cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you build a HIPAA-compliant doctor booking app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. HIPAA-compliant doctor booking app development is a core competency, not an add-on. Every app we build for US markets includes end-to-end PHI encryption, access control with role-based permissions, audit logging for all data access events, BAA-eligible cloud infrastructure (AWS or GCP), and a documented incident response procedure. We can also support GDPR compliance for European markets and DISHA guidelines for India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you build on React Native for doctor appointment apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. React Native doctor appointment app development is one of our most requested delivery formats. React Native lets us ship a single codebase to both iOS and Android without sacrificing performance or platform-native feel. It is ideal for healthcare startups that need to move fast without maintaining two separate codebases. We also build in Flutter for clients who prefer that ecosystem."
+          }
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "How long does it take to build a doctor appointment booking app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A basic doctor appointment booking app development project takes 6–10 weeks. A standard multi-platform app with telemedicine and payments takes 10–16 weeks. A full hospital appointment management or doctor marketplace platform takes 20–36 weeks. Timeline depends on feature complexity, third-party integrations, and how quickly your team can provide feedback on design iterations."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What makes Comfygen a top doctor appointment app development company?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We are a specialist healthcare app development company — not a generalist agency that does healthcare on the side. Our team has built doctor scheduling software, telemedicine platforms, e-prescription systems, and hospital appointment management apps across India, the USA, UAE, and Canada. We hold HIPAA compliance as a non-negotiable standard and every project includes a dedicated QA cycle for healthcare-specific edge cases."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you build a HIPAA-compliant doctor booking app?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. HIPAA-compliant doctor booking app development is a core competency, not an add-on. Every app we build for US markets includes end-to-end PHI encryption, access control with role-based permissions, audit logging for all data access events, BAA-eligible cloud infrastructure (AWS or GCP), and a documented incident response procedure. We can also support GDPR compliance for European markets and DISHA guidelines for India."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you build on React Native for doctor appointment apps?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. React Native doctor appointment app development is one of our most requested delivery formats. React Native lets us ship a single codebase to both iOS and Android without sacrificing performance or platform-native feel. It is ideal for healthcare startups that need to move fast without maintaining two separate codebases. We also build in Flutter for clients who prefer that ecosystem."
-      }
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Doctor Appointment App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen is a leading doctor appointment app development company offering custom healthcare app solutions for hospitals, clinics, startups, and enterprises. Build secure, scalable, AI-powered doctor booking apps with telemedicine, e-prescriptions, real-time scheduling, and HIPAA-compliant systems.",
+      "url": "https://www.comfygen.com/doctor-appointment-app-development ",
+      "mainEntityOfPage": "https://www.comfygen.com/doctor-appointment-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Doctor Appointment App Development",
+        "Doctor Booking App Development",
+        "Healthcare App Development",
+        "Telemedicine App Development",
+        "Online Doctor Consultation App Development",
+        "Hospital Appointment App Development",
+        "Clinic Management App Development",
+        "E-Prescription App Development",
+        "Patient Portal Development",
+        "Doctor Marketplace App Development",
+        "Custom Healthcare App Development",
+        "Android Doctor App Development",
+        "iOS Doctor App Development",
+        "Healthcare Website Development",
+        "AI-Based Doctor Recommendation System",
+        "Real-Time Appointment Scheduling",
+        "HIPAA-Compliant App Development",
+        "EHR/EMR Integration Services",
+        "Blockchain-Based Healthcare App Development",
+        "White-Label Doctor Appointment App Solutions"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     }
-  ]
-}
+
 
   ];
 
@@ -166,7 +209,7 @@ export default function Ecommerce(props) {
     <>
       <Head>
         <title>
-       Doctor Appointment App Development for Hospitals, Clinics & Healthcare Startups
+          Doctor Appointment App Development for Hospitals, Clinics & Healthcare Startups
 
 
         </title>

@@ -500,7 +500,7 @@
   },
   "AIPoweredFood": {
     "heading": "AI-Powered Food Delivery App Development",
-    "subheading": "Modern food delivery apps compete on intelligence, not just features. Comfygen's <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>AI-powered food delivery app development</a> integrates machine learning directly into the core ordering, logistics, and support workflows — not as an add-on, but as a built-in advantage.",
+    "subheading": "Modern food delivery apps compete on intelligence, not just features. Comfygen's AI-powered food delivery app development integrates machine learning directly into the core ordering, logistics, and support workflows — not as an add-on, but as a built-in advantage. <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>Learn more</a>",
 
   "tech": [
     {
@@ -885,10 +885,10 @@
     "text": "Looking to build a powerful food delivery app? Comfygen offers expert developers to create on-demand food ordering app solutions tailored to your needs.",
     "text1": "We serve startups, restaurants, cloud kitchens, and enterprises with flexible hiring models:",
     "text2": "<b>Fixed Price Model</b> : Ideal for clear project scopes with defined timelines and costs.",
-    "text3": "<b>Dedicated Developer Model</b>: <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>Hire dedicated food delivery app developers</a> focused solely on your project.",
+    "text3": "<b>Dedicated Developer Model</b>: Hire dedicated food delivery app developers focused solely on your project.",
     "text4": "<b>Time & Material Model</b> : Best for evolving projects and MVPs with flexible scope and transparent billing.",
-    "buttonText": "Hire a Crypto Exchange Developer",
-    "buttonLink": "/contact-us",
+    "buttonText": "Hire App Developer",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "text5": "<b>Why Hire Developers from Comfygen?</b>",

@@ -1,8 +1,11 @@
 import Image from "next/image";
-import ServicesTabs from "./ServicesTabs";
+const ServicesTabs = dynamic(() => import("./ServicesTabs"), {
+  ssr: false, // 🚨 IMPORTANT
+});
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 import style from "./scrollhide.module.css"
+import dynamic from "next/dynamic";
 
 export default function ServicesComponet({ servicesData }) {
     return (
@@ -40,7 +43,7 @@ export default function ServicesComponet({ servicesData }) {
                                 <div
                                     key={index}
                                     id={`service-${index}`}
-                                    className={`service-content absolute inset-0 px-6 py-12 text-white transition-opacity duration-300`}
+                                    className={`service-content absolute inset-0 px-6 py-12 text-white `}
                                 >
                                     <div className="space-y-4">
 

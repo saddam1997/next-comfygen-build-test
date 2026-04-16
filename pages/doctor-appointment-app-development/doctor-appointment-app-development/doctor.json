@@ -96,7 +96,7 @@
   "AboutSection": {
     "title": "About Company",
     "heading": "Why Invest in Doctor Appointment App Development?",
-    "description1": "The global mHealth market was valued at $62.7 billion in 2023 (Grand View Research) and the online doctor consultation segment alone is projected to reach $158.3 billion by 2030. These are not abstract figures. They represent the patients who, right now, are choosing the clinic with an app over the one without.",
+    "description1": "The global mHealth market was valued at $62.7 billion in 2023 <a rel='nofollow' target='_blank' href='https://www.grandviewresearch.com/industry-analysis/mhealth-market' class='text-blue-600 font-semibold'>(Grand View Research)</a> and the online doctor consultation segment alone is projected to reach $158.3 billion by 2030. These are not abstract figures. They represent the patients who, right now, are choosing the clinic with an app over the one without.",
     "description2": "",
     "description3": "",
     "points": [
@@ -363,15 +363,15 @@
     "description": "At Comfygen Technologies, we follow a structured and result-driven approach to doctor appointment app development, ensuring secure, scalable, and fully customized healthcare solutions. From initial planning and UI/UX design to development, testing, and deployment, we focus on building high-performance apps that enhance patient experience, streamline appointment management, and support seamless communication between doctors and patients.",
     "Process": [
       {
-        "title": "Step 1 — Discovery & healthcare compliance scoping",
+        "title": "Discovery & healthcare compliance scoping",
         "description": "We begin by mapping your patient workflows, clinical requirements, and compliance obligations — HIPAA for US markets, GDPR for European deployments, and DISHA guidelines for Indian platforms. This scoping session defines the exact feature set, integration requirements, and regulatory approach before a single line of code is written."
       },
       {
-        "title": "Step 2 — UI/UX design for medical audiences",
+        "title": "UI/UX design for medical audiences",
         "description": "Healthcare users are not typical app users. Patients may be anxious, elderly, or non-native language speakers. Our designers create interfaces built for clarity and speed: large tap targets, simplified booking flows, and accessibility-first layouts tested with real patient cohorts."
       },
       {
-        "title": "Step 3 — Agile app development",
+        "title": "Agile app development",
         "description": "Our developers work in two-week sprints, delivering tested increments you can see and interact with throughout the build. We use React Native and Flutter for cross-platform mobile, Node.js and Python for backend services, and AWS or GCP for HIPAA-eligible cloud infrastructure."
       },
       {
@@ -473,7 +473,7 @@
     "heading": "Hire a Doctor Appointment App Developer from Comfygen",
     "text": "Looking to hire a doctor appointment app developer with proven healthcare experience? Comfygen gives you direct access to a dedicated team of mobile app engineers, UI/UX designers, healthcare compliance consultants, and QA specialists — without the overhead of building an in-house tech team.",
     "buttonText": "Hire Developer",
-    "buttonLink": "/contact-us",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
@@ -604,7 +604,7 @@
     "Cloud/DevOps",
     "Payments",
     "Security",
-    "Advanced Technologies"
+    ""
   ],
   "TechstackData": {
     "heading": "Tech Stack We Use",

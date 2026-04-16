@@ -11,25 +11,24 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
   return (
     <>
       {/* Buttons */}
-      <div className={`grid grid-cols-1 sm:grid-cols-${grid} gap-6 p-2 mx-auto 2xl:w-10/12 w-10/12 lg:w-11/12 mt-10`}>
-        {featuresData.map((feature: any) => (
+      {featuresData
+        .filter((feature: any) => feature.title && feature.title.trim() !== "")
+        .map((feature: any) => (
           <div
             key={feature.id}
-            className={`rounded-full flex justify-center border cursor-pointer ${
-              activeId === feature.id
-                ? " bg-[#5556D1] text-white border-gray-300"
+            className={`rounded-full flex justify-center border cursor-pointer ${activeId === feature.id
+                ? "bg-[#5556D1] text-white border-gray-300"
                 : "bg-white text-black border-[#5556D1]"
-            }`}
+              }`}
           >
             <button
               className="text-lg font-medium p-2 w-full"
               onMouseEnter={() => setActiveId(feature.id)}
             >
-             <h3>{feature.title}</h3> 
+              <h3>{feature.title}</h3>
             </button>
           </div>
         ))}
-      </div>
 
       {/* 🔥 IMPORTANT PART */}
       {/* Render ALL tab contents */}
@@ -46,11 +45,11 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
                   key={index}
                   className="bg-white p-6 rounded-2xl shadow-md"
                 >
-                  <h4 className="text-xl font-semibold mb-2 text-[#272868]" dangerouslySetInnerHTML={{ __html:detail.details }}>
-                    
+                  <h4 className="text-xl font-semibold mb-2 text-[#272868]" dangerouslySetInnerHTML={{ __html: detail.details }}>
+
                   </h4>
-                  <p className="text-gray-700" dangerouslySetInnerHTML={{ __html:detail.content }}>
-                 
+                  <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: detail.content }}>
+
                   </p>
                 </div>
               ))}

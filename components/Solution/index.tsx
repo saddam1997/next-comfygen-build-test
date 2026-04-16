@@ -17,7 +17,7 @@ const Solution = ({ techData }) => {
 
             <HeadingTwo color={"#212121"} text={techData.heading} />
 
-            <p className="pt-4" dangerouslySetInnerHTML={{ __html: techData?.subheading }} />
+            <p className="pt-4 text-sm" dangerouslySetInnerHTML={{ __html: techData?.subheading }} />
           </div>
 
           <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
