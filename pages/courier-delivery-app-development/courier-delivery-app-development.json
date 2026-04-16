@@ -142,7 +142,7 @@
 
   "FData": {
     "heading": "Smart Courier Delivery App Features for Seamless Experience",
-    "description": "An AI-based courier delivery application offers advanced <a href='https://www.comfygen.com/blog/features-in-a-courier-delivery-app/' class='text-blue-600 hover:underline font-semibold'>Features in a Courier Delivery App</a> that are designed for customers, drivers, admins, and business owners. These features help streamline operations by improving delivery speed, reducing manual effort, enabling real-time tracking, and ensuring a more efficient, accurate, and reliable courier process.",
+    "description": "An AI-based courier delivery application offers advanced Features in a Courier Delivery App that are designed for customers, drivers, admins, and business owners. These features help streamline operations by improving delivery speed, reducing manual effort, enabling real-time tracking, and ensuring a more efficient, accurate, and reliable courier process.",
     "infData": [
       {
         "id": 1,
@@ -463,9 +463,9 @@
   },
 
   "Tabs": [
-    "Mobile App Development",
+    "App Development",
     "Backend",
-    "Web Development",
+    "Frontend",
     "Database",
     "Real-Time Tracking & Maps",
     "Cloud/DevOps",

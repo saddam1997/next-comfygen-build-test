@@ -1,130 +1,200 @@
 {
-"Herosection": {
-  "heading": "Medicine Delivery App Development Company",
-  "isHome": false,
-  "ptag": "Advanced Medicine Delivery App Development Services for Pharmacies, Startups & Healthcare Brands\n\nLooking to build a reliable online medicine delivery app? Comfygen is a leading medicine delivery app development company in India, trusted by pharmacies, healthcare startups, and enterprise brands across 30+ countries.\n\nWe develop medicine delivery apps — from HIPAA-compliant prescription platforms to AI-powered pharmacy solutions. Whether you want an app like Tata 1mg, PharmEasy, or a custom solution, our expert developers deliver fast, reliable, and future-ready apps.",
-  "ptag1": "",
-  "listItems": [],
-  "btnName": "Talk With Expert",
-  "btnLink": "/contact-us",
-  "altTag": "Advanced Medicine Delivery App Development Services",
-  "bgImage": "https://www.comfygen.com/herosection/your-partner-in-medicine-ordering-app-development-hero-img.webp"
-},
-"ServicesData": {
-  "heading": "Our Medicine Delivery App Development Services",
-  "description": "Comfygen Technologies provides end-to-end medicine delivery app development services for startups, independent pharmacies, and multi-chain pharmacy networks. Our certified pharmacy app developers combine AI, real-time tracking, and HIPAA-compliant architecture to build online medicine delivery solutions that simplify prescriptions, automate inventory, and deliver a seamless customer experience — from first order to doorstep.",
-  "services": [
+  "Herosection": {
+    "heading": "Medicine Delivery App Development Company",
+    "isHome": false,
+    "ptag": "Advanced Medicine Delivery App Development Services for Pharmacies, Startups & Healthcare Brands\n\nLooking to build a reliable online medicine delivery app? Comfygen is a leading medicine delivery app development company in India, trusted by pharmacies, healthcare startups, and enterprise brands across 30+ countries.\n\nWe develop medicine delivery apps — from HIPAA-compliant prescription platforms to AI-powered pharmacy solutions. Whether you want an app like Tata 1mg, PharmEasy, or a custom solution, our expert developers deliver fast, reliable, and future-ready apps.",
+    "ptag1": "",
+    "listItems": [],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Advanced Medicine Delivery App Development Services",
+    "bgImage": "https://www.comfygen.com/herosection/your-partner-in-medicine-ordering-app-development-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Our Medicine Delivery App Development Services",
+    "description": "Comfygen Technologies provides end-to-end medicine delivery app development services for startups, independent pharmacies, and multi-chain pharmacy networks. Our certified pharmacy app developers combine AI, real-time tracking, and HIPAA-compliant architecture to build online medicine delivery solutions that simplify prescriptions, automate inventory, and deliver a seamless customer experience — from first order to doorstep.",
+    "services": [
+      {
+        "title": "Custom Medicine Delivery App Development",
+        "subtitle": "",
+        "description": "Custom medicine delivery app development built around your pharmacy's exact workflow and customer needs. From intuitive medicine catalogs and automated order management to secure payment processing and real-time delivery tracking — every feature is built to match your brand, your operations, and your compliance requirements.",
+        "features": [
+          "Personalized UI/UX designed for pharmacy customers",
+          "AI-based drug search, filters & smart recommendations",
+          "Secure prescription upload, OCR scanning & validation",
+          "Multi-vendor and multi-store support",
+          "Android, iOS & Web — all platforms covered"
+        ]
+      },
+      {
+        "title": "On-Demand Medicine Delivery App Development",
+        "subtitle": "",
+        "description": "We specialize in on-demand medicine delivery app development for businesses that need speed, reliability, and real-time transparency. Our on-demand apps connect customers, pharmacies, and delivery agents on one platform — with live GPS tracking, instant order assignment, and automated dispatch — so medicines reach customers faster than ever.",
+        "features": [
+          "Real-time GPS tracking for customers and delivery agents",
+          "Automated order assignment & delivery agent dispatch",
+          "Live order status updates via push notification & SMS",
+          "Emergency/urgent delivery mode",
+          "Multi-zone delivery radius configuration"
+        ]
+      },
+      {
+        "title": "Pharmacy Delivery App Development",
+        "subtitle": "",
+        "description": "Our pharmacy delivery app development service covers everything a pharmacy needs to manage online orders, verify prescriptions, update inventory, and track delivery agents — all from one powerful pharmacy panel. We've built pharmacy delivery apps for standalone stores, hospital pharmacies, and nationwide chains.",
+        "features": [
+          "Pharmacy dashboard: orders, inventory, prescriptions in one view",
+          "Automated stock alerts and reorder triggers",
+          "Pharmacist prescription review & approval workflow",
+          "Integration with POS, ERP & billing systems",
+          "Sales analytics and revenue reporting"
+        ]
+      },
+      {
+        "title": "ePrescription App Development",
+        "subtitle": "",
+        "description": "Our ePrescription app development service integrates digital prescription management directly into your medicine delivery platform. Using OCR and AI-based validation, our ePrescription module automates prescription scanning, verification, drug matching, and compliance checks — reducing manual errors and speeding up the order approval process.",
+        "features": [
+          "OCR-powered prescription scanning & data extraction",
+          "AI-driven drug name matching & substitution suggestions",
+          "Pharmacist review queue with approval/rejection workflow",
+          "HIPAA & GDPR-compliant ePrescription data handling",
+          "Digital prescription storage and patient history"
+        ]
+      },
+      {
+        "title": "Medicine Ordering App Development",
+        "subtitle": "",
+        "description": "Our medicine ordering app development solutions give customers a frictionless way to browse, search, and order medicines online — with or without a prescription. We build smart ordering experiences with AI-powered drug search, dosage information, substitution suggestions, and one-tap reorders that keep customers coming back.",
+        "features": [
+          "Smart medicine search with filters (brand, generic, category)",
+          "Dosage information, usage guidelines & contraindications",
+          "One-tap reorder and subscription refills",
+          "OTC + prescription ordering flows in one app",
+          "Multi-payment: UPI, cards, wallets, net banking, COD"
+        ]
+      },
+      {
+        "title": "HIPAA-Compliant Medicine Delivery App Development",
+        "subtitle": "",
+        "description": "Every HIPAA-compliant medicine delivery app we build is designed with data privacy at its core. Our development process includes end-to-end encryption, role-based access controls, audit trails, and secure API architecture — ensuring your platform meets HIPAA, GDPR, and PCI-DSS standards from day one.",
+        "features": [
+          "End-to-end data encryption (at rest and in transit)",
+          "Role-based access control (RBAC) across all user types",
+          "Full audit logs and compliance reporting",
+          "GDPR-compliant data handling and consent management",
+          "PCI-DSS-compliant payment processing"
+        ]
+      },
+      {
+        "title": "White-Label Medicine Delivery App Solutions",
+        "subtitle": "",
+        "description": "Launch faster with our ready-to-deploy, white-label medicine delivery app solutions. Our white-label ePharmacy platform includes all core modules — ordering, tracking, prescriptions, payments, and admin panel — with full branding flexibility so you can go live in weeks, not months.",
+        "features": [
+          "Ready-to-deploy ePharmacy modules",
+          "Fully customizable themes, branding & app name",
+          "Scalable architecture to support business growth",
+          "Available on Android, iOS & Web",
+          "Optional telemedicine and doctor consultation module"
+        ]
+      },
+      {
+        "title": "App Maintenance & Support",
+        "subtitle": "",
+        "description": "Post-launch, we provide ongoing medicine delivery app maintenance, performance optimization, security patches, and feature upgrades to keep your platform running smoothly as your pharmacy business grows.",
+        "features": [
+          "24/7 technical support team",
+          "Regular security patches and compliance updates",
+          "Performance monitoring and uptime management",
+          "New feature development and API upgrades"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "",
+    "heading": "Why Invest in Online Medicine Delivery App Development?",
+    "description1": "The online pharmacy market is projected to reach $97.18 billion in 2025 and grow to $130.46 billion by 2029 at a CAGR of 7.64% <a rel='nofollow' href='https://www.statista.com' target='_blank' class='text-blue-500 font-medium'>(Statista)</a>. Consumer behavior has permanently shifted — patients now expect the same convenience from pharmacies that they get from food and grocery delivery.",
+    "description2": "For pharmacy owners and healthcare entrepreneurs, this represents a clear commercial opportunity. Here is why building a medicine delivery app is a high-return investment:",
+    "description3": "Ready to launch your medicine delivery app? Talk to our experts today.",
+    "description4": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/contact-us",
+    "linkText": "Get a Free Consultation →"
+  },
+  "trendingData": [
     {
-      "title": "Custom Medicine Delivery App Development",
-      "subtitle": "",
-      "description": "Custom medicine delivery app development built around your pharmacy's exact workflow and customer needs. From intuitive medicine catalogs and automated order management to secure payment processing and real-time delivery tracking — every feature is built to match your brand, your operations, and your compliance requirements.",
-      "features": [
-        "Personalized UI/UX designed for pharmacy customers",
-        "AI-based drug search, filters & smart recommendations",
-        "Secure prescription upload, OCR scanning & validation",
-        "Multi-vendor and multi-store support",
-        "Android, iOS & Web — all platforms covered"
-      ]
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch"
     },
     {
-      "title": "On-Demand Medicine Delivery App Development",
-      "subtitle": "",
-      "description": "We specialize in on-demand medicine delivery app development for businesses that need speed, reliability, and real-time transparency. Our on-demand apps connect customers, pharmacies, and delivery agents on one platform — with live GPS tracking, instant order assignment, and automated dispatch — so medicines reach customers faster than ever.",
-      "features": [
-        "Real-time GPS tracking for customers and delivery agents",
-        "Automated order assignment & delivery agent dispatch",
-        "Live order status updates via push notification & SMS",
-        "Emergency/urgent delivery mode",
-        "Multi-zone delivery radius configuration"
-      ]
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designrush"
     },
     {
-      "title": "Pharmacy Delivery App Development",
-      "subtitle": "",
-      "description": "Our pharmacy delivery app development service covers everything a pharmacy needs to manage online orders, verify prescriptions, update inventory, and track delivery agents — all from one powerful pharmacy panel. We've built pharmacy delivery apps for standalone stores, hospital pharmacies, and nationwide chains.",
-      "features": [
-        "Pharmacy dashboard: orders, inventory, prescriptions in one view",
-        "Automated stock alerts and reorder triggers",
-        "Pharmacist prescription review & approval workflow",
-        "Integration with POS, ERP & billing systems",
-        "Sales analytics and revenue reporting"
-      ]
+      "name": "SelectedFirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "firms top ecommerce "
     },
     {
-      "title": "ePrescription App Development",
-      "subtitle": "",
-      "description": "Our ePrescription app development service integrates digital prescription management directly into your medicine delivery platform. Using OCR and AI-based validation, our ePrescription module automates prescription scanning, verification, drug matching, and compliance checks — reducing manual errors and speeding up the order approval process.",
-      "features": [
-        "OCR-powered prescription scanning & data extraction",
-        "AI-driven drug name matching & substitution suggestions",
-        "Pharmacist review queue with approval/rejection workflow",
-        "HIPAA & GDPR-compliant ePrescription data handling",
-        "Digital prescription storage and patient history"
-      ]
-    },
-
-    {
-      "title": "Medicine Ordering App Development",
-      "subtitle": "",
-      "description": "Our medicine ordering app development solutions give customers a frictionless way to browse, search, and order medicines online — with or without a prescription. We build smart ordering experiences with AI-powered drug search, dosage information, substitution suggestions, and one-tap reorders that keep customers coming back.",
-      "features": [
-        "Smart medicine search with filters (brand, generic, category)",
-        "Dosage information, usage guidelines & contraindications",
-        "One-tap reorder and subscription refills",
-        "OTC + prescription ordering flows in one app",
-        "Multi-payment: UPI, cards, wallets, net banking, COD"
-      ]
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms"
     },
     {
-      "title": "HIPAA-Compliant Medicine Delivery App Development",
-      "subtitle": "",
-      "description": "Every HIPAA-compliant medicine delivery app we build is designed with data privacy at its core. Our development process includes end-to-end encryption, role-based access controls, audit trails, and secure API architecture — ensuring your platform meets HIPAA, GDPR, and PCI-DSS standards from day one.",
-      "features": [
-        "End-to-end data encryption (at rest and in transit)",
-        "Role-based access control (RBAC) across all user types",
-        "Full audit logs and compliance reporting",
-        "GDPR-compliant data handling and consent management",
-        "PCI-DSS-compliant payment processing"
-      ]
+      "name": "Top Developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "topdevelopers"
     },
     {
-      "title": "White-Label Medicine Delivery App Solutions",
-      "subtitle": "",
-      "description": "Launch faster with our ready-to-deploy, white-label medicine delivery app solutions. Our white-label ePharmacy platform includes all core modules — ordering, tracking, prescriptions, payments, and admin panel — with full branding flexibility so you can go live in weeks, not months.",
-      "features": [
-        "Ready-to-deploy ePharmacy modules",
-        "Fully customizable themes, branding & app name",
-        "Scalable architecture to support business growth",
-        "Available on Android, iOS & Web",
-        "Optional telemedicine and doctor consultation module"
-      ]
+      "name": "superb",
+      "link": "https://superbcompanies.com/organizations/comfygen-technologies/",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/superb compnies top blockchain development companies in india.webp",
+      "bg": "bg-indigo-100",
+      "alt": "superbcompanies"
     },
     {
-      "title": "App Maintenance & Support",
-      "subtitle": "",
-      "description": "Post-launch, we provide ongoing medicine delivery app maintenance, performance optimization, security patches, and feature upgrades to keep your platform running smoothly as your pharmacy business grows.",
-      "features": [
-        "24/7 technical support team",
-        "Regular security patches and compliance updates",
-        "Performance monitoring and uptime management",
-        "New feature development and API upgrades"
-      ]
+      "name": "firms mobile app development",
+      "link": "https://www.rightfirms.co/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/right firms mobile app development companies in uae.webp",
+      "bg": "bg-pink-100",
+      "alt": "selectedfirms"
+    },
+    {
+      "name": "mobileappdaily ",
+      "link": "https://www.mobileappdaily.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/mobileappdaily top mobile app development company.webp",
+      "bg": "bg-blue-100",
+      "alt": "mobileappdaily "
+    },
+    {
+      "name": "itrate custom software development",
+      "link": "https://itrate.co/company/comfygen-pvt-ltd",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/itrate custom software development company.webp",
+      "bg": "bg-purple-100",
+      "alt": "itrate"
+    },
+    {
+      "name": "f65 top nft marketplace",
+      "link": "https://www.f6s.com/company/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/f65 top nft marketplace development company in canada.webp",
+      "bg": "bg-emerald-100",
+      "alt": "f6s"
     }
-  ]
-},
-"AboutSection": {
-  "title": "",
-  "heading": "Why Invest in Online Medicine Delivery App Development?",
-  "description1": "The online pharmacy market is projected to reach $97.18 billion in 2025 and grow to $130.46 billion by 2029 at a CAGR of 7.64% <a rel='nofollow' href='https://www.statista.com' target='_blank' class='text-blue-500 font-medium'>(Statista)</a>. Consumer behavior has permanently shifted — patients now expect the same convenience from pharmacies that they get from food and grocery delivery.",
-  "description2": "For pharmacy owners and healthcare entrepreneurs, this represents a clear commercial opportunity. Here is why building a medicine delivery app is a high-return investment:",
-  "description3": "Ready to launch your medicine delivery app? Talk to our experts today.",
-  "description4": "",
-  "points": [],
-  "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
-  "link": "/contact-us",
-  "linkText": "Get a Free Consultation →"
-},
-
+  ],
   "BusinessSolustion": {
     "title": "AI-Powered Medicine Delivery App Development Solutions for Digital Pharmacies",
     "subtitle": "Our AI-powered medicine delivery app development solutions help pharmacies reduce manual work, improve order accuracy, and deliver faster, more personalized service. From intelligent drug recommendations to automated fraud detection, every AI feature we build is designed to solve a real pharmacy operations challenge.",
@@ -167,50 +237,48 @@
       }
     ]
   },
-
-"Industries": {
-  "heading": "Build a Medicine Delivery App Like 1mg, PharmEasy & Netmeds",
-  "description": "Want to launch a pharmacy platform similar to India's leading ePharmacy apps? Our medicine delivery app clone development solutions give you a feature-rich, fully customizable starting point — so you can build a medicine delivery app like 1mg, PharmEasy, or Netmeds without starting from scratch. Each clone solution is built from the ground up — not a copied template — and is customized to your brand, target market, and business model. Here is what we can build for you:",
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/tata-1Mg-app-clone.webp",
-      "title": "1mg Clone App Development",
-      "description": "<a href='https://www.comfygen.com/blog/build-medicine-delivery-app-like-1mg/' class='text-blue-600 font-semibold'>Build a medicine delivery app like 1mg</a> with online medicine ordering, prescription upload, lab test integration, and secure payments, delivering a smooth digital healthcare experience for users and pharmacies.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/netmeds-app-clone.webp",
-      "title": "Netmeds Clone App Development",
-      "description": "Develop a Netmeds-like medicine delivery app featuring medicine search, subscription refills, order tracking, and discount management, helping pharmacies scale online sales and customer retention efficiently.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/medplus-mart-app-clone.webp",
-      "title": "MedPlus Mart Clone App Development",
-      "description": "Create a MedPlus Mart clone app with store-based medicine delivery, inventory control, loyalty programs, and fast checkout, ideal for pharmacy chains expanding their digital presence.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/practo-app-clone.webp",
-      "title": "Practo Clone App Development",
-      "description": "Launch a Practo-style healthcare app combining medicine delivery, doctor consultation, appointment booking, and digital prescriptions, offering users an all-in-one healthcare solution.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/apollo-pharmacy-app-clone.webp",
-      "title": "Apollo Pharmacy Clone App Development",
-      "description": "Build an Apollo Pharmacy-like app with multi-store management, prescription validation, branded experience, and enterprise-level security for large pharmacy networks.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/pharmaEasy-app-clone.webp",
-      "title": "PharmEasy Clone App Development",
-      "description": "Develop a PharmEasy clone app with medicine delivery, diagnostic services, subscription refills, and AI-based recommendations, designed for high user engagement and repeat orders.",
-      "buttonText": "View Demo"
-    }
-  ]
-},
-
+  "Industries": {
+    "heading": "Build a Medicine Delivery App Like 1mg, PharmEasy & Netmeds",
+    "description": "Want to launch a pharmacy platform similar to India's leading ePharmacy apps? Our medicine delivery app clone development solutions give you a feature-rich, fully customizable starting point — so you can build a medicine delivery app like 1mg, PharmEasy, or Netmeds without starting from scratch. Each clone solution is built from the ground up — not a copied template — and is customized to your brand, target market, and business model. Here is what we can build for you:",
+    "IndustriesServe": [
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/tata-1Mg-app-clone.webp",
+        "title": "1mg Clone App Development",
+        "description": "<a href='https://www.comfygen.com/blog/build-medicine-delivery-app-like-1mg/' class='text-blue-600 font-semibold'>Build a medicine delivery app like 1mg</a> with online medicine ordering, prescription upload, lab test integration, and secure payments, delivering a smooth digital healthcare experience for users and pharmacies.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/netmeds-app-clone.webp",
+        "title": "Netmeds Clone App Development",
+        "description": "Develop a Netmeds-like medicine delivery app featuring medicine search, subscription refills, order tracking, and discount management, helping pharmacies scale online sales and customer retention efficiently.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/medplus-mart-app-clone.webp",
+        "title": "MedPlus Mart Clone App Development",
+        "description": "Create a MedPlus Mart clone app with store-based medicine delivery, inventory control, loyalty programs, and fast checkout, ideal for pharmacy chains expanding their digital presence.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/practo-app-clone.webp",
+        "title": "Practo Clone App Development",
+        "description": "Launch a Practo-style healthcare app combining medicine delivery, doctor consultation, appointment booking, and digital prescriptions, offering users an all-in-one healthcare solution.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/apollo-pharmacy-app-clone.webp",
+        "title": "Apollo Pharmacy Clone App Development",
+        "description": "Build an Apollo Pharmacy-like app with multi-store management, prescription validation, branded experience, and enterprise-level security for large pharmacy networks.",
+        "buttonText": "View Demo"
+      },
+      {
+        "imgSrc": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/pharmaEasy-app-clone.webp",
+        "title": "PharmEasy Clone App Development",
+        "description": "Develop a PharmEasy clone app with medicine delivery, diagnostic services, subscription refills, and AI-based recommendations, designed for high user engagement and repeat orders.",
+        "buttonText": "View Demo"
+      }
+    ]
+  },
   "CardClone": {
     "title": "Build a Medicine Delivery App Like 1mg, PharmEasy & Netmeds",
     "subtitle": "Want to launch a pharmacy platform similar to India's leading ePharmacy apps? Our medicine delivery app clone development solutions give you a feature-rich, fully customizable starting point — so you can build a medicine delivery app like 1mg, PharmEasy, or Netmeds without starting from scratch. Each clone solution is built from the ground up — not a copied template — and is customized to your brand, target market, and business model. Here is what we can build for you:",
@@ -256,47 +324,38 @@
   "Cost": {
     "heading": "Medicine Delivery App Development Cost: What to Expect",
     "description": "One of the most common questions we receive is: What is the cost to build a medicine delivery app? The medicine delivery app development cost depends on several factors — the type of app (custom vs. white-label), the number of panels (customer, pharmacy, admin, delivery), platform choice (Android, iOS, or both), and the complexity of integrations (AI, ePrescription, telemedicine, payments).",
-
-  "rows": [
-    {
-      "appType": "Basic Medicine Delivery App",
-      "EstimatedCost": "$8,000 – $15,000",
-      "Timeline": "8–12 weeks",
-      "bestFor": "Single pharmacy, MVP launch"
-    },
-    {
-      "appType": "Standard ePharmacy App",
-      "EstimatedCost": "$15,000 – $30,000",
-      "Timeline": "12–20 weeks",
-      "bestFor": "Startups, regional chains"
-    },
-    {
-      "appType": "Advanced Platform (AI + Multi vendor)",
-      "EstimatedCost": "$30,000 – $60,000",
-      "Timeline": "20–32 weeks",
-      "bestFor": "Enterprise, national rollout"
-    },
-    {
-      "appType": "White-Label Solution",
-      "EstimatedCost": "$5,000 – $12,000",
-      "Timeline": "4–8 weeks",
-      "bestFor": "Fast launch with branding"
-    },
-    {
-      "appType": "1mg / PharmEasy Clone",
-      "EstimatedCost": "$12,000 – $25,000",
-      "Timeline": "10–18 weeks",
-      "bestFor": "Clone-based launch"
-    }
-  ],
-
-
-
-
-
-
-
-
+    "rows": [
+      {
+        "appType": "Basic Medicine Delivery App",
+        "EstimatedCost": "$8,000 – $15,000",
+        "Timeline": "8–12 weeks",
+        "bestFor": "Single pharmacy, MVP launch"
+      },
+      {
+        "appType": "Standard ePharmacy App",
+        "EstimatedCost": "$15,000 – $30,000",
+        "Timeline": "12–20 weeks",
+        "bestFor": "Startups, regional chains"
+      },
+      {
+        "appType": "Advanced Platform (AI + Multi vendor)",
+        "EstimatedCost": "$30,000 – $60,000",
+        "Timeline": "20–32 weeks",
+        "bestFor": "Enterprise, national rollout"
+      },
+      {
+        "appType": "White-Label Solution",
+        "EstimatedCost": "$5,000 – $12,000",
+        "Timeline": "4–8 weeks",
+        "bestFor": "Fast launch with branding"
+      },
+      {
+        "appType": "1mg / PharmEasy Clone",
+        "EstimatedCost": "$12,000 – $25,000",
+        "Timeline": "10–18 weeks",
+        "bestFor": "Clone-based launch"
+      }
+    ],
     "subheading": "Factors that affect food delivery app development cost: ",
     "points": [
       " Number of user panels (customer, restaurant, driver, admin) ",
@@ -307,7 +366,6 @@
       "White-label vs custom design and branding"
     ]
   },
-
   "featuresData": {
     "heading": "Key Features of Our Medicine Delivery Apps",
     "description": "Our medicine delivery app solutions are built with four fully integrated panels — Customer App, Pharmacy Panel, Admin Panel, and Delivery App — each designed to make online pharmacy operations faster, smarter, and more transparent.",
@@ -319,13 +377,41 @@
         "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
         "img": "https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/customer-panel.webp",
         "additionalDetails": [
-          { "details": "Easy registration & login", "emoji": "", "content": "" },
-          { "details": "Medicine search & order", "emoji": "", "content": "" },
-          { "details": "Prescription Upload", "emoji": "", "content": "" },
-          { "details": "Real-time Order Tracking", "emoji": "", "content": "" },
-          { "details": "Multiple Payment Options", "emoji": "", "content": "" },
-          { "details": "Medicine Reminders", "emoji": "", "content": "" },
-          { "details": "Order History", "emoji": "", "content": "" }
+          {
+            "details": "Easy registration & login",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medicine search & order",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Prescription Upload",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-time Order Tracking",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Multiple Payment Options",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Medicine Reminders",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order History",
+            "emoji": "",
+            "content": ""
+          }
         ]
       },
       {
@@ -334,13 +420,41 @@
         "icon": "<i className='fas fa-mobile-alt text-4xl'></i>",
         "img": "https://www.comfygen.com/image/pharmacy-panel-image-medicine-delivery-app-development.png",
         "additionalDetails": [
-          { "details": "Order Management", "emoji": "", "content": "" },
-          { "details": "Manage medicine inventory", "emoji": "", "content": "" },
-          { "details": "Upload Prescriptions & Verify Medicines", "emoji": "", "content": "" },
-          { "details": "Payment Settlement", "emoji": "", "content": "" },
-          { "details": "Notifications", "emoji": "", "content": "" },
-          { "details": "Sales tracking & analytics", "emoji": "", "content": "" },
-          { "details": "Customer Interaction & Support", "emoji": "", "content": "" }
+          {
+            "details": "Order Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Manage medicine inventory",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Upload Prescriptions & Verify Medicines",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Payment Settlement",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Notifications",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Sales tracking & analytics",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Customer Interaction & Support",
+            "emoji": "",
+            "content": ""
+          }
         ]
       },
       {
@@ -349,13 +463,41 @@
         "icon": "<i className='fas fa-wallet text-4xl'></i>",
         "img": "https://www.comfygen.com/image/admin-panel-medicine-delivery-app-development.png",
         "additionalDetails": [
-          { "details": "User & Pharmacy Management", "emoji": "", "content": "" },
-          { "details": "Order tracking & Management", "emoji": "", "content": "" },
-          { "details": "Offers & Discounts Control", "emoji": "", "content": "" },
-          { "details": "Payment Management", "emoji": "", "content": "" },
-          { "details": "Reports & Analytics Dashboard", "emoji": "", "content": "" },
-          { "details": "Inventory Control", "emoji": "", "content": "" },
-          { "details": "Secure Data Management", "emoji": "", "content": "" }
+          {
+            "details": "User & Pharmacy Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order tracking & Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Offers & Discounts Control",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Payment Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Reports & Analytics Dashboard",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Inventory Control",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Secure Data Management",
+            "emoji": "",
+            "content": ""
+          }
         ]
       },
       {
@@ -364,18 +506,45 @@
         "icon": "<i className='fas fa-wallet text-4xl'></i>",
         "img": "https://www.comfygen.com/image/delivery-panel-medicine-delivery-app-development.png",
         "additionalDetails": [
-          { "details": "Real-time Delivery Requests", "emoji": "", "content": "" },
-          { "details": "Order Assignment", "emoji": "", "content": "" },
-          { "details": "GPS Navigation", "emoji": "", "content": "" },
-          { "details": "Delivery Status Updates", "emoji": "", "content": "" },
-          { "details": "Earnings Tracking", "emoji": "", "content": "" },
-          { "details": "Delivery Confirmation", "emoji": "", "content": "" },
-          { "details": "Delivery History", "emoji": "", "content": "" }
+          {
+            "details": "Real-time Delivery Requests",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order Assignment",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "GPS Navigation",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery Status Updates",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Earnings Tracking",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery Confirmation",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery History",
+            "emoji": "",
+            "content": ""
+          }
         ]
       }
     ]
   },
-
   "Portfoliodata": {
     "heading": "Our Medicine Delivery App Development Portfolio",
     "description": "Below are selected projects from our portfolio of medicine delivery app development. Each case study showcases real solutions we've built for pharmacies, healthcare startups, and ePharmacy platforms — including the tech stack used, challenges solved, and outcomes delivered.",
@@ -406,14 +575,13 @@
       }
     ]
   },
-
   "NFTProcessData": {
     "heading": "Our Agile Medicine Delivery App Development Process",
     "description": "We follow a streamlined and agile development process to build secure, scalable, and high-performing medicine delivery apps. Our approach ensures faster delivery, smooth communication, and continuous improvements throughout the project. From understanding your business goals to launching a fully functional online pharmacy app, we keep everything transparent and efficient.",
     "Process": [
       {
         "title": "Requirement Analysis",
-        "description": "We begin by understanding your pharmacy model, target users, and core features. This helps us create the perfect roadmap for your custom <a href='https://www.comfygen.com/blog/medicine-delivery-app-development-for-pharmacies/' class='text-blue-600 font-semibold'>medicine delivery app development for pharmacies</a> & SMEs."
+        "description": "We begin by understanding your pharmacy model, target users, and core features. This helps us create the perfect roadmap for your custom medicine delivery app development for pharmacies & SMEs."
       },
       {
         "title": "UI/UX Design",
@@ -442,21 +610,52 @@
     ]
   },
   "Tabs": [
-    "Frontend",
     "Backend",
-    "Database",
-    "Real-Time Tracking & Maps",
-    "Mobile App Development",
-    "Cloud/DevOps",
+    "Frontend",
     "Payments",
-    "Security",
-    "Data & Analytics"
+    "Database",
+    "Maps & Routing",
+    "Cloud/DevOps",
+    "AI/ML"
   ],
   "TechstackData": {
-    "heading": "Technology Stack We Use for Medicine Delivery App Development",
-    "description": "We use a modern, proven tech stack for medicine delivery app development — chosen for speed, security, scalability, and compliance with healthcare data regulations.",
+    "heading": "Tech Stack for Taxi Booking App Development Solution",
+    "description": "At Comfygen, we leverage modern and reliable technologies to build fast, secure, and scalable taxi booking applications. Our mobile app development approach combines powerful backend systems with intuitive frontend frameworks to deliver seamless performance across Android, iOS, and web platforms.",
     "TechItems": {
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "7"
+        }
+   
+      ],
       "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
         {
           "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
           "alt": "React",
@@ -470,86 +669,78 @@
           "num": "6"
         },
         {
-          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
-          "alt": "Vue.js",
-          "name": "Vue.js",
-          "num": "4"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
-          "alt": "HTML5",
-          "name": "HTML5",
-          "num": "4"
-        },
-        {
-          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
-          "alt": "CSS3",
-          "name": "CSS3",
-          "num": "4"
-        },
-        {
           "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
-          "alt": "JavaScript",
-          "name": "JavaScript",
-          "num": "4"
-        }
-      ],
-      "Mobile App Development": [
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
-          "alt": " React Native",
-          "name": " React Native",
-          "num": "9"
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React Native",
+          "name": "React Native",
+          "num": "4"
         },
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
           "alt": "Flutter",
           "name": "Flutter",
-          "num": "11"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
-          "alt": "Swift (iOS)",
-          "name": "Swift (iOS)",
-          "num": "12"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
-          "alt": "Kotlin (Android)",
-          "name": "Kotlin (Android)",
-          "num": "13"
+          "num": "9"
         }
       ],
-      "Backend": [
+      "Payments": [
         {
-          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
-          "alt": "Nodejs",
-          "name": "Nodejs",
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
           "num": "1"
         },
         {
-          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
-          "alt": "Django",
-          "name": "Django",
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/PayU.webp",
+          "alt": "PayU",
+          "name": "PayU",
           "num": "3"
         },
         {
-          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
-          "alt": "Python",
-          "name": "Python",
+          "img": "https://www.comfygen.com/comfygen-images/icons/upi.webp",
+          "alt": "UPI",
+          "name": "UPI",
           "num": "4"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
-          "alt": "Java (Spring Boot)",
-          "name": "Java (Spring Boot)",
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
           "num": "5"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
-          "alt": "NET Core",
-          "name": "NET Core",
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
           "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
         }
       ],
       "Database": [
@@ -566,19 +757,13 @@
           "num": "2"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
-          "alt": "MySQL",
-          "name": "MySQL",
-          "num": "3"
-        },
-        {
           "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
           "alt": "Redis",
           "name": "Redis",
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Maps & Routing": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",
@@ -590,12 +775,6 @@
           "alt": "Mapbox",
           "name": "Mapbox",
           "num": "2"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
-          "alt": "Geolocation APIs",
-          "name": "Geolocation APIs",
-          "num": "3"
         }
       ],
       "Cloud/DevOps": [
@@ -616,107 +795,25 @@
           "alt": "Docker",
           "name": "Docker",
           "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
-          "alt": "Microsoft Azure",
-          "name": "Microsoft Azure",
-          "num": "4"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
-          "alt": "Kubernetes",
-          "name": "Kubernetes",
-          "num": "4"
         }
       ],
-      "Payments": [
+       "AI/ML": [
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
-          "alt": "Razorpay",
-          "name": "Razorpay",
+          "img": "https://www.comfygen.com/comfygen-images/icons/TensorFlow.webp",
+          "alt": "TensorFlow",
+          "name": "TensorFlow",
           "num": "1"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
-          "alt": "Stripe",
-          "name": "Stripe",
+          "img": "https://www.comfygen.com/comfygen-images/icons/chatgpt.webp",
+          "alt": "OpenAI APIs",
+          "name": "OpenAI APIs",
           "num": "2"
         },
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
-          "alt": "PayPal",
-          "name": "PayPal",
-          "num": "5"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
-          "alt": "Plaid (for banking APIs)",
-          "name": "Plaid (for banking APIs)",
-          "num": "7"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
-          "alt": "UPI Integration",
-          "name": "UPI Integration",
-          "num": "8"
-        }
-      ],
-      "Security": [
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
-          "alt": "End-to-End Encryption",
-          "name": "End-to-End Encryption",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
-          "alt": "OAuth Authentication",
-          "name": "OAuth Authentication",
-          "num": "2"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
-          "alt": "JWT Authentication",
-          "name": "JWT Authentication",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
-          "alt": "PCI-DSS Compliance",
-          "name": "PCI-DSS Compliance",
-          "num": "3"
-        }
-      ],
-      "Data & Analytics": [
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
-          "alt": "Apache",
-          "name": "Apache",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Hadoop",
-          "name": "Hadoop",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Spark",
-          "name": "Spark",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Real-time Analytics",
-          "name": "Real-time Analytics",
-          "num": "3"
-        },
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Business Intelligence Tools",
-          "name": "Business Intelligence Tools",
+          "img": "https://www.comfygen.com/comfygen-images/icons/pytorch.webp",
+          "alt": "PyTorch",
+          "name": "PyTorch",
           "num": "3"
         }
       ]
@@ -739,7 +836,7 @@
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
         "title": "Full Regulatory Compliance — HIPAA, GDPR, PCI-DSS",
-        "description": "We develop online medicine delivery apps that follow <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>healthcare regulations like HIPAA</a>, GDPR, and PCI-DSS. This ensures secure data handling, patient privacy, and safe online medicine transactions."
+        "description": "We develop online medicine delivery apps that follow healthcare regulations like HIPAA, GDPR, and PCI-DSS. This ensures secure data handling, patient privacy, and safe online medicine transactions. <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>Read more</a>"
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
@@ -754,7 +851,7 @@
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
         "title": "Transparent Pricing & On-Time Delivery",
-        "description": "Comfygen offers cost-effective medicine delivery app development services with clear pricing models. Our agile <a href='https://www.comfygen.com/blog/pharmacy-app-development-features-benefits-process-and-cost/' class='text-blue-600 font-semibold'>pharmacy delivery app development process</a> ensures faster delivery without compromising quality."
+        "description": "Comfygen offers cost-effective medicine delivery app development services with clear pricing models. Our agile pharmacy delivery app development process ensures faster delivery without compromising quality."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
@@ -763,7 +860,6 @@
       }
     ]
   },
-
   "CallToAction": {
     "heading": "Build Your AI-Powered Medicine Delivery App Now",
     "text": "Leverage AI features and smart workflows to create a modern, intelligent delivery platform.",
@@ -772,13 +868,12 @@
     "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
     "imageAlt": "Future of Technology"
   },
-
   "HireDeveloper": {
     "heading": "Hire a Medicine Delivery App Developer",
-    "text": "Looking to hire a medicine delivery <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>app developer</a> with real pharmacy domain experience? Comfygen's dedicated pharmacy app developers specialize in building HIPAA-compliant, AI-powered medicine delivery platforms for startups and pharmacy businesses worldwide.",
+    "text": "Looking to hire a medicine delivery app developer with real pharmacy domain experience? Comfygen's dedicated pharmacy app developers specialize in building HIPAA-compliant, AI-powered medicine delivery platforms for startups and pharmacy businesses worldwide.",
     "text1": "When you hire a medicine delivery app developer from our team, you get a specialist who understands prescription workflows, pharmacy compliance requirements, healthcare data security, and the user experience needs of both patients and pharmacists.",
     "buttonText": "Hire a Developer Now",
-    "buttonLink": "/contact-us",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
@@ -790,7 +885,6 @@
       "Post-hire support with a dedicated project manager"
     ]
   },
-
   "ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
@@ -912,7 +1006,7 @@
       "desc": "Yes, we offer complete post-launch support, including bug fixes, updates, security patches, and performance optimization to keep your app running smoothly."
     }
   ],
-"jsonLdData":[
+  "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -922,11 +1016,9 @@
         "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description":
-        "Kickstart your online pharmacy business with Comfygen’s medicine delivery app development services. Build cost-effective, scalable, and feature-rich apps to deliver medicines anytime, anywhere.",
+      "description": "Kickstart your online pharmacy business with Comfygen’s medicine delivery app development services. Build cost-effective, scalable, and feature-rich apps to deliver medicines anytime, anywhere.",
       "url": "https://www.comfygen.com/medicine-delivery-app-development",
-      "mainEntityOfPage":
-        "https://www.comfygen.com/medicine-delivery-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/medicine-delivery-app-development",
       "areaServed": "Global",
       "serviceType": [
         "On-Demand Medicine Delivery App Development",
@@ -936,7 +1028,6 @@
         "Online Medicine Delivery App Development",
         "Medicine Delivery App Development Services"
       ],
-
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
@@ -944,7 +1035,6 @@
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
@@ -963,7 +1053,6 @@
         }
       ]
     },
-
     {
       "@context": "https://schema.org/",
       "@type": "FAQPage",
@@ -1011,5 +1100,4 @@
       ]
     }
   ]
-
 }

@@ -279,7 +279,7 @@
       {
         "num": "01",
         "title": "Ethereum",
-        "desc": "The most popular smart contract platform, <a class='text-blue-800 font-semibold' href='/ethereum-token-development'>Ethereum</a>, powers many decentralized finance (DeFi) applications. We leverage Ethereum’s robust ecosystem for building decentralized exchanges (DEX) and hybrid platforms with smart contract automation."
+        "desc": "The most popular smart contract platform, <a class='text-blue-600 font-semibold' href='/ethereum-token-development'>Ethereum</a>, powers many decentralized finance (DeFi) applications. We leverage Ethereum’s robust ecosystem for building decentralized exchanges (DEX) and hybrid platforms with smart contract automation."
       },
       {
         "num": "02",
@@ -289,7 +289,7 @@
       {
         "num": "03",
         "title": "Solana",
-        "desc": "Famous for ultra-fast transaction speeds and minimal fees, <a class='text-blue-800 font-semibold' href='/solana-token-development'>Solana</a> is perfect for high-frequency trading platforms requiring scalability without compromising security."
+        "desc": "Famous for ultra-fast transaction speeds and minimal fees, <a class='text-blue-600 font-semibold' href='/solana-token-development'>Solana</a> is perfect for high-frequency trading platforms requiring scalability without compromising security."
       },
       {
         "num": "04",
@@ -299,12 +299,12 @@
       {
         "num": "05",
         "title": "Polygon",
-        "desc": "As a layer 2 solution for Ethereum, <a class='text-blue-800 font-semibold' href='/polygon-blockchain-development'>Polygon</a> offers faster transactions and lower costs, making it suitable for exchanges that need speed and affordability."
+        "desc": "As a layer 2 solution for Ethereum, <a class='text-blue-600 font-semibold' href='/polygon-blockchain-development'>Polygon</a> offers faster transactions and lower costs, making it suitable for exchanges that need speed and affordability."
       },
       {
         "num": "06",
         "title": "Cardano",
-        "desc": "With a research-driven approach,<a class='text-blue-800 font-semibold' href='/cardano-blockchain-development-company'>Cardano</a> offers a secure and scalable infrastructure, ideal for exchanges focusing on formal verification and long-term sustainability."
+        "desc": "With a research-driven approach,<a class='text-blue-600 font-semibold' href='/cardano-blockchain-development-company'>Cardano</a> offers a secure and scalable infrastructure, ideal for exchanges focusing on formal verification and long-term sustainability."
       }
     ]
   },
@@ -328,7 +328,7 @@
       {
         "num": "03",
         "title": "Smart Trading Bots",
-        "desc": "<a href='https://www.comfygen.com/blog/ai-crypto-trading-bots-automate-profit-with-ai/' class='text-blue-500 font-semibold'>Automated AI trading bots</a> execute trades based on predefined strategies and real-time market data. These bots can analyze thousands of indicators simultaneously, enabling round-the-clock trading with minimal human intervention."
+        "desc": "Automated AI trading bots execute trades based on predefined strategies and real-time market data. These bots can analyze thousands of indicators simultaneously, enabling round-the-clock trading with minimal human intervention."
       },
       {
         "num": "04",
@@ -364,7 +364,7 @@
       {
         "num": "01",
         "title": "Binance-Model Exchange",
-        "desc": "Scalable platform supporting high-frequency trading, diverse crypto pairs, and strong security protocols. Learn more about its development process, cost, and features in our detailed guide on <a href='https://www.comfygen.com/blog/binance-clone-development-process-cost-analysis-features-tech-stack/' class='text-blue-600 font-semibold'>Binance clone development.</a>"
+        "desc": "Scalable platform supporting high-frequency trading, diverse crypto pairs, and strong security protocols. Learn more about its development process, cost, and features in our detailed guide on Binance clone development."
       },
       {
         "num": "02",
@@ -663,7 +663,7 @@
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
         "title": "Dedicated Team of Blockchain Experts",
-        "description": "Our team includes experienced <a href='https://www.comfygen.com/hire-blockchain-developer'c class='text-blue-600 font-semibold'>blockchain developers</a>, security engineers, and UI/UX specialists who understand the complexities of crypto trading systems. We focus on building user-friendly, high-performance platforms tailored to your business goals. Client names"
+        "description": "Our team includes experienced blockchain developers, security engineers, and UI/UX specialists who understand the complexities of crypto trading systems. We focus on building user-friendly, high-performance platforms tailored to your business goals. Client names"
       },
       {
         "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
@@ -691,8 +691,8 @@
     "heading": "Hire Crypto Exchange Developers from Comfygen",
     "text": "When you hire crypto exchange developers from Comfygen, you get more than coders. You get a dedicated product team — blockchain engineers, security architects, UI/UX designers, and QA specialists — with hands-on experience shipping live crypto exchange platforms for clients across India, the UAE, the UK, the US, Canada, and Europe. ",
     "text1": "Each crypto exchange developer on our team is specialized, not generalized. We staff engagements based on your specific exchange type and technical requirements.",
-    "buttonText": "Hire a Crypto Exchange Developer",
-    "buttonLink": "/contact-us",
+    "buttonText": "Hire Blockchain Developer",
+    "buttonLink": "https://www.comfygen.com/hire-blockchain-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [

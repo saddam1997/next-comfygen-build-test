@@ -146,6 +146,7 @@ export default function Ecommerce(props: any) {
       <Consultancy consultancyData={JSON_DATA.ModelsSec} />
       <Emerging emerging={JSON_DATA.EmergingData} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
+       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />

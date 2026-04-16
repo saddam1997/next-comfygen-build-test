@@ -895,7 +895,7 @@
 
   "ModelsSec": {
     "title": "Unique Features of a Blockchain-Based Dating App",
-    "description": "We offer <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain-based dating app development</a> to ensure security, privacy, and a scam-free dating experience. Blockchain integration helps create trust, transparency, and innovative engagement in your dating platform.",
+    "description": "We offer blockchain-based dating app development to ensure security, privacy, and a scam-free dating experience. Blockchain integration helps create trust, transparency, and innovative engagement in your dating platform. Explore more <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain based dating app features</a>",
     "buttonText": "Let’s Discuss",
     "buttonLink": "/contact-us",
     "image": "https://www.comfygen.com/image/features-of-a-blockchain-based-dating-app.webp",
@@ -1025,8 +1025,8 @@
   "text2": "<b>Project-Based Hiring:</b> Perfect if you have a fixed idea and want complete app development within a defined budget and timeline.",
   "text3": "<b>Dedicated Team:</b> Ideal for long-term projects. You get a full team working only on your dating app from start to finish.",
   "text4": "<b>Why Choose Our Developers?</b>",
-  "buttonText": "Hire Dating App Developers Now",
-  "buttonLink": "/contact-us",
+  "buttonText": "Hire App Developers",
+  "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
   "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
   "imageAlt": "hire-developer",
   "listItems": [

@@ -46,7 +46,7 @@ export default function Emerging({ emerging }: any) {
 
                   <div className="mt-3">
                     <p
-                      className="break-all text-white text-start"
+                      className="text-balance text-white text-sx"
                       dangerouslySetInnerHTML={{ __html: decs }}
                     />
                   </div>
