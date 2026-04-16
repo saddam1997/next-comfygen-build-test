@@ -168,7 +168,7 @@ export default function HeroSectionForAllPages(props: any) {
                               </a>
 
 
-                              <a
+                              {/* <a
                                 target="_blank"
                                 href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
                                 aria-label="Join Comfygen on Teams"
@@ -179,7 +179,7 @@ export default function HeroSectionForAllPages(props: any) {
                                   height={40}
                                   width={40}
                                 />
-                              </a>
+                              </a> */}
 
                               <a
                                 target="_blank"

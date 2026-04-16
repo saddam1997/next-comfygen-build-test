@@ -241,7 +241,7 @@ export default function MobileHero(props: any) {
                                   width={40}
                                 />
                               </a>
-
+{/* 
                               <a
                                 target="_blank"
                                 href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
@@ -253,7 +253,7 @@ export default function MobileHero(props: any) {
                                   height={40}
                                   width={40}
                                 />
-                              </a>
+                              </a> */}
 
 
                               <a
