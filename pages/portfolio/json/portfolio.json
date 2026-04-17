@@ -153,14 +153,7 @@
       "btn": "Initiate Now",
       "url": "/portfolio/blockchain-based-fintech-app"
     },
-    {
-      "num": "20",
-      "img": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "head": "YatriPay",
-      "para": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      "btn": "Initiate Now",
-      "url": "/portfolio/peer-to-peer-blockchain-based-payment-system"
-    },
+   
     {
       "num": "21",
       "img": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",

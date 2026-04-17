@@ -192,16 +192,7 @@
         "url": "/portfolio/blockchain-based-fintech-app",
         "btn": "Initiate Now"
       },
-      {
-        "num": 20,
-        "category": "Blockchain",
-        "head": "YatriPay",
-        "subhead": "",
-        "para": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development...",
-        "img": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-        "url": "/portfolio/peer-to-peer-blockchain-based-payment-system",
-        "btn": "Initiate Now"
-      },
+     
       {
         "num": 21,
         "category": "Blockchain",

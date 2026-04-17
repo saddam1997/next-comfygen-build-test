@@ -78,7 +78,7 @@ export default function TalkToExpertModal({
               alt="Contact Background"
               fill
               sizes="(max-width: 1024px) 0vw, 40vw"
-              className="object-cover"
+              className="object-cover "
             />
 
             {/* Dark Overlay Content */}

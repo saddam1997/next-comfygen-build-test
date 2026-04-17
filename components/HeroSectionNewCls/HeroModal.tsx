@@ -40,7 +40,8 @@ export default function TalkToExpertModal({
                                 src="https://www.comfygen.com/comfygen-images/home/form.webp"
                                 alt="Contact"
                                 fill
-                                className="object-cover"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+                                className="object-cover "
                                 priority
                             />
 
@@ -80,6 +81,13 @@ export default function TalkToExpertModal({
                                             icon="https://www.comfygen.com/image/x-form-icon.svg"
                                             label="Twitter"
                                         />
+
+                                        <SocialIcon
+                                            href="https://www.instagram.com/comfygen_technologies"
+                                            icon="https://www.comfygen.com/comfygen-images/icons/image.webp"
+                                            label="Instagram"
+                                        />
+
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +143,7 @@ function SocialIcon({
                 alt={label}
                 width={40}
                 height={40}
-                className="hover:scale-110 transition"
+                className="hover:scale-110 transition h-auto w-auto rounded-md"
             />
         </a>
     );

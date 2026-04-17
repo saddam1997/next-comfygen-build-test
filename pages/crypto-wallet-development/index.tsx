@@ -5,58 +5,97 @@ import JSON_DATA from "./json/cryptowallet.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
+  ),
 });
-
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-});
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
 });
 
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
-import TechStacks from "../../components/TechStacks";
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
-
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="w-full animate-pulse">
+      <div className="h-[500px] bg-gray-200 rounded-xl" />
+    </div>
+  )
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
 });
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => <div className="min-h-[500px]" />,
+});
 
-import IndustryGrid from "../../components/IndustryGrid";
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-black animate-pulse" />
+  ),
+});
+
+const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[600px] sm:min-h-[500px] lg:min-h-[400px] bg-gray-100 animate-pulse" />
+  )
+});
+import ReviewCard from "../../components/ReviewCard";
+
+
+
+
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
@@ -166,20 +205,44 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <Navbar />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
 
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      </div>
 
-      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <Solution techData={JSON_DATA.NFTBenefits} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Solution techData={JSON_DATA.AICrypto} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      </div>
+
+      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+        <Solution techData={JSON_DATA.NFTBenefits} />
+      </div>
+
+      <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      </div>
+
+      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+        <Solution techData={JSON_DATA.AICrypto} />
+      </div>
+
+      <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      </div>
+
+
+      <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px]">
+        <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      </div>
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <IndustryGrid />
-      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+      </div>
       <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
