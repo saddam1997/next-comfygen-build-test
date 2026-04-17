@@ -38,7 +38,7 @@
       },
       {
         "title": "Banking App Development",
-        "description": "As an experienced <a href='https://www.comfygen.com/banking-software-development' class='text-blue-600 font-semibold'>banking app development company</a>, we build mobile banking applications that meet the security, performance, and regulatory requirements of licensed financial institutions. Our banking and finance app development work includes core banking integrations, real-time payment rails (IMPS, NEFT, SWIFT), and UIDAI/DigiLocker-based KYC flows. We have delivered mobile banking solutions for scheduled commercial banks, cooperative banks, credit unions, and digital-first neobanks across India, the UAE, and North America.",
+        "description": "As an experienced <a href='https://www.comfygen.com/banking-software-development' class='underline font-semibold'>banking app development company</a>, we build mobile banking applications that meet the security, performance, and regulatory requirements of licensed financial institutions. Our banking and finance app development work includes core banking integrations, real-time payment rails (IMPS, NEFT, SWIFT), and UIDAI/DigiLocker-based KYC flows. We have delivered mobile banking solutions for scheduled commercial banks, cooperative banks, credit unions, and digital-first neobanks across India, the UAE, and North America.",
         "features": [
           "Real-time fund transfers via IMPS, NEFT, UPI, and SWIFT",
           "Biometric login, device binding, and session anomaly detection",
@@ -111,7 +111,7 @@
       "Advanced Security & Compliance",
       "Scalable & Future-Ready Solutions"
     ],
-    "imageSrc": "https://www.comfygen.com/image/finance-app-development-company-about-image.webp",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/finance-app-development/Finance About.webp",
     "link": "/contact-us",
     "linkText": "Get Free Consulting"
   },
@@ -440,8 +440,8 @@
   "HireDeveloper": {
     "heading": "Hire Fintech App Developers For Your Project",
     "text": "At Comfygen, you can collaborate with highly skilled and experienced fintech app developers dedicated to building secure, scalable, and innovative financial solutions. Our experts leverage the latest technologies and stay updated with evolving fintech trends to give your business a strong competitive edge.",
-    "buttonText": "Hire Developer",
-    "buttonLink": "/contact-us",
+    "buttonText": "Hire App Developer",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
@@ -550,8 +550,7 @@
       "Frontend",
       "Backend",
       "Database",
-      "Real-Time Tracking & Maps",
-      "Mobile App Development",
+      "Tracking & Maps",
       "Cloud/DevOps",
       "Payments",
       "Security",
@@ -597,7 +596,31 @@
             "alt": "JavaScript",
             "name": "JavaScript",
             "num": "4"
-          }
+          },
+          {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
         ],
         "Mobile App Development": [
        
@@ -685,7 +708,7 @@
             "num": "3"
           }
         ],
-        "Real-Time Tracking & Maps": [
+        "Tracking & Maps": [
           {
             "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
             "alt": "Google Maps API",
@@ -797,13 +820,13 @@
         ],
         "Data & Analytics": [
           {
-            "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+            "img": "https://www.comfygen.com/comfygen-images/icons/Apache.webp",
             "alt": "Apache",
             "name": "Apache",
             "num": "1"
           },
           {
-            "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+            "img": "https://www.comfygen.com/comfygen-images/icons/Hadoop_logo.webp",
             "alt": "Hadoop",
             "name": "Hadoop",
             "num": "3"

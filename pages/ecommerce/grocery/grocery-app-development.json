@@ -351,7 +351,7 @@
 
   "AIFeatures": {
     "heading": "AI Features in Grocery Delivery App Development",
-    "subheading": "Our <a href='https://www.comfygen.com/ai-development' class='text-blue-600 font-semibold'>AI-driven Grocery delivery app development solutions</a> enhance user experience, optimize operations, and help your business grow.",
+    "subheading": "Our AI-driven Grocery delivery app development solutions enhance user experience, optimize operations, and help your business grow.",
     "tech": [
       {
         "num": "01",
@@ -433,8 +433,8 @@
   "HireDeveloper": {
     "heading": "Hire Expert Grocery Delivery App Developers",
     "text": "Comfygen Technologies provides experienced grocery delivery app developers who transform your vision into scalable, high-performance digital platforms. Our team builds fully customized grocery delivery applications aligned with your business model, integrating advanced features, smooth navigation, and reliable architecture.",
-    "buttonText": "Hire Developer",
-    "buttonLink": "/contact-us",
+    "buttonText": "Hire App Developer",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
@@ -576,11 +576,10 @@
     "Frontend",
     "Backend",
     "Database",
-    "Real-Time Tracking & Maps",
+    "Tracking & Maps",
     "Cloud/DevOps",
     "Payments",
-    "Security",
-    "Advanced Technologies"
+    "Security"
   ],
   "TechstackData": {
     "heading": "Tech Stack We Use",
@@ -706,7 +705,7 @@
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Tracking & Maps": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",
@@ -822,7 +821,7 @@
       ],
       "Advanced Technologies": [
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
           "alt": "AI & Machine Learning",
           "name": "AI & Machine Learning",
           "num": "1"
