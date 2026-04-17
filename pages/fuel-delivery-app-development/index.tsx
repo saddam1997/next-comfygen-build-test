@@ -11,6 +11,10 @@ import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import Trending from "../../components/Trending";
 import TechStacks from "../../components/TechStacks";
 
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
   ssr: true,
@@ -94,7 +98,9 @@ const ClientStories = dynamic(
 
 import ReviewCard from "../../components/ReviewCard";
 
-
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
 
 
@@ -385,23 +391,8 @@ export default function ClinicalApp(props: any) {
       <Navbar />
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
 
-
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              We Offer Comprehensive Fuel Delivery App Development Services
-            </h2>
-            <p className="text-base text-center font-normal">
-              Comfygen Technologies, a top-rated on-demand fuel delivery mobile app development company, offers end-to-end fuel delivery app development services tailored to help startups, enterprises, and fuel station owners digitize operations, improve delivery efficiency, and enhance customer convenience. Our Uber-like fuel delivery solutions are secure, scalable, and tailored for the evolving energy and logistics industry.
-            </p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
 
       <AboutSection
         title="About Company"
@@ -451,15 +442,10 @@ export default function ClinicalApp(props: any) {
         imageAlt="Future of Technology"
       />
 
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
 
-      {/* portfoliodata */}
-      <section className="py-8">
-        <Portfolio
-          projects={JSON_DATA.portfoliodata}
-          heading="Our Fuel Delivery App Development Portfolio"
-          description="We have successfully delivered scalable and custom fuel delivery app development solutions for global clients. Our portfolio highlights real-world fuel delivery apps designed to simplify fuel ordering, enable real-time tracking, and ensure smooth operations for users, drivers, and vendors."
-        />
-      </section>
+
+
 
 
 
@@ -499,7 +485,7 @@ export default function ClinicalApp(props: any) {
 
                     <div className="mt-3">
                       <p
-                        className="break-all text-white text-start "
+                        className=" text-white text-start "
                         dangerouslySetInnerHTML={{ __html: decs }}
                       ></p>
                     </div>
@@ -540,9 +526,9 @@ export default function ClinicalApp(props: any) {
 
       <HireDeveloper
         heading="Hire Fuel Delivery App Developers"
-        text="Looking to launch your own fuel delivery application? Hire expert <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>fuel delivery mobile app developers</a> from Comfygen to build an AI-powered and feature-rich fuel delivery app tailored to your brand. Our skilled gas delivery app developers specialize in creating on-demand fuel delivery apps with smart routing, real-time tracking, multiple payment options, and white-label solutions for startups, enterprises, and fuel service providers."
-        buttonText="Why Hire Our Delivery App Builder?"
-        buttonLink="/contact-us"
+        text="Looking to launch your own fuel delivery application? Hire expert fuel delivery mobile app developers from Comfygen to build an AI-powered and feature-rich fuel delivery app tailored to your brand. Our skilled gas delivery app developers specialize in creating on-demand fuel delivery apps with smart routing, real-time tracking, multiple payment options, and white-label solutions for startups, enterprises, and fuel service providers."
+        buttonText="Hire an App Developer."
+        buttonLink="https://www.comfygen.com/hire-mobile-app-developer"
         imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
         imageAlt="hire-developer"
         listItems={[

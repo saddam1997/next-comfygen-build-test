@@ -329,7 +329,7 @@
     "description": "Doctor Appointment Applications have become integral for those, who frequently need doctor’s assistance directly. To know better, we have reasons to show its importance",
     "buttonText": "Let’s Discuss",
     "buttonLink": "/contact-us",
-    "image": "https://www.comfygen.com/media/images/why-do-you-need-to-hire-our-android-app.webp",
+    "image": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/Consultancy.webp",
     "proces": [
       {
         "num": "1",
@@ -600,11 +600,11 @@
     "Frontend",
     "Backend",
     "Database",
-    "Real-Time Tracking & Maps",
+    "Tracking & Maps",
     "Cloud/DevOps",
     "Payments",
-    "Security",
-    ""
+    "Security"
+  
   ],
   "TechstackData": {
     "heading": "Tech Stack We Use",
@@ -730,7 +730,7 @@
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Tracking & Maps": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",

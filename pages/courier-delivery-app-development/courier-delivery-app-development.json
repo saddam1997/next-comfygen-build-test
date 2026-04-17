@@ -358,7 +358,7 @@
     "heading": "Hire Courier App Developers — Dedicated Teams, Fixed Cost, or Hourly",
     "text": "Looking to build a courier delivery app with a team that truly understands logistics technology? Hire expert courier app developers from Comfygen and get dedicated professionals who specialize in on-demand delivery platforms, real-time tracking systems, and AI-powered logistics automation.",
     "buttonText": "Hire Developer",
-    "buttonLink": "/contact-us",
+    "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
@@ -463,11 +463,11 @@
   },
 
   "Tabs": [
-    "App Development",
+  
     "Backend",
     "Frontend",
     "Database",
-    "Real-Time Tracking & Maps",
+    "Tracking & Maps",
     "Cloud/DevOps",
     "Payments"
   ],
@@ -475,7 +475,7 @@
     "heading": "Tech Stack We Use",
     "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
     "TechItems": {
-      "Mobile App Development": [
+      "App Development": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
           "alt": " React Native",
@@ -502,7 +502,7 @@
         }
       ],
  
-      "Web Development": [
+      "Frontend": [
         {
           "img": "https://www.comfygen.com/image/next-js-icon.svg",
           "alt": "Nextjs",
@@ -538,6 +538,30 @@
           "alt": "CSS3",
           "name": "CSS3",
           "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
         }
       ],
       "Backend": [

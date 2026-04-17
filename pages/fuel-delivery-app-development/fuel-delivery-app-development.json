@@ -106,11 +106,10 @@
     "Frontend",
     "Backend",
     "Database",
-    "Real-Time Tracking & Maps",
+    "Tracking & Maps",
     "Cloud/DevOps",
     "Payments",
-    "Security",
-    "Advanced Technologies"
+    "Security"
   ],
   "TechstackData": {
     "heading": "Tech Stack We Use",
@@ -236,7 +235,7 @@
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Tracking & Maps": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",
@@ -352,7 +351,7 @@
       ],
       "Advanced Technologies": [
         {
-          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
           "alt": "AI & Machine Learning",
           "name": "AI & Machine Learning",
           "num": "1"
@@ -464,6 +463,87 @@
   },
 
 
+
+"Portfoliodata": {
+  "heading": "Our Fuel Delivery App Development Portfolio",
+  "description": "We have successfully delivered scalable and custom fuel delivery app development solutions for global clients. Our portfolio highlights real-world fuel delivery apps designed to simplify fuel ordering, enable real-time tracking, and ensure smooth operations for users, drivers, and vendors.",
+  "portfolio": [
+    {
+      "image": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/quick-fuel–delivery-app.webp",
+      "title": "Quick Fuel – On-Demand Fuel Delivery App",
+      "description": "Quick Fuel is a fast-growing on-demand fuel delivery app designed to provide doorstep petrol and diesel services to urban customers. Our team developed a scalable app with real-time GPS tracking, secure payments, and automated delivery scheduling.",
+      "link": "https://www.comfygen.com/contact-us"
+    },
+    {
+      "image": "https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/petroRiz–fuel-station-&-delivery-management-app.webp",
+      "title": "PetroRiz – Fuel Station & Delivery Management App",
+      "description": "PetroRiz is a fuel station finder and delivery app that connects users with nearby petrol stations and supports home fuel delivery. Comfygen developed a fuel ordering app with AI-powered route optimization and analytics for vendors and administrators.",
+      "link": "https://www.comfygen.com/contact-us"
+    }
+  ]
+},
+
+
+"ServicesData": {
+  "heading": "We Offer Comprehensive Fuel Delivery App Development Services",
+  "description": "Comfygen Technologies, a top-rated on-demand fuel delivery mobile app development company, offers end-to-end fuel delivery app development services tailored to help startups, enterprises, and fuel station owners digitize operations, improve delivery efficiency, and enhance customer convenience. Our Uber-like fuel delivery solutions are secure, scalable, and tailored for the evolving energy and logistics industry.",
+  "services": [
+    {
+      "title": "On-Demand Fuel Delivery App Development",
+      "description": "We build powerful on-demand fuel delivery apps that enable doorstep delivery of petrol, diesel, and gas. From intuitive <a class='font-semibold underline' href='https://www.comfygen.com/web-design'>UI/UX</a> to real-time tracking, our solutions help businesses manage orders, drivers, and deliveries seamlessly while improving customer satisfaction.",
+      "features": [
+        "Real-time fuel delivery tracking",
+        "GPS-based route optimization",
+        "Secure online payment systems"
+      ]
+    },
+    {
+      "title": "White-Label Fuel Delivery App Development",
+      "description": "Launch your own branded fuel delivery app quickly with our ready-to-deploy <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label fuel delivery app development solutions</a>. Ideal for startups and enterprises, these apps are fully customizable, scalable, and designed for rapid market entry.",
+      "features": [
+        "100% brand customization",
+        "Scalable backend architecture",
+        "Android & iOS compatibility"
+      ]
+    },
+    {
+      "title": "Custom Fuel Delivery Mobile App Development",
+      "description": "We provide tailor-made custom fuel delivery mobile app development services based on your unique business model. Whether you operate a single fuel station or a multi-city network, our custom gas delivery app solutions ensure flexibility, performance, and future scalability.",
+      "features": [
+        "Custom UI/UX Design",
+        "API & CRM Integration",
+        "Advanced Reporting Tools"
+      ]
+    },
+    {
+      "title": "Fleet Fuel Management App Development",
+      "description": "Our fleet fuel management app development solutions help logistics companies and enterprises monitor fuel consumption, control costs, and optimize refueling operations through real-time insights and automation.",
+      "features": [
+        "Fleet Tracking & Monitoring",
+        "Fuel Usage Reports",
+        "Automated Refueling & Alerts"
+      ]
+    },
+    {
+      "title": "Fuel Delivery Marketplace App Development",
+      "description": "As a top-rated fuel delivery app development company, we build scalable fuel delivery marketplace apps that connect multiple fuel vendors with customers on a single platform. These apps support vendor onboarding, commission management, and multi-role dashboards.",
+      "features": [
+        "Multi-vendor Management System",
+        "Commission & Revenue Models",
+        "Customer & Vendor Dashboards"
+      ]
+    },
+    {
+      "title": "Fuel Station Finder App Development",
+      "description": "We develop fuel station finder apps that help users locate the nearest petrol, diesel, or EV charging stations. Integrated with GPS, pricing updates, and directions, these apps improve convenience for travelers and vehicle owners.",
+      "features": [
+        "GPS-powered Station Locator",
+        "Real-time Fuel Price Updates",
+        "Map Integration & Directions"
+      ]
+    }
+  ]
+},
 
 
 

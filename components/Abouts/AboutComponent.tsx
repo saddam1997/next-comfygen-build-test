@@ -20,7 +20,7 @@ const AboutComponent = ({ AboutData }) => {
       <div className="relative w-full aspect-[4/3]">
         <Image
           src={AboutData.imageSrc}
-          alt={imageAlt}
+          alt={AboutData.heading}
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="lg:object-contain object-cover rounded-md"
