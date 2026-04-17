@@ -21,6 +21,7 @@ export default function MobileNav() {
               width={160}
               height={50}
               priority
+              className="h-full w-full"
             />
           </Link>
 

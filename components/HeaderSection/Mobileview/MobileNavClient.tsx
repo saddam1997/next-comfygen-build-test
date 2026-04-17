@@ -48,6 +48,7 @@ export default function MobileNavClient({ menuData }: any) {
             width={160}
             height={50}
             priority
+            className="w-fit"
           />
         </Link>
 

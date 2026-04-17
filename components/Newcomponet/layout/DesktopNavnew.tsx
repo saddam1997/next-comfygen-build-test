@@ -1299,6 +1299,7 @@ export default function DesktopNav(props: any) {
               height={51}
               priority={true}
               loading="eager"
+              
             />
           </Link>
         </div>
