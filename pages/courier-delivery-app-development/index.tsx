@@ -131,31 +131,25 @@ export default function ClinicalApp(props: any) {
       <Navbar />
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-            <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
+      <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <FeaturesNewSection FData={JSON_DATA.FData} />
       {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-
-
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <Trending
         trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-
       <DeliverySection hideUrl="https://www.comfygen.com/courier-delivery-app-development" />
       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
-
       <BlogSection initialData={initialData} />
-
     </>
   );
 }

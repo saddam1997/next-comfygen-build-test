@@ -94,15 +94,4 @@ const InfoSection = ({InfoSectionData}:any) => {
 };
 
 
-InfoSection.defaultProps = {
-  heading: "",
-  description1: "",
-  description2: "",
-  description3: "",
-  points: [],
-  imageSrc: "",
-  link: "#",
-  linkText: "Learn More",
-};
-
 export default InfoSection;

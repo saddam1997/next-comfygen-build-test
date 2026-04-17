@@ -320,10 +320,8 @@ export default function ClinicalApp(props: any) {
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <Solution techData={JSON_DATA.Business} />
-
         <AppClone SliderDATA={JSON_DATA.Industries} />
         <FeaturesNewSection FData={JSON_DATA.FData} />
-
         <GroceryAppScreens />
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <Solution techData={JSON_DATA.AIFeatures} />

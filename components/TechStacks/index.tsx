@@ -31,9 +31,9 @@ export default function TechStacks({ TabData, TechData, Default }: any) {
 
 
                         return (
-                            <div className="space-y-2">
+                            <div  key={index} className="space-y-2">
                                 <button
-                                    key={tab}
+                                    key={index}
                                     onClick={() => setActiveTab(tab)}
                                     className={`w-full space-y-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 border ${activeTab === tab
                                         ? "bg-white text-black border-white"
@@ -45,9 +45,9 @@ export default function TechStacks({ TabData, TechData, Default }: any) {
                                 </button>
                                 {isActive && (
                                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                                        {techs.map((tech: any) => (
+                                        {techs.map((tech: any, index: any) => (
                                             <div
-                                                key={tech.name}
+                                                key={index}
                                                 className="bg-[#111111] border border-gray-800 rounded-xl flex flex-col items-center justify-center py-3 px-1 gap-3 hover:border-gray-500 hover:bg-[#1f1f1f] transition-all duration-200 cursor-pointer group"
                                             >
                                                 <div className="group-hover:scale-110 transition-transform duration-200">
@@ -69,9 +69,9 @@ export default function TechStacks({ TabData, TechData, Default }: any) {
 
                 {/* Tabs */}
                 <div className="hidden lg:flex flex-wrap gap-2 mb-8 justify-center ">
-                    {TabData.map((tab: any) => (
+                    {TabData.map((tab: any, index: any) => (
                         <button
-                            key={tab}
+                            key={index}
                             onClick={() => setActiveTab(tab)}
                             className={`px-4 py-1.5 rounded-md text-sm font-medium transition-all duration-200 border
                 ${activeTab === tab
@@ -82,10 +82,6 @@ export default function TechStacks({ TabData, TechData, Default }: any) {
                             {tab}
                         </button>
                     ))}
-
-
-
-
                 </div>
 
 
@@ -93,9 +89,9 @@ export default function TechStacks({ TabData, TechData, Default }: any) {
 
                 {/* Grid */}
                 <div className="hidden lg:grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                    {techs.map((tech: any) => (
+                    {techs.map((tech:any, index:any) => (
                         <div
-                            key={tech.name}
+                            key={index}
                             className="bg-[#111111] border border-gray-800 rounded-xl flex flex-col items-center justify-center py-3 px-1 gap-3 hover:border-gray-500 hover:bg-[#1f1f1f] transition-all duration-200 cursor-pointer group"
                         >
                             <div className="group-hover:scale-110 transition-transform duration-200">

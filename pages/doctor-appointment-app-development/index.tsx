@@ -79,12 +79,8 @@ const Solution = dynamic(() => import("../../components/Solution"), {
 });
 
 
-// import DeliveryCostTable from "./components/DeliveryCostTable";
 
-const BusinessSolustion = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
-  { ssr: true }
-);
+
 
 
 export default function Ecommerce(props) {
