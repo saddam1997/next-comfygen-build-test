@@ -40,8 +40,10 @@ export default function TalkToExpertModal({
                                 src="https://www.comfygen.com/comfygen-images/home/form.webp"
                                 alt="Contact"
                                 fill
-                                className="object-cover"
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+                                className="object-cover "
                                 priority
+                                
                             />
 
 

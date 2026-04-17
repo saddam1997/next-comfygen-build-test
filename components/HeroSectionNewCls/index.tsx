@@ -17,7 +17,7 @@ export default function HeroSection({ Data }: any) {
         alt={Data.imageAlt || "hero"}
         fill
         priority
-        sizes="100vw"
+         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
         className="object-cover"
       />
 

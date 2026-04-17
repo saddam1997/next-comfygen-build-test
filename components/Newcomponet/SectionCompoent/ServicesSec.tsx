@@ -20,7 +20,7 @@ export default function ServicesSec({ servicesData = [] }) {
           alt=""
           width={200}
           height={200}
-          className="absolute bottom-0 right-0 pointer-events-none"
+          className="absolute bottom-0 right-0 pointer-events-none h-auto w-auto"
         />
 
         {servicesData.map((service, index) => (

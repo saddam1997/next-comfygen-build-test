@@ -144,6 +144,7 @@ const Form = () => (
                   alt="Instagram Logo"
                   height={51}
                   width={50}
+                  className="w-auto h-auto"
                 />
               </a>
             </button>
