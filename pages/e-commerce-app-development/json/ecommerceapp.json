@@ -1,149 +1,180 @@
 {
-  "NewSections": {
-    "title": "We are Your Best eCommerce Agency - Consult First Decide Later",
-    "decs": "The eCommerce market size is anticipated to reach USD 62415.2 Billion by 2031 with a CAGR of 11%. Along with the increased demand; we need variations, innovations, and creative engagement in our eCommerce app solutions, and that’s where Comfygen steps in. ",
-    "desc": "We are a well-talented and experienced eCommerce app development company, which uses the best technologies, implement the trending techs, add engaging user-friendly features, and do more customizations to make the app solutions highly performable in the marketplace.  ",
-    "desc1": "We have a team of 100+ professionally trained expertised eCommerce developers, who know the best to do. Our priority is to create a secured and seamless backend & frontend that is lacking with abandonments and boost conversions, loyalty, and customer acquisition.",
-    "desc2": "With the embracing of advanced technologies in the fluctuating marketplace, we work on the tech-trends to make it more engageable and interactive. Our eCommerce mobile apps are integrated with AR/VR, Metaverse, Blockchain, and other trending techs to influence the end-users. Comfygen is here to provide you with the customized best eCommerce development services for startups and large-scale enterprises on Android and iOS platforms."
+  "Herosection": {
+    "heading": "Ecommerce App Development Company",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "As a leading ecommerce app development company, Comfygen Technologies helps businesses build powerful mobile shopping applications tailored to their brand and audience. Our ecommerce apps support smooth navigation, real-time order tracking, secure transactions, and personalized shopping experiences. With a focus on performance, security, and scalability, we deliver ecommerce solutions that enhance customer satisfaction and maximize online revenue.",
+    "ptag1": "",
+    "listItems": [
+      "Secure payments, carts & order tracking",
+      "Cross-platform ecommerce app solutions",
+      "Personalized shopping & user engagement features",
+      "Custom ecommerce and mCommerce app development"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Ecommerce App Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/ecommerce-app-dev-hero-img.webp"
   },
-  "servicesData": [
-    {
-      "title": "Custom Ecommerce App Development",
-      "subtitle": "",
-      "description": "We build custom <a href='https://www.comfygen.com/ecommerce' class='underline font-semibold'>ecommerce application development</a> solutions tailored to your business model, whether B2C, B2B, or enterprise. Every app is designed for scalability, security, and seamless third-party integrations, ensuring long-term performance as your business grows.",
-      "features": [
-        "Custom ecommerce architecture aligned with your business",
-        "Scalable apps built to handle high traffic",
-        "Secure integrations with payments",
-        "Conversion-focused performance across devices"
-      ]
-    },
-    {
-      "title": "Ecommerce App UI/UX Design",
-      "subtitle": "",
-      "description": "Great design drives conversions. Our ecommerce app <a href='https://www.comfygen.com/blog/ui-and-ux-design-company' class='underline font-semibold'>UI/UX design services</a> focus on intuitive navigation, clean layouts, and frictionless checkout flows that enhance user engagement and reduce cart abandonment.",
-      "features": [
-        "Intuitive navigation for faster product discovery",
-        "Clean, conversion-focused interface design",
-        "Optimized checkout flows to reduce cart abandonment",
-        "Mobile-first UX for consistent experience across devices"
-      ]
-    },
-    {
-      "title": "Magento App Development",
-      "subtitle": "",
-      "description": "Our Magento app development services deliver flexible and powerful ecommerce solutions for businesses that need advanced customization. We build and integrate Magento-based mobile and web applications with features like multi-store management, secure checkout, and third-party integrations.",
-      "features": [
-        "Custom Magento app development",
-        "Multi-store and multi-vendor support",
-        "Secure checkout and payments",
-        "Third-party system integrations"
-      ]
-    },
-    {
-      "title": "Shopware App Development",
-      "subtitle": "",
-      "description": "With Shopware app development, we create modern, API-driven ecommerce applications designed for performance and scalability. Our Shopware solutions are ideal for brands looking for high customization, seamless integrations, and future-ready ecommerce architecture.",
-      "features": [
-        "API-driven Shopware app architecture",
-        "High customization for unique ecommerce needs",
-        "Scalable performance for growing businesses",
-        "Seamless third-party and system integrations"
-      ]
-    },
-    {
-      "title": "Mobile Ecommerce app development",
-      "subtitle": "",
-      "description": "Our ecommerce <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development services</a> focus on creating fast, intuitive, and conversion-driven apps for modern shoppers. We develop feature-rich mobile applications that support secure payments, real-time inventory, order tracking, and personalized user experiences.",
-      "features": [
-        "Fast and intuitive mobile app experience",
-        "Secure payment gateway integration",
-        "Real-time inventory and order tracking",
-        "Personalized user experience and recommendations"
-      ]
-    },
-    {
-      "title": "Web Ecommerce application development",
-      "subtitle": "",
-      "description": "We deliver robust ecommerce web application development solutions that perform flawlessly across devices and browsers. These platforms are optimized for speed, SEO, and high traffic, making them ideal for brands looking to scale online sales efficiently.",
-      "features": [
-        "Fast, responsive web apps across all devices",
-        "SEO-optimized architecture for higher search rankings",
-        "Secure payment and order management integration",
-        "Scalable design to handle high traffic and growth"
-      ]
-    }
-  ],
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-like-Amazone.webp",
-      "title": "App Like Amazon",
-      "description": "Feature-rich marketplace with multi-vendor support, advanced search, and personalized recommendations.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-like-Lazada.webp",
-      "title": "App Like Lazada",
-      "description": "User-friendly ecommerce platform optimized for mobile shopping and smooth checkout.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-like-Shopee.webp",
-      "title": "App Like Shopee",
-      "description": "Engaging marketplace with flash sales, gamified promotions, and secure payment integration.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Mercado-Libre.webp",
-      "title": "App Like Mercado Libre",
-      "description": "Large-scale marketplace supporting multiple product categories and seamless logistics.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Vinted.webp",
-      "title": "App Like Vinted",
-      "description": "Social commerce platform for second-hand and peer-to-peer selling with community features.",
-      "buttonText": "View Demo"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/media/images/App-Like-Nasty-Gal.webp",
-      "title": "App Like Nasty Gal",
-      "description": "Fashion-focused ecommerce app with curated catalogs, trend-driven recommendations, and smooth browsing experience.",
-      "buttonText": "View Demo"
-    }
-  ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-fashion.webp",
-      "title": "On-Demand Fashion Shopping App",
-      "description": "A sleek and fast-loading fashion eCommerce app developed for a leading apparel brand. Features include AI-based style recommendations, virtual try-on, wishlist, secure payments, and influencer integration to boost engagement and conversions.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel2.webp",
-      "title": "Multi-Vendor Electronics Marketplace",
-      "description": "A powerful multi-vendor eCommerce platform built for electronics and gadget sellers. The app includes vendor dashboards, real-time inventory sync, order tracking, and advanced product filters for seamless browsing.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel3.webp",
-      "title": "Grocery Delivery eCommerce App",
-      "description": "An intuitive on-demand grocery app offering location-based delivery, smart cart suggestions, real-time order tracking, and UPI integration. Designed for both hyperlocal grocery chains and quick commerce startups.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel4.webp",
-      "title": "Luxury Lifestyle eCommerce Platform",
-      "description": "A premium B2C eCommerce mobile app for a high-end lifestyle brand. Built with a headless architecture, the app features immersive product galleries, AR-powered previews, loyalty programs, and cross-device shopping continuity.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/img/e-commerce-portfolio-img.webp",
-      "title": "E-Commerce",
-      "description": "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products. The primary goal is to establish a user-friendly platform that simplifies the process of browsing, selecting, and purchasing items, while also providing a secure and efficient transaction system.",
-      "link": "#"
-    }
-  ],
+  "ServicesData": {
+    "heading": "Our On-Demand eCommerce App Development Services",
+    "description": "We offer complete ecommerce app development services designed to help businesses launch, scale, and optimize high-performing digital commerce platforms. From strategy and design to development and ongoing support, our solutions cover the entire ecommerce lifecycle.",
+    "services": [
+      {
+        "title": "Custom Ecommerce App Development",
+        "subtitle": "",
+        "description": "We build custom <a href='https://www.comfygen.com/ecommerce' class='underline font-semibold'>ecommerce application development</a> solutions tailored to your business model, whether B2C, B2B, or enterprise. Every app is designed for scalability, security, and seamless third-party integrations, ensuring long-term performance as your business grows.",
+        "features": [
+          "Custom ecommerce architecture aligned with your business",
+          "Scalable apps built to handle high traffic",
+          "Secure integrations with payments",
+          "Conversion-focused performance across devices"
+        ]
+      },
+      {
+        "title": "Ecommerce App UI/UX Design",
+        "subtitle": "",
+        "description": "Great design drives conversions. Our ecommerce app <a href='https://www.comfygen.com/blog/ui-and-ux-design-company' class='underline font-semibold'>UI/UX design services</a> focus on intuitive navigation, clean layouts, and frictionless checkout flows that enhance user engagement and reduce cart abandonment.",
+        "features": [
+          "Intuitive navigation for faster product discovery",
+          "Clean, conversion-focused interface design",
+          "Optimized checkout flows to reduce cart abandonment",
+          "Mobile-first UX for consistent experience across devices"
+        ]
+      },
+      {
+        "title": "Magento App Development",
+        "subtitle": "",
+        "description": "Our Magento app development services deliver flexible and powerful ecommerce solutions for businesses that need advanced customization. We build and integrate Magento-based mobile and web applications with features like multi-store management, secure checkout, and third-party integrations.",
+        "features": [
+          "Custom Magento app development",
+          "Multi-store and multi-vendor support",
+          "Secure checkout and payments",
+          "Third-party system integrations"
+        ]
+      },
+      {
+        "title": "Shopware App Development",
+        "subtitle": "",
+        "description": "With Shopware app development, we create modern, API-driven ecommerce applications designed for performance and scalability. Our Shopware solutions are ideal for brands looking for high customization, seamless integrations, and future-ready ecommerce architecture.",
+        "features": [
+          "API-driven Shopware app architecture",
+          "High customization for unique ecommerce needs",
+          "Scalable performance for growing businesses",
+          "Seamless third-party and system integrations"
+        ]
+      },
+      {
+        "title": "Mobile Ecommerce app development",
+        "subtitle": "",
+        "description": "Our ecommerce <a href='https://www.comfygen.com/mobile-app-development' class='underline font-semibold'>mobile app development services</a> focus on creating fast, intuitive, and conversion-driven apps for modern shoppers. We develop feature-rich mobile applications that support secure payments, real-time inventory, order tracking, and personalized user experiences.",
+        "features": [
+          "Fast and intuitive mobile app experience",
+          "Secure payment gateway integration",
+          "Real-time inventory and order tracking",
+          "Personalized user experience and recommendations"
+        ]
+      },
+      {
+        "title": "Web Ecommerce application development",
+        "subtitle": "",
+        "description": "We deliver robust ecommerce web application development solutions that perform flawlessly across devices and browsers. These platforms are optimized for speed, SEO, and high traffic, making them ideal for brands looking to scale online sales efficiently.",
+        "features": [
+          "Fast, responsive web apps across all devices",
+          "SEO-optimized architecture for higher search rankings",
+          "Secure payment and order management integration",
+          "Scalable design to handle high traffic and growth"
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "",
+    "heading": "What Is Ecommerce App Development and Why Ecommerce Apps Essential for Business?",
+    "description1": "Ecommerce app development is the process of developing mobile and web applications that allows businesses to sell products or services online through a seamless, secure, and user-friendly interface. It includes everything from product listings and shopping carts to payment gateways, order management, and customer engagement tools.",
+    "description2": "Ecommerce apps fuel online growth as customers demand mobile-first speed, convenience, and personalization. Dedicated development boosts conversions with fast loads, simple checkouts, saved preferences, and one-tap secure payments—slashing cart abandonment.",
+    "description3": "They also build lasting customer ties via real-time data for personalized recommendations, targeted offers, and push notifications, enabling efficient scaling, loyalty, and sustainable growth.",
+    "description4": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/gallery/about-images/e-commerce-app-development-about-img.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "CallToAction": {
+    "heading": "Build Your High-Performance Ecommerce App Today",
+    "text": "Comfygen Technologies creates high-performance ecommerce apps to increase conversions and sales.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Get in touch now."
+  },
+  "Trading": {
+    "heading": "Custom E-commerce App Development Solutions",
+    "subheading": "We provide custom <a href='https://www.comfygen.com/blog/best-ecommerce-app-development-company/' class='text-blue-600 font-semibold'>ecommerce app development</a> solutions tailored to meet the unique needs of every business, from startups to large enterprises. Our approach ensures that your ecommerce application aligns with your business model, supports growth, and delivers a seamless user experience.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Retail Ecommerce App Development",
+        "desc": "We build retail ecommerce apps that support large product catalogs, real-time inventory management, smooth checkout, and omnichannel selling to drive consistent online and in-store sales."
+      },
+      {
+        "num": "02",
+        "title": "Fashion & Apparel Ecommerce Apps",
+        "desc": "Our fashion ecommerce apps focus on visual appeal, fast browsing, size and variant management, wishlists, and personalized recommendations to improve engagement and repeat purchases."
+      },
+      {
+        "num": "03",
+        "title": "Grocery & Food Delivery Ecommerce Apps",
+        "desc": "We develop grocery and food delivery ecommerce apps with features like real-time stock updates, quick reordering, delivery slot management, and live order tracking for fast-moving businesses."
+      },
+      {
+        "num": "04",
+        "title": "Healthcare & Pharmacy Ecommerce Apps",
+        "desc": "Our healthcare and pharmacy ecommerce apps are built with security and compliance in mind, supporting prescription uploads, medicine reminders, secure payments, and reliable order fulfillment."
+      },
+      {
+        "num": "05",
+        "title": "Electronics & Marketplace Ecommerce Apps",
+        "desc": "For electronics and marketplace platforms, we deliver scalable ecommerce apps with multi-vendor support, advanced filters, product comparisons, secure transactions, and high-traffic handling."
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Discover our E-Commerce development expertise through recent standout projects.",
+    "description": "At Comfygen, we craft robust, scalable custom eCommerce app development solutions tailored for diverse industries. Explore how we're powering global brands with seamless digital commerce experiences that drive growth and engagement.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-fashion.webp",
+        "title": "On-Demand Fashion Shopping App",
+        "description": "A sleek and fast-loading fashion eCommerce app developed for a leading apparel brand. Features include AI-based style recommendations, virtual try-on, wishlist, secure payments, and influencer integration to boost engagement and conversions.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel2.webp",
+        "title": "Multi-Vendor Electronics Marketplace",
+        "description": "A powerful multi-vendor eCommerce platform built for electronics and gadget sellers. The app includes vendor dashboards, real-time inventory sync, order tracking, and advanced product filters for seamless browsing.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel3.webp",
+        "title": "Grocery Delivery eCommerce App",
+        "description": "An intuitive on-demand grocery app offering location-based delivery, smart cart suggestions, real-time order tracking, and UPI integration. Designed for both hyperlocal grocery chains and quick commerce startups.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ecommerce/ecommerce-panel4.webp",
+        "title": "Luxury Lifestyle eCommerce Platform",
+        "description": "A premium B2C eCommerce mobile app for a high-end lifestyle brand. Built with a headless architecture, the app features immersive product galleries, AR-powered previews, loyalty programs, and cross-device shopping continuity.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/img/e-commerce-portfolio-img.webp",
+        "title": "E-Commerce",
+        "description": "Our E-Commerce project envisions creating a seamless online shopping experience for users, offering a diverse range of products. The primary goal is to establish a user-friendly platform that simplifies the process of browsing, selecting, and purchasing items, while also providing a secure and efficient transaction system.",
+        "link": "#"
+      }
+    ]
+  },
   "optionsdata": [
     {
       "id": "mobile-only",
@@ -178,285 +209,597 @@
       }
     }
   ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Ecommerce App Development Features We Offer",
-      "desc": "Our ecommerce app development services include all the essential features businesses need to deliver a seamless, secure, and high-converting shopping experience. These features are designed to improve customer engagement, boost sales, and streamline operations for both mobile and web platforms."
-    }
+  "Whycomfygens": {
+    "title": "Ecommerce App Development Features We Offer",
+    "description": "Our ecommerce app development services include all the essential features businesses need to deliver a seamless, secure, and high-converting shopping experience. These features are designed to improve customer engagement, boost sales, and streamline operations for both mobile and web platforms.",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
+    "proces": [
+      {
+        "title": "Secure Payment Gateway Integration",
+        "desc": "Support multiple payment options, including credit/debit cards, digital wallets, and UPI, with advanced encryption to ensure safe transactions."
+      },
+      {
+        "title": "Shopping Cart & Checkout Optimization",
+        "desc": "Simplified, frictionless checkout with features like one-tap payment, saved addresses, and auto-filled details to reduce cart abandonment."
+      },
+      {
+        "title": "Product Catalog & Inventory Management",
+        "desc": "Manage unlimited products, categories, and stock levels in real time with easy-to-use dashboards and automated alerts."
+      },
+      {
+        "title": "Order Tracking & Push Notifications",
+        "desc": "Keep customers informed with live order updates, delivery status, and personalized notifications to enhance loyalty."
+      },
+      {
+        "title": "AI-Powered Product Recommendations",
+        "desc": "Deliver personalized product suggestions based on browsing history, purchase patterns, and customer behavior to drive higher conversions."
+      },
+      {
+        "title": "Multi-Language & Multi-Currency Support",
+        "desc": "Cater to a global audience with localized content, pricing, and payment options."
+      },
+      {
+        "title": "Analytics & Reporting",
+        "desc": "Gain insights into customer behavior, sales trends, and app performance for informed business decisions."
+      },
+      {
+        "title": "Seamless Integration with Third-Party Tools",
+        "desc": "Integrate with CRM, ERP, logistics, and marketing tools to create a connected ecosystem for your ecommerce operations."
+      }
+    ]
+  },
+  "featuresData": {
+    "heading": "Smart E-commerce App Features for Customers, Admins, and Delivery Teams",
+    "description": " We build custom <a href='https://www.comfygen.com/blog/what-is-e-commerce-and-its-applications/' class='text-blue-600 font-semibold'>E-commerce applications</a> that ensure smooth business operations and excellent shopping experiences. We offer dynamic panels and tools for customers, vendors, admins, and delivery teams as part of our custom mobile eCommerce app development services.",
+    "grid": "4",
+    "feature": [
+      {
+        "id": 1,
+        "title": "Customer Panel Features",
+        "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/e-commerce-app-development-customer-panel-features.webp",
+        "additionalDetails": [
+          {
+            "details": "User Registration & Login",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Product Search & Filter",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Secure Payments",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Wishlist Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-Time Order Tracking",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Push Notifications",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Reviews & Ratings",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Multi-Language & Currency Support",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Admin Panel Features",
+        "icon": " <i className='fas fa-mobile-alt text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/e-commerce-app-development-admin-panel-features.webp",
+        "additionalDetails": [
+          {
+            "details": "User & Product Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order & Inventory Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Analytics & Reporting",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Discount & Offer Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Role-Based Access Control",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Content Management System (CMS)",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-Time Sales Tracking",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Vendor & Category Management",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Driver Panel Features",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/e-commerce-app-development-driver-panel-features.webp",
+        "additionalDetails": [
+          {
+            "details": "Driver Registration & Login",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery Request Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery Status Updates",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Order Details",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Proof of Delivery (POD)",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "In-App Chat/Call Support",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Delivery History",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Real-Time Route Navigation",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Advanced Features",
+        "icon": "<i className='fas fa-wallet text-4xl'></i>",
+        "img": "https://www.comfygen.com/image/e-commerce-app-development-advanced-features.webp",
+        "additionalDetails": [
+          {
+            "details": "AI Product Recommendations",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Augmented Reality (AR) Product View",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Chatbot Support",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Multi-Vendor Management",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Third-Party Logistics Integration",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Voice Search Functionality",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Subscription Models",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Blockchain Security",
+            "emoji": "",
+            "content": ""
+          }
+        ]
+      }
+    ]
+  },
+  "Industries": {
+    "heading": "Ecommerce App Development for Different Industries",
+    "subheading": "Every industry has its own workflows, customer behavior, and operational challenges. That’s why our ecommerce app development services are tailored to meet the specific needs of different business verticals, not forced into a one-size-fits-all solution.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Custom Ecommerce Mobile App Development",
+        "desc": "Build mobile-first ecommerce apps designed for iOS and Android, optimized for speed, usability, and conversions."
+      },
+      {
+        "num": "02",
+        "title": "B2C Ecommerce App Development Solutions",
+        "desc": "Develop consumer-focused ecommerce apps that enhance engagement, drive sales, and provide personalized shopping experiences."
+      },
+      {
+        "num": "03",
+        "title": "B2B Ecommerce App Development Solutions",
+        "desc": "Create business-to-business ecommerce applications with features like bulk ordering, multi-tier pricing, and account management to streamline B2B operations."
+      },
+      {
+        "num": "04",
+        "title": "Enterprise Ecommerce App Development Services",
+        "desc": "Deliver enterprise-grade ecommerce solutions capable of handling high traffic, multi-store management, advanced analytics, and seamless third-party integrations for large-scale businesses."
+      },
+      {
+        "num": "05",
+        "title": "Two-Factor Authentication",
+        "desc": "We integrate two-factor authentication to add an extra layer of protection. Even if a password or primary credential is compromised, unauthorized access is prevented, ensuring that your wallet and funds remain safe."
+      },
+      {
+        "num": "06",
+        "title": "Regular Security Audits and Updates",
+        "desc": "Our team conducts regular AI-powered security audits and applies the latest updates to maintain peak security standards. Vulnerabilities are proactively detected and mitigated, ensuring your wallet remains resilient against emerging threats and cyberattacks."
+      }
+    ]
+  },
+  "NFTProcessData": {
+    "heading": "Our End-to-End Ecommerce App Development Process",
+    "description": "We follow a structured and agile ecommerce app development process that takes your idea from concept to launch without unnecessary delays. Each step is designed to ensure speed, quality, and scalability.",
+    "Process": [
+      {
+        "title": "Requirement Analysis & Business Planning",
+        "description": "We understand your business goals, target users, and technical needs. This step defines the feature list, platform scope mobile, web, or both and sets a clear development roadmap."
+      },
+      {
+        "title": "UI/UX Design & User Flow Mapping",
+        "description": "Our team designs intuitive user journeys and wireframes focused on easy navigation, smooth checkout, and higher conversions."
+      },
+      {
+        "title": "Technical Architecture & Backend Setup",
+        "description": "We create a scalable and secure app architecture, set up databases, APIs, and backend systems to support payments, inventory, and integrations."
+      },
+      {
+        "title": "Ecommerce App Development",
+        "description": "Core ecommerce features such as product catalogs, shopping cart, user accounts, and admin panels are developed using modern frameworks."
+      },
+      {
+        "title": "Payment Gateway & Third-Party Integrations",
+        "description": "We integrate secure payment gateways, logistics, CRM, analytics, and other third-party tools required for seamless operations."
+      },
+      {
+        "title": "Testing & Performance Optimization",
+        "description": "The app is tested for functionality, security, and performance. We fix issues, optimize speed, and ensure cross-device compatibility."
+      },
+      {
+        "title": "Deployment & Launch Support",
+        "description": "We deploy the ecommerce app to production or app stores and provide go-live support to ensure a smooth launch and readiness to scale."
+      }
+    ]
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
   ],
-  "consultancyData": [
-    {
-      "title": "Secure Payment Gateway Integration",
-      "desc": "Support multiple payment options, including credit/debit cards, digital wallets, and UPI, with advanced encryption to ensure safe transactions."
-    },
-    {
-      "title": "Shopping Cart & Checkout Optimization",
-      "desc": "Simplified, frictionless checkout with features like one-tap payment, saved addresses, and auto-filled details to reduce cart abandonment."
-    },
-    {
-      "title": "Product Catalog & Inventory Management",
-      "desc": "Manage unlimited products, categories, and stock levels in real time with easy-to-use dashboards and automated alerts."
-    },
-    {
-      "title": "Order Tracking & Push Notifications",
-      "desc": "Keep customers informed with live order updates, delivery status, and personalized notifications to enhance loyalty."
-    },
-    {
-      "title": "AI-Powered Product Recommendations",
-      "desc": "Deliver personalized product suggestions based on browsing history, purchase patterns, and customer behavior to drive higher conversions."
-    },
-    {
-      "title": "Multi-Language & Multi-Currency Support",
-      "desc": "Cater to a global audience with localized content, pricing, and payment options."
-    },
-    {
-      "title": "Analytics & Reporting",
-      "desc": "Gain insights into customer behavior, sales trends, and app performance for informed business decisions."
-    },
-    {
-      "title": "Seamless Integration with Third-Party Tools",
-      "desc": "Integrate with CRM, ERP, logistics, and marketing tools to create a connected ecosystem for your ecommerce operations."
-    }
-  ],
-  "featuresData": [
-    {
-      "id": 1,
-      "title": "Customer Panel Features",
-      "icon": "<i className='fas fa-shopping-bag text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/e-commerce-app-development-customer-panel-features.webp",
-      "additionalDetails": [
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
         {
-          "details": "User Registration & Login",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
         },
         {
-          "details": "Product Search & Filter",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
         },
         {
-          "details": "Secure Payments",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
         },
         {
-          "details": "Wishlist Management",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
         },
         {
-          "details": "Real-Time Order Tracking",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
         },
         {
-          "details": "Push Notifications",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
         },
         {
-          "details": "Reviews & Ratings",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
         },
         {
-          "details": "Multi-Language & Currency Support",
-          "emoji": "",
-          "content": ""
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
         }
       ]
-    },
-    {
-      "id": 2,
-      "title": "Admin Panel Features",
-      "icon": " <i className='fas fa-mobile-alt text-4xl'></i>",
-      "img": "https://www.comfygen.com/image/e-commerce-app-development-admin-panel-features.webp",
-      "additionalDetails": [
-        {
-          "details": "User & Product Management",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Order & Inventory Management",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Analytics & Reporting",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Discount & Offer Management",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Role-Based Access Control",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Content Management System (CMS)",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Real-Time Sales Tracking",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Vendor & Category Management",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Driver Panel Features",
-      "img": "https://www.comfygen.com/image/e-commerce-app-development-driver-panel-features.webp",
-      "icon": "<i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "Driver Registration & Login",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Delivery Request Management",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Delivery Status Updates",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Order Details",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Proof of Delivery (POD)",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "In-App Chat/Call Support",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Delivery History",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Real-Time Route Navigation",
-          "emoji": "",
-          "content": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Advanced Features",
-      "img": "https://www.comfygen.com/image/e-commerce-app-development-advanced-features.webp",
-      "icon": "<i className='fas fa-wallet text-4xl'></i>",
-      "additionalDetails": [
-        {
-          "details": "AI Product Recommendations",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Augmented Reality (AR) Product View",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Chatbot Support",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Multi-Vendor Management",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Third-Party Logistics Integration",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Voice Search Functionality",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Subscription Models",
-          "emoji": "",
-          "content": ""
-        },
-        {
-          "details": "Blockchain Security",
-          "emoji": "",
-          "content": ""
-        }
-      ]
     }
-  ],
-  "Emerging": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "AI-Powered Ecommerce App",
-      "decs": "Our <a href='https://www.comfygen.com/ai-development' class='underline font-semibold'>AI-powered eCommerce app development solutions</a> enhance user experience with personalized recommendations, smart search, and automated customer support. This helps increase sales, improve user engagement, and boost conversions for your eCommerce business."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-      "title": "Blockchain-Based Secure eCommerce App",
-      "decs": "We <a href='https://www.comfygen.com/blockchain-development' class='underline font-semibiold'>build blockchain-based secure eCommerce apps</a> to protect customer data and online transactions. With advanced encryption and transparency, your eCommerce platform becomes highly secure, trustworthy, and resistant to fraud or cyber threats."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "IoT Integration for eCommerce",
-      "decs": "With <a href='https://www.comfygen.com/iot-development-company' class='underline font-semibold'>IoT-enabled ecommerce app development</a>, track inventory in real time, automate processes, and improve delivery accuracy. Smart device integration helps retailers operate efficiently while improving customer satisfaction and operational performance."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Data Analytics for eCommerce",
-      "decs": "Our ecommerce app development services include <a href='https://www.comfygen.com/data/analytics-service-provider' class='underline font-semibold'>powerful data analytics</a> features that help businesses understand customer behavior, measure marketing success, optimize product listings, and make data-driven decisions to grow online sales and revenue."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "Cloud-Based eCommerce Solutions",
-      "decs": "We offer cloud-based eCommerce app development to ensure high performance, fast loading, and easy scalability. Your online store stays secure, always available, and capable of handling large user traffic without downtime."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "AR/VR eCommerce Shopping Experience",
-      "decs": "We create AR/VR-powered ecommerce apps that let users virtually try products, explore 3D items, and shop more confidently. This advanced shopping experience increases engagement, reduces product returns, and builds brand trust."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "Metaverse eCommerce App Development",
-      "decs": "Enter the future of online shopping with our <a href='https://www.comfygen.com/metaverse-development' class='underline font-semibold'>metaverse eCommerce app development services</a>. Build a virtual store where customers interact, explore products digitally, and enjoy immersive shopping experiences like never before."
-    }
-  ],
+  },
   "pageData": {
     "title": "Why Is Comfygen the Best eCommerce App Development Company?",
     "description": "Choosing the right eCommerce app development partner can decide how fast you grow and how well you scale. At Comfygen, we focus on building eCommerce mobile and web applications that are practical, secure, and built for long-term success.",
@@ -498,150 +841,115 @@
       }
     ]
   },
-  "myList1": [
-    "Super-easy onboarding",
-    "Native app",
-    "Categories of products",
-    "Navigation of products",
-    "Various payment options are available",
-    "Multilingual support",
-    "Shopping cart",
-    "Add to favorites",
-    "Banners",
-    "Advertising",
-    "Customer reviews & ratings",
-    "Profile settings",
-    "Push notifications",
-    "Discount coupons and promo codes",
-    "Social media login"
-  ],
-  "myList2": [
-    "Real-time dashboard",
-    "Banner & Ads management",
-    "Product management",
-    "Store management",
-    "Staff management",
-    "Catalogue management",
-    "Product addition",
-    "Order tracking",
-    "Order history",
-    "Customer data",
-    "Reporting",
-    "Special offer creation"
-  ],
-  "myList3": [
-    "Seller app",
-    "Multi-vendor solution",
-    "E-wallet integration",
-    "AI & ML integration",
-    "Live customer service",
-    "Customizable user dashboard",
-    "Daily deals",
-    "Wishlist",
-    "Store pickup",
-    "Credit option",
-    "EMI facility",
-    "Live location"
-  ],
-  "Qa": [
-    {
-      "num": "1",
-      "head": " how it work",
-      "title": " Why Comfygen?",
-      "desc": "Comfygen as a leading web app development company in Jaipur, we offer expertise in e-commerce solutions development, creative e-commerce designs, a professional approach, an experienced team, and on-time delivery of products at a reasonable cost. If you're still wondering, let us tell you some reasons why we can be the best choice for your business when it comes to building eCommerce websites and apps then:",
-      "url": "/contact-us",
-      "btn": "Meet Now"
-    }
-  ],
-  "Process": [
-    {
-      "num": "1",
-      "title": "Discovery and Planning",
-      "decs": "Our process begins with comprehensive research and client consultations to define project goals, target audience, and technical requirements. This phase sets the foundation for a tailored development strategy aligned with business objectives."
-    },
-    {
-      "num": "2",
-      "title": "Design and Prototyping",
-      "decs": "We create intuitive user interfaces (UI) and engaging user experiences (UX) through wireframes and prototypes. Iterative design reviews ensure alignment with brand identity and optimal usability across devices."
-    },
-    {
-      "num": "3",
-      "title": "Development and Integration",
-      "decs": "Experienced developers utilize cutting-edge technologies to build robust backend systems and frontend interfaces. We integrate essential features like payment gateways, inventory management, and third-party APIs for seamless functionality."
-    },
-    {
-      "num": "4",
-      "title": "Testing and Quality Assurance",
-      "decs": "  Rigorous testing protocols encompass functional, performance, and security assessments. Automated and manual tests identify and rectify bugs, ensuring a stable, reliable app that meets industry standards and user expectations."
-    },
-    {
-      "num": "5",
-      "title": "Deployment and Launch:",
-      "decs": "We meticulously prepare for deployment, including server setup, configuration, and final testing in live environments. A phased rollout strategy ensures minimal disruption and optimal performance during the launch phase."
-    },
-    {
-      "num": "6",
-      "title": "Post-Launch Support and Optimization",
-      "decs": "Our commitment extends beyond launch with ongoing maintenance, updates, and performance monitoring. User feedback and analytics drive continuous improvements, enhancing app functionality, security, and user satisfaction."
-    }
-  ],
-  "myList": [
-    "Our developers possess in-depth knowledge and hands-on experience in eCommerce app development, ensuring high-quality solutions.",
-    "We customize our approach to align with your specific business requirements, delivering personalized and scalable applications.",
-    "Proficient in AI, blockchain, and cloud technologies, our developers leverage the latest innovations to enhance app functionality and security.",
-    "We prioritize transparent communication and collaboration throughout the development process, ensuring alignment with your goals.",
-    "Beyond development, our team provides ongoing support and maintenance to optimize performance and ensure long-term success."
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire eCommerce App Developers from Comfygen",
-      "decs": "Explore the opportunity to hire top-tier eCommerce app developers from Comfygen, renowned for their expertise and commitment to excellence. Our developers bring extensive experience in crafting robust, scalable solutions tailored to your business needs. With a deep understanding of industry best practices and cutting-edge technologies, they ensure seamless integration, intuitive design, and superior performance. Whether you seek frontend, backend, or full-stack developers, our team delivers innovative solutions that drive growth and exceed expectations.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "1",
-      "title": "One-Stop Destination",
-      "desc": "You can get everything (E-Commerce Front end to back end) just under one roof."
-    },
-    {
-      "num": "2",
-      "title": "Reliable E-Commerce Development Partners",
-      "desc": "Comfygen is a reliable e-commerce software development company with lots of experience in successfully delivering eCommerce Solutions across the globe. Our approach is to provide full-fledged eCommerce services to our clients."
-    },
-    {
-      "num": "3",
-      "title": "Quality, Support & Maintenance",
-      "desc": "We do not leave any stone unturned in providing the best possible solutions with the latest framework and technology for our clients. As a leading eCommerce website development company, we ensure to provide our clients with high-quality post-release support and further maintenance services round the clock."
-    },
-    {
-      "num": "4",
-      "title": "We offer cost-effective services",
-      "desc": "We offer a full cycle of web design, e-commerce development, integration, and management services to maximize your sales and brand value in the E-Commerce market at an affordable price."
-    },
-    {
-      "num": "5",
-      "title": "Team of Certified Developers    ",
-      "desc": "We have a team of highly experienced and certified developers having expertise in developing high-end solutions, customer-oriented strategies which make us the leader in the E-Commerce Development Market."
-    },
-    {
-      "num": "6",
-      "title": "On Time Delivery",
-      "desc": "With an analytical process, we never miss any deadline and ensure the on-time delivery of your eCommerce web and app development solutions while maintaining best-quality norms."
-    }
-  ],
-  "myList4": [
-    "One-Stop Destination",
-    "Reliable E-Commerce Development Partners",
-    "Quality, Support & Maintenance",
-    "We offer cost-effective services",
-    "Team of Certified Developers",
-    "On Time Delivery",
-    "Professionals Who Have Worked With All Industry Verticals"
-  ],
+  "HireDeveloper": {
+    "heading": "Hire Ecommerce App Developers",
+    "text": "Hire experienced ecommerce app developers who build fast, secure, and scalable mobile and web applications. Our developers work as an extension of your team, delivering clean code, clear communication, and ecommerce solutions built for real growth.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Dedicated developers focused only on your project",
+      "Expertise in ecommerce mobile and web app development",
+      "Flexible hiring models to match your timeline and budget",
+      "Clean code, clear communication, and on-time delivery"
+    ]
+  },
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "1",
@@ -700,21 +1008,155 @@
       "desc": "Our dedication to innovation, expertise in emerging technologies, personalized client approach, and proven track record of successful projects distinguish us in delivering exceptional eCommerce solutions tailored to your business needs."
     }
   ],
-  "customTestimonials": [
+  "jsonLdData": [
     {
-      "text": "We partnered with Comfygen Technologies for ecommerce app development, and the results were outstanding. The app is secure, user-friendly, and has significantly improved customer engagement and conversions.",
-      "name": "Neha Patel",
-      "title": "(India)"
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Custom eCommerce App Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Boost your retail business with our custom eCommerce app development services. Comfygen builds secure, scalable shopping apps with advanced features like AI, AR, and payment integration for faster growth.",
+      "url": "https://www.comfygen.com/e-commerce-app-development",
+      "mainEntityOfPage": "https://www.comfygen.com/e-commerce-app-development",
+      "areaServed": "Global",
+      "serviceType": [
+        "Custom Ecommerce App Development",
+        "Shopping App Development",
+        "White-label Ecommerce App Solutions",
+        "eCommerce Website Development",
+        "Multivendor Ecommerce App Development",
+        "B2B & B2C Ecommerce App Development",
+        "Marketplace Ecommerce Development",
+        "Fashion eCommerce App Development",
+        "Data Analytics for Ecommerce"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
     },
     {
-      "text": "Comfygen Technologies delivered a powerful ecommerce app with smooth performance and excellent UI. Their team understood our requirements clearly and helped us scale our online sales faster than expected.",
-      "name": "Amit Verma",
-      "title": "(India)"
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "eCommerce Development",
+          "item": "https://www.comfygen.com/ecommerce"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "eCommerce App Development",
+          "item": "https://www.comfygen.com/e-commerce-app-development"
+        }
+      ]
     },
     {
-      "text": "Comfygen Technologies proved to be a reliable ecommerce app development company. Their technical expertise, timely delivery, and post-launch support helped our business grow digitally.",
-      "name": "Jessica Miller",
-      "title": "(USA)"
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the eCommerce App Development Cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost to develop an eCommerce app typically ranges from $25,000 to $50,000, with an average cost of  around $37,500. The final price depends on factors like features, complexity, and platform (iOS/Android)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries do you specialize in for eCommerce app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in diverse industries such as retail, healthcare, fashion, and more. Our tailored solutions address unique industry requirements and user expectations, ensuring optimal functionality and engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to develop an eCommerce app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Development timelines vary based on project complexity. Typically, it ranges from a few weeks to several months, depending on features, integrations, and testing requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you integrate third-party services into our eCommerce app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we excel in integrating payment gateways, shipping providers, analytics tools, and other third-party services. This enhances app functionality and provides a seamless user experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What security measures do you implement in eCommerce app development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We implement robust security measures such as data encryption, secure payment gateways, regular security audits, and compliance with GDPR and PCI-DSS standards to ensure data protection and user trust."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide post-launch support and maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely, we offer comprehensive post-launch support including bug fixes, updates, and performance enhancements to keep your eCommerce app running smoothly and securely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure the scalability of eCommerce apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We design scalable architectures and leverage cloud technologies to accommodate growth seamlessly. This approach allows the app to handle increasing user traffic and transaction volumes effectively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you develop apps for both iOS and Android platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, our developers are proficient in both iOS and Android app development, ensuring cross-platform compatibility and consistent user experiences across devices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your approach to user experience (UX) design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We prioritize intuitive interfaces and smooth navigation to enhance user satisfaction and engagement. Our UX design aims to optimize conversion rates and foster customer loyalty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle data analytics and insights for eCommerce apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We integrate advanced analytics tools to track user behavior, sales trends, and performance metrics. This data-driven approach informs strategic decisions and improves app performance over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sets Comfygen apart from other eCommerce app development companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our dedication to innovation, expertise in emerging technologies, personalized client approach, and proven track record of successful projects distinguish us in delivering exceptional eCommerce solutions tailored to your business needs."
+          }
+        }
+      ]
     }
   ]
 }

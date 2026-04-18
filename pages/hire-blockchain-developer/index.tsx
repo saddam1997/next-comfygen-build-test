@@ -3,185 +3,102 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
+  ),
+});
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="w-full animate-pulse">
+      <div className="h-[500px] bg-gray-200 rounded-xl" />
+    </div>
+  )
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => <div className="min-h-[500px]" />,
+});
+
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-black animate-pulse" />
+  ),
+});
+
+const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[600px] sm:min-h-[500px] lg:min-h-[400px] bg-gray-100 animate-pulse" />
+  )
+});
+
+import ReviewCard from "../../components/ReviewCard";
 
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const OurGames = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/OurGames"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-import { IconCode, IconHeadset, IconSettingsAutomation, IconShieldLock, IconTrendingUp } from '@tabler/icons-react';
-import { IconChartBar } from '@tabler/icons-react';
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-
-
-
-
-
-
-
-// import AboutSection from "../Newcomponet/SectionCompoent/AboutSection";
-// import ServicesSec from "../Newcomponet/SectionCompoent/ServicesSec";
-// import OurGames from "../Newcomponet/SectionCompoent/OurGames";
-// import ModelsSec from "../Newcomponet/SectionCompoent/ModelsSec";
-// import IndustriesServe from "../Newcomponet/SectionCompoent/IndustriesServe";
-// import SolutionSec from "../Newcomponet/SectionCompoent/Solution";
-// import Portfolio from "../Newcomponet/SectionCompoent/Portfolio";
-// import WhyChoose from "../Newcomponet/SectionCompoent/WhyChooseUs";
-// import CallToAction from "../Newcomponet/SectionCompoent/CallToAction";
-// import Faq from "../Newcomponet/SectionCompoent/Faq";
-
-
-
-
-
-
-const technologyData = [
-  {
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
-    title: "Tailored Apps for Your Business",
-    desc: "Custom apps are designed to fit your specific business needs. We create solutions that integrate seamlessly with your processes, leveraging blockchain-powered solutions to solve complex problems."
-  },
-  {
-    img: <IconSettingsAutomation stroke={1.5} className="w-12 h-12" />,
-    title: "Automate and Streamline Operations",
-    desc: "With custom app development, you can automate manual tasks and workflows. Our apps help improve business efficiency, saving time and reducing errors in everyday operations."
-  },
-  {
-    img: <IconTrendingUp stroke={1.5} className="w-12 h-12" />,
-    title: "Scalable Solutions for Growth",
-    desc: "We design scalable apps that grow as your business expands, ensuring your technology adapts to your evolving needs."
-  },
-  {
-    img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Insights for Better Decisions",
-    desc: "Our apps provide real-time analytics, enabling you to make smarter, data-driven decisions that drive success."
-  },
-  {
-    img: <IconShieldLock stroke={1.5} className="w-12 h-12" />,
-    title: "Secure and Reliable Data Management",
-    desc: "Security is crucial in custom app development. Our blockchain integration ensures top-level security, protecting your business data from cyber threats."
-  },
-  {
-    img: <IconHeadset stroke={1.5} className="w-12 h-12" />,
-    title: " Comprehensive Support",
-    desc: "From development to post-launch maintenance, we offer end-to-end support to keep your app performing at its best and evolving with your business."
-  }
-
-
-];
 export default function Mobile(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
 
-  const faqData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Can I choose and interview developers using the specifications for my project?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Indeed. Of course! Our strategy is centered on transparency and collaboration. Blockchain Developers can be chosen and interviewed based on the specifications of your project. We give you access to a pool of skilled developers so you can select the ones that best fit the requirements of your team and the project."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which best practices are adhered to by your blockchain developers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our unique selling point is that we never skimp on quality and always guarantee client satisfaction. Comfygen uses an agile project management methodology that is streamlined for development, testing, and customer support all the way through the project's completion."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are the blockchain developers working with you adaptable to new tools or systems?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Indeed! Making our end-of-service as adaptable as possible for our clients has been our regular procedure. Many of our clients required our assistance to improve their systems even if they already had a website or app."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the price to employ a blockchain developer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of employing a blockchain developer is determined by a number of variables, namely the area from which the developer is being hired, the developer's experience and skill level, and the features and integrations you require. However, a rough estimate of the cost would be in the range of $5,000 and $30,000."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does it cost to hire a blockchain developer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The region from which the developer is being employed, the developer's experience and skill level, and the features and integrations you need are some of the factors that affect the cost of hiring a blockchain developer. But roughly speaking, the price would fall between $5,000 and $30,000."
-        }
-      }
-    ]
-  };
-
+ 
 
   return (
     <>
@@ -264,140 +181,52 @@ export default function Mobile(props: any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqData) }}
         />
 
       </Head>
 
-      <Header />
-
-      <div className="overflow-hidden lg:pt-[100px]">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Hire Blockchain Developers for Secure and Scalable Blockchain App Development"
-            subhead=""
-            ptag="Comfygen is trusted partner to hire blockchain developers who build secure, scalable, and high-performance blockchain applications. Our experts developers deliver end-to-end blockchain app development services, including smart contract development, decentralized apps (DApps), cryptocurrency solutions, and enterprise blockchain platforms. With Comfygen, startups and enterprises get custom blockchain solutions tailored to their business goals, ensuring seamless integration, robust security, and long-term scalability in the fast-evolving blockchain ecosystem."
-            ptag1=""
-            li="Skilled Blockchain Developers for Hire"
-            li1="Full-Stack Blockchain & dApp Development"
-            li2="Custom Smart Contract Solutions"
-            li3="Secure, Scalable & Business-Ready Architecture"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage='https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp'
-          />
-        </div>
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Secure and Scalable Blockchain Platforms Our Team Works With</h2>
-              <p className="text-base text-center font-normal">At Comfygen, you can hire blockchain developers in India who specialize in building secure and scalable blockchain solutions across leading platforms. As a top blockchain development company, we deliver custom solutions for smart contracts, decentralized finance (DeFi), NFT marketplaces, and enterprise blockchain applications. Our developers leverage advanced technologies to create robust, high-performance blockchain applications that drive innovation and meet your business goals.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title="About Us"
-          heading="Why Choose Our Blockchain Developers? "
-          description1="At Comfygen, we bring innovation, security, and expertise to your blockchain projects. When you hire blockchain developers in India from us, you get a team with deep technical knowledge, hands-on experience, and a commitment to delivering high-performance solutions."
-          points={
-            [
-              "Proven Expertise – Skilled in Ethereum, Hyperledger, Polygon, Solana, and more.",
-              "Custom-Tailored Solutions – We design scalable, secure, and business-specific blockchain applications.",
-              "Cost-Effective Development – Get premium-quality services at competitive rates.",
-              "Security & Compliance – Robust smart contracts and secure architectures ensure trust.",
-              "End-to-End Support – From consultation to deployment and maintenance."
-            ]
-          }
-          description6="Partner with a trusted blockchain developer company and turn your ideas into reality. Hire blockchain developers from India today! "
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-        <OurGames />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Step-by-Step Process to Hire Blockchain Developers at Comfygen
-                </h2>
-                <p>At Comfygen, we offer flexible hiring models to help businesses hire blockchain developers in India based on project needs and budget. Whether you're looking for short-term support or long-term collaboration, we provide tailored solutions to meet your blockchain development goals.</p>
-              </div>
-              <div className="grid gap-6 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num, } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-
-                    </div>
-                  );
-                })}
-
-              </div>
-            </div>
-          </div>
-        </section>
-        <IndustriesServe
-          heading="Industry-Specific Blockchain Solutions We Offer"
-          description="Blockchain technology is transforming industries across the globe, offering innovative solutions to enhance transparency, security, and efficiency. At Comfygen, we provide industry-specific blockchain development services tailored to meet the unique needs of each sector. Whether you're in finance, healthcare, supply chain, or another industry, our blockchain solutions help streamline your processes and secure transactions."
-          sliderData={JSON_DATA.customSliderData}
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Successful Blockchain-Based Portfolio"
-            description="Explore our selection of accomplished blockchain development projects that highlight our proficiency in online solutions and app development. Whether you’re looking to hire blockchain developers in India or need custom blockchain solutions, our portfolio showcases our expertise in smart contracts, DeFi platforms, NFT marketplaces, and <a class=' text-blue-600' href='/decentralized-exchange-development'>decentralized exchange development</a>  (dApps). Each project reflects our dedication to excellence, innovation, and client satisfaction, ensuring scalable and secure blockchain solutions."
-          />
-        </section>
-
-
-
-        <SolutionSec
-          heading="Unlock Business Efficiency with Custom App Development"
-          subheading="Custom app development helps businesses streamline operations, automate tasks, and improve efficiency. At Comfygen, we specialize in creating custom apps that drive business growth with the latest blockchain technology."
-          techData={technologyData}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
       </div>
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      </div>
+
+      <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      </div>
+
+      <div className="min-h-[400px]">
+        <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      </div>
+
+      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+        <Solution techData={JSON_DATA.NFTBenefits} />
+      </div>
+
+      <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      </div>
+
+
+      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+        <Solution techData={JSON_DATA.Business} />
+      </div>
+
+      <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+      </div>
+
+      <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      </div>
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
+
+
     </>
   );
 }

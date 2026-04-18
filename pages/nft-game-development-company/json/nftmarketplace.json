@@ -1,10 +1,10 @@
 {
   "Herosection": {
-    "heading": "Best NFT Game Development Company",
+    "heading":"Best NFT Game Development Company",
     "isHome": false,
     "subhead": "",
-    "ptag": "",
-    "ptag1": "NFT gaming is transforming the gaming industry by enabling players to own, trade, and monetize in-game assets. As the best NFT game development company, Comfygen builds secure, scalable, and engaging blockchain-powered NFT games with advanced technology and seamless user experiences.",
+    "ptag": "NFT gaming is transforming the gaming industry by enabling players to own, trade, and monetize in-game assets. As the best NFT game development company, Comfygen builds secure, scalable, and engaging blockchain-powered NFT games with advanced technology and seamless user experiences.",
+    "ptag1": "",
     "listItems": [
       "Custom NFT Game Development",
       "Smart Contract Integration",
@@ -16,6 +16,9 @@
     "altTag": "nft game development company",
     "bgImage": "https://www.comfygen.com/herosection/nft-game-development-company-hero-img.webp"
   },
+
+
+  
   "ServicesData": {
     "heading": "NFT Game Development Services",
     "description": "",

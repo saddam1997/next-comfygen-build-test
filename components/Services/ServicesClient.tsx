@@ -43,7 +43,7 @@ export default function ServicesClient({ services }: any) {
                         alt="bg"
                         width={200}
                         height={200}
-                        className="absolute bottom-0 right-0"
+                        className="absolute bottom-0 right-0 w-auto h-auto"
                     />
 
                     {/* ✅ ALL CONTENT SSR + CONTROLLED */}

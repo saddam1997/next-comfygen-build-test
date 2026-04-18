@@ -24,7 +24,7 @@ export default function ContactLinks() {
               </p>
             </div>
           </a>
-          <a
+          {/* <a
             href="https://teams.live.com/l/invite/FEA1DE8RvRmi0bg0wM"
             target="_blank"
             className="curser-pointer"
@@ -37,7 +37,7 @@ export default function ContactLinks() {
                 Teams
               </p>
             </div>
-          </a>
+          </a> */}
           <a
             href="https://t.me/COMFYGENTECH"
             target="_blank"

@@ -25,10 +25,10 @@ const ContactLinks = dynamic(
   { ssr: false }
 );
 
-/* Analytics only (lightweight, idle-loaded internally) */
-const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
+//  Analytics only (lightweight, idle-loaded internally) */
+ const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
   ssr: false,
-});
+ });
 
 
 
@@ -42,14 +42,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
 
-      <div className={poppins.className}>
+      <div className={`${poppins.className} overflow-hidden` } >
         <MainLayout>
           {!hideSchema && <GlobalSchema />}
           <Component {...pageProps} />
         </MainLayout>
         <GoogleTagManager />
-        <ContactLinks />
-        <Talkchat />
+        {/* <ContactLinks />
+        <Talkchat /> */}
       </div>
 
     </>

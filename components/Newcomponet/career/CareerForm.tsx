@@ -197,6 +197,7 @@ const Form = () => {
                       alt="Instagram Icon"
                       height={51}
                       width={50}
+                      className="w-auto h-auto"
                     />
                   </a>
 

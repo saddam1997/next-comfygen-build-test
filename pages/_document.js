@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-const GTM_ID = "GTM-M6QT7LCW";
+// const GTM_ID = "GTM-M6QT7LCW";
 
 export default function Document() {
 
@@ -22,22 +22,24 @@ export default function Document() {
         <meta name="apple-mobile-web-app-title" content="Comfygen Technologies" />
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="Comfygen Technologies" />
-        <meta name="robots"  content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
+        <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
 
-  
+
       </Head>
       <body>
-        <noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K96GNBB"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
-        </noscript>
-        
+        </noscript>   */}
+
         <Main />
         <NextScript />
       </body>

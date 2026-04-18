@@ -1,21 +1,21 @@
 {
   "Herosection": {
     "heading": "Best Blockchain App Development Company In India and USA",
-    "subhead": "Looking for a blockchain app development service?",
+    "subhead": "",
     "isHome": false,
     "ptag": "Comfygen is the best blockchain app development company in Jaipur, India, delivering secure, scalable, and production-ready decentralized solutions for startups to enterprises. Our expert blockchain developers in India build customized applications that enhance transparency, automate operations, and ensure advanced data security using cutting-edge blockchain technologies.",
     "ptag1": "We offer end-to-end blockchain development services in the USA, the Middle East, Africa, and India, from ideation and architecture to deployment and maintenance, ensuring every blockchain app solution aligns perfectly with your business goals.",
-    "listItems": [
-      "Blockchain with real impact",
-      " Blockchain built for ROI",
-      " Enterprise-ready blockchain",
-      "Business-first blockchain"
-    ],
+    "listItems": [],
     "btnName": "Talk With Expert",
     "btnLink": "/contact-us",
     "altTag": "Best Blockchain App Development Company In India and USA",
     "bgImage": "https://www.comfygen.com/comfygen-images/blockchain-development-new/hero.webp"
   },
+
+
+
+
+
   "ServicesData": {
     "heading": "India's Blockchain App Development Services Provider",
     "description": "At Comfygen, we are a trusted blockchain development service provider delivering end-to-end blockchain development services that empower SME, enterprises, and startup innovators to build secure, scalable, and decentralized digital ecosystems.",
@@ -328,12 +328,7 @@
       "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
       "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
     },
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
-    },
+   
     {
       "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
       "title": "Mezovest",

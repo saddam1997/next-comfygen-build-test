@@ -175,8 +175,6 @@ export default function Page(props: any) {
       <Consultancy consultancyData={JSON_DATA.NFTTechnologies} />
       <Solution techData={JSON_DATA.Marketplace} />
       <InformationSection InfoSectionData={JSON_DATA?.OwnNFT} />
-
-
       <Guidance />
         <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />

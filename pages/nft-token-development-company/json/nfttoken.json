@@ -458,7 +458,7 @@
       "Post-Launch NFT Maintenance & Technical Support"
     ]
   },
-    "ReviewData": {
+  "ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
     "Review": [
@@ -546,8 +546,8 @@
         "name": "Tom Baker",
         "location": "Germany",
         "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
         "image": "/Google - Original.png"
       }
     ]
@@ -619,6 +619,4 @@
       "desc": "The best NFT development company in 2025 specializes in end-to-end NFT token development services, including custom NFT design, smart contract development, and NFT marketplace platforms. Leading companies also offer Metaverse-ready NFT solutions and integration with Web3 ecosystems. Look for firms with a proven track record in delivering NFT development solutions for various industries, including gaming, art, and real estate. Comfygen is considered one of the top NFT token development companies in 2025, offering secure and scalable NFT services."
     }
   ]
-
-
 }

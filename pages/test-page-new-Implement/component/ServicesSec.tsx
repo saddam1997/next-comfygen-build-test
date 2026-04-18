@@ -21,7 +21,7 @@ export default function ServicesSec({ servicesData = [] }) {
           width={200}
            loading="lazy"
           height={200}
-          className="absolute bottom-0 right-0 pointer-events-none"
+          className="absolute bottom-0 right-0 pointer-events-none w-auto h-auto"
         />
 
         {servicesData.map((service, index) => (

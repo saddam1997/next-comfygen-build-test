@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractdev.json";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
@@ -352,7 +352,8 @@ export default function Ecommerce(props: any) {
 
       {/* <BlockChainHeader /> */}
       <Navbar />
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

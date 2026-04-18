@@ -22,7 +22,7 @@ export default function Card({ Data }: any) {
                     width={907}
                     height={762}
                     priority={item.id === 1}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>

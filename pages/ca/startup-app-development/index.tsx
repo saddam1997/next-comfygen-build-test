@@ -3,7 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/startApp.json";
 
-
+import Navbar from "../../../components/Navbar";
+import HeroSectionforHome from "../../../components/HeroSectionforHome"
 import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
@@ -309,28 +310,10 @@ export default function Mobile(props) {
         />
 
       </Head>
-      <div className="">
-       
-          <Header />
-       
-      </div>
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best Startup App Development Company in Canada"
-          ptag="Launch and scale your business idea with a trusted startup app development company in Canada. At Comfygen, we provide innovative startup app development services to help founders transform ideas into high-performance mobile applications. From validating your startup concept to building scalable MVPs and full-featured apps, our expert startup app developers canada deliver secure, ai powered digital solutions for modern startups."
-          ptag1="We specialize in building custom iOS, Android, and web applications that help startups attract users, raise funding, and grow faster in competitive markets."
-          li="MVP development to quickly validate your startup idea"
-          li1="Scalable mobile app solutions built for rapid startup growth"
-          li2="Expert startup app developers with modern tech expertise"
-          li3="End-to-end development from idea validation to app launch"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/startup-mobile-app-dev-hero-img.webp"
-        />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      
+     
         <Milestones />
         <AboutSection
           title="About Company"
@@ -491,7 +474,7 @@ export default function Mobile(props) {
         />
 
         <BlogSection initialData={initialData} />
-      </div>
+     
     </>
   );
 }

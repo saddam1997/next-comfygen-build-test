@@ -6,6 +6,14 @@ import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSection from "../../components/HeroSection";
+import Navbar from "../../components/Navbar";
+import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import Trending from "../../components/Trending";
+import TechStacks from "../../components/TechStacks";
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
 const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
@@ -83,12 +91,16 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
+import ReviewCard from "../../components/ReviewCard";
 
-
-
-
-
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
 
 
@@ -376,201 +388,166 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Header />
+      <Navbar />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <div className="">
-          <HeroSection
-            heading="Top Fuel Delivery App Development Company"
-            ptag="Comfygen is a leading fuel delivery app development company helping startups and enterprises launch secure, scalable, and high-performance on-demand fuel delivery solutions. Our result-driven AI-powered fuel delivery app development services are designed to streamline fuel ordering, dispatch, and delivery with advanced automation, real-time tracking, and seamless digital payments for a smooth customer experience."
-            ptag1=""
-            li="100% Customizable Fuel Delivery App"
-            li1="White-label & Business-ready Apps"
-            li2="AI-powered Features & Automation"
-            li3="End-to-End Development & Support"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/fuel-delivery-app-development-hero.webp"
-          />
-        </div>
-        <Milestones />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                We Offer Comprehensive Fuel Delivery App Development Services
+
+      <AboutSection
+        title="About Company"
+        heading="Why Fuel Delivery Apps Are a Smart Business Investment"
+        description1="Fuel delivery apps help businesses meet the growing global demand for fast, on-demand fuel supply. By digitizing fuel ordering and delivery, companies can improve efficiency, reduce manual operations, and offer greater convenience to customers across regions."
+        description2="Investing in a fuel delivery app enables fuel providers, startups, and logistics companies to scale operations, increase revenue, and stay competitive in a technology-driven energy market."
+        description3=""
+        imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/fuel-delivery-app-development-about.webp"
+        link="/about-us"
+        linkText="Explore More"
+        points={[
+          "Faster fuel ordering and delivery management",
+          "Wider market reach with on-demand access",
+          "Improved efficiency through automation",
+          " Better customer trust with real-time tracking",
+        ]}
+      />
+
+      <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Next-Gen-Fuel-delivery-App-development-with-AI-Innovation.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
+
+      <Trending
+        trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
+      {/* <ContactFromCenter /> */}
+
+      <AppCard
+        title="Popular Fuel Delivery App Clones We Develop"
+        subtitle="Want to build a fuel delivery app similar to leading global platforms? At Comfygen, we develop advanced fuel delivery app solutions inspired by popular apps, fully customized to match your business model, regional compliance, and growth goals."
+        cards={CardClone}
+        openModal={openModal}
+      />
+
+
+      <Features
+        heading='Advanced Fuel Delivery App Features for Complete Business Management'
+        description='Our developed fuel delivery app includes powerful features designed for smooth fuel ordering, real-time delivery tracking, secure payments, and complete operational control. Each panel is built to improve efficiency, user experience, and business scalability.'
+        featuresData={JSON_DATA.featuresData}
+        grid='4'
+      />
+      <CallToAction
+        heading="Ready to Launch Your Uber-Like Fuel Delivery Solution?"
+        text="Turn your idea into a powerful, scalable fuel delivery app with expert guidance from concept to launch. Let’s build a solution that fuels your business growth."
+        buttonText="Get Started"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
+        imageAlt="Future of Technology"
+      />
+
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+
+
+
+
+
+
+      {/* <NewPanel /> */}
+
+
+      <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-4 text-center">
+            <div className="flex flex-col justify-center text-center  mx-auto">
+              <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                Emerging Technologies We Use for Fuel Delivery App Development
               </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen Technologies, a top-rated on-demand fuel delivery mobile app development company, offers end-to-end fuel delivery app development services tailored to help startups, enterprises, and fuel station owners digitize operations, improve delivery efficiency, and enhance customer convenience. Our Uber-like fuel delivery solutions are secure, scalable, and tailored for the evolving energy and logistics industry.
+              <p className="text-center text-white lg:w-10/12 mx-auto">
+                We use advanced technologies to build secure, scalable, and high-performance fuel delivery app development solutions. Our tech-driven approach helps businesses automate fuel operations, improve delivery efficiency, and scale faster in competitive markets.
               </p>
             </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Company"
-          heading="Why Fuel Delivery Apps Are a Smart Business Investment"
-          description1="Fuel delivery apps help businesses meet the growing global demand for fast, on-demand fuel supply. By digitizing fuel ordering and delivery, companies can improve efficiency, reduce manual operations, and offer greater convenience to customers across regions."
-          description2="Investing in a fuel delivery app enables fuel providers, startups, and logistics companies to scale operations, increase revenue, and stay competitive in a technology-driven energy market."
-          description3=""
-          imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/fuel-delivery-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-          points={[
-            "Faster fuel ordering and delivery management",
-            "Wider market reach with on-demand access",
-            "Improved efficiency through automation",
-            " Better customer trust with real-time tracking",
-          ]}
-        />
-
-        <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/fuel-delivery-app-development/Next-Gen-Fuel-delivery-App-development-with-AI-Innovation.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
-
-
-        {/* <ContactFromCenter /> */}
-
-        <AppCard
-          title="Popular Fuel Delivery App Clones We Develop"
-          subtitle="Want to build a fuel delivery app similar to leading global platforms? At Comfygen, we develop advanced fuel delivery app solutions inspired by popular apps, fully customized to match your business model, regional compliance, and growth goals."
-          cards={CardClone}
-          openModal={openModal}
-        />
-
-
-        <Features
-          heading='Advanced Fuel Delivery App Features for Complete Business Management'
-          description='Our developed fuel delivery app includes powerful features designed for smooth fuel ordering, real-time delivery tracking, secure payments, and complete operational control. Each panel is built to improve efficiency, user experience, and business scalability.'
-          featuresData={JSON_DATA.featuresData}
-          grid='4'
-        />
-        <CallToAction
-          heading="Ready to Launch Your Uber-Like Fuel Delivery Solution?"
-          text="Turn your idea into a powerful, scalable fuel delivery app with expert guidance from concept to launch. Let’s build a solution that fuels your business growth."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Fuel Delivery App Development Portfolio"
-            description="We have successfully delivered scalable and custom fuel delivery app development solutions for global clients. Our portfolio highlights real-world fuel delivery apps designed to simplify fuel ordering, enable real-time tracking, and ensure smooth operations for users, drivers, and vendors."
-          />
-        </section>
-
-
-
-        {/* <NewPanel /> */}
-
-
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                Emerging Technologies We Use for Fuel Delivery App Development
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                 We use advanced technologies to build secure, scalable, and high-performance fuel delivery app development solutions. Our tech-driven approach helps businesses automate fuel operations, improve delivery efficiency, and scale faster in competitive markets.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div key={title} className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
+            <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+              {JSON_DATA.Emerging.map((elem) => {
+                const { img, title, decs } = elem;
+                return (
+                  <div key={title} className={` relative`}>
+                    <div
+                      className={` flex justify-start gap-2 place-items-center relative`}
+                    >
+                      {/* <Image
                                   src={img}
                                   className="object-cover"
                                   width={35}
                                   height={50}
                                   alt={title}
                                 /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
+                      <h3 className="text-2xl font-bold text-[#fff] text-start">
+                        {title}
+                      </h3>
                     </div>
-                  );
-                })}
-              </div>
+
+                    <div className="mt-3">
+                      <p
+                        className=" text-white text-start "
+                        dangerouslySetInnerHTML={{ __html: decs }}
+                      ></p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Our End-to-End Fuel Ordering App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-6xl mx-auto">
-                Comfygen Technologies is a result-oriented fuel delivery app development firm. Our structured process ensures all fuel delivery apps are scalable, high-performing, user-friendly, and ready from concept to launch. Here’s how we develop your next AI fuel delivery app.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
+      <section className="bg-white lg:py-16 py-10">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+          <div className="text-center space-y-4">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              Our End-to-End Fuel Ordering App Development Process
+            </h2>
+            <p className="text-base text-center font-normal lg:w-6xl mx-auto">
+              Comfygen Technologies is a result-oriented fuel delivery app development firm. Our structured process ensures all fuel delivery apps are scalable, high-performing, user-friendly, and ready from concept to launch. Here’s how we develop your next AI fuel delivery app.
+            </p>
           </div>
-        </section>
+          <ProcessSec processSlides={Process} />
+        </div>
+      </section>
 
-        <TeckStack
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+
+      {/* <TeckStack
           title="Tech Stack We Use in Fuel Delivery App Development"
           description="At Comfygen, we use a tech stack to develop high-performance gasoline delivery apps. Our tech stack ensures smooth app performance, real-time fuel tracking, seamless payments, and a reliable experience for users, drivers, and vendors."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
+        /> */}
+      <WhyChoose
+        title={JSON_DATA.pageData.title}
+        description={JSON_DATA.pageData.description}
+        mainCardData={JSON_DATA.pageData.mainCardData}
+        gridData={JSON_DATA.pageData.gridData}
+      />
 
-        <HireDeveloper
-          heading="Hire Fuel Delivery App Developers"
-          text="Looking to launch your own fuel delivery application? Hire expert <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>fuel delivery mobile app developers</a> from Comfygen to build an AI-powered and feature-rich fuel delivery app tailored to your brand. Our skilled gas delivery app developers specialize in creating on-demand fuel delivery apps with smart routing, real-time tracking, multiple payment options, and white-label solutions for startups, enterprises, and fuel service providers."
-          buttonText="Why Hire Our Delivery App Builder?"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Dedicated experts in on-demand fuel delivery app development solution",
-            "AI-driven route optimization and smart fuel dispatch system",
-            "Real-time fuel delivery tracking with GPS integration",
-            "End-to-end app development from UI/UX design to deployment"
+      <HireDeveloper
+        heading="Hire Fuel Delivery App Developers"
+        text="Looking to launch your own fuel delivery application? Hire expert fuel delivery mobile app developers from Comfygen to build an AI-powered and feature-rich fuel delivery app tailored to your brand. Our skilled gas delivery app developers specialize in creating on-demand fuel delivery apps with smart routing, real-time tracking, multiple payment options, and white-label solutions for startups, enterprises, and fuel service providers."
+        buttonText="Hire an App Developer."
+        buttonLink="https://www.comfygen.com/hire-mobile-app-developer"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Dedicated experts in on-demand fuel delivery app development solution",
+          "AI-driven route optimization and smart fuel dispatch system",
+          "Real-time fuel delivery tracking with GPS integration",
+          "End-to-end app development from UI/UX design to deployment"
 
-          ]}
-        />
+        ]}
+      />
 
-        <DeliverySection hideUrl="https://www.comfygen.com/fuel-delivery-app-development" />
+      <DeliverySection hideUrl="https://www.comfygen.com/fuel-delivery-app-development" />
 
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
-        <BlogSection initialData={initialData} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <Faq faqData={Frequently} title="Frequently Asked Questions (FAQs)" />
+      <BlogSection initialData={initialData} />
 
-      </div>
+
     </>
   );
 }
@@ -578,7 +555,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=fuel-delivery-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

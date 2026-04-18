@@ -327,6 +327,7 @@ export default function EcommerceNav(props: any) {
               width={244}
               height={51}
               priority
+              
             />
           </Link>
         </div>

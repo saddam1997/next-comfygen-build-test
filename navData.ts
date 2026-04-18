@@ -229,11 +229,11 @@ export const Healthcare = [
     name: "Medicine Delivery App Development ",
     url: "/medicine-delivery-app-development",
   },
-  {
-    num: "4",
-    name: "Medicine Ordering App Development ",
-    url: "/medicine-app-development",
-  },
+  // {
+  //   num: "4",
+  //   name: "Medicine Ordering App Development ",
+  //   url: "/medicine-app-development",
+  // },
   {
     num: "5",
     name: "Clinical App Development ",

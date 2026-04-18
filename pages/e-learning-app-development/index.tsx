@@ -13,6 +13,91 @@ import {
 import Script from "next/script";
 import JSON_DATA from "./ELearningApp.json";
 
+
+
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+
+// import Features from "../../components/Features"
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+import Emerging from "../../components/Emerging";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
+
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
+
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+import IndustryGrid from "../../components/IndustryGrid";
+import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import Header from "../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -74,10 +159,7 @@ const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
   { loading: loader, ssr: true }
 );
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+
 
 const Process = [
   {
@@ -164,71 +246,6 @@ export default function ClinicalApp(props: any) {
     setTalkToExpertModal(false);
   };
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Comfygen",
-    image: "https://www.comfygen.com/svg/Logo1.svg",
-    "@id": "Comfygen",
-    url: "https://www.comfygen.com/",
-    telephone: "+91-958-786-7258",
-    priceRange: "$",
-    address: [
-      {
-        "@type": "PostalAddress",
-        streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-        addressLocality: "Jaipur",
-        postalCode: "302006",
-        addressCountry: "IN",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-        addressLocality: "Toronto",
-        postalCode: "M1G3S7",
-        addressCountry: "Canada",
-      },
-    ],
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    sameAs: [
-      "https://www.facebook.com/comfygen",
-      "https://twitter.com/comfygentech",
-      "https://www.instagram.com/comfygen_/?hl=en",
-      "https://www.youtube.com/@ComfygenBusiness",
-      "https://www.linkedin.com/company/comfygen-private-limited",
-      "https://in.pinterest.com/comfygenpvt/",
-    ],
-  };
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Comfygen",
-    url: "https://www.comfygen.com/",
-    logo: "https://www.comfygen.com/svg/Logo1.svg",
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      contactOption: "WhatsApp",
-      telephone: "+91 9587867258",
-      email: "sales@comfygen.com",
-      areaServed: ["IN", "US", "CA", "GB"],
-      availableLanguage: "en, in",
-    },
-  };
 
   const jsonLdData = [
     {
@@ -260,7 +277,7 @@ export default function ClinicalApp(props: any) {
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
     },
- 
+
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
@@ -425,185 +442,140 @@ export default function ClinicalApp(props: any) {
           property="og:description"
           content="Comfygen, a trusted eLearning app development company, creates high-performance EdTech solutions integrating AI, AR/VR, and Blockchain. Transform digital learning with personalized, engaging, and scalable apps."
         />
-      
+
 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Best eLearning App Development Company in India & USA"
-          ptag="Comfygen is a leading eLearning app development company delivering custom online learning apps for schools, coaching centers, and corporate training. We integrate AI-driven learning, AR/VR classrooms, analytics, and secure scalable platforms to create interactive and future-ready EdTech solutions. Hire expert eLearning app developers to transform your learning ideas into reality."
-          ptag1=""
-          li="AI-powered personalized learning experiences"
-          li1="AR/VR interactive classrooms & immersive content"
-          li2="Advanced analytics for student performance tracking"
-          li3="Secure, scalable, and feature-rich learning platforms"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+
+
+
+      <SolutionSec
+        heading="E-Learning App Development Solutions We Offer"
+        subheading="Elevate Learning Experiences. We transform your education business into engaging eLearning app development solutions that deliver personalized learning, empower educators, and drive impactful results"
+        techData={technologyData}
+      />
+
+      <section className="py-8">
+        <Portfolio
+          projects={JSON_DATA.portfoliodata}
+          heading="Explore Our eLearning App Development Portfolio"
+          description="At Comfygen, we are proud to have delivered innovative, user-centric eLearning solutions for clients across various industries. Our portfolio showcases the diverse range of eLearning apps we’ve developed, each offering unique features and tailored experiences for learners and educators."
         />
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Comprehensive E-Learning App Development Services in India
-              </h2>
-              <p className="text-base text-center font-normal">
-                We're a leading eLearning app development company in India
-                dedicated to providing the best eLearning app development
-                services.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
+      </section>
+
+      <div className="py-8">
+        <Features
+          heading=" We provide Advanced Panel Features for E-learning App Development"
+          description="Efficient and feature-rich panels for seamless learning and management. The User Panel enhances the student experience, while the Admin Panel provides complete control over course management and analytics."
+          featuresData={JSON_DATA.featuresData}
+          grid={2}
+        />
+      </div>
+
+      <section className="bg-white lg:py-16 py-10">
+        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+          <div className="text-center space-y-4">
+            <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
+              Our eLearning App Development Process
+            </h2>
+            <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
+              As a leading E-learning software development agency in India,
+              the USA, we follow a strategic and user-centric approach to
+              building high-quality learning solutions. Our talented education
+              app developers ensure a seamless experience with cutting-edge
+              technology and innovative features.
+            </p>
           </div>
-        </section>
-        <AboutSection
-          title="About Company"
-          heading="Why Invest in Custom eLearning App Development?"
-          description1="Investing in custom eLearning app development delivers high-growth opportunities as the global eLearning market is projected to surpass $450 billion by 2026, growing at over 10% CAGR. Custom, mobile-first eLearning solutions offer scalable training, higher learner engagement, and strong ROI through gamification, data-driven analytics, and cost-effective long-term digital education platforms tailored to business and institutional needs."
-          points={[
-            "High ROI Potential",
-            "Rapid Market Growth",
-            "Scalable Digital Learning",
-            "Gamified User Engagement",
-            "Mobile-First Education Platforms"
-          ]}
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <SolutionSec
-          heading="E-Learning App Development Solutions We Offer"
-          subheading="Elevate Learning Experiences. We transform your education business into engaging eLearning app development solutions that deliver personalized learning, empower educators, and drive impactful results"
-          techData={technologyData}
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our eLearning App Development Portfolio"
-            description="At Comfygen, we are proud to have delivered innovative, user-centric eLearning solutions for clients across various industries. Our portfolio showcases the diverse range of eLearning apps we’ve developed, each offering unique features and tailored experiences for learners and educators."
-          />
-        </section>
-
-        <div className="py-8">
-          <Features
-            heading=" We provide Advanced Panel Features for E-learning App Development"
-            description="Efficient and feature-rich panels for seamless learning and management. The User Panel enhances the student experience, while the Admin Panel provides complete control over course management and analytics."
-            featuresData={JSON_DATA.featuresData}
-            grid={2}
-          />
+          <ProcessSec processSlides={Process} />
         </div>
+      </section>
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our eLearning App Development Process
+      <TechStack
+        title="Technology Stack We Use in eLearning App Development"
+        description="At Comfygen, we leverage the latest and most reliable technologies to build high-performing, scalable, and secure eLearning apps. Our team uses cutting-edge tools and frameworks to ensure a seamless learning experience for users across the globe."
+      />
+
+      <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1] mt-8">
+        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
+          <div className="space-y-4 text-center">
+            <div className="flex flex-col justify-center text-center  mx-auto">
+              <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
+                Advanced Technologies We Integrate in e-learning Mobile Apps
+
               </h2>
-              <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
-                As a leading E-learning software development agency in India,
-                the USA, we follow a strategic and user-centric approach to
-                building high-quality learning solutions. Our talented education
-                app developers ensure a seamless experience with cutting-edge
-                technology and innovative features.
+              <p className="text-center text-white lg:w-10/12 mx-auto">
+                Using the latest technologies, we are building a futuristic e-learning application that is making teaching convenient and learning more engaging.
+
               </p>
             </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Technology Stack We Use in eLearning App Development"
-          description="At Comfygen, we leverage the latest and most reliable technologies to build high-performing, scalable, and secure eLearning apps. Our team uses cutting-edge tools and frameworks to ensure a seamless learning experience for users across the globe."
-        />
-
-        <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1] mt-8">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                 Advanced Technologies We Integrate in e-learning Mobile Apps
-
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  Using the latest technologies, we are building a futuristic e-learning application that is making teaching convenient and learning more engaging.
-
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div key={title} className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
+            <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
+              {JSON_DATA.Emerging.map((elem) => {
+                const { img, title, decs } = elem;
+                return (
+                  <div key={title} className={` relative`}>
+                    <div
+                      className={` flex justify-start gap-2 place-items-center relative`}
+                    >
+                      {/* <Image
                                             src={img}
                                             className="object-cover"
                                             width={35}
                                             height={50}
                                             alt={title}
                                           /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
+                      <h3 className="text-2xl font-bold text-[#fff] text-start">
+                        {title}
+                      </h3>
                     </div>
-                  );
-                })}
-              </div>
+
+                    <div className="mt-3">
+                      <p
+                        className="break-all text-white text-start "
+                        dangerouslySetInnerHTML={{ __html: decs }}
+                      ></p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire our eLearning app developer"
-          text="When you hire our e-learning app <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>developer</a>, you are partnering with experts 100% Satisfaction Guaranteed, and Confidentiality developers that Assured who specialize in creating personalized, high-performance educational apps. Whether you're developing an online training app, a school app, or a mobile learning platform, our top eLearning mobile app development team provides solutions customized to meet your unique educational goals."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Expertise in Custom E-Learning App Development",
-            "Seamless Integration with Learning Management Systems ",
-            "Advanced AI/AR/VR Capabilities for Enhanced Learning",
-            "Scalable Solutions for Future Growth",
-          ]}
-        />
-        <ClientTestimonials
-          heading="Some Words From Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
-      </div>
+      <WhyChoose
+        title={JSON_DATA.pageData.title}
+        description={JSON_DATA.pageData.description}
+        mainCardData={JSON_DATA.pageData.mainCardData}
+        gridData={JSON_DATA.pageData.gridData}
+      />
+      <HireDeveloper
+        heading="Hire our eLearning app developer"
+        text="When you hire our e-learning app <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline font-semibold'>developer</a>, you are partnering with experts 100% Satisfaction Guaranteed, and Confidentiality developers that Assured who specialize in creating personalized, high-performance educational apps. Whether you're developing an online training app, a school app, or a mobile learning platform, our top eLearning mobile app development team provides solutions customized to meet your unique educational goals."
+        buttonText="Hire Developer"
+        buttonLink="/contact-us"
+        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
+        imageAlt="hire-developer"
+        listItems={[
+          "Expertise in Custom E-Learning App Development",
+          "Seamless Integration with Learning Management Systems ",
+          "Advanced AI/AR/VR Capabilities for Enhanced Learning",
+          "Scalable Solutions for Future Growth",
+        ]}
+      />
+      <ClientTestimonials
+        heading="Some Words From Our Clients"
+        testimonials={JSON_DATA.customTestimonials}
+      />
+      <Faq faqData={Frequently} title="" />
+      <BlogSection initialData={initialData} />
+
     </>
   );
 }
@@ -611,7 +583,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=education-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

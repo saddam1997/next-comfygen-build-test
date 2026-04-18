@@ -28,6 +28,8 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
   ssr: true,
 });
 
+import TechStacks from "../../components/TechStacks";
+
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
@@ -188,7 +190,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Navbar />
-         <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
       {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
@@ -198,17 +200,15 @@ export default function ClinicalApp(props: any) {
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Features featuresData={JSON_DATA.featuresData} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <IndustryGrid />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-
-
-
       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
@@ -222,7 +222,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=logistics-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

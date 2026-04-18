@@ -61,6 +61,7 @@ export default function DesktopNav(props: any) {
               width={244}
               height={51}
               priority
+              
             />
           </Link>
         </div>

@@ -78,6 +78,7 @@ export default function HeroSection({ herosection }: any) {
           {herosection.ptag3 && (
             <ParagraphText color={"white"} text={herosection.ptag3} />
           )}
+           <HeroClientCTA />
           {typeof window !== "undefined" && window.innerWidth >= 1024 && (
             <StatsBanner />
           )}
@@ -98,7 +99,7 @@ export default function HeroSection({ herosection }: any) {
           )}
 
           {/* CTA */}
-          <HeroClientCTA />
+         
         </div>
       </div>
     </section>

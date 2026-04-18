@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const flags = [
   "https://www.comfygen.com/comfygen-images/home-image/india.webp",
@@ -23,7 +24,7 @@ export default function StatsBanner() {
         {/* Left column — 2 stacked cards */}
         <div className="flex flex-col gap-3">
           {/* Experience */}
-          <div className="bg-indigo-400/60 rounded-xl px-2 py-3 flex items-center gap-3">
+          <Link href={"https://www.comfygen.com/about-us "} className="bg-indigo-400/60 rounded-xl px-2 py-3 flex items-center gap-3">
             <div className="bg-[#E1EED0] rounded-lg p-2 flex-shrink-0">
               {/* Briefcase icon */}
               <svg
@@ -48,10 +49,10 @@ export default function StatsBanner() {
             <p className="text-white font-semibold text-sm leading-tight">
               8+ Years of<br />experience
             </p>
-          </div>
+          </Link>
 
           {/* Projects */}
-          <div className="bg-indigo-400/60 rounded-xl px-4 py-3 flex items-center gap-3">
+          <Link href={"https://www.comfygen.com/portfolio "} className="bg-indigo-400/60 rounded-xl px-4 py-3 flex items-center gap-3">
             <div className="bg-[#D0E2EF] rounded-lg p-2 flex-shrink-0">
               {/* Lightning icon */}
               <svg
@@ -65,15 +66,16 @@ export default function StatsBanner() {
             <p className="text-white font-semibold text-sm leading-tight">
               550+ Projects<br />Delivered
             </p>
-          </div>
+          </Link>
         </div>
 
         {/* Middle — Clients */}
-        <div className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">
+        <Link  href={"https://www.comfygen.com/client-testimonials"} className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">
           {/* Overlapping avatars */}
           <div className="flex items-center">
             {avatars.map((src, i) => (
               <div
+             
                 key={i}
                 className="w-12 h-12 rounded-full border-2 border-white overflow-hidden flex-shrink-0"
                 style={{ marginLeft: i === 0 ? 0 : "-10px", zIndex: i }}
@@ -91,7 +93,7 @@ export default function StatsBanner() {
           <p className="text-white font-semibold text-sm leading-tight">
             400+ Happy<br />Clients
           </p>
-        </div>
+        </Link>
 
         {/* Right — Countries */}
         <div className="bg-indigo-400/60 rounded-xl px-4 py-3 flex flex-col justify-center gap-3">

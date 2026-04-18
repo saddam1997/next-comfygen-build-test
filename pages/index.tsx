@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import HeroSectionforHome from "../components/HeroSectionforHome"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
-
+import TechStacks from "../components/TechStacks";
 const Milestones = dynamic(
   () => import("../components/Milestones"),
   { ssr: true }
@@ -179,10 +179,11 @@ export default function Home(props: any) {
       <IndustryGrid />
       <Trending
         trendingData={JSON_DATA.trendingData}
-        heading="Awards, Ratings & Recognitions"
+       heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+         <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />

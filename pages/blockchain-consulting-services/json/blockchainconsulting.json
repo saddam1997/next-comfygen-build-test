@@ -5,230 +5,16 @@
     "isHome": false,
     "ptag": "Comfygen is a reliable blockchain consulting service provider helping startups, SMEs, and enterprises plan, validate, and scale blockchain initiatives. Our blockchain consultants work closely with businesses to define the right strategy, assess use cases, and design blockchain solutions that improve operational efficiency, lower costs, and create new revenue opportunities.",
     "ptag1": "",
-    "listItems": [
-      "Tailored Blockchain Strategy & Roadmapping",
-      "Enterprise Blockchain Consulting & Architecture",
-      "Smart Contract, DeFi, NFT & Web3 Advisory",
-      "End-to-End Blockchain Consulting & Support"
-    ],
+    "listItems": [],
     "btnName": "Talk With Expert",
     "btnLink": "/contact-us",
     "altTag": "white-label mobile app development company",
     "bgImage": "https://www.comfygen.com/herosection/blockchain-consulting-services-img-hero.webp"
   },
-
-
-  "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
-      {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
-      },
-      {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
-      },
-      {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
-      }
-    ]
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
-      "title": "Blockchain",
-      "description": "We help businesses adopt secure and efficient blockchain technology, enhancing operations with trusted, scalable, and industry-specific solutions through our expert Blockchain Consulting Services.",
-      "link": "/blockchain-development"
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
-      "title": "Education",
-      "description": "Enhance learning experiences with secure, transparent, and decentralized education systems, enabling tamper-proof records and streamlined credential verification."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Logistics",
-      "description": "Improve supply chain transparency and efficiency with secure, real-time tracking and automated smart contracts, ensuring seamless logistics management."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
-      "title": "Transportation",
-      "description": "Optimize fleet management, route tracking, and payments with secure, transparent, and automated blockchain technology for seamless transportation operations."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
-      "title": "Travel and Hospitality",
-      "description": "Enhance booking security, loyalty programs, and identity verification with transparent and decentralized blockchain technology, ensuring seamless travel experiences."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "Construction",
-      "description": "Improve project transparency, contract management, and supply chain tracking with secure and efficient blockchain technology, ensuring streamlined operations."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Gaming",
-      "description": "Revolutionize gaming with secure in-game asset ownership, NFT integration, and transparent transactions, ensuring a decentralized and player-driven economy through Game Development."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
-      "title": "Sports",
-      "description": "Enhance fan engagement, ticketing security, and digital collectibles with blockchain-powered transparency and decentralized asset management in the sports industry."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-      "title": "Entertainment",
-      "description": "Empower content creators with secure digital rights management, transparent royalties, and decentralized content distribution, ensuring fair and efficient monetization."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
-      "title": "Social Media Apps",
-      "description": "Enhance user privacy, data security, and content ownership with decentralized social media platforms, ensuring transparency and control for users."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance",
-      "description": "Transform financial services with secure transactions, smart contracts, and decentralized finance (DeFi) solutions, ensuring transparency and efficiency in the industry."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
-      "title": "Dating",
-      "description": "Enhance user privacy, security, and authenticity with blockchain-powered identity verification and decentralized matchmaking, ensuring a safer dating experience."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
-      "title": "Restaurants Industry",
-      "description": "Improve food supply chain transparency, secure payments, and customer loyalty programs with blockchain technology, ensuring trust and efficiency in restaurant operations."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
-      "title": "E-Commerce",
-      "description": "Enhance transaction security, supply chain transparency, and customer trust with blockchain-powered smart contracts and decentralized payment solutions."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare",
-      "description": "Ensure secure patient data management, transparent medical records, and efficient supply chain tracking with blockchain-powered healthcare solutions."
-    }
-  ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      "title": "NASDAC Crypto Coin",
-      "description": "NASDAC Crypto Coin is a next-generation cryptocurrency built on its dedicated blockchain, not just another token. Designed with a powerful 'Four Square' architecture, it ensures high-speed transactions, enhanced mining rewards, seamless ecosystem integration, and predictable growth. With superior security, scalability, and efficiency, NASDAC Coin outperforms Bitcoin, making it an ideal choice for businesses and enterprises. Engineered for the future, NASDAC Coin stands as the first true SUPER COIN, redefining the blockchain crypto space.",
-      "link": "/portfolio/blockchain-based-cryptocoin-development"
-    },
-    {
-      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      "title": "Croston",
-      "description": "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and transparency. It enables secure transactions, controlled issuance, and easy purchases via credit cards, exchanges, or crypto. Bridging traditional assets with blockchain, Croston powers a decentralized marketplace and redefines secure digital investments",
-      "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
-    },
-    {
-      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      "title": "Mezovest",
-      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-      "link": "/portfolio/advanced-blockchain-based-logistics-software"
-    }
-  ],
-  "servicesData": [
+  "ServicesData": {
+  "heading": "Our Blockchain Consulting Services",
+  "description": "Comfygen offers end-to-end blockchain consulting services to help businesses innovate, optimize, and scale. Our experienced consultants guide you from strategy to deployment, delivering secure, scalable, and business-aligned blockchain development solutions.",
+  "services": [
     {
       "title": "Blockchain Strategy Consulting",
       "subtitle": "",
@@ -339,272 +125,425 @@
         "Ongoing technical and business consultation"
       ]
     }
+  ]
+},
+"AboutSection": {
+  "title": "About Company",
+  "heading": "Why Choose Blockchain Consulting Service?",
+  "description1": "Adopting blockchain technology can unlock powerful new opportunities, but without the clear strategy, businesses risk wasting time and resources. Expert blockchain consulting services help businesses identify the best use cases, create a clear roadmap, and implement <a href='https://www.comfygen.com/blockchain-development' class='text-blue-600 font-semibold'>blockchain app development</a> solutions that actually deliver results.",
+  "description2": "",
+  "description3": "",
+  "description4": "",
+  "description5": "",
+  "points": [
+    "<b>Right Use Cases</b> – Identify where blockchain adds real value, from DeFi apps to supply chain and enterprise solutions.",
+    "<b>Lower Costs & Risks</b> – Avoid costly mistakes with expert blockchain strategy consulting and compliance guidance.",
+    "<b>Faster Time-to-Market</b> – Get a clear roadmap for launching crypto wallets, NFT platforms, or blockchain integrations quickly.",
+    "<b>Scalable Solutions</b> – Build with smart contract advisory and tokenomics planning for long-term growth."
   ],
-
-  "businessData": [
+  "imageSrc": "https://www.comfygen.com/comfygen-images/blockchain-consulting-services/blockchain-consulting.webp",
+  "link": "/about-us",
+  "linkText": "Explore More"
+},
+  "CallToAction": {
+    "heading": "Ready to Transform Your Business with Blockchain?",
+    "text": "Get expert blockchain consulting to unlock secure, scalable, and innovative solutions for your business.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+  },
+"AICrypto": {
+  "heading": "Why Blockchain Consulting Service Is a Game Changer for Your Business",
+  "subheading": "Unlock the potential of blockchain with our expert blockchain consulting services. We help businesses implement secure, scalable, and innovative blockchain development solutions that drive efficiency, enhance transparency, and prepare your organization for the digital future.",
+  "tech": [
     {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/ethereum-blockchain-development-company.webp",
-      "url": "/ethereum-blockchain-development-company",
-      "title": "Ethereum Blockchain Development Services",
-      "decs": "Build secure and scalable dApps with  <a href='/ethereum-blockchain-development-company' class='font-bold hover:underline'>Ethereum Blockchain Development Service</a> smart contract capabilities, ensuring efficiency and transparency."
+      "num": "01",
+      "title": "Strategic Planning for Sustainable Growth",
+      "desc": "Blockchain consultants at Comfygen work with you to develop a comprehensive roadmap that aligns blockchain adoption with your long-term business vision. We focus on maximizing ROI while preparing your business for future scalability and evolving market demands. The result? A clear, actionable plan to succeed in the blockchain-driven economy."
     },
     {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/hyperledger-blockchain-development-company.webp",
-      "url": "/hyperledger-blockchain-development",
-      "title": "Hyperledger Blockchain Development Services",
-      "decs": "Develop secure and scalable enterprise blockchain solutions with <a href='/hyperledger-blockchain-development' class='font-bold hover:underline'> Hyperledger Blockchain Development </a> permission network for enhanced transparency and efficiency."
+      "num": "02",
+      "title": "Cost Efficiency with Expert Guidance",
+      "desc": "Our consultants identify the most efficient blockchain solutions tailored to your business, ensuring cost-effective investments. By leveraging cutting-edge technologies and avoiding common pitfalls, we help you streamline operations and minimize unnecessary expenses, allowing you to focus resources where they truly matter."
     },
     {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/hyperledger-blockchain-development-company.webp",
-      "url": "",
-      "title": "Corda Blockchain Development Services",
-      "decs": "Build private and secure blockchain solutions with Corda, ensuring efficient transactions and seamless business integrations."
+      "num": "03",
+      "title": "Enhance Operational Efficiency",
+      "desc": "Integrating blockchain automates workflows, reduces manual errors, and enhances productivity across your organization. Our team ensures that your business achieves significant time savings, improved data integrity, and increased transparency—all leading to more efficient operations and a more resilient business model."
     },
     {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/substrate-blockchain-development-company.webp",
-      "url": "/substrate-development-company",
-      "title": "Substrate Blockchain Development Services",
-      "decs": "Leverage <a href='/substrate-development-company' class='font-bold hover:underline'>Substrate Development Services </a> to build custom, scalable, and high-performance blockchain networks tailored to your business needs."
+      "num": "04",
+      "title": "Unlock Innovative Revenue Streams",
+      "desc": "Blockchain consulting opens up new business models, such as tokenization and decentralized finance (DeFi) solutions, which can create fresh sources of income. We guide you in capitalizing on emerging opportunities, ensuring your business is poised to thrive with blockchain-powered innovations that drive sustainable growth."
     },
     {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/avalanche-blockchain-development-company.webp",
-      "url": "",
-      "title": "Avalanche Blockchain Development Services",
-      "decs": "Develop fast, scalable, and secure blockchain solutions with Avalanche, ensuring high throughput and low latency for decentralized applications."
+      "num": "05",
+      "title": "Ensure Full Regulatory Compliance",
+      "desc": "Navigating the complex regulatory landscape of blockchain is tricky, but with expert consulting, you can rest assured that your solutions comply with all necessary legal requirements. We make sure your blockchain system adheres to industry regulations, reducing risks, penalties, and potential compliance issues."
     },
     {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/polka-dots-blockchain-development-company.webp",
-      "url": "",
-      "title": "Polkadot Blockchain Development Services",
-      "decs": "Build interoperable and scalable blockchain solutions with Polkadot, enabling seamless cross-chain connectivity and enhanced security."
+      "num": "06",
+      "title": "Deliver Exceptional Customer Experiences",
+      "desc": "Blockchain's transparency and security enhance the overall user experience, providing your customers with greater trust and reliability. Our consultants help you create seamless, user-friendly solutions that improve customer loyalty, satisfaction, and engagement, elevating your brand’s reputation in the market."
     },
     {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/near-protocol-blockchain-development-company.webp",
-      "url": "",
-      "title": "NEAR Protocol Blockchain Development Services",
-      "decs": "Develop scalable and developer-friendly blockchain Consulting solutions with NEAR Protocol, ensuring high performance, low fees, and seamless user experience."
+      "num": "07",
+      "title": "Scalability & Future-Readiness",
+      "desc": "We ensure your blockchain solutions are built for the future, with scalability and adaptability at the core. As your business grows, your blockchain infrastructure will evolve with flexible solutions that can handle increased transaction volume, more complex operations, and changing market conditions."
     },
     {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/hedera-blockchain-development-company.webp",
-      "url": "",
-      "title": "Hedera Blockchain Development Services",
-      "decs": "Leverage Hedera Hashgraph’s fast, secure, and energy-efficient network to build high-performance decentralized applications (dApps) with low latency and predictable fees."
+      "num": "08",
+      "title": "Empower Data Ownership & Security",
+      "desc": "Blockchain gives businesses more control over their data by offering immutable records and decentralized storage. Our consulting services help design systems that prioritize data security, privacy, and ownership, allowing your organization to safeguard sensitive information while maintaining transparency."
     },
     {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/tezos-blockchain-development-company.webp",
-      "url": "",
-      "title": "Tezos Blockchain Development Services",
-      "decs": "Build secure, self-upgradable, and efficient blockchain solutions with Tezos, ensuring seamless smart contract execution and on-chain governance."
+      "num": "09",
+      "title": "Accelerate Decision-Making with Blockchain",
+      "desc": "By implementing transparent and efficient blockchain systems, we eliminate bottlenecks in your operations. With real-time data access and verified transactions, decision-making becomes faster, more informed, and more reliable, giving you a competitive edge in your industry."
     }
-  ],
- 
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What is Blockchain Consulting? ",
-      "desc": "Blockchain consulting is like having a tech-savvy advisor for your business who helps you use cutting-edge blockchain app development technology. We analyze your business thoroughly and provide services for various blockchain developments, like NFT blockchain app development, bridges blockchain app development, DEX blockchain app development, metaverse blockchain app development, blockchain tokens app development, and dApps blockchain app development. Our experts are versatile, using different blockchain technologies such as Ethereum blockchain app development, Hyperledger blockchain app development, EVM blockchain app development, Solidity blockchain app development, Cosmos blockchain app development, or Substrate blockchain app development. With our guidance, you can create a customized blockchain app development protocol that suits your business needs. Our consultation not only makes your business operations smoother but also ensures top-notch security and a boost in return on investment (ROI)."
-    },
-    {
-      "num": "2",
-      "title": "What Are the Responsibilities of Blockchain Consultants?",
-      "desc": "Imagine having a guide to enhance your business using decentralized ledger technology. That's what a blockchain consultant does. They assess your current operations, explore how blockchain can benefit you, and guide you toward a system that adds value to your company. At Comfygen, our blockchain consulting process involves project ideation, feasibility checks, proof-of-concept execution, workflow outlining, documentation, and development stages once there's a mutual agreement."
-    },
-    {
-      "num": "3",
-      "title": "Which is the Right Blockchain Platform for My Decentralized Solutions?",
-      "desc": "Choosing the right blockchain app development platform is crucial before building a solution for your business. Only an experienced blockchain expert can help you make the ideal choice. They consider factors like the privacy level needed, scalability requirements, the type of blockchain app development (public blockchain app development, private blockchain app development, or permission), consensus algorithm, and smart contract blockchain app development functionality."
-    },
-    {
-      "num": "4",
-      "title": "How Does Blockchain Help in Business?",
-      "desc": "Blockchain benefits various industries such as supply chains blockchain app development, healthcare blockchain app development, government blockchain app development, and financial blockchain app development services. Startups and big companies are exploring ways to use blockchain app development to transform traditional business models. Our blockchain app development consulting team can show you how blockchain app development brings transparency, traceability, security, and efficiency to your business."
-    },
-    {
-      "num": "5",
-      "title": "What is a Blockchain App Development Consultation Company?",
-      "desc": "When a group of blockchain-savvy experts, including blockchain developers, technical architects, and blockchain app development insights, come together to provide feasible solutions for your blockchain app development needs, they are known as a blockchain app development consulting company."
-    },
-    {
-      "num": "6",
-      "title": "Do We Offer Blockchain App Development Consulting for Different Industries?",
-      "desc": "Absolutely! As a top-notch blockchain app development consulting company, Comfygen provides consulting and development services for various industries like finance blockchain app development, healthcare blockchain app development, retail blockchain app development, supply chain blockchain app development, real estate blockchain app development, energy blockchain app development, and even the government blockchain app development sector. Contact our team to learn more about our blockchain app development services."
-    }
-  ],
+  ]
+},
 
-  "techData": {
-    "backend": [
+  "Portfoliodata": {
+    "heading": "Our Blockchain Consulting Service Portfolio",
+    "description": "Our blockchain consulting services help businesses across industries achieve real results. From custom blockchain solutions to DeFi integrations and tokenization, we deliver innovative projects that drive growth, efficiency, and measurable value.",
+    "portfolio": [
       {
-        "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
-        "alt": "Nodejs",
-        "name": "Nodejs",
-        "num": "1"
+        "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+        "title": "NASDAC Crypto Coin",
+        "description": "NASDAC Crypto Coin is a next-generation cryptocurrency built on its dedicated blockchain, not just another token. Designed with a powerful 'Four Square' architecture, it ensures high-speed transactions, enhanced mining rewards, seamless ecosystem integration, and predictable growth. With superior security, scalability, and efficiency, NASDAC Coin outperforms Bitcoin, making it an ideal choice for businesses and enterprises. Engineered for the future, NASDAC Coin stands as the first true SUPER COIN, redefining the blockchain crypto space.",
+        "link": "/portfolio/blockchain-based-cryptocoin-development"
       },
       {
-        "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
-        "alt": "Javascript",
-        "name": "Javascript",
-        "num": "2"
+        "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+        "title": "Croston",
+        "description": "Croston is the first decentralized, gold-backed cryptocurrency (1:1 ratio), ensuring stability, security, and transparency. It enables secure transactions, controlled issuance, and easy purchases via credit cards, exchanges, or crypto. Bridging traditional assets with blockchain, Croston powers a decentralized marketplace and redefines secure digital investments",
+        "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
       },
       {
-        "img": "https://www.comfygen.com/media/svg/tech/express-js-icon.svg",
-        "alt": "Express js",
-        "name": "Express js",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/sails-js-icon.svg",
-        "alt": "Sails js",
-        "name": "Sails js",
-        "num": "4"
-      },
-      {
-        "img": "https://www.comfygen.com/image/next-js-icon.svg",
-        "alt": "Next js",
-        "name": "Next js",
-        "num": "5"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
-        "alt": "Django",
-        "name": "Django",
-        "num": "6"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
-        "alt": "Python",
-        "name": "Python",
-        "num": "7"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/php-icon.svg",
-        "alt": "PHP",
-        "name": "PHP",
-        "num": "8"
-      }
-    ],
-    "frontend": [
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
-        "alt": "Html5",
-        "name": "Html5",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
-        "alt": "Css3",
-        "name": "Css3",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/image/next-js-icon.svg",
-        "alt": "Nextjs",
-        "name": "nextjs",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
-        "alt": "React",
-        "name": "React js",
-        "num": "4"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
-        "alt": "Tailwindcss",
-        "name": "Tailwindcss",
-        "num": "5"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
-        "alt": "Angularjs",
-        "name": "Angular js",
-        "num": "6"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
-        "alt": "Javascript",
-        "name": "Javascript",
-        "num": "7"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
-        "alt": "Typescript",
-        "name": "Typescript",
-        "num": "8"
-      },
-      {
-        "img": "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg",
-        "alt": "Bootstrap",
-        "name": "Bootstrap",
-        "num": "9"
-      }
-    ],
-    "Blockchain Platforms ": [
-      {
-        "img": "/svg/tech/aws-logo.svg",
-        "alt": "Ethereum",
-        "name": "Ethereum",
-        "num": "1"
-      },
-      {
-        "img": "/svg/tech/googlecloud-original.svg",
-        "alt": "Polygon",
-        "name": "Polygon",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/img/stackimg/solona.svg",
-        "alt": "Solana",
-        "name": "Solana",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/img/stackimg/cardano.svg",
-        "alt": "Cardano",
-        "name": "Cardano",
-        "num": "4"
-      },
-      {
-        "img": "https://www.comfygen.com/img/stackimg/eos.svg",
-        "alt": "EOS",
-        "name": "EOS",
-        "num": "5"
-      }
-    ],
-    "Wallets": [
-      {
-        "img": "https://www.comfygen.com/img/stackimg/binance.svg",
-        "alt": "Binance",
-        "name": "Binance",
-        "num": "1"
-      },
-      {
-        "img": "/svg/tech/aws-logo.svg",
-        "alt": "Coinbase",
-        "name": "Coinbase",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/img/stackimg/cardano.svg",
-        "alt": "trust wallet",
-        "name": "trust wallet",
-        "num": "3"
-      },
-      {
-        "img": "/svg/tech/azure-original.svg",
-        "alt": "Walletconnwect",
-        "name": "Walletconnwect",
-        "num": "4"
+        "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+        "title": "Mezovest",
+        "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Mezo Energy Trading Limited (METL), introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+        "link": "/portfolio/advanced-blockchain-based-logistics-software"
       }
     ]
+  },
+
+  "NFTProcessData": {
+    "heading": "Our End-to-End Blockchain Consulting Services Process",
+    "description": "Our blockchain consultation journey follows a structured roadmap—from discovery to deployment—designed to deliver measurable business impact. With a focus on innovation, scalability, and technical precision, we guide you through every stage of blockchain adoption, ensuring a seamless transformation from concept to execution. At Comfygen, success isn’t just about building solutions—it’s about creating long-term value through strategic blockchain integration.",
+    "Process": [
+      {
+        "title": "Research and Analysis",
+        "description": "We analyze your business model, goals, and industry landscape to identify where blockchain can add real value. This sets the foundation for a successful blockchain strategy."
+      },
+      {
+        "title": "Assessment",
+        "description": "We evaluate your existing systems and workflows for blockchain readiness, ensuring feasibility, performance potential, and ROI before development begins."
+      },
+      {
+        "title": "Project Definition",
+        "description": "Clear goals, timelines, and technical frameworks are defined to align stakeholders and ensure a focused, efficient execution process."
+      },
+      {
+        "title": "Proof of Concept (PoC)",
+        "description": "We develop a working PoC or MVP to test your blockchain idea in a real-world scenario and validate its effectiveness before full-scale implementation."
+      },
+      {
+        "title": "Integration",
+        "description": "We ensure seamless integration of blockchain with your existing tech stack, APIs, databases, and enterprise tools—while maintaining security and compliance."
+      },
+      {
+        "title": "Agile Development",
+        "description": "Using agile methods, we build your blockchain solution in sprints—ensuring speed, flexibility, and collaboration throughout the process."
+      },
+      {
+        "title": "Post-Implementation Support",
+        "description": "We provide continuous monitoring, updates, and optimization to keep your blockchain solution secure, scalable, and aligned with evolving needs."
+      }
+    ]
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Real-Time Tracking & Maps",
+    "Mobile App Development",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Data & Analytics"
+  ],
+  "TechstackData": {
+    "heading": "Tech Stack We Use",
+    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Real-Time Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "Data & Analytics": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Apache",
+          "name": "Apache",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Hadoop",
+          "name": "Hadoop",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Real-time Analytics",
+          "name": "Real-time Analytics",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Business Intelligence Tools",
+          "name": "Business Intelligence Tools",
+          "num": "3"
+        }
+      ]
+    }
   },
   "pageData": {
     "title": "Why Choose Comfygen for Blockchain Consulting Services",
@@ -649,121 +588,221 @@
   },
 
 
+  "EmergingData": {
+    "heading": "Different Blockchain Development Platforms Where We Work",
+    "description": "Our advisors specialize in a wide range of popular Layer-1 and Layer-2 blockchain platforms, ensuring businesses leverage the right technology for their needs. As leading Blockchain Consulting Firms, we provide in-depth expertise in each platform’s unique features, capabilities, and limitations, offering strategic guidance to help you choose the most efficient and scalable blockchain solution for your specific use case.",
+    "Emerging": [
+      {
+        "num": "1",
+        "img": "https://www.comfygen.com/img/ethereum-blockchain-development-company.webp",
+        "url": "/ethereum-blockchain-development-company",
+        "title": "Ethereum Blockchain Development Services",
+        "decs": "Build secure and scalable dApps with  <a href='/ethereum-blockchain-development-company' class='font-bold hover:underline'>Ethereum Blockchain Development Service</a> smart contract capabilities, ensuring efficiency and transparency."
+      },
+      {
+        "num": "2",
+        "img": "https://www.comfygen.com/img/hyperledger-blockchain-development-company.webp",
+        "url": "/hyperledger-blockchain-development",
+        "title": "Hyperledger Blockchain Development Services",
+        "decs": "Develop secure and scalable enterprise blockchain solutions with <a href='/hyperledger-blockchain-development' class='font-bold hover:underline'> Hyperledger Blockchain Development </a> permission network for enhanced transparency and efficiency."
+      },
+      {
+        "num": "3",
+        "img": "https://www.comfygen.com/img/hyperledger-blockchain-development-company.webp",
+        "url": "",
+        "title": "Corda Blockchain Development Services",
+        "decs": "Build private and secure blockchain solutions with Corda, ensuring efficient transactions and seamless business integrations."
+      },
+      {
+        "num": "4",
+        "img": "https://www.comfygen.com/img/substrate-blockchain-development-company.webp",
+        "url": "/substrate-development-company",
+        "title": "Substrate Blockchain Development Services",
+        "decs": "Leverage <a href='/substrate-development-company' class='font-bold hover:underline'>Substrate Development Services </a> to build custom, scalable, and high-performance blockchain networks tailored to your business needs."
+      },
+      {
+        "num": "5",
+        "img": "https://www.comfygen.com/img/avalanche-blockchain-development-company.webp",
+        "url": "",
+        "title": "Avalanche Blockchain Development Services",
+        "decs": "Develop fast, scalable, and secure blockchain solutions with Avalanche, ensuring high throughput and low latency for decentralized applications."
+      },
+      {
+        "num": "6",
+        "img": "https://www.comfygen.com/img/polka-dots-blockchain-development-company.webp",
+        "url": "",
+        "title": "Polkadot Blockchain Development Services",
+        "decs": "Build interoperable and scalable blockchain solutions with Polkadot, enabling seamless cross-chain connectivity and enhanced security."
+      },
+      {
+        "num": "7",
+        "img": "https://www.comfygen.com/img/near-protocol-blockchain-development-company.webp",
+        "url": "",
+        "title": "NEAR Protocol Blockchain Development Services",
+        "decs": "Develop scalable and developer-friendly blockchain Consulting solutions with NEAR Protocol, ensuring high performance, low fees, and seamless user experience."
+      },
+      {
+        "num": "8",
+        "img": "https://www.comfygen.com/img/hedera-blockchain-development-company.webp",
+        "url": "",
+        "title": "Hedera Blockchain Development Services",
+        "decs": "Leverage Hedera Hashgraph’s fast, secure, and energy-efficient network to build high-performance decentralized applications (dApps) with low latency and predictable fees."
+      },
+      {
+        "num": "9",
+        "img": "https://www.comfygen.com/img/tezos-blockchain-development-company.webp",
+        "url": "",
+        "title": "Tezos Blockchain Development Services",
+        "decs": "Build secure, self-upgradable, and efficient blockchain solutions with Tezos, ensuring seamless smart contract execution and on-chain governance."
+      }
+    ]
+  },
 
-"Process": [
+  "HireNFTDeveloper": {
+    "heading": "Hire Blockchain Consultants at Comfygen",
+    "text": "Unlock the potential of blockchain technology with our expert blockchain consultants. At Comfygen, we offer tailored consulting services to help you navigate the complexities of blockchain adoption. Our consultants bring years of industry experience and in-depth knowledge to design custom solutions that align with your business goals. Whether you're looking to implement smart contracts, develop decentralized applications, or integrate blockchain into your existing infrastructure, our team is here to guide you through every step of the process. <a class='font-semibold' href='/hire-blockchain-developer'>Hire blockchain consultants</a>  from Comfygen and transform your business today.",
+    "text1": "",
+    "text2": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Industry Expertise",
+      "Tailored Blockchain Strategies",
+      "<a class='font-semibold' href='/smart-contract-development'>Smart Contract Development</a>",
+      "End-to-End Blockchain Integration",
+      "Comprehensive Support",
+      "Scalable Solutions"
+    ]
+  },
+ "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+         "Source":"Google",
+        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
+  "Frequently": [
     {
-      "title": "Research and Analysis",
-      "description":
-        "We analyze your business model, goals, and industry landscape to identify where blockchain can add real value. This sets the foundation for a successful blockchain strategy."
+      "num": "1",
+      "title": "What is Blockchain Consulting? ",
+      "desc": "Blockchain consulting is like having a tech-savvy advisor for your business who helps you use cutting-edge blockchain app development technology. We analyze your business thoroughly and provide services for various blockchain developments, like NFT blockchain app development, bridges blockchain app development, DEX blockchain app development, metaverse blockchain app development, blockchain tokens app development, and dApps blockchain app development. Our experts are versatile, using different blockchain technologies such as Ethereum blockchain app development, Hyperledger blockchain app development, EVM blockchain app development, Solidity blockchain app development, Cosmos blockchain app development, or Substrate blockchain app development. With our guidance, you can create a customized blockchain app development protocol that suits your business needs. Our consultation not only makes your business operations smoother but also ensures top-notch security and a boost in return on investment (ROI)."
     },
     {
-      "title": "Assessment",
-      "description":
-        "We evaluate your existing systems and workflows for blockchain readiness, ensuring feasibility, performance potential, and ROI before development begins."
+      "num": "2",
+      "title": "What Are the Responsibilities of Blockchain Consultants?",
+      "desc": "Imagine having a guide to enhance your business using decentralized ledger technology. That's what a blockchain consultant does. They assess your current operations, explore how blockchain can benefit you, and guide you toward a system that adds value to your company. At Comfygen, our blockchain consulting process involves project ideation, feasibility checks, proof-of-concept execution, workflow outlining, documentation, and development stages once there's a mutual agreement."
     },
     {
-      "title": "Project Definition",
-      "description":
-        "Clear goals, timelines, and technical frameworks are defined to align stakeholders and ensure a focused, efficient execution process."
+      "num": "3",
+      "title": "Which is the Right Blockchain Platform for My Decentralized Solutions?",
+      "desc": "Choosing the right blockchain app development platform is crucial before building a solution for your business. Only an experienced blockchain expert can help you make the ideal choice. They consider factors like the privacy level needed, scalability requirements, the type of blockchain app development (public blockchain app development, private blockchain app development, or permission), consensus algorithm, and smart contract blockchain app development functionality."
     },
     {
-      "title": "Proof of Concept (PoC)",
-      "description":
-        "We develop a working PoC or MVP to test your blockchain idea in a real-world scenario and validate its effectiveness before full-scale implementation."
+      "num": "4",
+      "title": "How Does Blockchain Help in Business?",
+      "desc": "Blockchain benefits various industries such as supply chains blockchain app development, healthcare blockchain app development, government blockchain app development, and financial blockchain app development services. Startups and big companies are exploring ways to use blockchain app development to transform traditional business models. Our blockchain app development consulting team can show you how blockchain app development brings transparency, traceability, security, and efficiency to your business."
     },
     {
-      "title": "Integration",
-      "description":
-        "We ensure seamless integration of blockchain with your existing tech stack, APIs, databases, and enterprise tools—while maintaining security and compliance."
+      "num": "5",
+      "title": "What is a Blockchain App Development Consultation Company?",
+      "desc": "When a group of blockchain-savvy experts, including blockchain developers, technical architects, and blockchain app development insights, come together to provide feasible solutions for your blockchain app development needs, they are known as a blockchain app development consulting company."
     },
     {
-      "title": "Agile Development",
-      "description":
-        "Using agile methods, we build your blockchain solution in sprints—ensuring speed, flexibility, and collaboration throughout the process."
-    },
-    {
-      "title": "Post-Implementation Support",
-      "description":
-        "We provide continuous monitoring, updates, and optimization to keep your blockchain solution secure, scalable, and aligned with evolving needs."
+      "num": "6",
+      "title": "Do We Offer Blockchain App Development Consulting for Different Industries?",
+      "desc": "Absolutely! As a top-notch blockchain app development consulting company, Comfygen provides consulting and development services for various industries like finance blockchain app development, healthcare blockchain app development, retail blockchain app development, supply chain blockchain app development, real estate blockchain app development, energy blockchain app development, and even the government blockchain app development sector. Contact our team to learn more about our blockchain app development services."
     }
   ],
-
-
-  "technologyData": [
-    {
-      "img": "<IconBulb stroke={1.5} className='w-12 h-12' />",
-      "title": "Strategic Planning for Sustainable Growth",
-      "desc": "Blockchain consultants at Comfygen work with you to develop a comprehensive roadmap that aligns blockchain adoption with your long-term business vision. We focus on maximizing ROI while preparing your business for future scalability and evolving market demands. The result? A clear, actionable plan to succeed in the blockchain-driven economy."
-    },
-    {
-      "img": "<IconPigMoney stroke={1.5} className='w-12 h-12'/>",
-      "title": "Cost Efficiency with Expert Guidance",
-      "desc": "Our consultants identify the most efficient blockchain solutions tailored to your business, ensuring cost-effective investments. By leveraging cutting-edge technologies and avoiding common pitfalls, we help you streamline operations and minimize unnecessary expenses, allowing you to focus resources where they truly matter."
-    },
-    {
-      "img": "<IconSettingsAutomation stroke={1.5} className='w-12 h-12' />",
-      "title": "Enhance Operational Efficiency",
-      "desc": "Integrating blockchain automates workflows, reduces manual errors, and enhances productivity across your organization. Our team ensures that your business achieves significant time savings, improved data integrity, and increased transparency—all leading to more efficient operations and a more resilient business model."
-    },
-    {
-      "img": "<IconRocket stroke={1.5} className='w-12 h-12'/>",
-      "title": "Unlock Innovative Revenue Streams",
-      "desc": "Blockchain consulting opens up new business models, such as tokenization and decentralized finance (DeFi) solutions, which can create fresh sources of income. We guide you in capitalizing on emerging opportunities, ensuring your business is poised to thrive with blockchain-powered innovations that drive sustainable growth."
-    },
-    {
-      "img": "<IconScaleOutline stroke={1.5} className='w-12 h-12'/>",
-      "title": "Ensure Full Regulatory Compliance",
-      "desc": "Navigating the complex regulatory landscape of blockchain is tricky, but with expert consulting, you can rest assured that your solutions comply with all necessary legal requirements. We make sure your blockchain system adheres to industry regulations, reducing risks, penalties, and potential compliance issues."
-    },
-    {
-      "img": "<IconUserStar stroke={1.5} className='w-12 h-12' />",
-      "title": "Deliver Exceptional Customer Experiences",
-      "desc": "Blockchain's transparency and security enhance the overall user experience, providing your customers with greater trust and reliability. Our consultants help you create seamless, user-friendly solutions that improve customer loyalty, satisfaction, and engagement, elevating your brand’s reputation in the market."
-    },
-    {
-      "img": "<IconTrendingUp stroke={1.5} className='w-12 h-12' />",
-      "title": "Scalability & Future-Readiness",
-      "desc": "We ensure your blockchain solutions are built for the future, with scalability and adaptability at the core. As your business grows, your blockchain infrastructure will evolve with flexible solutions that can handle increased transaction volume, more complex operations, and changing market conditions."
-    },
-    {
-      "img": "<IconLockAccess stroke={1.5} className='w-12 h-12' />",
-      "title": "Empower Data Ownership & Security",
-      "desc": "Blockchain gives businesses more control over their data by offering immutable records and decentralized storage. Our consulting services help design systems that prioritize data security, privacy, and ownership, allowing your organization to safeguard sensitive information while maintaining transparency."
-    },
-    {
-      "img": " <IconChartBar stroke={1.5} className='w-12 h-12' />",
-      "title": "Accelerate Decision-Making with Blockchain",
-      "desc": "By implementing transparent and efficient blockchain systems, we eliminate bottlenecks in your operations. With real-time data access and verified transactions, decision-making becomes faster, more informed, and more reliable, giving you a competitive edge in your industry."
-    }
-  ],
-  "testimonialData": [
-    {
-      "text": "“Comfygen’s blockchain consulting services were instrumental in helping us define a clear roadmap for our decentralized finance platform. Their strategic insights and market expertise gave us a strong foundation for growth.”",
-      "name": "Liam O’Connor",
-      "title": "Ireland"
-    },
-    {
-      "text": "“We approached Comfygen for blockchain consulting and were impressed by their deep technical knowledge and business-focused approach. Their team helped us identify the right blockchain model and architecture for our retail ecosystem.”",
-      "name": "Sneha Kulkarni",
-      "title": "India"
-    },
-    {
-      "text": "“Thanks to Comfygen's consulting services, we successfully transitioned from a centralized system to a hybrid blockchain model. Their guidance was clear, actionable, and perfectly aligned with our goals.”",
-      "name": "Carlos Méndez",
-      "title": "Spain"
-    },
-    {
-      "text": "“Comfygen’s expert consulting helped us avoid costly mistakes in the early stages of our blockchain startup. Their strategic guidance on tokenomics and compliance made a real difference.”",
-      "name": "Emma Tanaka",
-      "title": "Japan"
-    },
-    {
-      "text": "“Their blockchain consultants gave us clarity on integrating distributed ledger technology into our banking processes. The sessions were insightful, and their team was highly professional throughout.”",
-      "name": "Rajeev Menon",
-      "title": "Nepal"
-    }
-  ],
-  "jsonLdData": [
+ "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",

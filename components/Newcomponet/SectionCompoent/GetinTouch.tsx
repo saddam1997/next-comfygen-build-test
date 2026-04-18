@@ -128,6 +128,7 @@ const Form = () => (
                   height={51}
                   width={50}
                   loading="lazy"
+                  className="h-12 w-12"
                 />
               </a>
             </button>
@@ -188,7 +189,7 @@ const Form = () => (
                   alt={location.country}
                   width={50}
                   height={50}
-                  className="w-20 sm:w-24"
+                  className="w-20 h-auto sm:w-24"
                   loading="lazy"
                 />
               </div>

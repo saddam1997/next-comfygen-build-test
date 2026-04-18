@@ -2,383 +2,85 @@ import { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptotoken.json";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const NewSection = dynamic(
-  () => import("../../components/Newcomponet/comman/NewSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+import Features from "../../components/Features"
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+import InformationSection from "../../components/InformationSection"
+import ReviewCard from "../../components/ReviewCard";
+import Emerging from "../../components/Emerging";
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const TrendsSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+import TechStacks from "../../components/TechStacks";
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const CardGrid = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardGrid"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const CryptoTradingList = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CryptoTradingSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const CardListMinimal = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardListMinimal"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
   { ssr: true }
 );
 
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
+);
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 
-import {
-  IconArrowsLeftRight,
-  IconChartBar,
-  IconRobot,
-  IconAdjustmentsAlt,
-  IconChartInfographic,
-  IconReportAnalytics,
-  IconCloudComputing,
-  IconRocket,
-  IconBuildingBank,
-  IconSettings,
-  IconBriefcase,
-  IconShieldCheck,
-  IconArrowsExchange2,
-} from "@tabler/icons-react";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-import HeroSection from "../../components/HeroSection";
-import ReviewCard from "../../components/ReviewCard";
+const CardListMinimal = dynamic(
+  () => import("./components/CardListMinimal"),
+  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+);
 
 
 
-const Processs = [
-  {
-    title: "Requirement Analysis & Strategy Planning",
-    description:
-      "We begin by understanding your trading goals, preferred strategies, supported exchanges, risk management preferences, and automation needs. This helps us design a tailored trading bot solution that aligns with your business objectives.",
-  },
-  {
-    title: "UI/UX Design & System Architecture",
-    description:
-      "Our team creates an intuitive dashboard and bot interface, ensuring easy navigation and control. Simultaneously, we architect the backend structure, focusing on scalability, security, and real-time data processing.",
-  },
-  {
-    title: "Development & Smart Algorithm Integration",
-    description:
-      "Using advanced AI, ML models, and custom trading strategies, we develop the bot with features such as:",
-  },
-  {
-    title: "Testing & Performance Optimization",
-    description:
-      "Before deployment, our QA experts rigorously test the bot in real-world trading scenarios to:",
-  },
-  {
-    title: "Deployment & Exchange Integration",
-    description:
-      "We integrate the bot with your preferred <a class='text-blue-600' href='/cryptocurrency-exchange-development'>crypto exchanges</a>  (Binance, Kraken, Coinbase, etc.), ensuring secure API connectivity and real-time trading execution.",
-  },
-  {
-    title: "Continuous Monitoring & Upgrades",
-    description:
-      "Our work doesn’t stop at deployment! We offer 24/7 monitoring, performance tracking, and periodic updates to ensure the bot remains highly efficient, secure, and aligned with market trends.",
-  },
-  {
-    title: "Community Engagement and Promotion",
-    description:
-      "We help you engage with the crypto community through strategic marketing and promotional activities to attract traders, build trust, and boost platform adoption.",
-  },
-];
 
-
-
-const CardGridData = [
-  {
-    title: "Market-Making Bots",
-    desc: "Place simultaneous buy and sell orders to profit from the spread while maintaining liquidity on the exchange.",
-    img: <IconArrowsLeftRight stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Technical Analysis Bots",
-    desc: "Use indicators like MACD, RSI, and Bollinger Bands to make decisions based on technical chart patterns.",
-    img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "AI & Machine Learning Bots",
-    desc: "Analyze historical data, market sentiment, and real-time patterns to make predictive, automated trades.",
-    img: <IconRobot stroke={1.5} className="w-12 h-12" />,
-  },
-  {
-    title: "Portfolio Rebalancing Bots",
-    desc: "Automatically adjust your asset allocation to maintain your desired investment strategy and risk levels.",
-    img: <IconAdjustmentsAlt stroke={1.5} className="w-12 h-12" />,
-  },
-];
-
-const technologyData = [
-  {
-    img: <IconChartInfographic stroke={1.5} className="w-12 h-12" />,
-    title: "Real-Time Market Data Integration",
-    desc: "Our bots are equipped with real-time data feeds, ensuring that traders get instant price updates, liquidity insights, and market trends from multiple exchanges. This helps in making informed trading decisions and reducing slippage risks.",
-  },
-  {
-    img: <IconReportAnalytics stroke={1.5} className="w-12 h-12" />,
-    title: "Performance Monitoring & Reporting",
-    desc: "We integrate advanced analytics and reporting tools that provide a detailed breakdown of trading performance, profit-loss tracking, and strategy efficiency. This enables traders to optimize strategies and improve profitability over time.",
-  },
-  {
-    img: <IconCloudComputing stroke={1.5} className="w-12 h-12" />,
-    title: "Bot as a Service (BaaS)",
-    desc: "For businesses and traders looking for a hassle-free trading solution, our Bot as a Service (BaaS) offers cloud-based trading bots that run 24/7 without requiring extensive infrastructure. These bots are scalable, customizable, and require minimal maintenance.",
-  },
-  {
-    img: <IconRocket stroke={1.5} className="w-12 h-12" />,
-    title: "Seamless Order Execution",
-    desc: "Our bots ensure instant trade execution with minimal latency, reducing the risk of market fluctuations affecting trade profits. By optimizing order placement and execution speeds, traders can secure the best possible prices on their transactions.",
-  },
-  {
-    img: <IconBuildingBank stroke={1.5} className="w-12 h-12" />,
-    title: "Integration with Crypto Exchanges",
-    desc: "We provide multi-exchange support, allowing seamless integration with leading platforms like Binance, Coinbase, Kraken, KuCoin, and more. This enables traders to operate on multiple exchanges simultaneously and enhance liquidity management.",
-  },
-  {
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    title: "Customizable Trading Strategies",
-    desc: "Our development team specializes in creating tailor-made trading strategies, including scalping, arbitrage, grid trading, AI-powered trading, and more. Traders can customize these bots based on risk appetite, market trends, and trading goals.",
-  },
-  {
-    img: <IconBriefcase stroke={1.5} className="w-12 h-12" />,
-    title: "Comprehensive Portfolio Management",
-    desc: "We integrate portfolio management features that allow traders to automate asset tracking, diversify investments, and rebalance portfolios efficiently. This ensures an optimized allocation of assets for better risk management and profitability.",
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Advanced Risk Management",
-    desc: "Security is our priority. Our bots include stop-loss, take-profit, AI-driven risk analysis, and automated capital protection features to minimize risks and safeguard trader investments.",
-  },
-  {
-    img: <IconArrowsExchange2 stroke={1.5} className="w-12 h-12" />,
-    title: "Market-Making Bot Development",
-    desc: "For businesses and exchanges looking to enhance liquidity, we provide custom-built market-making bots that ensure optimal spreads, volume control, and liquidity management to create a stable trading environment.",
-  },
-];
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const jsonLdData = [
-    
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Custom Crypto Trading Bot Development Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Build powerful AI-driven crypto trading bots with Comfygen. Our bots automate trading, reduce risk, and execute across Binance, Coinbase, and Kraken with unmatched precision and speed.",
-      url: "https://www.comfygen.com/crypto-trading-bot-development",
-      mainEntityOfPage:
-        "https://www.comfygen.com/crypto-trading-bot-development",
-      areaServed: "Global",
-      serviceType: [
-        "DCA Bot Development",
-        "crypto trading bot development",
-        "AI crypto trading bot development",
-        "Sandwich Bot Development",
-        "Sniper Bot Development",
-        "Coin Lending Bot Development",
-        "Grid Bot Development",
-        "Triangular Arbitrage Bot Development",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
  
-  
-   
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Coin And Tokens Development",
-        "item": "https://www.comfygen.com/crypto-trading-bot-development"
-      }]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What are some of the best crypto trading bot development companies in India?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There are several reputable crypto trading bot development companies in India known for their expertise in creating automated trading bots. Some of the top names include:  Comfygen, TechGropse, Appsrhino, Osiz Technologies, Blockchain App Factory"
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do I create a crypto trading bot in 2025?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Creating a crypto trading bot in 2025 involves several steps:  Define your objectives: Decide whether you want to build a bot for scalping, arbitrage, market-making, or other trading strategies. Choose a programming language: Popular languages for bot development include Python, JavaScript, and C++. Select a trading platform: Integrate your bot with exchanges like Binance, Coinbase, or Kraken via their APIs. Build trading strategies: Develop algorithms that can analyze market trends, execute trades, and optimize profits. Implement risk management features: Ensure your bot includes stop-loss, take-profit, and other risk mitigation strategies. Test and optimize: Backtest your bot on historical data, refine strategies, and ensure security."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which crypto trading bot is good for traders?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best crypto trading bot depends on your trading goals and risk tolerance. Some popular and reliable bots include:  3Commas – Offers automated trading with a variety of strategies Cryptohopper – Known for its easy-to-use interface and backtesting features. HaasOnline – Ideal for experienced traders looking for advanced features. Quadency – Provides a platform with pre-configured strategies. Zignaly – A good choice for copy trading and automated strategies. Each bot has unique features, so it’s important to select one that aligns with your specific needs."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "What is the cost of developing a crypto trading bot in India?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost to develop a crypto trading bot in India varies based on complexity and features. Generally, it ranges from:  Basic bots: ₹50,000 – ₹1,50,000 Advanced bots with AI features: ₹2,00,000 – ₹5,00,000 Factors affecting cost include: Bot complexity (basic vs. AI-driven) Integration with multiple exchanges Customization and strategy development Testing, deployment, and ongoing support"
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Are crypto bots legal in India?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Crypto trading bots are not inherently illegal in India. However, there is no specific legislation regarding their use. The legal status of crypto-related activities in India is still evolving. It is important to ensure compliance with existing regulations, such as those related to taxation and anti-money laundering. It’s recommended to consult with a legal expert before deploying a trading bot in India."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which is the best crypto trading bot development company in 2025?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best crypto trading bot development company in 2025 would be one that offers:  Expertise in AI and machine learning A proven track record of building successful bots Customization options to suit your trading needs Strong customer support and post-development services Regulatory compliance and security measures Companies like Comfygen are at the forefront of developing high-performance crypto trading bots using cutting-edge technology."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Are crypto bots risky for traders?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "While crypto bots can be highly effective, they do come with certain risks:  Market volatility: Bots can execute trades quickly, but sudden market swings can lead to significant losses. Over-optimization: Bots that are overly optimized for past data may fail to perform in real-time market conditions. Security risks: If not properly secured, bots can be vulnerable to hacking, leading to loss of funds. Dependence on strategy: Poor strategy can result in inefficient trading and losses. To minimize risk, ensure the bot is well-configured, and incorporate proper risk management measures."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which AI platform is best for crypto trading?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best AI for crypto trading depends on your needs and trading strategies. Some popular AI-based platforms include:  TensorFlow – An open-source machine learning framework suitable for custom AI models. Keras – A high-level neural networks API, ideal for beginners in AI development. AI-driven bots like 3Commas or Cryptohopper – These platforms offer AI-enhanced features for optimizing trades and improving decision-making. MetaTrader 4/5 with AI tools – Offers AI-driven tools for backtesting and trade automation. Choosing the right AI depends on your expertise, requirements, and resources."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "What is the best crypto trading bot?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best crypto trading bot for you depends on factors such as:  Ease of use: If you’re new to trading, bots like 3Commas or Cryptohopper are great choices. Advanced features: For seasoned traders, HaasOnline and Quadency offer sophisticated features. Performance & security: Look for bots with strong security protocols and high reliability. Customization: Zignaly and TradeSanta allow for a more tailored trading experience. Ultimately, choose a bot based on the platform, ease of use, support, and features that match your trading style."
-        }
-
-
-      }],
-    },
-  ];
 
   return (
     <>
       <Head>
         <title>
-         AI-Powered Crypto Trading Bot Development Company
+          AI-Powered Crypto Trading Bot Development Company
 
         </title>
         <meta
@@ -485,215 +187,30 @@ export default function Ecommerce(props: any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData),
+            __html: JSON.stringify(JSON_DATA.jsonLdData),
           }}
         />
       </Head>
-      <Header />
-
-      <div className="overflow-hidden xl:pt-16">
-        <HeroSection
-          heading="High Performing Crypto Trading Bot Development Company"
-          subhead="Automate Your Crypto Trading with AI-Powered Trading Bot"
-          ptag="Comfygen is a trusted AI crypto trading bot development company specializing in developing AI integrated crypto trading bot development solutions that deliver precision, efficiency, and consistent profitability in volatile cryptocurrency markets. Comfygen’s custom crypto trading bot development services leverage advanced machine learning algorithms, predictive analytics, and real-time market data to execute high-frequency trades with accuracy while minimizing risks and maximizing returns."
-          ptag1="Our AI-powered cryptocurrency trading bots development solution helps startup crypto exchanges, day traders, institutional investors, or enterprise-level trading firms  to scale dynamically, adapt to market conditions, and provide you with a decisive competitive edge in the digital asset trading landscape."
-          li="Real-Time Market Data Analysis & Prediction"
-          li1="Advanced Risk Management & Security Protocols"
-          li2="Multi-Currency & Multi-Exchange Support"
-          li3="AI-Powered Trading Strategies"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-hero1.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Crypto Trading Bot Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen is a leading Crypto Trading Bot Development Company. We offer custom crypto trading bot development services designed to enhance trading efficiency, minimize risks, and maximize profits. Our AI-powered crypto trading bot development solutions cater to individual traders, crypto startups, and exchanges, enabling automated high-frequency trading.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
-        <AboutSection
-          title=""
-          heading="How Our Developed AI-Based Crypto Trading Bots Can Benefit Your Business?"
-          description1="In the fast-paced world of cryptocurrency trading, using AI-powered crypto trading is the key to profitability. At Comfygen, we specialize in AI-based crypto trading bot development, helping businesses streamline their trading strategies with AI-powered, high-frequency trading solutions. Our AI crypto trading bot development solutions execute trades in real time, ensuring maximum efficiency and profit generation."
-          points={[
-            "AI Crypto Trading Bot Development",
-            "Automated Risk Management",
-            "High-Frequency Trading (HFT) Capabilities",
-            "Custom Crypto Trading Bot Development",
-            "AI-Driven Market Analysis",
-            "Portfolio Optimization & Performance Tracking",
-
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-        <CryptoTradingList
-          heading="Most Reliable Crypto Trading Bots in 2025"
-          subheading="As cryptocurrency markets evolve, automated trading bots have become essential for traders looking to optimize profits, manage risks, and execute strategies efficiently. These AI-powered bots enable seamless trading across multiple exchanges with real-time market insights. Here are the most reliable crypto trading bots in 2025:"
-          tradingData={JSON_DATA.CryptoTrading}
-        />
-        {/* <ContactFromCenter /> */}
-
-
-        <SolutionSec
-          heading="Cryptocurrency Trading Bot Development Solutions"
-          subheading="At Comfygen, we offer cutting-edge cryptocurrency trading bot development solutions designed to optimize trading efficiency, enhance profitability, and minimize risks. Our advanced bots integrate AI-driven algorithms, real-time market analysis, and automated trading strategies to give traders a competitive edge."
-          techData={technologyData}
-        />
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-1">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End AI-Powered Crypto Trading Bot Development Process
-              </h2>
-              <p className="text-center">
-                At Comfygen, we follow a structured and efficient crypto trading
-                bot development process to ensure seamless automation, high
-                performance, and robust security. Our approach is designed to
-                meet the unique trading needs of businesses and individual
-                traders, ensuring precision, scalability, and profitability.
-              </p>
-            </div>
-            <ProcessSec processSlides={Processs} />
-          </div>
-        </section>
-        <TrendsSection
-          heading="Benefits of Choosing Our AI-Based Crypto Trading Bot Development Services"
-          subtitle="At Comfygen, we offer cutting-edge crypto trading bot development services to boost your trading efficiency, minimize risks, and maximize profits. As a leading Crypto Trading Bot Development Company, we deliver tailored automated crypto trading solutions for traders, startups, and exchanges, helping you stay ahead with AI-powered, high-frequency trading bots."
-          trends={JSON_DATA.Emerging}
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/crypto-trading-bot-development-new/crypto-trading-bot-development-feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Portfolio of Crypto Trading Bot Development Solution"
-            description="At Comfygen, we developed a high-performance AI-powered crypto trading bot designed to automate trading strategies, optimize market opportunities, and enhance profitability. Our solution seamlessly integrates with top cryptocurrency exchanges like Binance, Kraken, and Coinbase, ensuring real-time trade execution with minimal latency. Built with advanced AI algorithms and risk management tools, our bot enables traders to make data-driven decisions, automate orders, and maximize trading efficiency."
-          />
-        </section>
-
-
-
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CardGrid
-          heading="Types of Crypto Trading Bots We Develop"
-          subheading="At Comfygen, we offer a comprehensive range of <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/how-to-build-a-crypto-trading-bot/'>crypto trading bots</a> tailored to different trading strategies and user goals. Whether you're a day trader, institutional investor, or beginner, our bots are designed for maximum efficiency, speed, and profitability."
-          techData={CardGridData}
-        />
-
-        <TechStack
-          title="Our Crypto Trading Bot Development Technology Stack"
-          description="Got it! Here’s a specific tech stack for Crypto Trading Bot Development focusing on key components"
-        />
-
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Use Cases & Industry Applications of Crypto Trading Bots
-                </h2>
-                <p>
-                  Explore how Comfygen’s custom crypto trading bot development
-                  services cater to various user segments in the crypto trading
-                  ecosystem. Our solutions are built to serve individual
-                  traders, exchanges, fintech startups, and institutional
-                  clients with tailored automation strategies.
-                </p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left md:grid-cols-2 grid-cols-1">
-                {JSON_DATA.IndustryApplications.map((elem, index: any) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div key={index} className="border-2 p-8 space-y-2 bg-white border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px] flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">
-                        {title}
-                      </h3>
-                      <p dangerouslySetInnerHTML={{ __html: decs }}></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <CardListMinimal
-          heading="Types of Exchanges Supported by Our Developed Trading Bots"
-          subheading="Our trading bots support a wide array of both <a class='text-blue-500 font-semibold' href='/centralized-crypto-exchange-development'>centralized</a> and <a class='text-blue-500 font-semibold' href='/decentralized-exchange-development'>decentralized cryptocurrency exchanges</a>, ensuring seamless integration and performance across platforms."
-          techData={JSON_DATA.cardData}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Our Crypto Trading Bot Developer"
-          text="Looking for a professional crypto trading bot developer to automate your trading strategies? At Comfygen, we offer expert developers who specialize in building custom, AI-powered, and high-frequency trading bots tailored to your business needs."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Custom Bot Development: Tailored bots for arbitrage, grid trading, AI strategies, and more.",
-            "Exchange Integration: Seamlessly connect with Binance, Kraken, Coinbase, KuCoin, and more.",
-            "AI & Machine Learning: Smarter trade execution with real-time market analysis and predictive algorithms.",
-            "High-Performance Bots: Lightning-fast trade execution with low-latency strategies.",
-            "Robust Security: Secure APIs, encryption, and KYC/AML compliance for safe trading.",
-            "Scalable & Cost-Effective: Solutions for startups, enterprises, and crypto exchanges.",
-            "24/7 Support: Dedicated technical assistance, updates, and performance optimization.",
-          ]}
-        />
-
-
-
-
-
-
-        <ClientStories />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-{/* 
-        <ClientTestimonials
-          heading="What Our Clients Say"
-          testimonials={JSON_DATA.testimonials}
-        /> */}
-
-        <Faq faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
-      </div>
+      <Navbar />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.NFTBenefits} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <Solution techData={JSON_DATA.Trading} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Solution techData={JSON_DATA.CryptoTrading} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <Solution techData={JSON_DATA.UseCases} />
+      <CardListMinimal techData={JSON_DATA.Exchanges} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
     </>
   );
 }

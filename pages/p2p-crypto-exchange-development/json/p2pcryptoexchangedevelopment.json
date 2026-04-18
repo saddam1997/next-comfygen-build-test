@@ -451,12 +451,7 @@
   "heading": "Our P2P Crypto Exchange development Based Portfolio",
   "description": "At Comfygen, we take pride in delivering cutting-edge P2P crypto exchange development solutions that empower businesses worldwide. Our portfolio showcases a diverse range of decentralized platforms designed for seamless and secure crypto trading. From feature-rich peer-to-peer exchanges to scalable crypto trading platforms, we have successfully launched numerous projects tailored to our client's unique requirements.",
   "portfolio": [
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
-    },
+
     {
       "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
       "title": "NASDAC Crypto Coin",
@@ -654,12 +649,7 @@
   },
 
   "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      "link": "/portfolio/peer-to-peer-blockchain-based-payment-system"
-    },
+   
     {
       "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
       "title": "NASDAC Crypto Coin",

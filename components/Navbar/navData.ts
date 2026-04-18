@@ -229,11 +229,11 @@ export const Healthcare = [
     name: "Medicine Delivery App Development ",
     url: "/medicine-delivery-app-development",
   },
-  {
-    num: "4",
-    name: "Medicine Ordering App Development ",
-    url: "/medicine-app-development",
-  },
+  // {
+  //   num: "4",
+  //   name: "Medicine Ordering App Development ",
+  //   url: "/medicine-app-development",
+  // },
   {
     num: "5",
     name: "Clinical App Development ",
@@ -981,50 +981,12 @@ export const cryptoDevelopment = [
     name: "OTC Crypto Exchange Development",
     url: "/otc-crypto-exchange-development",
   },
-  {
-    num: "11",
-    name: "Crypto NFT Exchange Development",
-    url: "/crypto-nft-exchange-development",
-  },
-
-  {
-    num: "12",
-    name: "Mobile Crypto Wallet Development",
-    url: "/mobile-crypto-wallet-development",
-  },
-  {
-    num: "13",
-    name: "Web3 Wallet Development",
-    url: "/web3-wallet-development",
-  },
-
+  
 
 ];
 
 
 export const cryptoDevelopment1 = [
-
-
-  {
-    num: "14",
-    name: " Crypto Derivatives Exchange Development",
-    url: "/crypto-derivatives-exchange-development",
-  },
-  {
-    num: "15",
-    name: "Margin Trading Exchange Development",
-    url: "/crypto-margin-trading-exchange-development",
-  },
-  {
-    num: "16",
-    name: "Crypto Exchange Admin Panel Development ",
-    url: "/crypto-exchange-admin-panel-development",
-  },
-  {
-    num: "17",
-    name: "Ai Crypto Exchange Development",
-    url: "/ai-crypto-exchange-development",
-  },
   {
     num: "18",
     name: "Crypto Payment Gateway Development",
@@ -1066,6 +1028,24 @@ export const cryptoDevelopment1 = [
     name: "Blockchain Wallet Development",
     url: "/blockchain-wallet-development",
   },
+
+  {
+    num: "11",
+    name: "Crypto NFT Exchange Development",
+    url: "/crypto-nft-exchange-development",
+  },
+
+  {
+    num: "12",
+    name: "Mobile Crypto Wallet Development",
+    url: "/mobile-crypto-wallet-development",
+  },
+  {
+    num: "13",
+    name: "Web3 Wallet Development",
+    url: "/web3-wallet-development",
+  },
+
 
 
 

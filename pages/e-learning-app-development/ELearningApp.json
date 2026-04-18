@@ -1,4 +1,226 @@
 {
+
+  "Herosection": {
+    "heading": "Best eLearning App Development Company in India & USA",
+    "subhead": "",
+    "isHome": false,
+    "ptag": "Comfygen is a leading eLearning app development company delivering custom online learning apps for schools, coaching centers, and corporate training. We integrate AI-driven learning, AR/VR classrooms, analytics, and secure scalable platforms to create interactive and future-ready EdTech solutions. Hire expert eLearning app developers to transform your learning ideas into reality.",
+    "ptag1": "",
+    "listItems": [
+      "AI-powered personalized learning experiences",
+      "AR/VR interactive classrooms & immersive content",
+      "Advanced analytics for student performance tracking",
+      "Secure, scalable, and feature-rich learning platforms"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Best eLearning App Development Company",
+    "bgImage": "https://www.comfygen.com/herosection/e-learning-app-development-hero-img.webp"
+  },
+
+  "ServicesData": {
+    "heading": "Our Comprehensive E-Learning App Development Services in India",
+    "description": "We're a leading eLearning app development company in India dedicated to providing the best eLearning app development services.",
+    "services": [
+      {
+        "title": "Custom E-Learning App Development",
+        "subtitle": "",
+        "description": "Comfygen is a prominent e-learning software development company that provides customized e-learning app development services to meet your unique educational requirements. E-learning mobile apps and web applications are designed by our expert E-learning mobile app development team to enhance the learning process.",
+        "features": [
+          "Customized to Your Needs",
+          "Scalable and Secure apps",
+          "Cross-Platform Compatibility"
+        ]
+      },
+      {
+        "title": "Language Learning Apps",
+        "subtitle": "",
+        "description": "As a reliable <a href='/ca/education-app-development-company' target='_blank' class='font-bold hover:underline'>education app development company</a>  in India, We provide language learning app development services that combine fun, interactive features, and advanced technology to help learners master new languages with ease. ",
+        "features": [
+          "Interactive Lessons",
+          "Multi-Language Support",
+          "AI & Voice Recognition"
+        ]
+      },
+      {
+        "title": "On-Demand E-Learning App Development",
+        "subtitle": "",
+        "description": "Comfygen Technologies is among the top eLearning application development agencies in India, providing on-demand e-learning app development solutions with the flexibility to learn anytime, anywhere. With real-time content access and personalized learning paths, we create intuitive, feature-rich apps that adapt to diverse educational needs.",
+        "features": [
+          "Instant Access to Courses",
+          "Flexible Payment Integration",
+          "Personalized Learning Paths"
+        ]
+      },
+      {
+        "title": "School Apps Development",
+        "subtitle": "",
+        "description": "As a prominent eLearning mobile app development firm in India and the USA, we specialize in creating software for schools and institutions with the tools to enhance communication, streamline administration, and improve student engagement.",
+        "features": [
+          "Real-Time Communication",
+          "Attendance and Grade Management",
+          "Event & Timetable Integration"
+        ]
+      },
+      {
+        "title": "Online Training App Development",
+        "subtitle": "",
+        "description": "Comfygen, an online eLearning app development company in India, provides online training app development services in India for businesses and trainers, providing a platform for corporate learning, skills development, and employee training. Our developed e-learning apps are built to drive engagement and deliver measurable results.",
+        "features": [
+          "Interactive Learning Modules",
+          "Performance Analytics",
+          "Scalable Training Solutions"
+        ]
+      },
+      {
+        "title": "App Support and Maintenance",
+        "subtitle": "",
+        "description": "We are a top <a href='/mobile-app-development' target='_blank' class='hover:underline font-bold'>mobile app development company</a> in India and the USA that provides comprehensive app support and maintenance services to ensure user e-learning apps remain secure, up-to-date, and optimized. Our dedicated mobile app team works proactively to maintain the highest levels of performance and security for the user app.",
+        "features": [
+          "Regular Updates & Bug Fixes",
+          "Enhanced Security",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "title": "Learning Management System (LMS) Development",
+        "subtitle": "",
+        "description": "We develop secure and scalable Learning Management Systems (LMS) that simplify online education and corporate learning. Our custom LMS apps include advanced tools that improve teaching and help track student progress in real time.",
+        "features": [
+          "Easy course creation and management",
+          "Progress tracking & analytics",
+          "Multi-device compatibility"
+        ]
+      },
+      {
+        "title": "Online Course App Development",
+        "subtitle": "",
+        "description": "Launch your own <a href='https://www.comfygen.com/blog/cost-to-build-an-elearning-app-like-udemy/' class='underline font-semibold'>online course platform like Udemy</a> or Coursera. Our online course app development services help educators and institutes reach more learners with interactive content and seamless learning experiences.",
+        "features": [
+          "Video lectures & quizzes",
+          "Secure payment integration",
+          "Course rating & feedback",
+          "AI-based content suggestions"
+        ]
+      },
+      {
+        "title": "Education Portal Development",
+        "subtitle": "",
+        "description": "We develop advanced education portals that manage teaching, learning, and administration—all in one place. Designed for institutes, government programs, and skill development organizations.",
+        "features": [
+          "Digital library & content management",
+          "Enrollment & attendance management",
+          "Exams, tests & grading tools",
+          "Role-based access for users"
+        ]
+      },
+      {
+        "title": "White-label EdTech App Solutions",
+        "subtitle": "",
+        "description": "Start your online education business faster with our <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label eLearning mobile app development solutions</a>. Completely customizable to match your brand and business needs—saving time and development cost.",
+        "features": [
+          "Ready-to-launch platform",
+          "Branding customization",
+          "Scalable & flexible structure",
+          "Fast deployment"
+        ]
+      },
+      {
+        "title": "Exam Preparation App Development",
+        "subtitle": "",
+        "description": "We build exam preparation apps that help students practice, learn, and perform better in competitive exams. Our <a href='https://www.comfygen.com/exam-preparation-app-development' class='underline font-semibold'>exam preparation app development solutions</a> include smart learning tools designed to boost confidence and success rates for learners of all levels.",
+        "features": [
+          "Mock tests & previous year papers",
+          "AI-based performance analysis",
+          "Doubt-solving & discussion features",
+          "Personalized study plans"
+        ]
+      },
+      {
+        "title": "Kids Educational App Development",
+        "subtitle": "",
+        "description": "We develop kids learning apps with fun and engaging activities that support early education. Our apps help children learn the alphabet, numbers, shapes, rhymes, and more through interactive games and animations.",
+        "features": [
+          "Mock tests & previous year papers",
+          "AI-based performance analysis",
+          "Doubt-solving & discussion features",
+          "Personalized study plans"
+        ]
+      },
+      {
+        "title": "App Support and Maintenance",
+        "subtitle": "",
+        "description": "Our Comprehensive app support and maintenance services ensure that user e-learning apps remain secure, up-to-date, and optimized. Our dedicated mobile app team works proactively to maintain the highest levels of performance and security for the user app.",
+        "features": [
+          "Regular Updates & Bug Fixes",
+          "Enhanced Security",
+          "Performance Optimization"
+        ]
+      }
+    ]
+  },
+
+  
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Invest in Custom eLearning App Development?",
+    "description1": "Investing in custom eLearning app development delivers high-growth opportunities as the global eLearning market is projected to surpass $450 billion by 2026, growing at over 10% CAGR. Custom, mobile-first eLearning solutions offer scalable training, higher learner engagement, and strong ROI through gamification, data-driven analytics, and cost-effective long-term digital education platforms tailored to business and institutional needs.",
+    "description2": "",
+    "description3": "",
+    "description4": "",
+    "points": [
+      "High ROI Potential",
+      "Rapid Market Growth",
+      "Scalable Digital Learning",
+      "Gamified User Engagement",
+      "Mobile-First Education Platforms"
+    ],
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   "Frequently": [
     {
       "num": "1",

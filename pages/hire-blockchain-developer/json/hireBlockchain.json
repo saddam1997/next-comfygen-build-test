@@ -1,188 +1,281 @@
 {
-  "Solution": [
+  "Herosection": {
+    "heading": "Hire Blockchain Developers for Secure and Scalable Blockchain App Development",
+    "isHome": false,
+    "ptag": "Comfygen is trusted partner to hire blockchain developers who build secure, scalable, and high-performance blockchain applications. Our experts developers deliver end-to-end blockchain app development services, including smart contract development, decentralized apps (DApps), cryptocurrency solutions, and enterprise blockchain platforms. ",
+    "ptag1": "",
+    "listItems": [
+      "Skilled Blockchain Developers for Hire",
+      "Full-Stack Blockchain & dApp Development",
+      "Custom Smart Contract Solutions",
+      "Secure, Scalable & Business-Ready Architecture"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "Hire Blockchain Developers for Secure and Scalable Blockchain App Development",
+    "bgImage": "https://www.comfygen.com/herosection/hire-blockchain-developers-hero-img.webp"
+  },
+
+  "ServicesData": {
+  "heading": "Secure and Scalable AI-Powered Crypto Wallet Development Services",
+  "description": "At Comfygen, you can hire blockchain developers in India who specialize in building secure and scalable crypto wallet solutions. As a top blockchain development company, we deliver custom wallet solutions integrated with AI, DeFi, and Web3 technologies. Our developers create high-performance cryptocurrency wallets that ensure security, efficiency, and seamless digital asset management for businesses worldwide.",
+  "services": [
     {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/healthcare.svg",
-      "title": "Medical"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/eduction.svg",
-      "title": "Education"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Business"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/retail-and-ecommerce.webp",
-      "title": "Finance"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/transportation.svg",
-      "title": "Lifestyle"
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/social-networking.svg",
-      "title": "Food & Drink"
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/gaming.svg",
-      "title": "Shopping"
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/construction.svg",
-      "title": "Music"
-    },
-    {
-      "num": "9",
-      "url": "",
-      "img": "https://www.comfygen.com/img/traveland-hospitality.svg",
-      "title": "Travel"
-    },
-    {
-      "num": "10",
-      "url": "",
-      "img": "https://www.comfygen.com/img/sports.svg",
-      "title": "News"
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/img/entertainment.svg",
-      "title": "Photo & Video"
-    },
-    {
-      "num": "12",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Entertainment"
-    },
-    {
-      "num": "13",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Social Networking"
-    },
-    {
-      "num": "14",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Health & Fitness"
-    },
-    {
-      "num": "15",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Sports"
-    },
-    {
-      "num": "16",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Weather"
-    },
-    {
-      "num": "17",
-      "img": "https://www.comfygen.com/img/logistics.svg",
-      "title": "Logistic"
-    },
-    {
-      "num": "18",
-      "img": "https://www.comfygen.com/img/blockchain-mobile-app-development.webp",
-      "title": "Agritech"
-    }
-  ],
-  "servicesData": [
-    {
-      "title": "Ethereum",
+      "title": "Hot Wallet Development",
       "subtitle": "",
-      "description": "Our team helps businesses hire blockchain developers skilled in <a class='font-semibold ' href='/ethereum-blockchain-development-company'></a> Ethereum development, smart contracts, dApps, and DeFi platforms, ensuring secure and scalable blockchain solutions.",
+      "description": "Our team helps businesses hire blockchain developers skilled in <a class='font-semibold' href='/crypto-wallet-development-company'>hot wallet development</a>, enabling instant transactions, multi-currency support, and secure real-time crypto operations.",
       "features": [
-        "Hire Blockchain Developers Skilled in Ethereum",
-        "Expert Smart Contract Development",
-        "dApp & DeFi Platform Development",
-        "Customized Ethereum Blockchain Solutions"
+        "Hire Blockchain Developers for Hot Wallets",
+        "Real-Time Transaction Processing",
+        "Multi-Currency & Multi-Chain Support",
+        "Secure and Scalable Wallet Solutions"
       ]
     },
     {
-      "title": "Polygon",
+      "title": "Cold Wallet Development",
       "subtitle": "",
-      "description": "We offer <a class=' font-semibold' href='/polygon-blockchain-development'>Polygon development services</a>  and help you hire blockchain developers in India for scalable solutions, ideal for gaming and enterprise applications.",
+      "description": "We offer <a class='font-semibold' href='/crypto-wallet-development-company'>cold wallet development services</a> to help you hire blockchain developers in India for secure offline storage solutions, protecting digital assets from cyber threats.",
       "features": [
-        "Hire Blockchain Developers in India for Polygon",
-        "Scalable Polygon Development Solutions",
-        "Blockchain Solutions for Gaming & Enterprises",
-        "Expert Polygon Development Services"
+        "Hire Blockchain Developers in India for Cold Wallets",
+        "Offline & Hardware Wallet Solutions",
+        "Advanced Security for Digital Assets",
+        "Ideal for Long-Term Storage"
       ]
     },
     {
-      "title": "Hyperledger",
+      "title": "Desktop Wallet Development",
       "subtitle": "",
-      "description": "Our skilled professionals provide <a class=' font-semibold' href='/hyperledger-blockchain-development'>Hyperledger development services</a>  and help you hire blockchain developers from India to build secure, permissioned blockchain solutions for enterprises.",
+      "description": "Our experts provide <a class='font-semibold' href='/crypto-wallet-development-company'>desktop wallet development services</a> and help you hire blockchain developers from India to build secure, feature-rich wallets for Windows, macOS, and Linux platforms.",
       "features": [
-        "Hire Blockchain Developers from India for Hyperledger",
-        "Secure & Permissioned Blockchain Solutions",
-        "Expert Hyperledger Development Services",
-        "Enterprise-Grade Blockchain Solutions"
+        "Hire Blockchain Developers for Desktop Wallets",
+        "Multi-Platform Wallet Development",
+        "Advanced Security & Backup Features",
+        "High-Performance Wallet Applications"
       ]
     },
     {
-      "title": "Solana",
+      "title": "Web Wallet Development",
       "subtitle": "",
-      "description": "Need a blockchain developer in India for high-speed DeFi and NFT applications? Our Solana development experts ensure fast and cost-efficient blockchain solutions.",
+      "description": "Need a blockchain developer in India for browser-based wallet solutions? Our web wallet experts deliver secure and scalable wallets with seamless accessibility and strong encryption.",
       "features": [
-        "Hire a Blockchain Developer in India for Solana",
-        "High-Speed DeFi & NFT Development",
-        "Expert Solana Development Services",
-        "Cost-Efficient & Scalable Blockchain Solutions"
+        "Hire Blockchain Developer in India for Web Wallets",
+        "Secure Browser-Based Wallet Solutions",
+        "Two-Factor Authentication & Encryption",
+        "Cross-Device Accessibility"
       ]
     },
     {
-      "title": "Substrate ",
+      "title": "Custodial & Non-Custodial Wallets",
       "subtitle": "",
-      "description": "When you hire blockchain developer India, our experts provide <a class=' font-semibold' href='/substrate-development-company'>Substrate development services</a>  to build scalable parachains and custom blockchain solutions for seamless interoperability.",
+      "description": "When you hire blockchain developers in India, our experts build <a class='font-semibold' href='/crypto-wallet-development-company'>custodial and non-custodial wallet solutions</a> to provide flexibility, security, and full asset control based on business needs.",
       "features": [
-        "Hire Blockchain Developer India for Substrate",
-        "Scalable Parachain Development",
-        "Expert Substrate Development Services",
-        "Seamless Blockchain Interoperability Solutions"
+        "Flexible Wallet Management Solutions",
+        "Custodial & Non-Custodial Development",
+        "Enhanced Security & User Control",
+        "Regulatory-Ready Architecture"
       ]
     },
     {
-      "title": "Cardano",
+      "title": "Multi-Signature Wallet Development",
       "subtitle": "",
-      "description": "Our hire blockchain developer company specializes in <a class=' font-semibold' href='/cardano-blockchain-development-company'>Cardano development</a> , building secure and scalable blockchain solutions on Cardano’s proof-of-stake ecosystem.",
+      "description": "Our hire blockchain developer company specializes in <a class='font-semibold' href='/crypto-wallet-development-company'>multi-signature wallet development</a>, ensuring enhanced security through multiple transaction approvals.",
       "features": [
-        "Specialized Cardano Development Team",
-        "Tailored Blockchain Solutions",
-        "Comprehensive Project Support",
-        "Blueprint for Optimal Cardano Solutions"
+        "Enhanced Security with Multi-Signature Access",
+        "Reduced Risk of Unauthorized Transactions",
+        "Ideal for Enterprises & Exchanges",
+        "Secure Collaborative Wallet Systems"
       ]
     },
     {
-      "title": "Stellar",
+      "title": "DeFi & NFT Wallet Integration",
       "subtitle": "",
-      "description": "For businesses looking to hire blockchain developers in India, we offer <a class=' font-semibold' href='/stellar-blockchain-development-company'>Stellar development services</a>  to create fast and cost-effective cross-border financial solutions.",
+      "description": "For businesses looking to hire blockchain developers in India, we offer <a class='font-semibold' href='/nft-marketplace-development-company'>DeFi and NFT wallet integration services</a> to enable seamless trading, staking, and asset management.",
       "features": [
-        "Expert Stellar Development Services",
-        "Fast & Cost-Effective Cross-Border Solutions",
-        "Hire Skilled Blockchain Developers in India",
-        "Custom Blockchain Solutions for Financial Applications"
+        "Seamless DeFi & NFT Integration",
+        "Support for Staking & Yield Farming",
+        "Direct Access to NFT Marketplaces",
+        "Real-Time Portfolio Tracking"
       ]
     },
     {
-      "title": "Multichain",
+      "title": "Wallet Security & Compliance",
       "subtitle": "",
-      "description": "Our developers excel in <a class=' font-semibold' href='/multichain-blockchain-development'>Multichain blockchain development</a>  , helping businesses hire blockchain developers from India to ensure seamless cross-chain compatibility for various blockchain networks.",
+      "description": "Our developers excel in <a class='font-semibold' href='/crypto-wallet-development-company'>wallet security solutions</a>, helping businesses hire blockchain developers from India to implement encryption, KYC/AML compliance, and fraud detection systems.",
       "features": [
-        "Expert Multichain Development Services",
-        "Seamless Cross-Chain Compatibility",
-        "Hire Skilled Blockchain Developers from India",
-        "Custom Blockchain Solutions for Interoperability"
+        "Advanced Encryption & Data Protection",
+        "KYC/AML Compliance Integration",
+        "Real-Time Monitoring & Fraud Detection",
+        "Enterprise-Grade Security Architecture"
+      ]
+    },
+    {
+      "title": "In-App Crypto Exchange & Token Swaps",
+      "subtitle": "",
+      "description": "We provide <a class='font-semibold' href='/crypto-exchange-development-company'>crypto exchange integration</a> services to build wallets with in-app trading, token swaps, and seamless portfolio management features.",
+      "features": [
+        "Built-In Crypto Exchange Functionality",
+        "Token Swapping & Trading Features",
+        "Real-Time Portfolio Management",
+        "Enhanced User Engagement"
+      ]
+    },
+    {
+      "title": "Custom White-Label Wallet Development",
+      "subtitle": "",
+      "description": "Our team offers <a class='font-semibold' href='/white-label-crypto-exchange-development'>white-label wallet development</a> solutions, allowing businesses to launch fully branded and customizable crypto wallets quickly.",
+      "features": [
+        "Fully Customizable Wallet Solutions",
+        "Rapid Deployment with Scalable Architecture",
+        "Brand-Focused UI/UX Design",
+        "Secure & Future-Ready Wallet Systems"
       ]
     }
+  ]
+},
+"AboutSection": {
+  "title": "About Us",
+  "heading": "Why Choose Our Blockchain Developers?",
+  "description1": "At Comfygen, we bring innovation, security, and expertise to your crypto wallet and blockchain projects. When you hire blockchain developers in India from us, you get a team with deep technical knowledge, hands-on experience, and a commitment to delivering high-performance cryptocurrency wallet solutions.",
+  "description2": "",
+  "description3": "",
+  "description4": "",
+  "points": [
+    "Proven Expertise – Skilled in crypto wallet development, DeFi, Web3, and blockchain platforms.",
+    "Custom-Tailored Solutions – We design scalable, secure, and business-specific wallet applications.",
+    "Cost-Effective Development – Get premium-quality crypto wallet services at competitive rates.",
+    "Security & Compliance – Advanced encryption, KYC/AML, and secure architectures ensure trust.",
+    "End-to-End Support – From consultation to deployment and ongoing maintenance."
   ],
+  "description6": "Partner with a trusted blockchain development company and turn your ideas into reality. Hire blockchain developers from India today!",
+  "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+  "link": "/about-us",
+  "linkText": "Explore More"
+},
+"Whycomfygens": {
+  "title": "Types of Blockchain Development",
+  "description": "Blockchain development can be divided into various types depending on the use case and business requirements. From public blockchain solutions to private blockchain applications, each type serves a specific purpose to deliver maximum efficiency and security. At Comfygen, we specialize in all forms of blockchain development to help businesses leverage this transformative technology.",
+  "buttonText": "Let’s Discuss",
+  "buttonLink": "/contact-us",
+  "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
+  "proces": [
+    {
+      "title": "Public Blockchain Development",
+      "desc": "Public blockchains are open and decentralized, meaning anyone can participate in the network. Popular examples include Ethereum and Bitcoin. These are ideal for businesses seeking transparent and secure blockchain solutions. Public blockchains are perfect for applications where transparency and accountability are paramount."
+    },
+    {
+      "title": "Private Blockchain Development",
+      "desc": "Private blockchains offer greater control over the network, accessible only by authorized participants. These systems are commonly used by enterprises for secure data management and internal transactions. Whether you need a private blockchain network for financial transactions or supply chain management, we provide custom private blockchain solutions tailored to your needs."
+    },
+    {
+      "title": "Consortium Blockchain Development",
+      "desc": "A consortium blockchain is a hybrid model where multiple organizations share control of the network. It is suitable for businesses in industries like banking or healthcare, where trust and collaboration between multiple parties are crucial. This model combines the benefits of both public and private blockchains."
+    },
+    {
+      "title": "Smart Contract Development",
+      "desc": "Smart contracts are self-executing contracts where the terms of the agreement are written directly into code. They automate processes and eliminate the need for intermediaries. We specialize in smart contract development for blockchain applications on platforms like Ethereum, Solana, and Polygon, ensuring efficiency and security for your business operations."
+    },
+    {
+      "title": "Token Development",
+      "desc": "Token development involves creating digital assets on blockchain networks. Whether you’re interested in creating a custom token for a loyalty program or a cryptocurrency token, we provide comprehensive token development services that ensure your digital assets are secure, scalable, and compliant with industry standards."
+    },
+    {
+      "title": "Decentralized Finance (DeFi) Development",
+      "desc": "DeFi uses blockchain technology to enable peer-to-peer financial services like lending, borrowing, and trading, without relying on traditional banks. We offer DeFi development services to help businesses tap into the decentralized finance ecosystem, creating platforms that offer secure and efficient financial transactions without intermediaries."
+    }
+  ]
+},
+"NFTBenefits": {
+  "heading": "Step-by-Step Process to Hire Blockchain Developers at Comfygen",
+  "subheading": "At Comfygen, we offer flexible hiring models to help businesses hire blockchain developers in India based on project needs and budget. Whether you're looking for short-term support or long-term collaboration, we provide tailored solutions to meet your blockchain development goals.",
+  "tech": [
+    {
+      "num": "01",
+      "title": "Hourly Hiring",
+      "desc": "Pay for the exact hours worked when you hire blockchain developers for flexible and evolving project requirements."
+    },
+    {
+      "num": "02",
+      "title": "Monthly Hiring",
+      "desc": "Get dedicated blockchain developers in India working full-time on your project for consistent development."
+    },
+    {
+      "num": "03",
+      "title": "Fixed Cost Hiring",
+      "desc": "Ideal for businesses needing a hire blockchain developer company to deliver projects within a fixed budget and timeline."
+    },
+    {
+      "num": "04",
+      "title": "Custom Hiring Model",
+      "desc": "We offer personalized solutions to help you hire blockchain developers from India as per your unique business requirements."
+    }
+  ]
+},
+"Portfoliodata": {
+  "heading": "Explore Our Successful Blockchain-Based Portfolio",
+  "description": "Explore our selection of accomplished blockchain development projects that highlight our proficiency in online solutions and app development. Whether you’re looking to hire blockchain developers in India or need custom blockchain solutions, our portfolio showcases our expertise in smart contracts, DeFi platforms, NFT marketplaces, and <a class=' text-blue-600' href='/decentralized-exchange-development'>decentralized exchange development</a> (dApps). Each project reflects our dedication to excellence, innovation, and client satisfaction, ensuring scalable and secure blockchain solutions.",
+  "portfolio": [
+    {
+      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+      "title": "NASDAC Crypto Coin",
+      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+      "title": "Croston",
+      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
+      "title": "YatriPay",
+      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
+      "link": "#"
+    },
+    {
+      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+      "title": "Mezovest",
+      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+      "link": "#"
+    }
+  ]
+},
+"Business": {
+  "heading": "Unlock Business Efficiency with Custom App Development",
+  "subheading": "Custom app development helps businesses streamline operations, automate tasks, and improve efficiency. At Comfygen, we specialize in creating custom apps that drive business growth with the latest blockchain technology.",
+  "tech": [
+    {
+      "num": "01",
+      "title": "Tailored Apps for Your Business",
+      "desc": "Custom apps are designed to fit your specific business needs. We create solutions that integrate seamlessly with your processes, leveraging blockchain-powered solutions to solve complex problems."
+    },
+    {
+      "num": "02",
+      "title": "Automate and Streamline Operations",
+      "desc": "With custom app development, you can automate manual tasks and workflows. Our apps help improve business efficiency, saving time and reducing errors in everyday operations."
+    },
+    {
+      "num": "03",
+      "title": "Scalable Solutions for Growth",
+      "desc": "We design scalable apps that grow as your business expands, ensuring your technology adapts to your evolving needs."
+    },
+    {
+      "num": "04",
+      "title": "Real-Time Insights for Better Decisions",
+      "desc": "Our apps provide real-time analytics, enabling you to make smarter, data-driven decisions that drive success."
+    },
+    {
+      "num": "05",
+      "title": "Secure and Reliable Data Management",
+      "desc": "Security is crucial in custom app development. Our blockchain integration ensures top-level security, protecting your business data from cyber threats."
+    },
+    {
+      "num": "06",
+      "title": "Comprehensive Support",
+      "desc": "From development to post-launch maintenance, we offer end-to-end support to keep your app performing at its best and evolving with your business."
+    }
+  ]
+},
   "pageData": {
     "title": "Why Choose Comfygen to Hire Blockchain Developers in India?",
     "description": "When selecting a blockchain development company, finding the right team of skilled professionals is essential for success. At Comfygen, we bring together years of industry experience to provide innovative blockchain solutions. Here’s why businesses trust us when they are looking to hire blockchain developers in India.",
@@ -224,340 +317,111 @@
       }
     ]
   },
-  "customSliderData": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/social-networking-industries-img.webp",
-      "title": "Social Media App",
-      "description": "Develop decentralized social media apps with blockchain development for secure user interactions."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance",
-      "description": "Build secure and transparent financial solutions using blockchain technology to transform the financial sector."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/dating-industries-img.webp",
-      "title": "Dating",
-      "description": "Create secure, decentralized dating platforms ensuring privacy and user safety."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/restaurant-industries-img.webp",
-      "title": "Restaurant Industries",
-      "description": "Implement blockchain solutions for transparent supply chain management and secure digital transactions."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-ecommerce-img.webp",
-      "title": "E-Commerce",
-      "description": " Enhance e-commerce platforms with blockchain development to ensure secure transactions and customer trust."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare ",
-      "description": " Blockchain development in healthcare ensures secure patient records, improving data privacy and efficiency."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-blockchain-img.webp",
-      "title": "Blockchain ",
-      "description": "Our blockchain solutions help businesses unlock new opportunities with secure, scalable platforms."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-education-img.webp",
-      "title": "Education ",
-      "description": "Hire blockchain developers in India to transform the education sector with secure certificates and decentralized learning."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Logistics ",
-      "description": "Improve logistics and supply chain management with blockchain development for real-time tracking and transparency."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/transportation-industries-img.webp",
-      "title": "Transportation",
-      "description": "Hire blockchain developers India to enhance transportation with streamlined payments and secure vehicle tracking."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/travel-hospitality-industries-img.webp",
-      "title": "Travel & Hospitality",
-      "description": "Provide decentralized travel booking systems with blockchain solutions for secure transactions and loyalty programs."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "Construction",
-      "description": "Blockchain technology helps manage construction projects, contracts, and payments efficiently and securely."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Game ",
-      "description": "Hire blockchain developers from India to build blockchain-based gaming platforms for secure in-game transactions."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
-      "title": "Sports",
-      "description": "Use blockchain technology to create secure fan engagement platforms and digital collectibles in sports."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-      "title": "Entertainment",
-      "description": "Develop decentralized entertainment platforms with blockchain for transparent royalties and licensing management."
-    }
-  ],
-  "MobileSolution": [
-    {
-      "num": "1",
-      "head": "Industries We Serve",
-      "para": "Comfygen does not stop when it comes to progress. We believe in integrating blockchain solutions into every industry:"
-    }
-  ],
 
-  "portfoliodata":[
-    {
-      "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
-      "title": "NASDAC Crypto Coin",
-      "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
-      "title": "Croston",
-      "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/yatripay-portfolio-image.webp",
-      "title": "YatriPay",
-      "description": "YatriPay enables instant, zero-fee global transactions through its decentralized P2P blockchain development, powered by the YatriPay Virtual Machine (YVM). With seamless peer-to-peer transfers, YatriPay ensures secure and efficient digital payments. The YatriPay Mobile App makes onboarding easy, bringing borderless transactions to users worldwide.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
-      "title": "Mezovest",
-      "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
-      "link": "#"
-    }
-    
-   
-    
-  ],
+  "CallToAction": {
+  "heading": "Let’s hear what you have to say?",
+  "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+  "buttonText": "Get Started",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+  "imageAlt": "Get in touch now."
+},
 
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
 
-
-
-
-  "TechnoStack": [
-    {
-      "num": "1",
-      "head": "Technology Stack We’re Skilled In",
-      "para": " Our development team follows proven and vital strategies that we follow for a deft development process to make sure that our clients get their software solutions on estimated delivery time. Have a look at our development process model.",
-      "img": "https://www.comfygen.com/img/technical-stack.webp"
-    }
-  ],
-  "High": [
-    {
-      "number": "01",
-      "title": "Requirements Analysis",
-      "decs": "Let s get to know each other",
-      "decs1": "Identifying your needs",
-      "decs2": "Solving a problem"
-    },
-    {
-      "number": "02",
-      "title": " Consultation for app development",
-      "decs": "Competitors should be identified",
-      "decs1": "Establish goals and objectives",
-      "decs2": "Get your feedback"
-    },
-    {
-      "number": "03",
-      "title": "Designing & Wireframing",
-      "decs": "Structure of the blueprint",
-      "decs1": "Each screen should be wireframed",
-      "decs2": "The apps design"
-    },
-    {
-      "number": "04",
-      "title": "Developing",
-      "decs": "The apps coding",
-      "decs1": "Sections of the layout",
-      "decs2": "Id like your feedback"
-    },
-    {
-      "number": "05",
-      "title": "The testing process",
-      "decs": "Testing of applications",
-      "decs1": "Totally bug-free",
-      "decs2": "Obtain your final approval"
-    },
-    {
-      "number": "06",
-      "title": "The deployment process",
-      "decs": "Install the app on your server",
-      "decs1": "App Store deployment",
-      "decs2": "Users can download the app"
-    }
-  ],
-  "Planning": [
-    {
-      "num": "1",
-      "subhead": "Planning",
-      "head": " Our High end Mobile App Development Process"
-    }
-  ],
-  "NativeApp": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/footer-fitclub-img.webp",
-      "head": " Fitclub App",
-      "para": " Welcome to FitClub, where your fitness journey meets innovation. Seamlessly sculpt your well-being with our all-in-one mobile app, empowering you to own your health like never before. Unleash the power of convenience and comprehensive access, tailored for your fitness success.",
-      "btn": "Initiate Now ",
-      "url": "/portfolio"
-    }
-  ],
-  "Banefit": [
-    {
-      "num": "1",
-      "bg": "#F45F391A",
-      "title": "Expertise in conceptualizing",
-      "decs": "Expertise in conceptualizing and implementing about a hundred apps across a wide range of industries."
-    },
-    {
-      "num": "2",
-      "bg": "#6C54DE1A",
-      "title": "Certified and highly experienced",
-      "decs": "We have the best pool of certified and highly experienced Android, iOS, Hybrid, and React Native developers."
-    },
-    {
-      "num": "3",
-      "bg": "#F7F2E2",
-      "title": "We follow Agile Scrum",
-      "decs": "We follow Agile Scrum, Kanban, Feature Driven Development (FDD) and Test Driven Development (TDD) models to deliver high quality, on-time products.    "
-    },
-    {
-      "num": "4",
-      "bg": "#E1F4EC",
-      "title": "Tech Architect",
-      "decs": "Each project is led by a Tech Architect with at least 10 years of experience."
-    },
-    {
-      "num": "5",
-      "bg": "#F7E6F2",
-      "title": "Skilled resources    ",
-      "decs": "There are skilled resources on every project, including BAs, PMs, Tech Architects, UX experts, Devops experts, QA experts, and Digital Marketing experts."
-    },
-    {
-      "num": "6",
-      "bg": "#F7E7E8",
-      "title": "Complete transparency",
-      "decs": "For complete transparency and close involvement, effective reporting through in-house tools is essential."
-    },
-    {
-      "num": "7",
-      "bg": "#E6EDFC",
-      "title": "Implementation of results",
-      "decs": "Implementation of results-oriented development with the right design architecture, code reviews, unit testing, CI-CD, performance and security checks, scrum meetings, etc."
-    },
-    {
-      "num": "8",
-      "bg": "#E0F1FA",
-      "title": "A comprehensive set",
-      "decs": "A comprehensive set of documentation, including Software Requirement Specifications, Architectural Specifications, Sprint Plans, Test Plans, testing scenarios, worksheets, detailed reports, etc. "
-    },
-    {
-      "num": "9",
-      "bg": "#F8ECE2",
-      "title": "Ready to Use    ",
-      "decs": "Using our Ready-To-Use Off-The-Shelf solutions, we can deliver faster and with higher quality."
-    },
-    {
-      "num": "10",
-      "bg": "#82AB101A",
-      "title": "Performance and scalability",
-      "decs": "Performance and scalability are ensured by our robust internal architecture."
-    }
-  ],
-  "Qa": [
-    {
-      "num": "1",
-      "title": "Types of Blockchain Development",
-      "desc": "Blockchain development can be divided into various types depending on the use case and business requirements. From public blockchain solutions to private blockchain applications, each type serves a specific purpose to deliver maximum efficiency and security. At Comfygen, we specialize in all forms of blockchain development to help businesses leverage this transformative technology.",
-      "img": "https://www.comfygen.com/img/expertised-of-mobile-app-developers.webp",
-      "url": "/contact-us",
-      "btn": "Meet Now"
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "01",
-      "title": " Public Blockchain Development",
-      "desc": "Public blockchains are open and decentralized, meaning anyone can participate in the network. Popular examples include Ethereum and Bitcoin. These are ideal for businesses seeking transparent and secure blockchain solutions. Public blockchains are perfect for applications where transparency and accountability are paramount."
-    },
-    {
-      "num": "02",
-      "title": "Private Blockchain Development",
-      "desc": "Private blockchains offer greater control over the network, accessible only by authorized participants. These systems are commonly used by enterprises for secure data management and internal transactions. Whether you need a private blockchain network for financial transactions or supply chain management, we provide custom private blockchain solutions tailored to your needs."
-    },
-    {
-      "num": "03",
-      "title": "Consortium Blockchain Development",
-      "desc": "A consortium blockchain is a hybrid model where multiple organizations share control of the network. It is suitable for businesses in industries like banking or healthcare, where trust and collaboration between multiple parties are crucial. This model combines the benefits of both public and private blockchains."
-    },
-    {
-      "num": "04",
-      "title": "Smart Contract Development",
-      "desc": "Smart contracts are self-executing contracts where the terms of the agreement are written directly into code. They automate processes and eliminate the need for intermediaries. We specialize in smart contract development for blockchain applications on platforms like Ethereum, Solana, and Polygon, ensuring efficiency and security for your business operations."
-    },
-    {
-      "num": "05",
-      "title": "Token Development",
-      "desc": "Token development involves creating digital assets on blockchain networks. Whether you’re interested in creating a custom token for a loyalty program or a cryptocurrency token, we provide comprehensive token development services that ensure your digital assets are secure, scalable, and compliant with industry standards."
-    },
-    {
-      "num": "06",
-      "title": " Decentralized Finance (DeFi) Development",
-      "desc": "DeFi uses blockchain technology to enable peer-to-peer financial services like lending, borrowing, and trading, without relying on traditional banks. We offer DeFi development services to help businesses tap into the decentralized finance ecosystem, creating platforms that offer secure and efficient financial transactions without intermediaries."
-    }
-  ],
-  "Development": [
-    {
-      "bg": "#F45F391A",
-      "number": "01",
-      "title": "Android Application Development"
-    },
-    {
-      "bg": "#F5EDFA",
-      "number": "02",
-      "title": "Ios Application Development"
-    },
-    {
-      "bg": "#E9F4FF",
-      "number": "03",
-      "title": "Hybrid Application Development"
-    },
-    {
-      "bg": "#F2F6E7",
-      "number": "04",
-      "title": "Cross-Platform App Development"
-    },
-    {
-      "bg": "#FEEFEB",
-      "number": "05",
-      "title": "Native App Development"
-    },
-    {
-      "bg": "#FFF5E5",
-      "number": "06",
-      "title": "React Native App Development"
-    },
-    {
-      "bg": "#F6F0FE",
-      "number": "07",
-      "title": "Progressive Web App Development"
-    },
-    {
-      "bg": "#F6F0FE",
-      "number": "08",
-      "title": "Lite App Development"
-    }
-  ],
   "Frequently": [
     {
       "num": "1",
@@ -639,282 +503,51 @@
       "li3": "Contact Comfygen for expert blockchain consultation services, where our team helps guide your blockchain strategy and ensures that your project is aligned with the latest industry trends."
     }
   ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Mobile App Developer",
-      "desc": "Looking for incredible mobile applications with modernized technical solutions? You have come to the absolute right platform “Comfygen”, where the highly skilled and years of experienced mobile app developers are knowledgeable and capable to build super-apps though. We adhere to the best and trending technical services to build robust apps, which have the caliber to beat existing market competitions.",
-      "decs": "We have helped dozens of companies yet to build a great impression in the marketplace with successful mobile app development.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Hourly Hiring",
-      "decs": "Pay for the exact hours worked when you hire blockchain developers for flexible and evolving project requirements."
-    },
-    {
-      "num": "02",
-      "title": "Monthly Hiring",
-      "decs": "Get dedicated blockchain developers in India working full-time on your project for consistent development."
-    },
-    {
-      "num": "03",
-      "title": "Fixed Cost Hiring",
-      "decs": "Ideal for businesses needing a hire blockchain developer company to deliver projects within a fixed budget and timeline."
-    },
-    {
-      "num": "04",
-      "title": "Custom Hiring Model ",
-      "decs": "We offer personalized solutions to help you hire blockchain developers from India as per your unique business requirements."
-    }
-  ],
-  "myList": [
-    "We build modern and future technical needs in mobile app development",
-    "Our IT Professionals are experts in working all domains industry",
-    "We work on futuristic and unique features for user’s retention",
-    "Integration of third-party APIs with latest tech involved",
-    "Agile Development Strategies and Project Methodologies",
-    "Futuristic Mobile app development solutions",
-    "Proven records with mind-blowing mobile app development projects"
-  ],
-  "Plateform": [
-    {
-      "num": "01",
-      "tittle": "Competency",
-      "decs": "Transaction speed acceleration, performance enhancement, and mistake reduction are the outcomes of embodied logic in smart contracts. Less middlemen and a distributed ledger system enable speedy transactions with low processing costs."
-    },
-    {
-      "num": "02",
-      "tittle": "Transparency",
-      "decs": "Indeed, it is possible to observe all of the completed transactions and holdings for each public address on the blockchain. Eliminate the trouble of looking for reports in several formats from different sources."
-    },
-    {
-      "num": "03",
-      "tittle": "Trust",
-      "decs": "Authorization of transactions inside a chain is a must for all participants in a blockchain, as these applications foster increased confidence, improved trust, and ultimately, customer happiness."
-    },
-    {
-      "num": "04",
-      "tittle": "Resilience",
-      "decs": "The blockchain community is tenacious. Therefore, there is no room for malpractices like hacking and interception. While records in databases can be changed, on a blockchain, every record has a hash that is determined by squaring it with the hash of the record before it."
-    },
-    {
-      "num": "05",
-      "tittle": "Cost Efficient and Prominent Solutions",
-      "decs": "Blockchain technology is cost-efficient since it can assist in lowering transaction and operating costs. It has the potential to improve operational and process efficiency in business."
-    }
-  ],
-  "AppProcess": [
-    {
-      "num": "01",
-      "title": "Conceptualization",
-      "decs": "First we believe in knowing about our own product. Our agenda is very clear to understand and learn what clients want to build, and later jump into the marketplace to survey competitors to learn about their methods and strategies of success. Product Discovery and Product Research, these two things are significant help in knowing what we need to build. "
-    },
-    {
-      "num": "02",
-      "title": "Design",
-      "decs": "Here our expert minds will use their creative side for UI/UX. We will do wireframing, prototyping, and add engaging aspects to make the users sustain the application. The designers believe in branding for your business or product through its engaging designs, and here you have that with us. "
-    },
-    {
-      "num": "03",
-      "title": "Development",
-      "decs": "Now comes the coding, programming languages, adding features, and working on its functionalities. The mobile app developers will write their codes, work on application’s front-end and back-end, and also add required & additional features to make the app work according to the current marketplace standards."
-    },
-    {
-      "num": "04",
-      "title": "Quality Assurance",
-      "decs": "When the mobile application is built completely, afterwards the testers will do quality assurance to know if there are any bugs, technical technical glitches, or any other issue occurred. This is an important stage, where the team will identify issues and resolve them for best possible app delivery."
-    },
-    {
-      "num": "05",
-      "title": "Deployment",
-      "decs": "You must have decided on a dedicated mobile app deployment platform, either iOS AppStore or Android PlayStore to launch the app. Once the issues are resolved, then developers are supposed to launch your application on the dedicated mobile app deployment platform to market it forward."
-    },
-    {
-      "num": "05",
-      "title": "Support and Maintenance",
-      "decs": "We are responsible for the post-deployment services, which includes support and maintenance after launch. Our team of experts will alter applications based on the market standards and users needs. We will add on more features, change the algorithm, remove bugs, work on the feedback received, and serve more possible post deployment to make the app worth establishing in the marketplace."
-    }
-  ],
-  "TechTrends": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/domain-knowledge.webp",
-      "title": "Domain Knowledge",
-      "stack": "Our team specializes in developing blockchain applications on several blockchain systems, including Ethereum, Tron, Tezos, EOS, Fabric/Sawtooth Hyperledger frameworks, Stellar, and Tezos."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/agile-and-rapid-development-process.webp",
-      "title": "Agile and Rapid Development Process",
-      "stack": "In order to shorten the software's time to market and complete blockchain projects on schedule, we adhere to and put into practice the agile software development process.      "
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/openness.webp",
-      "title": "Openness",
-      "stack": "You may collaborate with our remote blockchain developers in a transparent manner on a daily basis. Together with your team, our developers do daily standups to make sure we are working on things that are important to your project. "
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/honesty.webp",
-      "title": "Honesty",
-      "stack": "We sign a stringent Non-Disclosure Agreement to uphold our integrity and guarantee that all project data are kept private and not disclosed to third parties."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/time-zone-coordination.webp",
-      "title": "Time-zone Coordination",
-      "stack": "Collaborate at the speed of the present! Backed by two decades of experience, we adhere to your business objectives and enterprise project timescales with top blockchain engineers suitable for time-zone aligned development."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/time-and-cost-viability.webp",
-      "title": "Time and Cost Viability",
-      "stack": "Hire blockchain consultants and software engineers with the experience and training to minimize costs and schedule constraints so that you may stop bridging internal skill gaps by collaborating across time zones and geographical locations throughout the world. "
-    }
-  ],
-  "VariousDomains": [
-    {
-      "num": "01",
-      "title": "Fintech",
-      "decs": "From making money transactions to enterprise-level financial consulting, we can build a fintech application providing all kinds of financial services to users. No matter whether you want budgeting or finance settlements, our apps can do all for you. "
-    },
-    {
-      "num": "02",
-      "title": "Retail & eCommerce",
-      "decs": "We can develop a dedicated online retail store or a full-fledged eCommerce mobile app platform for the users, where they can conveniently shop everything with super smooth navigation and ultimate user experience."
-    },
-    {
-      "num": "03",
-      "title": "Education",
-      "decs": "Mobile applications are not only for entertainment, but they can help for various purposes; such as studying. These can help in keeping track of assignments, educating about subjects, attending online classes, and more. We develop all kinds of education apps; you say it and we make it assured. "
-    },
-    {
-      "num": "04",
-      "title": "Healthcare",
-      "decs": "You might have noticed how the healthcare industry is gaining popularity in the mobile app development stream. We can build applications for you, where patients can track their health goals, set reminders for medicines, and gain possible medicinal information. We can build for you any type of healthcare application."
-    }
-  ],
-  "Why": [
-    {
-      "num": "01",
-      "title": "Why choose Comfygen for Mobile App Development Services?",
-      "decs": "We understand that promising words are not enough to fetch clients faith in our mobile app development services. Still we have something to say, proves that Comfygen will stand for client’s application standards and beat the market competitions with our agile developments: "
-    }
-  ],
-  "Choose": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/security-is-our-key.webp",
-      "title": "Security is our Key",
-      "decs": "We work on General Data Protection Regulation (GDPR), Network Information System Regulations, 114 best practices control, and Biannual External Security Audits. It is our most important priority to secure clients somehow, so that they can uniquely establish their app."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/transparency-what-makes-us-stand.webp",
-      "title": "Transparency What Makes Us Stand",
-      "decs": "We have learnt one thing from our experience, which is to be “Transparent” with clients. The clients proactively follow documentations, want to learn about productivity, high quality solution processing, and more. Our company and experts respect it, and follow the same transparency to gain their trust and more value in the market. "
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/cost-effective-solution.webp",
-      "title": "Cost Effective Solutions",
-      "decs": "Our mobile app solutions are cost-effective. Do you want to know how? The reason is our knowledge and experience. We have the mind, who knows what is best for the app and business, what is beneficial, what is right, what is just an extra but not worth, and more. Their extensive knowledge is not a sign of extra expense, but it is a sign to have an extraordinary application in right costing."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/always-involved-with-new-tech-trends.webp",
-      "title": "Always Involved with New Tech-Trends",
-      "decs": "You might have noticed nowadays that whoever is upgrading is leading the market. Same goes in all the domains / industries. If you want to lead, you have to upgrade to something new. We have the power, and grant the leverages to clients to meet current unique and latest tech-trends. Our super efficient minds are not only innovative, but adaptable to new things; which we imply in our projects to build great applications."
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Idea Generation and Planning ",
-      "decs": "The mobile app development process typically begins with brainstorming and idea generation. Developers and stakeholders collaborate to identify the app's purpose, target audience, and key features. Planning involves outlining the app's functionality, user interface, and overall structure."
-    },
-    {
-      "num": "02",
-      "title": "Design and Prototyping ",
-      "decs": "Once the concept is defined, designers create wireframes and prototypes to visualize the app's user interface (UI) and user experience (UX). This phase focuses on creating a design that is both aesthetically pleasing and user-friendly, ensuring a seamless interaction for the end-users."
-    },
-    {
-      "num": "03",
-      "title": "Development and Coding",
-      "decs": "The actual coding of the mobile app takes place during this phase. Developers use programming languages such as Java (for Android) or Swift (for iOS) to build the app's functionality. They work on integrating features, implementing back-end systems, and ensuring the app's compatibility with various devices and screen sizes."
-    },
-    {
-      "num": "04",
-      "title": "Testing",
-      "decs": "Rigorous testing is crucial to identify and rectify bugs, glitches, and usability issues. Quality Assurance (QA) teams perform various tests, including functionality testing, performance testing, and user acceptance testing. This phase ensures that the app meets the specified requirements and functions reliably across different devices.      "
-    },
-    {
-      "num": "05",
-      "title": "Deployment",
-      "decs": "After successful testing, the app is ready for deployment. Developers submit the app to the respective app stores (e.g., Apple App Store, Google Play Store) for review and approval. Once approved, the app becomes available for download and installation by users.      "
-    },
-    {
-      "num": "06",
-      "title": "Maintenance and Updates",
-      "decs": "The mobile app development process doesn't end with deployment. Continuous maintenance is essential to address user feedback, fix any emerging issues, and ensure compatibility with new devices or operating system updates. Developers also release periodic updates to introduce new features, enhance performance, and address security vulnerabilities.      "
-    }
-  ],
-  "AppService": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/blockchain-consulting-and-poc.webp",
-      "title": "Blockchain Consulting & POC",
-      "decs": "Obtain professional advice and Proof of Concept (POC) development services for your business by hiring Blockchain developers from Comfygen.",
-      "url": "/blockchain-consulting-services"
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/custom-app-development.webp",
-      "title": "Custom App Development",
-      "decs": "Use platforms like Ethereum, Hyperledger, and Bitcoin to create your own decentralized application from scratch by hiring our team of dedicated blockchain developers"
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/hire-blockchain-smart-contracts-development.webp",
-      "title": "Smart Contracts Development",
-      "decs": "We can create bespoke smart contracts for you that will automate agreements and business procedures. We are proficient in the programming languages LLL, Serpent, and Solidity.",
-      "url": "/smart-contract-development"
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/decentralized-exchange-app-development.webp",
-      "title": "Decentralized Exchange App Development",
-      "decs": "Hire us to create a decentralized exchange app that enables peer-to-peer cryptocurrency buying and selling. We specialize in Blockchain development in India.",
-      "url": "/decentralized-exchange-development"
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/blockchain-wallet-app-development.webp",
-      "title": "Blockchain Wallet App Development ",
-      "decs": "Hire our Blockchain app developers to create a unique Blockchain wallet application for your company. We'll make sure your software is both very safe and easy to use."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/custom-native-mobile-apps.webp",
-      "title": "Enterprise Blockchain Solutions",
-      "decs": "Our team of Blockchain engineers possesses expertise in creating and implementing enterprise-level Blockchain solutions for companies in many sectors."
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/img/hire-blockchain-cryptocurrency-development.webp",
-      "title": "Cryptocurrency Development",
-      "decs": "Our blockchain developers are well-versed in the lingo and protocols of the different cryptocurrencies."
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/img/multi-chain-development.webp",
-      "title": "Multi Chain Development",
-      "decs": "Our team of professionals is always abreast of the newest developments and is at the forefront of multichain advancements. We can assist you in creating an ecosystem that satisfies the immediate and long-term objectives of your business."
-    }
-  ]
+
+ "faqData": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I choose and interview developers using the specifications for my project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Indeed. Of course! Our strategy is centered on transparency and collaboration. Blockchain Developers can be chosen and interviewed based on the specifications of your project. We give you access to a pool of skilled developers so you can select the ones that best fit the requirements of your team and the project."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which best practices are adhered to by your blockchain developers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our unique selling point is that we never skimp on quality and always guarantee client satisfaction. Comfygen uses an agile project management methodology that is streamlined for development, testing, and customer support all the way through the project's completion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the blockchain developers working with you adaptable to new tools or systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Indeed! Making our end-of-service as adaptable as possible for our clients has been our regular procedure. Many of our clients required our assistance to improve their systems even if they already had a website or app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the price to employ a blockchain developer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of employing a blockchain developer is determined by a number of variables, namely the area from which the developer is being hired, the developer's experience and skill level, and the features and integrations you require. However, a rough estimate of the cost would be in the range of $5,000 and $30,000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to hire a blockchain developer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The region from which the developer is being employed, the developer's experience and skill level, and the features and integrations you need are some of the factors that affect the cost of hiring a blockchain developer. But roughly speaking, the price would fall between $5,000 and $30,000."
+        }
+      }
+    ]
+  }
 }

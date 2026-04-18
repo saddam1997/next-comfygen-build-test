@@ -14,13 +14,15 @@ export default function MobileNav() {
       <div className="fixed top-0 left-0 w-full h-[70px] bg-white z-50 shadow-sm">
         <nav className="flex items-center justify-between h-full w-11/12 mx-auto">
 
-          <Link href="/">
+          <Link className="h-12" href="/">
             <Image
               src="/svg/Logo1.svg"
               alt="Logo"
               width={160}
               height={50}
               priority
+                sizes="100vw"
+              className="h-12 w-full object-contain"
             />
           </Link>
 

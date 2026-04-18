@@ -4,8 +4,9 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
 import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import HeroSectionforHome from "../../components/HeroSectionforHome"
-
+import HeroSectionforcls from "../../components/HeroSectionforcls"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
 });
@@ -166,25 +167,18 @@ export default function Blockchain(props) {
           name="twitter:image"
           content="https://www.comfygen.com/comfygen-images/blockchain-development-new/blockchain-development.webp"
         />
-
-
-
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(JSON_DATA.jsonLdData),
           }}
         />
-
-
-
       </Head>
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
-
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <Milestones />
+      <div className="overflow-hidden lg:pt-[110px] pt-16">
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        {/* <HeroSectionforcls herosection={JSON_DATA.Herosection} /> */}
+        {/* <Milestones /> */}
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
@@ -197,7 +191,7 @@ export default function Blockchain(props) {
         <TechSection TechStack={JSON_DATA.TechStack} />
         <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         <WhyChooseSection pageData={JSON_DATA.pageData} />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
         {/* <TestimonialSection testimonials={JSON_DATA.testimonialData} /> */}
         {/* <GuidSectionBlockchain /> */}
         <FaqSection faqData={JSON_DATA.Frequently} title="" />
@@ -216,7 +210,7 @@ export default function Blockchain(props) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=blockchain-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

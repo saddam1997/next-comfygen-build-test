@@ -4,6 +4,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./Astrology.json";
 import Header from "../../components/Newcomponet/layout/Header"
+import Navbar from "../../components/Navbar";
+import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
@@ -171,24 +173,9 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Astrology App Development Company in India"
-          ptag="Partner with a trusted astrology app development company in India to build top-notch astrology applications. At Comfygen, we deliver advanced astrology app development services using AI/ML, blockchain, and modern frameworks to create accurate, engaging, and high-performance astrology apps. Our expert astrology app developers transform your idea into a future-ready digital astrology solution tailored to your business goals."
-          ptag1=""
-          li="Custom Astrology App Development"
-          li1="AI/ML & Blockchain Integration"
-          li2="Scalable & Secure App Architecture"
-          li3="Hire Experienced Astrology App Developers"
-          li4="24/7 Support & Maintenance"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/image/hero-imageastrology-app-development.webp"
-        />
+      <Navbar />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      
 
         <Milestones />
 
@@ -384,7 +371,7 @@ export default function ClinicalApp(props: any) {
         <Faq faqData={Frequently} title="" />
 
         <BlogSection initialData={initialData} />
-      </div>
+
     </>
   );
 }
@@ -392,7 +379,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=astrology-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

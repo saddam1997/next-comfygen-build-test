@@ -1,13 +1,16 @@
 import Image from "next/image";
-import ServicesTabs from "./ServicesTabs";
+const ServicesTabs = dynamic(() => import("./ServicesTabs"), {
+  ssr: false, // 🚨 IMPORTANT
+});
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 import style from "./scrollhide.module.css"
+import dynamic from "next/dynamic";
 
 export default function ServicesComponet({ servicesData }) {
     return (
-        <section className="lg:py-16 lg:px-5 xl:px-10 2xl:px-0 py-10 bg-[#F5F5F9]">
-            <div className="w-full lg:px-4 xl:px-0">
+        <section className="bg-[#F5F5F9] min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+            <div className="w-full  lg:py-16 lg:px-5 xl:px-10 2xl:px-0 py-10 ">
 
                 {/* SEO Heading */}
                 <div className="space-y-2 text-center">
@@ -31,7 +34,7 @@ export default function ServicesComponet({ servicesData }) {
                             height={200}
                             loading="lazy"
                             fetchPriority="low"
-                            className="absolute bottom-0 right-0 pointer-events-none"
+                            className="absolute bottom-0 right-0 pointer-events-none w-auto h-auto"
                         />
 
                         {/* ✅ ALL CONTENT RENDERED HERE (SEO WIN) */}
@@ -40,7 +43,7 @@ export default function ServicesComponet({ servicesData }) {
                                 <div
                                     key={index}
                                     id={`service-${index}`}
-                                    className={`service-content absolute inset-0 px-6 py-12 text-white transition-opacity duration-300`}
+                                    className={`service-content absolute inset-0 px-6 py-12 text-white `}
                                 >
                                     <div className="space-y-4">
 

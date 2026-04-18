@@ -8,11 +8,7 @@ import ParagraphText from "../ui/ParagraphText";
 import { parseHTMLString } from "../../lib/parseHTML"
 
 const HireDeveloper = ({ HireDeveloper }: any) => {
-  const { heading, text, text1, text2, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
-
-
-
-
+  const { heading, text, text1, text2, text3, text4, text5, text6, buttonText, buttonLink, imageSrc, imageAlt, listItems, listheading } = HireDeveloper
   return (
     <section className="lg:py-16 py-10 bg-[#fff]">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#17162B] rounded-[24px]">
@@ -39,6 +35,28 @@ const HireDeveloper = ({ HireDeveloper }: any) => {
 
                   )
                 }
+
+                {
+                  text3 && (
+                    <ParagraphText color={"white"} text={text3} />
+
+                  )
+                }
+                {
+                  text4 && (
+                    <ParagraphText color={"white"} text={text4} />
+
+                  )
+                }
+
+                {
+                  text5 && (
+                    <ParagraphText color={"white"} text={text5} />
+
+                  )
+                }
+
+
 
 
 

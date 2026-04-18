@@ -54,13 +54,16 @@ export default function DesktopNav(props: any) {
             passHref={true}
             className="relative flex items-center flex-shrink-0 text-white"
           >
-            <Image
+            <div className="h-12">
+              <Image
               src="/svg/Logo1.svg"
               alt="comfygen-logo"
-              width={244}
+              width={200}
               height={51}
               priority
+              className="h-12 w-auto"
             />
+            </div>
           </Link>
         </div>
         <div>

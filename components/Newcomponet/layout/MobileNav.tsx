@@ -38,11 +38,7 @@ const MobileApp = [
     name: "Flutter Development",
     url: "/flutter-development-company",
   },
-  {
-    num: "7",
-    name: "News & Web App Development",
-    url: "/news-application-development",
-  },
+
   {
     num: "8",
     name: "Cricket Fast Line App Development",
