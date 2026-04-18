@@ -93,16 +93,8 @@ const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
 });
 import ReviewCard from "../../components/ReviewCard";
 
-
-
-
-
 export default function Ecommerce(props: any) {
   let { initialData } = props;
-
-
-
-
 
   return (
     <>

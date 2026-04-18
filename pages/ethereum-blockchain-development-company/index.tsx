@@ -73,7 +73,7 @@ import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHead
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ReviewCard from "../../components/ReviewCard";
 
-export default function Ecommerce(props:any) {
+export default function Ecommerce(props: any) {
   let { initialData } = props;
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const openModal = () => {
@@ -87,7 +87,7 @@ export default function Ecommerce(props:any) {
     <>
       <Head>
         <title>
-         Best Ethereum Blockchain Development Company | Comfygen
+          Best Ethereum Blockchain Development Company | Comfygen
         </title>
         <meta
           name="description"
@@ -97,7 +97,7 @@ export default function Ecommerce(props:any) {
         <link rel="canonical" href="https://www.comfygen.com/ethereum-blockchain-development-company" />
 
         {/* <!-- Robots → */}
-        <meta name="keywords" content="Ethereum DApp Development, Smart Contract Development, Ethereum Token Development, DeFi Development Solutions, NFT Marketplace Development, Ethereum Wallet & Exchange Development, Enterprise Ethereum Solutions"/>
+        <meta name="keywords" content="Ethereum DApp Development, Smart Contract Development, Ethereum Token Development, DeFi Development Solutions, NFT Marketplace Development, Ethereum Wallet & Exchange Development, Enterprise Ethereum Solutions" />
 
 
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
@@ -300,14 +300,14 @@ export default function Ecommerce(props:any) {
           mainCardData={JSON_DATA.pageData.mainCardData}
           gridData={JSON_DATA.pageData.gridData}
         />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
 
         <Faq
           faqData={JSON_DATA.Frequently}
           title=""
         />
-  <BlogSection initialData={initialData} />
-       
+        <BlogSection initialData={initialData} />
+
       </div>
     </>
   );
