@@ -74,7 +74,7 @@ const CardListMinimal = dynamic(
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
- 
+
 
   return (
     <>
@@ -191,7 +191,9 @@ export default function Ecommerce(props: any) {
           }}
         />
       </Head>
-      <Navbar />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

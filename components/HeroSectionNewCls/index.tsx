@@ -9,7 +9,7 @@ const HeroClient = dynamic(() => import("./HeroClient"), {
 
 export default function HeroSection({ Data }: any) {
   return (
-    <section className="relative w-full h-[520px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
+    <section className="relative w-full h-[560px] sm:h-[620px] lg:h-[720px] overflow-hidden bg-[#1a1a4f]">
 
       {/* LCP Image */}
       <Image
