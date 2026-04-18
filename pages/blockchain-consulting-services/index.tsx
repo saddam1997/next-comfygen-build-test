@@ -3,64 +3,110 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
+  ),
 });
 
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
+  ),
 });
+
+
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
-import Emerging from "../../components/Emerging";
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
+
 
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
-import TechStacks from "../../components/TechStacks";
+
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
+
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
 
-import IndustryGrid from "../../components/IndustryGrid";
+const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
+
+
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 const GuidSectionBlockchain = dynamic(
@@ -112,11 +158,11 @@ export default function rummy(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <div className="">
+      <div className="min-h-[60px] md:min-h-[70px]">
         <BlockChainHeader />
       </div>
 
-      <div className="overflow-hidden lg:pt-16 pt-16">
+      <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />

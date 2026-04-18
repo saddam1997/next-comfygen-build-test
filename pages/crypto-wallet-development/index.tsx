@@ -39,6 +39,7 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
     <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
   ),
 });
+
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
   loading: () => (
