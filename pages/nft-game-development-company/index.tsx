@@ -2,55 +2,99 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/nftmarketplace.json";
 import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
+
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
+const InformationSection = dynamic(() => import("../../components/InformationSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
+
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
+
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
+
+const GameCard = dynamic(() => import("../../components/GameCard"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
 
 
-import GameCard from "../../components/GameCard";
+
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
@@ -155,7 +199,9 @@ export default function Ecommerce(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <Navbar />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
       {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       {/* <Milestones /> */}
