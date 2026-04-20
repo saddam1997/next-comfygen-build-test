@@ -112,13 +112,13 @@ export default function DesktopNav(props: any) {
                 setShowNav={setShowNav}
               />
 
-              <SportsMnue
+              {/* <SportsMnue
                 setActiveTab={setActiveTab}
                 activeTab={activeTab}
                 showNav={showNav}
                 handleTabClick={handleTabClick}
                 setShowNav={setShowNav}
-              />
+              /> */}
               <CompanyMnue
                 setActiveTab={setActiveTab}
                 activeTab={activeTab}

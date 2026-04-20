@@ -1,117 +1,95 @@
-
-import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
-import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
-});
-
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
-});
-
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
-  ),
-});
-
-const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
-  ),
-});
-
-
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
-
-const Emerging = dynamic(() => import("../../components/Emerging"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
-
-
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
-
-const TechStacks = dynamic(() => import("../../components/TechStacks"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
-
-
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
-
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
-
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
-
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
-
-const BlogSection = dynamic(() => import("../../components/BlogSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
-
-const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
-
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
 
-const GuidSectionBlockchain = dynamic(
-  () => import("./components/GuidSectionBlockchain"),
-  { ssr: true }
+/* ================= SKELETON SYSTEM ================= */
+
+const Skeleton = ({ h }: any) => (
+  <div className={`${h} w-full bg-gray-100 animate-pulse`} />
+);
+
+/* ================= DYNAMIC COMPONENTS ================= */
+
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const AboutComponent = dynamic(
+  () => import("../../components/Abouts/AboutComponent"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
+);
+
+const Solution = dynamic(
+  () => import("../../components/Solution"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const IndustryGrid = dynamic(
+  () => import("../../components/IndustryGrid"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const ProcesSection = dynamic(
+  () => import("../../components/ProcesSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const TechStacks = dynamic(
+  () => import("../../components/TechStacks"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const Emerging = dynamic(
+  () => import("../../components/Emerging"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const HireSection = dynamic(
+  () => import("../../components/HireSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const ReviewCard = dynamic(
+  () => import("../../components/ReviewCard"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const FaqSection = dynamic(
+  () => import("../../components/FaqSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+);
+
+/* ================= SECTION ENGINE ================= */
+
+const Section = ({ children }: any) => (
+  <section className="w-full py-16 md:py-20">
+    <div className="max-w-7xl mx-auto px-4">{children}</div>
+  </section>
 );
 
 
@@ -158,29 +136,87 @@ export default function rummy(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <div className="min-h-[60px] md:min-h-[70px]">
-        <BlockChainHeader />
-      </div>
+    <div className="overflow-x-hidden">
 
-      <div className="overflow-hidden ">
-        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        <Solution techData={JSON_DATA.AICrypto} />
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        <IndustryGrid />
-        <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
-        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-        <WhyChooseSection pageData={JSON_DATA.pageData} />
-        <Emerging emerging={JSON_DATA.EmergingData} />
-        <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
-        <GuidSectionBlockchain />
-       
-        <ReviewCard testimonials={JSON_DATA.ReviewData} />
-         <FaqSection faqData={JSON_DATA.Frequently} />
+        {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
+        <header className="">
+          <BlockChainHeader />
+        </header>
 
-        <BlogSection initialData={initialData} />
+        {/* reserved space (CRITICAL FIX) */}
+        <div className="h-[70px] md:h-[80px]" />
+
+        {/* ================= HERO (CRITICAL CLS FIX) ================= */}
+        <section className="min-h-[85vh] md:min-h-[100vh]">
+          <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        </section>
+
+        {/* ================= SECTION ENGINE ================= */}
+
+        <Section>
+          <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        </Section>
+
+        <Section>
+          <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        </Section>
+
+        <Section>
+          <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        </Section>
+
+        <Section>
+          <Solution techData={JSON_DATA.AICrypto} />
+        </Section>
+
+        <Section>
+          <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        </Section>
+
+        <Section>
+          <IndustryGrid />
+        </Section>
+
+        <Section>
+          <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+        </Section>
+
+        <Section>
+          <TechStacks
+            TabData={JSON_DATA.Tabs}
+            TechData={JSON_DATA.TechstackData}
+            Default={JSON_DATA.Tabs?.[0]}
+          />
+        </Section>
+
+        <Section>
+          <WhyChooseSection pageData={JSON_DATA.pageData} />
+        </Section>
+
+        <Section>
+          <Emerging emerging={JSON_DATA.EmergingData} />
+        </Section>
+
+        <Section>
+          <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
+        </Section>
+
+        <Section>
+          <GuidSectionBlockchain />
+        </Section>
+
+        <Section>
+          <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        </Section>
+
+        <Section>
+          <FaqSection faqData={JSON_DATA.Frequently} />
+        </Section>
+
+        <Section>
+          <BlogSection initialData={initialData ?? []} />
+        </Section>
+
       </div>
     </>
   );

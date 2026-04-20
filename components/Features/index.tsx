@@ -1,5 +1,6 @@
 import React from "react";
 import FeaturesClient from "./FeaturesClient";
+import HeadingTwo from "../ui/HeadingTwo";
 
 const FeaturesServer = ({ featuresData }: any) => {
   return (
@@ -7,9 +8,10 @@ const FeaturesServer = ({ featuresData }: any) => {
 
       {/* HEADER */}
       <div className="text-center space-y-2 max-w-7xl mx-auto px-2">
-        <h2 className="xl:text-4xl text-xl font-bold text-black">
-          {featuresData?.heading}
-        </h2>
+           <HeadingTwo color="#212121" text= {featuresData?.heading} />
+        {/* <h2 className="xl:text-4xl text-xl font-bold text-black">
+         
+        </h2> */}
         <p
           className="text-black lg:text-lg text-sm"
           dangerouslySetInnerHTML={{ __html: featuresData?.description }}

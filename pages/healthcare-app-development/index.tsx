@@ -1,299 +1,89 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/healthCare.json";
-import { IconCode, IconFirstAidKit, IconMessage, IconNews, } from '@tabler/icons-react';
-import { IconCashBanknote, IconShoppingCart, IconTools, IconTicket, IconChartBar } from '@tabler/icons-react';
-import { FaDotCircle } from "react-icons/fa";
 
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Link from "next/link";
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const loader = () => (
-  <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-);
-const Milestones = dynamic(
-  () => import("../../components/Newcomponet/comman/Milestones"),
-  { loading: loader, ssr: true }
-);
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+const CardGrid = dynamic(() => import("../../components/CardGrid"), {
+  ssr: true
+});
 
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
+const Features = dynamic(() => import("../../components/Features"), {
+  ssr: true,
+});
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+});
 
-const Features = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Features"),
-  { loading: loader, ssr: true }
-);
+const AppCard = dynamic(() => import("../../components/AppCard"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { loading: loader, ssr: true }
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
+import TechStacks from "../../components/TechStacks";
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true
+});
 
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
   { ssr: true }
 );
 
-
-const technologyData = [
-  {
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
-    title: "Doctor Appointment App Development",
-    desc: "Our <a href='https://www.comfygen.com/doctor-appointment-app-development' class='text-blue-500 font-semibold'>doctor appointment app development solutions</a> simplify online bookings, allowing patients to schedule visits seamlessly while helping doctors manage availability, consultations, and patient records efficiently through a user-friendly mobile platform."
-  },
-  {
-    img: <IconCashBanknote stroke={1.5} className="w-12 h-12" />,
-    title: "Pharmacy App Development",
-    desc: "Boost your pharmacy business with our <a href='https://www.comfygen.com/pharmacy-app-development' class='text-blue-500 font-semibold'>pharmacy app development</a> that enables easy medicine ordering, digital prescriptions, secure payments, and real-time delivery tracking for customers seeking convenient healthcare access at home."
-  },
-  {
-    img: <IconFirstAidKit stroke={1.5} className="w-12 h-12" />,
-    title: "Telemedicine App Development",
-    desc: "Deliver remote care with our <a href='https://www.comfygen.com/telemedicine-app-development' class='text-blue-500 font-semibold'>telemedicine app development solutions</a> that connect patients and doctors via secure video consultations, real-time chat, and digital prescriptions—making healthcare more accessible and efficient worldwide."
-  },
-  {
-    img: <IconNews stroke={1.5} className="w-12 h-12" />,
-    title: "Fitness App Development",
-    desc: "Encourage healthier lifestyles through our fitness app development services that track workouts, diet, and health goals, helping users maintain wellness while integrating smart wearables for real-time activity monitoring."
-  },
-  {
-    img: <IconMessage stroke={1.5} className="w-12 h-12" />,
-    title: "Medical Devices Software Development",
-    desc: "We offer medical devices software development that connects smart healthcare equipment to apps, ensuring real-time monitoring, accurate data collection, and improved diagnosis for hospitals and medical institutions."
-  },
-  {
-    img: <IconShoppingCart stroke={1.5} className="w-12 h-12" />,
-    title: "Laboratory App Development",
-    desc: "Our <a href='https://www.comfygen.com/laboratory-app-development' class='text-blue-500 font-semibold'>laboratory app development solutions</a> streamline lab operations by managing test bookings, tracking samples, and delivering reports digitally, thereby ensuring faster turnaround times and an enhanced patient experience."
-  },
-  {
-    img: <IconTools stroke={1.5} className="w-12 h-12" />,
-    title: "Medicine Delivery App Development",
-    desc: "Simplify medicine sales and delivery with our <a href='https://www.comfygen.com/medicine-delivery-app-development' class='text-blue-500 font-semibold'>medicine delivery app development services</a>, offering prescription uploads, order tracking, and seamless payment integration for efficient pharmacy operations."
-  },
-  {
-    img: <IconTicket stroke={1.5} className="w-12 h-12" />,
-    title: "Clinical App Development",
-    desc: "Enhance hospital workflows with <a href='https://www.comfygen.com/clinical-application-development' class='text-blue-500 font-semibold'>clinical app development</a> that manages patient data, clinical reports, and scheduling, improving coordination between healthcare professionals and boosting overall care efficiency."
-  },
-  {
-    img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
-    title: "mHealth App Development",
-    desc: "Our mHealth app development solutions bring healthcare to mobile devices, enabling remote consultations, health monitoring, and real-time updates to make medical care more accessible to everyone."
-  },
-];
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
 
 
 
-
-const jsonLdData = [
-  
-
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Next-Gen Healthcare App Development Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Comfygen Technologies",
-      "url": "https://www.comfygen.com/"
-    },
-    "description": "Boost your medical business with Comfygen’s next-gen healthcare app development solutions. We develop scalable, compliant, and data-driven healthcare applications for global clients.",
-    "url": "https://www.comfygen.com/healthcare-app-development",
-    "mainEntityOfPage": "https://www.comfygen.com/healthcare-app-development",
-    "areaServed": "Global",
-    "serviceType": [
-      "Healthcare App Development",
-      "Medical App Development Company",
-      "HIPAA Compliant Healthcare App",
-      "Telemedicine App Development",
-      "Custom Healthcare App Development",
-      "AI Healthcare Solutions",
-      "Hospital Management App",
-      "HealthTech App Developers",
-      "Medical Software Development",
-      "Healthcare App Consultation Services",
-      "Remote Patient Monitoring App Development",
-      "Healthcare CRM App Development",
-      "EHR & EMR App Development",
-      "Doctor Appointment App Development",
-      "Pharmacy App Development",
-      "Fitness App Development"
-
-    ],
-
-    "sameAs": [
-      "https://www.facebook.com/comfygen.technologies",
-      "https://x.com/Comfygen_Tech",
-      "https://www.instagram.com/comfygen_technologies",
-      "https://www.linkedin.com/company/comfygen-technologies"
-
-    ]
-  },
-
-
-  {
-    "@context": "https://schema.org/",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.comfygen.com"
-    }, {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Healthcare App Development",
-      "item": "https://www.comfygen.com/healthcare-app-development"
-
-    }]
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What types of healthcare apps do you develop?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We develop a wide range of healthcare apps including telemedicine apps, patient monitoring apps, medical appointment booking apps, wearable healthcare apps, EHR/EMR apps, and AI-powered diagnostic apps tailored to hospitals, clinics, and healthcare startups."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What technologies do you use in healthcare app development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our healthcare mobile app developers leverage modern tech stacks such as Node.js, Python, Django, Next.js, React, blockchain integration, and IoT solutions to create secure, scalable, and HIPAA-compliant apps."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does it cost to develop a healthcare app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of healthcare app development depends on app complexity, features, platform (iOS, Android, or cross-platform), and third-party integrations. At Comfygen, we provide customized quotes to fit your project requirements and budget."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to develop a healthcare app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Healthcare mobile app development timelines vary depending on features, integrations, and complexity. Typically, a standard app takes 12–20 weeks, while complex AI-powered or telemedicine apps may require 24+ weeks."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you integrate telemedicine and AI-based features?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we integrate telemedicine functionalities such as video consultations, chat, and e-prescriptions, along with AI-powered features like predictive analytics, diagnostic support, and personalized healthcare recommendations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you handle updates and maintenance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer ongoing app support, updates, and optimization, including bug fixes, security patches, and feature enhancements to ensure your healthcare app remains secure, HIPAA-compliant, and up-to-date with industry standards."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you integrate third-party APIs and devices into the app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we integrate third-party APIs, wearable devices, and medical IoT sensors to provide real-time monitoring, seamless data sharing, and enhanced patient engagement across your healthcare ecosystem."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide customization options for healthcare apps?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Our custom healthcare app development services allow tailored solutions to meet your unique workflows, branding, patient care processes, and compliance requirements."
-        }
-      }
-    ]
-  }
-
-
-
-];
 
 
 export default function Mobile(props: any) {
   let { initialData } = props;
-  let {
-    Frequently,
-    Streamlined,
-  } = JSON_DATA;
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [selectedItemIndex, setSelectedItemIndex] = useState<number>(0);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
 
 
@@ -387,209 +177,70 @@ export default function Mobile(props: any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
 
       </Head>
 
-      <Header />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Trading} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Features featuresData={JSON_DATA.FeaturesData} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Solution techData={JSON_DATA.FutureDrivenData} />
+      {/* 
+      <div className=" py-8">
+        <div className="bg-black">
+          <section className="items-center py-20  space-y-10  md:flex md:space-x-10 md:space-y-0 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
+            <div className="w-full space-y-6 text-center md:text-left">
+              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-1">
+                <div className="flex flex-col space-y-2">
+                  <Image
+                    className="rounded-lg bg-contain"
+                    alt="Our Secured and Compliance-Friendly mHealth Applications Meeting Industry Standards"
+                    src="https://www.comfygen.com/comfygen-images/healthcare-app-development/Next Gen Healthcare App.webp"
+                    width={640}
+                    height={360}
+                  />
+                  <h2 className="py-2 lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-white">
+                    Next-Gen Healthcare App Development Company for Diverse Medical Sectors
+                  </h2>
+                  <p className="text-base text-white">At <Link href='https://www.comfygen.com' className="underline font-semibold">Comfygen Technologies</Link>, we are a next-gen healthcare app development company delivering custom, secure, and scalable healthcare app solutions for diverse medical sectors. Our expertise covers patient care management, clinical workflows, telemedicine platforms, and AI-powered healthcare applications, enabling hospitals, clinics, startups, and enterprises to enhance care delivery, streamline operations, ensure HIPAA compliance, and drive sustainable digital healthcare transformation.
+                  </p>
 
-      <div className="overflow-hidden lg:pt-[110px]">
-        <HeroSectionForAllPages
-          heading="Top-Rated Healthcare Mobile App Development Company In India"
-          ptag="A trusted healthcare mobile app development company delivering secure, HIPAA-compliant, and scalable digital healthcare solutions for hospitals, clinics, startups, and enterprises worldwide."
-          ptag1='We specialize in custom healthcare mobile app development using advanced technologies like AI, IoT, and cloud to improve patient care, streamline clinical workflows, and ensure data security. Our expert healthcare app developers build future-ready solutions tailored to your business needs.'
-          li="Custom Healthcare App Development Services for Android & iOS"
-          li1="Secure & HIPAA-compliant Medical App Development Solutions"
-          li2="Scalable Healthcare Software Development with AI & IoT integration"
-          li3=""
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/healthcare-app-development/hero.webp"
-        />
-
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Affordable Custom Healthcare App Development Services In India for Your Startup</h2>
-              <p className="text-base text-center font-normal">Take your healthcare business to the next level with Comfygen’s custom healthcare app development services. As a trusted AI healthcare app development company, we provide the best <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps' className='text-blue-500 font-medium'>HIPAA-compliant mobile app development solutions</a> tailored to hospitals, startups, and enterprises. Empower your patients and streamline operations with our advanced healthcare app services.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Company"
-          heading="Why Invest in Custom Healthcare Mobile App Development?"
-          description1="According to Grand View Research, the global healthcare mobile app market is expected to grow from USD 114.17 billion in 2024 to USD 1,070.58 billion by 2030, registering a strong CAGR of 45.2%. This rapid growth highlights the increasing demand for custom healthcare mobile app development among hospitals, clinics, and healthcare startups."
-          description2="Investing in custom healthcare app development services enables organizations to improve patient care quality, streamline clinical operations, and unlock new revenue opportunities through scalable, secure, and HIPAA-compliant digital healthcare solutions."
-          points={[
-            "24/7 virtual consultations",
-            "Real-time patient monitoring",
-            "Improved patient engagement",
-            "Automated workflows & analytics",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/healthcare-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <SolutionSec
-          heading="Our Custom Healthcare Mobile App Development Solutions"
-          subheading="Comfygen Technologies offers custom healthcare mobile app development solutions designed to empower hospitals, clinics, pharmacies, and startups. We build scalable, HIPAA-compliant, and AI-powered healthcare apps that enhance patient care, streamline workflows, and boost your digital healthcare journey."
-          techData={technologyData}
-
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Heathcare Mobile Application Portfolio"
-            description="Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment."
-          />
-        </section>
-
-
-        <div className="py-8">
-          <Features
-            heading="We Build Healthcare Apps with Powerful Patient, Doctor & Admin Panels"
-            description="Comfygen Technologies delivers next-gen healthcare app development solutions equipped with powerful admin, doctor, and patient panels. Our advanced panels ensure smooth communication, secure data access, and efficient management for a seamless healthcare experience."
-            featuresData={JSON_DATA.featuresData}
-            grid={3} />
-        </div>
-
-        <CallToAction
-          heading="Let’s Build the Future of Digital Healthcare Together"
-          text="Transform your healthcare idea into a cutting-edge mobile app with Comfygen Technologies."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">
-                  Next-Gen Healthcare App Development Solutions Powered by AI, IoT, and Blockchain
-                </h2>
-                <p>At Comfygen Technologies, we bring innovation and intelligence together with our next-gen healthcare mobile app development solutions. Our 10+ year experienced healthcare application developers leverage the latest technologies, including AI, Blockchain, IoT, and Cloud Computing, to build secure, smart, and scalable healthcare mobile apps.</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.FutureDriven.map((elem) => {
-                  const { title, desc } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/40 rounded-[40px]">
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p className=" text-base font-normal mt-2" dangerouslySetInnerHTML={{ __html: desc }}></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className=" py-8">
-          <div className="bg-black">
-            <section className="items-center py-20  space-y-10  md:flex md:space-x-10 md:space-y-0 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-              <div className="w-full space-y-6 text-center md:text-left">
-                <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-1">
-                  <div className="flex flex-col space-y-2">
-                    <Image
-                      className="rounded-lg bg-contain"
-                      alt="Our Secured and Compliance-Friendly mHealth Applications Meeting Industry Standards"
-                      src="https://www.comfygen.com/comfygen-images/healthcare-app-development/Next Gen Healthcare App.webp"
-                      width={640}
-                      height={360}
-                    />
-                    <h2 className="py-2 lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-white">
-                      Next-Gen Healthcare App Development Company for Diverse Medical Sectors
-                    </h2>
-                    <p className="text-base text-white">At <Link href='https://www.comfygen.com' className="underline font-semibold">Comfygen Technologies</Link>, we are a next-gen healthcare app development company delivering custom, secure, and scalable healthcare app solutions for diverse medical sectors. Our expertise covers patient care management, clinical workflows, telemedicine platforms, and AI-powered healthcare applications, enabling hospitals, clinics, startups, and enterprises to enhance care delivery, streamline operations, ensure HIPAA compliance, and drive sustainable digital healthcare transformation.
-                    </p>
-
-                  </div>
-                  <div className="grid gap-4 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[650px] overflow-auto head-scroll">
-                    {JSON_DATA.WhyChoosed.map((elem) => {
-                      const { num } = elem;
-                      return (
-                        <div key={num} className="group  pb-6 space-y-4 transition-all duration-200">
-                          <div className="flex gap-2">
-                            <span><FaDotCircle className="text-white" /></span>
-                            <p className="text-white" dangerouslySetInnerHTML={{ __html: elem.decs }}></p>
-                          </div>
+                </div>
+                <div className="grid gap-4 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[650px] overflow-auto head-scroll">
+                  {JSON_DATA.WhyChoosed.map((elem) => {
+                    const { num } = elem;
+                    return (
+                      <div key={num} className="group  pb-6 space-y-4 transition-all duration-200">
+                        <div className="flex gap-2">
+                          <span><FaDotCircle className="text-white" /></span>
+                          <p className="text-white" dangerouslySetInnerHTML={{ __html: elem.decs }}></p>
                         </div>
-                      );
-                    })}
-                  </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-            </section>
-          </div>
-        </div>
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Step-by-Step Healthcare App Development Process We Follow</h2>
-              <p className="text-base font-normal mt-2">
-                Comfygen Technologies is a trusted healthcare mobile app development company in India that builds custom, secure, and high-performance healthcare apps. We follow a clear and flexible development process focused on real results. From planning to launch and ongoing support, we ensure smooth user experience and better business efficiency.
-
-              </p>
             </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
+          </section>
+        </div>
+      </div> */}
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-        <section className="py-8">
-          <TechStack
-            title="Modern Technology Stack for Secure Healthcare App Development"
-            description="At Comfygen Technologies, we use a robust and future-ready healthcare app development technology stack to build high-performance, secure, and scalable medical applications. Our backend and frontend frameworks, combined with modern databases and APIs, ensure seamless functionality, data security, and full compliance with healthcare regulations such as HIPAA and GDPR, delivering reliable digital healthcare solutions for hospitals, startups, and enterprises."
-          />
-        </section>
 
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Dedicated Healthcare App Developers"
-          text="Looking to build a secure and scalable healthcare mobile app? Hire dedicated <a href='https://www.comfygen.com/hire-mobile-app-developer' class='underline'>healthcare mobile app developers</a> from Comfygen Technologies to create HIPAA-compliant, feature-rich medical applications tailored to your business. Our expert developers specialize in delivering smart, innovative, and reliable medical mobile app development solutions for hospitals, startups, and telemedicine providers."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Expertise in custom healthcare app development",
-            "HIPAA & GDPR-compliant app architecture",
-            "Integration with EHR, IoT & wearables"
-          ]}
-        />
-
-        <ClientTestimonials
-          heading="What Our Clients Say About"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
-        <Faq faqData={Frequently} title="Frequently Asked Questions" />
-        <BlogSection initialData={initialData} />
-
-      </div >
     </>
   );
 }

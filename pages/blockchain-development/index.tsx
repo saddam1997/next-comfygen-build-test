@@ -1,100 +1,99 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
-import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
-});
+import HeroSectionNewCls from "../../components/HeroSectionNewCls";
+import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+import IndustryGrid from "../../components/IndustryGrid";
 
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
-});
+/* ================= SKELETON ================= */
 
+const Skeleton = ({ h }: any) => (
+  <div className={`${h} w-full bg-gray-100 animate-pulse`} />
+);
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
-});
+/* ================= DYNAMIC COMPONENTS ================= */
 
-import CardwithImageSection from "../../components/CardwithImageSection"
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
-});
+const AboutComponent = dynamic(
+  () => import("../../components/Abouts/AboutComponent"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
+const Solution = dynamic(
+  () => import("../../components/Solution"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
+const CardwithImageSection = dynamic(
+  () => import("../../components/CardwithImageSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
-  ),
-});
+const Consultancy = dynamic(
+  () => import("../../components/Consultancy"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
-});
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
+);
 
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
-});
+const ProcesSection = dynamic(
+  () => import("../../components/ProcesSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
+const TechSection = dynamic(
+  () => import("../../components/TechSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
-});
+const HireSection = dynamic(
+  () => import("../../components/HireSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
+const ReviewCard = dynamic(
+  () => import("../../components/ReviewCard"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
+
+const FaqSection = dynamic(
+  () => import("../../components/FaqSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
-  { ssr: true }
+  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
 );
-const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
-  ssr: true,
-  loading: () => (
-    <div className="min-h-[600px] sm:min-h-[500px] lg:min-h-[400px] bg-gray-100 animate-pulse" />
-  )
-});
 
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import ReviewCard from "../../components/ReviewCard";
+/* ================= SECTION ENGINE (IMPORTANT FIX) ================= */
 
-export default function Blockchain(props) {
+const Section = ({ children }: any) => (
+  <section className="w-full py-16 md:py-20">
+    <div className="max-w-7xl mx-auto px-4">{children}</div>
+  </section>
+);
+
+export default function Blockchain(props: any) {
   let { initialData } = props;
-
-
-
   return (
     <div className="overflow-hidden">
       <Head>
@@ -170,59 +169,83 @@ export default function Blockchain(props) {
         />
       </Head>
 
-      <div className="min-h-[30px] md:min-h-[30px]">
-        <BlockChainHeader />
-      </div>
+      <div className="overflow-x-hidden">
 
-      <div className="overflow-hidden lg:pt-[110px] pt-16">
-        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
+        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+          <BlockChainHeader />
+        </header>
 
-        <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+        {/* reserved space (NO CLS) */}
+        <div className="h-[60px] md:h-[70px]" />
+
+        {/* ================= HERO (CRITICAL FIX) ================= */}
+        <section className="min-h-[85vh] md:min-h-[75vh]">
+          <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        </section>
+
+        {/* ================= SECTION ENGINE ================= */}
+
+        <Section>
           <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        </div>
+        </Section>
 
-        <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
+        <Section>
           <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        </div>
+        </Section>
 
-        <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
+        <Section>
           <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        </div>
+        </Section>
 
-        <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+        <Section>
           <Solution techData={JSON_DATA.Customized} />
-        </div>
+        </Section>
 
+        <Section>
+          <CardwithImageSection PlatformsData={JSON_DATA.PlatformsData} />
+        </Section>
 
-        <CardwithImageSection PlatformsData={JSON_DATA.PlatformsData} />
-        <Consultancy consultancyData={JSON_DATA.consultancyData} />
-        <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px]">
+        <Section>
+          <Consultancy consultancyData={JSON_DATA.consultancyData} />
+        </Section>
+
+        <Section>
           <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-        </div>
+        </Section>
 
-        <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
+        <Section>
           <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        </div>
+        </Section>
 
-        <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
+        <Section>
           <WhyChooseSection pageData={JSON_DATA.pageData} />
-        </div>
+        </Section>
 
-        <IndustryGrid />
-        <TechSection TechStack={JSON_DATA.TechStack} />
-        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <Section>
+          <TechSection TechStack={JSON_DATA.TechStack} />
+        </Section>
 
-        <ReviewCard testimonials={JSON_DATA.ReviewData} />
-        {/* <TestimonialSection testimonials={JSON_DATA.testimonialData} /> */}
-        {/* <GuidSectionBlockchain /> */}
-        <FaqSection faqData={JSON_DATA.Frequently} title="" />
-        <BlogSection initialData={initialData} />
+        <Section>
+          <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        </Section>
 
+        <Section>
+          <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        </Section>
 
+        <Section>
+          <FaqSection faqData={JSON_DATA.Frequently} title="" />
+        </Section>
+
+        <Section>
+          <BlogSection initialData={initialData ?? []} />
+        </Section>
 
       </div>
-
     </div>
+
+
 
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
@@ -8,139 +8,85 @@ import HeroSectionforHomeTest from "../../../components/HeroSectionforHomeTest";
 
 const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
 });
 
 const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutComponent"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const FeaturesNewSection = dynamic(() => import("../../../components/FeaturesNewSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const Trending = dynamic(() => import("../../../components/Trending"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const AppClone = dynamic(() => import("../../../components/AppClone"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const WhyChooseSection = dynamic(() => import("../../../components/WhyChooseSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const TechStacks = dynamic(() => import("../../../components/TechStacks"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../../components/CallToActionSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const HireSection = dynamic(() => import("../../../components/HireSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const ClientStories = dynamic(() => import("../../../components/ClientStories"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const BlogSection = dynamic(() => import("../../../components/BlogSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const ReviewCard = dynamic(() => import("../../../components/ReviewCard"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
 const GroceryAppScreens = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/GroceryAppScreens"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHeader";
 
 const Solution = dynamic(() => import("../../../components/Solution"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const DeliverySection = dynamic(() => import("../../../components/Newcomponet/comman/DeliverySection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 
@@ -150,149 +96,6 @@ export default function ClinicalApp(props: any) {
   let { initialData } = props;
 
 
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Grocery Delivery App Development Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Partner with Comfygen Technologies for grocery delivery app development services. We build scalable, feature-rich apps like Instacart & Zepto with AI, real-time tracking, and seamless UX.",
-      url: "https://www.comfygen.com/ecommerce/grocery",
-      mainEntityOfPage: "https://www.comfygen.com/ecommerce/grocery",
-      areaServed: "Global",
-      serviceType: [
-        "grocery mobile app development",
-        "grocery delivery app development",
-        "App Like Walmart",
-        "AI-Based Grocery App Development",
-        "Blockchain-Based Grocery App Development",
-        "Custom Grocery App Development",
-        "Grocery App Consulting Services",
-        "Grocery Store App Development",
-        "App Like Target",
-        "App Like Shipt",
-        "App Like Zepto",
-        "App Like Blinkit",
-        "On-Demand Grocery Delivery App Development",
-        "Hyperlocal Grocery App Development",
-        "Marketplace Grocery App Development",
-        "Grocery Chain App Development",
-        "Supermarket App Development Solution",
-        "Grocery Loyalty App Development",
-        "Grocery Inventory Management App Development",
-        "B2B Grocery App Development",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Ecommerce Development",
-          item: "https://www.comfygen.com/ecommerce",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "Grocery App Development",
-          item: "https://www.comfygen.com/ecommerce/grocery",
-        },
-      ],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Why is now the right time to invest in a grocery delivery app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The online grocery delivery market is growing rapidly. By 2030, it’s projected to reach $645 billion globally, with hundreds of millions of users relying on apps for their grocery needs. Early investment lets you capture a loyal customer base and secure a strong market position.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What revenue streams can a grocery delivery app generate?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "A grocery delivery app can earn through multiple channels: delivery fees, commissions from partner stores, subscription models, advertisements, and premium services. This diversified revenue model ensures steady income.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How scalable is a grocery delivery business?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Once the app is established in one city or region, it can easily expand to other locations or even globally. The platform can support multiple vendors, logistics partners, and customer segments, making scaling relatively smooth.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What features should a grocery delivery app include?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Key features include: user-friendly search and catalog browsing, secure online payment options, real-time order tracking, ratings and reviews, personalized offers and push notifications, and vendor and delivery partner dashboards.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How profitable is investing in a grocery delivery app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "With the market expected to grow at a double-digit CAGR and increasing adoption in emerging markets, grocery delivery apps can generate strong profit margins through multiple income streams while building long-term brand loyalty.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can a grocery delivery app survive market competition?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Differentiation through unique features, faster delivery, better UI/UX, and strong vendor partnerships can help your app stand out. Early entry into growing markets provides a significant competitive advantage.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How does technology impact the success of a grocery delivery app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The right tech stack ensures scalability, speed, and security. Incorporating AI for personalized recommendations, real-time logistics tracking, and analytics for business insights can significantly boost performance and customer satisfaction.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What is the long-term growth potential for investors?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "With increasing online adoption, changing consumer habits, and the convenience factor, the online grocery delivery sector is expected to see exponential growth over the next decade, providing excellent returns for early investors.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -380,7 +183,7 @@ export default function ClinicalApp(props: any) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLdData),
+            __html: JSON.stringify(JSON_DATA?.jsonLdData),
           }}
         />
       </Head>

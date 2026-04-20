@@ -7,186 +7,66 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const Features = dynamic(() => import("../../components/Features"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const Emerging = dynamic(() => import("../../components/Emerging"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
-
-
-
-
 
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
 
 
-  const jsonLdData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Custom Stock Trading App Development Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Get custom stock trading app development services from Comfygen. We build secure, scalable, and real-time trading apps with advanced features like AI trading bots, portfolio management, and multi-asset support.",
-      url: "https://www.comfygen.com/stock-trading-app-development",
-      mainEntityOfPage:
-        "https://www.comfygen.com/stock-trading-app-development",
-      areaServed: "Global",
-      serviceType: [
-        "Custom Stock Trading App Development",
-        "Native & Cross-Platform App Development",
-        "Stock Trading Web App Development",
-        "Trading Bot App Development",
-        "AI-Powered Stock Trading App Development",
-        "Blockchain-Based Stock Trading App Development",
-        "White Label Stock Trading App Development",
-        "iOS Stock Trading App Development",
-        "Android Stock Trading App Development",
-        "Crypto Trading App Development",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited",
-      ],
-    },
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How much does it cost to develop a stock trading app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The cost of developing a stock trading app varies depending on features, platforms (iOS/Android/Web), tech stack, and third-party integrations. On average, it ranges from $25,000 to $150,000+. At Comfygen, we offer custom quotes based on your requirements, ensuring you get the best ROI with secure, scalable, and high-performance trading solutions.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is it legal to build a stock trading platform?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, it’s legal to build a stock trading platform, provided you comply with regulatory requirements like SEC, FINRA (USA), or SEBI (India). You may also need licenses or partnerships with registered brokerage firms. Our team ensures full legal compliance by integrating robust KYC/AML processes, secure APIs, and transaction tracking.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you integrate with brokerage APIs like Alpaca or TD Ameritrade?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Absolutely. Comfygen specializes in integrating brokerage APIs such as Alpaca, TD Ameritrade, E*TRADE, and more. We enable seamless market data access, trade execution, portfolio syncing, and account management using secure and scalable APIs to ensure a smooth trading experience for your users.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What services do you offer for stock trading app development?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "We offer end-to-end stock trading app development services, including UI/UX design, backend development, real-time data integration, trading bot integration, API integration, multi-asset support, testing, deployment, and post-launch maintenance. Whether it’s a crypto exchange or equity trading app, we build scalable, compliant, and high-performance platforms.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -335,7 +215,7 @@ export default function ClinicalApp(props: any) {
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
       <div className="min-h-[60px] md:min-h-[70px]">

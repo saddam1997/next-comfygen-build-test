@@ -8,138 +8,43 @@ import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
-
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
-
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
-
-
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
-
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
-
-
-
-
-
-const faqPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a cricket live score API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A cricket live score API is a service that provides real-time updates of cricket match scores for integration into websites or applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I integrate a cricket live score API into my website or application?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Integration typically involves utilizing the API's documentation and following the provided instructions for making API calls to retrieve live cricket scores."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What kind of data does a cricket API provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A cricket API can provide various types of data, including live scores, player statistics, team information, match schedules, and more."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I access live cricket scores in real-time using a cricket score API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, a cricket score API provides real-time updates, allowing you to display accurate and up-to-date scores to your users."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are there any limitations on the number of API calls to the cricket live score API?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "API providers may have rate limits or usage restrictions in place, which can vary depending on the service plan or pricing tier you choose."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I use an API cricket service to enhance my sports app or website?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An API cricket service allows you to integrate live scores, player stats, and other cricket-related data into your app or website, enhancing the user experience and engagement."
-      }
-    }
-  ]
-
-};
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -194,17 +99,9 @@ export default function Ecommerce(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="fb:page_id" content="110909321596135" />
 
-
-
-
-
-
-
-
-
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.faqPageSchema) }}
         />
       </Head>
 
@@ -223,7 +120,7 @@ export default function Ecommerce(props) {
       <FaqSection faqData={JSON_DATA.Frequently} />
       <ClientStories />
 
- 
+
     </>
   );
 }
