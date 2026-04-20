@@ -5,12 +5,7 @@
     "isHome": false,
     "ptag": "A trusted Telemedicine App Development Company in India focused on delivering secure, scalable, and user-centric digital healthcare solutions. Comfygen Technologies specializes in building advanced telemedicine apps that enable virtual consultations, appointment scheduling, real-time video calls, e-prescriptions, and secure patient data management. Our expert team develops compliant, high-performance telemedicine platforms with intuitive UI/UX and seamless integrations, helping hospitals, clinics, and healthcare startups expand access to quality care while accelerating digital transformation.",
     "ptag1": "",
-    "listItems": [
-      "Virtual Doctor Consultations",
-      "Appointment Scheduling & Management",
-      "HIPAA-Compliant Data Security",
-      "Scalable & User-Friendly Platform"
-    ],
+    "listItems": [ ],
     "btnName": "Talk With Expert",
     "btnLink": "/contact-us",
     "altTag": "Best Telemedicine App Development Company",

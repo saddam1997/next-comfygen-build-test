@@ -3,76 +3,146 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
 
-import Navbar from "../../../components/Navbar";
-import HeroSectionforHome from "../../../components/HeroSectionforHome"
 import HeroSectionforHomeTest from "../../../components/HeroSectionforHomeTest";
-import AppClone from "../../../components/AppClone"
-const Milestones = dynamic(() => import("../../../components/Milestones"), {
-  ssr: true,
-});
+
+
 const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
-import FeaturesNewSection from "../../../components/FeaturesNewSection"
 const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
-import Trending from "../../../components/Trending";
 
-const WhyChooseSection = dynamic(
-  () => import("../../../components/WhyChooseSection"),
-  { ssr: true }
-);
+
+const FeaturesNewSection = dynamic(() => import("../../../components/FeaturesNewSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+const Trending = dynamic(() => import("../../../components/Trending"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
+const AppClone = dynamic(() => import("../../../components/AppClone"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
+const WhyChooseSection = dynamic(() => import("../../../components/WhyChooseSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
 
 const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import TechStacks from "../../../components/TechStacks";
+const TechStacks = dynamic(() => import("../../../components/TechStacks"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
 
 const CallToActionSection = dynamic(() => import("../../../components/CallToActionSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-const TechSection = dynamic(() => import("../../../components/TechSection"), {
-  ssr: true,
-});
 
 const HireSection = dynamic(() => import("../../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-const ClientStories = dynamic(
-  () => import("../../../components/ClientStories"),
-  { ssr: true }
-);
+
+const ClientStories = dynamic(() => import("../../../components/ClientStories"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
 
 const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
 
-const BlogSection = dynamic(
-  () => import("../../../components/BlogSection"),
-  { ssr: true }
-);
-import IndustryGrid from "../../../components/IndustryGrid";
-import ReviewCard from "../../../components/ReviewCard";
+const BlogSection = dynamic(() => import("../../../components/BlogSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
+const ReviewCard = dynamic(() => import("../../../components/ReviewCard"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
+const GroceryAppScreens = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/GroceryAppScreens"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
 import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHeader";
-import GroceryAppScreens from "../../../components/Newcomponet/SectionCompoent/GroceryAppScreens";
+
 const Solution = dynamic(() => import("../../../components/Solution"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-const DeliverySection = dynamic(
-  () => import("../../../components/Newcomponet/comman/DeliverySection"),
-  { ssr: true }
-);
+const DeliverySection = dynamic(() => import("../../../components/Newcomponet/comman/DeliverySection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
 
 
 
@@ -314,8 +384,11 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <EcommerceHeader />
+      </div>
+
+      <div className="overflow-hidden ">
         <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />

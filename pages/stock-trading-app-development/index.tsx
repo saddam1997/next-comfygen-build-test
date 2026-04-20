@@ -3,71 +3,109 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./mobilebankingappdevelopment.json";
 import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
-
-import BusinessSolustion from "../../components/BusinessSolustion"
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
-import Features from "../../components/Features"
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+const Features = dynamic(() => import("../../components/Features"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
-import Emerging from "../../components/Emerging";
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
-
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
+
 const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
+
+
+
 
 
 
@@ -300,9 +338,11 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <Navbar />
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Features featuresData={JSON_DATA.featuresData} />

@@ -9,67 +9,120 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import CardGrid from "../../components/CardGrid";
+const CardGrid = dynamic(() => import("../../components/CardGrid"), {
+  loading: () => <div className="min-h-[600px]" />,
+});
 
-import Features from "../../components/Features"
 
-import AppCardClones from "../../components/AppCardClones";
+const Features = dynamic(() => import("../../components/Features"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
+  ),
 });
 
-import Emerging from "../../components/Emerging";
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
 
 const AppCard = dynamic(() => import("../../components/AppCard"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-});
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
 });
 
-const Solution = dynamic(() => import("../../components/Solution"), {
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
+
+
+
+
 import TechStacks from "../../components/TechStacks";
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
+
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="w-full animate-pulse">
+      <div className="h-[500px] bg-gray-200 rounded-xl" />
+    </div>
+  )
 });
+
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => <div className="min-h-[400px]" />,
 });
+
+
 const ClientStories = dynamic(
   () => import("../../components/ClientStories"),
   { ssr: true }
 );
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => <div className="min-h-[500px]" />,
+});
+
 
 import Trending from "../../components/Trending";
 
@@ -128,25 +181,49 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-      <Navbar />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      </div>
+
+      <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      </div>
+
+
       <Trending trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
+
+
       <CardGrid techData={JSON_DATA.GridData} />
       <AppCard Data={JSON_DATA.CardClone} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+
+      <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      </div>
+
+      <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      </div>
+
       <Features featuresData={JSON_DATA.featuresData} />
       <BusinessSolustion imageSrc="https://www.comfygen.com/comfygen-images/dating-app-development/ai-dating.webp" BusinessSolustion={JSON_DATA.BusinessSolustion} />
-      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+
+      <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px]">
+        <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      </div>
+
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <Consultancy consultancyData={JSON_DATA.ModelsSec} />
       <Emerging emerging={JSON_DATA.EmergingData} />
-      <WhyChooseSection pageData={JSON_DATA.pageData} />
-       <ClientStories />
+      <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+      </div>
+      <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />

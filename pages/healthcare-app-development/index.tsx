@@ -13,7 +13,7 @@ import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent
 import Link from "next/link";
 
 const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
+  <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
 );
 const Milestones = dynamic(
   () => import("../../components/Newcomponet/comman/Milestones"),

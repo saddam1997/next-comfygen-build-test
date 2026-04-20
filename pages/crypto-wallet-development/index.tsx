@@ -33,6 +33,7 @@ const Consultancy = dynamic(() => import("../../components/Consultancy"), {
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
+
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });

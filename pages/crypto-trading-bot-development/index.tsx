@@ -8,59 +8,109 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
+  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import Features from "../../components/Features"
-
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
 
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
-import Emerging from "../../components/Emerging";
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
+});
+
+
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
+  ),
 });
+
+
+
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
 
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
-import TechStacks from "../../components/TechStacks";
+
+
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
+});
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
+  ),
 });
+
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
+
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
 });
-const ClientStories = dynamic(
-  () => import("../../components/ClientStories"),
-  { ssr: true }
-);
 
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true }
-);
-import IndustryGrid from "../../components/IndustryGrid";
 
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
+
+
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+  loading: () => (
+    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
+  ),
+});
 
 
 const CardListMinimal = dynamic(
@@ -74,7 +124,7 @@ const CardListMinimal = dynamic(
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
- 
+
 
   return (
     <>
@@ -191,7 +241,9 @@ export default function Ecommerce(props: any) {
           }}
         />
       </Head>
-      <Navbar />
+      <div className="min-h-[60px] md:min-h-[70px]">
+        <Navbar />
+      </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
