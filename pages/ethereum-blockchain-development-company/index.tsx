@@ -9,57 +9,57 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const SolutionSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  { ssr: true }
 );
 
 const ConsultancyApproach = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const CallToAction = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  { ssr: true }
 );
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  {  ssr: true }
 );
 
 const Faq = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+  { ssr: true }
 );
 
 
@@ -75,13 +75,7 @@ import ReviewCard from "../../components/ReviewCard";
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   return (
     <>

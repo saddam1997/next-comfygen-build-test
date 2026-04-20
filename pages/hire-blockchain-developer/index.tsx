@@ -1,71 +1,68 @@
-
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
 
-const Navbar = dynamic(() => import("../../components/Navbar"), {
-  ssr: true,
-});
+import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls";
 
-const HeroSectionNewCls = dynamic(() => import("../../components/HeroSectionNewCls"), {
-  ssr: true,
-});
+/* ================= SKELETON SYSTEM ================= */
 
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
-  ssr: true,
-});
+const Skeleton = ({ h }: any) => (
+  <div className={`${h} w-full bg-gray-100 animate-pulse`} />
+);
 
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-});
+/* ================= DYNAMIC COMPONENTS ================= */
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+);
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
+const AboutComponent = dynamic(
+  () => import("../../components/Abouts/AboutComponent"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
+const Consultancy = dynamic(
+  () => import("../../components/Consultancy"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
+const Solution = dynamic(
+  () => import("../../components/Solution"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-});
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+);
 
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-});
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
+);
 
-const BlogSection = dynamic(() => import("../../components/BlogSection"), {
-  ssr: true,
-});
+const ReviewCard = dynamic(
+  () => import("../../components/ReviewCard"),
+  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+);
 
-const TechStacks = dynamic(() => import("../../components/TechStacks"), {
-  ssr: true,
-});
+const FaqSection = dynamic(
+  () => import("../../components/FaqSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+);
 
-const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
-  ssr: true,
-});
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+);
 
-
-const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
-  ssr: true,
-});
 
 
 
@@ -158,47 +155,68 @@ export default function Mobile(props: any) {
 
       </Head>
 
-      <div className="min-h-[60px] md:min-h-[70px]">
-        <Navbar />
+       <div className="overflow-x-hidden">
+
+        {/* ================= FIXED NAVBAR (REAL CLS FIX) ================= */}
+        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+          <Navbar />
+        </header>
+
+        {/* reserved space prevents shift */}
+        <div className="h-[60px] md:h-[70px]" />
+
+        {/* ================= HERO (CRITICAL FIX) ================= */}
+        <section className="min-h-[85vh] md:min-h-[75vh]">
+          <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        </section>
+
+        {/* ================= SECTION ENGINE STYLE WRAPPER ================= */}
+
+        <section className="py-16">
+          <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        </section>
+
+        <section className="py-16">
+          <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        </section>
+
+        <section className="py-16">
+          <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+        </section>
+
+        <section className="py-16">
+          <Solution techData={JSON_DATA.NFTBenefits} />
+        </section>
+
+        <section className="py-16">
+          <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        </section>
+
+        <section className="py-16">
+          <Solution techData={JSON_DATA.Business} />
+        </section>
+
+        <section className="py-16">
+          <WhyChooseSection pageData={JSON_DATA.pageData} />
+        </section>
+
+        <section className="py-16">
+          <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        </section>
+
+        <section className="py-16">
+          <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        </section>
+
+        <section className="py-16">
+          <FaqSection faqData={JSON_DATA.Frequently} />
+        </section>
+
+        <section className="py-16">
+          <BlogSection initialData={initialData ?? []} />
+        </section>
+
       </div>
-      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-      <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      </div>
-
-      <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      </div>
-
-      <div className="min-h-[400px]">
-        <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
-      </div>
-
-      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
-        <Solution techData={JSON_DATA.NFTBenefits} />
-      </div>
-
-      <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      </div>
-
-
-      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
-        <Solution techData={JSON_DATA.Business} />
-      </div>
-
-      <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
-        <WhyChooseSection pageData={JSON_DATA.pageData} />
-      </div>
-
-      <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      </div>
-      <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
-
-
     </>
   );
 }

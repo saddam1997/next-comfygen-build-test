@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const CardFeaturesClient = ({ featuresData, grid }) => {
+const CardFeaturesClient = ({ featuresData,  grid}) => {
 
   const [activeId, setActiveId] = useState(
     featuresData.length > 0 ? featuresData[0].id : null
@@ -11,12 +11,13 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
   return (
     <>
       {/* Buttons */}
-      {featuresData
+     <div className={`px-4 grid lg:grid-cols-${grid} gap-4 py-4`}>
+       {featuresData
         .filter((feature: any) => feature.title && feature.title.trim() !== "")
         .map((feature: any) => (
           <div
             key={feature.id}
-            className={`rounded-full flex justify-center border cursor-pointer ${activeId === feature.id
+            className={`rounded-full  justify-center border cursor-pointer ${activeId === feature.id
                 ? "bg-[#5556D1] text-white border-gray-300"
                 : "bg-white text-black border-[#5556D1]"
               }`}
@@ -29,6 +30,7 @@ const CardFeaturesClient = ({ featuresData, grid }) => {
             </button>
           </div>
         ))}
+     </div>
 
       {/* 🔥 IMPORTANT PART */}
       {/* Render ALL tab contents */}
