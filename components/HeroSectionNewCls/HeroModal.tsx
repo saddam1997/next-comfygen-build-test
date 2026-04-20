@@ -27,7 +27,7 @@ export default function TalkToExpertModal({
 
                 {/* MODAL BOX */}
                 <div
-                    className={`w-full relative max-w-[950px] h-[600px] bg-white rounded-xl shadow-xl overflow-hidden
+                    className={`w-full relative max-w-[950px] lg:h-[600px] h-full bg-white rounded-xl shadow-xl overflow-hidden
           transform transition-all duration-300
           ${isOpen ? "scale-100" : "scale-95"}`}
                 >

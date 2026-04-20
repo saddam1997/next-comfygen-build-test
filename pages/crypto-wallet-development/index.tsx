@@ -2,108 +2,76 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome";
-import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+
+const Navbar = dynamic(() => import("../../components/Navbar"), {
+  ssr: true,
+});
+
+
+const HeroSectionNewCls = dynamic(() => import("../../components/HeroSectionNewCls"), {
+  ssr: true,
+});
 
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
-  ),
 });
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
 });
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
-  loading: () => (
-    <div className="w-full animate-pulse">
-      <div className="h-[500px] bg-gray-200 rounded-xl" />
-    </div>
-  )
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
 });
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
-  loading: () => <div className="min-h-[500px]" />,
 });
 
 const TechStacks = dynamic(() => import("../../components/TechStacks"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-black animate-pulse" />
-  ),
 });
 
 const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[600px] sm:min-h-[500px] lg:min-h-[400px] bg-gray-100 animate-pulse" />
-  )
 });
-import ReviewCard from "../../components/ReviewCard";
 
 
-
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+});
 
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
-
-
-
-
-
   return (
     <>
       <Head>
@@ -205,48 +173,72 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <div className="min-h-[60px] md:min-h-[70px]">
+      <div className="h-[60px] md:h-[70px]">
         <Navbar />
       </div>
 
+      {/* ✅ Hero */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-      <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px]">
+
+
+      <section className="py-12">
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      </div>
+      </section>
 
-      <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px]">
+      <section className="py-12">
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      </div>
+      </section>
 
-      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+      <section className="py-12">
         <Solution techData={JSON_DATA.NFTBenefits} />
-      </div>
+      </section>
 
-      <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px]">
+      <section className="py-10">
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      </div>
+      </section>
 
-      <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px]">
+      <section className="py-12">
         <Solution techData={JSON_DATA.AICrypto} />
-      </div>
+      </section>
 
-      <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px]">
+      <section className="py-12">
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      </div>
+      </section>
 
-
-      <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px]">
+      <section className="py-12">
         <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      </section>
+
+
+      <div className="">
+        <TechStacks
+          TabData={JSON_DATA.Tabs}
+          TechData={JSON_DATA.TechstackData}
+          Default={JSON_DATA.Tabs[0]}
+        />
       </div>
-      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-      <IndustryGrid />
-      <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px]">
+
+      <section className="py-12">
+        <IndustryGrid />
+      </section>
+
+      <section className="py-12">
         <WhyChooseSection pageData={JSON_DATA.pageData} />
-      </div>
+      </section>
+
       <HireSection HireDeveloper={JSON_DATA.HireNFTDeveloper} />
-      <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
+
+      <div className="min-h-[300px]">
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      </div>
+
+      <section className="py-12">
+        <FaqSection faqData={JSON_DATA.Frequently} />
+      </section>
+
+      <div className="min-h-[500px]">
+        <BlogSection initialData={initialData} />
+      </div>
 
     </>
   );
