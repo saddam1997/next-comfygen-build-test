@@ -8,9 +8,9 @@ export default function ServicesSec({ servicesData = [] }) {
 
   return (
     <div className="flex flex-col lg:flex-row pt-10 lg:space-x-6 relative items-stretch">
-      
+
       {/* LEFT SIDE TABS */}
-      <ServicesTabsClient servicesData={servicesData}/>
+      <ServicesTabsClient servicesData={servicesData} />
 
       {/* RIGHT SIDE */}
       <div className="hidden lg:block w-[70%] h-[34rem] overflow-hidden relative bg-gradient-to-r from-[#272868] to-[#5556D1]">
@@ -18,9 +18,9 @@ export default function ServicesSec({ servicesData = [] }) {
         <Image
           src="https://www.comfygen.com/image/services-after-img.svg"
           alt=""
-          width={200}
-          height={200}
-          className="absolute bottom-0 right-0 pointer-events-none h-auto w-auto"
+          width={150}
+          height={90}
+          className="absolute bottom-0 right-0 pointer-events-none w-36 h-36"
         />
 
         {servicesData.map((service, index) => (
@@ -55,9 +55,9 @@ function ServiceContent({ service }) {
 
         {service.features?.length > 0 && (
           <ul className="space-y-2">
-            {service.features.map((feature:any, index:any) => (
+            {service.features.map((feature: any, index: any) => (
               <li key={index} className="flex items-center gap-2 cursor-pointer text-base font-normal hover:text-[#c9c5c5] Services-links">
-                   <div className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></div>
+                <div className="w-3 h-3 bg-transparent border border-white rounded-full hidden md:block"></div>
                 <p dangerouslySetInnerHTML={{ __html: feature }} />
               </li>
             ))}

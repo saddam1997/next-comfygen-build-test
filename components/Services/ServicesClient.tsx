@@ -18,8 +18,8 @@ export default function ServicesClient({ services }: any) {
                         key={index}
                         onClick={() => setActive(index)}
                         className={`w-full flex justify-between items-center px-4 py-3 rounded-xl border transition ${active === index
-                                ? "bg-indigo-100 text-indigo-600 border-indigo-500"
-                                : "bg-white border-gray-200"
+                            ? "bg-indigo-100 text-indigo-600 border-indigo-500"
+                            : "bg-white border-gray-200"
                             }`}
                     >
                         <div
@@ -41,9 +41,9 @@ export default function ServicesClient({ services }: any) {
                     <Image
                         src="https://www.comfygen.com/image/services-after-img.svg"
                         alt="bg"
-                        width={200}
-                        height={200}
-                        className="absolute bottom-0 right-0 w-auto h-auto"
+                        width={150}
+                        height={90}
+                        className="absolute bottom-0 right-0 w-36 h-36"
                     />
 
                     {/* ✅ ALL CONTENT SSR + CONTROLLED */}

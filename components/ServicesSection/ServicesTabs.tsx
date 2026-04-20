@@ -21,7 +21,7 @@ export default function ServicesTabs({ services = [] }) {
   }, [active]);
 
   return (
-    <div className="md:space-y-4 space-y-2 w-full lg:pr-6 lg:h-[35rem] lg:overflow-y-auto overflow-hidden lg:w-[30%]">
+    <div className="md:space-y-4 space-y-2 w-full lg:pr-6 lg:h-[35rem] lg:overflow-y-auto overflow-hidden lg:w-full">
 
       {services.map((service, index) => {
         const isActive = active === index;

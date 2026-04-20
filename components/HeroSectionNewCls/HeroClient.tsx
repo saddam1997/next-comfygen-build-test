@@ -1,24 +1,11 @@
 
 
-import { useState, useEffect } from "react";
+import { useState, } from "react";
 import HeroModal from "./HeroModal";
 
 export default function HeroClient() {
     const [open, setOpen] = useState(false);
 
-    /* ✅ Scroll lock (no CLS) */
-    useEffect(() => {
-        const scrollbar =
-            window.innerWidth - document.documentElement.clientWidth;
-
-        if (open) {
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollbar}px`;
-        } else {
-            document.body.style.overflow = "";
-            document.body.style.paddingRight = "";
-        }
-    }, [open]);
 
     return (
         <>

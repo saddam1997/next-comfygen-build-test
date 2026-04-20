@@ -1,104 +1,76 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hireBlockchain.json";
-import Navbar from "../../components/Navbar";
-import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+const Navbar = dynamic(() => import("../../components/Navbar"), {
+  ssr: true,
+});
+
+const HeroSectionNewCls = dynamic(() => import("../../components/HeroSectionNewCls"), {
+  ssr: true,
+});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[700px] sm:min-h-[650px] lg:min-h-[500px] bg-[#F5F5F9] animate-pulse" />
-  ),
 });
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[750px] sm:min-h-[650px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[450px] sm:min-h-[350px] lg:min-h-[250px] bg-white animate-pulse rounded-[24px]" />
-  ),
 });
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
 });
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[800px] sm:min-h-[600px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
+
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[1000px] sm:min-h-[800px] lg:min-h-[400px] bg-white animate-pulse" />
-  ),
 });
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-white animate-pulse" />
-  ),
 });
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[750px] lg:min-h-[600px] bg-white animate-pulse" />
-  ),
 });
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
-  loading: () => (
-    <div className="w-full animate-pulse">
-      <div className="h-[500px] bg-gray-200 rounded-xl" />
-    </div>
-  )
 });
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
-  loading: () => <div className="min-h-[400px]" />,
 });
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
-  loading: () => <div className="min-h-[500px]" />,
 });
 
 const TechStacks = dynamic(() => import("../../components/TechStacks"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[900px] sm:min-h-[700px] lg:min-h-[500px] bg-black animate-pulse" />
-  ),
 });
 
 const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
   ssr: true,
-  loading: () => (
-    <div className="min-h-[600px] sm:min-h-[500px] lg:min-h-[400px] bg-gray-100 animate-pulse" />
-  )
 });
 
-import ReviewCard from "../../components/ReviewCard";
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+});
 
 
 
 export default function Mobile(props: any) {
   let { initialData } = props;
-
-
- 
 
   return (
     <>

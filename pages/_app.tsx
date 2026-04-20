@@ -13,6 +13,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   preload: true,
+   adjustFontFallback: true, // 🔥 IMPORTANT
 });
 
 const Talkchat = dynamic(
@@ -42,7 +43,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
 
-      <div className={`${poppins.className} overflow-hidden` } >
+      <div className={`${poppins.className}` } >
         <MainLayout>
           {!hideSchema && <GlobalSchema />}
           <Component {...pageProps} />
