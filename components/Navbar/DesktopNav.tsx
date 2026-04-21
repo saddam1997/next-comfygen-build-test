@@ -1,148 +1,137 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  MdMenuOpen,
-  MdMenu,
-  MdAddCall,
-} from "react-icons/md";
+import { MdMenuOpen, MdMenu, MdAddCall } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
-import styles from "./styles.module.css"
+
+import styles from "./styles.module.css";
+
 import ServicesMnue from "./NavbarMnu/ServicesMnue";
-import SolutionsMnue from "./NavbarMnu/SolutionsMnue"
+import SolutionsMnue from "./NavbarMnu/SolutionsMnue";
 import IndustriesMnue from "./NavbarMnu/IndustriesMnue";
-import SportsMnue from "./NavbarMnu/SportsMnue";
 import CompanyMnue from "./NavbarMnu/CompanyMnue";
 
+/* ================= NAVBAR ================= */
 
-export default function DesktopNav(props: any) {
+export default function DesktopNav() {
   const [activeTab, setActiveTab] = useState("Tab1");
   const [showNav, setShowNav] = useState(0);
-  const [menu] = useState(false);
+  const [menu, setMenu] = useState(false);
 
-
-  const handleTabClick = (tab: string) => {
-    setActiveTab(tab);
-  };
-
-  function toggleSlideover() { }
+  const handleTabClick = (tab: string) => setActiveTab(tab);
 
   return (
-    <div className={`fixed top-0 w-full bg-white z-50 max-w-[1600px] mx-auto`}>
-      <div className="flex gap-6 justify-end mx-10">
-        <p className="hidden lg:block">
-          <a href="mailto:sales@comfygen.com" className="flex  pt-1 gap-2">
-            <IoMdMail className=" mt-1" /> sales@comfygen.com
-          </a>
-        </p>
+    <>
+      {/* ================= HEADER SHELL (FIXED CLS SYSTEM) ================= */}
+      <header className="fixed top-0 left-0 w-full z-50 bg-white ">
 
-        <p className="hidden lg:block">
+        {/* ================= TOP BAR (STABILIZED) ================= */}
+        <div className="hidden lg:flex justify-end gap-6 px-6 py-2 text-sm text-gray-700">
+          <a href="mailto:sales@comfygen.com" className="flex items-center gap-2">
+            <IoMdMail />
+            sales@comfygen.com
+          </a>
+
           <a
-            className="flex pt-1 gap-1"
+            className="flex items-center gap-2"
             href="https://api.whatsapp.com/send?phone=919587867258"
           >
-            <MdAddCall className=" mt-1" />
+            <MdAddCall />
             +91 9587867258
           </a>
-        </p>
-      </div>
+        </div>
 
-      <nav className="flex items-center justify-between px-4 py-0  md:px-0 relative 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto ">
-        <div>
-          <Link
-            href="/"
-            passHref={true}
-            className="relative flex items-center flex-shrink-0 text-white"
-          >
-            <div className="h-12">
+        {/* ================= MAIN NAV ================= */}
+        <nav className="w-full max-w-[1600px] mx-auto px-4 lg:px-6 flex items-center justify-between h-[70px]">
+
+          {/* LOGO (CLS FIXED) */}
+          <Link href="/" className="flex items-center">
+            <div className="h-[42px] w-[180px] relative">
               <Image
-              src="/svg/Logo1.svg"
-              alt="comfygen-logo"
-              width={200}
-              height={51}
-              priority
-              className="h-12 w-auto"
-            />
+                src="/svg/Logo1.svg"
+                alt="comfygen-logo"
+                fill
+                priority
+                sizes="180px"
+                style={{ objectFit: "contain" }}
+              />
             </div>
           </Link>
-        </div>
-        <div>
-          <div
-            onClick={() => toggleSlideover()}
-            className="flex items-center p-2 m-2 my-4 rounded cursor-pointer bg-slate-100 text-slate-600 lg:hidden"
+
+          {/* DESKTOP MENU */}
+          <div className="hidden max-w-7xl mx-auto lg:flex items-center gap-6 text-sm font-medium">
+            <Link href="/">
+              <span className="cursor-pointer text-black/80 hover:text-black">
+                Home
+              </span>
+            </Link>
+
+            <ServicesMnue
+              setActiveTab={setActiveTab}
+              activeTab={activeTab}
+              showNav={showNav}
+              handleTabClick={handleTabClick}
+              setShowNav={setShowNav}
+            />
+
+            <SolutionsMnue
+              setActiveTab={setActiveTab}
+              activeTab={activeTab}
+              showNav={showNav}
+              handleTabClick={handleTabClick}
+              setShowNav={setShowNav}
+            />
+
+            <IndustriesMnue
+              setActiveTab={setActiveTab}
+              activeTab={activeTab}
+              showNav={showNav}
+              handleTabClick={handleTabClick}
+              setShowNav={setShowNav}
+            />
+
+            {/* <SportsMnue setActiveTab={setActiveTab} activeTab={activeTab} showNav={showNav} handleTabClick={handleTabClick} setShowNav={setShowNav} /> */}
+
+            <CompanyMnue
+              setActiveTab={setActiveTab}
+              activeTab={activeTab}
+              showNav={showNav}
+              handleTabClick={handleTabClick}
+              setShowNav={setShowNav}
+            />
+          </div>
+
+          {/* CTA BUTTON */}
+          <div className="hidden xl:block">
+            <Link href="/contact-us">
+              <span
+                className={`text-white px-6 py-3 rounded-full flex items-center gap-2 ${styles.head_button}`}
+              >
+                Get a Quote
+                <Image
+                  src="https://www.comfygen.com/image/button-arrow.svg"
+                  alt="arrow"
+                  width={20}
+                  height={20}
+                />
+              </span>
+            </Link>
+          </div>
+
+          {/* MOBILE MENU BUTTON (STABLE HEIGHT) */}
+          <button
+            className="lg:hidden p-2 rounded bg-gray-100 text-gray-700"
+            onClick={() => setMenu(!menu)}
+            aria-label="menu"
           >
             {menu ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
-          </div>
-          <div
-            className={
-              "lg:flex hidden xl:w-auto w-full items-center text-white px-6 "
-            }
-          >
-            <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
-              <div>
-                <Link href="/" passHref={true}>
-                  <span className="relative block text-sm leading-none transition duration-300 border-b-2 border-transparent cursor-pointer py-9 hover:text-black/100 text-black/80 ">
-                    Home
-                  </span>
-                </Link>
-              </div>
+          </button>
 
-              <ServicesMnue
-                setActiveTab={setActiveTab}
-                activeTab={activeTab}
-                showNav={showNav}
-                handleTabClick={handleTabClick}
-                setShowNav={setShowNav}
+        </nav>
+      </header>
 
-              />
-
-              <SolutionsMnue
-                setActiveTab={setActiveTab}
-                activeTab={activeTab}
-                showNav={showNav}
-                handleTabClick={handleTabClick}
-                setShowNav={setShowNav}
-              />
-
-              <IndustriesMnue
-                setActiveTab={setActiveTab}
-                activeTab={activeTab}
-                showNav={showNav}
-                handleTabClick={handleTabClick}
-                setShowNav={setShowNav}
-              />
-
-              {/* <SportsMnue
-                setActiveTab={setActiveTab}
-                activeTab={activeTab}
-                showNav={showNav}
-                handleTabClick={handleTabClick}
-                setShowNav={setShowNav}
-              /> */}
-              <CompanyMnue
-                setActiveTab={setActiveTab}
-                activeTab={activeTab}
-                showNav={showNav}
-                handleTabClick={handleTabClick}
-                setShowNav={setShowNav}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="hidden xl:block ">
-          <Link href="/contact-us" passHref={true}>
-            <span className={`text-base font-medium text-white ${styles.head_button} rounded-full px-8 py-3.5 text-center hover:text-white  cursor-pointer transition duration-300 relative flex gap-3 items-center`}>
-              Get a Quote
-              <Image
-                src="https://www.comfygen.com/image/button-arrow.svg"
-                alt="button-arrow"
-                height={24}
-                width={24}
-              />
-            </span>
-          </Link>
-        </div>
-      </nav>
-    </div>
+      {/* ================= RESERVED SPACE (CRITICAL CLS FIX) ================= */}
+      <div className="h-[70px] lg:h-[100px]" />
+    </>
   );
 }

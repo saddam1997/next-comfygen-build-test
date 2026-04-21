@@ -23,7 +23,7 @@ const CompanyMnue = ({ showNav, setShowNav, }: any) => {
           size={18}
         />
       </button>
-      <div className="z-40 lg:pt-0 pt-0 mt-0 lg:bg-white rounded-2xl bg-transparent capitalize  text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap relative  left-0 xl:right-50 transform hidden group-hover:block   transition duration-200 ease-in-out origin-top ">
+      <div className="z-50 w-[95vw] max-w-7xl left-1/2 -translate-x-1/2 absolute top-28 lg:bg-white rounded-2xl shadow-xl border text-gray-700 hidden group-hover:block transition duration-200 origin-top ">
         {/* <div className="absolute -top-2 2xl:inset-x-[4rem] xl:inset-x-[5rem]   bg-white rotate-45  w-4 h-4">
                   {" "}
                 </div> */}

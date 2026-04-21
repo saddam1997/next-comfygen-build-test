@@ -5,9 +5,9 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const ServicesMnue = ({ setActiveTab, activeTab, showNav,setShowNav, handleTabClick }: any) => {
+const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabClick }: any) => {
     return (
-        <div>
+        <div className=''>
             <div
                 className="group "
                 onMouseEnter={() => setActiveTab("Tab1")}
@@ -26,7 +26,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav,setShowNav, handleTabCl
                         size={18}
                     />
                 </button>
-                <div className="z-50 relative lg:pt-0 pt-0 mt-0 lg:bg-white rounded-2xl bg-transparent capitalize text-gray-700 lg:absolute top-20  lg:drop-shadow-xl lg:border whitespace-nowrap  left-0  transform hidden group-hover:block   transition duration-200 ease-in-out origin-top w-full">
+                <div className="z-50 w-[95vw] max-w-7xl left-1/2 -translate-x-1/2 absolute top-28 lg:bg-white rounded-2xl shadow-xl border text-gray-700 hidden group-hover:block transition duration-200 origin-top">
                     {/* <div className="absolute -top-2 2xl:inset-x-[34rem] xl:inset-x-[33rem] bg-white rotate-45   w-4 h-4"></div> */}
                     <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
                         <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
@@ -187,7 +187,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav,setShowNav, handleTabCl
 
 
                             </div>
-                            <div className="space-y-10">
+                            <div className="space-y-10 ">
                                 <div>
                                     {activeTab === "Tab1" && (
                                         <div className="text-sm font-medium space-y-2">
