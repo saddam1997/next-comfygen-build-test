@@ -296,7 +296,7 @@ export default function Mobile(props) {
 
       <Header />
 
-      <div className="lg:pt-[110px]">
+      <div className="">
         <HeroSectionForAllPages
           heading="Data Analytics Services Provider Company for Data-Driven Business Growth"
           ptag="Transform your raw business data into powerful insights with our advanced data analytics services. Comfygen is a trusted data analytics services provider company in India, we help startups, small business and enterprises unlock valuable patterns, predict trends, and make smarter decisions using AI-powered analytics and business intelligence solutions."

@@ -333,7 +333,7 @@ export default function LiveLinePage() {
 
 //       <Header />
 
-//       <div className="overflow-hidden lg:pt-[110px]">
+//       <div className="overflow-hidden ">
 
 //         <HeroSectionForAllPages
 //           heading="Best Margin Trading Exchange Development Company"

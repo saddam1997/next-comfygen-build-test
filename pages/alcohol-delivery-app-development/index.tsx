@@ -263,7 +263,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
       <Header />
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages
             heading="Top-Rated Alcohol Delivery App Development Company"

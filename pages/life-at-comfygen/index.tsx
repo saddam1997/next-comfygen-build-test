@@ -31,7 +31,7 @@ export default function lifeatcompany() {
       <div className="overflow-hidden">
         <Header />
 
-        <div className="lg:pt-[110px]">
+        <div className="">
           <div className="w-full h-full">
             <Image
               src="https://www.comfygen.com/lifecomfygen/IMG-20231110-WA0013.webp"

@@ -107,7 +107,7 @@ export default function Stack(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
 
         <div className="">
           <div>

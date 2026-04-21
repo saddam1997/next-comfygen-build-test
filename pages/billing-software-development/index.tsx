@@ -166,7 +166,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages
             heading="Billing Software Development Company"

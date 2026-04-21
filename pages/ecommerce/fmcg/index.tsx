@@ -403,7 +403,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
       <EcommerceHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="FMCG Delivery App Development Company"
           subhead=""

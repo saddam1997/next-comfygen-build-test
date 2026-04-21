@@ -302,7 +302,7 @@ export default function Ecommerce(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
 
         <HeroSectionForAllPages
           heading="Leading Ethereum Token Development Company"

@@ -381,7 +381,7 @@ export default function ClinicalApp(props) {
 
       <Header />
 
-      <div className="overflow-hidden pt-10 lg:pt-[110px]">
+      <div className="overflow-hidden pt-10 ">
         <HeroSectionForAllPages
           heading="Best Laboratory App Development Company"
           ptag="Comfygen is the best Laboratory App Development Company delivering secure, scalable, and efficient digital solutions for diagnostic labs, pathology centers, and healthcare organizations. Comfygen Technologies specializes in building advanced laboratory applications that streamline test management, sample tracking, report generation, and patient data handling. Our expert developers focus on compliance, data security, and intuitive UI/UX to create high-performance lab apps that improve operational efficiency, enhance patient experiences, and support long-term business growth."

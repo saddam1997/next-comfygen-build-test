@@ -394,7 +394,7 @@ export default function Ecommerce(props) {
 
 
       <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hybrid Crypto Exchange Development Company"
           ptag="Comfygen, The Best Hybrid Crypto Exchange Development Company. Launch your future-ready crypto trading platform with our hybrid crypto exchange development services. We provide the liquidity and speed of centralized crypto exchanges with the security and privacy of decentralized models, giving your users the best of both worlds. Our hybrid crypto exchange development solutions are developed to handle high-volume trading, multiple cryptocurrencies, and scalable growth."

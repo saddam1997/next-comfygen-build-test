@@ -413,7 +413,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Header />
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Mobile Crypto Wallet Development Company"
           ptag="Build AI based mobile cryptocurrency wallet apps with a trusted mobile crypto wallet development company. We help startups, fintech businesses, and enterprises launch powerful mobile crypto wallets app with multi-currency support, advanced blockchain security, and seamless digital asset transactions. Our best custom crypto wallet app development services make sure a user-friendly interface, robust encryption, and smooth crypto payments for global users."

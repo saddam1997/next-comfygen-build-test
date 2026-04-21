@@ -407,7 +407,7 @@ export default function LudoGame(props:any) {
         <Header />
       </div>
 
-      <div className="lg:pt-[110px] ">
+      <div className=" ">
         <HeroSectionForAllPages
           heading="Best Ludo Game Development Company"
           ptag="Make your ludo gaming application more interesting with the assistance from Comfygen Technologies. We are one leading ludo game app development company In India & The USA, embark with the latest feature and tech trends integration. Our top-notch Ludo game app developers can bring exciting and innovative alterations in the applications for crafting unforgettable user’s experience. Our ultimate goal is to make Ludo game development services and solutions more appealing to gather a global audience. Our belief is to create applications with fun and challenging elements ensuring reliability, user-friendliness, security and vast engagement."

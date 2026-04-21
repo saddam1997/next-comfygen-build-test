@@ -156,7 +156,7 @@ export default function Ecommerce(props: any) {
         /> */}
       </Head>
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

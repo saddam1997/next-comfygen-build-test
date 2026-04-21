@@ -536,7 +536,7 @@ export default function Mobile(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hire best Mobile App Developers from India"
           ptag="Partner with Comfygen to hire expert mobile app developers in India with over 10 years of industry experience. Our skilled engineers build high-quality, future-ready mobile applications using the latest technologies to ensure performance, scalability, and user engagement."

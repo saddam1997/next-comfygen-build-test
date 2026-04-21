@@ -401,7 +401,7 @@ export default function Mobile(props: any) {
 
       </div>
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
 
         <HeroSectionForAllPages
           heading="Transforming Ideas into Powerful Mobile App Solutions"

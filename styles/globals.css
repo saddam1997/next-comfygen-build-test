@@ -7,6 +7,10 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 
 img {
   display: block;

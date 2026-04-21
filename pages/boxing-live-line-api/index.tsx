@@ -352,7 +352,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
 
         <HeroSectionForAllPages
           heading="Boxing Live Line API development Service"

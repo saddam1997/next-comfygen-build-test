@@ -190,7 +190,7 @@ export default function Ecommerce(props:any) {
 
 
       <Header />
-      <div className="overflow-hidden  lg:pt-[110px]">
+      <div className="overflow-hidden  ">
         <HeroSection
           heading="Baseball Live Line API Provider Company"
           subhead="Custom Baseball Live Line API for Real-Time Sports Insights"

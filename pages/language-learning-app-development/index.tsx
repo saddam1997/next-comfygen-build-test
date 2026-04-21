@@ -287,7 +287,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Custom Language Learning App Development Company"
           ptag="As a leading custom language learning app development company, Comfygen Technologies helps EdTech startups and education businesses create innovative apps for learning new languages. Our language learning apps support interactive lessons, audio-video content, vocabulary building, and real-time learner analytics. With a strong focus on performance, security, and usability, we deliver language learning solutions that adapt to individual learning styles and support global users."

@@ -265,7 +265,7 @@ export default function Altcoin(props) {
         <Header />
       </div>
       <div className="overflow-hidden ">
-        <div className="lg:pt-[110px]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Omaha Poker Game Development Company"
             ptag="At the forefront of the Omaha Poker game development industry, Comfygen emerged as a prominent and accomplished company. Specializing in Omaha Poker game software development, we are your reliable providers of top-notch solutions. With an array of services ranging from crafting enticing Omaha Poker game websites to offering the option to hire dedicated Omaha Poker game developers, we cater to your every need. "

@@ -446,7 +446,7 @@ export default function Ecommerce(props) {
       </Head>
 
       <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top-Rated Metaverse Development Company in India"
           ptag="Comfygen is a leading metaverse development company in India, delivering immersive, secure, and scalable metaverse app and software solutions for businesses. We build AI-powered, blockchain-integrated virtual platforms for gaming, real estate, education, healthcare, and eCommerce, helping brands create engaging digital experiences and establish a strong presence in the virtual world."

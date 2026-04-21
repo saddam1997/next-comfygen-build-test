@@ -184,7 +184,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Auto Racing Live Line API Development Company"
           subhead="Accelerate Your Platform with Auto Racing Live Line API"

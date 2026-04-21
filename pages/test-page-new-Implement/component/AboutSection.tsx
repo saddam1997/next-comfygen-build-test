@@ -106,10 +106,11 @@ const AboutSection = (props: any) => {
             </div>
             {link && linkText && (
               <div className="mt-7">
-                <Link href={link} passHref legacyBehavior>
-                  <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition-colors duration-200">
-                    {linkText} <MdOutlineArrowOutward />
-                  </button>
+                <Link
+                  href={link}
+                  className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize inline-flex items-center gap-1 transition-colors duration-200"
+                >
+                  {linkText} <MdOutlineArrowOutward />
                 </Link>
               </div>
             )}
