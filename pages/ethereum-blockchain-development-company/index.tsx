@@ -9,42 +9,42 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ServicesSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const SolutionSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const Portfolio = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
   { ssr: true }
 );
-
+import TechStacks from "../../components/TechStacks";
 const ConsultancyApproach = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const HireDeveloper = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const CallToAction = dynamic(
@@ -54,7 +54,7 @@ const CallToAction = dynamic(
 
 const WhyChoose = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {  ssr: true }
+  { ssr: true }
 );
 
 const Faq = dynamic(
@@ -179,7 +179,7 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <BlockChainHeader />
-      <div className="overflow-hidden  pt-16">
+      <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         {/* <HeroSectionForAllPages
           heading="Best Ethereum Blockchain Development Company"
@@ -233,10 +233,11 @@ export default function Ecommerce(props: any) {
           subheading="Businesses choose a Custom Ethereum Blockchain Development Company for its ability to deliver secure, scalable, and future-ready solutions. With Ethereum’s smart contracts and decentralized infrastructure, companies can streamline operations, enhance transparency, and drive innovation in the evolving blockchain landscape."
           techData={JSON_DATA.technologyData}
         />
-        <TechStack
-          title="Tech Stack we used for Ethereum Blockchain Development."
-          description="At Comfygen, our Cardano Blockchain Development Company leverages a powerful and cutting-edge tech stack to deliver secure, scalable, and high-performance blockchain solutions."
-        />
+
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+
+
+
         <section className="bg-white lg:py-16 py-10">
           <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
             <div className="text-center">
