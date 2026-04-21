@@ -27,7 +27,7 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                     size={18}
                 />
             </button>
-            <div className="z-40 lg:pt-0 pt-0 mt-0 lg:bg-white rounded-2xl bg-transparent capitalize    text-gray-700 lg:absolute top-20 lg:drop-shadow-xl lg:border whitespace-nowrap relative left-0 transform hidden group-hover:block   transition duration-200 ease-in-out origin-top  w-full ">
+            <div className="z-50 w-[95vw] max-w-7xl left-1/2 -translate-x-1/2 absolute top-28 lg:bg-white rounded-2xl shadow-xl border text-gray-700 hidden group-hover:block transition duration-200 origin-top">
                 {/* <div className="absolute -top-2 2xl:inset-x-[29rem] xl:inset-x-[29rem]   bg-white rotate-45   w-4 h-4"></div> */}
                 <div className="2xl:p-10 p-5 mx-auto text-sm">
                     <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
