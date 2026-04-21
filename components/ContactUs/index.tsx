@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function LeadSection() {
     return (
-        <section className="relative lg:py-[7rem] py-[3rem] bg-[#5951cd] lg:bg-transparent overflow-hidden">
+        <section className="relative lg:py-[7rem] py-[3rem] bg-[#5951cd]  overflow-hidden">
 
             <Image
                 src="https://www.comfygen.com/comfygen-images/contactFormIcons/contact.webp"

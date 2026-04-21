@@ -45,7 +45,7 @@ export default function TechStacksClient({ TabData, TechData, defaultTab }) {
                   key={index}
                   className="bg-[#111111] border border-gray-800 rounded-xl flex flex-col items-center justify-center py-3 px-1 gap-3"
                 >
-                  <Image src={tech.img} alt="" width={40} height={40} />
+                  <Image src={tech.img} alt="" width={40} height={40} className="h-10 w-10 object-contain" />
                   <span className="text-gray-300 text-sm text-center">
                     {tech.name}
                   </span>

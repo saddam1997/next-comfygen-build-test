@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Header from "../../components/Newcomponet/layout/Header"
 import ContactUs from "../../components/ContactUs"
+import Navbar from '../../components/Navbar';
 
-import LazyLoad from 'react-lazy-load';
 import ClientStories from '../../components/Newcomponet/SectionCompoent/ClientStories';
 import ClientTestimonials from '../../components/TestimonialSection';
 import PortfolioSlider from "../../components/Newcomponet/comman/PortfolioSlider";
@@ -409,9 +408,9 @@ export default function Contact(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="7 minutes" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+     
+      <Navbar />
+     
       <div className="overflow-hidden">
         <ContactUs />
 

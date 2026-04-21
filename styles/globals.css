@@ -13,11 +13,7 @@ img {
 }
 
 
-html {
-  scroll-behavior: smooth;
-    scrollbar-width: none;      /* Firefox */
-  -ms-overflow-style: none;  
-}
+
 * {
   box-sizing: border-box;
 }

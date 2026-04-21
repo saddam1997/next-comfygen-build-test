@@ -160,7 +160,9 @@ export default function Home(props: any) {
         <meta name="twitter:image" content="https://www.comfygen.com/image/blockchain-and-mobile-app-development-company.webp" />
 
 
-        <link rel="preload" as="image" href="https://www.comfygen.com/comfygen-images/home/web development company home.webp" />
+        <link rel="preconnect" href="https://www.comfygen.com" />
+        <link rel="dns-prefetch" href="https://www.comfygen.com" />
+        <link rel="preload" as="image" href={JSON_DATA.Herosection?.bgImage} />
         {/* ✅ LCP IMAGE PRELOAD */}
         <script
           type="application/ld+json"
@@ -179,10 +181,10 @@ export default function Home(props: any) {
       <IndustryGrid />
       <Trending
         trendingData={JSON_DATA.trendingData}
-       heading="Top-Rated App Development Company Recognized by Global Platforms"
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-         <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
