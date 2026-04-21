@@ -19,22 +19,11 @@ export default function MobileNavClient({ menuData }: any) {
     setOpen(false);
   }, []);
 
-  // ✅ Scroll lock without CLS
+  // Scroll lock without forcing body position changes (prevents jumps)
   useEffect(() => {
-    if (!open) return;
-
-    const scrollY = window.scrollY;
-
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.width = "100%";
-
+    document.body.style.overflow = open ? "hidden" : "";
     return () => {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-
-      window.scrollTo(0, scrollY);
+      document.body.style.overflow = "";
     };
   }, [open]);
 

@@ -6,12 +6,12 @@ import Ctacls from "./Ctacls"
 
 /* Dynamic Components (space reserved properly) */
 const StatsBanner = dynamic(() => import("./StatsBanner"), {
-  ssr: false,
+  ssr: true,
   loading: () => <div className="h-[80px] w-full" />,
 });
 
 const HeroClientCTA = dynamic(() => import("./HeroClientCTA"), {
-  ssr: false,
+  ssr: true,
   loading: () => <div className="h-[60px] w-[220px]" />,
 });
 
@@ -102,11 +102,9 @@ export default function HeroSection({ herosection }: any) {
           </div>
 
           {/* Stats Banner (only desktop, safe load) */}
-          {typeof window !== "undefined" && (
-            <div className="hidden lg:block min-h-[80px]">
-              <StatsBanner />
-            </div>
-          )}
+          <div className="hidden lg:block min-h-[80px]">
+            <StatsBanner />
+          </div>
 
           {/* List (reserved height prevents jump) */}
           {herosection?.listItems?.length > 0 && (

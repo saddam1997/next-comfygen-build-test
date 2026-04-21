@@ -1,4 +1,5 @@
 const redirects = require('./redirects');
+const path = require("path");
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -46,8 +47,23 @@ const nextConfig = {
       '@tabler/icons-react'
     ],
   },
+  turbopack: {
+    resolveAlias: {
+      "react-lazy-load": "./components/performance/ImmediateLazyLoad.tsx",
+    },
+  },
   async redirects() {
     return redirects;
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      "react-lazy-load": path.resolve(
+        __dirname,
+        "components/performance/ImmediateLazyLoad.tsx"
+      ),
+    };
+    return config;
   },
 };
 
