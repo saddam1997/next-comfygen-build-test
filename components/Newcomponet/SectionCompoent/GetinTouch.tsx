@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 import { MapPin, Phone } from "lucide-react";
 const ContactFrom = dynamic(() => import("../comman/ContactFrom"), {
-    ssr: false,
+    ssr: true,
     loading: () => (
       <div className="min-h-[500px] w-full" />
     ),
@@ -189,7 +189,7 @@ const Form = () => (
                   alt={location.country}
                   width={50}
                   height={50}
-                  className="w-20 h-auto sm:w-24"
+                  className="w-20 h-20 sm:w-24"
                   loading="lazy"
                 />
               </div>

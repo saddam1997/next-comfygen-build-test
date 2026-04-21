@@ -761,7 +761,7 @@ export default function BlockchainNav(props: any) {
                                       alt={name}
                                       height={40}
                                       width={40}
-                                      loading="lazy"
+                                      className="w-10 h-10"
                                     />
                                     <div className="space-y-4 cursor-pointer">
                                       <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
@@ -791,7 +791,7 @@ export default function BlockchainNav(props: any) {
                                       alt={name}
                                       height={40}
                                       width={40}
-                                      loading="lazy"
+                                     className="w-10 h-10"
                                     />
                                     <div className="space-y-4 cursor-pointer">
                                       <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
