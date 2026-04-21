@@ -511,7 +511,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best eWallet App Development Company"
           ptag="Comfygen Technologies is a trusted eWallet app development company delivering secure, scalable, and feature-rich digital wallet solutions. Our eWallet app development services include custom wallets, P2P payments, UPI and payment gateway integration, crypto wallets, and NFC-based transactions for Android, iOS, and cross-platform applications."

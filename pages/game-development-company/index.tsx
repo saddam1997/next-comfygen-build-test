@@ -441,7 +441,7 @@ export default function MultiChain(props) {
 
         <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages
             heading="Top Game Development Company"

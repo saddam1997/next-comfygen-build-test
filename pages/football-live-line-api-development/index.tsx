@@ -367,7 +367,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Football Live Line API Provide Company"
           subhead="Supercharge Your Sports App with Real-Time Football Data APIs"

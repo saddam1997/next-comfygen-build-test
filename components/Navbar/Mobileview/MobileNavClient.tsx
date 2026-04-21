@@ -30,7 +30,7 @@ export default function MobileNavClient({ menuData }: any) {
   return (
     <>
       {/* HEADER */}
-      <div className="fixed top-0 left-0 w-full h-[70px] bg-white z-50 shadow-sm">
+      <div className="sticky top-0 left-0 w-full h-[70px] bg-white z-50 shadow-sm">
         <nav className="flex items-center justify-between h-full w-11/12 mx-auto">
 
           <Link href="/">
@@ -53,7 +53,6 @@ export default function MobileNavClient({ menuData }: any) {
 
         </nav>
       </div>
-
       {/* OVERLAY */}
       {open && (
         <div className="fixed inset-0 z-40">

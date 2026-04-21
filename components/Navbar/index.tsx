@@ -4,17 +4,12 @@ import Mobileview from "./Mobileview";
 const Navbar = () => {
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white">
-        <div className="h-[70px] lg:h-[120px]">
-          <div className="block lg:hidden h-full">
-            <Mobileview />
-          </div>
-          <div className="hidden lg:block h-full">
-            <DesktopNav />
-          </div>
-        </div>
-      </header>
-      <div aria-hidden className="h-[70px] lg:h-[120px]" />
+      <div className="block lg:hidden">
+        <Mobileview />
+      </div>
+      <div className="hidden lg:block">
+        <DesktopNav />
+      </div>
     </>
   );
 };

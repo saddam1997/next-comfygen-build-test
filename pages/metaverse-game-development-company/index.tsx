@@ -285,7 +285,7 @@ export default function Ecommerce(props:any) {
 
         <Header />
 
-      <div className="lg:pt-[110px]">
+      <div className="">
         <HeroSectionForAllPages
           heading="Metaverse Game Development Services"
           ptag1="Comfygen is a leading Metaverse game development service provide, specializing in the creation of immersive 3D Metaverse worlds. Our highly skilled Metaverse game developers team brings your imaginative game ideas to life by integrating cutting-edge technologies. Whether you're looking for unique worlds, innovative gameplay, or engaging virtual environments, we have the expertise to craft custom Metaverse game development solutions tailored to your needs."

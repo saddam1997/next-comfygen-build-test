@@ -46,7 +46,7 @@ export default function about(props:any) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <div className="bg-gradient-to-r from-[#5E63C7] via-[#7C80D8] to-[#B6B8DD]"
       >
           <div className=" bg-[#1B1C30CC]/20">

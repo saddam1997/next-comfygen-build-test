@@ -289,7 +289,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Golf Live Line API Provide Company"
           ptag="Welcome to Comfygen – your trusted partner for Golf Live Line API services. We deliver scalable, real-time, and developer-friendly golf data integration solutions designed for startups, enterprises, and tech-driven platforms aiming to elevate their sports offerings."

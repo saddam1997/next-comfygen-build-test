@@ -780,7 +780,7 @@ export default function MobileNav(props: any) {
 
   return (
     <>
-      <div className="h-[70px] fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
+      <div className="h-[70px] sticky top-0 left-0 w-full z-50 bg-white shadow-sm">
 
         <nav className="z-20 flex items-center justify-between py-0 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
           <div className="flex items-center flex-shrink-0 text-[#212121]">

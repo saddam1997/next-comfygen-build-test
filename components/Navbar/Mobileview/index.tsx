@@ -11,7 +11,7 @@ export default function MobileNav() {
       <input type="checkbox" id="menu-toggle" className="hidden peer" />
 
       {/* HEADER */}
-      <div className="fixed top-0 left-0 w-full h-[70px] bg-white z-50 shadow-sm">
+      <div className="sticky top-0 left-0 w-full h-[70px] bg-white z-50 shadow-sm">
         <nav className="flex items-center justify-between h-full w-11/12 mx-auto">
 
           <Link className="h-12" href="/">
@@ -36,7 +36,6 @@ export default function MobileNav() {
 
         </nav>
       </div>
-
       {/* MENU */}
       <div className="fixed inset-0 z-40 hidden peer-checked:block">
 

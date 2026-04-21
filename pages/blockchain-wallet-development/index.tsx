@@ -469,7 +469,7 @@ export default function Blockchain(props) {
       <div className="">
         <BlockChainHeader />
       </div>
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Blockchain Wallet Development Services"
           subhead=''

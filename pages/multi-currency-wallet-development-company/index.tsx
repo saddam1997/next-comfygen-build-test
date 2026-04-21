@@ -227,7 +227,7 @@ export default function Ecommerce(props) {
       </Head>
 
         <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         {/* hero section */}
         <div className="">
           <HeroSectionForAllPages

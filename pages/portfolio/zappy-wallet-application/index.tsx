@@ -47,7 +47,7 @@ export default function about(props) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
-      <div className="overflow-hidden lg:pt-[110px]" >
+      <div className="overflow-hidden " >
 
         <div className="">
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >

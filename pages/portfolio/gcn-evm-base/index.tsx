@@ -45,7 +45,7 @@ export default function about(props) {
         <meta name="twitter:data1" content="8 minutes" />
       </Head>
 
-      <div className="overflow-hidden lg:pt-[110px]" >
+      <div className="overflow-hidden " >
         <div className={`bg-gradient-to-br from-[#c77757] via-[#d88a68] to-[#f3c1a6]`} >
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#1e293bd1]/50">

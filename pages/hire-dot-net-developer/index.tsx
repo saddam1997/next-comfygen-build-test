@@ -164,7 +164,7 @@ export default function Mobile(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hire Best .NET Developers From India"
           ptag="Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs."

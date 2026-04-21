@@ -433,7 +433,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
       <EcommerceHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top-Rated eCommerce development company for Startups and enterprises "
           ptag="Comfygen is a trusted eCommerce development company helping businesses build secure, scalable, and high-performing online stores. We design and develop custom eCommerce websites, mobile apps, and web applications that deliver seamless shopping experiences and drive higher conversions."

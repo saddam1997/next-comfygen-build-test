@@ -170,7 +170,7 @@ export default function Mobile(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSection
           heading="Best IOS App Development Company"
           ptag="Create powerful, secure, and high-performance iOS applications with Comfygen, the Best iOS App Development Company.We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards."

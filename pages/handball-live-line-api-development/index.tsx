@@ -362,7 +362,7 @@ export default function Ecommerce(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Handball Live Line API"
           subhead="Elevate Your Sports Platform with Our Handball Live Line API"

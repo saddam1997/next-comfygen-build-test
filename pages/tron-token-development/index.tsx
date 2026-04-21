@@ -365,7 +365,7 @@ export default function Tron(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Tron Token Development Services"
           ptag="Looking to launch a robust token on the Tron blockchain? Comfygen offers trusted Tron token development services tailored for startups and enterprises. We specialize in creating custom TRC-10 and TRC-20 tokens with secure, scalable architectures and seamless smart contract integration."

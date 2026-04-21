@@ -336,7 +336,7 @@ export default function LiveLinePage() {
 //       </Head>
 
 //       <Header />
-//       <div className="overflow-hidden lg:pt-[110px]">
+//       <div className="overflow-hidden ">
 //         <HeroSectionForAllPages
 //           heading="Crypto Exchange Admin Panel Development Company"
 //           ptag="Comfygen provides crypto exchange admin panel development services to give you complete control over your trading platform. Our Crypto Exchange Admin Panel Development solutions provide real-time monitoring, user and transaction management, advanced security, and analytics dashboards for efficient decision-making. Fully customizable and scalable, our Crypto Exchange admin panels are designed for centralized or decentralized exchanges, ensuring smooth operations, regulatory compliance, and enhanced user experience."

@@ -391,7 +391,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages
             heading="Best Home Services App Development Company"

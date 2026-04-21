@@ -368,7 +368,7 @@ export default function Ecommerce(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
 
         <HeroSection
           heading="Basketball Live Line API development Company "

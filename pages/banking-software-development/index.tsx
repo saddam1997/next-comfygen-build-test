@@ -200,7 +200,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <Header />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSection
           heading="Best Banking Software Development services"
           ptag="Comfygen Technologies is a top banking software development company that creates secure, scalable, and future-ready finance banking software solutions. We build everything from core banking systems and AI-powered mobile banking apps to blockchain-enabled platforms and cloud-native digital banking solutions."

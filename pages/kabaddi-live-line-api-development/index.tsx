@@ -306,7 +306,7 @@ export default function Ecommerce(props) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Kabaddi Live Line API"
           ptag="Empower your sports applications with real-time Kabaddi data feeds, including live scores, player stats, and match analytics."

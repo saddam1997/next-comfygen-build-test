@@ -238,7 +238,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Ice Cream Delivery App Development Company"
           ptag="Launch a powerful ice cream delivery app with Comfygen and take your business online with confidence. We are a leading Ice cream delivery app development company offering advanced Ice cream delivery app development services, including AI-powered, on-demand, and subscription-based solutions for ice cream shops, startups, and enterprises."

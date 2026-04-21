@@ -337,7 +337,7 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <BlockchainNav />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         {/* hero section */}
         <HeroSectionForAllPages
           heading="DPoS Blockchain Development Company In Canada"

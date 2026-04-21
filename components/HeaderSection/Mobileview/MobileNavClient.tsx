@@ -28,7 +28,7 @@ export default function MobileNavClient({ menuData }: any) {
   }, [open]);
 
   return (
-    <div className="h-[70px] fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
+    <div className="h-[70px] sticky top-0 left-0 w-full bg-white z-50 shadow-sm">
       <nav className="flex items-center justify-between h-full w-11/12 mx-auto">
         <Link href="/">
           <Image

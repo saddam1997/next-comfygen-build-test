@@ -410,7 +410,7 @@ export default function LiveLinePage() {
 //         />
 //       </Head>
 //       <Header />
-//       <div className="overflow-hidden lg:pt-[110px]">
+//       <div className="overflow-hidden ">
 //         <HeroSectionForAllPages
 //           heading="Medicine Ordering App Development Company"
 //           ptag="Comfygen Technologies stands out as a professional Medicine Ordering App Development Company delivering robust, secure, and user-centric solutions. With our expert Medicine Ordering App Development Service, pharmacies can launch on-demand medicine ordering apps featuring prescription verification, real-time tracking, and smooth third-party integrations to ensure efficient healthcare service delivery."

@@ -417,7 +417,7 @@ export default function Blockchain(props: any) {
 
       </Head>
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hyperledger blockchain development service"
           ptag="Comfygen delivers secure, scalable, and AI-enabled Hyperledger blockchain development services built for enterprise use. Our blockchain development team works with Hyperledger Fabric, Sawtooth, and Indy to create permissioned networks that prioritize privacy, transparency, and trust. By integrating AI capabilities, we help businesses improve automation, enable predictive insights, and strengthen fraud detection for smarter, data-driven decisions."

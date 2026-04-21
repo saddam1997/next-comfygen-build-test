@@ -226,7 +226,7 @@ export default function Altcoin(props) {
         </div>
       </div>
       <div className="overflow-hidden ">
-        <div className="lg:pt-[110px]">
+        <div className="">
           <HeroSectionForAllPages
             heading="Best Blackjack Game Development Company"
             ptag="Comfygen is one of the best blackjack game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them."

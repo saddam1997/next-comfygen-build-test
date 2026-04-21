@@ -415,7 +415,7 @@ export default function MultiChain(props) {
 
       </Head>
       <BlockChainHeader />
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top MultiChain Blockchain Development Company"
           ptag="Comfygen is a top MultiChain blockchain development company delivering AI-powered blockchain solutions for enterprises. We specialize in building secure, scalable, and high-performance MultiChain networks, smart contracts, tokenization systems, and automated workflows. Our AI-driven analytics provide predictive insights, intelligent transaction monitoring, and data-driven decision-making to maximize blockchain efficiency."

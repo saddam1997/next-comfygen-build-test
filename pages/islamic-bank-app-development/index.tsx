@@ -438,7 +438,7 @@ export default function Mobile(props) {
         <Header />
 
       </div>
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Islamic Banking App Development Company"
           ptag="As a trusted Islamic banking app development partner, Comfygen Technologies designs and develops compliant digital banking platforms for Islamic financial institutions. Our apps support ethical banking, transparent transactions, and interest-free financial models, ensuring alignment with Shariah guidelines and modern digital banking standards."

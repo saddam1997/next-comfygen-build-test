@@ -301,7 +301,7 @@ export default function ClinicalApp(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Exam Preparation App Development Services That Empower Learners"
           ptag="Comfygen is top exam preparation app development company, we builds high-performance exam preparation apps designed to improve learning outcomes. Our custom exam preparation app development services offer AI-powered personalized study paths, intuitive interfaces, live class integration, interactive mock tests, and real-time performance analytics. Launch a scalable exam prep app tailored to your educational goals."

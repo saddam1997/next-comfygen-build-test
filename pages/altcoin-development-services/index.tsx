@@ -230,7 +230,7 @@ export default function Altcoin(props: any) {
       <div className="">
         <Header />
       </div>
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Altcoin Development Service"
           subhead='Looking for an Altcoin development company?'

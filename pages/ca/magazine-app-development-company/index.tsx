@@ -334,7 +334,7 @@ export default function News(props: any) {
       <div className="">
         <Header />
       </div>
-      <div className="overflow-hidden lg:pt-[100px]">
+      <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Magazine App Development Company in India & USA"
           subhead=""

@@ -158,7 +158,7 @@ export default function Altcoin(props: any) {
 
       <Header />
 
-      <div className="overflow-hidden lg:pt-[110px] pt-[40px]">
+      <div className="overflow-hidden  pt-[40px]">
         <div className="lg:bg-right bg-no-repeat bg-cover bg-gradient-to-br 
                 from-blue-500/40 
                 via-blue-300/40
