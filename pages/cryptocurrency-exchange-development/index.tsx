@@ -115,6 +115,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
       <Navbar />
+        <div className="h-[60px] md:h-[70px]" />
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
