@@ -4,12 +4,9 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptoexchange.json";
 
 import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -28,7 +25,7 @@ const Consultancy = dynamic(() => import("../../components/Consultancy"), {
 
 import TechStacks from "../../components/TechStacks";
 
-import InformationSection from "../../components/InformationSection"
+
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
   { ssr: true }
@@ -46,9 +43,6 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -115,8 +109,8 @@ export default function Ecommerce(props: any) {
         />
       </Head>
       <Navbar />
-        <div className="h-[60px] md:h-[70px]" />
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <div className="" />
+          <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Trending trendingData={JSON_DATA.trendingData}
@@ -133,7 +127,7 @@ export default function Ecommerce(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-       <IndustryGrid />
+      <IndustryGrid />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />

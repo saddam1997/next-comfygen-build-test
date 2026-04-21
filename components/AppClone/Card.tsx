@@ -17,9 +17,9 @@ export default function Card({ SliderDATA }: any) {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SliderDATA?.IndustriesServe?.map((app: any) => (
+          {SliderDATA?.IndustriesServe?.map((app:any, index:any) => (
             <article
-              key={app.id} // ✅ stable key
+              key={index} // ✅ stable key
               className="group relative  bg-white border border-gray-200 rounded-sm overflow-hidden transition-all duration-300 flex flex-col hover:shadow-md hover:-translate-y-1"
             >
               

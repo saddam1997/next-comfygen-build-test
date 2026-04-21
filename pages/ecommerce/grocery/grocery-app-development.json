@@ -447,7 +447,13 @@
     {
       "num": "4",
       "title": "What features should a grocery delivery app include?",
-      "desc": "<ul><li>User-friendly search and catalog browsing</li> <li>Secure online payment options</li> <li>Real-time order tracking</li> <li>Ratings and reviews</li></ <li>Personalized offers and push notifications</li> <li>Vendor and delivery partner dashboards</li><ul>"
+      "desc": "",
+      "li1":"<li>User-friendly search and catalog browsing</li>",
+      "li2":"<li>Secure online payment options</li>",
+      "li3":"<li>Real-time order tracking</li>",
+      "li4":" <li>Ratings and reviews</li>",
+      "li5":"<li>Personalized offers and push notifications</li>",
+      "li6":"<li>Vendor and delivery partner dashboards</li>"
     },
     {
       "num": "5",

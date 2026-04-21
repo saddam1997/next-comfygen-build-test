@@ -167,7 +167,7 @@ const MobileApp = [
     url: "/quick-commerce-app-development",
   },
   {
-    num: "32",
+    num: "33",
     name: "White Label Mobile App Development",
     url: "/white-label-mobile-app-development",
   },
@@ -791,7 +791,7 @@ export default function MobileNav(props: any) {
                 width={180}
                 height={51}
                 priority
-                className="object-contain"
+                className="object-contain h-10 w-40"
               />
             </Link>
           </div>

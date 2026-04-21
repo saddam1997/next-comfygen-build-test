@@ -224,7 +224,7 @@ export default function Ecommerce(props: any) {
         </header>
 
         {/* reserved space (CRITICAL FOR CLS) */}
-        <div className="h-[70px] md:h-[120px]" />
+        {/* <div className="h-[70px] md:h-[120px]" /> */}
 
         {/* ================= HERO (MOST IMPORTANT FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">

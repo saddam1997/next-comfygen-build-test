@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cricketliveline.json";
 
 import Navbar from "../../components/Navbar";
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
@@ -108,7 +108,7 @@ export default function Ecommerce(props) {
       <div className="min-h-[60px] md:min-h-[70px]">
         <Navbar />
       </div>
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Consultancy consultancyData={JSON_DATA.consultancyData} />

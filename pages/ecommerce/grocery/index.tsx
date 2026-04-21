@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./grocery-app-development.json";
 
-import HeroSectionforHomeTest from "../../../components/HeroSectionforHomeTest";
+import HeroSectionNewCls from "../../../components/HeroSectionNewCls"
 
 
 const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
@@ -192,7 +192,7 @@ export default function ClinicalApp(props: any) {
       </div>
 
       <div className="overflow-hidden ">
-        <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <Solution techData={JSON_DATA.Business} />

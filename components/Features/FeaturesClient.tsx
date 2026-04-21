@@ -1,4 +1,3 @@
-"use client";
 
 import React, { useState, useCallback, useMemo } from "react";
 import Image from "next/image";
@@ -53,9 +52,9 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
                 <Image
                   src={active.img}
                   alt={active.title}
-                  fill
-                  sizes="100vw"
-                  className="rounded-lg border object-cover"
+                  width={340}
+                  height={140}
+                  className="rounded-lg border object-cover "
                 />
               </div>
 
@@ -101,13 +100,13 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
             <div className="grid grid-cols-2 gap-8 items-center">
 
               {/* ✅ CLS FIX */}
-              <div className="relative w-full aspect-video">
+              <div className="relative w-full flex justify-center ">
                 <Image
                   src={active.img}
                   alt={active.title}
-                  fill
-                  sizes="100vw"
-                  className="rounded-lg border object-contain"
+                 width={340}
+                  height={140}
+                  className="rounded-lg border object-cover w-[500px] h-[400px]"
                 />
               </div>
 

@@ -41,10 +41,9 @@ const ProcesSection = dynamic(
   { ssr: true, loading: withSkeleton("h-[500px]") }
 );
 
-const TechSection = dynamic(
-  () => import("../../components/TechSection"),
-  { ssr: true, loading: withSkeleton("h-[500px]") }
-);
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+});
 
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
@@ -244,9 +243,13 @@ export default function Ecommerce(props: any) {
           <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
         </section>
 
-        <section className="min-h-[450px]">
-          <TechSection TechStack={JSON_DATA.TechStack} />
-        </section>
+   <div className="">
+        <TechStacks
+          TabData={JSON_DATA.Tabs}
+          TechData={JSON_DATA.TechstackData}
+          Default={JSON_DATA.Tabs[0]}
+        />
+      </div>
 
         <ClientStories />
 

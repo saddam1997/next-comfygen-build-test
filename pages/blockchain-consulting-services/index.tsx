@@ -144,7 +144,7 @@ export default function rummy(props: any) {
         </header>
 
         {/* reserved space (CRITICAL FIX) */}
-        <div className="h-[70px] md:h-[80px]" />
+        {/* <div className="h-[70px] md:h-[80px]" /> */}
 
         {/* ================= HERO (CRITICAL CLS FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[100vh]">
