@@ -32,8 +32,9 @@ export default function HeroSectionForAllPages(props: any) {
           src={props.bgImage}
           alt={imageAlt}
           fill
-         
+          priority
           fetchPriority="high"
+          sizes="100vw"
           quality={60}
           className="object-cover object-center hidden lg:block"
         />

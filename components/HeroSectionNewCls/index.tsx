@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import StatsBanner from "./StatsBanner";
 
 const HeroClient = dynamic(() => import("./HeroClient"), {
-  ssr: false,
+  ssr: true,
   
 });
 
