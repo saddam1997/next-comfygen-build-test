@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
+import HeadingTwo from "../ui/HeadingTwo";
+import ParagraphText from "../ui/ParagraphText";
 
-const InfoSection = ({InfoSectionData}:any) => {
+const InfoSection = ({ InfoSectionData }: any) => {
   return (
     <section className="bg-white lg:py-16 py-10">
       <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
@@ -19,31 +21,40 @@ const InfoSection = ({InfoSectionData}:any) => {
               {/* RIGHT CONTENT */}
               <div>
                 <div className="space-y-4">
-                  <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                    {InfoSectionData?.heading}
-                  </h2>
+
+                  <HeadingTwo color="#212121" text={InfoSectionData?.heading} />
+
                   <div className="space-y-4">
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description1}</p>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description2}</p>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description3}</p>
+                    <ParagraphText color="black" text={InfoSectionData?.description1} />
+                    <ParagraphText color="black" text={InfoSectionData?.description2} />
+                    <ParagraphText color="black" text={InfoSectionData?.description3} />
+
+
+
+
+
                     <ul className="space-y-2">
                       {InfoSectionData?.points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="md:w-[10px] md:h-[10px] bg-[#5556D1] rounded-full hidden md:block"></div>
-                          <span className="text-sm md:text-sm" dangerouslySetInnerHTML={{ __html: point }}></span>
+                           <ParagraphText color="black" text={point} />
+                         
                         </li>
                       ))}
                     </ul>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description4}</p>
+                    <ParagraphText color="black" text={InfoSectionData?.description4} />
+
                   </div>
                 </div>
 
                 <div className="mt-7">
-                  <Link href={InfoSectionData?.link}>
-                    <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                      {InfoSectionData?.linkText} <MdOutlineArrowOutward />
-                    </button>
-                  </Link>
+                  {InfoSectionData.link && InfoSectionData.linkText && (
+                    <Link href={InfoSectionData?.link}>
+                      <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                        {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                      </button>
+                    </Link>
+                  )}
                 </div>
               </div>
             </>
@@ -57,31 +68,35 @@ const InfoSection = ({InfoSectionData}:any) => {
               {/* LEFT CONTENT */}
               <div className="order-2 lg:order-1">
                 <div className="space-y-4">
-                  <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                    {InfoSectionData?.heading}
-                  </h2>
+                  <HeadingTwo color="#212121" text={InfoSectionData?.heading} />
                   <div className="space-y-4">
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description1}</p>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description2}</p>
-                    <p className="xl:text-base text-sm text-black">{InfoSectionData?.description3}</p>
+                    <ParagraphText color="black" text={InfoSectionData?.description1} />
+                    <ParagraphText color="black" text={InfoSectionData?.description2} />
+                    <ParagraphText color="black" text={InfoSectionData?.description3} />
                     <ul className="space-y-2">
                       {InfoSectionData?.points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="w-2 h-2 bg-[#5556D1] rounded-full hidden md:block"></div>
-                          <span className="text-sm " dangerouslySetInnerHTML={{ __html: point }}></span>
+                           <ParagraphText color="black" text={point} />
                         </li>
                       ))}
                     </ul>
-                    <p className="md:text-base text-sm text-black">{InfoSectionData?.description4}</p>
+                    <ParagraphText color="black" text={InfoSectionData?.description4} />
                   </div>
                 </div>
 
                 <div className="mt-7">
-                  <Link href={InfoSectionData?.link}>
-                    <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                      {InfoSectionData?.linkText} <MdOutlineArrowOutward />
-                    </button>
-                  </Link>
+
+                  {InfoSectionData.link && InfoSectionData.linkText && (
+                    <Link href={InfoSectionData?.link}>
+                      <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
+                        {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                      </button>
+                    </Link>
+                  )}
+
+
+
                 </div>
               </div>
             </>

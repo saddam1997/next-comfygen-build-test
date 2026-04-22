@@ -10,31 +10,23 @@ export default function TalkToExpertModal({
     isOpen: boolean;
     onClose: () => void;
 }) {
+
+
+    if (!isOpen) return null;
     return (
-        <div
-            className={`fixed inset-0 z-[999] flex items-center justify-center p-4
-      transition-all duration-300
-      ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
-        >
+       <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
+    
             {/* Overlay */}
             <div
-                className="absolute  bg-black/60 backdrop-blur-sm"
+                className="absolute bg-black/60 backdrop-blur-sm"
                 onClick={onClose}
             />
-
             {/* CENTER WRAPPER (VERY IMPORTANT) */}
             <div className="relative z-10 w-full flex justify-center items-center">
-
                 {/* MODAL BOX */}
-                <div
-                    className={`w-full relative max-w-[950px] lg:h-[600px] h-full bg-white rounded-xl shadow-xl overflow-hidden
-          transform transition-all duration-300
-          ${isOpen ? "scale-100" : "scale-95"}`}
-                >
-
+                <div className={`w-full relative max-w-[950px] lg:h-[600px] h-full bg-white rounded-xl shadow-xl overflow-hidden transform    transition-all duration-300 ${isOpen ? "scale-100" : "scale-95"}`}>
                     <div className="flex flex-col lg:flex-row h-full">
-
-                        {/* LEFT IMAGE */}
+                       {/* LEFT IMAGE */}
                         <div className="relative hidden lg:block w-[45%] h-full">
                             <Image
                                 src="https://www.comfygen.com/comfygen-images/home/form.webp"
@@ -44,8 +36,6 @@ export default function TalkToExpertModal({
                                 className="object-cover "
                                 priority
                             />
-
-
                             <div className="absolute bottom-0 z-10 flex flex-col justify-end p-8 w-full  text-white">
                                 <div className="lg:space-y-4">
                                     <Image

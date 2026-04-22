@@ -2,19 +2,15 @@
 import dynamic from 'next/dynamic';
 
 const FaqSectionClient = dynamic(() => import('./FaqContentClient'), {
-  ssr: true,
+  ssr: false,
 });
 
 
-const index = ({faqData}:any) => {
-  return (
-    <div>
-      <FaqSectionClient Data={faqData} />
-    </div>
-  )
-}
+const Index = ({ faqData }: any) => {
+  return <FaqSectionClient Data={faqData} />;
+};
 
-export default index
+export default Index
 
 
 

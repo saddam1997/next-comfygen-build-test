@@ -20,7 +20,7 @@ export default function Card({ item }: any) {
           </div>
 
           {/* Content */}
-          <p className="text-gray-600 text-sm leading-relaxed line-clamp-5">
+          <p className="text-gray-600 text-sm ">
             {item.text}
           </p>
         </div>

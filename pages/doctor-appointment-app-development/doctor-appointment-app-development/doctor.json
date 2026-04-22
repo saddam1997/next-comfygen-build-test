@@ -174,8 +174,8 @@
       "Two-factor authentication for all admin, doctor, and pharmacy users"
     ],
     "imageSrc": "https://www.comfygen.com/comfygen-images/doctor-appointment-app-development13/MEDICAL-info.webp",
-    "link": "/contact-us",
-    "linkText": "Lets Discuss",
+    "link": "",
+    "linkText": "",
     "imagePosition": "right"
   },
   "Industries": {
@@ -606,8 +606,8 @@
     "Security"
   ],
   "TechstackData": {
-    "heading": "Tech Stack We Use",
-    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "heading": "Technology Stack for Doctor Appointment App Development",
+    "description": "Comfygen Technologies uses advanced technologies to build secure, scalable, and high-performing doctor appointment apps. Our expert tech stack ensures smooth scheduling, real-time updates, seamless user experience, and strong data protection.",
     "TechItems": {
       "Frontend": [
         {

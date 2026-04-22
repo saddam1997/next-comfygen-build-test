@@ -17,8 +17,8 @@
     "description2": "Our experienced custom mobile app development team utilizes modern frameworks, cloud-native architectures, and emerging technologies to build high-performing websites and mobile applications across industries such as fintech, healthcare, blockchain, on-demand, education, gaming, and enterprise solutions. With a strong focus on usability, performance, and scalability, we ensure every solution is built to evolve with your business needs.",
     "points": [],
     "imageSrc": "https://www.comfygen.com/comfygen-images/comfygen/comfygen about.webp",
-    "link": "/about-us",
-    "linkText": "Explore More"
+    "link": "",
+    "linkText": ""
   },
   "customTestimonials": [
     {
@@ -241,7 +241,7 @@
         "image": "https://www.comfygen.com/comfygen-images/comfygen/great-wallet-portfolio-new.webp",
         "title": "Great Wallet Application",
         "description": "Introducing our Great Wallet Application – your all-in-one solution for seamless and secure financial management. Consolidate cards, track spending, and make quick, hassle-free transactions. ",
-        "link": "#"
+        "link": "https://www.comfygen.com/portfolio/great-wallet"
       },
       {
         "image": "https://www.comfygen.com/comfygen-images/comfygen/food_delivery_portfolio_30kb.webp",
@@ -485,7 +485,7 @@
       },
       {
         "title": "Support & Maintenance",
-        "description": "Post-launch, we provide <a href='https://www.comfygen.com/blog/mobile-app-maintenance-cost/' class='text-blue-600 font-semibold'>mobile app maintenance services</a>, including performance monitoring, feature updates, security enhancements, and scalability improvements to keep your application future-ready."
+        "description": "Post-launch, we provide mobile app maintenance services, including performance monitoring, feature updates, security enhancements, and scalability improvements to keep your application future-ready."
       }
     ]
   },
@@ -500,8 +500,8 @@
     "Advanced Technologies"
   ],
   "TechstackData": {
-    "heading": "Tech Stack We Use",
-    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "heading": "Technology Stack for App & Website Development",
+    "description": "A technology stack is a comprehensive combination of programming languages, frameworks, libraries, tools, databases, and cloud services that we use to build robust, scalable, and high-performance web and mobile applications.",
     "TechItems": {
       "Frontend": [
         {

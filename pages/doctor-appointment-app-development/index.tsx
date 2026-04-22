@@ -61,7 +61,7 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
 });
 
 
-const DeliveryCostTable = dynamic(() => import("../../components/DeliveryCostTable"), {
+const DeliveryCostTable = dynamic(() => import("./components/DeliveryCostTable"), {
   ssr: true,
 });
 
@@ -99,8 +99,6 @@ export default function Ecommerce(props:any) {
       <Head>
         <title>
           Doctor Appointment App Development for Hospitals, Clinics & Healthcare Startups
-
-
         </title>
 
         <meta
@@ -108,16 +106,10 @@ export default function Ecommerce(props:any) {
           content="Build custom doctor appointment apps for hospitals, clinics & startups. Features include telemedicine, AI doctor matching, EHR integration & HIPAA compliance."
         />
 
-
         {/* keywords */}
         <meta name="keywords" content="On-demand Doctor Appointment App Development, Telemedicine App Development, Hospital Appointment App Development, Clinic Appointment App Development, Doctor Marketplace App Development, Doctor Consultation App Development, AI-Powered Doctor Appointment App Development, Blockchain Doctor Appointment App Development, IoT Doctor Appointment App Development" />
-
-
         {/* <!-- Canonical Tag --> */}
         <link rel="canonical" href="https://www.comfygen.com/doctor-appointment-app-development" />
-
-
-
         {/* <!-- Viewport a/nd Mobile Optimization → */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, shrink-to-fit=no" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -170,7 +162,6 @@ export default function Ecommerce(props:any) {
       <Consultancy consultancyData={JSON_DATA.Nextechnologies} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
