@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
 import Navbar from "../components/Navbar";
-import HeroSectionforHome from "../components/HeroSectionforHome"
+import HeroSectionNewCls from "../components/HeroSectionNewCls"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
 import TechStacks from "../components/TechStacks";
@@ -171,9 +171,7 @@ export default function Home(props: any) {
       </Head>
       <Navbar />
 
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
-
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
@@ -185,12 +183,10 @@ export default function Home(props: any) {
       />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      {/* <TestimonialSection testimonials={JSON_DATA.customTestimonials} /> */}
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

@@ -62,7 +62,7 @@ const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
 export default function Ecommerce(props: any) {
   let { initialData } = props;
   return (
-    <>
+    <main>
       <Head>
 
         <title>
@@ -162,9 +162,9 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <div className="h-[60px] md:h-[70px]">
+      <section className="h-[60px] md:h-[70px]">
         <Navbar />
-      </div>
+      </section>
 
       {/* ✅ Hero */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
@@ -229,7 +229,7 @@ export default function Ecommerce(props: any) {
         <BlogSection initialData={initialData} />
       </div>
 
-    </>
+    </main>
   );
 }
 

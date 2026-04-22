@@ -10,7 +10,7 @@ export default function HeroClient() {
     return (
         <>
             {/* CTA */}
-            <div className="min-h-[50px]">
+            <div className="">
                 <button
                     onClick={() => setOpen(true)}
                     className="bg-white text-black font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition"

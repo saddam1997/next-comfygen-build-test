@@ -97,7 +97,7 @@
   },
   "AboutSection": {
     "heading": "Why Invest in Taxi App Development Services?",
-    "description1": "The global ride-hailing market is projected to reach $188.6 billion by 2026 and <a rel='nofollow' href='https://www.statista.com/outlook/mmo/shared-mobility/ride-hailing/worldwide' class='text-blue-500 font-semibold'>grow to approximately $229.98 billion by 2030</a>, driven by steady adoption of app-based transport, increasing user penetration, and expanding digital payment ecosystems worldwide.",
+    "description1": "The global ride-hailing market is projected to reach $188.6 billion by 2026 and <a target='_blank' rel='nofollow' href='https://www.statista.com/outlook/mmo/shared-mobility/ride-hailing/worldwide' class='text-blue-500 font-semibold'>grow to approximately $229.98 billion by 2030</a>, driven by steady adoption of app-based transport, increasing user penetration, and expanding digital payment ecosystems worldwide.",
     "description2": "Investing in a dedicated taxi-booking mobile app development solution positions your business to capture this demand directly — without depending on third-party platforms that take 20–30% commission on every ride.",
     "description3": "As a full-service ride-hailing app development company, Comfygen gives you complete ownership over your platform: your branding, your pricing logic, your customer data, and your revenue. Whether you're a fleet owner wanting to digitize operations, a startup looking to build the next Uber in your city, or an enterprise managing employee transport — a purpose-built taxi app development solution delivers compounding ROI that off-the-shelf software simply cannot match.",
     "description4": "Revenue streams you unlock with your own taxi app: ",
@@ -109,8 +109,8 @@
       "Corporate account management fees "
     ],
     "imageSrc": "https://www.comfygen.com/comfygen-images/taxi-app-development-company/about.webp",
-    "link": "/contact-us",
-    "linkText": "Get Free Consultant"
+    "link": "",
+    "linkText": ""
   },
   "trendingData": [
     {
@@ -408,7 +408,7 @@
     "imagePosition": "left"
   },
   "Portfoliodata": {
-    "heading": "Take a Look at Our Taxi App Portfolio",
+    "heading": "View Case Study change this View Portfolio ",
     "description": "We have developed reliable taxi booking apps for startups and small businesses, focused on real-world usability, smooth performance, and easy management.",
     "portfolio": [
       {
@@ -583,7 +583,6 @@
           "name": "Python",
           "num": "7"
         }
-   
       ],
       "Frontend": [
         {
@@ -737,7 +736,7 @@
   },
   "pageData": {
     "title": "Why Businesses Trust Comfygen for Taxi App Development Success",
-    "description": "Comfygen is a leading on-demand taxi app development company based in Jaipur, India, delivering high-quality mobility solutions to clients across the USA, Canada, Germany, UAE, and the UK. With 8+ years of real industry experience, we have successfully launched 10+ taxi booking apps—from startups to enterprise fleet platforms.",
+    "description": "Comfygen is a leading on-demand taxi app development company based in Jaipur, India, delivering high-quality mobility solutions to clients globally. With years of real industry experience since 2019, we have successfully launched numerous taxi booking apps—from startups to enterprise fleet platforms.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -779,16 +778,16 @@
   "HireDeveloper": {
     "heading": "Hire a Taxi App Developer — Dedicated Experts, Flexible Engagement",
     "text": "Looking to hire a taxi app developer who truly understands the ride-hailing ecosystem — not just a generic mobile developer? Comfygen's dedicated taxi app developers have shipped many cab booking and ride-hailing platforms across iOS, Android, and <a href='https://www.comfygen.com/web-development' class='underline font-semibold'>website</a>.",
-    "text1": "When you hire taxi mobile app developers from Comfygen, you get professionals experienced in",
-    "text2": "GPS integration, real-time ride dispatch, dynamic pricing engines, payment gateway integration, and multi-role admin systems — not just frontend screens.",
+    "text1": "When you hire taxi mobile app developers from Comfygen, you get professionals experienced in GPS integration, real-time ride dispatch, dynamic pricing engines, payment gateway integration, and multi-role admin systems — not just frontend screens.",
+    "text2": "",
     "buttonText": "Hire App Developer ",
     "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
     "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
     "imageAlt": "hire-developer",
     "listItems": [
-      "Full-Time Dedicated Developer — Your developer works exclusively on your project, 8 hours/day, 5 days/week. Best for long-term builds.",
-      "Part-Time / Hourly — Flexible hours, ideal for adding features to an existing app or handling specific modules. ",
-      "Dedicated Team — A complete squad: Project Manager + 2–3 developers + QA engineer + UI/UX designer. Best for large, fast-moving projects. "
+      "Full-Time Dedicated Developer",
+      "Part-Time / Hourly",
+      "Dedicated Team"
     ]
   },
   "ReviewData": {

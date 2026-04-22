@@ -5,7 +5,7 @@ import HeadingOne from "../ui/HeadingOne";
 import ParagraphText from "../ui/ParagraphText";
 
 const HeroClient = dynamic(() => import("./HeroClient"), {
-  ssr: false,
+  ssr: true,
   
 });
 
