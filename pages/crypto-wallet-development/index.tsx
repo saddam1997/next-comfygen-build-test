@@ -3,39 +3,34 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 
-import Navbar from "../../components/Navbar"
+const Navbar = dynamic(() => import("../../components/Navbar"), {
+  ssr: true,
+});
+
+
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
 
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-});
+import AboutComponent from "../../components/Abouts/AboutComponent"
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
+import CallToActionSection from "../../components/CallToActionSection"
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
+import Solution from "../../components/Solution"
 
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-});
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
+import WhyChooseSection from "../../components/WhyChooseSection"
 
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
+import ProcesSection from "../../components/ProcesSection"
+
+import HireSection from "../../components/HireSection"
+
+
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
@@ -49,9 +44,8 @@ const TechStacks = dynamic(() => import("../../components/TechStacks"), {
   ssr: true,
 });
 
-const IndustryGrid = dynamic(() => import("../../components/IndustryGrid"), {
-  ssr: true,
-});
+import IndustryGrid from "../../components/IndustryGrid"
+
 
 
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {

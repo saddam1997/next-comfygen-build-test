@@ -13,83 +13,50 @@ const Skeleton = ({ h }: any) => (
 
 /* ================= DYNAMIC COMPONENTS ================= */
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true }
 );
 
-const AboutComponent = dynamic(
-  () => import("../../components/Abouts/AboutComponent"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+import AboutComponent from "../../components/Abouts/AboutComponent";
+
+import Networks from "../../components/Networks";
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"),
+  { ssr: true }
 );
 
-const Networks = dynamic(
-  () => import("../../components/Networks"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+const TechStacks = dynamic(() => import("../../components/TechStacks"),
+  { ssr: true }
 );
 
-const Consultancy = dynamic(
-  () => import("../../components/Consultancy"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: true }
 );
 
-const TechStacks = dynamic(
-  () => import("../../components/TechStacks"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+import IndustryGrid from "../../components/IndustryGrid";
+
+import Solution from "../../components/Solution";
+
+import WhyChooseSection from "../../components/WhyChooseSection";
+
+import HireSection from "../../components/HireSection";
+
+import CallToActionSection from "../../components/CallToActionSection";
+
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"),
+  { ssr: true }
 );
 
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+const FaqSection = dynamic(() => import("../../components/FaqSection"),
+  { ssr: true, }
 );
 
-const IndustryGrid = dynamic(
-  () => import("../../components/IndustryGrid"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const Solution = dynamic(
-  () => import("../../components/Solution"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const HireSection = dynamic(
-  () => import("../../components/HireSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
-);
-
-const ReviewCard = dynamic(
-  () => import("../../components/ReviewCard"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const FaqSection = dynamic(
-  () => import("../../components/FaqSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+const BlogSection = dynamic(() => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
 /* ================= SECTION ENGINE (IMPORTANT FIX) ================= */
-
-const Section = ({ children }: any) => (
-  <section className="w-full py-16 md:py-20">
-    <div className="max-w-7xl mx-auto px-4">{children}</div>
-  </section>
-);
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
@@ -222,80 +189,29 @@ export default function Ecommerce(props: any) {
         <header className="">
           <BlockChainHeader />
         </header>
-
-        {/* reserved space (CRITICAL FOR CLS) */}
-        {/* <div className="h-[70px] md:h-[120px]" /> */}
-
         {/* ================= HERO (MOST IMPORTANT FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         </section>
-
-        {/* ================= SECTION SYSTEM ================= */}
-
-        <Section>
-          <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        </Section>
-
-        <Section>
-          <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        </Section>
-
-        <Section>
-          <Solution techData={JSON_DATA.Trading} />
-        </Section>
-
-        <Section>
-          <Networks Data={JSON_DATA.BlockchainNetworks} />
-        </Section>
-
-        <Section>
-          <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
-        </Section>
-
-        <Section>
-          <TechStacks
-            TabData={JSON_DATA.Tabs}
-            TechData={JSON_DATA.TechstackData}
-            Default={JSON_DATA.Tabs?.[0]}
-          />
-        </Section>
-
-        <Section>
-          <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        </Section>
-
-        <Section>
-          <IndustryGrid />
-        </Section>
-
-        <Section>
-          <Solution techData={JSON_DATA.BusinessOriented} />
-        </Section>
-
-        <Section>
-          <WhyChooseSection pageData={JSON_DATA.pageData} />
-        </Section>
-
-        <Section>
-          <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-        </Section>
-
-        <Section>
-          <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        </Section>
-
-        <Section>
-          <ReviewCard testimonials={JSON_DATA.ReviewData} />
-        </Section>
-
-        <Section>
-          <FaqSection faqData={JSON_DATA.Frequently} />
-        </Section>
-
-        <Section>
-          <BlogSection initialData={initialData ?? []} />
-        </Section>
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <Solution techData={JSON_DATA.Trading} />
+        <Networks Data={JSON_DATA.BlockchainNetworks} />
+        <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
+        <TechStacks
+          TabData={JSON_DATA.Tabs}
+          TechData={JSON_DATA.TechstackData}
+          Default={JSON_DATA.Tabs?.[0]}
+        />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <IndustryGrid />
+        <Solution techData={JSON_DATA.BusinessOriented} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
+        <BlogSection initialData={initialData ?? []} />
 
       </div>
 

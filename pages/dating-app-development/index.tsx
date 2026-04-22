@@ -4,98 +4,71 @@ import JSON_DATA from "./json/ecommerceapp.json";
 
 import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
-import TechStacks from "../../components/TechStacks";
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true }
+);
+
+
+import AboutComponent from "../../components/Abouts/AboutComponent";
+
+const CardGrid = dynamic(() => import("../../components/CardGrid"),
+  { ssr: true }
+);
+
+
+
+const TechStacks = dynamic(() => import("../../components/TechStacks"),
+  { ssr: true }
+);
+
 import Trending from "../../components/Trending";
 
-// 🔥 SKELETON HELPER
-const skeleton = (h: string) => (
-  <div className={`w-full ${h} animate-pulse bg-gray-100 rounded-lg`} />
+const Features = dynamic( () => import("../../components/Features"),
+  { ssr: true}
 );
 
-// 🔥 DYNAMIC COMPONENTS WITH CLS FIX
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true, loading: () => skeleton("h-[500px]") }
+import CallToActionSection from "../../components/CallToActionSection";
+
+import Emerging from "../../components/Emerging";
+
+const AppCard = dynamic(() => import("../../components/AppCard"),
+  { ssr: true }
 );
 
-const AboutComponent = dynamic(
-  () => import("../../components/Abouts/AboutComponent"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"),
+  { ssr: true }
 );
 
-const CardGrid = dynamic(
-  () => import("../../components/CardGrid"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
+const Consultancy = dynamic(() => import("../../components/Consultancy"),
+  { ssr: true,}
 );
 
-const Features = dynamic(
-  () => import("../../components/Features"),
-  { ssr: true, loading: () => skeleton("h-[500px]") }
+const PortfolioSection = dynamic( () => import("../../components/PortfolioSection"),
+  { ssr: true, }
 );
 
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  { ssr: true, loading: () => skeleton("h-[300px]") }
+import WhyChooseSection from "../../components/WhyChooseSection";
+
+import ProcesSection from "../../components/ProcesSection";
+
+import HireSection from "../../components/HireSection";
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"),
+  { ssr: true}
 );
 
-const Emerging = dynamic(
-  () => import("../../components/Emerging"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
 );
 
-const AppCard = dynamic(
-  () => import("../../components/AppCard"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
+const BlogSection = dynamic(() => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
-const ReviewCard = dynamic(
-  () => import("../../components/ReviewCard"),
-  { ssr: true, loading: () => skeleton("h-[450px]") }
-);
-
-const Consultancy = dynamic(
-  () => import("../../components/Consultancy"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
-);
-
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  { ssr: true, loading: () => skeleton("h-[500px]") }
-);
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
-  { ssr: true, loading: () => skeleton("h-[450px]") }
-);
-
-const ProcesSection = dynamic(
-  () => import("../../components/ProcesSection"),
-  { ssr: true, loading: () => skeleton("h-[450px]") }
-);
-
-const HireSection = dynamic(
-  () => import("../../components/HireSection"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
-);
-
-const FaqSection = dynamic(
-  () => import("../../components/FaqSection"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
-);
-
-const ClientStories = dynamic(
-  () => import("../../components/ClientStories"),
-  { ssr: true, loading: () => skeleton("h-[400px]") }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true, loading: () => skeleton("h-[500px]") }
-);
-
-const BusinessSolustion = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
-  { ssr: true, loading: () => skeleton("h-[450px]") }
+const BusinessSolustion = dynamic(() => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
+  { ssr: true}
 );
 export default function Ecommerce(props: any) {
   let { initialData } = props;

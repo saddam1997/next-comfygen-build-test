@@ -5,62 +5,37 @@ import JSON_DATA from "./json/hireBlockchain.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
 
-/* ================= SKELETON SYSTEM ================= */
-
-const Skeleton = ({ h }: any) => (
-  <div className={`${h} w-full bg-gray-100 animate-pulse`} />
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true }
 );
 
-/* ================= DYNAMIC COMPONENTS ================= */
+import AboutComponent from "../../components/Abouts/AboutComponent";
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+const Consultancy = dynamic(() => import("../../components/Consultancy"),
+  { ssr: true}
 );
 
-const AboutComponent = dynamic(
-  () => import("../../components/Abouts/AboutComponent"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+import Solution from "../../components/Solution";
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: true}
 );
 
-const Consultancy = dynamic(
-  () => import("../../components/Consultancy"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+import WhyChooseSection from "../../components/WhyChooseSection";
+
+
+import CallToActionSection from "../../components/CallToActionSection";
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"),
+  { ssr: true }
 );
 
-const Solution = dynamic(
-  () => import("../../components/Solution"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+const FaqSection = dynamic(() => import("../../components/FaqSection"),
+  { ssr: true}
 );
 
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
-);
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
-);
-
-const ReviewCard = dynamic(
-  () => import("../../components/ReviewCard"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const FaqSection = dynamic(
-  () => import("../../components/FaqSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+const BlogSection = dynamic(() => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
 
@@ -172,47 +147,47 @@ export default function Mobile(props: any) {
 
         {/* ================= SECTION ENGINE STYLE WRAPPER ================= */}
 
-        <section className="py-16">
+        <section>
           <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         </section>
 
-        <section className="py-16">
+        <section>
           <AboutComponent AboutData={JSON_DATA.AboutSection} />
         </section>
 
-        <section className="py-16">
+        <section>
           <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
         </section>
 
-        <section className="py-16">
+        <section>
           <Solution techData={JSON_DATA.NFTBenefits} />
         </section>
 
-        <section className="py-16">
+        <section>
           <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         </section>
 
-        <section className="py-16">
+        <section>
           <Solution techData={JSON_DATA.Business} />
         </section>
 
-        <section className="py-16">
+        <section>
           <WhyChooseSection pageData={JSON_DATA.pageData} />
         </section>
 
-        <section className="py-16">
+        <section>
           <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
         </section>
 
-        <section className="py-16">
+        <section>
           <ReviewCard testimonials={JSON_DATA.ReviewData} />
         </section>
 
-        <section className="py-16">
+        <section>
           <FaqSection faqData={JSON_DATA.Frequently} />
         </section>
 
-        <section className="py-16">
+        <section>
           <BlogSection initialData={initialData ?? []} />
         </section>
 
