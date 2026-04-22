@@ -1,6 +1,18 @@
 import Footer from "../components/Newcomponet/layout/Footer";
-import GetinTouch from "../components/Newcomponet/SectionCompoent/GetinTouch";
-import LazyClientTools from "./LazyClientTools";
+
+import dynamic from "next/dynamic";
+const LazyClientTools = dynamic(
+  () => import("./LazyClientTools"),
+  { ssr: false }
+);
+
+const GetinTouch = dynamic(
+  () => import("../components/Newcomponet/SectionCompoent/GetinTouch"),
+  { ssr: false }
+);
+
+
+
 
 /* ================= GLOBAL LAYOUT SHELL ================= */
 

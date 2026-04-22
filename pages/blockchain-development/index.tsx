@@ -4,84 +4,44 @@ import JSON_DATA from "./json/blockchain.json";
 
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import IndustryGrid from "../../components/IndustryGrid";
-
-/* ================= SKELETON ================= */
-
-const Skeleton = ({ h }: any) => (
-  <div className={`${h} w-full bg-gray-100 animate-pulse`} />
-);
 
 /* ================= DYNAMIC COMPONENTS ================= */
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true, }
+);
+import AboutComponent from "../../components/Abouts/AboutComponent";
+
+import Solution from "../../components/Solution";
+import CardwithImageSection from "../../components/CardwithImageSection";
+
+const Consultancy = dynamic(() => import("../../components/Consultancy"),
+  { ssr: true}
+);
+const PortfolioSection = dynamic( () => import("../../components/PortfolioSection"),
+  { ssr: true}
+);
+import CallToActionSection from "../../components/CallToActionSection";
+
+import ProcesSection from "../../components/ProcesSection";
+
+const TechSection = dynamic(() => import("../../components/TechSection"),
+  { ssr: true, }
+);
+import WhyChooseSection from "../../components/WhyChooseSection";
+
+import HireSection from "../../components/HireSection";
+
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"),
+  { ssr: true }
 );
 
-const AboutComponent = dynamic(
-  () => import("../../components/Abouts/AboutComponent"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
+const FaqSection = dynamic(() => import("../../components/FaqSection"),
+  { ssr: true, }
 );
 
-const Solution = dynamic(
-  () => import("../../components/Solution"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const CardwithImageSection = dynamic(
-  () => import("../../components/CardwithImageSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const Consultancy = dynamic(
-  () => import("../../components/Consultancy"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[300px]" /> }
-);
-
-const ProcesSection = dynamic(
-  () => import("../../components/ProcesSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const TechSection = dynamic(
-  () => import("../../components/TechSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const HireSection = dynamic(
-  () => import("../../components/HireSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const ReviewCard = dynamic(
-  () => import("../../components/ReviewCard"),
-  { ssr: true, loading: () => <Skeleton h="h-[400px]" /> }
-);
-
-const FaqSection = dynamic(
-  () => import("../../components/FaqSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[450px]" /> }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
-  { ssr: true, loading: () => <Skeleton h="h-[500px]" /> }
+const BlogSection = dynamic(() => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
 /* ================= SECTION ENGINE (IMPORTANT FIX) ================= */
@@ -112,9 +72,6 @@ export default function Blockchain(props: any) {
           name="keywords"
           content="blockchain development company, blockchain development services, blockchain app development services, blockchain development solutions, blockchain development service, blockchain software development company, blockchain software development services, custom blockchain development company, blockchain development services company"
         />
-
-
-
         <meta
           property="og:title"
           content="Blockchain Development Company | Blockchain App Development"

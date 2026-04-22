@@ -6,60 +6,42 @@ import Navbar from "../components/Navbar";
 import HeroSectionNewCls from "../components/HeroSectionNewCls"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
-import TechStacks from "../components/TechStacks";
-const Milestones = dynamic(
-  () => import("../components/Milestones"),
-  { ssr: true }
-);
+import AboutComponent from "../components/Abouts/AboutComponent"
+
 const ServicesComponet = dynamic(
   () => import("../components/ServicesSection/ServicesComponet"),
   { ssr: true }
 );
-import ReviewCard from "../components/ReviewCard";
 
-const AboutComponent = dynamic(
-  () => import("../components/Abouts/AboutComponent"),
-  { ssr: true }
-);
 
 const PortfolioSection = dynamic(
   () => import("../components/PortfolioSection"),
   { ssr: true }
 );
+import CallToActionSection from "../components/CallToActionSection"
 
-const CallToActionSection = dynamic(
-  () => import("../components/CallToActionSection"),
+
+import ProcesSection from "../components/ProcesSection"
+
+const TechStacks = dynamic(
+  () => import("../components/TechStacks"),
   { ssr: true }
 );
 
+import WhyChooseSection from "../components/WhyChooseSection"
 
-const ProcesSection = dynamic(
-  () => import("../components/ProcesSection"),
-  { ssr: true }
-);
-
-const TechSection = dynamic(
-  () => import("../components/TechSection"),
-  { ssr: true }
-);
-
-const WhyChooseSection = dynamic(
-  () => import("../components/WhyChooseSection"),
-  { ssr: true }
-);
 
 const ClientStories = dynamic(
   () => import("../components/ClientStories"),
   { ssr: true }
 );
 
-const HireSection = dynamic(
-  () => import("../components/HireSection"),
-  { ssr: true }
-);
+import HireSection from "../components/HireSection"
 
-const TestimonialSection = dynamic(
-  () => import("../components/TestimonialSection"),
+
+
+const ReviewCard = dynamic(
+  () => import("../components/ReviewCard"),
   { ssr: true }
 );
 
