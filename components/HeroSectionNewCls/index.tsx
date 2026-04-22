@@ -1,6 +1,8 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import StatsBanner from "./StatsBanner";
+import HeadingOne from "../ui/HeadingOne";
+import ParagraphText from "../ui/ParagraphText";
 
 const HeroClient = dynamic(() => import("./HeroClient"), {
   ssr: false,
@@ -9,12 +11,9 @@ const HeroClient = dynamic(() => import("./HeroClient"), {
 
 export default function HeroSection({ Data }: any) {
   return (
-<section className="relative w-full overflow-hidden bg-[#1a1a4f]">
+<section className="relative w-full overflow-hidden bg-[#1a1a4f] min-h-[700px]">
 
-  {/* ✅ Stable aspect ratio instead of fixed height */}
-  <div className="relative w-full aspect-[4/7] sm:aspect-[16/10] lg:aspect-[16/7]">
-
-    {/* LCP Image */}
+  <div className="absolute inset-0">
     <Image
       src={Data.bgImage}
       alt={Data.imageAlt || "hero"}
@@ -23,42 +22,30 @@ export default function HeroSection({ Data }: any) {
       sizes="100vw"
       className="object-cover"
     />
+  </div>
 
-    {/* Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/80 to-transparent" />
+  <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/80 to-transparent" />
 
-    {/* Content */}
-    <div className="absolute inset-0 flex items-center">
-      <div className="max-w-[1200px] mx-auto px-4 w-full">
-        
-        <div className="max-w-[600px] space-y-2">
+  <div className="relative max-w-[1200px] mx-auto px-4 flex items-center min-h-[700px]">
 
-          {/* ✅ Reserve heading height */}
-          <h1 className="text-white text-xl sm:text-2xl font-bold leading-tight min-h-[80px] sm:min-h-[70px]">
-            {Data?.heading || " "}
-          </h1>
+    <div className="max-w-[600px] space-y-4 ">
+      <HeadingOne color={"white"} text={Data.heading} />
+   
+       <ParagraphText color={"white"} text= {Data?.ptag} />
+   
 
-          {/* ✅ FIXED text block height (important) */}
-          <p className="text-white leading-relaxed h-[260px] sm:h-[100px] overflow-hidden">
-            {Data?.ptag || " "}
-          </p>
-
-          {/* ✅ Stable CTA space */}
-          <div style={{ height: 50 }} className="flex items-center py-8">
-            <HeroClient />
-          </div>
-
-          {/* ✅ Prevent mobile CLS from hidden banner */}
-          <div>
-            <div className="h-[80px] lg:hidden" />
-            <div className="hidden lg:block h-[80px]">
-              <StatsBanner />
-            </div>
-          </div>
-
-        </div>
-
+      <div className="mt-6 min-h-[48px]">
+        <HeroClient />
       </div>
+
+      <div className="mt-6 min-h-[80px] lg:hidden">
+        <StatsBanner />
+      </div>
+
+      <div className="hidden lg:block mt-6 min-h-[80px]">
+        <StatsBanner />
+      </div>
+
     </div>
 
   </div>

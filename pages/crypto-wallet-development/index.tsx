@@ -3,16 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
 
-
-const Navbar = dynamic(() => import("../../components/Navbar"), {
-  ssr: true,
-});
-
-
-const HeroSectionNewCls = dynamic(() => import("../../components/HeroSectionNewCls"), {
-  ssr: true,
-});
-
+import Navbar from "../../components/Navbar"
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
@@ -23,10 +15,6 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
 });
 

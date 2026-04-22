@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
-
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const AboutSection = dynamic(
@@ -22,10 +20,7 @@ const SolutionSec = dynamic(
   { ssr: true }
 );
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { ssr: true }
-);
+
 
 const ProcessSec = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
@@ -68,9 +63,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
 import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ReviewCard from "../../components/ReviewCard";
 
 export default function Ecommerce(props: any) {
@@ -181,22 +174,7 @@ export default function Ecommerce(props: any) {
       <BlockChainHeader />
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-        {/* <HeroSectionForAllPages
-          heading="Best Ethereum Blockchain Development Company"
-          ptag="Comfygen is a leading Ethereum blockchain development company delivering secure, scalable, and high-performance ethereum blockchain solutions for modern businesses. Our blockchain experts specialize in custom Ethereum DApps, smart contracts, NFT marketplaces, and enterprise-grade integrations, building future-ready applications that drive transparency, innovation, and business growth."
-          li="Custom Ethereum DApp Development"
-          li1="Secure Smart Contract Development & Audits"
-          li2="Token & NFT Marketplace Solutions"
-          li3="Enterprise-Grade Ethereum Integration"
-          li4="Transform your business with Ethereum expertise"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/ethereum-blockchain-development-company/ethereum-blockchain-development-company.webp"
-        /> */}
+       
         {/* <Milestones/> */}
         <section className="lg:py-16 py-10 bg-[#F5F5F9]">
           <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">

@@ -858,8 +858,8 @@
     ]
   },
 "Benefits": {
-  "title": "Benefits of Creating an Astrology App",
-  "subtitle": "Building an astrology app offers multiple advantages for businesses and users alike. Here are the key benefits:",
+  "heading": "Benefits of Creating an Astrology App",
+  "subheading": "Building an astrology app offers multiple advantages for businesses and users alike. Here are the key benefits:",
   "tech": [
     {
       "title": "Reach a Global Audience",

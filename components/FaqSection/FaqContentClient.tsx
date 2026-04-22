@@ -9,7 +9,7 @@ import { parseHTMLString } from "../../lib/parseHTML";
 export default function FaqSectionClient({
   title = "Frequently Asked Questions",
   description = "",
-  faqData = [],
+  Data = [],
 }) {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
@@ -25,7 +25,7 @@ export default function FaqSectionClient({
       item.li7,
     ].filter(Boolean);
 
-  if (!Array.isArray(faqData) || faqData.length === 0) return null;
+  if (!Array.isArray(Data) || Data.length === 0) return null;
 
   return (
     <section className="bg-white lg:py-16 py-10">
@@ -45,7 +45,7 @@ export default function FaqSectionClient({
 
           {/* FAQ */}
           <div className="space-y-4">
-            {faqData.map((item: any, index: number) => {
+            {Data.map((item: any, index: number) => {
               const isOpen = currentIndex === index;
               const listItems = normalizeList(item);
 
