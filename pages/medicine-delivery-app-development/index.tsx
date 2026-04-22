@@ -232,10 +232,7 @@ export default function Ecommerce(props: any) {
       {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
       <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-              {/* <TechStack
-          title="Technology Stack We Use for Medicine Delivery App Development"
-          description="We use a modern, proven tech stack for medicine delivery app development — chosen for speed, security, scalability, and compliance with healthcare data regulations."
-        /> */}
+
       <WhyChooseSection pageData={JSON_DATA.pageData} />
      
       <ClientStories />

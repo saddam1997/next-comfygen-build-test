@@ -9,7 +9,7 @@ const FaqSectionClient = dynamic(() => import('./FaqContentClient'), {
 const index = ({faqData}:any) => {
   return (
     <div>
-      <FaqSectionClient {...faqData} />
+      <FaqSectionClient Data={faqData} />
     </div>
   )
 }
