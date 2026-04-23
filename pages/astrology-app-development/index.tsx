@@ -1,15 +1,8 @@
 
-import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./Astrology.json";
-
-import Navbar from "../../components/Navbar";
-// import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-
-import Link from "next/link";
-
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
@@ -21,16 +14,9 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
 
 import AppClone from "../../components/AppClone"
 
-const CardGrid = dynamic(() => import("../../components/CardGrid"), {
-  ssr: true
-});
-
-
 const Features = dynamic(() => import("../../components/Features"), {
   ssr: true,
 });
-
-
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
@@ -40,19 +26,10 @@ const Emerging = dynamic(() => import("../../components/Emerging"), {
   ssr: true,
 });
 
-const AppCard = dynamic(() => import("../../components/AppCard"), {
-  ssr: true,
-});
-
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
 });
 
-
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
@@ -62,9 +39,6 @@ const TechStacks = dynamic(() => import("../../components/TechStacks"), {
   ssr: false,
 });
 
-
-
-
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
 });
@@ -72,7 +46,6 @@ const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
-
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true
@@ -176,9 +149,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <div className="min-h-[60px] md:min-h-[70px]">
-         {/* <Navbar /> */}
-      </div>
+
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

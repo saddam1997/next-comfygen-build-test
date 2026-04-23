@@ -1,9 +1,6 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-
 import dynamic from 'next/dynamic';
-import Header from '../../../components/Newcomponet/layout/Header';
 import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
 const loader = () => (
     <div className="h-96 bg-gray-100 animate-pulse" />
@@ -20,12 +17,6 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
 
 
 import styles from "../components/styles.module.css"
@@ -306,13 +297,9 @@ export default function about(props) {
                 />
 
             </Head>
-            <div className="">
 
-               {/* <Header /> */}
-
-            </div>
             <div className="overflow-hidden ">
-                <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
+                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
                     <CompanyHeroSection
                         heading="Food Delivery App – Food 24Hr"
                         subhead=""

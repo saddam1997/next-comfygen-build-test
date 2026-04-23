@@ -389,7 +389,7 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden lg:pt-[115px]">
 
 

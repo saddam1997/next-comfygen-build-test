@@ -155,7 +155,7 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-      <BlockChainHeader />
+      {/* {/* <BlockChainHeader /> */} 
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

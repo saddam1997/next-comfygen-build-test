@@ -199,10 +199,7 @@ export default function Ecommerce(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <div className="min-h-[60px] md:min-h-[70px]">
-         {/* <Navbar /> */}
-      </div>
-      {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
+   
        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

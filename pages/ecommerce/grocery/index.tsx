@@ -187,10 +187,7 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <div className="min-h-[60px] md:min-h-[70px]">
-        <EcommerceHeader />
-      </div>
-
+   
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

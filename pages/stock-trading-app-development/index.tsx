@@ -218,9 +218,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-      <div className="min-h-[60px] md:min-h-[70px]">
-         {/* <Navbar /> */}
-      </div>
+
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
 
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

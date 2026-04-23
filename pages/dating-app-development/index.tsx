@@ -115,12 +115,6 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white">
-         {/* <Navbar /> */}
-      </header>
-
-      {/* placeholder prevents layout jump */}
-      <div className="h-[60px] md:h-[70px]" />
 
       {/* ================= HERO (CRITICAL CLS FIX) ================= */}
       <div className="min-h-[90vh] md:min-h-[80vh]">

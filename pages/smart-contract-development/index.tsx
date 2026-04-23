@@ -2,43 +2,37 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/smartcontractdev.json";
-
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
-import Navbar from "../../components/Navbar";
 
-/* ================= CLS SAFE DYNAMIC COMPONENTS ================= */
-
-const withSkeleton = (height: string) => () =>
-  <div className={`${height} w-full bg-gray-100 animate-pulse`} />;
 
 const ServicesComponet = dynamic(
   () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true, loading: withSkeleton("h-[500px]") }
+  { ssr: true }
 );
 
 const AboutComponent = dynamic(
   () => import("../../components/Abouts/AboutComponent"),
-  { ssr: true, loading: withSkeleton("h-[400px]") }
+  { ssr: true }
 );
 
 const PortfolioSection = dynamic(
   () => import("../../components/PortfolioSection"),
-  { ssr: true, loading: withSkeleton("h-[500px]") }
+  { ssr: true }
 );
 
 const CallToActionSection = dynamic(
   () => import("../../components/CallToActionSection"),
-  { ssr: true, loading: withSkeleton("h-[300px]") }
+  { ssr: true }
 );
 
 const Emerging = dynamic(
   () => import("../../components/Emerging"),
-  { ssr: true, loading: withSkeleton("h-[450px]") }
+  { ssr: true }
 );
 
 const ProcesSection = dynamic(
   () => import("../../components/ProcesSection"),
-  { ssr: true, loading: withSkeleton("h-[500px]") }
+  { ssr: true }
 );
 
 const TechStacks = dynamic(() => import("../../components/TechStacks"), {
@@ -47,32 +41,32 @@ const TechStacks = dynamic(() => import("../../components/TechStacks"), {
 
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
-  { ssr: true, loading: withSkeleton("h-[450px]") }
+  { ssr: true }
 );
 
 const Consultancy = dynamic(
   () => import("../../components/Consultancy"),
-  { ssr: true, loading: withSkeleton("h-[450px]") }
+  { ssr: true }
 );
 
 const HireSection = dynamic(
   () => import("../../components/HireSection"),
-  { ssr: true, loading: withSkeleton("h-[450px]") }
+  { ssr: true }
 );
 
 const ClientStories = dynamic(
   () => import("../../components/ClientStories"),
-  { ssr: true, loading: withSkeleton("h-[400px]") }
+  { ssr: true }
 );
 
 const FaqSection = dynamic(
   () => import("../../components/FaqSection"),
-  { ssr: true, loading: withSkeleton("h-[450px]") }
+  { ssr: true }
 );
 
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
-  { ssr: true, loading: withSkeleton("h-[500px]") }
+  { ssr: true }
 );
 
 
@@ -191,14 +185,6 @@ export default function Ecommerce(props: any) {
       </Head>
 
      <div className="overflow-x-hidden">
-
-        {/* ================= FIXED NAVBAR (REAL CLS FIX) ================= */}
-        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-           {/* <Navbar /> */}
-        </header>
-
-        {/* spacer prevents layout shift */}
-        <div className="h-[60px] md:h-[70px]" />
 
         {/* ================= HERO (CRITICAL FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">

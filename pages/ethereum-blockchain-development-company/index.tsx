@@ -62,8 +62,6 @@ const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import ReviewCard from "../../components/ReviewCard";
 
 export default function Ecommerce(props: any) {
@@ -171,7 +169,7 @@ export default function Ecommerce(props: any) {
 
       </Head>
 
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
        

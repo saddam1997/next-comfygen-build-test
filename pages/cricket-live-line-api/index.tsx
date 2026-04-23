@@ -104,10 +104,6 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.faqPageSchema) }}
         />
       </Head>
-
-      <div className="min-h-[60px] md:min-h-[70px]">
-         {/* <Navbar /> */}
-      </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

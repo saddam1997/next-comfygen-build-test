@@ -25,23 +25,25 @@ export default function DesktopNav() {
       <header className="fixed top-0 left-0 w-full z-50 bg-white ">
 
         {/* ================= TOP BAR (STABILIZED) ================= */}
-        <div className="hidden lg:flex justify-end gap-6 px-6 py-2 text-sm text-gray-700">
-          <a href="mailto:sales@comfygen.com" className="flex items-center gap-2">
+        <div className="hidden max-w-[1600px] mx-auto  lg:block ">
+          <div className="lg:flex justify-end gap-6 px-6 py-2 text-sm text-gray-700">
+          <a href="mailto:sales@comfygen.com" className="flex items-center gap-2 font-medium">
             <Mail size={20}/>
             sales@comfygen.com
           </a>
 
           <a
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 font-medium"
             href="https://api.whatsapp.com/send?phone=919587867258"
           >
             <PhoneMissed size={15}/>
             +91 9587867258
           </a>
         </div>
+        </div>
 
         {/* ================= MAIN NAV ================= */}
-        <nav className="w-full max-w-[1600px] mx-auto px-4 lg:px-6 flex items-center justify-between h-[70px]">
+        <nav className="w-full max-w-[1600px] mx-auto px-4 lg:px-6 flex items-center justify-between h-[60px]">
 
           {/* LOGO (CLS FIXED) */}
           <Link href="/" className="flex items-center">

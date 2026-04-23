@@ -414,7 +414,7 @@ export default function MultiChain(props) {
         />
 
       </Head>
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top MultiChain Blockchain Development Company"

@@ -140,7 +140,7 @@ export default function rummy(props: any) {
 
         {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
         <header className="">
-          <BlockChainHeader />
+          {/* <BlockChainHeader /> */}
         </header>
 
         {/* reserved space (CRITICAL FIX) */}

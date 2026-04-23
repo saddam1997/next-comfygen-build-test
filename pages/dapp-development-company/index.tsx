@@ -187,7 +187,7 @@ export default function Ecommerce(props: any) {
 
         {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
         <header className="">
-          <BlockChainHeader />
+          {/* <BlockChainHeader /> */}
         </header>
         {/* ================= HERO (MOST IMPORTANT FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">
