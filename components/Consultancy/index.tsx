@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
-import { MdAdd, MdArrowOutward, MdRemove } from "react-icons/md";
+import { Plus, Minus, ArrowUpRight } from 'lucide-react';
+
+
+
 import Image from 'next/image';
 
 const ItemDataSection = ({consultancyData}) => {
@@ -39,7 +42,7 @@ const ItemDataSection = ({consultancyData}) => {
                                     <div className="flex">
                                         <Link href={consultancyData?.buttonLink || "#"} passHref>
                                             <button className="text-base font-medium text-[#5556D1] border border-[#5556D1] rounded-full px-6 py-2.5 text-center hover:text-white hover:bg-[#5556D1] cursor-pointer transition duration-300 relative flex gap-2 items-center">
-                                                {consultancyData?.buttonText} <MdArrowOutward />
+                                                {consultancyData?.buttonText} <ArrowUpRight />
                                             </button>
                                         </Link>
                                     </div>
@@ -61,9 +64,9 @@ const ItemDataSection = ({consultancyData}) => {
                                         {elem.title}
                                     </h3>
                                     {currentCount === index ? (
-                                        <MdRemove size={26} />
+                                        <Minus size={26} />
                                     ) : (
-                                        <MdAdd size={26} />
+                                        <Plus size={26} />
                                     )}
                                 </div>
                                 <div

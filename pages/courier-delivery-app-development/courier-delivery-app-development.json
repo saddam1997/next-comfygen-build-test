@@ -313,7 +313,7 @@
   },
   "pageData": {
     "title": "Why Choose Comfygen as Your Courier App Development Company",
-    "description": "There are dozens of app development agencies to choose from. Here's why leading courier businesses, logistics startups, and delivery enterprises choose Comfygen as their courier delivery app development company.",
+    "description": "Comfygen’s strength lies in its industry expertise, skilled developers, and custom app solutions. We build secure, scalable, and user-friendly courier apps with advanced features, seamless performance, and reliable support to help businesses grow faster and stay ahead in the market.",
     "mainCardData": {
       "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
       "title": "Optimum Outcome Focused",
@@ -355,7 +355,7 @@
 
   },
   "HireDeveloper": {
-    "heading": "Hire Courier App Developers — Dedicated Teams, Fixed Cost, or Hourly",
+    "heading": "Hire Courier App Developers — Dedicated Teams",
     "text": "Looking to build a courier delivery app with a team that truly understands logistics technology? Hire expert courier app developers from Comfygen and get dedicated professionals who specialize in on-demand delivery platforms, real-time tracking systems, and AI-powered logistics automation.",
     "buttonText": "Hire Developer",
     "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
@@ -472,8 +472,8 @@
     "Payments"
   ],
   "TechstackData": {
-    "heading": "Tech Stack We Use",
-    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "heading": "Technology Stack We Use for On-Demand Courier App Development",
+    "description": "At Comfygen, we use the latest and most reliable technologies to build secure, scalable, and high-performing courier delivery apps. Our modern tech stack ensures smooth performance, real-time tracking, secure payments, and seamless user experience across Android, iOS, and web platforms.",
     "TechItems": {
       "App Development": [
         {
@@ -628,7 +628,7 @@
           "num": "3"
         }
       ],
-      "Real-Time Tracking & Maps": [
+      "Tracking & Maps": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
           "alt": "Google Maps API",

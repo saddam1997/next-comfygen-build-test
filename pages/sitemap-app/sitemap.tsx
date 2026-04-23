@@ -28,7 +28,7 @@ export default function SitemapPage() {
                 <meta property="og:type" content="article" />
             </Head>
 
-            <Navbar />
+             {/* <Navbar /> */}
             <SitemapSection sitemapData={JSON_DATA.sitemapData} />
         </>
     )

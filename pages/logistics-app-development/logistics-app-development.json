@@ -12,7 +12,7 @@
   },
   "ServicesData": {
     "heading": "Core Logistics App Development Services",
-    "description": "Comfygen is among the <a target='blank' rel='nofollow' href='https://selectedfirms.co/companies/ecommerce-app-development/canada' class='text-blue-600 font-semibold'>Top eCommerce App Development Firms</a>, offering end-to-end logistics app developmemnt solutions in India. Our apps feature real-time tracking, smart automation, and scalable architecture to streamline operations, reduce costs, and drive faster, more efficient business growth in a competitive market.",
+    "description": "Comfygen is among the Top eCommerce App Development Firms, offering end-to-end logistics app developmemnt solutions in India. Our apps feature real-time tracking, smart automation, and scalable architecture to streamline operations, reduce costs, and drive faster, more efficient business growth in a competitive market.",
     "services": [
       {
         "title": "On-Demand Logistics App Development",
@@ -83,7 +83,7 @@
   },
   "Industries": {
     "heading": "Transport & Logistics App Clone Solutions We Provide",
-    "description": "Comfygen is a top logistics app development company with strong expertise in logistics <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile application development</a>. We provide custom and white-label logistics app development solutions inspired by <a href='https://www.comfygen.com/blog/types-of-logistics-apps/' class='text-blue-600 font-semibold'>popular logistics apps<a/> like Shiprocket, Lalamove, FedEx and KeepTruckin. Our transport & logistics clone apps offer similar core features while being fully customized to match your business model, region, and growth plans.",
+    "description": "Comfygen is a top logistics app development company with strong expertise in logistics <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile application development</a>. We provide custom and white-label logistics app development solutions inspired by popular logistics apps like Shiprocket, Lalamove, FedEx and KeepTruckin. Our transport & logistics clone apps offer similar core features while being fully customized to match your business model, region, and growth plans.",
     "IndustriesServe": [
       {
         "imgSrc": null,
@@ -472,8 +472,8 @@
     "gridData": [
       {
         "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "8+ Years of Industry Experience",
-        "description": "We bring more than eight years of hands-on experience in logistics and transportation <a href='https://www.comfygen.com/ca/startup-app-development' class='font-semibold underline text-blue-600'> mobile app development for startups </a> and enterprises across different markets."
+        "title": "Since 2019 Industry Experience",
+        "description": "Since 2019, we have been building smart logistics app solutions for startups and enterprises, helping businesses improve delivery, transport, and supply chain operations."
       },
       {
         "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
@@ -681,12 +681,11 @@
     "Real-Time Tracking & Maps",
     "Cloud/DevOps",
     "Payments",
-    "Security",
-    "Advanced Technologies"
+    "Security"
   ],
   "TechstackData": {
-    "heading": "Tech Stack We Use",
-    "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+    "heading": "Tech Stack We Use in Logistics App Development",
+    "description": "At Comfygen Technologies we carefully select the right technology stack based on your business goals, operational workflows, and real-time tracking requirements. Our solutions are designed to deliver seamless performance, advanced route optimization, live tracking, and efficient fleet management across all devices and platforms.",
     "TechItems": {
       "Frontend": [
         {
@@ -918,27 +917,8 @@
           "alt": "JWT Authentication",
           "name": "JWT Authentication",
           "num": "3"
-        }
-        
-       
-        
-      ],
-      "Advanced Technologies": [
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
-          "alt": "AI & Machine Learning",
-          "name": "AI & Machine Learning",
-          "num": "1"
-        },
-      
-        {
-          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
-          "alt": "Blockchain Technology",
-          "name": "Blockchain Technology",
-          "num": "3"
-        }
+        } 
       ]
-
     }
   },
   "jsonLdData": [
@@ -991,51 +971,68 @@
         }
       ]
     },
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does it cost to develop a logistics app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The cost of logistics app development depends on factors like app complexity, features, tech stack, and development timeline. A basic logistics mobile app development cost may start from $10,000, while advanced logistics solutions with real-time tracking and warehouse integrations can cost $25,000 or more. We offer flexible pricing based on your project scope and needs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does it take to build a logistics application?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Building a custom logistics application typically takes 3 to 6 months, depending on the features, platform (iOS, Android, or both), and integrations required. For white-label logistics app solutions, the timeline can be shorter. We follow an agile development process to ensure on-time delivery without compromising quality."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer white-label logistics solutions?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we provide fully customizable white-label logistics mobile app development solutions. These apps are ready for quick deployment and can be branded with your company name, logo, and colors. Our white-label offerings are ideal for startups and transport aggregators looking for fast, cost-effective market entry."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I track vehicles and shipments in real-time?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. Real-time tracking is one of the core features of our transportation app development. Using GPS and geofencing technologies, we enable businesses to monitor vehicles, delivery agents, and shipments with live status updates, route optimization, and geo-alerts—all through a user-friendly logistics dashboard."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Will you provide post-launch support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Comfygen offers dedicated post-launch support and maintenance for all our logistics app development services. We help with bug fixes, system updates, feature upgrades, performance optimization, and security patches to ensure your app remains stable, secure, and up-to-date in the long run."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How much does it cost to develop a logistics app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Logistics app development costs range from $8,000 for a basic courier app to $150,000+ for an enterprise-grade TMS with full ERP integration. The main cost drivers are the number of user panels (customer, driver, dispatcher, admin), the complexity of real-time tracking features, third-party API integrations, and whether you need iOS, Android, or both. Contact us for a free, detailed estimate based on your specific requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a logistics app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A basic on-demand delivery app typically takes 6–12 weeks. A full-featured logistics platform with fleet management, ERP integration, and multi-panel dashboards takes 16–24 weeks. We work in agile 2-week sprints so you see working software throughout the process, not just at the end."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you integrate a logistics app with our existing ERP system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly build logistics apps that integrate with SAP, Oracle, Tally, Zoho, and custom legacy ERPs via REST APIs, webhooks, or custom middleware. We map your existing data flows and build the integration layer without requiring you to replace your current ERP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you build iOS and Android logistics apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We build cross-platform logistics apps using React Native and Flutter, which means you get both iOS and Android apps from a single codebase — reducing cost and keeping both apps in sync. For enterprise clients with specific performance requirements, we also offer native iOS (Swift) and Android (Kotlin) development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a TMS and a WMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Transport Management System (TMS) manages the movement of goods — carrier selection, route planning, freight booking, and shipment tracking. A Warehouse Management System (WMS) manages what happens inside a warehouse — inventory, picking, packing, and dispatch. Many of our clients need both, and we build them as integrated modules within a single logistics platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-launch support for logistics apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We offer 3, 6, and 12-month post-launch support packages that cover bug fixes, OS update compatibility, performance monitoring, and quarterly feature reviews. Our support team is available during Indian business hours, with premium SLA packages for US/UK timezone coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build a white-label logistics app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly deliver white-label logistics platforms for aggregators, franchises, and logistics SaaS businesses. You get a fully branded, configurable platform that you can resell or deploy for multiple clients under your own brand."
+      }
     }
+  ]
+}
+
   ]
 }

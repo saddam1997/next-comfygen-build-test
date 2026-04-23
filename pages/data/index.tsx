@@ -250,9 +250,9 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+  
+       {/* <Header /> */}
+    
       <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
           heading="Data Consulting and Development Services for Intelligent Business Decisions"

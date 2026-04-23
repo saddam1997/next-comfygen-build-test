@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 
 import { useState } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { ChevronDown } from 'lucide-react';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -34,7 +34,7 @@ const Accordion = ({ data, active, setActive, onLinkClick }: any) => {
           <span className="text-sm font-medium">{data.title}</span>
         </div>
 
-        <MdKeyboardArrowDown
+        <ChevronDown
           size={22}
           className={`transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
@@ -69,7 +69,7 @@ const Accordion = ({ data, active, setActive, onLinkClick }: any) => {
                     {section.label}
                   </span>
 
-                  <MdKeyboardArrowDown
+                  <ChevronDown
                     size={18}
                     className={`transition-transform duration-300 ${
                       isSubOpen ? "rotate-180" : ""

@@ -1,0 +1,23 @@
+{
+    "Herosection": {
+        "heading": "Love Horoscope App",
+        "subhead": "",
+        "isHome": false,
+        "ptag": "Our client wanted a custom love horoscope app development solution that offers daily, weekly, and monthly love predictions based on zodiac compatibility. The app was designed to provide AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features to enhance the love and relationship experience for users.",
+        "ptag2": "",
+        "listItems": [
+            "Custom Astrology App Development",
+            "AI/ML & Blockchain Integration",
+            "Scalable & Secure App Architecture",
+            "Hire Experienced Astrology App Developers",
+            "24/7 Support & Maintenance"
+        ],
+        "btnName": "Talk With Expert",
+        "btnLink": "/portfolio",
+        "openModal": "openModal",
+        "talkToExpertModal": "talkToExpertModal",
+        "closeModal": "closeModal",
+        "altTag": "Astrology App Development Company in India",
+        "bgImage": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp"
+    }
+}

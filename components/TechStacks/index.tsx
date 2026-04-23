@@ -52,7 +52,7 @@ export default function TechStacks({ TabData, TechData, Default }) {
 
 
 
-// "use client";
+// // "use client";
 // import Image from "next/image";
 // import { useState } from "react";
 // import HeadingTwo from "../ui/HeadingTwo";

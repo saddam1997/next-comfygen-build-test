@@ -3,8 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/healthCare.json";
 
-
-import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -19,9 +17,6 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-const CardGrid = dynamic(() => import("../../components/CardGrid"), {
-  ssr: true
-});
 
 const Features = dynamic(() => import("../../components/Features"), {
   ssr: true,
@@ -31,19 +26,7 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
   ssr: true,
 });
 
-const Emerging = dynamic(() => import("../../components/Emerging"), {
-  ssr: true,
-});
-
-const AppCard = dynamic(() => import("../../components/AppCard"), {
-  ssr: true,
-});
-
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
-  ssr: true,
-});
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
 });
 
@@ -69,17 +52,9 @@ const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
 
-const ClientStories = dynamic(
-  () => import("../../components/ClientStories"),
-  { ssr: true }
-);
-
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
 });
-
-
-
 
 
 export default function Mobile(props: any) {
@@ -181,10 +156,6 @@ export default function Mobile(props: any) {
         />
 
       </Head>
-
-      <div className="min-h-[60px] md:min-h-[70px]">
-        <Navbar />
-      </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
@@ -193,45 +164,6 @@ export default function Mobile(props: any) {
       <Features featuresData={JSON_DATA.FeaturesData} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Solution techData={JSON_DATA.FutureDrivenData} />
-      {/* 
-      <div className=" py-8">
-        <div className="bg-black">
-          <section className="items-center py-20  space-y-10  md:flex md:space-x-10 md:space-y-0 mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="w-full space-y-6 text-center md:text-left">
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-2 md:grid-cols-1">
-                <div className="flex flex-col space-y-2">
-                  <Image
-                    className="rounded-lg bg-contain"
-                    alt="Our Secured and Compliance-Friendly mHealth Applications Meeting Industry Standards"
-                    src="https://www.comfygen.com/comfygen-images/healthcare-app-development/Next Gen Healthcare App.webp"
-                    width={640}
-                    height={360}
-                  />
-                  <h2 className="py-2 lg:py-4 xl:text-4xl text-3xl font-bold xl:leading-[3rem] text-white">
-                    Next-Gen Healthcare App Development Company for Diverse Medical Sectors
-                  </h2>
-                  <p className="text-base text-white">At <Link href='https://www.comfygen.com' className="underline font-semibold">Comfygen Technologies</Link>, we are a next-gen healthcare app development company delivering custom, secure, and scalable healthcare app solutions for diverse medical sectors. Our expertise covers patient care management, clinical workflows, telemedicine platforms, and AI-powered healthcare applications, enabling hospitals, clinics, startups, and enterprises to enhance care delivery, streamline operations, ensure HIPAA compliance, and drive sustainable digital healthcare transformation.
-                  </p>
-
-                </div>
-                <div className="grid gap-4 p-8 text-left lg:grid-cols-1 md:grid-cols-1 max-h-[650px] overflow-auto head-scroll">
-                  {JSON_DATA.WhyChoosed.map((elem) => {
-                    const { num } = elem;
-                    return (
-                      <div key={num} className="group  pb-6 space-y-4 transition-all duration-200">
-                        <div className="flex gap-2">
-                          <span><FaDotCircle className="text-white" /></span>
-                          <p className="text-white" dangerouslySetInnerHTML={{ __html: elem.decs }}></p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div> */}
       <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />

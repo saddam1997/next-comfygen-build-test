@@ -170,7 +170,7 @@ export default function rummy(props:any) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

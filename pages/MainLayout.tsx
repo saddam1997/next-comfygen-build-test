@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Footer from "../components/Newcomponet/layout/Footer";
 
 import dynamic from "next/dynamic";
@@ -15,73 +16,48 @@ const GetinTouch = dynamic(
 
 
 /* ================= GLOBAL LAYOUT SHELL ================= */
-
 export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <>
-      {/* ================= APP WRAPPER ================= */}
-      <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-white">
 
-        {/* ================= CONTENT CONTAINER ================= */}
-        <main className="w-full max-w-[1600px] mx-auto">
+      {/* NAVBAR */}
+      <header className="h-[50px] w-full">
+        <div className="fixed top-0 left-0 w-full h-[70px] z-50 bg-white">
+          <Navbar />
+        </div>
+      </header>
 
-          {/* PAGE CONTENT (NO OVERFLOW HACKS) */}
-          <div className="w-full">
-            {children}
-          </div>
+      {/* ✅ FIXED CONTENT SHIFT */}
+      <main className="pt-[50px] w-full max-w-[1600px] mx-auto">
 
-          {/* ================= CTA (RESERVED SPACE FIX) ================= */}
-          <section className="w-full min-h-[420px] md:min-h-[380px]">
+        <div className="w-full">
+          {children}
+        </div>
+
+        {/* CTA */}
+        <section className="w-full">
+          <div className="min-h-[420px] md:min-h-[380px]">
             <GetinTouch />
-          </section>
+          </div>
+        </section>
 
-          {/* ================= FOOTER (STABILIZED) ================= */}
-          <footer className="w-full min-h-[300px]">
+        {/* FOOTER */}
+        <footer className="w-full">
+          <div className="min-h-[300px]">
             <Footer />
-          </footer>
+          </div>
+        </footer>
 
-        </main>
+      </main>
 
-        {/* ================= CLIENT TOOLS ================= */}
-        <LazyClientTools />
+      {/* CLIENT TOOLS */}
+      <LazyClientTools />
 
-      </div>
-    </>
+    </div>
   );
 }
 
-
-
-
-
-
-
-
-
-// import Footer from '../components/Newcomponet/layout/Footer';
-// import GetinTouch from '../components/Newcomponet/SectionCompoent/GetinTouch';
-// import LazyClientTools from './LazyClientTools';
-// // import { usePathname } from "next/navigation";
-
-// export default function MainLayout({ children }: { children: React.ReactNode }) {
-//   // const pathname = usePathname();
-
-
-//   // const hideGetInTouch = pathname === "/contact-us";
-//   return (
-//     <>
-//       <main className="max-w-[1600px] w-full mx-auto overflow-hidden">
-        
-//         {children}
-//         {/* {!hideGetInTouch && <GetinTouch />} */}
-//         <GetinTouch />
-//         <Footer />
-//         <LazyClientTools />
-//       </main>
-//     </>
-//   );
-// }

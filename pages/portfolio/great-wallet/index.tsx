@@ -52,7 +52,7 @@ export default function about(props) {
         <div className="bg-gradient-to-r from-[#2b0f17] via-[#8e2e2b] to-[#c45722]">
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#1B1C30CC]/20 pt-20">
-              <Header />
+             {/* <Header /> */}
               <div className="flex  justify-center items-center w-full space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8 px-4">
                 <div className="w-full">
                   <div className="space-y-6 text-start">

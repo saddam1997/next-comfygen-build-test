@@ -283,7 +283,7 @@ export default function Ecommerce(props:any) {
           }} />
       </Head>
 
-        <Header />
+       {/* <Header /> */}
 
       <div className="">
         <HeroSectionForAllPages

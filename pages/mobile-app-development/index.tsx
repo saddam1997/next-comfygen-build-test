@@ -210,7 +210,7 @@ export default function Mobile(props: any) {
       </Head>
 
       <div className="h-full">
-        <Navbar />
+         {/* <Navbar /> */}
       </div>
 
    

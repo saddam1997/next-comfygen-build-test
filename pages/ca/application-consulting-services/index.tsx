@@ -169,7 +169,7 @@ export default function Mobile(props: any) {
         />
       </Head>
       <div className="">
-        <Navbar />
+         {/* <Navbar /> */}
       </div>
 
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />

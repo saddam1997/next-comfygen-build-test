@@ -1,7 +1,5 @@
-"use client";
-
-import { BiCheckCircle } from "react-icons/bi";
-
+// "use client";
+import { CircleCheck } from 'lucide-react';
 
 
 type Props = {
@@ -45,7 +43,7 @@ export default function Comparison({ data }: Props) {
             <ul className="space-y-4">
               {customTaxiBookingApp.points.map((point, index) => (
                 <li key={index} className="flex gap-3 items-start">
-                  <BiCheckCircle className="text-green-600 mt-1" size={20} />
+                  <CircleCheck className="text-green-600 mt-1" size={20} />
                   <span className="text-gray-700">{point}</span>
                 </li>
               ))}
@@ -61,7 +59,7 @@ export default function Comparison({ data }: Props) {
             <ul className="space-y-4">
               {readyMadeTaxiAppSolution.points.map((point, index) => (
                 <li key={index} className="flex gap-3 items-start">
-                  <BiCheckCircle className="text-green-600 mt-1" size={20} />
+                  <CircleCheck className="text-green-600 mt-1" size={20} />
                   <span className="text-gray-700">{point}</span>
                 </li>
               ))}

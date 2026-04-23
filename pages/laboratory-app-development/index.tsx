@@ -379,7 +379,7 @@ export default function ClinicalApp(props) {
         />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden pt-10 ">
         <HeroSectionForAllPages

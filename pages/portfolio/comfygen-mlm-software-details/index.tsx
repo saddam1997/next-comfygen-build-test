@@ -54,7 +54,7 @@ export default function about(props: any) {
         <div className="bg-top bg-no-repeat bg-cover bg-gradient-to-r from-[#5E63C7] via-[#7C80D8] to-[#B6B8DD]"
          >
           <div className="">
-            <Header />
+           {/* <Header /> */}
             <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center md:space-x-20 lg:py-16 py-5 pt-20">
               <div className="w-full">
                 <div className="space-y-6">

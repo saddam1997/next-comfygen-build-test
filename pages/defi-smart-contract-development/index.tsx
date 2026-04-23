@@ -122,7 +122,7 @@ export default function MultiChain(props) {
         />
       </Head>
 
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden lg:pt-[115px]">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

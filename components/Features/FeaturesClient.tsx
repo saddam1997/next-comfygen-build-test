@@ -1,7 +1,7 @@
 
 import React, { useState, useCallback, useMemo } from "react";
 import Image from "next/image";
-import { ImArrowRight } from "react-icons/im";
+import { ArrowRight } from 'lucide-react';
 
 const FeaturesClient = ({ featuresData = [], grid }: any) => {
 
@@ -61,7 +61,7 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
               <div className="space-y-4">
                 {active.additionalDetails?.map((d: any, i: number) => (
                   <div key={i} className="flex gap-3 text-black">
-                    <ImArrowRight className="text-[#5556D1] mt-1 shrink-0" />
+                    <ArrowRight className="text-[#5556D1] mt-1 shrink-0" />
                     <span dangerouslySetInnerHTML={{ __html: d.details }} />
                   </div>
                 ))}
@@ -113,7 +113,7 @@ const FeaturesClient = ({ featuresData = [], grid }: any) => {
               <div className="space-y-4">
                 {active.additionalDetails?.map((d: any, i: number) => (
                   <div key={i} className="flex gap-3 text-black">
-                    <ImArrowRight className="text-[#5556D1] mt-1 shrink-0" />
+                    <ArrowRight className="text-[#5556D1] mt-1 shrink-0" />
                     <span dangerouslySetInnerHTML={{ __html: d.details }} />
                   </div>
                 ))}

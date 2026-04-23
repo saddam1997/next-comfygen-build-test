@@ -189,7 +189,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

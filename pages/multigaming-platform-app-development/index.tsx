@@ -155,7 +155,7 @@ export default function rummy(props) {
         />
       </Head>
       <div className="lg:h-[90px]">
-        <Header />
+       {/* <Header /> */}
       </div>
       <div className="overflow-hidden ">
         <div className="">

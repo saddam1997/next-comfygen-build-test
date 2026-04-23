@@ -53,13 +53,9 @@ export default function about(props) {
                 <meta name="twitter:label1" content="Est. reading time" />
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
-            <div className="">
-
-                    <Header />
-
-            </div>
+           
             <div className="overflow-hidden">
-                <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
+                <div className=" bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
                     <CompanyHeroSection
                         heading="AI-Based Crypto Trading Bot Development"
                         subhead=""

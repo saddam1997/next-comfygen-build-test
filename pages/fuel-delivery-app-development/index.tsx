@@ -388,7 +388,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
 
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

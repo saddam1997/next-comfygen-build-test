@@ -262,7 +262,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <Header />
+     {/* <Header /> */}
       <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages

@@ -4,13 +4,13 @@
     "dev": "next dev",
     "start": "cross-env NODE_ENV=production node dist/server.js -p 3000",
     "analyze": "NODE_OPTIONS=--max-old-space-size=8192 ANALYZE=true next build",
-    "build": "cross-env NODE_ENV=production next build && tsc --project tsconfig.server.json"
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 cross-env NODE_ENV=production next build --webpack && tsc --project tsconfig.server.json"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^16.1.1",
+    "@next/bundle-analyzer": "^16.2.4",
     "@tabler/icons-react": "^3.22.0",
     "compression": "^1.8.1",
-    "lucide-react": "^0.474.0",
+    "lucide-react": "^1.8.0",
     "next": "^16.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

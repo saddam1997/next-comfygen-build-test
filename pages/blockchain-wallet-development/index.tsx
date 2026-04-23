@@ -467,7 +467,7 @@ export default function Blockchain(props) {
       </Head>
 
       <div className="">
-        <BlockChainHeader />
+        {/* <BlockChainHeader /> */}
       </div>
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

@@ -132,14 +132,6 @@ export default function Mobile(props: any) {
 
        <div className="overflow-x-hidden">
 
-        {/* ================= FIXED NAVBAR (REAL CLS FIX) ================= */}
-        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-          <Navbar />
-        </header>
-
-        {/* reserved space prevents shift */}
-        <div className="h-[60px] md:h-[70px]" />
-
         {/* ================= HERO (CRITICAL FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />

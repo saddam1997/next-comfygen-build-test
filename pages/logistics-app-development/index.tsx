@@ -189,7 +189,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
       {/* <Milestones /> */}

@@ -60,9 +60,9 @@ export default function about(props:any) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
             <div className="">
-                <LazyLoad height={80} offset={100}>
-                    <Header />
-                </LazyLoad>
+           
+                   {/* <Header /> */}
+             
             </div>
             <div className="overflow-hidden">
                 <div className="lg:py-[7rem] py-[5rem] bg-no-repeat bg-cover bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">

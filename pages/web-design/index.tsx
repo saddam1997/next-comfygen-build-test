@@ -141,7 +141,7 @@ export default function Mobile(props: any) {
 
        
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <div className="overflow-hidden lg:pt-0 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

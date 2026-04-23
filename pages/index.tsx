@@ -8,50 +8,39 @@ import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
 import AboutComponent from "../components/Abouts/AboutComponent"
 
-const ServicesComponet = dynamic(
-  () => import("../components/ServicesSection/ServicesComponet"),
+const ServicesComponet = dynamic(() => import("../components/ServicesSection/ServicesComponet"),
   { ssr: true }
 );
 
-
-const PortfolioSection = dynamic(
-  () => import("../components/PortfolioSection"),
+const PortfolioSection = dynamic( () => import("../components/PortfolioSection"),
   { ssr: true }
 );
 import CallToActionSection from "../components/CallToActionSection"
 
-
 import ProcesSection from "../components/ProcesSection"
 
-const TechStacks = dynamic(
-  () => import("../components/TechStacks"),
+const TechStacks = dynamic(() => import("../components/TechStacks"),
   { ssr: true }
 );
 
 import WhyChooseSection from "../components/WhyChooseSection"
 
 
-const ClientStories = dynamic(
-  () => import("../components/ClientStories"),
+const ClientStories = dynamic(() => import("../components/ClientStories"),
   { ssr: true }
 );
 
 import HireSection from "../components/HireSection"
 
-
-
-const ReviewCard = dynamic(
-  () => import("../components/ReviewCard"),
+const ReviewCard = dynamic(() => import("../components/ReviewCard"),
   { ssr: true }
 );
 
-const FaqSection = dynamic(
-  () => import("../components/FaqSection"),
+const FaqSection = dynamic(() => import("../components/FaqSection"),
   { ssr: true }
 );
 
-const BlogSection = dynamic(
-  () => import("../components/BlogSection"),
+const BlogSection = dynamic(() => import("../components/BlogSection"),
   { ssr: true }
 );
 
@@ -151,7 +140,7 @@ export default function Home(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <Navbar />
+      {/*  {/* <Navbar /> */}
 
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

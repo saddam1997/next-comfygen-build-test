@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
@@ -51,7 +51,7 @@ const InfoSection = ({ InfoSectionData }: any) => {
                   {InfoSectionData.link && InfoSectionData.linkText && (
                     <Link href={InfoSectionData?.link}>
                       <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                        {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                        {InfoSectionData?.linkText} <ArrowUpRight />
                       </button>
                     </Link>
                   )}
@@ -90,7 +90,7 @@ const InfoSection = ({ InfoSectionData }: any) => {
                   {InfoSectionData.link && InfoSectionData.linkText && (
                     <Link href={InfoSectionData?.link}>
                       <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                        {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                        {InfoSectionData?.linkText} <ArrowUpRight />
                       </button>
                     </Link>
                   )}

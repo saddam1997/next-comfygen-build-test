@@ -2,7 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -181,10 +180,6 @@ export default function Ecommerce(props: any) {
         />
 
       </Head>
-
-      <div className="min-h-[60px] md:min-h-[70px]">
-        <Navbar />
-      </div>
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {  Blockchain, Blockchain1, Metaverse, Token,  Other, cryptoDevelopment, cryptoDevelopment1 } from "../navData"
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -22,7 +22,7 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                 >
                     Solutions
                 </span>
-                <MdKeyboardArrowDown
+                <ChevronDown
                     className="hover:text-black/100 text-black/80"
                     size={18}
                 />
@@ -56,8 +56,7 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                                         </span>
                                     </div>
                                 </li>
-                                <Link
-                                    href="/blockchain-development"
+                                <li
                                     onClick={() => handleTabClick("Tab2")}
                                     className={
                                         activeTab === "Tab2"
@@ -73,19 +72,14 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                                     />
                                     <div className="space-y-4 cursor-pointer">
                                         <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                            {/* <Link
-                                  href="/blockchain-development"
-                                  className="flex items-start gap-2"
-                                >
-                                  Blockchain Solution
-                                </Link> */}
+                             
                                             Blockchain Solution
                                         </p>
                                         <span className="text-[#212121]/80 text-sm font-normal">
                                             Secure Your Digital Future
                                         </span>
                                     </div>
-                                </Link>
+                                </li>
                                 <li
                                     onClick={() => handleTabClick("Tab3")}
                                     className={

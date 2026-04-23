@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
-import { MdOutlineArrowOutward } from 'react-icons/md';
+import { ArrowUpRight } from 'lucide-react';
 
 const GameCard = ({GameCardData}) => {
      const [showContent, setShowContent] = useState(false);
@@ -79,7 +79,7 @@ const GameCard = ({GameCardData}) => {
                 className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative"
                 onClick={() => setShowContent(!showContent)}
               >
-                Load Less <MdOutlineArrowOutward />
+                Load Less <ArrowUpRight />
               </button>
             </div>
           ) : (
@@ -88,7 +88,7 @@ const GameCard = ({GameCardData}) => {
                 className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative"
                 onClick={() => setShowContent(!showContent)}
               >
-                Load More <MdOutlineArrowOutward />
+                Load More <ArrowUpRight />
               </button>
             </div>
           )}

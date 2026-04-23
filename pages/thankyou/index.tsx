@@ -1,11 +1,7 @@
-import { useEffect } from 'react';
-import React from 'react'
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from "next/image";
-import { BsArrowRight } from 'react-icons/bs';
-import { MdOutlineArrowForwardIos, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import {  MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import Header from '../../components/Newcomponet/layout/Header';
 
 
@@ -38,7 +34,7 @@ export default function Custom404() {
 
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC] text-center">
-            <Header />
+           {/* <Header /> */}
             <div className="md:py-28 py-5">
               <div className="flex items-center justify-center py-6">
                 <Image

@@ -343,9 +343,6 @@ export default function Ecommerce(props: any) {
         />
 
       </Head>
-
-      {/* <BlockChainHeader /> */}
-      <Navbar />
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

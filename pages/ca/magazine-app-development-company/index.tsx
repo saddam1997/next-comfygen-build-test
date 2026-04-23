@@ -332,7 +332,7 @@ export default function News(props: any) {
         />
       </Head>
       <div className="">
-        <Header />
+       {/* <Header /> */}
       </div>
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

@@ -294,7 +294,7 @@ export default function Mobile(props) {
 
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="">
         <HeroSectionForAllPages

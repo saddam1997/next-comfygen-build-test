@@ -151,7 +151,7 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
         />
       </Head>
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

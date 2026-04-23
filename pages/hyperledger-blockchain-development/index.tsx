@@ -416,7 +416,7 @@ export default function Blockchain(props: any) {
         />
 
       </Head>
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hyperledger blockchain development service"

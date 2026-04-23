@@ -148,9 +148,9 @@ export default function MultiChain(props: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+       {/* <Header /> */}
+  
       <div className="overflow-hidden">
         <HeroSectionForAllPages
           heading="Best Flutter App Development Company in India"

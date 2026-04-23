@@ -355,7 +355,7 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
         />
       </Head>
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
 

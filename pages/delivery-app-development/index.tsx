@@ -19,19 +19,15 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
   ssr: true,
 });
 
-import InformationSection from "../../components/InformationSection"
+
 import ReviewCard from "../../components/ReviewCard";
 import Emerging from "../../components/Emerging";
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
+
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
+
 import TechStacks from "../../components/TechStacks";
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
@@ -192,7 +188,7 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

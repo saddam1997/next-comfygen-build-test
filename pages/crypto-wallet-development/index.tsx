@@ -156,9 +156,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <section className="h-[60px] md:h-[70px]">
-        <Navbar />
-      </section>
+  
 
       {/* ✅ Hero */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />

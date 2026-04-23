@@ -162,7 +162,7 @@ export default function Mobile(props) {
         />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

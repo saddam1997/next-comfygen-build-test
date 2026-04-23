@@ -285,7 +285,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

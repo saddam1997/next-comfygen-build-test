@@ -163,7 +163,7 @@ export default function Polygon(props:any) {
         />
       </Head>
 
-      <BlockChainHeader />
+      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

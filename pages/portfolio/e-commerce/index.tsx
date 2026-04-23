@@ -52,7 +52,7 @@ export default function about(props:any) {
         <div className="" >
           <div className='w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#424151]/70">
-              <Header />
+             {/* <Header /> */}
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-10">
                 <div className="w-full">
                   <div className="space-y-6 text-start">

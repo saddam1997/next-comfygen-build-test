@@ -435,7 +435,7 @@ export default function Mobile(props) {
 
       <div className="">
 
-        <Header />
+       {/* <Header /> */}
 
       </div>
       <div className="overflow-hidden ">

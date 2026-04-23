@@ -49,7 +49,7 @@ export default function about(props:any) {
         <div className="bg-gradient-to-r from-[#8B0E0E] via-[#A70D0D] to-[#990C0C]" >
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom'>
             <div className=" bg-[#770706]/90">
-              <Header />
+             {/* <Header /> */}
               <div className="flex justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  pt-8">
                 <div className="w-full">
                   <div className="space-y-6 text-start">

@@ -1,18 +1,16 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
+
 
 import dynamic from 'next/dynamic';
-import Header from '../../../components/Newcomponet/layout/Header';
+
 import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+
 const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
+  { ssr: true }
 );
 
 const BlogSection = dynamic(
@@ -20,15 +18,10 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-
-
-
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
+export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
     const openModal = () => setTalkToExpertModal(true);
     const closeModal = () => setTalkToExpertModal(false);
@@ -54,13 +47,9 @@ export default function about(props) {
                 <meta name="twitter:label1" content="Est. reading time" />
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
-            <div className="">
-               
-                    <Header />
-             
-            </div>
+
             <div className="overflow-hidden ">
-                <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
+                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
                     <CompanyHeroSection
                         heading="Love Horoscope App"
                         subhead=""

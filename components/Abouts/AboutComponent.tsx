@@ -1,12 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
-
-import { parseHTMLString } from "../../lib/parseHTML"
-
 
 const AboutComponent = ({ AboutData }) => {
   const imageAlt = AboutData?.altTag || AboutData?.heading || "About image";
@@ -65,7 +62,7 @@ const AboutComponent = ({ AboutData }) => {
                   href={AboutData.link}
                   className="text-[#5556D1] hover:bg-[#5556D1] hover:text-white border border-[#5556D1] w-fit px-10 py-2 text-lg font-semibold rounded-full flex items-center gap-1 transition-colors duration-200"
                 >
-                  {AboutData.linkText} <MdOutlineArrowOutward />
+                  {AboutData.linkText} <ArrowUpRight /> 
                 </Link>
               )}
             </div>

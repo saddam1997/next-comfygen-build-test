@@ -127,15 +127,7 @@ export default function Blockchain(props: any) {
       </Head>
 
       <div className="overflow-x-hidden">
-
-        {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
-        <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-          <BlockChainHeader />
-        </header>
-
-        {/* reserved space (NO CLS) */}
-        <div className="h-[60px] md:h-[70px]" />
-
+  
         {/* ================= HERO (CRITICAL FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />

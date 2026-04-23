@@ -42,7 +42,7 @@ export default function about() {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
 
       <div className="overflow-hidden ">
         <AboutSection />

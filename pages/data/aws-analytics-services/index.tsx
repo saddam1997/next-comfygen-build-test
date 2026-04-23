@@ -160,7 +160,7 @@ export default function Mobile(props) {
 
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="pt-16">
         <HeroSectionForAllPages

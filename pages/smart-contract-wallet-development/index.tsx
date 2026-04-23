@@ -266,7 +266,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones/>
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

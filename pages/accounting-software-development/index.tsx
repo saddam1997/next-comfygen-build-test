@@ -114,7 +114,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden pt-16 lg:pt-24">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />

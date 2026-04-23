@@ -128,7 +128,7 @@ export default function Altcoin(props) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
       <div className="">
-          <Header />
+         {/* <Header /> */}
       </div>
       <div className="overflow-hidden">
         <div className="">

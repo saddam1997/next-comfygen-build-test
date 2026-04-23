@@ -157,7 +157,7 @@ export default function Ecommerce(props:any) {
       {/* hero section */}
       <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
         <div className=" bg-[#1B1C30CC]">
-          <Header />
+         {/* <Header /> */}
           <div className="md:py-36 py-5">
             <HeroSectionForm
               heading='Metaverse NFT Marketplace Development Company'

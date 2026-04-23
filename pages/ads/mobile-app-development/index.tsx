@@ -397,7 +397,7 @@ export default function Mobile(props: any) {
       </Head>
       <div className="">
 
-        <Header />
+       {/* <Header /> */}
 
       </div>
 

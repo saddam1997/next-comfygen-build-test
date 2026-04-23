@@ -112,7 +112,7 @@ export default function Altcoin(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
