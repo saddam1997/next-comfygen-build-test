@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { MdMenuOpen, MdMenu, MdAddCall } from "react-icons/md";
-import { IoMdMail } from "react-icons/io";
+import { SquareChevronLeft,Menu, PhoneMissed, Mail} from 'lucide-react';
 
 import styles from "./styles.module.css";
 
@@ -28,7 +27,7 @@ export default function DesktopNav() {
         {/* ================= TOP BAR (STABILIZED) ================= */}
         <div className="hidden lg:flex justify-end gap-6 px-6 py-2 text-sm text-gray-700">
           <a href="mailto:sales@comfygen.com" className="flex items-center gap-2">
-            <IoMdMail />
+            <Mail size={20}/>
             sales@comfygen.com
           </a>
 
@@ -36,7 +35,7 @@ export default function DesktopNav() {
             className="flex items-center gap-2"
             href="https://api.whatsapp.com/send?phone=919587867258"
           >
-            <MdAddCall />
+            <PhoneMissed size={15}/>
             +91 9587867258
           </a>
         </div>
@@ -124,7 +123,7 @@ export default function DesktopNav() {
             onClick={() => setMenu(!menu)}
             aria-label="menu"
           >
-            {menu ? <MdMenuOpen size={26} /> : <MdMenu size={26} />}
+            {menu ? <SquareChevronLeft size={26} /> : <Menu size={26} />}
           </button>
 
         </nav>

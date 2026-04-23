@@ -1,8 +1,6 @@
-"use client";
+// "use client";
 import { useState } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-
-import { RiBitCoinLine, RiPhoneLockLine } from "react-icons/ri";
+import { ChevronDown } from 'lucide-react';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -30,7 +28,7 @@ const Accordion = ({
           <span>{data.title}</span>
         </div>
 
-        <MdKeyboardArrowDown
+        <ChevronDown
           size={24}
           className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
             }`}
@@ -61,7 +59,7 @@ const Accordion = ({
                     <div className="w-1 h-1 bg-black rounded-full"></div> {section.label}
                   </span>
 
-                  <MdKeyboardArrowDown
+                  <ChevronDown
                     size={20}
                     className={`transition-transform duration-300 ${isSubOpen ? "rotate-180" : ""
                       }`}

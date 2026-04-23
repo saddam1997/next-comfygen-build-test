@@ -176,9 +176,9 @@ export default function career(props:any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+  
+       {/* <Header /> */}
+
       <div className="overflow-hidden lg:pt-[50px]">
         <div className="bg-gradient-to-r 
                 from-blue-100/70 

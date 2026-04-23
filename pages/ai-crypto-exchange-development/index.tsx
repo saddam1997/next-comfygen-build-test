@@ -244,7 +244,7 @@ export default function LiveLinePage() {
 //         />
 //       </Head>
 
-//       <Header />
+//      {/* <Header /> */}
 
 //       <div className="overflow-hidden pt-16">
 

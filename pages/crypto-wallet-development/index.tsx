@@ -157,7 +157,7 @@ export default function Ecommerce(props: any) {
       </Head>
 
       <section className="h-[60px] md:h-[70px]">
-        <Navbar />
+         {/* <Navbar /> */}
       </section>
 
       {/* ✅ Hero */}

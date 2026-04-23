@@ -63,7 +63,7 @@ export default function about(props) {
             </Head>
             <div className="">
                
-                    <Header />
+                   {/* <Header /> */}
                 
             </div>
 

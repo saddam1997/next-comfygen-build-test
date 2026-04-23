@@ -105,7 +105,7 @@ export default function Stack(props: any) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
 

@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
         {/* hero section */}
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC]">
-            <Header />
+           {/* <Header /> */}
             <div className="py-20">
                <HeroSectiondesign2
                 heading='Comfygen Development Company Privacy Policy'

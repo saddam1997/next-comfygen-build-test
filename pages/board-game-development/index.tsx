@@ -233,7 +233,7 @@ export default function Ecommerce(props) {
       </Head>
       <div className="">
        
-          <Header />
+         {/* <Header /> */}
       
       </div>
       <div className="lg:pt-[80px]">

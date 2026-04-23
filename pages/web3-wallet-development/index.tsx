@@ -284,7 +284,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <div className="overflow-hidden lg:pt-0 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

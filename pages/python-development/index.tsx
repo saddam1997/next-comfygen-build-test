@@ -66,7 +66,7 @@ export default function Altcoin(props: any) {
         <meta name='language' content='en-us' />
       </Head>
 
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <Milestones />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

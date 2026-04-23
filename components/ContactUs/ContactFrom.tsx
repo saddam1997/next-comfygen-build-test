@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";

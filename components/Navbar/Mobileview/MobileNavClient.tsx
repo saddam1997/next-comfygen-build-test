@@ -1,11 +1,11 @@
-"use client";
+// "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { MdMenu, MdMenuOpen } from "react-icons/md";
+import { Menu, SquareChevronLeft, House} from 'lucide-react';
 import Accordion from "./Accordion";
 import Image from "next/image";
 import Link from "next/link";
-import { FiHome } from "react-icons/fi";
+
 
 export default function MobileNavClient({ menuData }: any) {
   const [active, setActive] = useState(0);
@@ -48,7 +48,7 @@ export default function MobileNavClient({ menuData }: any) {
             onClick={toggle}
             className="p-2 bg-gray-100 rounded z-50"
           >
-            {open ? <MdMenuOpen size={24} /> : <MdMenu size={24} />}
+            {open ? <SquareChevronLeft size={24} /> : <Menu size={24} />}
           </button>
 
         </nav>
@@ -72,7 +72,7 @@ export default function MobileNavClient({ menuData }: any) {
 
               <Link href="/" onClick={closeMenu}>
                 <div className="flex p-3 px-6 space-x-2 hover:bg-gray-50 cursor-pointer">
-                  <FiHome size={22} />
+                  <House size={22} />
                   <span>Home</span>
                 </div>
               </Link>

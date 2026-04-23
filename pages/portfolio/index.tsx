@@ -11,7 +11,7 @@ import CompanyHeroSection from "../../components/Newcomponet/portfolio/CompanyHe
 import FormSec from "../../components/Newcomponet/portfolio/FormSec";
 
 
-export default function Portfolio(props) {
+export default function Portfolio(props:any) {
   const [talkToExpertModal, setTalkToExpertModal] = useState(false);
   const router = useRouter();
 
@@ -34,12 +34,6 @@ export default function Portfolio(props) {
     setCurrentPage(1);
   }, [selectedCategory]);
 
-  // Scroll to top of portfolio section on page change
-  // useEffect(() => {
-  //   if (portfolioRef.current) {
-  //     portfolioRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  //   }
-  // }, [currentPage]);
 
   const openModal = () => setTalkToExpertModal(true);
   const closeModal = () => setTalkToExpertModal(false);
@@ -88,9 +82,9 @@ export default function Portfolio(props) {
         />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
-      <div className="lg:py-[7rem] lg:mt-[110px] py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
+      <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
         <CompanyHeroSection
           heading="Our Portfolio"
           subhead="Work We Have Done For Some of Our Great Clients"

@@ -156,9 +156,9 @@ export default function Mobile(props: any) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
       <div className="">
-        <LazyLoad height={80} offset={100}>
-          <Header />
-        </LazyLoad>
+
+         {/* <Header /> */}
+       
       </div>
       <div className="overflow-hidden lg:pt-[40px]">
         <HeroSectionForAllPages

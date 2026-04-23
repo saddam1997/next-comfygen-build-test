@@ -194,7 +194,7 @@ export default function Ecommerce(props: any) {
 
         {/* ================= FIXED NAVBAR (REAL CLS FIX) ================= */}
         <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-          <Navbar />
+           {/* <Navbar /> */}
         </header>
 
         {/* spacer prevents layout shift */}

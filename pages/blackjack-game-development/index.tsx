@@ -222,7 +222,7 @@ export default function Altcoin(props) {
       </Head>
       <div className="">
         <div >
-          <Header />
+         {/* <Header /> */}
         </div>
       </div>
       <div className="overflow-hidden ">

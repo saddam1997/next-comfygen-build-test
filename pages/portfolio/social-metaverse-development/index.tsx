@@ -85,7 +85,7 @@ export default function about(props) {
       </Head>
       <div className="">
 
-          <Header />
+         {/* <Header /> */}
 
       </div>
       <div className="overflow-hidden ">

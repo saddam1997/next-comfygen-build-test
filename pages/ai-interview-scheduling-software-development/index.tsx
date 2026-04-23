@@ -178,13 +178,8 @@ export default function Ecommerce(props:any) {
         />
       </Head>
 
-
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
-
-
-
+       {/* <Header /> */}
+    
       <div className="overflow-hidden lg:pt-[10px]">
 
         <HeroSectionForAllPages

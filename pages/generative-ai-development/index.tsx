@@ -242,9 +242,9 @@ export default function Mobile(props) {
 
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+       {/* <Header /> */}
+
       <div className="">
         <HeroSectionForAllPages
           heading="Generative AI Development Company"

@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import { ChevronRight,ChevronLeft } from 'lucide-react';
 
 const blurDataURL =
   "data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBAAAABwAgCdASoIAAQAAQAcJbACdASEf8WAP4AAABCTbFzAAA=";
 
 export default function Slider({
- SliderDATA
+  SliderDATA
 }) {
   const sliderRef = useRef<HTMLDivElement>(null);
   const autoRef = useRef<NodeJS.Timeout | null>(null);
@@ -31,7 +31,7 @@ export default function Slider({
     return () => window.removeEventListener("resize", resize);
   }, []);
 
- 
+
 
   const checkScroll = () => {
     if (!sliderRef.current) return;
@@ -155,7 +155,7 @@ export default function Slider({
             className="flex gap-6 overflow-x-auto scrollbar-hide pb-6 cursor-grab"
             style={{ scrollSnapType: isMobile ? "x mandatory" : "none" }}
           >
-            {SliderDATA?.IndustriesServe.map((item:any, i:any) => (
+            {SliderDATA?.IndustriesServe.map((item: any, i: any) => (
               <div
                 key={i}
                 className="slide-card flex-shrink-0 bg-white rounded-2xl shadow hover:shadow-xl transition border"
@@ -203,17 +203,18 @@ export default function Slider({
                 className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-[#5556D1] hover:text-white transition ${!canLeft && "opacity-40 cursor-not-allowed"
                   }`}
               >
-                <BiChevronLeft size={30} />
+                <ChevronLeft size={30} />
               </button>
 
               <button
                 onClick={() => move("right")}
-                 aria-label="Next slide"
+                aria-label="Next slide"
                 disabled={!canRight}
                 className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-[#5556D1] hover:text-white transition ${!canRight && "opacity-40 cursor-not-allowed"
                   }`}
               >
-                <BiChevronRight size={30} />
+                <ChevronRight size={30} />
+
               </button>
             </>
           )}
@@ -238,8 +239,8 @@ export default function Slider({
                   });
                 }}
                 className={`w-4 h-4 rounded-full transition-all duration-300 ${activeIndex === index
-                    ? "bg-[#5556D1] scale-110"
-                    : "bg-gray-300 hover:bg-gray-400"
+                  ? "bg-[#5556D1] scale-110"
+                  : "bg-gray-300 hover:bg-gray-400"
                   }`}
               />
             ))}

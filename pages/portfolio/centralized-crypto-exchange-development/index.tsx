@@ -206,7 +206,7 @@ export default function about(props) {
             }}
           >
             <div className="">
-              <Header />
+             {/* <Header /> */}
               <div className="flex flex-col-reverse w-12/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center lg:py-40 py-8">
                 <div className="w-full">
                   <div className="space-y-6">

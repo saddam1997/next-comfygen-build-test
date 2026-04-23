@@ -69,7 +69,7 @@ export default function Card({ SliderDATA }: any) {
 
 
 
-// "use client";
+// // "use client";
 
 // import { useState } from "react";
 // import HeadingTwo from "../ui/HeadingTwo";

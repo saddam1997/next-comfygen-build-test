@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 
@@ -26,7 +26,7 @@ export default function CallToAction({ CallToAction }: any) {
                                 className="inline-flex items-center gap-1 text-white border border-white px-10 py-2 text-lg font-semibold rounded-full capitalize hover:bg-white hover:text-[#5556D1] transition"
                             >
                                 {CallToAction?.buttonText}
-                                <MdOutlineArrowOutward />
+                                <ArrowUpRight />
                             </Link>
                         </div>
                     </div>

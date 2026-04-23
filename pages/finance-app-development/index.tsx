@@ -167,7 +167,7 @@ export default function Mobile(props: any) {
         />
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />

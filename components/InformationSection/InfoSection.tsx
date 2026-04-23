@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 import Image from "next/image";
 
 
@@ -44,7 +44,7 @@ const InfoSection = ({InfoSectionData}) => {
                 <div className="mt-7">
                   <Link href={InfoSectionData?.link}>
                     <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                      {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                      {InfoSectionData?.linkText} <ArrowUpRight />
                     </button>
                   </Link>
                 </div>
@@ -82,7 +82,7 @@ const InfoSection = ({InfoSectionData}) => {
                 <div className="mt-7">
                   <Link href={InfoSectionData?.link}>
                     <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                      {InfoSectionData?.linkText} <MdOutlineArrowOutward />
+                      {InfoSectionData?.linkText} <ArrowUpRight />
                     </button>
                   </Link>
                 </div>

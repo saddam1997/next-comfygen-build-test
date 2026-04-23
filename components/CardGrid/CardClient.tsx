@@ -1,9 +1,8 @@
-"use client";
+// "use client";
 
 import { useState } from "react";
 import Image from "next/image";
-import { MdStars } from "react-icons/md";
-
+import { Star } from 'lucide-react';
 const CardClient = ({ safeData }) => {
   const [showAll, setShowAll] = useState(false);
 
@@ -46,7 +45,7 @@ const CardClient = ({ safeData }) => {
                 <ul className="mt-4 space-y-2">
                   {techItem.listItems.map((item: any, idx: number) => (
                     <li key={idx} className="flex items-center gap-1">
-                      <MdStars /> {item}
+                      <Star /> {item}
                     </li>
                   ))}
                 </ul>

@@ -543,6 +543,26 @@ export const EcommerceApp = [
     name: "Fashion App Development",
     url: "/ecommerce/fashion",
   },
+  {
+    num: "3",
+    name: "Grocery App Development",
+    url: "/ecommerce/grocery",
+  },
+  {
+    num: "4",
+    name: "FMCG App Development",
+    url: "/ecommerce/fmcg",
+  },
+  {
+    num: "5",
+    name: "Fashion App Development",
+    url: "/ecommerce/fashion",
+  },
+  {
+    num: "6",
+    name: "Quick Ecommerce Development",
+    url: "/quick-commerce-app-development",
+  },
 
 ]
 
@@ -622,6 +642,12 @@ export const Other = [
     num: "9",
     name: "ICO Development Company",
     url: "/ico-development",
+  },
+
+    {
+    num: "10",
+    name: "Blockchain Wallet Development Company",
+    url: "/blockchain-wallet-development",
   },
 ];
 
@@ -1046,10 +1072,10 @@ export const cryptoDevelopment1 = [
     url: "/web3-wallet-development",
   },
 
-
-
-
 ];
+
+
+
 
 
 

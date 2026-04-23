@@ -116,7 +116,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
       <header className="fixed top-0 left-0 w-full z-50 bg-white">
-        <Navbar />
+         {/* <Navbar /> */}
       </header>
 
       {/* placeholder prevents layout jump */}

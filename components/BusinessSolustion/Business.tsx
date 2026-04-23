@@ -1,5 +1,5 @@
+import { CircleCheck } from 'lucide-react';
 
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import Image from "next/image";
 
 const Business = ({BusinessSolustion, imageSrc="https://www.comfygen.com/comfygen-images/delivery-app-development/transdelivery-delivery-app-development-app-solutions.webp"}) => {
@@ -7,7 +7,7 @@ const Business = ({BusinessSolustion, imageSrc="https://www.comfygen.com/comfyge
 
     const getIcon = (iconType: string) => {
         const iconProps = { size: 24, className: "text-red-500" };
-        return <IoIosCheckmarkCircleOutline {...iconProps} />;
+        return <CircleCheck {...iconProps} />;
     };
 
     return (

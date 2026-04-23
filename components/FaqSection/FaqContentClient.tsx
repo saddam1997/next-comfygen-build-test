@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 
 import { useState } from "react";
-import { MdStars } from "react-icons/md";
+import { Star } from 'lucide-react';
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 import { parseHTMLString } from "../../lib/parseHTML";
@@ -124,7 +124,7 @@ export default function FaqSectionClient({
                                 <ul className="space-y-1">
                                   {card.items.map((li: string, j: number) => (
                                     <li key={`item-${i}-${j}`} className="flex gap-2">
-                                      <MdStars className="mt-1 text-[#5556D1]" />
+                                      <Star className="mt-1 text-[#5556D1]" />
                                       {li}
                                     </li>
                                   ))}

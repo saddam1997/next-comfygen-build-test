@@ -439,7 +439,7 @@ export default function MultiChain(props) {
         {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} /> */}
       </Head>
 
-        <Header />
+       {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <div className="">

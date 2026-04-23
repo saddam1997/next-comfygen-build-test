@@ -464,7 +464,7 @@ export default function ClinicalApp(props: any) {
 
 
       <div className="min-h-[60px] md:min-h-[70px]">
-        <Navbar />
+         {/* <Navbar /> */}
       </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

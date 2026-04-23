@@ -409,7 +409,7 @@ export default function Contact(props: any) {
         <meta name="twitter:data1" content="7 minutes" />
       </Head>
      
-      <Navbar />
+       {/* <Navbar /> */}
      
       <div className="overflow-hidden">
         <ContactUs />

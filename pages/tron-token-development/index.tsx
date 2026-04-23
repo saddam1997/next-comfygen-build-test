@@ -363,7 +363,7 @@ export default function Tron(props) {
         />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

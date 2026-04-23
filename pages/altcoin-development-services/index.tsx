@@ -228,7 +228,7 @@ export default function Altcoin(props: any) {
         />
       </Head>
       <div className="">
-        <Header />
+       {/* <Header /> */}
       </div>
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

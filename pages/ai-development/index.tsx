@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/Aidevelopment.json";
-import LazyLoad from "react-lazy-load";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import HeroSection from "../../components/HeroSection";
-
-
 
 const AboutSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -69,10 +64,6 @@ const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
 
 
 export default function Mobile(props: any) {
@@ -181,9 +172,9 @@ export default function Mobile(props: any) {
 
 
       </Head>
-      <LazyLoad height={80} offset={100}>
-        <Header />
-      </LazyLoad>
+
+       {/* <Header /> */}
+ 
       <div className="">
         <HeroSection
           heading="AI & ML Mobile App Development Services in India"

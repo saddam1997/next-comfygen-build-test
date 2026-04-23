@@ -108,7 +108,7 @@ export default function Ecommerce(props: any) {
           }}
         />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <div className="" />
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

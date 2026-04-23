@@ -1,6 +1,7 @@
 
 import {  Healthcare, Finance, Finance1,  EcommerceApp, EducationApp, } from "../navData"
-import { MdKeyboardArrowDown } from 'react-icons/md';
+
+import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,7 +22,7 @@ const IndustriesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTa
                   >
                     Industries
                   </span>
-                  <MdKeyboardArrowDown
+                  <ChevronDown
                     className="hover:text-black/100 text-black/80"
                     size={18}
                   />

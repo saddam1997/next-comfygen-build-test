@@ -344,12 +344,6 @@ class ContactFromHeader extends Component<{}, any> {
           </div>
         ) : null}
 
-        {/* <LazyLoad height={70} offset={100}>
-          <ReCAPTCHA
-            sitekey="6LcXQKkpAAAAAOlsNqjoC8kx9To5Xt_RTIapQ0i0"
-            onChange={this.handleRecaptchaChange}
-          />
-        </LazyLoad> */}
 
         <div className="flex justify-center pt-2 2xl:pt-4">
           {this.state.submitted ? (

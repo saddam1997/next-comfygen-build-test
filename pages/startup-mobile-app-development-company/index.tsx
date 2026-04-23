@@ -165,7 +165,7 @@ export default function Mobile(props) {
         }} />
       </Head>
       <div className="">
-        <Header />
+       {/* <Header /> */}
 
 
         <div className="lg:pt-[130px] py-5 bg-gradient-to-br from-[#4A63D9] to-[#4F46E5]">

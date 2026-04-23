@@ -271,7 +271,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden ">
          <HeroSectionforHome herosection={JSON_DATA?.Herosection} />

@@ -3,12 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
 import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -17,16 +13,17 @@ import FeaturesNewSection from "../../components/FeaturesNewSection"
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
-import Trending from "../../components/Trending";
+
 
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
   { ssr: true }
 );
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
+const Trending = dynamic(
+  () => import("../../components/Trending"),
+  { ssr: true }
+);
 
 import TechStacks from "../../components/TechStacks";
 
@@ -38,9 +35,7 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
+
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -128,16 +123,17 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       {/* <LazyLoad height={80} offset={100}> */}
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-      <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
+    
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <FeaturesNewSection FData={JSON_DATA.FData} />
       {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <Trending

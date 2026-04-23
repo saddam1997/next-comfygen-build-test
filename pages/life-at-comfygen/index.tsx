@@ -29,7 +29,7 @@ export default function lifeatcompany() {
   return (
     <>
       <div className="overflow-hidden">
-        <Header />
+       {/* <Header /> */}
 
         <div className="">
           <div className="w-full h-full">

@@ -310,7 +310,7 @@ export default function Mobile(props) {
         />
 
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       
      

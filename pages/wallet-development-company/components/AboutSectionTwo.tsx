@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 const AboutSectionTwo = ({
   heading = "",
@@ -47,7 +47,7 @@ const AboutSectionTwo = ({
             <div className="mt-7">
               <Link href={link} passHref>
                 <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                  {linkText} <MdOutlineArrowOutward />
+                  {linkText} <ArrowUpRight />
                 </button>
               </Link>
             </div>
@@ -83,7 +83,6 @@ export default AboutSectionTwo;
 
 // import React from "react";
 // import Link from "next/link";
-// import { MdOutlineArrowOutward } from "react-icons/md";
 // import Image from "next/image";
 
 // const AboutSectionTwo = (props) => {

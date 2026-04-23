@@ -183,7 +183,7 @@ export default function Mobile(props: any) {
       </Head>
 
       <div className="min-h-[60px] md:min-h-[70px]">
-        <Navbar />
+         {/* <Navbar /> */}
       </div>
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Footer from "../components/Newcomponet/layout/Footer";
 
 import dynamic from "next/dynamic";
@@ -26,6 +27,8 @@ export default function MainLayout({
       {/* ================= APP WRAPPER ================= */}
       <div className="w-full min-h-screen bg-white">
 
+        {/* ✅ FIXED HEADER */}
+         <Navbar />
         {/* ================= CONTENT CONTAINER ================= */}
         <main className="w-full max-w-[1600px] mx-auto">
 
@@ -54,34 +57,3 @@ export default function MainLayout({
   );
 }
 
-
-
-
-
-
-
-
-
-// import Footer from '../components/Newcomponet/layout/Footer';
-// import GetinTouch from '../components/Newcomponet/SectionCompoent/GetinTouch';
-// import LazyClientTools from './LazyClientTools';
-// // import { usePathname } from "next/navigation";
-
-// export default function MainLayout({ children }: { children: React.ReactNode }) {
-//   // const pathname = usePathname();
-
-
-//   // const hideGetInTouch = pathname === "/contact-us";
-//   return (
-//     <>
-//       <main className="max-w-[1600px] w-full mx-auto overflow-hidden">
-        
-//         {children}
-//         {/* {!hideGetInTouch && <GetinTouch />} */}
-//         <GetinTouch />
-//         <Footer />
-//         <LazyClientTools />
-//       </main>
-//     </>
-//   );
-// }

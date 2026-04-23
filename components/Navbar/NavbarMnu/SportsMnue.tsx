@@ -1,6 +1,6 @@
 
 import {  Sports, Sports1, Sports2 } from "../navData"
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 
 
@@ -18,7 +18,7 @@ const SportsMnue = ({ setActiveTab, activeTab, showNav,setShowNav, handleTabClic
                   >
                     Sports
                   </span>
-                  <MdKeyboardArrowDown
+                  <ChevronDown
                     className="hover:text-black/100 text-black/80"
                     size={18}
                   />

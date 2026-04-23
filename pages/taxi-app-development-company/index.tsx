@@ -123,7 +123,7 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
       {/* <Milestones /> */}
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

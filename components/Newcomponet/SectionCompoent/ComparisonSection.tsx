@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { BiCheckCircle } from "react-icons/bi";
 

@@ -178,7 +178,7 @@ export default function Mobile(props: any) {
       </Head>
 
       <div className="">
-        <Navbar />
+         {/* <Navbar /> */}
       </div>
 
       <div className="lg:pt-0 pt-16">

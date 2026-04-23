@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { MobileApp, Ai, BlockchainSer, coin, Healthcare, FullStackDev, Hire } from "../navData"
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -21,7 +21,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                     >
                         Services
                     </span>
-                    <MdKeyboardArrowDown
+                    <ChevronDown
                         className="hover:text-black/100 text-black/80"
                         size={18}
                     />
@@ -79,8 +79,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                                         </div>
                                     </li>
 
-                                    <Link
-                                        href="/blockchain-development"
+                                    <li
                                         onClick={() => handleTabClick("Tab2")}
                                         className={
                                             activeTab === "Tab2"
@@ -96,19 +95,14 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                                         />
                                         <div className="space-y-4 cursor-pointer">
                                             <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                {/* <Link
-                                  href="/blockchain-development"
-                                  className="flex items-start gap-2"
-                                >
-                                  Blockchain App Development
-                                </Link> */}
+            
                                                 Blockchain App Development
                                             </p>
                                             <span className="text-[#212121]/80 text-sm font-normal">
                                                 Secure Blockchain-Based App Solutions
                                             </span>
                                         </div>
-                                    </Link>
+                                    </li>
 
                                     <li
                                         onClick={() => handleTabClick("Tab3")}
@@ -185,7 +179,6 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                                 </ul>
 
 
-
                             </div>
                             <div className="space-y-10 ">
                                 <div>
@@ -211,7 +204,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                                     )}
 
                                     {activeTab === "Tab2" && (
-                                        <ul className="text-sm font-medium space-y-2 hidden">
+                                        <ul className="text-sm font-medium space-y-2 ">
                                             {BlockchainSer.map((elem: any, index: any) => {
                                                 const { name, num, url } = elem;
                                                 return (
@@ -226,7 +219,7 @@ const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabC
                                                             href={url}
                                                             passHref={true}
                                                         >
-                                                            {name}mm
+                                                            {name}
                                                         </Link>
                                                     </li>
                                                 );

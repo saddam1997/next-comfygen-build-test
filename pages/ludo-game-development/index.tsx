@@ -404,7 +404,7 @@ export default function LudoGame(props:any) {
       </Head>
 
       <div>
-        <Header />
+       {/* <Header /> */}
       </div>
 
       <div className=" ">

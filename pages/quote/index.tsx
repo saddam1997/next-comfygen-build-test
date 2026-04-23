@@ -30,7 +30,7 @@ export default function Contact() {
         className="bg-center bg-no-repeat bg-cover "
         style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }} >
         <div className=" bg-[#1B1C30CC] pb-24">
-          <Header />
+         {/* <Header /> */}
         </div>
       </div>
       <section>

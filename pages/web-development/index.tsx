@@ -119,7 +119,7 @@ export default function Webdevelopment(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      <Navbar />
+       {/* <Navbar /> */}
       <div className="overflow-hidden lg:pt-12 pt-16">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

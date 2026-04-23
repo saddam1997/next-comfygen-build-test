@@ -223,7 +223,7 @@ export default function Mobile(props: any) {
 
       </Head>
       {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
+     {/* <Header /> */}
       {/* </LazyLoad> */}
       <div className="pt-16">
         <HeroSectionForAllPages

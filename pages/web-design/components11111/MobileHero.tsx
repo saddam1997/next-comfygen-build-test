@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ContactFrom from "../../../components/Newcomponet/comman/ContactFrom";
-import { BsMicrosoftTeams } from "react-icons/bs";
 
 
 

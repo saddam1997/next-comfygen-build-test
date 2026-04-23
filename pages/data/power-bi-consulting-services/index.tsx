@@ -355,7 +355,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       {/* <LazyLoad height={80} offset={100}> */}
-      <Header />
+     {/* <Header /> */}
       {/* </LazyLoad> */}
       <div className="overflow-hidden ">
         <div className="">

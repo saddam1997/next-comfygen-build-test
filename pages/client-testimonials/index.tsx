@@ -156,7 +156,7 @@ export default function Altcoin(props: any) {
         <meta property="og:image:height" content="630" />
       </Head>
 
-      <Header />
+     {/* <Header /> */}
 
       <div className="overflow-hidden  pt-[40px]">
         <div className="lg:bg-right bg-no-repeat bg-cover bg-gradient-to-br 
