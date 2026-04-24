@@ -1,7 +1,12 @@
+"use client";
 
-
+import dynamic from "next/dynamic";
 import { useState, } from "react";
-import HeroModal from "./HeroModal";
+
+const HeroModal = dynamic(() => import("./HeroModal"), {
+    ssr: false,
+});
+
 
 export default function HeroClient() {
     const [open, setOpen] = useState(false);
@@ -20,7 +25,10 @@ export default function HeroClient() {
             </div>
 
             {/* Modal */}
-            <HeroModal isOpen={open} onClose={() => setOpen(false)} />
+            {/* ✅ only load when needed */}
+            {open && (
+                <HeroModal isOpen={open} onClose={() => setOpen(false)} />
+            )}
         </>
     );
 }

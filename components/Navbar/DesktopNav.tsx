@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { SquareChevronLeft,Menu, PhoneMissed, Mail} from 'lucide-react';
+import { SquareChevronLeft, Menu, PhoneMissed, Mail } from 'lucide-react';
 
 import styles from "./styles.module.css";
 
@@ -27,23 +27,23 @@ export default function DesktopNav() {
         {/* ================= TOP BAR (STABILIZED) ================= */}
         <div className="hidden max-w-[1600px] mx-auto  lg:block ">
           <div className="lg:flex justify-end gap-6 px-6 py-2 text-sm text-gray-700">
-          <a href="mailto:sales@comfygen.com" className="flex items-center gap-2 font-medium">
-            <Mail size={20}/>
-            sales@comfygen.com
-          </a>
+            <a href="mailto:sales@comfygen.com" className="flex items-center gap-2 font-medium">
+              <Mail size={20} />
+              sales@comfygen.com
+            </a>
 
-          <a
-            className="flex items-center gap-2 font-medium"
-            href="https://api.whatsapp.com/send?phone=919587867258"
-          >
-            <PhoneMissed size={15}/>
-            +91 9587867258
-          </a>
-        </div>
+            <a
+              className="flex items-center gap-2 font-medium"
+              href="https://api.whatsapp.com/send?phone=919587867258"
+            >
+              <PhoneMissed size={15} />
+              +91 9587867258
+            </a>
+          </div>
         </div>
 
         {/* ================= MAIN NAV ================= */}
-        <nav className="w-full max-w-[1600px] mx-auto px-4 lg:px-6 flex items-center justify-between h-[60px]">
+        <nav className="w-full max-w-[1600px] mx-auto px-4 lg:px-6 flex items-center justify-between h-[70px]">
 
           {/* LOGO (CLS FIXED) */}
           <Link href="/" className="flex items-center">
@@ -51,9 +51,11 @@ export default function DesktopNav() {
               <Image
                 src="/svg/Logo1.svg"
                 alt="comfygen-logo"
-                fill
+                width={144}
+                height={48}
                 priority
                 sizes="180px"
+                className="h-auto w-auto"
                 style={{ objectFit: "contain" }}
               />
             </div>

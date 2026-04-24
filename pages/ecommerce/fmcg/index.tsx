@@ -402,7 +402,6 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceHeader />
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="FMCG Delivery App Development Company"
@@ -586,7 +585,7 @@ export async function getStaticProps() {
 
     return {
       props: { initialData: data },
-      revalidate: 86400, // 24 hours
+      revalidate: 3600, // 24 hours
     };
   } catch (error) {
     console.error("getStaticProps error:", error);

@@ -155,12 +155,8 @@ export default function Mobile(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-      <div className="">
-
-         {/* <Header /> */}
-       
-      </div>
-      <div className="overflow-hidden lg:pt-[40px]">
+   
+   
         <HeroSectionForAllPages
           heading="Best Android App Development Company India and USA"
           ptag="Comfygen is a professional Android app development company in Jaipur, India, helping startups and small businesses build reliable, scalable, and performance-driven Android applications. Our skilled Android developers create secure and intuitive mobile apps that deliver seamless user experiences and measurable business results."
@@ -254,7 +250,7 @@ export default function Mobile(props: any) {
          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
         <Faq faqData={JSON_DATA.Frequently} title=" " />
         <BlogSection initialData={initialData} />
-      </div>
+   
     </>
   );
 }
@@ -272,7 +268,7 @@ export async function getStaticProps() {
 
     return {
       props: { initialData: data },
-      revalidate: 86400, // 24 hours
+      revalidate: 3600, // 24 hours
     };
   } catch (error) {
     console.error("getStaticProps error:", error);

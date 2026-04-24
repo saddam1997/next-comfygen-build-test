@@ -6,12 +6,11 @@ import HeroSectionNewCls from "../components/HeroSectionNewCls"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
 import AboutComponent from "../components/Abouts/AboutComponent"
+import ServicesComponet from "../components/ServicesSection/ServicesComponet"
 
-const ServicesComponet = dynamic(() => import("../components/ServicesSection/ServicesComponet"),
-  { ssr: true }
-);
 
-const PortfolioSection = dynamic( () => import("../components/PortfolioSection"),
+
+const PortfolioSection = dynamic(() => import("../components/PortfolioSection"),
   { ssr: true }
 );
 import CallToActionSection from "../components/CallToActionSection"
@@ -176,7 +175,7 @@ export async function getStaticProps() {
 
     return {
       props: { initialData: data },
-      revalidate: 86400, // 24 hours
+      revalidate: 3600, // 24 hours
     };
   } catch (error) {
     console.error("getStaticProps error:", error);

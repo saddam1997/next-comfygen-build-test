@@ -1,18 +1,27 @@
 import Navbar from "../components/Navbar";
-import Footer from "../components/Newcomponet/layout/Footer";
+
 
 import dynamic from "next/dynamic";
 const LazyClientTools = dynamic(
   () => import("./LazyClientTools"),
-  { ssr: false }
+  { ssr: false,  loading: () => <div style={{ height: 300 }} /> }
 );
 
 const GetinTouch = dynamic(
   () => import("../components/Newcomponet/SectionCompoent/GetinTouch"),
-  { ssr: false }
+  {
+    ssr: false,
+    loading: () => <div style={{ height: 300 }} />
+  }
 );
 
-
+const Footer = dynamic(
+  () => import("../components/Newcomponet/layout/Footer"),
+  {
+    ssr: false,
+    loading: () => <div style={{ height: 300 }} />,
+  }
+);
 
 
 /* ================= GLOBAL LAYOUT SHELL ================= */
@@ -25,14 +34,14 @@ export default function MainLayout({
     <div className="w-full min-h-screen bg-white">
 
       {/* NAVBAR */}
-      <header className="h-[50px] w-full">
+      <header className="h-[70px] w-full">
         <div className="fixed top-0 left-0 w-full h-[70px] z-50 bg-white">
           <Navbar />
         </div>
       </header>
 
       {/* ✅ FIXED CONTENT SHIFT */}
-      <main className="pt-[50px] w-full max-w-[1600px] mx-auto">
+      <main className="pt-[70px] w-full max-w-[1600px] mx-auto">
 
         <div className="w-full">
           {children}
@@ -46,11 +55,10 @@ export default function MainLayout({
         </section>
 
         {/* FOOTER */}
-        <footer className="w-full">
-          <div className="min-h-[300px]">
-            <Footer />
-          </div>
+        <footer className="w-full min-h-[300px]">
+          <Footer />
         </footer>
+
 
       </main>
 

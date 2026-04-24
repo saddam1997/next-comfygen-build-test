@@ -1,18 +1,17 @@
-// "use client";
 
+
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import ContactFrom from "./ContactFrom";
+// ✅ form lazy load
+const ContactFrom = dynamic(() => import("./ContactFrom"), {
+  ssr: false,
+  loading: () => <div className="h-[300px]" />, // prevent CLS
+});
 
-export default function TalkToExpertModal({
-    isOpen,
-    onClose,
-}: {
-    isOpen: boolean;
-    onClose: () => void;
-}) {
-
-
+export default function TalkToExpertModal({isOpen, onClose,}:any) {
     if (!isOpen) return null;
+
+
     return (
        <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
     

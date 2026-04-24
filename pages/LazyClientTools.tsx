@@ -10,9 +10,7 @@ const ContactLinks = dynamic(
   () => import("../components/Newcomponet/comman/ContactLinks"),
   { ssr: false }
 );
-// const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
-//   ssr: false,
-// });
+
 
 
 export default function LazyClientTools() {

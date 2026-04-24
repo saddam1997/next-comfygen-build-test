@@ -566,7 +566,7 @@ export async function getStaticProps() {
 
     return {
       props: { initialData: data },
-      revalidate: 86400, // 24 hours
+      revalidate: 3600, // 24 hours
     };
   } catch (error) {
     console.error("getStaticProps error:", error);

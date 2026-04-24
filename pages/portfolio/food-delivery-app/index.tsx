@@ -1,32 +1,28 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
+import JSON_DATA from "./food-delivery.json"
 import dynamic from 'next/dynamic';
-import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
-const loader = () => (
-    <div className="h-96 bg-gray-100 animate-pulse" />
-);
-const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-    { loading: loader, ssr: true }
-);
+import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
+import Features from "../../../components/PortfolioPage/Features"
+
+
+
 const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-    { loading: loader, ssr: true }
+    { ssr: true }
 );
 
 
 const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
+    () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+    { ssr: true }
 );
 
 
 import styles from "../components/styles.module.css"
 import { MdStar, MdStarHalf } from 'react-icons/md';
 
-export default function about(props) {
-    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-    const openModal = () => setTalkToExpertModal(true);
-    const closeModal = () => setTalkToExpertModal(false);
 
+export default function about(props: any) {
     let { initialData } = props;
 
     const jsonLdData = [
@@ -204,9 +200,6 @@ export default function about(props) {
                 <meta name="description" content="Explore Food 24Hr, a feature-rich food delivery app built by Comfygen. With AI-powered recommendations, real-time tracking & secure payments, we deliver top-notch food delivery app development solutions that drive growth and customer engagement." />
 
                 <meta name="keywords" content="white-label food delivery app, custom food delivery solutions, AI based food delivery development solutions, On-Demand Food Delivery App Development Showcase, Food Delivery App Development Portfolio" />
-
-
-
                 {/* <!-- Canonical Tag --> */}
                 <link rel="canonical" href="https://www.comfygen.com/portfolio/food-delivery-app"></link>
 
@@ -283,13 +276,6 @@ export default function about(props) {
                 <meta property="og:url" content="https://www.comfygen.com/portfolio/food-delivery-app" />
                 <meta property="og:title" content="Food Delivery App Development Portfolio | Food 24Hr by Comfygen" />
                 <meta property="og:description" content="Food 24Hr is a fast, reliable food delivery app crafted by Comfygen. From AI-powered suggestions to secure payments, explore how our food delivery app development services drive business success." />
-
-
-
-
-
-
-
                 {/* Structured Data Scripts */}
                 <script
                     type="application/ld+json"
@@ -297,115 +283,73 @@ export default function about(props) {
                 />
 
             </Head>
+            <PortfolioHero Data={JSON_DATA.HeroSection} />
+            <Features Data={JSON_DATA.Features} />
+            <Features Data={JSON_DATA.Challenge} />
+            <Features Data={JSON_DATA.Solution} />
+            <Features Data={JSON_DATA.BusinessBenefits} />
+            {/* <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} /> */}
 
-            <div className="overflow-hidden ">
-                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
-                    <CompanyHeroSection
-                        heading="Food Delivery App – Food 24Hr"
-                        subhead=""
-                        ptag="Our client envisioned Food 24Hr, a seamless and efficient food delivery app that offers real-time order tracking, AI-powered recommendations, and multiple payment options. As the Best Food Delivery App Development Company in India, we created a scalable, high-performance platform that connects users with nearby restaurants, ensuring fast and reliable food delivery."
-                        imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-herosection-image.webp"
-                        buttonText="Talk To Consultant"
-                        openModal={openModal}
-                        closeModal={closeModal}
-                        talkToExpertModal={talkToExpertModal}
-                        buttonLink="/portfolio"
-                        imageHeight={423}
-                        imageWidth={640}
 
-                    />
-                </div>
-                <Features
-                    heading="Features"
-                    points={[
-                        "AI-driven restaurant and dish recommendations",
-                        "Real-time order tracking and delivery status updates",
-                        "Secure multiple payment options and wallet integration",
-                        "User-friendly interface with smooth navigation",
-                        "Push notifications for order updates and promotions",
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp"
-                />
-                <Features
-                    heading="Challenge"
-                    points={[
-                        "The client required the best custom Food Delivery App Development solution that ensures quick delivery, seamless restaurant onboarding, and secure transactions. Managing real-time demand, optimizing delivery logistics, and integrating diverse payment options were key challenges."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-challenges-image.webp"
-                    imagePosition="left"
-                />
-                <Features
-                    heading="Solution"
-                    points={[
-                        "As an on-demand Food Delivery App Development Company, we built a highly scalable app with AI-based order matching, real-time GPS tracking, and an automated dispatch system. Our best custom Food Delivery App Development services ensured an intuitive user experience, strong security, and seamless integration with multiple restaurants and payment gateways.",
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-solutions-image.webp"
-                />
-                <Features
-                    heading="Business Benefits"
-                    points={[
-                        "Our food delivery app development increased customer engagement and order frequency through personalized recommendations and real-time tracking. The scalable architecture supported business expansion, while integrated revenue models like commissions and subscription plans boosted profitability"
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/food-delivery-app-portfolio-business-benefits-image.webp"
-                    imagePosition="left"
-                />
-                <TechStack
-                    title="Our Technology Stack for delivering best Food Delivery App Development "
-                    description="You can hire Android developers from our team with the assurance of expertise in the modern technology stack to create Android apps."
-                    filterCategory={["crypto"]}
-                />
-                <section className='bg-[#fff] lg:py py-10'>
-                    <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                        <div className='space-y-2'>
-                            <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                                What Our Client Says
-                            </h2>
-                            <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                        </div>
 
-                        <div>
-                            <div className={styles.testimonial}>
-                                <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Rahul Sharma</h3>
-                                <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Mumbai, India</p>
-                            </div>
-                            <div className='space-y-2 mt-4'>
-                                <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                                </div>
-                                <div>
-                                    <p className='md:text-base text-sm text-black'>"Food 24Hr has completely transformed our food delivery business. Thanks to the expertise of the Best Food Delivery App Development Company in India, our app is fast, reliable, and loved by users. Their best custom Food Delivery App Development services ensured smooth operations and rapid growth"</p>
-                                </div>
-                            </div>
-                        </div>
 
+            <TechStack
+                title="Our Technology Stack for delivering best Food Delivery App Development "
+                description="You can hire Android developers from our team with the assurance of expertise in the modern technology stack to create Android apps."
+                filterCategory={["crypto"]}
+            />
+            <section className='bg-[#fff] lg:py py-10'>
+                <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
+                    <div className='space-y-2'>
+                        <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
+                            What Our Client Says
+                        </h2>
+                        <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
                     </div>
-                </section>
-            </div>
 
-             <BlogSection initialData={initialData} />
+                    <div>
+                        <div className={styles.testimonial}>
+                            <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Rahul Sharma</h3>
+                            <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Mumbai, India</p>
+                        </div>
+                        <div className='space-y-2 mt-4'>
+                            <div className=''>
+                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                            </div>
+                            <div>
+                                <p className='md:text-base text-sm text-black'>"Food 24Hr has completely transformed our food delivery business. Thanks to the expertise of the Best Food Delivery App Development Company in India, our app is fast, reliable, and loved by users. Their best custom Food Delivery App Development services ensured smooth operations and rapid growth"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <BlogSection initialData={initialData} />
         </div>
     )
 }
 export async function getStaticProps() {
-  try {
-    const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
-    );
+    try {
+        const res = await fetch(
+            `${process.env.URL}/api/v1/posts?per_page=3`
+        );
 
-    if (!res.ok) throw new Error("API failed");
+        if (!res.ok) throw new Error("API failed");
 
-    const data = await res.json();
+        const data = await res.json();
 
-    return {
-      props: { initialData: data },
-      revalidate: 86400, // 24 hours
-    };
-  } catch (error) {
-    console.error("getStaticProps error:", error);
+        return {
+            props: { initialData: data },
+            revalidate: 3600, // 24 hours
+        };
+    } catch (error) {
+        console.error("getStaticProps error:", error);
 
-    return {
-      props: { initialData: [] },
-      revalidate: 3600, // retry in 1 hour
-    };
-  }
+        return {
+            props: { initialData: [] },
+            revalidate: 3600, // retry in 1 hour
+        };
+    }
 }
