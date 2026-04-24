@@ -8,7 +8,7 @@
     "btnName": "Let's Discuss",
     "btnLink": "/contact-us",
     "altTag": "AI-Based Mobile App & Web Development Solustion",
-    "bgImage": "https://www.comfygen.com/comfygen-images/home/web development company home.webp"
+    "bgImage": "https://www.comfygen.com/comfygen-images/home/home-comfygen.webp"
   },
   "AboutSection": {
     "title": "About Company",
@@ -226,7 +226,7 @@
     "description": "Explore our collection of proven web and mobile app development projects built for startups, SMEs, and enterprises. From intuitive user experiences to scalable architectures, every solution demonstrates our focus on quality, creativity, and client success.",
     "portfolio": [
       {
-        "image": "https://www.comfygen.com/comfygen-images/comfygen/urban_ride_portfolio_30kb.webp",
+        "image": "https://www.comfygen.com/comfygen-images/home/urban_ride_portfolio.webp",
         "title": "Urban Ride-Hailing Startup",
         "description": "Challenge: A startup wanted to enter the competitive ride-hailing market with a unique offering. We developed an Uber-like taxi app clone with real-time tracking",
         "link": "/portfolio/ride-hailing-app"
@@ -244,7 +244,7 @@
         "link": "https://www.comfygen.com/portfolio/great-wallet"
       },
       {
-        "image": "https://www.comfygen.com/comfygen-images/comfygen/food_delivery_portfolio_30kb.webp",
+        "image": "https://www.comfygen.com/comfygen-images/home/food_delivery_portfolio.webp",
         "title": "Food Delivery App – Food 24Hr",
         "description": "Food 24Hr is a high-performance food delivery app developed for a client seeking a reliable and user-friendly solution. The app features real-time order tracking, AI-based food recommendations",
         "link": "/portfolio/food-delivery-app"
