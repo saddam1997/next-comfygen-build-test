@@ -1,10 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import dynamic from "next/dynamic";
 import MainLayout from "./MainLayout";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
 
 
 // "use client";
@@ -44,7 +42,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       {/* ✅ Main App */}
       <div className={poppins.className}>
         <MainLayout>
-
           <Component {...pageProps} />
         </MainLayout>
       </div>

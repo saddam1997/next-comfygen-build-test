@@ -19,12 +19,12 @@ const avatars = [
 
 export default function StatsBanner() {
   return (
-    <div className="hidden lg:block w-full max-w-2xl">
+    <div className=" w-full max-w-2xl">
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="flex flex-wrap gap-4">
 
         {/* LEFT */}
-        <div className="flex flex-col gap-4">
+        <div className="flex lg:flex-col flex-cols gap-4">
 
           <Link
             href="https://www.comfygen.com/about-us"
@@ -57,7 +57,8 @@ export default function StatsBanner() {
 
         </div>
 
-        {/* MIDDLE */}
+       <div className="flex gap-4">
+          {/* MIDDLE */}
         <Link
           href="https://www.comfygen.com/client-testimonials"
           className="bg-indigo-400/60 rounded-xl px-4 py-4 flex flex-col justify-center gap-3"
@@ -72,8 +73,9 @@ export default function StatsBanner() {
                 <Image
                   src={src}
                   alt={`Client ${i + 1}`}
-                  fill
-                  className="object-cover"
+                  width={30}
+                  height={10}
+                  className="object-center"
                   sizes="40px"
                 />
               </div>
@@ -102,8 +104,9 @@ export default function StatsBanner() {
                 <Image
                   src={flag}
                   alt="flag"
-                  fill
-                  className="object-cover"
+                  width={30}
+                  height={10}
+                  className="object-center"
                   sizes="32px"
                 />
               </div>
@@ -111,6 +114,7 @@ export default function StatsBanner() {
           </div>
 
         </div>
+</div>
 
       </div>
     </div>

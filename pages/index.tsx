@@ -11,7 +11,7 @@ const ServicesComponet = dynamic(() => import("../components/ServicesSection/Ser
   { ssr: true }
 );
 
-const PortfolioSection = dynamic( () => import("../components/PortfolioSection"),
+const PortfolioSection = dynamic(() => import("../components/PortfolioSection"),
   { ssr: true }
 );
 import CallToActionSection from "../components/CallToActionSection"

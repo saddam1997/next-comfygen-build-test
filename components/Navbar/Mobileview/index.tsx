@@ -27,8 +27,8 @@ export default function MobileNav() {
             <Image
               src="/svg/Logo1.svg"
               alt="Logo"
-              width={160}
-              height={50}
+              width={144}
+              height={48}
               priority
               className="object-contain h-12 w-36"
             />
