@@ -55,6 +55,7 @@ export default function DesktopNav() {
                 height={48}
                 priority
                 sizes="180px"
+                className="h-auto w-auto"
                 style={{ objectFit: "contain" }}
               />
             </div>
