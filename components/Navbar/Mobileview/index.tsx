@@ -20,8 +20,8 @@ export default function MobileNav() {
   return (
     <>
       {/* HEADER (NO FIXED HERE — handled in layout) */}
-      <div className="w-full  h-[70px] flex items-center">
-        <nav className="flex items-center justify-between h-[70px] w-11/12 mx-auto">
+      <div className="w-full h-[60px] flex items-center">
+        <nav className="flex items-center justify-between h-[60px] w-11/12 mx-auto">
 
           <Link href="/" className="flex items-center h-full">
             <Image

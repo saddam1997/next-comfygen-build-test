@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import HeroSectionNewCls from "../components/HeroSectionNewCls"
+import HeroSectionforHome from "../components/HeroSectionforHome"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
 import AboutComponent from "../components/Abouts/AboutComponent"
@@ -140,7 +140,7 @@ export default function Home(props: any) {
       </Head>
       {/*  {/* <Navbar /> */}
 
-      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
