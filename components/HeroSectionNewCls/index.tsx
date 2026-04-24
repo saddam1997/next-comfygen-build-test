@@ -2,11 +2,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import StatsBanner from "./StatsBanner";
 
-
-const HeroClient = dynamic(() => import("./HeroClient"), {
-  ssr: true,
-  
-});
+import HeroClient from "./HeroClient";
 
 export default function HeroSection({ Data }: any) {
   return (
