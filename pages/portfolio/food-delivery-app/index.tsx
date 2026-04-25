@@ -1,199 +1,29 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
 import JSON_DATA from "./food-delivery.json"
 import dynamic from 'next/dynamic';
 import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
 import Features from "../../../components/PortfolioPage/Features"
-
-
-
-const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-    { ssr: true }
-);
-
 
 const BlogSection = dynamic(
     () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
     { ssr: true }
 );
 
+const TechStacks = dynamic(() => import('../../../components/TechStacks'),
+    { ssr: true }
+);
 
-import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
-
+const ReviewCard = dynamic(() => import("../../../components/ReviewCard"),
+    { ssr: true }
+);
 
 export default function about(props: any) {
     let { initialData } = props;
 
-    const jsonLdData = [
-        {
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            streetAddress: "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-            addressLocality: "Jaipur, Rajasthan",
-            addressRegion: "India",
-            postalCode: "302006",
-            telephone: "+91-958-786-7258",
-        },
-
-        {
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            streetAddress: "40 Tuxedo Ct, Toronto, ON",
-            addressLocality: "Toronto",
-            addressRegion: "Canada",
-            postalCode: "M1G3S7",
-            telephone: "+1 579-977-4475",
-        },
-
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Food 24Hr – Advanced Food Delivery App Portfolio | Comfygen",
-            "provider": {
-                "@type": "Organization",
-                "name": "Comfygen Technologies",
-                "url": "https://www.comfygen.com/"
-            },
-            "description": "Comfygen developed Food 24Hr with advanced features like AI recommendations, real-time tracking, and wallet integration. Explore our portfolio of best food delivery app development solutions.",
-            "url": "https://www.comfygen.com/portfolio/food-delivery-app",
-            "mainEntityOfPage": "https://www.comfygen.com/portfolio/food-delivery-app",
-            "areaServed": "Global",
-            "serviceType": [
-                "white-label food delivery app",
-                "custom food delivery solutions",
-                "AI based food delivery development solutions",
-                "On-Demand Food Delivery App Development Showcase",
-                "Food Delivery App Development Portfolio"
-
-            ],
-
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-
-            ]
-        }
-        ,
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Comfygen Technologies",
-            "image": "https://www.comfygen.com/svg/Logo1.svg",
-            "@id": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "telephone": "+91-958-786-7258",
-            "priceRange": "$",
-            "address": [{
-                "@type": "PostalAddress",
-                "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-                "addressLocality": "Jaipur",
-                "postalCode": "302006",
-                "addressCountry": "IN"
-            }, {
-                "@type": "PostalAddress",
-                "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-                "addressLocality": "Toronto",
-                "postalCode": "M1G3S7",
-                "addressCountry": "Canada"
-            }
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-                "https://www.comfygen.com/"
-            ]
-        }
-        ,
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "logo": "https://www.comfygen.com/svg/Logo1.svg",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "sales",
-                "contactOption": "WhatsApp",
-                "telephone": "+91 9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": ["IN", "US", "CA", "GB"],
-
-                "availableLanguage": "en, in"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-            ]
-        }
-        ,
-        {
-            "@context": "http://www.schema.org",
-            "@type": "Product",
-            "brand": "Comfygen Technologies",
-            "Name": "Portfolio: Food 24Hr | Best Food Delivery App Development Company",
-            "image": "https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp",
-            "description": "Food 24Hr is a powerful food delivery app built by Comfygen. With user-friendly design, secure transactions, and scalable architecture, we showcase our expertise in food delivery app development.",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "600"
-            }
-        }
-        ,
-        {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.comfygen.com"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Food Delivery App Development",
-                "item": "https://www.comfygen.com/food-delivery-app-development"
-            }, {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Food 24Hr Case Study",
-                "item": "https://www.comfygen.com/portfolio/food-delivery-app"
-            }]
-        }
-
-
-
-
-
-
-
-
-    ];
     return (
         <div className='overflow-hidden'>
             <Head>
-
+                
                 <title>Food 24Hr Portfolio | Best Food Delivery App Development Company
                 </title>
 
@@ -279,7 +109,7 @@ export default function about(props: any) {
                 {/* Structured Data Scripts */}
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
                 />
 
             </Head>
@@ -288,44 +118,8 @@ export default function about(props: any) {
             <Features Data={JSON_DATA.Challenge} />
             <Features Data={JSON_DATA.Solution} />
             <Features Data={JSON_DATA.BusinessBenefits} />
-            {/* <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} /> */}
-
-
-
-
-            <TechStack
-                title="Our Technology Stack for delivering best Food Delivery App Development "
-                description="You can hire Android developers from our team with the assurance of expertise in the modern technology stack to create Android apps."
-                filterCategory={["crypto"]}
-            />
-            <section className='bg-[#fff] lg:py py-10'>
-                <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                    <div className='space-y-2'>
-                        <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                            What Our Client Says
-                        </h2>
-                        <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                    </div>
-
-                    <div>
-                        <div className={styles.testimonial}>
-                            <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Rahul Sharma</h3>
-                            <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Mumbai, India</p>
-                        </div>
-                        <div className='space-y-2 mt-4'>
-                            <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                            </div>
-                            <div>
-                                <p className='md:text-base text-sm text-black'>"Food 24Hr has completely transformed our food delivery business. Thanks to the expertise of the Best Food Delivery App Development Company in India, our app is fast, reliable, and loved by users. Their best custom Food Delivery App Development services ensured smooth operations and rapid growth"</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-
+            <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+            <ReviewCard testimonials={JSON_DATA.ReviewData} />
             <BlogSection initialData={initialData} />
         </div>
     )
