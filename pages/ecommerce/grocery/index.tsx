@@ -202,8 +202,7 @@ export default function ClinicalApp(props: any) {
         <ProcesSection ProcessData={JSON_DATA.ProcessData} />
         <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
         <WhyChooseSection pageData={JSON_DATA.pageData} />
-        <Trending
-          trendingData={JSON_DATA.trendingData}
+        <Trending trendingData={JSON_DATA.trendingData}
           heading="Top-Rated App Development Company Recognized by Global Platforms"
         />
         <DeliverySection hideUrl={"grocery-app-development"} />

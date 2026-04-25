@@ -234,9 +234,9 @@
     "infData": [
       {
         "id": 1,
-        "heading": "User Panel",
-        "description1": "User Panel – Seamless & Secure Financial Experience",
-        "description2": "The user panel is designed to deliver a smooth, intuitive, and secure financial experience. It empowers users to manage their finances effortlessly, perform transactions instantly, and access real-time insights—all from a single, user-friendly interface.",
+        "heading": "User Panel – Seamless & Secure Financial Experience",
+  
+        "description1": "The user panel is designed to deliver a smooth, intuitive, and secure financial experience. It empowers users to manage their finances effortlessly, perform transactions instantly, and access real-time insights—all from a single, user-friendly interface.",
         "description3": "With a focus on convenience and security, the panel ensures users stay in control of their financial activities anytime, anywhere.",
         "description4": "",
         "points": [
@@ -254,9 +254,8 @@
       },
       {
         "id": 2,
-        "heading": "Agent Panel",
-        "description1": "Agent Panel – Efficient Operations & Service Management",
-        "description2": "The agent panel is built to streamline operations and empower agents with the tools they need to deliver fast, reliable financial services. It enables agents to manage customer requests, process transactions, and track activities efficiently—all through a secure and easy-to-use interface.",
+        "heading": "Agent Panel – Efficient Operations & Service Management",
+        "description1": "The agent panel is built to streamline operations and empower agents with the tools they need to deliver fast, reliable financial services. It enables agents to manage customer requests, process transactions, and track activities efficiently—all through a secure and easy-to-use interface.",
         "description3": "Designed for productivity and accuracy, the panel helps improve service quality and operational efficiency.",
         "description4": "",
         "points": [
@@ -274,9 +273,8 @@
       },
       {
         "id": 3,
-        "heading": "Admin Panel",
-        "description1": "Admin Panel – Smart Control for Financial Operations",
-        "description2": "Our powerful admin panel is designed to give complete control over your fintech ecosystem. From managing users to monitoring transactions in real-time, it ensures smooth operations, enhanced security, and data-driven decision-making.",
+        "heading": "Admin Panel – Smart Control for Financial Operations",
+        "description1": "Our powerful admin panel is designed to give complete control over your fintech ecosystem. From managing users to monitoring transactions in real-time, it ensures smooth operations, enhanced security, and data-driven decision-making.",
         "description3": "Built with advanced technologies, the panel helps businesses streamline workflows, reduce risks, and maintain regulatory compliance effortlessly.",
         "description4": "",
         "points": [
@@ -550,15 +548,15 @@
       "Frontend",
       "Backend",
       "Database",
-      "Tracking & Maps",
+
       "Cloud/DevOps",
       "Payments",
       "Security",
       "Data & Analytics"
     ],
     "TechstackData": {
-      "heading": "Tech Stack We Use",
-      "description": "We choose technologies based on performance, scalability, and long-term maintainability — not trends. Here's what powers the food delivery apps we build:",
+      "heading": "Tech Stack Used for Finance App Development",
+      "description": "Building a finance application requires a highly secure, scalable, and compliance-driven technology stack. We leverage modern technologies to develop robust fintech solutions such as digital wallets, banking apps, investment platforms, and payment systems with seamless performance and top-tier security.",
       "TechItems": {
         "Frontend": [
           {

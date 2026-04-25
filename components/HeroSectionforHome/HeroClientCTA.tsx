@@ -62,16 +62,16 @@ export default function HeroClientCTA() {
                 <Link
                     href="/contact-us"
                     aria-label="Talk to an expert"
-                    className={`bg-[#fff] w-fit  flex items-center text-sm sm:text-base text-[18px] font-semibold py-1 px-3 rounded-full`}
+                    className={`bg-[#fff] w-fit flex items-center gap-8 text-sm sm:text-base text-[18px] font-semibold py-2 px-3 rounded-full`}
                 >
-                    Talk to an expert!
+                   <span className="text-lg"> Talk to an expert!</span>
 
-                    <span className="bg-transparent  bg-[#5556d1] rounded-full">
+                    <span className="bg-transparent  bg-[#5556d1] rounded-full ">
                         <Image src="/unnamed.webp"
                             alt="heart"
                             width={20}
                             height={20}
-                            className="h-[35px] w-[35px] rounded-full"
+                            className="h-[35px] w-[35px] rounded-full ml-[4px]"
                         />
                     </span>
                 </Link>
