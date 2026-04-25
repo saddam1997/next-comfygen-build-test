@@ -24,7 +24,7 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
 import Trending from "../../components/Trending";
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {  ssr: true }
+  { ssr: true }
 )
 import InformationSection from "../../components/InformationSection"
 import ReviewCard from "../../components/ReviewCard";
@@ -82,7 +82,7 @@ export default function Ecommerce(props: any) {
     <>
       <Head>
         <title>
-        Medicine Delivery App Development Company in India | Comfygen
+          Medicine Delivery App Development Company in India | Comfygen
         </title>
         <meta
           name="description"
@@ -213,17 +213,17 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-       {/* <Navbar /> */}
+      {/* <Navbar /> */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-       <Trending trendingData={JSON_DATA.trendingData}
+      <Trending trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
-       <AppClone SliderDATA={JSON_DATA.Industries} />
-     
+      <AppClone SliderDATA={JSON_DATA.Industries} />
+
       <CostTable CostData={JSON_DATA.Cost} />
-       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <BusinessSolustion
         imageSrc="https://www.comfygen.com/comfygen-images/medicine-delivery-app-development/aI-powered-medicine-delivery-app-development.webp"
         BusinessSolustion={JSON_DATA.BusinessSolustion}
@@ -234,7 +234,7 @@ export default function Ecommerce(props: any) {
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
 
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-     
+
       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />

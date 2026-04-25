@@ -29,7 +29,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-white overflow-hidden">
 
       {/* NAVBAR */}
       <header className="h-[52px] w-full overflow-hidden">
