@@ -21,7 +21,7 @@ export default function StatsBanner() {
   return (
     <div className=" w-full max-w-2xl">
 
-      <div className="flex flex-wrap gap-4">
+      <div className="hidden lg:flex flex-wrap gap-4  ">
 
         {/* LEFT */}
         <div className="flex lg:flex-col flex-cols gap-4">
