@@ -1,31 +1,25 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
-
-
+import JSON_DATA from "./love.json"
 import dynamic from 'next/dynamic';
 
-import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
-
-const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-  { ssr: true }
-);
-const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { ssr: true }
-);
+import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
+import Features from "../../../components/PortfolioPage/Features"
 
 const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
+    () => import("../../../components/BlogSection"),
+    { ssr: true }
 );
 
-import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+const TechStacks = dynamic(() => import('../../../components/TechStacks'),
+    { ssr: true }
+);
 
-export default function about(props:any) {
-    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-    const openModal = () => setTalkToExpertModal(true);
-    const closeModal = () => setTalkToExpertModal(false);
+const ReviewCard = dynamic(() => import("../../../components/ReviewCard"),
+    { ssr: true }
+);
 
+
+export default function about(props: any) {
     let { initialData } = props;
     return (
         <div className='overflow-hidden'>
@@ -48,134 +42,42 @@ export default function about(props:any) {
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
 
-            <div className="overflow-hidden ">
-                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)]">
-                    <CompanyHeroSection
-                        heading="Love Horoscope App"
-                        subhead=""
-                        ptag="Our client wanted a custom love horoscope app development solution that offers daily, weekly, and monthly love predictions based on zodiac compatibility. The app was designed to provide AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features to enhance the love and relationship experience for users."
-                        ptag1="As a top astrology app development company, we created a feature-rich, intuitive, and AI-powered horoscope app that offers real-time predictions, personalized matchmaking, and live consultations with expert astrologers."
-                        imageSrc="https://www.comfygen.com/image/hero-section-love-horoscope-app.webp"
-                        buttonText="Talk To Consultant"
-                        openModal={openModal}
-                        closeModal={closeModal}
-                        talkToExpertModal={talkToExpertModal}
-                        buttonLink="/portfolio"
-                        imageHeight={423}
-                        imageWidth={640}
-                    />
-                </div>
-
-                <Features
-                    heading="Features"
-                    points={[
-                        "AI-Driven Love Horoscope Predictions – Daily, weekly, and monthly astrological insights tailored for relationships.",
-                        "Zodiac Compatibility Matchmaking – Discover potential partners based on astrology-based compatibility.",
-                        "Live Astrologer Consultations – Instant chat and video call sessions with expert astrologers.",
-                        "Personalized Astrology Reports – Detailed birth chart (kundli) and relationship guidance.",
-                        "Push Notifications & Love Tips – Receive daily love quotes, relationship advice, and lucky predictions.",
-                        "Astrology Blog & Articles – Access exclusive astrology content from professional astrologers.",
-                        "Numerology & Tarot Readings – Get additional relationship insights beyond horoscope matching.",
-                        "Dark Mode & UI Customization – Enhance user experience with customizable themes.",
-                        "Multi-Language Support – Available in multiple languages to cater to a global audience.",
-                        "Secure Payments & Subscription Models – Offer premium horoscope reports and astrology consultations."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/features-love-horoscope-app.webp"
-                />
-
-                <Features
-                    heading="Challenge"
-                    points={[
-                        "Accurate Horoscope Predictions – Implementing AI and astrological algorithms for precise love compatibility reports.",
-                        "Live Astrologer Consultations – Enabling real-time chat and video calls with certified astrologers.",
-                        "Interactive Matchmaking Features – Helping users find partners based on astrological compatibility.",
-                        "Multi-Language Support – Expanding reach with diverse linguistic options.",
-                        "Scalability for High Traffic – Handling thousands of daily horoscope readings and consultations.",
-                        "User Engagement & Retention – Providing a personalized experience to keep users engaged."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/challenges-love-horoscope-app.webp"
-                    imagePosition='left'
-                />
-                <Features
-                    heading="Solution:"
-                    points={[
-                        "As an expert love horoscope app development company, we built a scalable and engaging astrology platform using AI, NLP, and real-time communication features.",
-                        "AI-powered astrology Engine – We integrated machine learning models for predictive astrology readings.",
-                        "Live Chat & Video Call APIs – Enabled instant astrologer consultations via secure video and chat integration.",
-                        "Personalized Content Algorithm – Delivered unique love horoscope content based on user profiles.",
-                        "Cloud-Based Infrastructure – Ensured seamless performance and high availability during peak traffic.",
-                        "Astrological Data Accuracy – Implemented Vedic, Western, and Chinese astrology models for diverse user preferences."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/solution-love-horoscope-app.webp"
-                />
-                <Features
-                    heading="Business Benefits"
-                    points={[
-                        "30% Increase in User Engagement – AI-driven insights improved user retention and satisfaction.",
-                        "Higher Revenue with Premium Subscriptions – Monetization through astrology reports and consultations.",
-                        "Scalable & Feature-Rich Solution – Future-proof technology stack for additional astrology features.",
-                        "Wider Market Reach – Multi-language support expanded the user base globally.",
-                        "Improved Customer Trust & Satisfaction – Secure and accurate horoscope predictions boosted credibility."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/business-benefits-love-horoscope-app.webp"
-                    imagePosition='left'
-                />
-                <TechStack
-                    title="Technology Stack"
-                    description=""
-                    filterCategory={["crypto"]}
-                />
-                <section className='bg-[#fff] lg:py py-10'>
-                    <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                        <div className='space-y-2'>
-                            <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                                What Our Client Says
-                            </h2>
-                            <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                        </div>
-
-                        <div>
-                        <div className={styles.testimonial}>
-                            <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Shyam Jyotish</h3>
-                            <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>India</p>
-                        </div>
-                        <div className='space-y-2 mt-4'>
-                            <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                            </div>
-                            <div>
-                                <p className='md:text-base text-sm text-black'>"Comfygen built a stunning love horoscope app with real-time astrology insights and matchmaking features. The AI-powered predictions and astrologer consultations have helped our users confidently navigate their love life. Highly recommended for astrology app development!"</p>
-                            </div>
-                        </div>
-                        </div>
-                    
-                    </div>
-                </section>
-            </div>
-             <BlogSection initialData={initialData} />
+            <PortfolioHero Data={JSON_DATA.HeroSection} />
+            <Features Data={JSON_DATA.Features} />
+            <Features Data={JSON_DATA.Challenge} />
+            <Features Data={JSON_DATA.Solution} />
+            <Features Data={JSON_DATA.BusinessBenefits} />
+            <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+            <ReviewCard testimonials={JSON_DATA.ReviewData} />
+            {/* <TechStack
+                title="Technology Stack"
+                description=""
+                filterCategory={["crypto"]}
+            /> */}
+            <BlogSection initialData={initialData} />
         </div>
     )
 }
 export async function getStaticProps() {
-  try {
-    const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
-    );
+    try {
+        const res = await fetch(
+            `${process.env.URL}/api/v1/posts?per_page=3`
+        );
 
-    if (!res.ok) throw new Error("API failed");
+        if (!res.ok) throw new Error("API failed");
 
-    const data = await res.json();
+        const data = await res.json();
 
-    return {
-      props: { initialData: data },
-      revalidate: 3600, // 24 hours
-    };
-  } catch (error) {
-    console.error("getStaticProps error:", error);
+        return {
+            props: { initialData: data },
+            revalidate: 3600, // 24 hours
+        };
+    } catch (error) {
+        console.error("getStaticProps error:", error);
 
-    return {
-      props: { initialData: [] },
-      revalidate: 3600, // retry in 1 hour
-    };
-  }
+        return {
+            props: { initialData: [] },
+            revalidate: 3600, // retry in 1 hour
+        };
+    }
 }

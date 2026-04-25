@@ -1,23 +1,423 @@
 {
-    "Herosection": {
+    "HeroSection": {
         "heading": "Love Horoscope App",
         "subhead": "",
-        "isHome": false,
         "ptag": "Our client wanted a custom love horoscope app development solution that offers daily, weekly, and monthly love predictions based on zodiac compatibility. The app was designed to provide AI-driven astrology insights, real-time astrologer consultations, and interactive matchmaking features to enhance the love and relationship experience for users.",
-        "ptag2": "",
-        "listItems": [
-            "Custom Astrology App Development",
-            "AI/ML & Blockchain Integration",
-            "Scalable & Secure App Architecture",
-            "Hire Experienced Astrology App Developers",
-            "24/7 Support & Maintenance"
+        "ptag1": "As a top astrology app development company, we created a feature-rich, intuitive, and AI-powered horoscope app that offers real-time predictions, personalized matchmaking, and live consultations with expert astrologers.",
+        "imageSrc": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp",
+        "buttonText": "Talk To Consultant",
+        "buttonLink": "/portfolio",
+        "imageHeight": 423,
+        "imageWidth": 640
+    },
+    "Features": {
+        "heading": "Features",
+        "points": [
+            "AI-Driven Love Horoscope Predictions – Daily, weekly, and monthly astrological insights tailored for relationships.",
+            "Zodiac Compatibility Matchmaking – Discover potential partners based on astrology-based compatibility.",
+            "Live Astrologer Consultations – Instant chat and video call sessions with expert astrologers.",
+            "Personalized Astrology Reports – Detailed birth chart (kundli) and relationship guidance.",
+            "Push Notifications & Love Tips – Receive daily love quotes, relationship advice, and lucky predictions.",
+            "Astrology Blog & Articles – Access exclusive astrology content from professional astrologers.",
+            "Numerology & Tarot Readings – Get additional relationship insights beyond horoscope matching.",
+            "Dark Mode & UI Customization – Enhance user experience with customizable themes.",
+            "Multi-Language Support – Available in multiple languages to cater to a global audience.",
+            "Secure Payments & Subscription Models – Offer premium horoscope reports and astrology consultations."
         ],
-        "btnName": "Talk With Expert",
-        "btnLink": "/portfolio",
-        "openModal": "openModal",
-        "talkToExpertModal": "talkToExpertModal",
-        "closeModal": "closeModal",
-        "altTag": "Astrology App Development Company in India",
-        "bgImage": "https://www.comfygen.com/image/hero-section-love-horoscope-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/features-love-horoscope-app.webp"
+    },
+    "Challenge": {
+        "heading": "Challenge",
+        "points": [
+            "Accurate Horoscope Predictions – Implementing AI and astrological algorithms for precise love compatibility reports.",
+            "Live Astrologer Consultations – Enabling real-time chat and video calls with certified astrologers.",
+            "Interactive Matchmaking Features – Helping users find partners based on astrological compatibility.",
+            "Multi-Language Support – Expanding reach with diverse linguistic options.",
+            "Scalability for High Traffic – Handling thousands of daily horoscope readings and consultations.",
+            "User Engagement & Retention – Providing a personalized experience to keep users engaged."
+        ],
+        "imageSrc": "https://www.comfygen.com/image/challenges-love-horoscope-app.webp",
+        "imagePosition": "right"
+    },
+    "Solution": {
+        "heading": "Solution:",
+        "points": [
+            "As an expert love horoscope app development company, we built a scalable and engaging astrology platform using AI, NLP, and real-time communication features.",
+            "AI-powered astrology Engine – We integrated machine learning models for predictive astrology readings.",
+            "Live Chat & Video Call APIs – Enabled instant astrologer consultations via secure video and chat integration.",
+            "Personalized Content Algorithm – Delivered unique love horoscope content based on user profiles.",
+            "Cloud-Based Infrastructure – Ensured seamless performance and high availability during peak traffic.",
+            "Astrological Data Accuracy – Implemented Vedic, Western, and Chinese astrology models for diverse user preferences."
+        ],
+        "imageSrc": "https://www.comfygen.com/image/solution-love-horoscope-app.webp"
+    },
+    "BusinessBenefits": {
+        "heading": "Business Benefits",
+        "points": [
+            "30% Increase in User Engagement – AI-driven insights improved user retention and satisfaction.",
+            "Higher Revenue with Premium Subscriptions – Monetization through astrology reports and consultations.",
+            "Scalable & Feature-Rich Solution – Future-proof technology stack for additional astrology features.",
+            "Wider Market Reach – Multi-language support expanded the user base globally.",
+            "Improved Customer Trust & Satisfaction – Secure and accurate horoscope predictions boosted credibility."
+        ],
+        "imageSrc": "https://www.comfygen.com/image/business-benefits-love-horoscope-app.webp",
+        "imagePosition": "right"
+    },
+     "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Advanced Technologies"
+  ],
+  "TechstackData": {
+    "heading": "Technology Stack",
+    "description": "",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vue js.webp",
+          "alt": "Vue.js",
+          "name": "Vue.js",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "13"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
+          "alt": " Tailwind CSS",
+          "name": " Tailwind CSS",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Net.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/express-js-icon.svg",
+          "alt": "Express.js",
+          "name": "Express.js",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Firebase Realtime Database.webp",
+          "alt": "Firebase ",
+          "name": "Firebase ",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis ",
+          "name": "Redis ",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
     }
+  },
+    "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  }
 }

@@ -1,6 +1,4 @@
 import Navbar from "../components/Navbar";
-
-
 import dynamic from "next/dynamic";
 const LazyClientTools = dynamic(
   () => import("./LazyClientTools"),
@@ -58,8 +56,6 @@ export default function MainLayout({
         <footer className="w-full min-h-[300px]">
           <Footer />
         </footer>
-
-
       </main>
 
       {/* CLIENT TOOLS */}
