@@ -5,7 +5,7 @@ import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
 import Features from "../../../components/PortfolioPage/Features"
 
 const BlogSection = dynamic(
-    () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+    () => import("../../../components/BlogSection"),
     { ssr: true }
 );
 

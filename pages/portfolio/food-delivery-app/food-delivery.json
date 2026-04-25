@@ -1,59 +1,59 @@
 {
-    "HeroSection": {
-        "heading": "Food Delivery App – Food 24Hr",
-        "subhead": "",
-        "ptag": "Our client envisioned Food 24Hr, a seamless and efficient food delivery app that offers real-time order tracking, AI-powered recommendations, and multiple payment options. As the Best Food Delivery App Development Company in India, we created a scalable, high-performance platform that connects users with nearby restaurants, ensuring fast and reliable food delivery.",
-        "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-herosection-image.webp",
-        "buttonText": "Talk To Consultant",
-        "buttonLink": ""
-    },
-    "Features": {
-        "heading": "Features",
-        "points": [
-            "AI-driven restaurant and dish recommendations",
-            "Real-time order tracking and delivery status updates",
-            "Secure multiple payment options and wallet integration",
-            "User-friendly interface with smooth navigation",
-            "Push notifications for order updates and promotions"
-        ],
-        "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp"
-    },
-    "Challenge": {
-        "heading": "Challenge",
-        "points": [
-            "The client required the best custom Food Delivery App Development solution that ensures quick delivery, seamless restaurant onboarding, and secure transactions.",
-            "Managing real-time demand efficiently across multiple users and locations.",
-            "Optimizing delivery logistics for faster and cost-effective operations.",
-            "Integrating diverse and secure payment options for a smooth checkout experience."
-        ],
-        "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-challenges-image.webp",
-        "imagePosition": "right"
-    },
-    "Solution": {
-        "heading": "Solution",
-        "points": [
-            "As an on-demand Food Delivery App Development Company, we built a highly scalable app with AI-based order matching, real-time GPS tracking, and an automated dispatch system.",
-            "Developed a system to intelligently match orders with nearby delivery partners using AI algorithms.",
-            "Integrated real-time GPS tracking for accurate delivery status and transparency.",
-            "Ensured seamless integration with multiple restaurants and secure payment gateways.",
-            "Delivered an intuitive, user-friendly interface with strong data security measures."
-        ],
-        "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-solutions-image.webp",
-        "imagePosition": "left"
-    },
-    "BusinessBenefits": {
-        "heading": "Business Benefits",
-        "points": [
-            "Our food delivery app development increased customer engagement and order frequency through personalized recommendations and real-time tracking.",
-            "Enhanced user retention by delivering personalized experiences and seamless ordering journeys.",
-            "Enabled scalable architecture to support business growth and expansion into new markets.",
-            "Integrated multiple revenue models such as commissions and subscription plans to boost profitability.",
-            "Improved operational efficiency with streamlined order and delivery management systems."
-        ],
-        "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-business-benefits-image.webp",
-        "imagePosition": "right"
-    },
-      "Tabs": [
+  "HeroSection": {
+    "heading": "Food Delivery App – Food 24Hr",
+    "subhead": "",
+    "ptag": "Our client envisioned Food 24Hr, a seamless and efficient food delivery app that offers real-time order tracking, AI-powered recommendations, and multiple payment options. As the Best Food Delivery App Development Company in India, we created a scalable, high-performance platform that connects users with nearby restaurants, ensuring fast and reliable food delivery.",
+    "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-herosection-image.webp",
+    "buttonText": "Talk To Consultant",
+    "buttonLink": ""
+  },
+  "Features": {
+    "heading": "Features",
+    "points": [
+      "AI-driven restaurant and dish recommendations",
+      "Real-time order tracking and delivery status updates",
+      "Secure multiple payment options and wallet integration",
+      "User-friendly interface with smooth navigation",
+      "Push notifications for order updates and promotions"
+    ],
+    "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp"
+  },
+  "Challenge": {
+    "heading": "Challenge",
+    "points": [
+      "The client required the best custom Food Delivery App Development solution that ensures quick delivery, seamless restaurant onboarding, and secure transactions.",
+      "Managing real-time demand efficiently across multiple users and locations.",
+      "Optimizing delivery logistics for faster and cost-effective operations.",
+      "Integrating diverse and secure payment options for a smooth checkout experience."
+    ],
+    "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-challenges-image.webp",
+    "imagePosition": "right"
+  },
+  "Solution": {
+    "heading": "Solution",
+    "points": [
+      "As an on-demand Food Delivery App Development Company, we built a highly scalable app with AI-based order matching, real-time GPS tracking, and an automated dispatch system.",
+      "Developed a system to intelligently match orders with nearby delivery partners using AI algorithms.",
+      "Integrated real-time GPS tracking for accurate delivery status and transparency.",
+      "Ensured seamless integration with multiple restaurants and secure payment gateways.",
+      "Delivered an intuitive, user-friendly interface with strong data security measures."
+    ],
+    "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-solutions-image.webp",
+    "imagePosition": "left"
+  },
+  "BusinessBenefits": {
+    "heading": "Business Benefits",
+    "points": [
+      "Our food delivery app development increased customer engagement and order frequency through personalized recommendations and real-time tracking.",
+      "Enhanced user retention by delivering personalized experiences and seamless ordering journeys.",
+      "Enabled scalable architecture to support business growth and expansion into new markets.",
+      "Integrated multiple revenue models such as commissions and subscription plans to boost profitability.",
+      "Improved operational efficiency with streamlined order and delivery management systems."
+    ],
+    "imageSrc": "https://www.comfygen.com/image/food-delivery-app-portfolio-business-benefits-image.webp",
+    "imagePosition": "right"
+  },
+  "Tabs": [
     "Frontend",
     "Backend",
     "Database",
@@ -121,7 +121,7 @@
           "name": "CSS3",
           "num": "13"
         },
-         {
+        {
           "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
           "alt": " Tailwind CSS",
           "name": " Tailwind CSS",
@@ -165,13 +165,13 @@
           "name": "PHP (Laravel)",
           "num": "6"
         },
-          {
+        {
           "img": "https://www.comfygen.com/comfygen-images/icons/Net.webp",
           "alt": "NET Core",
           "name": "NET Core",
           "num": "6"
         },
-         {
+        {
           "img": "https://www.comfygen.com/media/svg/tech/express-js-icon.svg",
           "alt": "Express.js",
           "name": "Express.js",
@@ -179,14 +179,13 @@
         }
       ],
       "Database": [
-    
-         {
+        {
           "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
           "alt": "MongoDB",
           "name": "MongoDB",
           "num": "2"
         },
-            {
+        {
           "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
           "alt": "PostgreSQL",
           "name": "PostgreSQL",
@@ -204,14 +203,13 @@
           "name": "Firebase ",
           "num": "3"
         },
-         {
+        {
           "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
           "alt": "Redis ",
           "name": "Redis ",
           "num": "3"
         }
       ],
-   
       "Cloud/DevOps": [
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
@@ -257,7 +255,6 @@
           "name": "Stripe",
           "num": "2"
         },
-       
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
           "alt": "PayPal",
@@ -302,9 +299,6 @@
           "name": "JWT Authentication",
           "num": "3"
         }
-        
-       
-        
       ],
       "Advanced Technologies": [
         {
@@ -313,7 +307,6 @@
           "name": "AI & Machine Learning",
           "num": "1"
         },
-      
         {
           "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
           "alt": "Blockchain Technology",
@@ -321,7 +314,6 @@
           "num": "3"
         }
       ]
-
     }
   },
   "ReviewData": {
@@ -418,141 +410,144 @@
       }
     ]
   },
- "jsonLdData": [
+  "jsonLdData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Food 24Hr – Advanced Food Delivery App Portfolio | Comfygen",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen developed Food 24Hr with advanced features like AI recommendations, real-time tracking, and wallet integration. Explore our portfolio of best food delivery app development solutions.",
+      "url": "https://www.comfygen.com/portfolio/food-delivery-app",
+      "mainEntityOfPage": "https://www.comfygen.com/portfolio/food-delivery-app",
+      "areaServed": "Global",
+      "serviceType": [
+        "white-label food delivery app",
+        "custom food delivery solutions",
+        "AI based food delivery development solutions",
+        "On-Demand Food Delivery App Development Showcase",
+        "Food Delivery App Development Portfolio"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Comfygen Technologies",
+      "image": "https://www.comfygen.com/svg/Logo1.svg",
+      "@id": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "telephone": "+91-958-786-7258",
+      "priceRange": "$",
+      "address": [
         {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Food 24Hr – Advanced Food Delivery App Portfolio | Comfygen",
-            "provider": {
-                "@type": "Organization",
-                "name": "Comfygen Technologies",
-                "url": "https://www.comfygen.com/"
-            },
-            "description": "Comfygen developed Food 24Hr with advanced features like AI recommendations, real-time tracking, and wallet integration. Explore our portfolio of best food delivery app development solutions.",
-            "url": "https://www.comfygen.com/portfolio/food-delivery-app",
-            "mainEntityOfPage": "https://www.comfygen.com/portfolio/food-delivery-app",
-            "areaServed": "Global",
-            "serviceType": [
-                "white-label food delivery app",
-                "custom food delivery solutions",
-                "AI based food delivery development solutions",
-                "On-Demand Food Delivery App Development Showcase",
-                "Food Delivery App Development Portfolio"
-
-            ],
-
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-
-            ]
-        }
-        ,
+          "@type": "PostalAddress",
+          "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+          "addressLocality": "Jaipur",
+          "postalCode": "302006",
+          "addressCountry": "IN"
+        },
         {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Comfygen Technologies",
-            "image": "https://www.comfygen.com/svg/Logo1.svg",
-            "@id": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "telephone": "+91-958-786-7258",
-            "priceRange": "$",
-            "address": [{
-                "@type": "PostalAddress",
-                "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-                "addressLocality": "Jaipur",
-                "postalCode": "302006",
-                "addressCountry": "IN"
-            }, {
-                "@type": "PostalAddress",
-                "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-                "addressLocality": "Toronto",
-                "postalCode": "M1G3S7",
-                "addressCountry": "Canada"
-            }
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-                "https://www.comfygen.com/"
-            ]
+          "@type": "PostalAddress",
+          "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+          "addressLocality": "Toronto",
+          "postalCode": "M1G3S7",
+          "addressCountry": "Canada"
         }
-        ,
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies",
+        "https://www.comfygen.com/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com/",
+      "logo": "https://www.comfygen.com/svg/Logo1.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "contactOption": "WhatsApp",
+        "telephone": "+91 9587867258",
+        "email": "sales@comfygen.com",
+        "areaServed": [
+          "IN",
+          "US",
+          "CA",
+          "GB"
+        ],
+        "availableLanguage": "en, in"
+      },
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Product",
+      "brand": "Comfygen Technologies",
+      "Name": "Portfolio: Food 24Hr | Best Food Delivery App Development Company",
+      "image": "https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp",
+      "description": "Food 24Hr is a powerful food delivery app built by Comfygen. With user-friendly design, secure transactions, and scalable architecture, we showcase our expertise in food delivery app development.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "600"
+      }
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "logo": "https://www.comfygen.com/svg/Logo1.svg",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "sales",
-                "contactOption": "WhatsApp",
-                "telephone": "+91 9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": ["IN", "US", "CA", "GB"],
-
-                "availableLanguage": "en, in"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-            ]
-        }
-        ,
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
         {
-            "@context": "http://www.schema.org",
-            "@type": "Product",
-            "brand": "Comfygen Technologies",
-            "Name": "Portfolio: Food 24Hr | Best Food Delivery App Development Company",
-            "image": "https://www.comfygen.com/image/food-delivery-app-portfolio-features-image.webp",
-            "description": "Food 24Hr is a powerful food delivery app built by Comfygen. With user-friendly design, secure transactions, and scalable architecture, we showcase our expertise in food delivery app development.",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "600"
-            }
-        }
-        ,
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Food Delivery App Development",
+          "item": "https://www.comfygen.com/food-delivery-app-development"
+        },
         {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.comfygen.com"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Food Delivery App Development",
-                "item": "https://www.comfygen.com/food-delivery-app-development"
-            }, {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Food 24Hr Case Study",
-                "item": "https://www.comfygen.com/portfolio/food-delivery-app"
-            }]
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Food 24Hr Case Study",
+          "item": "https://www.comfygen.com/portfolio/food-delivery-app"
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -14,7 +14,7 @@ export default function ServicesComponet({ servicesData }) {
       <div className="w-full lg:py-16 lg:px-5 xl:px-10 py-10">
 
         {/* SEO Heading */}
-        <div className="space-y-2 text-center">
+        <div className="space-y-2 text-wrap lg:text-center lg:px-0 px-2">
           <HeadingTwo color="black" text={servicesData.heading} />
           <ParagraphText color="black" text={servicesData.description} />
         </div>
@@ -46,10 +46,10 @@ export default function ServicesComponet({ servicesData }) {
             <div className="h-full relative">
 
               {/* ✅ ALL CONTENT RENDERED (SEO WIN) */}
-              {servicesData.services.map((service, index) => (
+              {servicesData.services.map((service:any, index:any) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 px-6 py-12 text-white transition-opacity duration-300 ${
+                  className={`absolute inset-0 px-6 py-12 text-white ${
                     index === active
                       ? "opacity-100 z-10"
                       : "opacity-0 pointer-events-none"
