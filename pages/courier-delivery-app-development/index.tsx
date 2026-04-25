@@ -2,7 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -34,8 +33,6 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
-
-
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -75,10 +72,6 @@ const BusinessSolustion = dynamic(
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-
-
-
-
   return (
     <>
       <Head>
