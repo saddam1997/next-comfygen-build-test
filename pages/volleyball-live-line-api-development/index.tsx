@@ -1,14 +1,12 @@
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: "/cricket-live-line-api",
+      permanent: true, // SEO friendly (301)
+    },
+  };
+}
 
-import { useEffect } from 'react';
-import Router from "next/router";
-
-export default function Altcoin() {
-  useEffect(() => {
-    const { pathname } = Router
-    if (pathname == '/volleyball-live-line-api-development') {
-      Router.push('/cricket-live-line-api')
-    }
-  });
-
-
+export default function Page() {
+  return null;
 }
