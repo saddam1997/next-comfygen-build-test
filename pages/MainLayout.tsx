@@ -34,14 +34,14 @@ export default function MainLayout({
     <div className="w-full min-h-screen bg-white">
 
       {/* NAVBAR */}
-      <header className="h-[60px] w-full">
+      <header className="h-[52px] w-full">
         <div className="fixed top-0 left-0 w-full h-[60px] z-50 bg-white">
           <Navbar />
         </div>
       </header>
 
       {/* ✅ FIXED CONTENT SHIFT */}
-      <main className="pt-[30px] w-full max-w-[1600px] mx-auto">
+      <main className="pt-[11px] w-full max-w-[1600px] mx-auto">
 
         <div className="w-full">
           {children}
