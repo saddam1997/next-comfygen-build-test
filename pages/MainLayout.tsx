@@ -8,8 +8,7 @@ const LazyClientTools = dynamic(
 const GetinTouch = dynamic(
   () => import("../components/Newcomponet/SectionCompoent/GetinTouch"),
   {
-    ssr: false,
-    loading: () => <div style={{ height: 300 }} />
+    ssr: false
   }
 );
 
@@ -17,7 +16,6 @@ const Footer = dynamic(
   () => import("../components/Newcomponet/layout/Footer"),
   {
     ssr: false,
-    loading: () => <div style={{ height: 300 }} />,
   }
 );
 

@@ -3,55 +3,39 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
 
-import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
 
-const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
-  ssr: true,
-});
+import AboutComponent from "../../components/Abouts/AboutComponent"
 
 import AppClone from "../../components/AppClone"
 
-import Features from "../../components/Features"
-
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+const Features = dynamic(() => import("../../components/Features"), {
   ssr: true,
 });
+
+import CallToActionSection from "../../components/CallToActionSection"
+
 import Trending from "../../components/Trending";
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { ssr: true }
-)
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
 });
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
+
 import TechStacks from "../../components/TechStacks";
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
 });
 
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
+import ProcesSection from "../../components/ProcesSection";
 
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
+import HireSection from "../../components/HireSection";
+
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
@@ -66,10 +50,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
 import BusinessSolustion from "../../components/Newcomponet/SectionCompoent/BusinessSolustion";
-import AppCard from "../../components/AppCard";
 import CostTable from "./CostTable";
 
 

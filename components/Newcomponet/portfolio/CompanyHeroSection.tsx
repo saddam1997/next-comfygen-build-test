@@ -1,9 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import ContactFrom from "../comman/ContactFrom";
+
+const ContactFrom = dynamic(
+  () => import("../comman/ContactFrom"),
+  { ssr: false }
+);
+
+
 import { TbX } from "react-icons/tb";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import dynamic from "next/dynamic";
 
 interface HeroSectionProps {
   heading: string;

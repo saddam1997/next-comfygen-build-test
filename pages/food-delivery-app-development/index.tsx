@@ -2,13 +2,10 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ecommerceapp.json";
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
+
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });

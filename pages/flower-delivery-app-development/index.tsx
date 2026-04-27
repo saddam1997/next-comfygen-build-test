@@ -1,269 +1,90 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./ELearningApp.json";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import HeroSection from "../../components/HeroSection";
+import JSON_DATA from "./Flower.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"), {
- 
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  {
+    ssr: true,
+  },
+);
+import Features from "../../components/Features";
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
+);
+
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  {
+    ssr: true,
+  },
+);
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"), {
- 
+import TechStacks from "../../components/TechStacks";
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
 
-const WhoCanStart = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhoCanStart"), {
- 
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
+const skeleton = (h: string) => (
+  <div className={`w-full ${h} animate-pulse bg-gray-100 rounded-lg`} />
+);
 
-const Portfolio = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Portfolio"), {
- 
+import ReviewCard from "../../components/ReviewCard";
+
+const Emerging = dynamic(() => import("../../components/Emerging"), {
   ssr: true,
+  loading: () => skeleton("h-[400px]"),
 });
 
+const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
-const Features = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Features"), {
- 
-  ssr: true,
-});
+const TeckStack = dynamic(
+  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  },
+);
 
-const ProcessSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ProcessSec"), {
- 
-  ssr: true,
-});
+const DeliverySection = dynamic(
+  () => import("../../components/Newcomponet/comman/DeliverySection"),
+  {
+    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
+    ssr: true,
+  },
+);
 
-const TeckStack = dynamic(() => import("../../components/Newcomponet/SectionCompoent/TechStack"), {
- 
-  ssr: true,
-});
-
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"), {
- 
-  ssr: true,
-});
-
-const DeliverySection = dynamic(() => import("../../components/Newcomponet/comman/DeliverySection"), {
- 
-  ssr: true,
-});
-
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"), {
- 
-  ssr: true,
-});
-
-const ClientTestimonials = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"), {
- 
-  ssr: true,
-});
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"), {
- 
-  ssr: true,
-});
-
+const AboutComponent = dynamic(
+  () => import("../../components/Abouts/AboutComponent"),
+  {
+    ssr: true,
+  },
+);
 
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
 
-
-const Process = [
-  {
-    title: "Discovery & Planning",
-    description:
-      "We begin by learning everything about your flower business—your audience, product types, delivery needs, and growth goals. This helps us plan a customized approach for your flower delivery website development.",
-  },
-  {
-    title: "UI/UX Wireframing",
-    description:
-      "Before we start coding, we design app wireframes that map out the user journey. Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/web-design'>UI/UX designer</a> experts create a layout that’s not only beautiful but also easy to use for customers ordering flowers on the go.",
-  },
-  {
-    title: "Feature Integration & Development",
-    description:
-      "We build your flower delivery service app using modern tech stacks and include features like location-based delivery, real-time order tracking, custom bouquets, and subscription models. Everything is built with performance and user satisfaction in mind.",
-  },
-  {
-    title: "Quality Testing",
-    description:
-      "Your app goes through various levels of testing—UI testing, API checks, payment gateway validation, speed optimization, and device compatibility—to make sure it performs flawlessly across platforms.",
-  },
-  {
-    title: "Launch on App Stores",
-    description:
-      "Once approved, we deploy your on-demand flower delivery app on iOS and Android platforms. We ensure it passes app store guidelines and is fully functional for end users from day one.",
-  },
-  {
-    title: "Real-Time Monitoring & Feedback Loop",
-    description:
-      "After the launch, we track how your app performs in real-world conditions. We gather user feedback and analytics to help you continuously improve the customer experience.",
-  },
-  {
-    title: "Support & Upgrades",
-    description:
-      "Need new features? No problem. Our bouquet delivery app development team is always available to provide updates, technical support, and system upgrades to keep your app running smoothly as your business evolves.",
-  },
-];
-
-const WhoCanStartCards = [
-  {
-    heading: "Startups & Entrepreneurs",
-    description:
-      "Looking to enter the flower delivery market? Our <a class=' font-semibold underline' href='https://www.comfygen.com/white-label-mobile-app-development' >white-label flower delivery mobile app development solutions</a> are perfect for a quick launch. Get a fully branded app with essential features and scalability to help you grow fast without high upfront costs.",
-  },
-  {
-    heading: "Flower Shops & Local Florists",
-    description:
-      "Transform your traditional flower shop into a modern digital store. Our custom florist app development services let you take online orders, manage deliveries, and build long-term customer relationships with ease.",
-  },
-  {
-    heading: "Aggregator Platforms",
-    description:
-      "Planning to build a multi-vendor flower delivery platform? We develop robust flower delivery apps that allow multiple florists to list products, manage orders, and deliver across different regions—all from a single admin panel.",
-  },
-  {
-    heading: "Event & Occasion-Based Florists",
-    description:
-      "For florists focused on weddings, birthdays, and corporate events, we offer flower delivery service app development solutions with advanced scheduling, recurring deliveries, and customer reminders.",
-  },
-];
-
-const techDataForPage1 = {
-  All: [
-
-
-  ],
-};
-
-
-
-
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const jsonLdData = [
 
 
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Custom Flower Delivery App Development Services",
-      provider: {
-        "@type": "Organization",
-        name: "Comfygen Technologies",
-        url: "https://www.comfygen.com/",
-      },
-      description:
-        "Comfygen Technologies offers custom flower delivery app development services tailored for florists and startups. Real-time tracking, multi-vendor support, secure payments, and scalable solutions.",
-      url: "https://www.comfygen.com/flower-delivery-app-development",
-      mainEntityOfPage:
-        "https://www.comfygen.com/flower-delivery-app-development",
-      areaServed: "Global",
-      serviceType: [
-        "Custom Flower Delivery App Development",
-        "AI-based Flower Delivery App Development",
-        "Florist App Development",
-        "Multi-Vendor Flower Delivery App Development",
-        "White-Label Flower Delivery App Solutions",
-      ],
-
-      sameAs: [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies",
-      ],
-    },
-
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.comfygen.com",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Flower Delivery App Development",
-          item: "https://www.comfygen.com/flower-delivery-app-development",
-        },
-      ],
-    },
-
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How much does it cost to develop a flower delivery app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "The cost of flower delivery app development depends on your features, app design, and platform choice. On average, it can range from $5,000 to $25,000. We offer flexible pricing for startups, a ready-made flower delivery app script, and a custom flower delivery app solution to fit your business needs and budget.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How long will it take to launch the app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "We can deliver a basic flower delivery app in 3 to 5 weeks. For custom and feature-rich apps, it may take 8 to 12 weeks. We follow agile development to ensure on-time delivery without compromising quality or performance.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do you offer white-label solutions?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we offer fully branded white-label flower delivery app solutions. You get a ready-to-launch app with your logo, theme, and custom features — perfect for startups and floral businesses looking to go live quickly and cost-effectively.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I manage multiple flower shops with the app?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Absolutely. Our flower delivery app allows multi-vendor and multi-store management. You can handle multiple flower shops, delivery zones, pricing, and customer data through a centralized dashboard — ideal for franchises or large-scale floral chains.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Will you support us after launch?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, we offer complete post-launch support including app maintenance, feature updates, bug fixing, and technical support. Our team ensures your flower delivery app runs smoothly and stays up to date with the latest trends and platform updates.",
-          },
-        },
-      ],
-    },
-  ];
 
   return (
     <>
@@ -375,148 +196,32 @@ export default function ClinicalApp(props: any) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
 
-     {/* <Header /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Emerging emerging={JSON_DATA.WhoCanStartSection} />
 
-      <div className="overflow-hidden ">
-        <div className="">
-          <HeroSection
-            heading="Flower Delivery App Development Company"
-            // ptag="Launch Your Own Flower Delivery App with Ease"
-            ptag1="Comfygen is the best flower delivery app development company that provide flower delivery app development solution for florists, startups, and delivery businesses. Our flower apps feature real-time tracking, secure payments, and scalable functionalities to ensure seamless user experience and efficient business operations. With Comfygen, you can launch a robust and user-friendly flower delivery app that delights customers and grows your business."
-            li="Custom & White-Label Flower Delivery App Development"
-            li1="Real-Time Order Tracking & Delivery Management"
-            li2="Secure Payment Gateway & Multi-Vendor Support"
-            li3="Scalable, AI-Ready & User-Friendly App Design"
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/flower-delivery-app-development/hero2.webp"
-          />
-        </div>
-        <Milestones />
+      <section className="py-8">
+        <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+      </section>
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Our Top-notch Flower Delivery App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                Comfygen Technologies offers top-notch flower delivery app development services for florists, flower shops, startups, and bouquet subscription businesses. Our custom flower delivery mobile app development solutions help you streamline deliveries, increase customer engagement, and grow your business.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+      <Features featuresData={JSON_DATA.featureData} />
 
-        <AboutSection
-          title="About Company"
-          heading="The Blooming Demand: Why Your Flower Business Needs a Delivery App"
-          description1="The global online flower delivery market is projected to reach $57.4 billion by 2031, growing at a CAGR of 5.7% from 2022 to 2031. With more customers preferring mobile-based flower/bukey ordering and doorstep delivery, having a flower delivery app is no longer optional — it's essential for scaling and staying competitive."
-          description2="Whether you're a florist shop, event flower vendor, startup, entrepreneur, or a bouquet subscription service, a flower delivery app development solution can transform your business with automation, real-time tracking, and personalised user experiences."
-          description3="With Comfygen’s advanced flower delivery app development services, we help you digitise your business, boost operational efficiency, and enhance customer loyalty."
-          points={[
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
 
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/flower-delivery-app-development/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+      <DeliverySection hideUrl="flower-delivery-app-development" />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
+      <BlogSection initialData={initialData} />
 
-        {/* <ContactFromCenter /> */}
-
-        <WhoCanStart
-          title="Flower Delivery App Solution for Every Flower Business Model"
-          description="At Comfygen, we offer flexible flower delivery app development solutions to meet the unique needs of different business models. Whether you're a solo florist, a growing startup, or an enterprise-level aggregator, we build scalable apps that fit your operations perfectly."
-          cards={WhoCanStartCards}
-        />
-
-
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Flower Delivery App Development Portfolio"
-            description="Explore how Comfygen Technologies empowers flower businesses with scalable and user-friendly flower delivery apps. From local florists to gift delivery startups, our custom-built apps ensure smooth order processing, real-time tracking, and delightful customer experiences."
-          />
-        </section>
-
-
-
-
-        <Features
-          heading="Key Features We Provide in Our Flower Delivery App Development "
-          description="Trusted delivery app development company, Comfygen Technologies, delivers powerful app solutions packed with essential features for users, delivery agents, and admins. Each panel is designed to enhance performance, simplify operations, and deliver an exceptional user experience."
-          grid="3"
-          featuresData={JSON_DATA.featuresData}
-        />
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center space-y-4">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our Flower Delivery App Development Process
-              </h2>
-              <p className="text-base text-center font-normal lg:w-2/4 mx-auto">
-                At Comfygen, we don’t just build apps—we craft digital solutions
-                that help flower businesses bloom. As a leading bouquet delivery
-                app development company, we follow a well-structured process
-                that turns your idea into a reliable, scalable, and visually
-                appealing mobile app.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TeckStack
-          title="Tech Stack We Use in Flower Delivery App Development"
-          description="At Comfygen, we use a robust and modern technology stack to build scalable and reliable flower delivery apps. Whether you want to create a custom bouquet delivery platform or a florist marketplace, our tech ensures smooth performance, real-time tracking, and a delightful user experience."
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <DeliverySection hideUrl="flower-delivery-app-development" />
-
-        <HireDeveloper
-          heading="Hire Flower Delivery App Developer "
-          text="Want to launch your own flower delivery app? Hire expert <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer' >flower delivery app developers</a> from Comfygen Technologies to bring your floral business online. As a florist app development company, we build elegant, scalable, and feature-rich mobile apps tailored to your needs. From real-time tracking to recurring orders and payment integrations — we cover it all."
-          text1="Why Hire Our Developer?"
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Skilled in on-demand delivery app development",
-            "10+ years of mobile app expertise",
-            "Experience with Google Maps, Twilio, Stripe integrations",
-            "Custom solutions for single or multi-vendor florist platforms",
-            "Ready-made Flower Delivery App Script",
-            "Fast development with complete support",
-          ]}
-        />
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq faqData={Frequently} title="" />
-        <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }

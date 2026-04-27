@@ -2,51 +2,24 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-
-const Navbar = dynamic(() => import("../../components/Navbar"), {
-  ssr: true,
-});
-
-
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
-  ssr: true,
-});
-
+import ServicesComponet from "../../components/ServicesSection/ServicesComponet"
 import AboutComponent from "../../components/Abouts/AboutComponent"
-
 import CallToActionSection from "../../components/CallToActionSection"
-
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
-
 import Solution from "../../components/Solution"
-
 import WhyChooseSection from "../../components/WhyChooseSection"
-
 import ProcesSection from "../../components/ProcesSection"
-
 import HireSection from "../../components/HireSection"
-
-
-
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-});
+import FaqSection from "../../components/FaqSection"
+import TechStacks from "../../components/TechStacks"
+import IndustryGrid from "../../components/IndustryGrid"
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
 });
-
-const TechStacks = dynamic(() => import("../../components/TechStacks"), {
-  ssr: true,
-});
-
-import IndustryGrid from "../../components/IndustryGrid"
-
-
 
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,

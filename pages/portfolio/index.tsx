@@ -4,9 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import JSON_DATA from "./portfolio.json";
-
-import CompanyHeroSection from "../../components/Newcomponet/portfolio/CompanyHeroSection";
-import FormSec from "../../components/Newcomponet/portfolio/FormSec";
+import PortfolioHero from '../../components/PortfolioPage/PortfolioHero';
 
 export default function Portfolio() {
   const router = useRouter();
@@ -19,10 +17,7 @@ export default function Portfolio() {
 
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [currentPage, setCurrentPage] = useState(1);
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
 
-  const openModal = useCallback(() => setTalkToExpertModal(true), []);
-  const closeModal = useCallback(() => setTalkToExpertModal(false), []);
 
   /* ✅ FIX 2: memoized data (INP fix) */
   const categories = useMemo(() => {
@@ -80,22 +75,7 @@ export default function Portfolio() {
         />
       </Head>
 
-      {/* ✅ FIX 3: LOCAL HERO IMAGE (LCP fix) */}
-      <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
-        <CompanyHeroSection
-          heading="Our Portfolio"
-          subhead="Work We Have Done For Some of Our Great Clients"
-          ptag="Delivering Innovative Robust and Result Oriented Business IT Solutions for Medium to Small Businesses."
-          imageSrc="https://www.comfygen.com/image/portfolio-hero-img.webp"
-          buttonText="Talk To Consultant"
-          openModal={openModal}
-          closeModal={closeModal}
-          talkToExpertModal={talkToExpertModal}
-          buttonLink="/portfolio"
-        />
-      </div>
-
-
+      <PortfolioHero Data={JSON_DATA.HeroSection} />
 
       {/* CONTENT */}
       <div className="py-10 bg-white">
@@ -200,7 +180,7 @@ export default function Portfolio() {
         </section>
       </div>
 
-      <FormSec />
+      {/* <FormSec /> */}
     </div>
   );
 }

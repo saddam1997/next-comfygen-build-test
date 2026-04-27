@@ -1,9 +1,9 @@
 {
     "HeroSection": {
-        "heading": "Urban Ride-Hailing – Taxi Booking App Development",
+        "heading": "Tourism Taxi Booking App",
         "subhead": "",
-        "ptag": "Our client, a Dubai-based ride-hailing startup, wanted to enter the competitive ride-hailing market with a unique and scalable taxi app development solution. As a leading ride-hailing app development company, we built an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support to ensure a seamless and efficient urban commuting experience.",
-        "imageSrc": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "ptag": "Our client is a leading tourism company that needed a custom tourism taxi app development solution to provide seamless tourism and inter-city travel experience. As a top-rated travel taxi app development company, we built a feature-rich, AI-powered platform offering multi-city booking, tour packages, and multilingual support to enhance user convenience and accessibility.",
+        "imageSrc": "https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp",
         "buttonText": "Talk To Consultant",
         "buttonLink": "/portfolio",
         "imageHeight": 423,
@@ -12,51 +12,50 @@
     "Features": {
         "heading": "Features",
         "points": [
-            "<b>Real-Time Ride Matching & GPS Tracking: </b> Live ride requests and driver location updates.",
-            "<b>Dynamic Pricing Algorithm: </b> Adjusts fares based on demand and traffic conditions.",
-            "<b>Multi-Language Support: </b> Arabic, English, and other regional languages.",
-            "<b>Multiple Ride Categories: </b> Economy, premium, luxury, and shared rides.",
-            "<b>In-App Wallet & Multiple Payment Options: </b> Credit/debit card, digital wallets, and cash payments.",
-            "<b>Driver Earnings Dashboard: </b> Real-time income tracking and automated payout system",
-            "<b>User & Driver Ratings System: </b> Build trust through feedback and reviews.",
-            "<b>AI-Powered Route Optimization: </b> Reduces wait time and improves ride efficiency.",
-            "<b>Ride Scheduling & Corporate Accounts: </b> Pre-book rides and offer business travel solutions.",
-            "<b>Emergency SOS Button & Live Support: </b> Enhanced security for riders and drivers."
+            "Multi-City Booking System: Allows tourists to book taxis across different cities.",
+            "Customizable Tour Packages: Pre-designed and flexible sightseeing plans.",
+            "AI-Powered Route Optimization: Ensures the fastest and most scenic travel routes.",
+            "Live Tour Guide Integration: Provides real-time travel insights and historical facts.",
+            "Multilingual Support: Offers services in multiple languages for international tourists.",
+            "Seamless Digital Payments: Integrates UPI, cards, digital wallets, and international payment gateways.",
+            "Real-Time Ride Tracking & Safety Features: GPS tracking, SOS button, and driver authentication.",
+            "Custom Pricing & Discounts: Automated seasonal pricing and exclusive tourist discounts.",
+            "In-App Chat & Support: 24/7 multilingual customer assistance for seamless communication."
         ],
-        "imageSrc": "https://www.comfygen.com/image/features-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/features-tourism-taxi-booking-app.webp"
     },
     "Challenge": {
         "heading": "Challenge",
         "points": [
-            "The client needed a custom ride-hailing app with fast ride matching, automated fare calculation, and multilingual support to cater to Dubai’s diverse population.",
-            "Ensuring real-time tracking, secure payment integration, and dynamic surge pricing was a major challenge.",
-            "Competing with established ride-hailing giants while offering a differentiated user experience and driver incentives."
+            "The client required a tourism taxi service app that integrates real-time booking, guided tour packages, and dynamic pricing.",
+            "Ensuring availability across multiple cities, route optimization, and multilingual customer support was a major challenge.",
+            "The app needed to handle high user traffic, secure payment processing, and an engaging tourist-friendly interface."
         ],
-        "imageSrc": "https://www.comfygen.com/image/challanges-ride-hailing-app.webp",
+        "imageSrc": "https://www.comfygen.com/image/challanges-tourism-taxi-booking-app.webp",
         "imagePosition": "right"
     },
     "Solution": {
         "heading": "Solution:",
         "points": [
-            "As a top-rated taxi booking app development company, we developed a highly scalable and feature-rich ride-hailing platform tailored for Dubai.",
-            "Integrated AI-based ride matching, multi-language support, and an intuitive user interface for seamless navigation.",
-            "Our ride-hailing app development services ensured a competitive edge with real-time ride tracking, secure payments, and dynamic pricing algorithms."
+            "As a custom travel taxi booking app development company, we built an AI-driven tourism taxi booking platform with intelligent routing, real-time availability tracking, and integrated tour packages.",
+            "Implemented secure digital payments, multilingual support, and a user-friendly booking interface for seamless travel experiences.",
+            "Our tourism taxi app development services ensured a scalable, high-performance platform that could handle peak travel seasons efficiently."
         ],
-        "imageSrc": "https://www.comfygen.com/image/solution-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/solution-tourism-taxi-booking-app.webp"
     },
     "BusinessBenefits": {
         "heading": "Business Benefits",
         "points": [
-            "50,000+ user sign-ups in the first 6 months, proving rapid adoption.",
-            "30% increase in driver registrations, ensuring better ride availability.",
-            "Improved revenue generation through commission-based earnings and surge pricing models.",
-            "Enhanced user retention with personalized ride recommendations and loyalty programs.",
-            "Scalable architecture, allowing easy expansion to other UAE cities and global markets."
+            "35% increase in tourist bookings with convenient and user-friendly travel options.",
+            "25% boost in customer retention due to personalized experiences and AI-driven route planning.",
+            "Enhanced operational efficiency with automated ride scheduling and dynamic pricing models.",
+            "Higher revenue generation through custom tour packages and premium ride options.",
+            "Scalable platform supporting expansion to new destinations and travel categories."
         ],
-        "imageSrc": "https://www.comfygen.com/image/business-benefits-ride-hailing-app.webp",
-        "imagePosition": "right"
+        "imageSrc": "https://www.comfygen.com/image/business-benefits-tourism-taxi-booking-app.webp",
+        "imagePosition": "left"
     },
-    "Tabs": [
+   "Tabs": [
         "Frontend",
         "Backend",
         "Database",
@@ -319,7 +318,7 @@
             ]
         }
     },
-    "ReviewData": {
+        "ReviewData": {
         "heading": "What Our Clients Say",
         "description": "",
         "Review": [

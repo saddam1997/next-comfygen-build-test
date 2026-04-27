@@ -8,14 +8,13 @@ import Trending from "../components/Trending";
 import AboutComponent from "../components/Abouts/AboutComponent"
 import ServicesComponet from "../components/ServicesSection/ServicesComponet"
 
-
-
 const PortfolioSection = dynamic(() => import("../components/PortfolioSection"),
   { ssr: true }
 );
 import CallToActionSection from "../components/CallToActionSection"
 
 import ProcesSection from "../components/ProcesSection"
+
 
 const TechStacks = dynamic(() => import("../components/TechStacks"),
   { ssr: true }
@@ -172,6 +171,7 @@ export async function getStaticProps() {
     if (!res.ok) throw new Error("API failed");
 
     const data = await res.json();
+        console.log(JSON.stringify(data).length, "size ");
 
     return {
       props: { initialData: data },

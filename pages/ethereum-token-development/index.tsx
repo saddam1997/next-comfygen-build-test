@@ -3,135 +3,75 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumtoken.json";
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const NewSection = dynamic(
-  () => import("../../components/Newcomponet/comman/NewSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true, },
+);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+import InformationSection from "../../components/InformationSection"
+
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  { ssr: true, },
 );
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  {
+    ssr: true,
+  },
 );
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  {
+    ssr: true,
+  },
 );
 
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
+import Emerging from "../../components/Emerging";
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+const BlogSection = dynamic(
+  () => import("../../components/BlogSection"),
+  { ssr: true }
 );
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
+import ReviewCard from "../../components/ReviewCard";
+import AboutComponent from "../../components/Abouts/AboutComponent";
+import TechStacks from "../../components/TechStacks";
 const TechStack = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-
-import {
-  IconArrowsExchange,
-  IconCoin,
-  IconShieldCheck,
-  IconCode,
-  IconTrophy,
-  IconBuildingBridge2,
-} from '@tabler/icons-react';
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ReviewCard from "../../components/ReviewCard";
-
-
-
-
-const technologyData = [
-  {
-    img: <IconArrowsExchange stroke={1.5} className="w-12 h-12" />,
-    title: "Flexible swapping and mutation",
-    desc: "Easily swap tokens from one form to another based on nature of function with high security."
-  },
-  {
-    img: <IconCoin stroke={1.5} className="w-12 h-12" />,
-    title: "Chain compatibility",
-    desc: "Easily swap tokens from one form to another based on nature of function with high security."
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Ensure fast listing",
-    desc: "Offer compatibility with the currencies or tokens from current on-going chains in trends."
-  },
-  {
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
-    title: "Rigid smart contract",
-    desc: "We use high fidelity design for the smart contracts to ensure rigidity on your token."
-  },
-  {
-    img: <IconBuildingBridge2 stroke={1.5} className="w-12 h-12" />,
-    title: "Standardized architecture",
-    desc: "Designed with standardized layout architecture to offer assured safety against hacks."
-  },
-  {
-    img: <IconTrophy stroke={1.5} className="w-12 h-12" />,
-    title: "Rewards ROI",
-    desc: "Contributes to the effective trade-off base assets along with enhanced rewards on returns."
-  }
-];
 export default function Ecommerce(props: any) {
   let { initialData } = props;
-  const [currentCount, setCurrentCount] = useState(0);
-  const sliderRef = useRef(null);
-
-  const next = () => {
-    sliderRef.current.slickNext();
-    setCurrentCount((prevCount) => prevCount + 1);
-  };
-
-  const previous = () => {
-    sliderRef.current.slickPrev();
-    setCurrentCount((prevCount) => prevCount - 1);
-  };
 
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
 
 
@@ -300,217 +240,34 @@ export default function Ecommerce(props: any) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
 
-     {/* <Header /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
 
-      <div className="overflow-hidden ">
-
-        <HeroSectionForAllPages
-          heading="Leading Ethereum Token Development Company"
-          ptag="Reduce risks and accelerate your Web3 transformation with our enterprise-grade Ethereum token development services. We build secure, high-performance ERC-20, ERC-721, and ERC-1155 tokens tailored for businesses, startups, and global blockchain ecosystems. Our expert Solidity developers ensure seamless deployment, optimized gas usage, and future-ready token architecture."
-          li="ERC-20 Token Development"
-          li1="ERC-721 NFT Development"
-          li2="ERC-1155 Multi-Token Development"
-          li3="Smart Contract Development"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/ethereum-token-development-company-hero-img.webp"
-        />
-
-        <Milestones/>
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Our Ethereum Token Development Services
-              </h2>
-              <p className="text-base text-center font-normal">At Comfygen, we deliver end-to-end Ethereum token development services for startups, enterprises, and businesses. As a trusted Ethereum token development company in India, we create secure, scalable ERC20, ERC721, and ERC1155 tokens. Our services include smart contract development, wallet integration, and DeFi, NFT, and ICO/STO token solutions, helping businesses grow in the blockchain ecosystem. With expert developers and a focus on security and compliance, we ensure fast and efficient token deployment.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        {/* <NewSection NewSection={JSON_DATA.NewSections} /> */}
-        <AboutSection
-          title="About Company"
-          heading="Trusted Ethereum Token Development Company in India"
-          description1="<a class='text-blue-600' href='https://www.comfygen.com' >Comfygen </a> is recognized as a trusted Ethereum token development company in India. We offer secure and scalable token solutions for businesses, startups, and enterprises. Our expertise includes developing custom ERC20, ERC721, and ERC1155 tokens tailored for DeFi platforms, NFT marketplaces, and fundraising projects like ICOs and STOs."
-          description2="As a reliable Ethereum token development agency, we ensure seamless smart contract integration, wallet compatibility, and exchange listings. With a focus on security, compliance, and innovation, Comfygen helps you launch blockchain tokens that drive growth in the evolving Web3 ecosystem."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
 
 
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
 
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection2} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection3} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection4} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <Solution techData={JSON_DATA.AIFeatures} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
 
-        <InfoSection
-          heading="Ethereum – An Overview"
-          description1="Ethereum is one of the most widely used blockchain platforms for token development, offering a secure and decentralized ecosystem for creating digital assets and <a href='/smart-contract-development' class='text-blue-600'> smart contracts development </a>. Launched in 2015, Ethereum powers thousands of decentralized applications (dApps) and is the backbone for ERC token standards, including ERC20, ERC721, and ERC1155. As a leading blockchain network for Ethereum token development, it provides developers and businesses with the tools to create custom crypto tokens, including utility tokens, security tokens, and NFTs. Ethereum's smart contract functionality ensures that token transactions are secure, automated, and transparent."
-          description2=''
-          description3=''
-          points={
-            [
-              "Supports <a href='/erc20-token-development' class='text-blue-600'> ERC20 token development </a> for DeFi platforms",
-              "Enables NFT creation via ERC721 and ERC1155 standards",
-              "Seamless integration with wallets and exchanges",
-              "Scalable and secure smart contract development",
-              "Ideal for ICOs, STOs, and tokenized assets"
-            ]
-          }
-          imageSrc="https://www.comfygen.com/images/ethereum-overview.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          dec=''
-        />
-        <InfoSection
-          heading="What Is an Ethereum Token?"
-          description1="An Ethereum token is a digital asset or cryptocurrency token built on the Ethereum blockchain. Unlike Ether (ETH), which is Ethereum’s native currency, these tokens are created through smart contracts and follow specific token standards like ERC20, ERC721, and ERC1155. These tokens represent a wide range of assets and utilities—from cryptocurrency tokens used in DeFi applications to NFTs for digital art and gaming. Ethereum token development allows businesses to create custom tokens for fundraising (ICOs and STOs), decentralized exchanges (DEXs), loyalty programs, and blockchain-based ecosystems."
-          description2="As a trusted Ethereum token development company in India, Comfygen specializes in building secure, scalable, and compliant Ethereum tokens that are compatible with popular wallets and exchanges."
-          description3=''
-          dec=''
-          points={
-            [
-              "Fast and Secure Transactions",
-              "Smart Contract Automation",
-              "High Liquidity and Market Adoption",
-              "Compliance with Web3 and DeFi Standards"
-            ]
-          }
-          imageSrc="https://www.comfygen.com/images/what-is-ethereum-token.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition='right'
-        />
-        <InfoSection
-          heading="What Is Ethereum Token Development?"
-          description1="Ethereum token development is the process of creating digital tokens on the Ethereum blockchain using standards like ERC20, ERC721, and ERC1155. These tokens power DeFi platforms, NFTs, and blockchain ecosystems, enabling businesses to launch crypto assets, run ICOs, or develop tokenized solutions. At Comfygen, a leading Ethereum token development company in India, we deliver secure, scalable, and custom token solutions tailored for startups and enterprises. Our services cover custom token creation, smart contract development, wallet integration, and exchange listing, ensuring your tokens are compliant, efficient, and ready for the Web3 economy."
-          description2=''
-          description3=''
-          dec=''
-          points={
-            [
-              "Custom Token Creation (ERC20, ERC721, ERC1155)",
-              "Smart Contract Development and Auditing",
-              "Wallet and Exchange Integration",
-              "Compliance with Web3 and DeFi Protocols",
-              "Security-First Architecture",
-              "Scalable Token Solutions for Enterprises and Startups"
-            ]
-          }
-          imageSrc="https://www.comfygen.com/images/ethereum-token-creation-services.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <InfoSection
-          heading="Ethereum Token Creation Services"
-          description1="At Comfygen, we deliver reliable and secure Ethereum token creation services for businesses looking to launch their custom tokens on the Ethereum blockchain. Whether you need ERC20 utility tokens, ERC721 NFTs, or ERC1155 multi-tokens, our team ensures seamless development and deployment aligned with Web3 and DeFi standards."
-          description2=''
-          description3=''
-          dec=''
-          points={
-            [
-              "Custom ERC20 Token Development",
-              "ERC721 NFT Token Creation",
-              "ERC1155 Multi-Token Development",
-              "Smart Contract Development & Auditing",
-              "Wallet Integration Services",
-              "Token Listing on Crypto Exchanges",
-              "Compliance with Web3 and DeFi Protocols"
-            ]
-          }
-          imageSrc="https://www.comfygen.com/img/erc-20-token-wallet-development.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition='right'
-        />
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <SolutionSec
-          heading="Core Features of Our Developed Ethereum Tokens"
-          subheading=""
-          techData={technologyData}
-        />
-        <div className="py-10 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <section className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-2xl lg:text-4xl font-bold leading-[2rem] lg:leading-[3rem] text-white  ">
-                  Ethereum Token Development Across Multiple ERC Standards
-                </h2>
-                <p className="text-center text-white">At Comfygen, we specialize in Ethereum token development across multiple ERC standards, designed to suit diverse business needs in DeFi, NFT marketplaces, and blockchain ecosystems. Our expert developers create secure, scalable, and compliant tokens that adhere to Ethereum’s widely adopted ERC protocols, ensuring seamless integration with wallets, dApps, and exchanges.</p>
-              </div>
-              <div className="grid gap-10 mt-6 lg:grid-cols-3 md:grid-cols-2 xl:gap-10">
-                {JSON_DATA.MLM.map((elem) => {
-                  const { title, img, decs, num } = elem;
-                  return (
-                    <div
-                      key={num}
-                      className="p-8 space-y-4 bg-slate-100 cursor-pointer rounded-[20px] "
-                    >
-                      <div className="flex items-center justify-start ">
-                        <Image
-                          className="items-center object-cover"
-                          src={img}
-                          alt={title}
-                          width={60}
-                          height={60}
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-extrabold text-[#0E1F51] text-start">
-                          {title}
-                        </h3>
-                        <p className="font-medium text-start text-black">
-                          {decs}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        </div>
-        <TechStack
-          title="Our Cryptocurrency Development Technology Stack"
-          description=""
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Ethereum Token Developer from Comfygen"
-          text="Looking to launch your Ethereum-based tokens? At Comfygen, we provide expert Ethereum token developers who bring deep blockchain expertise and proven experience in delivering secure, scalable, and customized token solutions. Whether you're developing ERC20 tokens for utility, ERC721 tokens for NFTs, or ERC1155 tokens for gaming and metaverse platforms, our developers offer end-to-end services tailored to your unique requirements."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Smart contract development and auditing for secure transactions",
-            "Custom token creation aligned with the latest Ethereum token standards",
-            "Integration with wallets, DeFi platforms, and crypto exchanges",
-            "Compliance with industry regulations and blockchain best practices",
-            "Support for ICO/STO token launches and fundraising campaigns",
-          ]}
-        />
+      <TechStack
+        title="Our Cryptocurrency Development Technology Stack"
+        description=""
+      />
 
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-  <BlogSection initialData={initialData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
 
-      </div>
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <BlogSection initialData={initialData} />
+
     </>
   );
 }

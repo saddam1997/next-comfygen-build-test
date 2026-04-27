@@ -1,8 +1,8 @@
 
-
+"use client"
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
-import Image from "next/image";
+
 
 class ContactFrom extends Component<{}, any> {
   constructor(props: any) {
