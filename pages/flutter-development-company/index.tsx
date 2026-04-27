@@ -1,103 +1,62 @@
-import { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import JSON_DATA from "./json/flutter.json";
-import LazyLoad from "react-lazy-load";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+import InformationSection from "../../components/InformationSection";
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
   {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
     ssr: true,
-  }
+  },
+);
+const AboutComponent = dynamic(
+  () => import("../../components/Abouts/AboutComponent"),
+  {
+    ssr: true,
+  },
 );
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
 );
 
-const HeadingSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/headingSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  {
+    ssr: true,
+  },
+);
+const ClientStories = dynamic(
+  () => import("../../components/ClientStories"),
   { ssr: true }
-);
-
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
 );
 
 import ReviewCard from "../../components/ReviewCard";
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+import IndustryGrid from "../../components/IndustryGrid";
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
 
 
-// import ContactFromCenter from "../componentsnew/ContactFromCenter";
+
+
 
 export default function MultiChain(props: any) {
   let { initialData } = props;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   return (
     <>
@@ -107,7 +66,7 @@ export default function MultiChain(props: any) {
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
         <title>
-         Best Flutter App Development Company in India | Custom Cross-Platform Apps
+          Best Flutter App Development Company in India | Custom Cross-Platform Apps
         </title>
         <meta
           name="description"
@@ -149,135 +108,25 @@ export default function MultiChain(props: any) {
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
 
-       {/* <Header /> */}
-  
-      <div className="overflow-hidden">
-        <HeroSectionForAllPages
-          heading="Best Flutter App Development Company in India"
-          ptag="Comfygen is the Best Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market."
-          ptag1="We focus on custom Flutter app development that supports long-term growth, smooth UI/UX, and seamless performance across devices. From MVPs to enterprise-grade applications, our Flutter solutions are designed to meet your business goals and evolving digital needs."
-          li="Custom Cross-Platform App Development Services"
-          li1="Scalable, Secure & High-Performance Flutter Apps"
-          li2="End-to-End Flutter Development & Support"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/flutter-app-dev-hero-img.webp"
-        />
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Flutter app development services
-              </h2>
-              <p className="text-base text-center font-normal">
-                We provide end-to-end Flutter app development services, covering business idea validation, development, deployment, and ongoing support. Our solutions help businesses create high-performance, cross-platform apps with a seamless user experience.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title=""
-          heading="Unlock New Business Potential with Advanced Flutter Solutions"
-          description1="We offer end-to-end Flutter app development services, covering everything from business idea consultation and app design to development, deployment, and ongoing support. Our comprehensive flutter app development services include UI/UX design, programming, testing, and maintenance to ensure your Flutter app performs flawlessly across platforms."
-          description2="Our team of expert Flutter developers specializes in building cross-platform applications that deliver seamless user experiences on both web and mobile devices. Whether you need a Flutter mobile app or a Flutter web application, we create custom solutions tailored to your business goals."
-          imageSrc="https://www.comfygen.com/gallery/about-images/flutter-development-company-about-us-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <CallToAction
-          heading="Let’s Build the Future of Technology Together"
-          text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-
-        <IndustriesServe
-          heading="Industries We Serve As Best Flutter App Development Company"
-          description="Comfygen provides flutter app development solutions across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
-
-        />
-
-        <HeadingSec
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <IndustryGrid />
+      {/* <HeadingSec
           title="Why We're India's Premier Flutter App Development Company"
           description="With our Flutter mobile app development services, you can create a multi-platform presence. From discovering the best product-market fit to smoothly deploying your application across multiple platforms, our Flutter developers can help you design, develop, test, and launch full-featured Flutter applications."
-        />
-        <InfoSection
-          heading="Cost of Flutter App Development"
-          description1="We develop Flutter apps with native performance and flexible UI designs that are highly interactive and functional. With our Flutter app development expertise, we can turn your idea into a profitable and fully-fledged app. Our team has vast Flutter architecture experience and builds apps with interactive UI, high performance, and agile deployment."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/cost-of-flutter-app-development-img.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-          imagePosition="left"
-        />
-        <InfoSection
-          heading="Flutter App Migration Services"
-          description1="You can migrate your Android and iOS app development to Flutter with our help. Taking your existing application across platforms and operating systems is one of our specialties. Our team of Flutter Android app development and deployment experts can help you. For platform-agnostic apps, we are the Flutter app development company the world trusts."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp"
-          imagePosition="right"
-          link="/contact-us"
-          linkText="Lets Discuss"
-        />
-        <InfoSection
-          heading="Flutter Consulting Services"
-          description1="In terms of framework maturity and use cases, Flutter app development has come a long way since its inception. Providing you with assistance in validating your Flutter app idea and ensuring that the framework is the best technical solution for your product idea is our goal."
-          description2=""
-          description3=""
-          dec=""
-          points={[]}
-          imageSrc="https://www.comfygen.com/media/images/flutter-consulting-services-img.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        {/* <ContactFromCenter /> */}
-        <HireDeveloper
-          heading="Benefits of hire Flutter developer"
-          text="The Flutter iOS app development services we provide are built on the framework's best features.With the SDK, we provide a native end-user experience, expressiveness, flexible UI, and lightning-fast load speed of 60ms Make your application the symbol of excellence across all platforms with FPS."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Development at a rapid pace",
-            "Flexible and expressive user interface",
-            "Native Performance",
-          ]}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <ClientStories/>
-        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-
-        <BlogSection initialData={initialData} />
-      </div>
+        /> */}
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection2} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection3} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
+     
     </>
   );
 }

@@ -1,79 +1,158 @@
 {
-  "NewSections": {
-    "title": "Jaipur Best Flutter App Development Company",
-    "decs": "With our Flutter mobile app development services, you can create a multi-platform presence. From discovering the best product-market fit to smoothly deploying your application across multiple platforms, our Flutter developers can help you design, develop, test, and launch full-featured Flutter applications.   "
+
+ "Herosection": {
+    "heading": "Best Flutter App Development Company in India",
+    "ptag": "Comfygen is the Best Flutter app development company in India, delivering high-performance, cross-platform mobile applications for startups and enterprises. Our experienced Flutter developers build secure, scalable, and user-friendly apps using a single codebase for Android, iOS, and web—helping businesses reduce costs and accelerate time-to-market.",
+    "ptag1": "We focus on custom Flutter app development that supports long-term growth, smooth UI/UX, and seamless performance across devices. From MVPs to enterprise-grade applications, our Flutter solutions are designed to meet your business goals and evolving digital needs.",
+    "listItems": [
+      "Custom Cross-Platform App Development Services",
+      "Scalable, Secure & High-Performance Flutter Apps",
+      "End-to-End Flutter Development & Support"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/herosection/flutter-app-dev-hero-img.webp"
   },
-  "servicesData" :[
-    {
-      "title": "Flutter Mobile Application Development",
-      "subtitle": "",
-      "description": "Leverage Flutter mobile app development to accelerate project timelines and deliver seamless, consistent user experiences across both Android and iOS platforms. Our expert developers help you build high-performance apps with a native-like feel, efficient code sharing, and stunning visuals that drive user engagement and business growth.",
-      "features": [
-        "Single codebase for Android, iOS, and web applications",
-        "Faster development cycles and reduced time-to-market",
-        "High-performance apps with smooth animations and transitions",
-        "Consistent UI/UX across devices and platforms",
-        "Cost-effective development with reusable code"
-      ]
-    },
-    {
-      "title": "Flutter Web Application Development",
-      "subtitle": "",
-      "description": "Build cross-platform web apps with Flutter that provide a seamless mobile-like experience on all devices. By partnering with our team, you can streamline operations, save resources, and ensure consistent functionality, enhancing both efficiency and customer satisfaction.",
-      "features": [
-        "Responsive and adaptive designs for multiple screen sizes",
-        "Optimized performance for web browsers",
-        "Easy integration with existing backend systems",
-        "Unified experience for web and mobile users"
-      ]
-    },
-    {
-      "title": "Cross-Platform App Development",
-      "subtitle": "",
-      "description": "Reduce development time by up to 30% with a single Flutter codebase that works across multiple platforms. We deliver scalable, secure solutions tailored for enterprises, helping your business adapt quickly to evolving needs while maintaining high-quality performance.",
-      "features": [
-        "Smooth deployment across Android, iOS, and web",
-        "Scalable architecture for future growth",
-        "Enhanced security features to protect sensitive data",
-        "Simplified app maintenance with a unified codebase"
-      ]
-    },
-    {
-      "title": "Enterprise Flutter Applications",
-      "subtitle": "",
-      "description": "Harness Flutter’s performance and flexibility to create robust enterprise applications that boost productivity and streamline workflows. Our solutions scale effortlessly, supporting growing user bases and ensuring optimal app performance even under heavy loads.",
-      "features": [
-        "Complex integrations with third-party enterprise tools",
-        "High scalability for large user volumes",
-        "Real-time data synchronization and offline capabilities",
-        "Analytics and performance monitoring support"
-      ]
-    },
-    {
-      "title": "Scaling Existing Flutter Products",
-      "subtitle": "",
-      "description": "Future-proof your Flutter apps by restructuring legacy code, implementing clean architecture, and modernizing the user interface. The result is a scalable, maintainable, and visually polished application ready for ongoing development and long-term growth.",
-      "features": [
-        "Code refactoring and architecture improvement",
-        "UI/UX redesign to match modern standards",
-        "Performance optimization for high traffic apps",
-        "Modular development for easy feature addition"
-      ]
-    } ,
-    {
-      "title": "Legacy App Modernization",
-      "subtitle": "",
-      "description": "We help revive outdated Flutter applications weighed down by technical debt or inconsistent UI. By modernizing the codebase and improving usability, we transform legacy apps into efficient, modern, and high-performing solutions.",
-      "features": [
-        "Reduction of technical debt for better maintainability",
-        "Improved app speed, responsiveness, and stability",
-        "Updated UI for enhanced user engagement",
-        "Compatibility with the latest OS versions and devices"
-      ]
-    }
-    
-  ],
-  "pageData": {
+"ServicesData": {
+    "heading": "Flutter app development services",
+    "description": "We provide end-to-end Flutter app development services, covering business idea validation, development, deployment, and ongoing support. Our solutions help businesses create high-performance, cross-platform apps with a seamless user experience.",
+    "services": [
+      {
+        "title": "Flutter Mobile Application Development",
+        "subtitle": "",
+        "description": "Leverage Flutter mobile app development to accelerate project timelines and deliver seamless, consistent user experiences across both Android and iOS platforms. Our expert developers help you build high-performance apps with a native-like feel, efficient code sharing, and stunning visuals that drive user engagement and business growth.",
+        "features": [
+          "Single codebase for Android, iOS, and web applications",
+          "Faster development cycles and reduced time-to-market",
+          "High-performance apps with smooth animations and transitions",
+          "Consistent UI/UX across devices and platforms",
+          "Cost-effective development with reusable code"
+        ]
+      },
+      {
+        "title": "Flutter Web Application Development",
+        "subtitle": "",
+        "description": "Build cross-platform web apps with Flutter that provide a seamless mobile-like experience on all devices. By partnering with our team, you can streamline operations, save resources, and ensure consistent functionality, enhancing both efficiency and customer satisfaction.",
+        "features": [
+          "Responsive and adaptive designs for multiple screen sizes",
+          "Optimized performance for web browsers",
+          "Easy integration with existing backend systems",
+          "Unified experience for web and mobile users"
+        ]
+      },
+      {
+        "title": "Cross-Platform App Development",
+        "subtitle": "",
+        "description": "Reduce development time by up to 30% with a single Flutter codebase that works across multiple platforms. We deliver scalable, secure solutions tailored for enterprises, helping your business adapt quickly to evolving needs while maintaining high-quality performance.",
+        "features": [
+          "Smooth deployment across Android, iOS, and web",
+          "Scalable architecture for future growth",
+          "Enhanced security features to protect sensitive data",
+          "Simplified app maintenance with a unified codebase"
+        ]
+      },
+      {
+        "title": "Enterprise Flutter Applications",
+        "subtitle": "",
+        "description": "Harness Flutter’s performance and flexibility to create robust enterprise applications that boost productivity and streamline workflows. Our solutions scale effortlessly, supporting growing user bases and ensuring optimal app performance even under heavy loads.",
+        "features": [
+          "Complex integrations with third-party enterprise tools",
+          "High scalability for large user volumes",
+          "Real-time data synchronization and offline capabilities",
+          "Analytics and performance monitoring support"
+        ]
+      },
+      {
+        "title": "Scaling Existing Flutter Products",
+        "subtitle": "",
+        "description": "Future-proof your Flutter apps by restructuring legacy code, implementing clean architecture, and modernizing the user interface. The result is a scalable, maintainable, and visually polished application ready for ongoing development and long-term growth.",
+        "features": [
+          "Code refactoring and architecture improvement",
+          "UI/UX redesign to match modern standards",
+          "Performance optimization for high traffic apps",
+          "Modular development for easy feature addition"
+        ]
+      },
+      {
+        "title": "Legacy App Modernization",
+        "subtitle": "",
+        "description": "We help revive outdated Flutter applications weighed down by technical debt or inconsistent UI. By modernizing the codebase and improving usability, we transform legacy apps into efficient, modern, and high-performing solutions.",
+        "features": [
+          "Reduction of technical debt for better maintainability",
+          "Improved app speed, responsiveness, and stability",
+          "Updated UI for enhanced user engagement",
+          "Compatibility with the latest OS versions and devices"
+        ]
+      }
+    ]
+},
+"AboutSection": {
+    "title": "",
+    "heading": "Unlock New Business Potential with Advanced Flutter Solutions",
+    "description1": "We offer end-to-end Flutter app development services, covering everything from business idea consultation and app design to development, deployment, and ongoing support. Our comprehensive flutter app development services include UI/UX design, programming, testing, and maintenance to ensure your Flutter app performs flawlessly across platforms.",
+    "description2": "Our team of expert Flutter developers specializes in building cross-platform applications that deliver seamless user experiences on both web and mobile devices. Whether you need a Flutter mobile app or a Flutter web application, we create custom solutions tailored to your business goals.",
+    "imageSrc": "https://www.comfygen.com/gallery/about-images/flutter-development-company-about-us-img.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+},
+"CallToAction": {
+    "heading": "Let’s Build the Future of Technology Together",
+    "text": "At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+},
+"InfoSection": {
+    "heading": "Cost of Flutter App Development",
+    "description1": "We develop Flutter apps with native performance and flexible UI designs that are highly interactive and functional. With our Flutter app development expertise, we can turn your idea into a profitable and fully-fledged app. Our team has vast Flutter architecture experience and builds apps with interactive UI, high performance, and agile deployment.",
+    "description2": "",
+    "description3": "",
+    "dec": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/media/images/cost-of-flutter-app-development-img.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "left"
+},
+"InfoSection2": {
+    "heading": "Flutter App Migration Services",
+    "description1": "You can migrate your Android and iOS app development to Flutter with our help. Taking your existing application across platforms and operating systems is one of our specialties. Our team of Flutter Android app development and deployment experts can help you. For platform-agnostic apps, we are the Flutter app development company the world trusts.",
+    "description2": "",
+    "description3": "",
+    "dec": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/media/images/flutter-app-migration-services-img.webp",
+    "link": "/contact-us",
+    "linkText": "Lets Discuss",
+    "imagePosition": "right"
+},
+"InfoSection3": {
+    "heading": "Flutter Consulting Services",
+    "description1": "In terms of framework maturity and use cases, Flutter app development has come a long way since its inception. Providing you with assistance in validating your Flutter app idea and ensuring that the framework is the best technical solution for your product idea is our goal.",
+    "description2": "",
+    "description3": "",
+    "description4": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/media/images/flutter-consulting-services-img.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT",
+    "imagePosition": "left"
+},
+"HireDeveloper": {
+    "heading": "Benefits of hire Flutter developer",
+    "text": "The Flutter iOS app development services we provide are built on the framework's best features. With the SDK, we provide a native end-user experience, expressiveness, flexible UI, and lightning-fast load speed of 60ms. Make your application the symbol of excellence across all platforms with FPS.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Development at a rapid pace",
+      "Flexible and expressive user interface",
+      "Native Performance"
+    ]
+},
+"pageData": {
     "title": "Why Choose Comfygen For Your Flutter App Development Company?",
     "description": "Comfygen is a leading Flutter App Development Company, harnessing the latest technologies to deliver innovative and high-performing mobile solutions. With a focus on reliability, trust, and excellence, we stay ahead of industry trends to ensure your business is digitally empowered and future-ready.",
     "mainCardData": {
@@ -113,26 +192,8 @@
         "description": "We build solutions designed to scale with your business, ensuring long-term reliability, flexibility, and adaptability to evolving market needs."
       }
     ]
-  },
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "Can you convert my existing app into Flutter?",
-      "desc": "Installing Flutter as a library or module is the first step. The user interface of the application is reflected in that module. Modules can be created using the Flutter create-t module command. The new project will have a somewhat different structure. The main code can be separated from the Flutter code by creating a module in this way. Third-party modules are required for this module."
-    },
-    {
-      "num": "2",
-      "title": "Can I use Flutter inside of my existing native app?",
-      "desc": "Flutter isn't always practical for rewriting your entire application at once. You can integrate Flutter piecemeal into your existing application as a library or module in those cases. After importing the module, you can use Flutter to render a part of the UI in your Android or iOS app (currently supported platforms)."
-    },
-    {
-      "num": "3",
-      "title": "Can we use flutter for Web development?",
-      "desc": "Flutter is a great tool for developing mobile and web applications. Using standards-based online technologies, such as HTML, CSS, and JavaScript, Flutter is extremely compatible with today's web content. Flutter code can be compiled into a client experience that can be deployed to any web server that supports Flutter web."
-    }
-  ],
-
-  "ReviewData": {
+},
+"ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
     "Review": [
@@ -225,23 +286,25 @@
         "image": "/Google - Original.png"
       }
     ]
-  },
-
-  "Hire": [
+},
+  "Frequently": [
     {
       "num": "1",
-      "title": "Benefits of hire Flutter developer",
-      "desc": "The Flutter iOS app development services we provide are built on the framework's best features.With the SDK, we provide a native end-user experience, expressiveness, flexible UI, and lightning-fast load speed of 60ms Make your application the symbol of excellence across all platforms with FPS. ",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
+      "title": "Can you convert my existing app into Flutter?",
+      "desc": "Installing Flutter as a library or module is the first step. The user interface of the application is reflected in that module. Modules can be created using the Flutter create-t module command. The new project will have a somewhat different structure. The main code can be separated from the Flutter code by creating a module in this way. Third-party modules are required for this module."
+    },
+    {
+      "num": "2",
+      "title": "Can I use Flutter inside of my existing native app?",
+      "desc": "Flutter isn't always practical for rewriting your entire application at once. You can integrate Flutter piecemeal into your existing application as a library or module in those cases. After importing the module, you can use Flutter to render a part of the UI in your Android or iOS app (currently supported platforms)."
+    },
+    {
+      "num": "3",
+      "title": "Can we use flutter for Web development?",
+      "desc": "Flutter is a great tool for developing mobile and web applications. Using standards-based online technologies, such as HTML, CSS, and JavaScript, Flutter is extremely compatible with today's web content. Flutter code can be compiled into a client experience that can be deployed to any web server that supports Flutter web."
     }
-  ],
-  "myList": [
-    "Development at a rapid pace  ",
-    "Flexible and expressive user interface",
-    "Native Performance ",
-    "Integration is easy",
-    "Friendly to scalability",
-    "Codebase with one version"
   ]
+
+
+
 }
