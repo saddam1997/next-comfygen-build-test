@@ -1,68 +1,63 @@
 
-import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ethereumblock.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { ssr: true }
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true,},
+);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
+  {ssr: true,},
 );
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true }
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  {
+    ssr: true,
+  },
 );
 
-const SolutionSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { ssr: true }
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
+  {
+    ssr: true,
+  },
 );
 
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { ssr: true }
-);
-import TechStacks from "../../components/TechStacks";
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { ssr: true }
-);
-
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
 const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
+  () => import("../../components/BlogSection"),
   { ssr: true }
 );
+
+
 import ReviewCard from "../../components/ReviewCard";
+import AboutComponent from "../../components/Abouts/AboutComponent";
+import TechStacks from "../../components/TechStacks";
+
 
 export default function Ecommerce(props: any) {
   let { initialData } = props;
@@ -168,118 +163,23 @@ export default function Ecommerce(props: any) {
 
 
       </Head>
-
-      {/* <BlockChainHeader /> */}
-      <div className="overflow-hidden ">
-        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
-       
-        {/* <Milestones/> */}
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">Comprehensive Ethereum for Blockchain Development Services We Offer
-              </h2>
-              <p className="text-base text-center font-normal">Comfygen Ethereum for Blockchain Development Company delivered secure and scalable Ethereum blockchain services. From DeFi platforms and NFT marketplaces to ERC-20 tokens and custom dApps, our experts harness Ethereum’s smart contract capabilities to build future-ready decentralized solutions.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-
-        <AboutSection
-          title="About Company"
-          heading="Why Choose Ethereum for Blockchain Development?"
-          description1="Ethereum Blockchain Development offers businesses a secure, scalable, and reliable foundation for building next-generation decentralized applications. Its strong ecosystem, developer community, and proven track record make it the ideal choice for businesses seeking innovation. From DeFi to NFTs, Ethereum powers diverse use cases with unmatched flexibility and security. With Ethereum, enterprises can harness smart contracts, digital assets, and decentralized networks to stay ahead in the digital economy."
-          points={[
-            "Trusted platform for dApps & smart contracts",
-            " Highly scalable & secure blockchain network",
-            "EVM compatibility for cross-chain development",
-            "Strong global developer community & ecosystem",
-          ]}
-          imageSrc="https://www.comfygen.com/comfygen-images/ethereum-blockchain-development-company/ethereum_about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-        <SolutionSec
-          heading="Our Ethereum Blockchain Development Solutions"
-          subheading="Businesses choose a Custom Ethereum Blockchain Development Company for its ability to deliver secure, scalable, and future-ready solutions. With Ethereum’s smart contracts and decentralized infrastructure, companies can streamline operations, enhance transparency, and drive innovation in the evolving blockchain landscape."
-          techData={JSON_DATA.technologyData}
-        />
-
-        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.AIFeatures} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <WhyChooseSection pageData={JSON_DATA.PageData} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} title="" />
+      <BlogSection initialData={initialData} />
 
 
 
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Ethereum Blockchain Development Process</h2>
-              <p className="text-base font-normal mt-2">At Comfygen, as a leading Ethereum Blockchain Development Company, we follow a proven and transparent process to deliver secure and scalable blockchain solutions. Our Ethereum blockchain development services are designed to align with your unique requirements while ensuring faster go-to-market and long-term success.</p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-        <HireDeveloper
-          heading="Hire Our Expert Ethereum Blockchain Developers"
-          text="Hire a dedicated Ethereum Blockchain developer from India to build secure, scalable, and future-ready blockchain solutions. Our certified Ethereum developers specialize in tokens, DApps, NFT marketplaces, and DeFi platforms, ensuring seamless blockchain integration. With proven expertise, compliance-driven processes, and a strong record of success, we deliver high-performance solutions tailored to your business needs."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Certified Ethereum Developers",
-            "Proven Record of Success",
-            "Compliance and Governance",
-            "Capability in Building Ethereum Infrastructures",
-            "Smart Contract & DeFi Development Skills"
-          ]}
-        />
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Explore Our Ethereum Blockchain Based Portfolio"
-            description="Explore our portfolio of successful projects built on the Ethereum Blockchain, showcasing our expertise in online solutions and app development. Each project reflects our commitment to excellence, innovation, and client satisfaction."
-          />
-        </section>
-
-
-        <CallToAction
-          heading=" Need More Information on Ethereum Blockchain Development?"
-          text=" Our excellence in delivering Ethereum blockchain development services continues to grow with every new project. As one of the leading blockchain networks, Ethereum provides unlimited possibilities for revolutionizing digital transformation of your business. If you want to learn more about our Ethereum development services, then you can connect with us through your preferred channels right now."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <ReviewCard testimonials={JSON_DATA.ReviewData} />
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
-        <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }

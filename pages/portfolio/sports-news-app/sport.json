@@ -1,9 +1,9 @@
 {
     "HeroSection": {
-        "heading": "Urban Ride-Hailing – Taxi Booking App Development",
+        "heading": "All Sports News App",
         "subhead": "",
-        "ptag": "Our client, a Dubai-based ride-hailing startup, wanted to enter the competitive ride-hailing market with a unique and scalable taxi app development solution. As a leading ride-hailing app development company, we built an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support to ensure a seamless and efficient urban commuting experience.",
-        "imageSrc": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "ptag": "Our USA-based client, a leading sports media company, required a custom sports news app development solution to provide real-time sports updates, match analysis, and AI-driven content recommendations. As a top-rated news app development company, we built a feature-rich, scalable platform that delivers live scores, breaking news, player stats, and personalized sports content for fans worldwide.",
+        "imageSrc": "https://www.comfygen.com/image/hero-image-sports-news-app.webp",
         "buttonText": "Talk To Consultant",
         "buttonLink": "/portfolio",
         "imageHeight": 423,
@@ -28,32 +28,34 @@
     "Challenge": {
         "heading": "Challenge",
         "points": [
-            "The client needed a custom ride-hailing app with fast ride matching, automated fare calculation, and multilingual support to cater to Dubai’s diverse population.",
-            "Ensuring real-time tracking, secure payment integration, and dynamic surge pricing was a major challenge.",
-            "Competing with established ride-hailing giants while offering a differentiated user experience and driver incentives."
+            "The client wanted an AI-powered sports news app with real-time updates, multi-sport coverage, and interactive content.",
+            "Ensuring seamless live data integration with sports APIs for scores, match highlights, and player statistics.",
+            "Providing a personalized user experience through AI-driven recommendations and custom news feeds.",
+            "Managing high traffic spikes during major sporting events."
         ],
-        "imageSrc": "https://www.comfygen.com/image/challanges-ride-hailing-app.webp",
+        "imageSrc": "https://www.comfygen.com/image/challanges-image-sports-news-app.webp",
         "imagePosition": "right"
     },
     "Solution": {
         "heading": "Solution:",
         "points": [
-            "As a top-rated taxi booking app development company, we developed a highly scalable and feature-rich ride-hailing platform tailored for Dubai.",
-            "Integrated AI-based ride matching, multi-language support, and an intuitive user interface for seamless navigation.",
-            "Our ride-hailing app development services ensured a competitive edge with real-time ride tracking, secure payments, and dynamic pricing algorithms."
+            "As a leading sports news app development company, we built an AI-powered, real-time sports news platform that ensures fast content delivery and an engaging user experience.",
+            "Integrated official sports APIs for live scores, match details, and player stats.",
+            "Developed AI-driven news recommendations for personalized content delivery.",
+            "Implemented cloud-based infrastructure to handle high traffic loads during major events."
         ],
-        "imageSrc": "https://www.comfygen.com/image/solution-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/solution-image-sports-news-app.webp"
     },
     "BusinessBenefits": {
         "heading": "Business Benefits",
         "points": [
-            "50,000+ user sign-ups in the first 6 months, proving rapid adoption.",
-            "30% increase in driver registrations, ensuring better ride availability.",
-            "Improved revenue generation through commission-based earnings and surge pricing models.",
-            "Enhanced user retention with personalized ride recommendations and loyalty programs.",
-            "Scalable architecture, allowing easy expansion to other UAE cities and global markets."
+            "40% increase in user engagement with AI-powered content recommendations.",
+            "Faster news delivery with real-time sports data integration.",
+            "Higher ad revenue and subscription growth through personalized content.",
+            "Global audience reach with multi-sport, multi-language, and offline support.",
+            "Scalable infrastructure to support high-traffic sporting events."
         ],
-        "imageSrc": "https://www.comfygen.com/image/business-benefits-ride-hailing-app.webp",
+        "imageSrc": "https://www.comfygen.com/image/business-benefits-image-sports-news-app.webp",
         "imagePosition": "right"
     },
     "Tabs": [
@@ -66,8 +68,8 @@
         "Advanced Technologies"
     ],
     "TechstackData": {
-        "heading": "Technologies Used for Taxi Booking App Development",
-        "description": "We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses",
+        "heading": "Technologies Used for App Development",
+        "description": "",
         "TechItems": {
             "Frontend": [
                 {

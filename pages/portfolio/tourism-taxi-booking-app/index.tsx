@@ -1,37 +1,22 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-
+import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
 import dynamic from 'next/dynamic';
-import Header from '../../../components/Newcomponet/layout/Header';
-import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
+import JSON_DATA from "./tourism.json"
+import Features from "../../../components/PortfolioPage/Features"
+const TechStacks = dynamic(() => import('../../../components/TechStacks'),
+    { ssr: true }
 );
-const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-  { loading: loader, ssr: true }
-);
-const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
+const ReviewCard = dynamic(() => import("../../../components/ReviewCard"),
+    { ssr: true }
 );
 
 const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
+    () => import("../../../components/BlogSection"),
+    { ssr: true }
 );
 
 
-
-
-
-import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
-
-export default function about(props) {
-    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-    const openModal = () => setTalkToExpertModal(true);
-    const closeModal = () => setTalkToExpertModal(false);
-
+export default function about(props:any) {
     let { initialData } = props;
     return (
         <div className='overflow-hidden'>
@@ -53,135 +38,46 @@ export default function about(props) {
                 <meta name="twitter:label1" content="Est. reading time" />
                 <meta name="twitter:data1" content="8 minutes" />
             </Head>
-            <div className="">
-               
-                   {/* <Header /> */}
-              
-            </div>
+            <PortfolioHero Data={JSON_DATA.HeroSection} />
+            <Features Data={JSON_DATA.Features} />
+            <Features Data={JSON_DATA.Challenge} />
+              <Features Data={JSON_DATA.Solution} />
+              <Features Data={JSON_DATA.BusinessBenefits} />
+                <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+                  <ReviewCard testimonials={JSON_DATA.ReviewData} />
             <div className="overflow-hidden">
-                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
-                    <CompanyHeroSection
-                        heading="Tourism Taxi Booking App"
-                        subhead=""
-                        ptag="Our client is a leading tourism company that needed a custom tourism taxi app development solution to provide seamless tourism and inter-city travel experience. As a top-rated travel taxi app development company, we built a feature-rich, AI-powered platform offering multi-city booking, tour packages, and multilingual support to enhance user convenience and accessibility."
-                        imageSrc="https://www.comfygen.com/image/hero-tourism-taxi-booking-app.webp"
-                        buttonText="Talk To Consultant"
-                        openModal={openModal}
-                        closeModal={closeModal}
-                        talkToExpertModal={talkToExpertModal}
-                        buttonLink="/portfolio"
-                        imageHeight={423}
-                        imageWidth={640}
-                    />
-                </div>
-
-                <Features
-                    heading="Features"
-                    points={[
-                        "Multi-City Booking System: Allows tourists to book taxis across different cities.",
-                        "Customizable Tour Packages: Pre-designed and flexible sightseeing plans.",
-                        "AI-Powered Route Optimization: Ensures the fastest and most scenic travel routes.",
-                        "Live Tour Guide Integration: Provides real-time travel insights and historical facts.",
-                        "Multilingual Support: Offers services in multiple languages for international tourists.",
-                        "Seamless Digital Payments: Integrates UPI, cards, digital wallets, and international payment gateways.",
-                        "Real-Time Ride Tracking & Safety Features: GPS tracking, SOS button, and driver authentication.",
-                        "Custom Pricing & Discounts: Automated seasonal pricing and exclusive tourist discounts.",
-                        "In-App Chat & Support: 24/7 multilingual customer assistance for seamless communication."
-                       
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/features-tourism-taxi-booking-app.webp"
-                />
-
-                <Features
-                    heading="Challenge"
-                    points={[
-                        "The client required a tourism taxi service app that integrates real-time booking, guided tour packages, and dynamic pricing.",
-                        "Ensuring availability across multiple cities, route optimization, and multilingual customer support was a major challenge.",
-                        "The app needed to handle high user traffic, secure payment processing, and an engaging tourist-friendly interface."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/challanges-tourism-taxi-booking-app.webp"
-                    imagePosition='left'
-                />
-                <Features
-                    heading="Solution:"
-                    points={[
-                        "As a custom travel taxi booking app development company, we built an AI-driven tourism taxi booking platform with intelligent routing, real-time availability tracking, and integrated tour packages.",
-                        "Implemented secure digital payments, multilingual support, and a user-friendly booking interface for seamless travel experiences.",
-                        "Our tourism taxi app development services ensured a scalable, high-performance platform that could handle peak travel seasons efficiently."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/solution-tourism-taxi-booking-app.webp"
-                />
-                <Features
-                    heading="Business Benefits"
-                    points={[
-                        "35% increase in tourist bookings with convenient and user-friendly travel options.",
-                        "25% boost in customer retention due to personalized experiences and AI-driven route planning.",
-                        "Enhanced operational efficiency with automated ride scheduling and dynamic pricing models.",
-                        "Higher revenue generation through custom tour packages and premium ride options.",
-                        "Scalable platform supporting expansion to new destinations and travel categories."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/business-benefits-tourism-taxi-booking-app.webp"
-                    imagePosition='left'
-                />
-
-                <TechStack
-                    title="Technologies Used for Taxi Booking App Development"
-                    description="We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses"
-                    filterCategory={["crypto"]}
-                />
 
 
-                <section className='bg-[#fff] lg:py py-10'>
-                    <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                        <div className='space-y-2'>
-                            <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                                What Our Client Says
-                            </h2>
-                            <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                        </div>
 
-                        <div>
-                        <div className={styles.testimonial}>
-                            <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>David W.</h3>
-                            <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>London, UK</p>
-                        </div>
-                        <div className='space-y-2 mt-4'>
-                            <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                            </div>
-                            <div>
-                                <p className='md:text-base text-sm text-black'>"Comfygen transformed our vision into a fully functional tourism taxi booking app development solution. The AI-powered routing, real-time booking, and multilingual support significantly improved our customer experience. Their expertise as a top-rated travel taxi booking app development company helped us scale our services seamlessly."</p>
-                            </div>
-                        </div>
-                        </div>
-                    
-                    </div>
-                </section>
+
+
+
+
             </div>
-             <BlogSection initialData={initialData} />
+            <BlogSection initialData={initialData} />
         </div>
     )
 }
 export async function getStaticProps() {
-  try {
-    const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
-    );
+    try {
+        const res = await fetch(
+            `${process.env.URL}/api/v1/posts?per_page=3`
+        );
 
-    if (!res.ok) throw new Error("API failed");
+        if (!res.ok) throw new Error("API failed");
 
-    const data = await res.json();
+        const data = await res.json();
 
-    return {
-      props: { initialData: data },
-      revalidate: 3600, // 24 hours
-    };
-  } catch (error) {
-    console.error("getStaticProps error:", error);
+        return {
+            props: { initialData: data },
+            revalidate: 3600, // 24 hours
+        };
+    } catch (error) {
+        console.error("getStaticProps error:", error);
 
-    return {
-      props: { initialData: [] },
-      revalidate: 3600, // retry in 1 hour
-    };
-  }
+        return {
+            props: { initialData: [] },
+            revalidate: 3600, // retry in 1 hour
+        };
+    }
 }

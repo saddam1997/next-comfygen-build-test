@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       {/* ✅ GTM optimized (NO blocking JS) */}
-      <Script
+      {/* <Script
         id="gtm-script"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
@@ -37,7 +37,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             })(window,document,'script','dataLayer','GTM-5K96GNBB');
           `,
         }}
-      />
+      /> */}
 
       {/* ✅ Main App */}
       <div className={poppins.className}>

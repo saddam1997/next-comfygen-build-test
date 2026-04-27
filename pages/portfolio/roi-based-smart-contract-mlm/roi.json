@@ -1,62 +1,56 @@
 {
     "HeroSection": {
-        "heading": "Urban Ride-Hailing – Taxi Booking App Development",
+        "heading": "ROI-Based Smart Contract MLM Software",
         "subhead": "",
-        "ptag": "Our client, a Dubai-based ride-hailing startup, wanted to enter the competitive ride-hailing market with a unique and scalable taxi app development solution. As a leading ride-hailing app development company, we built an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support to ensure a seamless and efficient urban commuting experience.",
-        "imageSrc": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "ptag": "At Comfygen, we developed a smart contract MLM Software, offering users a decentralized ROI-based earning model combined with referral bonuses. Built entirely on Ethereum, this project was tailored for users who prefer daily passive income, backed by trustless smart contract automation. The platform was a hybrid — combining investment returns with MLM-level rewards — without any admin interference.",
+        "imageSrc": "https://www.comfygen.com/image/roi-based-roi-based-smart-contract-mlm.webp",
         "buttonText": "Talk To Consultant",
         "buttonLink": "/portfolio",
         "imageHeight": 423,
         "imageWidth": 640
     },
     "Features": {
-        "heading": "Features",
+        "heading": "Features We Built",
         "points": [
-            "<b>Real-Time Ride Matching & GPS Tracking: </b> Live ride requests and driver location updates.",
-            "<b>Dynamic Pricing Algorithm: </b> Adjusts fares based on demand and traffic conditions.",
-            "<b>Multi-Language Support: </b> Arabic, English, and other regional languages.",
-            "<b>Multiple Ride Categories: </b> Economy, premium, luxury, and shared rides.",
-            "<b>In-App Wallet & Multiple Payment Options: </b> Credit/debit card, digital wallets, and cash payments.",
-            "<b>Driver Earnings Dashboard: </b> Real-time income tracking and automated payout system",
-            "<b>User & Driver Ratings System: </b> Build trust through feedback and reviews.",
-            "<b>AI-Powered Route Optimization: </b> Reduces wait time and improves ride efficiency.",
-            "<b>Ride Scheduling & Corporate Accounts: </b> Pre-book rides and offer business travel solutions.",
-            "<b>Emergency SOS Button & Live Support: </b> Enhanced security for riders and drivers."
+            "ROI-based system: daily payouts (e.g., 1% to 3%) directly to users",
+            "100% decentralized smart contract on Ethereum",
+            "Built-in referral bonus structure (optional team building)",
+            "Auto-reinvest and withdrawal logic coded in Solidity",
+            "Real-time transaction logs and income dashboard",
+            "Wallet-to-wallet ETH payouts",
+            "Intuitive UI for global users"
         ],
-        "imageSrc": "https://www.comfygen.com/image/features-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/features-we-built-roi-based-smart-contract-mlm.webp",
+        "imagePosition": "left"
     },
     "Challenge": {
-        "heading": "Challenge",
+        "heading": " Challenge",
         "points": [
-            "The client needed a custom ride-hailing app with fast ride matching, automated fare calculation, and multilingual support to cater to Dubai’s diverse population.",
-            "Ensuring real-time tracking, secure payment integration, and dynamic surge pricing was a major challenge.",
-            "Competing with established ride-hailing giants while offering a differentiated user experience and driver incentives."
+            "The client wanted to launch a fully transparent ROI model, with zero manual payout processing and required no backend control — all while maintaining security, stability, and trust on the Ethereum blockchain."
         ],
-        "imageSrc": "https://www.comfygen.com/image/challanges-ride-hailing-app.webp",
-        "imagePosition": "right"
+        "imageSrc": "https://www.comfygen.com/image/challenge-roi-based-smart-contract-mlm.webp"
     },
     "Solution": {
-        "heading": "Solution:",
+        "heading": "Our Solution",
         "points": [
-            "As a top-rated taxi booking app development company, we developed a highly scalable and feature-rich ride-hailing platform tailored for Dubai.",
-            "Integrated AI-based ride matching, multi-language support, and an intuitive user interface for seamless navigation.",
-            "Our ride-hailing app development services ensured a competitive edge with real-time ride tracking, secure payments, and dynamic pricing algorithms."
+            "Our team at Comfygen designed and deployed a gas-optimized smart contract on Ethereum, capable of calculating and distributing daily ROI payouts. We implemented automatic referral bonuses, reinvestment rules, and withdrawal functionality — all governed entirely by the contract. A mobile-responsive dashboard with wallet integrations allowed easy access and tracking for users across the globe."
         ],
-        "imageSrc": "https://www.comfygen.com/image/solution-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/solution-roi-based-smart-contract-mlm.webp",
+        "imagePosition": "left"
     },
     "BusinessBenefits": {
         "heading": "Business Benefits",
         "points": [
-            "50,000+ user sign-ups in the first 6 months, proving rapid adoption.",
-            "30% increase in driver registrations, ensuring better ride availability.",
-            "Improved revenue generation through commission-based earnings and surge pricing models.",
-            "Enhanced user retention with personalized ride recommendations and loyalty programs.",
-            "Scalable architecture, allowing easy expansion to other UAE cities and global markets."
+            "Attracted investors and non-networkers through passive ROI",
+            "Increased platform stickiness with auto-reinvestment model",
+            "No manual operations — reduced overhead",
+            "High transparency with on-chain records",
+            "Trustless and tamper-proof smart contract logic",
+            "Fast global scalability with 24/7 automated payouts"
         ],
-        "imageSrc": "https://www.comfygen.com/image/business-benefits-ride-hailing-app.webp",
-        "imagePosition": "right"
+        "imageSrc": "https://www.comfygen.com/image/business-benefits-roi-based-smart-contract-mlm.webp"
     },
-    "Tabs": [
+        "Tabs": [
         "Frontend",
         "Backend",
         "Database",
@@ -66,8 +60,8 @@
         "Advanced Technologies"
     ],
     "TechstackData": {
-        "heading": "Technologies Used for Taxi Booking App Development",
-        "description": "We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses",
+        "heading": "Technologies Used for App Development",
+        "description": "",
         "TechItems": {
             "Frontend": [
                 {
@@ -319,7 +313,8 @@
             ]
         }
     },
-    "ReviewData": {
+
+     "ReviewData": {
         "heading": "What Our Clients Say",
         "description": "",
         "Review": [

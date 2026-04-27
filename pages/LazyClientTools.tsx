@@ -33,16 +33,19 @@ export default function LazyClientTools() {
   if (!load) return null;
 
   return (
-   <>
-    <div className="fixed bottom-5 left-5 z-50">
-      <ContactLinks />
-    </div>
+    <>
+      {load && (
+        <>
+          <div className="fixed bottom-5 left-5 z-50 w-[50px] h-[50px]">
+            <ContactLinks />
+          </div>
 
-    <div className="fixed bottom-5 right-5 z-50">
-      <Talkchat />
-    </div>
+          <div className="fixed bottom-5 right-5 z-50 w-[50px] h-[50px]">
+            <Talkchat />
+          </div>
+        </>
+      )}
 
-   
-  </>
+    </>
   );
 }

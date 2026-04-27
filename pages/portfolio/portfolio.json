@@ -1,4 +1,13 @@
-{
+{ "HeroSection": {
+        "heading": "Our Portfolio",
+        "subhead": "Work We Have Done For Some of Our Great Clients",
+        "ptag": "Delivering Innovative Robust and Result Oriented Business IT Solutions for Medium to Small Businesses.",
+        "imageSrc": "https://www.comfygen.com/image/portfolio-hero-img.webp",
+        "buttonText": "Talk To Consultant",
+        "buttonLink": "/portfolio",
+        "imageHeight": 423,
+        "imageWidth": 640
+    },
 
     "NativeAll": [
       {

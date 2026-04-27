@@ -1,199 +1,31 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
-
-
+import JSON_DATA from "./swipe.json"
 import dynamic from 'next/dynamic';
-import Header from '../../../components/Newcomponet/layout/Header';
-import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-const Features = dynamic(() => import("../../../components/Newcomponet/portfolio/Features"),
-  { loading: loader, ssr: true }
-);
-const TechStack = dynamic(() => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
+import PortfolioHero from '../../../components/PortfolioPage/PortfolioHero';
+import Features from "../../../components/PortfolioPage/Features"
+
+const TechStacks = dynamic(() => import('../../../components/TechStacks'),
+    { ssr: true }
 );
 
+const ReviewCard = dynamic(() => import("../../../components/ReviewCard"),
+    { ssr: true }
+);
 
 const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
+    () => import("../../../components/BlogSection"),
+    { ssr: true }
 );
 
 
-
-
-
-import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
-
-export default function about(props) {
-    const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-    const openModal = () => setTalkToExpertModal(true);
-    const closeModal = () => setTalkToExpertModal(false);
+export default function about(props: any) {
 
     let { initialData } = props;
-    const jsonLdData = [
-        {
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
-            "addressLocality": "Jaipur, Rajasthan",
-            "addressRegion": "India",
-            "postalCode": "302006",
-            "telephone": "+91-958-786-7258"
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "PostalAddress",
-            "streetAddress": "40 Tuxedo Ct, Toronto, ON",
-            "addressLocality": "Toronto",
-            "addressRegion": "Canada",
-            "postalCode": "M1G3S7",
-            "telephone": "+1 579-977-4475"
-        },
-
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "AI-Powered Swipe Dating App | Feature-Rich Matchmaking Platform",
-            "provider": {
-                "@type": "Organization",
-                "name": "Comfygen Technologies",
-                "url": "https://www.comfygen.com/"
-            },
-            "description": "Discover our AI-powered swipe dating app with GPS matching, secure authentication, multi-language support & dark/light mode. Comfygen builds engaging dating apps for global users.",
-            "url": "https://www.comfygen.com/portfolio/swipe-based-dating-app",
-            "mainEntityOfPage": "https://www.comfygen.com/portfolio/swipe-based-dating-app",
-            "areaServed": "Global",
-            "serviceType": [
-                "Matchmaking dating app development",
-                "custom dating app development solutions",
-                "AI-powered swipe dating app development",
-                "Dating app like Tinder",
-                "Swipe Dating App Development Portfolio"
-
-            ],
-
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-
-            ]
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Comfygen Technologies",
-            "image": "https://www.comfygen.com/svg/Logo1.svg",
-            "@id": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "telephone": "+91-958-786-7258",
-            "priceRange": "$",
-            "address": [{
-                "@type": "PostalAddress",
-                "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
-                "addressLocality": "Jaipur",
-                "postalCode": "302006",
-                "addressCountry": "IN"
-            }, {
-                "@type": "PostalAddress",
-                "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
-                "addressLocality": "Toronto",
-                "postalCode": "M1G3S7",
-                "addressCountry": "Canada"
-            }
-            ],
-            "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies",
-                "https://www.comfygen.com/"
-            ]
-        },
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Comfygen Technologies",
-            "url": "https://www.comfygen.com/",
-            "logo": "https://www.comfygen.com/svg/Logo1.svg",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "sales",
-                "contactOption": "WhatsApp",
-                "telephone": "+91 9587867258",
-                "email": "sales@comfygen.com",
-                "areaServed": ["IN", "US", "CA", "GB"],
-
-                "availableLanguage": "en, in"
-            },
-            "sameAs": [
-                "https://www.facebook.com/comfygen.technologies",
-                "https://x.com/Comfygen_Tech",
-                "https://www.instagram.com/comfygen_technologies",
-                "https://www.linkedin.com/company/comfygen-technologies"
-            ]
-        },
-        {
-            "@context": "http://www.schema.org",
-            "@type": "Product",
-            "brand": "Comfygen Technologies",
-            "Name": "Portfolio: Swipe-Based Dating App",
-            "image": "https://www.comfygen.com/image/dating-portfolio-feature-image.webp",
-            "description": "See how Comfygen built a swipe-based dating app with AI matchmaking, real-time communication & profile verification, boosting user engagement & retention.",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "350"
-            }
-        },
-        {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.comfygen.com"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Portfolio",
-                "item": "https://www.comfygen.com/portfolio"
-            }, {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Swipe Dating App Development Portfolio",
-                "item": "https://www.comfygen.com/portfolio/swipe-based-dating-app"
-            }]
-        }
-
-    ];
-
     return (
         <div className='overflow-hidden'>
             <Head>
                 <title>Swipe-Based Dating App Development | AI Matchmaking</title>
-               
+
 
                 <meta name="description" content="Comfygen Technologies built a swipe-based dating app with AI matchmaking, secure chat, video calls & location-based matches. A scalable dating app development solution for modern users." />
 
@@ -278,141 +110,42 @@ export default function about(props) {
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(jsonLdData)
+                        __html: JSON.stringify(JSON_DATA?.jsonLdData)
                     }}
                 />
 
             </Head>
-            <div className="">
-              
-                   {/* <Header /> */}
-               
-            </div>
-            <div className="overflow-hidden">
-                <div className=" py-[5rem] bg-[linear-gradient(135deg,#3f3d9b_0%,#5a59c9_60%,#3b3a8f_100%)] ">
-                    <CompanyHeroSection
-                        heading="Swipe-Based Dating App"
-                        subhead=""
-                        ptag="Our client sought an innovative swipe-based dating app development solution to connect users through a seamless, interactive interface. The goal was to design an intuitive, engaging platform that enhances user experience while ensuring security, scalability, and real-time communication. As a top-rated dating app development company, we created a feature-rich application that facilitates effortless matchmaking and social interaction."
-                        imageSrc="https://www.comfygen.com/image/dating-app-portfolio-hero-image.png"
-                        buttonText="Talk To Consultant"
-                        openModal={openModal}
-                        closeModal={closeModal}
-                        talkToExpertModal={talkToExpertModal}
-                        buttonLink="/portfolio"
-                        imageHeight={423}
-                        imageWidth={640}
-                    />
-                </div>
-
-                <Features
-                    heading="Features"
-                    points={[
-                        "<b>AI-Powered Matching : </b> Smart recommendations based on interests, behavior, and location",
-                        "<b>Swipe-Based Interface : </b>  Quick and interactive matching experience with left/right swipes.",
-                        "<b>Real-Time Chat & Video Calls : </b>   Secure in-app messaging and live video calls",
-                        "<b>Location-Based Matching : </b>  Connect with nearby users using GPS-based suggestions",
-                        "<b>Profile Verification & Security : </b>  AI-based identity verification to prevent fake profiles",
-                        "<b>Social Media Integration : </b>  Seamless sign-up and profile linking with Facebook, Google, and Instagram",
-                        "<b>Multi-Language Suppor : </b>  Expand user base with language customization",
-                        "<b>Dark & Light Mode : </b>  Enhanced UI experience with theme customization"
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/dating-portfolio-feature-image.webp"
-                />
-
-                <Features
-                    heading="Challenge"
-                    points={[
-                        "The client required an advanced swipe dating app development solution with AI-driven matchmaking.",
-                        "Needed real-time chat, video calls, and location-based recommendations for enhanced user engagement.",
-                        "Ensuring secure authentication, profile verification, and data privacy was a major concern.",
-                        "The app had to be highly scalable to handle a rapidly growing user base without performance issues.",
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/dating-portfolio-page-challenge-image.webp"
-                    imagePosition='left'
-                />
-                <Features
-                    heading="Solution:"
-                    points={[
-                        "As a custom dating app development company, we built a feature-rich dating mobile app development solution.",
-                        "Implemented AI-powered matchmaking algorithms for personalized user recommendations.",
-                        "Developed a secure and scalable backend with real-time features like chat and video calls.",
-                        "Integrated social media login, profile verification, and end-to-end encryption for data security.",
-                        "Designed an intuitive swipe-based interface for seamless user interactions.",
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/dating-portfolio-page-solution-image.webp"
-                />
-                <Features
-                    heading="Business Benefits"
-                    points={[
-                        "Improved user engagement and retention through personalized matchmaking and interactive features.",
-                        "Enhanced security and trust with AI-driven profile verification and encrypted messaging.",
-                        "Scalable infrastructure ensured effortless business expansion and growth.",
-                        "Integrated monetization strategies like premium memberships and in-app purchases for increased revenue.",
-                        "Positioned as a top-rated dating app development company by delivering an innovative and secure platform."
-                    ]}
-                    imageSrc="https://www.comfygen.com/image/dating-portfolio-page-business-benefits-image.webp"
-                    imagePosition='left'
-                />
-
-                <TechStack
-                    title="Our Edgy Tech-Stacks Use for Dating app development"
-                    description="The only focus is not the engagement, but building a highly-secured and robust web or application. For strong Dating app development, some edgy tech stacks are being used."
-                    filterCategory={["crypto"]}
-                />
-
-
-                <section className='bg-[#fff] lg:py py-10'>
-                    <div className='2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto space-y-6'>
-                        <div className='space-y-2'>
-                            <h2 className="xl:text-4xl text-3xl text-[#212121] mt-3 font-bold">
-                                What Our Client Says
-                            </h2>
-                            <p className='xl:text-base text-sm text-black'>500+ Reviews Of Delighted Clients with clutch <span className='text-[#FFB600]'>4.5 Star</span> Rating</p>
-                        </div>
-
-                        <div>
-                            <div className={styles.testimonial}>
-                                <h3 className='lg:text-xl text-lg text-[#212121] font-medium ml-4'>Michael S., Los Angeles,</h3>
-                                <p className='text-[#5556D1] md:text-base text-sm font-medium ml-4'>Muscat, Oman</p>
-                            </div>
-                            <div className='space-y-2 mt-4'>
-                                <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
-                                </div>
-                                <div>
-                                    <p className='md:text-base text-sm text-black'>"Comfygen delivered exactly what we envisioned for our Matchmaking Dating App Development. The AI-powered matching system has significantly improved user engagement and the app's security features ensure a trustworthy experience. Their expertise as a top-rated dating app development company made the entire process smooth and efficient. Highly recommended !"</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-             <BlogSection initialData={initialData} />
+            <PortfolioHero Data={JSON_DATA.HeroSection} />
+            <Features Data={JSON_DATA.Features} />
+            <Features Data={JSON_DATA.Challenge} />
+            <Features Data={JSON_DATA.Solution} />
+            <Features Data={JSON_DATA.BusinessBenefits} />
+            <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+            <ReviewCard testimonials={JSON_DATA.ReviewData} />
+            <BlogSection initialData={initialData} />
         </div>
     )
 }
 export async function getStaticProps() {
-  try {
-    const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
-    );
+    try {
+        const res = await fetch(
+            `${process.env.URL}/api/v1/posts?per_page=3`
+        );
 
-    if (!res.ok) throw new Error("API failed");
+        if (!res.ok) throw new Error("API failed");
 
-    const data = await res.json();
+        const data = await res.json();
 
-    return {
-      props: { initialData: data },
-      revalidate: 3600, // 24 hours
-    };
-  } catch (error) {
-    console.error("getStaticProps error:", error);
+        return {
+            props: { initialData: data },
+            revalidate: 3600, // 24 hours
+        };
+    } catch (error) {
+        console.error("getStaticProps error:", error);
 
-    return {
-      props: { initialData: [] },
-      revalidate: 3600, // retry in 1 hour
-    };
-  }
+        return {
+            props: { initialData: [] },
+            revalidate: 3600, // retry in 1 hour
+        };
+    }
 }

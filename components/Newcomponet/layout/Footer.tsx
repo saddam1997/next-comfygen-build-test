@@ -1,8 +1,8 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import JSON_DATA from "./json/footermenu.json";
 import styles from "./styles.module.css";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
 
 export default function Footer() {
   return (
@@ -10,9 +10,9 @@ export default function Footer() {
       <div className="space-y-8 md:px-4 py-10 lg:space-y-8 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
 
         {/* ===== Footer CTA Section ===== */}
-        <div className="relative overflow-hidden rounded-2xl lg:p-10 min-h-[300px] md:min-h-[350px]">
+        {/* <div className="relative overflow-hidden rounded-2xl lg:p-10 min-h-[300px] md:min-h-[350px]">
           
-          {/* Background Image (Optimized) */}
+    
           <Image
             src="https://www.comfygen.com/image/footer-top-img.webp"
             alt="Comfygen project consultation"
@@ -44,7 +44,7 @@ export default function Footer() {
               Get Started <MdOutlineArrowOutward size={20}/>
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* ===== Footer Links ===== */}
         <div className="grid grid-cols-1 gap-8 pt-8 sm:grid-cols-2 lg:grid-cols-4">

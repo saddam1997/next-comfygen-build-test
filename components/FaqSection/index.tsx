@@ -1,10 +1,6 @@
 
-import dynamic from 'next/dynamic';
 
-const FaqSectionClient = dynamic(() => import('./FaqContentClient'), {
-  ssr: false,
-});
-
+import FaqSectionClient from "./FaqContentClient"
 
 const Index = ({ faqData }: any) => {
   return <FaqSectionClient Data={faqData} />;

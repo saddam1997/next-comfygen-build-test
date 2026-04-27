@@ -398,6 +398,7 @@ export async function getStaticProps() {
 
     const data = await res.json();
 
+
     return {
       props: { initialData: data },
       revalidate: 3600, // 24 hours

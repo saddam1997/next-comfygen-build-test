@@ -19,7 +19,7 @@ const BlogSection = dynamic(
 
 
 
-export default function about(props:any) {
+export default function about(props: any) {
     let { initialData } = props;
     return (
         <div className='overflow-hidden'>
@@ -47,13 +47,13 @@ export default function about(props:any) {
             <Features Data={JSON_DATA.Solution} />
             <Features Data={JSON_DATA.BusinessBenefits} />
             <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-                 <ReviewCard testimonials={JSON_DATA.ReviewData} />
+            <ReviewCard testimonials={JSON_DATA.ReviewData} />
             {/* <TechStack
                     title="Technologies Used for Taxi Booking App Development"
                     description="We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses"
                     filterCategory={["crypto"]}
                 /> */}
-      
+
             <BlogSection initialData={initialData} />
         </div>
     )

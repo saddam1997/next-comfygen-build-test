@@ -1,10 +1,10 @@
-// "use client";
+
 
 import { useState } from "react";
 import { Star } from 'lucide-react';
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
-import { parseHTMLString } from "../../lib/parseHTML";
+
 
 export default function FaqSectionClient({
   title = "Frequently Asked Questions",
@@ -60,20 +60,18 @@ export default function FaqSectionClient({
                     onClick={() =>
                       setCurrentIndex(isOpen ? null : index)
                     }
-                    className={`flex items-center justify-between w-full px-5 py-4 ${
-                      isOpen
+                    className={`flex items-center justify-between w-full px-5 py-4 ${isOpen
                         ? "bg-[#5556D1]/10"
                         : "bg-white"
-                    }`}
+                      }`}
                   >
                     <h3 className="text-sm md:text-lg font-semibold">
                       {item.title}
                     </h3>
 
                     <span
-                      className={`transition-transform ${
-                        isOpen ? "rotate-45" : ""
-                      }`}
+                      className={`transition-transform ${isOpen ? "rotate-45" : ""
+                        }`}
                     >
                       +
                     </span>
@@ -81,27 +79,25 @@ export default function FaqSectionClient({
 
                   {/* Content */}
                   <div
-                    className={`transition-all duration-300 ${
-                      isOpen
+                    className={`transition-all duration-300 ${isOpen
                         ? "max-h-[1000px] opacity-100 px-5 pb-5"
                         : "max-h-0 opacity-0 overflow-hidden px-5"
-                    }`}
+                      }`}
                   >
                     <div className="space-y-3 text-sm md:text-base text-gray-800">
 
                       {/* TEXT */}
-                      {item.desc && <p>{parseHTMLString(item.desc)}</p>}
-                      {item.decs && <p>{item.decs}</p>}
-                      {item.dec1 && <p>{item.dec1}</p>}
-                      {item.dec2 && <p>{item.dec2}</p>}
-                      {item.dec3 && <p>{item.dec3}</p>}
+                      {item.desc && <p dangerouslySetInnerHTML={{ __html: item.desc }} />}
+                      {item.dec1 && <p dangerouslySetInnerHTML={{ __html: item.dec1 }} />}
+                      {item.dec2 && <p dangerouslySetInnerHTML={{ __html: item.dec2 }} />}
+                      {item.dec3 && <p dangerouslySetInnerHTML={{ __html: item.dec3 }} />}
 
                       {/* ✅ FINAL FIX (NO hydration issue) */}
                       {listItems.length > 0 && (
                         <ul className="list-disc pl-5 space-y-1">
                           {listItems.map((li: string, i: number) => (
-                            <li key={`${item.id || index}-${i}`}>
-                              {parseHTMLString(li)}
+                            <li key={`${item.id || index}-${i}`}  dangerouslySetInnerHTML={{ __html: li }}>
+                             
                             </li>
                           ))}
                         </ul>

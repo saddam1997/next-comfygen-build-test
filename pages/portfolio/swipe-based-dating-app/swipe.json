@@ -1,9 +1,9 @@
 {
     "HeroSection": {
-        "heading": "Urban Ride-Hailing – Taxi Booking App Development",
+        "heading": "Swipe-Based Dating App",
         "subhead": "",
-        "ptag": "Our client, a Dubai-based ride-hailing startup, wanted to enter the competitive ride-hailing market with a unique and scalable taxi app development solution. As a leading ride-hailing app development company, we built an Uber-like taxi app clone with real-time tracking, dynamic pricing, and multi-language support to ensure a seamless and efficient urban commuting experience.",
-        "imageSrc": "https://www.comfygen.com/image/hero-image-ride-hailing-app.webp",
+        "ptag": "Our client sought an innovative swipe-based dating app development solution to connect users through a seamless, interactive interface. The goal was to design an intuitive, engaging platform that enhances user experience while ensuring security, scalability, and real-time communication. As a top-rated dating app development company, we created a feature-rich application that facilitates effortless matchmaking and social interaction.",
+        "imageSrc": "https://www.comfygen.com/image/dating-app-portfolio-hero-image.png",
         "buttonText": "Talk To Consultant",
         "buttonLink": "/portfolio",
         "imageHeight": 423,
@@ -12,48 +12,49 @@
     "Features": {
         "heading": "Features",
         "points": [
-            "<b>Real-Time Ride Matching & GPS Tracking: </b> Live ride requests and driver location updates.",
-            "<b>Dynamic Pricing Algorithm: </b> Adjusts fares based on demand and traffic conditions.",
-            "<b>Multi-Language Support: </b> Arabic, English, and other regional languages.",
-            "<b>Multiple Ride Categories: </b> Economy, premium, luxury, and shared rides.",
-            "<b>In-App Wallet & Multiple Payment Options: </b> Credit/debit card, digital wallets, and cash payments.",
-            "<b>Driver Earnings Dashboard: </b> Real-time income tracking and automated payout system",
-            "<b>User & Driver Ratings System: </b> Build trust through feedback and reviews.",
-            "<b>AI-Powered Route Optimization: </b> Reduces wait time and improves ride efficiency.",
-            "<b>Ride Scheduling & Corporate Accounts: </b> Pre-book rides and offer business travel solutions.",
-            "<b>Emergency SOS Button & Live Support: </b> Enhanced security for riders and drivers."
+            "<b>AI-Powered Matching : </b> Smart recommendations based on interests, behavior, and location",
+            "<b>Swipe-Based Interface : </b> Quick and interactive matching experience with left/right swipes.",
+            "<b>Real-Time Chat & Video Calls : </b> Secure in-app messaging and live video calls",
+            "<b>Location-Based Matching : </b> Connect with nearby users using GPS-based suggestions",
+            "<b>Profile Verification & Security : </b> AI-based identity verification to prevent fake profiles",
+            "<b>Social Media Integration : </b> Seamless sign-up and profile linking with Facebook, Google, and Instagram",
+            "<b>Multi-Language Suppor : </b> Expand user base with language customization",
+            "<b>Dark & Light Mode : </b> Enhanced UI experience with theme customization"
         ],
-        "imageSrc": "https://www.comfygen.com/image/features-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/dating-portfolio-feature-image.webp"
     },
     "Challenge": {
         "heading": "Challenge",
         "points": [
-            "The client needed a custom ride-hailing app with fast ride matching, automated fare calculation, and multilingual support to cater to Dubai’s diverse population.",
-            "Ensuring real-time tracking, secure payment integration, and dynamic surge pricing was a major challenge.",
-            "Competing with established ride-hailing giants while offering a differentiated user experience and driver incentives."
+            "The client required an advanced swipe dating app development solution with AI-driven matchmaking.",
+            "Needed real-time chat, video calls, and location-based recommendations for enhanced user engagement.",
+            "Ensuring secure authentication, profile verification, and data privacy was a major concern.",
+            "The app had to be highly scalable to handle a rapidly growing user base without performance issues."
         ],
-        "imageSrc": "https://www.comfygen.com/image/challanges-ride-hailing-app.webp",
+        "imageSrc": "https://www.comfygen.com/image/dating-portfolio-page-challenge-image.webp",
         "imagePosition": "right"
     },
     "Solution": {
         "heading": "Solution:",
         "points": [
-            "As a top-rated taxi booking app development company, we developed a highly scalable and feature-rich ride-hailing platform tailored for Dubai.",
-            "Integrated AI-based ride matching, multi-language support, and an intuitive user interface for seamless navigation.",
-            "Our ride-hailing app development services ensured a competitive edge with real-time ride tracking, secure payments, and dynamic pricing algorithms."
+            "As a custom dating app development company, we built a feature-rich dating mobile app development solution.",
+            "Implemented AI-powered matchmaking algorithms for personalized user recommendations.",
+            "Developed a secure and scalable backend with real-time features like chat and video calls.",
+            "Integrated social media login, profile verification, and end-to-end encryption for data security.",
+            "Designed an intuitive swipe-based interface for seamless user interactions."
         ],
-        "imageSrc": "https://www.comfygen.com/image/solution-ride-hailing-app.webp"
+        "imageSrc": "https://www.comfygen.com/image/dating-portfolio-page-solution-image.webp"
     },
     "BusinessBenefits": {
         "heading": "Business Benefits",
         "points": [
-            "50,000+ user sign-ups in the first 6 months, proving rapid adoption.",
-            "30% increase in driver registrations, ensuring better ride availability.",
-            "Improved revenue generation through commission-based earnings and surge pricing models.",
-            "Enhanced user retention with personalized ride recommendations and loyalty programs.",
-            "Scalable architecture, allowing easy expansion to other UAE cities and global markets."
+            "Improved user engagement and retention through personalized matchmaking and interactive features.",
+            "Enhanced security and trust with AI-driven profile verification and encrypted messaging.",
+            "Scalable infrastructure ensured effortless business expansion and growth.",
+            "Integrated monetization strategies like premium memberships and in-app purchases for increased revenue.",
+            "Positioned as a top-rated dating app development company by delivering an innovative and secure platform."
         ],
-        "imageSrc": "https://www.comfygen.com/image/business-benefits-ride-hailing-app.webp",
+        "imageSrc": "https://www.comfygen.com/image/dating-portfolio-page-business-benefits-image.webp",
         "imagePosition": "right"
     },
     "Tabs": [
@@ -66,8 +67,8 @@
         "Advanced Technologies"
     ],
     "TechstackData": {
-        "heading": "Technologies Used for Taxi Booking App Development",
-        "description": "We use the core technologies in our cutting edge Taxi Booking App Development Services and solutions to build efficient cab booking app development service to ease users and businesses",
+        "heading": "Our Edgy Tech-Stacks Use for Dating app development",
+        "description": "The only focus is not the engagement, but building a highly-secured and robust web or application. For strong Dating app development, some edgy tech stacks are being used.",
         "TechItems": {
             "Frontend": [
                 {
@@ -412,5 +413,163 @@
                 "image": "/Google - Original.png"
             }
         ]
-    }
+    },
+    "jsonLdData": [
+        {
+            "@context": "https://schema.org",
+            "@type": "PostalAddress",
+            "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar",
+            "addressLocality": "Jaipur, Rajasthan",
+            "addressRegion": "India",
+            "postalCode": "302006",
+            "telephone": "+91-958-786-7258"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "PostalAddress",
+            "streetAddress": "40 Tuxedo Ct, Toronto, ON",
+            "addressLocality": "Toronto",
+            "addressRegion": "Canada",
+            "postalCode": "M1G3S7",
+            "telephone": "+1 579-977-4475"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "AI-Powered Swipe Dating App | Feature-Rich Matchmaking Platform",
+            "provider": {
+                "@type": "Organization",
+                "name": "Comfygen Technologies",
+                "url": "https://www.comfygen.com/"
+            },
+            "description": "Discover our AI-powered swipe dating app with GPS matching, secure authentication, multi-language support & dark/light mode. Comfygen builds engaging dating apps for global users.",
+            "url": "https://www.comfygen.com/portfolio/swipe-based-dating-app",
+            "mainEntityOfPage": "https://www.comfygen.com/portfolio/swipe-based-dating-app",
+            "areaServed": "Global",
+            "serviceType": [
+                "Matchmaking dating app development",
+                "custom dating app development solutions",
+                "AI-powered swipe dating app development",
+                "Dating app like Tinder",
+                "Swipe Dating App Development Portfolio"
+            ],
+            "sameAs": [
+                "https://www.facebook.com/comfygen.technologies",
+                "https://x.com/Comfygen_Tech",
+                "https://www.instagram.com/comfygen_technologies",
+                "https://www.linkedin.com/company/comfygen-technologies"
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Comfygen Technologies",
+            "image": "https://www.comfygen.com/svg/Logo1.svg",
+            "@id": "Comfygen Technologies",
+            "url": "https://www.comfygen.com/",
+            "telephone": "+91-958-786-7258",
+            "priceRange": "$",
+            "address": [
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "A-20 Basement, Samridhi Enclave, Ajmer Rd, Modi Nagar ",
+                    "addressLocality": "Jaipur",
+                    "postalCode": "302006",
+                    "addressCountry": "IN"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "40 Tuxedo Ct, Toronto, ON M1G 3S7 ",
+                    "addressLocality": "Toronto",
+                    "postalCode": "M1G3S7",
+                    "addressCountry": "Canada"
+                }
+            ],
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "sameAs": [
+                "https://www.facebook.com/comfygen.technologies",
+                "https://x.com/Comfygen_Tech",
+                "https://www.instagram.com/comfygen_technologies",
+                "https://www.linkedin.com/company/comfygen-technologies",
+                "https://www.comfygen.com/"
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Comfygen Technologies",
+            "url": "https://www.comfygen.com/",
+            "logo": "https://www.comfygen.com/svg/Logo1.svg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "sales",
+                "contactOption": "WhatsApp",
+                "telephone": "+91 9587867258",
+                "email": "sales@comfygen.com",
+                "areaServed": [
+                    "IN",
+                    "US",
+                    "CA",
+                    "GB"
+                ],
+                "availableLanguage": "en, in"
+            },
+            "sameAs": [
+                "https://www.facebook.com/comfygen.technologies",
+                "https://x.com/Comfygen_Tech",
+                "https://www.instagram.com/comfygen_technologies",
+                "https://www.linkedin.com/company/comfygen-technologies"
+            ]
+        },
+        {
+            "@context": "http://www.schema.org",
+            "@type": "Product",
+            "brand": "Comfygen Technologies",
+            "Name": "Portfolio: Swipe-Based Dating App",
+            "image": "https://www.comfygen.com/image/dating-portfolio-feature-image.webp",
+            "description": "See how Comfygen built a swipe-based dating app with AI matchmaking, real-time communication & profile verification, boosting user engagement & retention.",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "350"
+            }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.comfygen.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Portfolio",
+                    "item": "https://www.comfygen.com/portfolio"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Swipe Dating App Development Portfolio",
+                    "item": "https://www.comfygen.com/portfolio/swipe-based-dating-app"
+                }
+            ]
+        }
+    ]
 }
