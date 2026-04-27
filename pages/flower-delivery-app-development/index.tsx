@@ -219,7 +219,7 @@ export default function ClinicalApp(props: any) {
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
+    
       <BlogSection initialData={initialData} />
 
     </>
