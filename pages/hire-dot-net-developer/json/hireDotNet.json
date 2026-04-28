@@ -1,155 +1,152 @@
   {
-
-  "Herosection": {
-    "heading": "Hire Best .NET Developers From India",
-    "ptag": "Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs.",
-    "ptag1": "From custom .NET application development to system integration and modernization, our full-stack .NET developers deliver robust solutions using ASP.NET, .NET Core, MVC, and cloud-based architectures. Partner with Comfygen to streamline workflows, enhance security, and drive long-term growth.",
-    "li": "Expert .NET Developers for Hire",
-    "li1": "Full-Stack .NET Application Development",
-    "li2": "Secure, Scalable & Business-Ready Solutions",
-    "li3": "Custom Development Aligned to Your Goals",
-    "btnName": "Talk With Expert",
-    "btnLink": "/contact-us",
-    "bgImage": "https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp"
-  },
- "ServicesData": {
-    "heading": ".Net Development Services",
-    "description": "We are able to provide a wide range of .NET development services in the .NET Domain because of our technical proficiency and use of the agile development technique. We provide the following tactful solutions when you work with our .NET programmers:",
-    "services": [
-      {
-        "title": ".NET Web App Development",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "Our expertise lies in developing dependable, tailored, scalable, and future-proof web applications. Employ our .NET developers to create anything from basic websites to sophisticated web applications for a wide range of industry verticals. We focus on delivering efficient, high-performance web solutions that align with your business goals.",
-        "features": [
-          "Custom .NET Web Application Development",
-          "Enterprise Web Solutions",
-          "ASP.NET MVC Development",
-          "Web API Development",
-          "Migration & Porting to .NET",
-          "Support and Maintenance Services"
-        ]
-      },
-      {
-        "title": "Support and Maintenance Services",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "We specialize in providing reliable .NET maintenance and support services that ensure enhanced security, faster loading times, error-free plugin performance, reduced downtime, and overall improved efficiency. Our expert team works proactively to keep your .NET applications running smoothly, providing timely updates and addressing any issues that may arise.",
-        "features": [
-          "Security Enhancements and Patching",
-          "Performance Optimization",
-          "Bug Fixes and Issue Resolution",
-          "Plugin and Feature Updates",
-          "24/7 Monitoring and Support"
-        ]
-      },
-      {
-        "title": "Cloud Solutions and Integration",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "We create cloud-compatible .NET web applications while maintaining their dependability, security, and speed. Our developers make sure your web application works flawlessly with popular cloud computing platforms like Google Cloud and AWS.",
-        "features": [
-          "Cloud Platform Integration (AWS, Google Cloud)",
-          "Scalable Web Application Architecture",
-          "Cloud Data Storage and Management",
-          "Enhanced Security Features for Cloud Applications",
-          "Cloud Migration and Optimization Services"
-        ]
-      },
-      {
-        "title": ".NET Migration",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "Hiring .NET developers allows you to transform your legacy web projects into modern, scalable .NET applications. We ensure a seamless migration process by modernizing your code and integrating enhanced features to meet the demands of today’s tech landscape, all while preserving app functionality.",
-        "features": [
-          "Legacy System Migration to .NET",
-          "Code Modernization and Optimization",
-          "Seamless Integration with Existing Infrastructure",
-          "Enhanced Security and Performance Post-Migration",
-          "Scalable and Future-Proof Application Architecture"
-        ]
-      },
-      {
-        "title": ".NET Desktop App Development",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "Our .NET developers specialize in creating high-performance desktop applications tailored to your business needs. Whether you require a Windows GUI, Windows Console, or Smart Client app, we deliver robust solutions with seamless functionality and user-friendly interfaces.",
-        "features": [
-          "Windows GUI Applications",
-          "Windows Console Applications",
-          "Smart Client Applications",
-          "High-Performance and Scalable Solutions",
-          "Customizable and User-Friendly Interfaces"
-        ]
-      },
-      {
-        "title": "Microservices Web API Development",
-        "subtitle": "All Service And Solutions At One Place",
-        "description": "Our C# and VB .Net developers specialize in creating scalable and independent microservices that can efficiently communicate with each other. By developing microservices-based architectures, we aim to make applications modular, maintainable, and able to manage complex business processes effectively.",
-        "features": [
-          "Scalable Microservices Architecture",
-          "Independent Service Development",
-          "Efficient Messaging and Communication",
-          "Enhanced Maintainability and Flexibility",
-          "Seamless Integration with Existing Systems"
-        ]
-      }
-    ]
-  },
-  "AboutSection": {
-    "title": "About Us",
-    "heading": "Comfygen - Your Leading Partner to Hire ASP Dot Net Developer",
-    "description1": "Comfygen has deep knowledge and expertise in ASP.NET development and enterprise application solutions. Take advantage of our skilled professionals' knowledge and talent. Consult and understand which the best .NET solution is right to build for your organization, resolve technology challenges, and empower your business with rising potential and profits. Improve the performance and credibility of your organization in the tech era with our comprehensive .NET development services.",
-    "description2": "Within our projected project deadlines, our ASP.NET experts will work 100% accurately on your development project. Just tell us what kind of development experience you need, and we'll provide you with a list of candidates that is sorted to meet your project requirements. Don’t wait—tap and hire ASP.NET developers from Comfygen.",
-    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
-    "link": "/about-us",
-    "linkText": "Explore More"
-  },
-"ModelsSec": {
-  "title": "Benefits of .Net Framework",
-  "description": "Experts in the .NET Framework at Comfygen enable you to take advantage of the most agile ecosystem available. These are the main justifications for using the .NET Framework when creating web apps.",
-  "buttonText": "Let’s Discuss",
-  "buttonLink": "/contact-us",
-  "image": "https://www.comfygen.com/image/tutor-apps-image.webp",
-  "proces": [
-    {
-      "title": "Performance",
-      "desc": "Features like sophisticated compilation and catching strategies are part of the .NET framework. These characteristics enable the web apps to operate much more quickly than they did previously."
+    "Herosection": {
+      "heading": "Hire Best .NET Developers From India",
+      "ptag": "Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs.",
+      "ptag1": "From custom .NET application development to system integration and modernization, our full-stack .NET developers deliver robust solutions using ASP.NET, .NET Core, MVC, and cloud-based architectures. Partner with Comfygen to streamline workflows, enhance security, and drive long-term growth.",
+      "li": "Expert .NET Developers for Hire",
+      "li1": "Full-Stack .NET Application Development",
+      "li2": "Secure, Scalable & Business-Ready Solutions",
+      "li3": "Custom Development Aligned to Your Goals",
+      "btnName": "Talk With Expert",
+      "btnLink": "/contact-us",
+      "bgImage": "https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp"
     },
-    {
-      "title": "Productivity",
-      "desc": "You can maximize your productivity gains by utilizing characteristics like the programming paradigm, the amount of work done by the .NET Framework, and the codes given in the libraries."
+    "ServicesData": {
+      "heading": ".Net Development Services",
+      "description": "We are able to provide a wide range of .NET development services in the .NET Domain because of our technical proficiency and use of the agile development technique. We provide the following tactful solutions when you work with our .NET programmers:",
+      "services": [
+        {
+          "title": ".NET Web App Development",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "Our expertise lies in developing dependable, tailored, scalable, and future-proof web applications. Employ our .NET developers to create anything from basic websites to sophisticated web applications for a wide range of industry verticals. We focus on delivering efficient, high-performance web solutions that align with your business goals.",
+          "features": [
+            "Custom .NET Web Application Development",
+            "Enterprise Web Solutions",
+            "ASP.NET MVC Development",
+            "Web API Development",
+            "Migration & Porting to .NET",
+            "Support and Maintenance Services"
+          ]
+        },
+        {
+          "title": "Support and Maintenance Services",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "We specialize in providing reliable .NET maintenance and support services that ensure enhanced security, faster loading times, error-free plugin performance, reduced downtime, and overall improved efficiency. Our expert team works proactively to keep your .NET applications running smoothly, providing timely updates and addressing any issues that may arise.",
+          "features": [
+            "Security Enhancements and Patching",
+            "Performance Optimization",
+            "Bug Fixes and Issue Resolution",
+            "Plugin and Feature Updates",
+            "24/7 Monitoring and Support"
+          ]
+        },
+        {
+          "title": "Cloud Solutions and Integration",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "We create cloud-compatible .NET web applications while maintaining their dependability, security, and speed. Our developers make sure your web application works flawlessly with popular cloud computing platforms like Google Cloud and AWS.",
+          "features": [
+            "Cloud Platform Integration (AWS, Google Cloud)",
+            "Scalable Web Application Architecture",
+            "Cloud Data Storage and Management",
+            "Enhanced Security Features for Cloud Applications",
+            "Cloud Migration and Optimization Services"
+          ]
+        },
+        {
+          "title": ".NET Migration",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "Hiring .NET developers allows you to transform your legacy web projects into modern, scalable .NET applications. We ensure a seamless migration process by modernizing your code and integrating enhanced features to meet the demands of today’s tech landscape, all while preserving app functionality.",
+          "features": [
+            "Legacy System Migration to .NET",
+            "Code Modernization and Optimization",
+            "Seamless Integration with Existing Infrastructure",
+            "Enhanced Security and Performance Post-Migration",
+            "Scalable and Future-Proof Application Architecture"
+          ]
+        },
+        {
+          "title": ".NET Desktop App Development",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "Our .NET developers specialize in creating high-performance desktop applications tailored to your business needs. Whether you require a Windows GUI, Windows Console, or Smart Client app, we deliver robust solutions with seamless functionality and user-friendly interfaces.",
+          "features": [
+            "Windows GUI Applications",
+            "Windows Console Applications",
+            "Smart Client Applications",
+            "High-Performance and Scalable Solutions",
+            "Customizable and User-Friendly Interfaces"
+          ]
+        },
+        {
+          "title": "Microservices Web API Development",
+          "subtitle": "All Service And Solutions At One Place",
+          "description": "Our C# and VB .Net developers specialize in creating scalable and independent microservices that can efficiently communicate with each other. By developing microservices-based architectures, we aim to make applications modular, maintainable, and able to manage complex business processes effectively.",
+          "features": [
+            "Scalable Microservices Architecture",
+            "Independent Service Development",
+            "Efficient Messaging and Communication",
+            "Enhanced Maintainability and Flexibility",
+            "Seamless Integration with Existing Systems"
+          ]
+        }
+      ]
     },
-    {
-      "title": "Security",
-      "desc": "Code security measures are included in the .NET Framework and have been specifically designed with the current internet environment in mind. In doing so, the system becomes more scalable."
-    }
-  ]
-},
-
-"CardData": {
-    "heading": "How to Connect With Our ASP .Net Developers?",
-    "subtitle": "Do you want to hire dedicated asp net developers in India? Comfygen should be your one-stop destination, as we have experienced and expert developers to conquer in the marketplace with our development process. Connect with our skilled team seamlessly:",
-
-    "tech": [
-      {
-        "num": "01",
-        "title": "Submit your Application",
-        "desc": "First the client has to submit an application to us. You can submit the app requirements and share the ideas & objectives. This will help us to know what the clients are expecting from us."
-      },
-      {
-        "num": "02",
-        "title": "Connect with our Business Analyst",
-        "desc": "Once our team acknowledges your requirement, have a call with our business analyst. Explain briefly about the requirements, references, ideas, plans, and final goals."
-      },
-      {
-        "num": "03",
-        "title": "Discuss about FP and T&M",
-        "desc": "Later discuss what will be the final price (FP) and T&M (Time & Materials) required in developing your project."
-      },
-      {
-        "num": "04",
-        "title": "Hire ASP .Net Developers",
-        "desc": "Once the requirements have been discussed, also the FP and T&M are discussed appropriately; now you can hire .Net Developers in India."
-      }
-    ]
-},
-"pageData": {
+    "AboutSection": {
+      "title": "About Us",
+      "heading": "Comfygen - Your Leading Partner to Hire ASP Dot Net Developer",
+      "description1": "Comfygen has deep knowledge and expertise in ASP.NET development and enterprise application solutions. Take advantage of our skilled professionals' knowledge and talent. Consult and understand which the best .NET solution is right to build for your organization, resolve technology challenges, and empower your business with rising potential and profits. Improve the performance and credibility of your organization in the tech era with our comprehensive .NET development services.",
+      "description2": "Within our projected project deadlines, our ASP.NET experts will work 100% accurately on your development project. Just tell us what kind of development experience you need, and we'll provide you with a list of candidates that is sorted to meet your project requirements. Don’t wait—tap and hire ASP.NET developers from Comfygen.",
+      "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+      "link": "/about-us",
+      "linkText": "Explore More"
+    },
+    "ModelsSec": {
+      "title": "Benefits of .Net Framework",
+      "description": "Experts in the .NET Framework at Comfygen enable you to take advantage of the most agile ecosystem available. These are the main justifications for using the .NET Framework when creating web apps.",
+      "buttonText": "Let’s Discuss",
+      "buttonLink": "/contact-us",
+      "image": "https://www.comfygen.com/image/tutor-apps-image.webp",
+      "proces": [
+        {
+          "title": "Performance",
+          "desc": "Features like sophisticated compilation and catching strategies are part of the .NET framework. These characteristics enable the web apps to operate much more quickly than they did previously."
+        },
+        {
+          "title": "Productivity",
+          "desc": "You can maximize your productivity gains by utilizing characteristics like the programming paradigm, the amount of work done by the .NET Framework, and the codes given in the libraries."
+        },
+        {
+          "title": "Security",
+          "desc": "Code security measures are included in the .NET Framework and have been specifically designed with the current internet environment in mind. In doing so, the system becomes more scalable."
+        }
+      ]
+    },
+    "CardData": {
+      "heading": "How to Connect With Our ASP .Net Developers?",
+      "subtitle": "Do you want to hire dedicated asp net developers in India? Comfygen should be your one-stop destination, as we have experienced and expert developers to conquer in the marketplace with our development process. Connect with our skilled team seamlessly:",
+      "tech": [
+        {
+          "num": "01",
+          "title": "Submit your Application",
+          "desc": "First the client has to submit an application to us. You can submit the app requirements and share the ideas & objectives. This will help us to know what the clients are expecting from us."
+        },
+        {
+          "num": "02",
+          "title": "Connect with our Business Analyst",
+          "desc": "Once our team acknowledges your requirement, have a call with our business analyst. Explain briefly about the requirements, references, ideas, plans, and final goals."
+        },
+        {
+          "num": "03",
+          "title": "Discuss about FP and T&M",
+          "desc": "Later discuss what will be the final price (FP) and T&M (Time & Materials) required in developing your project."
+        },
+        {
+          "num": "04",
+          "title": "Hire ASP .Net Developers",
+          "desc": "Once the requirements have been discussed, also the FP and T&M are discussed appropriately; now you can hire .Net Developers in India."
+        }
+      ]
+    },
+    "pageData": {
       "title": "Why Hire ASP .Net Developers from Comfygen?",
       "description": "Comfygen never fails at satisfying its clients base, because we have the knowledge, skills, and most importantly dedication to build something incredible and competitive to the marketplace. Hire a dot net programmer, and get the best software solutions for the business.",
       "mainCardData": {
@@ -174,61 +171,61 @@
           "description": "Comfygen is not a money-digger, but we are the quality diggers and enhancers. Our approach is always towards building the best and most prominent software under the best possible budget. So we are the cost effective solution for you; where not even a single penny will be invested without any reason."
         }
       ]
-},
- "CallToAction": {
-    "heading": "Let’s hear what you have to say?",
-    "text": "Get in touch with us and discuss your needs and requirements with our experts.",
-    "buttonText": "Get Started",
-    "buttonLink": "/contact-us",
-    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
-    "imageAlt": "Get in touch now."
-  },
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "How Can I Hire ASP developers? ",
-      "desc": "Continue to begin by vetting developers based on the requirements of your project to see whether their skill sets align. Based on the interviews you had with the candidates who made the short list, decide who to hire. Comfygen net developer profiles. "
     },
-    {
-      "num": "2",
-      "title": "How much does it cost to hire an ASP developer?  ",
-      "desc": "At Comfygen, we provide incredibly flexible responsibility models that can be individually tailored to match any size project and budget. A Dot Net developer will often charge $35 to $60 per hour."
+    "CallToAction": {
+      "heading": "Let’s hear what you have to say?",
+      "text": "Get in touch with us and discuss your needs and requirements with our experts.",
+      "buttonText": "Get Started",
+      "buttonLink": "/contact-us",
+      "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+      "imageAlt": "Get in touch now."
     },
-    {
-      "num": "3",
-      "title": "What can our dot net developers do?",
-      "desc": "Our ASP.NET programmers can help you with the following services- ",
-      "faqList": [
-        "Custom app development",
-        "Cloud migration",
-        "Framework architecture",
-        "Enterprise solutions",
-        "Web portal development",
-        "Application modernization",
-        "Mobile app development",
-        "CMS website development",
-        "Remote ASP dot net migration services"
-      ]
-    },
-    {
-      "num": "4",
-      "title": "Can I hire a professional ASP.NET developer on an hourly or project basis? ",
-      "desc": "For hourly and project-based engagements, Comfygen provides flexible recruiting models that may be tailored to the needs of the project. In addition to the Time and Material Model and other project-tailored engagement models centered on your project's goal, we now offer Fixed Price Models."
-    },
-    {
-      "num": "5",
-      "title": "What are the advantages of working with Comfygen ASP.NET developers? ",
-      "desc": "Hire ASP.NET developers from Comfygen is a great idea because we provide:",
-      "faqList": [
-        "extremely skilled coders",
-        "solid and reliable solutions",
-        "modern infrastructure",
-        "newest technology",
-        "quick turnaround",
-        "Open and honest dialogue"
-      ],
-      "decs": "To incorporate frequent upgrades, performance improvements, security patches, and guarantee optimal system health, we also provide end-to-end remote ASP dot net maintenance services.",
-      "dec1": "Real-Time Updates with Cricket Live Line API Development Solution Software"
-    }
-  ]
+    "Frequently": [
+      {
+        "num": "1",
+        "title": "How Can I Hire ASP developers? ",
+        "desc": "Continue to begin by vetting developers based on the requirements of your project to see whether their skill sets align. Based on the interviews you had with the candidates who made the short list, decide who to hire. Comfygen net developer profiles. "
+      },
+      {
+        "num": "2",
+        "title": "How much does it cost to hire an ASP developer?  ",
+        "desc": "At Comfygen, we provide incredibly flexible responsibility models that can be individually tailored to match any size project and budget. A Dot Net developer will often charge $35 to $60 per hour."
+      },
+      {
+        "num": "3",
+        "title": "What can our dot net developers do?",
+        "desc": "Our ASP.NET programmers can help you with the following services- ",
+        "faqList": [
+          "Custom app development",
+          "Cloud migration",
+          "Framework architecture",
+          "Enterprise solutions",
+          "Web portal development",
+          "Application modernization",
+          "Mobile app development",
+          "CMS website development",
+          "Remote ASP dot net migration services"
+        ]
+      },
+      {
+        "num": "4",
+        "title": "Can I hire a professional ASP.NET developer on an hourly or project basis? ",
+        "desc": "For hourly and project-based engagements, Comfygen provides flexible recruiting models that may be tailored to the needs of the project. In addition to the Time and Material Model and other project-tailored engagement models centered on your project's goal, we now offer Fixed Price Models."
+      },
+      {
+        "num": "5",
+        "title": "What are the advantages of working with Comfygen ASP.NET developers? ",
+        "desc": "Hire ASP.NET developers from Comfygen is a great idea because we provide:",
+        "faqList": [
+          "extremely skilled coders",
+          "solid and reliable solutions",
+          "modern infrastructure",
+          "newest technology",
+          "quick turnaround",
+          "Open and honest dialogue"
+        ],
+        "decs": "To incorporate frequent upgrades, performance improvements, security patches, and guarantee optimal system health, we also provide end-to-end remote ASP dot net maintenance services.",
+        "dec1": "Real-Time Updates with Cricket Live Line API Development Solution Software"
+      }
+    ]
   }
