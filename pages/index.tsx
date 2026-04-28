@@ -17,7 +17,7 @@ import ProcesSection from "../components/ProcesSection"
 
 
 const TechStacks = dynamic(() => import("../components/TechStacks"),
-  { ssr: true }
+  { ssr: false }
 );
 
 import WhyChooseSection from "../components/WhyChooseSection"
@@ -28,6 +28,7 @@ const ClientStories = dynamic(() => import("../components/ClientStories"),
 );
 
 import HireSection from "../components/HireSection"
+import { Flag } from "lucide-react";
 
 const ReviewCard = dynamic(() => import("../components/ReviewCard"),
   { ssr: true }

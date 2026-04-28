@@ -1,431 +1,23 @@
   {
-
-
-    "customTestimonials": [
-      {
-        "text": "“Working with Comfygen was a game-changer for our business. Their AI-powered recommendation engine not only increased our sales by 20% but also enhanced our customers' shopping experience. Highly recommend their expertise!”",
-        "name": "David ",
-        "title": "Chief Marketing Officer"
-      },
-      {
-        "text": "“Comfygen’s AI-driven diagnostic system revolutionized our operations. It reduced diagnostic errors by 15% and significantly improved patient care. Their team is professional, innovative, and truly understands the healthcare industry.”",
-        "name": " Dr. Susan",
-        "title": "Director"
-      },
-      {
-        "text": "“The fraud detection system developed by Comfygen has been a lifesaver for our business. We’ve seen a 25% reduction in fraud cases, and our customers feel more secure. Their solutions are top-notch and delivered on time.”",
-        "name": "Michael",
-        "title": "CEO"
-      },
-      {
-        "text": "“Comfygen’s predictive maintenance solution transformed our operations. We’ve reduced downtime by 40% and saved 20% in maintenance costs. Their team is highly skilled and a pleasure to work with.”",
-        "name": "Robert",
-        "title": "Manager"
-      },
-      {
-        "text": "“Thanks to Comfygen’s personalized recommendation system, our customer retention has increased by 30%, and our average order value is up by 15%. Their AI solutions are innovative and deliver real results.”",
-        "name": "Jessica",
-        "title": "CEO"
-      }
-    ],
-
-      "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
-      {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
-      },
-      {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
-      },
-      {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
-      }
-    ]
-  },
-    
-    "Process": [
-      {
-        "title": "Discovery",
-        "description": "We begin by understanding your business needs, challenges, and objectives. Through workshops and consultations, we gather requirements and define the scope of the project to ensure a clear roadmap."
-      },
-      {
-        "title": "AI Design",
-        "description": "Our team designs a tailored AI solution architecture that aligns with your goals. We create detailed technical specifications, select the right tools and technologies, and plan the development process for optimal results."
-      },
-      {
-        "title": "AI Development",
-        "description": "Using state-of-the-art tools and frameworks, we build and train AI models tailored to your requirements. Our development process includes rigorous testing and validation to ensure accuracy and reliability."
-      },
-      {
-        "title": "Deployment",
-        "description": "We seamlessly implement and integrate the AI solution into your existing systems. Our team ensures smooth deployment, providing training and documentation to help your team adapt to the new technology."
-      },
-      {
-        "title": "Support & Maintenance",
-        "description": "Our commitment doesn’t end with deployment. We provide ongoing maintenance, updates, and support to make sure your AI solution continues to perform at its best and evolves with your business needs."
-      },
-      {
-        "title": "Performance Monitoring & Optimization",
-        "description": "We continuously monitor AI model performance, fine-tune algorithms, and optimize efficiency to maintain high accuracy and effectiveness over time."
-      },
-      {
-        "title": "Scalability & Future Enhancements",
-        "description": "As your business grows, we help scale and enhance your AI solution with new features and improvements, ensuring it remains competitive and aligned with future industry trends."
-      }
-    ],
-    "portfoliodata": [
-      {
-        "image": "https://www.comfygen.com/image/ai-powered-retail-solutions.webp",
-        "title": "AI-Powered Retail Solutions",
-        "description": "A retail client aimed to enhance customer engagement and drive sales. We developed an AI-powered recommendation engine that analyzed customer behavior and preferences, delivering personalized shopping experiences. As a result, the client achieved a 20% increase in sales and significantly improved customer satisfaction.",
-        "link": "#"
-      },
-      {
-        "image": "https://www.comfygen.com/image/ai-powered-healthcare-solutions.webp",
-        "title": "AI-Powered Healthcare Solutions",
-        "description": "We developed an AI-driven system utilizing computer vision and machine learning to enhance diagnostic accuracy and speed. This AI software development solution enabled the healthcare provider to deliver faster, more precise diagnoses, improving patient outcomes and operational efficiency.",
-        "link": "#"
-      },
-      {
-        "image": "https://www.comfygen.com/image/ai-powered-finance-solutions.webp",
-        "title": "AI-Powered Finance Solutions",
-        "description": "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
-        "link": "#"
-      },
-      {
-        "image": "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
-        "title": "AI-Powered Manufacturing Solutions",
-        "description": "A manufacturing company faced challenges with unplanned downtime and high maintenance costs. We implemented a predictive maintenance system leveraging IoT and AI to monitor equipment health, reducing downtime, cutting costs, and improving overall operational efficiency.",
-        "link": "#"
-      },
-      {
-        "image": "https://www.comfygen.com/image/ai-powered-e-commerce-solutions.webp",
-        "title": "AI-Powered E-commerce Solutions",
-        "description": "An e-commerce platform aimed to boost customer retention and engagement. We developed a personalized recommendation system powered by natural language processing and machine learning, delivering tailored shopping experiences that increased customer satisfaction and loyalty.",
-        "link": "#"
-      }
-    ],
-
-   
-    "Frequently": [
-      {
-        "num": "1",
-        "title": "1. Why choose Comfygen for AI development?",
-        "desc": "Comfygen offers end-to-end AI development with proven expertise across industries, delivering scalable, secure, and business-ready AI solutions."
-      },
-      {
-        "num": "2",
-        "title": "2. What types of AI solutions do you build?",
-        "desc": "We develop custom AI software, machine learning models, intelligent automation systems, predictive analytics, and AI-powered mobile and web applications."
-      },
-      {
-        "num": "3",
-        "title": "3. Do you provide AI consulting and strategy?",
-        "desc": "Yes. Our AI consultants help identify use cases, define technical roadmaps, and select the right AI technologies before development begins."
-      },
-      {
-        "num": "4",
-        "title": "4. Can AI solutions be customized for startups and enterprises?",
-        "desc": "Absolutely. We build tailored AI solutions for startups, SMEs, and enterprises, aligning technology with specific business goals."
-      },
-      {
-        "num": "5",
-        "title": "5. Are your AI solutions secure and scalable?",
-        "desc": "Yes. Our AI applications are designed with enterprise-grade security, strict NDA compliance, and scalable architectures for long-term growth."
-      },
-      {
-        "num": "6",
-        "title": "6. How long does AI development take?",
-        "desc": "Project timelines vary based on complexity, data availability, and features, but we ensure fast delivery through an agile development process."
-      }
-    ],
-
-
-
-  
-    "customTechData": {
-      "Machine Learning Frameworks": [
-        {
-          "img": "https://www.comfygen.com/image/tensorflow-icon.svg",
-          "alt": "TensorFlow",
-          "name": "TensorFlow",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/pytorch-icon.svg",
-          "alt": "PyTorch",
-          "name": "PyTorch",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/Scikit-learn-icon.svg",
-          "alt": "Scikit-learn",
-          "name": "Scikit-learn",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/Keras-icon.svg",
-          "alt": "Keras",
-          "name": "Keras",
-          "num": "1"
-        }
+    "Herosection": {
+      "heading": "AI & ML Mobile App Development Services in India",
+      "isHome": false,
+      "ptag": "Comfygen offers custom AI and ML mobile app development services in Jaipur, India. Our expert developers build intelligent mobile apps, machine learning models, and AI-powered software to help businesses innovate, automate processes, and drive growth. Turn your vision into reality with our AI/ML solutions—request a free consultation today.",
+      "listItems": [
+        "Custom AI & ML Mobile App Development",
+        "Intelligent Software & Automation Solutions",
+        "Machine Learning Model Development",
+        "AI-Powered Business Process Optimization"
       ],
-      "Natural Language Processing Tools": [
-        {
-          "img": "https://www.comfygen.com/image/spacy-icon.svg",
-          "alt": "spaCy",
-          "name": "spaCy",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/nltk-icon.svg",
-          "alt": "NLTK",
-          "name": "NLTK",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/hugging-face-transformers.svg",
-          "alt": "Hugging Face Transformers",
-          "name": "Hugging Face Transformers",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/open-ai-gpt-models.svg",
-          "alt": "OpenAI GPT Models",
-          "name": "OpenAI GPT Models",
-          "num": "1"
-        }
-      ],
-      "Computer Vision Libraries": [
-        {
-          "img": "https://www.comfygen.com/image/open-cv-icon.svg",
-          "alt": "OpenCV",
-          "name": "OpenCV",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/yolo-icon.svg",
-          "alt": "YOLO (You Only Look Once)",
-          "name": "YOLO (You Only Look Once)",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/detectron-icon.svg",
-          "alt": "Detectron2",
-          "name": "Detectron2",
-          "num": "1"
-        }
-      ],
-      "Cloud AI Platforms": [
-        {
-          "img": "https://www.comfygen.com/image/aws-ai-services.svg",
-          "alt": "AWS AI Services (SageMaker, Rekognition, Comprehend)",
-          "name": "AWS AI Services (SageMaker, Rekognition, Comprehend)",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/google-cloud-ai.svg",
-          "alt": "Google Cloud AI (Vertex AI, AutoML, Vision AI)",
-          "name": "Google Cloud AI (Vertex AI, AutoML, Vision AI)",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/microsoft-azure-ai.svg",
-          "alt": "Microsoft Azure AI (Cognitive Services, Machine Learning)",
-          "name": "Microsoft Azure AI (Cognitive Services, Machine Learning)",
-          "num": "1"
-        }
-      ],
-      "Big Data and Analytics Tools": [
-        {
-          "img": "https://www.comfygen.com/image/apache-spark-icon.svg",
-          "alt": "Apache Spark",
-          "name": "Apache Spark",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/hadoop-icon.svg",
-          "alt": "Hadoop",
-          "name": "Hadoop",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/tableau-icon.svg",
-          "alt": "Tableau",
-          "name": "Tableau",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/power-bi-icon.svg",
-          "alt": "Power BI",
-          "name": "Power BI",
-          "num": "1"
-        }
-      ],
-      "AI Development Tools": [
-        {
-          "img": "https://www.comfygen.com/image/jupyter-notebooks.svg",
-          "alt": "Jupyter Notebooks",
-          "name": "Jupyter Notebooks",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/anaconda-icon.svg",
-          "alt": "Anaconda",
-          "name": "Anaconda",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/github-icon.svg",
-          "alt": "GitHub/GitLab",
-          "name": "GitHub/GitLab",
-          "num": "1"
-        }
-      ],
-      "Deployment and DevOps": [
-        {
-          "img": "https://www.comfygen.com/image/docker-icon.svg",
-          "alt": "Docker",
-          "name": "Docker",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/kubernetes-icon.svg",
-          "alt": "Kubernetes",
-          "name": "Kubernetes",
-          "num": "1"
-        },
-        {
-          "img": "https://www.comfygen.com/image/ci-cd-pipelines-icon.svg",
-          "alt": "CI/CD Pipelines",
-          "name": "CI/CD Pipelines",
-          "num": "1"
-        }
-      ]
+      "btnName": "Talk With Expert",
+      "btnLink": "/contact-us",
+      "altTag": "AI & ML mobile app development services in India",
+      "bgImage": "https://www.comfygen.com/herosection/ai-solutions-for-smarter-businesses.webp"
     },
-    "pageData": {
-      "title": "Why Choose Comfygen As Your AI-Power Software Development Company?",
-      "description": "At Comfygen, we deliver cutting-edge custom AI software development solutions that drive business growth, efficiency, and innovation. You can be sure that your project will stand out and create a lasting impact with our expertise and the latest AI technologies.",
-      "mainCardData": {
-        "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-        "title": "Optimum Outcome Focused",
-        "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
-      },
-      "gridData": [
-        {
-          "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-          "title": "Tailored AI Solutions",
-          "description": "We AI design and enterprise AI ML mobile app development solutions that align with your unique enterprise business needs, ensuring maximum impact and ROI."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-          "title": "Expert Team",
-          "description": "Our team of top-notch AI development experts brings years of experience in machine learning, natural language processing, computer vision, and more, ensuring cutting-edge solutions."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-          "title": "End-to-End Support",
-          "description": "From ideation and development to deployment and ongoing maintenance, we provide comprehensive support at every stage of your AI journey."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-          "title": "Proven Track Record",
-          "description": "With a portfolio of successful projects across industries, we have the expertise to deliver AI solutions that work."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-          "title": "Innovative Technology",
-          "description": "We leverage the latest AI tools and frameworks to build scalable, future-ready solutions that grow with your business."
-        },
-        {
-          "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
-          "title": "Client-Centric Approach",
-          "description": "Your success is our priority. We work closely with you to understand your goals and deliver solutions that exceed expectations."
-        }
-      ]
-    },
-    "servicesData": [
+  "ServicesData": {
+    "heading": "We Offer The Best AI App Mobile App Development Services For Startups",
+    "description": "Data is used to drive business results through custom AI and machine learning Mobile App Development solutions. As one of the leading custom AI mobile app development solution companies, we transform raw data into actionable insights, facilitating operational efficiency and enhanced decision-making. We offer reliable AI enterprise software development services that can make your vision a reality.",
+    "services": [
       {
         "title": "Custom AI Software Development",
         "subtitle": "",
@@ -558,80 +150,531 @@
           "Enhanced player engagement with machine learning."
         ]
       }
-    ],
-
-
-    "LeadingSoftware": [
+    ]
+  },
+  "AboutSection": {
+    "title": "",
+    "heading": "Hire Best Custom AI ML App & Web Development Company In India for Startups to Enterprise",
+    "description1": "Comfygen is a leading AI ML-based mobile app development company in India dedicated to helping businesses harness the power of artificial intelligence. We deliver custom AI ML app & software development solutions tailored to your unique needs, leveraging advanced technologies like machine learning, natural language processing (NLP), and computer vision. Whether you're looking to automate processes, enhance customer experiences, or gain data-driven insights, our best-experience AI software developers in India are here to design and deploy innovative AI-powered mobile app solutions and services that drive growth and efficiency—partner with us to transform your business with cutting-edge custom AI ML software development services.",
+    "description2": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/image/best-ai-development-company.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "PortfolioData": {
+    "heading": "Our Artificial Intelligence Success Stories",
+    "description": "At Comfygen, we take pride in delivering AI solutions that drive measurable results for our clients. Here are some examples of how we’ve helped businesses achieve their goals",
+    "portfolio": [
       {
-        "num": "01",
-        "title": "Robotic Process Automation",
-        "decs": "We offer robotic process automation (RPA) services that streamline repetitive tasks and reduce manual errors. By integrating AI with RPA, we help businesses automate complex workflows, increase productivity, and reduce operational costs, freeing up valuable resources for higher-value work.",
-        "list": [
-          "Automates repetitive and rule-based tasks.",
-          "Reduces manual errors and enhances efficiency.",
-          "Seamless AI integration for intelligent automation",
-          "Lowers operational costs and improves productivity."
-        ]
+        "image": "https://www.comfygen.com/image/ai-powered-retail-solutions.webp",
+        "title": "AI-Powered Retail Solutions",
+        "description": "A retail client aimed to enhance customer engagement and drive sales. We developed an AI-powered recommendation engine that analyzed customer behavior and preferences, delivering personalized shopping experiences. As a result, the client achieved a 20% increase in sales and significantly improved customer satisfaction.",
+        "link": "#"
       },
       {
-        "num": "02",
-        "title": "Deep Learning",
-        "decs": "Our AI engineers specialize in deep learning solutions that unlock the potential of advanced neural networks to solve complex business challenges. By leveraging cutting-edge deep learning techniques, we help businesses analyze vast datasets, make accurate predictions, and enhance decision-making processes for long-term success.",
-        "list": [
-          "Advanced neural network-based AI solutions.",
-          "Accurate data-driven predictions and insights.",
-          "Scalable deep learning models for various industries.",
-          "Enhanced pattern recognition and decision-making."
-        ]
+        "image": "https://www.comfygen.com/image/ai-powered-healthcare-solutions.webp",
+        "title": "AI-Powered Healthcare Solutions",
+        "description": "We developed an AI-driven system utilizing computer vision and machine learning to enhance diagnostic accuracy and speed. This AI software development solution enabled the healthcare provider to deliver faster, more precise diagnoses, improving patient outcomes and operational efficiency.",
+        "link": "#"
       },
       {
-        "num": "03",
-        "title": "Digital Virtual Assistants",
-        "decs": "As a leading AI application development company in India, we design and develop AI-powered digital virtual assistants to enhance customer support and improve operational efficiency. Our intelligent virtual assistants efficiently handle tasks such as answering queries and processing requests, ensuring seamless interactions and an enhanced user experience.",
-        "list": [
-          "AI-powered assistants for customer support.",
-          "Automated query handling and request processing.",
-          "Seamless multi-platform integration.",
-          "Personalized and human-like interactions."
-        ]
+        "image": "https://www.comfygen.com/image/ai-powered-finance-solutions.webp",
+        "title": "AI-Powered Finance Solutions",
+        "description": "A financial institution struggled with rising fraud incidents and required a robust solution. We developed a real-time fraud detection system using machine learning, enabling proactive identification and preventing fraudulent transactions, ensuring enhanced security and trust.",
+        "link": "#"
       },
       {
-        "num": "04",
-        "title": "Computer Vision Development",
-        "decs": "Unlock the potential of visual data with our AI computer vision development service solutions. We create Artificial intelligence application systems that can analyze and interpret images and videos for applications like facial recognition, object detection, and quality control. Our best AI development services solutions help you automate visual tasks and gain deeper insights from your data.",
-        "list": [
-          "AI-based facial recognition and object detection.",
-          "Automated image and video analysis.",
-          "Quality control and defect detection systems.",
-          "Real-time monitoring and surveillance solutions."
-        ]
+        "image": "https://www.comfygen.com/image/ai-powered-manufacturing-solutions.webp",
+        "title": "AI-Powered Manufacturing Solutions",
+        "description": "A manufacturing company faced challenges with unplanned downtime and high maintenance costs. We implemented a predictive maintenance system leveraging IoT and AI to monitor equipment health, reducing downtime, cutting costs, and improving overall operational efficiency.",
+        "link": "#"
       },
       {
-        "num": "05",
-        "title": "Natural Language Processing (NLP) Solutions",
-        "decs": "Our NLP development solutions will transform the way you interact with data and customers. The purpose of our work is to build artificial intelligence systems that can understand, analyze, and generate human language. Your customer engagement can be improved with AI chatbots, sentiment analysis, and language translation.",
-        "list": [
-          "AI-powered chatbot development for seamless customer interaction.",
-          "Sentiment analysis and language understanding.",
-          "Automated text summarization and keyword extraction.",
-          "Language translation for global reach."
-        ]
-      },
-      {
-        "num": "06",
-        "title": "Machine Learning Development",
-        "decs": "Leverage the power of machine learning to solve complex business challenges. We build and train custom Machine Learning models that analyze data, uncover patterns, and deliver actionable insights. From recommendation engines to fraud detection systems, our custom ML software development service solutions empower your enterprise business to make smarter decisions.",
-        "list": [
-          "Custom machine learning model development.",
-          "Data-driven insights for smarter decision-making.",
-          "Fraud detection and anomaly recognition.",
-          "Automated pattern recognition and trend analysis."
-        ]
+        "image": "https://www.comfygen.com/image/ai-powered-e-commerce-solutions.webp",
+        "title": "AI-Powered E-commerce Solutions",
+        "description": "An e-commerce platform aimed to boost customer retention and engagement. We developed a personalized recommendation system powered by natural language processing and machine learning, delivering tailored shopping experiences that increased customer satisfaction and loyalty.",
+        "link": "#"
       }
-    ],
-
-   
-    "jsonLdData": [
+    ]
+  },
+  "ProcessData": {
+    "heading": "Our AI Mobile App Development Process",
+    "description": "At Comfygen, we follow a structured, transparent, and collaborative approach to deliver AI development solutions that align perfectly with your business objectives. Our proven development process ensures efficiency, seamless communication, and high-quality outcomes at every stage.",
+    "Process": [
+      {
+        "title": "Discovery",
+        "description": "We begin by understanding your business needs, challenges, and objectives. Through workshops and consultations, we gather requirements and define the scope of the project to ensure a clear roadmap."
+      },
+      {
+        "title": "AI Design",
+        "description": "Our team designs a tailored AI solution architecture that aligns with your goals. We create detailed technical specifications, select the right tools and technologies, and plan the development process for optimal results."
+      },
+      {
+        "title": "AI Development",
+        "description": "Using state-of-the-art tools and frameworks, we build and train AI models tailored to your requirements. Our development process includes rigorous testing and validation to ensure accuracy and reliability."
+      },
+      {
+        "title": "Deployment",
+        "description": "We seamlessly implement and integrate the AI solution into your existing systems. Our team ensures smooth deployment, providing training and documentation to help your team adapt to the new technology."
+      },
+      {
+        "title": "Support & Maintenance",
+        "description": "Our commitment doesn’t end with deployment. We provide ongoing maintenance, updates, and support to make sure your AI solution continues to perform at its best and evolves with your business needs."
+      },
+      {
+        "title": "Performance Monitoring & Optimization",
+        "description": "We continuously monitor AI model performance, fine-tune algorithms, and optimize efficiency to maintain high accuracy and effectiveness over time."
+      },
+      {
+        "title": "Scalability & Future Enhancements",
+        "description": "As your business grows, we help scale and enhance your AI solution with new features and improvements, ensuring it remains competitive and aligned with future industry trends."
+      }
+    ]
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Tracking & Maps",
+    "Cloud/DevOps",
+    "Payments",
+    "Security"
+  ],
+  "TechstackData": {
+    "heading": "Tech Stack Use to Develop Best AI Mobile App Development Services",
+    "description": "At Comfygen, we use cutting-edge tools and technologies to build scalable, secure, and innovative AI-powered mobile apps for enterprises and SMEs. Our AI and ML expertise across modern platforms and cloud services ensures high-performance solutions tailored to your business goals.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
+    }
+  },
+"pageData": {
+      "title": "Why Choose Comfygen As Your AI-Power Software Development Company?",
+      "description": "At Comfygen, we deliver cutting-edge custom AI software development solutions that drive business growth, efficiency, and innovation. You can be sure that your project will stand out and create a lasting impact with our expertise and the latest AI technologies.",
+      "mainCardData": {
+        "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+        "title": "Optimum Outcome Focused",
+        "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+      },
+      "gridData": [
+        {
+          "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+          "title": "Tailored AI Solutions",
+          "description": "We AI design and enterprise AI ML mobile app development solutions that align with your unique enterprise business needs, ensuring maximum impact and ROI."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+          "title": "Expert Team",
+          "description": "Our team of top-notch AI development experts brings years of experience in machine learning, natural language processing, computer vision, and more, ensuring cutting-edge solutions."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+          "title": "End-to-End Support",
+          "description": "From ideation and development to deployment and ongoing maintenance, we provide comprehensive support at every stage of your AI journey."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+          "title": "Proven Track Record",
+          "description": "With a portfolio of successful projects across industries, we have the expertise to deliver AI solutions that work."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+          "title": "Innovative Technology",
+          "description": "We leverage the latest AI tools and frameworks to build scalable, future-ready solutions that grow with your business."
+        },
+        {
+          "iconUrl": "https://www.comfygen.com/image/modern-it-services-icon.svg",
+          "title": "Client-Centric Approach",
+          "description": "Your success is our priority. We work closely with you to understand your goals and deliver solutions that exceed expectations."
+        }
+      ]
+ },
+"HireDeveloper": {
+    "heading": "Hire Our Dedicated AI Mobile Application Developers",
+    "text": "Hire expert AI software developers from Comfygen with deep expertise in Machine Learning, Deep Learning, Neural Networks, and Computer Vision. Our AI engineers build secure, scalable, and data-driven solutions tailored to your business needs—helping you improve efficiency, drive innovation, and accelerate growth.",
+    "text1": "",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "80+ AI products successfully delivered across industries",
+      "Recognized as a Top AI Development Company in Toronto by DesignRush",
+      "Dedicated AI Solution Architect and Project Consultant",
+      "Strict NDA and data security compliance",
+      "Expert-driven solutions aligned with your business goals"
+    ]
+},
+"ReviewData": {
+      "heading": "What Our Clients Say",
+      "description": "",
+      "Review": [
+        {
+          "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+          "name": "Nhi Do",
+          "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+          "location": "Vietnam",
+          "Source": "DesignRush",
+          "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+        },
+        {
+          "name": "Rob Lipps ",
+          "location": "Madison",
+          "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+          "Source": "DesignRush",
+          "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+          "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+        },
+        {
+          "name": "Avinash",
+          "location": "Atlanta, Indiana",
+          "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Rishabh Shukla",
+          "location": "Noida, India",
+          "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Raman Mathur",
+          "location": "Jaipur, India",
+          "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Sayead Shadab Arif",
+          "location": "Dubai, United Arab Emirates",
+          "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Raunak Pradhan",
+          "location": "Denver, New York",
+          "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Saurav Gupta",
+          "location": "Denver, New York",
+          "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+          "Source": "Google",
+          "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": "Devguru Enterprises",
+          "location": "India",
+          "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+          "Source": "Google",
+          "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": " Mazhar.H. Ansari",
+          "location": "Oman",
+          "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+          "Source": "Google",
+          "URL": "https://share.google/ycfErAHqln9LNKdhK",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": "Tom Baker",
+          "location": "Germany",
+          "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+          "Source": "Google",
+          "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+          "image": "/Google - Original.png"
+        }
+      ]
+},
+"Frequently": [
+      {
+        "num": "1",
+        "title": "1. Why choose Comfygen for AI development?",
+        "desc": "Comfygen offers end-to-end AI development with proven expertise across industries, delivering scalable, secure, and business-ready AI solutions."
+      },
+      {
+        "num": "2",
+        "title": "2. What types of AI solutions do you build?",
+        "desc": "We develop custom AI software, machine learning models, intelligent automation systems, predictive analytics, and AI-powered mobile and web applications."
+      },
+      {
+        "num": "3",
+        "title": "3. Do you provide AI consulting and strategy?",
+        "desc": "Yes. Our AI consultants help identify use cases, define technical roadmaps, and select the right AI technologies before development begins."
+      },
+      {
+        "num": "4",
+        "title": "4. Can AI solutions be customized for startups and enterprises?",
+        "desc": "Absolutely. We build tailored AI solutions for startups, SMEs, and enterprises, aligning technology with specific business goals."
+      },
+      {
+        "num": "5",
+        "title": "5. Are your AI solutions secure and scalable?",
+        "desc": "Yes. Our AI applications are designed with enterprise-grade security, strict NDA compliance, and scalable architectures for long-term growth."
+      },
+      {
+        "num": "6",
+        "title": "6. How long does AI development take?",
+        "desc": "Project timelines vary based on complexity, data availability, and features, but we ensure fast delivery through an agile development process."
+      }
+],
+ "jsonLdData": [
       {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -657,7 +700,6 @@
           "https://www.linkedin.com/company/comfygen-private-limited"
         ]
       },
- 
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -712,5 +754,6 @@
           }
         ]
       }
-    ]
+ ]
+
   }
