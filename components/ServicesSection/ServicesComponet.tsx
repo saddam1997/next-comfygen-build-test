@@ -39,7 +39,7 @@ export default function ServicesComponet({ servicesData }) {
               alt="services background"
               width={150}
               height={90}
-              loading="lazy"
+              priority
               className="absolute bottom-0 right-0 w-36 h-36"
             />
 

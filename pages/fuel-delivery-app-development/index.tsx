@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./fuel-delivery-app-development.json";
 import dynamic from "next/dynamic";
@@ -200,32 +200,19 @@ export default function ClinicalApp(props: any) {
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
       <AppClone SliderDATA={JSON_DATA.Industries} />
-
       <Features featuresData={JSON_DATA.FeaturesData} />
-
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <section className="py-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-        <Emerging emerging={JSON_DATA.EmergingData} />
-      </section>
-      <section className="bg-white lg:py-16 py-10">
-        <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-          <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-        </div>
-      </section>
-
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks
         TabData={JSON_DATA.Tabs}
         TechData={JSON_DATA.TechstackData}
         Default={JSON_DATA.Tabs[0]}
       />
-
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-
       <DeliverySection hideUrl="https://www.comfygen.com/fuel-delivery-app-development" />
-
       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />

@@ -1,255 +1,479 @@
 {
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "How much does it cost to develop a game app?",
-      "desc": "The cost of game app development depends on the type of game, features, design, and platform. A simple mobile game development project may start at $10,000, while advanced AR/VR, NFT, or multiplayer games can range up to $80,000 or more."
-    },
-    {
-      "num": "2",
-      "title": "How long does it take to build a mobile game?",
-      "desc": "The timeline for mobile game development varies based on complexity. A basic 2D game may take 2–3 months, while a feature-rich 3D, AR/VR, or multiplayer game can take 6–12 months. Our team ensures timely delivery with high-quality results."
-    },
-    {
-      "num": "3",
-      "title": "Which technologies do you use for game development?",
-      "desc": "At Comfygen, we use leading technologies like Unity 3D, Unreal Engine, ARKit, ARCore, Blockchain, NFT integration, AI, and cloud gaming. Our advanced game development tech stack ensures scalable, immersive, and cross-platform gaming solutions for startups and enterprises."
-    },
-    {
-      "num": "4",
-      "title": "Do you provide post-launch support and updates?",
-      "desc": "Yes, Comfygen provides complete post-launch support and game maintenance services. From bug fixes and performance optimization to adding new features, updates, and security enhancements, our team ensures your game stays competitive and delivers a seamless experience to users."
-    },
-    {
-      "num": "5",
-      "title": "Can I hire dedicated game developers from Comfygen?",
-      "desc": "Absolutely! You can hire dedicated game developers from Comfygen on hourly, full-time, or project-based models. Our skilled game developers specialize in Unity, Unreal, AR/VR, blockchain, and multiplayer games, ensuring innovative, engaging, and cost-effective gaming solutions tailored to your needs."
-    }
-  ],
 
-  "servicesData": [
-    {
-      "title": "Mobile Game Development",
-      "description": "As a leading mobile game development company, Comfygen builds engaging and scalable games for Android, iOS, and cross-platform users. Our mobile game developers use Unity and Unreal Engine to deliver high-performance gaming experiences that boost user engagement and revenue.",
-      "features": [
-        "Android & iOS Game Development",
-        "Cross-platform game apps",
-        "Rich graphics & animations",
-        "Smooth gameplay performance"
+"Herosection": {
+    "heading": "Top Game Development Company",
+    "isHome": false,
+    "ptag": "Comfygen is a leading game development company specializing in mobile, 2D/3D, AR/VR, blockchain, and metaverse game development. We deliver high-performance, engaging, and scalable gaming solutions tailored for startups, enterprises, and global brands. Transform your game idea into reality with our expert developers.",
+    "ptag1": "",
+    "listItems": [
+      "Cross-Platform Game Development",
+      "Next-Gen Technologies",
+      "Custom & Scalable Solutions",
+      "End-to-End Development"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "game development company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/game-development/game_hero.webp"
+},
+"ServicesData": {
+    "heading": "Our Best Game Development Services",
+    "description": "With a commitment to innovation, quality, and client collaboration, our game development company is dedicated to transforming your concepts into memorable gaming experiences that captivate players and impact the industry. Our mobile video game development agency brings a comprehensive range of services to the table designed to get your gaming ideas to life and deliver exceptional experiences to players.",
+    "services": [
+      {
+        "title": "Mobile Game Development",
+        "subtitle": "",
+        "description": "As a leading mobile game development company, Comfygen builds engaging and scalable games for Android, iOS, and cross-platform users. Our mobile game developers use Unity and Unreal Engine to deliver high-performance gaming experiences that boost user engagement and revenue.",
+        "features": [
+          "Android & iOS Game Development",
+          "Cross-platform game apps",
+          "Rich graphics & animations",
+          "Smooth gameplay performance"
+        ]
+      },
+      {
+        "title": "2D & 3D Game Development",
+        "subtitle": "",
+        "description": "We provide 2D & 3D game development services to create visually stunning and interactive games. From simple arcade games to complex 3D simulations, we design customized solutions that deliver unmatched user experiences across platforms.",
+        "features": [
+          "Advanced 2D/3D modeling",
+          "Realistic character design",
+          "High-quality graphics",
+          "Interactive environments"
+        ]
+      },
+      {
+        "title": "Unity & Unreal Game Development",
+        "subtitle": "",
+        "description": "Our skilled Unity game developers specialize in Unity and Unreal Engine game development, offering powerful, immersive, and scalable solutions. Whether you want AR/VR games, multiplayer platforms, or hyper-casual games, Comfygen ensures smooth execution and seamless user experiences.",
+        "features": [
+          "Expertise in Unity & Unreal",
+          "Real-time rendering",
+          "Immersive gameplay features",
+          "Cross-platform support"
+        ]
+      },
+      {
+        "title": "AR/VR Game Development",
+        "subtitle": "",
+        "description": "Comfygen offers next-gen AR/VR game development services to create interactive, immersive, and future-ready games. With technologies like ARKit, ARCore, and Oculus, we deliver engaging experiences that redefine mobile and console gaming.",
+        "features": [
+          "AR & VR integration",
+          "Realistic simulations",
+          "Multi-device compatibility",
+          "Enhanced user immersion"
+        ]
+      },
+      {
+        "title": "Blockchain & NFT Game Development",
+        "subtitle": "",
+        "description": "As a trusted blockchain game development company, we create secure and transparent NFT games with unique tokenized assets. Our <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/blockchain-development'>blockchain-based game development solutions</a> allow players to buy, sell, and trade in-game items safely.",
+        "features": [
+          "Play-to-Earn game models",
+          "NFT marketplace integration",
+          "Smart contract security",
+          "<a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/crypto-wallet-development'>Crypto wallet integration</a>"
+        ]
+      },
+      {
+        "title": "Metaverse Game Development",
+        "subtitle": "",
+        "description": "We deliver innovative <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/metaverse-game-development-company'>metaverse game development solutions</a> that combine blockchain, AR/VR, and AI to create immersive 3D worlds. From virtual economies to real-time multiplayer, we help brands enter the metaverse gaming ecosystem.",
+        "features": [
+          "3D avatars & environments",
+          "Virtual economy integration",
+          "AR/VR metaverse experience",
+          "Scalable architecture"
+        ]
+      },
+      {
+        "title": "Multiplayer Game Development",
+        "subtitle": "",
+        "description": "Comfygen specializes in multiplayer game development, creating interactive platforms that connect global players in real-time. From battle royales to sports and card games, we design engaging multiplayer experiences.",
+        "features": [
+          "Real-time interaction",
+          "Cross-platform gaming",
+          "Secure multiplayer servers",
+          "Smooth connectivity"
+        ]
+      },
+      {
+        "title": "Educational Game Development",
+        "subtitle": "",
+        "description": "Our educational game development services combine fun and learning, creating engaging apps for schools, colleges, and e-learning platforms. We build interactive games that improve knowledge retention while keeping learners entertained.",
+        "features": [
+          "Gamified learning modules",
+          "Interactive quizzes & puzzles",
+          "AR/VR education games",
+          "Multi-platform accessibility"
+        ]
+      }
+    ]
+},
+"AboutSection": {
+    "title": "About Company",
+    "heading": "Comfygen: The Best Game Development Company",
+    "description1": "Welcome to Infinite Realms of futuristic Gaming: Where Imagination Becomes Reality Comfygen is a top custom game app development company in India, USA, UK & UAE that offers the most reliable and tech savvy mobile gaming apps and console gaming platforms with a very pocket friendly cost. With each project, we precisely customize every detail, leveraging cutting-edge technology to deliver a level of quality that is beyond your expectations.",
+    "description2": "As one of the leading mobile game development companies in the USA and other offshore countries, we stand at the forefront of the game development industry, designing exceptional virtual experiences that engage, inspire, and entertain the user base. We have a blend of passionate creators, expert Android and iOS developers who alter your ideas into interactive realities that can take your new or traditional business to the new heights.",
+    "imageSrc":"https://www.comfygen.com/comfygen-images/game-development/game_about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+},
+"PortfolioData": {
+    "heading": "Our Game Development Portfolio",
+    "description": "Explore our game development portfolio, showcasing advanced, feature-rich, and engaging gaming solutions built for diverse audiences. From casual mobile games to blockchain-based play-to-earn platforms, Comfygen ensures smooth gameplay, rich graphics, and immersive user experiences—partner with us to create next-gen games that stand out in the competitive market.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/game-development/ludo2.webp",
+        "title": "Ludo Mobile Game",
+        "description": "Our Ludo mobile game development delivers a modern twist on the classic board game. With multiplayer functionality, real-time chat, and cross-platform compatibility, this game ensures high engagement and entertainment for users worldwide.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/game-development/3d_action_game.webp",
+        "title": "3D Action Game",
+        "description": "We developed a 3D action game with stunning graphics, smooth controls, and immersive storylines. Featuring multiple levels, character customization, and multiplayer battle modes, it guarantees thrilling gameplay for both casual and hardcore gamers.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/game-development/nft_based.webp",
+        "title": "NFT-Based Play-to-Earn Game",
+        "description": "Our NFT game development project integrates blockchain and crypto wallets, allowing players to earn, trade, and own digital assets. Secure smart contracts and a built-in NFT marketplace create a rewarding gaming ecosystem.",
+        "link": "https://www.comfygen.com/contact-us"
+      }
+    ]
+},
+"EmergingData": {
+    "heading": "Advanced Technologies We Use in Game Development",
+    "description": "At Comfygen, we leverage the latest game development technologies to deliver immersive, high-performance, and future-ready games. Our expert developers combine innovation with advanced tools to create engaging gaming experiences across multiple platforms.",
+    "Emerging": [
+      {
+        "num": "1",
+        "title": "Unity 3D & Unreal Engine",
+        "decs": "We use Unity 3D and Unreal Engine to build visually stunning and high-performance games. These engines allow us to create cross-platform, 2D, 3D, AR, and VR games with realistic environments."
+      },
+      {
+        "num": "2",
+        "title": "AR/VR (Augmented & Virtual Reality)",
+        "decs": "Our AR/VR game development services bring immersive experiences to life. Using ARKit, ARCore, and Oculus, we create interactive simulations and games that redefine entertainment and education."
+      },
+      {
+        "num": "3",
+        "title": "Blockchain & NFT Integration",
+        "decs": "With blockchain game development, we build secure, transparent, and decentralized gaming ecosystems. <a class='underline font-semibold' href='https://www.comfygen.com/nft-game-development-company'>NFT integration</a> enables players to own, trade, and monetize in-game assets seamlessly."
+      },
+      {
+        "num": "4",
+        "title": "AI & Machine Learning in Games",
+        "decs": "We integrate <a class='underline font-semibold' href='https://www.comfygen.com/ai-development'>AI and machine learning</a> to create smart NPCs, real-time recommendations, and adaptive gameplay. This ensures personalized gaming experiences that engage players at every level."
+      },
+      {
+        "num": "5",
+        "title": "Metaverse & Cloud Gaming Solutions",
+        "decs": "Our team develops metaverse-based games with 3D avatars, social interaction, and virtual economies. With cloud gaming solutions, players can enjoy high-quality games without device limitations."
+      }
+    ]
+},
+"ProcessData": {
+    "heading": "Our Game Development Process",
+    "description": "At Comfygen, we follow a structured and transparent game development process to transform creative ideas into successful gaming solutions. Our step-by-step approach ensures quality, scalability, and timely delivery.",
+    "Process": [
+      {
+        "title": "Concept & Planning",
+        "description": "We begin with brainstorming, market research, and defining game objectives. Our team creates a detailed game design document (GDD) outlining features, gameplay, and technology stack."
+      },
+      {
+        "title": "Game Design & Prototyping",
+        "description": "Our mobile game designers build engaging <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/web-design'>UI/UX</a>, storyboards, and character designs. A prototype is developed to showcase core gameplay mechanics and ensure it aligns with client expectations."
+      },
+      {
+        "title": "Game Development",
+        "description": "This phase involves coding the game mechanics, developing the visual assets, and integrating all elements into a cohesive whole. Our skilled developers leverage the latest tools and technologies to ensure smooth gameplay, engaging interactions, and optimal performance across platforms."
+      },
+      {
+        "title": "Quality Assurance and Testing",
+        "description": "Rigorous testing is a cornerstone of our process. We conduct comprehensive QA testing to identify and rectify bugs, glitches, and any performance issues. User feedback is invaluable during this stage to fine-tune the gaming experience."
+      },
+      {
+        "title": "Iteration and Refinement",
+        "description": "Feedback gathered during testing is used to refine gameplay elements, optimize performance, and enhance user experience. This iterative process ensures that the game meets the highest standards of quality."
+      },
+      {
+        "title": "Launch and Deployment",
+        "description": "With the game polished and tested, we prepare for launch. We assist in publishing the game on the desired platforms, whether it's app stores, PC, consoles, or web. Our game development outsourcing team ensures a smooth launch process, including setting up distribution, marketing assets, and promotional strategies."
+      },
+      {
+        "title": "Post-Launch Support and Updates",
+        "description": "Our commitment extends beyond launch. We provide ongoing support to address any unforeseen issues, gather player feedback, and implement updates that introduce new features, content, and improvements based on player engagement."
+      }
+    ]
+},
+"Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Cloud/DevOps",
+    "Payments",
+    "Security",
+    "Advanced Technologies"
+],
+"TechstackData": {
+    "heading": "Tech Stack We Use for Mobile Game Development",
+    "description": "At Comfygen, we use a powerful tech stack for mobile game development to build high-performance, scalable, and visually stunning games. Our developers leverage cutting-edge frameworks, engines, and tools to deliver seamless gameplay experiences.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+          {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+       "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+        "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+          {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+           {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+           {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+       
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+        
+       
+        
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
       ]
-    },
-    {
-      "title": "2D & 3D Game Development",
-      "description": "We provide 2D & 3D game development services to create visually stunning and interactive games. From simple arcade games to complex 3D simulations, we design customized solutions that deliver unmatched user experiences across platforms.",
-      "features": [
-        "Advanced 2D/3D modeling",
-        "Realistic character design",
-        "High-quality graphics",
-        "Interactive environments"
-      ]
-    },
-    {
-      "title": "Unity & Unreal Game Development",
-      "description": "Our skilled Unity game developers specialize in Unity and Unreal Engine game development, offering powerful, immersive, and scalable solutions. Whether you want AR/VR games, multiplayer platforms, or hyper-casual games, Comfygen ensures smooth execution and seamless user experiences.",
-      "features": [
-        "Expertise in Unity & Unreal",
-        "Real-time rendering",
-        "Immersive gameplay features",
-        "Cross-platform support"
-      ]
-    },
-    {
-      "title": "AR/VR Game Development",
-      "description": "Comfygen offers next-gen AR/VR game development services to create interactive, immersive, and future-ready games. With technologies like ARKit, ARCore, and Oculus, we deliver engaging experiences that redefine mobile and console gaming.",
-      "features": [
-        "AR & VR integration",
-        "Realistic simulations",
-        "Multi-device compatibility",
-        "Enhanced user immersion"
-      ]
-    },
-    {
-      "title": "Blockchain & NFT Game Development",
-      "description": "As a trusted blockchain game development company, we create secure and transparent NFT games with unique tokenized assets. Our <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/blockchain-development' >blockchain-based game development solutions</a> allow players to buy, sell, and trade in-game items safely.",
-      "features": [
-        "Play-to-Earn game models",
-        "NFT marketplace integration",
-        "Smart contract security",
-        "<a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/crypto-wallet-development' >Crypto wallet integration</a>"
-      ]
-    },
-    {
-      "title": "Metaverse Game Development",
-      "description": "We deliver innovative <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/metaverse-game-development-company' >metaverse game development solutions</a> that combine blockchain, AR/VR, and AI to create immersive 3D worlds. From virtual economies to real-time multiplayer, we help brands enter the metaverse gaming ecosystem.",
-      "features": [
-        "3D avatars & environments",
-        "Virtual economy integration",
-        "AR/VR metaverse experience",
-        "Scalable architecture"
-      ]
-    },
-    {
-      "title": "Multiplayer Game Development",
-      "description": "Comfygen specializes in multiplayer game development, creating interactive platforms that connect global players in real-time. From battle royales to sports and card games, we design engaging multiplayer experiences.",
-      "features": [
-        "Real-time interaction",
-        "Cross-platform gaming",
-        "Secure multiplayer servers",
-        "Smooth connectivity"
-      ]
-    },
-    {
-      "title": "Educational Game Development",
-      "description": "Our educational game development services combine fun and learning, creating engaging apps for schools, colleges, and e-learning platforms. We build interactive games that improve knowledge retention while keeping learners entertained.",
-      "features": [
-        "Gamified learning modules",
-        "Interactive quizzes & puzzles",
-        "AR/VR education games",
-        "Multi-platform accessibility"
-      ]
-    }
-  ],
 
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire a game developer ",
-      "decs": "Hiring our game developers guarantees an unparalleled blend of innovation, technical prowess, and collaborative spirit. With a deep reservoir of skills spanning coding, design, and creativity, our developers bring a holistic approach to every project. Their problem-solving ability and adaptability to various platforms ensure your game's perfection. By hiring our console game developers, you’re securing a team intended to transform ideas into extraordinary gaming realities. ",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
     }
-  ],
-  "myList": [
-    "Unlock unique and cutting-edge game development solutions.",
-    "Craft captivating mechanics that keep players engaged.  ",
-    "Ensure glitch-free experiences with optimized coding.",
-    "Seamless team integration for efficient development as well as pro level testing."
-  ],
-  "TechnoStack": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/images/unity-stack-technology.webp",
-      "title": "Unity"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/images/java-script.webp",
-      "title": "Java"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/images/three-js-stack-technology.webp",
-      "title": "Three.js"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/images/unreal-engine-stack-technology.webp",
-      "title": "Unreal Engine"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/images/dot-net-stack-technology.webp",
-      "title": ".Net"
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/images/c++-stack-technology.webp",
-      "title": "C++"
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/images/c-sharp-stack-technology.webp",
-      "title": "C#"
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/images/python-stack-technology.webp",
-      "title": "Python"
-    }
-  ],
-
-  "OptService": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/images/mobile-game-development.webp",
-      "tittle": "Mobile Game Development",
-      "decs": "From casual mobile games to complex gaming apps, we specialize in developing mobile gaming apps optimized for iOS and Android devices. Our mobile games feature intuitive controls, smooth performance, hypnotic and user-friendly gameplay .    "
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/images/multiplayer-and-online-functionality.webp",
-      "tittle": "Multiplayer and Online Functionality",
-      "decs": "Uplift player interactions with real-time multiplayer features offering real-time competition and cooperation for an exceptional gaming experience. Whether it's vying or cooperative gameplay, we develop robust networking solutions that offer seamless online experiences"
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/images/console-game-development.webp",
-      "tittle": "Console Game Development ",
-      "decs": "Our Console Game Development service is dedicated to bringing your gaming vision to life on the grand stage of console platforms like Nintendo, Xbox, Playstation etc. We create tailored experiences that showcase next-generation graphics, immersive gameplay mechanics optimized for controllers, and seamless performance."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/images/game-design-and-art.webp",
-      "tittle": "Game Design and Art ",
-      "decs": "Our talented artists and designers bring concepts to life with engaging visuals, characters, and environments. From graphics to user interfaces, we create immersive experiences that give a captivating experience to the players."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/images/cross-platform-game-porting.webp",
-      "tittle": "Cross-Platform Game Porting ",
-      "decs": "Extend the reach of your game by making it accessible for users on various platforms including consoles, PCs, and mobile devices, ensuring consistent quality and gameplay across different devices. "
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/images/ar-vr-game-development.webp",
-      "tittle": "AR/VR Game Development ",
-      "decs": "Harness the power of cutting edge Augmented Reality (AR) and Virtual Reality (VR) technology to deliver immersive gaming experiences that blur the lines between the virtual and real worlds."
-    },
-    {
-      "num": "07",
-      "img": "https://www.comfygen.com/images/monetization-strategies.webp",
-      "tittle": "Monetization Strategies    ",
-      "decs": "Carrying out effective monetization models, including in-app purchases, ads integration, and even cryptocurrency systems, enabling them to generate revenue while providing profit, pleasure and satisfaction to players. "
-    },
-    {
-      "num": "08",
-      "img": "https://www.comfygen.com/images/quality-assurance-and-testing.webp",
-      "tittle": "Quality Assurance and Testing",
-      "decs": "Our meticulous QA testing team makes sure to conduct precise testing measures offering glitch-free games, bugs free before the launch. Our QA team ensures that you can deliver an amusing experience to your players and maintains the integrity of your venture"
-    }
-  ],
-
-  "myList3": [
-    "Cross-disciplinary mastery",
-    "Seamless graphics integration",
-    "Advanced programming skills",
-    "Efficient problem solvers  ",
-    "Multiplatform proficiency",
-    "Adaptable to latest trends"
-  ],
-
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/game-development/ludo2.webp",
-      "title": "Ludo Mobile Game",
-      "description": "Our Ludo mobile game development delivers a modern twist on the classic board game. With multiplayer functionality, real-time chat, and cross-platform compatibility, this game ensures high engagement and entertainment for users worldwide.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/game-development/3d_action_game.webp",
-      "title": "3D Action Game",
-      "description": "We developed a 3D action game with stunning graphics, smooth controls, and immersive storylines. Featuring multiple levels, character customization, and multiplayer battle modes, it guarantees thrilling gameplay for both casual and hardcore gamers.",
-      "link": "https://www.comfygen.com/contact-us"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/game-development/nft_based.webp",
-      "title": "NFT-Based Play-to-Earn Game",
-      "description": "Our NFT game development project integrates blockchain and crypto wallets, allowing players to earn, trade, and own digital assets. Secure smart contracts and a built-in NFT marketplace create a rewarding gaming ecosystem.",
-      "link": "https://www.comfygen.com/contact-us"
-    }
-  ],
-
-  "pageData": {
+},
+"pageData": {
     "title": "Why Choose Comfygen for Game Development?",
     "description": "Comfygen is a most trusted game development studio company delivering innovative, scalable, and engaging gaming solutions. With expertise in mobile game development, AR/VR games, blockchain, and metaverse, we help startups and enterprises build next-gen games that captivate users worldwide.",
     "mainCardData": {
@@ -289,91 +513,236 @@
         "description": "We provide continuous support, updates, and feature enhancements to keep your game competitive, bug-free, and profitable in the global gaming market."
       }
     ]
+},
+"HireDeveloper": {
+    "heading": "Hire Game Developers",
+    "text": "Looking to build a powerful, engaging, and scalable game? Hire game developers from Comfygen and bring your idea to life with expert skills and advanced technologies. We offer flexible hiring models—hourly, full-time, or project-based—to suit your budget and requirements. Our skilled team specializes in mobile game development, Unity/Unreal Engine, AR/VR, blockchain, and multiplayer games, ensuring world-class quality. Whether you are a startup, enterprise, or gaming studio, Comfygen provides dedicated developers to deliver innovative, feature-rich, and profitable gaming solutions.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": []
+},
+"ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
   },
-
-  "Emerging": [
+  "Frequently": [
     {
       "num": "1",
-      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "Unity 3D & Unreal Engine",
-      "decs": "We use Unity 3D and Unreal Engine to build visually stunning and high-performance games. These engines allow us to create cross-platform, 2D, 3D, AR, and VR games with realistic environments."
+      "title": "How much does it cost to develop a game app?",
+      "desc": "The cost of game app development depends on the type of game, features, design, and platform. A simple mobile game development project may start at $10,000, while advanced AR/VR, NFT, or multiplayer games can range up to $80,000 or more."
     },
     {
       "num": "2",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "AR/VR (Augmented & Virtual Reality)",
-      "decs": "Our AR/VR game development services bring immersive experiences to life. Using ARKit, ARCore, and Oculus, we create interactive simulations and games that redefine entertainment and education."
+      "title": "How long does it take to build a mobile game?",
+      "desc": "The timeline for mobile game development varies based on complexity. A basic 2D game may take 2–3 months, while a feature-rich 3D, AR/VR, or multiplayer game can take 6–12 months. Our team ensures timely delivery with high-quality results."
     },
     {
       "num": "3",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "Blockchain & NFT Integration",
-      "decs": "With blockchain game development, we build secure, transparent, and decentralized gaming ecosystems. <a class='underline font-semibold' href='https://www.comfygen.com/nft-game-development-company' >NFT integration</a> enables players to own, trade, and monetize in-game assets seamlessly."
+      "title": "Which technologies do you use for game development?",
+      "desc": "At Comfygen, we use leading technologies like Unity 3D, Unreal Engine, ARKit, ARCore, Blockchain, NFT integration, AI, and cloud gaming. Our advanced game development tech stack ensures scalable, immersive, and cross-platform gaming solutions for startups and enterprises."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/img/cloud-icon.webp",
-      "title": "AI & Machine Learning in Games",
-      "decs": "We integrate <a class='underline font-semibold ' href='https://www.comfygen.com/ai-development' >AI and machine learning</a> to create smart NPCs, real-time recommendations, and adaptive gameplay. This ensures personalized gaming experiences that engage players at every level."
+      "title": "Do you provide post-launch support and updates?",
+      "desc": "Yes, Comfygen provides complete post-launch support and game maintenance services. From bug fixes and performance optimization to adding new features, updates, and security enhancements, our team ensures your game stays competitive and delivers a seamless experience to users."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-      "title": "Metaverse & Cloud Gaming Solutions",
-      "decs": "Our team develops metaverse-based games with 3D avatars, social interaction, and virtual economies. With cloud gaming solutions, players can enjoy high-quality games without device limitations."
+      "title": "Can I hire dedicated game developers from Comfygen?",
+      "desc": "Absolutely! You can hire dedicated game developers from Comfygen on hourly, full-time, or project-based models. Our skilled game developers specialize in Unity, Unreal, AR/VR, blockchain, and multiplayer games, ensuring innovative, engaging, and cost-effective gaming solutions tailored to your needs."
     }
   ],
+ "jsonLdData":[
 
-  "customTestimonials": [
     {
-      "text": "Comfygen developed a fully customized logistics app for our local courier business. Their attention to detail and real-time tracking features helped us streamline our delivery operations and boost customer satisfaction.",
-      "name": "Rahul Mehta",
-      "title": "India"
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Game Development Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description": "Comfygen specializes in 2D & 3D game development services with engaging gameplay, rich graphics, and smooth performance. Hire mobile game developers to create innovative, cross-platform gaming solutions with AR/VR and blockchain integration.",
+      "url": "https://www.comfygen.com/game-development-company",
+      "mainEntityOfPage": "https://www.comfygen.com/game-development-company",
+      "areaServed": "Global",
+      "serviceType": [
+        "Mobile Game Development",
+        "2D & 3D Game Development",
+        "Unity & Unreal Game Development",
+        "AR/VR Game Development",
+        "Blockchain Game Development",
+        "NFT Game Development",
+        "Metaverse Game Development",
+        "Multiplayer Game Development",
+        "Educational Game Development"
+
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+
+      ]
     },
+
+
     {
-      "text": "We hired Comfygen to build a fleet management app, and they delivered beyond expectations. The UI was smooth, the backend was powerful, and the team was highly professional throughout the project.",
-      "name": "Jessica Turner",
-      "title": "USA"
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Game Development Company",
+        "item": "https://www.comfygen.com/game-development-company"
+
+      }]
     },
+
     {
-      "text": "The logistics app Comfygen built for us helped reduce our manual coordination by over 60%. Their tech expertise and quick support made the entire process seamless.",
-      "name": "Ahmed Zafar",
-      "title": "Oman"
-    },
-    {
-      "text": "Our warehouse and dispatch app turned out exactly how we wanted. Thanks to Comfygen’s development team, we now have real-time inventory control and efficient delivery scheduling.",
-      "name": "Nilesh Sharma",
-      "title": "Nigeria"
-    },
-    {
-      "text": "Working with Comfygen was a smooth experience. They understood our business goals and developed a transport tracking app that’s reliable, scalable, and user-friendly.",
-      "name": "Laura Kim",
-      "title": "Sydney"
-    },
-    {
-      "text": "Comfygen helped us launch a stunning mobile game app with smooth gameplay and engaging graphics. Their team was professional, innovative, and delivered on time. Highly recommended for startups!",
-      "name": "Rahul Mehta",
-      "title": "India"
-    },
-    {
-      "text": "We partnered with Comfygen for Unity 3D game development, and the results were beyond expectations. Their developers are skilled, responsive, and ensured our game stands out in the market.",
-      "name": "Sarah Johnson",
-      "title": "New York, USA"
-    },
-    {
-      "text": "From concept to launch, Comfygen handled everything with perfection. Their expertise in multiplayer game development made our project a huge success. We're impressed with their dedication and support.",
-      "name": "Ahmed Khan",
-      "title": "Dubai, UAE"
-    },
-    {
-      "text": "Comfygen is the best game development company we've worked with. They built a highly interactive AR/VR game for our business, and the experience was seamless from start to finish.",
-      "name": "Lisa Wong",
-      "title": "Singapore"
-    },
-    {
-      "text": "Our NFT game development project was executed flawlessly by Comfygen. The integration of blockchain and crypto wallets was smooth, and the team provided excellent post-launch support.",
-      "name": "David Miller",
-      "title": "London, UK"
+      "@context": "https://schema.org/",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much does it cost to develop a game app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of game app development depends on the type of game, features, design, and platform. A simple mobile game development project may start at $10,000, while advanced AR/VR, NFT, or multiplayer games can range up to $80,000 or more."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to build a mobile game?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The timeline for mobile game development varies based on complexity. A basic 2D game may take 2–3 months, while a feature-rich 3D, AR/VR, or multiplayer game can take 6–12 months. Our team ensures timely delivery with high-quality results."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Which technologies do you use for game development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At Comfygen, we use leading technologies like Unity 3D, Unreal Engine, ARKit, ARCore, Blockchain, NFT integration, AI, and cloud gaming. Our advanced game development tech stack ensures scalable, immersive, and cross-platform gaming solutions for startups and enterprises."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you provide post-launch support and updates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Comfygen provides complete post-launch support and game maintenance services. From bug fixes and performance optimization to adding new features, updates, and security enhancements, our team ensures your game stays competitive and delivers a seamless experience to users."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can I hire dedicated game developers from Comfygen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! You can hire dedicated game developers from Comfygen on hourly, full-time, or project-based models. Our skilled game developers specialize in Unity, Unreal, AR/VR, blockchain, and multiplayer games, ensuring innovative, engaging, and cost-effective gaming solutions tailored to your needs."
+        }
+
+
+      }]
     }
   ]
 }

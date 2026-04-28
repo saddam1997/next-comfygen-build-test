@@ -4,133 +4,60 @@ import dynamic from "next/dynamic";
 import Ourgames from "../../components/ourgames";
 import JSON_DATA from "./json/game.json";
 
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+import TechStacks from "../../components/TechStacks";
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const AppcardSlider = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AppcardSlider"),
-  { loading: loader, ssr: true }
-);
-
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const CoreFeaturesSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CoreFeaturesSection"),
-  { loading: loader, ssr: true }
-);
-
-const TrendsSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TrendsSection"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-const NewTeckStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
-
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-);
-
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { loading: loader, ssr: true }
-);
-
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-const Process = [
+const PortfolioSection = dynamic(
+  () => import("../../components/PortfolioSection"),
   {
-    "title": "Concept & Planning",
-    "description": "We begin with brainstorming, market research, and defining game objectives. Our team creates a detailed game design document (GDD) outlining features, gameplay, and technology stack."
+    ssr: true,
   },
+);
+
+import ReviewCard from "../../components/ReviewCard";
+
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
   {
-    "title": "Game Design & Prototyping",
-    "description": "Our mobile game designers build engaging <a class='underline font-semibold text-blue-500' href='https://www.comfygen.com/web-design' >UI/UX</a>, storyboards, and character designs. A prototype is developed to showcase core gameplay mechanics and ensure it aligns with client expectations."
+    ssr: true,
   },
-  {
-    "title": "Game Development",
-    "description": "This phase involves coding the game mechanics, developing the visual assets, and integrating all elements into a cohesive whole. Our skilled developers leverage the latest tools and technologies to ensure smooth gameplay, engaging interactions, and optimal performance across platforms."
-  },
-  {
-    "title": "Quality Assurance and Testing",
-    "description": "Rigorous testing is a cornerstone of our process. We conduct comprehensive QA testing to identify and rectify bugs, glitches, and any performance issues. User feedback is invaluable during this stage to fine-tune the gaming experience."
-  },
-  {
-    "title": "Iteration and Refinement",
-    "description": "Feedback gathered during testing is used to refine gameplay elements, optimize performance, and enhance user experience. This iterative process ensures that the game meets the highest standards of quality."
-  },
-  {
-    "title": "Launch and Deployment",
-    "description": "With the game polished and tested, we prepare for launch. We assist in publishing the game on the desired platforms, whether it's app stores, PC, consoles, or web. Our game development outsourcing team ensures a smooth launch process, including setting up distribution, marketing assets, and promotional strategies."
-  },
-  {
-    "title": "Post-Launch Support and Updates",
-    "description": "Our commitment extends beyond launch. We provide ongoing support to address any unforeseen issues, gather player feedback, and implement updates that introduce new features, content, and improvements based on player engagement."
-  }
-]
+);
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
+);
+
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+const skeleton = (h: string) => (
+  <div className={`w-full ${h} animate-pulse bg-gray-100 rounded-lg`} />
+);
+
+const Emerging = dynamic(() => import("../../components/Emerging"), {
+  ssr: true,
+  loading: () => skeleton("h-[400px]"),
+});
 
 
 
+import AboutComponent from "../../components/Abouts/AboutComponent";
 
-export default function MultiChain(props) {
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+
+
+export default function MultiChain(props:any) {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     const img = new window.Image();
@@ -146,131 +73,9 @@ export default function MultiChain(props) {
 
 
 
-  const jsonLdData = [
-   
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Game Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Comfygen specializes in 2D & 3D game development services with engaging gameplay, rich graphics, and smooth performance. Hire mobile game developers to create innovative, cross-platform gaming solutions with AR/VR and blockchain integration.",
-      "url": "https://www.comfygen.com/game-development-company",
-      "mainEntityOfPage": "https://www.comfygen.com/game-development-company",
-      "areaServed": "Global",
-      "serviceType": [
-        "Mobile Game Development",
-        "2D & 3D Game Development",
-        "Unity & Unreal Game Development",
-        "AR/VR Game Development",
-        "Blockchain Game Development",
-        "NFT Game Development",
-        "Metaverse Game Development",
-        "Multiplayer Game Development",
-        "Educational Game Development"
-
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen.technologies",
-        "https://x.com/Comfygen_Tech",
-        "https://www.instagram.com/comfygen_technologies",
-        "https://www.linkedin.com/company/comfygen-technologies"
-
-      ]
-    },
-
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.comfygen.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Game Development Company",
-        "item": "https://www.comfygen.com/game-development-company"
-
-      }]
-    },
-
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How much does it cost to develop a game app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of game app development depends on the type of game, features, design, and platform. A simple mobile game development project may start at $10,000, while advanced AR/VR, NFT, or multiplayer games can range up to $80,000 or more."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to build a mobile game?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The timeline for mobile game development varies based on complexity. A basic 2D game may take 2–3 months, while a feature-rich 3D, AR/VR, or multiplayer game can take 6–12 months. Our team ensures timely delivery with high-quality results."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Which technologies do you use for game development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "At Comfygen, we use leading technologies like Unity 3D, Unreal Engine, ARKit, ARCore, Blockchain, NFT integration, AI, and cloud gaming. Our advanced game development tech stack ensures scalable, immersive, and cross-platform gaming solutions for startups and enterprises."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Do you provide post-launch support and updates?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Comfygen provides complete post-launch support and game maintenance services. From bug fixes and performance optimization to adding new features, updates, and security enhancements, our team ensures your game stays competitive and delivers a seamless experience to users."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "Can I hire dedicated game developers from Comfygen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! You can hire dedicated game developers from Comfygen on hourly, full-time, or project-based models. Our skilled game developers specialize in Unity, Unreal, AR/VR, blockchain, and multiplayer games, ensuring innovative, engaging, and cost-effective gaming solutions tailored to your needs."
-        }
-
-
-      }]
-    }
-
-
-
-
-
-
-
-
-  ];
-
-
-
-
+ 
 
   let { initialData } = props;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
   return (
     <>
       <Head>
@@ -433,156 +238,39 @@ export default function MultiChain(props) {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
 
         {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} /> */}
       </Head>
 
-       {/* <Header /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+      <section className="py-10 mb-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
+        <Emerging emerging={JSON_DATA.EmergingData} />
+      </section>
 
-      <div className="overflow-hidden ">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Top Game Development Company"
-            ptag="Comfygen is a leading game development company specializing in mobile, 2D/3D, AR/VR, blockchain, and metaverse game development. We deliver high-performance, engaging, and scalable gaming solutions tailored for startups, enterprises, and global brands. Transform your game idea into reality with our expert developers."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            li="Cross-Platform Game Development"
-            li1="Next-Gen Technologies"
-            li2="Custom & Scalable Solutions"
-            li3="End-to-End Development"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/comfygen-images/game-development/game_hero.webp"
-          />
-        </div>
-        <AboutSection
-          title="About Company"
-          heading="Comfygen: The Best Game Development Company"
-          description1="Welcome to Infinite Realms of futuristic Gaming: Where Imagination Becomes Reality Comfygen is a top custom game app development company in India, USA, UK & UAE that offers the most reliable and tech savvy mobile gaming apps and console gaming platforms with a very pocket friendly cost. With each project, we precisely customize every detail, leveraging cutting-edge technology to deliver a level of quality that is beyond your expectations."
-          description2="As one of the leading mobile game development companies in the USA and other offshore countries, we stand at the forefront of the game development industry, designing exceptional virtual experiences that engage, inspire, and entertain the user base. We have a blend of passionate creators, expert Android and iOS developers who alter your ideas into interactive realities that can take your new or traditional business to the new heights."
-          description3="Our client-centric intention as the best 2D & 3D game development company revolves around delivering not just games, but transformative experiences. Join us on this exhilarating journey as we continue to turn your imagination into a profitable venture that can light real stars in the sky among game development firms."
-          imageSrc="https://www.comfygen.com/comfygen-images/game-development/game_about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+      <section className="bg-[#F5F5F9] lg:py-16 py-10">
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      </section>
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Our Best Game Development Services</h2>
-              <p className="text-base text-center font-normal">With a commitment to innovation, quality, and client collaboration, our game development company is dedicated to transforming your concepts into memorable gaming experiences that captivate players and impact the industry. Our mobile video game development agency brings a comprehensive range of services to the table designed to get your gaming ideas to life and deliver exceptional experiences to players</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
+      <TechStacks
+        TabData={JSON_DATA.Tabs}
+        TechData={JSON_DATA.TechstackData}
+        Default={JSON_DATA.Tabs[0]}
+      />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <Ourgames hideSportBettingTab={true} hideFantasyGames={true} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection
+        faqData={JSON_DATA.Frequently}
+        title=" Game Development Company"
+      />
+      <BlogSection initialData={initialData} />
 
-
-        {/* portfoliodata */}
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Game Development Portfolio"
-            description="Explore our game development portfolio, showcasing advanced, feature-rich, and engaging gaming solutions built for diverse audiences. From casual mobile games to blockchain-based play-to-earn platforms, Comfygen ensures smooth gameplay, rich graphics, and immersive user experiences—partner with us to create next-gen games that stand out in the competitive market."
-          />
-        </section>
-
-
-        <section className="py-10 mb-10 lg:py-20 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Advanced Technologies We Use in Game Development
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  At Comfygen, we leverage the latest game development technologies to deliver immersive, high-performance, and future-ready games. Our expert developers combine innovation with advanced tools to create engaging gaming experiences across multiple platforms.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
-                                          src={img}
-                                          className="object-cover"
-                                          width={35}
-                                          height={50}
-                                          alt={title}
-                                        /> */}
-                        <h3 className="text-2xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p
-                          className="break-all text-white text-start "
-                          dangerouslySetInnerHTML={{ __html: decs }}
-                        ></p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Game Development Process</h2>
-              <p className="max-w-[800px] mt-2 mx-auto">At Comfygen, we follow a structured and transparent game development process to transform creative ideas into successful gaming solutions. Our step-by-step approach ensures quality, scalability, and timely delivery.</p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <NewTeckStack
-          title="Tech Stack We Use for Mobile Game Development"
-          description="At Comfygen, we use a powerful tech stack for mobile game development to build high-performance, scalable, and visually stunning games. Our developers leverage cutting-edge frameworks, engines, and tools to deliver seamless gameplay experiences."
-        />
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-
-        <HireDeveloper
-          heading="Hire Game Developers"
-          text="Looking to build a powerful, engaging, and scalable game? Hire game developers from Comfygen and bring your idea to life with expert skills and advanced technologies. We offer flexible hiring models—hourly, full-time, or project-based—to suit your budget and requirements. Our skilled team specializes in mobile game development, Unity/Unreal Engine, AR/VR, blockchain, and multiplayer games, ensuring world-class quality. Whether you are a startup, enterprise, or gaming studio, Comfygen provides dedicated developers to deliver innovative, feature-rich, and profitable gaming solutions."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-
-        />
-        <Ourgames hideSportBettingTab={true} hideFantasyGames={true} />
-        <ClientTestimonials
-          heading="What Our Clients Say"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" Game Development Company"
-        />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }
