@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import MainLayout from "./MainLayout";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
+import GlobalSchema from "../components/seo/GlobalSchema";
 
 
 // "use client";
@@ -42,6 +43,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       {/* ✅ Main App */}
       <div className={poppins.className}>
         <MainLayout>
+          <GlobalSchema/>
           <Component {...pageProps} />
         </MainLayout>
       </div>
