@@ -1,89 +1,47 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./json/hireDotNet.json";
 import dynamic from "next/dynamic";
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
+
+
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true},
+);
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
 );
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"),
+  { ssr: true },
 );
 
-const ModelsSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ModelsSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+import AboutComponent from "../../components/Abouts/AboutComponent";
 
-const CardItem = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CardItem"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+import Solution from "../../components/Solution";
 
 
 export default function Mobile(props) {
   let { initialData } = props;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
   return (
     <>
       <Head>
         <title>
-         Hire Dedicated .NET Developers | ASP.NET & .NET Core Experts | Comfygen
+          Hire Dedicated .NET Developers | ASP.NET & .NET Core Experts | Comfygen
         </title>
         <meta
           name="description"
@@ -162,82 +120,16 @@ export default function Mobile(props) {
         />
       </Head>
 
-     {/* <Header /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <Solution techData={JSON_DATA.CardData} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-      <div className="overflow-hidden ">
-        <HeroSectionForAllPages
-          heading="Hire Best .NET Developers From India"
-          ptag="Empower your business with enterprise-grade software by hiring skilled .NET developers in India from Comfygen. Our experienced .NET professionals help you build secure, scalable, and high-performance web and enterprise applications tailored to your business needs."
-          ptag1="From custom .NET application development to system integration and modernization, our full-stack .NET developers deliver robust solutions using ASP.NET, .NET Core, MVC, and cloud-based architectures. Partner with Comfygen to streamline workflows, enhance security, and drive long-term growth."
-          li="Expert .NET Developers for Hire"
-          li1="Full-Stack .NET Application Development"
-          li2="Secure, Scalable & Business-Ready Solutions"
-          li3="Custom Development Aligned to Your Goals"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/hire-dot-net-developer-hero-img.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                .Net Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                We are able to provide a wide range of .NET development services
-                in the .NET Domain because of our technical proficiency and use
-                of the agile development technique. We provide the following
-                tactful solutions when you work with our .NET programmers:
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Us"
-          heading="Comfygen - Your Leading Partner to Hire ASP Dot Net Developer"
-          description1="Comfygen has deep knowledge and expertise in blockchain and decentralized applications. Take advantage of our skilled professional's knowledge and talent. Consult and understand which the best blockchain solution is right to build for your organization, resolve the technology challenges, and empower your business with rising potentials and profits. Improve the performance and credibility of your organization in the tech era with our comprehensive blockchain consulting services."
-          description2="Within our projected project deadlines, our Asp.Net experts will work 100% accurately on your development project. Just tell us what kind of development experience you need, and we'll provide you with a list of candidates that is sorted to meet your project. It is not worth waiting, so tap and hire asp dot net developer"
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-        {/* <ContactFromCenter /> */}
-
-        <ModelsSec Qa={JSON_DATA.Qa} Whycomfygen={JSON_DATA.Whycomfygen} />
-        <CardItem
-          heading="How to Connect With Our ASP .Net Developers?"
-          subheading="Do you want to hire dedicated asp net developers in India? Comfygen should be your one-stop destination, as we have experienced and expert developers to conquer in the marketplace with our development process. Connect with our skilled team seamlessly:"
-          techData={JSON_DATA.cardData}
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text="Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <Faq faqData={JSON_DATA.Frequently} title="" />
-  <BlogSection initialData={initialData} />
-
-      </div>
     </>
   );
 }

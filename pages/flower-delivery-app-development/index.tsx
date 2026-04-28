@@ -48,15 +48,7 @@ const Emerging = dynamic(() => import("../../components/Emerging"), {
   loading: () => skeleton("h-[400px]"),
 });
 
-const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
-const TeckStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  },
-);
 
 const DeliverySection = dynamic(
   () => import("../../components/Newcomponet/comman/DeliverySection"),

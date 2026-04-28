@@ -19,6 +19,7 @@ const AboutComponent = ({ AboutData }) => {
               src={AboutData.imageSrc}
               alt={AboutData.heading}
               fill
+              priority
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="lg:object-contain object-cover rounded-md"
             />
@@ -62,7 +63,7 @@ const AboutComponent = ({ AboutData }) => {
                   href={AboutData.link}
                   className="text-[#5556D1] hover:bg-[#5556D1] hover:text-white border border-[#5556D1] w-fit px-10 py-2 text-lg font-semibold rounded-full flex items-center gap-1 transition-colors duration-200"
                 >
-                  {AboutData.linkText} <ArrowUpRight /> 
+                  {AboutData.linkText} <ArrowUpRight />
                 </Link>
               )}
             </div>
