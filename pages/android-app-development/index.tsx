@@ -1,93 +1,50 @@
-import { useEffect, useState } from "react";
-import React from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./json/ios.json";
-import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Header from "../../components/Newcomponet/layout/Header";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+import TechStacks from "../../components/TechStacks";
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
+
 import ReviewCard from "../../components/ReviewCard";
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
+
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
   {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
     ssr: true,
-  }
+  },
 );
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
 );
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
 
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
+import AboutComponent from "../../components/Abouts/AboutComponent";
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+import IndustryGrid from "../../components/IndustryGrid";
 
 export default function Mobile(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+
 
   return (
     <>
@@ -130,7 +87,7 @@ export default function Mobile(props: any) {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comfygentech" />
-     
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta
@@ -155,102 +112,23 @@ export default function Mobile(props: any) {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
-   
-   
-        <HeroSectionForAllPages
-          heading="Best Android App Development Company India and USA"
-          ptag="Comfygen is a professional Android app development company in Jaipur, India, helping startups and small businesses build reliable, scalable, and performance-driven Android applications. Our skilled Android developers create secure and intuitive mobile apps that deliver seamless user experiences and measurable business results."
-          ptag1="We manage the complete Android app development lifecycle—from strategy and design to development and Google Play launch—ensuring your app is built for growth, engagement, and long-term success."
-          li="Experienced Android App Developers"
-          li1="Secure & Scalable Mobile App Solutions"
-          li2="Clean, User-Focused UI/UX Design"
-          li3="Confidential Development with NDA Protection"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/herosection/android-app-dev-hero-img.webp"
-        />
-        <Milestones />
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-               Our Comprehensive Android App Development Services
-              </h2>
-              <p className="text-base text-center font-normal">
-                As a leading Android app development company. Comfygen delivers end-to-end Android app development services tailored for startups, entrepreneurs, and enterprises across India. We combine innovative technology, user-focused design, and scalable architecture to build high-performing Android applications that drive business growth.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title=""
-          heading="Why Comfygen is Your Trusted Android App Development Partner in India"
-          description1="As a trusted Android application development company, we deliver custom <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>Mobile app development solutions</a> focused on innovation, performance, and alignment with your business goals. Our expert Android app developers specialize in building scalable mobile applications for startups, small businesses, and enterprises across B2B and B2C models, covering domains such as gaming, AR/VR, IoT, <a href='https://www.comfygen.com/ecommerce' class='text-blue-600 font-semibold'>eCommerce</a>, entertainment, news, utilities, chat, ticket booking, and more."
-          description2="We provide secure, user-friendly, and future-ready Android app development services—from enterprise-grade solutions to consumer-focused applications. With an agile and flexible development approach, we ensure seamless functionality, optimized user experiences, and long-term value, transforming your vision into a powerful Android app that drives business success."
-         
-          imageSrc="https://www.comfygen.com/gallery/about-images/android-app-development-about-us-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <TechStacks
+        TabData={JSON_DATA.Tabs}
+        TechData={JSON_DATA.TechstackData}
+        Default={JSON_DATA.Tabs[0]}
+      />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <IndustryGrid />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-
-
-        <TechStack
-          title=" Our Cutting-Edge Technology Stack for Android App Development"
-          description="You can hire Android developers from our team with the assurance of expertise in the modern technology stack to create Android apps."
-        />
-
-        <section className="bg-white lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-               Step-by-Step Android App Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-             As a trusted Android app development company, we build secure, scalable, and future-ready Android applications that align perfectly with your business goals. Our structured development process ensures transparency, quality, and faster time-to-market.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
-
-        {/* <ContactFromCenter /> */}
-        <IndustriesServe heading="" description="" />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-        <ClientStories/>
-        <HireDeveloper
-          heading="Hire Android Application Developers"
-          text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Android Developers. They can focus on your project entirely and deliver you faster results."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Dynamic mobile apps can be built with the help of well-versed resources",
-            "The management of glazing ideas, development, and delivery",
-            "Ability to Meet Deadlines",
-            "NDA confidentiality is 100% guaranteed",
-          ]}
-        />
-         <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-        <Faq faqData={JSON_DATA.Frequently} title=" " />
-        <BlogSection initialData={initialData} />
-   
     </>
   );
 }
