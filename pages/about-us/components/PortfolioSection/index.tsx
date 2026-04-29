@@ -149,11 +149,10 @@ export default function Portfolio({ Portfoliodata }) {
             style={{ width: cardWidth }}
           >
             <div
-              className={`rounded-3xl flex border items-center bg-white shadow-xl p-6 transition-all duration-500 ${
-                i === index
+              className={`rounded-3xl flex flex-cols border items-center bg-white shadow-xl p-6 transition-all duration-500 ${i === index
                   ? "scale-100"
                   : "scale-90 opacity-70"
-              }`}
+                }`}
             >
               <Image
                 src={item.image}
@@ -170,7 +169,7 @@ export default function Portfolio({ Portfoliodata }) {
                 </h3>
 
                 <p className="text-sm font-semibold text-gray-600 mt-2" dangerouslySetInnerHTML={{ __html: item.description }}>
-                  
+
                 </p>
               </div>
             </div>

@@ -4,7 +4,10 @@ import Head from 'next/head';
 import JSON_DATA from "./json/about.json"
 import AboutSection from './components/AboutSection';
 import Navbar from '../../components/Navbar';
-import PortfolioSection from "./components/PortfolioSection"
+// import PortfolioSection from "./components/PortfolioSection"
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: false }
+);
 import OurGeography from './components/OurGeography';
 import IndustryGrid from './components/IndustryGrid';
 import ClientStories from './components/ClientStories';
@@ -12,6 +15,7 @@ import LeadershipSection from './components/LeadershipSection';
 import Trending from './components/Trending';
 import FaqSection from '../../components/FaqSection';
 import DownloadOverview from './components/DownloadOverview';
+import dynamic from 'next/dynamic';
 
 export default function about() {
   return (
@@ -42,14 +46,15 @@ export default function about() {
         />
       </Head>
 
-       {/* <Navbar /> */}
+      {/* <Navbar /> */}
 
       <div className="overflow-hidden ">
         <AboutSection />
+        {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <OurGeography />
         <IndustryGrid />
-        <DownloadOverview/>
+        <DownloadOverview />
         <section className="py-8">
           <Trending
             trendingData={JSON_DATA.trendingData}
