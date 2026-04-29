@@ -1,375 +1,263 @@
 {
-  "myList": [
-    "Developers expert in all blockchain framework, tools, and programming languages. ",
-    " We follow the new blockchain trends to stay competitive in the marketplace. ",
-    "Comfygen has Full-Stack developers; who have the caliber to build robust decentralized applications.",
-    "Clients have the option to hire blockchain developers in India from us, as they can hire a developer dedicated on project, hourly basis, or full time. "
-  ],
-  "NewSections": {
-    "title": "What is Blockchain Development?",
-    "decs": "Blockchain development is the process of building decentralized digital solutions such as smart contracts, dApps, and blockchain networks that operate on secure, distributed ledgers. It empowers businesses to create transparent, tamper-proof systems without the need for intermediaries. From finance and supply chain to healthcare and gaming, blockchain development enables faster transactions, improved security, and greater trust across digital ecosystems."
+ "Herosection": {
+    "heading": "Blockchain Wallet Development Services",
+    "ptag": "Comfygen is a trusted blockchain wallet development company that helps businesses create secure and user-friendly crypto wallets. We build non-custodial and multi-chain wallets with strong encryption, fast performance, and smooth experiences on mobile and web. Whether you need a white-label wallet or a fully custom solution, our blockchain wallet development services are designed to deliver high security, easy usability, and reliable scalability.",
+    "ptag1": "",
+    "listItems": [
+      "Non-Custodial Wallets",
+      "Multi-Chain Wallets",
+      "Strong Security & Encryption",
+      "DApp, NFT & DeFi Integration"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/comfygen-images/blockchain-wallet-development/hero.webp"
   },
-  "servicesData": [
-    {
-      "title": "Custom Crypto Wallet Development Services",
-      "subtitle": "",
-      "description": "From concept to launch, our Custom <a class='underline' href='https://www.comfygen.com/crypto-wallet-development'>Crypto Wallet Development</a> Services craft bespoke wallet solutions designed to your specific business needs and target audience.",
-      "features": [
-        "Tailored Feature Sets",
-        "Brand-Aligned UI/UX",
-        "Cross-Platform Development"
-      ]
-    },
-    {
-      "title": "DeFi Wallets & Web3 Integration",
-      "subtitle": "",
-      "description": "<a class='underline' href='https://www.comfygen.com/defi-wallet-development'>DeFi Wallets</a> & Web3 Integration ensure that your users interact seamlessly with the entire decentralized finance ecosystem.",
-      "features": [
-        "DEX Integration",
-        "dApp Browsers",
-        "Multi-Chain Support"
-      ]
-    },
-    {
-      "title": "NFT Wallet Development",
-      "subtitle": "",
-      "description": "Comfygen specializes in developing <a class='underline' href='https://www.comfygen.com/nft-wallet-development'>NFT wallets</a> according to the NFT market, designed for creators and collectors.",
-      "features": [
-        "NFT Minting: Allow users to create (mint) their NFTs directly from the wallet.",
-        "Visual Galleries: Beautifully display NFT collections in easy-to-browse galleries.",
-        "Marketplace Integration: Direct connections to leading NFT marketplaces (OpenSea, Rarible, Magic Eden) for buying, selling, and bidding.",
-        "Gas Optimization: Smart features to handle blockchain transaction fees (gas) efficiently."
-      ]
-    },
-    {
-      "title": "Enterprise-Grade Custody Solutions",
-      "subtitle": "",
-      "description": "Secure your organization's digital assets with institutional-level security and governance.",
-      "features": [
-        "Multi-Signature (Multi-Sig) Wallets: Require multiple approvals for transactions, eliminating single points of failure.",
-        "Cold Storage Integration: Secure offline storage solutions for maximum protection of large assets.",
-        "Hierarchical Deterministic (HD) Wallets: Generate unlimited addresses from a single seed phrase for organized fund management.",
-        "Compliance & Reporting: Tools designed to help meet regulatory requirements and audit trails."
-      ]
-    },
-    {
-      "title": "White-Label Wallet Solutions",
-      "subtitle": "",
-      "description": "<a class='underline' href='https://www.comfygen.com/white-label-cryptocurrency-wallet-development' >White-Label Wallet Development</a> Solutions help you launch your branded wallet faster with our secure, pre-built, and customizable framework.",
-      "features": [
-        "Rapid Time-to-Market: Deploy a proven wallet infrastructure under your brand in weeks, not months.",
-        "Cost-Effective: Avoid the high cost and time of building from scratch.",
-        "Fully Customizable: Modify the design, features, and supported blockchains to fit your needs.",
-        "Ongoing Support & Updates: We handle the backend maintenance and security updates."
-      ]
-    },
-    {
-      "title": "Wallet Integration & API Development",
-      "subtitle": "",
-      "description": "Connect your existing platform or application to blockchain networks seamlessly.",
-      "features": [
-        "Custom API Development: Build powerful APIs to enable crypto transactions, balance checks, and history within your current software.",
-        "Payment Gateway Integration: Accept cryptocurrency payments in your e-commerce store or SaaS platform.",
-        "Blockchain Node Management: We set up and manage the secure infrastructure needed for reliable blockchain connectivity."
-      ]
-    },
-    {
-      "title": "Security Audits & Penetration Testing",
-      "subtitle": "",
-      "description": "Protect your wallet from potential threats with our advanced security solutions, built to withstand evolving cyber risks and safeguard your digital assets around the clock.",
-      "features": [
-        "Smart Contract Audits: Comprehensive code reviews to identify and eliminate vulnerabilities before launch.",
-        "Penetration Testing: Ethical hackers simulate real-world attacks to stress-test your wallet's defenses.",
-        "Continuous Monitoring: Proactive systems to detect and respond to suspicious activity."
-      ]
-    }
-  ],
-  "IndustriesServe": [
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Finance & Banking",
-      "description": "Revolutionizing financial transactions with blockchain-based solutions. We provide secure payment systems, <a class='text-blue-600' href='/crypto-wallet-development'> cryptocurrency wallets</a>, decentralized finance (DeFi) platforms, and blockchain-based banking systems that ensure efficient, transparent, and faster financial operations."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
-      "title": "Healthcare",
-      "description": "Our blockchain solutions empower healthcare providers with secure patient data management, medical record tracking, and enhanced transparency in medical supply chains. Blockchain improves the accuracy and accessibility of healthcare data while protecting patient privacy."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/industries-industries-img.webp",
-      "title": "Supply Chain & Logistics",
-      "description": "We optimize global supply chains with blockchain technology by enabling real-time tracking, transparent documentation, and enhanced security. With our solutions, businesses can reduce fraud, streamline operations, and increase overall efficiency."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/construction-industries-img.webp",
-      "title": "Government & Public Sector",
-      "description": "Comfygen’s blockchain solutions for the public sector enable secure, transparent processes for public administration. These include digital identity management, voting systems, and secure data management platforms that enhance accountability and trust in governmental systems."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/game-industries-img.webp",
-      "title": "Gaming",
-      "description": "Blockchain technology brings transparency and security to the gaming industry. We build decentralized applications (dApps) and digital asset management systems that allow players to buy, sell, and trade assets securely, creating a seamless gaming experience."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/finance-industries-img.webp",
-      "title": "Real Estate",
-      "description": "Real estate transactions become faster, more secure, and more transparent with blockchain solutions. Our services include property tokenization, smart contracts, and blockchain-based property management platforms that reduce paperwork and enhance trust in real estate deals."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/entertainment-industries-img.webp",
-      "title": "Insurance",
-      "description": "Blockchain helps automate insurance claims, enhancing transparency, and reducing fraud. Our solutions streamline underwriting and claims processes, making them more efficient, secure, and cost-effective for insurers and customers alike."
-    },
-    {
-      "imgSrc": "https://www.comfygen.com/image/sports-industries-img.webp",
-      "title": "Energy & Utilities",
-      "description": "We offer blockchain solutions to optimize energy distribution, enhance grid security, and enable peer-to-peer energy trading. Our decentralized energy systems ensure transparency, improve efficiency, and help manage resources more effectively."
-    }
-  ],
 
-
-"defaultTechData": {
-    "Blockchain": [
+   "ServicesData": {
+    "heading": "Our Blockchain Wallet Development Services",
+    "description": "At Comfygen, we offer comprehensive blockchain wallet development solutions designed to meet the unique needs of businesses, fintech startups, and enterprises. Our services combine cutting-edge technology, robust security, and user-friendly design to deliver wallets that are scalable, secure, and future-ready.",
+    "services": [
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/ethereum.svg",
-        "alt": "Ethereum",
-        "name": "Ethereum",
-        "num": "1"
+        "title": "Custom Crypto Wallet Development Services",
+        "subtitle": "",
+        "description": "From concept to launch, our Custom <a class='underline' href='https://www.comfygen.com/crypto-wallet-development'>Crypto Wallet Development</a> Services craft bespoke wallet solutions designed to your specific business needs and target audience.",
+        "features": [
+          "Tailored Feature Sets",
+          "Brand-Aligned UI/UX",
+          "Cross-Platform Development"
+        ]
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/hyperledger-fabric.svg",
-        "alt": "Hyperledger Fabric",
-        "name": "Hyperledger Fabric",
-        "num": "2"
+        "title": "DeFi Wallets & Web3 Integration",
+        "subtitle": "",
+        "description": "<a class='underline' href='https://www.comfygen.com/defi-wallet-development'>DeFi Wallets</a> & Web3 Integration ensure that your users interact seamlessly with the entire decentralized finance ecosystem.",
+        "features": ["DEX Integration", "dApp Browsers", "Multi-Chain Support"]
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/corda.svg",
-        "alt": "R3 Corda",
-        "name": "Corda",
-        "num": "3"
+        "title": "NFT Wallet Development",
+        "subtitle": "",
+        "description": "Comfygen specializes in developing <a class='underline' href='https://www.comfygen.com/nft-wallet-development'>NFT wallets</a> according to the NFT market, designed for creators and collectors.",
+        "features": [
+          "NFT Minting: Allow users to create (mint) their NFTs directly from the wallet.",
+          "Visual Galleries: Beautifully display NFT collections in easy-to-browse galleries.",
+          "Marketplace Integration: Direct connections to leading NFT marketplaces (OpenSea, Rarible, Magic Eden) for buying, selling, and bidding.",
+          "Gas Optimization: Smart features to handle blockchain transaction fees (gas) efficiently."
+        ]
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/quorum.svg",
-        "alt": "Quorum",
-        "name": "Quorum",
-        "num": "4"
+        "title": "Enterprise-Grade Custody Solutions",
+        "subtitle": "",
+        "description": "Secure your organization's digital assets with institutional-level security and governance.",
+        "features": [
+          "Multi-Signature (Multi-Sig) Wallets: Require multiple approvals for transactions, eliminating single points of failure.",
+          "Cold Storage Integration: Secure offline storage solutions for maximum protection of large assets.",
+          "Hierarchical Deterministic (HD) Wallets: Generate unlimited addresses from a single seed phrase for organized fund management.",
+          "Compliance & Reporting: Tools designed to help meet regulatory requirements and audit trails."
+        ]
+      },
+      {
+        "title": "White-Label Wallet Solutions",
+        "subtitle": "",
+        "description": "<a class='underline' href='https://www.comfygen.com/white-label-cryptocurrency-wallet-development'>White-Label Wallet Development</a> Solutions help you launch your branded wallet faster with our secure, pre-built, and customizable framework.",
+        "features": [
+          "Rapid Time-to-Market: Deploy a proven wallet infrastructure under your brand in weeks, not months.",
+          "Cost-Effective: Avoid the high cost and time of building from scratch.",
+          "Fully Customizable: Modify the design, features, and supported blockchains to fit your needs.",
+          "Ongoing Support & Updates: We handle the backend maintenance and security updates."
+        ]
+      },
+      {
+        "title": "Wallet Integration & API Development",
+        "subtitle": "",
+        "description": "Connect your existing platform or application to blockchain networks seamlessly.",
+        "features": [
+          "Custom API Development: Build powerful APIs to enable crypto transactions, balance checks, and history within your current software.",
+          "Payment Gateway Integration: Accept cryptocurrency payments in your e-commerce store or SaaS platform.",
+          "Blockchain Node Management: We set up and manage the secure infrastructure needed for reliable blockchain connectivity."
+        ]
+      },
+      {
+        "title": "Security Audits & Penetration Testing",
+        "subtitle": "",
+        "description": "Protect your wallet from potential threats with our advanced security solutions, built to withstand evolving cyber risks and safeguard your digital assets around the clock.",
+        "features": [
+          "Smart Contract Audits: Comprehensive code reviews to identify and eliminate vulnerabilities before launch.",
+          "Penetration Testing: Ethical hackers simulate real-world attacks to stress-test your wallet's defenses.",
+          "Continuous Monitoring: Proactive systems to detect and respond to suspicious activity."
+        ]
       }
-    ],
-    "FrontEnd": [
+    ]
+  }, 
+  "AboutSection": {
+    "title": "",
+    "heading": "How Blockchain Wallets Help Businesses Grow",
+    "description1": "Blockchain wallets are more than just crypto storage, they empower businesses to grow, innovate, and operate efficiently in the digital economy. By leveraging secure, <a href='https://www.comfygen.com/decentralized-wallet-development' class='text-blue-500'>decentralized wallets</a>, companies can enhance financial transparency, improve operational efficiency, and tap into new revenue streams.",
+    "description2": "<b>Build Trust</b> : Secure and transparent transactions boost customer confidence and loyalty. <b>Expand Globally</b> : Accept multiple currencies, including crypto, for international reach. <b>Streamline Operations</b> : Automated transactions and smart contracts reduce errors and save time. <b>Unlock Revenue</b> : Enable DeFi, NFT trading, and token ecosystems to create new income streams.",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/blockchain-wallet-development/about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "technologyData": {
+    "heading": "Core Features of Our Blockchain Wallet Development Solution",
+    "subtitle": "At Comfygen, our blockchain wallets are designed to provide maximum security, seamless usability, and robust performance. Each wallet comes packed with features that meet the needs of businesses, fintech startups, and individual users alike, enabling efficient digital asset management and smooth financial operations.",
+    "tech": [
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/html5.svg",
-        "alt": "HTML5",
-        "name": "HTML5",
-        "num": "1"
+        "num": "01",
+        "title": "Multi-Currency Support",
+        "desc": "Manage multiple cryptocurrencies and fiat currencies in a single wallet, enabling global transactions and easy portfolio management."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/css3.svg",
-        "alt": "CSS3",
-        "name": "CSS3",
-        "num": "2"
+        "num": "02",
+        "title": "Advanced Security",
+        "desc": "Protect assets with two-factor authentication (2FA), biometric verification, end-to-end encryption, and multi-signature wallets, ensuring complete data and asset safety."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/javascript.svg",
-        "alt": "JavaScript",
-        "name": "JavaScript",
-        "num": "3"
+        "num": "03",
+        "title": "Cross-Platform Compatibility",
+        "desc": "Access your wallet from Android, iOS, and web platforms, providing a consistent, responsive, and seamless user experience across devices."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/typescript.svg",
-        "alt": "TypeScript",
-        "name": "TypeScript",
-        "num": "4"
-      }
-    ],
-    "Frameworks": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/angular.svg",
-        "alt": "Angular",
-        "name": "Angular",
-        "num": "1"
+        "num": "04",
+        "title": "Seamless API & Blockchain Integration",
+        "desc": "Easily connect with payment gateways, DeFi protocols, smart contracts, and third-party applications, enabling smooth financial operations and real-time interactions."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/react.svg",
-        "alt": "React",
-        "name": "React",
-        "num": "2"
+        "num": "05",
+        "title": "Real-Time Analytics & Transaction Tracking",
+        "desc": "Monitor wallet activity, transaction history, and balances instantly for better decision-making and transparent asset management."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/vue.svg",
-        "alt": "Vue.js",
-        "name": "Vue.js",
-        "num": "3"
+        "num": "06",
+        "title": "Custom UI/UX Design",
+        "desc": "Intuitive interfaces with responsive and engaging designs ensure users enjoy a friendly and interactive experience."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/svelte.svg",
-        "alt": "Svelte",
-        "name": "Svelte",
-        "num": "4"
-      }
-    ],
-    "Backend": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/java.svg",
-        "alt": "Java",
-        "name": "Java",
-        "num": "1"
+        "num": "07",
+        "title": "Cold & Hot Wallet Configuration",
+        "desc": "Flexible storage options with offline cold wallets for maximum security and hot wallets for fast, on-demand access"
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/python.svg",
-        "alt": "Python",
-        "name": "Python",
-        "num": "2"
+        "num": "08",
+        "title": "Smart Contract Support",
+        "desc": "Execute automated transactions and programmable workflows via smart contracts, enhancing efficiency and trust in decentralized environments."
       },
       {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/nodejs.svg",
-        "alt": "Node.js",
-        "name": "Node.js",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/csharp.svg",
-        "alt": "C#",
-        "name": "C#",
-        "num": "4"
-      }
-    ],
-    "DevOpsAutomation": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/jenkins.svg",
-        "alt": "Jenkins",
-        "name": "Jenkins",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/ansible.svg",
-        "alt": "Ansible",
-        "name": "Ansible",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/terraform.svg",
-        "alt": "Terraform",
-        "name": "Terraform",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/chef.svg",
-        "alt": "Chef",
-        "name": "Chef",
-        "num": "4"
-      }
-    ],
-    "DevOpsContainerization": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/docker.svg",
-        "alt": "Docker",
-        "name": "Docker",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/kubernetes.svg",
-        "alt": "Kubernetes",
-        "name": "Kubernetes",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/openshift.svg",
-        "alt": "OpenShift",
-        "name": "OpenShift",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/rancher.svg",
-        "alt": "Rancher",
-        "name": "Rancher",
-        "num": "4"
-      }
-    ],
-    "ContractTesting": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/truffle.svg",
-        "alt": "Truffle",
-        "name": "Truffle",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/hardhat.svg",
-        "alt": "Hardhat",
-        "name": "Hardhat",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/ganache.svg",
-        "alt": "Ganache",
-        "name": "Ganache",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/mythx.svg",
-        "alt": "MythX",
-        "name": "MythX",
-        "num": "4"
-      }
-    ],
-    "ContractLanguages": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/solidity.svg",
-        "alt": "Solidity",
-        "name": "Solidity",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/go.svg",
-        "alt": "Go",
-        "name": "Go",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/java.svg",
-        "alt": "Java",
-        "name": "Java",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/kotlin.svg",
-        "alt": "Kotlin",
-        "name": "Kotlin",
-        "num": "4"
-      }
-    ],
-    "CloudServices": [
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/aws.svg",
-        "alt": "AWS Managed Blockchain",
-        "name": "AWS",
-        "num": "1"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/ibm.svg",
-        "alt": "IBM Blockchain",
-        "name": "IBM",
-        "num": "2"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/azure.svg",
-        "alt": "Azure Blockchain Service",
-        "name": "Azure",
-        "num": "3"
-      },
-      {
-        "img": "https://www.comfygen.com/comfygen-images/enterprise-blockchain-development/oracle.svg",
-        "alt": "Oracle Blockchain Platform",
-        "name": "Oracle",
-        "num": "4"
+        "num": "09",
+        "title": "DeFi & NFT Ready",
+        "desc": "Built to integrate with DeFi protocols, NFT marketplaces, and token ecosystems, enabling innovative financial services directly from the wallet."
       }
     ]
   },
-
-
-
-
-
-
+  "CallToAction": {
+    "heading": "Ready to Launch Your Own Blockchain Wallet?",
+    "text": "Empower your business with Comfygen’s secure, scalable blockchain wallet solutions — multi-currency, DeFi-ready, and NFT-compatible.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "ModelsSec": {
+    "title": "Benefits of Blockchain Wallet Development",
+    "description": "Blockchain wallets are transforming the way businesses and individuals manage digital assets. Developing a secure and feature-rich crypto wallet offers numerous advantages that enhance operations, improve security, and unlock new opportunities",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/image/exclusive-features-image.webp",
+    "proces": [
+      {
+        "title": "Access to Specialized Expertise & Experience",
+        "desc": "A professional blockchain wallet development company brings a wealth of experience you can't find in-house. They understand the nuances of key management, smart contract security, and cross-chain interoperability, helping you avoid costly mistakes and build a superior product from day one."
+      },
+      {
+        "title": "Enhanced Security & Risk Mitigation",
+        "desc": "Security is topmost non-negotiable. A reputable blockchain wallet development service prioritizes security at every layer—from secure key generation and storage (using MPC or Multi-sig) to grim smart contract audits and penetration testing. This drastically reduces the risk of exploits and builds unwavering trust with your users."
+      },
+      {
+        "title": "Faster Time-to-Market",
+        "desc": "Why spend months recruiting a team and learning new technologies? A dedicated blockchain wallet development company has the team and tools ready to go. They use proven processes and pre-built, secure modules to accelerate development, allowing you to launch your wallet and capture market opportunities quickly."
+      },
+      {
+        "title": "Cost-Effectiveness in the Long Run",
+        "desc": "Hiring a full-time team of blockchain wallet development experts is expensive. While partnering with a blockchain wallet development service provides access to a full suite of skills—project managers, UI/UX designers, smart contract developers, and QA testers—for a predictable cost, making it a more efficient use of your capital."
+      },
+      {
+        "title": "Scalability and Future-Proofing",
+        "desc": "The blockchain space has increased rapidly. A skilled blockchain wallet development company doesn’t just build for today; they architect solutions that can scale. They ensure your blockchain wallet can handle growing user numbers, integrate new blockchain technologies, and adapt to emerging trends like DeFi and NFTs without a complete overhaul."
+      },
+      {
+        "title": "Ongoing Support & Maintenance",
+        "desc": "A wallet launch is just the beginning. A full-service blockchain wallet development company provides crucial post-launch support, including troubleshooting, server maintenance, updates for new OS versions, and adding new features. This ensures your wallet remains secure, functional, and competitive long-term."
+      },
+      {
+        "title": "Focus on Your Core Business",
+        "desc": "By outsourcing the complex technical work to a trusted blockchain wallet development service, your internal team can remain focused on core business activities like marketing, business development, and community growth, while experts handle the technical execution."
+      }
+    ]
+  },
+  "ProcessData": {
+    "heading": "Our End-to-End Blockchain Wallet Development Process",
+    "description": "At Comfygen, we follow a structured and client-focused Blockchain wallet development process to deliver secure, scalable, and feature-rich blockchain wallets. Our approach ensures timely delivery, high performance, and a seamless user experience.",
+    "Process": [
+      {
+        "title": "Discovery & Strategy",
+        "description": "We map out your goals, audience, and must-have features so the blockchain wallet is built on a clear plan from day one."
+      },
+      {
+        "title": "UI and UX Design",
+        "description": "We shape the user journey with clean wireframes and prototypes that make the wallet simple, secure, and pleasant to use."
+      },
+      {
+        "title": "Core Wallet Engine Build",
+        "description": "We develop the secure backbone of your blockchain wallet, from key management to blockchain connectivity and safe transaction signing."
+      },
+      {
+        "title": "Feature Development",
+        "description": "We add everything your product needs multi-asset support, NFTs, swaps, staking, DeFi integrations, and any custom features."
+      },
+      {
+        "title": "Security Testing",
+        "description": "Your wallet goes through strict testing and audits to eliminate vulnerabilities and meet the highest security standards."
+      },
+      {
+        "title": "Launch and Deployment",
+        "description": "We handle app store submission, infrastructure setup, and make sure your wallet goes live without hiccups."
+      },
+      {
+        "title": "Maintenance and Updates",
+        "description": "We stay with you after launch with updates, monitoring, fixes, and feature enhancements to keep your wallet future-ready."
+      }
+    ]
+  },
+  "Portfoliodata": {
+    "heading": "Our Blockchain Based Portfolio",
+    "description": "Explore our selection of accomplished projects that highlight our proficiency in online solutions and app development. Every project demonstrates our dedication to excellence, creativity, and client fulfilment.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/image/nasdac-crypto-coin-portfolio-image.webp",
+        "title": "NASDAC Crypto Coin",
+        "description": "NASDAC Crypto Coin is a next-gen cryptocurrency with its own dedicated blockchain, not just a token. Designed with a robust 'Four Square' architecture, it prioritizes speed, mining benefits, seamless integration, and growth predictability. Stronger, faster, and more secure than Bitcoin, NASDAC Coin is engineered for business, making it the first true SUPER COIN in the blockchain crypto space.",
+        "link": "/portfolio/blockchain-based-cryptocoin-development"
+      },
+      {
+        "image": "https://www.comfygen.com/image/croston-portfolio-image.webp",
+        "title": "Croston",
+        "description": "Croston is the first decentralized cryptocurrency fully backed by gold at a 1:1 ratio, ensuring stability and value growth. Unlike fiat money, it leverages blockchain for security, transparency, and decentralized control. Croston enables secure transactions and controlled coin creation while offering easy purchasing options via credit card, exchange, or crypto. As a gold-backed digital asset, Croston redefines secure investments and powers a decentralized marketplace with standardized blockchain development solutions.",
+        "link": "/portfolio/decentralized-blockchain-based-cryptocurrency"
+      },
+      {
+        "image": "https://www.comfygen.com/image/mezovest-portfolio-image.webp",
+        "title": "Mezovest",
+        "description": "Mezovest is transforming commerce in the energy industry, focusing on LPG and CNG with its pioneering F.I.T (Finance, Infrastructure, and Technology) model. Through Mezo Energy Trading Limited (METL), it introduces non-corrosive composite gas cylinders for safety and efficiency. Additionally, its logistics arm, Spatch, streamlines supply and distribution. Mezovest’s blockchain-powered solutions ensure transparency, security, and seamless operations in the energy sector.",
+        "link": "/portfolio/advanced-blockchain-based-logistics-software"
+      },
+      {
+        "image": "https://www.comfygen.com/image/hero-image-blockchain-based-real-estate-tokenization-software.webp",
+        "title": "Blockchain-Based Real Estate Tokenization Software",
+        "description": "Developed a blockchain-based solution to modernize real estate transactions, enhancing transparency, reducing costs, and streamlining operations through blockchain technology. Created a decentralized platform for property tokenization and fractional ownership, enabling secure, automated transactions for a more efficient real estate ecosystem.",
+        "link": "/portfolio/blockchain-based-real-estate-tokenization-software"
+      }
+    ]
+  },
   "pageData": {
     "title": "Why choose Comfygen for Blockchain Wallet Development service?",
     "description": "At Comfygen, we don’t just build wallets—we provide blockchain wallet development solutions that make digital asset management secure, scalable, and effortless. As a leading blockchain wallet development company, we adopt advanced technology with proven expertise to deliver customized blockchain wallets that align with your business goals, whether you’re a startup, enterprise, or DeFi platform.",
@@ -411,181 +299,359 @@
       }
     ]
   },
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Blockchain Developers for your Business Growth",
-      "desc": "Do you want to hire blockchain developers in India?",
-      "decs": "That’s not a concern anymore, till you are connected with Comfygen. We have your solutions with expertise with us. Our blockchain developers can work on all the blockchain networks; such as Ethereum, Stellar, EOS, Hyperledger, or anywhere along with the implementation of robust technologies. We process decentralized services with agile development. We can build a simple basic blockchain app to an enterprise-level decentralized system to manage the organization with security. Believe in us, and We will make people believe in YOU.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Tracking & Maps",
+    "Cloud/DevOps",
+    "Payments",
+    "Security"
+  ],
+  "TechstackData": {
+    "heading": "Technology Stack Used by Blockchain Wallet Development Solution",
+    "description": "We leverage a cutting-edge, battle-tested technology stack to build best blockchain crypto wallets. Our expertise spans the entire ecosystem, ensuring we select the right tool for every aspect of your project.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
     }
-  ],
-  "ReadymadeProduct": [
-    {
-      "num": "1",
-      "url": "/poa-blockchain-development-company",
-      "img": "https://www.comfygen.com/img/proof-of-authority-blockchain.webp",
-      "title": "Proof of Authority (PoA) Blockchain",
-      "decs": "PoA blockchain development is a consensus mechanism that prioritizes efficiency and security. In PoA blockchain development, a select group of authorized nodes, often referred to as validators, validate transactions and create new blocks based on their reputation or authority. Unlike Proof of Work (PoW blockchain development), which requires resource-intensive mining, PoA blockchain development is energy-efficient and ideal for private or consortium blockchains. It offers rapid transaction processing and robust security because validators are known and trusted entities. PoA blockchain development is well-suited for use cases like enterprise services & solutions, supply chain management, and situations where a centralized yet secure approach is acceptable."
-    },
-    {
-      "num": "2",
-      "url": "/pow-blockchain-development-company",
-      "img": "https://www.comfygen.com/img/proof-of-work-blockchain.webp",
-      "title": "Proof of Work (PoW) Blockchain",
-      "decs": "PoW blockchain development is the original consensus mechanism used in Bitcoin and many other cryptocurrencies. In PoW blockchain development, miners compete to solve complex mathematical puzzles to validate transactions and add them to the blockchain. This process requires significant computational power and energy, making it highly secure against attacks. However, PoW blockchain development is criticized for its environmental impact due to its energy-intensive nature. Despite this, it remains a decentralized and trustless way to secure blockchain development networks, with miners being rewarded for their efforts in maintaining the network's integrity."
-    },
-    {
-      "num": "3",
-      "url": "/",
-      "img": "https://www.comfygen.com/img/delegated-proof-of-stack-blockchain.webp",
-      "title": "Delegated Proof of Stake (DPoS) Blockchain",
-      "decs": "DPoS blockchain development is a consensus algorithm designed for high throughput and scalability. In a DPoS blockchain development network, token holders vote for a limited number of delegates who are responsible for validating transactions and producing new blocks. DPoS blockchain development aims to combine decentralization and efficiency by allowing users to choose trusted validators through voting. This approach minimizes the computational resources needed compared to PoW blockchain development, making DPoS blockchain development faster and more environmentally friendly. DPoS blockchain development, such as EOS and Tron, are well-suited for applications requiring rapid transaction processing, like decentralized applications (DApps blockchain development) and digital content platforms."
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Decentralized Application (dApp) Development",
-      "decs": "Design and launch secure, scalable <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/dapp-development-company' >dApps</a> across Ethereum, Polygon, Solana, and BNB Chain. From finance to gaming, our dApps deliver full decentralization, transparency, and unmatched user experiences."
-    },
-    {
-      "num": "02",
-      "title": "DeFi (Decentralized Finance) Solutions",
-      "decs": "Empower your users with next-gen <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/defi-development-company' >DeFi platforms</a> — including decentralized exchanges, staking, lending/borrowing, and yield farming. We deliver scalable, audited, and revenue-ready financial ecosystems."
-    },
-    {
-      "num": "03",
-      "title": "DAO Development (Decentralized Autonomous Organization)",
-      "decs": "Build trustless, community-governed platforms using DAOs. We help you set up smart contract-based decision-making systems for truly decentralized and transparent governance."
-    },
-    {
-      "num": "04",
-      "title": "Crypto Wallet Development",
-      "decs": "Create secure, multi-currency <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/crypto-wallet-development' >crypto wallets</a> with advanced features like biometric login, cold wallet integration, private key encryption, and seamless dApp connectivity."
-    },
-    {
-      "num": "05",
-      "title": "Crypto Exchange Development",
-      "decs": "Build centralized or decentralized <a class='font-semibold text-blue-500' href='/cryptocurrency-exchange-development'> crypto exchanges </a> with ultra-fast trading engines, multi-chain support, liquidity APIs, and enhanced security protocols."
-    },
-    {
-      "num": "06",
-      "title": "Custom Token Development ",
-      "decs": "BLaunch your tokens for utility, governance, or fundraising. We develop compliant and blockchain-agnostic tokens with <a class='font-semibold text-blue-500' href='https://www.comfygen.com/smart-contract-development'> smart contract deployment </a> and audit support."
-    },
-    {
-      "num": "07",
-      "title": " Cross-Chain & Layer-2 Blockchain Solutions",
-      "decs": "Boost performance and scalability with Layer-2 protocols like Arbitrum or zkSync, and enable interoperability across chains using custom bridge and cross-chain frameworks."
-    },
-    {
-      "num": "08",
-      "title": "RWA Tokenization (Real-World Assets)",
-      "decs": "Transform real-world assets like real estate, art, and commodities into tokenized assets on the blockchain. Improve liquidity, fractional ownership, and transparency."
-    },
-    {
-      "num": "09",
-      "title": "Decentralized Identity (DID) Solutions",
-      "decs": "Protect digital identities with self-sovereign identity systems. Ideal for KYC, onboarding, and secure login experiences, DID ensures privacy, security, and compliance."
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Benefits of Blockchain Wallet Development",
-      "desc": "Blockchain wallets are transforming the way businesses and individuals manage digital assets. Developing a secure and feature-rich crypto wallet offers numerous advantages that enhance operations, improve security, and unlock new opportunities"
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "Access to Specialized Expertise & Experience",
-      "desc": "A professional blockchain wallet development company brings a wealth of experience you can't find in-house. They understand the nuances of key management, smart contract security, and cross-chain interoperability, helping you avoid costly mistakes and build a superior product from day one."
-    },
-    {
-      "title": "Enhanced Security & Risk Mitigation",
-      "desc": "Security is topmost non-negotiable. A reputable blockchain wallet development service prioritizes security at every layer—from secure key generation and storage (using MPC or Multi-sig) to grim smart contract audits and penetration testing. This drastically reduces the risk of exploits and builds unwavering trust with your users."
-    },
-    {
-      "title": "Faster Time-to-Market",
-      "desc": "Why spend months recruiting a team and learning new technologies? A dedicated blockchain wallet development company has the team and tools ready to go. They use proven processes and pre-built, secure modules to accelerate development, allowing you to launch your wallet and capture market opportunities quickly."
-    },
-    {
-      "title": "Cost-Effectiveness in the Long Run",
-      "desc": "Hiring a full-time team of blockchain wallet development experts is expensive. While Partnering with a blockchain wallet development service provides access to a full suite of skills—project managers, UI/UX designers, smart contract developers, and QA testers—for a predictable cost, making it a more efficient use of your capital."
-    },
-    {
-      "title": "Scalability and Future-Proofing",
-      "desc": "The blockchain space has increased rapidly. A skilled blockchain wallet development company doesn’t just build for today; they architect solutions that can scale. They ensure your blockchain wallet can handle growing user numbers, integrate new blockchain technologies, and adapt to emerging trends like DeFi and NFTs without a complete overhaul."
-    },
-    {
-      "title": "Ongoing Support & Maintenance",
-      "desc": "A wallet launch is just the beginning. A full-service blockchain wallet development company provides crucial post-launch support, including troubleshooting, server maintenance, updates for new OS versions, and adding new features. This ensures your wallet remains secure, functional, and competitive long-term."
-    },
-    {
-      "title": "Focus on Your Core Business",
-      "desc": "By outsourcing the complex technical work to a trusted blockchain wallet development service, your internal team can remain focused on core business activities like marketing, business development, and community growth, while experts handle the technical execution."
-    }
-  ],
-  "WhyChooseComfygen": [
-    {
-      "num": "1",
-      "title": "Expertise and Experience",
-      "decs": "Our expert blockchain developers in India are dedicatedly specialized in blockchain development, as well as they have years of experience in the same domain. We have a record of working in various industries with vast complexities. Therefore, our developers can face the complex challenges and figure out our business solutions promptly."
-    },
-    {
-      "num": "2",
-      "title": "Custom Solutions",
-      "decs": "We are the best blockchain development company in India, and that fame came after making infinite practices and building business-centric needs based on the industrial requirement. So we do not bind ourselves with any limits. We are the custom blockchain development services providers in the UK, US, India, and serving every corner across the globe. You name it, and we will make that happen by aligning your business goals."
-    },
-    {
-      "num": "3",
-      "title": "Transparency",
-      "decs": "When our client is investing in his product through us, he definitely has faith in our company and our team. It is our responsibility and our priority to keep his faith alive always, and for that we keep everything transparent with them. No matter whether we are progressing or there are some challenges striking us in the middle way; our clients are informed about every phase during development. "
-    },
-    {
-      "num": "2",
-      "title": "Quality, Speed, and Security Under One Rooftop",
-      "decs": "Whatever we build; say it blockchain app, smart contracts, crypto exchange, tokenization; every solution built by our blockchain developers will be scalable and highly-performing. Beside providing the reliable application and other software; our team also has speed with quality assured in them. We have the experience and expertise enabling us towards quick deployments with cutting edge technology use."
-    }
-  ],
-  "InfluencingList": [
-    "”",
-    "Do you need blockchain apps or other decentralized solutions? Well, feel free to have a  free consultation call with us. Development comes far later, but first we believe in building faith between company and client. So let’s meet over coffee to discuss your business goals with blockchain, and figure out the best approach to bet in the marketplace. "
-  ],
-  "timelineData": [
-    {
-      "step": "1",
-      "title": "Conceptualization",
-      "description": "There is no tech-enabled project, which can be initiated without conceptualization. The same goes with Blockchain development solutions; where our experts will understand clientele requirements and know their visions & objectives. We will identify the key uses, as well as make the process to achieve the business goals."
-    },
-    {
-      "step": "2",
-      "title": "Design and Architecture",
-      "description": "Here comes the prototyping and structural modeling of the blockchain solutions, where we will give a complete visual look to the product. Also the steps include developing data models, consensus mechanisms, and security protocols. Your dApps or smart contract solutions will get UI and UX for the frontend development."
-    },
-    {
-      "step": "3",
-      "title": "Development Begins Here ",
-      "description": "The developers will implement smart contracts and apply business logic in the applications using prominent blockchain platforms and programming languages. This is the stage where you will get the frontend of custom blockchain solutions with security protocols (encryption, authentication, and access control) integrated. Moreover, we will add features and APIs to complete the product as planned. "
-    },
-    {
-      "step": "4",
-      "title": "Never Forget Testing and Quality Assurance",
-      "description": "It is evident when development is done here, but are you sure of launching it? Definitely not, because we have not tested and assured with its quality. The blockchain developers and quality analysts will test the solution, which includes security audits, coding reviews, functions, performance, response rates, scalability and reliability. Once our QAs claim that the product is all set to launch, later the deployment will take place."
-    },
-    {
-      "step": "5",
-      "title": "Let’s Deploy the Blockchain Solution ",
-      "description": "Now we have our fully approved smart contracts and blockchain application in hand, so launch it on the dedicated blockchain network; let’s say Ethereum, Hyperledger, Solana, Steller, or whatever decided. While deploying, our smart blockchain developers will configure the product with external systems, existing software, and third party systems."
-    },
-    {
-      "step": "6",
-      "title": "Continue Improving with Support and Maintenance",
-      "description": "On-going monitoring and maintaining the deployed blockchain solution will help you to stay connected with the marketplace and engage a vast audience for longer. With the help of blockchain post-deployment services, our developers will keep updating and upgrading the existing solutions to enhance the scalability and scope. "
-    }
-  ],
+  },
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "1",
@@ -627,5 +693,135 @@
       "title": "Which cryptocurrencies and tokens can the wallet support?",
       "desc": "Your wallet can be designed to support Bitcoin, Ethereum, stablecoins, and custom tokens on popular blockchain networks like ERC-20, BEP-20, Solana, Polygon, and more."
     }
-  ]
+  ],
+
+ "jsonLdData": [
+
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Blockchain Wallet Development Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Comfygen Technologies",
+      "url": "https://www.comfygen.com "
+    },
+    "description":
+      "Comfygen offers secure, scalable, and customizable blockchain wallet development services with multi-chain support, advanced security, and cross-platform compatibility for startups, enterprises, and DeFi ecosystems.",
+    "url": "https://www.comfygen.com/blockchain-wallet-development ",
+    "mainEntityOfPage": "https://www.comfygen.com/blockchain-wallet-development ",
+    "areaServed": "Global",
+    "serviceType": [
+      "Blockchain Wallet Development",
+      "Crypto Wallet Development",
+      "Multi-Chain Wallet Solutions",
+      "Enterprise Blockchain Solutions",
+      "DeFi Wallet Development",
+      "Custom Mobile and Desktop Wallets"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/comfygen.technologies",
+      "https://x.com/Comfygen_Tech",
+      "https://www.instagram.com/comfygen_technologies",
+      "https://www.linkedin.com/company/comfygen-technologies"
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.comfygen.com "
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "wallet  Development Compnay",
+        "item": "https://www.comfygen.com/crypto-wallet-development "
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Blockchain Wallet Development",
+        "item": "https://www.comfygen.com/blockchain-wallet-development "
+      }
+    ]
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a blockchain wallet, and why does my business need one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A blockchain wallet is a digital tool that allows secure storage, transfer, and management of cryptocurrencies or digital assets. For businesses, it provides a trusted way to manage payments, streamline transactions, and create new revenue models."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How secure is a blockchain wallet developed by Comfygen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use multi-layer encryption, biometric authentication, and real-time monitoring to protect your wallet from threats. Security is built into every stage of development."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build both custodial and non-custodial wallets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Depending on your business model, we can build custodial wallets (where you manage user keys) or non-custodial wallets (where users control their private keys)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to develop a blockchain wallet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost depends on features, wallet type (mobile, desktop, or web), integrations, and security requirements. We provide tailored quotes after understanding your project scope."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a blockchain wallet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A basic wallet can take 6–10 weeks, while advanced multi-currency wallets with custom features may require 3–6 months. Timelines vary by complexity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a blockchain wallet integrate with my existing platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We can integrate wallets with your exchange, e-commerce platform, supply chain system, or enterprise apps using secure APIs and blockchain SDKs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer support and maintenance after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We provide ongoing monitoring, security updates, bug fixes, and feature upgrades to keep your wallet performing reliably."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which cryptocurrencies and tokens can the wallet support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your wallet can be designed to support Bitcoin, Ethereum, stablecoins, and custom tokens on popular blockchain networks like ERC-20, BEP-20, Solana, Polygon, and more."
+        }
+      }
+    ]
+  }
+]
 }
