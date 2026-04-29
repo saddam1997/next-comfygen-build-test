@@ -1,113 +1,64 @@
-import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blackjack.json";
-import LazyLoad from "react-lazy-load";
 
-import { IconDevices, IconLayoutDashboard, IconLayoutGridAdd, IconLivePhoto, IconMessageCircle, IconShieldCheck, IconUsers } from '@tabler/icons-react';
-import { IconShoppingCart, } from '@tabler/icons-react';
-
-import Header from "../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
-
-const AboutSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { ssr: true}
-);
-
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { ssr: true}
-);
-
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { ssr: true}
-);
-
-const InfoSectionLeft = dynamic(() => import("../../components/Newcomponet/SectionCompoent/InfoSectionLeft"),
-  { ssr: true}
-);
-
-const WhyChoose = dynamic(() => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { ssr: true}
-);
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 
-const HireDeveloper = dynamic(() => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { ssr: true}
-);
+import InformationSection from "../../components/InformationSection";
 
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { ssr: true}
-);
+const ClientStories = dynamic(() => import("../../components/ClientStories"), {
+  ssr: true,
+});
 
-const Faq = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { ssr: true}
-);
+import ReviewCard from "../../components/ReviewCard";
 
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-
-const technologyData = [
+const ServicesComponet = dynamic(
+  () => import("../../components/ServicesSection/ServicesComponet"),
   {
-    img: <IconLayoutDashboard stroke={1.5} className="w-12 h-12" />,
-    title: "Intuitive User Interface",
-    desc: "A visually appealing and user-friendly interface is our first priority that is easy to surf, navigate and understand. The blackjack gaming app's layout, animations, buttons, and controls are designed to be intuitive and user-friendly which allows players to focus on the game without having any confusion."
+    ssr: true,
   },
+);
+
+
+
+const WhyChooseSection = dynamic(
+  () => import("../../components/WhyChooseSection"),
+  { ssr: true },
+);
+
+
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
+
+
+const CallToActionSection = dynamic(
+  () => import("../../components/CallToActionSection"),
   {
-    img: <IconLayoutGridAdd stroke={1.5} className="w-12 h-12" />,
-    title: "Game Variations",
-    desc: "We offer a range of Blackjack variations within the app, allowing players to enjoy different rule sets and gameplay styles. Whether it's a Classic Blackjack, European Blackjack, or other popular variations, players can explore and choose their own version of the game according to their preferences."
+    ssr: true,
   },
-  {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
-    title: "Multiplayer Options",
-    desc: "Our app offers a variety of game modes to cater to different player choices of options. Players can choose between single-player mode to practice their skills, multiplayer mode to compete with friends, co-players online, or even live dealer mode for a more interactive and immersive experience."
-  },
-  {
-    img: <IconLivePhoto stroke={1.5} className="w-12 h-12" />,
-    title: "Live Dealer Blackjack",
-    desc: "Our Live Dealer Blackjack feature aims to replicate the experience that brings out the excitement and authenticity of a real experiences  into the palm of your hand. Players can interact with the dealer and other participants, giving them a more immersive, classic and authentic experience."
-  },
-  {
-    img: <IconShoppingCart stroke={1.5} className="w-12 h-12" />,
-    title: "In-App Purchases",
-    desc: "We offer in-app purchases and also a virtual currency system to provide players with optional enhancements for players who wish to enhance their gaming experience. Players can purchase their own virtual currency, special items to customize their gameplay or accelerate their progress within the app itself."
-  },
-  {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
-    title: "Social Features",
-    desc: "To enhance the social aspect of the game, our app incorporates social features. Players can connect with friends, challenge them to multiplayer games, and even share their achievements on social media platforms. This supports a sense of community and friendly competition environment among all the players."
-  },
-  {
-    img: <IconDevices stroke={1.5} className="w-12 h-12" />,
-    title: "Cross-Platform Compatibility",
-    desc: "Our app is designed to be compatible with multiple platforms, including iOS and Android devices. This feature makes sure that players can have a wider reach, accessibility and can enjoy the game on their preferred devices without limitations and that too in offline mode as well."
-  },
-  {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
-    title: "Fairness and Security",
-    desc: "We promise our players security and a fair gameplay. Our app implements robust security measures to protect user data and transactions. Additionally, our developers make sure that our app follows fair gaming practices, including random card generation, to provide a level playing field for all players."
-  }
-];
+);
+
+
+import AboutComponent from "../../components/Abouts/AboutComponent";
+
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+
+import Solution from "../../components/Solution";
+
+
 
 export default function Altcoin(props) {
-  const [showContent, setShowContent] = useState(false);
-  let { initialData } = props;
 
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+  let { initialData } = props;
 
   return (
     <>
@@ -220,98 +171,19 @@ export default function Altcoin(props) {
           content="Qb7PUETD8bdViY1MfXM5ce-OZDO4vNj3lPLqfxVX9cg"
         />
       </Head>
-      <div className="">
-        <div >
-         {/* <Header /> */}
-        </div>
-      </div>
-      <div className="overflow-hidden ">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Best Blackjack Game Development Company"
-            ptag="Comfygen is one of the best blackjack game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them."
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/blackjack-game-development-hero-img.webp"
-          />
-        </div>
-        <AboutSection
-          title="About Company"
-          heading="Online Blackjack Game Development Company"
-          description1="If you're looking for an Online BlackJack Game Development firm to captivate your users with an incredible experience ,Comfygen is an excellent choice. We offer one-of-a-kind Mobile BlackJack Game Development that is designed to surpass your expectations. With our expertise in game development and specialization in Blackjack Gaming App, we are committed to delivering phenomenal results. We offer a wide variety of alternatives of the classic game, which includes progressive, American, European, Classic, Double down and many more."
-          description2="Our services give justice to all your BlackJack gaming requirements, including custom game development, Live Game API integration, design, and maintenance and post launch support. We definitely understand the significance of following a malleable development process as every client has different and unique requirements. Therefore, our team works consistantly to deliver finest BlackJack games that meet the unique requirements of our clients. We are proud to have served as renowned Blackjack software development in India from various industries ranging from online gaming platforms. We are always happy to connect with our clients to discuss how we can assist their BlackJack game development needs."
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.cardData3} />
+      <InformationSection InfoSectionData={JSON_DATA.InfoSection} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Top Blackjack Game Development Services by Comfygen</h2>
-              <p className="text-base text-center font-normal">Comfygen offers expert Blackjack game development services, combining our deep knowledge of mobile app development with a strong understanding of Blackjack’s rules and strategies. Our games feature lifelike graphics and immersive sound effects, providing a captivating experience for players.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <SolutionSec
-          heading="Features of our Top-Notch Blackjack Gaming App"
-          subheading="Our exclusive Blackjack Gaming App is designed to provide players with an immersive and engaging gaming experience. With these features blend to create a phenomenal Blackjack gaming app that offers a captivating, immersive, and customizable experience for players of all skill levels. These features can vary depending on the specific online gamming or platform you choose. It's advisable to explore different options and you can also talk to our expert Blackjack Game Developer who will give you a deep understanding about the whole process.Here are some key features that set our app apart among others in the blackjack game development industry"
-          techData={technologyData}
-        />
-
-        
-        <InfoSectionLeft
-          heading="ONLINE Blackjack Game Development Solution"
-          description1="An online blackjack game is a digital version of the well known card game blackjack that is played over the internet. It allows players to enjoy blackjack from the comfort of their own homes or on their phone devices, without going anywhere .Comfygen as a leading Blackjack game development solutions are custom-made to provide you with an inclusive and innovative approach to develop hypnotic and engaging gaming experiences for the users. With our expertise in mobile game development and a deep knowledge of Blackjack, we offer high-end solutions that include every stage of the development process."
-          description2="At the core of our solutions is the commitment that we promise our clients to deliver a finest and authentic Blackjack gaming experience. We understand the nature of the game, including the rules, strategies, and mechanics, and assemble them seamlessly into the online environment. Whether you need a single-player Blackjack game, multiplayer functionality, or even live dealer options, we have an expert team of developers who can bring your vision to life."
-          imageSrc="https://www.comfygen.com/img/online-blackjack-game-development-solution.webp"
-          link="/contact-us"
-          linkText="LET'S CONNECT "
-        />
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire a skilled Blackjack Game Developer"
-          text="Looking to hire expert developers for your Blackjack game? Our skilled team specializes in crafting high-end Blackjack games with immersive UI/UX, deep knowledge of gaming mechanics, and innovative features to captivate players and bring your vision to life."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Developers with in-depth knowledge of rules, strategies, and variations, ensuring accurate digital recreation.",
-            "Genuine enthusiasm for Blackjack and gaming, leading to exceptional player experiences and trend awareness.",
-            "Active involvement and clear communication to align the game with your vision and feedback.",
-            "Focus on creating engaging and immersive gameplay that resonates with players."
-          ]}
-        />
-        <CallToAction
-          heading="Glance for a Top-class Video Game Programmer?"
-          text="Ready to embark on an epic adventure in game development? Join the ComfyGen family and be part of a team that creates games players love."
-          buttonText="Click Here"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-        <ClientStories/>
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Video Game Development"
-        />
-
-         <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

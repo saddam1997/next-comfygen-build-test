@@ -1,114 +1,147 @@
 {
-  "SoftwareMode": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/our-experties.webp",
-      "title": "Our Experties",
-      "decs": "Our team of skilled developers has a deep understanding of the rules by which games should be played,strategies,and mechanics of Blackjack.We leverage this expertise to design and develop cutting-edge games that capture the essence of the classic rummy card game while incorporating modern elements to enhance gameplay."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/comprehension-game-design.webp",
-      "title": "Comprehensive Game Design",
-      "decs": "We prioritize creating captivating user experiences through intuitive user interfaces,visually appealing graphics,and smooth animations.Our meticulous attention to detail ensures that players are fully immersed in the game, creating a realistic and enjoyable gaming environment."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/quality-assurance.webp",
-      "title": "Quality Assurance",
-      "decs": "Quality is of paramount importance to us.We have a team of dedicated quality assurance blackjack game developers that conducts rigorous testing to identify and eliminate any bugs or issues.This ensures that the final product meets the highest standards of functionality, performance, and reliability."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/customization-and-innovation.webp",
-      "title": "Customization and Innovation",
-      "decs": "Being the best blackjack game development firm in the industry,We understand that every client has unique requirements and customizations.That's why we offer a high degree of customization,allowing you to tailor the game to your specific needs.Whether it's implementing different game variations,customizing the user interface,or adding innovative features,we strive to exceed your expectations."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/collaborative-approach.webp",
-      "title": "Collaborative Approach",
-      "decs": "We believe in building and maintaining strong relationships with our clients, working closely with them throughout the development process. We value your input and actively involve you in the decision-making process,from initial concept design to final deployment. Our transparent and collaborative approach ensures that we meet your vision and deliver a product that aligns with your goals."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/advance-technologies.webp",
-      "title": "Advanced Technologies",
-      "decs": "To deliver top-notch games,we leverage the latest technologies, programming languages, and frameworks.Our development process includes the use of industry-standard tools and best practices to ensure the highest level of performance, security,and compatibility across various platforms."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/post-launch-support.webp",
-      "title": "Post-Launch Support",
-      "decs": "Our commitment doesn't end with the launch of your game. We provide ongoing support and maintenance to address any post-launch concerns or updates.Our support team of responsive  Blackjack Game programmers is readily available to assist you and ensure the continued success of your Blackjack game."
-    }
-  ],
-"servicesData": [
-  {
-    "title": "Custom-Tailored Solutions",
-    "subtitle": "Blackjack Game Development",
-    "description": "At Comfygen, we specialize in creating custom Blackjack games. We understand each client's unique requirements and vision, and our team works closely with you to ensure the development process aligns with your expectations, from custom features to unique interfaces and game variations.",
-    "features": [
-      "Custom Features and Interfaces",
-      "Unique Game Variations",
-      "Tailored to Client Vision"
-    ]
-  },
-  {
-    "title": "Professionalism, Expertise, and Innovation",
-    "subtitle": "Partner with Experts",
-    "description": "Partner with Comfygen for your Blackjack game development needs and experience the highest level of professionalism, expertise, and innovation. We are dedicated to bringing your vision to life, creating a standout Blackjack game that thrives in the competitive gaming market.",
-    "features": [
-      "High-Quality Game Development",
-      "Innovative Features",
-      "Expert Development Team"
-    ]
-  },
-  {
-    "title": "Scalable and Secure Game Development",
-    "subtitle": "Robust and Reliable",
-    "description": "Comfygen ensures that every Blackjack game we develop is both scalable and secure. We build robust backend systems that can handle large volumes of users while implementing the latest security protocols to protect user data and provide a safe gaming environment.",
-    "features": [
-      "Scalable Backend Systems",
-      "Advanced Security Protocols",
-      "Safe Gaming Environment"
-    ]
-  },
-  {
-    "title": "Cross-Platform Compatibility",
-    "subtitle": "Wider Audience Reach",
-    "description": "We specialize in developing Blackjack games that work seamlessly across multiple platforms, including iOS, Android, and web browsers. Our cross-platform approach ensures your game reaches a wider audience, providing players with a consistent and smooth experience, regardless of their device.",
-    "features": [
-      "iOS, Android, and Web Compatibility",
-      "Seamless Cross-Platform Experience",
-      "Wider Audience Reach"
-    ]
-  },
-  {
-    "title": "Realistic Gameplay and Features",
-    "subtitle": "Engaging Player Experiences",
-    "description": "Our Blackjack games are designed to deliver realistic gameplay, with features like multiplayer options, live dealer integration, and interactive leaderboards. We enhance the player experience by offering various in-game strategies, bet types, and customization options, keeping players engaged and entertained.",
-    "features": [
-      "Multiplayer and Live Dealer Integration",
-      "Interactive Leaderboards and In-Game Strategies",
-      "Customization Options for Enhanced Engagement"
-    ]
-  },
-  {
-    "title": "Continuous Support and Updates",
-    "subtitle": "Long-Term Success",
-    "description": "Comfygen provides ongoing support and regular updates to ensure that your Blackjack game stays relevant and engaging. Our team is dedicated to addressing player feedback, fixing bugs, and adding new features, ensuring your game remains a top choice for users in the long term.",
-    "features": [
-      "Ongoing Support and Maintenance",
-      "Regular Game Updates and New Features",
-      "Continuous Improvement Based on Feedback"
-    ]
-  }
-],
 
-
-
-  "pageData": {
+"Herosection": {
+    "heading": "Best Blackjack Game Development Company",
+    "ptag": "Comfygen is one of the best blackjack game development company. We have top-class expert of blackjack game programmers who excel in developing business requirement-ready blackjack software. Each of our developed blackjack game development solutions has solved these digital users' problems and brought an amazing entertainment experience to them.",
+    "features": [],
+    "buttonText": "Talk With Expert",
+    "buttonLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/herosection/blackjack-game-development-hero-img.webp"
+  },
+"ServicesData": {
+    "heading": "Top Blackjack Game Development Services by Comfygen",
+    "description": "Comfygen offers expert Blackjack game development services, combining our deep knowledge of mobile app development with a strong understanding of Blackjack’s rules and strategies. Our games feature lifelike graphics and immersive sound effects, providing a captivating experience for players.",
+    "services": [
+      {
+        "title": "Custom-Tailored Solutions",
+        "subtitle": "",
+        "description": "At Comfygen, we specialize in creating custom Blackjack games. We understand each client's unique requirements and vision, and our team works closely with you to ensure the development process aligns with your expectations, from custom features to unique interfaces and game variations.",
+        "features": [
+          "Custom Features and Interfaces",
+          "Unique Game Variations",
+          "Tailored to Client Vision"
+        ]
+      },
+      {
+        "title": "Professionalism, Expertise, and Innovation",
+        "subtitle": "",
+        "description": "Partner with Comfygen for your Blackjack game development needs and experience the highest level of professionalism, expertise, and innovation. We are dedicated to bringing your vision to life, creating a standout Blackjack game that thrives in the competitive gaming market.",
+        "features": [
+          "High-Quality Game Development",
+          "Innovative Features",
+          "Expert Development Team"
+        ]
+      },
+      {
+        "title": "Scalable and Secure Game Development",
+        "subtitle": "",
+        "description": "Comfygen ensures that every Blackjack game we develop is both scalable and secure. We build robust backend systems that can handle large volumes of users while implementing the latest security protocols to protect user data and provide a safe gaming environment.",
+        "features": [
+          "Scalable Backend Systems",
+          "Advanced Security Protocols",
+          "Safe Gaming Environment"
+        ]
+      },
+      {
+        "title": "Cross-Platform Compatibility",
+        "subtitle": "",
+        "description": "We specialize in developing Blackjack games that work seamlessly across multiple platforms, including iOS, Android, and web browsers. Our cross-platform approach ensures your game reaches a wider audience, providing players with a consistent and smooth experience, regardless of their device.",
+        "features": [
+          "iOS, Android, and Web Compatibility",
+          "Seamless Cross-Platform Experience",
+          "Wider Audience Reach"
+        ]
+      },
+      {
+        "title": "Realistic Gameplay and Features",
+        "subtitle": "",
+        "description": "Our Blackjack games are designed to deliver realistic gameplay, with features like multiplayer options, live dealer integration, and interactive leaderboards. We enhance the player experience by offering various in-game strategies, bet types, and customization options, keeping players engaged and entertained.",
+        "features": [
+          "Multiplayer and Live Dealer Integration",
+          "Interactive Leaderboards and Strategies",
+          "Customization Options for Engagement"
+        ]
+      },
+      {
+        "title": "Continuous Support and Updates",
+        "subtitle": "",
+        "description": "Comfygen provides ongoing support and regular updates to ensure that your Blackjack game stays relevant and engaging. Our team is dedicated to addressing player feedback, fixing bugs, and adding new features, ensuring your game remains a top choice for users in the long term.",
+        "features": [
+          "Ongoing Support and Maintenance",
+          "Regular Updates and New Features",
+          "Continuous Improvement Based on Feedback"
+        ]
+      }
+    ]
+},
+"AboutSection": {
+    "title": "About Company",
+    "heading": "Online Blackjack Game Development Company",
+    "description1": "If you're looking for an Online BlackJack Game Development firm to captivate your users with an incredible experience ,Comfygen is an excellent choice. We offer one-of-a-kind Mobile BlackJack Game Development that is designed to surpass your expectations. With our expertise in game development and specialization in Blackjack Gaming App, we are committed to delivering phenomenal results. We offer a wide variety of alternatives of the classic game, which includes progressive, American, European, Classic, Double down and many more.",
+    "description2": "Our services give justice to all your BlackJack gaming requirements, including custom game development, Live Game API integration, design, and maintenance and post launch support. We definitely understand the significance of following a malleable development process as every client has different and unique requirements. Therefore, our team works consistantly to deliver finest BlackJack games that meet the unique requirements of our clients. We are proud to have served as renowned Blackjack software development in India from various industries ranging from online gaming platforms. We are always happy to connect with our clients to discuss how we can assist their BlackJack game development needs.",
+    "imageSrc": "https://www.comfygen.com/image/about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+},
+"cardData3": {
+    "heading": "Features of our Top-Notch Blackjack Gaming App",
+    "subtitle": "Our exclusive Blackjack Gaming App is designed to provide players with an immersive and engaging gaming experience. With these features blend to create a phenomenal Blackjack gaming app that offers a captivating, immersive, and customizable experience for players of all skill levels. These features can vary depending on the specific online gamming or platform you choose. It's advisable to explore different options and you can also talk to our expert Blackjack Game Developer who will give you a deep understanding about the whole process.Here are some key features that set our app apart among others in the blackjack game development industry",
+    "tech": [
+      {
+        "num": "01",
+        "title": "Intuitive User Interface",
+        "desc": "A visually appealing and user-friendly interface is our first priority that is easy to surf, navigate and understand. The blackjack gaming app's layout, animations, buttons, and controls are designed to be intuitive and user-friendly which allows players to focus on the game without having any confusion."
+      },
+      {
+        "num": "02",
+        "title": "Game Variations",
+        "desc": "We offer a range of Blackjack variations within the app, allowing players to enjoy different rule sets and gameplay styles. Whether it's a Classic Blackjack, European Blackjack, or other popular variations, players can explore and choose their own version of the game according to their preferences."
+      },
+      {
+        "num": "03",
+        "title": "Multiplayer Options",
+        "desc": "Our app offers a variety of game modes to cater to different player choices of options. Players can choose between single-player mode to practice their skills, multiplayer mode to compete with friends, co-players online, or even live dealer mode for a more interactive and immersive experience."
+      },
+      {
+        "num": "04",
+        "title": "Live Dealer Blackjack",
+        "desc": "Our Live Dealer Blackjack feature aims to replicate the experience that brings out the excitement and authenticity of a real experiences  into the palm of your hand. Players can interact with the dealer and other participants, giving them a more immersive, classic and authentic experience."
+      },
+      {
+        "num": "05",
+        "title": "In-App Purchases",
+        "desc": "We offer in-app purchases and also a virtual currency system to provide players with optional enhancements for players who wish to enhance their gaming experience. Players can purchase their own virtual currency, special items to customize their gameplay or accelerate their progress within the app itself."
+      },
+      {
+        "num": "06",
+        "title": "Social Features",
+        "desc": "To enhance the social aspect of the game, our app incorporates social features. Players can connect with friends, challenge them to multiplayer games, and even share their achievements on social media platforms. This supports a sense of community and friendly competition environment among all the players."
+      },
+      {
+        "num": "07",
+        "title": "Cross-Platform Compatibility",
+        "desc": "Our app is designed to be compatible with multiple platforms, including iOS and Android devices. This feature makes sure that players can have a wider reach, accessibility and can enjoy the game on their preferred devices without limitations and that too in offline mode as well."
+      },
+      {
+        "num": "08",
+        "title": "Fairness and Security",
+        "desc": "We promise our players security and a fair gameplay. Our app implements robust security measures to protect user data and transactions. Additionally, our developers make sure that our app follows fair gaming practices, including random card generation, to provide a level playing field for all players."
+      }
+    ]
+},
+"InfoSection": {
+    "heading": "ONLINE Blackjack Game Development Solution",
+    "description1": "An online blackjack game is a digital version of the well known card game blackjack that is played over the internet. It allows players to enjoy blackjack from the comfort of their own homes or on their phone devices, without going anywhere .Comfygen as a leading Blackjack game development solutions are custom-made to provide you with an inclusive and innovative approach to develop hypnotic and engaging gaming experiences for the users. With our expertise in mobile game development and a deep knowledge of Blackjack, we offer high-end solutions that include every stage of the development process.",
+    "description2": "At the core of our solutions is the commitment that we promise our clients to deliver a finest and authentic Blackjack gaming experience. We understand the nature of the game, including the rules, strategies, and mechanics, and assemble them seamlessly into the online environment. Whether you need a single-player Blackjack game, multiplayer functionality, or even live dealer options, we have an expert team of developers who can bring your vision to life.",
+    "description3": "",
+    "dec": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/img/online-blackjack-game-development-solution.webp",
+    "link": "/contact-us",
+    "linkText": "LET'S CONNECT ",
+    "imagePosition": "left"
+},
+"pageData": {
     "title": "Why Choose Comfygen as a Leading Blackjack Game Development",
     "description": "At Comfygen we specialize in creating immersive and engaging Blackjack games that provide players with an authentic and thrilling experience. With our extensive knowledge of game development and expertise in Blackjack, we are dedicated to delivering high-quality and feature-rich gaming solutions.",
     "mainCardData": {
@@ -153,8 +186,124 @@
         "description": "Our commitment doesn't end with the launch of your game. We provide ongoing support and maintenance to address any post-launch concerns or updates.Our support team of responsive  Blackjack Game programmers is readily available to assist you and ensure the continued success of your Blackjack game."
       }
     ]
-  },
-  "Frequently": [
+},
+"HireDeveloper": {
+    "heading": "Hire a skilled Blackjack Game Developer",
+    "text": "Looking to hire expert developers for your Blackjack game? Our skilled team specializes in crafting high-end Blackjack games with immersive UI/UX, deep knowledge of gaming mechanics, and innovative features to captivate players and bring your vision to life.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Developers with in-depth knowledge of rules, strategies, and variations, ensuring accurate digital recreation.",
+      "Genuine enthusiasm for Blackjack and gaming, leading to exceptional player experiences and trend awareness.",
+      "Active involvement and clear communication to align the game with your vision and feedback.",
+      "Focus on creating engaging and immersive gameplay that resonates with players."
+    ]
+},
+"CallToAction": {
+    "heading": "Glance for a Top-class Video Game Programmer?",
+    "text": "Ready to embark on an epic adventure in game development? Join the ComfyGen family and be part of a team that creates games players love.",
+    "buttonText": "Click Here",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Get in touch now."
+},
+"ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+},
+"Frequently": [
     {
       "num": "1",
       "title": " What platforms can a Blackjack gaming app be developed for?     ",
@@ -180,101 +329,6 @@
       "title": "Do you provide post-launch support and maintenance for the developed Blackjack game?",
       "desc": "Absolutely, Comfygen offers post-launch support and maintenance services. This includes bug fixing, software updates, server maintenance, and addressing any technical issues that may arise. It is essential to discuss the specific terms of post-launch support with our development team."
     }
-  ],
-
-  
- 
-  "GameCardData": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/rummy-game-development-via-comfygen.webp",
-      "url": "/rummy-game-development",
-      "title": "Rummy Game Development"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/baccarat-game-development-via-comfygen.webp",
-      "url": "/baccarat-game-development",
-      "title": "Baccarat Game Development"
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/black-jack-dovelabment-via-comfygen.webp",
-      "url": "/blackjack-game-development",
-      "title": "BlackJack Game Development"
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/poker-game-development-via-comfygen.webp",
-      "url": "/poker-game-development",
-      "title": "Poker Game Development"
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/ludo-game-development-via-comfygen.webp",
-      "url": "/ludo-game-development",
-      "title": "Ludo game development"
-    },
-   
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/hearts-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Hearts Game Development"
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/board-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "board game development"
-    },
-    {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/card-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Card Game Development"
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/img/cheses-game-dovelabment-via-comfygen.webp",
-      "url": "/chess-game-development",
-      "title": "Chess Game Development"
-    },
-    {
-      "num": "11",
-      "img": "https://www.comfygen.com/img/bingo-game-development-via-comfygen.webp",
-      "url": "/",
-      "title": "Bingo Game Development"
-    },
-    {
-      "num": "12",
-      "img": "https://www.comfygen.com/img/888-poker-game-development-via-comfygen.webp",
-      "url": "/",
-      "title": "888 Poker Game Development"
-    },
-    {
-      "num": "13",
-      "img": "https://www.comfygen.com/img/omaha-game-dovelabment-via-comfygen.webp",
-      "url": "/omaha-poker-game-development",
-      "title": "Omaha poker game development"
-    },
-    {
-      "num": "14",
-      "img": "https://www.comfygen.com/img/snake-game-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Snake and Ladder development"
-    },
-    {
-      "num": "15",
-      "img": "https://www.comfygen.com/img/texes-game-dovelabment-via-comfyegn.webp",
-      "url": "/",
-      "title": "Texas Holdem Game Development"
-    },
-    {
-      "num": "16",
-      "img": "https://www.comfygen.com/img/call-breake-dovelabment-via-comfygen.webp",
-      "url": "/",
-      "title": "Call Break Game Development"
-    }
   ]
+
 }
