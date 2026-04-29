@@ -1,0 +1,201 @@
+{
+    "Herosection": {
+        "heading": "life at Comfygen",
+        "isHome": false,
+        "ptag": "Life at Comfygen is built on innovation, teamwork, and shared success. We create an environment where creativity meets opportunity. Together, we grow, achieve, and celebrate every milestone. ",
+        "ptag1": "",
+        "listItems": [
+            "Custom Insurance App Development for Startups, Brokers & Enterprises",
+            "Secure, Compliant & Scalable Architecture",
+            "Advanced Features for Claims, Policy & Customer Management",
+            "AI-Powered Automation for Better Efficiency & User Experience"
+        ],
+        "btnName": "Talk With Expert",
+        "btnLink": "/contact-us",
+        "altTag": "insurance mobile app development company",
+        "bgImage": "https://www.comfygen.com/comfygen-images/life-at-comfygen/life-at-comfygen-hero-image.webp"
+    },
+    "Glimpses": {
+        "heading": "Glimpses of  Celebrations",
+        "description": "",
+        "slides": [
+            {
+                "id": 1,
+                "title": "Diwali Celebration",
+                "description": "A festival of lights, laughter, and unforgettable memories at our firm.",
+                "image": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-9.webp",
+                "tag": "Festival"
+            },
+            {
+                "id": 2,
+                "title": "Diwali Celebration",
+                "description": "A festival of lights, laughter, and unforgettable memories at our firm.",
+                "image": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-8.webp",
+                "tag": "Festival"
+            },
+            {
+                "id": 3,
+                "title": "Holi Celebration",
+                "description": "Colors, joy, and togetherness — celebrating the festival of colors with our team.",
+                "image": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-13.webp",
+                "tag": "Festival"
+            }
+        ]
+    },
+    "Awards": {
+        "heading": "Awards and recognization",
+        "description": "",
+        "slides": [
+            {
+                "id": 1,
+                "title": "The Most Popular Bussiness Of The Year",
+                "description": "We should not judge people by their peak of excellence; but by the distance they have traveled from the point where they started.",
+                "image": "https://www.comfygen.com/images/img/Rectangle 25.png",
+                "tag": "Popular Bussiness"
+            },
+            {
+                "id": 2,
+                "title": "Best Employee Award",
+                "description": "Being rewarded for hard work shows the employee the worth of their work, and how it adds value to a company. This in turn, gives the employee a sense of purpose in their day to day work.",
+                "image": "https://www.comfygen.com/images/img/Rectangle 25.png",
+                "tag": "Best Employee"
+            },
+            {
+                "id": 3,
+                "title": "Certificate Of Achievement",
+                "description": "Achievements are a result of hard work, determination and constant efforts with positive attitude. Here are the best achievement quotes to inspire you to achieve your goals and dreams..",
+                "image": "https://www.comfygen.com/images/img/Rectangle 25.png",
+                "tag": "Achievement"
+            }
+        ]
+    },
+    "Gallery": {
+        "heading": "",
+        "description": "",
+        "galleryData": [
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[40%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-2.webp"
+                    },
+                    {
+                        "height": "h-[60%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-10.webp"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-3.webp"
+                    },
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-6.webp"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-4.webp"
+                    },
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-5.webp"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[40%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-9.webp"
+                    },
+                    {
+                        "height": "h-[60%]",
+                        "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-8.webp"
+                    }
+                ]
+            }
+        ],
+        "bottomImages": [
+            {
+                "col": "col-span-8",
+                "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-11.webp"
+            },
+            {
+                "col": "col-span-4",
+                "src": "https://www.comfygen.com/comfygen-images/life-at-comfygen/image-12.webp"
+            }
+        ]
+    },
+    "Anniversary": {
+        "heading": "Anniversary Celebration",
+        "description": "",
+        "galleryData": [
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[40%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182518.webp"
+                    },
+                    {
+                        "height": "h-[60%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182733.jpg"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182715.webp"
+                    },
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182731.webp"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182743.webp"
+                    },
+                    {
+                        "height": "h-[50%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182759.webp"
+                    }
+                ]
+            },
+            {
+                "columnHeight": "h-[500px]",
+                "items": [
+                    {
+                        "height": "h-[40%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182811.webp"
+                    },
+                    {
+                        "height": "h-[60%]",
+                        "src": "https://www.comfygen.com/lifecomfygen/IMG20230913182816.webp"
+                    }
+                ]
+            }
+        ],
+        "bottomImages": [
+            
+        ]
+    }
+}

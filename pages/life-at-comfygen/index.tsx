@@ -1,66 +1,43 @@
-
 import Image from "next/image";
-import Header from "../../components/Newcomponet/layout/Header";
+import JSON_DATA from "./life.json";
 import styles from './styles.module.css'
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
+import Gallery from "../../components/Gallery";
+import Slider from "../../components/Slider"
 export default function lifeatcompany() {
 
-  const ChooseUs = [
-    {
-      num: "1",
-      img: "https://www.comfygen.com/images/img/Rectangle 25.png",
-      title: "The Most Popular Bussiness Of The Year",
-      decs: "We should not judge people by their peak of excellence; but by the distance they have traveled from the point where they started.",
-    },
-    {
-      num: "2",
-      img: "https://www.comfygen.com/images/img/Rectangle 25.png",
-      title: "Best Employee Award",
-      decs: "Being rewarded for hard work shows the employee the worth of their work, and how it adds value to a company. This in turn, gives the employee a sense of purpose in their day to day work.",
-    },
-    {
-      num: "3",
-      img: "https://www.comfygen.com/images/img/Rectangle 25.png",
-      title: "Certificate Of Achievement",
-      decs: "Achievements are a result of hard work, determination and constant efforts with positive attitude. Here are the best achievement quotes to inspire you to achieve your goals and dreams..",
-    },
-  ];
+  // const ChooseUs = [
+  //   {
+  //     num: "1",
+  //     img: "https://www.comfygen.com/images/img/Rectangle 25.png",
+  //     title: "The Most Popular Bussiness Of The Year",
+  //     decs: "We should not judge people by their peak of excellence; but by the distance they have traveled from the point where they started.",
+  //   },
+  //   {
+  //     num: "2",
+  //     img: "https://www.comfygen.com/images/img/Rectangle 25.png",
+  //     title: "Best Employee Award",
+  //     decs: "Being rewarded for hard work shows the employee the worth of their work, and how it adds value to a company. This in turn, gives the employee a sense of purpose in their day to day work.",
+  //   },
+  //   {
+  //     num: "3",
+  //     img: "https://www.comfygen.com/images/img/Rectangle 25.png",
+  //     title: "Certificate Of Achievement",
+  //     decs: "Achievements are a result of hard work, determination and constant efforts with positive attitude. Here are the best achievement quotes to inspire you to achieve your goals and dreams..",
+  //   },
+  // ];
 
 
   return (
     <>
+
       <div className="overflow-hidden">
-       {/* <Header /> */}
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <Gallery Data={JSON_DATA.Gallery} />
+        <Slider Data={JSON_DATA.Glimpses} />
+        <Gallery Data={JSON_DATA.Anniversary} />
 
-        <div className="">
-          <div className="w-full h-full">
-            <Image
-              src="https://www.comfygen.com/lifecomfygen/IMG-20231110-WA0013.webp"
-              alt="Comfygen Hero Background"
-              width={640}
-              height={360}
-              className="object-cover object-center -z-10 hidden sm:block bg-no-repeat bg-fixed w-full"
-              priority
-              fetchPriority="high"
-              sizes="100vw"
-              placeholder="blur"
-              blurDataURL="/blur-placeholder.webp"
-              quality={75}
-              loading="eager"
-            />
-
-          </div>
-        </div>
-        {/* <div
-          data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="bg-center bg-no-repeat bg-cover " style={{ backgroundImage: `url("https://www.comfygen.com/lifecomfygen/IMG-20231110-WA0013.webp")`, }}>
-       
-          <div className="h-[calc(100vh-2rem)]   bg-gradient-to-r from-blue-600/50  to-purple-500/40 md:flex items-center relative">
-            <div className="flex flex-col-reverse w-11/12 py-8 mx-auto 2xl:w-4/6 xl:w-5/6 md:flex-row md:items-center">
-              <div className="w-full space-y-8 text-center md:text-center" >
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <div className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10  bg-gray-50">
+        {/* <div className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10  bg-gray-50">
           <div className="flex flex-col md:flex-row gap-2">
             <div className="flex flex-1 flex-col gap-2">
               <div className="flex flex-1 flex-col">
@@ -125,8 +102,8 @@ export default function lifeatcompany() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="py-10 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
+        </div> */}
+        {/* <div className="py-10 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
           <div className="flex flex-col justify-center text-center">
             <h2 className="py-4 text-3xl font-bold ">
               Our Team Celebration
@@ -135,8 +112,8 @@ export default function lifeatcompany() {
               <div className="w-20 h-1 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 "></div>
             </div>
           </div>
-        </div>
-        <section className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10 relative">
+        </div> */}
+        {/* <section className="x-auto 2xl:w-9/12 xl:w-5/6 w-11/12 mx-auto px-4 py-10 relative">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
             <div className="w-full hover:scale-105">
               <Image src="https://www.comfygen.com/lifecomfygen/IMG_20231110_145857.webp" alt="life" height="360" width="334" className="w-full" />
@@ -166,9 +143,9 @@ export default function lifeatcompany() {
               <Image src="https://www.comfygen.com/lifecomfygen/IMG_20231110_145610 (1).webp" alt="life" height="360" width="334" className="w-full" />
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <div className="py-10 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
+        {/* <div className="py-10 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
           <div className="space-y-5">
             <div >
               <div className="flex flex-col justify-center text-center">
@@ -192,8 +169,10 @@ export default function lifeatcompany() {
           <Image src="https://www.comfygen.com/lifecomfygen/IMG20230913182811.webp" alt="life" height="623" width="623" className="w-full object-cover" />
           <Image src="https://www.comfygen.com/lifecomfygen/IMG20230913182816.webp" alt="life" height="623" width="623" className="w-full object-cover" />
           <Image src="https://www.comfygen.com/lifecomfygen/IMG20230913182836.webp" alt="life" height="623" width="623" className="w-full object-cover" />
-        </div>
-        <section className="py-6 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
+        </div> */}
+
+        <Slider Data={JSON_DATA.Awards} />
+        {/* <section className="py-6 mx-auto 2xl:w-9/12 xl:w-5/6 w-11/12">
           <div className="text-center space-y-4">
             <div className="flex flex-col justify-center text-center">
               <h2 className="py-4 text-3xl font-bold capitalize">
@@ -222,7 +201,7 @@ export default function lifeatcompany() {
               })}
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );

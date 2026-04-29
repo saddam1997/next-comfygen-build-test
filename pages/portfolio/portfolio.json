@@ -421,17 +421,8 @@
         "img": "https://www.comfygen.com/comfygen-images/cryptocurrency-exchange-development/p2p-crypto-exchange-development.webp",
         "url": "/portfolio/p2p-crypto-exchange-development",
         "btn": "Initiate Now"
-      }, 
-      {
-        "num": 42,
-        "category": "Blockchain",
-        "head": "Blockchain Implementation",
-        "subhead":"",
-        "para": "The integration of blockchain technology provided the foundation for aRIA Currency's decentralized and tamper-resistant transaction processing, instilling trust and reliability among its user base.",
-        "img": "https://www.comfygen.com/img/solution-aria-coin1.webp",
-        "url": "/portfolio/aria-coin-details",
-        "btn": "Initate Now"
       }
+     
     ]
   }
   
