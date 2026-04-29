@@ -1,82 +1,579 @@
 {
-  "NewSections": {
-    "title": "E-Commerce App and Web Development Company",
-    "decs": "Comfygen specializes in offering unique e-commerce development services as an android ecommerce app development and mobile ecommerce app development . We are aware of how crucial it is to create scalable, highly reliable solutions in order to improve consumer interaction and spur growth for your e-commerce company. In order to understand your unique requirements and develop solutions that suit your business goals, our team of professionals will collaborate directly with you. We have the knowledge and experience to produce outstanding outcomes whether you require an e-commerce mobile app, a web-based e-commerce platform, or both. So what’s holding you bak hire us today we are the best ecommerce app and web development company in india. "
-  },
-  "Process": [
-    {
-      "title": "Branded Career Page Development",
-      "description": "We create custom branded career pages that reflect your company’s identity and values. These pages are optimized for SEO, mobile responsiveness, and conversion, helping attract top talent and improve employer branding."
-    },
-    {
-      "title": "Text Recruiting & QR Code-Based Applications",
-      "description": "Enable mobile-first recruitment with text-based application systems and QR code job access. Our solutions simplify job applications for candidates and expand your outreach via offline channels and print ads."
-    },
-    {
-      "title": "Conversational AI Chatbot for Initial Screening",
-      "description": "Our AI-driven chatbots conduct real-time pre-screening interviews, answer FAQs, and collect candidate data—all while engaging applicants in a conversational, human-like manner. Save recruiter time and enhance user experience."
-    },
-    {
-      "title": "Talent Community and Referral Program Integration",
-      "description": "We integrate talent community platforms and employee referral systems to help you build a proactive hiring pipeline. These tools nurture passive candidates and encourage internal engagement in your recruitment efforts."
-    },
-    {
-      "title": "Onboarding, Training, and Compliance Tools",
-      "description": "Simplify new hire integration with automated onboarding systems that include document management, training modules, and I-9 compliance tools. Reduce manual errors while ensuring legal and HR policy alignment."
-    },
-    {
-      "title": "Applicant Tracking System (ATS) Integration",
-      "description": "We ensure seamless ATS integration with platforms like Greenhouse, Workable, and Bullhorn, streamlining your workflow and enabling centralized candidate tracking and data management."
-    },
-    {
-      "title": "Campaign-Based Hiring & Analytics",
-      "description": "Run targeted hiring campaigns across job boards, social media, and your website, and track performance with real-time hiring analytics dashboards to make informed, data-driven recruitment decisions."
-    }
+"Herosection": {
+    "heading": "AI interview scheduling software development company",
+    "isHome": false,
+    "ptag": "Comfygen is a leading AI interview scheduling software development company delivering intelligent, scalable, and fully customized solutions to optimize recruitment workflows. Our AI-powered software brings speed, accuracy, and automation to talent acquisition for startups and enterprises alike.",
+    "ptag1": "",
+    "listItems": [
+      "Modern UI/UX for Seamless Scheduling",
+      "10+ Years of Custom Software Development Experience",
+      "Timely Delivery with Agile Execution",
+      "AI-Driven Automation & Smart Job Recommendations"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "ai interview scheduling software development company",
+    "bgImage": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-hero.webp"
+},
+"ServicesData": {
+    "heading": "All-in-One AI Interview Scheduling Software Development Services",
+    "description": "As a leading AI Interview Scheduling Software Development Company delivers AI-powered interview software development services tailored to the unique needs of startups, staffing agencies, and large enterprises, helping you automate interview coordination and transform how you hire.",
+    "services": [
+      {
+        "title": "Custom AI Interview Scheduling Software Development",
+        "subtitle": "",
+        "description": "Looking for a solution that adapts to your hiring process? We deliver custom AI interview scheduling apps for web and mobile, packed with smart features like calendar syncing, self-rescheduling, and real-time interviewer coordination. Our enterprise AI interview scheduler software development approach ensures your platform is tailored to your team’s workflows, branding, and business goals.",
+        "features": [
+          "AI-based time slot suggestions",
+          "Smart job and candidate matching",
+          "Role-based access control"
+        ]
+      },
+      {
+        "title": "ATS & HRMS Integration",
+        "subtitle": "",
+        "description": "We offer seamless integration of AI interview scheduling tools with popular Applicant Tracking Systems and HR software like Workday, SAP, Oracle, and BambooHR. This allows you to manage candidate data, interview rounds, and communication from a single dashboard, boosting efficiency across your HR tech stack.",
+        "features": [
+          "Bi-directional sync with ATS",
+          "Real-time candidate status updates",
+          "Streamlined interview pipeline"
+        ]
+      },
+      {
+        "title": "AI/ML Implementation for Resume & Interview Intelligence",
+        "subtitle": "",
+        "description": "Our solutions feature AI and machine learning capabilities that analyze resumes, generate personalized interview questions, and optimize scheduling. With these intelligent systems, recruiters can eliminate guesswork and rely on data-driven decisions throughout the hiring funnel.",
+        "features": [
+          "AI-based CV parsing",
+          "Question generation based on skills",
+          "Workflow automation recommendations"
+        ]
+      },
+      {
+        "title": "Cloud-Based Deployment",
+        "subtitle": "",
+        "description": "Deploy your AI scheduling system on a secure, scalable cloud environment tailored for enterprise-grade reliability. Our cloud-based interview scheduling software development ensures high availability, robust performance, and simplified remote access for global teams.",
+        "features": [
+          "AWS, Azure, or private cloud support",
+          "Scalable infrastructure",
+          "Automated backups and monitoring"
+        ]
+      },
+      {
+        "title": "Automated Interview Scheduling Mobile App Development",
+        "subtitle": "",
+        "description": "Want to give recruiters and candidates more flexibility? We provide responsive interview scheduling mobile app development for iOS and Android that include smart reminders, video interview access, and real-time scheduling updates—empowering users on the go.",
+        "features": [
+          "Push notifications and SMS alerts",
+          "In-app rescheduling",
+          "Video interview links integration"
+        ]
+      },
+      {
+        "title": "Third-Party Calendar & Communication Tool Integration",
+        "subtitle": "",
+        "description": "We build AI interview scheduling solutions with integrations for Google Calendar, Outlook, Zoom, MS Teams, and Slack—allowing seamless communication and real-time updates across platforms.",
+        "features": [
+          "Calendar syncing",
+          "Video conferencing links",
+          "Team collaboration tools"
+        ]
+      },
+      {
+        "title": "Compliance & Data Security",
+        "subtitle": "",
+        "description": "Data protection is at the heart of our solutions. We ensure your automated interview scheduling platform is built with full compliance to GDPR, HIPAA, and SOC 2, offering encrypted data storage, access control, and audit-ready logs.",
+        "features": [
+          "Role-based permissions",
+          "Candidate data encryption",
+          "End-to-end compliance support"
+        ]
+      }
+    ]
+},
+"AboutSection": {
+    "title": "",
+    "heading": "AI Interview Scheduler Software Development Tailored to Your Hiring Needs",
+    "description1": "Comfygen is an AI interview scheduling software development company specialises in transforming the way enterprises manage interviews. Our intelligent platforms eliminate manual coordination, enabling HR teams to focus on what truly matters—finding the right talent.",
+    "description2": "Our <a href='https://www.comfygen.com/ai-development' class='text-blue-600 font-semibold'>AI development solutions</a> include automated interview scheduling tools with self-rescheduling features, personalized communication, and smart calendar syncing. Designed for modern recruitment, our automated interview scheduling software integrates seamlessly with your existing ATS and hiring workflows.",
+    "description3": "With our custom AI interview scheduling mobile app development services, you gain access to real-time analytics, branded candidate experiences, and smart job recommendations, helping your business optimize hiring efficiency and scale recruitment effortlessly.",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More",
+    "points": []
+},
+"CallToAction": {
+    "heading": "Transform Your Hiring Process with AI Innovation",
+    "text": "Partner with Comfygen to build AI-powered interview scheduling software that streamlines hiring, enhances candidate experience, and boosts recruitment efficiency. Let’s innovate together!",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+},
+"AIFeatures": {
+    "heading": "Unlock Seamless Hiring with Our AI Interview Scheduling Software Features",
+    "subtitle": "Empower your recruitment process with Comfygen’s feature-rich AI interview scheduler software development services. Our AI interview scheduling app development solutions are designed to automate, optimize, and scale your hiring workflow using intelligent features tailored for modern HR teams and enterprises.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "AI-Based Smart Scheduling",
+        "desc": "Our AI interview scheduling software automatically matches candidates and interviewers based on availability, role fit, and priority—eliminating manual coordination and reducing time-to-hire."
+      },
+      {
+        "num": "02",
+        "title": "Self-Rescheduling for Candidates",
+        "desc": "Enable candidates to reschedule interviews on their own using real-time availability, minimizing back-and-forth communication and improving candidate experience."
+      },
+      {
+        "num": "03",
+        "title": "Smart Job Recommendations",
+        "desc": "AI-driven job recommendations match candidates to the most relevant roles by analyzing skills, experience, and job requirements for better hiring outcomes."
+      },
+      {
+        "num": "04",
+        "title": "Automated Email & SMS Alerts",
+        "desc": "Send branded, automated email and SMS reminders to reduce no-shows and keep candidates and interviewers informed at every stage."
+      },
+      {
+        "num": "05",
+        "title": "Interview Kits & Automation",
+        "desc": "Provide interviewers with role-specific kits, questions, and automated feedback workflows to ensure structured and consistent interviews."
+      },
+      {
+        "num": "06",
+        "title": "All Interview Types Supported",
+        "desc": "Easily manage virtual, in-person, hybrid, panel, and round-robin interviews with a flexible AI-powered scheduling platform."
+      }
+    ]
+},
+"PortfolioData": {
+    "heading": "Our AI-Powered Interview Scheduling Software Portfolio",
+    "description": "Explore our portfolio of advanced AI interview scheduler software development solutions, built for modern enterprises and hiring teams. Platforms are designed to be user-centric, automated, and seamlessly integrated.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio1.webp",
+        "title": "Smart Interview Scheduler for Enterprises",
+        "description": "This enterprise-grade AI interview scheduling platform was developed for a Fortune 500 company to manage high-volume recruitment. It features AI-generated questions from resumes, smart job matching, calendar sync, and self-scheduling—all within a secure, GDPR-compliant environment.",
+        "link": "#"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio2.webp",
+        "title": "AI-Powered Interview Coordination Tool for Startups",
+        "description": "Designed for growing teams, this startup-focused interview coordination app enables recruiters to automate scheduling, send branded invites, and identify workflow bottlenecks. Its mobile-first design ensures accessibility for both candidates and recruiters on the go.",
+        "link": "#"
+      }
+    ]
+},
+"featureData": {
+    "heading": "Advanced AI Capabilities That Redefine Recruitment",
+    "subtitle": "Our AI interview scheduler software development services come packed with next-level intelligence to help you hire faster, smarter, and bias-free. Explore the powerful features our platform delivers right out of the box:",
+    "tech": [
+      {
+        "num": "01",
+        "title": "AI-Generated Interview Questions from Resume Insights",
+        "desc": "Harness AI-generated interview questions based on resume insights to dig deeper into every applicant’s true potential. Our NLP engine scans each CV, identifies role-specific skills, and instantly creates tailored questions—so interviewers focus on meaningful dialogues, not preparation."
+      },
+      {
+        "num": "02",
+        "title": "AI-Driven Workflow Recommendations",
+        "desc": "Supercharge efficiency with AI-driven workflow recommendations. By analyzing thousands of historical hiring journeys, the system suggests optimal interview stages, stakeholder assignments, and follow-up actions, ensuring your recruitment pipeline stays lean and data-backed."
+      },
+      {
+        "num": "03",
+        "title": "Real-Time Bottleneck Detection",
+        "desc": "Stop delays before they derail offers. Our real-time engine pinpoints scheduling conflicts, prolonged approvals, and idle candidate stages, alerting recruiters to act instantly. This real-time bottleneck detection slashes time-to-hire and keeps talent engaged."
+      },
+      {
+        "num": "04",
+        "title": "Predictive Analytics & Reporting Dashboard",
+        "desc": "Make confident decisions with predictive analytics and reporting. Interactive dashboards forecast candidate drop-off risk, interviewer load, and future hiring needs—helping HR leaders allocate resources and hit growth targets with precision."
+      },
+      {
+        "num": "05",
+        "title": "Automated Shortlisting via Candidate Scoring",
+        "desc": "Save hours on resume reviews through automated shortlisting based on candidate scoring. Machine-learning models evaluate skills, experience, and cultural fit, ranking applicants so recruiters can focus on the highest-quality talent first."
+      }
+    ]
+},
+"ProcessData": {
+    "heading": "End-to-End Recruitment Suite Integration",
+    "description": "Our AI-powered recruitment software development process delivers a fully integrated, feature-rich hiring ecosystem tailored to streamline your entire talent acquisition journey—from attraction to onboarding. We combine automation, AI, and user-centric design to ensure hiring efficiency, brand consistency, and candidate engagement.",
+    "Process": [
+      {
+        "title": "Branded Career Page Development",
+        "description": "We create custom branded career pages that reflect your company’s identity and values. These pages are optimized for SEO, mobile responsiveness, and conversion, helping attract top talent and improve employer branding."
+      },
+      {
+        "title": "Text Recruiting & QR Code-Based Applications",
+        "description": "Enable mobile-first recruitment with text-based application systems and QR code job access. Our solutions simplify job applications for candidates and expand your outreach via offline channels and print ads."
+      },
+      {
+        "title": "Conversational AI Chatbot for Initial Screening",
+        "description": "Our AI-driven chatbots conduct real-time pre-screening interviews, answer FAQs, and collect candidate data—all while engaging applicants in a conversational, human-like manner. Save recruiter time and enhance user experience."
+      },
+      {
+        "title": "Talent Community and Referral Program Integration",
+        "description": "We integrate talent community platforms and employee referral systems to help you build a proactive hiring pipeline. These tools nurture passive candidates and encourage internal engagement in your recruitment efforts."
+      },
+      {
+        "title": "Onboarding, Training, and Compliance Tools",
+        "description": "Simplify new hire integration with automated onboarding systems that include document management, training modules, and I-9 compliance tools. Reduce manual errors while ensuring legal and HR policy alignment."
+      },
+      {
+        "title": "Applicant Tracking System (ATS) Integration",
+        "description": "We ensure seamless ATS integration with platforms like Greenhouse, Workable, and Bullhorn, streamlining your workflow and enabling centralized candidate tracking and data management."
+      },
+      {
+        "title": "Campaign-Based Hiring & Analytics",
+        "description": "Run targeted hiring campaigns across job boards, social media, and your website, and track performance with real-time hiring analytics dashboards to make informed, data-driven recruitment decisions."
+      }
+    ]
+},
+"LatestTechData": {
+    "heading": "Boost Team Productivity with Our Collaborative Interview Scheduling Tools",
+    "subtitle": "As a top AI-powered interview scheduling software development company, we go beyond automation to enable seamless collaboration and candidate experience management. Our advanced tools empower hiring teams to manage interviews, review responses, and communicate efficiently across all stages of the hiring lifecycle.",
+    "tech": [
+      {
+        "img": "<IconVideo stroke={1.5} className='w-12 h-12' />",
+        "title": "Live and Recorded Video Interviews",
+        "desc": "Our AI Interview Scheduling App Development includes built-in live and asynchronous video interview capabilities, allowing recruiters to screen candidates efficiently. Recorded interviews help teams review answers on their own time, improving collaboration and decision-making."
+      },
+      {
+        "img": "<IconUsersGroup stroke={1.5} className='w-12 h-12' />",
+        "title": "Collaborative Review and Feedback Tools",
+        "desc": "Enable real-time evaluation and annotation of candidate responses with shared scoring rubrics, comments, and approval workflows. Your hiring team can work together seamlessly, ensuring faster and more accurate hiring decisions."
+      },
+      {
+        "img": "<IconDeviceGamepad2 stroke={1.5} className='w-12 h-12' />",
+        "title": "Kanban-Style Pipeline Management",
+        "desc": "Visualize and manage your hiring process with Kanban-style candidate tracking boards. Easily drag and drop applicants across stages, set reminders, and assign tasks—making your hiring pipeline smart and intuitive."
+      },
+      {
+        "img": "<IconLanguage stroke={1.5} className='w-12 h-12' />",
+        "title": "Multilingual Support",
+        "desc": "Our Automated Interview Scheduling App Development includes multilingual capabilities, delivering a localized and inclusive experience for global candidates and remote teams."
+      },
+      {
+        "img": "<IconBrain stroke={1.5} className='w-12 h-12' />",
+        "title": "Candidate Response Tracking (Text, MCQs, Video)",
+        "desc": "Track and assess diverse response formats, including text answers, multiple-choice questionnaires, and video responses, to evaluate candidates more holistically with AI-assisted insights and smart scoring."
+      }
+    ]
+},
+"Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Tracking & Maps",
+    "Cloud/DevOps",
+    "Payments",
+    "Security"
   ],
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What is AI-powered interview scheduling software?",
-      "desc": "AI-powered interview scheduling software automates the hiring process by using artificial intelligence to match candidate availability, generate interview questions from CVs, and send automatic notifications. It reduces manual work, improves scheduling efficiency, and enhances the overall candidate experience with features like self-rescheduling, smart reminders, and personalized interview workflows."
-    },
-    {
-      "num": "2",
-      "title": "Can your software integrate with our existing ATS or HRMS?",
-      "desc": "Yes, our AI interview scheduler seamlessly integrates with leading Applicant Tracking Systems (ATS) and HRMS platforms like SAP, Workday, Oracle, and more. This ensures smooth data flow, centralized operations, and zero disruption to your current hiring workflow while boosting recruitment efficiency with intelligent automation."
-    },
-    {
-      "num": "3",
-      "title": "What types of interviews can your software schedule?",
-      "desc": "Our software supports various interview formats including virtual, in-person, hybrid, group, 1-on-1, and round-robin interviews. It also includes video proctoring and live interview capabilities, making it a flexible solution for modern recruitment across industries and roles."
-    },
-    {
-      "num": "4",
-      "title": "Is the interview scheduling software mobile-friendly?",
-      "desc": "Absolutely. We develop responsive web and mobile apps for Android and iOS. Candidates and recruiters can manage interviews on the go with real-time notifications, calendar sync, and self-scheduling features that make mobile access easy and efficient."
-    },
-    {
-      "num": "5",
-      "title": "How does AI improve the hiring workflow?",
-      "desc": "AI analyzes millions of data points to recommend workflow improvements, detect bottlenecks, and automate repetitive tasks. It streamlines interview scheduling, candidate shortlisting, and question generation—resulting in faster, more accurate, and data-driven hiring decisions that reduce time-to-hire and increase candidate satisfaction."
-    },
-    {
-      "num": "6",
-      "title": "Is your solution secure and compliant with regulations?",
-      "desc": "Yes, our AI-powered interview scheduling software is built with enterprise-grade security. It complies with global standards like GDPR, SOC 2, and HIPAA. All data is encrypted, access is controlled, and systems are regularly audited to ensure maximum compliance and data protection."
-    },
-    {
-      "num": "7",
-      "title": "How much does it cost to develop an AI-powered interview scheduling software?",
-      "desc": "The cost to develop AI-powered interview scheduling software typically ranges from $20,000 to $100,000+, depending on features, platform complexity, AI integration, and third-party integrations. Customization, scalability, and compliance requirements also impact pricing. We provide tailored quotes based on your specific needs and business goals."
-    },
-    {
-      "num": "8",
-      "title": "How long does it take to build an AI Interview Scheduling App?",
-      "desc": "Development timelines usually range between 10 to 24 weeks, based on the project scope, platform (web/mobile), AI functionality, and integrations. Simple versions may take less time, while enterprise-grade solutions with ATS/HRMS integrations and custom AI features require longer development and testing cycles for best performance and security."
+"TechstackData": {
+    "heading": "Cutting-Edge Tech Stacks We Use for AI Interview Scheduler Software Development",
+    "description": "Our team builds smart interview scheduling apps as well as secure, scalable, and high-performance solutions. A top-notch AI-powered interview scheduling software development company for enterprises, we make use of modern technologies for real-time automation, AI integration, and enterprise-grade reliability.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
     }
-  ],
-
-    "ReviewData": {
+},
+"pageData": {
+    "title": "Why Partner With Us for AI Interview Scheduling Software Development?",
+    "description": "Comfygen is your trusted partner in AI-powered interview scheduling software development. With over a decade of experience in building HRTech and AI-based platforms, we deliver highly scalable, customized solutions designed to streamline your hiring process.",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Optimum Outcome Focused",
+      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "10+ Years of AI & HRTech Development Expertise",
+        "description": "With over a decade of proven success, we deliver custom AI-powered interview scheduling software tailored to your recruitment workflows and optimized for enterprise-grade performance and compliance."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Scalable & Modular Architecture",
+        "description": "We build scalable and modular platforms that adapt to your growing recruitment needs, offering flexibility in features, integrations, and user volume without compromising performance or security."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Dedicated Cross-Platform Support",
+        "description": "Our team ensures seamless functionality across mobile, web, and cloud platforms, delivering consistent user experience with responsive support, updates, and optimization for all operating systems and devices."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Proven Track Record with Global Brands",
+        "description": "From startups to large enterprises, our global client base trusts us to deliver reliable, innovative AI interview scheduling solutions that streamline hiring and deliver measurable ROI."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "AI-Driven Custom Solutions",
+        "description": "We embed advanced AI like resume parsing, predictive scheduling, and question generation to create intelligent, automated interview workflows that save time and improve hiring outcomes."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
+        "title": "Agile Development & Rapid Deployment",
+        "description": "Using agile methodologies, we accelerate project delivery with iterative development, real-time collaboration, and continuous testing, ensuring faster go-to-market with maximum efficiency and quality."
+      }
+    ]
+},
+"HireDeveloper": {
+    "heading": "Hire Our Skilled AI Interview Scheduling App Developers",
+    "text": "Looking to build a powerful, intelligent interview automation platform? At Comfygen, our experienced AI-powered interview scheduling app developers specialize in creating scalable, secure, and fully customized hiring solutions. With deep expertise in HRTech and AI integrations, we help you streamline recruitment, reduce manual tasks, and boost hiring efficiency with smart automation.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "AI-Powered Resume Screening & Question Generation",
+      "Real-Time Scheduling & Calendar Sync Capabilities",
+      "Intuitive UI/UX with Self-Scheduling Options"
+    ]
+},
+"ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
     "Review": [
@@ -169,799 +666,49 @@
         "image": "/Google - Original.png"
       }
     ]
-  },
-  "CardGridData": [
-    {
-      "img": "<IconRobot stroke={1.5} className='w-12 h-12'/>",
-      "title": "AI-Based Smart Scheduling",
-      "desc2": "Our AI interview scheduling software automatically matches candidates and interviewers based on availability, role fit, and priority—eliminating manual coordination and reducing time-to-hire.",
-      "listItems": []
-    },
-    {
-      "img": " <IconRefresh stroke={1.5} className='w-12 h-12'/>",
-      "title": "Self-Rescheduling for Candidates",
-      "desc2": "Enable candidates to reschedule interviews on their own using real-time availability, minimizing back-and-forth communication and improving candidate experience.",
-      "listItems": []
-    },
-    {
-      "img": "<IconBrain stroke={1.5} className='w-12 h-12'/>",
-      "title": "Smart Job Recommendations",
-      "desc2": "AI-driven job recommendations match candidates to the most relevant roles by analyzing skills, experience, and job requirements for better hiring outcomes.",
-      "listItems": []
-    },
-    {
-      "img": "<IconMail stroke={1.5} className='w-12 h-12'/>",
-      "title": "Automated Email & SMS Alerts",
-      "desc2": "Send branded, automated email and SMS reminders to reduce no-shows and keep candidates and interviewers informed at every stage.",
-      "listItems": []
-    },
-    {
-      "img": "<IconTools stroke={1.5} className='w-12 h-12'/>",
-      "title": "Interview Kits & Automation",
-      "desc2": "Provide interviewers with role-specific kits, questions, and automated feedback workflows to ensure structured and consistent interviews.",
-      "listItems": []
-    },
-    {
-      "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>",
-      "title": "All Interview Types Supported",
-      "desc2": "Easily manage virtual, in-person, hybrid, panel, and round-robin interviews with a flexible AI-powered scheduling platform.",
-      "listItems": []
-    }
-  ],
-  "latesttech": [
-    {
-      "img": "<IconVideo stroke={1.5} className='w-12 h-12' />",
-      "title": "Live and Recorded Video Interviews",
-      "desc": "Our AI Interview Scheduling App Development includes built-in live and asynchronous video interview capabilities, allowing recruiters to screen candidates efficiently. Recorded interviews help teams review answers on their own time, improving collaboration and decision-making."
-    },
-    {
-      "img": "<IconUsersGroup stroke={1.5} className='w-12 h-12'/>",
-      "title": "Collaborative Review and Feedback Tools",
-      "desc": "Enable real-time evaluation and annotation of candidate responses with shared scoring rubrics, comments, and approval workflows. Your hiring team can work together seamlessly, ensuring faster and more accurate hiring decisions."
-    },
-    {
-      "img": "<IconDeviceGamepad2 stroke={1.5} className='-12 h-12'/>",
-      "title": "Kanban-Style Pipeline Management",
-      "desc": "Visualize and manage your hiring process with Kanban-style candidate tracking boards. Easily drag and drop applicants across stages, set reminders, and assign tasks—making your hiring pipeline smart and intuitive."
-    },
-    {
-      "img": "<IconLanguage stroke={1.5} className='-12 h-12'/>",
-      "title": "Multilingual Support",
-      "desc": "Our Automated Interview Scheduling App Development includes multilingual capabilities, delivering a localized and inclusive experience for global candidates and remote teams."
-    },
-    {
-      "img": "<IconBrain stroke={1.5} className='-12 h-12'/>",
-      "title": "Candidate Response Tracking (Text, MCQs, Video)",
-      "desc": "Track and assess diverse response formats, including text answers, multiple-choice questionnaires, and video responses, to evaluate candidates more holistically with AI-assisted insights and smart scoring."
-    }
-  ],
-  "portfoliodata": [
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio1.webp",
-      "title": "Smart Interview Scheduler for Enterprises",
-      "description": "This enterprise-grade AI interview scheduling platform was developed for a Fortune 500 company to manage high-volume recruitment. It features AI-generated questions from resumes, smart job matching, calendar sync, and self-scheduling—all within a secure, GDPR-compliant environment.",
-      "link": "#"
-    },
-    {
-      "image": "https://www.comfygen.com/comfygen-images/ai-interview-scheduling-software-development/ai-interview-scheduling-software-development-portfolio2.webp",
-      "title": "AI-Powered Interview Coordination Tool for Startups",
-      "description": "Designed for growing teams, this startup-focused interview coordination app enables recruiters to automate scheduling, send branded invites, and identify workflow bottlenecks. Its mobile-first design ensures accessibility for both candidates and recruiters on the go.",
-      "link": "#"
-    }
-  ],
-  "myList1": [
-    "Super-easy onboarding",
-    "Native app",
-    "Categories of products",
-    "Navigation of products",
-    "Various payment options are available",
-    "Multilingual support",
-    "Shopping cart",
-    "Add to favorites",
-    "Banners",
-    "Advertising",
-    "Customer reviews & ratings",
-    "Profile settings",
-    "Push notifications",
-    "Discount coupons and promo codes",
-    "Social media login"
-  ],
-  "myList2": [
-    "Real-time dashboard",
-    "Banner & Ads management",
-    "Product management",
-    "Store management",
-    "Staff management",
-    "Catalogue management",
-    "Product addition",
-    "Order tracking",
-    "Order history",
-    "Customer data",
-    "Reporting",
-    "Special offer creation"
-  ],
-  "myList3": [
-    "Seller app",
-    "Multi-vendor solution",
-    "E-wallet integration",
-    "AI & ML integration",
-    "Live customer service",
-    "Customizable user dashboard",
-    "Daily deals",
-    "Wishlist",
-    "Store pickup",
-    "Credit option",
-    "EMI facility",
-    "Live location"
-  ],
-  "Qa": [
+},
+"Frequently": [
     {
       "num": "1",
-      "head": " ",
-      "title": " Latest Technologies Incurred On-Demand Taxi App Development ",
-      "desc": "Comfygen utilizes the current industrial and market standard tech-practices ensures best app integrations. Know our modern technologies integrations for excellent app development:",
-      "url": "/contact-us",
-      "btn": "Meet Now"
-    }
-  ],
-  "Whycomfygen": [
-    {
-      "num": "1",
-      "title": "Internet of Things (IoT) ",
-      "desc": "We can develop the taxi booking app using IoT technology, which enables us to connect the app with the user’s environment. Having this technology in the application will help users to get alerts and notifications from the app into the user’s smart devices; which makes it more engaging to attract more users."
+      "title": "What is AI-powered interview scheduling software?",
+      "desc": "AI-powered interview scheduling software automates the hiring process by using artificial intelligence to match candidate availability, generate interview questions from CVs, and send automatic notifications. It reduces manual work, improves scheduling efficiency, and enhances the overall candidate experience with features like self-rescheduling, smart reminders, and personalized interview workflows."
     },
     {
       "num": "2",
-      "title": "Artificial Intelligence (AI) ",
-      "desc": "Artificial Intelligence (AI) is helpful in every domain in every segment. The same goes with taxi app development, where AI will help in telling about predictive pricing, weather reports, suggestions for bookings, Smart ETA, etc. "
+      "title": "Can your software integrate with our existing ATS or HRMS?",
+      "desc": "Yes, our AI interview scheduler seamlessly integrates with leading Applicant Tracking Systems (ATS) and HRMS platforms like SAP, Workday, Oracle, and more. This ensures smooth data flow, centralized operations, and zero disruption to your current hiring workflow while boosting recruitment efficiency with intelligent automation."
     },
     {
       "num": "3",
-      "title": "Cloud Computing",
-      "desc": "Cloud Computing is another leverage for the taxi booking app, which enables it to receive extra secured storage, cross-device data synchronization, more database, and other features; which makes the app better to use in current market standards.  "
+      "title": "What types of interviews can your software schedule?",
+      "desc": "Our software supports various interview formats including virtual, in-person, hybrid, group, 1-on-1, and round-robin interviews. It also includes video proctoring and live interview capabilities, making it a flexible solution for modern recruitment across industries and roles."
     },
     {
       "num": "4",
-      "title": "Blockchain Technology ",
-      "desc": "Blockchain is the most demanding and most secure technology, which enables businesses and users to be more safe while using the app. Using blockchain in taxi booking app development will improve better data security, tokenization, and more. Also, it will deliver the best security tactics to make the app worthwhile to use. "
-    }
-  ],
-  "pageData": {
-    "title": "Why Partner With Us for AI Interview Scheduling Software Development?",
-    "description": "Comfygen is your trusted partner in AI-powered interview scheduling software development. With over a decade of experience in building HRTech and AI-based platforms, we deliver highly scalable, customized solutions designed to streamline your hiring process.",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Optimum Outcome Focused",
-      "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
-    },
-    "gridData": [
-      {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "10+ Years of AI & HRTech Development Expertise",
-        "description": "With over a decade of proven success, we deliver custom AI-powered interview scheduling software tailored to your recruitment workflows and optimized for enterprise-grade performance and compliance."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Scalable & Modular Architecture",
-        "description": "We build scalable and modular platforms that adapt to your growing recruitment needs, offering flexibility in features, integrations, and user volume without compromising performance or security."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Dedicated Cross-Platform Support",
-        "description": "Our team ensures seamless functionality across mobile, web, and cloud platforms, delivering consistent user experience with responsive support, updates, and optimization for all operating systems and devices."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Proven Track Record with Global Brands",
-        "description": "From startups to large enterprises, our global client base trusts us to deliver reliable, innovative AI interview scheduling solutions that streamline hiring and deliver measurable ROI."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "AI-Driven Custom Solutions",
-        "description": "We embed advanced AI like resume parsing, predictive scheduling, and question generation to create intelligent, automated interview workflows that save time and improve hiring outcomes."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
-        "title": "Agile Development & Rapid Deployment",
-        "description": "Using agile methodologies, we accelerate project delivery with iterative development, real-time collaboration, and continuous testing, ensuring faster go-to-market with maximum efficiency and quality."
-      }
-    ]
-  },
-  "servicesData": [
-    {
-      "title": "Custom AI Interview Scheduling Software Development",
-      "description": "Looking for a solution that adapts to your hiring process? We deliver custom AI interview scheduling apps for web and mobile, packed with smart features like calendar syncing, self-rescheduling, and real-time interviewer coordination. Our enterprise AI interview scheduler software development approach ensures your platform is tailored to your team’s workflows, branding, and business goals.",
-      "features": [
-        "AI-based time slot suggestions",
-        "Smart job and candidate matching",
-        "Role-based access control"
-      ]
-    },
-    {
-      "title": "ATS & HRMS Integration",
-      "description": "We offer seamless integration of AI interview scheduling tools with popular Applicant Tracking Systems and HR software like Workday, SAP, Oracle, and BambooHR. This allows you to manage candidate data, interview rounds, and communication from a single dashboard, boosting efficiency across your HR tech stack.",
-      "features": [
-        "Bi-directional sync with ATS",
-        "Real-time candidate status updates",
-        "Streamlined interview pipeline"
-      ]
-    },
-    {
-      "title": "AI/ML Implementation for Resume & Interview Intelligence",
-      "description": "Our solutions feature AI and machine learning capabilities that analyze resumes, generate personalized interview questions, and optimize scheduling. With these intelligent systems, recruiters can eliminate guesswork and rely on data-driven decisions throughout the hiring funnel.",
-      "features": [
-        "AI-based CV parsing",
-        "Question generation based on skills",
-        "Workflow automation recommendations"
-      ]
-    },
-    {
-      "title": "Cloud-Based Deployment",
-      "description": "Deploy your AI scheduling system on a secure, scalable cloud environment tailored for enterprise-grade reliability. Our cloud-based interview scheduling software development ensures high availability, robust performance, and simplified remote access for global teams.",
-      "features": [
-        "AWS, Azure, or private cloud support",
-        "Scalable infrastructure",
-        "Automated backups and monitoring"
-      ]
-    },
-    {
-      "title": "Automated Interview Scheduling Mobile App Development",
-      "description": "Want to give recruiters and candidates more flexibility? We provide responsive interview scheduling <a class='font-semibold underline' href='https://www.comfygen.com/mobile-app-development' >mobile app development</a> for iOS and Android that include smart reminders, video interview access, and real-time scheduling updates—empowering users on the go.",
-      "features": [
-        "Push notifications and SMS alerts",
-        "In-app rescheduling",
-        "Video interview links integration"
-      ]
-    },
-    {
-      "title": "Third-Party Calendar & Communication Tool Integration",
-      "description": "We build AI interview scheduling solutions with integrations for Google Calendar, Outlook, Zoom, MS Teams, and Slack—allowing seamless communication and real-time updates across platforms.",
-      "features": [
-        "Calendar syncing",
-        "Video conferencing links",
-        "Team collaboration tools"
-      ]
-    },
-    {
-      "title": "Compliance & Data Security",
-      "description": "Data protection is at the heart of our solutions. We ensure your automated interview scheduling platform is built with full compliance to GDPR, HIPAA, and SOC 2, offering encrypted data storage, access control, and audit-ready logs.",
-      "features": [
-        "Role-based permissions",
-        "Candidate data encryption",
-        "End-to-end compliance support"
-      ]
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "AI-Generated Interview Questions from Resume Insights",
-      "decs": "Harness AI-generated interview questions based on resume insights to dig deeper into every applicant’s true potential. Our NLP engine scans each CV, identifies role-specific skills, and instantly creates tailored questions—so interviewers focus on meaningful dialogues, not preparation."
-    },
-    {
-      "num": "02",
-      "title": "AI-Driven Workflow Recommendations",
-      "decs": "Supercharge efficiency with AI-driven workflow recommendations. By analyzing thousands of historical hiring journeys, the system suggests optimal interview stages, stakeholder assignments, and follow-up actions, ensuring your recruitment pipeline stays lean and data-backed."
-    },
-    {
-      "num": "03",
-      "title": "Real-Time Bottleneck Detection",
-      "decs": "Stop delays before they derail offers. Our real-time engine pinpoints scheduling conflicts, prolonged approvals, and idle candidate stages, alerting recruiters to act instantly. This real-time bottleneck detection slashes time-to-hire and keeps talent engaged."
-    },
-    {
-      "num": "04",
-      "title": "Predictive Analytics & Reporting Dashboard",
-      "decs": "Make confident decisions with predictive analytics and reporting. Interactive dashboards forecast candidate drop-off risk, interviewer load, and future hiring needs—helping HR leaders allocate resources and hit growth targets with precision."
-    },
-    {
-      "num": "05",
-      "title": "Automated Shortlisting via Candidate Scoring",
-      "decs": "Save hours on resume reviews through automated shortlisting based on candidate scoring. Machine-learning models evaluate skills, experience, and cultural fit, ranking applicants so recruiters can focus on the highest-quality talent first."
-    }
-  ],
-  "myList4": [
-    "One-Stop Destination",
-    "Reliable E-Commerce Development Partners",
-    "Quality, Support & Maintenance",
-    "We offer cost-effective services",
-    "Team of Certified Developers",
-    "On Time Delivery",
-    "Professionals Who Have Worked With All Industry Verticals"
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Unique Features of a Blockchain-Based Dating App",
-      "desc": "We offer <a class='text-blue-600' href='https://www.comfygen.com/blog/blockchain-technology-in-dating-apps/'>blockchain-based dating app development</a>  to ensure security, privacy, and a scam-free dating experience."
-    }
-  ],
-  "consultancyData": [
-    {
-      "title": "Decentralized Identity & Profile Verification",
-      "desc": "Blockchain verifies user identities securely, preventing fake profiles and bots. This ensures only real people can join the platform, making dating safer."
-    },
-    {
-      "title": "Crypto Rewards & Matchmaking",
-      "desc": "Users can earn cryptocurrency rewards for actions like profile verification, matches, and interactions, making dating more exciting and engaging."
-    },
-    {
-      "title": "Web3 Dating (NFT Gifts & Date Booking)",
-      "desc": "Send NFT-based gifts, book dates with blockchain technology, and enjoy a unique Web3-powered dating experience like never before."
-    },
-    {
-      "title": "Private & Secure Messaging",
-      "desc": "All messages are encrypted and stored on a decentralized network, ensuring complete privacy and eliminating the risk of data leaks."
-    },
-    {
-      "title": "Anti-Scam & Safety Features",
-      "desc": "Blockchain’s fraud detection and smart contract security help prevent scams, catfishing, and identity theft, making dating safer for everyone."
-    }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/consultation-and-planning.webp",
-      "title": "Dating App Similar to Tinder ",
-      "decs": "Need a truly unique dating app similar to Tinder? We specialize in developing a universal dating app similar to Tinder and ensuring that customer app stands out in the competitive dating market."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/app-development.webp",
-      "title": "Dating App like OkCupid ",
-      "decs": "Take a dating app to the next level with us to develop an OkCupid dating app. We develop matchmaking dating apps like OkCupid with the best features and latest technologies and provide secure dating apps on time. "
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/backend-development-icon.webp",
-      "title": "Dating App Similar to Hookup",
-      "decs": "Looking to develop a casual dating app like Hookup? We can build a dating app like Hookup customized for casual encounters, featuring quick profile setups and geolocation services to facilitate spontaneous meetups"
+      "title": "Is the interview scheduling software mobile-friendly?",
+      "desc": "Absolutely. We develop responsive web and mobile apps for Android and iOS. Candidates and recruiters can manage interviews on the go with real-time notifications, calendar sync, and self-scheduling features that make mobile access easy and efficient."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/img/testing-and-quality-assurance-icon.webp",
-      "title": "Dating App like LGBTQ ",
-      "decs": "Build a dating app like an LGBTQ dating platform that provides a safe and inclusive space for diverse individuals to connect. Our dedicated dating app development team makes sure of a respectful environment with features customized for the LGBTQ community "
+      "title": "How does AI improve the hiring workflow?",
+      "desc": "AI analyzes millions of data points to recommend workflow improvements, detect bottlenecks, and automate repetitive tasks. It streamlines interview scheduling, candidate shortlisting, and question generation—resulting in faster, more accurate, and data-driven hiring decisions that reduce time-to-hire and increase candidate satisfaction."
     },
     {
       "num": "6",
-      "img": "https://www.comfygen.com/image/dating-app-similar-to-bumble.webp",
-      "title": "Dating App Similar to Bumble",
-      "decs": "Develop a dating app similar to Bumble, where women make the first move. This authorized approach encourages respectful interactions and enhances user engagement through unique features and design. "
-    }
-  ],
-  "Modus": {
-    "title": "Modus Operandi Of Our Service",
-    "decs": "In order to ensure that our clients get their software solutions on time, our blockchain development team follows proven and crucial strategies. Take a look at our model of the development process"
-  },
-  "WhyChooserr": [
-    {
-      "num": "01",
-      "img": "https://www.comfygen.com/img/discovery-and-ideation.webp",
-      "title": "Discovery and Ideation",
-      "decs": "Our team works with stakeholders to apprehend their vision, objectives, and target market during the cooperative discovery segment of the venture. Thorough market research and analysis aid in determining opportunities and difficulties. We generate ideas for solutions through brainstorming sessions that are tailored to the particular needs of the food delivery industry. The end product is an extensive project roadmap that functions as a development blueprint."
-    },
-    {
-      "num": "02",
-      "img": "https://www.comfygen.com/img/design-and-prototyping-icon.webp",
-      "title": "Design and Prototyping",
-      "decs": "Converting standards into an interesting and easy user interface is the principal goal of the design phase. Our gifted designers paint collectively to produce wireframes and prototypes that display the structure, usability, and general design of the app. Feedback loops are used in this iterative method to ensure the layout complies with the customer's expectations for the person's enjoyment and emblem identity. We create an app that engages and connects with customers via implementing quality practices in person interface and user enjoy layout."
-    },
-    {
-      "num": "03",
-      "img": "https://www.comfygen.com/img/development-icon.webp",
-      "title": "Development ",
-      "decs": "After a sturdy design has been mounted, the improvement degree starts off evolving. To convey the concept to lifestyles, our professional builders make use of modern-day frameworks and technologies. Our development crew concentrates on growing seamless consumer reports, integrating real-time order monitoring, and streamlining the backend infrastructure."
-    },
-    {
-      "num": "04",
-      "img": "https://www.comfygen.com/img/discovery-and-ideation.webp",
-      "title": "Testing and Quality Assurance",
-      "decs": "We no longer compromise on excellence in our improvement process. Every degree of the app's development is thoroughly examined to discover and attach any bugs, system faults, or inconsistencies. Our quality assurance group checks the app to the best standards of usability and reliability, from personal reputation to overall performance and practical trying out. This painstaking process yields a flawless, error-free application that is prepared for deployment."
-    },
-    {
-      "num": "05",
-      "img": "https://www.comfygen.com/img/development-icon.webp",
-      "title": "Deployment",
-      "decs": "This stage involves moving from development settings into active production. Our group oversees the deployment procedure from start to finish, guaranteeing a smooth transition with little downtime. We follow the app store guidelines to ensure that submissions are accepted and that the app appears as prominently as possible on iOS and Android. Deployment is a strategic move to create a strong and noticeable presence in the cutthroat food delivery market, not just a technical process."
-    },
-    {
-      "num": "06",
-      "img": "https://www.comfygen.com/img/post-launch-support-icon.webp",
-      "title": "Post-Launch Support",
-      "decs": "We're not done with you once the app launches. Our process's post-launch support is essential to maintaining the food delivery app's success and optimization. We promptly respond to any questions, concerns, or technical issues, offering users, restaurants, and delivery staff unceasing support. Proactive maintenance, frequent updates, and feature improvements all add to the app's durability and relevance in a changing market."
-    }
-  ],
-  "WhyChoose": [
-    {
-      "num": "01",
-      "title": "Skills and Expertise",
-      "decs": "Developers are not just coders; they are also the architects of our vision. They handle the data and speak its language. They translate your ideas into a looking app that can perfectly match your personality, an attractive profile building, and AI-driven conversation starters. ",
-      "decs1": "They provide a blueprint for your app by ensuring your technical feasibility and scalability. They're the ones who bridge the gap between imagination and reality, making sure your platform can handle millions of interactions with lightning speed and stability. They always stay one step ahead of threats and vulnerabilities by adopting encryption techniques."
-    },
-    {
-      "num": "02",
-      "title": "Understanding User Needs",
-      "decs": "Developers first try to make the blueprint as per the user's requirement. Then, they write the code to build the app. While building the app, they made sure that the app was simple and easy to use. They analyze the data of the user, conduct research, and stay ahead of the current trends to understand what motivates and engages daters. They try to match all the designs to create a positive and productive experience for the users. "
-    },
-    {
-      "num": "03",
-      "title": "Innovative Solutions",
-      "decs": "Developers are the engine powering the ongoing expansion of the online dating industry. They push the envelope of what's possible with their desire to try new things and their newfound perspectives. Developers can assist you in creating a distinctive and advanced app that makes you stand out from the competition, whether it's by adding voice chat capabilities, virtual reality experiences, or driven by artificial intelligence conversation starters."
-    }
-  ],
-  "ModusOperandi": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "Requirement Gathering",
-      "desc": "A free consultation is provided to clarify the approximate budget and timeline of the project, and to gather the initial requirements for the project."
-    },
-    {
-      "num": "02",
-      "bg": "#9A4ECC1A",
-      "title": "Strategy and Execution",
-      "desc": "In response to your requirements, we develop an execution plan and make a strategy for moving forward."
-    },
-    {
-      "num": "03",
-      "bg": "#2390FB1A",
-      "title": "Prototyping Phase UI/UX",
-      "desc": "To give you the best user experience, our top UI/UX designers design prototypes for intuitive and user-friendly UI/UX Design Solutions."
-    },
-    {
-      "num": "04",
-      "bg": "#82AB101A",
-      "title": "Development Phase",
-      "desc": "To develop the project, we start putting all the pieces together using agile methodologies as soon as the UI/UX theme is confirmed."
-    },
-    {
-      "num": "05",
-      "bg": "#F45F391A",
-      "title": "Testing and Deployment",
-      "desc": "QA Analysts perform functional testing, which involves identifying errors and bugs. In addition, ensure that it is ready for delivery by applying validations."
-    },
-    {
-      "num": "06",
-      "bg": "#FFA0001A",
-      "title": "Swift Launch",
-      "desc": "QA Analysts perform functional testing, which involves identifying errors and bugs. In addition, ensure that it is ready for delivery by applying validations."
-    },
-    {
-      "num": "07",
-      "bg": "#F6F0FE",
-      "title": "Maintenance & further Growth Support",
-      "desc": "The work we do doesn't end here. To help you grow and expand your product further, we also provide support and maintenance services."
-    }
-  ],
-  "Hire": [
-    {
-      "num": "1",
-      "title": "Hire Our Expert Developers For Your Next Dating App Development Project",
-      "desc": "In the dating app development ecosystem, Comfygen is a major stakeholder as a leading development company. We create applications that run on desktops, mobile phones, and even the web. We can adapt to the brief you put in front of us and always deliver the best as a team and a capable development team.",
-      "url": "/contact-us",
-      "btn": "Hire Developer"
-    }
-  ],
-  "myList": [
-    "We have the best-certified 10+ experienced developers for our development services ",
-    "You can hire an hourly-based developer, a project-based developer, and a dedicated team. ",
-    "We provide highly skilled developers and a dedicated team according to your specific requirements.",
-    "We are updated and in touch with the latest development trends ",
-    "We are ready to help you with testing and deployment, reducing the burden on your shoulders. ",
-    "We are eager for client feedback and take a client-centric approach to creating dating apps from scratch.",
-    "Our transparent and participative approach assures you of the app quality and final product"
-  ],
-  "WhyChooseComfygen": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/technical-expertise-icon.webp",
-      "title": "Technical expertise",
-      "decs": "Our team has more than 10 years of expertise in software development with a diverse range of projects. We help our clients with our technical expertise and knowledge which we have gathered over the years"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/speed-in-development-icon.webp",
-      "title": "Speed in development ",
-      "decs": "Our team is a very efficient and highly driven group of professionals who complete the dating app development at a rapid pace. We ensure that the development and deployment process is finished quickly and always meets the deadlines with our on-time services."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/post-launch-support-icon-img1.webp",
-      "title": "Post-launch support",
-      "decs": "We are a team of professionals who are always aligned towards long-term partnerships with our clients. We help our clients with post-launch support and maintenance services that assist the company in launching the application on the market with a customer support team."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/higher-excellence-in-services-icon.webp",
-      "title": "Higher excellence in services",
-      "decs": "We offer a range of services related to software development, and the quality of work we deliver is what sets us apart from our competitors. We maintain high excellence in all the services that we offer to our clients so we can deliver high client satisfaction."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/latest-tech-stack-icon.webp",
-      "title": "Latest tech stack",
-      "decs": "We are committed to delivering the best app quality and the latest features on dating apps so that you can offer something novel and unique to your audience. We adapt to continuous learning and use the latest technologies to create applications that are loved by your audience."
-    }
-  ],
-  "Arena": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/changing-social-dynamics.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "Best Dating App Consulting Services",
-      "desc": "Our dating app development team includes top-notch development consultants who are always ready to offer strategic planning and consulting services for the concept and initial plan of your development project."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/extending-the-Dating-Pool.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "User Friendly Attractive dating app Design",
-      "desc": "As a leading mobile app development services provider, we offer dating app development services, including UI/UX design. Our expert designers create attractive and user-friendly dating app interfaces that ensure a perfect and engaging experience for users."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/digital-transformation.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "Quality Development",
-      "desc": "Grow your business with our top-tier dating app development services that deliver robust and scalable dating apps across various platforms, including Android, iOS, and cross-platform development. We specialize in creating high-performance dating apps with strong server-side planning."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/cultural-transitions.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "Testing App on All Quality Parameters",
-      "desc": "Comfygen provides the best QA testing services to make sure that your dating app is completely bug-free and secure. We guarantee the highest level of performance, stability, and security, making your dating app reliable for users."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/technological-advancements.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "Deployment & Maintenance",
-      "desc": "Our comprehensive deployment and maintenance services ensure a seamless app launch across all platforms. We offer ongoing support, including regular updates, to keep your app up-to-date with the latest trends and user preferences, guaranteeing a consistently optimal experience."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/discreet-and-Inclusive-platforms.webp",
-      "iconDimensions": {
-        "width": 64,
-        "height": 64
-      },
-      "title": "Create Effective Marketing Strategies",
-      "desc": "Our marketing efforts increase customers' dating app's clarity and downloads. We use social media, paid advertising, and other channels to effectively attract and keep users to operate growth and engagement."
-    }
-  ],
-  "WhyChooseDating": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/requirement-analysis.webp",
-      "title": "Requirement analysis",
-      "decs": "Our team of software developers and designers sit with the client and do a complete analysis of the requirements and the resources needed for the project before going ahead with the next steps. Our team needs a thorough requirement analysis to know the starting and end points in a resource-optimized way."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/prototyping-and-wireframing-icon.webp",
-      "title": "Prototyping and Wireframing ",
-      "decs": "After learning the requirements, our team sits down and creates the basic wireframe of the application, then develops the prototype with the basic requirements and the most fundamental features. The prototype gives an idea of the full-fledged app in the pipeline."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/system-architecture.webp",
-      "title": "System architecture",
-      "decs": "After creating the layout and the framework for the prototype, we create the back-end system architecture and the server-side modular architecture to make the app fully functional and code for the server side."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/development-and-testing.webp",
-      "title": "Development and testing",
-      "decs": "Our development team creates a full-fledged and high-performance dating app and then tests it out completely on various aspects of performance and scalability to ensure that the app is high quality and meets all the objectives set forth in the project."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/deployment-and-support-icon.webp",
-      "title": "Deployment and support ",
-      "decs": "Once the app is fully tested on quality assurance standards, we ensure that the app is deployed phase by phase to launch it in the market. Even during the launch, we always support our clients. We offer the best maintenance and troubleshooting services to our clients after the launch is successful. "
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/engagement-models-icon.webp",
-      "title": "Make the most of our flexible Engagement Models",
-      "decs": "At Comfygen, we know that different businesses have different needs, so we offer the most flexible engagement models to help adapt to the needs and objectives of our clients. Here are our most in-demand engagement models, which you can select. "
+      "title": "Is your solution secure and compliant with regulations?",
+      "desc": "Yes, our AI-powered interview scheduling software is built with enterprise-grade security. It complies with global standards like GDPR, SOC 2, and HIPAA. All data is encrypted, access is controlled, and systems are regularly audited to ensure maximum compliance and data protection."
     },
     {
       "num": "7",
-      "img": "https://www.comfygen.com/img/project-based-model-icon-image.webp",
-      "title": "Project-based model",
-      "decs": "We offer our dating app development services in a project-based model to help companies choose the most resource-effective model for dating app development. We ensure that our resources are available to you on a project basis so you can hire us for your app idea flexibly."
+      "title": "How much does it cost to develop an AI-powered interview scheduling software?",
+      "desc": "The cost to develop AI-powered interview scheduling software typically ranges from $20,000 to $100,000+, depending on features, platform complexity, AI integration, and third-party integrations. Customization, scalability, and compliance requirements also impact pricing. We provide tailored quotes based on your specific needs and business goals."
     },
     {
       "num": "8",
-      "img": "https://www.comfygen.com/img/dedicated-development-icon1.webp",
-      "title": "Dedicated development ",
-      "decs": "At Comfygen, we also accept non-technical businesses as clients and offer them the dedicated development team model to help them create a complete dating app from scratch, even if it started as an idea. When you do not have an in-house development team, you can pick the best option by choosing the dedicated development team model from our professionals. "
-    },
-    {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/team-extension-icon-image.webp",
-      "title": "Team extension",
-      "decs": "If you have a small team of developers and want to extend the team with more professionals for the dating app development project, then you should first opt for the team extension model. We offer you our best professionals and give the development project a much-needed boost in an efficient manner."
+      "title": "How long does it take to build an AI Interview Scheduling App?",
+      "desc": "Development timelines usually range between 10 to 24 weeks, based on the project scope, platform (web/mobile), AI functionality, and integrations. Simple versions may take less time, while enterprise-grade solutions with ATS/HRMS integrations and custom AI features require longer development and testing cycles for best performance and security."
     }
-  ],
-  "FeaturesWeb3": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/gamified-elements-icon.webp",
-      "title": "Gamified elements",
-      "decs": "We use Web3 technologies to create amazing controls and layouts in the dating app which gives the feel of a game and encourages the user to interact more with the app interface."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/preference-based-matches-icon.webp",
-      "title": "Preference based matches",
-      "decs": "We also leverage Web3 technologies to create algorithms that work on preferences that are ready by AI and specified by the user, so that the user can get profiles that he is truly interested in. "
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/seamless-communication-icon.webp",
-      "title": "Seamless communication ",
-      "decs": "We also use Web3 technologies to create communication portals that integrate with the dating app framework and enable seamless video and voice communication between users."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/push-notifications-icon-icon-img.webp",
-      "title": "Push notifications",
-      "decs": " The Web3 tech we use also help us add push notifications in the dating app framework which enables the user to access the app from the screen and engages the user further. "
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/date-to-earn-icon.webp",
-      "title": "Date to Earn",
-      "decs": "We support the date to earn format of dating apps that are created to increase the interest and user engagement for such apps. The date to earn format is a novel one where users can benefit in more ways than one. "
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/3d-graphics.webp",
-      "title": "3D graphics ",
-      "decs": "Comfygen has used Web3 tech to create augmented 3D graphics that help create a more humane and real life experience for users, giving the dating app an advantage over other apps in the virtual communication ecosystem.  "
-    }
-  ],
-  "FoodAppMaker": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "AI/ML",
-      "decs": "Artificial Intelligence and Machine Learning are technologies that power dating app algorithms and create scope for personalization. AI and ML can be used to create personalized portals for dating and virtual interaction"
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "Blockchain",
-      "decs": "Our dating app developers are very capable of using security tech like blockchain app development which can be integrated into the app algorithm to create security frameworks that are robust and stand against cybersecurity threats. We create blockchain layers to protect the data that people share on the dating app platform."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/5g-technology.webp",
-      "title": "5G technology",
-      "decs": "At Comfygen, we are ready to embrace the future with top-notch 5G technology. We use 5G capabilities to increase the connectivity and speed of the app for users so they can quickly interact with their peers."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "IOT integration",
-      "decs": "We are also ahead in the IoT integration process and have created channels for integrating the app with wearables. We ensure that the users accessing the dating app can use it with any device that they carry with them."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-      "title": "AR/VR",
-      "decs": "Augmented Reality and Virtual Reality are technical capabilities that create augmented scenarios and virtual reality for users to have a touch of reality on a digital platform. AR and VR is used to increase the interaction level of users on the platform."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-      "title": "Biometric authentication",
-      "decs": "To increase the personalization and security level of the dating app, we also integrate Biometric authentication into the login portals. We allow users to personalize their security and access with a unique biometric authentication portal."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Emotional AI",
-      "decs": "As we support the integration of AI into the dating apps we develop, we eagerly find ways to improve the functions of AI in the app layout. We have developed the additional feature of emotional AI which estimates the emotions of a user and recommends profiles and actions accordingly."
-    }
-  ],
-  "customTestimonials": [
-    {
-      "text": "Comfygen transformed our hiring process with their AI interview scheduling software. The ability to automate CV scanning and schedule interviews instantly has saved us countless hours. Their team delivered beyond expectations.",
-      "name": "Sarah Mitchell",
-      "title": "New York, USA"
-    },
-    {
-      "text": "Their AI-driven platform not only simplified scheduling but also improved candidate engagement. Self-rescheduling, branded invites, and automated workflows made everything seamless. We’ve seen a 35% increase in interview completion rates!",
-      "name": "Arjun Mehta",
-      "title": "India"
-    },
-    {
-      "text": "We needed a scalable, secure solution for remote and hybrid interviews. Comfygen’s software integrated perfectly with our ATS and calendars. Their proactive support and feature-rich system truly impressed us.",
-      "name": "Elena Petrova",
-      "title": "Germany"
-    }
-  ],
-  "Chartacterstics": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/user-registration-and-profile-creation.webp",
-      "title": "Dating Mobile App Development",
-      "decs": "We are a team of developers who are skilled at dating mobile app software and can create high-performance applications for virtual dating through mobile phones. We create dating app software that can integrate with the mobile operating system and extend functionalities to the users of such apps."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/location-based-services.webp",
-      "title": "Location-based Dating App Development",
-      "decs": "Our team can create specialized dating applications that are geo-location-based and very popular among users who constantly travel or want to find someone near their living area. We help create an accurate location-based dating app that can detect users' location and suggest dating profiles."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/chat-and-messaging.webp",
-      "title": "Niche Dating App Development",
-      "decs": "Our dating portal development services are also targeted towards creating niche dating apps that are created in a customized manner for a specific segment of the target audience. If you want to cater to a specific audience and create a unique dating app for different platforms, you can opt for our customized niche dating app solutions."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/matching-algorithms.webp ",
-      "title": "Gamified Dating App Development ",
-      "decs": "We are a team of expert developers who can also combine the concepts of dating and gaming to create an interesting dating app that has the controls of gameplay. If you want a customized and interactive dating app that gives a new definition of fun to your audience, then you should opt for our gamified dating app solutions."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/privacy-and-security-featuresz.webp",
-      "title": "Social Media Integration Dating App Development",
-      "decs": "If you already have a dating app format or a solution and want to add social media integration into its features, then you should opt for a dating app development process that includes social media in the dating app framework. The young audience wants to access all their social life portals in one app, and a social media-integrated dating app is a good idea for the modern audience."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/multimedia-sharing.webp",
-      "title": "Blind Dating Application Development",
-      "decs": "The concept of blind dates can also be virtualized with the help of efficient and interactive apps. To create blind apps that are loved by the target audience, you can hire our dating application development services."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/video-dating-app-development.webp",
-      "title": "Video Dating App Development ",
-      "decs": "For long-distance relationships and virtual dating, a video dating app could be a good idea. You can create an app with our custom dating app service that focuses on integrating video calls, sharing, and streaming platforms into dating app frameworks so that you can offer your audience an app where they can communicate and interact with their dates very easily, even in the remote mode."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/serious-dating-app-development.webp",
-      "title": "Serious Dating App Development",
-      "decs": "A serious relationship dating app can be a breath of fresh air in the casual dating ecosystem. At a time when people want to opt for a good dating app that is secure and has a niche audience that is focused on serious relationships, you can create one that is built on exclusivity and offers new features that are not found in any other dating app"
-    },
-    {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/casual-dating-app-development.webp",
-      "title": "Casual Dating App Development",
-      "decs": "If you want to invest in Tinder like app development process and enter the casual dating app ecosystem, then we also offer you casual dating app development services that develop high-performance and interactive apps for the young audience."
-    },
-    {
-      "num": "10",
-      "img": "https://www.comfygen.com/img/event-based-dating-app-development.webp",
-      "title": "Event-based Dating App Development",
-      "decs": "As a mobile dating app development company, we are experts at creating different types of dating apps, including event-based dating apps. You can easily opt to create an event-based dating app that can help people meet in real life at social events and group events that are very social and fun for the audience."
-    }
-  ],
+],
   "jsonLdData": [
    
 
@@ -1063,4 +810,5 @@
       ]
     }
   ]
+
 }
