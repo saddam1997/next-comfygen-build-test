@@ -10,7 +10,7 @@ export default function lifeatcompany() {
         <Gallery Data={JSON_DATA.Gallery} />
         <Slider Data={JSON_DATA.Glimpses} />
         <Gallery Data={JSON_DATA.Anniversary} />
-        <Slider Data={JSON_DATA.Awards} />
+        {/* <Slider Data={JSON_DATA.Awards} /> */}
         
       </div>
     </>

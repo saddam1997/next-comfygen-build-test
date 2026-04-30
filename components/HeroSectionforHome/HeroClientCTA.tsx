@@ -42,18 +42,18 @@ export default function HeroClientCTA() {
                 <button
                     onClick={openModal}
                     aria-label="Talk to an expert"
-                    className={`${styles.btnFix} text-sm sm:text-base`}
+                    className={`bg-transparent border-white border text-white font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-black  cursor-pointer transition duration-300`}
                 >
                     Talk to an expert!
 
-                    <span className="bg-transparent hrt">
+                    {/* <span className="bg-transparent hrt">
                         <Image src="/unnamed.webp"
                             alt="heart"
                             width={20}
                             height={20}
                             className=""
                         />
-                    </span>
+                    </span> */}
                 </button>
             </div>
 
