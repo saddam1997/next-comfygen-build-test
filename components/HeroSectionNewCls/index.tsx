@@ -6,7 +6,7 @@ import HeroClient from "./HeroClient";
 
 export default function HeroSection({ Data }: any) {
   return (
-    <section className="relative w-full overflow-hidden bg-[#1a1a4f] min-h-[600px]">
+    <section className="relative w-full overflow-hidden bg-[#1a1a4f]  min-h-[700px] sm:min-h-[680px] lg:min-h-[720px]">
 
       <div className="absolute inset-0">
         <Image
@@ -22,7 +22,7 @@ export default function HeroSection({ Data }: any) {
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a4f]/80 to-transparent" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 flex items-center min-h-[600px]">
+      <div className="relative max-w-[1200px] mx-auto px-4 flex items-center min-h-[700px]">
 
         <div className="max-w-[600px] space-y-4 ">
           <h1 className="text-xl sm:text-xl lg:text-[36px] xl:text-[30px] font-bold text-white sm:leading-tight lg:leading-tight 

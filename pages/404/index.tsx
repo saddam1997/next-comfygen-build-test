@@ -7,7 +7,6 @@ import Image from "next/image";
 import { BsArrowRight } from 'react-icons/bs';
 import { MdOutlineArrowForwardIos, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-import Header from "../../components/Newcomponet/layout/Header"
 
 
 
