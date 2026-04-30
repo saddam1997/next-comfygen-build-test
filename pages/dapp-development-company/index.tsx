@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/dapp.json";
 
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 
 /* ================= SKELETON SYSTEM ================= */
 
@@ -186,9 +186,7 @@ export default function Ecommerce(props: any) {
       <div className="overflow-x-hidden">
 
         {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
-        <header className="">
-          {/* <BlockChainHeader /> */}
-        </header>
+
         {/* ================= HERO (MOST IMPORTANT FIX) ================= */}
         <section className="min-h-[85vh] md:min-h-[75vh]">
           <HeroSectionNewCls Data={JSON_DATA.Herosection} />

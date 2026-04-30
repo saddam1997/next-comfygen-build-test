@@ -2,9 +2,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/icodevelopment.json";
 import { useState } from "react";
-// import BlockchainNav from "../Newcomponet/layout/blockchain-navbar";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 
@@ -389,7 +388,6 @@ export default function Ecommerce(props:any) {
 
       </Head>
 
-      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden lg:pt-[115px]">
 
 

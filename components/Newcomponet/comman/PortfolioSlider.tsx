@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
 
 const CARD_WIDTH = 900;
 const GAP = 20;
@@ -163,7 +163,7 @@ export default function PortfolioCarousel({ portfolio, heading }: any) {
                   <span className="inline-flex items-center mt-4 gap-2 border border-[#6C63FF]
                     text-[#6C63FF] px-6 py-2 rounded-full
                     hover:bg-[#6C63FF] hover:text-white transition">
-                    View Case Study <MdOutlineArrowOutward />
+                    View Case Study 
                   </span>
                 </Link>
               </div>
@@ -211,7 +211,7 @@ export default function PortfolioCarousel({ portfolio, heading }: any) {
                 <span className="inline-flex items-center  gap-2 border border-[#6C63FF]
                   text-[#6C63FF] px-4 py-2 rounded-full text-xs
                   hover:bg-[#6C63FF] hover:text-white transition">
-                  View Case Study <MdOutlineArrowOutward />
+                  View Case Study 
                 </span>
               </Link>
             </div>

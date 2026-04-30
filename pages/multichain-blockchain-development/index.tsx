@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multichainblockchain.json";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
@@ -414,7 +414,7 @@ export default function MultiChain(props) {
         />
 
       </Head>
-      {/* <BlockChainHeader /> */}
+ 
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top MultiChain Blockchain Development Company"

@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { BsFillCheckCircleFill } from "react-icons/bs";
-import { ImArrowUpRight2 } from "react-icons/im";
+
 export default function HireSection({ Hire, myList }) {
   const data = Hire;
   if (!data) {
@@ -34,7 +33,7 @@ export default function HireSection({ Hire, myList }) {
                   <Link href={url} passHref={true}>
                     <div className="relative inline-flex items-center justify-center px-8 py-3 space-x-1 overflow-hidden text-lg font-medium text-blue-600 bg-white rounded-full cursor-pointer w-fit group">
                       <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-black rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
-                      <ImArrowUpRight2 />
+                      
                       <span>{btn}</span>
                     </div>
                   </Link>
@@ -47,7 +46,7 @@ export default function HireSection({ Hire, myList }) {
           <ul className="space-y-4 text-[#FFFFFF]">
             {myList.map((item, index) => (
               <li className="flex items-start " key={index}>
-                <span className="pr-4"><BsFillCheckCircleFill size={24} className="rounded-full  " /></span>{item}
+                <span className="pr-4"></span>{item}
               </li>
             ))}
           </ul>

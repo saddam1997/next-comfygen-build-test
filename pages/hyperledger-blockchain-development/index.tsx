@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hyperledgerblockchain.json";
-import BlockchainNav from "../../components/Newcomponet/layout/blockchain-navbar";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AboutSection = dynamic(
@@ -72,7 +72,7 @@ const BlogSection = dynamic(
 );
 
 import { IconBarrierBlock, IconBorderRadius, IconBrandStorj, IconBrandTorchain, IconBrowser, IconCell, IconCompass, IconDatabaseSearch, IconExchange, IconFilters,  IconWindmill, IconWiper, } from '@tabler/icons-react';
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ReviewCard from "../../components/ReviewCard";
 
@@ -416,7 +416,7 @@ export default function Blockchain(props: any) {
         />
 
       </Head>
-      {/* <BlockChainHeader /> */}
+  
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Hyperledger blockchain development service"

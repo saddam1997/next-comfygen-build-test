@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchainconsulting.json";
 
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import GuidSectionBlockchain from "./components/GuidSectionBlockchain";
 
 /* ================= SKELETON SYSTEM ================= */
@@ -139,9 +139,6 @@ export default function rummy(props: any) {
     <div className="overflow-x-hidden">
 
         {/* ================= FIXED HEADER (REAL CLS FIX) ================= */}
-        <header className="">
-          {/* <BlockChainHeader /> */}
-        </header>
 
         {/* reserved space (CRITICAL FIX) */}
         {/* <div className="h-[70px] md:h-[80px]" /> */}

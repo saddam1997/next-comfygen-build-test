@@ -4,7 +4,7 @@ import { IconCode, IconCoin, IconEscalator, IconEye, IconHierarchy, IconLink, Ic
 import { IconHeart, } from '@tabler/icons-react';
 import Head from "next/head";
 import JSON_DATA from "./json/dpos.json";
-import BlockchainNav from "../../../components/Newcomponet/layout/blockchain-navbar";
+
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
@@ -336,7 +336,7 @@ export default function Ecommerce(props: any) {
         <meta name="og:longitude" content="75.787271°" />
       </Head>
 
-      <BlockchainNav />
+  
       <div className="overflow-hidden ">
         {/* hero section */}
         <HeroSectionForAllPages

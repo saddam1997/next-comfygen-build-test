@@ -1,5 +1,4 @@
-import React from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
 
 interface WhyChooseItem {
     title: string;
@@ -58,7 +57,7 @@ const Card = ({PlatformsData}) => {
                     <div className="flex justify-center">
                         <a href={PlatformsData?.buttonLink}>
                             <button className="text-white hover:bg-white hover:text-[#5556D1] border border-white px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                                {PlatformsData?.buttonText} <MdOutlineArrowOutward />
+                                {PlatformsData?.buttonText} 
                             </button>
                         </a>
                     </div>

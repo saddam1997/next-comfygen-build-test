@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/pow.json";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
@@ -155,7 +155,7 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         /> */}
       </Head>
-      {/* {/* <BlockChainHeader /> */} 
+
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

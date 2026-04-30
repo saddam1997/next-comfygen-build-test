@@ -66,7 +66,6 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
 
 export default function Ecommerce(props) {
   let { initialData } = props;
@@ -151,7 +150,7 @@ export default function Ecommerce(props) {
           content="https://www.comfygen.com/comfygen-images/poa-blockchain-development-company/poa-blockchain-development-company.webp"
         />
       </Head>
-      {/* <BlockChainHeader /> */}
+ 
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

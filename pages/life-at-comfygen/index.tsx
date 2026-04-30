@@ -11,6 +11,7 @@ export default function lifeatcompany() {
         <Slider Data={JSON_DATA.Glimpses} />
         <Gallery Data={JSON_DATA.Anniversary} />
         <Slider Data={JSON_DATA.Awards} />
+        
       </div>
     </>
   );
