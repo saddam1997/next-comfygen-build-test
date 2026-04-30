@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/blockchain.json";
 
 import HeroSectionNewCls from "../../components/HeroSectionNewCls";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 
 /* ================= DYNAMIC COMPONENTS ================= */
 

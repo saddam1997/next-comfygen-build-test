@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { TbArrowUpRight } from "react-icons/tb";
+
 import JSON_DATA from "../comman/json/country.json";
 
 const Form = () => {
@@ -408,7 +408,7 @@ const Form = () => {
                       className=" text-white bg-[#5556D1] px-8 py-2.5 lg:text-lg text-base gap-2  rounded-full justify-center items-center  overflow-hidden relative inline-flex group cursor-pointer font-mediun"
                     >
                       <span>Submit</span>
-                      <TbArrowUpRight className="text-[1.5rem]" />
+                   
                     </button>
                   </div>
                   {showThankYou && (

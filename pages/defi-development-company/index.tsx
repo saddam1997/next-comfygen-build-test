@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/defidevelopment.json";
 import dynamic from "next/dynamic";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 

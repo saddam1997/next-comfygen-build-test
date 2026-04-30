@@ -59,7 +59,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import IndustryGrid from "../../components/IndustryGrid";
 
 export default function Ecommerce(props) {
@@ -107,7 +107,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      {/* <BlockChainHeader /> */}
+   
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

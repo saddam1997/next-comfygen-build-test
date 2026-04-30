@@ -4,7 +4,7 @@ import Image from "next/image";
 import ContactFrom from "./ContactFrom";
 import SearchCareer from "../about/SearchCareer";
 import { useRouter } from "next/router";
-import { MdArrowOutward } from "react-icons/md";
+
 
 export default function HeroSectionForAllPages(props: any) {
   const router = useRouter();
@@ -81,7 +81,7 @@ export default function HeroSectionForAllPages(props: any) {
                   onClick={props.openModal}
                   className="text-base font-medium text-[#5556D1] border border-[#5556D1] rounded-full px-6 py-2.5 text-center hover:text-white hover:bg-[#5556D1] cursor-pointer transition duration-300 relative flex gap-2 items-center"
                 >
-                  {props.btnName} <MdArrowOutward />{" "}
+                  {props.btnName} {" "}
                 </button>
               </div>
             </div>

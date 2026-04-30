@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/defismart.json";
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 
 import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
@@ -122,7 +122,6 @@ export default function MultiChain(props) {
         />
       </Head>
 
-      {/* <BlockChainHeader /> */}
       <div className="overflow-hidden lg:pt-[115px]">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { MdOutlineClose } from "react-icons/md";
+
 import JSON_DATA from "./json/career.json";
-import { TbArrowUpRight } from "react-icons/tb";
+
 const techData = {
   All_Positions: [
     {
@@ -419,7 +419,7 @@ export default function Tech() {
                       Fill the form
                     </h3>
                     <div className="h-8 w-8 rounded-full bg-gray-100 flex justify-center items-center">
-                      <MdOutlineClose
+                      <div
                         className="cursor-pointer text-[1.3rem]"
                         onClick={() => setModalOpen(!modalOpen)}
                       />
@@ -589,7 +589,7 @@ export default function Tech() {
                       className=" text-white bg-[#5556D1] px-8 py-2.5 lg:text-lg text-base gap-2  rounded-full justify-center items-center  overflow-hidden relative inline-flex group cursor-pointer font-mediun"
                     >
                       <span>Submit</span>
-                      <TbArrowUpRight className="text-[1.5rem]" />
+  
                     </button>
                   </div>
                   {showThankYou && (

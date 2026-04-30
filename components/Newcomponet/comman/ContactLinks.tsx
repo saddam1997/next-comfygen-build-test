@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineWhatsapp } from "react-icons/md";
 import { FaTelegram } from "react-icons/fa";
-import { BsMicrosoftTeams } from "react-icons/bs";
+
 import styles from "../Button/button.module.css";
 
 export default function ContactLinks() {

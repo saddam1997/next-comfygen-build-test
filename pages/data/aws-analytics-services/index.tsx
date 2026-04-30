@@ -1,127 +1,58 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 
-import Header from "../../../components/Newcomponet/layout/Header";
-import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
-import Milestones from "../../../components/Newcomponet/comman/Milestones";
-import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
+import HeroSectionNewCls from "../../../components/HeroSectionNewCls"
+import TechStacks from "../../../components/TechStacks";
+
+const Consultancy = dynamic(() => import("../../../components/Consultancy"), {
+  ssr: true,
+});
+
+const ClientStories = dynamic(() => import("../../../components/ClientStories"), {
+  ssr: true,
+});
+
 import ReviewCard from "../../../components/ReviewCard";
 
-
-
-const HireDeveloper = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-
-const ProcessSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const TechStack = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-
-const AboutSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  { ssr: true }
-);
-
-
-const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
-
-
-
-
-
-
-const Process = [
+const ServicesComponet = dynamic(
+  () => import("../../../components/ServicesSection/ServicesComponet"),
   {
-    title: "Requirements & Goal Mapping",
-    description:
-      "We start by understanding your business goals, KPIs, current data environment, and what you want to achieve with analytics. This helps us define a clear, aligned roadmap.",
+    ssr: true,
   },
-  {
-    title: "Solution Architecture Design",
-    description:
-      "Based on your needs, we design a scalable AWS data architecture — selecting the right mix of services like Redshift, Glue, Kinesis, S3, and Athena to handle your data volume, speed, and complexity.",
-  },
-  {
-    title: "Data Integration & Pipeline Development",
-    description:
-      "We connect your existing systems (ERP, CRM, web apps, APIs, etc.) and build ETL/ELT pipelines using tools like AWS Glue or Data Pipeline — ensuring your data is clean, organized, and ready for analysis.",
-  },
-  {
-    title: "Data Storage & Processing Setup",
-    description:
-      "We configure secure, high-performance storage — setting up data lakes with S3 or warehouses with Redshift. For big data processing, we use EMR with Spark or Hive as needed.",
-  },
-  {
-    title: "Analytics & Visualization Layer",
-    description:
-      "We enable querying with Athena or Redshift and build custom dashboards using Amazon QuickSight or integrate with tools like Power BI/Tableau for intuitive visual insights.",
-  },
-  {
-    title: "Security, Compliance & Cost Controls",
-    description:
-      "We implement IAM roles, encryption, logging, and access governance — and set up budgets and cost-monitoring tools to keep your AWS usage optimized.",
-  },
-  {
-    title: "Testing, Launch & Ongoing Support",
-    description:
-      "Before going live, we test performance, data accuracy, and cost-efficiency. After deployment, we provide training, monitoring, and support — so your system evolves with your business.",
-  },
-];
+);
+
+const WhyChooseSection = dynamic(
+  () => import("../../../components/WhyChooseSection"),
+  { ssr: true },
+);
+
+const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
+  ssr: true,
+});
+
+const HireSection = dynamic(() => import("../../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
+  ssr: true,
+});
+
+import AboutComponent from "../../../components/Abouts/AboutComponent";
+
+const BlogSection = dynamic(() => import("../../../components/BlogSection"), {
+  ssr: true,
+});
+
+import IndustryGrid from "../../../components/IndustryGrid";
 
 
 
 export default function Mobile(props) {
   let { initialData } = props;
-  let { LeadingSoftware } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
+ 
 
   return (
     <>
@@ -160,119 +91,24 @@ export default function Mobile(props) {
 
       </Head>
 
-     {/* <Header /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <IndustryGrid />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechStacks
+        TabData={JSON_DATA.Tabs}
+        TechData={JSON_DATA.TechstackData}
+        Default={JSON_DATA.Tabs[0]}
+      />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <ClientStories />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-      <div className="pt-16">
-        <HeroSectionForAllPages
-          heading="End-to-End AWS Data Analytics Service Provider Company"
-          ptag="Unlock the true value of your business data with our powerful AWS Data Analytics Services. At Comfygen, we help businesses collect, process, and analyze large datasets using advanced AWS analytics tools to deliver real-time insights and smarter decision-making."
-          ptag1="As a trusted AWS data analytics service provider company, we build cloud-based AWS analytics solutions including data lakes, data warehouses, and interactive dashboards that turn complex data into actionable business intelligence."
-          li="Scalable AWS Data Analytics Solutions"
-          li1="Real-Time Data Processing & Insights"
-          li2="Secure Cloud-Based Data Infrastructure"
-          li3="Custom AWS Analytics Consulting"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/aws-analytics-services/hero1.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                AWS Analytics Services We Offer
-              </h2>
-              <p className="text-base text-center font-normal">
-                At Comfygen, we offer AWS <a className='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Data Analytics Services</a> designed for startups, enterprises, and data-driven organizations. Our cloud-native solutions help you harness the full power of data analytics and data science using AWS tools.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title=""
-          heading="Why Your Business Needs AWS Analytics Services"
-          description1="In today's digital world, businesses are growing fast and taking smart and fast decisions by data analytic services. Outdated spreadsheets or isolated systems can put your business at a major disadvantage. No matter you're in retail, finance, healthcare, logistics, or manufacturing, data is your most valuable factor. AWS Analytics Services empower your organization to convert raw, unstructured data into clear, actionable intelligence."
-          description2="With Comfygen’s AWS <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data' >Data service</a> approach, we help you build a future-ready data platform that centralizes your data by the help of cloud-based data analytics and data science, delivers real-time insights, and enhances decision-making — all while improving operational efficiency and driving business growth."
-          imageSrc="https://www.comfygen.com/comfygen-images/aws-analytics-services/about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <IndustriesServe
-          heading="Industries We Serve As Best AWS Data Analytics Service Provider"
-          description="Comfygen provides AWS Data Analytics Service across a wide range of industries. By combining deep domain expertise with modern technologies, we help businesses improve efficiency, drive innovation, and achieve long-term digital success."
-
-        />
-
-        <section className="bg-[#fff] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our AWS Analytics Services Development Process
-              </h2>
-              <p className="text-base font-normal mt-2">
-                As a Top AWS data analytics service provider, we follow a
-                structured, outcome-focused development process. Every step is
-                designed to make sure your data architecture is scalable,
-                secure, and business-ready. Whether you're starting from scratch
-                or optimizing an existing setup, we deliver custom AWS analytics
-                services that turn raw data into real decisions.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Our Technology Stack Used for AWS Analytics Services"
-          description="At Comfygen, we leverage advanced AWS tools and cloud technologies to build robust, scalable, and data-driven analytics solutions for businesses of all sizes. Our AWS analytics expertise spans data storage, processing, and visualization, ensuring actionable insights that drive smarter business decisions. Here’s a glimpse of the AWS technologies our team uses:"
-        />
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-
-
-        <ClientStories />
-
-        <HireDeveloper
-          heading="Hire AWS Data Analytics Experts"
-          text="Looking to hire AWS analytics, data engineering, and business intelligence? Hire certified AWS analytics experts from Comfygen to build scalable, cloud-native analytics solutions tailored to your industry needs. We specialize in designing data lakes, integrating AI/ML, and delivering actionable insights from complex datasets."
-          text1="Proven experience in AWS data analytics tools like Redshift, Glue, Kinesis, and Athena 10+ years of delivering enterprise-grade data solutions Experts in data warehousing, ETL pipelines, and real-time dashboards Faster deployment and full-cycle analytics project support"
-          text2="Let our team turn your raw data into competitive advantage with secure, high-performance AWS data analytics services."
-          buttonText="Hire AWS Analytics Today"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-        />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title="Frequently Asked Questions – AWS Analytics Services"
-        />
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

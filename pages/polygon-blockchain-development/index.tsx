@@ -50,7 +50,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-import BlockChainHeader from "../../components/Newcomponet/layout/BlockChainHeader";
+
 import ClientStories from "../../components/ClientStories";
 import ReviewCard from "../../components/ReviewCard";
 
@@ -163,7 +163,7 @@ export default function Polygon(props:any) {
         />
       </Head>
 
-      {/* <BlockChainHeader /> */}
+
       <div className="overflow-hidden ">
         <HeroSectionforHome herosection={JSON_DATA.Herosection} />
         <Milestones />

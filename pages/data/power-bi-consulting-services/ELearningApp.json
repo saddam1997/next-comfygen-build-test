@@ -1,135 +1,847 @@
 {
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What's the difference between Power BI Pro, Premium, and Embedded?",
-      "desc": "Power BI Pro is a per-user license for creation and sharing of content. Premium can provide organizational scale and more data capacity. Embedded helps ISVs include analytics into applications with a per-capacity pricing model."
-    },
-    {
-      "num": "2",
-      "title": "Can Power BI connect to my existing systems like SAP, SQL Server, or Excel?",
-      "desc": "Yes, Power BI has native connections to a variety of systems: SAP, SQL Server, Excel spreadsheets, cloud applications, as well as on-prem databases, via secure gateways."
-    },
-    {
-      "num": "3",
-      "title": "Is Power BI secure and compliant for enterprise use?",
-      "desc": "Yes, definitely. Power BI has enterprise security features: you can have role-level access, encrypted data, auditing, etc., and Power BI complies with standards such as HIPAA and GDPR on-prem or in the cloud."
-    },
-    {
-      "num": "4",
-      "title": "Do I need a consultant if my team is already using Power BI?",
-      "desc": "Yes, a consultant can take your team to the next level by getting your team to adopt best practices in architecture/design, governance, performance, projects, and managing change processes. This speeds up deployment, eliminates common mistakes, and helps maximize ROI."
-    },
-    {
-      "num": "5",
-      "title": "What is Power BI Embedded, and when should I use it?",
-      "desc": "Embedded allows you to integrate Power BI visuals and functionality directly into your applications. It’s best for ISVs or products requiring analytics tools with flexible, usage-based pricing."
-    },
-    {
-      "num": "6",
-      "title": "Can I start with Power BI for free before committing?",
-      "desc": "Yes. You can use Power BI Desktop and trial Power BI Service for free. To share dashboards across your team, you'll need Power BI Pro licenses or Premium capacity."
-    },
-    {
-      "num": "7",
-      "title": "How do I choose the right Power BI license for my organization?",
-      "desc": "Selecting the right license depends on your user count, data volume, sharing needs, and performance requirements. Consultants can help assess your situation and recommend the optimal mix of Pro, Premium, or Embedded capacity."
-    }
-  ],
-  "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
+
+  "Herosection": {
+    "heading": "Microsoft Power BI Consulting Services",
+    "ptag": "Enterprises often struggle with fragmented data, delayed reporting, and limited real-time insights, which hampers accurate decision-making. Comfygen’s Microsoft Power BI consulting services centralize your data, provide real-time analytics, and deliver actionable intelligence to align strategies and drive better business outcomes.",
+    "ptag1": "Our team of expert Microsoft Power BI consultants helps you unlock the full potential of data-driven, outcome-oriented decisions.",
+    "listItems": [
+      "Actionable Insights for Smarter Decisions",
+      "Data-Oriented, Outcome-Focused Analytics",
+      "Centralized Data Visibility Across Systems",
+      "Real-Time Business Monitoring"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/comfygen-images/power-bi-consulting-services/hero.webp"
+  },
+  "ServicesData": {
+    "heading": "Our Microsoft Power BI Consulting Services",
+    "description": "We provide a full suite of Power BI consulting services designed to meet your organization’s unique data and analytics needs. From initial strategy to post-deployment support, our Power BI experts ensure your Power BI ecosystem is optimized for performance, scalability, and actionable outcomes.",
+    "services": [
       {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+        "title": "Power BI Implementation Consulting",
+        "description": "Our Power BI implementation consultancy helps organizations assess their existing infrastructure and design a tailored Power BI solution aligned with business goals. We define KPIs, create a strategic roadmap, and ensure secure, scalable, and high-performing analytics implementation.",
+        "features": [
+          "Infrastructure assessment and gap analysis",
+          "KPI definition and strategy alignment",
+          "Scalable implementation roadmap"
+        ]
       },
       {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+        "title": "Data Modeling & ETL Development",
+        "description": "We build robust data models that reflect your business logic and design efficient ETL pipelines using Power Query, SQL, and dataflows. This ensures clean, consistent, and high-performance reporting across complex datasets.",
+        "features": [
+          "Power Query and SQL-based ETL pipelines",
+          "Optimized data transformation workflows",
+          "Accurate and consistent reporting structure"
+        ]
       },
       {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Power BI Data Visualization Services",
+        "description": "We create interactive dashboards and reports that simplify complex data into meaningful insights. Our visuals are designed for executives, analysts, and operational teams to easily track KPIs and business trends.",
+        "features": [
+          "Interactive KPI dashboards",
+          "Role-based data visualization",
+          "Trend and performance analysis"
+        ]
       },
       {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Power BI Dashboard Design",
+        "description": "We design custom Power BI dashboards tailored to your industry needs such as finance, sales, marketing, and supply chain. Our focus is on clarity, usability, and actionable insights.",
+        "features": [
+          "Custom UX/UI dashboard design",
+          "Industry-specific reporting views",
+          "Responsive and intuitive layouts"
+        ]
       },
       {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Power BI Dashboard Development",
+        "description": "We develop interactive Power BI dashboards using advanced DAX functions, slicers, bookmarks, and tooltips to deliver a seamless data exploration experience for users.",
+        "features": [
+          "Advanced DAX calculations",
+          "Interactive filters and drill-downs",
+          "Enhanced user experience design"
+        ]
       },
       {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Power BI Integration Services",
+        "description": "We integrate Power BI with enterprise systems like Microsoft Dynamics, Azure, Salesforce, SQL Server, and more to enable real-time data connectivity and unified analytics.",
+        "features": [
+          "Enterprise system integration",
+          "Real-time data synchronization",
+          "Secure API and connector setup"
+        ]
       },
       {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Power BI Reporting Services",
+        "description": "We build dynamic and mobile-optimized reports that provide deep insights into KPIs, compliance metrics, and business performance across departments and geographies.",
+        "features": [
+          "Drill-down reporting capabilities",
+          "Mobile-friendly dashboards",
+          "Role-based reporting views"
+        ]
       },
       {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
+        "title": "Power BI Optimization & Support",
+        "description": "We continuously optimize Power BI performance, improve refresh speeds, and enhance usability. Our support includes audits, governance, training, and ongoing enhancements.",
+        "features": [
+          "Performance optimization",
+          "Security and governance updates",
+          "Ongoing support and training"
+        ]
       }
     ]
   },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "How Power BI Consulting Services Transforming Modern Business Decision-Making?",
+    "description1": "Enterprises and SMEs generate massive data volumes from CRMs, ERPs, marketing tools, customer interactions, and operations. This data remains fragmented and underutilised without centralized and intelligent <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >analytical solutions</a>.",
+    "description2": "Microsoft Power BI Consulting Services solves this challenge by unifying scattered data sources, cleaning and modeling them into actionable dashboards. Businesses gain real-time visibility into performance, discover cost inefficiencies, forecast trends, and make accurate, data-backed decisions across departments from finance to operations.",
+    "description3": "The demand for precise implementation and domain-aligned customization is higher than ever, with industry leaders turning to <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/business-intelligence' >Business intelligence</a> for strategic clarity, agility, and competitive edge.",
+    "description4": "This is where <a href='https://www.comfygen.com' class='text-blue-500 font-semibold'>Comfygen</a> steps in, helping businesses design, implement, and optimize their Power BI ecosystem to extract true business value from their data.",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/power-bi-consulting-services/power-bi-about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+
+  "ModelsSec": {
+    "title": "How to Transform Your Business with Power BI?",
+    "description": "Microsoft Power BI Consulting services enhance every aspect of your business by providing real-time insights, data consolidation, and interactive analytics, giving your team the tools to make smarter decisions faster and adapt to change intelligently.",
+    "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "proces": [
+      {
+        "num": "1",
+        "title": "Unified Analytics Across Your Data",
+        "desc": "Connect to Excel, SQL, Azure, SaaS, and on-premise systems easily—then unify into amazing dashboards that provide a single source of truth, eliminating data silos and manual effort."
+      },
+      {
+        "num": "2",
+        "title": "Self-Service Intelligence for Teams",
+        "desc": "Enable everyone from analysts to executives to independently discover insights through drag-and-drop visuals and natural language Q&A."
+      },
+      {
+        "num": "3",
+        "title": "Real-Time Alerts & Insights",
+        "desc": "Utilize live dashboards and proactively engage alerts to recognize trends that enable your team to make immediate changes to performance shifts, bottlenecks, or new opportunities."
+      },
+      {
+        "num": "4",
+        "title": "Interactive, Clear Reporting",
+        "desc": "Make visual stories with <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data'>data Services</a> that are easy to understand—charts, maps, scorecards that promote clarity and engagement when sharing insights or in decision-making."
+      },
+      {
+        "num": "5",
+        "title": "Secure, Enterprise-Grade Governance",
+        "desc": "Establish robust role-based access, encryption, and compliance across your analytics ecosystem to safeguard sensitive data at scale."
+      }
+    ]
+  },
+  "cardData": {
+    "heading": "Use Cases: What You Can Achieve with our Microsoft Power BI Consulting Services",
+    "subtitle": "Power BI Consulting services help businesses transform raw data into real-time, decision-ready insights. Whether you aim to unify systems, enable data self-service, or embed analytics into apps, Power BI adapts to your needs, enhancing agility, visibility, and operational intelligence.",
+    "tech": [
+      {
+        "title": "Establish a Single Source of Truth",
+        "desc": "Unify all disparate and scattered data systems across your organization into one centralized, governed environment, enabling reliable, real-time data access and consistent business reporting."
+      },
+      {
+        "title": "Scale Enterprise BI with Self-Service Agility",
+        "desc": "Empower departments to generate insights independently while maintaining control at scale. Combine enterprise governance with self-service BI to foster innovation without compromising data integrity."
+      },
+      {
+        "title": "Infuse Insights into Daily Business Tools",
+        "desc": "Seamlessly integrate Power BI with business-critical apps (e.g., Microsoft 365, Teams, Dynamics) to enable real-time analytics across daily workflows and enhance decision-making agility."
+      },
+      {
+        "title": "Democratize Data Across Your Organization",
+        "desc": "Enable everyone from business analysts to frontline teams to access and explore insights using intuitive dashboards, built-in accessibility features, and a minimal learning curve."
+      },
+      {
+        "title": "Accelerate Time-to-Insight",
+        "desc": "Leverage <a class='text-black font-semibold' href='https://www.comfygen.com/ai-development'>Artificial Intelligence</a>-powered templates and an easy-to-navigate interface to get started instantly. Gain immediate value from prebuilt analytics models, reducing report development cycles."
+      },
+      {
+        "title": "Embed Interactive BI into Customer-Facing Apps",
+        "desc": "Deliver rich, visually engaging dashboards directly within your applications to increase customer engagement and product usability with Power BI Embedded solutions."
+      }
+    ]
+  },
+  "PortfolioData": {
+    "heading": "Portfolio of Our Microsoft Power BI consulting services",
+    "description": "At Comfygen, we deliver Microsoft Power BI consulting services that solve real problems and unlock real value. Our portfolio covers a wide range of industries and use cases—each project designed to meet specific business goals, streamline reporting, and turn data into a strategic advantage.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p1.webp",
+        "title": "Retail Analytics Dashboard for eCommerce Brand",
+        "description": "We developed a custom Power BI dashboard for an eCommerce client to track real-time sales, customer behavior, and inventory levels. The data solution improved forecasting accuracy by 35% and helped personalize marketing strategies across multiple regions.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p2.webp",
+        "title": "Predictive Model for Healthcare Risk Scoring",
+        "description": "Using Python and machine learning, we built a prediction engine that helped a healthcare provider identify high-risk patients early. This solution improved treatment planning and reduced emergency visits by over 20% within the first quarter.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p3.webp",
+        "title": "Big Data Platform for Logistics Automation",
+        "description": "We implemented a scalable big data architecture using Apache Spark and Hadoop for a logistics firm. The system enabled real-time fleet tracking, reduced delivery delays by 25%, and optimized route planning across 5 major cities.",
+        "link": "https://www.comfygen.com/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p4.webp",
+        "title": "Student Performance Analytics for EdTech App",
+        "description": "Our team designed an AI-powered performance tracking system for an EdTech platform. It analyzed test scores, engagement rates, and course progress to generate personalized learning recommendations, boosting student retention by 30% in just two months.",
+        "link": "https://www.comfygen.com/contact-us"
+      }
+    ]
+  },
+  "ProcessData": {
+    "heading": "What is the process of Microsoft Power BI Consulting Service?",
+    "description": "The Microsoft Power BI Consulting Service process at Comfygen ensures streamlined implementation and consistent outcomes through every phase of your analytics journey.",
+    "Process": [
+      {
+        "title": "Data Collection & Gathering",
+        "description": "We begin by identifying and connecting to all relevant data sources—CRMs, ERPs, databases, cloud apps, and spreadsheets. We perform stakeholder interviews to understand business priorities and reporting requirements before centralizing the data."
+      },
+      {
+        "title": "Data Cleaning using Power BI Services",
+        "description": "Our experts clean, deduplicate, and standardize data using Power Query and transformation logic. We ensure consistency, accuracy, and compliance before pushing data to the modeling layer, reducing noise and enhancing trust in analytics."
+      },
+      {
+        "title": "Features Extraction",
+        "description": "Our Power BI consulting experts extract critical business features aligned with KPIs and objectives, removing irrelevant data and transforming raw inputs into meaningful measures using DAX and M code scripting."
+      },
+      {
+        "title": "Graph & Insights Creation",
+        "description": "We visualize complex datasets using charts, KPIs, scorecards, and trend lines. Each visualization is tied to real-time data and business goals, helping stakeholders interpret insights and track performance easily."
+      },
+      {
+        "title": "Dashboard Creation",
+        "description": "We design responsive dashboards tailored to departments and user roles with drill-downs, filters, slicers, and scenario analysis tools for better decision-making and operational visibility."
+      },
+      {
+        "title": "Dashboard Live",
+        "description": "We deploy dashboards to Power BI"
+      }
+      ]
+  },
+"Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Tracking & Maps",
+    "Cloud/DevOps",
+    "Payments",
+    "Security"
+  ],
+"TechstackData": {
+    "heading": "Tech Stack We Use for Microsoft Power BI Consulting Services",
+    "description": "At Comfygen, we use a modern, enterprise-grade tech stack to deliver reliable and scalable Microsoft Power BI consulting services. From data integration to visualization and deployment, we work with technologies that ensure your dashboards are fast, secure, and built for scale.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
+    }
+},
+
+"pageData": {
+    "title": "Why Choose Comfygen for Microsoft Power BI Consulting Service?",
+    "description": "Comfygen is one of Microsoft Power BI Consultancy Services providers that delivers strategic, measurable value, backed by certified expertise and tailored execution. ",
+    "mainCardData": {
+      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
+      "title": "Focused on Results",
+      "description": "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/hire-data-scientist' >data scientists</a> and Power BI consultants build solutions that go beyond function—delivering clarity, speed, and real business impact."
+    },
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Industry-Specific Intelligence",
+        "description": "We tailor dashboards to your sector’s unique KPIs and workflows, helping you unlock insights faster."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Speed to Insight",
+        "description": "Our proven processes deliver working BI dashboards in weeks—not months—getting you real-time insights quickly."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Seamless Data Integration",
+        "description": "We unite data from across your systems, CRM, ERP, and spreadsheets, creating a single source of truth."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Enhanced Analytics & AI",
+        "description": "We embed predictive modeling, anomaly detection, and “what-if” analysis directly into your Power BI environment."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Governance at Scale",
+        "description": "We build secure, governed BI platforms with role-based access, auditing, and automated refreshes for enterprise readiness."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Empowerment Through Training",
+        "description": "Our workshops and documentation reduce reliance on consultants and foster lasting self-service BI capabilities."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Flexible Engagement Models",
+        "description": "Choose from fixed projects, time-and-materials support, or dedicated teams—scaling with your business needs."
+      }
+    ]
+},
+"HireDeveloper": {
+  "heading": "Hire Microsoft Power BI Consulting Experts to Drive Business Growth",
+  "text": "Ready to turn disconnected data into clear, real-time insights? You’re in the right place. Comfygen’s Microsoft Power BI consulting services are led by experts who know how to turn raw numbers into strategic direction. Whether you're dealing with sales data, financial metrics, or operational reports, we build dashboards that actually help teams think faster and act smarter.",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems":[]
+},
+
+"Frequently": [
+  {
+    "num": "1",
+    "title": "What's the difference between Power BI Pro, Premium, and Embedded?",
+    "desc": "Power BI Pro is a per-user license for creation and sharing of content. Premium can provide organizational scale and more data capacity. Embedded helps ISVs include analytics into applications with a per-capacity pricing model."
+  },
+  {
+    "num": "2",
+    "title": "Can Power BI connect to my existing systems like SAP, SQL Server, or Excel?",
+    "desc": "Yes, Power BI has native connections to a variety of systems: SAP, SQL Server, Excel spreadsheets, cloud applications, as well as on-prem databases, via secure gateways."
+  },
+  {
+    "num": "3",
+    "title": "Is Power BI secure and compliant for enterprise use?",
+    "desc": "Yes, definitely. Power BI has enterprise security features: you can have role-level access, encrypted data, auditing, etc., and Power BI complies with standards such as HIPAA and GDPR on-prem or in the cloud."
+  },
+  {
+    "num": "4",
+    "title": "Do I need a consultant if my team is already using Power BI?",
+    "desc": "Yes, a consultant can take your team to the next level by getting your team to adopt best practices in architecture/design, governance, performance, projects, and managing change processes. This speeds up deployment, eliminates common mistakes, and helps maximize ROI."
+  },
+  {
+    "num": "5",
+    "title": "What is Power BI Embedded, and when should I use it?",
+    "desc": "Embedded allows you to integrate Power BI visuals and functionality directly into your applications. It’s best for ISVs or products requiring analytics tools with flexible, usage-based pricing."
+  },
+  {
+    "num": "6",
+    "title": "Can I start with Power BI for free before committing?",
+    "desc": "Yes. You can use Power BI Desktop and trial Power BI Service for free. To share dashboards across your team, you'll need Power BI Pro licenses or Premium capacity."
+  },
+  {
+    "num": "7",
+    "title": "How do I choose the right Power BI license for my organization?",
+    "desc": "Selecting the right license depends on your user count, data volume, sharing needs, and performance requirements. Consultants can help assess your situation and recommend the optimal mix of Pro, Premium, or Embedded capacity."
+  }
+],
+"ReviewData": {
+  "heading": "What Our Clients Say",
+  "description": "",
+  "Review": [
+    {
+      "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+      "name": "Nhi Do",
+      "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+      "location": "Vietnam",
+      "Source": "DesignRush",
+      "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+    },
+    {
+      "name": "Rob Lipps ",
+      "location": "Madison",
+      "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+      "Source": "DesignRush",
+      "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+      "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+    },
+    {
+      "name": "Avinash",
+      "location": "Atlanta, Indiana",
+      "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Rishabh Shukla",
+      "location": "Noida, India",
+      "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Raman Mathur",
+      "location": "Jaipur, India",
+      "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Sayead Shadab Arif",
+      "location": "Dubai, United Arab Emirates",
+      "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Raunak Pradhan",
+      "location": "Denver, New York",
+      "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Saurav Gupta",
+      "location": "Denver, New York",
+      "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+      "Source": "Google",
+      "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": "Devguru Enterprises",
+      "location": "India",
+      "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+      "Source": "Google",
+      "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": " Mazhar.H. Ansari",
+      "location": "Oman",
+      "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+      "Source": "Google",
+      "URL": "https://share.google/ycfErAHqln9LNKdhK",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": "Tom Baker",
+      "location": "Germany",
+      "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+       "Source":"Google",
+      "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+      "image": "/Google - Original.png"
+    }
+  ]
+},
+"jsonLdData" : [
+
+
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Microsoft Power BI Consulting Services",
+      "provider": {
+        "@type": "Organization",
+        "name": "Comfygen Technologies",
+        "url": "https://www.comfygen.com/"
+      },
+      "description":
+        "Our Microsoft Power BI consulting services deliver custom dashboards, real-time reports, and analytics that help you make confident business decisions faster.",
+      "url": "https://www.comfygen.com/data/power-bi-consulting-services",
+      "mainEntityOfPage":
+        "https://www.comfygen.com/data/power-bi-consulting-services",
+      "areaServed": "Global",
+      "serviceType": [
+        "Microsoft Power BI Consulting  Services",
+        "Microsoft Power BI Dashboard Development",
+        "Microsoft Power BI Custom Dashboard Development",
+        "Power BI Report Customization",
+        "Power BI Data Modeling",
+        "Power BI Embedded Analytics",
+        "Power BI for Financial Reporting",
+        "Power BI for Sales Analytics",
+        "Hire Power BI Developer",
+        "Hire Power BI Consultant",
+        "Power BI Implementation Services",
+        "Power BI for Enterprise BI Solutions"
+      ],
+
+      "sameAs": [
+        "https://www.facebook.com/comfygen.technologies",
+        "https://x.com/Comfygen_Tech",
+        "https://www.instagram.com/comfygen_technologies",
+        "https://www.linkedin.com/company/comfygen-technologies"
+      ]
+    },
+
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Data science",
+          "item": "https://www.comfygen.com/data"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hire data scientist",
+          "item": "https://www.comfygen.com/data/power-bi-consulting-services"
+        }
+      ]
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What's the difference between Power BI Pro, Premium, and Embedded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Power BI Pro is a per-user license for creation and sharing of content. Premium provides organizational scale, more data capacity, and advanced AI. Embedded helps ISVs include analytics into applications with per-capacity pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Power BI connect to my existing systems like SAP, SQL Server, or Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Power BI has native connections to various systems including SAP, SQL Server, Excel spreadsheets, cloud applications, and on-premises databases via secure gateways."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Power BI secure and compliant for enterprise use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, definitely. Power BI includes enterprise security features such as role-level access, encrypted data, and auditing. It complies with standards like HIPAA and GDPR, whether on-prem or in the cloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a consultant if my team is already using Power BI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, a consultant can help your team adopt best practices in design, governance, performance, and change management. This accelerates deployment, avoids mistakes, and improves ROI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Power BI Embedded, and when should I use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Power BI Embedded allows you to integrate visuals and functionality directly into applications. It is ideal for ISVs or products that need embedded analytics with flexible usage-based pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I start with Power BI for free before committing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can use Power BI Desktop and try Power BI Service for free. However, to share dashboards with your team, you'll need Power BI Pro licenses or Premium capacity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the right Power BI license for my organization?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choosing the right license depends on your number of users, data volume, sharing requirements, and performance needs. Consultants can help evaluate your situation and suggest the best mix of Pro, Premium, or Embedded."
+          }
+        }
+      ]
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   "servicesData": [
     {
@@ -318,52 +1030,7 @@
       "desc": "Establish robust role-based access, encryption, and compliance across your analytics ecosystem to safeguard sensitive data at scale."
     }
   ],
-  "pageData": {
-    "title": "Why Choose Comfygen for Microsoft Power BI Consulting Service?",
-    "description": "Comfygen is one of Microsoft Power BI Consultancy Services providers that delivers strategic, measurable value, backed by certified expertise and tailored execution. ",
-    "mainCardData": {
-      "imageUrl": "https://www.comfygen.com/image/why-choose-sec-img.webp",
-      "title": "Focused on Results",
-      "description": "Our <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/hire-data-scientist' >data scientists</a> and Power BI consultants build solutions that go beyond function—delivering clarity, speed, and real business impact."
-    },
-    "gridData": [
-      {
-        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-        "title": "Industry-Specific Intelligence",
-        "description": "We tailor dashboards to your sector’s unique KPIs and workflows, helping you unlock insights faster."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-        "title": "Speed to Insight",
-        "description": "Our proven processes deliver working BI dashboards in weeks—not months—getting you real-time insights quickly."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-        "title": "Seamless Data Integration",
-        "description": "We unite data from across your systems, CRM, ERP, and spreadsheets, creating a single source of truth."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Enhanced Analytics & AI",
-        "description": "We embed predictive modeling, anomaly detection, and “what-if” analysis directly into your Power BI environment."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Governance at Scale",
-        "description": "We build secure, governed BI platforms with role-based access, auditing, and automated refreshes for enterprise readiness."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Empowerment Through Training",
-        "description": "Our workshops and documentation reduce reliance on consultants and foster lasting self-service BI capabilities."
-      },
-      {
-        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-        "title": "Flexible Engagement Models",
-        "description": "Choose from fixed projects, time-and-materials support, or dedicated teams—scaling with your business needs."
-      }
-    ]
-  },
+
   "customTestimonials": [
     {
       "text": "Comfygen helped us connect all our data—Google Ads, Meta, HubSpot, everything. Now we have a single dashboard that shows what's actually working. No more guessing where our budget goes. We've cut wasted spend by 27% in three months.",

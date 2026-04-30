@@ -1,341 +1,496 @@
 {
-  "Frequently": [
-    {
-      "num": "1",
-      "title": "What is Business Intelligence (BI) and Business Analytics (BA)?",
-      "desc": "Business Intelligence focuses on collecting and visualizing historical performance—think dashboards, reports, and KPIs. Business Analytics goes further, using statistical models and predictive forecasting to answer not only what happened—but what might happen next and why."
-    },
-    {
-      "num": "2",
-      "title": "What business problems can BI & Analytics actually solve?",
-      "desc": "BI helps answer questions like, “Where are your sales outperforming or lagging?” or “Which marketing campaign is actually driving revenue?” Business Analytics tackles deeper questions like, “Why has customer retention changed year over year?” or “Which product segment will grow next quarter?” Answers lead to action."
-    },
-    {
-      "num": "3",
-      "title": "How do I know if my business really needs BI and Analytics?",
-      "desc": "If your data lives in silos across multiple tools, if your spreadsheets take too long to compile, or if decisions are based on guesses—we’ll call it: you need BI & Analytics. These services bring clarity, boost efficiency, and enable real-time decisions from accurate data."
-    },
-    {
-      "num": "4",
-      "title": "How do businesses get started with BI & Analytics?",
-      "desc": "Begin with a data discovery workshop: map where data lives, what problems you want to solve, and define your key business questions. Then we build targeted dashboards, integrations, and models aligned to those goals."
-    },
-    {
-      "num": "5",
-      "title": "Is BI & Analytics secure and compliant?",
-      "desc": "Modern BI platforms enforce enterprise-grade security like SOC 2 Type II, ISO 27001, GDPR compliance, role-based access, and encryption. Your data stays safe while relevant stakeholders get just the insight they need."
-    },
-    {
-      "num": "6",
-      "title": "What challenges should I expect in BI & Analytics projects?",
-      "desc": "Common issues include: poor data quality, lack of leadership buy-in, integration bottlenecks, and not defining business goals clearly. Overcoming these requires strategy, collaboration, and expert execution."
-    }
-  ],
 
-  "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
+  "Herosection": {
+    "heading": "Business Intelligence & Business Analytics Services",
+    "ptag": "Business Intelligence & Business Analytics services transform raw data into actionable insights, enabling organizations to understand past performance, uncover underlying trends, and make informed decisions. By analyzing patterns, market trends, and performance metrics, these services drive smarter decision-making, enhance operational efficiency, and support future planning. With BI and analytics",
+    "listItems": [
+      "Real-Time Data Insights for Smarter Decisions",
+      "Performance Metrics & Trend Analysis",
+      "Operational Efficiency & Process Optimization",
+      "Data-Driven Future Planning & Strategy"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "bgImage": "https://www.comfygen.com/comfygen-images/business-intelligence/hero.webp"
+  },
+  "ServicesData": {
+    "heading": "Business Intelligence & Business Analytics Services",
+    "description": "We provide comprehensive Business Intelligence and Analytics services, giving you the insights and tools you need when you partner with Comfygen. Our solutions are designed to transform your data into clear, actionable results.",
+    "services": [
       {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+        "title": "Strategy & Consulting",
+        "description": "We sit down with you to understand your business goals, data maturity, and reporting needs. Then we craft a BI roadmap that fits your objectives and tech stack — not the other way around.",
+        "features": [
+          "Align BI strategy with business objectives",
+          "Assess current data infrastructure and gaps",
+          "Roadmap for analytics adoption and growth"
+        ]
       },
       {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+        "title": "Data Collection & Integration",
+        "description": "Pull data from everywhere it lives — CRM, ERP, marketing platforms, databases, APIs — and unify it into a reliable foundation for analytics. No silos, no messy spreadsheets.",
+        "features": [
+          "Consolidate data from multiple sources",
+          "Ensure clean, reliable, and consistent data",
+          "Automate ETL processes for efficiency"
+        ]
       },
       {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Data Warehousing & Management",
+        "description": "Design and build a secure, scalable data warehouse that stores, cleans, and prepares your raw data for analysis. This gives you a single source of truth for all reporting and analytics.",
+        "features": [
+          "Centralized storage for all enterprise data",
+          "High security and compliance standards",
+          "Optimized for fast querying and reporting"
+        ]
       },
       {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Interactive Dashboards & Reporting",
+        "description": "Custom dashboards and real-time reports that highlight KPIs, trends, and performance across teams. From executives to operations, everyone gets the insights they need at a glance.",
+        "features": [
+          "Visualize complex data in an intuitive way",
+          "Track key metrics and performance indicators",
+          "Accessible across devices and teams"
+        ]
       },
       {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Predictive & Advanced Analytics",
+        "description": "Move beyond descriptive metrics. Use statistical models and machine learning to forecast trends, spot risks early, and simulate scenarios before you commit to decisions.",
+        "features": [
+          "Forecast business trends and customer behavior",
+          "Identify risks and opportunities proactively",
+          "Support data-driven decision making with AI"
+        ]
       },
       {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Automated Analytics & Alerts",
+        "description": "Set up scheduled reporting and smart alerts for anomalies or threshold shifts. That means no more manual refreshes — your team gets actionable insight as it happens.",
+        "features": [
+          "Real-time monitoring and notifications",
+          "Reduce manual reporting efforts",
+          "Quickly respond to critical business changes"
+        ]
       },
       {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        "title": "Self-Service BI Enablement",
+        "description": "Empower your teams to explore data and build their own reports with governance and best practices in place so quality and security don’t take a hit.",
+        "features": [
+          "Enable non-technical users to access insights",
+          "Maintain data governance and security",
+          "Encourage a culture of data-driven decisions"
+        ]
       },
       {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
+        "title": "Ongoing Support & Optimization",
+        "description": "BI isn’t a one-and-done project. We offer continuous monitoring, enhancements, and updates to keep your analytics sharp as your business evolves.",
+        "features": [
+          "Continuous performance monitoring",
+          "Regular updates and feature enhancements",
+          "Optimize dashboards and reports for evolving needs"
+        ]
       }
     ]
   },
-
-  "servicesData": [
-    {
-      "title": "Strategy & Consulting",
-      "description": "We sit down with you to understand your business goals, data maturity, and reporting needs. Then we craft a BI roadmap that fits your objectives and tech stack — not the other way around.",
-      "features": [
-        "Align BI strategy with business objectives",
-        "Assess current data infrastructure and gaps",
-        "Roadmap for analytics adoption and growth"
-      ]
-    },
-    {
-      "title": "Data Collection & Integration",
-      "description": "Pull data from everywhere it lives — CRM, ERP, marketing platforms, databases, APIs — and unify it into a reliable foundation for analytics. No silos, no messy spreadsheets.",
-      "features": [
-        "Consolidate data from multiple sources",
-        "Ensure clean, reliable, and consistent data",
-        "Automate ETL processes for efficiency"
-      ]
-    },
-    {
-      "title": "Data Warehousing & Management",
-      "description": "Design and build a secure, scalable data warehouse that stores, cleans, and prepares your raw data for analysis. This gives you a single source of truth for all reporting and analytics.",
-      "features": [
-        "Centralized storage for all enterprise data",
-        "High security and compliance standards",
-        "Optimized for fast querying and reporting"
-      ]
-    },
-    {
-      "title": "Interactive Dashboards & Reporting",
-      "description": "Custom dashboards and real‑time reports that highlight KPIs, trends, and performance across teams. From executives to operations, everyone gets the insights they need at a glance.",
-      "features": [
-        "Visualize complex data in an intuitive way",
-        "Track key metrics and performance indicators",
-        "Accessible across devices and teams"
-      ]
-    },
-    {
-      "title": "Predictive & Advanced Analytics",
-      "description": "Move beyond descriptive metrics. Use statistical models and machine learning to forecast trends, spot risks early, and simulate scenarios before you commit to decisions.",
-      "features": [
-        "Forecast business trends and customer behavior",
-        "Identify risks and opportunities proactively",
-        "Support data-driven decision making with AI"
-      ]
-    },
-    {
-      "title": "Automated Analytics & Alerts",
-      "description": "Set up scheduled reporting and smart alerts for anomalies or threshold shifts. That means no more manual refreshes — your team gets actionable insight as it happens.",
-      "features": [
-        "Real-time monitoring and notifications",
-        "Reduce manual reporting efforts",
-        "Quickly respond to critical business changes"
-      ]
-    },
-    {
-      "title": "Self‑Service BI Enablement",
-      "description": "Empower your teams to explore data and build their own reports with governance and best practices in place so quality and security don’t take a hit.",
-      "features": [
-        "Enable non-technical users to access insights",
-        "Maintain data governance and security",
-        "Encourage a culture of data-driven decisions"
-      ]
-    },
-    {
-      "title": "Ongoing Support & Optimization",
-      "description": "BI isn’t a one‑and‑done project. We offer continuous monitoring, enhancements, and updates to keep your analytics sharp as your business evolves.",
-      "features": [
-        "Continuous performance monitoring",
-        "Regular updates and feature enhancements",
-        "Optimize dashboards and reports for evolving needs"
-      ]
-    }
-  ],
-  "servicesData1": [
-    {
-      "title": "Increased Efficiency",
-      "description": "Automate repetitive reporting tasks, centralize data sources, and reduce manual effort—freeing your team to focus on strategy, not spreadsheets.",
-      "features": []
-    },
-    {
-      "title": "Enhanced Decision-Making",
-      "description": "Get accurate, real-time insights so you can make confident, data-backed decisions instead of relying on gut feeling or outdated reports.",
-      "features": []
-    },
-    {
-      "title": "Improved Customer Understanding",
-      "description": "Dig into customer behavior, preferences, and buying patterns to personalize experiences, improve engagement, and boost loyalty.",
-      "features": []
-    },
-    {
-      "title": "Competitive Advantage",
-      "description": "Identify market trends, benchmark against competitors, and spot opportunities early—so you’re not reacting, you’re leading.",
-      "features": []
-    },
-    {
-      "title": "Reduced Costs",
-      "description": "Pinpoint inefficiencies, eliminate wasteful spend, and optimize budget allocation across departments and campaigns.",
-      "features": []
-    },
-     {
-      "title": "Enhanced Risk Management",
-      "description": "Proactively detect anomalies, forecast challenges, and manage compliance with real-time alerts and predictive modeling.",
-      "features": []
-    },
-    {
-      "title": "Faster Time-to-Insight",
-      "description": "Replace slow, fragmented reporting processes with instant access to insights that drive faster, smarter actions.",
-      "features": []
-    },
-     {
-      "title": "Better ROI Tracking",
-      "description": "Understand exactly which channels, campaigns, or touchpoints deliver results—so you can double down where it counts.",
-      "features": []
-    }
-  ],
-  "consultancyHead": [
-    {
-      "num": "1",
-      "title": "Key Features of BI & BA Services",
-      "desc": "Business Intelligence and Business Analytics solutions transform complex data into clear, actionable insights that help in business growth. Here are the key industry-leading features that give you the competitive advantage:"
-    }
-  ],
-
-  "TechData": {
-    "Data Storage": [
-      { "img": "https://www.comfygen.com/comfygen-images/data/Hadoop.svg", "alt": "Hadoop", "name": "Hadoop", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Amazon-S3.svg", "alt": "Amazon S3", "name": "Amazon S3 ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Azure.svg", "alt": "Microsoft Azure Data Lake", "name": "Microsoft Azure Data Lake ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "4" }
-    ],
-    "Data Processing": [
-      { "img": "https://www.comfygen.com/comfygen-images/data/Apache-Spark.svg", "alt": "Apache Spark", "name": "Apache Spark ", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Talend.svg", "alt": "Talend", "name": "Talend ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Informatica-PowerCenter.svg", "alt": "Informatica PowerCenter", "name": "Informatica PowerCenter ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Apache-NiFi.svg", "alt": "Apache NiFi", "name": " Apache NiFi", "num": "4" }
-    ],
-    "Machine Learning/AI": [
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/TenserFlow .svg", "alt": "TenserFlow", "name": "TenserFlow ", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Scikit-Learn .svg", "alt": "Scikit-Learn", "name": "Scikit-Learn ", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/PyTorch.svg", "alt": "PyTorch", "name": "PyTorch ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Microsoft.svg", "alt": "Microsoft Azure Machine Learning", "name": "Microsoft Azure Machine Learning", "num": "4" }
-    ],
-    "Visualization Tools ": [
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Tableau.svg", "alt": "Tableau", "name": "Tableau", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Power-BI.svg", "alt": "Power BI", "name": "Power BI", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Looker.svg", "alt": "Looker", "name": "Looker ", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/QlikView.svg", "alt": "QlikView", "name": "QlikView", "num": "4" }
-    ],
-    "Database Management":[
-      { "img": "https://www.comfygen.com/comfygen-images/data/MySQL.svg", "alt": "MySQL", "name": "MySQL", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/PostgreSQL.svg", "alt": "PostgreSQL", "name": "PostgreSQL", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/MongoDB.svg", "alt": "MongoDB", "name": "MongoDB", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Oracle.svg", "alt": "Oracle Database ", "name": "Oracle Database", "num": "4" }
-    ],
-    "Data Warehousing":[
-      { "img": "https://www.comfygen.com/comfygen-images/data/Amazon-Redshift.svg", "alt": "Amazon Redshift", "name": "Amazon Redshift", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/data/Snowflake.svg", "alt": "Snowflake", "name": "Snowflake", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Google-BigQuery.svg", "alt": "Google BigQuery", "name": "Google BigQuery", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/MASA.svg", "alt": "Microsoft Azure Synapse Analytics", "name": "Microsoft Azure Synapse Analytics", "num": "4" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/SAS.svg", "alt": "SAS", "name": "SAS", "num": "5" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/MATLAB.svg", "alt": "MATLAB", "name": "MATLAB", "num": "6" }
-    ],
-    "Cloud Platforms":[
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/aws.svg", "alt": "Amazon Web Services (AWS)", "name": "Amazon Web Services (AWS)", "num": "1" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/Ma.svg", "alt": "Microsoft Azure", "name": "Microsoft Azure", "num": "2" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/GCP.svg", "alt": "Google Cloud Platform (GCP)", "name": "Google Cloud Platform (GCP)", "num": "3" },
-      { "img": "https://www.comfygen.com/comfygen-images/analytics/IBM.svg", "alt": "IBM Cloud", "name": "IBM Cloud ", "num": "4" }
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Your Business Needs Business Intelligence & Analytics Services",
+    "description1": "Data is not a problem. The Problem is not arranged perfectly. Metrics are not aligned, reports are slow, and decisions are taken on the basis of this. BI and <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/data/analytics-service-provider' >Analytics services</a> fix this problem. They gather all the data and show you what’s going on, and help you act in real time—not after the damage is done.",
+    "description2": "With the help Business intelligence service, you are not dependent on spreadsheets or guessing, you will get clear, actionable insights that help to improve performance in all sectors like:- Marketing, sales, finance and etc.",
+    "description3": "And when you work with Comfygen, you’re not just buying dashboards. You will get a business intelligence expert team that builds a dashboard according to your goals, your data, and the way your business actually runs.",
+    "imageSrc": "https://www.comfygen.com/comfygen-images/business-intelligence/about.webp",
+    "link": "/about-us",
+    "linkText": "Explore More",
+    "points": [
+      "Automates Subscription & Daily Delivery Scheduling",
+      "Increases Customer Convenience & Retention",
+      "Enhances Inventory & Route Management",
+      "Offers Real-Time Order Tracking & Notifications",
+      "Supports Digital Payments & Invoice Generation"
     ]
   },
- 
-
-
-
-  "consultancyData": [
+"Trading": {
+  "heading": "Why Your Business Needs Business Intelligence & Analytics Services",
+  "subheading": "In the digital world, with the help of BI Implementation, businesses stay ahead of their competition by making better decisions based on data, enabling smarter decisions, improved efficiency, and sustainable growth. Here are some of the main benefits BI and BA can bring to your organization",
+  "tech": [
     {
-      "title": "Seamless Data Collection & Integration",
-      "desc": "Connect and unify data from CRMs, marketing platforms, sales tools, ERPs, and third-party APIs—no more siloed insights."
+      "num": "01",
+      "title": "Increased Efficiency",
+      "desc": "Automate repetitive reporting tasks, centralize data sources, and reduce manual effort—freeing your team to focus on strategy, not spreadsheets."
     },
     {
-      "title": "Enterprise-Grade Data Warehousing & Cleansing",
-      "desc": "Store, clean, and manage high volumes of structured and unstructured data to ensure accuracy, consistency, and usability."
+      "num": "02",
+      "title": "Enhanced Decision-Making",
+      "desc": "Get accurate, real-time insights so you can make confident, data-backed decisions instead of relying on gut feeling or outdated reports."
     },
     {
-      "title": "Advanced Data Analysis",
-      "desc": "Use statistical modeling, machine learning, and predictive analytics to uncover patterns, trends, and forecasts you can trust."
+      "num": "03",
+      "title": "Improved Customer Understanding",
+      "desc": "Dig into customer behavior, preferences, and buying patterns to personalize experiences, improve engagement, and boost loyalty."
     },
     {
-      "title": "Interactive Dashboards & Data Visualization",
-      "desc": "Build custom dashboards that are not just pretty—they're intuitive, drillable, and tailored for every team, from C-suite to marketing."
+      "num": "04",
+      "title": "Competitive Advantage",
+      "desc": "Identify market trends, benchmark against competitors, and spot opportunities early—so you’re not reacting, you’re leading."
     },
     {
-      "title": "Real-Time Reporting",
-      "desc": "Monitor KPIs and campaign performance live. No delays, no waiting—just instant insight when it matters most."
+      "num": "05",
+      "title": "Reduced Costs",
+      "desc": "Pinpoint inefficiencies, eliminate wasteful spend, and optimize budget allocation across departments and campaigns."
     },
     {
-      "title": "Scalable & Flexible Solutions",
-      "desc": "Whether you're a startup or an enterprise, scale your analytics infrastructure as your data grows—with cloud-ready, secure systems."
+      "num": "06",
+      "title": "Enhanced Risk Management",
+      "desc": "Proactively detect anomalies, forecast challenges, and manage compliance with real-time alerts and predictive modeling."
     },
     {
-      "title": "Automated Alerts & Notifications",
-      "desc": "Stay ahead of issues with smart alerts for key metrics, anomalies, or thresholds—so you catch problems before they escalate."
+      "num": "07",
+      "title": "Faster Time-to-Insight",
+      "desc": "Replace slow, fragmented reporting processes with instant access to insights that drive faster, smarter actions."
     },
     {
-      "title": "Role-Based Access & Security",
-      "desc": "Control who sees what. Protect sensitive data while empowering teams with the information they actually need."
+      "num": "08",
+      "title": "Better ROI Tracking",
+      "desc": "Understand exactly which channels, campaigns, or touchpoints deliver results—so you can double down where it counts."
     }
+  ]
+},
+"ModelsSec": {
+    "title": "Key Features of BI & BA Services",
+    "description": "Business Intelligence and Business Analytics solutions transform complex data into clear, actionable insights that help in business growth. Here are the key industry-leading features that give you the competitive advantage:",
+    "buttonText": "Let’s Discuss",
+    "buttonLink": "/contact-us",
+    "image": "https://www.comfygen.com/comfygen-images/car-finance-app-development/feature.webp",
+    "proces": [
+      {
+        "title": "Seamless Data Collection & Integration",
+        "desc": "Connect and unify data from CRMs, marketing platforms, sales tools, ERPs, and third-party APIs—no more siloed insights."
+      },
+      {
+        "title": "Enterprise-Grade Data Warehousing & Cleansing",
+        "desc": "Store, clean, and manage high volumes of structured and unstructured data to ensure accuracy, consistency, and usability."
+      },
+      {
+        "title": "Advanced Data Analysis",
+        "desc": "Use statistical modeling, machine learning, and predictive analytics to uncover patterns, trends, and forecasts you can trust."
+      },
+      {
+        "title": "Interactive Dashboards & Data Visualization",
+        "desc": "Build custom dashboards that are not just pretty—they're intuitive, drillable, and tailored for every team, from C-suite to marketing."
+      },
+      {
+        "title": "Real-Time Reporting",
+        "desc": "Monitor KPIs and campaign performance live. No delays, no waiting—just instant insight when it matters most."
+      },
+      {
+        "title": "Scalable & Flexible Solutions",
+        "desc": "Whether you're a startup or an enterprise, scale your analytics infrastructure as your data grows—with cloud-ready, secure systems."
+      },
+      {
+        "title": "Automated Alerts & Notifications",
+        "desc": "Stay ahead of issues with smart alerts for key metrics, anomalies, or thresholds—so you catch problems before they escalate."
+      },
+      {
+        "title": "Role-Based Access & Security",
+        "desc": "Control who sees what. Protect sensitive data while empowering teams with the information they actually need."
+      }
+    ]
+},
+"PortfolioData": {
+    "heading": "Portfolio of Our Business Intelligence & Business Analytics Projects",
+    "description": "At Comfygen, we specialize in delivering Business Intelligence (BI) and Analytics solutions that turn complex data into actionable insights. Our projects span multiple industries, helping organizations make data-driven decisions, optimize operations, and uncover strategic opportunities. Each solution is tailored to harness the power of analytics, transforming raw data into a competitive advantage.",
+    "portfolio": [
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p1.webp",
+        "title": "Retail & E-Commerce",
+        "description": "We help brands monitor sales, inventory, and customer behavior in real time. Our dashboards have led to a 25% boost in ROAS and an 18% drop in stockouts by giving teams faster, clearer insights across all sales channels.",
+        "link": "/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/data/data-p2.webp",
+        "title": "Healthcare",
+        "description": "We turn complex patient and billing data into clean, actionable dashboards. Clients have cut claims processing time by 20% and reduced billing errors by 15% while improving care coordination across departments.",
+        "link": "/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/analytics/analytics-Financial1.webp",
+        "title": "Finance & Insurance",
+        "description": "We automate reporting and forecasting to replace spreadsheet chaos. Our solutions have helped teams cut reporting time by 60%, improve forecast accuracy by 30%, and close books 40% faster.",
+        "link": "/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/business-intelligence/p4.webp",
+        "title": "Marketing & Agencies",
+        "description": "We centralize campaign data across platforms into one real-time view. This has helped teams reduce reporting time by 70%, improve budget allocation by 22%, and increase client retention by 28%.",
+        "link": "/contact-us"
+      },
+      {
+        "image": "https://www.comfygen.com/comfygen-images/analytics/analytics-Education.webp",
+        "title": "Education & EdTech",
+        "description": "We track student engagement and course progress to improve learning outcomes. Dashboards we’ve built have raised course completion rates by 12% and boosted student engagement by 25%.",
+        "link": "/contact-us"
+      }
+    ]
+},
+"Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Tracking & Maps",
+    "Cloud/DevOps",
+    "Payments",
+    "Security"
   ],
-  "pageData": {
+"TechstackData": {
+    "heading": "Our Technology Stack for Business Intelligence & Analytics Services",
+    "description": "At Comfygen, we leverage modern tools and platforms to build robust, scalable, and insightful Business Intelligence and Analytics solutions. Our expertise spans data integration, warehousing, visualization, and advanced analytics, ensuring your business turns raw data into actionable intelligence. Here’s a snapshot of the technologies we use",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/SWift.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kotlin.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "PHP (Laravel)",
+          "name": "PHP (Laravel)",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Tracking & Maps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ],
+      "Advanced Technologies": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/AI-&-Machine-Learning.webp",
+          "alt": "AI & Machine Learning",
+          "name": "AI & Machine Learning",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "Blockchain Technology",
+          "name": "Blockchain Technology",
+          "num": "3"
+        }
+      ]
+    }
+},
+"pageData": {
     "title": "Why Choose Comfygen for Business Intelligence & Analytics Services?",
     "description": "Choosing the right BI consultant and Analytics consultant service is critical if you want more than only dashboards. At Comfygen, we create data solutions that give your business full visibility, real-time control, and insights that drive action. From marketing attribution to predictive modeling—we help you turn data into decisions.",
     "mainCardData": {
@@ -375,328 +530,54 @@
         "description": "From campaign performance to sales forecasting, we equip your team with the tools to understand what’s happening now—and what’s coming next. Built-in analytics and KPI dashboards help you stay ahead, not just keep up."
       }
     ]
+},
+  "HireDeveloper": {
+    "heading": "Hire Expert Business Intelligence & Analytics experts",
+    "text": "Want to transform your business with real-time insights and smarter decisions? Hire a BI and Analytics expert from Comfygen to build a custom data solution tailored to your operations. We design high-performance analytics systems with <a class='underline font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/'>real-time dashboards</a>, predictive models, automated reports, and deep customer insights—all built around your specific goals.",
+    "text1": "We help you move faster, act smarter, and scale with confidence using data that actually drives results.",
+    "buttonText": "Hire Developer",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+    "imageAlt": "hire-developer",
+    "listItems": [
+      "Experienced in BI, analytics, and enterprise reporting solutions",
+      "10+ years of expertise across finance, marketing, operations, and tech",
+      "Deep knowledge of Power BI, Tableau, Looker, SQL, Python, and cloud platforms",
+      "Fast project delivery with full-time technical support and post-launch optimization"
+    ]
   },
-  "customTestimonials": [
-    {
-      "text": "Comfygen helped us connect all our data—Google Ads, Meta, HubSpot, everything. Now we have a single dashboard that shows what's actually working. No more guessing where our budget goes. We've cut wasted spend by 27% in three months.",
-      "name": "Priya Mehta",
-      "title": "Head of Growth, DTC Retail Brand — Mumbai, India"
-    },
-    {
-      "text": "We were growing fast but had zero visibility across departments. Comfygen built a Power BI setup that gave us real-time reporting across sales, ops, and finance. They understood our business and built the right solution—not just charts.",
-      "name": "Arjun Desai",
-      "title": "COO, SaaS Startup — Austin, Texas, USA"
-    },
-    {
-      "text": "Our data was scattered across Excel, Google Sheets, and legacy systems. Comfygen built a clean, secure data warehouse, automated our reporting, and trained our team. We now have full control over our numbers—and way more confidence in our decisions.",
-      "name": "Natasha Rao",
-      "title": "CFO, Logistics Company — Dubai, UAE"
-    },
-    {
-      "text": "We thought we needed a dashboard. What Comfygen delivered was a complete business intelligence system that’s become essential to how we run the company. Their team is fast, sharp, and extremely responsive.",
-      "name": "David Clarke",
-      "title": "CEO, eCommerce Brand — London, UK"
-    }
-  ],
-  "Solution": [
-    {
-      "icon": "https://www.comfygen.com/image/mobile-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "eLearning app consultancy",
-      "decs": "We create a plan for custom tutoring app development or other custom edtech solutions in the beginning. Our education app developers listen to your ideas, understand your needs, and suggest the best ways to create customized eLearning apps that engage learners. We'll guide you through the whole process, from choosing features to planning your budget, ensuring your app meets the final goals."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/healthcare-app-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Custom eLearning app development",
-      "decs": "We are attention to custom tutor app development that is uniquely designed. Our developers build education mobile apps that work smoothly and make learning easy. Whether you need a simple on-demand tutoring app or complex education software, we'll develop the best that fits the needs of institutes and learners."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/blockchain-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Pharmacy Aggregator App",
-      "decs": "The Pharmacy Aggregator App connects users with multiple pharmacies in one convenient platform, allowing for an enhanced shopping experience."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/nft-marketplace-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Learning Management System (LMS) Developmen",
-      "decs": "We build unique yet easy-to-use Learning Management Systems that help you organize courses, track learner progress, and manage educational content all in one place. We focus on creating intuitive education apps for educators and learners to provide convenient learning ways."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/ecommerce-development-services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "On-Demand Tutoring app Development",
-      "decs": "Learn from anywhere and anytime through on-demand tutoring apps. We process feasible tutor app development that allows learners to access courses and educational materials whenever they need them. Whether it's video lessons, interactive quizzes, or downloadable resources, our apps make learning fit into busy schedules."
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "CRM Integration in Edtech Apps",
-      "decs": "We create CRM integrations with online tutoring platforms that easily manage learner information, track interactions, and personalize the learning experience. It helps you understand your students better, improve your courses, and grow your eLearning business more effectively with deeper insights"
-    },
-    {
-      "icon": "https://www.comfygen.com/image/web-development--services-icon.webp",
-      "img": "https://www.comfygen.com/image/mobile-app-development-icon.svg",
-      "title": "Edtech App Support and Maintenance",
-      "decs": "We keep monitoring the performance of our eLearning mobile apps. Our team provides regular updates, fixes any issues quickly, and adds new features when the app needs based on the current industry needs. We support and maintain after deployment making sure that the app stays up-to-date, secure, and effective for all learners."
-    }
-  ],
-  "ValuableServices": [
+  "Frequently": [
     {
       "num": "1",
-      "img": "https://www.comfygen.com/images/language-learning-app.webp",
-      "title": "Language Learning App",
-      "desc": "Learn new languages at your own pace. Practice speaking, reading, and writing with interactive lessons, games, and quizzes. Chat with native speakers, track your progress, and earn rewards as you improve your language skills."
+      "title": "What is Business Intelligence (BI) and Business Analytics (BA)?",
+      "desc": "Business Intelligence focuses on collecting and visualizing historical performance—think dashboards, reports, and KPIs. Business Analytics goes further, using statistical models and predictive forecasting to answer not only what happened—but what might happen next and why."
     },
     {
       "num": "2",
-      "img": "https://www.comfygen.com/images/virtual-classroom-plateform.webp",
-      "title": "Virtual Classroom Platform",
-      "desc": "Attend classes from anywhere. Join live video lessons, interact with teachers and classmates, and access course materials online. Submit assignments, take tests, and get instant feedback. It's just like being in a real classroom, but more convenient."
+      "title": "What business problems can BI & Analytics actually solve?",
+      "desc": "BI helps answer questions like, “Where are your sales outperforming or lagging?” or “Which marketing campaign is actually driving revenue?” Business Analytics tackles deeper questions like, “Why has customer retention changed year over year?” or “Which product segment will grow next quarter?” Answers lead to action."
     },
     {
       "num": "3",
-      "img": "https://www.comfygen.com/images/profesional-skill-training-app.webp",
-      "title": "Professional Skills Training App",
-      "desc": "Boost your career with on-the-go learning. Access short video courses on topics like leadership, public speaking, and time management. Complete practical exercises, earn certificates, and build your professional skills anytime, anywhere."
+      "title": "How do I know if my business really needs BI and Analytics?",
+      "desc": "If your data lives in silos across multiple tools, if your spreadsheets take too long to compile, or if decisions are based on guesses—we’ll call it: you need BI & Analytics. These services bring clarity, boost efficiency, and enable real-time decisions from accurate data."
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/images/kids-educational-game-app.webp",
-      "title": "Kids' Educational Game App",
-      "desc": "Make learning fun for children. Colorful games teach math, reading, and science concepts through engaging stories and characters. Parents can track progress and set learning goals. It's education disguised as playtime!"
+      "title": "How do businesses get started with BI & Analytics?",
+      "desc": "Begin with a data discovery workshop: map where data lives, what problems you want to solve, and define your key business questions. Then we build targeted dashboards, integrations, and models aligned to those goals."
     },
     {
       "num": "5",
-      "img": "https://www.comfygen.com/images/exam-preparation-aap.webp",
-      "title": "Exam Preparation App",
-      "desc": "Ace your tests with personalized study plans. Take practice exams, review flashcards, and watch explanation videos. The app adapts to your strengths and weaknesses, focusing on areas where you need the most help."
+      "title": "Is BI & Analytics secure and compliant?",
+      "desc": "Modern BI platforms enforce enterprise-grade security like SOC 2 Type II, ISO 27001, GDPR compliance, role-based access, and encryption. Your data stays safe while relevant stakeholders get just the insight they need."
     },
     {
       "num": "6",
-      "img": "https://www.comfygen.com/images/collaborate-project-learning-plateform.webp",
-      "title": "Collaborative Project Learning Platform",
-      "desc": "Work on group projects easily. Share ideas, divide tasks, and give feedback in real-time. Use built-in tools like shared documents, video calls, and project timelines. Learn teamwork skills while completing your assignments together."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/images/adult-literacy-aap.webp",
-      "title": "Adult Literacy App",
-      "desc": "Improve reading and writing skills discreetly. Start with basic letters and work up to full sentences and stories. Use voice recognition to practice pronunciation. Gain confidence in your literacy skills at your own pace."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/images/vocational-training-simulator.webp",
-      "title": "Vocational Training Simulator",
-      "desc": "Practice job skills in a safe, virtual environment. Use 3D simulations to learn trades like plumbing, electrical work, or mechanics. Get hands-on experience and instant feedback without the risk of mistakes in real-world situations."
+      "title": "What challenges should I expect in BI & Analytics projects?",
+      "desc": "Common issues include: poor data quality, lack of leadership buy-in, integration bottlenecks, and not defining business goals clearly. Overcoming these requires strategy, collaboration, and expert execution."
     }
   ],
-  "TecnologisStack": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/images/ai-and-ml.webp",
-      "title": "Artificial Intelligence (AI) and Machine Learning ",
-      "stack": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt content difficulty and suggest tailored resources. AI-powered chatbots provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/images/ar-and-vr.webp",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "stack": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/images/blockchain-for-credential-verification.webp",
-      "title": "Blockchain for Credential Verification ",
-      "stack": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. Blockchain ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/images/internet-of-things.webp",
-      "title": "Internet of Things (IoT) ",
-      "stack": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/images/big-data-analytics.webp",
-      "title": "Big Data Analytics",
-      "stack": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/images/natural-language-processing.webp",
-      "title": "Natural Language Processing (NLP) ",
-      "stack": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "decs": "Personalized Learning Paths: Adaptive algorithms create unique study plans based on each user's progress and learning style."
-    },
-    {
-      "num": "2",
-      "decs": "Interactive Multimedia Content: Engaging videos, animations, and graphics make complex topics easier to understand and remember."
-    },
-    {
-      "num": "3",
-      "decs": "Real-time Progress Tracking: Detailed analytics show learners and educators exactly where improvements are needed."
-    },
-    {
-      "num": "4",
-      "decs": "Gamification Elements: Points, badges, and leaderboards motivate learners and make education more enjoyable."
-    },
-    {
-      "num": "5",
-      "decs": "Social Learning Features: Discussion forums and group projects encourage collaboration and peer-to-peer learning."
-    },
-    {
-      "num": "6",
-      "decs": "Mobile Compatibility: Access courses on any device, ensuring learning can happen anytime, anywhere."
-    },
-    {
-      "num": "7",
-      "decs": "Offline Mode: Download lessons for areas with poor internet, ensuring uninterrupted learning."
-    },
-    {
-      "num": "8",
-      "decs": "AI-powered Tutoring: Virtual assistants provide instant help and answer questions 24/7."
-    },
-    {
-      "num": "9",
-      "decs": "Accessibility Options: Features like text-to-speech and high-contrast modes make learning inclusive for all users."
-    },
-    {
-      "num": "9",
-      "decs": "Secure Assessment Tools: Cheat-proof online exams with randomized questions and proctoring capabilities."
-    }
-  ],
-  "LeadingSoftware": [
-    {
-      "num": "01",
-      "title": "Artificial Intelligence (AI) and Machine Learning",
-      "decs": "We incorporate AI to personalize learning experiences. Machine learning algorithms analyze user behavior, learning patterns, and performance to adapt to content difficulty and suggest tailored resources. <a href='/ai-development' class='text-blue-600 font-bold hover:underline'>AI-powered eLearning app development services</a> provide instant support, answering questions and guiding learners through courses. This technology ensures each user receives a customized educational journey, optimizing engagement and knowledge retention."
-    },
-    {
-      "num": "02",
-      "title": "Augmented Reality (AR) and Virtual Reality (VR)",
-      "decs": "AR and VR technologies transform abstract concepts into immersive, interactive experiences. Students can explore historical sites, dissect virtual organisms, or manipulate 3D models of complex systems. These technologies bring learning to life, improving understanding and retention of difficult subjects. By creating memorable, hands-on experiences, AR and VR make learning more engaging and effective."
-    },
-    {
-      "num": "03",
-      "title": "Blockchain Integration in E-learning App",
-      "decs": "We implement blockchain technology to securely store and verify educational credentials. This creates tamper-proof digital certificates and badges that students can easily share with employers or other institutions. <a href='/blockchain-development' class='text-blue-600 font-bold hover:underline'>Blockchain development</a> ensures the authenticity of qualifications, streamlines the verification process, and gives learners full control over their educational achievements, enhancing trust in online education."
-    },
-    {
-      "num": "04",
-      "title": "Internet of Things (IoT)",
-      "decs": "Integration IoT devices connect with our apps to create smart learning environments. From interactive whiteboards to wearable devices tracking student engagement, IoT enhances the learning experience both in and out of the classroom. This technology enables real-time data collection on learning patterns, automates administrative tasks, and creates more interactive, responsive educational spaces."
-    },
-    {
-      "num": "05",
-      "title": "Big Data Analytics",
-      "decs": "We harness the power of big data to provide insights into learning trends and effectiveness. By analyzing vast amounts of user data, we can identify areas where students struggle, optimize course content, and predict learning outcomes. This data-driven approach allows educators to make informed decisions, personalize curriculum, and continuously improve the learning experience."
-    },
-    {
-      "num": "06",
-      "title": "Natural Language Processing (NLP)",
-      "decs": "NLP technology enables more natural interactions within our apps. It powers advanced speech recognition for language learning, allows for voice-controlled navigation, and enables intelligent content summarization. NLP also facilitates automatic translation services, making educational content accessible across language barriers and enhancing the inclusivity of our eLearning solutions."
-    }
-  ],
-  "AIPowered": [
-    {
-      "num": "01",
-      "title": " AI-Based Astrology Predictions",
-      "decs": "Our AI-driven astrology prediction system analyzes planetary positions and user data to deliver highly accurate, real-time horoscope readings. This feature enhances astrology app development by offering personalized insights, career guidance, and relationship compatibility analysis based on deep learning models."
-    },
-    {
-      "num": "02",
-      "title": " AI-Powered Kundli Generation",
-      "decs": "Our AI-powered Kundli generation system creates detailed birth charts, planetary reports, and Vedic astrology insights with unmatched accuracy. This ensures users receive precise astrological predictions, marriage compatibility analysis, and remedial solutions tailored to their life path."
-    },
-    {
-      "num": "03",
-      "title": "AI-Based Numerology Analysis",
-      "decs": "Comfygen’s AI-driven numerology solutions analyze name numbers, life path numbers, and lucky numbers to provide personalized numerology-based predictions. This feature enhances user engagement by offering automated numerology reports, lucky dates, and career guidance."
-    },
-    {
-      "num": "04",
-      "title": " Chatbot-Powered Astrology Consultation",
-      "decs": "Our AI-powered chatbot provides instant astrology consultations through real-time chat, voice, and video interactions. This feature enables users to get daily horoscope updates, quick answers to astrological queries, and AI-suggested remedies without waiting for an astrologer."
-    },
-    {
-      "num": "05",
-      "title": "AI-Driven Compatibility Analysis",
-      "decs": "Our astrology app solutions integrate AI-based compatibility analysis, helping users find zodiac-compatible partners, business partners, and friendships. By using deep learning algorithms, we provide detailed love compatibility, relationship forecasts, and Vedic astrology matchmaking."
-    },
-    {
-      "num": "06",
-      "title": " Personalized Daily Horoscope",
-      "decs": "Our AI-powered horoscope generator provides daily, weekly, and monthly horoscope updates based on real-time planetary movements. This ensures users receive highly accurate and personalized astrology insights tailored to their birth charts."
-    },
-    {
-      "num": "07",
-      "title": "Voice & Image Recognition for Palmistry",
-      "decs": "We integrate AI-driven voice and image recognition for palm reading, allowing users to scan their palms for accurate fortune-telling insights. Our machine-learning algorithms analyze hand lines, mounts, and shapes to deliver detailed palmistry reports in real time."
-    },
-    {
-      "num": "08",
-      "title": "AI-Powered Astrological Remedies",
-      "decs": "Comfygen’s AI-driven astrology solutions offer automated astrological remedies, including gemstone recommendations, mantra suggestions, and Vastu guidance. Users receive personalized AI-generated solutions to overcome planetary challenges and improve their well-being."
-    }
-  ],
-  "Emerging": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/artificial-intelligence-and-machine-learning.webp",
-      "title": "Artificial Intelligence (AI) & Machine Learning (ML)",
-      "decs": "Our <a class='font-semibold' href='/ai-development'> AI-powered astrology app development solutions </a> use machine learning algorithms to generate personalized horoscope predictions, AI-driven Kundli analysis, and real-time compatibility insights. AI enhances astrology consultation by offering automated astrological readings, predictive analytics, and personalized user experiences."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/blockchain-icon-image.webp",
-      "title": "Augmented Reality (AR) & Virtual Reality (VR)",
-      "decs": "We integrate AR/VR technology into astrology apps to create immersive astrological experiences. Users can visualize planetary movements, explore 3D zodiac constellations, and interact with virtual astrology consultations, enhancing engagement and spiritual exploration."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/5g-technology.webp",
-      "title": "Blockchain-Based Astrology App Development",
-      "decs": "Our <a class='font-semibold' href='https://www.comfygen.com/blockchain-development'> blockchain-powered astrology app development solutions </a> ensure secure transactions, astrologer verification, and encrypted astrological data storage. By leveraging smart contracts and decentralized networks, we provide tamper-proof digital horoscopes, transparent payment processing, and secure astrologer-user interactions."
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/iot-integration.webp",
-      "title": "Cloud Computing for Astrology Apps",
-      "decs": "We build cloud-based astrology apps that allow seamless scalability, remote access, and secure data storage. Users can access their astrological readings, live consultations, and past horoscope reports anytime, from any device, ensuring a smooth and uninterrupted experience."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
-      "title": "Internet of Things (IoT) for Astrology Services",
-      "decs": "Our <a class='font-semibold' href='/iot-development-company'> IoT-powered astrology app development services </a> connect users with smart wearable devices, astrology gadgets, and real-time celestial tracking tools. This enables personalized astrology alerts, moon phase notifications, and live planetary event tracking, providing a next-level astrological experience."
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/biometric-authentication.webp",
-      "title": "Big Data & Predictive Analytics",
-      "decs": "We use big data analytics to process vast amounts of astrological data and provide accurate predictions based on historical planetary alignments. Predictive analytics analyzes user behavior, refines horoscope accuracy, and personalizes astrology recommendations, enhancing user engagement."
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Wearable App Integration for Astrology",
-      "decs": "Our astrology app development includes wearable technology integration, enabling users to receive astrology alerts, daily horoscope updates, and meditation reminders on their smartwatches and fitness bands. This keeps astrology insights easily accessible."
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/emotional-ai.webp",
-      "title": "Location-Based Astrology Services",
-      "decs": "We integrate GPS and location-based services into astrology apps, allowing users to find nearby astrologers, access location-based horoscopes, and get personalized astrology predictions based on geographical planetary influences."
-    }
-  ],
-
  "jsonLdData": [
 
 
@@ -813,5 +694,100 @@
         }
       ]
     }
-  ]
+  ],
+"ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+         "Source":"Google",
+        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+}
+
 }
