@@ -32,35 +32,23 @@ const CallToActionSection = dynamic(
   },
 );
 
-
 const WhyChooseSection = dynamic(
   () => import("../../../components/WhyChooseSection"),
   { ssr: true },
 );
-
-
 const HireSection = dynamic(() => import("../../../components/HireSection"), {
   ssr: true,
 });
-
 const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
   ssr: true,
 });
-
 import AboutComponent from "../../../components/Abouts/AboutComponent";
 
 const BlogSection = dynamic(() => import("../../../components/BlogSection"), {
   ssr: true,
 });
-
-
 import Solution from "../../../components/Solution";
-
-
 import IndustryGrid from "../../../components/IndustryGrid";
-
-
-
 
 export default function Mobile(props: any) {
   let { initialData } = props;
