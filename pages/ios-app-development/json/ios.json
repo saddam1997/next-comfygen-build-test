@@ -1,104 +1,482 @@
 {
-  "Whychoose": [
-    {
-      "num": "01",
-      "title": "iOS App Development Trends We follow ",
-      "decs": "The continuously growing preferences for iOS apps have become the top reason for the rising interest of developers in iOS development. We can offer the value advantages of custom iOS application development while keeping pace with the latest trends in iOS development. Our experts stay updated with the emerging trends in the development of iOS apps to deliver the best experiences for their users. ",
-      "doc1": "We have been following some of the most popular trends in iOS app development to improve the quality of our new iOS apps."
-    }
+  "Herosection": {
+    "heading": "Best IOS App Development Company",
+    "isHome": false,
+    "ptag": "Create powerful, secure, and high-performance iOS applications with Comfygen, the Best iOS App Development Company.We help startups and enterprises build custom iPhone, iPad, and macOS apps using Swift, SwiftUI, and Apple’s latest development standards.",
+    "ptag1": "From intuitive UI/UX design to scalable architecture and App Store deployment, our iOS developers deliver seamless user experiences, optimized performance, and long-term app reliability tailored to your business goals.",
+    "listItems": [
+      "Custom iOS App Development for Startups & Enterprises",
+      "Native iPhone, iPad & macOS App Solutions",
+      "Secure, Scalable & High-Performance Architecture",
+      "End-to-End iOS App Development & App Store Launch"
+    ],
+    "btnName": "Talk With Expert",
+    "btnLink": "/contact-us",
+    "altTag": "iOS app development company",
+    "bgImage": "https://www.comfygen.com/herosection/ios-app-dev-hero-img.webp"
+  },
+  "ServicesData": {
+    "heading": "Our IOS App Development Services",
+    "description": "As a trusted <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-600 font-semibold'>mobile app development company</a>, we deliver high-performance, secure, and scalable iOS applications tailored to your business goals. Our expert iOS developers leverage the latest Apple technologies to build intuitive, feature-rich apps that deliver seamless user experiences across iPhone, iPad, Apple Watch, and Apple TV.",
+    "services": [
+      {
+        "title": "iOS App Design and Development",
+        "description": "We provide visually stunning and custom iOS app designs customized to your business needs. As a prominent iOS app development company in Jaipur, India, we provide the best custom iOS app development services.",
+        "features": [
+          "Stunning, user-friendly designs customized to your business.",
+          "Apple-compliant apps with seamless user experiences.",
+          "Trusted iOS app development services provider in Jaipur."
+        ]
+      },
+      {
+        "title": "Native iOS App Development",
+        "description": "Build high-performance native iOS applications with Comfygen. Known as a top-notch iOS app development services provider in Jaipur, we ensure seamless functionality and Apple-compliant standards.",
+        "features": [
+          "High-performance native iOS apps.",
+          "Optimized for the latest iOS devices and standards.",
+          "Secure, scalable, and reliable solutions."
+        ]
+      },
+      {
+        "title": "Custom iOS App Development",
+        "description": "Our mobile app development team excels in creating custom iOS app solutions for enterprises and small businesses. As a reliable custom iOS app development company in Jaipur, India we ensure personalized, scalable iOS mobile apps for your success.",
+        "features": [
+          "Customized apps to meet business goals.",
+          "Scalable and future-ready solutions.",
+          "Expertise in Swift, Objective-C, and SwiftUI."
+        ]
+      },
+      {
+        "title": "Swift App Development",
+        "description": "Use the expertise of our skilled developers for Swift app development. We craft efficient, secure, and scalable iOS applications using Apple’s latest programming standards.",
+        "features": [
+          "Efficient, scalable apps built with Swift.",
+          "Seamless performance and advanced functionality.",
+          "Designed for iPhones, iPads, and WatchOS."
+        ]
+      },
+      {
+        "title": "Cross-Platform App Development",
+        "description": "Expand your mobile app’s reach with our cross-platform app development services. We create applications that perform perfectly across multiple platforms while maintaining the iOS experience.",
+        "features": [
+          "Apps compatible with iOS and other platforms.",
+          "Cost-effective solutions with consistent performance.",
+          "Expanded reach for a wider audience."
+        ]
+      },
+      {
+        "title": "iPad App Development",
+        "description": "Partner with us for cutting-edge iPad app development. Our iOS apps are optimized for larger screens, providing attractive and user-friendly experiences for your audience.",
+        "features": [
+          "Optimized for larger screens and multitasking",
+          "Intuitive designs for enhanced productivity.",
+          "High-quality apps for business and entertainment."
+        ]
+      },
+      {
+        "title": "ARKit App Development",
+        "description": "Step into the future with Comfygen’s ARKit app development services. We deliver immersive augmented reality apps that enhance user engagement and showcase your brand’s innovation.",
+        "features": [
+          "Immersive augmented reality apps.",
+          "Cutting-edge solutions for gaming and e-commerce.",
+          "Engaging 3D visuals for iOS users."
+        ]
+      },
+      {
+        "title": "App Testing and Quality Assurance",
+        "description": "At Comfygen, we perform thorough app testing across devices, ensuring bug-free performance, security, usability, and Apple compliance for seamless approval.",
+        "features": [
+          "Perform security, performance, and usability checks.",
+          "Eliminate bugs with manual and automated testing.",
+          "Ensure high-quality, Apple-compliant apps."
+        ]
+      },
+      {
+        "title": "Integration and Migration",
+        "description": "We offer perfect integration of APIs, payment gateways, and cloud services, ensuring smooth transitions and customized migration strategies for businesses.",
+        "features": [
+          "Integrate third-party APIs and services.",
+          "Migrate data and systems with minimal disruption.",
+          "Implement smooth payment gateway integrations."
+        ]
+      }
+    ]
+  },
+  "AboutSection": {
+    "title": "About Company",
+    "heading": "Why Businesses Choose Dedicated IOS App Development",
+    "description1": "IOS remains one of the most lucrative mobile ecosystems, with millions of active users worldwide who value speed, security, and seamless experiences. This makes dedicated IOS mobile app development a strategic choice for businesses looking to engage premium audiences and boost app monetization.",
+    "description2": "The Apple ecosystem offers unmatched performance, regular updates, and robust security features, giving your app the reliability users expect. Brands investing in professional IOS app development benefit from native app capabilities, smoother UI/UX, and access to features like ARKit, SiriKit, and Apple Pay.",
+    "description3": "Compared to cross-platform solutions, native IOS apps deliver superior performance, faster load times, and better integration with Apple devices, ensuring your app runs flawlessly across iPhones, iPads, and even Apple Watches. For businesses aiming for long-term growth and customer satisfaction, dedicated iOS app development is the clear choice.",
+    "description4": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/gallery/about-images/ios-app-development-about-us-image.webp",
+    "link": "/about-us",
+    "linkText": "Explore More"
+  },
+  "CallToAction": {
+    "heading": "Ready to Build Your iOS App?",
+    "text": "Turn your idea into a fast, secure, and beautifully designed iOS application with Comfygen. Let’s create an app your users will love from day one.",
+    "buttonText": "Get Started",
+    "buttonLink": "/contact-us",
+    "imageSrc": "https://www.comfygen.com/image/future-of-technology.webp",
+    "imageAlt": "Future of Technology"
+  },
+  "Trading": {
+    "heading": "End-to-End IOS App Development for Diverse Business Domains",
+    "subheading": "As a top IOS app development company in India, we specialize in providing cutting-edge IOS app development services across various industries. Whether you're looking to build on-demand IOS apps or create a niche application, we ensure innovation and seamless functionality.",
+    "tech": [
+      {
+        "num": "01",
+        "title": "On-Demand Service Apps",
+        "desc": "We develop robust on-demand iOS apps for <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery</a>, <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking</a>, and <a href='https://www.comfygen.com/home-service-app-development' class='text-blue-600 font-semibold'>home services</a>, featuring real-time tracking, secure payment gateways, and seamless user experiences—ideal for startups and growing businesses."
+      },
+      {
+        "num": "02",
+        "title": "Social Networking Apps",
+        "desc": "Our team builds engaging social networking iOS apps with features such as instant messaging, video calls, and content sharing to drive user interaction and community growth."
+      },
+      {
+        "num": "03",
+        "title": "Healthcare Apps",
+        "desc": "As a trusted iOS app development company, we create secure, <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>HIPAA-compliant</a> healthcare applications for appointment scheduling, telemedicine, and health monitoring with a strong focus on data privacy and usability."
+      },
+      {
+        "num": "04",
+        "title": "E-Commerce Apps",
+        "desc": "We design feature-rich <a href='https://www.comfygen.com/e-commerce-app-development' class='text-blue-600 font-semibold'>eCommerce iOS apps</a> with intuitive navigation, secure payments, product management, and seamless checkout experiences to boost online sales."
+      },
+      {
+        "num": "05",
+        "title": "Finance and Banking Apps",
+        "desc": "We develop secure and scalable finance and banking apps with real-time updates, encrypted transactions, and user-friendly dashboards for smooth and reliable financial management."
+      },
+      {
+        "num": "06",
+        "title": "Education Apps",
+        "desc": "Our interactive <a href='https://www.comfygen.com/ca/education-app-development-company' class='text-blue-600 font-semibold'>education apps</a> include virtual classrooms, live video sessions, progress tracking, and engaging learning tools to enhance digital education experiences."
+      }
+    ]
+  },
+  "Information": {
+    "heading": "Market Overview & IOS App Development Demand",
+    "description1": "The IOS App Development market keeps expanding, and users on the Apple system consistently show higher spending power and stronger brand loyalty. That’s why all app Development companies across fintech, healthcare, e-commerce, travel, on-demand services, and SaaS lean toward custom iOS app development when they want better engagement and long-term retention.",
+    "description2": "What this really means is that businesses are no longer building basic IOS apps. They’re investing in AI-powered iOS applications, fintech mobile apps for iPhone, IoT-enabled iOS solutions, and secure apps that tap into Apple’s ecosystem features like Face ID, Apple Pay, Core ML, and ARKit.",
+    "description3": "The demand is rising because IOS gives brands a stable platform, reliable updates, tighter security, and an audience that’s comfortable paying for premium app development services. If you’re planning to scale, the IOS App development market gives you the clarity, stability, and spending-ready users you want.",
+    "dec": "",
+    "points": [],
+    "imageSrc": "https://www.comfygen.com/img/what-is-the-Significance-of-poa-blockchain-development.webp",
+    "link": "/contact-us",
+    "linkText": "Lets Discuss",
+    "imagePosition": "right"
+  },
+  "Tabs": [
+    "Frontend",
+    "Backend",
+    "Database",
+    "Maps & Routing",
+    "Cloud/DevOps",
+    "Payments",
+    "AI/ML"
   ],
-  "servicesData": [
-    {
-      "title": "iOS App Design and Development",
-      "subtitle": "",
-      "description": "We provide visually stunning and custom iOS app designs customized to your business needs. As a prominent iOS app development company in Jaipur, India, we provide the best custom iOS app development services.",
-      "features": [
-        "Stunning, user-friendly designs customized to your business.",
-        "Apple-compliant apps with seamless user experiences.",
-        "Trusted iOS app development services provider in Jaipur."
-      ]
-    },
-    {
-      "title": "Native iOS App Development",
-      "subtitle": "",
-      "description": "Build high-performance native iOS applications with Comfygen. Known as a top-notch iOS app development services provider in Jaipur, we ensure seamless functionality and Apple-compliant standards.",
-      "features": [
-        "High-performance native iOS apps.",
-        "Optimized for the latest iOS devices and standards.",
-        "Secure, scalable, and reliable solutions."
-      ]
-    },
-    {
-      "title": "Custom iOS App Development",
-      "subtitle": "",
-      "description": "Our mobile app development team excels in creating custom iOS app solutions for enterprises and small businesses. As a reliable custom iOS app development company in Jaipur, India we ensure personalized, scalable iOS mobile apps for your success.",
-      "features": [
-        "Customized apps to meet business goals.",
-        "Scalable and future-ready solutions.",
-        "Expertise in Swift, Objective-C, and SwiftUI."
-      ]
-    },
-    {
-      "title": "Swift App Development",
-      "subtitle": "",
-      "description": "Use the expertise of our skilled developers for Swift app development. We craft efficient, secure, and scalable iOS applications using Apple’s latest programming standards.",
-      "features": [
-        "Efficient, scalable apps built with Swift.",
-        "Seamless performance and advanced functionality.",
-        "Designed for iPhones, iPads, and WatchOS."
-      ]
-    },
-    {
-      "title": "Cross-Platform App Development",
-      "subtitle": "",
-      "description": "Expand your mobile app’s reach with our cross-platform app development services. We create applications that perform perfectly across multiple platforms while maintaining the iOS experience.",
-      "features": [
-        "Apps compatible with iOS and other platforms.",
-        "Cost-effective solutions with consistent performance.",
-        "Expanded reach for a wider audience."
-      ]
-    },
-    {
-      "title": "iPad App Development",
-      "subtitle": "",
-      "description": "Partner with us for cutting-edge iPad app development. Our iOS apps are optimized for larger screens, providing attractive and user-friendly experiences for your audience.",
-      "features": [
-        "Optimized for larger screens and multitasking",
-        "Intuitive designs for enhanced productivity.",
-        "High-quality apps for business and entertainment."
-      ]
-    },
-    {
-      "title": "ARKit App Development",
-      "subtitle": "",
-      "description": "Step into the future with Comfygen’s ARKit app development services. We deliver immersive augmented reality apps that enhance user engagement and showcase your brand’s innovation.",
-      "features": [
-        "Immersive augmented reality apps.",
-        "Cutting-edge solutions for gaming and e-commerce.",
-        "Engaging 3D visuals for iOS users."
-      ]
-    },
-    {
-      "title": "App Testing and Quality Assurance",
-      "subtitle": "",
-      "description": "At Comfygen, we perform thorough app testing across devices, ensuring bug-free performance, security, usability, and Apple compliance for seamless approval.",
-      "features": [
-        "Perform security, performance, and usability checks.",
-        "Eliminate bugs with manual and automated testing.",
-        "Ensure high-quality, Apple-compliant apps."
-      ]
-    },
-    {
-      "title": "Integration and Migration",
-      "subtitle": "",
-      "description": "We offer perfect integration of APIs, payment gateways, and cloud services, ensuring smooth transitions and customized migration strategies for businesses.",
-      "features": [
-        "Integrate third-party APIs and services.",
-        "Migrate data and systems with minimal disruption.",
-        "Implement smooth payment gateway integrations."
+  "TechstackData": {
+    "heading": "Our Advanced Tech Stack for iOS App Development",
+    "description": "Our iOS mobile app development company utilizes the latest technologies to empower new iOS apps for unique business ideas. We utilize the most robust and latest app development tools and frameworks to build your custom iOS apps. The selection of the right tools and frameworks for iOS app development has helped us serve our clients with user-friendly, secure, and robust iOS applications.",
+    "TechItems": {
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "React Native",
+          "name": "React Native",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/html5-original.svg",
+          "alt": "HTML5",
+          "name": "HTML5",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "CSS3",
+          "name": "CSS3",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "JavaScript",
+          "name": "JavaScript",
+          "num": "4"
+        }
+      ],
+      "Mobile App Development": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "11"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Swift (iOS)",
+          "name": "Swift (iOS)",
+          "num": "12"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Kotlin (Android)",
+          "name": "Kotlin (Android)",
+          "num": "13"
+        }
+      ],
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Spring boot.webp",
+          "alt": "Java (Spring Boot)",
+          "name": "Java (Spring Boot)",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/phplaraval.webp",
+          "alt": "NET Core",
+          "name": "NET Core",
+          "num": "6"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/My SQL.webp",
+          "alt": "MySQL",
+          "name": "MySQL",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Maps & Routing": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Geolocation APIs.webp",
+          "alt": "Geolocation APIs",
+          "name": "Geolocation APIs",
+          "num": "3"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Azure-icon.webp",
+          "alt": "Microsoft Azure",
+          "name": "Microsoft Azure",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Kubernetes.webp",
+          "alt": "Kubernetes",
+          "name": "Kubernetes",
+          "num": "4"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "Plaid (for banking APIs)",
+          "name": "Plaid (for banking APIs)",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "UPI Integration",
+          "name": "UPI Integration",
+          "num": "8"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "PCI-DSS Compliance",
+          "name": "PCI-DSS Compliance",
+          "num": "3"
+        }
+      ],
+      "AI/ML": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/TensorFlow.webp",
+          "alt": "TensorFlow",
+          "name": "TensorFlow",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/chatgpt.webp",
+          "alt": "OpenAI APIs",
+          "name": "OpenAI APIs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/pytorch.webp",
+          "alt": "Spark",
+          "name": "Spark",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
+          "alt": "PyTorch",
+          "name": "PyTorch",
+          "num": "3"
+        }
       ]
     }
-  ],
+  },
+  "ProcessData": {
+    "heading": "Our end-to-end iOS app development process",
+    "description": "As a leading IOS app development company in India, Comfygen delivers high-quality iPhone and iPad app development services through a clear, structured, and collaborative approach. The idea is simple: build apps that look great, work smoothly, and scale without headaches.",
+    "Process": [
+      {
+        "title": "Ideation and Conceptualization",
+        "description": "First, we collaborate with users to understand your vision, define the strategy, and choose the right tech stack for the iOS app."
+      },
+      {
+        "title": "App Design",
+        "description": "Our skilled designers team creates intuitive UI/UX designs and prototypes, ensuring a visually appealing and user-friendly experience."
+      },
+      {
+        "title": "Development",
+        "description": "Using the latest tools and frameworks, we build high-performance, scalable iOS apps that provide a seamless user experience."
+      },
+      {
+        "title": "Testing and Quality Assurance",
+        "description": "Our QA team tests for flawless performance, security, and compatibility to deliver a bug-free, reliable product."
+      },
+      {
+        "title": "Deployment to the App Store",
+        "description": "We manage the App Store submission process, ensuring the user’s app meets guidelines for smooth approval and launch."
+      },
+      {
+        "title": "Post-Launch Support",
+        "description": "We offer continuous support, resolving issues and adding updates to maintain app performance and keep it competitive."
+      },
+      {
+        "title": "Support & Maintenance",
+        "description": "We provide ongoing monitoring, optimization, and scaling to adapt to user feedback, market trends, and evolving iOS versions."
+      }
+    ]
+  },
   "pageData": {
     "title": "Why Choose Comfygen for iOS Application Development?",
     "description": "Comfygen is a trusted iOS app development company in Jaipur, India, offering the best iOS application development services customized to meet your business needs.",
@@ -140,242 +518,121 @@
       }
     ]
   },
-  "Bestchoice": [
-    {
-      "num": "01",
-      "bg": "#F45F391A",
-      "title": "SwiftUI Adoption",
-      "decs": "When you search for queries like ‘iOS app developers near me,’ you must pay attention to SwiftUI adoption. It is a modern and declarative framework that helps develop Apple device and system user interfaces. SwiftUI was designed to ensure easier and faster development of iOS apps with responsive and visually attractive user interfaces. The use of SwiftUI in iOS development has been growing exponentially for leveraging the benefits of its unique features."
-    },
-    {
-      "num": "02",
-      "bg": "#F7F5FA",
-      "title": "Machine Learning Integration",
-      "decs": "Machine learning and artificial intelligence have emerged as major forces of change in iOS application development. As the top iOS app development company for your requirements, we specialize in integrating ML capabilities for your iOS apps. We can leverage a broad collection of machine learning libraries and frameworks, such as Core ML, for the integration of machine learning models directly into iOS apps. Machine learning integration can enable unique functionalities in iOS apps, such as text analysis and image recognition. "
-    },
-    {
-      "num": "03",
-      "bg": "#9A4ECC1A",
-      "title": "Augmented Reality (AR) Experiences",
-      "decs": "Another prominent trend you would encounter in the search for iOS app development services is the facility of AR experiences. With the help of ARKit, iOS apps have significantly improved the use of augmented reality. ARKit helps developers bridge the gap between virtual elements and the real world in iOS apps. As the adoption of augmented reality gains momentum, it will become an integral necessity for iOS apps. "
-    },
-    {
-      "num": "04",
-      "bg": "#6C54DE1A",
-      "title": " App Security and Privacy",
-      "decs": "App security and privacy have become the most crucial concerns for iOS software developers working on innovative ideas. Identity theft, privacy scandals, and data breaches have been gaining significant traction, with users becoming more concerned about the management of their data. Apple has been making rapid strides in protecting users' privacy with new privacy features. For example, the App Privacy Report offers insights into how apps collect and use data."
-    },
-    {
-      "num": "05",
-      "bg": "#F7F5FA",
-      "title": "Wearable App Development",
-      "decs": "The list of prominent trends in the domain of iPhone app development also points towards the development of wearable apps. As the usage of wearable devices such as smartwatches continues gaining momentum, iOS app development trends also turn towards creating wearable apps. At the same time, developers must also pay attention to the limitations of wearable app development, such as battery life, ease of navigation, and security and privacy of users."
-    },
-    {
-      "num": "06",
-      "bg": "#F7F5FA",
-      "title": "Focus on Sustainability",
-      "decs": "We put sustainability first in iOS app development by using methods that have a smaller negative impact on the environment. This entails using eco-friendly technologies, reducing resource usage, and optimising energy efficiency in app design. We hope to contribute to a greener and more environmentally conscious tech industry by concentrating on sustainable development. This trend encourages a dedication to developing applications that not only offer outstanding user experiences but also take into account the long-term implications on our planet, which is in line with the growing awareness of ecological responsibility. Our methodology demonstrates a commitment to innovation that aligns with environmental responsibility in the dynamic field of iOS app development."
-    }
-  ],
 
-  "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
-      {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
-      },
-      {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
-      },
-      {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
-      }
-    ]
-  },
-
-
-  "myList": [
-    " Determine project requirements.",
-    "Look for iOS app development experience.",
-    "Evaluate technical skills.",
-    "Consider communication skills.",
-    "Check availability and work schedule.",
-    "Look for a good track record of delivering quality iOS mobile apps."
-  ],
-  "NewSections": {
-    "title": "iOS App Development Company",
-    "decs": "You can think about hiring an iOS mobile app development company if you're searching for assistance with developing mobile apps for the iPhone. This iPhone app development company in India specialize in producing top- notch, feature - rich apps, particularly for the iOS platform.An iOS app can assist you in connecting with and retaining a sizable user base, regardless of your company's size (small, startup, or corporate). It's critical to choose a reliable and knowledgeable team that can turn your app idea into a reality while looking for an ios app development company. You may hire iOS developers who have the essential knowledge and experience to build original, user-friendly applications."
-  },
-  "Chartacterstics": [
+"HireDeveloper": {
+  "heading": "Hire Our iOS App Developers",
+  "text": "Need fast, budget-friendly IOS app development without compromising quality? Hire skilled IOS app developers from Comfygen and get clean code, smooth performance, and on-time delivery.",
+  "text1": "",
+  "text2": "",
+  "text3": "",
+  "text4": "",
+  "buttonText": "Hire Developer",
+  "buttonLink": "/contact-us",
+  "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
+  "imageAlt": "hire-developer",
+  "listItems": [
+    "Clear project understanding",
+    "Certified iOS developers",
+    "Updated with the latest iOS trends",
+    "Follows Apple App Store guidelines",
+    "Post-launch support"
+  ]
+},
+"ReviewData": {
+  "heading": "What Our Clients Say",
+  "description": "",
+  "Review": [
     {
-      "num": "1",
-      "img": "https://www.comfygen.com/images/rapid-deployment.svg",
-      "title": "Expert iOS Developers",
-      "decs": "With Multichain, users can easily build and link new blockchains with existing ones since it develops and deploys quickly. The number of blockchains that can be deployed on a single server for cross-chain applications is unlimited."
+      "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+      "name": "Nhi Do",
+      "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+      "location": "Vietnam",
+      "Source": "DesignRush",
+      "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
     },
     {
-      "num": "2",
-      "img": "https://www.comfygen.com/images/resource-unhindered.svg",
-      "title": "Resources unhindered",
-      "decs": "An astonishing number of assets can be authorized and verified using blockchain-based ledgers. With MultiChain, you can also conduct transactions between multiple parties and assets."
+      "name": "Rob Lipps ",
+      "location": "Madison",
+      "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+      "Source": "DesignRush",
+      "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+      "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
     },
     {
-      "num": "3",
-      "img": "https://www.comfygen.com/images/control-access.svg",
-      "title": "Control of access",
-      "decs": "A permissioned environment can be created at the enterprise level with MultiChain. They can produce data streams, assets, blocks, and transactions. Using carefully calibrated permissions, entities can be granted permission to operate in the Blockchain, whether it is public or private."
+      "name": "Avinash",
+      "location": "Atlanta, Indiana",
+      "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
     },
     {
-      "num": "4",
-      "img": "https://www.comfygen.com/images/flow-data.svg",
-      "title": "Flows of data",
-      "decs": "MultiChain supports data sharing, archiving, encryption, and time stamping to the necessary extent. A variety of vital values can also be generated with infinitely many time series and data streams."
+      "name": "Rishabh Shukla",
+      "location": "Noida, India",
+      "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
     },
     {
-      "num": "5",
-      "img": "https://www.comfygen.com/images/speed-efficiency.svg",
-      "title": "Speed & Efficiency",
-      "decs": "The MultiChain platform makes it possible for users to create new Blockchains in a permissioned network with lightning speed."
+      "name": "Raman Mathur",
+      "location": "Jaipur, India",
+      "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Sayead Shadab Arif",
+      "location": "Dubai, United Arab Emirates",
+      "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Raunak Pradhan",
+      "location": "Denver, New York",
+      "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+      "Source": "Clutch",
+      "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+      "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+    },
+    {
+      "name": "Saurav Gupta",
+      "location": "Denver, New York",
+      "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+      "Source": "Google",
+      "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": "Devguru Enterprises",
+      "location": "India",
+      "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+      "Source": "Google",
+      "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": " Mazhar.H. Ansari",
+      "location": "Oman",
+      "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+      "Source": "Google",
+      "URL": "https://share.google/ycfErAHqln9LNKdhK",
+      "image": "/Google - Original.png"
+    },
+    {
+      "name": "Tom Baker",
+      "location": "Germany",
+      "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+      "Source": "Google",
+      "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+      "image": "/Google - Original.png"
     }
-  ],
-  "WhyChoosed": [
-    {
-      "num": "1",
-      "img": "https://www.comfygen.com/img/swift-icon.webp",
-      "title": "Swift",
-      "decs": "We specialize in native iOS development with expertise in Swift programming language. It is designed from references to the research on different programming languages alongside delivering a better approach to ensure safety. Swift offers different facilities such as concise and faster iteration alongside powerful in-built capabilities for error management. It also includes functional programming patterns alongside advanced control flow for creating iOS apps."
-    },
-    {
-      "num": "2",
-      "img": "https://www.comfygen.com/img/objective-c-icon.webp",
-      "title": "Objective-C",
-      "decs": "Objective-C is an object-oriented, general-purpose programming language that serves as a superset of C programming language. It was the first choice for developing iOS applications before the arrival of Swift. In simple words, Objective-C is an extension of C programming language, albeit with certain differences. Objective-C also offers the value benefits of a massive and active developer community with the assurance of support for native app development."
-    },
-    {
-      "num": "3",
-      "img": "https://www.comfygen.com/img/swift-ui-icon.webp",
-      "title": "SwiftUI",
-      "decs": "The discussions about Swift app development would be incomplete without SwiftUI, the popular graphical framework for creating user interfaces of Apple applications. It helps incorporate better user experiences on Apple devices by using only one collection of APIs and tools. SwiftUI also offers exclusive features such as advanced animation control, simpler data flow, interactive widgets, and flexibility for building spatial apps. "
-    },
-    {
-      "num": "4",
-      "img": "https://www.comfygen.com/img/x-code-icon.webp",
-      "title": "Xcode",
-      "decs": "Xcode is the next important addition to the list of iOS app development software we use in our tech stack. It is Apple's integrated development environment and offers all the tools for creating apps for all Apple platforms. Xcode also supports the source code of different programming languages alongside other features, such as built-in developer tools and high-end application testing."
-    },
-    {
-      "num": "5",
-      "img": "https://www.comfygen.com/img/ui-kit-icon.webp",
-      "title": "UIKit",
-      "decs": "User interfaces are the most appealing highlights of iOS apps. We deliver end-to-end iPhone app development services with the help of tools like UIKit that you can use to create attractive user interfaces. UIKit has multiple features that help develop apps, with essential components required for creating the core infrastructure of iOS apps. It also includes text display and management support, documents, animations, resource management, and app extensions. "
-    },
-    {
-      "num": "6",
-      "img": "https://www.comfygen.com/img/core-data-icon.webp",
-      "title": "Core Data",
-      "decs": "Our iPhone app developers also specialize in using Core Data for Swift programming. Core Data can help save the permanent data of the app for offline use and cache temporary data. It also helps in adding the undo functionality to your iOS app. Core Data includes a Data Model editor that helps define specific data types and relationships and generates the relevant class definitions. The important features of Core Data include versioning of the data model, migration of user data, and value benefits of persistence. "
-    },
-    {
-      "num": "7",
-      "img": "https://www.comfygen.com/img/arkit-app-development.webp",
-      "title": "ARKit (for AR apps)",
-      "decs": "Apple ARKit helps develop AR apps for iOS devices. It is a comprehensive development platform that helps app developers in developing AR experiences in their apps and games. The value of Apple ARKit for Apple app development draws the limelight towards the growing popularity of augmented reality apps. ARKit offers valuable features for AR app design in the form of environmental tracking and 3D object tracking alongside horizontal plane detection.  "
-    },
-    {
-      "num": "8",
-      "img": "https://www.comfygen.com/img/firebase-icon.webp",
-      "title": "Firebase",
-      "decs": "Firebase is another top addition among tools and iPhone app development software with the advantage of access to a collection of cloud-based development tools for easier application development, deployment, and scalability. It helps in the faster development of iOS apps, deploying and monitoring them confidently. The notable features of Firebase include push messages, file storage, authentication, analytics, databases, and other features for creating user-friendly apps."
-    },
-    {
-      "num": "9",
-      "img": "https://www.comfygen.com/img/native-ios-app-development.webp",
-      "title": "React Native (for cross-platform development)",
-      "decs": "React Native is a vital requirement for iOS app development on Windows, ensuring efficiency in cross-platform development. It is a JavaScript-based mobile app development framework for cross-platform development on Android and iOS. You can use the same codebase to create apps for different platforms, saving your valuable resources and time. React Native is a preferred tool for front-end developers to create production-ready and robust cross-platform apps. "
-    }
-  ],
-  "Frequently": [
+  ]
+},
+"Frequently": [
     {
       "num": "1",
       "title": "What is the time required for building an iOS app?",
@@ -396,70 +653,7 @@
       "title": "How do I get started with Comfygen for iOS app development?",
       "desc": "Getting started is easy! Contact us to discuss your project requirements. Our team will guide you through the development process step by step."
     }
-  ],
-  "Process": [
-    {
-      "title": "Ideation and Conceptualization",
-      "description": "First, we collaborate with users to understand your vision, define the strategy, and choose the right tech stack for the iOS app."
-    },
-    {
-      "title": "App Design",
-      "description": "Our skilled designers team creates intuitive UI/UX designs and prototypes, ensuring a visually appealing and user-friendly experience."
-    },
-    {
-      "title": "Development",
-      "description": "Using the latest tools and frameworks, we build high-performance, scalable iOS apps that provide a seamless user experience."
-    },
-    {
-      "title": "Testing and Quality Assurance",
-      "description": "Our QA team tests for flawless performance, security, and compatibility to deliver a bug-free, reliable product."
-    },
-    {
-      "title": "Deployment to the App Store",
-      "description": "We manage the App Store submission process, ensuring the user’s app meets guidelines for smooth approval and launch."
-    },
-    {
-      "title": "Post-Launch Support",
-      "description": "We offer continuous support, resolving issues and adding updates to maintain app performance and keep it competitive."
-    },
-    {
-      "title": "Support & Maintenance",
-      "description": "We provide ongoing monitoring, optimization, and scaling to adapt to user feedback, market trends, and evolving iOS versions."
-    }
-  ],
-  "technologyData": [
-    {
-      "title": "On-Demand Service Apps",
-      "desc": "We develop robust on-demand iOS apps for <a href='https://www.comfygen.com/food-delivery-app-development' class='text-blue-600 font-semibold'>food delivery</>, <a href='https://www.comfygen.com/taxi-app-development-company' class='text-blue-600 font-semibold'>taxi booking</a>, and <a href='https://www.comfygen.com/home-service-app-development' class='text-blue-600 font-semibold'>home services</a>, featuring real-time tracking, secure payment gateways, and seamless user experiences—ideal for startups and growing businesses.",
-      "img": "<IconClock stroke={1.5} className='w-12 h-12'/>"
-    },
-    {
-      "title": "Social Networking Apps",
-      "desc": "Our team builds engaging social networking iOS apps with features such as instant messaging, video calls, and content sharing to drive user interaction and community growth.",
-      "img": "<IconUsers stroke={1.5} className='w-12 h-12'/>"
-    },
-    {
-      "title": "Healthcare Apps",
-      "desc": "As a trusted iOS app development company, we create secure, <a href='https://www.comfygen.com/blog/hipaa-compliance-in-mobile-health-apps/' class='text-blue-600 font-semibold'>HIPAA-compliant</a> healthcare applications for appointment scheduling, telemedicine, and health monitoring with a strong focus on data privacy and usability.",
-      "img": "<IconHeartbeat stroke={1.5} className='w-12 h-12' />"
-    },
-    {
-      "title": "E-Commerce Apps",
-      "desc": "We design feature-rich <a href='https://www.comfygen.com/e-commerce-app-development' class='text-blue-600 font-semibold'>eCommerce iOS apps</a> with intuitive navigation, secure payments, product management, and seamless checkout experiences to boost online sales.",
-      "img": "<IconShoppingCart stroke={1.5} className='w-12 h-12' />"
-    },
-    {
-      "title": "Finance and Banking Apps",
-      "desc": "We develop secure and scalable finance and banking apps with real-time updates, encrypted transactions, and user-friendly dashboards for smooth and reliable financial management.",
-      "img": "<IconWallet stroke={1.5} className='w-12 h-12' />"
-    },
-    {
-      "title": "Education Apps",
-      "desc": "Our interactive <a href='https://www.comfygen.com/ca/education-app-development-company' class='text-blue-600 font-semibold'>education apps</a> include virtual classrooms, live video sessions, progress tracking, and engaging learning tools to enhance digital education experiences.",
-      "img": "<IconBook stroke={1.5} className='w-12 h-12'/>"
-    }
-    
-  ],
+],
  "jsonLdData": [
     {
       "@context": "https://schema.org",
@@ -470,8 +664,7 @@
         "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description":
-        "Comfygen Technologies delivers custom iOS app development services for startups and enterprises. We build secure, scalable, and high-performance iPhone and iPad applications using Swift, SwiftUI, and the latest Apple frameworks.",
+      "description": "Comfygen Technologies delivers custom iOS app development services for startups and enterprises. We build secure, scalable, and high-performance iPhone and iPad applications using Swift, SwiftUI, and the latest Apple frameworks.",
       "url": "https://www.comfygen.com/ios-app-development ",
       "mainEntityOfPage": "https://www.comfygen.com/ios-app-development ",
       "areaServed": "Global",
@@ -492,7 +685,6 @@
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -532,4 +724,5 @@
       ]
     }
   ]
+ 
 }
