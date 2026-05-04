@@ -2,12 +2,8 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/hybrid.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -18,31 +14,16 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
+const InformationSection = dynamic(() => import("../../components/InformationSection"), {
+  ssr: true,
+});
+
+
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
 });
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
-
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
-
-const LatestTechnology = dynamic(() => import("../../components/LatestTechnology"), {
-  ssr: true,
-});
-
-const IndustriesSection = dynamic(() => import("../../components/IndustriesSection"), {
   ssr: true,
 });
 
@@ -54,131 +35,15 @@ const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
 });
 
-
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
 
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
 });
 
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import LazyLoad from "react-lazy-load";
-
-
-import HeroSection from "../../components/HeroSection";
-
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const ConsultancyApproach = dynamic(
-  () =>
-    import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const InfoSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/InfoSection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const WhyChooseUs = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const IndustriesServe = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/IndustriesServe"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 export default function Mobile(props: any) {
@@ -276,98 +141,17 @@ export default function Mobile(props: any) {
         />
       </Head>
 
-       {/* <Navbar /> */}
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-
-      
-      <Milestones />
-      <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-        <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-          <div className="space-y-2">
-            <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-              Our Hybrid App Development Services
-            </h2>
-            <p className="text-base text-center font-normal">
-              Accelerate your digital transformation with our cutting-edge
-              hybrid app development services. Harnessing the power of
-              cross-platform compatibility, cost-effectiveness, and seamless
-              user experiences, our team delivers high-performing, feature-rich
-              apps that cater to diverse business needs. Partner with us to
-              unlock the full potential of hybrid app development companies in
-              Jaipur and elevate your business to new heights
-            </p>
-          </div>
-          <div className="">
-            <ServicesSec servicesData={JSON_DATA.servicesData} />
-          </div>
-        </div>
-      </section>
-      <AboutSection
-        title="About Company"
-        heading="Best Hybrid App Development Service Provider in India"
-        description1="At Comfygen Softwares' Hybrid app developers create apps that not only deliver utility but also deliver EXPERIENCE! Being able to deliver a lasting experience is a real challenge. Our team has delivered hundreds of Hybrid applicationss for hundreds of businesses across a wide range of industries over more than a decade."
-        description2="The apps developed by our company feature powerful performance, next-generation features, research-based UX/UI, and support for current technologies such as machine learning app development, IoT app development, augmented reality app development, and 3D modeling. It is our goal to put your enterprise, small business, or startup way ahead of the competition. We are known for our uncompromised work ethics and world-class quality of work. When it comes to turning your idea into a profitable business, we leave no stone unturned."
-        imageSrc="https://www.comfygen.com/gallery/about-images/hybrid-mobile-app-development-about-us-img.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-      <CallToAction
-        heading="Let’s Build the Future of Technology Together"
-        text="At Comfygen, we use creativity and teamwork to shape the direction of technology. Our innovative solutions help organisations stay ahead of the times in a world that is changing quickly. Together, let's develop the technologies of the future."
-        buttonText="Get Started"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-        imageAlt="Future of Technology"
-      />
-
-
-
-
-      {/* <ContactFromCenter /> */}
-      <ConsultancyApproach
-        Head={JSON_DATA.consultancyHead}
-        ItemData={JSON_DATA.consultancyData}
-        imageSrc="https://www.comfygen.com/image/hybrid-mobile-app-development-advantages-img.webp"
-        buttonText="Let’s Discuss"
-        buttonLink="/contact-us"
-      />
-      <InfoSection
-        heading="Leading Hybrid Web Application Development Company in India"
-        description1="At Comfygen Softwares' Hybrid app developers create apps that not only deliver utility but also deliver EXPERIENCE! Being able to deliver a lasting experience is a real challenge. Our team has delivered hundreds of Hybrid applicationss for hundreds of businesses across a wide range of industries over more than a decade."
-        description2="The apps developed by our company feature powerful performance, next-generation features, research-based UX/UI, and support for current technologies such as machine learning app development, IoT app development, augmented reality app development, and 3D modeling. It is our goal to put your enterprise, small business, or startup way ahead of the competition. We are known for our uncompromised work ethics and world-class quality of work. When it comes to turning your idea into a profitable business, we leave no stone unturned."
-        description3=""
-        dec=""
-        points={[]}
-        imageSrc="https://www.comfygen.com/image/hybrid-web-application-development-img.webp"
-        link="/about-us"
-        linkText="Explore More"
-      />
-      <WhyChooseUs
-        title={JSON_DATA.pageData.title}
-        description={JSON_DATA.pageData.description}
-        mainCardData={JSON_DATA.pageData.mainCardData}
-        gridData={JSON_DATA.pageData.gridData}
-      />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Consultancy consultancyData={JSON_DATA.ModelsSec} />
+      <InformationSection InfoSectionData={JSON_DATA?.Information} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
       <ClientStories />
-
-      <HireDeveloper
-        heading="Hire Hybrid App Developers"
-        text="If you want a quick delivery of your project at a nominal charge, it would be a great idea to hire professional Hybrid Mobile App Developers. They can focus on your project entirely and deliver you faster results."
-        buttonText="Hire Developer"
-        buttonLink="/contact-us"
-        imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-        imageAlt="hire-developer"
-        listItems={[
-          "Determine project requirements.",
-          "Look for hybrid app development experience.",
-          "Evaluate technical skills.",
-          "Consider communication skills .",
-        ]}
-      />
-      <IndustriesServe />
-       <ReviewCard testimonials={JSON_DATA.ReviewData}/>
-
-
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <IndustryGrid />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <BlogSection initialData={initialData} />
 
     </>
