@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
@@ -420,8 +420,6 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-
-     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <div className="">

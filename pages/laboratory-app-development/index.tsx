@@ -8,8 +8,6 @@ import { IconBrain, IconCloud, IconDeviceCctv, IconDeviceMobile, IconSettings, I
 import { IconTicket, IconChartBar, IconHeart, } from '@tabler/icons-react';
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-
-import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
@@ -379,7 +377,7 @@ export default function ClinicalApp(props) {
         />
       </Head>
 
-     {/* <Header /> */}
+ 
 
       <div className="overflow-hidden pt-10 ">
         <HeroSectionForAllPages

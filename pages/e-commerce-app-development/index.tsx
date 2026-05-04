@@ -61,7 +61,7 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 import IndustryGrid from "../../components/IndustryGrid";
-import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
+
 
 
 

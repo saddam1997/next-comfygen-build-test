@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Head from "next/head";
-import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForCompany from "../../components/Newcomponet/comman/HeroSectionForCompany";
 import ClientTestimonials from "./component/ClientTestimonials";
 import ClientStories from "../../components/ClientStories";
@@ -156,7 +155,6 @@ export default function Altcoin(props: any) {
         <meta property="og:image:height" content="630" />
       </Head>
 
-     {/* <Header /> */}
 
       <div className="overflow-hidden  pt-[40px]">
         <div className="lg:bg-right bg-no-repeat bg-cover bg-gradient-to-br 

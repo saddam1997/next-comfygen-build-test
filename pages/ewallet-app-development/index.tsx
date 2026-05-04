@@ -175,7 +175,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      {/* <Header /> */}
+   
 
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />

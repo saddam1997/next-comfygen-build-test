@@ -45,7 +45,6 @@ const Location = () => (
   <div className="h-full bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 px-4 sm:px-6 lg:px-8 py-8">
     <div className="max-w-7xl mx-auto">
 
-      {/* Header */}
       <div className="text-center mb-10 sm:mb-12">
         {/* <h2 className="lg:text-4xl text-xl font-semibold text-white mb-8">
           Contact Us Anytime For Quick Assistance

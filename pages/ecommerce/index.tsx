@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./ecommerce.json";
 // import EcommerceNav from "../Newcomponet/layout/ecommerce-navbar";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
+
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 
@@ -432,7 +432,7 @@ export default function ClinicalApp(props: any) {
           }}
         />
       </Head>
-      <EcommerceHeader />
+   
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top-Rated eCommerce development company for Startups and enterprises "

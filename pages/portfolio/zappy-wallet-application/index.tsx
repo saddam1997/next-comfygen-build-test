@@ -8,8 +8,6 @@ import JSON_DATA from "./zappy-wallet-application.json"
 import { BsArrowRight } from 'react-icons/bs';
 
 
-import Header from '../../../components/Newcomponet/layout/Header';
-
 const TechnologyStack = dynamic(() => import('../../../components/Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
@@ -52,7 +50,7 @@ export default function about(props) {
         <div className="">
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#770706]/90">
-             {/* <Header /> */}
+
               <div className="flex items-center justify-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
                 <div className="w-full">
                   <div className="space-y-6 text-start">

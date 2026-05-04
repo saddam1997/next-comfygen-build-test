@@ -14,9 +14,6 @@ import {
 } from "@tabler/icons-react";
 
 import { MdOutlineSpatialTracking } from "react-icons/md";
-
-
-import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -412,7 +409,6 @@ export default function ClinicalApp(props: any) {
         />
       </Head>
 
-     {/* <Header /> */}
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Mobile Crypto Wallet Development Company"

@@ -51,7 +51,7 @@ const NewSection = () => {
     return (
         <div className=" bg-white w-full py-12 px-4">
             <div className="w-full">
-                {/* Header Section */}
+
                 <div className="text-center">
                     <h2 className="text-3xl px-1 mt-6 text-center font-bold mb-6 max-w-8xl">
                         {featuresData.title}

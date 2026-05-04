@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useState } from "react";
 import JSON_DATA from "./json/mernstack.json";
 import dynamic from "next/dynamic";
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
@@ -105,7 +105,6 @@ export default function Stack(props: any) {
         <meta name="twitter:data1" content="14 minutes" />
       </Head>
 
-     {/* <Header /> */}
 
       <div className="overflow-hidden ">
 

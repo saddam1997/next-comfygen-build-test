@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ecommerce.json";
-import LazyLoad from "react-lazy-load";
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
@@ -251,8 +250,6 @@ export default function ClinicalApp(props: any) {
       </Head>
 
   
-       {/* <Header /> */}
-    
       <div className="overflow-hidden lg:pt-[30px]">
         <HeroSectionForAllPages
           heading="Data Consulting and Development Services for Intelligent Business Decisions"

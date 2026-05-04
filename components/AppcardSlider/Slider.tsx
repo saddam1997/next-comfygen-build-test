@@ -131,7 +131,7 @@ export default function Slider({
   return (
     <section className="lg:py-16 py-10 bg-[#F5F5F9] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
+    
         <div className="text-center max-w-4xl mx-auto mb-10">
           <h2 className="xl:text-4xl md:text-3xl text-2xl font-bold text-[#212121]">
             {SliderDATA?.heading}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
-import Header from "../../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
@@ -243,9 +243,7 @@ export default function Mobile(props: any) {
 
 
       </Head>
-      {/* <LazyLoad height={80} offset={100}> */}
-     {/* <Header /> */}
-      {/* </LazyLoad> */}
+   
       <div className="pt-16">
         <HeroSection
           heading="Expert Tableau Consulting Service Provider for Analytics & BI"

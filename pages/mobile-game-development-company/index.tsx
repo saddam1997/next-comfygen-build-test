@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/mobile.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
@@ -181,7 +181,7 @@ export default function Mobile(props) {
         />
       </Head>
 
-     {/* <Header /> */}
+
 
       <div className="overflow-hidden ">
 

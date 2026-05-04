@@ -46,7 +46,7 @@ export default function Custom404() {
 
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC] xl:pt-20 text-center">
-           {/* <Header /> */}
+     
             <div className="py-5">
               <div className="flex items-center justify-center">
                 <Image

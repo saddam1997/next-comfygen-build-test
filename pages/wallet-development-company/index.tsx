@@ -6,7 +6,6 @@ import JSON_DATA from "./json/cryptowallet.json";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
 
-import Header from "../../components/Newcomponet/layout/Header"
 import IndustryGrid from "../../components/IndustryGrid";
 
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
@@ -271,7 +270,7 @@ export default function Ecommerce(props: any) {
         />
       </Head>
 
-     {/* <Header /> */}
+
 
       <div className="overflow-hidden ">
          <HeroSectionforHome herosection={JSON_DATA?.Herosection} />

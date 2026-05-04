@@ -46,7 +46,7 @@ export default function about(props) {
           className=" bg-gradient-to-t to-[#ECD571] from-[#fff]">
           <div className='h-full w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' style={{ backgroundImage: `url("https://www.comfygen.com/img/Z.svg")` }}>
             <div className="">
-             {/* <Header /> */}
+
               <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 md:flex-row md:items-center md:space-x-20 lg:py-16 py-5">
                 <div className="w-full">
                   <div className="space-y-6">

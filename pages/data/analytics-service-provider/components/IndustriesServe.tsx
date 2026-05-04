@@ -1,7 +1,7 @@
 // "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+
 
 const defaultSliderData = [
   {
@@ -53,7 +53,7 @@ export default function IndustriesServe({
   return (
     <section className="lg:py-16 py-10">
       <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 bg-[#F5F5F9] md:py-14 py-8 md:px-10 px-6 rounded-3xl">
-        {/* Header */}
+
         <div className="flex items-center justify-between">
           <div className="space-y-2">
             <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">{heading}</h2>

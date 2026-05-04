@@ -3,11 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/unitydeveloper.json"
 import Link from "next/link";
-import LazyLoad from "react-lazy-load";
+
 import styles from './styles.module.css'
-import Header from "../../components/Newcomponet/layout/Header";
-
-
 const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
@@ -66,7 +63,7 @@ export default function Unity(props) {
       <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
         <div className=" bg-[#1B1C30CC]">
      
-           {/* <Header /> */}
+   
 
           <div className="md:py-28 py-5">
             <HeroSectionForm

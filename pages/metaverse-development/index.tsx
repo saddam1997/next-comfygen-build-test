@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaverse.json";
 
-import Header from "../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 
@@ -445,7 +445,7 @@ export default function Ecommerce(props) {
         />
       </Head>
 
-      {/* <Header /> */}
+     
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Top-Rated Metaverse Development Company in India"

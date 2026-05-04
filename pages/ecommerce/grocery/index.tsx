@@ -79,7 +79,7 @@ const GroceryAppScreens = dynamic(() => import("../../../components/Newcomponet/
   ssr: true,
 });
 
-import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHeader";
+
 
 const Solution = dynamic(() => import("../../../components/Solution"), {
   ssr: true,

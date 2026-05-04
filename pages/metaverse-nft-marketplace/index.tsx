@@ -6,7 +6,7 @@ import JSON_DATA from "./json/metaverse.json"
 import Link from "next/link";
 import styles from './styles.module.css'
 
-import Header from "../../components/Newcomponet/layout/Header";
+
 const HeroSectionForm = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectionForm'), {
   loading: () => <p>Loading...</p>,
 })
@@ -157,7 +157,7 @@ export default function Ecommerce(props:any) {
       {/* hero section */}
       <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
         <div className=" bg-[#1B1C30CC]">
-         {/* <Header /> */}
+        
           <div className="md:py-36 py-5">
             <HeroSectionForm
               heading='Metaverse NFT Marketplace Development Company'

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { useState } from 'react';
 
 import dynamic from 'next/dynamic';
-import Header from '../../../components/Newcomponet/layout/Header';
+
 import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
 const loader = () => (
   <div className="h-96 bg-gray-100 animate-pulse" />

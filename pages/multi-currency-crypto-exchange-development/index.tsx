@@ -3,9 +3,6 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/multicurrencycryptoexchangedevelopment.json";
-
-
-import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 
 const loader = () => (
@@ -409,9 +406,6 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
-
-
-     {/* <Header /> */}
 
       <div className="overflow-hidden pt-16">
         <HeroSectionForAllPages

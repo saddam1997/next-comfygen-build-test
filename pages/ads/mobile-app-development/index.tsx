@@ -4,7 +4,7 @@ import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
 import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
-import Header from "../../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -395,12 +395,6 @@ export default function Mobile(props: any) {
           }}
         />
       </Head>
-      <div className="">
-
-       {/* <Header /> */}
-
-      </div>
-
       <div className="overflow-hidden ">
 
         <HeroSectionForAllPages
