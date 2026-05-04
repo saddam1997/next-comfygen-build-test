@@ -9,6 +9,7 @@ import ServicesMnue from "./NavbarMnu/ServicesMnue";
 import SolutionsMnue from "./NavbarMnu/SolutionsMnue";
 import IndustriesMnue from "./NavbarMnu/IndustriesMnue";
 import CompanyMnue from "./NavbarMnu/CompanyMnue";
+import { Button } from "../ui/Button";
 
 /* ================= NAVBAR ================= */
 
@@ -107,21 +108,12 @@ export default function DesktopNav() {
           {/* CTA BUTTON */}
           <div className="hidden xl:block">
             <Link href="/contact-us">
-              <span
-                className={`text-white px-6 py-3 rounded-full flex items-center gap-2 ${styles.head_button}`}
-              >
-                Get a Quote
-                <Image
-                  src="https://www.comfygen.com/image/button-arrow.svg"
-                  alt="arrow"
-                  width={20}
-                  height={20}
-                />
-              </span>
+             <Button variant="secondary" radius="full" className=" py-2 text-white rounded-full"> Get a Quote →</Button>
             </Link>
           </div>
 
           {/* MOBILE MENU BUTTON (STABLE HEIGHT) */}
+           
           <button
             className="lg:hidden p-2 rounded bg-gray-100 text-gray-700"
             onClick={() => setMenu(!menu)}

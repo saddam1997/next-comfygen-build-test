@@ -4,6 +4,7 @@ import {  Healthcare, Finance, Finance1,  EcommerceApp, EducationApp, } from "..
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from "../../ui/Button";
 
 const IndustriesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabClick }: any) => {
     return (
@@ -295,15 +296,9 @@ const IndustriesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTa
                             width={511}
                           />
                           <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
-                            <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
-                              Connect to expert
-                              <Image
-                                src="https://www.comfygen.com/image/button-arrow.svg"
-                                alt=""
-                                height={22}
-                                width={22}
-                              />
-                            </button>
+
+                                <Button variant="secondary" radius="full" className=" py-2 text-white rounded-full"> Connect to expert →</Button>
+                    
                           </span>
                         </a>
                       </div>

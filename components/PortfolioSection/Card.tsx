@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import HeadingThree from "../ui/HeadingThree";
 import ParagraphText from "../ui/ParagraphText";
+import { Button } from "../ui/Button";
 
 const Card = ({ item, isActive }: any) => {
   return (
@@ -34,14 +35,10 @@ const Card = ({ item, isActive }: any) => {
         <Link
           href={item.link}
           aria-label={`View ${item.title} case study`}
+          className="flex items-center"
         >
-          <span
-            className="inline-flex items-center justify-center mt-3 gap-2
-         border border-[#453de3] text-[#453ecf]
-         px-4 py-2 text-xs lg:text-sm rounded-full
-         hover:bg-[#6C63FF] hover:text-white transition"
-          > View Portfolio <MdOutlineArrowOutward />
-          </span>         </Link>
+          <Button variant="outline" className="mt-4 items-center">View Portfolio <span className="mb-4">→</span></Button>
+        </Link>
       </div>
     </div>
   );
