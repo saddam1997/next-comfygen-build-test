@@ -1,172 +1,52 @@
-import React, { useState } from "react";
-import Image from "next/image";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/iot.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-// Dynamic imports
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+import TechStacks from "../../components/TechStacks";
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true
+});
 
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
-
-
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
 export default function Altcoin(props: any) {
   let { initialData } = props;
-
-  let { Modus } = JSON_DATA;
-
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is IoT (Internet of Things) Application Development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "IoT application development involves creating software that enables devices, sensors, and systems to communicate with each other and exchange data over the Internet. This allows for automation, remote monitoring, and optimization of various processes across different industries."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will I get both hardware and software support for IoT development from Comfygen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we have expertise in both hardware and software services for IoT development. Your business will get comprehensive IoT solutions with incredible benefits at an affordable pricing plan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is IoT development important for my business?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "IoT development is a way to empower businesses and individuals in order to automate processes, enhance efficiency, and gain valuable insights from data collected from interconnected devices. All these lead to innovative solutions and improved decision-making."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does your IoT development service ensure the security of the IoT systems during the data exchange?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Data communication between the IoT gateway and the server is protected using hybrid data encryption standards."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the future trends in IoT development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Future trends include edge computing for real-time processing, 5G connectivity enabling faster and more reliable communication, AI and machine learning for advanced analytics and automation, and the proliferation of IoT in consumer electronics and wearable devices."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can IoT development services enhance customer experiences?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "IoT development services enable businesses to create personalized and immersive customer experiences through smart products, predictive analytics, real-time monitoring, and seamless integration with other digital services."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the challenges in IoT development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Challenges include security and privacy concerns, interoperability issues among diverse devices and platforms, scalability of IoT solutions, managing and analyzing large volumes of data, and ensuring reliable connectivity in diverse environments."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it cost-effective to implement IoT solutions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A well-designed IoT solution brings the potential to increase business profit margins by optimizing maintenance costs, creating exceptional customer experiences, generating additional revenue streams, and reducing machine breakdowns. Implementing IoT frameworks in the right way improves operational efficiency and ROI."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does IoT development cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The cost of IoT development typically ranges from $10,000 to $100,000, depending on factors such as hardware complexity, software features, cloud integration, and security requirements. A basic IoT application may cost $10,000 to $25,000, while an enterprise-grade solution with AI-powered analytics, real-time data processing, and cloud connectivity can range between $50,000 and $100,000."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to develop an IoT solution?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The timeline for IoT app development depends on project complexity, required features, and hardware/software integration. A basic IoT solution may take 3-6 months, while advanced solutions with AI, cloud computing, and real-time analytics may take longer."
-        }
-      }
-    ]
-  };
 
   return (
     <>
@@ -271,168 +151,25 @@ export default function Altcoin(props: any) {
           property="og:type"
           content="Hire Best IOT App development Company In India | offshore Iot App developer or Programmers"
         />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
+        />
       </Head>
 
-     {/* <Header /> */}
+      {/* <Header /> */}
       <div className="overflow-hidden ">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Top Rated IoT Development Company in India"
-            ptag="Comfygen is a top rated IoT development company in India helping businesses build smart, secure, and scalable IoT solutions. We offer custom IoT app and software development services including device integration, cloud connectivity, real-time monitoring, and data analytics."
-            ptag1='Our expert IoT developers create reliable solutions that improve automation, efficiency, and decision-making for startups and enterprises across multiple industries.'
-            li=""
-            li1=""
-            li2=""
-            li3=""
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/iot-development-company-hero-img.webp"
-          />
-        </div>
-        <Milestones />
-
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Explore Our Cutting-Edge IoT Development Services for Smart Solutions</h2>
-              <p className="text-base text-center font-normal">Comfygen is recognized as the most reputed and trusted custom IoT development company in India. Our best custom IoT development services in India cover a range of areas. Let’s check them out in detail.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          heading="Reliable IoT App Development Company in India"
-          description1="At Comfygen, we specialize in custom IoT development services in India, delivering innovative, scalable, and secure IoT mobile app development solutions tailored to diverse industries. Our expert IoT app developers design smart, connected ecosystems that enhance automation, efficiency, and data-driven decision-making. From IoT app development to hardware integration, cloud computing, and AI-powered analytics, we offer end-to-end custom IoT app development solutions."
-          description2="As a leading IoT app development agency in India, we help businesses transform operations with smart devices, real-time monitoring, and advanced connectivity. Partner with us to build cutting-edge IoT software solutions that drive growth and innovation. Get in touch today!"
-          imageSrc="https://www.comfygen.com/image/about-us-image.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        {/* <ContactFromCenter /> */}
-        <section className="lg:py-16 py-10 bg-[#fff]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center lg:w-4/6 mx-auto">
-                <h2 className="text-4xl font-bold text-[#212121] text-center leading-[3rem]">Our Custom IoT Application Development Solutions to Enhance Business Productivity Across Industries </h2>
-                <p>Comfygen provides custom Internet of Things development solutions for various industries, enabling businesses to innovate, automate, and scale. The IoT-powered development solutions we offer enhance efficiency, security, and decision-making across a wide variety of industries.</p>
-              </div>
-              <div className="grid gap-10 pt-8 text-left lg:grid-cols-3 md:grid-cols-2">
-                {JSON_DATA.LeadingSoftware.map((elem) => {
-                  const { title, decs, num } = elem;
-                  return (
-                    <div className="border-2 p-8 space-y-2 bg-white  border-[#5556D1]/20 rounded-[40px]">
-                      <div className="w-20 h-20 bg-[#5556D1]/10 rounded-[17px]  flex justify-center items-center text-[32px] font-semibold text-[#5556D1]">
-                        {num}
-                      </div>
-                      <h3 className="text-2xl text-[#212121] font-semibold">{title}</h3>
-                      <p
-                        className=""
-                        dangerouslySetInnerHTML={{ __html: decs }}
-                      ></p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Iot Development Portfolio"
-            description="Showcasing our expertise in custom IoT development, here are some of the innovative solutions we've delivered"
-          />
-        </section>
-
-
-        <TechStack
-          title="Discover Our Exclusive Technology Stack For IoT App Development"
-          description="At Comfygen, we use the latest technology stack for IoT app development. We keep up with the ongoing trends and developing technologies to create scalable, secure, and efficient IoT apps. Here is the essential technology stack we focus on"
-          filterCategory={["crypto"]}
-        />
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Agile IoT Development Process for Fast and Efficient Deployment</h2>
-              <p className="text-base font-normal mt-2">Comfygen has built a strong reputation as a top leader in IoT application development services in India. We are known for our well-evaluated and high-quality workflow. Our comprehensive methodology in developing and deploying IoT apps will meet the needs of multiple clients in various industrial sectors. Here is the detailed methodology we follow </p>
-            </div>
-            <ProcessSec processSlides={JSON_DATA.Process} />
-          </div>
-        </section>
-        <section className=" 2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto lg:py-16 py-10">
-          <div className="flex flex-col justify-center text-center">
-            <h2 className=" text-[#212121] xl:text-4xl text-3xl font-bold xl:leading-[3rem] capitalize">
-              Check Out Our Different IoT Models For Business
-            </h2>
-            <p>At Comfygen, we offer solutions for different IoT models for different business types for easier access. We offer highly flexible engagement models based on the client's needs.</p>
-          </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1 mt-8 ">
-            {JSON_DATA.TecnologisStack.map((metaverse) => {
-              return (
-                <div
-                  key={metaverse.num}
-                  className="p-6 text-center bg-white space-y-2 hover:bg-[#5556D1]/20 transition-all duration-300 ease-in-out group border"
-                >
-                  <Image
-                    src={metaverse.img}
-                    alt={metaverse.title}
-                    className="mx-auto"
-                    width={400}
-                    height={200}
-                  />
-                  <h3 className="text-[#5556D1] font-bold text-lg group-hover:text-black">
-                    {metaverse.title}
-                  </h3>
-                  <p className="group-hover:text-black"> {metaverse.stack} </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Dedicated IoT Developers in India"
-          text="Looking for skilled IoT developers to bring your smart solutions to life? At Comfygen, we offer dedicated IoT developers in India who specialize in custom IoT applications and software development tailored to your business needs. Whether it’s remote monitoring, predictive analytics, industrial automation, or smart device integration, our team ensures seamless connectivity and cutting-edge innovation."
-          text1="From startups to enterprises, we help businesses optimize operations, enhance efficiency, and unlock new revenue streams through secure and scalable IoT solutions. Our experts work closely with you from ideation to implementation, ensuring that your IoT vision becomes a reality with precision and excellence."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            " Proficient in IoT development cycles: from hardware integration to cloud deployment",
-            "Cost-effective solutions: without compromising security or performance",
-            "Tailored IoT applications: customized to your unique business requirements",
-            "Flexible hiring models: full-time, part-time, or project-based"
-          ]}
-        />
-        <CallToAction
-          heading="Get additional information on our IoT App Development Services!"
-          text="Do you want additional information regarding our IoT development? Get in touch with our experts to find out the best solution to create top-notch IoT app development ways. Our consultants will give you tailored solutions as per your business requirements. Our professional team will help you make the most of our service. Your business will get comprehensive solutions with software design, development, and maintenance, as well as the latest technologies and trends."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=" "
-        />
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <Solution techData={JSON_DATA.Trading} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
 
       </div>

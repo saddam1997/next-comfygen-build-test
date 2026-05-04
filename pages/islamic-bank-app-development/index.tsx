@@ -1,341 +1,67 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import LazyLoad from "react-lazy-load";
 import JSON_DATA from "./json/islamicbankappdevelopment.json";
-import {
-  IconCloudComputing,
-  IconLock,
-  IconRobot,
-  IconSettings,
-  IconShield,
-} from "@tabler/icons-react";
 
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-import Header from "../../components/Newcomponet/layout/Header"
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
 
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
+  ssr: true,
+});
 
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+const Consultancy = dynamic(() => import("../../components/Consultancy"), {
+  ssr: true,
+});
 
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
+  ssr: true,
+});
 
-const SolutionSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-  
-);
+import TechStacks from "../../components/TechStacks";
 
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
+  ssr: true,
+});
 
-const LatestTechnology = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/LatestTechnology"),
-  { loading: loader, ssr: true }
-)
+const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
+  ssr: true,
+});
 
+const HireSection = dynamic(() => import("../../components/HireSection"), {
+  ssr: true
+});
 
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
+const FaqSection = dynamic(() => import("../../components/FaqSection"), {
+  ssr: true,
+});
 
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-
-const ConsultancyApproach = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const ClientTestimonials = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
-
-
-const BlogSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+const BlogSection = dynamic(() => import("../../components/BlogSection"), {
+  ssr: true,
+});
+const Solution = dynamic(() => import("../../components/Solution"), {
+  ssr: true,
+});
 
 
 
 export default function Mobile(props) {
   let { initialData } = props;
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 6000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-  const whychooesdata = {
-    pageData: {
-      title: "Why Choose Comfygen for Islamic Banking App Development?",
-      description:
-        "Comfygen is your reliable partner for building Shariah-compliant, secure, and scalable Islamic banking applications. With deep expertise in fintech and Islamic finance, we deliver tailored solutions that meet modern banking needs while adhering to Islamic principles.",
-      mainCardData: {
-        imageUrl: "https://www.comfygen.com/image/why-choose-sec-img.webp",
-        title: "Optimum Outcome Focused",
-        description:
-          "Our developers are focused to bring optimum outcomes through our competitive web and app.",
-      },
-      gridData: [
-        {
-          iconUrl: "https://www.comfygen.com/image/blockchain-expertise-icon.svg",
-          title: "10+ Years of Fintech App Development Expertise",
-          description:
-            "We bring over a decade of experience in fintech app development, enabling us to craft technically sound, innovative, and regulation-compliant Islamic banking apps that stand out in the global market.",
-        },
-        {
-          iconUrl: "https://www.comfygen.com/image/support-maintenance-icon.svg",
-          title: "Proven Success in Islamic Banking Solutions",
-          description:
-            "We have a track record of delivering successful Islamic banking platforms, featuring zakat management, halal investments, and Takaful modules—all aligned with Shariah financial laws.",
-        },
-        {
-          iconUrl: "https://www.comfygen.com/image/customer-satisfaction-icon.svg",
-          title: "Dedicated Team of Shariah Consultants and Developers",
-          description:
-            "Our in-house Shariah advisors work closely with our development team to ensure every feature and transaction flow is compliant with Islamic finance guidelines and globally accepted standards.",
-        },
-        {
-          iconUrl: "https://www.comfygen.com/image/projects-delivered-icon.svg",
-          title: "Scalable, Customizable Solutions",
-          description:
-            "Our Islamic banking solutions are fully customizable and built to scale with your business. Whether you're a startup or an established bank, we adapt to your growth and evolving customer needs.",
-        },
-        {
-          iconUrl: "https://www.comfygen.com/image/clients-icon.svg",
-          title: "Global Clientele with 24/7 Support",
-          description:
-            "We serve clients across the Middle East, Asia, and Africa, providing around-the-clock support to ensure continuous performance, quick issue resolution, and peace of mind post-deployment.",
-        },
-        {
-          iconUrl: "https://www.comfygen.com/image/error-free-icon.svg",
-          title: "Regulatory-Focused & Security-Driven Approach",
-          description:
-            "We develop apps with built-in compliance for Islamic finance regulations, GDPR, and local data laws—while embedding advanced security protocols like encryption, biometrics, and two-factor authentication.",
-        },
-      ]
-
-    },
-  };
 
 
-
-
-  const testimonialData = [
-    {
-      text: "Comfygen exceeded our expectations in developing a fully Shariah-compliant banking app for our institution. Their team understood the intricacies of Islamic finance and delivered a secure, scalable solution that our users love. Highly professional and responsive throughout the project.",
-      name: "Mohammad Al-Fahad",
-      title: "Saudi Arabia",
-      rating: 5,
-    },
-    {
-      text: "We partnered with Comfygen to build an Islamic mobile banking app with features like zakat tracking and halal investment tools. Their developers showed deep fintech expertise and ensured compliance at every stage. A trustworthy partner for any Islamic fintech venture.",
-      name: "Amina Yusuf",
-      title: "Malaysia",
-      rating: 5,
-    }
-  ];
-
-
-  const Process = [
-    {
-      title: "Consultation & Requirement Analysis",
-      description:
-        "We begin by analyzing your business goals, Shariah compliance needs, and functional requirements. Our team collaborates with stakeholders and Islamic finance advisors to define the app’s scope, features, and compliance framework.",
-    },
-    {
-      title: "UI/UX Design with Shariah Advisors",
-      description:
-        "Our designers work alongside Shariah consultants to create intuitive and ethical interfaces. We ensure the UI reflects Islamic values, supports RTL languages, and enhances usability across devices for global Muslim users.",
-    },
-    {
-      title: "Prototyping & Workflow Simulation",
-      description:
-        "We create interactive prototypes that map out user journeys, simulate app functionality, and validate the halal transaction flow early in the process. This allows for feedback and refinements before full-scale development begins.",
-    },
-    {
-      title: "Agile Development & Third-Party Integrations",
-      description:
-        "Using agile methodology, our developers build scalable Islamic banking apps with modular architecture. We integrate secure APIs for KYC, zakat payment gateways, halal investments, and more—ensuring real-time, compliant financial services.",
-    },
-    {
-      title: "Testing & Compliance Verification",
-      description:
-        "We conduct rigorous testing to validate app functionality, security, and compliance with Islamic finance laws and global data protection standards. Shariah advisors review each financial module before approval.",
-    },
-    {
-      title: "Security & Data Privacy Implementation",
-      description:
-        "Before deployment, we implement enterprise-grade encryption, secure authentication, and data privacy measures. This ensures the protection of sensitive user and financial data in full alignment with Islamic ethical standards.",
-    },
-    {
-      title: "Launch, Maintenance & Support",
-      description:
-        "After successful testing, we deploy your app on desired platforms with end-to-end support. We provide ongoing maintenance, updates, performance monitoring, and technical support to keep your app compliant and optimized.",
-    }
-  ];
-
-
-
-  const technologyData = [
-    {
-      title: "Artificial Intelligence (AI) & Machine Learning (ML)",
-      desc: "We utilize AI and ML to automate compliance checks, personalize halal investment recommendations, detect fraudulent activity, and enhance customer support with intelligent chatbots trained in Islamic finance principles.",
-      img: <IconRobot stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Blockchain Technology",
-      desc: "Blockchain provides transparency and immutability for Islamic financial transactions. Our blockchain-powered apps ensure secure contract validation for Murabaha, Ijarah, and Takaful products, reducing fraud and enhancing trust through decentralized ledger technology.",
-      img: <IconLock stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Cloud Computing",
-      desc: "Cloud infrastructure enables scalable, reliable Islamic banking apps accessible worldwide. It supports real-time transaction processing, secure data storage, and high availability, ensuring smooth operations even under heavy usage.",
-      img: <IconCloudComputing stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "Data Encryption & Cybersecurity",
-      desc: "We implement bank-grade encryption and stringent cybersecurity measures to protect sensitive user data, ensuring compliance with global privacy and Islamic finance regulations, and safeguarding against breaches and cyber threats.",
-      img: <IconShield stroke={1.5} className="w-12 h-12" />,
-    },
-    {
-      title: "API Integration for Financial Systems",
-      desc: "Our apps seamlessly integrate with core Islamic banking systems, payment gateways, KYC providers, and charity platforms through secure APIs, enabling real-time data synchronization and efficient financial management.",
-      img: <IconSettings stroke={1.5} className="w-12 h-12" />,
-    }
-  ];
-
-  const jsonLdData = [
-
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Shariah-Compliant Islamic Banking App Development Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Comfygen Technologies",
-        "url": "https://www.comfygen.com/"
-      },
-      "description": "Build secure, Shariah-compliant Islamic banking apps with Comfygen. We develop halal financial solutions including Zakat calculators, Murabaha modules, and Takaful features. Trusted Islamic fintech app development company.",
-      "url": "https://www.comfygen.com/islamic-bank-app-development",
-      "mainEntityOfPage": "https://www.comfygen.com/islamic-bank-app-development",
-      "areaServed": "Global",
-      "serviceType": [
-        "Custom Islamic banking app development",
-        "Zakat calculators and donation modules",
-        "Integration with core Islamic banking systems",
-        "Blockchain-Based Islamic Banking App Development",
-        "AI & ML-Based Islamic Banking App Development"
-      ],
-
-      "sameAs": [
-        "https://www.facebook.com/comfygen",
-        "https://www.linkedin.com/company/comfygen-private-limited"
-      ]
-    },
- 
-  
-    {
-      "@context": "https://schema.org/",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What makes an app Shariah-compliant?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Shariah-compliant app avoids interest-based transactions and includes Islamic financial principles like risk-sharing, profit-loss models, and ethical investing. Features such as Zakat calculators, halal loan systems (Murabaha, Ijarah), and Takaful modules are included. We also consult Shariah scholars to ensure every feature aligns with Islamic finance laws."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do you ensure regulatory compliance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We follow international and local Islamic finance regulations, such as AAOIFI and IFSB standards, and implement KYC, AML, and GDPR protocols. Our team works closely with compliance officers and Shariah consultants to integrate secure, auditable modules that meet both Islamic banking laws and regional regulatory frameworks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can existing banks integrate Islamic modules?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we specialize in integrating Shariah-compliant modules into existing conventional banking systems. Whether you want to add Murabaha, Zakat, or Islamic investment tools, our developers ensure smooth integration with your core banking systems through APIs, secure data migration, and minimal disruption to your existing operations."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the development timeline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The development timeline typically ranges from 8 to 20 weeks, depending on project scope, features, integrations, and customization needs. We follow an agile process—starting with consultation and design, followed by phased development, compliance checks, and testing—ensuring timely delivery without compromising quality or regulatory standards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the cost to develop an Islamic banking app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The cost to develop a Shariah-compliant Islamic banking app typically ranges from $25,000 to $150,000 or more. Pricing depends on factors like app complexity, number of features (e.g., Murabaha, Takaful, Zakat), platform (iOS/Android/Web), third-party integrations, and regulatory requirements. We provide tailored quotes based on your specific needs and goals."
-          }
-        }
-      ]
-    }
-
-
-  ];
 
   return (
     <>
       <Head>
         <title>
-         Custom Islamic Banking App Development Company
+          Custom Islamic Banking App Development Company
 
         </title>
         <meta
@@ -424,144 +150,28 @@ export default function Mobile(props) {
         />
         <meta name="twitter:site" content="@comfygentech" />
 
-    
+
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
 
 
-      <div className="">
-
-       {/* <Header /> */}
-
-      </div>
       <div className="overflow-hidden ">
-        <HeroSectionForAllPages
-          heading="Islamic Banking App Development Company"
-          ptag="As a trusted Islamic banking app development partner, Comfygen Technologies designs and develops compliant digital banking platforms for Islamic financial institutions. Our apps support ethical banking, transparent transactions, and interest-free financial models, ensuring alignment with Shariah guidelines and modern digital banking standards."
-          li="Shariah-Compliant Finance & Investment Modules"
-          li1="Secure & Scalable Digital Banking Architecture"
-          li2="1Guided by Islamic Finance Experts & Advisors"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-hero.webp"
-        />
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >We Provide Tailor-Made and Shariah-Compliant Islamic Banking App Development Services</h2>
-              <p className="text-base text-center font-normal">At Comfygen, our Islamic banking app development services empower financial institutions to deliver ethical, interest-free banking experiences. We specialize in building secure, scalable, and fully Shariah-compliant digital banking platforms for Islamic banks, fintech startups, and enterprises worldwide.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title=""
-          heading="Top Islamic Banking App Development Company Delivering Shariah-Compliant Fintech Solutions"
-          description1="Comfygen is a leading Islamic banking app development company, offering innovative and scalable digital banking solutions aligned with Islamic finance principles. We specialize in building secure, interest-free, and ethically driven banking apps for Islamic financial institutions, fintech startups, and enterprises across the globe."
-          description2="Our solutions include Shariah-compliant transaction modules, halal investment management, zakat calculators, Takaful integration, and Murabaha financing features, ensuring your platform meets both modern user needs and religious compliance. With expertise in financial technologies and Islamic jurisprudence, we deliver user-centric, high-performing apps tailored for global Muslim communities."
-          description3="By combining advanced technologies with a deep understanding of Islamic banking rules, Comfygen helps institutions transform traditional banking into next-gen digital experiences rooted in trust and ethics. Choose us to build a future-ready Islamic banking solution that empowers users and promotes financial inclusion in the halal way."
-          imageSrc="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-about.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-
-
-
-        <ConsultancyApproach
-          Head={JSON_DATA.consultancyHead}
-          ItemData={JSON_DATA.consultancyData}
-          imageSrc="https://www.comfygen.com/comfygen-images/islamic-banking-app-development/islamic-banking-app-development-consultancyHead.webp"
-          buttonText="Let’s Discuss"
-          buttonLink="/contact-us"
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="We Have Developed Islamic Banking Apps That You Can Check Out"
-            description="Explore our portfolio of Shariah-compliant Islamic banking app projects, crafted to deliver secure, interest-free, and ethical digital financial experiences. Our solutions blend advanced fintech technology with Islamic finance principles to empower institutions and users worldwide."
-          />
-        </section>
-
-
-        <LatestTechnology
-          heading="Technologies We Use for Islamic Banking App Development"
-          subheading="At Comfygen, a trusted Islamic banking app development company, we harness cutting-edge technologies to build secure, scalable, and fully Shariah-compliant digital banking solutions. Our tech stack ensures robust compliance, seamless user experience, and enhanced financial inclusion through ethical fintech innovation."
-          techData={technologyData}
-        />
-
-        <section className="bg-[#F5F5F9] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">Our Islamic Banking Mobile App Development Approach</h2>
-              <p className="text-base font-normal mt-2">
-                At Comfygen, we follow a structured and Shariah-compliant mobile app development process to build ethical, secure, and scalable Islamic banking solutions. From initial consultation to post-launch support, our approach ensures every product meets Islamic finance principles and modern digital banking standards.
-
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Tech Stack We Use in Islamic Banking App Development"
-          description="TAt Comfygen, we develop robust and Shariah-compliant Islamic banking apps using a modern and secure technology stack. Our tools and frameworks are carefully selected to ensure seamless performance, airtight security, regulatory compliance, and an exceptional user experience tailored for Islamic fintech."
-        />
-
-        <WhyChoose
-          title={whychooesdata.pageData.title}
-          description={whychooesdata.pageData.description}
-          mainCardData={whychooesdata.pageData.mainCardData}
-          gridData={whychooesdata.pageData.gridData}
-        />
-
-        <HireDeveloper
-          heading="Hire Our Dedicated Islamic Banking App Developers"
-          text="Looking to build a secure and Shariah-compliant banking app? Hire expert Islamic banking app developers from Comfygen who specialize in creating scalable, ethical, and regulation-aligned financial solutions. Our developers combine fintech expertise with deep knowledge of Islamic finance to deliver high-performance applications tailored to your needs."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Shariah-Compliant Financial App Architecture",
-            "Real-Time Transaction & Payment Integration",
-            "Custom UI/UX with RTL & Multi-language Support",
-            "Regulatory Compliance & Secure Coding Practices",
-          ]}
-
-        />
-
-        <ClientTestimonials
-          testimonials={testimonialData}
-          heading="What Our Clients Say"
-        />
-
-        <CallToAction
-          heading="Let’s hear what you have to say?"
-          text=" Get in touch with us and discuss your needs and requirements with our experts."
-          buttonText="Get Started"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Future of Technology"
-        />
-        <Faq
-          faqData={JSON_DATA.Frequently}
-          title=""
-        />
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+        <Consultancy consultancyData={JSON_DATA.Benefits} />
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        <Solution techData={JSON_DATA.Trading} />
+        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+        <WhyChooseSection pageData={JSON_DATA.pageData} />
+        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
+        <FaqSection faqData={JSON_DATA.Frequently} />
         <BlogSection initialData={initialData} />
       </div>
     </>

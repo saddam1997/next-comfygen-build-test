@@ -3,6 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
+import { Button } from "../ui/Button";
 
 const InfoSection = ({ InfoSectionData }: any) => {
   return (
@@ -37,8 +38,8 @@ const InfoSection = ({ InfoSectionData }: any) => {
                       {InfoSectionData?.points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="md:w-[10px] md:h-[10px] bg-[#5556D1] rounded-full hidden md:block"></div>
-                           <ParagraphText color="black" text={point} />
-                         
+                          <ParagraphText color="black" text={point} />
+
                         </li>
                       ))}
                     </ul>
@@ -50,9 +51,7 @@ const InfoSection = ({ InfoSectionData }: any) => {
                 <div className="mt-7">
                   {InfoSectionData.link && InfoSectionData.linkText && (
                     <Link href={InfoSectionData?.link}>
-                      <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                        {InfoSectionData?.linkText} <ArrowUpRight />
-                      </button>
+                      <Button variant="outline" className="mt-4 items-center text-[#5556D1]"> {InfoSectionData?.linkText}<span className="mb-4">→</span></Button>
                     </Link>
                   )}
                 </div>
@@ -77,7 +76,7 @@ const InfoSection = ({ InfoSectionData }: any) => {
                       {InfoSectionData?.points?.map((point: any, index: any) => (
                         <li key={index} className="flex items-center lg:gap-2 gap-1">
                           <div className="w-2 h-2 bg-[#5556D1] rounded-full hidden md:block"></div>
-                           <ParagraphText color="black" text={point} />
+                          <ParagraphText color="black" text={point} />
                         </li>
                       ))}
                     </ul>
@@ -89,14 +88,9 @@ const InfoSection = ({ InfoSectionData }: any) => {
 
                   {InfoSectionData.link && InfoSectionData.linkText && (
                     <Link href={InfoSectionData?.link}>
-                      <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                        {InfoSectionData?.linkText} <ArrowUpRight />
-                      </button>
+                      <Button variant="outline" className="mt-4 items-center text-[#5556D1]"> {InfoSectionData?.linkText}<span className="mb-4">→</span></Button>
                     </Link>
                   )}
-
-
-
                 </div>
               </div>
             </>

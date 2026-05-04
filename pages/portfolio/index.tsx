@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect, useLayoutEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
@@ -7,6 +7,7 @@ import JSON_DATA from "./portfolio.json";
 import PortfolioHero from '../../components/PortfolioPage/PortfolioHero';
 
 export default function Portfolio() {
+  const sectionRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
   /* ✅ FIX 1: NO useEffect (CLS fix) */
@@ -64,6 +65,27 @@ export default function Portfolio() {
     setCurrentPage(1);
   }, []);
 
+
+useLayoutEffect(() => {
+  if (!sectionRef.current) return;
+
+  const yOffset = -80; // adjust for sticky header
+  const y =
+    sectionRef.current.getBoundingClientRect().top +
+    window.pageYOffset +
+    yOffset;
+
+  window.scrollTo({
+    top: y,
+    behavior: "auto", // ⚠️ IMPORTANT (no smooth here)
+  });
+
+}, [currentPage]);
+
+const handlePageChange = (page: number) => {
+  setCurrentPage(page);
+};
+
   return (
     <div>
       <Head>
@@ -75,11 +97,11 @@ export default function Portfolio() {
         />
       </Head>
 
-      <PortfolioHero Data={JSON_DATA.HeroSection} />
+      <PortfolioHero Data={JSON_DATA.HeroSection}  />
 
       {/* CONTENT */}
       <div className="py-10 bg-white">
-        <section className="mx-auto w-11/12 max-w-6xl">
+        <section ref={sectionRef} className="mx-auto w-11/12 max-w-6xl">
 
           {/* TITLE */}
           <div className="text-center space-y-4 max-w-2xl mx-auto">
@@ -87,7 +109,7 @@ export default function Portfolio() {
               Our Excellent Portfolio
             </h2>
             <p className="text-gray-700">
-             Driving growth and success through creative design and development. Showcasing our passion for design and creativity
+              Driving growth and success through creative design and development. Showcasing our passion for design and creativity
             </p>
           </div>
 
@@ -153,7 +175,30 @@ export default function Portfolio() {
 
           {/* PAGINATION */}
           {totalPages > 1 && (
-            <div className="flex justify-center gap-4 mt-10">
+            <>
+              <div className="flex justify-center gap-4 mt-10">
+                <button
+                  onClick={() =>
+                    handlePageChange(Math.max(currentPage - 1, 1))
+                  }
+                >
+                  Prev
+                </button>
+
+                <span>
+                  {currentPage} / {totalPages}
+                </span>
+
+                <button
+                  onClick={() =>
+                    handlePageChange(Math.min(currentPage + 1, totalPages))
+                  }
+                >
+                  Next
+                </button>
+              </div>
+
+              {/* <div className="flex justify-center gap-4 mt-10">
               <button
                 onClick={() =>
                   setCurrentPage((prev) => Math.max(prev - 1, 1))
@@ -175,7 +220,8 @@ export default function Portfolio() {
               >
                 Next
               </button>
-            </div>
+            </div> */}
+            </>
           )}
         </section>
       </div>
@@ -185,24 +231,25 @@ export default function Portfolio() {
   );
 }
 
- export async function getStaticProps() {
-   try {
-     const res = await fetch(
-       `${process.env.URL}/api/v1/posts?per_page=3`
-     );
+export async function getStaticProps() {
+  try {
+    const res = await fetch(
+      `${process.env.URL}/api/v1/posts?per_page=3`
+    );
 
     if (!res.ok) throw new Error("API failed");
-     const data = await res.json();
+    const data = await res.json();
 
-     return {
+    return {
       props: { initialData: data },
       revalidate: 3600, // 24 hours
-     };
-   } catch (error) {
-     console.error("getStaticProps error:", error);
+    };
+  } catch (error) {
+    console.error("getStaticProps error:", error);
 
-     return {
+    return {
       props: { initialData: [] },
       revalidate: 3600, // retry in 1 hour
+    }
   }
- }}
+}

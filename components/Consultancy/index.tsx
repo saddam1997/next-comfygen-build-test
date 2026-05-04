@@ -5,8 +5,9 @@ import { Plus, Minus, ArrowUpRight } from 'lucide-react';
 
 
 import Image from 'next/image';
+import { Button } from "../ui/Button";
 
-const ItemDataSection = ({consultancyData}) => {
+const ItemDataSection = ({ consultancyData }) => {
 
     const [currentCount, setCurrentCount] = useState(0);
     if (!consultancyData?.title || !consultancyData?.proces) {
@@ -19,36 +20,34 @@ const ItemDataSection = ({consultancyData}) => {
                 <div className="lg:flex items-start lg:space-x-10 lg:space-y-0 space-y-6 w-full gap-10">
 
                     <div className="w-full lg:text-left">
-                      
-                            <div  className="w-full lg:text-left">
-                                <div className="space-y-6">
-                                    <Image
-                                        src={consultancyData?.image}
-                                        alt={consultancyData?.title || "Comfygen project image"}
-                                        width={754}
-                                        height={210}
-                                        quality={70}
-                                        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 754px"
-                                        loading="lazy"
-                                    />
-                                    
-                                    <div className="space-y-2 ">
-                                        <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
-                                            {consultancyData?.title}
-                                        </h2>
-                                        <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: consultancyData?.description }}></p>
-                                        <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: consultancyData?.description1 }}></p>
-                                    </div>
-                                    <div className="flex">
-                                        <Link href={consultancyData?.buttonLink || "#"} passHref>
-                                            <button className="text-base font-medium text-[#5556D1] border border-[#5556D1] rounded-full px-6 py-2.5 text-center hover:text-white hover:bg-[#5556D1] cursor-pointer transition duration-300 relative flex gap-2 items-center">
-                                                {consultancyData?.buttonText} <ArrowUpRight />
-                                            </button>
-                                        </Link>
-                                    </div>
+
+                        <div className="w-full lg:text-left">
+                            <div className="space-y-6">
+                                <Image
+                                    src={consultancyData?.image}
+                                    alt={consultancyData?.title || "Comfygen project image"}
+                                    width={754}
+                                    height={210}
+                                    quality={70}
+                                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 60vw, 754px"
+                                    loading="lazy"
+                                />
+
+                                <div className="space-y-2 ">
+                                    <h2 className="text-2xl font-bold text-[#212121] lg:text-3xl">
+                                        {consultancyData?.title}
+                                    </h2>
+                                    <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: consultancyData?.description }}></p>
+                                    <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: consultancyData?.description1 }}></p>
+                                </div>
+                                <div className="flex">
+                                    <Link href={consultancyData?.buttonLink || "#"} passHref>
+                                        <Button variant="outline" className="mt-4 items-center text-[#5556D1]">  {consultancyData?.buttonText}<span className="mb-4">→</span></Button>
+                                    </Link>
                                 </div>
                             </div>
-               
+                        </div>
+
                     </div>
 
                     <div className="w-full space-y-4">
