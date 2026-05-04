@@ -849,7 +849,7 @@
   </url>
 
   <url>
-    <loc>https://comfygen.com/sitemap-app</loc>
+    <loc>https://www.comfygen.com/sitemap-app/sitemap</loc>
    <lastmod>2026-04-01</lastmod>
   </url>
 
@@ -857,9 +857,6 @@
     <loc>https://www.comfygen.com/billing-software-development</loc>
     <lastmod>2026-04-01</lastmod>
   </url>
-
-
-
   <url>
     <loc>https://www.comfygen.com/handball-live-line-api-development</loc>
     <lastmod>2026-04-01</lastmod>
@@ -875,8 +872,5 @@
     <lastmod>2026-04-01</lastmod>
   </url>
   
-  
-  
-
 
 </urlset>
