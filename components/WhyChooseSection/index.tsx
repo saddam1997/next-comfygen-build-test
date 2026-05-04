@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
+import { Button } from "../ui/Button";
 
 const WhyChoose = ({ pageData }: any) => {
     const { title, description, mainCardData, gridData } = pageData
@@ -21,9 +22,9 @@ const WhyChoose = ({ pageData }: any) => {
                     </div>
                     <div>
                         <a href="https://api.whatsapp.com/send?phone=919587867258">
-                            <button className="text-base w-[225px] font-medium text-white rounded-full px-8 py-3.5 text-center bg-[#5556D1] cursor-pointer transition duration-300 flex items-center">
-                                Connect to expert
-                            </button>
+
+                        <Button variant="secondary" radius="full" className="w-[225px] py-2 text-white rounded-full">Connect to expert →</Button>
+                        
                         </a>
                     </div>
                 </div>

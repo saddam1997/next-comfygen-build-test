@@ -2,6 +2,7 @@
 "use client"
 import React, { Component } from "react";
 import JSON_DATA from "./json/country.json";
+import { Button } from "../../ui/Button";
 
 
 class ContactFrom extends Component<{}, any> {
@@ -284,14 +285,15 @@ class ContactFrom extends Component<{}, any> {
             </div>
 
           </div>
+           <Button  type="button" onClick={this.createContactUs} variant="secondary" radius="full" className=" py-2 text-white rounded-full"> {submitted ? "Submitting..." : "Send Message"} →</Button>
 
-          <button
+          {/* <button
             type="button"
             onClick={this.createContactUs}
             className="bg-[#5556D1] text-white px-6 py-2 rounded-full"
           >
-            {submitted ? "Submitting..." : "Send Message"}
-          </button>
+            
+          </button> */}
 
           {this.state.errorMessage && (
             <p className="text-red-500 text-sm">

@@ -5,6 +5,7 @@ import TalkToExpertModal from "../modals/TalkToExpertModal";
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 import Link from "next/link";
+import { Button } from "../ui/Button";
 
 
 export default function HeroClientCTA() {
@@ -33,47 +34,17 @@ export default function HeroClientCTA() {
 
     return (
         <>
-
-
-
-
             <div className="pt-3 sm:pt-4 relative hidden lg:block">
-
-                <button
-                    onClick={openModal}
-                    aria-label="Talk to an expert"
-                    className={`bg-transparent border-white border text-white font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-black  cursor-pointer transition duration-300`}
-                >
-                    Talk to an expert!
-
-                    {/* <span className="bg-transparent hrt">
-                        <Image src="/unnamed.webp"
-                            alt="heart"
-                            width={20}
-                            height={20}
-                            className=""
-                        />
-                    </span> */}
-                </button>
+                <Button onClick={openModal} variant="primary">Talk to an expert!</Button>
             </div>
 
             <div className="pt-3 sm:pt-4 relative lg:hidden ">
-
                 <Link
                     href="/contact-us"
                     aria-label="Talk to an expert"
-                    className={`bg-[#fff] w-fit flex items-center gap-8 text-sm sm:text-base text-[18px] font-semibold py-2 px-3 rounded-full`}
+                    className={` w-fit flex items-center gap-8 text-sm sm:text-base text-[18px] font-semibold py-2 px-3 rounded-full`}
                 >
-                   <span className="text-lg"> Talk to an expert!</span>
-
-                    <span className="bg-transparent  bg-[#5556d1] rounded-full ">
-                        <Image src="/unnamed.webp"
-                            alt="heart"
-                            width={20}
-                            height={20}
-                            className="h-[35px] w-[35px] rounded-full ml-[4px]"
-                        />
-                    </span>
+                    <Button variant="primary">Talk to an expert!</Button>
                 </Link>
             </div>
 

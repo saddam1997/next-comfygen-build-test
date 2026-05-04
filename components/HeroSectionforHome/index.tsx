@@ -38,6 +38,8 @@ export default function HeroSection({ herosection }: any) {
       >
         <div className="w-full lg:max-w-[65%] xl:max-w-[58%] space-y-4 sm:space-y-5 lg:space-y-6">
 
+
+
           {/* Heading */}
           {herosection.isHome ? (
             <h1 className="text-white text-3xl sm:text-[36px] lg:text-[36px] xl:text-5xl font-bold xl:leading-[4rem]">

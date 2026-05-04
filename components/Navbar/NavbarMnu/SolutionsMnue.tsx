@@ -1,9 +1,10 @@
 import React from 'react'
 
-import {  Blockchain, Blockchain1, Metaverse, Token,  Other, cryptoDevelopment, cryptoDevelopment1 } from "../navData"
+import { Blockchain, Blockchain1, Metaverse, Token, Other, cryptoDevelopment, cryptoDevelopment1 } from "../navData"
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '../../ui/Button';
 
 const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabClick }: any) => {
     return (
@@ -72,7 +73,7 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                                     />
                                     <div className="space-y-4 cursor-pointer">
                                         <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                             
+
                                             Blockchain Solution
                                         </p>
                                         <span className="text-[#212121]/80 text-sm font-normal">
@@ -338,15 +339,8 @@ const SolutionsMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTab
                                     width={511}
                                 />
                                 <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
-                                    <button className="flex items-center gap-2 bg-[#5556D1] py-3 px-6 font-semibold rounded-full text-lg text-white">
-                                        Connect to expert
-                                        <Image
-                                            src="https://www.comfygen.com/image/button-arrow.svg"
-                                            alt=""
-                                            height={22}
-                                            width={22}
-                                        />
-                                    </button>
+                                    <Button variant="secondary" radius="full" className=" py-2 text-white rounded-full"> Connect to expert →</Button>
+
                                 </span>
                             </a>
                         </div>
