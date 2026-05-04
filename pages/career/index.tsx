@@ -4,7 +4,7 @@ import Head from "next/head";
 import JSON_DATA from "./json/career.json"
 import LazyLoad from "react-lazy-load";
 
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForCompany from "../../components/Newcomponet/comman/HeroSectionForCompany";
 import PositionSec from "../../components/Newcomponet/career/PositionSec";
 import ContactUs from "./components/ContactUs";
@@ -177,7 +177,7 @@ export default function career(props:any) {
         <meta name="twitter:site" content="@comfygentech" />
       </Head>
   
-       {/* <Header /> */}
+ 
 
       <div className="overflow-hidden lg:pt-[50px]">
         <div className="bg-gradient-to-r 

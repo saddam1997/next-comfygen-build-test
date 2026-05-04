@@ -90,7 +90,7 @@ export default function Card() {
       <div className="absolute bottom-0 right-0 w-32 h-2 bg-gradient-to-l from-amber-500 to-orange-500" /> 
 
       <div className="relative max-w-6xl mx-auto">
-        {/* Header */}
+
         <div className="text-center mb-14">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 mb-4">

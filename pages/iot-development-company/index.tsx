@@ -157,7 +157,7 @@ export default function Altcoin(props: any) {
         />
       </Head>
 
-      {/* <Header /> */}
+  
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />

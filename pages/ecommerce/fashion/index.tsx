@@ -65,9 +65,9 @@ const BlogSection = dynamic(
   () => import("../../../components/BlogSection"),
   { ssr: true }
 );
-import IndustryGrid from "../../../components/IndustryGrid";
+
 import ReviewCard from "../../../components/ReviewCard";
-import EcommerceHeader from "../../../components/Newcomponet/layout/EcommerceHeader";
+
 
 
 

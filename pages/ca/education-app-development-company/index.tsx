@@ -13,10 +13,6 @@ import {
 
 import JSON_DATA from "./json/applicationConsulting.json";
 import { IconTools } from "@tabler/icons-react";
-
-import { MdControlPointDuplicate } from "react-icons/md";
-
-import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
@@ -398,9 +394,7 @@ export default function Mobile(props) {
           }}
         />
       </Head>
-      <div className="">
-       {/* <Header /> */}
-      </div>
+
       <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages

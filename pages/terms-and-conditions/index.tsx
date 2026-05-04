@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import React from 'react'
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import Header from '../../components/Newcomponet/layout/Header';
+
 
 const HeroSectiondesign2 = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectiondesign2'), {
   loading: () => <p>Loading...</p>,
@@ -38,7 +38,7 @@ export default function TermsAndConditions() {
         {/* hero section */}
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC]">
-           {/* <Header /> */}
+    
             <div className="py-20">
               <HeroSectiondesign2
                 heading='Terms And Conditions'

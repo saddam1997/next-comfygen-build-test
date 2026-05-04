@@ -15,7 +15,6 @@ import {
 } from "@tabler/icons-react";
 import { IconChartBar } from "@tabler/icons-react";
 
-import Header from "../../../components/Newcomponet/layout/Header";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 
@@ -331,9 +330,7 @@ export default function News(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </Head>
-      <div className="">
-       {/* <Header /> */}
-      </div>
+
       <div className="overflow-hidden ">
         <HeroSectionForAllPages
           heading="Best Magazine App Development Company in India & USA"

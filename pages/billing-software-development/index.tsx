@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./billing.json";
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages"
 import ClientStories from "../../components/Newcomponet/SectionCompoent/ClientStories";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
@@ -162,10 +162,6 @@ export default function ClinicalApp(props: any) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
           />
       </Head>
-
-
-     {/* <Header /> */}
-
       <div className="overflow-hidden ">
         <div className="">
           <HeroSectionForAllPages

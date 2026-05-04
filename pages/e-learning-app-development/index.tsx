@@ -71,8 +71,6 @@ const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-import IndustryGrid from "../../components/IndustryGrid";
-import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader";
 
 
 
@@ -98,7 +96,9 @@ import EcommerceHeader from "../../components/Newcomponet/layout/EcommerceHeader
 
 
 
-import Header from "../../components/Newcomponet/layout/Header";
+
+
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../components/Newcomponet/comman/Milestones";
 

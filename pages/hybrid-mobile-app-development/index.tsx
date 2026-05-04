@@ -105,7 +105,7 @@ const FaqSection = dynamic(() => import("../../components/FaqSection"), {
 
 
 import LazyLoad from "react-lazy-load";
-import Header from "../../components/Newcomponet/layout/Header";
+
 
 import HeroSection from "../../components/HeroSection";
 

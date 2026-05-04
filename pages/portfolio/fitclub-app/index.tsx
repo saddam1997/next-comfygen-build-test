@@ -6,9 +6,6 @@ import React from 'react'
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { BsArrowRight } from 'react-icons/bs';
-
-import Header from '../../../components/Newcomponet/layout/Header';
-
 const TechnologyStack = dynamic(() => import('../../../components/Newcomponet/portfolio/TechnologyStack'), {
   loading: () => <p>Loading...</p>,
 })
@@ -51,7 +48,7 @@ export default function about(props) {
         <div className={`bg-gradient-to-br from-[#b7b86a] via-[#d8b9a4] to-[#c9c4d3]`} >
           <div className='  w-full bg-[length:20rem_auto] bg-no-repeat bg-right-bottom' >
             <div className=" bg-[#1B1C30CC]/20">
-             {/* <Header /> */}
+      
               <div className="flex  justify-center items-center w-11/12 space-x-4 mx-auto 2xl:w-9/12 xl:w-5/6  md:space-y-20  py-8">
                 <div className="w-full">
                   <div className="space-y-6 text-start">

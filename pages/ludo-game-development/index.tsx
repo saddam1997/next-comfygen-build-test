@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/ludo.json";
 import Link from "next/link";
 
-import Header from "../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AboutSection = dynamic(
@@ -403,9 +403,7 @@ export default function LudoGame(props:any) {
         />
       </Head>
 
-      <div>
-       {/* <Header /> */}
-      </div>
+
 
       <div className=" ">
         <HeroSectionForAllPages

@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import Header from "../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AboutSection = dynamic(
@@ -283,7 +283,6 @@ export default function Ecommerce(props:any) {
           }} />
       </Head>
 
-       {/* <Header /> */}
 
       <div className="">
         <HeroSectionForAllPages

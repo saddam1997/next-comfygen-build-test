@@ -10,9 +10,7 @@ import { MdAdd, MdDesktopMac, MdRemove } from "react-icons/md";
 
 import styles from "./styles.module.css";
 import JSON_DATA from "./omaha.json";
-const Header = dynamic(() => import("../../components/Newcomponet/layout/Header"), {
-  ssr: true
-});
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const AdviceSection = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Advice"), {
@@ -262,7 +260,6 @@ export default function Altcoin(props) {
         />
       </Head>
       <div className="">
-       {/* <Header /> */}
       </div>
       <div className="overflow-hidden ">
         <div className="">

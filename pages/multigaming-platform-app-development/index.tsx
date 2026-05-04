@@ -8,7 +8,7 @@ import Link from "next/link";
 import JSON_DATA from "./json/multigaming.json";
 import styles from "./styles.module.css";
 
-import Header from "../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const Advice = dynamic(() => import("../../components/Newcomponet/SectionCompoent/Advice"), {
@@ -155,7 +155,6 @@ export default function rummy(props) {
         />
       </Head>
       <div className="lg:h-[90px]">
-       {/* <Header /> */}
       </div>
       <div className="overflow-hidden ">
         <div className="">

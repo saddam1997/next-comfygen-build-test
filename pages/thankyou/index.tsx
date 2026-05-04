@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from "next/image";
 import {  MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import Header from '../../components/Newcomponet/layout/Header';
+
 
 
 export default function Custom404() {
@@ -34,7 +34,7 @@ export default function Custom404() {
 
         <div className="bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC] text-center">
-           {/* <Header /> */}
+
             <div className="md:py-28 py-5">
               <div className="flex items-center justify-center py-6">
                 <Image

@@ -9,7 +9,7 @@ import JSON_DATA from "./json/mobile.json"
 import LazyLoad from 'react-lazy-load';
 
 import HeroSectionForm from '../../components/Newcomponet/SectionCompoent/HeroSectionForm';
-import Header from '../../components/Newcomponet/layout/Header';
+
 import ContactUsButton from '../../components/Newcomponet/SectionCompoent/ContactUsButton';
 
 const TalkExpert = dynamic(() => import('../../components/Newcomponet/SectionCompoent/TalkExpert'), {
@@ -165,7 +165,7 @@ export default function Mobile(props) {
         }} />
       </Head>
       <div className="">
-       {/* <Header /> */}
+
 
 
         <div className="lg:pt-[130px] py-5 bg-gradient-to-br from-[#4A63D9] to-[#4F46E5]">

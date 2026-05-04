@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./mobilebankingappdevelopment.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -381,7 +381,6 @@ export default function ClinicalApp(props: any) {
       </Head>
 
 
-     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         <HeroSectionForAllPages

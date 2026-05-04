@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/livelinecricketmobile.json";
 
-import Header from "../../components/Newcomponet/layout/Header"
+
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -342,7 +342,6 @@ export default function Ecommerce(props) {
 
       </Head>
 
-     {/* <Header /> */}
 
       <div className="overflow-hidden ">
         {/* hero section */}

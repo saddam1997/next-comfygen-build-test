@@ -5,7 +5,7 @@ import JSON_DATA from "./json/startApp.json";
 
 import Navbar from "../../../components/Navbar";
 import HeroSectionforHome from "../../../components/HeroSectionforHome"
-import Header from "../../../components/Newcomponet/layout/Header";
+
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import WhoCanStart from "../../../components/Newcomponet/SectionCompoent/WhoCanStart";
@@ -310,7 +310,7 @@ export default function Mobile(props) {
         />
 
       </Head>
-       {/* <Navbar /> */}
+   
       <HeroSectionforHome herosection={JSON_DATA.Herosection} />
       
      

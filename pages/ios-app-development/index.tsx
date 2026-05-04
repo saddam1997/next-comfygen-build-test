@@ -116,7 +116,7 @@ export default function Mobile(props: any) {
         />
       </Head>
 
-      {/* <Header /> */}
+
 
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />

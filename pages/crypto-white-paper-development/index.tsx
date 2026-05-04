@@ -115,15 +115,6 @@ import IndustryGrid from "../../components/IndustryGrid";
 
 
 
-
-
-
-
-
-
-
-
-import Header from "../../components/Newcomponet/layout/Header"
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -330,7 +321,7 @@ export default function MultiChain(props: any) {
         />
       </Head>
 
-       {/* <Navbar /> */}
+    
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
