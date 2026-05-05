@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import MENU_DATA from "./Navmenu.json";
 import Image from "next/image";
@@ -45,59 +44,71 @@ export default function MobileNav() {
       </div>
 
       {/* ✅ RENDER ONLY WHEN OPEN (BIG INP FIX) */}
-      {open && (
-        <div className="fixed inset-0 z-40">
 
-          {/* OVERLAY */}
-          <div
-            className="absolute inset-0 bg-black/50"
-            onClick={() => setOpen(false)}
-          />
+      <div
+        className={`absolute right-0 top-0 h-screen w-80 bg-white shadow-lg overflow-y-auto transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"
+          }`}
+      >
 
-          {/* SIDEBAR */}
-          <div className="absolute right-0 top-0 h-screen w-80 bg-white shadow-lg overflow-y-auto animate-slideIn">
+        {/* OVERLAY */}
+        <div
+          className="absolute inset-0 bg-black/50"
+          onClick={() => setOpen(false)}
+        />
 
-            <div className="p-4 border-b flex justify-between items-center">
-              <span>Menu</span>
-              <button onClick={() => setOpen(false)}>✕</button>
-            </div>
+        {/* SIDEBAR */}
+        <div className="absolute right-0 top-0 h-screen w-80 bg-white shadow-lg overflow-y-auto animate-slideIn">
 
-            <Link href="/" className="block p-4 border-b">
-              Home
+          <div className="p-2 border-b flex justify-between items-center">
+            <Link onClick={() => setOpen(false)} href="/" className="flex items-center h-full">
+              <Image
+                src="/svg/Logo1.svg"
+                alt="Logo"
+                width={274}
+                height={150}
+                priority
+                className="object-contain h-12 w-40"
+              />
             </Link>
-
-            {MENU_DATA.map((menu: any) => (
-              <details key={menu.id} className="border-b">
-                <summary className="p-4 cursor-pointer font-medium">
-                  {menu.title}
-                </summary>
-
-                {menu.sections.map((section: any) => (
-                  <details key={section.id} className="pl-4">
-                    <summary className="p-3 text-sm">
-                      {section.label}
-                    </summary>
-
-                    <ul className="pl-4 pb-3 text-sm">
-                      {section.items.map((item: any) => (
-                        <li key={item.url}>
-                          <Link
-                            href={item.url}
-                            className="block py-1"
-                            onClick={() => setOpen(false)}
-                          >
-                            {item.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </details>
-                ))}
-              </details>
-            ))}
+            <button onClick={() => setOpen(false)} className="text-xl font-semibold ml-6">✕</button>
           </div>
+{/* 
+          <Link href="/" className="block p-4 border-b">
+            Home
+          </Link> */}
+
+          {MENU_DATA.map((menu: any) => (
+            <details key={menu.id} className="border-b">
+              <summary className="p-4 cursor-pointer font-medium">
+                {menu.title}
+              </summary>
+
+              {menu.sections.map((section: any) => (
+                <details key={section.id} className="pl-4">
+                  <summary className="p-3 text-sm">
+                    {section.label}
+                  </summary>
+
+                  <ul className="pl-4 pb-3 text-sm">
+                    {section.items.map((item: any) => (
+                      <li key={item.url}>
+                        <Link
+                          href={item.url}
+                          className="block py-1"
+                          onClick={() => setOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ))}
+            </details>
+          ))}
         </div>
-      )}
+      </div>
+
     </>
   );
 }
