@@ -1,5 +1,8 @@
 export const MobileApp = [
-  { num: "1", name: "Mobile App Development", url: "/mobile-app-development" },
+  { num: "1", 
+    name: "Mobile App Development", 
+    url: "/mobile-app-development"
+   },
   {
     num: "2",
     name: "Application Consulting Service",

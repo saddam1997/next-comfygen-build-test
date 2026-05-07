@@ -1,13 +1,17 @@
 import DesktopNav from "./DesktopNav";
 import Mobileview from "./Mobileview";
 
+// const Mobileview = dynamic(() => import("./Mobileview"),
+//   { ssr: true }
+// );
+
 const Navbar = () => {
   return (
     <>
-      <div className="block lg:hidden">
+      {/* <div className="block lg:hidden">
         <Mobileview />
-      </div>
-      <div className="hidden lg:block">
+      </div> */}
+      <div className="">
         <DesktopNav />
       </div>
     </>
