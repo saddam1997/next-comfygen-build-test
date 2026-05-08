@@ -1,0 +1,332 @@
+{
+    "HeroContent": {
+        "badge": {
+            "stars": "★★★★★",
+            "text": "Rated 4.9 on Clutch · 150+ Apps Delivered"
+        },
+        "title": {
+            "start": "India's Trusted Food Delivery App",
+            "highlight": "Development Company",
+            "end": "— 150+ Apps Delivered"
+        },
+        "description": "Build a Zomato or Swiggy-style food delivery app. iOS + Android + Restaurant Panel + Delivery Partner App + Admin Dashboard all included.",
+        "pills": [
+            "100% Source Code",
+            "NDA Signed Upfront",
+            "Launch in 2–4 Weeks",
+            "3 Months Free Support"
+        ],
+        "buttonsText": "Schedule Free Consultation",
+        "trustStats": [
+            {
+                "value": "150+",
+                "label": "Food apps built"
+            },
+            {
+                "value": "30+",
+                "label": "Countries served"
+            },
+            {
+                "value": "8+ yrs",
+                "label": "Industry experience"
+            },
+            {
+                "value": "4.9★",
+                "label": "Avg client rating"
+            }
+        ]
+    },
+    "reviewed": [
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/clutch.webp",
+            "alt": "Clutch Logo",
+            "link": "https://clutch.co/profile/comfygen-technologies"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/goodfirms.webp",
+            "alt": "GoodFirms Logo",
+            "link": "https://www.goodfirms.co/company/comfygen"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/designerush.webp",
+            "alt": "Designerush Logo",
+            "link": "https://www.designrush.com/agency/profile/comfygen"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/selectedfirms.webp",
+            "alt": "SelectedFirms Logo",
+            "link": "https://selectedfirms.co/agency/comfygen-private-limited"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/topdeveloper.webp",
+            "alt": "TopDeveloper Logo",
+            "link": "https://www.topdevelopers.co/profile/comfygen"
+        }
+    ],
+    "Deliverables": {
+        "title": "What's Included",
+        "subtitle": {
+            "start": "India's Trusted Food Delivery App",
+            "highlight": "Development Company",
+            "end": "— 150+ Apps Delivered"
+        },
+        "description": "Our comprehensive food delivery app solution includes everything you need to launch and scale your business — from customer apps to restaurant panels, delivery driver apps, admin dashboards, payment gateways, and more.",
+        "deliverables": [
+            {
+                "icon": "📱",
+                "title": "Customer App (iOS + Android)",
+                "description": "Native-feel apps with Google/Truecaller login, Hinglish search, real-time order tracking, UPI payments, and push notifications. Optimized for Tier 1, 2, and 3 cities across India."
+            },
+            {
+                "icon": "🏪",
+                "title": "Restaurant Vendor App",
+                "description": "Menu management, order acceptance, real-time inventory, GST-compliant sales reports, and earnings dashboard for restaurant partners across India."
+            },
+            {
+                "icon": "🛵",
+                "title": "Delivery Partner App",
+                "description": "Auto-assigned orders, optimized GPS routes for Indian roads, in-app navigation, daily earnings tracker, and one-tap support built for India's gig workforce."
+            },
+            {
+                "icon": "📊",
+                "title": "Web Admin Dashboard",
+                "description": "Manage restaurants, delivery partners, payments, commissions, promo codes, GST reports, analytics, and customer data all from one panel."
+            },
+            {
+                "icon": "💳",
+                "title": "Payment Gateway Integration (India-First)",
+                "description": "Razorpay, PayU, Cashfree, PhonePe, Paytm, Google Pay, UPI, all major Indian credit/debit cards, Net Banking, Wallets, and Cash on Delivery pre-integrated and PCI-DSS compliant."
+            },
+            {
+                "icon": "🗺️",
+                "title": "Real-Time GPS Tracking",
+                "description": "Live order tracking with Google Maps optimized for Indian addresses, ETA prediction, delivery partner location sharing, and geofencing for accurate hyperlocal delivery."
+            },
+            {
+                "icon": "🔐",
+                "title": "100% Source Code Ownership",
+                "description": "You own every line of code, the database, and all IP rights. No license fees. Work with any team after delivery. Code hosted on GitHub/Bitbucket."
+            },
+            {
+                "icon": "🎧",
+                "title": "3 Months Free Support",
+                "description": "Bug fixes, performance monitoring, OS updates, and priority response within 4 hours for critical issues included."
+            },
+            {
+                "icon": "🚀",
+                "title": "App Store Deployment",
+                "description": "We handle Apple App Store + Google Play Store submission for your Indian business entity, MeitY compliance, and DPDP Act 2023 data privacy compliance done for you."
+            }
+        ]
+    },
+    "AppTypes": {
+        "title": "Choose Your Model",
+        "subtitle": {
+            "start": " Which type of food app do you want",
+            "highlight": "to build?",
+            "end": "— 150+ Apps Delivered"
+        },
+        "description": "From single restaurant ordering to pan-India marketplaces we've built every major food delivery model for Indian businesses. Click any to get a tailored quote in INR.",
+        "appTypes": [
+            {
+                "tag": "MOST REQUESTED",
+                "title": "Zomato Clone App",
+                "description": "Restaurant discovery + food ordering platform with reviews, ratings, table reservations, and real-time tracking. Ready in 4 weeks."
+            },
+            {
+                "tag": "FAST LAUNCH",
+                "title": "Swiggy Clone App",
+                "description": "Multi-vendor delivery marketplace with smart routing, instant payouts to delivery partners, and aggregator-style restaurant onboarding."
+            },
+            {
+                "tag": "MULTI-CITY SCALE",
+                "title": "Multi-City Delivery App",
+                "description": "Scale-ready food delivery app with multi-city support, regional language options (Hindi, Tamil, Telugu, Bengali, Marathi, Kannada + 5 more), and surge pricing."
+            },
+            {
+                "tag": "HIGH MARGIN",
+                "title": "Cloud Kitchen App",
+                "description": "Manage multiple virtual brands from one kitchen. Smart order routing, KDS integration, and Zomato/Swiggy aggregator order pull."
+            },
+            {
+                "tag": "DIRECT ORDERS",
+                "title": "Single Restaurant App",
+                "description": "Branded ordering app for your restaurant. No commission cuts to aggregators. Loyalty programs, table reservations, and direct customer data."
+            },
+            {
+                "tag": "15-MIN DELIVERY",
+                "title": "Hyperlocal Delivery App",
+                "description": "Geofencing-based ultra-fast delivery (15–30 min) like Zepto, Blinkit, Instamart. Smart driver dispatch, kitchen prep prediction, dark store support."
+            },
+            {
+                "tag": "RECURRING REVENUE",
+                "title": "Tiffin & Meal Subscription App",
+                "description": "Tiffin services, dabba delivery, diet meal plans, office catering. Weekly/monthly subscriptions, pause/cancel anytime. Perfect for India's growing tiffin market."
+            },
+            {
+                "tag": "B2B MARKETPLACE",
+                "title": "Restaurant Aggregator",
+                "description": "Build the next Zomato. Multi-restaurant onboarding, GST-compliant payouts, commission engine, and 1,000+ vendor scale."
+            },
+            {
+                "tag": "CUSTOM BUILD",
+                "title": "Something Else?",
+                "description": "Got a unique food delivery idea? We've built grocery (BigBasket-style), pharmacy (1mg-style), milk delivery (Country Delight-style), sweets, paan, and even chai delivery apps too."
+            }
+        ]
+    },
+    "FoodDelivery": {
+        "title": "Premium Mobile Showcase",
+        "subtitle": {
+            "start": "Food Delivery",
+            "highlight": " App UI",
+            "end": ""
+        },
+        "description": "Modern mobile application showcase with smooth sliding animation, responsive layout and premium UI experience.",
+        "UiOpstion": [
+            {
+                "name": "Driver App",
+                "image": "https://www.comfygen.com/comfygen-images/food-delivery-app/driver.webp"
+            },
+            {
+                "name": "Admin Panel",
+                "image": "https://www.comfygen.com/comfygen-images/food-delivery-app/admin.webp"
+            },
+            {
+                "name": "User App",
+                "image": "https://www.comfygen.com/comfygen-images/food-delivery-app/User.webp"
+            },
+            {
+                "name": "Vendor Panel",
+                "image": "https://www.comfygen.com/comfygen-images/food-delivery-app/vendor.webp"
+            }
+        ]
+    },
+    "Pricing": {
+        "title": "Transparent Pricing",
+        "subtitle": {
+            "start": "How much does a food delivery app",
+            "highlight": "actually cost?",
+            "end": ""
+        },
+        "description": "No hidden fees. No \"we'll quote later\" games. Pick the package that fits your stage — or get a custom quote.",
+        "pricingPlans": [
+            {
+                "name": "Starter MVP",
+                "price": "$15K – $25K",
+                "timeline": "⏱ 8–12 weeks delivery",
+                "featured": false,
+                "features": [
+                    "Customer app (iOS + Android)",
+                    "Single restaurant or basic multi-vendor",
+                    "Real-time order tracking",
+                    "1 payment gateway integration",
+                    "Basic admin panel",
+                    "3 months post-launch support",
+                    "App store deployment"
+                ]
+            },
+            {
+                "name": "Growth Marketplace",
+                "price": "$25K – $50K",
+                "timeline": "⏱ 12–16 weeks delivery",
+                "featured": true,
+                "features": [
+                    "Everything in Starter",
+                    "Full multi-vendor marketplace",
+                    "Restaurant + Driver apps",
+                    "Multi-payment gateway support",
+                    "Advanced admin dashboard",
+                    "Push notifications & promo engine",
+                    "Loyalty program & wallet",
+                    "6 months post-launch support"
+                ]
+            },
+            {
+                "name": "Enterprise",
+                "price": "$50K+",
+                "timeline": "⏱ 16–24 weeks delivery",
+                "featured": false,
+                "features": [
+                    "Everything in Growth",
+                    "AI-powered recommendations",
+                    "Smart route optimization",
+                    "Multi-country & multi-currency",
+                    "Custom integrations (POS, ERP, CRM)",
+                    "Advanced analytics & BI",
+                    "Enterprise SLA & dedicated PM",
+                    "12 months priority support"
+                ]
+            }
+        ],
+        "Note": {
+            "title": "Not sure which fits you?",
+            "description": " Our consultants will analyze your business model and recommend the right package — at no cost.",
+            "buttonText": "Get a custom quote"
+        }
+    },
+    "Comparison": {
+        "title": "Why Comfygen",
+        "subtitle": {
+            "start": "Why food businesses choose us over",
+            "highlight": "freelancers & generic agencies",
+            "end": ""
+        },
+        "description": "We're not the cheapest. We're not the most expensive. We're the safest bet for getting a working food delivery app launched on time.",
+        "comparisonData": {
+            "heading1":"Comfygen",
+            "heading2":"Freelancers",
+            "heading3":"Other Agencies",
+            "rows": [
+                {
+                    "feature": "100% source code ownership",
+                    "comfygen": "'✓'",
+                    "freelancers": "'⚠️ Sometimes'",
+                    "agencies": "'✗'"
+                },
+                {
+                    "feature": "'Predictable 2–12 week delivery'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'✗'",
+                    "agencies": "'⚠️ 6+ months'"
+                },
+                {
+                    "feature": "'3 months free post-launch support'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'✗'",
+                    "agencies": "'⚠️ Paid'"
+                },
+                {
+                    "feature": "'NDA signed before discussion'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'✗'",
+                    "agencies": "'⚠️ Sometimes'"
+                },
+                {
+                    "feature": "'Dedicated project manager'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'✗'",
+                    "agencies": "'✓'"
+                },
+                {
+                    "feature": "'iOS + Android + Web Admin included'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'⚠️ Extra cost'",
+                    "agencies": "'⚠️ Extra cost'"
+                },
+                {
+                    "feature": "'Transparent fixed pricing'",
+                    "comfygen": "'✓'",
+                    "freelancers": "'✗'",
+                    "agencies": "'✗'"
+                },
+                {
+                    "feature": "'Cost vs US/UK agencies'",
+                    "comfygen": "'60–70% lower'",
+                    "freelancers": "'Variable'",
+                    "agencies": "'Similar'"
+                }
+            ]
+        }
+    }
+}

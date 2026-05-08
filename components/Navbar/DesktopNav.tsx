@@ -65,13 +65,14 @@ export default function DesktopNav() {
           {/* LOGO */}
 
           <Link href="/">
-            <div className="relative w-[160px] h-[40px]">
+            <div className="relative lg:w-[260px] lg:h-[60px] h-10 w-52">
               <Image
                 src="/svg/Logo1.svg"
                 alt="logo"
-                fill
+                width={640}
+                height={320}
                 priority
-                className="object-contain"
+                className="object-contain "
               />
             </div>
           </Link>

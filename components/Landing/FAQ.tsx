@@ -7,20 +7,17 @@ const faqs = [
     question:
       'How much does it cost to build a food delivery app like Zomato or Swiggy?',
     answer: `
-      <p>It depends on features, platforms, and complexity. Here's a clear breakdown:</p>
+      <p>It depends on features, platforms, and complexity. Here s a clear breakdown:</p>
 
-      <p><span class="font-semibold text-gray-700">Starter MVP:</span> $15,000 – $25,000 (single restaurant or basic multi-vendor, 8–12 weeks)</p>
+      <p><span class="font-semibold text-gray-700">Starter MVP:</span> $5000 – $8,000 (single restaurant or basic multi-vendor, 8–12 weeks)
+</p>
 
-      <p><span class="font-semibold text-gray-700">Growth Marketplace:</span> $25,000 – $50,000 (full multi-vendor with real-time tracking, 12–16 weeks)</p>
+      <p><span class="font-semibold text-gray-700">Growth Marketplace:</span> $8,000 – $15,000 (full multi-vendor with real-time tracking, 12–16 weeks) 
+</p>
 
-      <p><span class="font-semibold text-gray-700">Enterprise:</span> $50,000+ (AI features, multi-country, advanced analytics, 16–24 weeks)</p>
-      <p>
-        Want a precise quote for your idea?
-        <a href="#hero-form" class="font-semibold text-[#FF5A3C]">
-          Book a free consultation
-        </a>
-        — we'll send a custom estimate within 24 hours.
-      </p>
+      <p><span class="font-semibold text-gray-700">Enterprise:</span> $15,000+ (AI features, multi-country, advanced analytics, 16–24 weeks) Want a precise quote for your idea? Book a free consultation we ll send a custom estimate within 24 hour 
+</p>
+      
     `,
   },
   {
@@ -129,9 +126,8 @@ export default function FAQ() {
             return (
               <div
                 key={index}
-                className={`mb-3 overflow-hidden rounded-[14px] border bg-white transition-all duration-200 hover:border-[#FF5A3C] ${
-                  isOpen ? 'border-[#FF5A3C]' : 'border-[#E8E2DD]'
-                }`}
+                className={`mb-3 overflow-hidden rounded-[14px] border bg-white transition-all duration-200 hover:border-[#FF5A3C] ${isOpen ? 'border-[#FF5A3C]' : 'border-[#E8E2DD]'
+                  }`}
               >
                 {/* Question */}
                 <button
@@ -141,9 +137,8 @@ export default function FAQ() {
                   <span className="pr-4">{faq.question}</span>
 
                   <span
-                    className={`shrink-0 text-[24px] font-light text-[#FF5A3C] transition-transform duration-200 ${
-                      isOpen ? 'rotate-45' : 'rotate-0'
-                    }`}
+                    className={`shrink-0 text-[24px] font-light text-[#FF5A3C] transition-transform duration-200 ${isOpen ? 'rotate-45' : 'rotate-0'
+                      }`}
                   >
                     +
                   </span>
@@ -151,18 +146,17 @@ export default function FAQ() {
 
                 {/* Answer */}
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    isOpen
-                      ? 'grid-rows-[1fr] opacity-100'
-                      : 'grid-rows-[0fr] opacity-0'
-                  }`}
+                  className={`grid transition-all duration-300 ease-in-out ${isOpen
+                    ? 'grid-rows-[1fr] opacity-100'
+                    : 'grid-rows-[0fr] opacity-0'
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <div
                       className="px-5 pb-6 text-[14px] leading-[1.7] text-gray-700 sm:px-6 sm:text-[15px]"
                       dangerouslySetInnerHTML={{ __html: faq.answer }}
                     />
-                    
+
                   </div>
                 </div>
               </div>
