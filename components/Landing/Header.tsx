@@ -22,8 +22,6 @@ export default function Header() {
       <div className="mx-auto max-w-[1200px] px-6">
 
         <div className="flex items-center justify-between">
-
-          {/* LOGO */}
           <div className="font-[Fraunces] text-[22px] font-bold tracking-[-0.02em] text-[#1A1614]">
 
             <Link href="/">
