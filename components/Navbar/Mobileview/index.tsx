@@ -44,7 +44,6 @@ export default function MobileNav() {
       </div>
 
       {/* ✅ RENDER ONLY WHEN OPEN (BIG INP FIX) */}
-
       <div
         className={`absolute right-0 top-0 h-screen w-80 bg-white shadow-lg overflow-y-auto transform transition-transform duration-300 ${open ? "translate-x-0" : "translate-x-full"
           }`}
@@ -72,7 +71,7 @@ export default function MobileNav() {
             </Link>
             <button onClick={() => setOpen(false)} className="text-xl font-semibold ml-6">✕</button>
           </div>
-{/* 
+          {/* 
           <Link href="/" className="block p-4 border-b">
             Home
           </Link> */}
