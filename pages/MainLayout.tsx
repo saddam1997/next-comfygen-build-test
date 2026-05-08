@@ -1,8 +1,9 @@
 import Navbar from "../components/Navbar";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 const LazyClientTools = dynamic(
   () => import("./LazyClientTools"),
-  { ssr: false,  loading: () => <div style={{ height: 300 }} /> }
+  { ssr: false, loading: () => <div style={{ height: 300 }} /> }
 );
 
 const GetinTouch = dynamic(
@@ -26,15 +27,27 @@ export default function MainLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+  const pathname = usePathname();
+  const isLandingPage = pathname === "/food-delivery-app";
+
   return (
     <div className="w-full min-h-screen bg-white overflow-hidden">
 
+      {!isLandingPage && (
+        <header className="h-[52px] w-full overflow-hidden">
+          <div className="fixed top-0 left-0 w-full h-[60px] z-50 bg-white">
+            <Navbar />
+          </div>
+        </header>
+      )}
+
       {/* NAVBAR */}
-      <header className="h-[52px] w-full overflow-hidden">
+      {/* <header className="h-[52px] w-full overflow-hidden">
         <div className="fixed top-0 left-0 w-full h-[60px] z-50 bg-white">
           <Navbar />
         </div>
-      </header>
+      </header> */}
 
       {/* ✅ FIXED CONTENT SHIFT */}
       <main className="pt-[11px] w-full max-w-[1600px] mx-auto">
@@ -44,16 +57,31 @@ export default function MainLayout({
         </div>
 
         {/* CTA */}
-        <section className="w-full">
+        {/* <section className="w-full">
           <div className="min-h-[420px] md:min-h-[380px]">
             <GetinTouch />
           </div>
-        </section>
+        </section> */}
+        {!isLandingPage && (
+          <section className="w-full">
+            <div className="min-h-[420px] md:min-h-[380px]">
+              <GetinTouch />
+            </div>
+          </section>
+        )}
 
         {/* FOOTER */}
-        <footer className="w-full min-h-[300px]">
+        {/* <footer className="w-full min-h-[300px]">
           <Footer />
-        </footer>
+        </footer> */}
+
+
+         {!isLandingPage && (
+          <footer className="w-full min-h-[300px]">
+            <Footer />
+          </footer>
+        )}
+
       </main>
 
       {/* CLIENT TOOLS */}
