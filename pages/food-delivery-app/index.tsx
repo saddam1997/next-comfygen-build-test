@@ -1,4 +1,5 @@
 import React from 'react'
+import JSON_DATA from './foodDeliveryApp.json'
 import Hero from '../../components/Landing/Hero'
 import TrustBar from '../../components/Landing/TrustBar'
 import Deliverables from '../../components/Landing/Deliverables'
@@ -13,19 +14,23 @@ import TechStack from '../../components/Landing/TechStack'
 import FAQ from '../../components/Landing/FAQ'
 import FinalCTA from '../../components/Landing/FinalCTA'
 import Header from '../../components/Landing/Header'
+import FoodDeliveryUISection from '../../components/Landing/FoodDeliveryUISection'
+
+
 
 const index = () => {
   return (
     <div className=''>
-      <Header/>
-       <Hero/>
-       <TrustBar/>
-       <Deliverables/>
+      <Header />
+       <Hero DATA={JSON_DATA.HeroContent}/>
+       <TrustBar DATA={JSON_DATA.reviewed}/>
+       <Deliverables DATA={JSON_DATA.Deliverables}/>
        {/* <StickyElements/> */}
-       <AppTypes/>
-       <Pricing/>
-       <Testimonials/>
-       <Comparison/>
+       <AppTypes DATA={JSON_DATA.AppTypes}/>
+       <FoodDeliveryUISection DATA={JSON_DATA.FoodDelivery}/>
+       <Pricing DATA={JSON_DATA.Pricing}/>
+       {/* <Testimonials/> */}
+       <Comparison DATA={JSON_DATA.Comparison}/>
        <Process/>
        <TechStack/>
        <FAQ/>

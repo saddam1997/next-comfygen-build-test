@@ -1,63 +1,7 @@
 "use client";
 
-const deliverables = [
-  {
-    icon: "📱",
-    title: "Customer App (iOS + Android)",
-    description:
-      "Native-feel apps with social login, smart search, real-time order tracking, multiple payment options, and push notifications.",
-  },
-  {
-    icon: "🏪",
-    title: "Restaurant Vendor App",
-    description:
-      "Menu management, order acceptance, real-time inventory, sales reports, and earnings dashboard for restaurant partners.",
-  },
-  {
-    icon: "🛵",
-    title: "Delivery Driver App",
-    description:
-      "Auto-assigned orders, optimized GPS routes, in-app navigation, earnings tracker, and one-tap customer support.",
-  },
-  {
-    icon: "📊",
-    title: "Web Admin Dashboard",
-    description:
-      "Manage restaurants, drivers, payments, commissions, promo codes, analytics, and customer data — all from one panel.",
-  },
-  {
-    icon: "💳",
-    title: "Payment Gateway Integration",
-    description:
-      "Razorpay, Stripe, PayU, PhonePe, UPI, Apple Pay, Google Pay, and Cash-on-Delivery — pre-integrated and PCI-compliant.",
-  },
-  {
-    icon: "🗺️",
-    title: "Real-Time GPS Tracking",
-    description:
-      "Live order tracking with Google Maps or Mapbox, ETA prediction, driver location sharing, and geofencing for accuracy.",
-  },
-  {
-    icon: "🔐",
-    title: "100% Source Code Ownership",
-    description:
-      "You own every line of code, the database, and all IP rights. No license fees. Work with any team after delivery.",
-  },
-  {
-    icon: "🎧",
-    title: "3 Months Free Support",
-    description:
-      "Bug fixes, performance monitoring, OS updates, and priority response within 4 hours for critical issues — included.",
-  },
-  {
-    icon: "🚀",
-    title: "App Store Deployment",
-    description:
-      "We handle Apple App Store + Google Play Store submission, compliance checks, and app review approval — done for you.",
-  },
-];
 
-export default function Deliverables() {
+export default function Deliverables({ DATA }: any) {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-24">
 
@@ -76,7 +20,7 @@ export default function Deliverables() {
             text-[#FF5A3C]
             min-[480px]:text-[12px]
           ">
-            What's Included
+            {DATA.title}
           </span>
 
           {/* TITLE */}
@@ -93,12 +37,11 @@ export default function Deliverables() {
             lg:text-[44px]
           ">
 
-            Everything you need to launch a{" "}
+            {DATA.subtitle.start}{" "}
 
-            <em className="italic text-[#FF5A3C]">
-              complete food delivery business
-            </em>
-
+            <span className=" text-[#FF5A3C]">
+              {DATA.subtitle.highlight}
+            </span>
           </h2>
 
           {/* SUBTEXT */}
@@ -109,9 +52,8 @@ export default function Deliverables() {
             min-[480px]:text-[15px]
             md:text-[17px]
           ">
-            No surprise costs. No "extras" charged later. Every food
-            delivery app we build comes with the full ecosystem ready
-            to run a real business from day one.
+            {DATA.description}
+          
           </p>
 
         </div>
@@ -127,7 +69,7 @@ export default function Deliverables() {
           lg:gap-4
         ">
 
-          {deliverables.map((item, index) => (
+          {DATA.deliverables.map((item: any, index: number) => (
             <div
               key={index}
               className="

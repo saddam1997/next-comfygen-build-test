@@ -1,63 +1,6 @@
 "use client";
 
-const appTypes = [
-  {
-    tag: "MOST REQUESTED",
-    title: "Zomato Clone App",
-    description:
-      "Restaurant discovery + food ordering platform with reviews, ratings, table reservations, and real-time tracking. Ready in 4 weeks.",
-  },
-  {
-    tag: "FAST LAUNCH",
-    title: "Swiggy Clone App",
-    description:
-      "Multi-vendor delivery marketplace with smart routing, instant payouts, and aggregator-style restaurant onboarding.",
-  },
-  {
-    tag: "GLOBAL READY",
-    title: "UberEats / DoorDash Clone",
-    description:
-      "International-grade food delivery app with multi-currency, multi-language, and surge pricing logic for global markets.",
-  },
-  {
-    tag: "HIGH MARGIN",
-    title: "Cloud Kitchen App",
-    description:
-      "Manage multiple virtual brands from one kitchen. Smart order routing, KDS integration, and aggregator order pull.",
-  },
-  {
-    tag: "DIRECT ORDERS",
-    title: "Single Restaurant App",
-    description:
-      "Branded ordering app for your restaurant. No commission cuts. Loyalty programs, reservations, and direct customer data.",
-  },
-  {
-    tag: "15-MIN DELIVERY",
-    title: "Hyperlocal Delivery App",
-    description:
-      "Geofencing-based ultra-fast delivery (15–30 min). Smart driver dispatch, kitchen prep prediction, dark store support.",
-  },
-  {
-    tag: "RECURRING REVENUE",
-    title: "Meal Subscription App",
-    description:
-      "Tiffin services, diet meal plans, office catering. Weekly/monthly subscriptions, pause/cancel anytime, predictable revenue.",
-  },
-  {
-    tag: "B2B MARKETPLACE",
-    title: "Restaurant Aggregator",
-    description:
-      "Build the next Zomato. Multi-restaurant onboarding, payout management, commission engine, and 1,000+ vendor scale.",
-  },
-  {
-    tag: "CUSTOM BUILD",
-    title: "Something Else?",
-    description:
-      "Got a unique food delivery idea? We've built grocery, pharmacy, alcohol, ice cream, meat, and milk delivery apps too.",
-  },
-];
-
-export default function AppTypes() {
+export default function AppTypes({ DATA }: { DATA: any }) {
 
   const scrollToForm = () => {
     const form = document.getElementById("hero-form");
@@ -88,7 +31,8 @@ export default function AppTypes() {
             text-[#FF5A3C]
             min-[480px]:text-[12px]
           ">
-            Choose Your Model
+            {DATA.title}
+          
           </span>
 
           {/* TITLE */}
@@ -106,11 +50,11 @@ export default function AppTypes() {
             lg:leading-[1.1]
           ">
 
-            Which type of food app do you want{" "}
+           {DATA.subtitle.start}{" "}
 
-            <em className="italic text-[#FF5A3C]">
-              to build?
-            </em>
+            <span className=" text-[#FF5A3C]">
+              {DATA.subtitle.highlight}
+            </span>
 
           </h2>
 
@@ -122,9 +66,7 @@ export default function AppTypes() {
             min-[480px]:text-[15px]
             md:text-[17px]
           ">
-            From single-restaurant ordering to multi-country
-            marketplaces — we've built every major food delivery
-            model. Click any to get a tailored quote.
+            {DATA.description}
           </p>
 
         </div>
@@ -140,7 +82,7 @@ export default function AppTypes() {
           lg:gap-5
         ">
 
-          {appTypes.map((type, index) => (
+          {DATA.appTypes.map((type: any, index: number) => (
             <button
               key={index}
               onClick={scrollToForm}

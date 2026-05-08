@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-[100] bg-white py-[14px]">
+    <header className="fixed top-0 left-0 w-full  z-[100] bg-white py-[14px]">
 
       <div className="mx-auto max-w-[1200px] px-6">
 
@@ -25,14 +25,13 @@ export default function Header() {
           <div className="font-[Fraunces] text-[22px] font-bold tracking-[-0.02em] text-[#1A1614]">
 
             <Link href="/">
-              <div className="relative w-[160px] h-[40px]">
+              <div className="relative lg:w-[200px] lg:h-[60px] h-10 w-44">
                 <Image
                   src="/svg/Logo1.svg"
                   alt="logo"
-                  width={640}
-                  height={50}
+                  fill
                   priority
-                  className="object-contain"
+                  className="object-contain h-full w-full"
                 />
               </div>
             </Link>

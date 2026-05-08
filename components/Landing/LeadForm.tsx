@@ -1,6 +1,8 @@
 'use client';
 
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
+
+import JSON_DATA from './json/country.json';
 
 export default function LeadForm() {
   const [formData, setFormData] = useState({
@@ -10,36 +12,138 @@ export default function LeadForm() {
     apptype: '',
   });
 
+  const [countryCode, setCountryCode] = useState('+91');
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
+  const [errors, setErrors] = useState<any>({});
 
-    setIsSubmitting(true);
+  const [ipInfo, setIpInfo] = useState<any>({});
 
-    console.log('Form submitted:', formData);
+  // FETCH USER COUNTRY
+  useEffect(() => {
+    const fetchIP = async () => {
+      try {
+        const response = await fetch(
+          'https://ipinfo.io/json?token=55503f8d72626d'
+        );
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+        const data = await response.json();
 
-    alert('Thank you! Our team will reach out within 4 hours.');
+        setIpInfo(data);
 
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      apptype: '',
-    });
+        const selectedCountry = JSON_DATA.Country.find(
+          (item: any) => item.code === data.country
+        );
 
-    setIsSubmitting(false);
-  };
+        if (selectedCountry) {
+          setCountryCode(selectedCountry.stdCode);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
+    fetchIP();
+  }, []);
+
+  // INPUT CHANGE
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
+    const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+
+    setErrors({
+      ...errors,
+      [name]: '',
+    });
+  };
+
+  // VALIDATION
+  const validateForm = () => {
+    let newErrors: any = {};
+
+    if (!formData.name) {
+      newErrors.name = 'Please enter your name';
+    }
+
+    if (!formData.email) {
+      newErrors.email = 'Please enter your email';
+    }
+
+    if (!formData.phone) {
+      newErrors.phone = 'Please enter your phone number';
+    } else if (!/^\d{7,15}$/.test(formData.phone.replace(/\s/g, ''))) {
+      newErrors.phone = 'Please enter valid phone number';
+    }
+
+    if (!formData.apptype) {
+      newErrors.apptype = 'Please select app type';
+    }
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // SUBMIT
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    setIsSubmitting(true);
+
+    const fullPhoneNumber = `${formData.phone}`;
+
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      mobNo: fullPhoneNumber,
+      stdCode: countryCode,
+      subject: 'Food Delivery App Lead Form',
+      msg: `Interested In: ${formData.apptype}`,
+      ipInfo,
+    };
+
+    try {
+      const response = await fetch(
+        'https://www.comfygen.com/api/v1/createContactUs1111',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const result = await response.json();
+
+      console.log(result, "Response");
+
+      if (result?.code === 0) {
+        alert('Thank you! Our team will reach out within 4 hours.');
+
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          apptype: '',
+        });
+      } else {
+        alert(result?.message || 'Something went wrong');
+      }
+    } catch (error) {
+      alert('Network Error');
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -75,6 +179,12 @@ export default function LeadForm() {
           onChange={handleChange}
           className="w-full rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] px-4 py-3.5 text-[14px] outline-none transition-all duration-200 placeholder:text-[#9A918B] focus:border-[#FF5A3C] focus:bg-white"
         />
+
+        {errors.name && (
+          <p className="mt-1 text-sm text-red-500">
+            {errors.name}
+          </p>
+        )}
       </div>
 
       {/* Email */}
@@ -88,19 +198,48 @@ export default function LeadForm() {
           onChange={handleChange}
           className="w-full rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] px-4 py-3.5 text-[14px] outline-none transition-all duration-200 placeholder:text-[#9A918B] focus:border-[#FF5A3C] focus:bg-white"
         />
+
+        {errors.email && (
+          <p className="mt-1 text-sm text-red-500">
+            {errors.email}
+          </p>
+        )}
       </div>
 
-      {/* Phone */}
+      {/* PHONE */}
       <div className="mb-3">
-        <input
-          type="tel"
-          name="phone"
-          placeholder="WhatsApp / Phone (with country code) *"
-          required
-          value={formData.phone}
-          onChange={handleChange}
-          className="w-full rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] px-4 py-3.5 text-[14px] outline-none transition-all duration-200 placeholder:text-[#9A918B] focus:border-[#FF5A3C] focus:bg-white"
-        />
+        <div className="flex overflow-hidden rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] focus-within:border-[#FF5A3C] focus-within:bg-white">
+          
+          {/* COUNTRY CODE */}
+          <select
+            value={countryCode}
+            onChange={(e) => setCountryCode(e.target.value)}
+            className="w-[110px] border-r border-[#E8E2DD] bg-transparent px-2 text-[14px] outline-none"
+          >
+            {JSON_DATA.Country.map((country: any, index: number) => (
+              <option key={index} value={country.stdCode}>
+                {country.flag} {country.stdCode}
+              </option>
+            ))}
+          </select>
+
+          {/* PHONE INPUT */}
+          <input
+            type="tel"
+            name="phone"
+            placeholder="WhatsApp / Phone Number *"
+            required
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full bg-transparent px-4 py-3.5 text-[14px] outline-none placeholder:text-[#9A918B]"
+          />
+        </div>
+
+        {errors.phone && (
+          <p className="mt-1 text-sm text-red-500">
+            {errors.phone}
+          </p>
+        )}
       </div>
 
       {/* Select */}
@@ -113,14 +252,27 @@ export default function LeadForm() {
           className="w-full rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] px-4 py-3.5 text-[14px] text-[#1A1614] outline-none transition-all duration-200 focus:border-[#FF5A3C] focus:bg-white"
         >
           <option value="">What type of app? *</option>
+
           <option>Custom Food Delivery App</option>
+
           <option>Zomato / Swiggy Clone</option>
+
           <option>Cloud Kitchen App</option>
+
           <option>Multi-Vendor Marketplace</option>
+
           <option>Single Restaurant App</option>
+
           <option>Hyperlocal Delivery App</option>
+
           <option>Not Sure — Need Consultation</option>
         </select>
+
+        {errors.apptype && (
+          <p className="mt-1 text-sm text-red-500">
+            {errors.apptype}
+          </p>
+        )}
       </div>
 
       {/* Submit */}
