@@ -1,5 +1,8 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Header() {
 
   const scrollToForm = () => {
@@ -19,12 +22,21 @@ export default function Header() {
       <div className="mx-auto max-w-[1200px] px-6">
 
         <div className="flex items-center justify-between">
-
-          {/* LOGO */}
           <div className="font-[Fraunces] text-[22px] font-bold tracking-[-0.02em] text-[#1A1614]">
 
-            comfygen
-            <span className="text-[#FF5A3C]">.</span>
+            <Link href="/">
+              <div className="relative w-[160px] h-[40px]">
+                <Image
+                  src="/svg/Logo1.svg"
+                  alt="logo"
+                  width={640}
+                  height={50}
+                  priority
+                  className="object-contain"
+                />
+              </div>
+            </Link>
+            {/* <span className="text-[#FF5A3C]">.</span> */}
 
           </div>
 
