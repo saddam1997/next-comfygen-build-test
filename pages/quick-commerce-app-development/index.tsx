@@ -3,11 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./quick-commerce-app-development.json";
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -40,9 +36,7 @@ import Emerging from "../../components/Emerging";
 import TechStacks from "../../components/TechStacks";
 import Trending from "../../components/Trending";
 import IndustryGrid from "../../components/IndustryGrid";
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
+
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
@@ -52,10 +46,6 @@ const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
 
-
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
-  ssr: true,
-});
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
@@ -76,22 +66,6 @@ const ClientStories = dynamic(
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  // const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-
-
-
-  // const openModal = () => {
-  //   setTalkToExpertModal(true);
-  // };
-
-
-
-
-
-
-
   return (
     <>
       <Head>

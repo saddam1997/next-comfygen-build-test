@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import ContactFrom from "./ContactFrom";
-import { TbX } from "react-icons/tb";
+
 import Image from "next/image";
-import { GoArrowUpRight } from "react-icons/go";
+import { ArrowUpRight } from 'lucide-react';
 
 interface HeroSectionProps {
   heading: string;
@@ -74,7 +74,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     className="text-base font-medium text-white border border-white rounded-full px-6 py-2.5 text-center hover:text-black hover:bg-white cursor-pointer transition duration-300 relative flex gap-3 items-center"
                   >
                     {buttonText}
-                    <GoArrowUpRight size={22} />
+                    <ArrowUpRight size={22} />
                     {/* <Image
                     alt="COMFYGEN LIMITED"
                     src="https://www.comfygen.com/image/button-arrow.svg"
@@ -264,7 +264,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         className="text-black w-10 h-10 rounded-full flex justify-center items-center bg-gray-100 text-3xl hover:text-gray-700 cursor-pointer absolute top-6 right-6"
                         onClick={closeModal}
                       >
-                        <TbX className="w-6 h-6" />
+                       x
                       </button>
                     </div>
                     <div>

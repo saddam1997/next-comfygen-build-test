@@ -1,7 +1,6 @@
 import Head from "next/head";
 import JSON_DATA from "./json/whitelabelmobileappdevelopment.json";
 import dynamic from "next/dynamic";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import ReviewCard from "../../components/ReviewCard";
 const Milestones = dynamic(() => import("../../components/Milestones"), {
@@ -53,10 +52,6 @@ const ClientStories = dynamic(() => import("../../components/ClientStories"), {
 
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
-
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
   ssr: true,
 });
 

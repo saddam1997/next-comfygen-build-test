@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-import React from 'react'
 import Head from 'next/head';
 
 import dynamic from 'next/dynamic';
@@ -21,13 +20,6 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
 
 
 export default function about(props: any) {

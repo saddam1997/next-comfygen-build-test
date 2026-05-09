@@ -2,7 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -14,22 +13,15 @@ const ServicesComponet = dynamic(() => import("../../components/ServicesSection/
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
-
 
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
 
-
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
-
-
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,

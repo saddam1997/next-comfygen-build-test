@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
-import { MdAdd, MdArrowOutward, MdRemove } from "react-icons/md";
+import { Plus } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { Minus } from 'lucide-react';
 import Image from 'next/image';
 
 const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) => {
@@ -42,7 +44,7 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                   <div className="flex">
                     <Link href={buttonLink || "#"} passHref>
                       <button className="text-base font-medium text-white border border-white rounded-full px-6 py-2.5 text-center hover:bg-white hover:text-[#5556D1] transition duration-300 flex gap-2 items-center">
-                        {buttonText} <MdArrowOutward />
+                        {buttonText} <ArrowUpRight />
                       </button>
                     </Link>
                   </div>
@@ -69,9 +71,9 @@ const ItemDataSection = ({ Head, ItemData, imageSrc, buttonText, buttonLink }) =
                     {elem.title}
                   </span>
                   {currentCount === index ? (
-                    <MdRemove size={26} className={currentCount === index ? "text-white" : "text-black"} />
+                    <Minus size={26} className={currentCount === index ? "text-white" : "text-black"} />
                   ) : (
-                    <MdAdd size={26} className={currentCount === index ? "text-white" : "text-black"} />
+                    <Plus size={26} className={currentCount === index ? "text-white" : "text-black"} />
                   )}
                 </div>
                 <div

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { BsArrowRight } from "react-icons/bs";
+import { CircleArrowRight } from 'lucide-react';
 import ContactFromHeader from "./ContactFromHeader";
-import { MdOutlineControlPointDuplicate } from "react-icons/md";
+
 
 export default function HeroSectionForm(props: any) {
   const [isMobile, setIsMobile] = useState(false);
@@ -83,16 +83,10 @@ export default function HeroSectionForm(props: any) {
             <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
               <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
               <span className="relative"> {props.btnName}</span>
-              <BsArrowRight className="ml-2 transition-all duration-200 ease-out " />
+              <CircleArrowRight className="ml-2 transition-all duration-200 ease-out " />
             </div>
           </Link>
-          {/* <a href={props.btnLink1}>
-            <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
-              <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
-              <span className="relative"> {props.btnName1}</span>
-              <BsArrowRight className="ml-2 transition-all duration-200 ease-out " />
-            </div>
-          </a> */}
+         
         </div>
       </div>
       <ContactFromHeader />

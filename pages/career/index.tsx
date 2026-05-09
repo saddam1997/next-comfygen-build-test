@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Head from "next/head";
 import JSON_DATA from "./json/career.json"
-import LazyLoad from "react-lazy-load";
 
 
 import HeroSectionForCompany from "../../components/Newcomponet/comman/HeroSectionForCompany";

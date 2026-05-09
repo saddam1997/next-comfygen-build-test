@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from "next/image";
-import {  MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { ChevronRight } from 'lucide-react';
 
 
 
@@ -54,7 +54,7 @@ export default function Custom404() {
                   <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
                     <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
                     <span className="relative font-semibold"> Back To Home</span>
-                    <MdOutlineKeyboardArrowRight className="ml-2 transition-all duration-200 ease-out " size={28} />
+                    <ChevronRight className="ml-2 transition-all duration-200 ease-out " size={28} />
                   </div>
                 </Link>
               </div>

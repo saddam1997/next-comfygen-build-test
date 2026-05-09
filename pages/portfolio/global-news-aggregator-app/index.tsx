@@ -17,15 +17,10 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -143,7 +138,7 @@ export default function about(props:any) {
                         </div>
                         <div className='space-y-2 mt-4'>
                             <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                             </div>
                             <div>
                                 <p className='md:text-base text-sm text-black'>"Comfygen developed an innovative AI-driven news aggregator app that transformed the way users consume news. Their expertise in real-time content delivery, multilingual support, and AI-based personalization has significantly improved user engagement. Highly recommended for custom news app development!"</p>

@@ -2,8 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -19,18 +17,14 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-import BusinessSolustion from "../../components/BusinessSolustion"
-
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
-import Features from "../../components/Features"
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
 
-import Emerging from "../../components/Emerging";
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
@@ -53,12 +47,6 @@ const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
 
-const ClientStories = dynamic(() => import("../../components/ClientStories"), {
-  ssr: true,
-});
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
-  ssr: true,
-});
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,

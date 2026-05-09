@@ -1,7 +1,5 @@
-import dynamic from 'next/dynamic';
-import Head from 'next/head';;
-import React from 'react'
 
+import Head from 'next/head';;
 
 export default function Contact() {
   return (

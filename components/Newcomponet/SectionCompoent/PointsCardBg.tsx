@@ -1,6 +1,5 @@
 import React from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
-
+import { ArrowUpRight } from 'lucide-react';
 interface WhyChooseItem {
     title: string;
     decs: string;
@@ -64,7 +63,7 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
                     <div className="flex justify-center">
                         <a href={buttonLink}>
                             <button className="text-white hover:bg-white hover:text-[#5556D1] border border-white px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                                {buttonText} <MdOutlineArrowOutward />
+                                {buttonText} <ArrowUpRight />
                             </button>
                         </a>
                     </div>

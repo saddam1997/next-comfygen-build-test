@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./salonappdevelopment.json";
-import Navbar from "../../components/Navbar";
+
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -18,7 +18,6 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-import BusinessSolustion from "../../components/BusinessSolustion"
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
@@ -42,11 +41,6 @@ const TechSection = dynamic(() => import("../../components/TechSection"), {
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
 });
-
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,

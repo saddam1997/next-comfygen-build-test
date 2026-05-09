@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import HeadingThree from "../ui/HeadingThree";
 import ParagraphText from "../ui/ParagraphText";
 import { Button } from "../ui/Button";

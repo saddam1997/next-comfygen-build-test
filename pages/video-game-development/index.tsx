@@ -2,8 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/video.json";
-
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -36,13 +34,9 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-
-
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
 });
-
-
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
@@ -51,7 +45,6 @@ const ClientStories = dynamic(() => import("../../components/ClientStories"), {
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
-
 
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),

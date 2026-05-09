@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
 
@@ -19,14 +18,10 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
- 
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -383,7 +378,7 @@ export default function about(props:any) {
                             </div>
                             <div className='space-y-2 mt-4'>
                                 <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                    <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                                 </div>
                                 <div>
                                     <p className='md:text-base text-sm text-black'>"Comfygen exceeded our expectations with their Casual Dating App Development expertise. The app's seamless user experience, AI-driven matchmaking, and strong security measures have significantly increased engagement. Their team’s dedication and innovation made the entire development process smooth and efficient. Highly recommend them as a top-rated dating app development company!"</p>

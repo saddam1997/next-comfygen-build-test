@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { ImArrowRight } from "react-icons/im";
+import { ArrowRight } from 'lucide-react';
 
 const Features = ({ featuresData = [], grid, heading, description }: any) => {
 
@@ -67,7 +67,7 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
               <div className="space-y-4">
                 {active.additionalDetails?.map((d: any, i: number) => (
                   <div key={i} className="flex gap-3 text-black">
-                    <ImArrowRight className="text-[#5556D1] mt-1" />
+                    <ArrowRight className="text-[#5556D1] mt-1" />
                     <span dangerouslySetInnerHTML={{ __html: d.details }} />
                   </div>
                 ))}
@@ -125,7 +125,7 @@ const Features = ({ featuresData = [], grid, heading, description }: any) => {
               <div className="space-y-4">
                 {item.additionalDetails?.map((d: any, i: number) => (
                   <div key={i} className="flex gap-3 text-black">
-                    <ImArrowRight className="text-[#5556D1] mt-1" />
+                    <ArrowRight className="text-[#5556D1] mt-1" />
                     <span dangerouslySetInnerHTML={{ __html: d.details }} />
                   </div>
                 ))}

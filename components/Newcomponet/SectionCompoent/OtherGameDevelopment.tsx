@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
+import { ArrowUpRight } from 'lucide-react';
 
 export interface GameCard {
   num?: string;
@@ -64,7 +65,7 @@ const OtherGameDevelopment: React.FC<OtherGameDevelopmentProps> = ({ heading, ga
           className="text-[#5556D1] hover:bg-[#5556D1] hover:text-white border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 transition duration-300"
           onClick={() => setShowContent(!showContent)}
         >
-          {showContent ? "Load Less" : "Load More"} <MdOutlineArrowOutward />
+          {showContent ? "Load Less" : "Load More"} <ArrowUpRight />
         </button>
       </div>
     </div>

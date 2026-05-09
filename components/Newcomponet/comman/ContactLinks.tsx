@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { MdOutlineWhatsapp } from "react-icons/md";
-import { FaTelegram } from "react-icons/fa";
+
 
 import styles from "../Button/button.module.css";
+import Image from "next/image";
 
 export default function ContactLinks() {
   const [show, setshow] = useState(true);
@@ -16,9 +16,11 @@ export default function ContactLinks() {
             className="curser-pointer"
           >
             <div className={`${styles.socialbtn} bg-white`}>
-              <span>
+
+              <Image src="/WhatsApp.webp" alt="Whatsapp" width={38} height={38} className="text-[#03A84E] bg-transparent rounded-full" />
+              {/* <span>
                 <MdOutlineWhatsapp className="text-[#03A84E]" size={38} />
-              </span>
+              </span> */}
               <p className="font-semibold text-lg text-black cursor-pointer">
                 Whatsapp
               </p>
@@ -44,9 +46,10 @@ export default function ContactLinks() {
             className="curser-pointer"
           >
             <div className={`${styles.socialbtn} bg-white`}>
-              <span>
+              <Image src="/Telegram.webp" alt="Telegram" width={38} height={38} className="text-[#33A8DA] bg-transparent rounded-full" />
+              {/* <span>
                 <FaTelegram size={38} className="text-[#33A8DA]" />
-              </span>
+              </span> */}
               <p className="font-semibold text-lg text-black cursor-pointer">
                 Telegram
               </p>

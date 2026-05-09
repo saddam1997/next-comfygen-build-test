@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { RiCustomerServiceLine } from "react-icons/ri";
+
+import { Headset } from 'lucide-react';
 
 const ConsultingSec = ({ title, description, image, contactNumber, ctaText }) => {
   return (
@@ -25,7 +26,7 @@ const ConsultingSec = ({ title, description, image, contactNumber, ctaText }) =>
 
           <div className="flex items-center justify-start p-4 space-x-6 bg-white rounded-lg">
             <div className="p-2 bg-blue-100 rounded-lg">
-              <RiCustomerServiceLine className="text-[3.5rem] text-[#5556D1]" />
+              <Headset className="text-[3.5rem] text-[#5556D1]" />
             </div>
             <div>
               <h3 className="text-[#0E1F51] text-lg font-extrabold">{ctaText}</h3>

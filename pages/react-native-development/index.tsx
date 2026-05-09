@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./json/reactnative.json";
 import dynamic from "next/dynamic";
 import ReviewCard from "../../components/ReviewCard";
-import Navbar from "../../components/Navbar";
+
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,

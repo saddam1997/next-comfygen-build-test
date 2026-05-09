@@ -42,26 +42,19 @@ const nextConfig = {
 
   experimental: {
     optimizePackageImports: [
-      'react-icons',
       'lucide-react',
       '@tabler/icons-react'
     ],
   },
   turbopack: {
-    resolveAlias: {
-      "react-lazy-load": "./components/performance/ImmediateLazyLoad.tsx",
-    },
+   
   },
   async redirects() {
     return redirects;
   },
   webpack: (config) => {
     config.resolve.alias = {
-      ...(config.resolve.alias || {}),
-      "react-lazy-load": path.resolve(
-        __dirname,
-        "components/performance/ImmediateLazyLoad.tsx"
-      ),
+      ...(config.resolve.alias || {})
     };
     return config;
   },

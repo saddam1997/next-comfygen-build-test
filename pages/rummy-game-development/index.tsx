@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/rummy.json";
 
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -19,26 +18,16 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 import InformationSection from "../../components/InformationSection"
-import BusinessSolustion from "../../components/BusinessSolustion"
+
 
 import TechnologiesCard from "../../components/TechnologiesCard"
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
-import Features from "../../components/Features"
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
 
-import Emerging from "../../components/Emerging";
-
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
 
@@ -56,9 +45,6 @@ const HireSection = dynamic(() => import("../../components/HireSection"), {
 });
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
-  ssr: true,
-});
-const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"), {
   ssr: true,
 });
 

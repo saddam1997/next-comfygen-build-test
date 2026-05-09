@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from "next/image";
 
 
@@ -110,7 +109,7 @@ const AboutSection = (props: any) => {
                   href={link}
                   className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize inline-flex items-center gap-1 transition-colors duration-200"
                 >
-                  {linkText} <MdOutlineArrowOutward />
+                  {linkText} 
                 </Link>
               </div>
             )}

@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import JSON_DATA from "./web3-wallet-development.json";
 import dynamic from "next/dynamic";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
-const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
 
@@ -39,9 +35,6 @@ const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
 
-const LatestTechnology = dynamic(() => import("../../components/LatestTechnology"), {
-  ssr: true,
-});
 
 const IndustriesSection = dynamic(() => import("../../components/IndustriesSection"), {
   ssr: true,

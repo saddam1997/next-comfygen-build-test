@@ -3,10 +3,10 @@ import Image from "next/image";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { BsTabletFill } from "react-icons/bs";
-import { BiAccessibility, BiSupport } from "react-icons/bi";
-import { AiFillMobile, AiOutlineCheck } from "react-icons/ai";
-import { MdAdd, MdDesktopMac, MdRemove } from "react-icons/md";
+
+import { Check } from 'lucide-react';
+import { Minus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 import styles from "./styles.module.css";
 import JSON_DATA from "./omaha.json";
@@ -61,35 +61,35 @@ const Crafting = [
   {
     num: "1",
     bg: "#F45F391A",
-    icon: <BiAccessibility size={60} className="text-blue-500" />,
+    icon: null,
     title: "Platform Versatility: The Nexus of Innovation and Accessibility",
     decs: "Our conviction is rooted in the belief that the thrill of Omaha Poker should be within arm's reach for everyone, irrespective of their favored gaming apparatus. Our commitment to ingenuity propels us to engineer seamless encounters on a diverse range of platforms, empowering you to handpick when and where your play unfolds.",
   },
   {
     num: "2",
     bg: "#F6F0FE",
-    icon: <AiFillMobile size={60} className="text-blue-500" />,
+    icon: null,
     title: "Mobile",
     decs: " Carry the thrill of Omaha Poker with you, wherever your adventures lead. Our mobile iteration ensures that the game seamlessly adapts to your smartphone's dimensions,transforming strategic decisions into an effortless endeavor even while on the move.",
   },
   {
     num: "3",
     bg: "#82AB101A",
-    icon: <BsTabletFill size={60} className="text-blue-500" />,
+    icon: null,
     title: "Tablet",
     decs: " Immerse yourself in the game's intricate dance through the expansive canvas of a tablet. The touch controls, intuitive in nature, bestow precision, enabling you to concentrate on outwitting your adversaries.",
   },
   {
     num: "4",
     bg: "#6C54DE1A",
-    icon: <BiSupport size={60} className="text-blue-500" />,
+    icon: null,
     title: "A Tapestry of Supported Platforms: A Glimpse into Our Versatility",
     decs: "Our Omaha Poker creations are meticulously crafted to cater to a diverse palette of players. Our embrace extends to:",
   },
   {
     num: "5",
     bg: "#82AB101A",
-    icon: <MdDesktopMac size={60} className="text-blue-500" />,
+    icon: null,
     title: "Desktop",
     decs: "Immerse yourself in the game's immersive graphics and intricate gameplay on your computer, where expansive screens elevate the intensity of each hand.    ",
   },
@@ -826,7 +826,7 @@ export default function Altcoin(props) {
                     <li className="flex items-start space-x-4" key={index}>
                       <span>
                         {" "}
-                        <AiOutlineCheck size={20} />
+                        <Check size={20} />
                       </span>
                       {item}
                     </li>
@@ -907,9 +907,9 @@ export default function Altcoin(props) {
                       >
                         <span>{title}</span>
                         {currentCount === index ? (
-                          <MdRemove size={26} />
+                          <Minus size={26} />
                         ) : (
-                          <MdAdd size={26} />
+                          <Plus size={26} />
                         )}
                       </div>
                       <div
@@ -943,9 +943,9 @@ export default function Altcoin(props) {
                       >
                         <span>{title}</span>
                         {currentCount === index ? (
-                          <MdRemove size={26} />
+                          <Minus size={26} />
                         ) : (
-                          <MdAdd size={26} />
+                          <Plus size={26} />
                         )}
                       </div>
                       <div

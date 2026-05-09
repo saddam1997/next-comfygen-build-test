@@ -3,17 +3,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import { GrOptimize } from "react-icons/gr";
-import { MdOutlineVoiceOverOff } from "react-icons/md";
-import { LiaCheckSquareSolid } from "react-icons/lia";
-import { AiOutlineTransaction } from "react-icons/ai";
-import {
-  IconBrain,
-  IconReportSearch,
-  IconSignal5g,
-} from "@tabler/icons-react";
-
-import { MdOutlineSpatialTracking } from "react-icons/md";
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 const loader = () => (
@@ -127,42 +116,42 @@ const Process = [
 
 const latesttech = [
   {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Biometric & Multi-Factor Authentication",
     desc: "Protect wallets with fingerprint, face ID, and two-factor authentication to ensure only authorized access.",
   },
   {
-    img: <IconReportSearch stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "AI-Driven Fraud Detection & Anomaly Monitoring",
     desc: "Advanced AI models analyze transactions in real time to detect suspicious activity and prevent fraudulent attempts.",
   },
   {
-    img: <IconSignal5g stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Private Key & Seed Phrase Security Management",
     desc: "We implement secure key management protocols to safeguard private keys and seed phrases, reducing the risk of unauthorized exposure.",
   },
   {
-    img: <AiOutlineTransaction className="w-12 h-12" />,
+    img: null,
     title: "Smart Transaction Alerts & Predictive Analytics",
     desc: "Users get instant notifications for transactions, price fluctuations, and AI-powered insights for smarter trading decisions.",
   },
   {
-    img: <MdOutlineSpatialTracking className="w-12 h-12" />,
+    img: null,
     title: "In-App Swaps, DEX Integration & Price Tracking",
     desc: "Seamlessly swap tokens, connect with decentralized exchanges, and monitor real-time crypto prices within one app.",
   },
   {
-    img: <GrOptimize className="w-12 h-12" />,
+    img: null,
     title: "AI-Powered Portfolio Optimization",
     desc: "Built-in analytics recommend asset allocations and rebalancing strategies, helping users maximize returns with minimal risk.",
   },
   {
-    img: <MdOutlineVoiceOverOff className="w-12 h-12" />,
+    img: null,
     title: "Voice-Enabled Transactions",
     desc: "Hands-free wallet operations using secure voice commands improve accessibility and speed for tech-savvy users.",
   },
   {
-    img: <LiaCheckSquareSolid className="w-12 h-12" />,
+    img: null,
     title: "Automated Compliance & KYC Checks",
     desc: "AI modules streamline identity verification and compliance processes, making the wallet safer and ready for global regulations.",
   }

@@ -6,8 +6,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import styles from './styles.module.css'
 import JSON_DATA from "./json/mobile.json"
-import LazyLoad from 'react-lazy-load';
-
 import HeroSectionForm from '../../components/Newcomponet/SectionCompoent/HeroSectionForm';
 
 import ContactUsButton from '../../components/Newcomponet/SectionCompoent/ContactUsButton';

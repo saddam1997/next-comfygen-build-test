@@ -19,11 +19,10 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -377,7 +376,7 @@ export default function about(props) {
                             </div>
                             <div className='space-y-2 mt-4'>
                                 <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                    <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                                 </div>
                                 <div>
                                     <p className='md:text-base text-sm text-black'>"Comfygen is the Best Custom Finance App Development Company in India! Their expertise in custom mobile payment app development helped us create a secure and scalable platform. Their custom FinTech app development services ensured smooth transactions, top-notch security, and seamless payment integrations."</p>

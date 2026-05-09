@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { MdOutlineArrowOutward } from "react-icons/md";
 
+import { ArrowUpRight } from 'lucide-react';
 interface GameDevItem {
   img: string;
   title: string;
@@ -52,7 +52,7 @@ const ApiSupport = ({GameApiData}) => {
         <div className="flex justify-center items-center mt-5">
           <a href="/contact-us" className="mt-5">
             <button className="text-[#fff] hover:bg-[#ffff] hover:text-[#5556D1] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-              Get A Free Consultation <MdOutlineArrowOutward />
+              Get A Free Consultation <ArrowUpRight />
             </button>
           </a>
         </div>

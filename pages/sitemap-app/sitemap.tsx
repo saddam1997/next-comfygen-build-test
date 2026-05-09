@@ -1,6 +1,6 @@
 import React from 'react'
 import SitemapSection from '../../components/SitemapSection'
-import Navbar from '../../components/Navbar'
+
 import Head from 'next/head'
 import JSON_DATA from "./sitemap.json"
 

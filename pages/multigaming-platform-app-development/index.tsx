@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { useEffect } from "react";
 import Head from "next/head";
-import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
+
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import JSON_DATA from "./json/multigaming.json";
@@ -327,7 +326,7 @@ export default function rummy(props) {
                 className="inline-flex items-center px-6 py-1 text-base font-medium  active bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white rounded-full  text-center  cursor-pointer transition duration-300 relative "
                 onClick={() => setShowContentGametype(!showContentGametype)}
               >
-                <BsArrowUpCircle size={40} className="px-2" />
+               
                 Load Less{" "}
               </button>
             </div>
@@ -337,7 +336,7 @@ export default function rummy(props) {
                 className="inline-flex items-center px-6 py-1 text-base font-medium  active bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white rounded-full  text-center  cursor-pointer transition duration-300 relative "
                 onClick={() => setShowContentGametype(!showContentGametype)}
               >
-                <BsArrowDownCircle size={40} className="px-2" />
+                
                 Load More
               </button>
             </div>
@@ -484,7 +483,7 @@ export default function rummy(props) {
                       className="inline-flex items-center px-6 py-1 text-base font-medium  active bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] rounded-full  text-center  cursor-pointer transition duration-300 relative "
                       onClick={() => setShowContent(!showContent)}
                     >
-                      <BsArrowUpCircle size={40} className="px-2" />
+                     
                       Load Less{" "}
                     </button>
                   </div>
@@ -494,7 +493,7 @@ export default function rummy(props) {
                       className="inline-flex items-center px-6 py-1 text-base font-medium  active bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] rounded-full  text-center  cursor-pointer transition duration-300 relative "
                       onClick={() => setShowContent(!showContent)}
                     >
-                      <BsArrowDownCircle size={40} className="px-2" />
+                    
                       Load More
                     </button>
                   </div>

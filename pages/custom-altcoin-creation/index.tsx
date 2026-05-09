@@ -1,17 +1,13 @@
 import { useEffect, useState } from 'react';
-import React from 'react'
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { BiChevronDown, BiChevronRight } from 'react-icons/bi';
+import { ChevronDown } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 
 const HeroSectiondesign2 = dynamic(() => import('../../components/Newcomponet/SectionCompoent/HeroSectiondesign2'), {
   loading: () => <p>Loading...</p>,
 })
-
-
-
-
 
 const BlogSection = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BlogSection"),
@@ -126,7 +122,7 @@ export default function TermsAndConditions(props: any) {
                             <option value="audi">Quark</option>
                             <option value="audi">X11</option>
                           </select>
-                          <span className='absolute right-1 bottom-3'><BiChevronDown size={20} /></span>
+                          <span className='absolute right-1 bottom-3'><ChevronDown size={20} /></span>
                         </div>
                         <div className="w-1/2 ml-1">
                           <label className="block text-grey-darker text-sm font-bold mb-2">Coin Type *</label>
@@ -157,7 +153,7 @@ export default function TermsAndConditions(props: any) {
                   </div>
                   <div className="flex items-center justify-end mt-8">
                     <button className="inline-flex items-center shadow-xl bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white font-bold py-2 px-4 rounded border" type="submit">
-                      Next Step <span className=''><BiChevronRight size={24} /></span>
+                      Next Step <span className=''><ChevronRight size={24} /></span>
                     </button>
                   </div>
                 </div>
@@ -203,7 +199,7 @@ export default function TermsAndConditions(props: any) {
                             <option value="audi">METAVERSE</option>
                             <option value="audi">OTHER</option>
                           </select>
-                          <span className='absolute right-1 bottom-3'><BiChevronDown size={20} /></span>
+                          <span className='absolute right-1 bottom-3'><ChevronDown size={20} /></span>
                         </div>
                         <div className="w-1/2 mr-1 relative ">
                           <label className="block text-grey-darker text-sm font-bold mb-2" >Token Standard</label>
@@ -215,7 +211,7 @@ export default function TermsAndConditions(props: any) {
                             <option value="audi">ERC865</option>
                             <option value="audi">ERC827</option>
                           </select>
-                          <span className='absolute right-1 bottom-3'><BiChevronDown size={20} /></span>
+                          <span className='absolute right-1 bottom-3'><ChevronDown size={20} /></span>
                         </div>
                       </div>
                       <div className="flex mb-4">
@@ -246,14 +242,14 @@ export default function TermsAndConditions(props: any) {
                             <option value="volvo">Yes</option>
                             <option value="saab">No</option>
                           </select>
-                          <span className='absolute right-1 bottom-3'><BiChevronDown size={20} /></span>
+                          <span className='absolute right-1 bottom-3'><ChevronDown size={20} /></span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center justify-end mt-8">
                     <button className="inline-flex items-center shadow-xl bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white font-bold py-2 px-4 rounded border" type="submit">
-                      Next Step <span className=''><BiChevronRight size={24} /></span>
+                      Next Step <span className=''><ChevronRight size={24} /></span>
                     </button>
                   </div>
                 </div>

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
 
@@ -19,16 +18,10 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -148,7 +141,7 @@ export default function about(props:any) {
                         </div>
                         <div className='space-y-2 mt-4'>
                             <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                             </div>
                             <div>
                                 <p className='md:text-base text-sm text-black'>"Comfygen delivered an outstanding logistics app development solution tailored to our business needs. The real-time tracking and route optimization features significantly enhanced our efficiency, while the predictive analytics helped us scale operations seamlessly. A highly recommended logistics taxi booking app development company!"</p>

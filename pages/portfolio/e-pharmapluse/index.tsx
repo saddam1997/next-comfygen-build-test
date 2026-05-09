@@ -18,14 +18,10 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -148,7 +144,7 @@ export default function about(props) {
                             </div>
                             <div className='space-y-2 mt-4'>
                                 <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                    <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                                 </div>
                                 <div>
                                     <p className='md:text-base text-sm text-black'>"Comfygen developed a cutting-edge E-Pharmacy app that has revolutionized how our customers access medicines. The real-time tracking, AI-driven recommendations, and subscription-based delivery model have greatly improved customer retention and engagement. A truly outstanding medicine delivery app development company!"</p>

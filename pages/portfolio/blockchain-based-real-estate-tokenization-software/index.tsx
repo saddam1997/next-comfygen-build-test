@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
 
@@ -19,15 +18,10 @@ const BlogSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
 
 export default function about(props:any) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -144,7 +138,7 @@ export default function about(props:any) {
                             </div>
                             <div className='space-y-2 mt-4'>
                                 <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                    <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                                 </div>
                                 <div>
                                     <p className='md:text-base text-sm text-black'>"Working with Comfygen was a game-changer for our business. Their blockchain expertise transformed our real estate transaction process, making it faster, more secure, and cost-effective. The tokenization platform they built has opened up new investment opportunities and significantly improved transparency. We highly recommend their services to anyone looking to innovate in the real estate industry"</p>

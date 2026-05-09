@@ -1,18 +1,7 @@
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 
-import {
-  IconBook,
-
-  IconDevices,
-
-  IconVideo,
-  IconWorldWww,
-} from "@tabler/icons-react";
-
 import JSON_DATA from "./json/applicationConsulting.json";
-import { IconTools } from "@tabler/icons-react";
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
 import dynamic from "next/dynamic";
@@ -132,27 +121,27 @@ const Process = [
 
 const technologyData = [
   {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
+    img:null,
     title: "Personalized Learning Engine",
     desc: "We design AI-based learning engines that analyze learner behavior, pace, and performance to create personalized learning paths, adaptive study plans, and customized course journeys for better academic outcomes.",
   },
   {
-    img: <IconDevices stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "AI-Based Content Recommendation",
     desc: "Our AI education app development solutions intelligently recommend courses, videos, quizzes, and study materials based on user interests, progress history, and engagement patterns, ensuring relevant and focused learning.",
   },
   {
-    img: <IconWorldWww stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Smart Assessments & Automated Evaluation",
     desc: "We integrate AI-driven assessments that automate quizzes, exams, grading, and feedback. These smart systems provide real-time performance insights, reduce manual effort, and enhance evaluation accuracy.",
   },
   {
-    img: <IconVideo stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "AI Chatbots & Virtual Tutors",
     desc: "Our AI chatbots and virtual tutors offer 24/7 learning support, instant doubt resolution, course guidance, and interactive assistance—improving student engagement and reducing educator workload.",
   },
   {
-    img: <IconTools stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Predictive Analytics & Learning Insights",
     desc: "Using predictive analytics in AI-powered education apps, we track learner progress, identify skill gaps, forecast performance, and generate actionable insights that help educators make data-driven decisions.",
   }

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./water-delivery-app-development.json";
 import Features from "../../components/Features"
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
 import WhoCanStart from "../../components/WhoCanStart";

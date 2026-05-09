@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from 'next/image';
-import { MdAdd, MdArrowOutward, MdRemove } from "react-icons/md";
+import { Plus } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { Minus } from 'lucide-react';
 export default function WhycomfygenSection({ Qa, Whycomfygen }) {
 
 
@@ -41,7 +43,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                     </div>
                     <div className="flex ">
                       <Link href="https://api.whatsapp.com/send?phone=919587867258" passHref={true}>
-                        <button className="text-base font-medium text-[#5556D1] border border-[#5556D1] rounded-full px-6 py-2.5 text-center hover:text-white hover:bg-[#5556D1] cursor-pointer transition duration-300 relative flex gap-2 items-center">Let’s Discuss <MdArrowOutward /> </button>
+                        <button className="text-base font-medium text-[#5556D1] border border-[#5556D1] rounded-full px-6 py-2.5 text-center hover:text-white hover:bg-[#5556D1] cursor-pointer transition duration-300 relative flex gap-2 items-center">Let’s Discuss <ArrowUpRight /> </button>
                       </Link>
                     </div>
                   </div>
@@ -60,7 +62,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                   >
                     <div className="flex justify-between w-full text-base font-medium text-left text-black rounded-lg md:text-lg">
                       <span className="font-semibold md:text-lg text-base text-[#000000]">{title}</span>
-                      {currentCount === index ? <MdRemove size={26} /> : <MdAdd size={26} />}
+                      {currentCount === index ? <Minus size={26} /> : <Plus size={26} />}
                     </div>
                     <div
                       className={`pt-4 text-sm text-black ${currentCount === index ? "" : "hidden"

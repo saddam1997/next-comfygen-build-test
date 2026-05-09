@@ -1,14 +1,8 @@
-import { useEffect } from 'react';
-import React from 'react'
-import dynamic from 'next/dynamic';
+
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from "next/image";
-import { BsArrowRight } from 'react-icons/bs';
-import { MdOutlineArrowForwardIos, MdOutlineKeyboardArrowRight } from 'react-icons/md';
-
-
-
+import { ArrowRight } from 'lucide-react';
 
 
 
@@ -65,14 +59,14 @@ export default function Custom404() {
                   <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
                     <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
                     <span className="relative font-semibold"> Back To Home</span>
-                    <MdOutlineKeyboardArrowRight className="ml-2 transition-all duration-200 ease-out" size={28} />
+                    <ArrowRight className="ml-2 transition-all duration-200 ease-out" size={28} />
                   </div>
                 </Link>
                 <Link href="https://api.whatsapp.com/send?phone=919587867258">
                   <div className="px-10 py-4 mt-3 lg:ms-10 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
                     <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
                     <span className="relative font-semibold"> Contact Us</span>
-                    <MdOutlineKeyboardArrowRight className="ml-2 transition-all duration-200 ease-out" size={28} />
+                    <ArrowRight className="ml-2 transition-all duration-200 ease-out" size={28} />
                   </div>
                 </Link>
               </div>

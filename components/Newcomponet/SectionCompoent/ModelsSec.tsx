@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
-import { MdAdd, MdOutlineArrowOutward, MdRemove } from "react-icons/md";
+import { Plus } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { Minus } from 'lucide-react';
 export default function WhycomfygenSection({ Qa, Whycomfygen }) {
   const [currentCount, setCurrentCount] = useState("");
   const data = Qa;
@@ -33,7 +35,7 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                     <div className="flex justify-start ">
                       <Link href="https://api.whatsapp.com/send?phone=919587867258" passHref={true}>
                         <button className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1]  border border-[#fff] px-8 py-2.5 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                          Talk To Consultant <MdOutlineArrowOutward />
+                          Talk To Consultant <ArrowUpRight />
                         </button>
                       </Link>
                     </div>
@@ -50,9 +52,9 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                     <div key={num} className="flex justify-between w-full text-base font-medium text-left text-black bg-white rounded-lg md:text-lg ">
                       <h3>{title}</h3>
                       {currentCount === index ?
-                        <MdRemove size={26} />
+                        <Minus size={26} />
                         :
-                        <MdAdd size={26} />}
+                        <Plus size={26} />}
                     </div>
                     <div className={currentCount === index ? "pt-2 text-sm text-black" : "pt-2 text-sm text-black hidden"}>
                       <p  className="pt-2 text-sm text-black" dangerouslySetInnerHTML={{ __html: desc }}></p>

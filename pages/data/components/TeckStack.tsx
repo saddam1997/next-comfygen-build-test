@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
  
 export default function Tech({ title, description, filterCategory = [], customTechData = null }) {
   const [tech, setTech] = useState(0);
@@ -116,7 +116,7 @@ export default function Tech({ title, description, filterCategory = [], customTe
                             }
                           }}
                 className="text-white hover:bg-[#5556D1] bg-[#0C0F18] border border-whitesss px-8 py-2.5 text-lg font-semibold rounded-full flex items-center  gap-1">
-                  Connect Experts <MdOutlineArrowOutward />
+                  Connect Experts <ArrowUpRight />
                 </button>              
             </div>
           </div>

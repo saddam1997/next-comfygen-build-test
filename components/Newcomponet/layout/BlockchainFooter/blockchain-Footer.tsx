@@ -1,44 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import { RiLinkedinFill, RiTwitterXFill } from "react-icons/ri";
-import { IoLogoInstagram } from "react-icons/io";
-import { TiSocialFacebook } from "react-icons/ti";
+
 import JSON_DATA from "../json/blockchain-footermenu.json"
 import dynamic from "next/dynamic";
 import styles from '../styles.module.css'
-import { MdOutlineArrowOutward } from "react-icons/md";
+
 const CompanyLink = dynamic(() => import('../comman/CompanyLink'), {
   loading: () => <p>Loading...</p>,
 })
 
 export default function BlockchainFooter() {
 
-  const Contact = [
-    {
-      num: "1",
-      icon: <RiLinkedinFill size={45} />,
-      url: "https://www.linkedin.com/company/comfygen-private-limited",
-
-    },
-    {
-      num: "2",
-      icon: <IoLogoInstagram size={45} />,
-      url: "https://www.instagram.com/comfygen_/?hl=en",
-
-    },
-    {
-      num: "3",
-      icon: <TiSocialFacebook size={45} />,
-      url: "https://www.facebook.com/comfygen",
-
-    },
-    {
-      num: "4",
-      icon: <RiTwitterXFill size={30} />,
-      url: "https://twitter.com/comfygentech",
-
-    },
-  ];
+  
 
   const currentYear = new Date().getFullYear();
   return (
@@ -75,7 +48,7 @@ export default function BlockchainFooter() {
 
           <Link href="/contact-us">
             <button className="mt-6 hover:text-[#5556D1] hover:bg-white text-white border border-white px-10 py-2 text-lg font-semibold rounded-full flex items-center gap-1 mx-auto lg:mx-0">
-              Get Started <MdOutlineArrowOutward />
+              Get Started 
             </button>
           </Link>
         </div>

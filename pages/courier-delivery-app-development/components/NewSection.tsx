@@ -1,5 +1,4 @@
-import React from 'react';
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+
 import Image from "next/image";
 
 const NewSection = () => {
