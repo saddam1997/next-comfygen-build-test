@@ -45,32 +45,32 @@ const steps = [
   },
 ];
 
-export default function Process() {
+export default function Process({DATA}:any) {
   return (
     <section className="bg-[#FAF6F2] py-12 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
         {/* Header */}
         <div className="mx-auto mb-8 max-w-[720px] text-center sm:mb-10 lg:mb-14">
           <span className="mb-4 inline-block text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5A3C] sm:text-[12px]">
-            Our Process
+            {DATA?.title || 'Our Process'}
           </span>
 
           <h2 className="mb-4 font-[Fraunces] text-[28px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1A1614] sm:text-[32px] md:text-[36px] lg:text-[44px] lg:leading-[1.1]">
-            From idea to live app in{' '}
-            <em className="font-inherit italic text-[#FF5A3C]">
-              6 clear steps
-            </em>
+            {DATA?.subtitle.start }{' '}
+            <span className="font-inherit  text-[#FF5A3C]">
+             {DATA?.subtitle.highlight}
+            </span>
+            {DATA?.subtitle.end}
           </h2>
 
           <p className="text-[14px] leading-[1.6] text-[#7A716C] sm:text-[15px] lg:text-[17px]">
-            No black-box development. You&apos;ll know exactly what&apos;s
-            happening at every stage, with weekly demos and 2-week sprints.
+            {DATA?.description}
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 gap-4 sm:gap-[18px] lg:grid-cols-3 lg:gap-5">
-          {steps.map((step, index) => (
+          {DATA?.steps.map((step:any, index:any) => (
             <div
               key={index}
               className="group relative cursor-pointer rounded-2xl border border-[#E8E2DD] bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(0,0,0,0.06)] sm:p-6 lg:p-7"

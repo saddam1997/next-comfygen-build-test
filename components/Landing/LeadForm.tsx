@@ -153,9 +153,9 @@ export default function LeadForm() {
       className="relative rounded-[20px] border border-[#E8E2DD] bg-white p-5 shadow-[0_20px_60px_rgba(26,22,20,0.08)] sm:p-7 lg:p-8"
     >
       {/* FREE Badge */}
-      <div className="absolute -top-[14px] right-6 rounded-full bg-[#FF5A3C] px-3.5 py-1.5 text-[11px] font-bold tracking-[0.05em] text-white">
+      {/* <div className="absolute -top-[14px] right-6 rounded-full bg-[#FF5A3C] px-3.5 py-1.5 text-[11px] font-bold tracking-[0.05em] text-white">
         FREE
-      </div>
+      </div> */}
 
       {/* Heading */}
       <h3 className="mb-1.5 font-[Fraunces] text-[22px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1A1614] sm:text-[24px]">
@@ -164,7 +164,7 @@ export default function LeadForm() {
 
       {/* Sub Text */}
       <p className="mb-5 flex items-center gap-1.5 text-[13px] text-[#7A716C]">
-        <span>🔒</span>
+        {/* <span>🔒</span> */}
         100% confidential. NDA signed before discussion. No spam.
       </p>
 
@@ -214,7 +214,7 @@ export default function LeadForm() {
           <select
             value={countryCode}
             onChange={(e) => setCountryCode(e.target.value)}
-            className="w-[110px] border-r border-[#E8E2DD] bg-transparent px-2 text-[14px] outline-none"
+            className="w-[110px] border-r border-[#E8E2DD] bg-transparent text-black px-2 text-[14px] outline-none"
           >
             {JSON_DATA.Country.map((country: any, index: number) => (
               <option key={index} value={country.stdCode}>

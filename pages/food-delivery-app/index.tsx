@@ -15,6 +15,7 @@ import FAQ from '../../components/Landing/FAQ'
 import FinalCTA from '../../components/Landing/FinalCTA'
 import Header from '../../components/Landing/Header'
 import FoodDeliveryUISection from '../../components/Landing/FoodDeliveryUISection'
+import CTA from '../../components/Landing/Cta'
 
 
 
@@ -27,14 +28,15 @@ const index = () => {
        <Deliverables DATA={JSON_DATA.Deliverables}/>
        {/* <StickyElements/> */}
        <AppTypes DATA={JSON_DATA.AppTypes}/>
+       <CTA/>
        <FoodDeliveryUISection DATA={JSON_DATA.FoodDelivery}/>
-       <Pricing DATA={JSON_DATA.Pricing}/>
-       {/* <Testimonials/> */}
+       {/* <Pricing DATA={JSON_DATA.Pricing}/> */}
+       <Testimonials DATA={JSON_DATA.Testimonials}/>
        <Comparison DATA={JSON_DATA.Comparison}/>
-       <Process/>
-       <TechStack/>
-       <FAQ/>
-       <FinalCTA/>
+       <Process DATA={JSON_DATA.Process}/>
+       <TechStack DATA={JSON_DATA.Technologies}/>
+       <FAQ DATA={JSON_DATA.FAQ}/>
+       <FinalCTA DATA={JSON_DATA.FinalCTA}/>
        <Footer/>
     </div>
   )

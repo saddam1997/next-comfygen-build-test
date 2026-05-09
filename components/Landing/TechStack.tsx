@@ -8,7 +8,7 @@ const technologies = [
   'Razorpay', 'Google Maps', 'Firebase', 'TensorFlow',
 ];
 
-export default function TechStack() {
+export default function TechStack({DATA}: any) {
   const [windowWidth, setWindowWidth] = useState(1200);
 
   useEffect(() => {
@@ -66,10 +66,10 @@ export default function TechStack() {
     <section className={`bg-white ${getSectionPadding()}`}>
       <div className={`max-w-[1200px] mx-auto ${getContainerPadding()}`}>
         <div className={`text-center ${getLabelFontSize()} text-muted text-gray-600 font-semibold uppercase tracking-[0.18em] ${getLabelMarginBottom()} font-semibold`}>
-          Built with industry-leading technologies
+         {DATA.title}
         </div>
         <div className={`flex flex-wrap justify-center ${getGridGap()}`}>
-          {technologies.map((tech, index) => (
+          {DATA?.tech.map((tech:any, index:any) => (
             <span
               key={index}
               className={`${getPillPadding()} bg-cream rounded-full text-gray-600 ${getPillFontSize()} font-medium text-ink-2 border border-line transition-all duration-200 hover:border-coral hover:bg-white hover:-translate-y-0.5 cursor-default`}

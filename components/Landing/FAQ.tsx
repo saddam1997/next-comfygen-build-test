@@ -89,7 +89,7 @@ const faqs = [
   },
 ];
 
-export default function FAQ() {
+export default function FAQ({DATA}: {DATA: any}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFaq = (index: number) => {
@@ -102,25 +102,24 @@ export default function FAQ() {
         {/* Header */}
         <div className="mx-auto mb-8 max-w-[720px] text-center sm:mb-10 lg:mb-14">
           <span className="mb-4 inline-block text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5A3C] sm:text-[12px]">
-            FAQs
+          {DATA.title}
           </span>
 
           <h2 className="mb-4 font-[Fraunces] text-[28px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1A1614] sm:text-[32px] md:text-[36px] lg:text-[44px] lg:leading-[1.1]">
-            Got questions?{' '}
-            <em className="font-inherit italic text-[#FF5A3C]">
-              We&apos;ve got answers.
-            </em>
+            {DATA.subtitle.start}{' '}
+            <span className="font-inherit  text-[#FF5A3C]">
+              {DATA.subtitle.highlight}
+            </span>
           </h2>
 
           <p className="text-[14px] leading-[1.6] text-[#7A716C] sm:text-[15px] lg:text-[17px]">
-            Everything food entrepreneurs ask before working with us.
-            Don&apos;t see your question? Just ask on the form above.
+            {DATA.description}
           </p>
         </div>
 
         {/* FAQ List */}
         <div className="mx-auto max-w-[820px]">
-          {faqs.map((faq, index) => {
+          {DATA.faqs.map((faq:any, index:any) => {
             const isOpen = openIndex === index;
 
             return (
