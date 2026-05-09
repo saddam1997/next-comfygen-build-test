@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import { CircleStar } from 'lucide-react';
+
 
 import HeadingTwo from "../../ui/HeadingTwo";
 
@@ -158,7 +158,7 @@ export default function FaqSection({
                                       key={j}
                                       className="flex gap-2 items-start"
                                     >
-                                      <CircleStar className="mt-1 text-[#5556D1]" />
+                                      
                                       {li}
                                     </li>
                                   ))}

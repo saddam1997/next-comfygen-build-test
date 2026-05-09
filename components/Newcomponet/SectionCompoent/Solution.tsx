@@ -1,5 +1,5 @@
 
-import { CircleStar } from 'lucide-react';
+
 import HeadingTwo from "../../ui/HeadingTwo";
 import { useState } from "react";
 
@@ -47,7 +47,7 @@ const Solution = ({ heading, subheading, techData = [] }) => {
                   <ul className="mt-4 space-y-2">
                     {listItems.map((liItem, idx) => (
                       <li key={idx} className="flex items-center gap-1">
-                        <CircleStar /> {liItem}
+                        {liItem}
                       </li>
                     ))}
                   </ul>
