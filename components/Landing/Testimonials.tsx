@@ -24,9 +24,9 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials() {
+export default function Testimonials({DATA}: any) {
   return (
-    <section className="bg-[#FAF6F2] py-12 sm:py-16 lg:py-24">
+    <section className="bg-[#FAF6F2] py-12 sm:py-16 lg:py-24 mt-8">
 
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
 
@@ -43,7 +43,7 @@ export default function Testimonials() {
             text-[#FF5A3C]
             min-[480px]:text-[12px]
           ">
-            Client Stories
+           {DATA.title}
           </span>
 
           {/* TITLE */}
@@ -60,11 +60,11 @@ export default function Testimonials() {
             lg:text-[44px]
             lg:leading-[1.1]
           ">
-            Trusted by 150+ food businesses{" "}
+            {DATA.subtitle.start}{" "}
 
-            <em className="italic text-[#FF5A3C]">
-              worldwide
-            </em>
+            <span className=" text-[#FF5A3C]">
+                {DATA.subtitle.highlight}
+            </span>
 
           </h2>
 
@@ -76,15 +76,14 @@ export default function Testimonials() {
             min-[480px]:text-[15px]
             md:text-[17px]
           ">
-            From bootstrapped startups to enterprise
-            restaurant chains — here's what our clients
-            say after launching with us.
+            {DATA.description}
+            
           </p>
 
         </div>
 
         {/* VIDEO GRID */}
-        <div className="
+        {/* <div className="
           mb-5
           grid
           grid-cols-1
@@ -94,7 +93,7 @@ export default function Testimonials() {
           sm:mb-6
         ">
 
-          {/* VIDEO 1 */}
+          
           <a
             href="https://www.youtube.com/watch?v=kedGnt6T-DI"
             target="_blank"
@@ -112,14 +111,14 @@ export default function Testimonials() {
             "
           >
 
-            {/* OVERLAY */}
+            
             <div className="
               absolute
               inset-0
               bg-[linear-gradient(135deg,rgba(255,90,60,0.2),rgba(0,0,0,0.5))]
             " />
 
-            {/* PLAY BUTTON */}
+           
             <div className="
               relative
               z-10
@@ -145,7 +144,7 @@ export default function Testimonials() {
               ▶
             </div>
 
-            {/* CAPTION */}
+          
             <div className="
               absolute
               bottom-4
@@ -177,7 +176,7 @@ export default function Testimonials() {
 
           </a>
 
-          {/* VIDEO 2 */}
+        
           <a
             href="https://www.youtube.com/watch?v=-AkHiORQTjA"
             target="_blank"
@@ -195,14 +194,14 @@ export default function Testimonials() {
             "
           >
 
-            {/* OVERLAY */}
+           
             <div className="
               absolute
               inset-0
               bg-[linear-gradient(135deg,rgba(255,90,60,0.2),rgba(0,0,0,0.5))]
             " />
 
-            {/* PLAY BUTTON */}
+         
             <div className="
               relative
               z-10
@@ -228,7 +227,7 @@ export default function Testimonials() {
               ▶
             </div>
 
-            {/* CAPTION */}
+            
             <div className="
               absolute
               bottom-4
@@ -260,7 +259,7 @@ export default function Testimonials() {
 
           </a>
 
-        </div>
+        </div> */}
 
         {/* TESTIMONIALS GRID */}
         <div className="
@@ -273,7 +272,7 @@ export default function Testimonials() {
           lg:gap-4
         ">
 
-          {testimonials.map((testimonial, index) => (
+          {DATA.testimonials.map((testimonial:any, index:any) => (
             <div
               key={index}
               className="

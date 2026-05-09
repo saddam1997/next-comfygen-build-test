@@ -274,9 +274,9 @@
         },
         "description": "We're not the cheapest. We're not the most expensive. We're the safest bet for getting a working food delivery app launched on time.",
         "comparisonData": {
-            "heading1":"Comfygen",
-            "heading2":"Freelancers",
-            "heading3":"Other Agencies",
+            "heading1": "Comfygen",
+            "heading2": "Freelancers",
+            "heading3": "Other Agencies",
             "rows": [
                 {
                     "feature": "100% source code ownership",
@@ -328,5 +328,153 @@
                 }
             ]
         }
+    },
+    "Process": {
+        "title": "Our Process",
+        "subtitle": {
+            "start": "From idea to live app in",
+            "highlight": "6 clear steps",
+            "end": ""
+        },
+        "description": "  No black-box development. You&apos;ll know exactly what&apos;s happening at every stage, with weekly demos and 2-week sprints.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Discovery & Planning",
+                "description": "Free 30-min consultation. We map your business model, target users, must-have features, and create a fixed-cost roadmap.",
+                "timeline": "Week 1"
+            },
+            {
+                "num": "02",
+                "title": "UI/UX Design",
+                "description": "Wireframes, interactive Figma prototypes, and brand-aligned design system. We iterate until you love every screen.",
+                "timeline": "Weeks 2–3"
+            },
+            {
+                "num": "03",
+                "title": "Development Sprints",
+                "description": "Agile 2-week sprints with weekly demos. Frontend, backend, APIs, and integrations all built in parallel by senior devs.",
+                "timeline": "Weeks 4–10"
+            },
+            {
+                "num": "04",
+                "title": "QA & Testing",
+                "description": "Manual + automated testing across devices, OS versions, payment flows, and edge cases. 99% bug-free at handoff.",
+                "timeline": "Weeks 10–11"
+            },
+            {
+                "num": "05",
+                "title": "Launch & Deployment",
+                "description": "App Store + Play Store submission, server setup, payment gateway live testing, and a soft launch with first 100 users.",
+                "timeline": "Week 12"
+            },
+            {
+                "num": "06",
+                "title": "Support & Scale",
+                "description": "3 months free maintenance. Bug fixes, OS updates, performance monitoring. Optional retainer for new features.",
+                "timeline": "Post-Launch"
+            }
+        ]
+    },
+    "Technologies": {
+        "title": "Built with industry-leading technologies",
+        "description": "",
+        "tech": [
+            "React Native",
+            "Flutter",
+            "Node.js",
+            "Next.js",
+            "Python · Django",
+            "MongoDB",
+            "PostgreSQL",
+            "AWS",
+            "Google Cloud",
+            "Stripe",
+            "Razorpay",
+            "Google Maps",
+            "Firebase",
+            "TensorFlow"
+        ]
+    },
+    "FAQ": {
+        "title": "FAQs",
+        "subtitle": {
+            "start": "Got questions?",
+            "highlight": "We've got answers.",
+            "end": ""
+        },
+        "description": "Everything food entrepreneurs ask before working with us. Don't see your question? Just ask on the form above.",
+        "faqs": [
+            {
+                "question": "How much does it cost to build a food delivery app like Zomato or Swiggy?",
+                "answer": "<p>It depends on features, platforms, and complexity. Here's a clear breakdown:</p><p><span class='font-semibold text-gray-700'>Starter MVP:</span> $5,000 – $8,000 (single restaurant or basic multi-vendor, 8–12 weeks)</p><p><span class='font-semibold text-gray-700'>Growth Marketplace:</span> $8,000 – $15,000 (full multi-vendor with real-time tracking, 12–16 weeks)</p><p><span class='font-semibold text-gray-700'>Enterprise:</span> $15,000+ (AI features, multi-country, advanced analytics, 16–24 weeks).</p><p>Want a precise quote for your idea? Book a free consultation — we'll send a custom estimate within 24 hours.</p>"
+            },
+            {
+                "question": "How long does it take to build a food delivery app?",
+                "answer": "<p>Our timelines depend on the package:</p><p>White-label apps launch in <strong>2–4 weeks</strong>, custom MVPs take <strong>8–12 weeks</strong>, and full multi-vendor marketplaces with AI take <strong>16–24 weeks</strong>.</p><p>We work in 2-week sprints with weekly demos so you see working software regularly — not just at the end.</p>"
+            },
+            {
+                "question": "Do I get 100% source code ownership?",
+                "answer": "<p>Yes — you own 100% of the source code, database, and all intellectual property.</p><p>We assign full IP rights to you in the project contract. There are no ongoing license fees.</p><p>After delivery, you're free to host the app yourself or work with any other team.</p>"
+            },
+            {
+                "question": "Can you build an app exactly like Zomato, Swiggy, UberEats, or DoorDash?",
+                "answer": "<p>Absolutely.</p><p>We offer two routes: ready-made <strong>clone apps</strong> (faster, more affordable, launched in 2–4 weeks) or <strong>fully custom-built</strong> platforms inspired by these market leaders.</p><p>Our clones aren't templates — they're production-tested codebases customized with your branding, features, and business logic.</p>"
+            },
+            {
+                "question": "What's included in your food delivery app development service?",
+                "answer": "<p>Every package includes:</p><p>Customer app (iOS + Android), restaurant management app, delivery driver app, web admin panel, payment gateway integration, real-time GPS tracking, push notification system, analytics dashboard, app store deployment, and 3 months of free post-launch support.</p><p>Everything you need to run a live food delivery business from day one.</p>"
+            },
+            {
+                "question": "Do you sign an NDA before I share my idea?",
+                "answer": "<p>Yes.</p><p>We sign a mutual NDA <strong>before</strong> you share any sensitive details.</p><p>Your business idea, designs, customer data, and source code remain 100% confidential.</p><p>NDA is provided at no cost — just request it on the form above or via WhatsApp.</p>"
+            }
+        ]
+    },
+    "FinalCTA": {
+        "title": "FAQs",
+        "subtitle": {
+            "start": "Ready to launch your",
+            "highlight": "food delivery app?",
+            "end": ""
+        },
+        "description": " Book a free 30-minute consultation. Get a custom quote, realistic timeline, and feature roadmap tailored to your business — with zero obligation. NDA signed upfront if you want.",
+        "pills": [
+            "🔒 NDA Signed",
+            "⏱ 24-Hour Response",
+            "💯 No Obligation"
+        ]
+    },
+    "Testimonials": {
+        "title": "Client Stories",
+        "subtitle": {
+            "start": "Trusted by 150+ food businesses",
+            "highlight": "worldwide",
+            "end": ""
+        },
+        "description": "From bootstrapped startups to enterprise restaurant chains — here's what our clients say after launching with us.",
+        "testimonials": [
+            {
+                "stars": "★★★★★",
+                "text": "The app exceeded our expectations. The Comfygen team is professional, friendly, and the communication was excellent throughout. We'll develop our next project with them too.",
+                "author": "Tom Baker",
+                "location": "Germany",
+                "initials": "TB"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Comfygen developed our food delivery app — user-friendly, scalable, and exactly what we needed. The team understood our requirements and delivered on time.",
+                "author": "Raman Mathur",
+                "location": "Jaipur, India",
+                "initials": "RM"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Highly knowledgeable and professional team. Their commitment to excellence and customer satisfaction is truly impressive. Would definitely work with them again.",
+                "author": "Devguru Enterprises",
+                "location": "India",
+                "initials": "DG"
+            }
+        ]
     }
 }

@@ -148,7 +148,7 @@ export default function AppTypes({ DATA }: { DATA: any }) {
               </p>
 
               {/* LINK */}
-              <span className="
+              {/* <span className="
                 inline-flex
                 items-center
                 gap-[6px]
@@ -158,7 +158,7 @@ export default function AppTypes({ DATA }: { DATA: any }) {
                 min-[480px]:text-[13px]
               ">
                 Get Quote →
-              </span>
+              </span> */}
 
             </button>
           ))}
