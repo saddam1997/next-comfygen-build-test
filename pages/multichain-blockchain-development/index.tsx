@@ -63,40 +63,37 @@ const BlogSection = dynamic(
   { ssr: true }
 );
 
-
-
-import { IconCode, IconCoin, IconLock, IconPresentation, IconTablePlus, IconUserCheck } from '@tabler/icons-react';
 import ReviewCard from "../../components/ReviewCard";
 
 
 const technologyData = [
   {
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "An In-depth Look",
     desc: "Using the global naming standards for each service wallet, the token will precisely reflect the unique crypto entity. Get Your Token Now"
   },
   {
-    img: <IconTablePlus stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Combustible",
     desc: "Burning tokens is a way for users to reduce the number of tokens in circulation. By doing this, the user gains control over the removal of tokens from the market. Get Your Token Now"
   },
   {
-    img: <IconCoin stroke={1.5} className="w-12 h-12" />, // Replace with an appropriate icon if necessary
+    img: null, // Replace with an appropriate icon if necessary
     title: "A Mintable Coin",
     desc: "Token owners may mint their tokens and produce as many tokens as they wish. Token production and release can be stopped at any time by disabling this process. Create Your Token Now"
   },
   {
-    img: <IconPresentation stroke={1.5} className="w-12 h-12" />, // Replace with an appropriate icon if necessary
+    img: null, // Replace with an appropriate icon if necessary
     title: "A Pauseable Process",
     desc: "Trading activity can be paused to halt the movement of your tokens. During that period, all trading and transactions will be prohibited. Get Your Token Now"
   },
   {
-    img: <IconUserCheck stroke={1.5} className="w-12 h-12" />,
+    img: null, // Replace with an appropriate icon if necessary
     title: "Taking Ownership",
     desc: "Your tokens belong to you as the rightful and entitled owner. Mapping the token identity to your wallet address establishes your exclusive token ownership. Create Your Token Now"
   },
   {
-    img: <IconLock stroke={1.5} className="w-12 h-12" />,
+    img: null, // Replace with an appropriate icon if necessary
     title: "Capped",
     desc: "It is possible to cap the number of tokens a user can create centrally. By applying limits to token creation, the value of the token is not diluted. Create Your Token Now"
   }

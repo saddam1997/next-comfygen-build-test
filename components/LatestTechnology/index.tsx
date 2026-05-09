@@ -1,4 +1,3 @@
-import { IconCloud } from "@tabler/icons-react";
 import React from "react";
 
 const Latest = ({latesttech}:any) => {

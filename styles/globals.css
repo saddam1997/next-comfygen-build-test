@@ -2,24 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-}
-
-html {
-  scrollbar-gutter: stable;
-}
-
-
-img {
-  display: block;
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-
 

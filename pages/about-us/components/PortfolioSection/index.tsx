@@ -1,4 +1,4 @@
-
+// "use client";
 
 import Image from "next/image";
 import { useEffect, useRef, useState, useMemo, useCallback } from "react";
@@ -207,7 +207,7 @@ export default function Portfolio({ Portfoliodata }) {
 
 
 
-// 
+// // "use client";
 
 // import Image from "next/image";
 
