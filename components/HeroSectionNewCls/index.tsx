@@ -8,7 +8,7 @@ export default function HeroSection({ Data }: any) {
   return (
     <section className="relative w-full overflow-hidden bg-[#1a1a4f]  min-h-[700px] sm:min-h-[680px] lg:min-h-[720px]">
 
-      <div className="absolute inset-0">
+      <div className="absolute inset-0  hidden lg:block">
         <Image
           src={Data.bgImage}
           alt={Data.imageAlt || "hero"}
