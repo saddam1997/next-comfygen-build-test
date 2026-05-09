@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import LazyLoad from "react-lazy-load";
+
+import { ArrowUpRight } from 'lucide-react';
 import Image from "next/image";
 import ContactFrom from "../../../components/Newcomponet/comman/ContactFrom";
 
@@ -71,7 +70,7 @@ const Appdevelopmentcost = ({
                 onClick={openModal}
                 className="text-[#fff] hover:bg-[#fff] hover:text-[#5556D1] border border-[#fff] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1"
               >
-                {buttonText} <MdOutlineArrowOutward />
+                {buttonText} <ArrowUpRight />
               </button>
             </div>
           </div>

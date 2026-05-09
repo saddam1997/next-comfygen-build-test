@@ -1,6 +1,5 @@
 
 import Image from "next/image";
-import { RiCustomerServiceLine } from "react-icons/ri";
 export default function AdviceSection(props: any) {
   return (
     <div className="py-10 lg:py-20 bg-gray-100">
@@ -70,9 +69,7 @@ export default function AdviceSection(props: any) {
               {/* <p className="text-base text-black ">Expand your reach with our on-demand pharmacy delivery apps. Trust Comfygen to deliver results.
               </p> */}
             <div className="flex justify-start items-center p-4 space-x-6 bg-white rounded-lg">
-              <div className="p-2 bg-blue-100 rounded-lg">
-                <RiCustomerServiceLine className=" text-[2.5rem] lg:text-[3.5rem] text-blue-500 " />
-              </div>
+            
               <div className="">
                 <h3 className="text-[#0E1F51] text-lg font-bold ">
                   Get Instant Professional Advice

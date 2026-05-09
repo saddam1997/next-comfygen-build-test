@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { MdStars } from "react-icons/md";
+
 
 const LatestTechnology = ({ heading, subheading, techData }) => {
 
@@ -48,7 +48,7 @@ const LatestTechnology = ({ heading, subheading, techData }) => {
                                                 key={idx}
                                                 className="text-base font-normal flex items-center gap-1"
                                             >
-                                                <MdStars /> {item}
+                                                 {item}
                                             </li>
                                         ))}
                                     </ul>

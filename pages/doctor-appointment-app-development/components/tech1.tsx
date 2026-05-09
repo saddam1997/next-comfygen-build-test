@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
+import { ArrowUpRight } from 'lucide-react';
 
 const backend = [
   {
@@ -315,7 +315,7 @@ export default function Tech() {
           <div className="flex justify-center items-center mt-5">
                 <a href='/quote ' className="mt-5" >
                   <button className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1">
-                     Get A DEMO <MdOutlineArrowOutward /> 
+                     Get A DEMO <ArrowUpRight /> 
                   </button>
                 </a>
               </div>

@@ -88,7 +88,7 @@ export default ClientTestimonials;
 
 
 
-// // "use client";
+
 
 // import React, { useEffect, useRef, useState } from "react";
 // import HeadingTwo from "../ui/HeadingTwo";

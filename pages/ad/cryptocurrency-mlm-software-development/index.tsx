@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptomlmsoftware.json"
-import { BsArrowRight } from "react-icons/bs";
-import { RiCustomerServiceLine } from "react-icons/ri";
+
+
 
 import Link from "next/link";
 const FaqSection = dynamic(() => import('../../../components/Newcomponet/SectionCompoent/Faq'), {
@@ -146,15 +146,6 @@ const ldJsonData = {
 export default function Ecommerce(props) {
 
   let { initialData } = props;
-  // useEffect(() => {
-  //   $(window).on('scroll', function () {
-  //     if ($(window).scrollTop() > 50) {
-  //       $('.headered').addClass('active');
-  //     } else {
-  //       $('.headered').removeClass('active');
-  //     }
-  //   });
-  // }, []);
 
 
   useEffect(() => {
@@ -223,20 +214,7 @@ export default function Ecommerce(props) {
           className="bg-center bg-no-repeat bg-cover "
           style={{ backgroundImage: `url("https://www.comfygen.com/img/hero-section-bg.webp")` }}>
           <div className=" bg-[#1B1C30CC]">
-            <div className="headered w-full py-5">
-              <nav className="z-20 flex items-center justify-between w-full px-4 py-0 mx-auto 2xl:w-9/12 xl:w-5/6 lg:w-11/12 md:px-0 ">
-                <Image src="https://www.comfygen.com/media/svg/comfygen-logo.svg" alt="comfygen-logo" width={244} height={51} priority />
-                <div className={"xl:flex hidden  xl:w-auto w-full items-center text-white px-6 "}>
-                  <div className="block space-x-4 text-sm font-medium 2xl:space-x-4 lg:flex lg:items-center lg:space-y-0 lg:p-0">
-                    <Link href="/quote" passHref={true}>
-                      <span className="block text-base font-medium  active text-white  bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] rounded-full px-6 lg:py-3 py-2 text-center hover:text-white   lg:mt-0  cursor-pointer transition duration-300 relative">
-                        Get a Quote
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </nav>
-            </div>
+           
             <div className="md:py-28 py-16">
               <div className="flex flex-col-reverse w-11/12 mx-auto 2xl:w-9/12 xl:w-5/6 lg:flex-row md:items-center lg:space-x-20 lg:space-y-0">
                 <div className="w-full lg:pt-0 pt-10">
@@ -253,7 +231,7 @@ export default function Ecommerce(props) {
                       <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center  cursor-pointer   bg-gradient-to-r from-[#16BDFA] to-[#BE5EBC] text-white overflow-hidden">
                         <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-white rounded-full group-hover:w-60 group-hover:h-60 opacity-10"></span>
                         <span className="relative">Discuss Now</span>
-                        <BsArrowRight className="ml-2 transition-all duration-200 ease-out " />
+                        
                       </div>
                     </Link>
                   </div>
@@ -287,9 +265,7 @@ export default function Ecommerce(props) {
                 <p className="text-base text-black text-justify">Do you want your business to take the chance of implementing crypto-MLM Strategies? Comfygen is #No1 Crypto-based MLM Software Development Company enabling the business to gain maximum values with clarifications and transparency.  </p>
               </div>
               <div className="flex justify-start items-center p-4 space-x-6 bg-white rounded-lg">
-                <div className="p-2 bg-blue-100 rounded-lg">
-                  <RiCustomerServiceLine className=" text-[2.5rem] lg:text-[3.5rem] text-blue-500 " />
-                </div>
+             
                 <div className="">
                   <h3 className="text-[#0E1F51] text-lg font-bold ">
                     Get Instant Professional Advice

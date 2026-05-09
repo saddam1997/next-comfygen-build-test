@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
 
@@ -21,15 +20,10 @@ const BlogSection = dynamic(
 );
 
 
-
-
-
-
-
-
-
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 
 export default function about(props) {
     const [talkToExpertModal, setTalkToExpertModal] = useState(false);
@@ -147,7 +141,7 @@ export default function about(props) {
                         </div>
                         <div className='space-y-2 mt-4'>
                             <div className=''>
-                                <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                             </div>
                             <div>
                                 <p className='md:text-base text-sm text-black'>"Comfygen delivered a secure and scalable Blockchain-based FinTech application that transformed our financial operations. Their expertise in custom FinTech app development services made the process seamless and efficient!"</p>

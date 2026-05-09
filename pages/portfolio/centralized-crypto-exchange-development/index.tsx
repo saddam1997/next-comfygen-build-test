@@ -1,10 +1,6 @@
 import Image from "next/image";
-import React from "react";
 import Head from "next/head";
-import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
-
-
 import dynamic from "next/dynamic";
 
 const BlogSection = dynamic(
@@ -231,7 +227,7 @@ export default function about(props) {
                       <div className="px-10 py-4 text-lg rounded-full relative inline-flex group items-center justify-center shadow-xl cursor-pointer bg-[#fff] text-slate-800 overflow-hidden">
                         <span className="absolute w-0 h-0 transition-all duration-300 ease-out origin-center bg-[#D0FFDA] rounded-full group-hover:w-60 group-hover:h-60 "></span>
                         <span className="relative"> TALK TO CONSULTANT</span>
-                        <BsArrowRight className="ml-2 transition-all duration-200 ease-out z-10" />
+                       
                       </div>
                     </Link>
                   </div>

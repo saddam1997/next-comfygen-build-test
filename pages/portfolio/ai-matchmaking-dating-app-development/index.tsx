@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 import styles from "../components/styles.module.css"
-import { MdStar, MdStarHalf } from 'react-icons/md';
+import { Star } from 'lucide-react';
+import { StarHalf } from 'lucide-react';
 
 import dynamic from 'next/dynamic';
 import CompanyHeroSection from '../../../components/Newcomponet/portfolio/CompanyHeroSection';
@@ -142,7 +142,7 @@ export default function about(props: any) {
                             </div>
                             <div className='space-y-2 mt-4'>
                                 <div className=''>
-                                    <span className='text-[#FFB600] flex '><MdStar size={24} /> <MdStar size={24} /><MdStar size={24} /><MdStar size={24} /> <MdStarHalf size={24} /></span>
+                                    <span className='text-[#FFB600] flex '><Star size={24} /> <Star size={24} /><Star size={24} /><Star size={24} /> <StarHalf size={24} /></span>
                                 </div>
                                 <div>
                                     <p className='md:text-base text-sm text-black'>"Comfygen delivered exactly what we envisioned for our Matchmaking Dating App Development. The AI-powered matching system has significantly improved user engagement and the app's security features ensure a trustworthy experience. Their expertise as a top-rated dating app development company made the entire process smooth and efficient. Highly recommended!"</p>

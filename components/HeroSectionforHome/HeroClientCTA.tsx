@@ -58,12 +58,6 @@ export default function HeroClientCTA() {
                         onClose={closeModal} />
                 </div>
             )}
-
-
-
-
-
-
         </>
     );
 }

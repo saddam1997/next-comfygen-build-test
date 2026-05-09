@@ -1,8 +1,6 @@
 
 import Image from "next/image";
-import React from "react";
-
-import { MdOutlineNavigateNext } from "react-icons/md";
+import { ChevronRight } from 'lucide-react';
 
 export default function BlogSection(props:any) {
   return (
@@ -89,7 +87,7 @@ export default function BlogSection(props:any) {
                     {/* CTA */}
                     <div>
                       <span className="text-lg flex items-center gap-1 text-black hover:text-[#5556D1]">
-                        Learn More <MdOutlineNavigateNext size={22} />
+                        Learn More <ChevronRight size={22} />
                       </span>
                     </div>
                   </article>

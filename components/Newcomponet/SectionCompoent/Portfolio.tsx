@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, useMemo } from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 import HeadingTwo from "../../ui/HeadingTwo";
 
 const CARD_WIDTH = 900;
@@ -170,7 +170,7 @@ export default function Portfolio({ projects, heading, description }: any) {
                   <span className="inline-flex items-center mt-4 gap-2 border border-[#453de3]
                     text-[#453ecf] px-6 py-2 rounded-full
                     hover:bg-[#6C63FF] hover:text-white transition">
-                    View Case Study <MdOutlineArrowOutward />
+                    View Case Study <ArrowUpRight />
                   </span>
                 </Link>
               </div>
@@ -224,7 +224,7 @@ export default function Portfolio({ projects, heading, description }: any) {
                 <span className="inline-flex items-center gap-2 border border-[#2821a8]
                   text-[#322bbd] px-4 py-2 rounded-full text-xs
                   hover:bg-[#6C63FF] hover:text-white transition">
-                  View Case Study <MdOutlineArrowOutward />
+                  View Case Study <ArrowUpRight />
                 </span>
               </Link>
             </div>

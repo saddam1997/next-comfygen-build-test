@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
+import { ArrowUpRight } from 'lucide-react';
 
 type CallToActionProps = {
   heading: string;
@@ -47,7 +48,7 @@ export default function CallToAction({
                 transition"
               >
                 {buttonText}
-                <MdOutlineArrowOutward />
+                <ArrowUpRight />
               </Link>
             </div>
           </div>

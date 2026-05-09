@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowallet.json";
-
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
 
@@ -12,10 +11,6 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
-const InfoSection = dynamic(
-  () => import("../../components/InfoSection"),
-  { ssr: true }
-);
 
 const CardFeatures = dynamic(
   () => import("../../components/CardFeatures"),
@@ -34,10 +29,6 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
@@ -46,13 +37,7 @@ const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
 
-
-
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-});
-
-const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
 });
 

@@ -1,9 +1,6 @@
 import Head from "next/head";
 import JSON_DATA from "./json/whitelabelcryptoexchangedevelopmen.json";
-import { useState } from "react";
-import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -66,28 +63,6 @@ const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

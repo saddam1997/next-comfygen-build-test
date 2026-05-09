@@ -1,6 +1,24 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaXTwitter, FaThreads } from "react-icons/fa6";
-import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
+
+
+import { MapPin } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import Image from "next/image";
+
+const socialLinks = [
+    { icon: "https://www.comfygen.com/image/fb-form-icon.svg", href: "https://www.facebook.com/comfygen.technologies" },
+    { icon: "https://www.comfygen.com/image/x-form-icon.svg", href: "https://x.com/Comfygen_Tech" },
+    { icon: "/instagram.webp", href: "https://www.instagram.com/comfygen_technologies" },
+    // { icon: "https://www.comfygen.com/image/threads-form-icon.svg", href: "https://www.threads.com/@comfygen_technologies" },
+    { icon: "https://www.comfygen.com/image/linkedin-form-icon.svg", href: "https://www.linkedin.com/company/comfygen-technologies" },
+    { icon: "/youtube.webp", href: "https://www.youtube.com/@Comfygentechnologies" },
+]
+
+
+
+
+
+
 
 export default function ContactUs() {
     return (
@@ -15,7 +33,7 @@ export default function ContactUs() {
 
                     <div className="flex flex-col gap-5">
                         <div className="flex items-start gap-3">
-                            <MdLocationOn className="text-2xl mt-1 shrink-0" />
+                            <MapPin className="text-2xl mt-1 shrink-0" />
                             <div className="text-sm leading-relaxed">
                                 <p className="font-semibold text-base">Comfygen Technologies</p>
                                 <p className="text-white font-semibold">
@@ -27,14 +45,14 @@ export default function ContactUs() {
                         </div>
 
                         <div className="flex items-center gap-3">
-                            <MdPhone className="text-2xl shrink-0 " />
+                            <Phone className="text-2xl shrink-0 " />
                             <a href="tel:+919358911121" className="text-sm hover:underline font-semibold">
                                 +91 9587867258
                             </a>
                         </div>
 
                         <div className="flex items-center gap-3">
-                            <MdEmail className="text-2xl shrink-0 " />
+                            <Mail className="text-2xl shrink-0 " />
                             <a href="mailto:sales@comfygen.com" className="text-sm hover:underline font-semibold">
                                 sales@comfygen.com
                             </a>
@@ -48,16 +66,16 @@ export default function ContactUs() {
 
                     <div className="flex flex-col gap-5">
                         <div className="flex items-center gap-3">
-                            <MdPhone className="text-2xl shrink-0" />
+                            <Phone className="text-2xl shrink-0" />
                             <a href="tel:+919829109153" className="text-sm hover:underline font-semibold">
                                 +91 9587867258
                             </a>
                         </div>
 
                         <div className="flex items-center gap-3">
-                            <MdEmail className="text-2xl shrink-0" />
+                            <Mail className="text-2xl shrink-0" />
                             <a href="mailto:hr@comfygen.com" className="text-sm hover:underline font-semibold">
-                                 hr@comfygen.com
+                                hr@comfygen.com
                             </a>
                         </div>
                     </div>
@@ -79,14 +97,7 @@ export default function ContactUs() {
                     <h2 className="text-xl font-semibold mb-6">Follow Us</h2>
 
                     <div className="flex flex-wrap gap-3">
-                        {[
-                            { icon: <FaFacebookF />,   href:"https://www.facebook.com/comfygen.technologies"},
-                            { icon: <FaXTwitter />, href: "https://x.com/Comfygen_Tech" },
-                            { icon: <FaInstagram />, href: "https://www.instagram.com/comfygen_technologies" },
-                            // { icon: <FaThreads />, href: "https://www.threads.com/@comfygen_technologies" },
-                            { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/comfygen-technologies" },
-                            { icon: <FaYoutube />, href: "https://www.youtube.com/@Comfygentechnologies" },
-                        ].map((item, index) => (
+                        {socialLinks.map((item: any, index) => (
                             <a
                                 key={index}
                                 href={item.href}
@@ -94,7 +105,13 @@ export default function ContactUs() {
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center hover:bg-white hover:text-orange-500 transition duration-300"
                             >
-                                {item.icon}
+                                <Image
+                                    src={item.icon}
+                                    alt={item.name}
+                                    width={20}
+                                    height={20}
+                                    className="h-6 w-6 rounded-full"
+                                />
                             </a>
                         ))}
                     </div>

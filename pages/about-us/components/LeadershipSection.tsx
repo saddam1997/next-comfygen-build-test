@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin } from 'react-icons/fa';
 
 export default function LeadershipSection() {
     return (
@@ -30,7 +29,7 @@ export default function LeadershipSection() {
                         </p>
                         <button className='text-base mt-4 font-medium  border border-white rounded-full px-6 py-1 text-center hover:text-white cursor-pointer transition duration-300 relative '>
                             <Link className='flex gap-3 items-center' target='_blank' href={'https://in.linkedin.com/in/saddam-husen'}>
-                                Linkdin <FaLinkedin />
+                                Linkdin <Image src="https://www.comfygen.com/image/linkedin-form-icon.svg" alt="LinkedIn" width={20} height={20} className="h-8 w-8" />
                             </Link>
                         </button>
                         {/* <button className="mt-6 border border-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition">

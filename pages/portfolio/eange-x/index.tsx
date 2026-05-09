@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazy-load';
 
 import dynamic from 'next/dynamic';
 

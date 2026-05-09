@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./mobilebankingappdevelopment.json";
-import Navbar from "../../components/Navbar";
+
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {

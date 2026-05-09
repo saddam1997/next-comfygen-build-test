@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import LazyLoad from "react-lazy-load";
 import JSON_DATA from "./json/creditscoringappdevelopment1.json";
 
 import Navbar from "../../components/Navbar";
@@ -15,13 +14,7 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
-import Features from "../../components/Features"
 
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
-import InformationSection from "../../components/InformationSection"
 import ReviewCard from "../../components/ReviewCard";
 
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {

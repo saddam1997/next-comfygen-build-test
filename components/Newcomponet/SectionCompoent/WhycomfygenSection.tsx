@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import { MdAdd, MdRemove } from "react-icons/md";
+import { Plus } from 'lucide-react';
+import { Minus } from 'lucide-react';
 export default function WhycomfygenSection({ Qa, Whycomfygen }) {
   const [currentCount, setCurrentCount] = useState("");
   const data = Qa;
@@ -49,9 +50,9 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
                     <div key={num} className="flex justify-between w-full text-base font-medium text-left text-black bg-white rounded-lg md:text-lg ">
                       <span>{title}</span>
                       {currentCount === index ?
-                        <MdRemove size={26} />
+                        <Minus size={26} />
                         :
-                        <MdAdd size={26} />}
+                        <Plus size={26} />}
                     </div>
                     <div className={currentCount === index ? "pt-4 text-sm text-black" : "pt-4 text-sm text-black hidden"}>
                       <p className="text-[#000] transition duration-200 ease-in-out" dangerouslySetInnerHTML={{ __html: elem.desc }}></p>

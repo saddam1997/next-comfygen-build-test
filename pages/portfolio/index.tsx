@@ -159,7 +159,7 @@ const handlePageChange = (page: number) => {
                   </h3>
                   <p className="text-sm mt-2">{portfolio.para}</p>
 
-                  {/* ✅ FIX 5: SVG instead of react-icons */}
+              
                   <Link href={portfolio.url}>
                     <button className="mt-4 px-6 py-2 border rounded flex items-center gap-2">
                       {portfolio.btn}

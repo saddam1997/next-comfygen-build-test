@@ -1,11 +1,9 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/webdevelopment.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import IndustryGrid from "../../components/IndustryGrid";
 import ClientTestimonials from "../../components/TestimonialSection";
-import Script from "next/script";
 
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,

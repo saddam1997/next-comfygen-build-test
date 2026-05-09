@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LiaQuestionSolid } from "react-icons/lia";
+
 
 interface FaqData {
   num: string;

@@ -4,7 +4,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/metaversegame.json";
 import Link from "next/link";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import { ArrowUpRight } from 'lucide-react';
 
 import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 
@@ -491,7 +491,7 @@ export default function Ecommerce(props:any) {
               className="text-[#5556D1] hover:bg-[#5556D1] hover:text-[#fff] border border-[#5556D1] px-10 py-2 text-lg font-semibold rounded-full capitalize flex items-center gap-1 cursor-pointer transition duration-300 relative "
               onClick={() => setShowContent(!showContent)}
             >
-              Load More <MdOutlineArrowOutward />
+              Load More <ArrowUpRight />
             </button>
           </div>
         )}

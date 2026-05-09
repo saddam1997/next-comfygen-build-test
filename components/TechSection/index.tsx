@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { MdOutlineArrowOutward } from "react-icons/md";
+
+import { ArrowUpRight } from 'lucide-react';
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 
@@ -94,7 +95,7 @@ export default function Tech({ TechStack }: any) {
                   }
                 }}
                 className="text-white hover:bg-[#5556D1] bg-[#0C0F18] border border-white px-8 py-2.5 text-lg font-semibold rounded-full flex items-center gap-1">
-                Connect Experts <MdOutlineArrowOutward />
+                Connect Experts <ArrowUpRight />
               </button>
 
             </div>

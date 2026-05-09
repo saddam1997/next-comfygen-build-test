@@ -1,4 +1,4 @@
-// "use client";
+
 import MenuItem from "./MenuItem";
 
 const MenuSection = ({ section, onLinkClick }: any) => {

@@ -1,42 +1,26 @@
 import Image from "next/image";
 import React, { useState, useRef } from "react";
 import Head from "next/head";
-import LazyLoad from "react-lazy-load";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
 
-
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
 import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
 
 import Emerging from "../../components/Emerging";
 
-import FeaturesNewSection from "../../components/FeaturesNewSection"
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
-import Trending from "../../components/Trending";
 
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
   { ssr: true }
 );
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
 import InformationSection from "../../components/InformationSection"
 
 import TechStacks from "../../components/TechStacks";

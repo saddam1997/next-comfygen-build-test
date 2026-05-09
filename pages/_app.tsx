@@ -6,7 +6,7 @@ import Script from "next/script";
 import GlobalSchema from "../components/seo/GlobalSchema";
 
 
-// "use client";
+
 
 // const GTM_ID = "GTM-5K96GNBB";
 

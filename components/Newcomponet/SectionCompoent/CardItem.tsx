@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MdStars } from "react-icons/md";
+
 
 const CardItem = ({ heading, subheading, techData = [] }) => {
   const [showAll, setShowAll] = useState(false);
@@ -42,7 +42,7 @@ const CardItem = ({ heading, subheading, techData = [] }) => {
                         key={idx}
                         className="text-base font-normal flex items-center gap-1"
                       >
-                        <MdStars /> {liItem}
+                       {liItem}
                       </li>
                     ))}
                   </ul>

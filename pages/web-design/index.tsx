@@ -1,7 +1,6 @@
 
 import Head from "next/head";
 import JSON_DATA from "./json/mobile.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import dynamic from "next/dynamic";
 const Milestones = dynamic(() => import("../../components/Milestones"), {

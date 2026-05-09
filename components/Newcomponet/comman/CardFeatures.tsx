@@ -1,5 +1,4 @@
 // components/CardFeatures.tsx
-// ❌ NO "use client"
 
 import CardFeaturesClient from "../clientCompoenet/CardFeaturesClient";
 

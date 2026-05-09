@@ -2,7 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/upipaymentappdevelopment.json";
-import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -24,8 +23,6 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
   ssr: true,
 });
 
-
-
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
@@ -37,8 +34,6 @@ const TechSection = dynamic(() => import("../../components/TechSection"), {
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
   ssr: true,
 });
-
-
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -54,7 +49,6 @@ const TestimonialSection = dynamic(() => import("../../components/TestimonialSec
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
-
 
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),

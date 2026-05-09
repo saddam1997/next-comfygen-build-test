@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
-import { MdAdd, MdRemove } from "react-icons/md";
-import { FcNext } from "react-icons/fc";
-import { FiChevronDown } from "react-icons/fi";
-import { MdArrowForwardIos } from "react-icons/md";
+
+
+import { ChevronDown } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export default function WhycomfygenSection({ Qa, Whycomfygen }) {
   const [currentCount, setCurrentCount] = useState("");
@@ -60,12 +60,12 @@ export default function WhycomfygenSection({ Qa, Whycomfygen }) {
 
                       {currentCount === index ?
                         <div className="bg-[#BA68C8] text-white p-4">
-                          <MdArrowForwardIos size={26}  />
+                          <ChevronRight size={26}  />
                         </div>
 
                         :
                         <div className="bg-[#ccc] p-4 ">
-                          <FiChevronDown size={26} />
+                          <ChevronDown size={26} />
                         </div>
 
 
