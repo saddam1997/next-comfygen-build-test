@@ -2,14 +2,9 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./logistics-app-development.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import Features from "../../components/Features"
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -23,11 +18,6 @@ const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
   { ssr: true }
 );
-
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
-
 import TechStacks from "../../components/TechStacks";
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
@@ -38,9 +28,6 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -188,19 +175,13 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-
-       {/* <Navbar /> */}
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
-      {/* <HeroSectionforHome herosection={JSON_DATA.Herosection} /> */}
-      {/* <Milestones /> */}
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <AppClone SliderDATA={JSON_DATA.Industries} />
-      {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Features featuresData={JSON_DATA.featuresData} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      {/* <TechSection TechStack={JSON_DATA.TechStack} /> */}
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <IndustryGrid />
       <WhyChooseSection pageData={JSON_DATA.pageData} />

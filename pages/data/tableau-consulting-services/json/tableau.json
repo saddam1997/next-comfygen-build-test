@@ -1,4 +1,161 @@
   {
+    "Herosection": {
+      "heading": "Expert Tableau Consulting Service Provider for Analytics & BI",
+      "isHome": false,
+      "ptag": "Comfygen is a expert tableau consulting service provider company helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions.",
+      "ptag1": "",
+      "listItems": [
+        "Tailored Dashboards That Drive Action",
+        "Interactive Visuals That Simplify Data",
+        "Real-Time KPIs & Analytics at a Glance",
+        "Faster, Smarter Decision-Making"
+      ],
+      "btnName": "Talk With Expert",
+      "btnLink": "/contact-us",
+      "altTag": "Expert Tableau Consulting Service Provider for Analytics & BI",
+      "bgImage": "https://www.comfygen.com/comfygen-images/tableau-consulting-services/hero2.webp"
+    },
+"ServicesData": {
+  "heading": "Services Provided by the Best Tableau Consulting Service Provider",
+  "description": "As a trusted Tableau Consulting Service Provider, our experts handle everything from data integration and preparation to advanced visualization and analytics. We turn complex datasets into clear business intelligence that helps teams track performance, uncover trends, and make informed decisions. Explore our Tableau consulting services to see how we help businesses get more value from their data.",
+  "services": [
+    {
+      "title": "Tableau Consulting Services",
+      "description": "Our Tableau consulting services help your organisation turn your raw data into actionable insights. Our Tableau experts support you throughout the entire process. From strategy and implementation to optimisation and training, we work closely with your team to deliver a custom, results-focused solution. We support all Tableau platforms, including Tableau Cloud, Tableau Server, Tableau Desktop, and Tableau Next, ensuring seamless integration and maximum ROI from your data investments.",
+      "features": [
+        "Custom Tableau strategy and implementation support",
+        "Support for Tableau Cloud, Server, Desktop, and Tableau Next",
+        "Optimised analytics solutions for better ROI"
+      ]
+    },
+    {
+      "title": "Custom Tableau Dashboard Development",
+      "description": "We build interactive, user-friendly, and goal-specific Tableau dashboards that provide clear, actionable insights. Our team works with you to ensure that each dashboard accurately reflects your KPIs, adheres to business logic, and integrates real-time data flow to support informed decision-making. With a customised and intuitive interface, our <a class='underline font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/'>Tableau dashboards</a> help you drive business insights that boost efficiency and business growth.",
+      "features": [
+        "Interactive dashboards aligned with business KPIs",
+        "Real-time data integration and reporting",
+        "User-friendly and intuitive dashboard interfaces"
+      ]
+    },
+    {
+      "title": "Migration to Tableau",
+      "description": "We help you migrate from Excel, Power BI, or legacy systems to Tableau with precision and accuracy. Our team handles data extraction, transformation, and mapping to ensure data accuracy and consistency. We configure data sources and validate dashboards to ensure your Tableau environment is fully functional and ready for immediate use, without disrupting existing workflows.",
+      "features": [
+        "Smooth migration from Excel, Power BI, and legacy systems",
+        "Secure data extraction, mapping, and transformation",
+        "Validated dashboards with minimal workflow disruption"
+      ]
+    },
+    {
+      "title": "Tableau Data Management",
+      "description": "Our Tableau experts manage the entire data lifecycle, from data integration and preparation to monitoring and maintenance. We ensure high data quality, maintain integrity across systems, and implement strong governance practices. It empowers your teams with consistent, trustworthy data and lays the foundation for a scalable data framework, ensuring confident decision-making.",
+      "features": [
+        "End-to-end data lifecycle management",
+        "Strong data governance and integrity practices",
+        "Scalable and reliable data frameworks"
+      ]
+    },
+    {
+      "title": "Tableau Analytics",
+      "description": "Our Tableau <a class='underline font-semibold' href='https://www.comfygen.com/data/analytics-service-provider'>data analytics</a> services focus on helping businesses analyse their data to uncover trends, patterns, and meaningful insights that support smarter decision-making. We enable teams across your organisation to explore data interactively, identify opportunities, and make confident, strategic moves backed by real-time information.",
+      "features": [
+        "Advanced business data analysis and reporting",
+        "Interactive exploration of trends and opportunities",
+        "Real-time insights for smarter decision-making"
+      ]
+    },
+    {
+      "title": "Tableau Data Visualisation",
+      "description": "We specialise in building impactful data visualisations using Tableau's powerful interface. Our goal is to present complex information in a clear and easy-to-interpret visual format. Our Tableau experts create interactive charts, graphs, and visual layouts that enable users to explore data in real-time, highlighting trends, spotting anomalies, and uncovering insights with ease.",
+      "features": [
+        "Interactive charts, graphs, and visual layouts",
+        "Easy-to-understand visual representation of data",
+        "Real-time data exploration and insights discovery"
+      ]
+    },
+    {
+      "title": "Tableau Implementation Services",
+      "description": "Our Tableau implementation services provide end-to-end support to deploy Tableau within your organisation seamlessly. From initial setup and configuration to data integration and user onboarding, we ensure a smooth rollout that aligns with your business workflow.",
+      "features": [
+        "Complete Tableau deployment and setup support",
+        "Seamless integration with existing workflows",
+        "User onboarding and system configuration"
+      ]
+    },
+    {
+      "title": "Tableau Optimization",
+      "description": "We continuously monitor and optimise your Tableau dashboards to ensure they perform at their best. By reducing load times, providing quicker data updates, enhancing visuals, and improving overall responsiveness, we help deliver a smooth and efficient user experience, allowing your team to access insights without delay.",
+      "features": [
+        "Improved dashboard speed and responsiveness",
+        "Faster data refresh and reduced loading times",
+        "Enhanced user experience and dashboard performance"
+      ]
+    },
+    {
+      "title": "Tableau Support and Maintenance",
+      "description": "We provide ongoing monitoring, troubleshooting, performance tuning, and regular updates to keep your Tableau Server, Tableau Cloud, and related components running smoothly. Our Tableau Experts team helps resolve technical issues quickly, implements best practices, and adapts your system as your data and business needs evolve, minimising downtime and maximising the value of your Tableau investment.",
+      "features": [
+        "24/7 Tableau monitoring and troubleshooting",
+        "Regular updates and performance tuning",
+        "Scalable support as business needs evolve"
+      ]
+    }
+  ]
+},
+"AboutSection": {
+  "title": "",
+  "heading": "Why Hire Tableau Experts From Best Tableau Consulting Service Provider?",
+  "description1": "Tableau is a powerful platform, but to fully utilise its potential, you need more than a software installation. At Comfygen, our tableau consulting services are designed to help businesses turn raw, scattered data into meaningful, real-time insights that fuel <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/'>smarter decisions</a> and measurable results.",
+  "description2": "Whether you’re struggling with disconnected data sources, manual reporting processes, or a lack of visibility into key metrics, our Tableau experts are here to help. We specialise in designing intuitive, industry-specific dashboards, integrating real-time data streams, and facilitating seamless data exploration and analysis.",
+  "description3": "With <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/'>Comfygen</a>, Tableau becomes more than just a data visualisation tool; it becomes a catalyst for smarter business decisions. We turn fragmented data into unified, interactive dashboards that deliver real-time data insights you can act on. Our goal is to help you cut through the noise, make data-backed decisions, and achieve measurable business success.",
+  "description4": "",
+  "points": [
+    "Transforms Raw Data into Actionable Business Insights",
+    "Builds Interactive & Real-Time Tableau Dashboards",
+    "Integrates Multiple Data Sources Seamlessly",
+    "Improves Reporting Accuracy & Decision-Making",
+    "Provides End-to-End Tableau Support & Optimization"
+  ],
+  "imageSrc": "https://www.comfygen.com/comfygen-images/tableau-consulting-services/about1.webp",
+  "link": "/about-us",
+  "linkText": null
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "myList3": [
       "Healthcare",
       "Retail",
@@ -39,103 +196,100 @@
         "title": "Delhi, India"
       }
     ],
-
-
-      "ReviewData": {
-    "heading": "What Our Clients Say",
-    "description": "",
-    "Review": [
-      {
-        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
-        "name": "Nhi Do",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
-        "location": "Vietnam",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
-      },
-      {
-        "name": "Rob Lipps ",
-        "location": "Madison",
-        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
-        "Source": "DesignRush",
-        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
-        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
-      },
-      {
-        "name": "Avinash",
-        "location": "Atlanta, Indiana",
-        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Rishabh Shukla",
-        "location": "Noida, India",
-        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raman Mathur",
-        "location": "Jaipur, India",
-        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Sayead Shadab Arif",
-        "location": "Dubai, United Arab Emirates",
-        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Raunak Pradhan",
-        "location": "Denver, New York",
-        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
-        "Source": "Clutch",
-        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
-        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
-      },
-      {
-        "name": "Saurav Gupta",
-        "location": "Denver, New York",
-        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
-        "Source": "Google",
-        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Devguru Enterprises",
-        "location": "India",
-        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
-        "Source": "Google",
-        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": " Mazhar.H. Ansari",
-        "location": "Oman",
-        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
-        "Source": "Google",
-        "URL": "https://share.google/ycfErAHqln9LNKdhK",
-        "image": "/Google - Original.png"
-      },
-      {
-        "name": "Tom Baker",
-        "location": "Germany",
-        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
-         "Source":"Google",
-        "URL":"https://share.google/ppp6z1YpQfJ1KxmWq",
-        "image": "/Google - Original.png"
-      }
-    ]
-  },
-  
+    "ReviewData": {
+      "heading": "What Our Clients Say",
+      "description": "",
+      "Review": [
+        {
+          "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+          "name": "Nhi Do",
+          "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+          "location": "Vietnam",
+          "Source": "DesignRush",
+          "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+        },
+        {
+          "name": "Rob Lipps ",
+          "location": "Madison",
+          "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+          "Source": "DesignRush",
+          "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+          "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+        },
+        {
+          "name": "Avinash",
+          "location": "Atlanta, Indiana",
+          "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Rishabh Shukla",
+          "location": "Noida, India",
+          "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Raman Mathur",
+          "location": "Jaipur, India",
+          "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Sayead Shadab Arif",
+          "location": "Dubai, United Arab Emirates",
+          "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Raunak Pradhan",
+          "location": "Denver, New York",
+          "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+          "Source": "Clutch",
+          "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+          "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+        },
+        {
+          "name": "Saurav Gupta",
+          "location": "Denver, New York",
+          "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+          "Source": "Google",
+          "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": "Devguru Enterprises",
+          "location": "India",
+          "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+          "Source": "Google",
+          "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": " Mazhar.H. Ansari",
+          "location": "Oman",
+          "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+          "Source": "Google",
+          "URL": "https://share.google/ycfErAHqln9LNKdhK",
+          "image": "/Google - Original.png"
+        },
+        {
+          "name": "Tom Baker",
+          "location": "Germany",
+          "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+          "Source": "Google",
+          "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+          "image": "/Google - Original.png"
+        }
+      ]
+    },
     "customSliderData": [
       {
         "imgSrc": "https://www.comfygen.com/image/industries-healthcare-img.webp",
@@ -756,7 +910,6 @@
           "https://www.linkedin.com/company/comfygen-technologies"
         ]
       },
-    
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",

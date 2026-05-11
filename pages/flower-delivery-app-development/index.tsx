@@ -42,6 +42,8 @@ const skeleton = (h: string) => (
 );
 
 import ReviewCard from "../../components/ReviewCard";
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
 
 const Emerging = dynamic(() => import("../../components/Emerging"), {
   ssr: true,
@@ -60,9 +62,10 @@ const DeliverySection = dynamic(
 
 const AboutComponent = dynamic(
   () => import("../../components/Abouts/AboutComponent"),
-  {
-    ssr: true,
-  },
+  {ssr: true},
+);
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
 );
 
 
@@ -195,11 +198,16 @@ export default function ClinicalApp(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
       <Emerging emerging={JSON_DATA.WhoCanStartSection} />
 
       <section className="py-8">
         <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
       </section>
+
+       <IndustryGrid />
 
       <Features featuresData={JSON_DATA.featureData} />
 
@@ -208,10 +216,11 @@ export default function ClinicalApp(props: any) {
       <WhyChooseSection pageData={JSON_DATA.pageData} />
 
       <DeliverySection hideUrl="flower-delivery-app-development" />
+       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
-    
+
       <BlogSection initialData={initialData} />
 
     </>

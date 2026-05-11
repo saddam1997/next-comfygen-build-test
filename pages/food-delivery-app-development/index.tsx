@@ -64,6 +64,7 @@ import ReviewCard from "../../components/ReviewCard";
 import TechStackSection from "../../components/TechStackSection";
 import FoodDeliveryCostTable from "./component/FoodDeliveryCostTable";
 import CardGrid from "./component/CardGrid";
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 
@@ -188,8 +189,6 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-
-       {/* <Navbar /> */}
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
@@ -198,6 +197,8 @@ export default function Ecommerce(props: any) {
       />
       <Emerging emerging={JSON_DATA.Emerging} />
       <AppClone SliderDATA={JSON_DATA.Industries} />
+
+      <IndustryGrid />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Features featuresData={JSON_DATA.featuresData} />

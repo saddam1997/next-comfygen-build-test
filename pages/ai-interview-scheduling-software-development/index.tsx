@@ -1,36 +1,42 @@
 
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 import JSON_DATA from "./json/aiinterviewschedulingsoftwaredevelopment.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-
-import TechStacks from "../../components/TechStacks";
-
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  {
-    ssr: true,
-  },
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true },
 );
 
+import AboutComponent from "../../components/Abouts/AboutComponent";
+/* ===================================================
+   SKELETON LOADER
+=================================================== */
+
+const SectionSkeleton = ({ height = "300px" }) => {
+  return (
+    <div
+      className="w-full rounded-2xl bg-gray-200 animate-pulse"
+      style={{ height }}
+    />
+  );
+};
+
+
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: true },
+);
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
   ssr: true,
 });
 
-import ReviewCard from "../../components/ReviewCard";
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  {
-    ssr: true,
-  },
-);
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+});
 
-
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true },
 );
 
@@ -46,15 +52,16 @@ const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
 
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  {
-    ssr: true,
-  },
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"),
+  { ssr: true },
 );
 
-import AboutComponent from "../../components/Abouts/AboutComponent";
+const ReviewCard = dynamic(() => import("../../components/ReviewCard"),
+  { ssr: true },
+);
+
+
+
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
@@ -144,23 +151,47 @@ export default function Ecommerce(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Solution techData={JSON_DATA.AIFeatures} />
-      <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+
+      <Suspense fallback={<SectionSkeleton height="250px" />}>
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <Solution techData={JSON_DATA.AIFeatures} />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+      </Suspense>
+
+
       <Solution techData={JSON_DATA.featureData} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <Solution techData={JSON_DATA.LatestTechData} />
-      <TechStacks
-        TabData={JSON_DATA.Tabs}
-        TechData={JSON_DATA.TechstackData}
-        Default={JSON_DATA.Tabs[0]}
-      />
+
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      </Suspense>
+
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <ClientStories />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <ClientStories />
+      </Suspense>
+
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+         <FaqSection faqData={JSON_DATA.Frequently} />
+      </Suspense>
+
+
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <BlogSection initialData={initialData} />
+      </Suspense>
+
 
     </>
   );

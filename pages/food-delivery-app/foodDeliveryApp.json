@@ -178,8 +178,8 @@
     "FoodDelivery": {
         "title": "Premium Mobile Showcase",
         "subtitle": {
-            "start": "Food Delivery",
-            "highlight": " App UI",
+            "start": "A Glimpse of What ",
+            "highlight": "We Build",
             "end": ""
         },
         "description": "Modern mobile application showcase with smooth sliding animation, responsive layout and premium UI experience.",
@@ -336,7 +336,7 @@
             "highlight": "6 clear steps",
             "end": ""
         },
-        "description": "  No black-box development. You&apos;ll know exactly what&apos;s happening at every stage, with weekly demos and 2-week sprints.",
+        "description": "No black-box development. You'll know exactly what's happening at every stage, with weekly demos and 2-week sprints.",
         "steps": [
             {
                 "num": "01",

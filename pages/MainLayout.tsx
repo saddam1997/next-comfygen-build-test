@@ -50,7 +50,8 @@ export default function MainLayout({
       </header> */}
 
       {/* ✅ FIXED CONTENT SHIFT */}
-      <main className="pt-[11px] w-full max-w-[1600px] mx-auto">
+      <main className={`pt-[11px] w-full ${isLandingPage ? "max-w-full" : "max-w-[1600px] mx-auto"
+        }`}>
 
         <div className="w-full">
           {children}
@@ -76,7 +77,7 @@ export default function MainLayout({
         </footer> */}
 
 
-         {!isLandingPage && (
+        {!isLandingPage && (
           <footer className="w-full min-h-[300px]">
             <Footer />
           </footer>

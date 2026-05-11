@@ -6,28 +6,16 @@ import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import Trending from "../../components/Trending";
 import TechStacks from "../../components/TechStacks";
 import AppClone from "../../components/AppClone"
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  {
-    ssr: true,
-  },
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  {ssr: true},
 );
 
-const BusinessSolustion = dynamic(
-  () =>
-    import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  },
+const BusinessSolustion = dynamic(() => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
+  { ssr: true},
 );
 
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  },
+const DeliverySection = dynamic(() => import("../../components/Newcomponet/comman/DeliverySection"),
+  {ssr: true},
 );
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
@@ -36,17 +24,11 @@ const ClientStories = dynamic(() => import("../../components/ClientStories"), {
 
 import ReviewCard from "../../components/ReviewCard";
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  {
-    ssr: true,
-  },
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true},
 );
 
-
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true },
 );
 
@@ -61,28 +43,18 @@ const HireSection = dynamic(() => import("../../components/HireSection"), {
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
-const skeleton = (h: string) => (
-  <div className={`w-full ${h} animate-pulse bg-gray-100 rounded-lg`} />
-);
-
-
 
 const Emerging = dynamic(() => import("../../components/Emerging"), {
   ssr: true,
-  loading: () => skeleton("h-[400px]"),
 });
 
-
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  {
-    ssr: true,
-  },
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"),
+  { ssr: true },
 );
 
 import Features from "../../components/Features";
 import AboutComponent from "../../components/Abouts/AboutComponent";
+import IndustryGrid from "../../components/IndustryGrid";
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
@@ -211,6 +183,7 @@ export default function ClinicalApp(props: any) {
         Default={JSON_DATA.Tabs[0]}
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
+       <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <DeliverySection hideUrl="https://www.comfygen.com/fuel-delivery-app-development" />
       <ClientStories />

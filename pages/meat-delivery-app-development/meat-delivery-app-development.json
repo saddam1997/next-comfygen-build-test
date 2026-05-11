@@ -83,7 +83,7 @@
   ],
   "imageSrc": "https://www.comfygen.com/comfygen-images/meat-delivery-app-development/best_meat_delivery_app_development_company_about.webp",
   "link": "/about-us",
-  "linkText": "Explore More"
+  "linkText": null
 },
 "trendingData": [
     {
@@ -172,7 +172,7 @@
     },
     {
       "num": "4",
-      "img": "https://www.comfygen.com/img/cloud-icon.webp",
+      "img": "https://www.comfygen.com/comfygen-images/meat-delivery-app-development/uil_cloud-computing.webp",
       "title": "Cloud Computing for Scalability",
       "decs": "Cloud-based architecture in our meat delivery app development services allows flexible scaling, fast performance, and multi-vendor support. It make sure meat delivery apps can handle growing user bases, large order volumes, and smooth delivery management."
     },

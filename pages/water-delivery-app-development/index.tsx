@@ -3,15 +3,8 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./water-delivery-app-development.json";
 import Features from "../../components/Features"
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-import Emerging from "../../components/Emerging";
-import WhoCanStart from "../../components/WhoCanStart";
-import TechStackSection from "../../components/TechStackSection"
-import ClientTestimonials from "../../components/TestimonialSection";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -36,26 +29,30 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
+import Emerging from "../../components/Emerging";
+import WhoCanStart from "../../components/WhoCanStart";
+import TechStackSection from "../../components/TechStackSection"
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
+
+import TechStacks from "../../components/TechStacks";
+import ReviewCard from "../../components/ReviewCard";
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
 
-
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
@@ -188,32 +185,29 @@ export default function ClinicalApp(props: any) {
         />
 
 
-  
-      </Head>
 
-       {/* <Navbar /> */}
-      <div className="overflow-hidden lg:pt-0 pt-16">
-        <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-        <Milestones />
-        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-        <AboutComponent AboutData={JSON_DATA.AboutSection} />
-        <Consultancy consultancyData={JSON_DATA.consultancyData} />
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-        <Features featuresData={JSON_DATA.featuresData} />
-        <Emerging emerging={JSON_DATA.EmergingData} />
-        <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-        <TechSection TechStack={JSON_DATA.TechStack} />
-        <WhoCanStart cards={JSON_DATA?.WhoCanStartData} />
-        <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
-        <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-        <ClientTestimonials
-          heading="What Our Clients Say"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-        <FaqSection faqData={JSON_DATA.Frequently} />
-        <BlogSection initialData={initialData} />
-      </div>
+      </Head>
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
+      <Consultancy consultancyData={JSON_DATA.consultancyData} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Features featuresData={JSON_DATA.featuresData} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <IndustryGrid />
+      <ProcesSection ProcessData={JSON_DATA.ProcessData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhoCanStart cards={JSON_DATA?.WhoCanStartData} />
+      <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
     </>
   );
 }

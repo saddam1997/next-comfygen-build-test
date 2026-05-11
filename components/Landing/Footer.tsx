@@ -8,7 +8,7 @@ export default function Footer() {
           
           {/* Left */}
           <div>
-            © 2026 Comfygen Private Limited. All rights reserved.
+            © 2026 Comfygen Technologies.
           </div>
 
           {/* Right Links */}

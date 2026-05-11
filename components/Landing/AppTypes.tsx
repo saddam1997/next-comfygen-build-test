@@ -2,13 +2,16 @@
 
 export default function AppTypes({ DATA }: { DATA: any }) {
 
-  const scrollToForm = () => {
+   const scrollToForm = () => {
     const form = document.getElementById("hero-form");
 
     if (form) {
-      form.scrollIntoView({
+      const y =
+        form.getBoundingClientRect().top + window.pageYOffset - 100;
+
+      window.scrollTo({
+        top: y,
         behavior: "smooth",
-        block: "start",
       });
     }
   };
@@ -105,7 +108,7 @@ export default function AppTypes({ DATA }: { DATA: any }) {
             >
 
               {/* TAG */}
-              <span className="
+              {/* <span className="
                 mb-3 inline-block
                 rounded-full
                 bg-[#FFF0EB]
@@ -119,7 +122,7 @@ export default function AppTypes({ DATA }: { DATA: any }) {
                 min-[480px]:text-[11px]
               ">
                 {type.tag}
-              </span>
+              </span> */}
 
               {/* TITLE */}
               <h3 className="

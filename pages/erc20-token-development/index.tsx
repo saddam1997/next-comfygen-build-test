@@ -1,11 +1,8 @@
-import Image from "next/image";
-import React, { useState, useRef } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/erc20token.json";
-
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -33,15 +30,6 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
-
-
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
-
 const ClientStories = dynamic(
   () => import("../../components/ClientStories"),
   { ssr: true }
@@ -59,21 +47,12 @@ const BlogSection = dynamic(
 
 import ReviewCard from "../../components/ReviewCard";
 
-
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { ssr: true }
-);
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
 
-
 import Script from "next/script";
-
-
-
 export default function Ecommerce(props: any) {
   let { initialData } = props;
  
@@ -117,7 +96,7 @@ export default function Ecommerce(props: any) {
         <Script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.faqSchema) }} />
       </Head>
        {/* <Navbar /> */}
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Solution techData={JSON_DATA.AIFeatures} />

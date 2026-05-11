@@ -1,76 +1,42 @@
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./accounting.json";
-
 import HeroSectionforHome from "../../components/HeroSectionforHome"
-
 import ServicesComponet from "../../components/ServicesSection/ServicesComponet";
 import AboutComponent from "../../components/Abouts/AboutComponent";
 import PortfolioSection from "../../components/PortfolioSection"
 import TechSection from "../../components/TechSection"
 import TechStackSection from "../../components/TechStackSection";
-
-const Milestones = dynamic(
-  () => import("../../components/Milestones"),
+const Milestones = dynamic(() => import("../../components/Milestones"),
   { ssr: true }
 );
 
-
-
-
-const HireSection = dynamic(
-  () => import("../../components/HireSection"),
+const HireSection = dynamic( () => import("../../components/HireSection"),
   { ssr: true }
 );
 
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true }
 );
 
-const TestimonialSection = dynamic(
-  () => import("../../components/TestimonialSection"),
+const TestimonialSection = dynamic(() => import("../../components/TestimonialSection"),
   { ssr: true }
 );
-
 
 import ConsultancyApproach from "../../components/ConsultancyApproach"
-
-
 import ProcesSection from "../../components/ProcesSection"
 import Solution from "../../components/Solution";
 import FaqSection from "../../components/FaqSection";
 import ClientStories from "../../components/ClientStories";
 
-
-// Delivery Section
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../components/BlogSection"),
+const BlogSection = dynamic(() => import("../../components/BlogSection"),
   { ssr: true }
 )
 
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
-  let { Frequently } = JSON_DATA;
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
-
-
 
   return (
     <>

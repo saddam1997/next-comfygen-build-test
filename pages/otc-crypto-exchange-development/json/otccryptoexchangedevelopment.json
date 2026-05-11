@@ -138,8 +138,45 @@
     ],
     "imageSrc": "https://www.comfygen.com/comfygen-images/otc-crypto-exchange-development/otc-crypto-exchange-development-about.webp",
     "link": "/about-us",
-    "linkText": "Explore More"
+    "linkText": null
   },
+    "trendingData": [
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "Selectedfirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "Selectedfirms"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    }
+  ],
   "Whycomfygens": {
     "title": "Benefits Of OTC Cryptocurrency Exchange Development Services",
     "description": "OTC cryptocurrency exchange platforms provide a secure and efficient solution for traders and institutions handling large-volume crypto transactions. Unlike regular exchanges, OTC crypto exchanges facilitate private, high-value trades with enhanced confidentiality and liquidity, making them an ideal choice for many crypto market participants.",
@@ -294,6 +331,209 @@
       }
     ]
   },
+  "Tabs": [
+    "Backend",
+    "Frontend",
+    "Database",
+    "Blockchain Network",
+    "Cloud/DevOps",
+    "Security"
+  ],
+  "TechstackData": {
+    "heading": "Our OTC Cryptocurrency Exchange Development Technology Stack",
+    "description": "We build secure, scalable OTC crypto exchange software using modern tech like React, Node.js, and blockchain integrations (Ethereum , Solana). Our stack ensures fast trades, strong security, and regulatory compliance.",
+    "TechItems": {
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Next js",
+          "name": "Next js",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "7"
+        }
+      ],
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/css3-original.svg",
+          "alt": "Css3",
+          "name": "Css3",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/tailwindcss-plain.svg",
+          "alt": "Tailwindcss",
+          "name": "Tailwindcss",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/bootstrap-original.svg",
+          "alt": "Bootstrap",
+          "name": "Bootstrap",
+          "num": "9"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Blockchain Network": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/ethereum.webp",
+          "alt": "Ethereum",
+          "name": "Ethereum",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/POLYGON.webp",
+          "alt": "Polygon",
+          "name": "Polygon",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/img/stackimg/solona.svg",
+          "alt": "Solana",
+          "name": "Solana",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/img/stackimg/cardano.svg",
+          "alt": "Cardano",
+          "name": "Cardano",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/img/stackimg/eos.svg",
+          "alt": "EOS",
+          "name": "EOS",
+          "num": "5"
+        },
+     
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/hyperledger.webp",
+          "alt": "Hyperledger",
+          "name": "Hyperledger",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Stellar.webp",
+          "alt": "Stellar",
+          "name": "Stellar",
+          "num": "8"
+        },
+        {
+         "img": "https://www.comfygen.com/comfygen-images/icons/bnb-chain.webp",
+          "alt": "BNB Chain",
+          "name": "BNB Chain",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/web3js.webp",
+          "alt": "Web3.js",
+          "name": "Web3.js",
+          "num": "10"
+        },
+        {
+         "img": "https://www.comfygen.com/comfygen-images/icons/ether js.webp",
+          "alt": "Ethers.js",
+          "name": "Ethers.js",
+          "num": "11"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        }
+      ],
+      "Security": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/end to end encryption.webp",
+          "alt": "End-to-End Encryption",
+          "name": "End-to-End Encryption",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/OAuth Authentication.webp",
+          "alt": "OAuth Authentication",
+          "name": "OAuth Authentication",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/JWT Authentication.webp",
+          "alt": "JWT Authentication",
+          "name": "JWT Authentication",
+          "num": "3"
+        }
+      ]
+    }
+  },
+
+
   "TechStack": {
     "title": "Our OTC Cryptocurrency Exchange Development Technology Stack",
     "description": "We build secure, scalable OTC crypto exchange software using modern tech like React, Node.js, and blockchain integrations (<a href='/ethereum-token-development' class='text-white font-semibold underline ' >Ethereum</a> , Solana). Our stack ensures fast trades, strong security, and regulatory compliance.",
@@ -395,43 +635,100 @@
       }
     ]
   },
-  "testimonials": [
-    {
-      "text": "“Comfygen’s OTC crypto exchange development services delivered a secure, efficient, and customizable platform that perfectly fits our trading needs. Their professionalism and technical skill made the entire process seamless. Highly recommended!”",
-      "name": "Arjun Kumar",
-      "title": "Nepal",
-      "rating": "★★★★★",
-      "note": "5 Ratings"
-    },
-    {
-      "text": "“Partnering with Comfygen for our OTC crypto exchange was a smart decision. Their team's dedication to quality and attention to regulatory compliance helped us build a trusted platform quickly. Excellent communication and support!”",
-      "name": "Emily Johnson",
-      "title": "Canada",
-      "rating": "★★★★★",
-      "note": "5 Ratings"
-    },
-    {
-      "text": "“Our OTC crypto trading platform, developed by Comfygen, exceeded all expectations. The solution is fast, reliable, and fully compliant with industry standards. The team’s expertise ensured smooth deployment and ongoing support.”",
-      "name": "Carlos Mendoza",
-      "title": "Chile",
-      "rating": "★★★★★",
-      "note": "5 Ratings"
-    },
-    {
-      "text": "“Comfygen’s developers created a robust OTC crypto exchange with a user-friendly interface and advanced security features. The platform has significantly improved our trading efficiency and client satisfaction.”",
-      "name": "Lena Fischer",
-      "title": "Germany",
-      "rating": "★★★★★",
-      "note": "5 Ratings"
-    },
-    {
-      "text": "“The OTC exchange platform Comfygen built for us is scalable, secure, and easy to manage. Their team’s commitment to delivering a high-quality solution was evident at every stage. We appreciate their ongoing support and professionalism.”",
-      "name": "Khalid bin-Haddad",
-      "title": "OMAN",
-      "rating": "★★★★★",
-      "note": "5 Ratings"
-    }
-  ],
+    "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "1",

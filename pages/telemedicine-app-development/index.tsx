@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/teleMedicine.json";
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
@@ -180,7 +180,7 @@ export default function Ecommerce(props: any) {
         />
 
       </Head>
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />

@@ -121,8 +121,45 @@
     "points": [],
     "imageSrc": "https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-about.webp",
     "link": "/about-us",
-    "linkText": "Explore More"
+    "linkText": null
   },
+  "trendingData": [
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "Selectedfirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "Selectedfirms"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    }
+  ],
   "AppClone": {
     "heading": "Salon App Clone Solutions",
     "subheading": "Comfygen delivers powerful, feature-rich salon app clone development solutions inspired by the world's leading beauty and salon platforms. Our beauty clone apps are designed to match their functionality while offering full customization, secure performance, and scalable infrastructure to help you launch your salon tech business faster and smarter.",
@@ -354,13 +391,13 @@
       },
       {
         "num": "2",
-        "img": "https://www.comfygen.com/img/5g-technology.webp",
+        "img": "https://www.comfygen.com/comfygen-images/emerging/AR-Vr.webp",
         "title": "Augmented Reality (AR) for Virtual Try-Ons",
         "decs": "We incorporate AR technology to allow users to preview hairstyles, makeup, and nail art before booking. This interactive experience increases user engagement and decision-making confidence, improving customer satisfaction and conversion rates."
       },
       {
         "num": "3",
-        "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+        "img": "https://www.comfygen.com/comfygen-images/emerging/uil_cloud-computing.webp",
         "title": "Cloud Computing & SaaS Architecture",
         "decs": "Our salon apps are built on cloud-based infrastructure, enabling seamless scalability, data backup, and multi-location salon management. Cloud support ensures uninterrupted access for users, staff, and admins across devices and platforms."
       },
@@ -378,7 +415,7 @@
       },
       {
         "num": "6",
-        "img": "https://www.comfygen.com/img/emotional-ai.webp",
+        "img": "https://www.comfygen.com/comfygen-images/emerging/Big-data.webp",
         "title": "Big Data & Analytics",
         "decs": "With integrated analytics tools, salon owners can gain deep insights into customer preferences, booking trends, and employee performance. These insights help in creating targeted promotions, improving services, and making smarter business decisions."
       }
@@ -388,94 +425,302 @@
     "heading": "AI-Powered Salon App Development Solutions",
     "subheading": "At Comfygen, we deliver AI-powered salon app development solutions that help beauty businesses automate operations, enhance user experience, and offer personalized services at scale. From intelligent scheduling to behavior-based service suggestions, our custom salon app development integrates the power of AI to create smarter, data-driven salon platforms.",
     "tech": [
-     
-    {
-          "img": null,
-      "title": "AI-Based Stylist Matching",
-      "desc": "Our AI-powered algorithm intelligently matches clients with the best-suited stylists based on service needs, previous preferences, availability, and location. This ensures a more personalized experience, better client satisfaction, and increased retention for salon businesses."
-    },
-    {
-         "img": null,
-      "title": "Personalized Service Recommendations",
-      "desc": "We develop AI features that analyze past booking history, customer reviews, and preferences to offer tailored service recommendations. Clients can receive suggestions for haircuts, beauty treatments, or spa packages that fit their unique style and needs."
-    },
-    {
-          "img": null,
-      "title": "AI-Powered Chatbot for Instant Booking Support",
-      "desc": "Our AI chatbot allows clients to book services, ask queries, and get assistance 24/7 without needing human support. Integrated with natural language processing (NLP), it provides a conversational experience that improves customer engagement and reduces wait times."
-    },
-    {
-         "img": null,
-      "title": "Smart Appointment Scheduling",
-      "desc": "AI automates and optimizes appointment slots based on client demand, stylist availability, and service durations. This reduces gaps in bookings and maximizes staff productivity, especially for multi-branch salon businesses."
-    },
-    {
-         "img": null,
-      "title": "Customer Sentiment Analysis",
-      "desc": "Using AI-driven feedback analysis, our salon apps identify customer sentiments from reviews and surveys. This helps salon managers understand client satisfaction levels and make data-driven improvements in services and experiences."
-    },
-    {
-         "img": null,
-      "title": "AI-Based Inventory Management",
-      "desc": "We build smart salon apps that track product usage patterns and predict restocking needs using AI. This prevents shortages of key beauty products and helps maintain smooth operations across your salon outlets."
-    },
-    {
-       "img": null,
-      "title": "Image Recognition for Style Selection",
-      "desc": "Clients can upload images of hairstyles or makeup looks, and the app uses image recognition to recommend matching services or stylists who specialize in those styles. This enhances the booking journey and reduces miscommunication."
-    },
-    {
-         "img": null,
-      "title": "Dynamic Pricing with AI",
-      "desc": "Our top-notch salon apps support AI-powered dynamic pricing that adjusts service costs based on demand, time slots, and customer loyalty. This enables salons to increase revenue during peak times and offer discounts during low-traffic hours."
-    },
-    {
-         "img": null,
-      "title": "AI-Driven Client Retention Tools",
-      "desc": "We incorporate machine learning models to predict churn risk and recommend personalized promotions or follow-ups. This proactive approach helps salons retain more customers and increase the lifetime value of each client."
-    }
+      {
+        "img": null,
+        "title": "AI-Based Stylist Matching",
+        "desc": "Our AI-powered algorithm intelligently matches clients with the best-suited stylists based on service needs, previous preferences, availability, and location. This ensures a more personalized experience, better client satisfaction, and increased retention for salon businesses."
+      },
+      {
+        "img": null,
+        "title": "Personalized Service Recommendations",
+        "desc": "We develop AI features that analyze past booking history, customer reviews, and preferences to offer tailored service recommendations. Clients can receive suggestions for haircuts, beauty treatments, or spa packages that fit their unique style and needs."
+      },
+      {
+        "img": null,
+        "title": "AI-Powered Chatbot for Instant Booking Support",
+        "desc": "Our AI chatbot allows clients to book services, ask queries, and get assistance 24/7 without needing human support. Integrated with natural language processing (NLP), it provides a conversational experience that improves customer engagement and reduces wait times."
+      },
+      {
+        "img": null,
+        "title": "Smart Appointment Scheduling",
+        "desc": "AI automates and optimizes appointment slots based on client demand, stylist availability, and service durations. This reduces gaps in bookings and maximizes staff productivity, especially for multi-branch salon businesses."
+      },
+      {
+        "img": null,
+        "title": "Customer Sentiment Analysis",
+        "desc": "Using AI-driven feedback analysis, our salon apps identify customer sentiments from reviews and surveys. This helps salon managers understand client satisfaction levels and make data-driven improvements in services and experiences."
+      },
+      {
+        "img": null,
+        "title": "AI-Based Inventory Management",
+        "desc": "We build smart salon apps that track product usage patterns and predict restocking needs using AI. This prevents shortages of key beauty products and helps maintain smooth operations across your salon outlets."
+      },
+      {
+        "img": null,
+        "title": "Image Recognition for Style Selection",
+        "desc": "Clients can upload images of hairstyles or makeup looks, and the app uses image recognition to recommend matching services or stylists who specialize in those styles. This enhances the booking journey and reduces miscommunication."
+      },
+      {
+        "img": null,
+        "title": "Dynamic Pricing with AI",
+        "desc": "Our top-notch salon apps support AI-powered dynamic pricing that adjusts service costs based on demand, time slots, and customer loyalty. This enables salons to increase revenue during peak times and offer discounts during low-traffic hours."
+      },
+      {
+        "img": null,
+        "title": "AI-Driven Client Retention Tools",
+        "desc": "We incorporate machine learning models to predict churn risk and recommend personalized promotions or follow-ups. This proactive approach helps salons retain more customers and increase the lifetime value of each client."
+      }
     ]
   },
-    "ProcessData": {
+  "ProcessData": {
     "heading": "Our Salon App Development Process",
     "description": "As a top-notch salon app development company, Comfygen follows a strategic and transparent process to deliver tailor-made and high-performing salon apps. From concept to launch, our approach ensures quality, scalability, and a seamless user experience. Here's how we build the best salon app for beauty professionals and businesses.",
     "Process": [
-  {
-    "title": "Requirement Analysis & Research",
-    "description": "We begin with a deep dive into your business goals, target users, and competitive landscape. Our salon app development experts define clear project objectives and user flows to ensure a solid foundation for your beauty service app."
-  },
-  {
-    "title": "Wireframing & UI/UX Design",
-    "description": "Our designers craft a brilliant and user-friendly interface for both salon staff and clients. With intuitive navigation, elegant visuals, and responsive design, our beauty app development company creates engaging UI/UX that elevates the booking and service experience."
-  },
-  {
-    "title": "MVP Development",
-    "description": "We prioritize key features and functionalities to deliver a minimum viable product that brings your salon app to life quickly. This approach ensures faster time to market and allows early user feedback to shape the final product."
-  },
-  {
-    "title": "Full-Scale Development & Integration",
-    "description": "Our expert developers use cutting-edge technologies to build a robust, scalable salon app. Whether it’s real-time bookings, stylist profiles, loyalty programs, or payment gateways, we integrate essential modules for a smooth user journey."
-  },
-  {
-    "title": "Testing & Quality Assurance",
-    "description": "As a brilliant salon app development company, we follow strict QA protocols. Our team performs usability, performance, and security testing to ensure the salon app runs flawlessly across Android, iOS, and web platforms."
-  },
-  {
-    "title": "Deployment & App Store Launch",
-    "description": "Once tested and approved, we deploy your app to major app stores with complete backend configuration. Our salon booking app development team ensures seamless integration with your existing systems and business operations."
-  },
-  {
-    "title": "Support & Maintenance",
-    "description": "We provide ongoing app monitoring, bug fixes, and feature enhancements post-launch. Our beauty salon app development company ensures your salon app stays updated, secure, and aligned with user expectations and beauty trends."
-  }
+      {
+        "title": "Requirement Analysis & Research",
+        "description": "We begin with a deep dive into your business goals, target users, and competitive landscape. Our salon app development experts define clear project objectives and user flows to ensure a solid foundation for your beauty service app."
+      },
+      {
+        "title": "Wireframing & UI/UX Design",
+        "description": "Our designers craft a brilliant and user-friendly interface for both salon staff and clients. With intuitive navigation, elegant visuals, and responsive design, our beauty app development company creates engaging UI/UX that elevates the booking and service experience."
+      },
+      {
+        "title": "MVP Development",
+        "description": "We prioritize key features and functionalities to deliver a minimum viable product that brings your salon app to life quickly. This approach ensures faster time to market and allows early user feedback to shape the final product."
+      },
+      {
+        "title": "Full-Scale Development & Integration",
+        "description": "Our expert developers use cutting-edge technologies to build a robust, scalable salon app. Whether it’s real-time bookings, stylist profiles, loyalty programs, or payment gateways, we integrate essential modules for a smooth user journey."
+      },
+      {
+        "title": "Testing & Quality Assurance",
+        "description": "As a brilliant salon app development company, we follow strict QA protocols. Our team performs usability, performance, and security testing to ensure the salon app runs flawlessly across Android, iOS, and web platforms."
+      },
+      {
+        "title": "Deployment & App Store Launch",
+        "description": "Once tested and approved, we deploy your app to major app stores with complete backend configuration. Our salon booking app development team ensures seamless integration with your existing systems and business operations."
+      },
+      {
+        "title": "Support & Maintenance",
+        "description": "We provide ongoing app monitoring, bug fixes, and feature enhancements post-launch. Our beauty salon app development company ensures your salon app stays updated, secure, and aligned with user expectations and beauty trends."
+      }
     ]
   },
-    "TechStack": {
+  "Tabs": [
+    "Backend",
+    "Frontend",
+    "Payments",
+    "Database",
+    "Maps & Routing",
+    "Cloud/DevOps",
+    "AI/ML"
+  ],
+  "TechstackData": {
+    "heading": "Technology Stack We Use for Salon App Development",
+    "description": "We use modern and scalable technologies to build high-performing salon and beauty service applications with seamless appointment booking, real-time notifications, secure payments, customer management, and smooth user experiences. Our salon app development technology stack ensures fast performance, attractive UI/UX, advanced admin controls, and easy scalability for salons, spas, and beauty businesses.",
+    "TechItems": {
+      "Backend": [
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/nodejs-original.svg",
+          "alt": "Nodejs",
+          "name": "Nodejs",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/Icons/express.webp",
+          "alt": "Express js",
+          "name": "Express js",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/django-icon.svg",
+          "alt": "Django",
+          "name": "Django",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/Python-icon.svg",
+          "alt": "Python",
+          "name": "Python",
+          "num": "7"
+        }
+      ],
+      "Frontend": [
+        {
+          "img": "https://www.comfygen.com/image/next-js-icon.svg",
+          "alt": "Nextjs",
+          "name": "nextjs",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/react-original.svg",
+          "alt": "React",
+          "name": "React js",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/angularjs-original.svg",
+          "alt": "Angularjs",
+          "name": "Angular js",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/javascript-original.svg",
+          "alt": "Javascript",
+          "name": "Javascript",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/media/svg/tech/typescript-original.svg",
+          "alt": "Typescript",
+          "name": "Typescript",
+          "num": "8"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/react-native.webp",
+          "alt": " React Native",
+          "name": " React Native",
+          "num": "9"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/flutter.webp",
+          "alt": "Flutter",
+          "name": "Flutter",
+          "num": "9"
+        }
+      ],
+      "Payments": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Razorpay-icon.webp",
+          "alt": "Razorpay",
+          "name": "Razorpay",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/stripe.webp",
+          "alt": "Stripe",
+          "name": "Stripe",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/PayU.webp",
+          "alt": "PayU",
+          "name": "PayU",
+          "num": "3"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/upi.webp",
+          "alt": "UPI",
+          "name": "UPI",
+          "num": "4"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+          "alt": "PayPal",
+          "name": "PayPal",
+          "num": "5"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Vector.webp",
+          "alt": "Apple Pay",
+          "name": "Apple Pay",
+          "num": "6"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/payTab.webp",
+          "alt": "PayTabs",
+          "name": "PayTabs",
+          "num": "7"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mask group-1.webp",
+          "alt": "Klarna",
+          "name": "Klarna",
+          "num": "8"
+        }
+      ],
+      "Database": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_postgresql-wordmark.webp",
+          "alt": "PostgreSQL",
+          "name": "PostgreSQL",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/mongodb.webp",
+          "alt": "MongoDB",
+          "name": "MongoDB",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/devicon_redis-wordmark.webp",
+          "alt": "Redis",
+          "name": "Redis",
+          "num": "3"
+        }
+      ],
+      "Maps & Routing": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google_map.webp",
+          "alt": "Google Maps API",
+          "name": "Google Maps API",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/Mapbox_logo_2017.svg 1.webp",
+          "alt": "Mapbox",
+          "name": "Mapbox",
+          "num": "2"
+        }
+      ],
+      "Cloud/DevOps": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/aws.webp",
+          "alt": "AWS",
+          "name": "AWS",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/google-cloud-platfrom.webp",
+          "alt": "GCP",
+          "name": "GCP",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/docker-icon.webp",
+          "alt": "Docker",
+          "name": "Docker",
+          "num": "3"
+        }
+      ],
+      "AI/ML": [
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/TensorFlow.webp",
+          "alt": "TensorFlow",
+          "name": "TensorFlow",
+          "num": "1"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/chatgpt.webp",
+          "alt": "OpenAI APIs",
+          "name": "OpenAI APIs",
+          "num": "2"
+        },
+        {
+          "img": "https://www.comfygen.com/comfygen-images/icons/pytorch.webp",
+          "alt": "PyTorch",
+          "name": "PyTorch",
+          "num": "3"
+        }
+      ]
+    }
+  },
+  "TechStack": {
     "title": "Technology Stack We Use",
     "description": "At Comfygen, we use a modern and robust technology stack to build scalable, secure, and feature-rich beauty salon apps. Our tools ensure high performance across mobile and web platforms while delivering a seamless experience for both salon professionals and customers.",
     "customTechData": []
   },
-    "pageData": {
+  "pageData": {
     "title": "Why is Comfygen Your Ideal Salon App Development Partner?",
     "description": "Comfygen is a top-rated beauty and salon app development agency delivering powerful, scalable, and beautifully crafted beauty service applications. From startups to established salon chains, our best custom salon app development services help businesses streamline operations, boost customer engagement, and grow revenue with next-gen features and seamless UI.",
     "mainCardData": {
@@ -516,8 +761,7 @@
       }
     ]
   },
-
-    "HireDeveloper": {
+  "HireDeveloper": {
     "heading": "Hire Our Dedicated Salon App Developers",
     "text": "Want to build a brilliant, on-demand beauty app for your salon business? At Comfygen, we offer a team of expert salon app developers who transform your ideas into powerful, user-centric, and scalable beauty and wellness applications.",
     "text1": "With over 8+ years of experience in salon app development, our developers specialize in crafting customized solutions for single salons, multi-location franchises, and at-home beauty service platforms. Whether you’re looking for a salon booking app, spa appointment scheduler, or full-service beauty app, we deliver flawless functionality and modern design.",
@@ -527,11 +771,11 @@
     "imageAlt": "hire-developer",
     "listItems": [
       "Expertise in Cutting-Edge Technologies – AI, AR/VR, Cloud, Blockchain & IoT",
-          "Customizable & Scalable Development – Apps tailored to your brand vision",
-          "Engaging UI/UX – Designed for seamless beauty service booking and customer interaction"
+      "Customizable & Scalable Development – Apps tailored to your brand vision",
+      "Engaging UI/UX – Designed for seamless beauty service booking and customer interaction"
     ]
   },
-   "customTestimonials": [
+  "customTestimonials": [
     {
       "text": "Working with Comfygen was a game-changer for my salon business. They delivered a user-friendly, beautifully designed booking app that our clients love. Their team was responsive, professional, and clearly experts in salon app development.",
       "name": "Priya Sharma",
@@ -553,6 +797,100 @@
       "title": "Dubai, UAE"
     }
   ],
+  "ReviewData": {
+    "heading": "What Our Clients Say",
+    "description": "",
+    "Review": [
+      {
+        "text": "My overall experience working with the company was very positive. The team demonstrated professionalism and strong technical skills throughout the project. Communication was clear and timely, which helped us stay on schedule. They were responsive to our feedback and flexible in adapting to changes. The final product met all our expectations and was delivered on time. Some minor improvements could be made in the testing phase, but overall, I am very satisfied with the collaboration.",
+        "name": "Nhi Do",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp",
+        "location": "Vietnam",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews"
+      },
+      {
+        "name": "Rob Lipps ",
+        "location": "Madison",
+        "text": "Sonic Foundry Inc. noted that Confygen consistently fulfilled its commitments and demonstrated strong project management skills, keeping the app's development on track. The client was pleased with the final result.",
+        "Source": "DesignRush",
+        "URL": "https://www.designrush.com/agency/profile/comfygen#reviews",
+        "image": "https://www.comfygen.com/comfygen-images/Review/designrush.webp"
+      },
+      {
+        "name": "Avinash",
+        "location": "Atlanta, Indiana",
+        "text": "Comfygen Technologies developed and designed a blockchain and a web wallet for a cryptocurrency company. The team built a Proof of Authority blockchain based on Geth and a user-friendly web wallet.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425248",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Rishabh Shukla",
+        "location": "Noida, India",
+        "text": "An IT company hired Comfygen to design and build a dating app for both iOS and Android. The team also integrated features, including geolocation-based matching, swipe functionality, and a secure payment system",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/324114",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raman Mathur",
+        "location": "Jaipur, India",
+        "text": "Comfygen Technologies developed and designed a food delivery app for a mobile app and website development company. The team was responsible for creating a user-friendly and scalable mobile app.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/425232",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Sayead Shadab Arif",
+        "location": "Dubai, United Arab Emirates",
+        "text": "Comfygen provided software development services for an IT project management company. The team worked on three projects involving blockchain and e-commerce.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/395690",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Raunak Pradhan",
+        "location": "Denver, New York",
+        "text": "Comfygen built a custom healthcare mobile app for a review writer company. The app included appointment scheduling, patient record management, and a telemedicine feature. The team also worked on its UI.",
+        "Source": "Clutch",
+        "URL": "https://clutch.co/go-to-review/42d5aeaa-1099-4697-8dde-7f93b7f00407/323578",
+        "image": "https://www.comfygen.com/comfygen-images/Review/clutch.webp"
+      },
+      {
+        "name": "Saurav Gupta",
+        "location": "Denver, New York",
+        "text": "I had a great experience working with Comfygen Technologies. The team is professional, responsive, and truly understands client requirements. Their technical expertise and timely delivery made the entire process smooth and stress-free. I’d definitely recommend Comfygen Technologies to anyone looking for reliable and quality IT solutions.",
+        "Source": "Google",
+        "URL": "https://share.google/SmBMWdDMK2xOz92Bw",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Devguru Enterprises",
+        "location": "India",
+        "text": "The team at Comfygen pvt ltd. is highly knowledgeable and professional. From the initial consultation to the final implementation, they were able to provide expert advice and guidance. Their commitment to excellence and customer satisfaction is truly impressive, and I look forward to working with them again in the future",
+        "Source": "Google",
+        "URL": "https://share.google/ZQyOmM1BtcuDCWvGP",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": " Mazhar.H. Ansari",
+        "location": "Oman",
+        "text": "Comfygen Private Limited is the best blockchain app development company in India that I have come across in recent years. They can deliver projects within the given timeline and as per our expectations. I recommend everyone to try Comfygen Private Limited services and products.",
+        "Source": "Google",
+        "URL": "https://share.google/ycfErAHqln9LNKdhK",
+        "image": "/Google - Original.png"
+      },
+      {
+        "name": "Tom Baker",
+        "location": "Germany",
+        "text": "Very professional company. Everyone very friendly. The app we developed for us exceeded our expectations. I also think it's very good that the company also has a branch in Germany and that's why the overall communication was very good. We will develop the next project with you again.",
+        "Source": "Google",
+        "URL": "https://share.google/ppp6z1YpQfJ1KxmWq",
+        "image": "/Google - Original.png"
+      }
+    ]
+  },
   "Frequently": [
     {
       "num": "1",
@@ -591,7 +929,6 @@
     }
   ],
   "jsonLdData": [
-
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -617,14 +954,11 @@
         "Android Salon App Development",
         "AI-based Salon App Development",
         "Beauty & Salon Aggregator"
-
       ],
-
       "sameAs": [
         "https://www.facebook.com/comfygen",
         "https://www.linkedin.com/company/comfygen-private-limited"
       ]
-
     },
     {
       "@context": "https://schema.org/",
@@ -688,8 +1022,5 @@
         }
       ]
     }
-
   ]
-
-
 }

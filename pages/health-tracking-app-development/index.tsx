@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./ELearningApp.json";
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import TechStacks from "../../components/TechStacks";
 import ReviewCard from "../../components/ReviewCard";
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
@@ -168,7 +168,7 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Consultancy consultancyData={JSON_DATA.ModelsSec} />

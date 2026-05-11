@@ -2,9 +2,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./doctor-appointment-app-development/doctor.json";
-import Navbar from "../../components/Navbar";
-
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 
@@ -145,7 +142,6 @@ export default function Ecommerce(props:any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      {/* <Solution techData={JSON_DATA.AIFeatures} /> */}
       <InformationSection InfoSectionData={JSON_DATA?.Information} />
       <AppClone SliderDATA={JSON_DATA.Industries} />
       <FeaturesNewSection FData={JSON_DATA.FData} />

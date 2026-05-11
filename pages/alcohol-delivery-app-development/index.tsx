@@ -1,76 +1,47 @@
 
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./delivery-app-development.json";
+import JSON_DATA from "./alcohol-delivery.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-
 import TechStacks from "../../components/TechStacks";
 import AppClone from "../../components/AppClone"
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  {
-    ssr: true,
-  },
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: true},
 );
 
-
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  {
-    loading: () => <div className="h-96 bg-gray-100 animate-pulse" />,
-    ssr: true,
-  },
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
 );
-
+const DeliverySection = dynamic(() => import("../../components/Newcomponet/comman/DeliverySection"),
+  {ssr: true},
+);
 import ReviewCard from "../../components/ReviewCard";
-
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  {
-    ssr: true,
-  },
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true},
 );
-
-
-
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true },
 );
-
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
-
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
-
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
-const skeleton = (h: string) => (
-  <div className={`w-full ${h} animate-pulse bg-gray-100 rounded-lg`} />
-);
-
-
-
 const Emerging = dynamic(() => import("../../components/Emerging"), {
-  ssr: true,
-  loading: () => skeleton("h-[400px]"),
-});
-
-
-
-const CallToActionSection = dynamic(
-  () => import("../../components/CallToActionSection"),
-  {
-    ssr: true,
-  },
+  ssr: true,}
+);
+const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"),
+  { ssr: true},
 );
 
 import Features from "../../components/Features";
 import AboutComponent from "../../components/Abouts/AboutComponent";
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
@@ -151,9 +122,13 @@ export default function ClinicalApp(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
       <AppClone SliderDATA={JSON_DATA.Industries} />
       <Emerging emerging={JSON_DATA.EmergingData2} />
       <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
+      <IndustryGrid />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Features featuresData={JSON_DATA.FeaturesData} />
       <Emerging emerging={JSON_DATA.EmergingData} />
@@ -165,6 +140,7 @@ export default function ClinicalApp(props: any) {
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <DeliverySection hideUrl="https://www.comfygen.com/alcohol-delivery-app-development" />
+       <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
@@ -187,7 +163,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+     `${process.env.URL}/api/v1/posts?tag=alcohol-delivery-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

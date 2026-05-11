@@ -1,19 +1,12 @@
-import Image from "next/image";
-import React, { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./fashion.json";
-import Navbar from "../../../components/Navbar";
-import HeroSectionforHome from "../../../components/HeroSectionforHome"
-import HeroSectionforHomeTest from "../../../components/HeroSectionforHomeTest";
-import AppClone from "../../../components/AppClone"
-const Milestones = dynamic(() => import("../../../components/Milestones"), {
-  ssr: true,
-});
+
+import HeroSectionNewCls from "../../../components/HeroSectionNewCls"
 const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
-
 import FeaturesNewSection from "../../../components/FeaturesNewSection"
 const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutComponent"), {
   ssr: true,
@@ -39,22 +32,9 @@ const CallToActionSection = dynamic(() => import("../../../components/CallToActi
   ssr: true,
 });
 
-const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const TechSection = dynamic(() => import("../../../components/TechSection"), {
-  ssr: true,
-});
-
 const HireSection = dynamic(() => import("../../../components/HireSection"), {
   ssr: true,
 });
-
-const ClientStories = dynamic(
-  () => import("../../../components/ClientStories"),
-  { ssr: true }
-);
 
 const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
   ssr: true,
@@ -212,7 +192,7 @@ export default function ClinicalApp(props: any) {
       </Head>
 
       <div className="overflow-hidden ">
-        <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <Consultancy consultancyData={JSON_DATA.Nextechnologies} />

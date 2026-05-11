@@ -5,17 +5,17 @@ import JSON_DATA from "./ice-cream.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import TechStacks from "../../components/TechStacks";
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
-  {ssr: true},
+  { ssr: true },
 );
 
 const DeliverySection = dynamic(() => import("../../components/Newcomponet/comman/DeliverySection"),
-  {ssr: true},
+  { ssr: true },
 );
 
 import ReviewCard from "../../components/ReviewCard";
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
-  {ssr: true},
+  { ssr: true },
 );
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
@@ -39,12 +39,18 @@ const Emerging = dynamic(() => import("../../components/Emerging"), {
 });
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"),
-  { ssr: true},
+  { ssr: true },
 );
 import Solution from "../../components/Solution";
 
 import Features from "../../components/Features";
 import AboutComponent from "../../components/Abouts/AboutComponent";
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
@@ -155,6 +161,9 @@ export default function ClinicalApp(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
       <Solution techData={JSON_DATA.CardData} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
@@ -168,8 +177,10 @@ export default function ClinicalApp(props: any) {
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <DeliverySection hideUrl="https://www.comfygen.com/ice-cream-delivery-app-development" />
+       <IndustryGrid />
 
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
@@ -181,7 +192,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+       `${process.env.URL}/api/v1/posts?tag=delivery-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");
