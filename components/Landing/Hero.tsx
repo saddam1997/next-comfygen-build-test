@@ -102,6 +102,7 @@ export default function Hero({ DATA }: any) {
               {/* WHATSAPP */}
               <a
                 href="https://wa.me/919587867258"
+                target="_blank"
                 className="
                   inline-flex items-center justify-center gap-2
                   rounded-full bg-[#25D366]
