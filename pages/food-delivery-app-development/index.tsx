@@ -1,9 +1,8 @@
 
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./json/ecommerceapp.json";
-
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
+import JSON_DATA from "./json/food-delivery.json";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import AppClone from "../../components/AppClone"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -20,15 +19,11 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
 
 import Features from "../../components/Features"
 
 import TechStacks from "../../components/TechStacks";
 
-import InformationSection from "../../components/InformationSection"
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
   { ssr: true }
@@ -43,10 +38,6 @@ const CallToActionSection = dynamic(() => import("../../components/CallToActionS
 });
 
 const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
 
@@ -68,13 +59,12 @@ const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-import IndustryGrid from "../../components/IndustryGrid";
+
 import ReviewCard from "../../components/ReviewCard";
-
-
 import TechStackSection from "../../components/TechStackSection";
 import FoodDeliveryCostTable from "./component/FoodDeliveryCostTable";
 import CardGrid from "./component/CardGrid";
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 
@@ -199,9 +189,7 @@ export default function Ecommerce(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-
-       {/* <Navbar /> */}
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Trending trendingData={JSON_DATA.trendingData}
@@ -209,6 +197,8 @@ export default function Ecommerce(props: any) {
       />
       <Emerging emerging={JSON_DATA.Emerging} />
       <AppClone SliderDATA={JSON_DATA.Industries} />
+
+      <IndustryGrid />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Features featuresData={JSON_DATA.featuresData} />

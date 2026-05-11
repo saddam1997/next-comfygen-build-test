@@ -3,8 +3,6 @@
 import Head from 'next/head';
 import JSON_DATA from "./json/about.json"
 import AboutSection from './components/AboutSection';
-import Navbar from '../../components/Navbar';
-// import PortfolioSection from "./components/PortfolioSection"
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
   { ssr: false }
 );
@@ -50,7 +48,6 @@ export default function about() {
 
       <div className="overflow-hidden ">
         <AboutSection />
-        {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
         <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
         <OurGeography />
         <IndustryGrid />

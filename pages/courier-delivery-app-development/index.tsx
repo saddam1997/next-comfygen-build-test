@@ -2,17 +2,14 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./courier-delivery-app-development.json";
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
-
 import FeaturesNewSection from "../../components/FeaturesNewSection"
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
-
 
 const WhyChooseSection = dynamic(
   () => import("../../components/WhyChooseSection"),
@@ -47,7 +44,6 @@ const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
 
-
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
@@ -61,8 +57,8 @@ const DeliverySection = dynamic(
   { ssr: true }
 );
 
-
 import DeliveryCostTable from "./components/DeliveryCostTable";
+import IndustryGrid from "../../components/IndustryGrid";
 
 const BusinessSolustion = dynamic(
   () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
@@ -114,12 +110,8 @@ export default function ClinicalApp(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA?.jsonLdData) }}
         />
       </Head>
-
-      {/* <LazyLoad height={80} offset={100}> */}
-      {/* <Navbar /> */}
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
-
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Trending
         trendingData={JSON_DATA.trendingData}
@@ -128,12 +120,12 @@ export default function ClinicalApp(props: any) {
       <BusinessSolustion BusinessSolustion={JSON_DATA.BusinessSolustion} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <FeaturesNewSection FData={JSON_DATA.FData} />
-      {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <section className="py-5">
         <DeliveryCostTable Cost={JSON_DATA.DeliveryCost} />
       </section>
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+       <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
 
       <WhyChooseSection pageData={JSON_DATA.pageData} />

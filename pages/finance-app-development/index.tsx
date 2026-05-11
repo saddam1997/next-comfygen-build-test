@@ -2,13 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/finance.json";
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
-import HeroSectionforHomeTest from "../../components/HeroSectionforHomeTest";
-import AppClone from "../../components/AppClone"
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -24,14 +18,9 @@ const WhyChooseSection = dynamic(
   { ssr: true }
 );
 
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
-import InformationSection from "../../components/InformationSection"
 
 import TechStacks from "../../components/TechStacks";
 
@@ -43,10 +32,6 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
-// import DeliveryCostTable from "./components/DeliveryCostTable";
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -68,23 +53,7 @@ const BlogSection = dynamic(
 );
 
 import ReviewCard from "../../components/ReviewCard";
-
-
-const DeliverySection = dynamic(
-  () => import("../../components/Newcomponet/comman/DeliverySection"),
-  { ssr: true }
-);
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
-
 import Emerging from "../../components/Emerging";
-// import DeliveryCostTable from "./components/DeliveryCostTable";
-
-const BusinessSolustion = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/BusinessSolustion"),
-  { ssr: true }
-);
 
 import IndustryGrid from "../../components/IndustryGrid";
 
@@ -166,9 +135,8 @@ export default function Mobile(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      {/* <LazyLoad height={80} offset={100}> */}
-       {/* <Navbar /> */}
-      <HeroSectionforHomeTest herosection={JSON_DATA.Herosection} />
+    
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />

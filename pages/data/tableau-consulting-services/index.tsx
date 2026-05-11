@@ -1,14 +1,94 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import JSON_DATA from "./json/mobile.json";
+import JSON_DATA from "./json/tableau.json";
+
+import HeroSectionNewCls from "../../../components/HeroSectionNewCls"
+import TechStacks from "../../../components/TechStacks";
+const Consultancy = dynamic(() => import("../../../components/Consultancy"), {
+  ssr: true,
+});
+const ClientStories = dynamic(() => import("../../../components/ClientStories"), {
+  ssr: true,
+});
+const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"),
+  { ssr: true }
+);
+import ReviewCard from "../../../components/ReviewCard";
+
+const ServicesComponet = dynamic(
+  () => import("../../../components/ServicesSection/ServicesComponet"),
+  {
+    ssr: true,
+  },
+);
+const ProcesSection = dynamic(
+  () => import("../../../components/ProcesSection"),
+  {
+    ssr: true,
+  },
+);
+
+
+const WhyChooseSection = dynamic(
+  () => import("../../../components/WhyChooseSection"),
+  { ssr: true },
+);
+
+
+const HireSection = dynamic(() => import("../../../components/HireSection"), {
+  ssr: true,
+});
+
+const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
+  ssr: true,
+});
+
+import AboutComponent from "../../../components/Abouts/AboutComponent";
+
+const BlogSection = dynamic(() => import("../../../components/BlogSection"), {
+  ssr: true,
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
 import Link from "next/link";
-import ClientStories from "../../../components/Newcomponet/SectionCompoent/ClientStories";
-import HeroSection from "../../../components/HeroSection";
-import ReviewCard from "../../../components/ReviewCard";
+
 
 const AboutSection = dynamic(
   () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
@@ -55,10 +135,7 @@ const Faq = dynamic(
   { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
 );
 
-const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
-  { ssr: true }
-);
+
 
 const FutureDriven2 = [
   {
@@ -243,49 +320,12 @@ export default function Mobile(props: any) {
 
 
       </Head>
-   
+
       <div className="pt-16">
-        <HeroSection
-          heading="Expert Tableau Consulting Service Provider for Analytics & BI"
-          ptag="Comfygen is a expert tableau consulting service provider company helping businesses turn raw data into clear, actionable insights. Our certified Tableau consultant experts deliver custom dashboard development, data integration, advanced reporting, and analytics tailored to real business needs. From Tableau Server setup to performance optimization, we build interactive, real-time dashboards that simplify complex data and support faster, smarter decisions."
-          li="Tailored Dashboards That Drive Action"
-          li1="Interactive Visuals That Simplify Data"
-          li2="Real-Time KPIs & Analytics at a Glance"
-          li3="Faster, Smarter Decision-Making"
-          btnName="Talk With Expert"
-          btnLink="/contact-us"
-          openModal={openModal}
-          talkToExpertModal={talkToExpertModal}
-          setTalkToExpertModal={setTalkToExpertModal}
-          closeModal={closeModal}
-          bgImage="https://www.comfygen.com/comfygen-images/tableau-consulting-services/hero2.webp"
-        />
-
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold" >Services Provided by the Best Tableau Consulting Service Provider
-              </h2>
-              <p className="text-base text-center font-normal">As a trusted Tableau Consulting Service Provider, our experts handle everything from data integration and preparation to advanced visualization and analytics. We turn complex datasets into clear business intelligence that helps teams track performance, uncover trends, and make informed decisions. Explore our Tableau consulting services to see how we help businesses get more value from their data.</p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-        <AboutSection
-          title=""
-          heading="Why Hire Tableau Experts From Best Tableau Consulting Service Provider?"
-          description1="Tableau is a powerful platform, but to fully utilise its potential, you need more than a software installation. At Comfygen, our tableau consulting services are designed to help businesses turn raw, scattered data into meaningful, real-time insights that fuel <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/blog/tableau-dashboards-improve-business-decisions/' >smarter decisions</a> and measurable results."
-          description2="Whether you’re struggling with disconnected data sources, manual reporting processes, or a lack of visibility into key metrics, our Tableau experts are here to help. We specialise in designing intuitive, industry-specific dashboards, integrating real-time data streams, and facilitating seamless data exploration and analysis"
-          description3="With <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/'>Comfygen</a>, Tableau becomes more than just a data visualisation tool; it becomes a catalyst for smarter business decisions. We turn fragmented data into unified, interactive dashboards that deliver real-time data insights you can act on. Our goal is to help you cut through the noise, make data-backed decisions, and achieve measurable business success."
-          imageSrc="https://www.comfygen.com/comfygen-images/tableau-consulting-services/about1.webp"
-          link="/about-us"
-          linkText="Talk to our expert"
-        />
-        {/* <ContactFromCenter /> */}
+        <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+        <AboutComponent AboutData={JSON_DATA.AboutSection} />
+ {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
         <section className="py-8">
           <Portfolio
             projects={portfolioData}
@@ -356,7 +396,7 @@ export default function Mobile(props: any) {
           gridData={JSON_DATA.pageData.gridData}
         />
 
-        <ClientStories/>
+        <ClientStories />
 
         <HireDeveloper
           heading="Unlock the Power of Data with Comfygen's Tableau Consulting Services"
@@ -366,7 +406,7 @@ export default function Mobile(props: any) {
           imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
           imageAlt="hire-developer"
         />
-          <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
         {/* <ClientTestimonials
           heading="What Our Clients Say"
           testimonials={JSON_DATA.customTestimonials}

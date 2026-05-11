@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./json/otccryptoexchangedevelopment.json";
 import Navbar from "../../components/Navbar";
 import HeroSectionforHome from "../../components/HeroSectionforHome"
-
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -47,11 +47,22 @@ const TechSection = dynamic(() => import("../../components/TechSection"), {
   ssr: true,
 });
 
+const TechStacks = dynamic(() => import("../../components/TechStacks"), {
+  ssr: true,
+});
+
+
+
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
+
+
 import ClientTestimonials from "../../components/TestimonialSection";
 import ClientStories from "../../components/ClientStories";
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
+import ReviewCard from "../../components/ReviewCard";
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
@@ -169,24 +180,24 @@ export default function Page(props: any) {
         />
       </Head>
 
-       {/* <Navbar /> */}
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
       <Consultancy consultancyData={JSON_DATA.Whycomfygens} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <Consultancy consultancyData={JSON_DATA.Whycomfygen} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <Solution techData={JSON_DATA.Benefits} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <Solution techData={JSON_DATA.Needs} />
-      <ClientTestimonials
-        heading="Testimonials from Our Clients"
-        testimonials={JSON_DATA.testimonials}
-      />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 

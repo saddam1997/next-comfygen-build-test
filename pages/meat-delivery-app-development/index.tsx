@@ -13,6 +13,7 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
 
 import Emerging from "../../components/Emerging";
 import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
 
 
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
@@ -171,6 +172,8 @@ export default function ClinicalApp(props: any) {
       <Trending trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
+
+      <IndustryGrid />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <Emerging emerging={JSON_DATA.Emerging} />
       <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
@@ -194,7 +197,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=delivery-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

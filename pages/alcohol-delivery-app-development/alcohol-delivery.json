@@ -89,9 +89,47 @@
     "description3": "Comfygen offers on-demand alcohol delivery app development services that are scalable, custom, and legally compliant. We help you create an alcohol delivery app that strengthens operations and increases profits, from inventory management and GPS tracking to automated order processing.",
     "imageSrc": "https://www.comfygen.com/comfygen-images/alcohol-delivery-app-development/about.webp",
     "link": "/about-us",
-    "linkText": "Explore More",
+    "linkText": null,
     "points": []
   },
+
+    "trendingData": [
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "Selectedfirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "Selectedfirms"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    }
+  ],
   "Industries": {
     "heading": "Alcohol Delivery App Clone Solutions We Provide",
     "description": "Looking to build an alcohol delivery app like the industry’s leading platforms? At Comfygen, we develop feature-rich alcohol delivery apps inspired by popular liquor delivery apps, customized to match your business goals and customer needs.",

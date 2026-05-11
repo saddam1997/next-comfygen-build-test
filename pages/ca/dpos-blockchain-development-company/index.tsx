@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { IconCode, IconCoin, IconEscalator, IconEye, IconHierarchy, IconLink, IconPlug, IconSettings, IconShieldCheck, } from '@tabler/icons-react';
-import { IconHeart, } from '@tabler/icons-react';
+
 import Head from "next/head";
 import JSON_DATA from "./json/dpos.json";
 
@@ -195,52 +194,52 @@ const Ser = [
 
 const technologyData = [
   {
-    img: <IconSettings stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Customized Consensus Mechanism",
     desc: "We begin by defining a robust consensus mechanism based on Delegated Proof of Stake (DPOS). This involves selecting delegates who validate transactions and secure the network, ensuring efficient block production and consensus without compromising on decentralization."
   },
   {
-    img: <IconEscalator stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Scalability Architecture",
     desc: "Comfygen designs DPOS blockchains with scalability in mind, leveraging techniques such as sharding, sidechains, or parallel processing. This allows the network to handle increasing transaction volumes and support growing user bases while maintaining high performance and low latency."
   },
   {
-    img: <IconShieldCheck stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Security Features",
     desc: "Security is paramount in our blockchain development service. Our solutions incorporate advanced cryptographic techniques, multi-layered authentication mechanisms, and smart contract auditing. This mitigates risks such as double-spending, attacks, and other vulnerabilities."
   },
   {
-    img: <IconHierarchy stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Governance Models",
     desc: "We implement customizable governance frameworks tailored to the specific needs of the blockchain network. This includes voting mechanisms for delegate selection, proposal submission, and decision-making processes to ensure transparent and democratic governance."
   },
   {
-    img: <IconCode stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Smart Contract Development",
     desc: "Our team excels in developing smart contracts that automate processes and enforce business logic within the DPOS blockchain ecosystem. Using languages like Solidity or languages compatible with EOSIO, we create secure and efficient smart contracts that facilitate various functionalities, including token issuance, transfers, and decentralized applications (dApps) integration."
   },
   {
-    img: <IconCoin stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Tokenomics Design",
     desc: "Comfygen assists in designing tokenomics that align with the project’s goals and user incentives. This includes defining token distribution models, inflation rates, staking mechanisms, and reward structures to foster ecosystem growth, incentivize participation, and maintain economic stability."
   },
   {
-    img: <IconLink stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Cross-Chain Interoperability",
     desc: "We enhance DPOS blockchain development solutions with cross-chain interoperability features, enabling seamless interaction and data exchange between different blockchain networks. This integration facilitates broader adoption, enhances liquidity, and supports diverse use cases across decentralized finance (DeFi) and other sectors."
   },
   {
-    img: <IconEye stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Privacy Enhancements",
     desc: "Based on the project requirements, we implement privacy-enhancing technologies such as zero-knowledge proofs (ZKPs), a cryptographic method, or ring signatures to protect user privacy and transaction confidentiality while ensuring compliance with regulatory standards."
   },
   {
-    img: <IconPlug stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Customizable APIs and SDKs",
     desc: "We provide customizable Application Programming Interfaces (APIs) and Software Development Kits (SDKs) to support developer adoption and integration. These tools enable developers to build and deploy applications. It will also help them to interact with smart contracts and access blockchain data efficiently"
   },
   {
-    img: <IconHeart stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Continuous Support and Maintenance",
     desc: "Beyond initial development and deployment, Comfygen also offers ongoing support and maintenance services to ensure the long-term success and sustainability of DPOS blockchain projects. Our team monitors network performance, implements upgrades and patches, and provides technical assistance to address emerging challenges."
   }

@@ -2,21 +2,24 @@
 
 import LeadForm from "./LeadForm";
 
-export default function Hero({DATA}:any) {
+export default function Hero({ DATA }: any) {
 
   const scrollToForm = () => {
     const form = document.getElementById("hero-form");
 
     if (form) {
-      form.scrollIntoView({
+      const y =
+        form.getBoundingClientRect().top + window.pageYOffset - 100;
+
+      window.scrollTo({
+        top: y,
         behavior: "smooth",
-        block: "start",
       });
     }
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF6F2] py-[56px] md:py-[80px] mt-5">
+    <section className="relative overflow-hidden bg-[#FAF6F2] py-[56px] md:py-[80px] mt-4">
 
       {/* BLUR BACKGROUND */}
       <div className="absolute -top-[100px] -right-[100px] h-[400px] w-[400px] rounded-full bg-[#FFF0EB] opacity-60 blur-[80px]" />
@@ -33,7 +36,7 @@ export default function Hero({DATA}:any) {
             <div className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-[#E8E2DD] bg-white px-4 py-2 text-[13px] font-medium text-[#1A1614]">
 
               <span className="tracking-[1px] text-[#F4B400]">
-              {DATA.badge.stars}
+                {DATA.badge.stars}
               </span>
 
               <span>
@@ -64,7 +67,7 @@ export default function Hero({DATA}:any) {
 
             {/* PILLS */}
             <div className="mb-7 flex flex-wrap gap-2">
-              {DATA.pills.map((pill:any, index:any) => (
+              {DATA.pills.map((pill: any, index: any) => (
                 <span key={index} className="inline-flex items-center gap-[6px] rounded-full border border-[#E8E2DD] bg-white px-3 py-[6px] text-[12px] font-medium text-[#3D3835] md:px-[14px] md:py-2 md:text-[13px]">
                   <span className="font-bold text-[#1D9E75]">✓</span>
                   {pill}
@@ -93,7 +96,7 @@ export default function Hero({DATA}:any) {
                   lg:text-[15px]
                 "
               >
-               {DATA.buttonsText} →
+                {DATA.buttonsText} →
               </button>
 
               {/* WHATSAPP */}
@@ -119,7 +122,7 @@ export default function Hero({DATA}:any) {
 
             {/* TRUST STATS */}
             <div className="grid grid-cols-2 gap-5 border-t border-[#E8E2DD] pt-6 sm:grid-cols-4 sm:gap-7">
-              {DATA.trustStats.map((stat:any, index:any) => (
+              {DATA.trustStats.map((stat: any, index: any) => (
                 <div key={index} className="text-[12px] text-[#7A716C]">
                   <strong className="block font-[Fraunces] text-[20px] font-semibold text-[#1A1614] md:text-[22px]">
                     {stat.value}

@@ -106,8 +106,45 @@
   ],
   "imageSrc": "https://www.comfygen.com/comfygen-images/ice-cream-delivery-app-development/ice-cream-delivery-app-development-about.webp",
   "link": "/about-us",
-  "linkText": "Explore More"
+  "linkText": null
 },
+  "trendingData": [
+    {
+      "name": "clutch",
+      "link": "https://clutch.co/profile/comfygen-technologies",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/clutch.webp",
+      "bg": "bg-blue-100",
+      "alt": "clutch "
+    },
+    {
+      "name": "designerush",
+      "link": "https://www.designrush.com/agency/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/designerush top blockchain development companies in canada.webp",
+      "bg": "bg-teal-100",
+      "alt": "designerush"
+    },
+    {
+      "name": "Selectedfirms",
+      "link": "https://selectedfirms.co/agency/comfygen-private-limited",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/selected firms top ecommerce development company.webp",
+      "bg": "bg-sky-100",
+      "alt": "Selectedfirms"
+    },
+    {
+      "name": "goodfirms",
+      "link": "https://www.goodfirms.co/company/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/goodfirms top dating app development companies.webp",
+      "bg": "bg-cyan-100",
+      "alt": "goodfirms "
+    },
+    {
+      "name": "top developer",
+      "link": "https://www.topdevelopers.co/profile/comfygen",
+      "icon": "https://www.comfygen.com/comfygen-images/Icons/top developer ai consulting companies in canada.webp",
+      "bg": "bg-blue-100",
+      "alt": "top developer"
+    }
+  ],
 "CardData": {
   "heading": "AI-Powered Ice Cream Delivery App Development Solutions",
   "subheading": "Comfygen Technologies provides AI-powered Ice Cream Delivery App Development services that help brands, parlors, and startups automate operations, enhance user experiences, and increase customer engagement. Using AI to build smarter, data-driven ice cream delivery platforms, we offer personalized flavor suggestions to predict demand.",

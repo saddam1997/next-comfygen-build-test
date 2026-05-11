@@ -5,11 +5,8 @@ import JSON_DATA from "./json/Aidevelopment.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import TechStacks from "../../components/TechStacks";
 
-const PortfolioSection = dynamic(
-  () => import("../../components/PortfolioSection"),
-  {
-    ssr: true,
-  },
+const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
+  { ssr: true},
 );
 
 const ClientStories = dynamic(() => import("../../components/ClientStories"), {
@@ -18,15 +15,11 @@ const ClientStories = dynamic(() => import("../../components/ClientStories"), {
 
 import ReviewCard from "../../components/ReviewCard";
 
-const ServicesComponet = dynamic(
-  () => import("../../components/ServicesSection/ServicesComponet"),
-  {
-    ssr: true,
-  },
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  {ssr: true},
 );
 
-const WhyChooseSection = dynamic(
-  () => import("../../components/WhyChooseSection"),
+const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true },
 );
 
@@ -42,15 +35,12 @@ const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
 });
 
-
 import AboutComponent from "../../components/Abouts/AboutComponent";
 
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
 });
 import IndustryGrid from "../../components/IndustryGrid";
-
-
 
 
 export default function Mobile(props: any) {

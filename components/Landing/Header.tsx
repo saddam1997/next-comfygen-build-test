@@ -9,9 +9,12 @@ export default function Header() {
     const form = document.getElementById("hero-form");
 
     if (form) {
-      form.scrollIntoView({
+      const y =
+        form.getBoundingClientRect().top + window.pageYOffset - 100;
+
+      window.scrollTo({
+        top: y,
         behavior: "smooth",
-        block: "start",
       });
     }
   };

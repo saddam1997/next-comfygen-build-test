@@ -2,10 +2,11 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/p2pcryptoexchangedevelopment.json";
-import Navbar from "../../components/Navbar";
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
 import ReviewCard from "../../components/ReviewCard";
+import TechStacks from "../../components/TechStacks";
 
 const Milestones = dynamic(() => import("../../components/Milestones"), {
   ssr: true,
@@ -35,9 +36,10 @@ const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
+);
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
@@ -258,10 +260,7 @@ export default function Ecommerce(props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
         />
       </Head>
-
-       {/* <Navbar /> */}
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
       <Solution techData={JSON_DATA.Business} />
@@ -273,10 +272,11 @@ export default function Ecommerce(props) {
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <Solution techData={JSON_DATA.Industry} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <Solution techData={JSON_DATA.Reliable} />
       <Solution techData={JSON_DATA.Revenue} />
-        <ReviewCard testimonials={JSON_DATA.ReviewData}/>
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
 
@@ -286,7 +286,7 @@ export default function Ecommerce(props) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=P2P-Cryptocurrency-Exchange&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

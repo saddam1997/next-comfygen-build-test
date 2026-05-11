@@ -41,9 +41,21 @@ const ItemDataSection = ({ consultancyData }) => {
                                     <p className="text-base text-[#212121]" dangerouslySetInnerHTML={{ __html: consultancyData?.description1 }}></p>
                                 </div>
                                 <div className="flex">
-                                    <Link href={consultancyData?.buttonLink || "#"} passHref>
+
+                                    <div className=" min-h-[50px]">
+                                        {consultancyData.buttonLink && consultancyData.buttonText && (
+                                            <Link
+                                                href={consultancyData.buttonLink}
+                                                className=" "
+                                            >
+                                                <Button variant="outline" className="mt-4 items-center text-[#5556D1]"> {consultancyData.buttonText}<span className="mb-4">→</span></Button>
+
+                                            </Link>
+                                        )}
+                                    </div>
+                                    {/* <Link href={consultancyData?.buttonLink || "#"} passHref>
                                         <Button variant="outline" className="mt-4 items-center text-[#5556D1]">  {consultancyData?.buttonText}<span className="mb-4">→</span></Button>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>

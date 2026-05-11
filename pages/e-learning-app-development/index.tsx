@@ -2,20 +2,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import {
-  IconBallpen,
-  IconBook,
-  IconBrain,
-  IconLock,
-  IconSchool,
-  IconUsers,
-} from "@tabler/icons-react";
-import Script from "next/script";
+
 import JSON_DATA from "./ELearningApp.json";
 
-
-
-import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -26,81 +15,10 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
-// import Features from "../../components/Features"
-
-const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
-  ssr: true,
-});
-
-import InformationSection from "../../components/InformationSection"
-import ReviewCard from "../../components/ReviewCard";
-import Emerging from "../../components/Emerging";
-const Consultancy = dynamic(() => import("../../components/Consultancy"), {
-  ssr: true,
-});
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
-
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
-import TechStacks from "../../components/TechStacks";
-
-const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
-  ssr: true,
-});
-
-const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
-  ssr: true,
-});
-
-const HireSection = dynamic(() => import("../../components/HireSection"), {
-  ssr: true,
-});
-
-const FaqSection = dynamic(() => import("../../components/FaqSection"), {
-  ssr: true,
-});
-const ClientStories = dynamic(
-  () => import("../../components/ClientStories"),
-  { ssr: true }
-);
-
 const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-import Milestones from "../../components/Newcomponet/comman/Milestones";
 
 const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
 
@@ -201,32 +119,32 @@ const Process = [
 
 const technologyData = [
   {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "E2C eLearning App Development",
     desc: "If you want to develop a custom E2C eLearning app, our expert mobile app team specializes in creating highly interactive platforms designed for personalized learning experiences. These education apps are perfect for bridging the gap between education and technology.",
   },
   {
-    img: <IconSchool stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Tutoring App Development",
     desc: "Are you looking to build a custom tutoring app that connects students with expert tutors? Our eLearning app development solutions offer real-time learning, making education more accessible and flexible.",
   },
   {
-    img: <IconBrain stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Edtech App Development",
     desc: "Do you want to develop a custom Edtech app, we specialize in creating custom eLearning app development solutions that foster learning in dynamic and engaging ways. Our eLearning app solutions provide to various educational needs, from K-12 to adult learning.",
   },
   {
-    img: <IconBallpen stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "App like Educose",
     desc: "Want to develop an app like Educose for free online coaching apps? Our mobile app development team can build an educational app that supports students preparing for academic and competitive exams.",
   },
   {
-    img: <IconLock stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Brilliant Pala e-learning",
     desc: "Want to create a custom e-learning app like Brilliant Pala for NEET & JEE aspirants? We provide eLearning app development services that focus on developing apps to help students succeed in their entrance exams.",
   },
   {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "eLearn App",
     desc: "Are you looking to develop an eLearning app? We are the top eLearning app development company in India that creates educational apps that house digitized textbooks under the national curriculum and augment them with multimedia features.",
   },

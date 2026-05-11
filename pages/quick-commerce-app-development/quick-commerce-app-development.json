@@ -238,19 +238,19 @@
       },
       {
         "num": "2",
-        "img": "https://www.comfygen.com/img/5g-technology.webp",
+        "img": "https://www.comfygen.com/comfygen-images/emerging/Ai-based-product.webp",
         "title": "AI-Based Product Recommendation Engine",
         "decs": "Our Q-commerce platforms include intelligent recommendation engines that analyze browsing history, location, and order behavior to suggest relevant products—boosting cart value, conversions, and repeat orders."
       },
       {
         "num": "3",
-        "img": "https://www.comfygen.com/img/augmented-reality-and-virtual-reality.webp",
+        "img": "https://www.comfygen.com/img/iot-integration.webp",
         "title": "IoT Integration for Real-Time Delivery Tracking",
         "decs": "We <a class='underline font-semibold'  href='https://www.comfygen.com/iot-development-company' >integrate IoT</a> into quick commerce apps to enable real-time vehicle tracking, smart warehousing, and automated alerts. This helps reduce delivery time, optimize routes, and ensure transparency from warehouse to doorstep."
       },
       {
         "num": "4",
-        "img": "https://www.comfygen.com/img/iot-integration.webp",
+        "img": "https://www.comfygen.com/comfygen-images/icons/uil_cloud-computing.webp",
         "title": "Cloud Computing & Microservices Architecture",
         "decs": "Our Q-commerce mobile apps are built on robust cloud infrastructure with a microservices-based architecture that ensures scalability, real-time syncing of inventory, and seamless multi-location operations. This helps manage high volumes with uninterrupted service."
       },
@@ -262,13 +262,13 @@
       },
       {
         "num": "6",
-        "img": "https://www.comfygen.com/img/emotional-ai.webp",
+        "img": "https://www.comfygen.com/comfygen-images/emerging/Big-data.webp",
         "title": "Big Data & Predictive Analytics",
         "decs": "Our Q-commerce apps leverage big data to monitor user trends, forecast demand spikes, and optimize inventory levels in real-time. These insights empower business owners to make smarter decisions and run more efficient, profitable operations."
       },
       {
         "num": "7",
-        "img": "https://www.comfygen.com/img/iot-integration.webp",
+         "img": "https://www.comfygen.com/comfygen-images/emerging/RPA.webp",
         "title": "RPA (Robotic Process Automation)",
         "decs": "We deploy RPA bots to automate repetitive backend tasks like order assignment, stock updates, and customer notifications. This reduces manual errors and speeds up operational workflows in high-demand environments."
       },
@@ -411,7 +411,6 @@
         "title": "Pizza Delivery",
         "link": "https://www.comfygen.com/pizza-delivery-app-development"
       },
-     
       {
         "image": "https://www.comfygen.com/comfygen-images/Delivery/Milk Delivery App Development.webp",
         "title": "Milk Delivery App",
@@ -427,7 +426,6 @@
         "title": "Ice-cream Delivery App Development",
         "link": "https://www.comfygen.com/ice-cream-delivery-app-development"
       },
-     
       {
         "image": "https://www.comfygen.com/comfygen-images/Delivery/Grocery Delivery App Development.webp",
         "title": "Grocery Delivery App Development",
@@ -443,14 +441,11 @@
         "title": "Flower Delivery App Development",
         "link": "https://www.comfygen.com/flower-delivery-app-development"
       },
-    
-     
       {
         "image": "https://www.comfygen.com/comfygen-images/Delivery/Courier Delivery App Development.webp",
         "title": "Courier Delivery App Development",
         "link": "https://www.comfygen.com/courier-delivery-app-development"
       },
-    
       {
         "image": "https://www.comfygen.com/comfygen-images/Delivery/Alcohol Delivery App Development.webp",
         "title": "Alcohol Delivery App Development",

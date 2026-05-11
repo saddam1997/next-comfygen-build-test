@@ -5,12 +5,12 @@ import JSON_DATA from "./home-service-app-development.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import TechStacks from "../../components/TechStacks";
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
-  { ssr: true,},
+  { ssr: true, },
 );
 
 import ReviewCard from "../../components/ReviewCard";
-const ServicesComponet = dynamic( () => import("../../components/ServicesSection/ServicesComponet"),
-  { ssr: true},
+const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
+  { ssr: true },
 );
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"),
   { ssr: true },
@@ -32,11 +32,17 @@ import AboutComponent from "../../components/Abouts/AboutComponent";
 const BlogSection = dynamic(() => import("../../components/BlogSection"), {
   ssr: true,
 });
+
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
+);
 import Solution from "../../components/Solution";
+import Trending from "../../components/Trending";
+import IndustryGrid from "../../components/IndustryGrid";
 
 export default function ClinicalApp(props: any) {
   let { initialData } = props;
- 
+
 
   return (
     <>
@@ -162,6 +168,9 @@ export default function ClinicalApp(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
       <Emerging emerging={JSON_DATA.EmergingData} />
       <Solution techData={JSON_DATA.cardData3} />
       <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
@@ -173,7 +182,9 @@ export default function ClinicalApp(props: any) {
         Default={JSON_DATA.Tabs[0]}
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
+       <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+       <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
@@ -184,7 +195,7 @@ export default function ClinicalApp(props: any) {
 export async function getStaticProps() {
   try {
     const res = await fetch(
-      `${process.env.URL}/api/v1/posts?per_page=3`
+      `${process.env.URL}/api/v1/posts?tag=home-service-app-development&per_page=3`
     );
 
     if (!res.ok) throw new Error("API failed");

@@ -2,15 +2,35 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import HeroSectionforHome from "../components/HeroSectionforHome"
-import IndustryGrid from "../components/IndustryGrid";
-import Trending from "../components/Trending";
+import { Suspense } from "react";
+// import HeroSectionforHome from "../components/HeroSectionforHome"
+import HeroSectionNewCls from "../components/HeroSectionNewCls"
+const ServicesComponet = dynamic(() => import("../components/ServicesSection/ServicesComponet"),
+  { ssr: true },
+);
+
+/* ===================================================
+   SKELETON LOADER
+=================================================== */
+
+const SectionSkeleton = ({ height = "300px" }) => {
+  return (
+    <div
+      className="w-full rounded-2xl bg-gray-200 animate-pulse"
+      style={{ height }}
+    />
+  );
+};
+
 import AboutComponent from "../components/Abouts/AboutComponent"
-import ServicesComponet from "../components/ServicesSection/ServicesComponet"
+
 
 const PortfolioSection = dynamic(() => import("../components/PortfolioSection"),
   { ssr: true }
 );
+
+
+
 import CallToActionSection from "../components/CallToActionSection"
 
 import ProcesSection from "../components/ProcesSection"
@@ -21,6 +41,9 @@ const TechStacks = dynamic(() => import("../components/TechStacks"),
 );
 
 import WhyChooseSection from "../components/WhyChooseSection"
+import IndustryGrid from "../components/IndustryGrid";
+import Trending from "../components/Trending";
+
 
 
 const ClientStories = dynamic(() => import("../components/ClientStories"),
@@ -137,26 +160,39 @@ export default function Home(props: any) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_DATA.jsonLdData) }}
         />
       </Head>
-      {/*  {/* <Navbar /> */}
-
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      </Suspense>
+
+      <Suspense fallback={<SectionSkeleton height="250px" />}>
+        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      </Suspense>
       <IndustryGrid />
-      <Trending
-        trendingData={JSON_DATA.trendingData}
-        heading="Top-Rated App Development Company Recognized by Global Platforms"
-      />
+      <Trending trendingData={JSON_DATA.trendingData} heading="Top-Rated App Development Company Recognized by Global Platforms" />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      </Suspense>
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <ClientStories />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <ClientStories />
+      </Suspense>
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      <FaqSection faqData={JSON_DATA.Frequently} />
-      <BlogSection initialData={initialData} />
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <FaqSection faqData={JSON_DATA.Frequently} />
+      </Suspense>
+      <Suspense fallback={<SectionSkeleton height="500px" />} >
+        <BlogSection initialData={initialData} />
+      </Suspense>
+
+
+
 
     </>
   );
@@ -171,7 +207,7 @@ export async function getStaticProps() {
     if (!res.ok) throw new Error("API failed");
 
     const data = await res.json();
-        console.log(JSON.stringify(data).length, "size ");
+    console.log(JSON.stringify(data).length, "size ");
 
     return {
       props: { initialData: data },

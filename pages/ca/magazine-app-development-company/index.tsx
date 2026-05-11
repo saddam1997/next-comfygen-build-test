@@ -2,18 +2,7 @@ import React, { useState } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/newsapp.json";
-import {
-  IconAdjustments,
-  IconBook,
-  IconBookmark,
-  IconCamera,
-  IconClipboardCheck,
-  IconFileText,
-  IconMessageCircle,
-  IconNotification,
-  IconUsers,
-} from "@tabler/icons-react";
-import { IconChartBar } from "@tabler/icons-react";
+
 
 import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
 import Milestones from "../../../components/Newcomponet/comman/Milestones";
@@ -95,52 +84,52 @@ const BlogSection = dynamic(
 
 const technologyData = [
   {
-    img: <IconBook stroke={1.5} className="w-12 h-12" />, // Magazine app
+    img: null, // Magazine app
     title: "Interactive Magazine Apps",
     desc: "Our team specializes in creating interactive digital editions of magazines, which are way more interactive than traditional print formats. We develop apps that feature multimedia elements such as animations, slideshows, and interactive graphics. We ensure these elements enrich the storytelling approach and provide immersive reading experiences. We make sure it enhances user engagement by allowing readers to interact directly with content.",
   },
   {
-    img: <IconCamera stroke={1.5} className="w-12 h-12" />, // Photo and video content
+    img: null, // Photo and video content
     title: "Photo and Video Content",
     desc: "We make sure the app we build supports the seamless integration of high-resolution photos and videos that improve the visual appeal of the magazine content. We let publishers showcase visual stories, interviews, behind-the-scenes footage, and dynamic visual content that captivate audiences and bring stories to life. We develop apps with enhanced multimedia capabilities to ensure that they deliver visually compelling content that meets today’s modern reader expectations.",
   },
   {
-    img: <IconFileText stroke={1.5} className="w-12 h-12" />, // Content management
+    img: null, // Content management
     title: "Content Management Solutions (CMS)",
     desc: "We provide robust content management solutions that are tailored specifically for magazine publishers. Our CMS empowers editorial teams with intuitive tools for content creation, editing, scheduling, and distribution of magazines across multiple platforms. This facilitates efficient workflow management, content organization, and real-time updates, ensuring that publishers can deliver fresh content consistently.",
   },
   {
-    img: <IconNotification stroke={1.5} className="w-12 h-12" />, // Notifications
+    img: null, // Notifications
     title: "Push Notifications",
     desc: "We integrate push notifications to engage users and drive app engagement. This custom integration aids publishers in notifying readers about new releases, featured articles, exclusive content, and upcoming events. On request, we also incorporate personalized notifications based on user preferences to enhance user experience and encourage regular app interaction, leading to increased readership and retention rates.",
   },
   {
-    img: <IconUsers stroke={1.5} className="w-12 h-12" />, // Social sharing
+    img: null, // Social sharing
     title: "Social Sharing Integration",
     desc: "We facilitate the seamless sharing of articles, photos, and videos across social media platforms directly with the magazine app. Our custom social sharing integration extends content reach, accelerates brand visibility, and drives traffic through user-generated promotion. This enables readers to share compelling content with their broad networks, fostering community engagement and expanding audience reach organically.",
   },
   {
-    img: <IconAdjustments stroke={1.5} className="w-12 h-12" />, // Customizable feed
+    img: null, // Customizable feed
     title: "Customizable Feed",
     desc: "Our team also personalizes the magazine app experience with a customizable feed that allows users to follow topics, authors, and specific content categories based on their interests. We integrate filter features to let users search for their preferred type of content within the app. We prioritize tailored content recommendations based on your user preferences to ensure relevant and engaging content delivery. Our customizable feeds empower readers to curate their reading experience, enhancing satisfaction and increasing app usage.",
   },
   {
-    img: <IconClipboardCheck stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Subscription Models",
     desc: "For clients who want to integrate subscription models in their apps, our developer team at Comfygen is here to help them. We will monetize content effectively with flexible subscription models in the app. We let publishers offer various options such as free trials, single purchases, subscriptions with features such as auto-renewal, and premium content access. We even incorporate secure payment gateways to ensure seamless transactions and subscriber management for a convenient user experience.",
   },
   {
-    img: <IconChartBar stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Analytics Integration",
     desc: "We integrate detailed analytics into the magazine app to offer publishers insights about their user's interaction with their content. We make sure to conduct data-driven integration development data that allows publishers to make informed decisions. This feature will help them make editorial and commercial strategies for the app, ensuring content is well-aligned with reader preferences.",
   },
   {
-    img: <IconMessageCircle stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Commenting and Discussions",
     desc: "Our skilled developers enhance magazine apps by integrating robust commenting and discussion features. These functionalities boost community engagement, which lets readers interact, share insights, and discuss articles within the app. Our custom solutions will enrich your reader experience and deepen reader loyalty. Our approach ensures seamless integration, intuitive user interfaces, and moderation tools to maintain a constructive and interactive discussion environment.",
   },
   {
-    img: <IconBookmark stroke={1.5} className="w-12 h-12" />,
+    img: null,
     title: "Bookmarking Capabilities",
     desc: "We elevate the user experience of magazine apps with robust bookmarking capabilities. This allows readers to save and organize articles of interest for later access. This feature enables users to create a shortlist of personalized reading lists and track favorite content. Implementation of intuitive bookmarking functionalities ensures a seamless user experience, with easy navigation and quick access to saved content across any device. Our development approach emphasizes usability, integration with existing features, and synchronization across platforms to enhance reader engagement and satisfaction.",
   },

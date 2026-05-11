@@ -16,28 +16,40 @@ import FinalCTA from '../../components/Landing/FinalCTA'
 import Header from '../../components/Landing/Header'
 import FoodDeliveryUISection from '../../components/Landing/FoodDeliveryUISection'
 import CTA from '../../components/Landing/Cta'
+import Head from 'next/head'
 
 
 
 const index = () => {
   return (
     <div className=''>
+      <Head>
+        <title>
+         Food Delivery App Development — Launch in 2–4 Weeks | Quote
+        </title>
+        <meta name="keywords" content="" />
+        <meta
+          name="description"
+          content="Custom food delivery app like Zomato, Swiggy & UberEats. iOS, Android, restaurant & driver apps included. 150+ launched. NDA upfront, source code yours."
+        />
+      </Head>
+
       <Header />
-       <Hero DATA={JSON_DATA.HeroContent}/>
-       <TrustBar DATA={JSON_DATA.reviewed}/>
-       <Deliverables DATA={JSON_DATA.Deliverables}/>
-       {/* <StickyElements/> */}
-       <AppTypes DATA={JSON_DATA.AppTypes}/>
-       <CTA/>
-       <FoodDeliveryUISection DATA={JSON_DATA.FoodDelivery}/>
-       {/* <Pricing DATA={JSON_DATA.Pricing}/> */}
-       <Testimonials DATA={JSON_DATA.Testimonials}/>
-       <Comparison DATA={JSON_DATA.Comparison}/>
-       <Process DATA={JSON_DATA.Process}/>
-       <TechStack DATA={JSON_DATA.Technologies}/>
-       <FAQ DATA={JSON_DATA.FAQ}/>
-       <FinalCTA DATA={JSON_DATA.FinalCTA}/>
-       <Footer/>
+      <Hero DATA={JSON_DATA.HeroContent} />
+      <TrustBar DATA={JSON_DATA.reviewed} />
+      <Deliverables DATA={JSON_DATA.Deliverables} />
+      {/* <StickyElements/> */}
+      <AppTypes DATA={JSON_DATA.AppTypes} />
+      <CTA />
+      <FoodDeliveryUISection DATA={JSON_DATA.FoodDelivery} />
+      {/* <Pricing DATA={JSON_DATA.Pricing}/> */}
+      <Testimonials DATA={JSON_DATA.Testimonials} />
+      <Comparison DATA={JSON_DATA.Comparison} />
+      <Process DATA={JSON_DATA.Process} />
+      <TechStack DATA={JSON_DATA.Technologies} />
+      <FAQ DATA={JSON_DATA.FAQ} />
+      <FinalCTA DATA={JSON_DATA.FinalCTA} />
+      <Footer />
     </div>
   )
 }
