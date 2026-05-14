@@ -24,7 +24,7 @@ const testimonialsData = {
       videoUrl: "https://www.youtube.com/watch?v=kedGnt6T-DI",
       thumbnail: "https://www.comfygen.com/comfygen-images/comfygen/Nitesh Rajput.webp",
       clientName: "Nitesh Rajput",
-      company: "Book My Tuter",
+      company: "Book My Tutor",
       // Extract video ID from URL for embedding: kedGnt6T-DI
       videoId: "kedGnt6T-DI"
     },
