@@ -208,7 +208,7 @@ export default function LeadForm() {
 
       {/* PHONE */}
       <div className="mb-3">
-        <div className="flex overflow-hidden rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] focus-within:border-[#FF5A3C] focus-within:bg-white">
+        <div className="flex overflow-hidden rounded-xl border-[1.5px] border-[#E8E2DD] bg-[#FAF6F2] text-black focus-within:border-[#FF5A3C] focus-within:bg-white">
           
           {/* COUNTRY CODE */}
           <select
