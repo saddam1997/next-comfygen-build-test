@@ -3,10 +3,10 @@ import JSON_DATA from './foodDeliveryApp.json'
 import Hero from '../../components/Landing/Hero'
 import TrustBar from '../../components/Landing/TrustBar'
 import Deliverables from '../../components/Landing/Deliverables'
-import StickyElements from '../../components/Landing/StickyElements'
+// import StickyElements from '../../components/Landing/StickyElements'
 import Footer from '../../components/Landing/Footer'
 import AppTypes from '../../components/Landing/AppTypes'
-import Pricing from '../../components/Landing/Pricing'
+// import Pricing from '../../components/Landing/Pricing'
 import Testimonials from '../../components/Landing/Testimonials'
 import Comparison from '../../components/Landing/Comparison'
 import Process from '../../components/Landing/Process'
@@ -17,6 +17,7 @@ import Header from '../../components/Landing/Header'
 import FoodDeliveryUISection from '../../components/Landing/FoodDeliveryUISection'
 import CTA from '../../components/Landing/Cta'
 import Head from 'next/head'
+
 
 
 
@@ -32,8 +33,21 @@ const index = () => {
           name="description"
           content="Custom food delivery app like Zomato, Swiggy & UberEats. iOS, Android, restaurant & driver apps included. 150+ launched. NDA upfront, source code yours."
         />
-        <script async data-twodelayedjs="https://www.googletagmanager.com/gtag/js?id=UA-228613134-1"></script>
-        <script data-twodelayedjs="data:text/javascript;base64,CiAgICB3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTsKICAgIGZ1bmN0aW9uIGd0YWcoKSB7IGRhdGFMYXllci5wdXNoKGFyZ3VtZW50cyk7IH0KICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CiAgICBndGFnKCdjb25maWcnLCAnVUEtMjI4NjEzMTM0LTEnKTsK"></script>
+
+        {/* Google Analytics */}
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73"/>
+        <script id="google-analytics" >
+          {`
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag(){
+            dataLayer.push(arguments);
+          }
+
+          gtag('js', new Date());
+          gtag('config', 'G-YNT54R0V73');
+        `}
+        </script>
       </Head>
 
       <Header />
