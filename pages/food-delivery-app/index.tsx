@@ -25,13 +25,15 @@ const index = () => {
     <div className=''>
       <Head>
         <title>
-         Food Delivery App Development — Launch in 2–4 Weeks | Quote
+          Food Delivery App Development — Launch in 2–4 Weeks | Quote
         </title>
         <meta name="keywords" content="" />
         <meta
           name="description"
           content="Custom food delivery app like Zomato, Swiggy & UberEats. iOS, Android, restaurant & driver apps included. 150+ launched. NDA upfront, source code yours."
         />
+        <script async data-twodelayedjs="https://www.googletagmanager.com/gtag/js?id=UA-228613134-1"></script>
+        <script data-twodelayedjs="data:text/javascript;base64,CiAgICB3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTsKICAgIGZ1bmN0aW9uIGd0YWcoKSB7IGRhdGFMYXllci5wdXNoKGFyZ3VtZW50cyk7IH0KICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7CiAgICBndGFnKCdjb25maWcnLCAnVUEtMjI4NjEzMTM0LTEnKTsK"></script>
       </Head>
 
       <Header />
