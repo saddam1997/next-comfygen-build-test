@@ -85,7 +85,7 @@ export default function MainLayout({
       </main>
 
       {/* CLIENT TOOLS */}
-      <LazyClientTools />
+      {/* <LazyClientTools /> */}
 
     </div>
   );

@@ -5,9 +5,10 @@ import { Poppins } from "next/font/google";
 import Script from "next/script";
 import GlobalSchema from "../components/seo/GlobalSchema";
 import dynamic from "next/dynamic";
-const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
-  ssr: true,
-});
+import Head from "next/head";
+// const GoogleTagManager = dynamic(() => import("./GoogleTagManager"), {
+//   ssr: true,
+// });
 
 
 
@@ -28,12 +29,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+   
       <div className={poppins.className}>
         <MainLayout>
           <GlobalSchema/>
           <Component {...pageProps} />
         </MainLayout>
-         <GoogleTagManager />
+         {/* <GoogleTagManager /> */}
       </div>
     </>
   );
