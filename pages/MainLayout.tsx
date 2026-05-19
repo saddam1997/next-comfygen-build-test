@@ -1,9 +1,8 @@
 import Navbar from "../components/Navbar";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
-const LazyClientTools = dynamic(
-  () => import("./LazyClientTools"),
-  { ssr: false, loading: () => <div style={{ height: 300 }} /> }
+const LazyClientTools = dynamic(() => import("./LazyClientTools"),
+  { ssr: true,  }
 );
 
 const GetinTouch = dynamic(
