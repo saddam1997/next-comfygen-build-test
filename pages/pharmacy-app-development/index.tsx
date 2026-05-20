@@ -2,14 +2,11 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./pharmacyApp.json";
-import Features from "../../components/Features"
-import Navbar from "../../components/Navbar";
-import HeroSectionforHome from "../../components/HeroSectionforHome"
+import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import Emerging from "../../components/Emerging";
+import ReviewCard from "../../components/ReviewCard";
+import FoodDeliveryCostTable from "./components/FoodDeliveryCostTable"
 
-const Milestones = dynamic(() => import("../../components/Milestones"), {
-  ssr: true,
-});
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
   ssr: true,
 });
@@ -17,13 +14,18 @@ const ServicesComponet = dynamic(() => import("../../components/ServicesSection/
 const AboutComponent = dynamic(() => import("../../components/Abouts/AboutComponent"), {
   ssr: true,
 });
-
-import AppCardClones from "../../components/AppCardClones"
+import FeaturesNewSection from "../../components/FeaturesNewSection"
 
 const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
+import Trending from "../../components/Trending";
+
+import AppClone from "../../components/AppClone"
+import Portfolionew from "../../components/Portfolionew"
+
+import TechStacks from "../../components/TechStacks";
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
   ssr: true,
 });
@@ -107,56 +109,120 @@ export default function ClinicalApp(props: any) {
         "name": "How long does it take to build a pharmacy app?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide the best pharmacy mobile app development service with a ready-to-use base system that includes Android & iOS customer apps, an admin dashboard, and a pharmacist panel. If you need only branding changes, the app can be launched quickly within 2–3 weeks. For extra features, custom design, or third-party integrations, the timeline may extend based on your requirements.  For an exact estimate, you can contact our team anytime—we’ll guide you with the best development plan."
+          "text": "A white-label pharmacy app development project launches in 2-4 weeks. An MVP takes 2-3 months. A full custom ePharmacy app with marketplace, multi-vendor, and telemedicine modules takes 4-6 months."
         }
-      }, {
-        "@type": "Question",
-        "name": "Are pharmacy apps legally compliant?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We build pharmacy apps that follow all required healthcare rules like HIPAA, GDPR, and e-prescription compliance to keep user data safe and secure."
-        }
-
-      }, {
-        "@type": "Question",
-        "name": "What features are necessary for an online pharmacy app?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Must-have features for online pharmacy app development include medicine search, prescription upload, secure payments, order tracking, delivery management, user profiles, and push notifications."
-        }
-
       }, {
         "@type": "Question",
         "name": "How much does pharmacy app development cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The online pharmacy app development costs usually range from $5,000 to $50,000, depending on features, complexity, design, and platform (Android/iOS)."
+          "text": "The cost to create a pharmacy app ranges from $5,000 for a white-label rebrand to $100,000+ for a multi-vendor marketplace. MVPs typically fall in the $15,000–$25,000 range."
         }
 
       }, {
         "@type": "Question",
-        "name": "How can my business benefit from a pharmacy app development service?",
+        "name": "Is your pharmacy app development HIPAA and GDPR compliant?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "By using the best pharmacy mobile app development service, your business can reach more customers, increase sales, automate daily operations, reduce manual errors, offer faster medicine delivery, improve customer loyalty, and grow your pharmacy store online with ease."
+          "text": "Yes. Every pharmacy application development project we deliver includes HIPAA-compliant architecture for US clients and GDPR-compliant data handling for EU clients. We also support HITRUST and SOC 2 alignment for enterprise customers."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can you build a pharmacy app like 1mg, PharmEasy, or Walgreens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build pharmacy mobile apps inspired by leading platforms like 1mg, PharmEasy, Netmeds, Walgreens, Apollo, Capsule, and Blink Health, fully customized to your brand and regulatory requirements. "
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you offer white label pharmacy app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our white-label pharmacy app development solution includes a customer app (iOS and Android), pharmacist panel, delivery app, and admin dashboard, fully customizable and ready to launch in 2-4 weeks. "
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Can I hire pharmacy app developers from Comfygen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Hire pharmacy app developers on hourly, monthly, or full project engagement. Dedicated developers work in your time zone with daily standups and shared sprint boards."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "What features should an online pharmacy app have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core features for online pharmacy app development include medicine search, prescription upload with AI-powered prescription verification, real-time delivery tracking, multiple payment options, refill subscriptions, pharmacy CRM software, drug inventory management, and HIPAA-compliant data storage."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Which technologies do you use for pharmacy app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our pharmacy mobile app developers use React Native, Flutter, Swift, and Kotlin for frontend development; Node.js, Python, and PHP for backend; PostgreSQL and MongoDB for databases; and AWS HealthLake or Google Cloud Healthcare API for HIPAA-compliant cloud infrastructure. "
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Do you provide post-launch support and maintenance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We offer ongoing support, performance monitoring, security patches, OS-update compatibility, and feature roadmap delivery on a monthly retainer."
+        }
+
+      }, {
+        "@type": "Question",
+        "name": "Which countries do you serve for pharmacy app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve pharmacy clients in India, USA, UK, UAE, Saudi Arabia, Canada, Australia and across Europe. Our pharmacy app development firm operates with full English-language project management and time-zone-aligned standups."
         }
 
 
       }]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.comfygen.com/pharmacy-app-development#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.comfygen.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Healthcare App Development",
+          "item": "https://www.comfygen.com/healthcare-app-development"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pharmacy App Development"
+        }
+      ]
     }
+
   ];
 
 
   return (
     <>
       <Head>
-        <title>Best Pharmacy App Development Company | ePharmacy App Solutions</title>
+        <title>Pharmacy App Development Company | Comfygen Technologies  </title>
         <meta
           name="description"
-          content="Best pharmacy app development company building secure ePharmacy & medicine delivery apps with ePrescriptions, payments & real-time tracking."
+          content=" Hire a top pharmacy app development company for HIPAA-compliant ePharmacy, medicine delivery & pharmacy management app development solutions. Get a free quote."
         />
-        <meta name="keywords" content="On-demand Pharmacy App Development,Medicine Delivery App Development,White-label Pharmacy App Solutions, E-pharmacy Software Development, Online Drug Store App Development, AI Pharmacy App Development, Pharmacy Marketplace Development, B2B Medical Distributors App Development, Telemedicine App Development, Pharmacy App Developers, Custom Pharmacy App Development, Medicine Ordering App Solutions, Online Pharmacy Software, Pharma Delivery App Development, Healthcare App Development ">
-        </meta>
+
 
         <link
           rel="canonical"
@@ -166,8 +232,8 @@ export default function ClinicalApp(props: any) {
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Online Pharmacy App Development Company | Comfygen" />
-        <meta name="twitter:description" content=" Build a secure and scalable online pharmacy app with Comfygen, a leading pharmacy app development company in India. Get feature-rich ePharmacy solutions for medicine delivery, digital prescriptions, and subscriptions." />
+        <meta name="twitter:title" content="Pharmacy App Development Company | Comfygen" />
+        <meta name="twitter:description" content=" Hire pharmacy app developers to build custom online pharmacy apps with e-prescription, real-time tracking, and HIPAA/GDPR compliance." />
         <meta name="twitter:image" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
         {/* <!-- Facebook Meta --> */}
@@ -175,8 +241,8 @@ export default function ClinicalApp(props: any) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/media/og-images/pharmacy-app-development.webp" />
         <meta property="og:image:alt" content="Custom Pharmacy App Development" />
         <meta property="og:url" content="https://www.comfygen.com/pharmacy-app-development" />
-        <meta property="og:title" content="Online Pharmacy App Development Company" />
-        <meta property="og:description" content="Looking for a custom pharmacy app development company? Comfygen offer on-demand pharmacy app development solution with real-time tracking, prescription management, and secure, HIPAA-compliant solutions." />
+        <meta property="og:title" content="Pharmacy App Development Company - Custom ePharmacy Solutions | Comfygen" />
+        <meta property="og:description" content="Comfygen builds custom pharmacy mobile apps, on-demand medicine delivery platforms, and HIPAA-compliant ePharmacy solutions for startups, retail chains, and enterprises." />
 
         {/* Structured Data Scripts */}
         <script
@@ -185,28 +251,30 @@ export default function ClinicalApp(props: any) {
         />
 
       </Head>
-       {/* <Navbar /> */}
-      <HeroSectionforHome herosection={JSON_DATA.Herosection} />
-      <Milestones />
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <AppCardClones AppClons={JSON_DATA.AppClons} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <Trending trendingData={JSON_DATA.trendingData}
+        heading="Top-Rated App Development Company Recognized by Global Platforms"
+      />
+      <AppClone SliderDATA={JSON_DATA.Industries} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Features featuresData={JSON_DATA.featuresData} />
+      <Portfolionew Data={JSON_DATA.Portfolio} />
+
+      <FeaturesNewSection FData={JSON_DATA.FData} />
       <Emerging emerging={JSON_DATA.Technologies} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <Solution techData={JSON_DATA.AIPowered} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <ClientStories />
+      <FoodDeliveryCostTable FoodDeliveryCost={JSON_DATA.FoodDeliveryCost} />
+
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <ClientTestimonials
-        heading="What Our Clients Say About"
-        testimonials={JSON_DATA.customTestimonials}
-      />
-      <FaqSection faqData={JSON_DATA.Frequently} />
+      <ClientStories />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <BlogSection initialData={initialData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+
 
     </>
   );
