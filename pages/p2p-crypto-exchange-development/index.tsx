@@ -3,7 +3,6 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/p2pcryptoexchangedevelopment.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
-import HeroSectionforHome from "../../components/HeroSectionforHome"
 import Emerging from "../../components/Emerging";
 import ReviewCard from "../../components/ReviewCard";
 import TechStacks from "../../components/TechStacks";
