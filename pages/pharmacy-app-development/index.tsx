@@ -26,9 +26,7 @@ import AppClone from "../../components/AppClone"
 import Portfolionew from "../../components/Portfolionew"
 
 import TechStacks from "../../components/TechStacks";
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
+
 
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
@@ -42,14 +40,12 @@ const ProcesSection = dynamic(() => import("../../components/ProcesSection"), {
   ssr: true,
 });
 
-const TechSection = dynamic(() => import("../../components/TechSection"), {
-  ssr: true,
-});
+
 
 const HireSection = dynamic(() => import("../../components/HireSection"), {
   ssr: true,
 });
-import ClientTestimonials from "../../components/TestimonialSection";
+
 import ClientStories from "../../components/ClientStories";
 const FaqSection = dynamic(() => import("../../components/FaqSection"), {
   ssr: true,
@@ -260,7 +256,6 @@ export default function ClinicalApp(props: any) {
       <AppClone SliderDATA={JSON_DATA.Industries} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <Portfolionew Data={JSON_DATA.Portfolio} />
-
       <FeaturesNewSection FData={JSON_DATA.FData} />
       <Emerging emerging={JSON_DATA.Technologies} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
