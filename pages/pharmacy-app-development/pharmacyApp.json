@@ -322,22 +322,26 @@
     },
     "banner": {
       "backgroundImage": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/bgimage.webp",
+      "alt":"Background Pills",
       "mainImage": {
-        "src": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/mymelemo.webp",
+        "image": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/mymelemo.webp",
         "alt": "MyMelemo App"
       },
       "card": {
         "backgroundImage": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/bgimagecrad.webp",
+         "alt":"Background Pills",
         "logo": {
-          "symbol": "+"
+          "image": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/logo.webp",
+          "alt":"MyMelemo App Store"
         },
         "appName": "MyMelemo",
-        "description": "Get your medicines delivered quickly and hassle free with MyMelemo.",
+        "description": " Comfygen developed MyMelemo, a modern medicine delivery app that ensures seamless, reliable, and convenient access to healthcare products and services.",
         "storeButtons": [
           {
             "name": "Google Play",
             "icon": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/palystore.webp",
             "link": "https://play.google.com/store/apps/details?id=com.pharmacy.mymelemo&hl=en_IN"
+           
           },
           {
             "name": "App Store",
