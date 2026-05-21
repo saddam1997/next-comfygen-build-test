@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Card({ Data }: any) {
   return (
     <section className="bg-white py-10 lg:py-16 px-3 sm:px-4 lg:px-20 xl:px-10">
-      <div className="mx-auto space-y-12 lg:space-y-16">
+      <div className="mx-auto max-w-7xl space-y-12 lg:space-y-16">
 
         {Data?.infData?.map((item: any) => {
           const isLeft = item.imagePosition === "left";
@@ -85,91 +85,3 @@ export default function Card({ Data }: any) {
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import Link from "next/link";
-// import Image from "next/image";
-
-
-// export default function Card({ Data }: any) {
-//   return (
-//     <section className="bg-white lg:py-16 py-10 lg:p-0 p-2">
-//       <div className=" mx-auto space-y-16">
-
-//         {Data?.infData?.map((item: any) => {
-//           const isLeft = item.imagePosition === "left";
-
-//           return (
-//             <article
-//               key={item.id}
-//               className="grid lg:grid-cols-2 items-center gap-14"
-//             >
-//               {/* IMAGE */}
-//               <div className={`${isLeft ? "" : "lg:order-2"}`}>
-//                 <Image
-//                   src={item.imageSrc}
-//                   alt={item.heading} // ✅ SEO fix
-//                   width={907}
-//                   height={762}
-//                   className="rounded-2xl"
-//                   priority={item.id === 1} // ✅ LCP optimization
-//                 />
-//               </div>
-
-//               {/* CONTENT */}
-//               <div className={`${isLeft ? "" : "lg:order-1"}`}>
-//                 <header className="space-y-4">
-//                   <h3 className="xl:text-2xl text-xl text-[#212121] font-bold">
-//                     {item.heading}
-//                   </h3>
-
-//                   <div className="space-y-4">
-//                     {item.description1 && <p className="text-xs lg:text-base font-medium">{item.description1}</p>}
-//                     {item.description2 && <p className="text-xs lg:text-base font-medium">{item.description2}</p>}
-//                     {item.description3 && <p className="text-xs lg:text-base font-medium">{item.description3}</p>}
-
-//                     {/* POINTS */}
-//                     <ul className="space-y-2">
-//                       {item.points?.map((point: string, i: number) => (
-//                         <li key={i} className="flex items-start gap-2">
-//                           <span className="lg:w-2 lg:h-2 w-[4px] h-[4px] mt-2 bg-[#5556D1] rounded-full"></span>
-//                           <span className="text-xs lg:text-base font-medium">{point}</span>
-//                         </li>
-//                       ))}
-//                     </ul>
-
-//                     {item.description4 && <p>{item.description4}</p>}
-//                   </div>
-//                 </header>
-
-              
-//               </div>
-//             </article>
-//           );
-//         })}
-//       </div>
-//     </section>
-//   );
-// }

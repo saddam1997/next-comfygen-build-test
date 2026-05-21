@@ -21,6 +21,7 @@ const Solution = dynamic(() => import("../../components/Solution"), {
 
 
 import Features from "../../components/Features"
+import FeaturesNewSection from "../../components/FeaturesNewSection"
 
 import TechStacks from "../../components/TechStacks";
 
@@ -197,20 +198,18 @@ export default function Ecommerce(props: any) {
       />
       <Emerging emerging={JSON_DATA.Emerging} />
       <AppClone SliderDATA={JSON_DATA.Industries} />
-
-      <IndustryGrid />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Features featuresData={JSON_DATA.featuresData} />
+      {/* <IndustryGrid /> */}
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      {/* <Features featuresData={JSON_DATA.featuresData} /> */}
+          <FeaturesNewSection FData={JSON_DATA.FData} />
       <Solution techData={JSON_DATA.AIPoweredFood} />
-      <FoodDeliveryCostTable FoodDeliveryCost={JSON_DATA.FoodDeliveryCost} />
-      <CardGrid
-        techData={JSON_DATA.EnterpriseGrade}
-      />
+      <CardGrid techData={JSON_DATA.EnterpriseGrade}/>
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+       <FoodDeliveryCostTable FoodDeliveryCost={JSON_DATA.FoodDeliveryCost} />
       <ClientStories />
       <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
 

@@ -108,7 +108,6 @@
     "link": "https://www.comfygen.com/contact-us",
     "linkText": "Book Free Consultation"
   },
-  
   "trendingData": [
     {
       "name": "clutch",
@@ -274,8 +273,8 @@
     ]
   },
   "Portfoliodata": {
-    "heading": "Our Food Delivery Success Stories",
-    "description": "Explore how we’ve helped food businesses grow with powerful, on-demand delivery app solutions—crafted to deliver seamless experiences and real business impact.",
+    "heading": "Food Delivery App Development Portfolio",
+    "description": "Explore how we’ve helped food businesses grow with powerful, on-demand delivery app solutions crafted to deliver seamless experiences and real business impact.",
     "portfolio": [
       {
         "image": "https://www.comfygen.com/image/portfolio-image-food-delivery-app-development1.webp",
@@ -498,43 +497,135 @@
       }
     ]
   },
+  "FData": {
+    "heading": "Food Delivery App Features",
+    "description": "We build feature-rich food delivery apps designed to simplify ordering for users and streamline operations for businesses. Each feature is carefully developed to reduce friction, speed up deliveries, and help you manage orders, payments, and customers more efficiently as your business grows.",
+    "infData": [
+      {
+        "id": 1,
+        "heading": "Customer Panel – Easy Ordering & Seamless Food Discovery Experience",
+        "description1": "",
+        "description2": "",
+        "description3": "",
+        "description4": "",
+        "points": [
+          "Easy Sign-Up & Social Login",
+          "Browse Restaurants & Menus",
+          "Real-Time Order Tracking",
+          "Ratings & Reviews for Restaurants",
+          "Multiple Payment Options (Cards, UPI, Wallets, COD)",
+          "Reorder & Subscription Plans",
+          "GPS-Based Restaurant Discovery",
+          "Push Notifications for Offers & Updates"
+        ],
+        "imageSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/customer-panel.webp",
+        "link": "/contact-us",
+        "linkText": "LET'S CONNECT",
+        "imagePosition": "left"
+      },
+      {
+        "id": 2,
+        "heading": "Restaurant Panel – Smart Order Management & Business Control",
+        "description1": "",
+        "description2": "",
+        "description3": "",
+        "description4": "",
+        "points": [
+          "Manage Menus & Pricing",
+          "Accept/Reject Orders Instantly",
+          "Real-Time Order Alerts & Updates",
+          "Track Deliveries & Assign Drivers",
+          "Revenue & Commission Tracking",
+          "Customer Feedback Management",
+          "Analytics Dashboard for Sales Insights",
+          "Promotions & Discount Management"
+        ],
+        "imageSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/restaurant-panel.webp",
+        "link": "/contact-us",
+        "linkText": "LET'S CONNECT",
+        "imagePosition": "right"
+      },
+      {
+        "id": 3,
+        "heading": "Driver Panel – Fast Delivery Management & Earnings Control",
+        "description1": "",
+        "description2": "",
+        "description3": "",
+        "description4": "",
+        "points": [
+          "Easy Registration & Profile Setup",
+          "Accept/Reject Delivery Requests",
+          "Optimized GPS Routes & Navigation",
+          "Real-Time Order Pick-Up & Drop Alerts",
+          "Delivery History & Earnings Reports",
+          "In-App Chat/Call with Customers",
+          "Wallet Integration for Payments",
+          "Push Notifications for New Orders"
+        ],
+        "imageSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/driver-panel.webp",
+        "link": "/contact-us",
+        "linkText": "LET'S CONNECT",
+        "imagePosition": "left"
+      },
+      {
+        "id": 4,
+        "heading": "Admin Panel – Complete Food Delivery Business Control System",
+        "description1": "",
+        "description2": "",
+        "description3": "",
+        "description4": "",
+        "points": [
+          "Centralized Dashboard with Key Metrics",
+          "Manage Customers, Restaurants & Drivers",
+          "Order & Delivery Tracking System",
+          "Revenue & Commission Settings",
+          "Approve/Reject Vendor Registrations",
+          "CMS for Content, Offers & Promotions",
+          "Advanced Analytics & Reporting",
+          "Multi-Region & Multi-Branch Control"
+        ],
+        "imageSrc": "https://www.comfygen.com/comfygen-images/food-delivery-app-development/admin-panel.webp",
+        "link": "/contact-us",
+        "linkText": "LET'S CONNECT",
+        "imagePosition": "right"
+      }
+    ]
+  },
   "AIPoweredFood": {
     "heading": "AI-Powered Food Delivery App Development",
     "subheading": "Modern food delivery apps compete on intelligence, not just features. Comfygen's AI-powered food delivery app development integrates machine learning directly into the core ordering, logistics, and support workflows — not as an add-on, but as a built-in advantage. <a href='https://www.comfygen.com/blog/the-role-of-ai-in-food-delivery-app-development/' class='text-blue-600 font-semibold'>Learn more</a>",
-
-  "tech": [
-    {
-      "num": "01",
-      "title": "Personalized Recommendations",
-      "desc": "Analyzes order history, time-of-day patterns, and dietary preferences to suggest meals the user is most likely to order — increasing average order value"
-    },
-    {
-      "num": "02",
-      "title": "Smart Delivery Route Optimization",
-      "desc": "Assigns the nearest available driver, calculates the most efficient multi-stop route, and adjusts in real time for traffic — reducing average delivery time"
-    },
-    {
-      "num": "03",
-      "title": "Demand Forecasting",
-      "desc": "Predicts peak order windows and popular items by location, allowing restaurants to prep ahead and reduce cancellations due to stockouts."
-    },
-    {
-      "num": "04",
-      "title": "AI Chatbot & Support",
-      "desc": "Handles order status queries, refund requests, and FAQs automatically — reducing support ticket volume by up to 60%."
-    },
-    {
-      "num": "05",
-      "title": "Dynamic Pricing Engine",
-      "desc": "Applies surge pricing during peak hours and discount logic during off-peak hours — automatically balancing supply and demand."
-    },
-    {
-      "num": "06",
-      "title": "Predictive Reorder",
-      "desc": "Detects recurring order patterns and prompts users to reorder their usual meals with a single tap — boosting retention."
-    }
-  ]
-
+    "tech": [
+      {
+        "num": "01",
+        "title": "Personalized Recommendations",
+        "desc": "Analyzes order history, time-of-day patterns, and dietary preferences to suggest meals the user is most likely to order — increasing average order value"
+      },
+      {
+        "num": "02",
+        "title": "Smart Delivery Route Optimization",
+        "desc": "Assigns the nearest available driver, calculates the most efficient multi-stop route, and adjusts in real time for traffic — reducing average delivery time"
+      },
+      {
+        "num": "03",
+        "title": "Demand Forecasting",
+        "desc": "Predicts peak order windows and popular items by location, allowing restaurants to prep ahead and reduce cancellations due to stockouts."
+      },
+      {
+        "num": "04",
+        "title": "AI Chatbot & Support",
+        "desc": "Handles order status queries, refund requests, and FAQs automatically — reducing support ticket volume by up to 60%."
+      },
+      {
+        "num": "05",
+        "title": "Dynamic Pricing Engine",
+        "desc": "Applies surge pricing during peak hours and discount logic during off-peak hours — automatically balancing supply and demand."
+      },
+      {
+        "num": "06",
+        "title": "Predictive Reorder",
+        "desc": "Detects recurring order patterns and prompts users to reorder their usual meals with a single tap — boosting retention."
+      }
+    ]
   },
   "FoodDeliveryCost": {
     "heading": "Food Delivery App Development Cost",

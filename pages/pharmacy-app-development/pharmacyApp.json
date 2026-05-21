@@ -342,12 +342,8 @@
             "icon": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/palystore.webp",
             "link": "https://play.google.com/store/apps/details?id=com.pharmacy.mymelemo&hl=en_IN"
            
-          },
-          {
-            "name": "App Store",
-            "icon": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/Applestore.webp",
-            "link": "https://apps.apple.com/in/app/mymelemo/id6445808296"
           }
+         
         ],
         "ctaButton": {
           "text": "GET DEMO",

@@ -6,7 +6,7 @@ import { parseHTMLString } from "../../lib/parseHTML";
 
 export default function Card({ SliderDATA }: any) {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-5 px-4 sm:px-6 lg:px-8">
       <div className="">
        
         <header className="text-center max-w-7xl space-y-3 mx-auto mb-10">
