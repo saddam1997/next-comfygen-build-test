@@ -14,6 +14,7 @@ const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutCom
   ssr: true,
 });
 
+import Portfolionew from "../../../components/Portfolionew"
 
 const FeaturesNewSection = dynamic(() => import("../../../components/FeaturesNewSection"), {
   ssr: true,
@@ -27,6 +28,7 @@ const Trending = dynamic(() => import("../../../components/Trending"), {
 const AppClone = dynamic(() => import("../../../components/AppClone"), {
   ssr: true,
 });
+import VideoSection from "../../../components/VideoSection"
 
 
 const WhyChooseSection = dynamic(() => import("../../../components/WhyChooseSection"), {
@@ -190,13 +192,15 @@ export default function ClinicalApp(props: any) {
    
       <div className="overflow-hidden ">
         <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+        <VideoSection/>
         <ServicesComponet servicesData={JSON_DATA.ServicesData} />
         <AboutComponent AboutData={JSON_DATA.AboutSection} />
         <Solution techData={JSON_DATA.Business} />
         <AppClone SliderDATA={JSON_DATA.Industries} />
         <FeaturesNewSection FData={JSON_DATA.FData} />
         <GroceryAppScreens />
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+        {/* <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} /> */}
+         <Portfolionew Data={JSON_DATA.Portfolio} />
         <Solution techData={JSON_DATA.AIFeatures} />
         <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
         <ProcesSection ProcessData={JSON_DATA.ProcessData} />

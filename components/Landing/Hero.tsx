@@ -1,8 +1,9 @@
 "use client";
 
 import LeadForm from "./LeadForm";
+import Heding from "./LeadForm/Heding";
 
-export default function Hero({ DATA }: any) {
+export default function Hero({ DATA, AppType }: any) {
 
   const scrollToForm = () => {
     const form = document.getElementById("hero-form");
@@ -136,7 +137,15 @@ export default function Hero({ DATA }: any) {
           </div>
 
           {/* RIGHT FORM */}
-          <LeadForm />
+          <div className="relative rounded-[20px] border border-[#E8E2DD] bg-white p-5 shadow-[0_20px_60px_rgba(26,22,20,0.08)] sm:p-7 lg:p-8">
+            {DATA?.FromHeading && (
+              <Heding DATA={DATA.FromHeading} />
+            )}
+            <LeadForm Apptype={AppType} />
+            <p className="mt-3.5 text-center text-[12px] text-[#7A716C]">
+              ⏱️ {DATA.FromHeading.delevirytime}
+            </p>
+          </div>
 
         </div>
       </div>

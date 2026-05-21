@@ -337,6 +337,58 @@
       }
     ]
   },
+  "Portfolio": {
+    "heading": {
+      "title": "Our Grocery App Portfolio",
+      "description": "Comfygen developed MyMelemo, a modern medicine delivery app that ensures seamless, reliable, and convenient access to healthcare products and services."
+    },
+    "banner": {
+      "backgroundImage": "https://www.comfygen.com/comfygen-images/grocery-app-development/image.webp",
+      "alt": "DiarchGo",
+      "mainImage": {
+        "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/groceryApp.webp",
+        "alt": "DiarchGo"
+      },
+      "card": {
+        "backgroundImage": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/bgimagecrad.webp",
+        "alt": "Background Pills",
+        "logo": {
+          "image": "https://www.comfygen.com/comfygen-images/grocery-app-development/logoD.webp",
+          "alt": "DiarchGo"
+        },
+        "appName": "DiarchGo",
+        "description": "Comfygen developed DiarchGo, an advanced grocery delivery app with modern features to provide seamless, and reliable access to quick commerce services. ",
+        "storeButtons": [
+          {
+            "name": "Google Play",
+            "icon": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/palystore.webp",
+            "link": "https://play.google.com/store/apps/details?id=com.diarchgouser&hl=en_IN"
+          },
+          {
+            "name": "App Store",
+            "icon": "https://www.comfygen.com/comfygen-images/pharmacy-app-development/Applestore.webp",
+            "link": "https://apps.apple.com/in/app/diarchgo/id6753003161"
+          },
+          {
+            "name": "Website",
+            "icon": "https://www.comfygen.com/comfygen-images/grocery-app-development/website.webp",
+            "link": "https://diarchgo.com/"
+          }
+        ],
+        "ctaButton": {
+          "text": "GET DEMO",
+          "link": "/contact-us"
+        },
+        "cardBgColor":{
+          "bg":"#298903"
+        }
+      }
+    },
+    "bgGradient": {
+      "from": "#92B524",
+      "to": "#369D0D"
+    }
+  },
   "AIFeatures": {
     "heading": "AI Features in Grocery Delivery App Development",
     "subheading": "Our AI-driven Grocery delivery app development solutions enhance user experience, optimize operations, and help your business grow.",
@@ -448,12 +500,12 @@
       "num": "4",
       "title": "What features should a grocery delivery app include?",
       "desc": "",
-      "li1":"<li>User-friendly search and catalog browsing</li>",
-      "li2":"<li>Secure online payment options</li>",
-      "li3":"<li>Real-time order tracking</li>",
-      "li4":" <li>Ratings and reviews</li>",
-      "li5":"<li>Personalized offers and push notifications</li>",
-      "li6":"<li>Vendor and delivery partner dashboards</li>"
+      "li1": "<li>User-friendly search and catalog browsing</li>",
+      "li2": "<li>Secure online payment options</li>",
+      "li3": "<li>Real-time order tracking</li>",
+      "li4": " <li>Ratings and reviews</li>",
+      "li5": "<li>Personalized offers and push notifications</li>",
+      "li6": "<li>Vendor and delivery partner dashboards</li>"
     },
     {
       "num": "5",
@@ -915,8 +967,7 @@
       }
     ]
   },
- "jsonLdData": [
-
+  "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -926,8 +977,7 @@
         "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description":
-        "Partner with Comfygen Technologies for grocery delivery app development services. We build scalable, feature-rich apps like Instacart & Zepto with AI, real-time tracking, and seamless UX.",
+      "description": "Partner with Comfygen Technologies for grocery delivery app development services. We build scalable, feature-rich apps like Instacart & Zepto with AI, real-time tracking, and seamless UX.",
       "url": "https://www.comfygen.com/ecommerce/grocery",
       "mainEntityOfPage": "https://www.comfygen.com/ecommerce/grocery",
       "areaServed": "Global",
@@ -953,7 +1003,6 @@
         "Grocery Inventory Management App Development",
         "B2B Grocery App Development"
       ],
-
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
@@ -1056,5 +1105,4 @@
       ]
     }
   ]
-
 }

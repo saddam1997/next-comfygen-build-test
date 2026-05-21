@@ -134,15 +134,24 @@ export default function FoodDeliveryUISection({ DATA }: any) {
                                         }`}
                                     >
                                         {/* IMAGE */}
-                                        <div className="relative w-[150px] sm:w-[220px] lg:w-[320px] xl:w-[410px]">
+                                        <div className="relative h-96">
+                                            <Image
+                                               src={item.image}
+                                                alt={item.name}
+                                                width={1260}
+                                                height={1000}
+                                                className="h-96 w-64 object-contain "
+                                            />
+                                        </div>
+                                        {/* <div className="relative w-[150px] sm:w-[220px] lg:w-[320px] xl:w-[410px]">
                                             <Image
                                                 src={item.image}
                                                 alt={item.name}
                                                 width={1260}
                                                 height={1000}
-                                                className="h-full w-full  bg-contain object-center"
+                                                className="h-full w-full object-contain"
                                             />
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     {/* NAME */}

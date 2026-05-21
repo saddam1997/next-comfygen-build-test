@@ -1,57 +1,5 @@
 'use client';
 
-const comparisonData = {
-  rows: [
-    {
-      feature: '100% source code ownership',
-      comfygen: '✓',
-      freelancers: '⚠️ Sometimes',
-      agencies: '✗',
-    },
-    {
-      feature: 'Predictable 2–12 week delivery',
-      comfygen: '✓',
-      freelancers: '✗',
-      agencies: '⚠️ 6+ months',
-    },
-    {
-      feature: '3 months free post-launch support',
-      comfygen: '✓',
-      freelancers: '✗',
-      agencies: '⚠️ Paid',
-    },
-    {
-      feature: 'NDA signed before discussion',
-      comfygen: '✓',
-      freelancers: '✗',
-      agencies: '⚠️ Sometimes',
-    },
-    {
-      feature: 'Dedicated project manager',
-      comfygen: '✓',
-      freelancers: '✗',
-      agencies: '✓',
-    },
-    {
-      feature: 'iOS + Android + Web Admin included',
-      comfygen: '✓',
-      freelancers: '⚠️ Extra cost',
-      agencies: '⚠️ Extra cost',
-    },
-    {
-      feature: 'Transparent fixed pricing',
-      comfygen: '✓',
-      freelancers: '✗',
-      agencies: '✗',
-    },
-    {
-      feature: 'Cost vs US/UK agencies',
-      comfygen: '60–70% lower',
-      freelancers: 'Variable',
-      agencies: 'Similar',
-    },
-  ],
-};
 
 export default function Comparison({ DATA }: any) {
   const renderValue = (value: string) => {
@@ -183,7 +131,7 @@ export default function Comparison({ DATA }: any) {
             </thead>
 
             <tbody>
-              {comparisonData.rows.map((row, index) => (
+              {DATA?.comparisonData.rows.map((row, index) => (
                 <tr key={index}>
 
                   {/* Feature */}

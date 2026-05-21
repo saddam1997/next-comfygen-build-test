@@ -28,7 +28,13 @@ export default function MainLayout({
 }) {
 
   const pathname = usePathname();
-  const isLandingPage = pathname === "/food-delivery-app";
+
+  const landingPages = [
+  "/food-delivery-app",
+  "/grocery-delivery-app"
+
+];
+const isLandingPage = landingPages.includes(pathname);
 
   return (
     <div className="w-full min-h-screen bg-white overflow-hidden">

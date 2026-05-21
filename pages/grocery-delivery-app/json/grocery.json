@@ -1,0 +1,589 @@
+{
+    "HeroContent": {
+        "badge": {
+            "stars": "★★★★★",
+            "text": "Grocery App Experts — India's #1"
+        },
+        "title": {
+            "start": "India's Trusted",
+            "highlight": "Grocery Delivery App",
+            "end": "Development Company — 150+ Apps Delivered"
+        },
+        "description": "Build a BigBasket, Blinkit or Zepto-style grocery app. iOS + Android + Vendor Panel + Delivery Partner App + Admin Dashboard — all included.",
+        "pills": [
+            "100% Source Code",
+            "NDA Signed Upfront",
+            "Launch in 2–4 Weeks",
+            "3 Months Free Support"
+        ],
+        "buttonsText": "Schedule Free Consultation",
+        "trustStats": [
+            {
+                "value": "150+",
+                "label": "Food apps built"
+            },
+            {
+                "value": "30+",
+                "label": "Countries served"
+            },
+            {
+                "value": "8+ yrs",
+                "label": "Industry experience"
+            },
+            {
+                "value": "4.9★",
+                "label": "Avg client rating"
+            }
+        ],
+        "FromHeading": {
+            "heading": "Book Your Free 30-Min Strategy Call",
+            "description": "100% confidential. NDA signed before discussion. No spam.",
+            "delevirytime": "Average response time: under 4 hours",
+            "buttonText": ""
+        }
+    },
+    "AppType": [
+        "Custom Grocery Delivery App",
+        "BigBasket / Blinkit Clone",
+        "Hyperlocal (10–30 min)",
+        "Multi-Vendor Marketplace",
+        "Single Store / Kirana App",
+        "Dark Store / Quick Commerce",
+        "Subscription Grocery App",
+        "Farm-to-Table App",
+        "Not Sure — Need Consultation"
+    ],
+    "BrandBar": [
+        {
+            "name": "Clutch ★★★★★",
+            "link": "https://clutch.co/profile/comfygen-technologies"
+        },
+        {
+            "name": "GoodFirms",
+            "link": "https://www.goodfirms.co/company/comfygen"
+        },
+        {
+            "name": "DesignRush",
+            "link": "https://www.designrush.com/agency/profile/comfygen"
+        },
+        {
+            "name": "SelectedFirms",
+            "link": "https://selectedfirms.co/agency/comfygen-private-limited"
+        },
+        {
+            "name": "TopDevelopers",
+            "link": "https://www.topdevelopers.co/profile/comfygen"
+        }
+    ],
+    "Deliverables": {
+        "title": "What's Included",
+        "subtitle": {
+            "start": "Everything You Need to",
+            "highlight": "Launch & Scale",
+            "end": "Your Grocery App"
+        },
+        "description": "End-to-end grocery delivery solution — from customer checkout to dark store management, all in one package.",
+        "deliverables": [
+            {
+                "icon": "📱",
+                "title": "Customer App (iOS + Android)",
+                "description": "Smart search, scheduled slots, live tracking, UPI & COD payments, loyalty rewards. Optimized for Tier 1, 2 & 3 cities."
+            },
+            {
+                "icon": "🏪",
+                "title": "Vendor / Store Panel",
+                "description": "Auto-assigned orders, optimized GPS routes, batch deliveries, in-app earnings tracker & one-tap support — built for India's gig workforce."
+            },
+            {
+                "icon": "🛵",
+                "title": "Delivery Partner App",
+                "description": "Auto-assigned orders, optimized GPS routes for Indian roads, in-app navigation, daily earnings tracker, and one-tap support built for India's gig workforce."
+            },
+            {
+                "icon": "📊",
+                "title": "Web Admin Dashboard",
+                "description": "Manage stores, delivery partners, payments, commissions, promo codes, GST reports, SKU analytics & customer data from one panel."
+            },
+            {
+                "icon": "💳",
+                "title": "Payment Gateway Integration (India-First)",
+                "description": "Razorpay, PayU, Cashfree, PhonePe, Paytm, Google Pay, UPI, cards, Net Banking, Wallets & COD — PCI-DSS compliant out of the box."
+            },
+            {
+                "icon": "🗺️",
+                "title": "Real-Time GPS Tracking",
+                "description": "Live tracking, ETA prediction, delivery slot management, geofencing for hyperlocal zones, and driver location sharing."
+            },
+            {
+                "icon": "🔐",
+                "title": "100% Source Code Ownership",
+                "description": "Every line of code, every database, all IP — delivered to you. No license fees. Work with any team post-delivery."
+            },
+            {
+                "icon": "🎧",
+                "title": "3 Months Free Support",
+                "description": "Bug fixes, performance monitoring, OS updates & priority 4-hour response for critical issues — all included post-launch."
+            },
+            {
+                "icon": "🚀",
+                "title": "App Store Deployment",
+                "description": "Apple App Store + Google Play submission, MeitY compliance & DPDP Act 2023 data privacy done for you."
+            }
+        ]
+    },
+    "FoodDelivery": {
+        "title": "Premium Mobile Showcase",
+        "subtitle": {
+            "start": "A Glimpse of What ",
+            "highlight": "We Build",
+            "end": ""
+        },
+        "description": "Modern mobile application showcase with smooth sliding animation, responsive layout and premium UI experience.",
+        "UiOpstion": [
+            {
+                "name": "Home",
+                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/home-app.webp"
+            },
+            {
+                "name": "Driver",
+                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/driver-app.webp"
+            },
+            {
+                "name": "Store",
+                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/driver-app.webp"
+            },
+            {
+                "name": "Admin",
+                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/admin-App.webp"
+            }
+        ]
+    },
+    "AppTypes": {
+        "title": "Choose Your Model",
+        "subtitle": {
+            "start": "Which Type of Grocery App Do",
+            "highlight": "You Want to Build?",
+            "end": ""
+        },
+        "description": "From single kirana stores to pan-India dark store networks — we've built every major grocery delivery model. Click any to get a tailored quote.",
+        "appTypes": [
+            {
+                "tag": "MOST REQUESTED",
+                "title": "Blinkit / Zepto Clone",
+                "description": "10–30 min quick commerce with dark store management, smart dispatch, and real-time inventory sync."
+            },
+            {
+                "tag": "FAST LAUNCH",
+                "title": "BigBasket Clone App",
+                "description": "Full-featured marketplace with scheduled delivery slots, subscription plans, and multi-warehouse support."
+            },
+            {
+                "tag": "MULTI-CITY SCALE",
+                "title": "Multi-Vendor Marketplace",
+                "description": "Aggregate multiple grocery stores on one platform. Commission-based with individual vendor dashboards."
+            },
+            {
+                "tag": "HIGH MARGIN",
+                "title": "Single Store / Kirana App",
+                "description": "Branded app for your store. No aggregator commissions. Loyalty programs and direct customer ownership."
+            },
+            {
+                "tag": "DIRECT ORDERS",
+                "title": "Hyperlocal Delivery App",
+                "description": "Geofencing-based delivery within radius. Smart driver dispatch, prep time prediction, zone pricing."
+            },
+            {
+                "tag": "15-MIN DELIVERY",
+                "title": "Subscription Grocery App",
+                "description": "Daily milk, vegetables & essentials. Pause/skip/cancel anytime. Auto-delivery scheduling."
+            },
+            {
+                "tag": "RECURRING REVENUE",
+                "title": "Farm-to-Table App",
+                "description": "Direct farmer-to-consumer. Origin stories, freshness badges, zero-commission farmer payouts."
+            },
+            {
+                "tag": "B2B MARKETPLACE",
+                "title": "B2B Grocery Platform",
+                "description": "Bulk ordering for restaurants, hotels & offices. Credit accounts, POs, GST invoice automation."
+            }
+        ]
+    },
+    "Technologies": {
+        "title": "Built with industry-leading technologies",
+        "description": "",
+        "tech": [
+            "React Native",
+            "Flutter",
+            "Node.js",
+            "React.js",
+            "MongoDB",
+            "PostgreSQL",
+            "Firebase",
+            "Google Maps",
+            "AWS / GCP",
+            "Razorpay",
+            "Redis",
+            "Elasticsearch"
+        ]
+    },
+    "processSection": {
+        "badge": {
+            "text": "Our Process"
+        },
+        "heading": {
+            "title": "How We",
+            "highlight": "Launch Your App",
+            "end": "in 2–4 Weeks"
+        },
+        "description": "A battle-tested agile process built for speed, full transparency, and zero surprises.",
+        "steps": [
+            {
+                "id": 1,
+                "num": "1",
+                "title": "Free Consultation",
+                "desc": "30-min call to understand your business model and goals"
+            },
+            {
+                "id": 2,
+                "num": "2",
+                "title": "NDA & Proposal",
+                "desc": "Signed NDA + detailed scope + fixed-price quote in INR"
+            },
+            {
+                "id": 3,
+                "num": "3",
+                "title": "Design & Wireframes",
+                "desc": "UI/UX mockups tailored to your brand identity"
+            },
+            {
+                "id": 4,
+                "num": "4",
+                "title": "Agile Development",
+                "desc": "Weekly demos, daily updates, full transparency"
+            },
+            {
+                "id": 5,
+                "num": "5",
+                "title": "QA & Launch",
+                "desc": "Full testing, store submission, go-live support"
+            }
+        ]
+    },
+    "comparisonData": {
+        "badge": {
+            "text": "Why Not Others?"
+        },
+        "title": {
+            "start": "Comfygen vs",
+            "highlight": "Other Development Options",
+            "end": ""
+        },
+        "description": "See why smart business owners choose Comfygen over freelancers, cheap agencies, and off-the-shelf scripts.",
+        "headers": [
+            "Feature / Factor",
+            "✅ Comfygen",
+            "Freelancers",
+            "Cheap Agencies",
+            "Script / Clone"
+        ],
+        "rows": [
+            {
+                "id": 1,
+                "feature": "NDA Signed Upfront",
+                "comfygen": {
+                    "text": "✓ Always",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ Rarely",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Sometimes",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ No",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 2,
+                "feature": "100% Source Code Ownership",
+                "comfygen": {
+                    "text": "",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✓ Usually",
+                    "highlight": true
+                },
+                "cheap": {
+                    "text": "✗ License fees",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ Limited",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 3,
+                "feature": "Fixed Price in INR",
+                "comfygen": {
+                    "text": "✓ Always",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ Varies wildly",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Hidden costs",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✓ Yes",
+                    "highlight": true
+                }
+            },
+            {
+                "id": 4,
+                "feature": "Launch in 2–4 Weeks",
+                "comfygen": {
+                    "text": "",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ 3–6 months",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ 2–4 months",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✓ Yes (basic)",
+                    "highlight": true
+                }
+            },
+            {
+                "id": 5,
+                "feature": "Dedicated Project Manager",
+                "comfygen": {
+                    "text": "✓ Included",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ No",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Sometimes",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ No",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 6,
+                "feature": "India Payment Gateways",
+                "comfygen": {
+                    "text": "",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ Manual setup",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ 1–2 only",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ Basic",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 7,
+                "feature": "Post-Launch Support",
+                "comfygen": {
+                    "text": "✓ 3 Months Free",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ Paid extra",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Paid AMC",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ Forum only",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 8,
+                "feature": "App Store Deployment",
+                "comfygen": {
+                    "text": "",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ DIY",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Extra charges",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ Self-guided",
+                    "highlight": false
+                }
+            },
+            {
+                "id": 9,
+                "feature": "Clutch Verified Reviews",
+                "comfygen": {
+                    "text": "✓ 4.9★ verified",
+                    "highlight": true
+                },
+                "freelance": {
+                    "text": "✗ Unverified",
+                    "highlight": false
+                },
+                "cheap": {
+                    "text": "✗ Rarely",
+                    "highlight": false
+                },
+                "script": {
+                    "text": "✗ No",
+                    "highlight": false
+                }
+            }
+        ]
+    },
+    "Testimonials": {
+        "title": "Client Reviews",
+        "subtitle": {
+            "start": "Trusted by Grocery Entrepreneurs",
+            "highlight": "Across India & Beyond",
+            "end": ""
+        },
+        "description": "Real clients. Real results. Verified on Clutch, GoodFirms & DesignRush.",
+        "testimonials": [
+            {
+                "stars": "★★★★★",
+                "text": "We launched our hyperlocal grocery app in under 3 weeks. The dark store management panel is exactly what we needed. Comfygen delivered beyond expectations.",
+                "author": "Arjun Kapoor",
+                "location": "Mumbai, India",
+                "initials": "AK"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Our Zepto-style app is live in 4 cities now. The delivery partner app works flawlessly even in areas with poor connectivity. Very professional team throughout.",
+                "author": "Priya Sharma",
+                "location": "Bengaluru, India",
+                "initials": "PS"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "We replaced our old app with Comfygen's solution. Orders went up 3x in 2 months. The admin panel's inventory management is a game changer for our team.",
+                "author": "Ravi Mehta",
+                "location": "Dubai, UAE",
+                "initials": "RM"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "From NDA to Play Store in 3.5 weeks. The subscription order feature for our tiffin service is perfect. Highly recommend Comfygen to any food-tech startup.",
+                "author": "Sneha Joshi",
+                "location": "Pune, India",
+                "initials": "SJ"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "Built a multi-vendor grocery marketplace for the Nigerian market. They handled local payment gateway setup without any fuss. Great communication throughout.",
+                "author": "Babatunde Okafor",
+                "location": "Lagos, Nigeria",
+                "initials": "BO"
+            },
+            {
+                "stars": "★★★★★",
+                "text": "The admin dashboard alone is worth it. I can see real-time orders, inventory alerts, and payout summaries at a glance. Our ops team absolutely loves it.",
+                "author": "Mohan Kumar",
+                "location": "Chennai, India",
+                "initials": "MK"
+            }
+        ]
+    },
+    "FAQ": {
+        "title": "FAQs",
+        "subtitle": {
+            "start": "Got questions?",
+            "highlight": "We've got answers.",
+            "end": ""
+        },
+        "description": "Everything food entrepreneurs ask before working with us. Don't see your question? Just ask on the form above.",
+        "faqs": [
+            {
+                "question": "How long does it take to build a grocery delivery app?",
+                "answer": "<p>Our standard grocery app package launches in 2–4 weeks. Custom enterprise builds with AI recommendations and B2B ordering may take 6–8 weeks. We give you a precise timeline after the free consultation.</p>"
+            },
+            {
+                "question": "What is the cost of grocery delivery app development in India?",
+                "answer": "<p>Pricing depends on your app type and features.</p><p><span class='font-semibold text-gray-700'>Basic Single-Store Apps:</span> Start at ₹2.5 Lakhs.</p><p><span class='font-semibold text-gray-700'>Multi-Vendor Platforms:</span> Range from ₹5–15 Lakhs.</p><p>We provide a fixed-price quote in INR with no hidden charges.</p>"
+            },
+            {
+                "question": "Do I get 100% source code ownership?",
+                "answer": "<p>Absolutely. You own every line of code, the database, and all intellectual property. No licensing fees. You can work with any development team after delivery. Code is delivered via GitHub or Bitbucket.</p>"
+            },
+            {
+                "question": "Which payment gateways are supported for grocery apps?",
+                "answer": "<p>We pre-integrate Razorpay, PayU, Cashfree, PhonePe, Paytm, Google Pay, UPI, all major credit/debit cards, Net Banking, Wallets, and Cash on Delivery — all PCI-DSS compliant out of the box.</p>"
+            },
+            {
+                "question": "Can I add scheduled delivery slots or subscriptions?",
+                "answer": "<p>Yes. We support scheduled delivery slots, recurring order subscriptions (daily/weekly/monthly), pause & skip functionality, and auto-renewal billing — all natively built into the platform.</p>"
+            },
+            {
+                "question": "Do you build apps for quick commerce / 10-minute delivery?",
+                "answer": "<p>Yes. We specialize in quick commerce apps similar to Blinkit and Zepto — dark store management, zone-based driver dispatch, inventory reservation, and real-time order status targeting 10–30 minute delivery.</p>"
+            },
+            {
+                "question": "Do you sign an NDA before discussing my project?",
+                "answer": "<p>Yes, always. We sign a mutual NDA before any project discussion. Your idea stays 100% protected. Consultations are completely confidential with no obligation to proceed.</p>"
+            },
+            {
+                "question": "Do you support regional languages like Hindi, Tamil, or Telugu?",
+                "answer": "<p>Yes. Our apps support 10+ Indian regional languages — Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Punjabi, Malayalam, and Odia — with full RTL support for Arabic too.</p>"
+            }
+        ]
+    },
+    "FinalCTA": {
+        "title": "FAQs",
+        "subtitle": {
+            "start": "Ready to Launch Your",
+            "highlight": "Grocery Delivery App?",
+            "end": ""
+        },
+        "description": "Join 150+ businesses who trusted Comfygen. Free consultation, NDA signed upfront, fixed price in INR — no surprises.",
+        "pills": [
+            "🔒 NDA Signed",
+            "⏱ 24-Hour Response",
+            "💯 No Obligation"
+        ],
+        "FromHeading": {
+            "heading": "Book Your Free 30-Min Strategy Call",
+            "description": "100% confidential. NDA signed before discussion. No spam.",
+            "delevirytime": "Average response time: under 4 hours",
+            "buttonText": ""
+        }
+    }
+}

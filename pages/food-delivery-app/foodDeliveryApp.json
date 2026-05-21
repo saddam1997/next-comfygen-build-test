@@ -34,8 +34,23 @@
                 "value": "4.9★",
                 "label": "Avg client rating"
             }
-        ]
+        ],
+        "FromHeading": {
+            "heading": "Book Your Free 30-Min Strategy Call",
+            "description": "100% confidential. NDA signed before discussion. No spam.",
+            "delevirytime": "Average response time: under 4 hours",
+            "buttonText": ""
+        }
     },
+    "AppType": [
+        "Custom Food Delivery App",
+        "Zomato / Swiggy Clone",
+        "Cloud Kitchen App",
+        "Multi-Vendor Marketplace",
+        "Single Restaurant App",
+        "Hyperlocal Delivery App",
+        "Not Sure — Need Consultation"
+    ],
     "reviewed": [
         {
             "img": "https://www.comfygen.com/comfygen-images/reviewed/clutch.webp",
@@ -443,7 +458,13 @@
             "🔒 NDA Signed",
             "⏱ 24-Hour Response",
             "💯 No Obligation"
-        ]
+        ],
+        "FromHeading": {
+            "heading": "Book Your Free 30-Min Strategy Call",
+            "description": "100% confidential. NDA signed before discussion. No spam.",
+            "delevirytime": "Average response time: under 4 hours",
+            "buttonText": ""
+        }
     },
     "Testimonials": {
         "title": "Client Stories",

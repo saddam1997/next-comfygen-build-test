@@ -35,7 +35,7 @@ const index = () => {
         />
 
         {/* Google Analytics */}
-        <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73"/>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73" />
         <script id="google-analytics" >
           {`
           window.dataLayer = window.dataLayer || [];
@@ -51,7 +51,9 @@ const index = () => {
       </Head>
 
       <Header />
-      <Hero DATA={JSON_DATA.HeroContent} />
+      <div className='mt-12'>
+        <Hero AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />
+      </div>
       <TrustBar DATA={JSON_DATA.reviewed} />
       <Deliverables DATA={JSON_DATA.Deliverables} />
       {/* <StickyElements/> */}
@@ -64,7 +66,7 @@ const index = () => {
       <Process DATA={JSON_DATA.Process} />
       <TechStack DATA={JSON_DATA.Technologies} />
       <FAQ DATA={JSON_DATA.FAQ} />
-      <FinalCTA DATA={JSON_DATA.FinalCTA} />
+      <FinalCTA AppType={JSON_DATA?.AppType} DATA={JSON_DATA.FinalCTA} />
       <Footer />
     </div>
   )
