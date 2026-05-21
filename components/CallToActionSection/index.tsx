@@ -8,7 +8,7 @@ import ParagraphText from "../ui/ParagraphText";
 export default function CallToAction({ CallToAction }: any) {
 
     return (
-        <section className="lg:py-16 bg-white">
+        <section className="lg:py-8 bg-white">
             <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12 relative bg-[#0C0F18] rounded-[24px] overflow-hidden">
                 {/* ===== Main Content ===== */}
                 <div className="relative z-10 lg:py-12 py-4 lg:px-14 px-8 lg:flex gap-8 items-center">
