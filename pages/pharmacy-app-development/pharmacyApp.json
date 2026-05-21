@@ -348,8 +348,15 @@
         "ctaButton": {
           "text": "GET DEMO",
           "link": "/contact-us"
+        },
+          "cardBgColor":{
+          "bg":"#2C49BD"
         }
       }
+    },
+    "bgGradient": {
+      "from": "#0990FF",
+      "to": "#031C4B"
     }
   },
 

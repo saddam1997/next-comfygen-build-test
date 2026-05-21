@@ -15,7 +15,11 @@ export default function PharmaAppBanner({ Data }) {
                 />
             </section>
             {/* Main Banner */}
-            <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[12px] border border-cyan-400 bg-gradient-to-r from-[#0990FF]  to-[#031C4B] px-4 py-6 sm:px-6 sm:py-8 md:px-8 lg:px-10 lg:py-5">
+            <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[12px] border border-cyan-400  px-4 py-6 sm:px-6 sm:py-8 md:px-8 lg:px-10 lg:py-5"
+                style={{
+                    background: `linear-gradient(to right, ${Data?.bgGradient?.from}, ${Data?.bgGradient?.to})`
+                }}
+            >
                 <div className="absolute right-0 top-0 z-0 h-full w-full opacity-20">
                     <Image
                         src={Data?.banner?.backgroundImage}
@@ -28,32 +32,46 @@ export default function PharmaAppBanner({ Data }) {
                 <div className="relative flex flex-col items-center lg:min-h-[620px] lg:flex-row">
                     {/* Left Image */}
                     <div className="relative z-20 flex w-full justify-center lg:w-[58%] lg:justify-start">
-                        <div className="relative h-[260px] w-full max-w-[240px] sm:h-[360px] sm:max-w-[320px] md:h-[480px] md:max-w-[420px] lg:h-[560px] lg:max-w-[500px] xl:ml-24 ">
+                        <div className="relative h-[260px] w-full max-w-[240px] sm:h-[360px] sm:max-w-[320px] md:h-[480px] md:max-w-[420px] lg:h-[560px] lg:max-w-[500px] xl:ml-24">
 
                             <Image
                                 src={Data?.banner?.mainImage.image}
                                 alt={Data?.banner?.mainImage.alt}
-                                width={520}
-                                height={420}
+                                fill
                                 priority
-                                className="object-contain w-full h-full"
-                                sizes="(max-width: 768px) 100vw, 50vw"
+                                quality={100}
+                                unoptimized
+                                className="object-contain"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 520px"
                             />
+
                         </div>
                     </div>
 
                     {/* Right Content Card */}
-                    <div className="relative mt-6 w-full overflow-hidden rounded-[24px] border-[4px] border-white/80 bg-gradient-to-br from-[#314BD9] to-[#0B1D74] p-5 shadow-2xl sm:mt-8 sm:rounded-[30px] sm:p-7 md:max-w-[680px] md:p-8 lg:absolute xl:right-40 lg:right-0 lg:top-1/2 lg:mt-0 lg:w-[560px] lg:-translate-y-1/2 lg:rounded-[40px] lg:p-6">
+                    <div className="relative mt-6 w-full overflow-hidden rounded-[24px] border-[4px] border-white/80  p-5 shadow-2xl sm:mt-8 sm:rounded-[30px] sm:p-7 md:max-w-[680px] md:p-8 lg:absolute xl:right-40 lg:right-0 lg:top-1/2 lg:mt-0 lg:w-[560px] lg:-translate-y-1/2 lg:rounded-[40px] lg:p-6 bg-transparent"
+
+
+                    >
                         {/* Background Image */}
-                        <div className="pointer-events-none absolute inset-0 z-0 opacity-10">
+                        <div className="absolute inset-0 z-0">
                             <Image
-                                src={Data?.banner?.mainImage?.card?.backgroundImage}
-                                alt={Data?.banner?.mainImage?.card?.alt}
+                                src={Data?.banner?.card?.backgroundImage}
+                                alt={Data?.banner?.card?.alt || "Background"}
                                 fill
                                 className="object-cover object-right"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
+
+                        {/* Overlay */}
+                        <div
+                            className="absolute inset-0 z-10"
+                            style={{
+                                backgroundColor: Data?.banner?.card?.cardBgColor?.bg,
+                                opacity: 0.65,
+                            }}
+                        ></div>
 
                         {/* Content */}
                         <div className="relative z-20 xl:ml-28 lg:ml-40">
@@ -82,14 +100,14 @@ export default function PharmaAppBanner({ Data }) {
                             </p>
 
                             {/* Store Buttons */}
-                            <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+                            <div className="mt-6 flex flex-wrap gap-2 sm:gap-4">
                                 {Data?.banner?.card?.storeButtons.map((button: any, index: any) => (
                                     <Link
                                         key={index}
                                         href={button.link}
                                         target="_blank"
                                         rel='nofollow'
-                                        className="relative z-30 flex w-fit items-center gap-2 rounded-lg bg-white px-4 py-2 text-xs font-medium text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl sm:px-5 sm:py-3 sm:text-sm lg:px-6"
+                                        className="relative z-30 flex w-fit items-center gap-2 rounded-lg bg-white px-2 py-2 text-xs font-medium text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl sm:px-5 sm:py-3 sm:text-sm lg:px-2"
                                     >
                                         <Image
                                             src={button.icon}
@@ -108,11 +126,11 @@ export default function PharmaAppBanner({ Data }) {
                             {/* CTA Button */}
                             <Link
                                 href={Data?.banner?.card?.ctaButton?.link}
-                                className="relative z-30 mt-8 flex w-fit items-center gap-3 rounded-full border-2 border-white bg-white/10 px-6 py-2 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-[#1A3ED8] sm:px-8 sm:py-3 sm:text-lg lg:mt-10 lg:px-10 lg:py-2 lg:text-xl"
+                                className="relative z-30 mt-8 flex w-fit items-center gap-3 rounded-full border-2 border-white bg-white/10 px-6 py-2 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-[#1A3ED8] sm:px-8 sm:py-3 sm:text-lg lg:mt-10 lg:px-10 lg:py-2 lg:text-lg"
                             >
-                               {Data?.banner?.card?.ctaButton?.text}
+                                {Data?.banner?.card?.ctaButton?.text}
 
-                                <ArrowRight className="h-5 w-5 lg:h-7 lg:w-7" />
+                                <ArrowRight className="h-5 w-5 lg:h-7 lg:w-5" />
                             </Link>
                         </div>
                     </div>

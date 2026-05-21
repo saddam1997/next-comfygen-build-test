@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import TopNavbar from "./TopNavbar"
 
 export default function Header() {
 
@@ -20,9 +21,12 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full  z-[100] bg-white py-[14px]">
+    <header className="fixed top-0  left-0 w-full  z-[100] bg-white py-[14px]">
+    <div className="hidden lg:block">
+        <TopNavbar />
+    </div>
+      <div className="mx-auto max-w-[1200px] px-6 lg:mt-10">
 
-      <div className="mx-auto max-w-[1200px] px-6">
 
         <div className="flex items-center justify-between">
           <div className="font-[Fraunces] text-[22px] font-bold tracking-[-0.02em] text-[#1A1614]">

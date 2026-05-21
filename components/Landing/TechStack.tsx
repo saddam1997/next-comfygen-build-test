@@ -2,11 +2,6 @@
 
 import { useEffect, useState } from 'react';
 
-const technologies = [
-  'React Native', 'Flutter', 'Node.js', 'Next.js', 'Python · Django',
-  'MongoDB', 'PostgreSQL', 'AWS', 'Google Cloud', 'Stripe',
-  'Razorpay', 'Google Maps', 'Firebase', 'TensorFlow',
-];
 
 export default function TechStack({DATA}: any) {
   const [windowWidth, setWindowWidth] = useState(1200);
