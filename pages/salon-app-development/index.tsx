@@ -22,8 +22,10 @@ import Features from "../../components/Features"
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
+import Compliance from "../../components/Compliance";
+import CostTable from "../../components/CostTable"
 
-import Emerging from "../../components/Emerging";
+// import Emerging from "../../components/Emerging";
 import Trending from "../../components/Trending";
 import IndustryGrid from "../../components/IndustryGrid";
 import TechStacks from "../../components/TechStacks";
@@ -73,8 +75,8 @@ export default function ClinicalApp(props: any) {
   return (
     <>
       <Head>
-        <title>Best Salon App Development Company | Custom Beauty & Booking Apps</title>
-        <meta name="description" content="Best salon app development company building custom beauty & spa booking apps with online scheduling, payments, CRM & real-time management features." />
+        <title> Salon App Development Company - Beauty & Booking Apps | Comfygen </title>
+        <meta name="description" content="Build a custom salon booking app with Comfygen. Appointment scheduling, AI stylist matching, secure payments & CRM - iOS & Android. Get quote from India's top beauty app development company." />
         <link rel="canonical" href="https://www.comfygen.com/salon-app-development" />
         <meta name="robots" content="MAX-IMAGE-PREVIEW:LARGE, MAX-SNIPPET:-1, MAX-VIDEO-PREVIEW:-1, INDEX, FOLLOW" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -108,7 +110,7 @@ export default function ClinicalApp(props: any) {
         <meta name="keywords" content="Custom Salon App Development, Hair Salon Booking App Development, Nail Salon App Development, Spa Booking App Development, On-Demand Beauty App Development, Salon Management Software Development, White Label Salon App Development, iOS Salon Booking App Development, Android Salon App Development, AI-based Salon App Development, Beauty & Salon Aggregator" />
 
         {/* Open Graph Meta Tags  */}
-        <meta name="og:title" content="Top Salon App Development Company | On-Demand Beauty App Solutions" />
+        <meta name="og:title" content="Salon App Development Company - Beauty & Booking Apps | Comfygen" />
         <meta name="og:type" content="website" />
         <meta name="og:url" content="https://www.comfygen.com/salon-app-development" />
         <meta name="og:image" content="https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-og.webp" />
@@ -118,15 +120,15 @@ export default function ClinicalApp(props: any) {
         <meta name="og:image:height" content="630" />
         <meta name="og:image:alt" content="Salon App Development" />
         <meta name="og:site_name" content="Comfygen Private Limited" />
-        <meta name="og:description" content="Comfygen is a top salon app development company offering custom beauty services app development with booking, CRM, payments, and client engagement tools for salons, spas & beauty brands." />
+        <meta name="og:description" content="Build a custom salon booking app with Comfygen. Appointment scheduling, AI stylist matching, secure payments & CRM - iOS & Android. Get quote from India's top beauty app development company." />
         <meta name="fb:page_id" content="110909321596135" />
         <meta name="og:email" content="sales@comfygen.com" />
         <meta name="og:phone_number" content="+91-958-786-7258" />
 
         {/* Twitter Meta Tags  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Salon App Development Company | On-Demand Beauty App Solutions" />
-        <meta name="twitter:description" content="Comfygen delivers feature-rich salon app development solutions for beauty brands, salons & spas with online booking, payments, CRM, loyalty programs & more." />
+        <meta name="twitter:title" content="Salon App Development Company - Beauty & Booking Apps | Comfygen" />
+        <meta name="twitter:description" content="Build a custom salon booking app with Comfygen. Appointment scheduling, AI stylist matching, secure payments & CRM - iOS & Android. Get quote from India's top beauty app development company." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/salon-app-development/salon-development-og.webp" />
         <meta name="twitter:site" content="@comfygentech" />
 
@@ -147,16 +149,17 @@ export default function ClinicalApp(props: any) {
       <Features featuresData={JSON_DATA.featuresData} />
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      <Emerging emerging={JSON_DATA.EmergingData} />
+      {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
+      <Compliance techData={JSON_DATA.BusinessType} />
       <Solution techData={JSON_DATA.AiPowered} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-      <TechSection TechStack={JSON_DATA.TechStack} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+       <CostTable DATA={JSON_DATA.Cost}/>
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-       <IndustryGrid />
+      <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
       <ClientStories />
-     <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} title="" />
       <BlogSection initialData={initialData} />
 
