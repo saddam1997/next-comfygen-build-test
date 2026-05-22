@@ -159,8 +159,8 @@ class ContactFrom extends Component<{}, any> {
     const { errorsContactUs, submitted } = this.state;
 
     return (
-      <div className="h-full">
-        <form className="border rounded-xl lg:px-8 md:px-6 p-2 px-4 space-y-2 w-full">
+      <div className="h-full ">
+        <form className="border rounded-xl lg:px-8 md:px-6 p-2 px-4 space-y-2 w-full lg:h-full overflow-y-auto h-[500px]">
 
           <div className="space-y-2">
             <h2 className="xl:text-4xl text-base font-semibold text-black">
@@ -272,7 +272,7 @@ class ContactFrom extends Component<{}, any> {
               <textarea
                 id="msg"
                 name="msg"
-                placeholder="msg"
+                placeholder="Message"
                 rows={4}
                 value={this.state.fieldsContactUs.msg || ""}
                 onChange={this.inputChange}
