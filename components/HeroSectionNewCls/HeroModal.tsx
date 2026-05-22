@@ -97,7 +97,7 @@ export default function TalkToExpertModal({isOpen, onClose,}:any) {
 
                             {/* CONTENT */}
                             <div className="h-full">
-                                <div className="p-8">
+                                <div className="lg:p-8 p-0">
                                     <ContactFrom />
                                 </div>
 

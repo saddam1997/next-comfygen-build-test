@@ -93,7 +93,7 @@ export default function FoodDeliveryUISection({ DATA}:any) {
                 </div>
 
                 {/* SLIDER */}
-                <div className="relative flex min-h-[390px] items-center justify-center overflow-hidden sm:min-h-[460px] lg:min-h-[600px]">
+                <div className="relative flex  items-center justify-center overflow-hidden h-[260px] lg:min-h-[600px]">
                     {DATA?.UiOpstion?.map((item: any, index: any) => {
                         const pos = getPosition(index);
                         const isActive = index === active;
@@ -118,13 +118,13 @@ export default function FoodDeliveryUISection({ DATA}:any) {
                                         }`}
                                     >
                                         {/* IMAGE */}
-                                        <div className="relative w-[150px] sm:w-[220px] lg:w-[210px] xl:w-[215px]">
+                                        <div className="relative w-full flex justify-center  lg:w-[210px] xl:w-[215px]">
                                             <Image
                                                src={item?.image}
                                                 alt={item?.name}
                                                 width={1260}
                                                 height={1000}
-                                                className="h-fit w-fit object-contain  object-center "
+                                                className="lg:h-fit lg:w-fit h-[200px] object-contain  object-center "
                                             />
                                         </div>
                                     </div>
