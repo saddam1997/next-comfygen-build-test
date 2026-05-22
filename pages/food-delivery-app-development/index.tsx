@@ -65,7 +65,7 @@ import ReviewCard from "../../components/ReviewCard";
 import TechStackSection from "../../components/TechStackSection";
 import FoodDeliveryCostTable from "./component/FoodDeliveryCostTable";
 import CardGrid from "./component/CardGrid";
-import IndustryGrid from "../../components/IndustryGrid";
+
 
 
 
@@ -202,14 +202,14 @@ export default function Ecommerce(props: any) {
       {/* <IndustryGrid /> */}
       <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
       {/* <Features featuresData={JSON_DATA.featuresData} /> */}
-          <FeaturesNewSection FData={JSON_DATA.FData} />
+      <FeaturesNewSection FData={JSON_DATA.FData} />
       <Solution techData={JSON_DATA.AIPoweredFood} />
-      <CardGrid techData={JSON_DATA.EnterpriseGrade}/>
+      <CardGrid techData={JSON_DATA.EnterpriseGrade} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-       <FoodDeliveryCostTable FoodDeliveryCost={JSON_DATA.FoodDeliveryCost} />
+      <FoodDeliveryCostTable FoodDeliveryCost={JSON_DATA.FoodDeliveryCost} />
       <ClientStories />
       <TechStackSection deliveryApps={JSON_DATA.deliveryApps} />
 
