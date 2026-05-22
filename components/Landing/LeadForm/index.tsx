@@ -3,9 +3,10 @@
 import { FormEvent, useEffect, useState } from 'react';
 
 import JSON_DATA from './json/country.json';
+import { useRouter } from "next/router";
 
 
-export default function LeadForm({ Apptype }) {
+export default function LeadForm({ Apptype, lead }:any) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,7 +14,10 @@ export default function LeadForm({ Apptype }) {
     apptype: '',
   });
 
+  const router = useRouter();
+
   const [countryCode, setCountryCode] = useState('+91');
+
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -107,7 +111,7 @@ export default function LeadForm({ Apptype }) {
       email: formData.email,
       mobNo: fullPhoneNumber,
       stdCode: countryCode,
-      subject: 'Food Delivery App Lead Form',
+      subject: lead,
       msg: `Interested In: ${formData.apptype}`,
       ipInfo,
     };
@@ -137,6 +141,8 @@ export default function LeadForm({ Apptype }) {
           phone: '',
           apptype: '',
         });
+
+        router.push("/thankyou");
       } else {
         alert(result?.message || 'Something went wrong');
       }
@@ -151,12 +157,12 @@ export default function LeadForm({ Apptype }) {
     <form
       id="hero-form"
       onSubmit={handleSubmit}
-     
+
     >
-    
+
 
       {/* Heading */}
-  
+
 
 
       {/* Name */}
@@ -269,7 +275,7 @@ export default function LeadForm({ Apptype }) {
       </button>
 
       {/* Footer */}
-    
+
     </form>
   );
 }
