@@ -13,7 +13,7 @@ export default function TrustBar({DATA}:any) {
     {
       "img": "https://www.comfygen.com/comfygen-images/reviewed/goodfirms.webp",
       "alt": "GoodFirms Logo",
-      "link": "https://www.goodfirms.co/company/comfygen",
+      "link": "https://www.goodfirms.co/company/comfygen-technologies",
     },
     {
       "img": "https://www.comfygen.com/comfygen-images/reviewed/designerush.webp",

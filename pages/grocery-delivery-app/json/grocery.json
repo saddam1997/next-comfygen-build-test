@@ -51,7 +51,7 @@
         {
             "img": "https://www.comfygen.com/comfygen-images/reviewed/goodfirms.webp",
             "alt": "GoodFirms Logo",
-            "link": "https://www.goodfirms.co/company/comfygen"
+            "link": "https://www.goodfirms.co/company/comfygen-technologies"
         },
         {
             "img": "https://www.comfygen.com/comfygen-images/reviewed/designerush.webp",
@@ -87,7 +87,7 @@
         },
         {
             "name": "GoodFirms",
-            "link": "https://www.goodfirms.co/company/comfygen"
+            "link": "https://www.goodfirms.co/company/comfygen-technologies"
         },
         {
             "name": "DesignRush",
@@ -167,21 +167,21 @@
         },
         "description": "Modern mobile application showcase with smooth sliding animation, responsive layout and premium UI experience.",
         "UiOpstion": [
-            {
+           {
                 "name": "Home",
-                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/home-app.webp"
+                "image": "/home.png"
             },
             {
                 "name": "Driver",
-                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/driver-app.webp"
+                "image": "/driver.png"
             },
             {
                 "name": "Store",
-                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/driver-app.webp"
+                "image": "/store.png"
             },
             {
                 "name": "Admin",
-                "image": "https://www.comfygen.com/comfygen-images/grocery-delivery-app/admin-App.webp"
+                "image": "/admin (2).png"
             }
         ]
     },

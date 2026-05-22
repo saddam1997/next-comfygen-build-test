@@ -3,32 +3,16 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// const uiImages = [
-//     {
-//         name: "Driver App",
-//         image:"https://www.comfygen.com/comfygen-images/food-delivery-app/driver-image.webp",
-//     },
-//     {
-//         name: "Admin Panel",
-//         image:"https://www.comfygen.com/comfygen-images/food-delivery-app/admin.webp",
-//     },
-//     {
-//         name: "User App",
-//         image: "https://www.comfygen.com/comfygen-images/food-delivery-app/User-image.webp",
-//     },
-//     {
-//         name: "Vendor Panel",
-//         image:"https://www.comfygen.com/comfygen-images/food-delivery-app/vendor.webp",
-//     },
-// ];
 
-export default function FoodDeliveryUISection({ DATA }: any) {
+
+export default function FoodDeliveryUISection({ DATA}:any) {
     const [active, setActive] = useState(0);
+      const uiOptions = DATA?.UiOpstion || [];
 
     // AUTO SLIDE
     useEffect(() => {
         const timer = setInterval(() => {
-            setActive((prev) => (prev + 1) %  DATA.UiOpstion.length);
+            setActive((prev) => (prev + 1) % (DATA?.UiOpstion?.length || 1));
         }, 3000);
 
         return () => clearInterval(timer);
@@ -36,7 +20,7 @@ export default function FoodDeliveryUISection({ DATA }: any) {
 
     // IMAGE POSITION
     const getPosition = (index: number) => {
-        const total =  DATA.UiOpstion.length;
+        const total = DATA?.UiOpstion?.length;
 
         const left = (active - 1 + total) % total;
         const center = active;
@@ -90,27 +74,27 @@ export default function FoodDeliveryUISection({ DATA }: any) {
                 {/* HEADER */}
                 <div className="mx-auto mb-8 max-w-3xl text-center">
                     <span className="mb-4 inline-block text-[10px] font-bold uppercase tracking-[0.18em] text-[#FF5A3C] min-[480px]:text-[12px]">
-                        {DATA.title}
+                        {DATA?.title}
                     </span>
 
                     <h2 className="mb-4 font-[Fraunces] text-[28px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#1A1614] min-[480px]:text-[32px] md:text-[36px] lg:text-[44px]">
-                        {DATA.subtitle.start}
+                        {DATA?.subtitle?.start}
 
                         <span className="text-[#FF5A3C]">
-                            {DATA.subtitle.highlight}
+                            {DATA?.subtitle?.highlight}
                         </span>
 
-                        {DATA.subtitle.end}
+                        {DATA?.subtitle?.end}
                     </h2>
 
                     <p className="text-[14px] leading-[1.6] text-[#7A716C] min-[480px]:text-[15px] md:text-[17px]">
-                        {DATA.description}
+                        {DATA?.description}
                     </p>
                 </div>
 
                 {/* SLIDER */}
-                <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden sm:min-h-[560px] lg:min-h-[620px]">
-                    {DATA.UiOpstion.map((item: any, index: any) => {
+                <div className="relative flex min-h-[390px] items-center justify-center overflow-hidden sm:min-h-[460px] lg:min-h-[600px]">
+                    {DATA?.UiOpstion?.map((item: any, index: any) => {
                         const pos = getPosition(index);
                         const isActive = index === active;
 
@@ -127,48 +111,35 @@ export default function FoodDeliveryUISection({ DATA }: any) {
                                 <div className="flex flex-col items-center">
                                     {/* MOBILE FRAME */}
                                     <div
-                                        className={`relative overflow-hidden rounded-[32px]  transition-all duration-500 ${
+                                        className={`relative overflow-hidden  ansition-all duration-500 ${
                                             isActive
                                                 ? "p-3 "
                                                 : "p-2"
                                         }`}
                                     >
                                         {/* IMAGE */}
-                                        <div className="relative h-96">
+                                        <div className="relative w-[150px] sm:w-[220px] lg:w-[210px] xl:w-[215px]">
                                             <Image
-                                               src={item.image}
-                                                alt={item.name}
+                                               src={item?.image}
+                                                alt={item?.name}
                                                 width={1260}
                                                 height={1000}
-                                                className="h-96 w-64 object-contain bg-transparent "
+                                                className="h-fit w-fit object-contain  object-center "
                                             />
                                         </div>
-                                        {/* <div className="relative w-[150px] sm:w-[220px] lg:w-[320px] xl:w-[410px]">
-                                            <Image
-                                                src={item.image}
-                                                alt={item.name}
-                                                width={1260}
-                                                height={1000}
-                                                className="h-full w-full object-contain"
-                                            />
-                                        </div> */}
                                     </div>
 
                                     {/* NAME */}
                                     <div
-                                        className={`mt-6 transition-all duration-500 ${
+                                        className={`mt-2 transition-all duration-500 ${
                                             isActive
                                                 ? "translate-y-0 opacity-100"
                                                 : "translate-y-4 opacity-0"
                                         }`}
                                     >
                                         <h3 className="text-center text-xl font-bold text-[#1A1614] sm:text-2xl">
-                                            {item.name}
+                                            {item?.name}
                                         </h3>
-
-                                        {/* <p className="mt-1 text-center text-sm text-[#7A716C]">
-                                            Modern & smooth interface design
-                                        </p> */}
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +149,7 @@ export default function FoodDeliveryUISection({ DATA }: any) {
 
                 {/* DOTS */}
                 <div className="mt-8 flex items-center justify-center gap-3">
-                    { DATA.UiOpstion.map((_, index) => (
+                    {DATA?.UiOpstion?.map((_:any, index:any) => (
                         <button
                             key={index}
                             onClick={() => setActive(index)}
