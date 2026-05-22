@@ -62,7 +62,7 @@ export default function LeadSection() {
                             <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.designrush.com/agency/profile/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen-technologies"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
                             </Link>
                             <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://selectedfirms.co/agency/comfygen-private-limited"}>
@@ -93,7 +93,7 @@ export default function LeadSection() {
                             <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.designrush.com/agency/profile/comfygen"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/designerush top blockchain development companies in canada.webp"} alt="" className="object-contain" width={640} height={340} />
                             </Link>
-                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen"}>
+                            <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://www.goodfirms.co/company/comfygen-technologies"}>
                                 <Image src={"https://www.comfygen.com/comfygen-images/contactFormIcons/goodfirms top dating app development companies.webp"} alt="" className="object-contain" width={640} height={140} />
                             </Link>
                             <Link target="_blank"rel="nofollow noopener noreferrer" href={"https://selectedfirms.co/agency/comfygen-private-limited"}>

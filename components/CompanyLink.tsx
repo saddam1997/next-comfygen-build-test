@@ -56,7 +56,7 @@ export default function CompanyLink() {
                         </Link>
                     </div>
                     <div className="flex justify-center items-center border-double border-4 border-gray-400  py-1  hover:scale-90 transition-all duration-300  bg-white">
-                        <Link target="_blank" href="https://www.goodfirms.co/company/comfygen" passHref={true}>
+                        <Link target="_blank" href="https://www.goodfirms.co/company/comfygen-technologies" passHref={true}>
                             <Image
                                 width={150}        // numeric
                                 height={100}

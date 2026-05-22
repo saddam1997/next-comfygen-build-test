@@ -13,9 +13,10 @@ import ComparisonTable from '../../components/Landing/ComparisonTable'
 import Testimonials from '../../components/Landing/Testimonials'
 import FAQ from '../../components/Landing/FAQ'
 import CTASection from '../../components/Landing/CTASection'
-import FoodDeliveryUISection from '../../components/Landing/FoodDeliveryUISection'
+import FoodDeliveryUISection from './FoodDeliveryUISection'
 import Footer from '../../components/Landing/Footer'
 import FinalCTA from '../../components/Landing/FinalCTA'
+import Head from 'next/head'
 
 
 
@@ -23,7 +24,31 @@ import FinalCTA from '../../components/Landing/FinalCTA'
 const index = () => {
   return (
     <main className="bg-white font-dm-sans text-dark relative">
-      {/* <TopNavbar /> */}
+     <Head>
+        <title>
+          Grocery Delivery App Development Company | Comfygen Technologies
+        </title>
+        <meta name="keywords" content="" />
+        <meta
+          name="description"
+          content="Build a powerful grocery delivery app with real-time tracking, online payments, order management, and fast delivery features. Get custom grocery app development solutions today."
+        />
+
+        {/* Google Analytics */}
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73" />
+        <script id="google-analytics" >
+          {`
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag(){
+            dataLayer.push(arguments);
+          }
+
+          gtag('js', new Date());
+          gtag('config', 'G-YNT54R0V73');
+        `}
+        </script>
+      </Head>
       <Header />
       <div className='mt-12'>
         <Hero AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />

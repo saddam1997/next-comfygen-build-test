@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useState } from 'react';
 
 import JSON_DATA from './json/country.json';
-import Heding from './Heding';
+
 
 export default function LeadForm({ Apptype }) {
   const [formData, setFormData] = useState({
@@ -245,7 +245,7 @@ export default function LeadForm({ Apptype }) {
           <option value="">What type of app? *</option>
           {
             Apptype.map((type: any, index: any) => (
-              <option>{type}</option>
+              <option key={index}>{type}</option>
             ))
           }
         </select>
