@@ -36,6 +36,7 @@ const index = () => {
           name="description"
           content="Build a powerful grocery delivery app with real-time tracking, online payments, order management, and fast delivery features. Get custom grocery app development solutions today."
         />
+        <meta name="robots" content="noindex, nofollow" />
 
         {/* Google Analytics */}
         <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73" />

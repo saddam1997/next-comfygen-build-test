@@ -35,6 +35,7 @@ const index = () => {
           name="description"
           content="Custom food delivery app like Zomato, Swiggy & UberEats. iOS, Android, restaurant & driver apps included. 150+ launched. NDA upfront, source code yours."
         />
+         <meta name="robots" content="noindex, nofollow" />
 
         {/* Google Analytics */}
         <script src="https://www.googletagmanager.com/gtag/js?id=G-YNT54R0V73" />
