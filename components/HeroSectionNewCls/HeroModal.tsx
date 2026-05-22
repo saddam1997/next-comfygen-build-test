@@ -4,17 +4,17 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 // ✅ form lazy load
 const ContactFrom = dynamic(() => import("./ContactFrom"), {
-  ssr: false,
-  loading: () => <div className="h-[300px]" />, // prevent CLS
+    ssr: false,
+    loading: () => <div className="h-[300px]" />, // prevent CLS
 });
 
-export default function TalkToExpertModal({isOpen, onClose,}:any) {
+export default function TalkToExpertModal({ isOpen, onClose, }: any) {
     if (!isOpen) return null;
 
 
     return (
-       <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
-    
+        <div className="fixed inset-0 z-[999] flex items-center justify-center p-4">
+
             {/* Overlay */}
             <div
                 className="absolute bg-black/60 backdrop-blur-sm"
@@ -25,7 +25,7 @@ export default function TalkToExpertModal({isOpen, onClose,}:any) {
                 {/* MODAL BOX */}
                 <div className={`w-full relative max-w-[950px] lg:h-[600px] h-full bg-white rounded-xl shadow-xl overflow-hidden transform    transition-all duration-300 ${isOpen ? "scale-100" : "scale-95"}`}>
                     <div className="flex flex-col lg:flex-row h-full">
-                       {/* LEFT IMAGE */}
+                        {/* LEFT IMAGE */}
                         <div className="relative hidden lg:block w-[45%] h-full">
                             <Image
                                 src="https://www.comfygen.com/comfygen-images/home/form.webp"
@@ -71,11 +71,13 @@ export default function TalkToExpertModal({isOpen, onClose,}:any) {
                                             label="Twitter"
                                         />
 
-                                        <SocialIcon
-                                            href="https://www.instagram.com/comfygen_technologies"
-                                            icon="https://www.comfygen.com/comfygen-images/icons/image.webp"
-                                            label="Instagram"
-                                        />
+                                        <div className="w-12 h-12">
+                                            <SocialIcon
+                                                href="https://www.instagram.com/comfygen_technologies"
+                                                icon="https://www.comfygen.com/comfygen-images/icons/image.webp"
+                                                label="Instagram"
+                                            />
+                                        </div>
 
                                     </div>
                                 </div>
@@ -132,7 +134,7 @@ function SocialIcon({
                 alt={label}
                 width={40}
                 height={40}
-                className="hover:scale-110 transition h-auto w-auto rounded-md"
+                className="hover:scale-110 w-12 h-12 transition  rounded-md"
             />
         </a>
     );

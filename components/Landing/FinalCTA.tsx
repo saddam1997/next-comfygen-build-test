@@ -2,7 +2,8 @@ import LeadForm from "./LeadForm";
 import Heding from "./LeadForm/Heding";
 
 
-export default function FinalCTA({ DATA, AppType }: any) {
+export default function FinalCTA({ DATA, AppType, pagePath }: any) {
+    const page = pagePath.replace("/", "");
 
   return (
     <section className="relative overflow-hidden bg-[#1A1614] py-12 sm:py-16 lg:py-24 text-white">
@@ -46,7 +47,7 @@ export default function FinalCTA({ DATA, AppType }: any) {
             {DATA?.FromHeading && (
               <Heding DATA={DATA.FromHeading} />
             )}
-            <LeadForm Apptype={AppType} />
+            <LeadForm Apptype={AppType} lead={page}/>
             <p className="mt-3.5 text-center text-[12px] text-[#7A716C]">
               ⏱️ {DATA.FromHeading.delevirytime}
             </p>

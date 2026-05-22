@@ -17,11 +17,14 @@ import FoodDeliveryUISection from './FoodDeliveryUISection'
 import Footer from '../../components/Landing/Footer'
 import FinalCTA from '../../components/Landing/FinalCTA'
 import Head from 'next/head'
+import { useRouter } from "next/router";
+
 
 
 
 
 const index = () => {
+    const router = useRouter();
   return (
     <main className="bg-white font-dm-sans text-dark relative">
      <Head>
@@ -51,7 +54,7 @@ const index = () => {
       </Head>
       <Header />
       <div className='mt-12'>
-        <Hero AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />
+        <Hero pagePath={router.asPath} AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />
       </div>
       <TrustBar DATA={JSON_DATA.reviewed} />
       {/* <BrandsBar DATA={JSON_DATA.BrandBar} /> */}
@@ -65,7 +68,7 @@ const index = () => {
       <Testimonials DATA={JSON_DATA.Testimonials} />
       <FAQ DATA={JSON_DATA.FAQ} />
       {/* <CTASection /> */}
-      <FinalCTA AppType={JSON_DATA?.AppType} DATA={JSON_DATA.FinalCTA} />
+      <FinalCTA pagePath={router.asPath} AppType={JSON_DATA?.AppType} DATA={JSON_DATA.FinalCTA} />
       <Footer />
 
     </main>
