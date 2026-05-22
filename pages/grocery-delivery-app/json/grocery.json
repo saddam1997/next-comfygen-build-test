@@ -42,6 +42,33 @@
             "buttonText": ""
         }
     },
+     "reviewed": [
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/clutch.webp",
+            "alt": "Clutch Logo",
+            "link": "https://clutch.co/profile/comfygen-technologies"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/goodfirms.webp",
+            "alt": "GoodFirms Logo",
+            "link": "https://www.goodfirms.co/company/comfygen"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/designerush.webp",
+            "alt": "Designerush Logo",
+            "link": "https://www.designrush.com/agency/profile/comfygen"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/selectedfirms.webp",
+            "alt": "SelectedFirms Logo",
+            "link": "https://selectedfirms.co/agency/comfygen-private-limited"
+        },
+        {
+            "img": "https://www.comfygen.com/comfygen-images/reviewed/topdeveloper.webp",
+            "alt": "TopDeveloper Logo",
+            "link": "https://www.topdevelopers.co/profile/comfygen"
+        }
+    ],
     "AppType": [
         "Custom Grocery Delivery App",
         "BigBasket / Blinkit Clone",

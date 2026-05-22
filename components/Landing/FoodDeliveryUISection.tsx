@@ -109,7 +109,7 @@ export default function FoodDeliveryUISection({ DATA }: any) {
                 </div>
 
                 {/* SLIDER */}
-                <div className="relative flex min-h-[420px] items-center justify-center overflow-hidden sm:min-h-[560px] lg:min-h-[620px]">
+                <div className="relative flex min-h-[520px] items-center justify-center overflow-hidden sm:min-h-[560px] lg:min-h-[620px]">
                     {DATA.UiOpstion.map((item: any, index: any) => {
                         const pos = getPosition(index);
                         const isActive = index === active;
@@ -127,20 +127,20 @@ export default function FoodDeliveryUISection({ DATA }: any) {
                                 <div className="flex flex-col items-center">
                                     {/* MOBILE FRAME */}
                                     <div
-                                        className={`relative overflow-hidden rounded-[32px] border border-white/40 shadow-[0_25px_70px_rgba(0,0,0,0.12)] transition-all duration-500 ${
+                                        className={`relative overflow-hidden rounded-[32px]   transition-all duration-500 ${
                                             isActive
-                                                ? "p-3 shadow-[0_35px_90px_rgba(255,90,60,0.22)]"
+                                                ? "p-3 "
                                                 : "p-2"
                                         }`}
                                     >
                                         {/* IMAGE */}
-                                        <div className="relative h-96">
+                                        <div className="relative w-[200px] sm:w-[220px]  xl:w-[210px]">
                                             <Image
                                                src={item.image}
                                                 alt={item.name}
                                                 width={1260}
                                                 height={1000}
-                                                className="h-96 w-64 object-contain "
+                                                className="h-full w-fit object-contain "
                                             />
                                         </div>
                                         {/* <div className="relative w-[150px] sm:w-[220px] lg:w-[320px] xl:w-[410px]">
@@ -156,7 +156,7 @@ export default function FoodDeliveryUISection({ DATA }: any) {
 
                                     {/* NAME */}
                                     <div
-                                        className={`mt-6 transition-all duration-500 ${
+                                        className={`mt-1 transition-all duration-500 ${
                                             isActive
                                                 ? "translate-y-0 opacity-100"
                                                 : "translate-y-4 opacity-0"
