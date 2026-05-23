@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-end">
             
             <a
-              href="#"
+              href="https://www.comfygen.com/privacy-policy"
               className="text-white/70 transition-colors duration-200 hover:text-[#FF5A3C]"
             >
               Privacy Policy
@@ -24,7 +24,7 @@ export default function Footer() {
             <span className="text-white/30">·</span>
 
             <a
-              href="#"
+              href="https://www.comfygen.com/terms-and-conditions"
               className="text-white/70 transition-colors duration-200 hover:text-[#FF5A3C]"
             >
               Terms of Service

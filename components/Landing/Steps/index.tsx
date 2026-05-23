@@ -9,7 +9,7 @@ const Process = ({DATA}) => {
             <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#406AAF] via-[#7D3C97] to-[#EA6224]" />{DATA.badge.text}
           </div>
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(24px,3vw,38px)] font-extrabold leading-[1.18] mb-3.5 text-[#212121]">
-            {DATA.heading.title}<span className="bg-gradient-to-r from-[#F26622] via-[#7D3C97] to-[#406AAF] bg-clip-text text-transparent">{DATA.heading.highlight}</span> {DATA.heading.end}
+            {DATA.heading.title}<span className="bg-gradient-to-r from-[#F26622] via-[#7D3C97] to-[#406AAF] bg-clip-text text-transparent"> {DATA.heading.highlight}</span> {DATA.heading.end}
           </h2>
           <p className="text-base text-[#64748b] max-w-[600px] mx-auto leading-relaxed">
             {DATA.description} 

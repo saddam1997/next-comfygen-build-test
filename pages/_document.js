@@ -26,7 +26,7 @@ export default function Document() {
         <meta name="author" content="Comfygen Technologies" />
         <meta name="copyright" content="Comfygen Technologies" />
 
-        <script
+        {/* <script
           id="gtm"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -38,7 +38,7 @@ export default function Document() {
           })(window,document,'script','dataLayer','${GTM_ID}');
         `,
           }}
-        />
+        /> */}
       </Head>
       <body>
          <noscript>

@@ -1,8 +1,7 @@
 {
-
-"Herosection": {
-    "heading": "Best Home Services App Development Company",
-    "ptag": "Comfygen is a top-rated home services app development company helping startups and enterprises build high-performing home service booking apps. We deliver result-oriented custom home services app development services with real-time booking, live service tracking, secure payments, and scalable admin control—designed to increase customer engagement and business revenue.",
+  "Herosection": {
+    "heading": "Home Service App Development Company",
+    "ptag": "Build custom home service apps that are scalable, user-friendly, and built for growth. From single-service booking apps to multi-vendor marketplaces and ready-to-use home service app development solutions, we create high-quality on-demand platforms tailored to your business needs. Whether you want to launch an app like Urban Company or a fully branded home service platform, our expert team delivers reliable development with ongoing support.",
     "listItems": [
       "Real-time booking, tracking & notifications",
       "Multi-service & multi-vendor app architecture",
@@ -12,67 +11,66 @@
     "btnName": "Talk With Expert",
     "btnLink": "/contact-us",
     "bgImage": "https://www.comfygen.com/comfygen-images/home-services-app-development/hero.webp"
-},
-"ServicesData": {
-    "heading": "We offer on-demand Home Services App Development Services",
-    "description": "Comfygen Technologies offers advanced and scalable on-demand home services app development services to startups, entrepreneurs, and enterprise businesses. We create feature-rich, user-friendly apps that help service providers grow faster and deliver better customer experiences.",
+  },
+  "ServicesData": {
+    "heading": "Home Service App Development Services We Offer",
+    "description": "Comfygen offers end-to-end home service app development services for businesses of all sizes, from new startups to established companies. We help you build easy-to-use, scalable home service apps that match your business needs. From planning and design to development and support, we handle everything to help you launch and grow successfully.",
     "services": [
       {
-        "title": "Custom Home Services App Development Services",
-        "description": "We provide full-cycle custom home services app development tailored to your specific business model. Whether you're running a single service or a multi-service platform, we create home service apps like Urban Company, TaskRabbit and Zimmber that help you grow faster and serve better.",
+        "title": "Custom Home Service App Development",
+        "description": "We build fully bespoke home service mobile apps architected around your specific service categories, pricing logic, provider network, and geographic scope. Every module customer app, provider app, vendor panel, and admin dashboard is built to your workflow, not pulled from a template.",
         "features": [
-          "Personalized modules for users, service providers, and admins",
-          "Custom booking, pricing & location filters",
-          "Real-time service scheduling",
-          "Scalable and future-ready architecture"
+          "Personalized booking flow for single-service and multi-service models",
+          "Custom pricing engines: fixed rate, hourly, dynamic, or subscription-based",
+          "Provider onboarding with background verification API hooks",
+          "Real-time scheduling with calendar sync and slot management",
+          "Ready to use for 10 or 100,000 concurrent users"
         ]
       },
       {
-        "title": "Home Services App Design and Development Services",
-        "description": "We design and develop user-friendly, modern home services mobile apps with a clean interface and smooth functionality. Our design-first approach ensures an intuitive customer experience for all types of services — from cleaning to plumbing.",
+        "title": "On-Demand Home Service App",
+        "description": "We have hands-on experience building multi-vendor home service marketplaces modeled after the leading platforms Urban Company, TaskRabbit, Handy, and Angi. Our implementations go beyond UI cloning: we replicate top home service apps and the actual platform mechanics that make these apps work at scale.",
         "features": [
-          "Responsive UI/UX for Android & iOS",
-          "Interactive user flow for fast bookings",
-          "Minimal, brand-aligned designs",
-          "Easy navigation and accessible interface"
+          "Two-sided review and rating system with fraud detection flags",
+          "Commission and payout engine with automated service provider settlements",
+          "In-app chat between customer and provider with image sharing",
+          "AI-powered service recommendations based on booking history"
         ]
       },
       {
-        "title": "White-Label Home Services App Solutions",
-        "description": "Launch your branded on-demand home services app quickly with our ready-made home services app solutions. Ideal for startups or businesses wanting faster market entry without compromising on quality and features.",
+        "title": "White-Label Home Service App Solutions",
+        "description": "Launch your own branded home service app in 4 - 6 weeks with our pre-built <a href='https://www.comfygen.com/white-label-mobile-app-development' class='underline font-semibold'>white-label app development solution</a>. You get your own logo, colors, domain, and branding. We handle the full codebase. Ideal for businesses wanting market entry speed without compromising on core features.",
         "features": [
-          "Fully branded with your logo, name & theme",
-          "Quick deployment with pre-built modules",
-          "Admin control over users, providers, and content",
-          "Cost-effective and scalable structure"
+          "Fully branded customer app, provider app, and admin dashboard",
+          "All core modules included: booking, tracking, payments, ratings, notifications",
+          "Quick customization: add your brand assets, service categories, and pricing",
+          "Deployed to Google Play and App Store under your developer account"
         ]
       },
       {
-        "title": "Home Services App Maintenance and Support Services",
-        "description": "We don’t just build home service apps—we help you keep them running smoothly. Our home services app maintenance and support makesure your best home service booking app stays bug-free, secure, and up-to-date with new features and OS upgrades.",
+        "title": "Home Service App Maintenance & Support",
+        "description": "We don't disappear after go-live. Our project includes a 90-day post-launch warranty with bug fixes at no additional cost, followed by optional monthly maintenance retainers. Our support covers OS-level compatibility updates (new iOS/Android releases), payment gateway API changes, performance monitoring, and new feature rollouts.",
         "features": [
-          "Regular updates and performance checks",
-          "Fast bug fixes and issue resolution",
-          "24/7 technical support",
-          "Feature upgrades and compatibility fixes"
+          "Average critical bug response SLA: 4 hours",
+          "Monthly performance reports with load time, crash rate, and booking funnel metrics",
+          "Dedicated project manager remains your single point of contact post-launch"
         ]
       }
     ]
-},
-"AboutSection": {
+  },
+  "AboutSection": {
     "title": "About Company",
-    "heading": "Why Businesses Are Embracing on demand Home Service Apps for Success",
-    "description1": "In today’s fast-growing world, people want quick and reliable home service at their fingertips via an app. Businesses are taking advantage of the growing demand for home services. And develop an on-demand home service app. According to research, the global home services market is projected to hit USD 1.13 trillion by 2026, driven by digital convenience, rising smartphone usage, and the popularity of on-demand home services app solutions.",
-    "description2": "Comfygen Technologies is a top-notch home service app development agency. We are a preferred choice for startups, entrepreneurs, and SMEs that want to grow their profits.",
+    "heading": "Why 2026–2027 Is the Best Time to Build a Home Service App",
+    "description1": "The global on-demand home services market is projected to reach <a target='_blank' rel='nofollow' href='https://straitsresearch.com/report/online-on-demand-home-services-market' class='text-blue-600 font-semibold'>USD 19.65 billion by 2033</a>,  growing at a compound annual growth rate (CAGR) of 16.04% one of the fastest-growing segments in the app economy. A separate forecast by Growth Insights estimates the home services app market alone will surpass USD 9.70 billion by 2035.",
+    "description2": "Three structural forces are driving this growth permanently, not cyclically:",
+    "description3": "<b>Dual-income households</b>: More than 60% of urban households now have two working adults (McKinsey, 2024), leaving little time for home maintenance. Convenience spending on home services rises with income.",
+    "description4": "<b>Smartphone penetration in emerging markets</b>: India, Southeast Asia, and the Middle East are adding 100M+ new smartphone users annually, the exact markets where Urban Company and similar platforms are expanding. These users skip web-based booking entirely and go straight to apps.",
+    "description5": "<b>Post-pandemic hygiene standards</b>: Demand for professional cleaning, sanitization, and home maintenance services is structurally higher than pre-2020 levels and is not expected to revert.",
     "imageSrc": "https://www.comfygen.com/comfygen-images/home-services-app-development/about.webp",
     "link": "/about-us",
     "linkText": "Explore More",
-    "points": [
-      "80% of users prefer booking home services online.",
-      "Save up to 40% on admin and operational costs by automating tasks.",
-      "Real-time service tracking improves transparency and customer trust."
-    ]
-},
+    "points": []
+  },
   "trendingData": [
     {
       "name": "clutch",
@@ -110,119 +108,79 @@
       "alt": "top developer"
     }
   ],
-"EmergingData": {
-    "heading": "On-Demand Home Services App Solution Models We Serve",
-    "description": "At Comfygen Technologies, we build smooth, reliable home service apps for any kind of service business. Whether you focus on one niche or manage a full network of service providers, we shape the app around your workflow.",
+  "EmergingData": {
+    "heading": "Scalable Home Service App Development to Increase Revenue & Business Growth",
+    "description": "Choosing the right business model is the most important architecture decision for a home service app. We have experience building all four primary models:",
     "Emerging": [
       {
         "num": "1",
         "title": "Single Service Aggregator",
-        "decs": "This model is suitable for businesses that offer a single service, such as home cleaning, beauty, or plumbing. The app lets users book, pay, and track services easily."
+        "decs": "Built for businesses that dominate one niche home cleaning, beauty, or plumbing. Give your customers a slick, end-to-end experience without the clutter of options they don't need. Book in seconds, pay instantly, and track your provider live all from one dedicated app."
       },
       {
         "num": "2",
         "title": "Multi-Service Aggregator",
-        "decs": "This is for businesses that offer many services in one home service mobile app — like electricians, AC repair, pest control, etc. Customers can choose and book any service they need."
+        "decs": "Turn your app into the go-to home services marketplace. From AC repair and electrical work to pest control and painting let customers find, compare, and book anything they need in seconds. Scale your provider network, automate payouts, and grow revenue across every category."
       },
       {
         "num": "3",
         "title": "Home Services Business",
-        "decs": "If you have your own team and run a full home service company, we provide a white-label home services App to manage your staff, bookings, payments, and locations — all from one place."
-      },
-      {
-        "num": "4",
-        "title": "Hyperlocal Marketplace Model",
-        "decs": "This model connects users with nearby service professionals based on location. It helps customers find the closest available expert while giving local providers more visibility and faster job requests."
+        "decs": "Running your own crew? Get a fully white-labeled command center built around your operations. Manage staff schedules, assign jobs automatically, handle payments, and oversee multiple locations all from one powerful platform under your brand name."
       }
     ]
-},
-"cardData3": {
-    "heading": "Complete Home Services App Development Solutions for Every Business Need",
-    "subtitle": "We are a leading custom home services app development company. We create easy-to-use home service apps that help businesses serve their customers better. Our on-demand home services app development solutions cover many services like cleaning, repairs, beauty, and moving. With our apps, users can book quickly, track services in real-time, and make smooth payments.",
+  },
+  "cardData3": {
+    "heading": "All-in-One Home Services App Development Solutions for Growing Businesses",
+    "subtitle": "Build a powerful, scalable home service app tailored to your business needs. From booking management and real-time tracking to secure payments and admin control, we create complete digital solutions that help service businesses grow faster and serve customers better.",
     "tech": [
       {
         "num": "01",
-        "title": "House Cleaning App Development",
-        "desc": "Launch an app that allows users to book professional cleaners instantly, schedule services, track real-time status, and make secure payments — all from their mobile phones."
+        "title": "Carpenter Services",
+        "desc": "Build custom carpenter service apps that allow users to book furniture repair, woodwork installation, assembly services, and custom carpentry work with easy scheduling and secure payments."
       },
       {
         "num": "02",
-        "title": "Handyman Services App Development",
-        "desc": "Develop a feature-rich app that connects users with trusted handymen for repairs, installations, and maintenance with instant booking, service history, and location tracking."
+        "title": "Beauty Services",
+        "desc": "Create feature-rich beauty service apps for salon appointments, at-home beauty services, stylist bookings, package management, and seamless online payment integration."
       },
       {
         "num": "03",
-        "title": "Electrician Service App Development",
-        "desc": "Build an on-demand electrician booking app where users can schedule repairs, installations, and safety checks with ease and track their technician in real time."
+        "title": "Child Care Services",
+        "desc": "Develop secure childcare service apps with caregiver profiles, availability management, instant booking, parent communication, emergency contact features, and trusted review systems."
       },
       {
         "num": "04",
-        "title": "Plumber Booking App Development",
-        "desc": "Offer a plumber booking app for fast leak fixes, pipeline repairs, and installation services with user reviews, service tracking, and instant payment options."
+        "title": "Home Improvement Services",
+        "desc": "Launch home improvement apps for renovation, repair, remodeling, interior upgrades, project scheduling, cost estimates, and real-time service progress tracking."
       },
       {
         "num": "05",
-        "title": "Home Painting Services App",
-        "desc": "Let users book home or wall painting services with a visual estimator, color preview options, and flexible scheduling—all through an intuitive mobile interface."
+        "title": "Handyman Services",
+        "desc": "Build handyman service apps that connect users with trusted professionals for repairs, installations, maintenance tasks, quick bookings, and real-time service management."
       },
       {
         "num": "06",
-        "title": "Appliance Repair App Development",
-        "desc": "Create an app for quick appliance repair bookings for ACs, refrigerators, washing machines, and more with technician tracking, job history, and payment integration."
+        "title": "Plumbing Services",
+        "desc": "Create plumbing service apps with emergency booking options, live technician tracking, appointment scheduling, repair history, instant support, and secure payment processing."
       },
       {
         "num": "07",
-        "title": "Laundry Service App Development",
-        "desc": "Develop an app for doorstep laundry pickup and delivery with order tracking, subscription options, and multiple payment modes for a hassle-free experience."
+        "title": "Cleaning Services",
+        "desc": "Develop cleaning service apps for home and office cleaning with recurring bookings, flexible scheduling, cleaner management, service tracking, and hassle-free online payments."
       },
       {
         "num": "08",
-        "title": "Car Wash Service App",
-        "desc": "Build a car wash app offering door-to-door cleaning services with real-time status updates, package selection, and online payments for convenience."
+        "title": "Electrical Services",
+        "desc": "Build electrician service apps for appliance repair, wiring services, electrical maintenance, technician assignment, instant bookings, and live appointment tracking."
       },
       {
         "num": "09",
-        "title": "Carpentry Services App",
-        "desc": "Launch an app that lets users book professional carpenters for repairs, furniture assembly, or custom jobs with upfront pricing and booking calendar."
-      },
-      {
-        "num": "10",
-        "title": "Pest Control Services App",
-        "desc": "Provide users with an app to book pest inspection and treatment with certified professionals, complete with service tracking and booking reminders."
-      },
-      {
-        "num": "11",
-        "title": "Salon & Spa Services App",
-        "desc": "We provide a salon app development to book beauty and wellness services at home with stylist profiles, package deals, live tracking, and payment gateway integration."
-      },
-      {
-        "num": "12",
-        "title": "Home Shifting & Packers Movers App",
-        "desc": "Design an app for secure home shifting and moving services with inventory management, vehicle tracking, insurance, and doorstep pickup and delivery."
-      },
-      {
-        "num": "13",
-        "title": "Gardening Service App Development",
-        "desc": "Build an app for booking garden care, plant maintenance, and landscaping professionals with instant quotes, scheduling, and service updates."
-      },
-      {
-        "num": "14",
-        "title": "Child Care Services",
-        "desc": "Offer a home service booking app to find trusted babysitters or daycare providers with verified profiles, availability slots, emergency contact features, and reviews."
-      },
-      {
-        "num": "15",
-        "title": "Home Improvement Services",
-        "desc": "Create an app for home upgrades, flooring, remodeling, or interior design with service comparison, scheduling tools, and real-time updates."
-      },
-      {
-        "num": "16",
-        "title": "Grocery Service App",
-        "desc": "Our team provides the best grocery delivery app development with product search, smart filters, order scheduling, and doorstep delivery with secure payments and real-time tracking."
+        "title": "Painting Services",
+        "desc": "Launch painting service apps with quote requests, color consultation booking, project scheduling, painter management, service updates, and smooth customer communication features."
       }
     ]
-},
-"PortfolioData": {
+  },
+  "PortfolioData": {
     "heading": "Explore Our Home Services App Development Portfolio",
     "description": "Take a look at some of the powerful home services apps we've developed at Comfygen Technologies. From real-time service booking to advanced tracking features, our home services apps are designed to deliver a seamless and satisfying user experience across industries. Explore how we’ve helped businesses scale with our on-demand home services app development solutions.",
     "portfolio": [
@@ -245,8 +203,8 @@
         "link": "https://www.comfygen.com/contact-us"
       }
     ]
-},
-"FeaturesData": {
+  },
+  "FeaturesData": {
     "heading": "Our User-Friendly Key Features of the On-Demand Home Services App Development",
     "description": "At Comfygen Technologies, we develop powerful, easy-to-use home service app panels tailored to all user types. Whether you’re a customer, service provider, admin, or vendor, we create feature-rich panels to manage and grow your business smoothly.",
     "grid": "4",
@@ -257,7 +215,11 @@
         "icon": "<i className='fas fa-user text-4xl'></i>",
         "img": "https://www.comfygen.com/comfygen-images/home-services-app-development/customer2.webp",
         "additionalDetails": [
-          { "details": "Easy service booking", "emoji": "", "content": "" },
+          {
+            "details": "Easy service booking",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Real-time service tracking",
             "emoji": "",
@@ -268,14 +230,26 @@
             "emoji": "",
             "content": ""
           },
-          { "details": "Secure online payments", "emoji": "", "content": "" },
-          { "details": "Ratings and reviews", "emoji": "", "content": "" },
+          {
+            "details": "Secure online payments",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Ratings and reviews",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Order history & rebooking",
             "emoji": "",
             "content": ""
           },
-          { "details": "Notifications & alerts", "emoji": "", "content": "" }
+          {
+            "details": "Notifications & alerts",
+            "emoji": "",
+            "content": ""
+          }
         ]
       },
       {
@@ -289,7 +263,11 @@
             "emoji": "",
             "content": ""
           },
-          { "details": "View daily job schedule", "emoji": "", "content": "" },
+          {
+            "details": "View daily job schedule",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "In-app navigation & route details",
             "emoji": "",
@@ -300,8 +278,16 @@
             "emoji": "",
             "content": ""
           },
-          { "details": "Real-time status updates", "emoji": "", "content": "" },
-          { "details": "Chat with users", "emoji": "", "content": "" },
+          {
+            "details": "Real-time status updates",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Chat with users",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Availability toggle (on/off duty)",
             "emoji": "",
@@ -330,13 +316,21 @@
             "emoji": "",
             "content": ""
           },
-          { "details": "View customer feedback", "emoji": "", "content": "" },
+          {
+            "details": "View customer feedback",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Inventory & availability tracking",
             "emoji": "",
             "content": ""
           },
-          { "details": "Performance insights", "emoji": "", "content": "" },
+          {
+            "details": "Performance insights",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Subscription or commission setup",
             "emoji": "",
@@ -355,8 +349,16 @@
             "emoji": "",
             "content": ""
           },
-          { "details": "Add/edit/delete services", "emoji": "", "content": "" },
-          { "details": "Track bookings & revenue", "emoji": "", "content": "" },
+          {
+            "details": "Add/edit/delete services",
+            "emoji": "",
+            "content": ""
+          },
+          {
+            "details": "Track bookings & revenue",
+            "emoji": "",
+            "content": ""
+          },
           {
             "details": "Approve/verify service providers",
             "emoji": "",
@@ -380,49 +382,150 @@
         ]
       }
     ]
-},
-"ProcessData": {
-    "heading": "Our Proven Home Services App Development Process",
-    "description": "Comfygen Technologies is a top-rated home services app development company that creates powerful, scalable, and user-friendly apps for the home services industry. With our expertise in home service app development, we help businesses connect with customers more efficiently, boost bookings, and grow revenue.",
+  },
+  "ServiceFlow": [
+    {
+      "id": "customer",
+      "label": "Customer",
+      "icon": "👤",
+      "color": "bg-[#DDF5EC] text-[#0D9F6E]",
+      "line": "from-[#BDE7D8] to-[#E7E7E7]",
+      "steps": [
+        {
+          "step": "STEP 01",
+          "title": "Browse Services",
+          "description": "Find trusted professionals based on category and location.",
+          "icon": "🏠"
+        },
+        {
+          "step": "STEP 02",
+          "title": "Book Instantly",
+          "description": "Choose your preferred date and time for quick booking.",
+          "icon": "📅"
+        },
+        {
+          "step": "STEP 03",
+          "title": "Track Provider",
+          "description": "Track the service provider live until they reach you.",
+          "icon": "📍"
+        },
+        {
+          "step": "STEP 04",
+          "title": "Pay Securely",
+          "description": "Complete payment safely with multiple payment options.",
+          "icon": "💳"
+        }
+      ]
+    },
+    {
+      "id": "provider",
+      "label": "Service Provider",
+      "icon": "🧰",
+      "color": "bg-[#DDF5EC] text-[#0D9F6E]",
+      "line": "from-[#BDE7D8] via-[#E7E7E7] to-[#F8E6D7]",
+      "steps": [
+        {
+          "step": "STEP 01",
+          "title": "Register & Verify",
+          "description": "Submit profile, skills, and documents for KYC approval.",
+          "icon": "✅"
+        },
+        {
+          "step": "STEP 02",
+          "title": "Receive Jobs",
+          "description": "Get notified of nearby requests — accept or decline instantly.",
+          "icon": "🔔"
+        },
+        {
+          "step": "STEP 03",
+          "title": "Complete Service",
+          "description": "Navigate to the location, deliver the service, and mark the job as completed.",
+          "icon": "🛠️"
+        },
+        {
+          "step": "STEP 04",
+          "title": "Earn & Withdraw",
+          "description": "Track earnings in your wallet, withdraw anytime.",
+          "icon": "💰"
+        }
+      ]
+    },
+    {
+      "id": "admin",
+      "label": "Admin",
+      "icon": "🛡️",
+      "color": "bg-[#FDEDDC] text-[#E67E22]",
+      "line": "from-[#FDEDDC] to-[#E7E7E7]",
+      "steps": [
+        {
+          "step": "STEP 01",
+          "title": "Manage Users",
+          "description": "Approve providers, manage customers, and control user roles easily.",
+          "icon": "👥"
+        },
+        {
+          "step": "STEP 02",
+          "title": "Monitor Bookings",
+          "description": "Track live, upcoming, and completed bookings in real time.",
+          "icon": "📋"
+        },
+        {
+          "step": "STEP 03",
+          "title": "Configure Services",
+          "description": "Set pricing, service categories, availability, and special offers.",
+          "icon": "💳"
+        },
+        {
+          "step": "STEP 04",
+          "title": "Track Revenue",
+          "description": "Analyze earnings, payouts, and business performance from one dashboard.",
+          "icon": "📊"
+        }
+      ]
+    }
+  ],
+  "ProcessData": {
+    "heading": "Our Home Service App Development Process - Step by Step",
+    "description": "Comfygen Technologies is the best home services app development company that creates powerful, scalable, and user-friendly apps for the home services industry. With our expertise in home service app development, we help businesses connect with customers more efficiently, boost bookings, and grow revenue.",
     "Process": [
       {
         "num": "01",
-        "title": "Requirement Analysis",
-        "description": "We start by understanding your business goals, target customers, and service model. This helps us create a home services app development plan that meets your needs today and supports growth in the future."
+        "title": "Discovery & Scoping",
+        "description": "Free 60-minute consultation. We document your business model, target services, geography, competitor analysis, and tech preferences."
       },
       {
         "num": "02",
-        "title": "UI/UX Designing",
-        "description": "Our UI/UX designers create clean, attractive, and mobile-friendly layouts. We focus on easy navigation and smooth booking flow so users can quickly find and book services."
+        "title": "UI/UX Design",
+        "description": "Our designers create high-fidelity Figma prototypes for the customer app, provider app, and admin dashboard. You review and approve before a single line of code is written. Includes 2 revision rounds."
       },
       {
         "num": "03",
-        "title": "App Development",
-        "description": "Our expert developers build secure, fast, and feature-rich home service booking apps using the latest technologies. We add features like real-time tracking, multi-service support, and secure payment gateways for both Android and iOS."
+        "title": "Backend Architecture",
+        "description": "We set up the server infrastructure, database schema, and API design. Technology choices are locked in: typically Node.js or Python backend, PostgreSQL/MongoDB database, AWS or GCP hosting."
       },
       {
         "num": "04",
-        "title": "QA & Testing",
-        "description": "We thoroughly test your home services app for speed, security, and compatibility. Our team ensures it works perfectly on all devices without any bugs."
+        "title": "App Development",
+        "description": "Parallel development of customer app (React Native or Flutter), provider app, and admin dashboard. Weekly demo calls so you see progress and no surprises at the end."
       },
       {
         "num": "05",
-        "title": "Deployment",
-        "description": "Once ready, we launch your app on Google Play and the App Store. We ensure a smooth rollout with full functionality across devices."
+        "title": "QA & Testing",
+        "description": "Functional testing, performance testing, security audit, and real-device testing across 30+ iOS and Android devices. Load testing to 10,000 concurrent users minimum."
       },
       {
         "num": "06",
-        "title": "Post-Launch Optimization",
-        "description": "After launch, we track performance, gather feedback, and make improvements so your app can grow and keep users engaged."
+        "title": "Launch & Submission",
+        "description": "We handle Google Play and App Store submission, review responses, and go-live support. Your dedicated PM is available daily during this phase."
       },
       {
         "num": "07",
-        "title": "Support & Maintenance",
-        "description": "As a reliable home services app development agency, we provide ongoing updates, bug fixes, performance checks, and security enhancements, so your business keeps running without issues."
+        "title": "Post-Launch Support",
+        "description": "Weekly performance reports. Feature requests handled on a prioritized backlog. On-call support for critical issues with 4-hour SLA."
       }
     ]
-},
-"Tabs": [
+  },
+  "Tabs": [
     "Frontend",
     "Backend",
     "Database",
@@ -430,8 +533,8 @@
     "Cloud/DevOps",
     "Payments",
     "Security"
-],
-"TechstackData": {
+  ],
+  "TechstackData": {
     "heading": "Technology Stack We Use in Home Service Booking App Development",
     "description": "At Comfygen Technologies, we use powerful and reliable technologies to develop high-performance home service booking apps. Our tech stack ensures your app is fast, secure, scalable, and future-ready — whether it's built for Android, iOS, or both.",
     "TechItems": {
@@ -680,9 +783,8 @@
         }
       ]
     }
-},
-
-"pageData": {
+  },
+  "pageData": {
     "title": "Why Comfygen is the Best Choice for Home Services App Development",
     "description": "Choosing the right partner for your on-demand home services mobile app development can make all the difference. At Comfygen Technologies, we deliver scalable, feature-rich, and future-ready app solutions designed to help your service business grow.",
     "mainCardData": {
@@ -690,41 +792,40 @@
       "title": "Optimum Outcome Focused",
       "description": "Our developers are focused to bring optimum outcomes through our competitive web and app."
     },
-"gridData": [
-    {
-      "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
-      "title": "Expert Developers with Proven On-Demand App Experience",
-      "description": "Our team has deep experience in on-demand home services app development, building successful mobile applications for cleaning, plumbing, beauty, and more—designed for performance, reliability, and customer satisfaction."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Fully Customizable and Scalable App Solutions",
-      "description": "We offer custom home services app development solutions tailored to your business model, service categories, and branding — with flexible architecture to grow as your user base expands."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Seamless UI/UX Tailored for Home Service Workflows",
-      "description": "We design clean, easy-to-use interfaces specifically for home service booking app users, ensuring a smooth experience for customers, providers, and admins across all devices."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
-      "title": "Post-Launch Support and Maintenance",
-      "description": "After launch, we continue to provide maintenance and support for home services apps, fixing bugs, optimizing performance, and adding new features to help your app stay competitive."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
-      "title": "Fast Development with On-Time Delivery",
-      "description": "Using agile methods, we ensure your home services mobile app development project is delivered quickly without sacrificing quality — so you can launch and start earning sooner."
-    },
-    {
-      "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
-      "title": "Secure Payment & Real-Time Features Built In",
-      "description": "Our apps include secure payment gateway integration and real-time booking features like live tracking, status updates, and instant notifications — all designed to improve the user experience and build trust."
-    }
-  ]
-
-},
-"HireDeveloper": {
+    "gridData": [
+      {
+        "iconUrl": "https://www.comfygen.com/image/optimum-outcome-focused-icon.svg",
+        "title": "Expert Developers with Proven On-Demand App Experience",
+        "description": "Our team has deep experience in on-demand home services app development, building successful mobile applications for cleaning, plumbing, beauty, and more—designed for performance, reliability, and customer satisfaction."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Fully Customizable and Scalable App Solutions",
+        "description": "We offer custom home services app development solutions tailored to your business model, service categories, and branding — with flexible architecture to grow as your user base expands."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Seamless UI/UX Tailored for Home Service Workflows",
+        "description": "We design clean, easy-to-use interfaces specifically for home service booking app users, ensuring a smooth experience for customers, providers, and admins across all devices."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
+        "title": "Post-Launch Support and Maintenance",
+        "description": "After launch, we continue to provide maintenance and support for home services apps, fixing bugs, optimizing performance, and adding new features to help your app stay competitive."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/experienced-techies-icon.svg",
+        "title": "Fast Development with On-Time Delivery",
+        "description": "Using agile methods, we ensure your home services mobile app development project is delivered quickly without sacrificing quality — so you can launch and start earning sooner."
+      },
+      {
+        "iconUrl": "https://www.comfygen.com/image/cutting-edge-technologies-icon.svg",
+        "title": "Secure Payment & Real-Time Features Built In",
+        "description": "Our apps include secure payment gateway integration and real-time booking features like live tracking, status updates, and instant notifications — all designed to improve the user experience and build trust."
+      }
+    ]
+  },
+  "HireDeveloper": {
     "heading": "Hire the Best Home Services App Developer",
     "text": "Want to build a powerful and easy-to-use Uber-like app for home services? Hire skilled <a class='text-blue-500 font-semibold' href='https://www.comfygen.com/hire-mobile-app-developer'>home services app developers</a> from Comfygen Technologies to bring your idea to life. We build your own home services apps for cleaning, plumbing, beauty, handyman and more — with features like online booking, real-time tracking, and secure payments. We deliver next-gen home service apps that grow with your business.",
     "buttonText": "Hire Developer",
@@ -737,8 +838,8 @@
       "Expert in booking, tracking, and payment features",
       "Fast delivery with full support after launch"
     ]
-},
-"ReviewData": {
+  },
+  "ReviewData": {
     "heading": "What Our Clients Say",
     "description": "",
     "Review": [
@@ -831,41 +932,40 @@
         "image": "/Google - Original.png"
       }
     ]
-},
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a home services app?",
-    "desc": "The cost of a home services app development depends on its features, complexity, platforms (iOS/Android), and design. On average, it can range from $8,000 to $30,000 or more. Contact us for a custom quote based on your exact needs."
   },
-  {
-    "num": "2",
-    "title": "How long does it take to build a home service app?",
-    "desc": "Home services app development timelines vary depending on features and requirements. A basic home service app may take 4–6 weeks, while a fully customized one with advanced modules may take 10–12 weeks. We ensure fast, on-time delivery."
-  },
-  {
-    "num": "3",
-    "title": "Why is investing in home service app development worthy?",
-    "desc": "Investing in a home services app helps automate bookings, boost customer satisfaction, and grow your business online. It offers real-time service management, improves brand visibility, and creates recurring revenue with minimal operational hassle."
-  },
-  {
-    "num": "4",
-    "title": "Can I customize the features of my app?",
-    "desc": "Yes, absolutely. We offer fully customizable home services app development. You can choose the features, design, and flow to match your business model. Everything is tailored to your brand and customer needs."
-  },
-  {
-    "num": "5",
-    "title": "Will you provide white-label home service app solutions?",
-    "desc": "Yes, we offer 100% white-label home services app solutions. Your app will have your own logo, colors, and branding. It’s ready for quick launch with your identity — perfect for startups and businesses."
-  },
-  {
-    "num": "6",
-    "title": "Do you offer support after the app launch?",
-    "desc": "Yes, we provide full post-launch support. Our mobile app development team makesure your app stays updated, secure, and bug-free. We offer ongoing maintenance, feature upgrades, and technical support to help your business grow."
-  }
-],
- "jsonLdData": [
-
+  "Frequently": [
+    {
+      "num": "1",
+      "title": "How much does it cost to develop a home services app?",
+      "desc": "The cost of a home services app development depends on its features, complexity, platforms (iOS/Android), and design. On average, it can range from $8,000 to $30,000 or more. Contact us for a custom quote based on your exact needs."
+    },
+    {
+      "num": "2",
+      "title": "How long does it take to build a home service app?",
+      "desc": "Home services app development timelines vary depending on features and requirements. A basic home service app may take 4–6 weeks, while a fully customized one with advanced modules may take 10–12 weeks. We ensure fast, on-time delivery."
+    },
+    {
+      "num": "3",
+      "title": "Why is investing in home service app development worthy?",
+      "desc": "Investing in a home services app helps automate bookings, boost customer satisfaction, and grow your business online. It offers real-time service management, improves brand visibility, and creates recurring revenue with minimal operational hassle."
+    },
+    {
+      "num": "4",
+      "title": "Can I customize the features of my app?",
+      "desc": "Yes, absolutely. We offer fully customizable home services app development. You can choose the features, design, and flow to match your business model. Everything is tailored to your brand and customer needs."
+    },
+    {
+      "num": "5",
+      "title": "Will you provide white-label home service app solutions?",
+      "desc": "Yes, we offer 100% white-label home services app solutions. Your app will have your own logo, colors, and branding. It’s ready for quick launch with your identity — perfect for startups and businesses."
+    },
+    {
+      "num": "6",
+      "title": "Do you offer support after the app launch?",
+      "desc": "Yes, we provide full post-launch support. Our mobile app development team makesure your app stays updated, secure, and bug-free. We offer ongoing maintenance, feature upgrades, and technical support to help your business grow."
+    }
+  ],
+  "jsonLdData": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -875,8 +975,7 @@
         "name": "Comfygen Technologies",
         "url": "https://www.comfygen.com/"
       },
-      "description":
-        "Comfygen offers scalable home services app development for startups and enterprises. Build your own app for cleaning, repair, salon, or handyman services with custom features and real-time updates.",
+      "description": "Comfygen offers scalable home services app development for startups and enterprises. Build your own app for cleaning, repair, salon, or handyman services with custom features and real-time updates.",
       "url": "https://www.comfygen.com/home-service-app-development",
       "mainEntityOfPage": "https://www.comfygen.com/home-service-app-development",
       "areaServed": "Global",
@@ -890,7 +989,6 @@
         "Laundry Service App Development",
         "Child Care Services"
       ],
-
       "sameAs": [
         "https://www.facebook.com/comfygen.technologies",
         "https://x.com/Comfygen_Tech",
@@ -898,8 +996,6 @@
         "https://www.linkedin.com/company/comfygen-technologies"
       ]
     },
-
-
     {
       "@context": "https://schema.org/",
       "@type": "BreadcrumbList",
@@ -918,7 +1014,6 @@
         }
       ]
     },
-
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -974,6 +1069,4 @@
       ]
     }
   ]
-
-  
 }

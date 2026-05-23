@@ -55,10 +55,10 @@ const isLandingPage = landingPages.includes(pathname);
       </header> */}
 
       {/* ✅ FIXED CONTENT SHIFT */}
-      <main className={`pt-[11px] w-full ${isLandingPage ? "max-w-full" : "max-w-[1600px] mx-auto"
+      <main className={`pt-[11px] w-full ${isLandingPage ? "max-w-full" : "max-w-[1600px] mx-auto overflow-hidden"
         }`}>
 
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
           {children}
         </div>
 

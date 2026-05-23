@@ -2,49 +2,24 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./index.json";
-import { Suspense } from "react";
-// import HeroSectionforHome from "../components/HeroSectionforHome"
 import HeroSectionNewCls from "../components/HeroSectionNewCls"
 const ServicesComponet = dynamic(() => import("../components/ServicesSection/ServicesComponet"),
   { ssr: true },
 );
 
-/* ===================================================
-   SKELETON LOADER
-=================================================== */
-
-const SectionSkeleton = ({ height = "300px" }) => {
-  return (
-    <div
-      className="w-full rounded-2xl bg-gray-200 animate-pulse"
-      style={{ height }}
-    />
-  );
-};
-
 import AboutComponent from "../components/Abouts/AboutComponent"
-
-
 const PortfolioSection = dynamic(() => import("../components/PortfolioSection"),
   { ssr: true }
 );
 
-
-
 import CallToActionSection from "../components/CallToActionSection"
-
 import ProcesSection from "../components/ProcesSection"
-
-
 const TechStacks = dynamic(() => import("../components/TechStacks"),
   { ssr: true }
 );
-
 import WhyChooseSection from "../components/WhyChooseSection"
 import IndustryGrid from "../components/IndustryGrid";
 import Trending from "../components/Trending";
-
-
 
 const ClientStories = dynamic(() => import("../components/ClientStories"),
   { ssr: true }
@@ -163,33 +138,18 @@ export default function Home(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      </Suspense>
-
-      <Suspense fallback={<SectionSkeleton height="250px" />}>
-        <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
-      </Suspense>
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
       <IndustryGrid />
       <Trending trendingData={JSON_DATA.trendingData} heading="Top-Rated App Development Company Recognized by Global Platforms" />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
-      </Suspense>
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <ClientStories />
-      </Suspense>
+      <ClientStories />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <ReviewCard testimonials={JSON_DATA.ReviewData} />
-      </Suspense>
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <FaqSection faqData={JSON_DATA.Frequently} />
-      </Suspense>
-      <Suspense fallback={<SectionSkeleton height="500px" />} >
-        <BlogSection initialData={initialData} />
-      </Suspense>
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
 
 

@@ -17,7 +17,7 @@ export default function ContactLinks() {
           >
             <div className={`${styles.socialbtn} bg-white`}>
 
-              <Image src="/WhatsApp.webp" alt="Whatsapp" width={38} height={38} className="text-[#03A84E] bg-transparent rounded-full" />
+              <Image src="/WhatsApp.webp" alt="Whatsapp" width={38} height={38} className="text-[#03A84E] bg-transparent rounded-full z-20" />
               {/* <span>
                 <MdOutlineWhatsapp className="text-[#03A84E]" size={38} />
               </span> */}
@@ -46,7 +46,7 @@ export default function ContactLinks() {
             className="curser-pointer"
           >
             <div className={`${styles.socialbtn} bg-white`}>
-              <Image src="/Telegram.webp" alt="Telegram" width={38} height={38} className="text-[#33A8DA] bg-transparent rounded-full" />
+              <Image src="/Telegram.webp" alt="Telegram" width={38} height={38} className="text-[#33A8DA] bg-transparent rounded-full z-20" />
               {/* <span>
                 <FaTelegram size={38} className="text-[#33A8DA]" />
               </span> */}
