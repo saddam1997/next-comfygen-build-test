@@ -100,7 +100,7 @@ export default function PharmaAppBanner({ Data }) {
                             </p>
 
                             {/* Store Buttons */}
-                            <div className="mt-6 flex flex-wrap gap-2 sm:gap-4">
+                            <div className="mt-6 flex flex-wrap gap-2 sm:gap-2">
                                 {Data?.banner?.card?.storeButtons.map((button: any, index: any) => (
                                     <Link
                                         key={index}
@@ -114,7 +114,7 @@ export default function PharmaAppBanner({ Data }) {
                                             alt={button.name}
                                             width={18}
                                             height={18}
-                                            className="h-4 w-4 object-contain"
+                                            className="lg:h-4 lg:w-4 h-6 w-6 object-contain"
                                         />
                                         <span>{button.name}</span>
                                     </Link>
