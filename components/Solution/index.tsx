@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import HeadingTwo from "../ui/HeadingTwo";
+import Link from "next/link";
+import { Button } from "../ui/Button";
 
 const Solution = ({ techData }) => {
   const [showAll, setShowAll] = useState(false);
@@ -55,6 +57,18 @@ const Solution = ({ techData }) => {
                       ))}
                     </ul>
                   )}
+
+                 <div className=" text-blue-600 text-sm mt-4">
+                   {item.buttonText && (
+                    <Link
+                      href={item.buttonLInk}
+                      className=" text-blue-600 text-sm mt-4"
+                    >
+                    {item.buttonText}
+                    </Link>
+                  )}
+                 </div>
+
                 </div>
               );
             })}

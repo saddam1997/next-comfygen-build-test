@@ -7,7 +7,7 @@
         "title": {
             "start": "India's Trusted",
             "highlight": "Grocery Delivery App",
-            "end": "Development Company — 150+ Apps Delivered"
+            "end": "Development Company - 150+ Apps Delivered"
         },
         "description": "Build a BigBasket, Blinkit or Zepto-style grocery app. iOS + Android + Vendor Panel + Delivery Partner App + Admin Dashboard — all included.",
         "pills": [
@@ -20,7 +20,7 @@
         "trustStats": [
             {
                 "value": "150+",
-                "label": "Food apps built"
+                "label": "apps built"
             },
             {
                 "value": "30+",
@@ -339,7 +339,7 @@
                 "id": 2,
                 "feature": "100% Source Code Ownership",
                 "comfygen": {
-                    "text": "",
+                    "text": "✓ Yes",
                     "highlight": true
                 },
                 "freelance": {
@@ -379,7 +379,7 @@
                 "id": 4,
                 "feature": "Launch in 2–4 Weeks",
                 "comfygen": {
-                    "text": "",
+                    "text": "✓ Yes",
                     "highlight": true
                 },
                 "freelance": {
@@ -419,7 +419,7 @@
                 "id": 6,
                 "feature": "India Payment Gateways",
                 "comfygen": {
-                    "text": "",
+                    "text": "✓ Yes",
                     "highlight": true
                 },
                 "freelance": {
@@ -459,7 +459,7 @@
                 "id": 8,
                 "feature": "App Store Deployment",
                 "comfygen": {
-                    "text": "",
+                    "text": "✓ Yes",
                     "highlight": true
                 },
                 "freelance": {

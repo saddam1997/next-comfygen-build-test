@@ -4,9 +4,11 @@ import dynamic from "next/dynamic";
 import JSON_DATA from "./home-service-app-development.json";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 import TechStacks from "../../components/TechStacks";
+import Demand from "../../components/Demand"
 const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"),
   { ssr: true, },
 );
+import ServiceFlow from "../../components/ServiceFlow"
 
 import ReviewCard from "../../components/ReviewCard";
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"),
@@ -171,10 +173,12 @@ export default function ClinicalApp(props: any) {
       <Trending trendingData={JSON_DATA.trendingData}
         heading="Top-Rated App Development Company Recognized by Global Platforms"
       />
-      <Emerging emerging={JSON_DATA.EmergingData} />
+      <Demand emerging={JSON_DATA.EmergingData} />
+      {/* <Emerging emerging={JSON_DATA.EmergingData} /> */}
       <Solution techData={JSON_DATA.cardData3} />
       <PortfolioSection Portfoliodata={JSON_DATA.PortfolioData} />
       <Features featuresData={JSON_DATA.FeaturesData} />
+      <ServiceFlow tabs={JSON_DATA.ServiceFlow} />
       <ProcesSection ProcessData={JSON_DATA.ProcessData} />
       <TechStacks
         TabData={JSON_DATA.Tabs}
@@ -182,9 +186,9 @@ export default function ClinicalApp(props: any) {
         Default={JSON_DATA.Tabs[0]}
       />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
-       <IndustryGrid />
+      <IndustryGrid />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
-       <ClientStories />
+      <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />

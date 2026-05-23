@@ -2,7 +2,7 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/healthCare.json";
-
+import Trending from "../../components/Trending";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -17,22 +17,21 @@ const Solution = dynamic(() => import("../../components/Solution"), {
   ssr: true,
 });
 
-
-const Features = dynamic(() => import("../../components/Features"), {
-  ssr: true,
-});
-
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
+
+import Portfolionew from "../../components/Portfolionew"
 
 const ReviewCard = dynamic(() => import("../../components/ReviewCard"), {
   ssr: true,
 });
 
-const PortfolioSection = dynamic(() => import("../../components/PortfolioSection"), {
-  ssr: true,
-});
+const ClientStories = dynamic(() => import("../../components/ClientStories"),
+  { ssr: true }
+);
+
+import FeaturesNewSection from "../../components/FeaturesNewSection"
 
 import TechStacks from "../../components/TechStacks";
 
@@ -65,8 +64,8 @@ export default function Mobile(props: any) {
   return (
     <>
       <Head>
-        <title>Best Healthcare Mobile App Development Company in India | Comfygen</title>
-        <meta name="description" content="Comfygen is a leading healthcare mobile app development company in India, delivering secure, scalable telemedicine, EHR, and AI healthcare solutions." />
+        <title>Healthcare App Development Company | HIPAA-Compliant | Comfygen</title>
+        <meta name="description" content="Comfygen is a HIPAA-compliant healthcare app development company offering custom medical app development, telemedicine, EHR & AI healthcare solutions. Hire dedicated healthcare app developers." />
 
         <meta name="keywords" content="Healthcare App Development, Medical App Development Company, HIPAA Compliant Healthcare App, Telemedicine App Development, Custom Healthcare App Development, AI Healthcare Solutions, Hospital Management App, HealthTech App Developers, Medical Software Development, Healthcare App Consultation Services, Remote Patient Monitoring App Development, Healthcare CRM App Development, EHR & EMR App Development, Doctor Appointment App Development, Pharmacy App Development, Fitness App Development" />
 
@@ -103,7 +102,7 @@ export default function Mobile(props: any) {
 
         {/* <!-- SEO Meta --> */}
         <meta name="googlebot" content="all" />
-        <meta name="revisit-after" content="3 days" />
+        
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         <meta name="coverage" content="Worldwide" />
@@ -115,7 +114,10 @@ export default function Mobile(props: any) {
         <meta name="geo.region" content="CA" />
         <meta name="geo.region" content="GB" />
         <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="DE" />
+        {/* <meta name="geo.region" content="DE" /> */}
+
+        <meta name="geo.region" content="IN" data-next-head=""/> 
+
 
         {/* <!-- Open Graph (OG) Tag --> */}
         <meta name='og:type' content='website' />
@@ -135,8 +137,8 @@ export default function Mobile(props: any) {
 
         {/* <!-- Twitter Card Tags -->  */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Custom Healthcare App Development Services | HIPAA-Compliant Medical Apps" />
-        <meta name="twitter:description" content="Partner with Comfygen Technologies for cutting-edge healthcare app development. We create HIPAA-compliant, AI-powered, and scalable medical apps tailored for hospitals, doctors, and startups." />
+        <meta name="twitter:title" content="Healthcare App Development Company | HIPAA-Compliant | Comfygen" />
+        <meta name="twitter:description" content="Comfygen is a HIPAA-compliant healthcare app development company offering custom medical app development, telemedicine, EHR & AI healthcare solutions. Hire dedicated healthcare app developers." />
         <meta name="twitter:image" content="https://www.comfygen.com/comfygen-images/healthcare-app-development/healthcare-app-development.webp" />
         <meta name="twitter:site" content="@Comfygen_Tech" />
 
@@ -147,8 +149,8 @@ export default function Mobile(props: any) {
         <meta property="og:image:secure_url" content="https://www.comfygen.com/comfygen-images/healthcare-app-development/healthcare-app-development.webp" />
         <meta property="og:image:alt" content="Healthcare App Development" />
         <meta property="og:url" content="https://www.comfygen.com/healthcare-app-development" />
-        <meta property="og:title" content="Revolutionize Healthcare with Comfygen’s Custom Medical App Development Solutions" />
-        <meta property="og:description" content="Build next-gen healthcare apps with Comfygen Technologies. From telemedicine to AI-driven diagnostics, we develop secure, scalable, and HIPAA-compliant healthcare applications for your business success." />
+        <meta property="og:title" content="Healthcare App Development Company | HIPAA-Compliant | Comfygen" />
+        <meta property="og:description" content="Comfygen is a HIPAA-compliant healthcare app development company offering custom medical app development, telemedicine, EHR & AI healthcare solutions. Hire dedicated healthcare app developers." />
 
         <script
           type="application/ld+json"
@@ -159,15 +161,17 @@ export default function Mobile(props: any) {
       <HeroSectionNewCls Data={JSON_DATA.Herosection} />
       <ServicesComponet servicesData={JSON_DATA.ServicesData} />
       <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Trending trendingData={JSON_DATA.trendingData} heading="Top-Rated App Development Company Recognized by Global Platforms" />
       <Solution techData={JSON_DATA.Trading} />
-      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
-      <Features featuresData={JSON_DATA.FeaturesData} />
       <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Portfolionew Data={JSON_DATA.Portfolio} />
+      <FeaturesNewSection FData={JSON_DATA.FData} />
       <Solution techData={JSON_DATA.FutureDrivenData} />
-      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
       <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
       <WhyChooseSection pageData={JSON_DATA.pageData} />
       <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ClientStories />
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
