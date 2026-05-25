@@ -1,0 +1,221 @@
+/* HeroSection.module.css */
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #1a1a4f;
+
+  /* CLS + smooth rendering */
+  contain: layout style paint;
+}
+
+/* Background Wrapper */
+/* .bgWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+} */
+
+.bgWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  /* performance */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Background Image */
+/* .bgImage {
+  object-fit: cover;
+  object-position: center;
+} */
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 35, 0.62);
+  z-index: 2;
+}
+
+/* Main Container */
+.container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 20px;
+}
+
+/* Content */
+.content {
+  max-width: 720px;
+  width: 100%;
+}
+
+/* Heading */
+.heading {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  /* Better font rendering */
+  text-wrap: balance;
+}
+
+/* Paragraph */
+.description {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Button Area */
+.clientWrapper {
+  min-height: 52px;
+  margin-top: 32px;
+
+  /* Prevent CLS */
+  display: flex;
+  align-items: center;
+}
+
+/* Stats Area */
+.statsWrapper {
+  min-height: 90px;
+  margin-top: 28px;
+
+  /* Prevent CLS */
+  display: flex;
+  align-items: center;
+}
+
+/* ========================= */
+/* Large Desktop */
+/* ========================= */
+@media (max-width: 1200px) {
+  .heroSection {
+    min-height: 680px;
+  }
+
+  .container {
+    padding-left: 60px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+@media (max-width: 992px) {
+  .heroSection {
+    min-height: 620px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .bgWrapper {
+    display: none;
+  }
+
+  .overlay {
+    background: none;
+  }
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+   .statsWrapper {
+    /* margin-top: 22px; */
+    display: none;
+  }
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+@media (max-width: 576px) {
+  .heroSection {
+    /* min-height: auto; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .description {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .clientWrapper {
+    margin-top: 24px;
+  }
+
+  .statsWrapper {
+    /* margin-top: 22px; */
+    display: none;
+  }
+}
+
+/* ========================= */
+/* Accessibility */
+/* ========================= */
+@media (prefers-reduced-motion: reduce) {
+  .heroSection *,
+  .heroSection *::before,
+  .heroSection *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
