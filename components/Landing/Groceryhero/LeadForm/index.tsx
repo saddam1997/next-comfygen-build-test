@@ -133,8 +133,7 @@ export default function LeadForm({ Apptype, lead }:any) {
       console.log(result, "Response");
 
       if (result?.code === 0) {
-        alert('Thank you! Our team will reach out within 4 hours.');
-
+        // alert('Thank you! Our team will reach out within 4 hours.');
         setFormData({
           name: '',
           email: '',
