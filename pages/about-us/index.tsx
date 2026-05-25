@@ -14,6 +14,7 @@ import Trending from './components/Trending';
 import FaqSection from '../../components/FaqSection';
 import DownloadOverview from './components/DownloadOverview';
 import dynamic from 'next/dynamic';
+import TeamProfile from '../../components/TeamProfile';
 
 export default function about() {
   return (
@@ -58,6 +59,7 @@ export default function about() {
             heading="Awards, Ratings & Recognitions"
           />
         </section>
+        {/* <TeamProfile/> */}
         <ClientStories />
         <LeadershipSection />
         <FaqSection faqData={JSON_DATA.Frequently} />

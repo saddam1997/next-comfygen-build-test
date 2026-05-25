@@ -927,12 +927,12 @@
         {
           "iconUrl": "https://www.comfygen.com/image/cost-effective-deadline-oriented-icon.svg",
           "title": "Agile Development Methodology",
-          "description": "We follow a <a href='https://www.comfygen.com/blog/custom-healthcare-app-development-process/' class='text-blue-500 font-semibold'>healthcare app development process</a> to ensure flexibility, transparency, and faster time-to-market. Regular feedback loops, sprints, and continuous testing guarantee quality and adaptability throughout your healthcare software development journey."
+          "description": "We follow a healthcare app development process to ensure flexibility, transparency, and faster time-to-market. Regular feedback loops, sprints, and continuous testing guarantee quality and adaptability throughout your healthcare software development journey."
         },
         {
           "iconUrl": "https://www.comfygen.com/image/transparency-with-clients-icon.svg",
           "title": "Proven Track Record in Healthcare IT",
-          "description": "With years of experience in healthcare IT and <a href='https://www.comfygen.com/mobile-app-development' class='text-blue-500 font-semibold'>mobile app development</a>, Comfygen has successfully delivered projects for hospitals, telemedicine platforms, fitness startups, and diagnostic centers worldwide — ensuring innovation, compliance, and measurable success."
+          "description": "With years of experience in healthcare IT andmobile app development, Comfygen has successfully delivered projects for hospitals, telemedicine platforms, fitness startups, and diagnostic centers worldwide — ensuring innovation, compliance, and measurable success."
         },
         {
           "iconUrl": "Dedicated Post-Launch Support & Maintenance",
@@ -945,7 +945,7 @@
       "heading": "Hire Dedicated Healthcare App Developers",
       "text": "Looking to hire healthcare app developers who understand medical workflows and compliance? Comfygen offers dedicated healthcare app development teams skilled in HIPAA-compliant architecture, EHR/FHIR integration, and IoT-connected medical devices.",
       "buttonText": "Hire Developer",
-      "buttonLink": "/contact-us",
+      "buttonLink": "https://www.comfygen.com/hire-mobile-app-developer",
       "imageSrc": "https://www.comfygen.com/image/hire-developer-img.webp",
       "imageAlt": "hire-developer",
       "listItems": [
