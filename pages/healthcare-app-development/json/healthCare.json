@@ -269,7 +269,7 @@
         {
           "id": 1,
           "heading": "Patient Panel",
-          "description1": "Patients can seamlessly manage appointments, access digital prescriptions, track health records, and consult doctors online through an intuitive and secure healthcare mobile application.",
+          "description1": "",
           "description2": "",
           "description3": "",
           "description4": "",
@@ -291,7 +291,7 @@
         {
           "id": 2,
           "heading": "Doctor Panel",
-          "description1": "Doctors can efficiently manage appointments, patient records, consultations, prescriptions, and communication through a centralized doctor panel designed for healthcare professionals.",
+          "description1": "",
           "description2": "",
           "description3": "",
           "description4": "",
@@ -313,7 +313,7 @@
         {
           "id": 3,
           "heading": "Admin Panel Features",
-          "description1": "The admin panel provides centralized control over healthcare operations, enabling hospitals and clinics to manage users, appointments, analytics, billing, and compliance efficiently.",
+          "description1": "",
           "description2": "",
           "description3": "",
           "description4": "",
@@ -390,7 +390,7 @@
       "tech": [
         {
           "title": "Artificial Intelligence (AI)",
-          "desc": "We provide the best <a href='https://www.comfygen.com/ai-development' class='text-blue-500 font-semibold'>Artificial Intelligence-powered healthcare app development</a> to enable predictive analysis, automated diagnosis, and smart decision-making—helping doctors deliver faster and more accurate treatments."
+          "desc": "We provide the best <a href='https://www.comfygen.com/ai-development' class='text-blue-500 font-semibold'>Artificial Intelligence</a>-powered healthcare app development to enable predictive analysis, automated diagnosis, and smart decision-making—helping doctors deliver faster and more accurate treatments."
         },
         {
           "title": "Machine Learning (ML)",
@@ -398,7 +398,7 @@
         },
         {
           "title": "Generative AI",
-          "desc": "Comfygen uses <a href='https://www.comfygen.com/generative-ai-development' class='text-blue-500 font-semibold'>Generative AI in healthcare app development</a> to automate report creation, generate medical insights, and enhance virtual consultations—making patient interactions more intuitive and efficient."
+          "desc": "Comfygen uses <a href='https://www.comfygen.com/generative-ai-development' class='text-blue-500 font-semibold'>Generative AI </a>in healthcare app development to automate report creation, generate medical insights, and enhance virtual consultations—making patient interactions more intuitive and efficient."
         },
         {
           "title": "Agentic AI",
@@ -406,11 +406,11 @@
         },
         {
           "title": "Internet of Things (IoT)",
-          "desc": "Our <a href='https://www.comfygen.com/iot-development-company' class='text-blue-500 font-semibold'>IoT-based healthcare app development</a> connects smart medical devices to mobile apps, enabling real-time monitoring of patient vitals, remote diagnostics, and better health management from anywhere."
+          "desc": "Our <a href='https://www.comfygen.com/iot-development-company' class='text-blue-500 font-semibold'>IoT</a>-based healthcare app development connects smart medical devices to mobile apps, enabling real-time monitoring of patient vitals, remote diagnostics, and better health management from anywhere."
         },
         {
           "title": "Blockchain Technology",
-          "desc": "We are a top HIPAA-compliant app development company providing <a href='https://www.comfygen.com/blockchain-development' class='text-blue-500 font-semibold'>Blockchain in healthcare app development</a> to make sure transparent, tamper-proof data exchange between patients, doctors, and institutions—enhancing security, privacy, and trust across the system."
+          "desc": "We are a top HIPAA-compliant app development company providing <a href='https://www.comfygen.com/blockchain-development' class='text-blue-500 font-semibold'>Blockchain</a> in healthcare app development to make sure transparent, tamper-proof data exchange between patients, doctors, and institutions—enhancing security, privacy, and trust across the system."
         },
         {
           "title": "Cloud Computing",
