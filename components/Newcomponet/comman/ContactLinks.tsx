@@ -11,13 +11,15 @@ export default function ContactLinks() {
       <div className=" fixed z-40 lg:top-[350px]  bottom-4 right-0 lg:space-y-8 space-y-0 lg:space-x-0 space-x-4 lg:bg-transparent bg-slate-800 lg:p-0 p-3 rounded-lg lg:block hidden flex justify-center items-center">
         <div className={`${styles.social}`}>
           <a
-            href="https://api.whatsapp.com/send?phone=919587867258"
+            href="https://wa.me/919587867258"
             target="_blank"
             className="curser-pointer"
           >
             <div className={`${styles.socialbtn} bg-white`}>
 
-              <Image src="/WhatsApp.webp" alt="Whatsapp" width={38} height={38} className="text-[#03A84E] bg-transparent rounded-full z-20" />
+              <div>
+                <Image src="/WhatsApp.webp" alt="Whatsapp" width={38} height={38} className="text-[#03A84E] bg-transparent rounded-full z-20" />
+              </div>
               {/* <span>
                 <MdOutlineWhatsapp className="text-[#03A84E]" size={38} />
               </span> */}
@@ -46,7 +48,9 @@ export default function ContactLinks() {
             className="curser-pointer"
           >
             <div className={`${styles.socialbtn} bg-white`}>
-              <Image src="/Telegram.webp" alt="Telegram" width={38} height={38} className="text-[#33A8DA] bg-transparent rounded-full z-20" />
+           <div>
+               <Image src="/Telegram.webp" alt="Telegram" width={38} height={38} className="text-[#33A8DA] bg-transparent rounded-full z-20" />
+           </div>
               {/* <span>
                 <FaTelegram size={38} className="text-[#33A8DA]" />
               </span> */}
