@@ -541,7 +541,8 @@
       "Maps & Routing",
       "Cloud/DevOps",
       "Payments",
-      "AI/ML"
+      "AI/ML",
+      "Compliance APIs"
     ],
     "TechstackData": {
       "heading": "Our Healthcare App Technology Stack",
@@ -820,7 +821,7 @@
             "img": "https://www.comfygen.com/comfygen-images/icons/chatgpt.webp",
             "alt": "OpenAI APIs",
             "name": "OpenAI APIs",
-            "num": "3"
+            "num": "2"
           },
           {
             "img": "https://www.comfygen.com/comfygen-images/icons/pytorch.webp",
@@ -832,7 +833,69 @@
             "img": "https://www.comfygen.com/comfygen-images/icons/Blockchain Technology-1.webp",
             "alt": "PyTorch",
             "name": "PyTorch",
+            "num": "4"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/Google Vertex AI.webp",
+            "alt": "Google Vertex AI",
+            "name": "Google Vertex AI",
+            "num": "5"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/sageMaker.webp",
+            "alt": "AWS SageMaker",
+            "name": "AWS SageMaker",
+            "num": "6"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/nlp.webp",
+            "alt": "NLP (spaCy / BERT)",
+            "name": "NLP (spaCy / BERT)",
+            "num": "7"
+          }
+        ],
+        "Compliance APIs": [
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/FHIR R4 APIs.webp",
+            "alt": "FHIR R4 APIs",
+            "name": "FHIR R4 APIs",
+            "num": "1"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/hl7.webp",
+            "alt": "HL7 Messaging",
+            "name": "HL7 Messaging",
+            "num": "2"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/Epic SMART on FHIR.webp",
+            "alt": "Epic SMART on FHIR",
+            "name": "Epic SMART on FHIR",
             "num": "3"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/Cerner Integration.webp",
+            "alt": "Cerner Integration",
+            "name": "Cerner Integration",
+            "num": "4"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/Twilio.webp",
+            "alt": "Twilio (HIPAA SMS/Video)",
+            "name": "Twilio (HIPAA SMS/Video)",
+            "num": "5"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/paypal-icon.webp",
+            "alt": "Stripe / PayPal (PCI-DSS)",
+            "name": "Stripe / PayPal (PCI-DSS)",
+            "num": "6"
+          },
+          {
+            "img": "https://www.comfygen.com/comfygen-images/icons/Group 2.webp",
+            "alt": "Auth0 (Healthcare SSO)",
+            "name": "Auth0 (Healthcare SSO)",
+            "num": "7"
           }
         ]
       }
@@ -993,58 +1056,58 @@
         }
       ]
     },
-"Frequently": [
-  {
-    "num": "1",
-    "title": "How much does it cost to develop a healthcare app in India?",
-    "desc": "Healthcare app development costs in India typically range from $15,000 to $150,000+, depending on complexity, features, platforms (iOS/Android/web), and integrations (EHR systems, IoT devices, AI modules). A basic telemedicine MVP starts around $15,000–$30,000, a mid-tier appointment and patient management app around $30,000–$70,000, and a full hospital management system or AI-powered platform can exceed $100,000. Comfygen provides detailed fixed-price quotes after a free 30-minute discovery call. Want a detailed breakdown? Read our guide on <a href='https://www.comfygen.com/blog/healthcare-app-development-costs/' class='text-blue-600 underline'>healthcare app development costs</a>."
-  },
-  {
-    "num": "2",
-    "title": "How long does it take to develop a HIPAA-compliant healthcare app?",
-    "desc": "A standard HIPAA-compliant healthcare app takes 12-20 weeks from discovery to deployment. Complex solutions with AI diagnostics, IoT integrations, or multi-panel systems (patient, doctor, admin) typically require 24-36 weeks. Our agile process with bi-weekly sprint reviews means you see working software within the first 4 weeks."
-  },
-  {
-    "num": "3",
-    "title": "What healthcare regulations do your apps comply with?",
-    "desc": "Our healthcare apps comply with HIPAA (USA - all three safeguard categories), GDPR (Europe-data minimization, consent management, right-to-erasure), HL7 v2/v3 and FHIR R4 interoperability standards, DISHA (India's Digital Information Security in Healthcare Act), and ISO 27001 information security practices. Every app undergoes a compliance audit before launch and we provide compliance documentation for your records."
-  },
-  {
-    "num": "4",
-    "title": "Can you integrate AI and machine learning into a healthcare app?",
-    "desc": "Yes. Our AI healthcare solutions include predictive risk scoring, NLP-powered clinical documentation, AI-driven symptom triage chatbots, personalized treatment recommendation engines, and Generative AI for automated medical report creation. We integrate OpenAI GPT-4, TensorFlow, PyTorch, and domain-specific clinical NLP models like BioBERT."
-  },
-  {
-    "num": "5",
-    "title": "What types of healthcare apps does Comfygen develop?",
-    "desc": "We develop telemedicine apps, doctor appointment booking apps, EHR/EMR systems, remote patient monitoring apps, pharmacy & medicine delivery apps, hospital management systems, healthcare CRM platforms, laboratory management apps, fitness & wellness apps, AI diagnostic tools, and blockchain-secured health record systems for iOS, Android, and web."
-  },
-  {
-    "num": "6",
-    "title": "Do you provide post-launch maintenance for healthcare apps?",
-    "desc": "Yes. We offer dedicated post-launch support including 24/7 infrastructure monitoring, security patch management, HIPAA and GDPR compliance updates as regulations change, performance optimization, App Store updates, and feature enhancement sprints. Maintenance retainer plans start from $500/month with a dedicated technical account manager."
-  },
-  {
-    "num": "7",
-    "title": "Can you integrate wearables and IoT medical devices into our app?",
-    "desc": "Absolutely. We integrate Apple HealthKit, Google Fit, Fitbit, Garmin, and custom IoT medical sensors (glucometers, ECG patches, pulse oximeters, continuous glucose monitors) via Bluetooth and proprietary device APIs. All biometric data is transmitted over encrypted channels and stored in HIPAA-compliant cloud infrastructure."
-  },
-  {
-    "num": "8",
-    "title": "Do you sign a Business Associate Agreement (BAA) for HIPAA?",
-    "desc": "Yes. For all US healthcare clients, Comfygen signs a Business Associate Agreement (BAA) as required under HIPAA. Our development, cloud hosting, and third-party service providers (AWS, Azure) are all HIPAA BAA-covered, ensuring your organization's regulatory exposure is fully protected throughout the engagement."
-  },
-  {
-    "num": "9",
-    "title": "How do I hire dedicated healthcare app developers from Comfygen?",
-    "desc": "You can hire dedicated healthcare app developers on hourly, full-time, or project-based models. Share your requirements and we'll match you with a HIPAA-experienced team within days."
-  },
-  {
-    "num": "10",
-    "title": "Do you provide healthcare app development services in the USA and India?",
-    "desc": "Yes. We serve clients in the USA, India, UAE, Germany, Canada, and 30+ countries, ensuring HIPAA, GDPR, and regional compliance."
-  }
-],
+    "Frequently": [
+      {
+        "num": "1",
+        "title": "How much does it cost to develop a healthcare app in India?",
+        "desc": "Healthcare app development costs in India typically range from $15,000 to $150,000+, depending on complexity, features, platforms (iOS/Android/web), and integrations (EHR systems, IoT devices, AI modules). A basic telemedicine MVP starts around $15,000–$30,000, a mid-tier appointment and patient management app around $30,000–$70,000, and a full hospital management system or AI-powered platform can exceed $100,000. Comfygen provides detailed fixed-price quotes after a free 30-minute discovery call. Want a detailed breakdown? Read our guide on <a href='https://www.comfygen.com/blog/healthcare-app-development-costs/' class='text-blue-600 underline'>healthcare app development costs</a>."
+      },
+      {
+        "num": "2",
+        "title": "How long does it take to develop a HIPAA-compliant healthcare app?",
+        "desc": "A standard HIPAA-compliant healthcare app takes 12-20 weeks from discovery to deployment. Complex solutions with AI diagnostics, IoT integrations, or multi-panel systems (patient, doctor, admin) typically require 24-36 weeks. Our agile process with bi-weekly sprint reviews means you see working software within the first 4 weeks."
+      },
+      {
+        "num": "3",
+        "title": "What healthcare regulations do your apps comply with?",
+        "desc": "Our healthcare apps comply with HIPAA (USA - all three safeguard categories), GDPR (Europe-data minimization, consent management, right-to-erasure), HL7 v2/v3 and FHIR R4 interoperability standards, DISHA (India's Digital Information Security in Healthcare Act), and ISO 27001 information security practices. Every app undergoes a compliance audit before launch and we provide compliance documentation for your records."
+      },
+      {
+        "num": "4",
+        "title": "Can you integrate AI and machine learning into a healthcare app?",
+        "desc": "Yes. Our AI healthcare solutions include predictive risk scoring, NLP-powered clinical documentation, AI-driven symptom triage chatbots, personalized treatment recommendation engines, and Generative AI for automated medical report creation. We integrate OpenAI GPT-4, TensorFlow, PyTorch, and domain-specific clinical NLP models like BioBERT."
+      },
+      {
+        "num": "5",
+        "title": "What types of healthcare apps does Comfygen develop?",
+        "desc": "We develop telemedicine apps, doctor appointment booking apps, EHR/EMR systems, remote patient monitoring apps, pharmacy & medicine delivery apps, hospital management systems, healthcare CRM platforms, laboratory management apps, fitness & wellness apps, AI diagnostic tools, and blockchain-secured health record systems for iOS, Android, and web."
+      },
+      {
+        "num": "6",
+        "title": "Do you provide post-launch maintenance for healthcare apps?",
+        "desc": "Yes. We offer dedicated post-launch support including 24/7 infrastructure monitoring, security patch management, HIPAA and GDPR compliance updates as regulations change, performance optimization, App Store updates, and feature enhancement sprints. Maintenance retainer plans start from $500/month with a dedicated technical account manager."
+      },
+      {
+        "num": "7",
+        "title": "Can you integrate wearables and IoT medical devices into our app?",
+        "desc": "Absolutely. We integrate Apple HealthKit, Google Fit, Fitbit, Garmin, and custom IoT medical sensors (glucometers, ECG patches, pulse oximeters, continuous glucose monitors) via Bluetooth and proprietary device APIs. All biometric data is transmitted over encrypted channels and stored in HIPAA-compliant cloud infrastructure."
+      },
+      {
+        "num": "8",
+        "title": "Do you sign a Business Associate Agreement (BAA) for HIPAA?",
+        "desc": "Yes. For all US healthcare clients, Comfygen signs a Business Associate Agreement (BAA) as required under HIPAA. Our development, cloud hosting, and third-party service providers (AWS, Azure) are all HIPAA BAA-covered, ensuring your organization's regulatory exposure is fully protected throughout the engagement."
+      },
+      {
+        "num": "9",
+        "title": "How do I hire dedicated healthcare app developers from Comfygen?",
+        "desc": "You can hire dedicated healthcare app developers on hourly, full-time, or project-based models. Share your requirements and we'll match you with a HIPAA-experienced team within days."
+      },
+      {
+        "num": "10",
+        "title": "Do you provide healthcare app development services in the USA and India?",
+        "desc": "Yes. We serve clients in the USA, India, UAE, Germany, Canada, and 30+ countries, ensuring HIPAA, GDPR, and regional compliance."
+      }
+    ],
     "jsonLdData": [
       {
         "@context": "https://schema.org",
@@ -1102,91 +1165,91 @@
           }
         ]
       },
-     {
-        "@context": "https://schema.org/", 
-        "@type": "FAQPage", 
-        "mainEntity": [{
-          "@type": "Question", 
-          "name": "How much does it cost to develop a healthcare app in India?",
-          "acceptedAnswer": { 
-            "@type": "Answer",
-            "text": "Healthcare app development costs in India typically range from $15,000 to $150,000+, depending on complexity, features, platforms (iOS/Android/web), and integrations (EHR systems, IoT devices, AI modules). A basic telemedicine MVP starts around $15,000–$30,000, a mid-tier appointment and patient management app around $30,000–$70,000, and a full hospital management system or AI-powered platform can exceed $100,000. Comfygen provides detailed fixed-price quotes after a free 30-minute discovery call. Want a detailed breakdown? Read our guide on [healthcare app development costs]."
-          } 
-        },{
-          "@type": "Question", 
-          "name": "How long does it take to develop a HIPAA-compliant healthcare app?",
-          "acceptedAnswer": { 
-            "@type": "Answer",
-            "text": "A standard HIPAA-compliant healthcare app takes 12-20 weeks from discovery to deployment. Complex solutions with AI diagnostics, IoT integrations, or multi-panel systems (patient, doctor, admin) typically require 24-36 weeks. Our agile process with bi-weekly sprint reviews means you see working software within the first 4 weeks."
-          }  
-       
-},{
-"@type": "Question",
-"name": "What healthcare regulations do your apps comply with?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Our healthcare apps comply with HIPAA (USA - all three safeguard categories), GDPR (Europe-data minimization, consent management, right-to-erasure), HL7 v2/v3 and FHIR R4 interoperability standards, DISHA (India's Digital Information Security in Healthcare Act), and ISO 27001 information security practices. Every app undergoes a compliance audit before launch and we provide compliance documentation for your records."
-}
-
-},{
-"@type": "Question",
-"name": "Can you integrate AI and machine learning into a healthcare app?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes. Our AI healthcare solutions include predictive risk scoring, NLP-powered clinical documentation, AI-driven symptom triage chatbots, personalized treatment recommendation engines, and Generative AI for automated medical report creation. We integrate OpenAI GPT-4, TensorFlow, PyTorch, and domain-specific clinical NLP models like BioBERT."
-}
-
-},{
-"@type": "Question",
-"name": "What types of healthcare apps does Comfygen develop?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "We develop telemedicine apps, doctor appointment booking apps, EHR/EMR systems, remote patient monitoring apps, pharmacy & medicine delivery apps, hospital management systems, healthcare CRM platforms, laboratory management apps, fitness & wellness apps, AI diagnostic tools, and blockchain-secured health record systems for iOS, Android, and web."
-}
-
-},{
-"@type": "Question",
-"name": "Do you provide post-launch maintenance for healthcare apps?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes. We offer dedicated post-launch support including 24/7 infrastructure monitoring, security patch management, HIPAA and GDPR compliance updates as regulations change, performance optimization, App Store updates, and feature enhancement sprints. Maintenance retainer plans start from $500/month with a dedicated technical account manager."
-}
-
-},{
-"@type": "Question",
-"name": "Can you integrate wearables and IoT medical devices into our app?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Absolutely. We integrate Apple HealthKit, Google Fit, Fitbit, Garmin, and custom IoT medical sensors (glucometers, ECG patches, pulse oximeters, continuous glucose monitors) via Bluetooth and proprietary device APIs. All biometric data is transmitted over encrypted channels and stored in HIPAA-compliant cloud infrastructure."
-}
-
-},{
-"@type": "Question",
-"name": "Do you sign a Business Associate Agreement (BAA) for HIPAA?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes. For all US healthcare clients, Comfygen signs a Business Associate Agreement (BAA) as required under HIPAA. Our development, cloud hosting, and third-party service providers (AWS, Azure) are all HIPAA BAA-covered, ensuring your organization's regulatory exposure is fully protected throughout the engagement."
-}
-
-},{
-"@type": "Question",
-"name": "How do I hire dedicated healthcare app developers from Comfygen?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "You can hire dedicated healthcare app developers on hourly, full-time, or project-based models. Share your requirements and we'll match you with a HIPAA-experienced team within days."
-}
-
-},{
-"@type": "Question",
-"name": "Do you provide healthcare app development services in the USA and India?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes. We serve clients in the USA, India, UAE, Germany, Canada, and 30+ countries, ensuring HIPAA, GDPR, and regional compliance."
-}
-
-
-        }]
-    }
-
+      {
+        "@context": "https://schema.org/",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does it cost to develop a healthcare app in India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Healthcare app development costs in India typically range from $15,000 to $150,000+, depending on complexity, features, platforms (iOS/Android/web), and integrations (EHR systems, IoT devices, AI modules). A basic telemedicine MVP starts around $15,000–$30,000, a mid-tier appointment and patient management app around $30,000–$70,000, and a full hospital management system or AI-powered platform can exceed $100,000. Comfygen provides detailed fixed-price quotes after a free 30-minute discovery call. Want a detailed breakdown? Read our guide on [healthcare app development costs]."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to develop a HIPAA-compliant healthcare app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard HIPAA-compliant healthcare app takes 12-20 weeks from discovery to deployment. Complex solutions with AI diagnostics, IoT integrations, or multi-panel systems (patient, doctor, admin) typically require 24-36 weeks. Our agile process with bi-weekly sprint reviews means you see working software within the first 4 weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What healthcare regulations do your apps comply with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our healthcare apps comply with HIPAA (USA - all three safeguard categories), GDPR (Europe-data minimization, consent management, right-to-erasure), HL7 v2/v3 and FHIR R4 interoperability standards, DISHA (India's Digital Information Security in Healthcare Act), and ISO 27001 information security practices. Every app undergoes a compliance audit before launch and we provide compliance documentation for your records."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you integrate AI and machine learning into a healthcare app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our AI healthcare solutions include predictive risk scoring, NLP-powered clinical documentation, AI-driven symptom triage chatbots, personalized treatment recommendation engines, and Generative AI for automated medical report creation. We integrate OpenAI GPT-4, TensorFlow, PyTorch, and domain-specific clinical NLP models like BioBERT."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of healthcare apps does Comfygen develop?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We develop telemedicine apps, doctor appointment booking apps, EHR/EMR systems, remote patient monitoring apps, pharmacy & medicine delivery apps, hospital management systems, healthcare CRM platforms, laboratory management apps, fitness & wellness apps, AI diagnostic tools, and blockchain-secured health record systems for iOS, Android, and web."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide post-launch maintenance for healthcare apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We offer dedicated post-launch support including 24/7 infrastructure monitoring, security patch management, HIPAA and GDPR compliance updates as regulations change, performance optimization, App Store updates, and feature enhancement sprints. Maintenance retainer plans start from $500/month with a dedicated technical account manager."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you integrate wearables and IoT medical devices into our app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We integrate Apple HealthKit, Google Fit, Fitbit, Garmin, and custom IoT medical sensors (glucometers, ECG patches, pulse oximeters, continuous glucose monitors) via Bluetooth and proprietary device APIs. All biometric data is transmitted over encrypted channels and stored in HIPAA-compliant cloud infrastructure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you sign a Business Associate Agreement (BAA) for HIPAA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. For all US healthcare clients, Comfygen signs a Business Associate Agreement (BAA) as required under HIPAA. Our development, cloud hosting, and third-party service providers (AWS, Azure) are all HIPAA BAA-covered, ensuring your organization's regulatory exposure is fully protected throughout the engagement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I hire dedicated healthcare app developers from Comfygen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can hire dedicated healthcare app developers on hourly, full-time, or project-based models. Share your requirements and we'll match you with a HIPAA-experienced team within days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide healthcare app development services in the USA and India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We serve clients in the USA, India, UAE, Germany, Canada, and 30+ countries, ensuring HIPAA, GDPR, and regional compliance."
+            }
+          }
+        ]
+      }
     ]
   }

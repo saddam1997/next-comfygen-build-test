@@ -31,7 +31,8 @@ export default function MainLayout({
 
   const landingPages = [
   "/food-delivery-app",
-  "/grocery-delivery-app"
+  "/grocery-delivery-app",
+  "/thank-you"
 
 ];
 const isLandingPage = landingPages.includes(pathname);

@@ -1,9 +1,7 @@
 import React from 'react'
 import JSON_DATA from "./json/grocery.json"
 import Header from '../../components/Landing/Header'
-import TopNavbar from "../../components/Landing/TopNavbar"
-import Hero from '../../components/Landing/Hero'
-import BrandsBar from '../../components/Landing/BrandsBar'
+import Groceryhero from '../../components/Landing/Groceryhero'
 import Deliverables from '../../components/Landing/Deliverables'
 import TrustBar from '../../components/Landing/TrustBar'
 import AppTypes from '../../components/Landing/AppTypes'
@@ -12,7 +10,6 @@ import Steps from '../../components/Landing/Steps'
 import ComparisonTable from '../../components/Landing/ComparisonTable'
 import Testimonials from '../../components/Landing/Testimonials'
 import FAQ from '../../components/Landing/FAQ'
-import CTASection from '../../components/Landing/CTASection'
 import FoodDeliveryUISection from './FoodDeliveryUISection'
 import Footer from '../../components/Landing/Footer'
 import FinalCTA from '../../components/Landing/FinalCTA'
@@ -55,7 +52,7 @@ const index = () => {
       </Head>
       <Header />
       <div className='mt-12'>
-        <Hero pagePath={router.asPath} AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />
+        <Groceryhero pagePath={router.asPath} AppType={JSON_DATA?.AppType} DATA={JSON_DATA.HeroContent} />
       </div>
       <TrustBar DATA={JSON_DATA.reviewed} />
       {/* <BrandsBar DATA={JSON_DATA.BrandBar} /> */}
