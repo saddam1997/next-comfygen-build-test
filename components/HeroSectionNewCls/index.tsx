@@ -28,18 +28,7 @@ export default function HeroSection({ Data }: HeroSectionProps) {
           className={styles.bgImage}
         />
       </div>
-      {/* <div className={styles.bgWrapper}>
-        <Image
-          src={Data.bgImage}
-          alt={Data.imageAlt || "Hero Background"}
-          fill
-          priority
-          fetchPriority="high"
-          quality={85}
-          sizes="100vw"
-          className={styles.bgImage}
-        />
-      </div> */}
+
       {/* Content */}
       <div className={styles.container}>
         <div className={styles.content}>

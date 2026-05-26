@@ -1,57 +1,70 @@
+"use client";
 
-import { company, company1 } from "../navData"
-import { ChevronDown } from 'lucide-react';
-import Image from 'next/image';
+import { company, company1 } from "../navData";
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { Button } from "../../ui/Button";
 
+import styles from "./CompanyMnue.module.css";
 
-const CompanyMnue = ({ showNav, setShowNav, }: any) => {
+interface CompanyMenuProps {
+  showNav: number;
+  setShowNav: (value: number) => void;
+}
+
+const CompanyMenu = ({
+  showNav,
+  setShowNav,
+}: any) => {
   return (
-    <div className="group z-40 ">
+    <div className={styles.companyGroup}>
       <button
         onClick={() => setShowNav(showNav === 5 ? 0 : 5)}
-        className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
+        className={styles.companyButton}
       >
-        <span
-          className={
-            showNav === 5 ? " font-medium " : " font-medium "
-          }
-        >
-          Company
-        </span>
+        <span className={styles.buttonText}>Company</span>
+
         <ChevronDown
-          className="hover:text-black/100 text-black/80"
           size={18}
+          className={`${styles.chevronIcon} ${
+            showNav === 5 ? styles.chevronRotate : ""
+          }`}
         />
       </button>
-      <div className="z-50 w-[95vw] max-w-7xl left-1/2 -translate-x-1/2 absolute top-24 lg:bg-white rounded-2xl shadow-xl border text-gray-700 hidden group-hover:block transition duration-200 origin-top ">
-        {/* <div className="absolute -top-2 2xl:inset-x-[4rem] xl:inset-x-[5rem]   bg-white rotate-45  w-4 h-4">
-                  {" "}
-                </div> */}
-        <div className="2xl:p-10 p-5 mx-auto text-sm">
-          <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
+
+      <div
+        className={`${styles.dropdownContainer} ${
+          showNav === 5 ? styles.showDropdown : ""
+        }`}
+      >
+        <div className={styles.dropdownInner}>
+          <div className={styles.gridContainer}>
+            {/* Left Column */}
             <div>
-              <ul className="text-[18px] font-medium space-y-3">
-                {company.map((elem: any, index: any) => {
-                  const { name, num, img, dec, url } = elem;
+              <ul className={styles.menuList}>
+                {company.map((elem: any, index: number) => {
+                  const { name, img, dec, url } = elem;
+
                   return (
                     <li key={index}>
                       <a
                         href={url}
-
-                        className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                        className={styles.menuItemLink}
                       >
                         <Image
                           src={img}
                           alt={name}
-                          height={40}
                           width={40}
+                          height={40}
+                          className={styles.menuImage}
                         />
-                        <div className="space-y-4 cursor-pointer">
-                          <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+
+                        <div className={styles.menuContent}>
+                          <p className={styles.menuTitle}>
                             {name}
                           </p>
-                          <span className="text-[#212121]/80 text-sm font-normal">
+
+                          <span className={styles.menuDesc}>
                             {dec}
                           </span>
                         </div>
@@ -61,28 +74,33 @@ const CompanyMnue = ({ showNav, setShowNav, }: any) => {
                 })}
               </ul>
             </div>
+
+            {/* Middle Column */}
             <div>
-              <ul className="text-[18px] font-medium space-y-3">
-                {company1.map((elem: any, index: any) => {
-                  const { name, num, img, dec, url } = elem;
+              <ul className={styles.menuList}>
+                {company1.map((elem: any, index: number) => {
+                  const { name, img, dec, url } = elem;
+
                   return (
                     <li key={index}>
                       <a
                         href={url}
-
-                        className="flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
+                        className={styles.menuItemLink}
                       >
                         <Image
                           src={img}
                           alt={name}
-                          height={40}
                           width={40}
+                          height={40}
+                          className={styles.menuImage}
                         />
-                        <div className="space-y-4 cursor-pointer">
-                          <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
+
+                        <div className={styles.menuContent}>
+                          <p className={styles.menuTitle}>
                             {name}
                           </p>
-                          <span className="text-[#212121]/80 text-sm font-normal">
+
+                          <span className={styles.menuDesc}>
                             {dec}
                           </span>
                         </div>
@@ -92,17 +110,30 @@ const CompanyMnue = ({ showNav, setShowNav, }: any) => {
                 })}
               </ul>
             </div>
-            <div>
-              <a href="/contact-us" className="relative">
+
+            {/* Right Column */}
+            <div className={styles.promoColumn}>
+              <a
+                href="/contact-us"
+                className={styles.promoLink}
+              >
                 <Image
                   src="https://www.comfygen.com/image/about-us-header-img.webp"
-                  alt=""
-                  height={486}
+                  alt="Contact Us"
                   width={511}
+                  height={486}
+                  priority={false}
+                  className={styles.promoImage}
                 />
-                <span className="bg-[#fff] absolute bottom-0 right-0 p-5 block justify-end items-center rounded-tl-[50px]">
-                   <Button variant="secondary" radius="full" className=" py-2 text-white rounded-full"> Connect to expert →</Button>
-                 
+
+                <span className={styles.promoButtonWrapper}>
+                  <Button
+                    variant="secondary"
+                    radius="full"
+                    className="py-2 text-white rounded-full"
+                  >
+                    Connect to expert →
+                  </Button>
                 </span>
               </a>
             </div>
@@ -110,7 +141,7 @@ const CompanyMnue = ({ showNav, setShowNav, }: any) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CompanyMnue
+export default CompanyMenu;

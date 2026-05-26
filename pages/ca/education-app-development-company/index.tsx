@@ -1,171 +1,48 @@
-import React, { useEffect, useState } from "react";
 import Head from "next/head";
-
-import JSON_DATA from "./json/applicationConsulting.json";
-import HeroSectionForAllPages from "../../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
 import dynamic from "next/dynamic";
-import Milestones from "../../../components/Newcomponet/comman/Milestones";
+import JSON_DATA from "./json/applicationConsulting.json";
 
-const loader = () => <div className="h-96 bg-gray-100 animate-pulse" />;
+import HeroSectionNewCls from "../../../components/HeroSectionNewCls"
+const ServicesComponet = dynamic(() => import("../../../components/ServicesSection/ServicesComponet"), {
+  ssr: true,
+});
+const AboutComponent = dynamic(() => import("../../../components/Abouts/AboutComponent"), {
+  ssr: true,
+});
+import Solution from "../../../components/Solution";
 
-const AboutSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
+const CallToActionSection = dynamic(() => import("../../../components/CallToActionSection"), {
+  ssr: true,
+});
 
-const ServicesSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
+import Emerging from "../../../components/Emerging";
 
-const SolutionSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/Solution"),
-  { loading: loader, ssr: true }
-);
+import Features from "../../../components/Features";
 
-const Features = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/Features"),
-  { loading: loader, ssr: true }
-);
-
-const ConsultancyApproach = dynamic(
-  () =>
-    import("../../../components/Newcomponet/SectionCompoent/ConsultancyApproach"),
-  { loading: loader, ssr: true }
-);
-
-const TechStack = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-);
-
-const Portfolio = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const WhyChoose = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-);
-
-const HireDeveloper = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-);
-
-const CallToAction = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-const Faq = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/BlogSection"),
+import ReviewCard from "../../../components/ReviewCard";
+const PortfolioSection = dynamic(() => import("../../../components/PortfolioSection"), {
+  ssr: true,
+});
+const ProcesSection = dynamic(() => import("../../../components/ProcesSection"), {
+  ssr: true,
+});
+import TechStacks from "../../../components/TechStacks";
+const WhyChooseSection = dynamic(() => import("../../../components/WhyChooseSection"), {
+  ssr: true,
+});
+const HireSection = dynamic(() => import("../../../components/HireSection"), {
+  ssr: true,
+});
+const FaqSection = dynamic(() => import("../../../components/FaqSection"), {
+  ssr: true,
+});
+const BlogSection = dynamic(() => import("../../../components/BlogSection"),
   { ssr: true }
 );
 
-const ClientTestimonials = dynamic(
-  () => import("../../../components/Newcomponet/SectionCompoent/ClientTestimonials"),
-  { loading: () => <div className="h-96 bg-gray-100 animate-pulse" />, ssr: true }
-);
-
-
-const Process = [
-  {
-    title: "Requirement Analysis & Planning",
-    description:
-      "We understand your business goals, target users, and app requirements to create a clear roadmap for successful best education <a href='https://www.comfygen.com/mobile-app-development ' class='font-semibold underline text-blue-600'>mobile app development</a>.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Our designers create intuitive and engaging <a href='https://www.comfygen.com/web-design  ' class='font-semibold underline text-blue-600'>UI/UX designs</a> that improve usability, accessibility, and learner engagement across all education app platforms.",
-  },
-  {
-    title: "App Architecture & Technology Selection",
-    description:
-      "We choose the right technologies and architecture to ensure your education app is scalable, secure, and future-ready.",
-  },
-  {
-    title: "Education App Development",
-    description:
-      "Our education app developers build high-performance education mobile apps with advanced features like live classes, AI learning, and analytics.",
-  },
-  {
-    title: "Testing & Quality Assurance",
-    description:
-      "We perform rigorous testing to ensure your education app is bug-free, secure, and delivers smooth performance on all devices.",
-  },
-  {
-    title: "Deployment & Launch",
-    description:
-      "After successful testing, we deploy your education app on Android, iOS, or web platforms with full technical support.",
-  },
-  {
-    title: "Maintenance & Support",
-    description:
-      "We provide ongoing maintenance, updates, and performance monitoring to keep your custom education app development solutions optimized and up-to-date.",
-  },
-];
-
-const technologyData = [
-  {
-    img:null,
-    title: "Personalized Learning Engine",
-    desc: "We design AI-based learning engines that analyze learner behavior, pace, and performance to create personalized learning paths, adaptive study plans, and customized course journeys for better academic outcomes.",
-  },
-  {
-    img: null,
-    title: "AI-Based Content Recommendation",
-    desc: "Our AI education app development solutions intelligently recommend courses, videos, quizzes, and study materials based on user interests, progress history, and engagement patterns, ensuring relevant and focused learning.",
-  },
-  {
-    img: null,
-    title: "Smart Assessments & Automated Evaluation",
-    desc: "We integrate AI-driven assessments that automate quizzes, exams, grading, and feedback. These smart systems provide real-time performance insights, reduce manual effort, and enhance evaluation accuracy.",
-  },
-  {
-    img: null,
-    title: "AI Chatbots & Virtual Tutors",
-    desc: "Our AI chatbots and virtual tutors offer 24/7 learning support, instant doubt resolution, course guidance, and interactive assistance—improving student engagement and reducing educator workload.",
-  },
-  {
-    img: null,
-    title: "Predictive Analytics & Learning Insights",
-    desc: "Using predictive analytics in AI-powered education apps, we track learner progress, identify skill gaps, forecast performance, and generate actionable insights that help educators make data-driven decisions.",
-  }
-];
 
 export default function Mobile(props) {
   let { initialData } = props;
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoaded(true);
-    }, 6000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const [cryptoAltcoin, setCryptoAltcoin] = useState<any>(1);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -287,7 +164,7 @@ export default function Mobile(props) {
     <>
       <Head>
         <title>
-           Education App Development Company in Canada | eLearning App Services
+          Education App Development Company in Canada | eLearning App Services
         </title>
         <meta
           name="description"
@@ -338,7 +215,7 @@ export default function Mobile(props) {
         />
         <meta name="author" content="Company Private Limited" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
+
         <meta name="fb:page_id" content="110909321596135" />
         <meta name="og:email" content="sales@comfygen.com" />
         <meta name="og:phone_number" content="+91-958-786-7258" />
@@ -384,188 +261,22 @@ export default function Mobile(props) {
         />
       </Head>
 
-      <div className="overflow-hidden ">
-        <div className="">
-          <HeroSectionForAllPages
-            heading="Award winning Education App Development Company in Canada"
-            ptag="Comfygen is the best education app development company in Canada offering innovative and reliable education app development services to universities, and EdTech startups. Our expert developers build custom eLearning apps with high performance, intuitive design, and advanced features to enhance the digital learning experience. As a leading education aap development company in canada we focus on creating scalable and user-friendly solutions that help institutions increase student engagement, streamline learning management, and grow their EdTech platforms in the competitive digital education market."
-            li="Custom Learning App Solutions"
-            li1="Expert EdTech App Development"
-            li2="Engaging & Interactive Design"
-            li3="Scalable, High-Performance Apps"
+      <HeroSectionNewCls Data={JSON_DATA.Herosection} />
+      <ServicesComponet servicesData={JSON_DATA.ServicesData} />
+      <AboutComponent AboutData={JSON_DATA.AboutSection} />
+      <Solution techData={JSON_DATA.Customized} />
+      <PortfolioSection Portfoliodata={JSON_DATA.Portfoliodata} />
+      <CallToActionSection CallToAction={JSON_DATA.CallToAction} />
+      <Features featuresData={JSON_DATA.featuresData} />
+      <Emerging emerging={JSON_DATA.EmergingData} />
+      <ProcesSection ProcessData={JSON_DATA.NFTProcessData} />
+      <TechStacks TabData={JSON_DATA.Tabs} TechData={JSON_DATA.TechstackData} Default={JSON_DATA.Tabs[0]} />
+      <WhyChooseSection pageData={JSON_DATA.pageData} />
+      <HireSection HireDeveloper={JSON_DATA.HireDeveloper} />
+      <ReviewCard testimonials={JSON_DATA.ReviewData} />
+      <FaqSection faqData={JSON_DATA.Frequently} />
+      <BlogSection initialData={initialData} />
 
-            btnName="Talk With Expert"
-            btnLink="/contact-us"
-            openModal={openModal}
-            talkToExpertModal={talkToExpertModal}
-            setTalkToExpertModal={setTalkToExpertModal}
-            closeModal={closeModal}
-            bgImage="https://www.comfygen.com/herosection/education-app-development-company-hero-img.webp"
-          />
-        </div>
-        <Milestones />
-
-        <section className="lg:py-16 py-10 bg-[#F5F5F9]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-2">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] text-center font-bold">
-                Comprehensive Education App Development Services In Canada for Modern Learning
-              </h2>
-              <p className="text-base text-center font-normal">
-                We deliver end-to-end education app development services designed for schools, universities, EdTech startups, and enterprises. As a reliable education app development company In Canada, we create secure, scalable, and interactive learning applications that enhance digital education. Our elearning app development solutions are built with advanced features, intuitive design, and high performance to improve student engagement, simplify learning management, and support the growth of your EdTech platform in today’s competitive market.
-              </p>
-            </div>
-            <div className="">
-              <ServicesSec servicesData={JSON_DATA.servicesData} />
-            </div>
-          </div>
-        </section>
-
-        <AboutSection
-          title="About Company"
-          heading="Why Invest in Education App Development for Business Growth?"
-          description1="The global education apps market is growing rapidly as learners and institutions shift to mobile-first and personalized learning experiences. The market was valued at over USD 57 billion in 2024 and is expected to grow to nearly USD 300 billion by 2032, driven by rising smartphone use, AI integration, and global demand for flexible learning solutions."
-          description2="Investing in education app development enables schools, EdTech startups, and training providers to scale, boost engagement, and increase revenue while staying ahead in the evolving digital education landscape."
-          points={[
-            "Simplifies online learning and course management",
-            "Improves student engagement and retention",
-            "Enables live classes, analytics, and secure payments",
-            "Drives brand visibility and long-term growth"
-          ]}
-          imageSrc="https://www.comfygen.com/media/education-app-development-company/edu-about-img.webp"
-          link="/about-us"
-          linkText="Explore More"
-        />
-
-        <SolutionSec
-          heading="Build Smart Learning Platforms with Our AI-Powered Education App Development Solution"
-          subheading="As a leading AI education mobile app development company, we create intelligent learning solutions that personalize education, improve student engagement, and enhance teaching efficiency. Our AI-driven apps empower schools, universities, and e-learning platforms to deliver adaptive, interactive, and data-driven learning experiences."
-          techData={technologyData}
-        />
-
-        <section className="py-8">
-          <Portfolio
-            projects={JSON_DATA.portfoliodata}
-            heading="Our Online Education App Development Portfolio"
-            description="We have successfully delivered a wide range of custom education app development solutions tailored for diverse learning needs. Here are some of our top projects that showcase our expertise in education app development services"
-          />
-        </section>
-
-        <CallToAction
-          heading="Build Your Education App with a Trusted Development Partner"
-          text="Turn your education idea into a powerful digital learning platform with our expert EdTech app development services. From concept to launch, we help you build scalable, secure, and future-ready education apps that drive real growth."
-          buttonText="Get in touch now"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/future-of-technology.webp"
-          imageAlt="Get in touch now."
-        />
-
-        {/* <ContactFromCenter /> */}
-        <div className="py-8">
-          <Features
-            heading="Key Features of Our Education Apps"
-            description="Our education app development solutions are designed to deliver seamless learning, teaching, and management experiences. Each panel is crafted to improve engagement, simplify operations, and support scalable digital education platforms."
-            featuresData={JSON_DATA.featuresData}
-            grid={3}
-          />
-        </div>
-
-        <section className="py-10 lg:py-20 mb-8 bg-gradient-to-r from-[#272868] to-[#5556D1]">
-          <div className="2xl:w-10/12 w-10/12 lg:w-11/12 mx-auto">
-            <div className="space-y-4 text-center">
-              <div className="flex flex-col justify-center text-center  mx-auto">
-                <h2 className="py-2 md:text-4xl text-2xl md:font-bold font-semibold md:leading-[3rem] text-[#fff] capitalize lg:w-3/4 mx-auto">
-                  Advanced Technologies We Use in Education App Development
-                </h2>
-                <p className="text-center text-white lg:w-10/12 mx-auto">
-                  We use cutting-edge technologies to build scalable, secure, and future-ready education app development solutions. Our advanced tech stack ensures better learning experiences, high performance, and long-term growth for EdTech startups and institutions.
-                </p>
-              </div>
-              <div className="grid gap-12 pt-8 text-left lg:grid-cols-2 md:grid-cols-2 mt-5">
-                {JSON_DATA.Emerging.map((elem) => {
-                  const { img, title, decs } = elem;
-                  return (
-                    <div key={title} className={` relative`}>
-                      <div
-                        className={` flex justify-start gap-2 place-items-center relative`}
-                      >
-                        {/* <Image
-                                  src={img}
-                                  className="object-cover"
-                                  width={35}
-                                  height={50}
-                                  alt={title}
-                                /> */}
-                        <h3 className="sm:text-2xl text-xl font-bold text-[#fff] text-start">
-                          {title}
-                        </h3>
-                      </div>
-
-                      <div className="mt-3">
-                        <p className="text-white text-start break-words whitespace-normal" dangerouslySetInnerHTML={{ __html: decs }}>
-
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        
-        <section className="bg-[#fff] lg:py-16 py-10">
-          <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-            <div className="text-center">
-              <h2 className="xl:text-4xl text-3xl text-[#212121] font-bold">
-                Our End-to-End Education App Development Process
-              </h2>
-              <p className="text-center text-base text-[#000]">
-                Our education app development process is simple, transparent, and result-driven. We follow a step-by-step approach to build secure, scalable, and user-friendly education apps for schools, EdTech startups, and enterprises.
-              </p>
-            </div>
-            <ProcessSec processSlides={Process} />
-          </div>
-        </section>
-
-        <TechStack
-          title="Tech Stack We Use for Digital Education App Development"
-          description="We use a modern and reliable tech stack for mobile learning solutions to build fast, secure, and scalable learning platforms. Our technology choices ensure smooth performance, seamless user experience, and future-ready education apps across all devices."
-          filterCategory={["crypto"]}
-        />
-
-
-        <WhyChoose
-          title={JSON_DATA.pageData.title}
-          description={JSON_DATA.pageData.description}
-          mainCardData={JSON_DATA.pageData.mainCardData}
-          gridData={JSON_DATA.pageData.gridData}
-        />
-        <HireDeveloper
-          heading="Hire Our Education App Developers"
-          text="Hire skilled <a href='https://www.comfygen.com/hire-mobile-app-developer' class='font-semibold underline'>education app developers</a> who understand real learning needs and deliver secure, scalable, and user-friendly applications. We ensure clear communication, full confidentiality, and complete satisfaction throughout the development process. From school management systems to advanced learning platforms, our team builds education apps that support growth and long-term success."
-          buttonText="Hire Developer"
-          buttonLink="/contact-us"
-          imageSrc="https://www.comfygen.com/image/hire-developer-img.webp"
-          imageAlt="hire-developer"
-          listItems={[
-            "Custom education app development expertise",
-            "Smooth LMS & third-party integrations",
-            "AI, AR & VR powered learning features",
-            "Secure, scalable, future-ready solutions"
-          ]}
-        />
-
-        <ClientTestimonials
-          heading="Testimonials from Our Clients"
-          testimonials={JSON_DATA.customTestimonials}
-        />
-
-        <Faq faqData={JSON_DATA.Frequently} title="Frequently Asked Questions" />
-
-        <BlogSection initialData={initialData} />
-      </div>
     </>
   );
 }

@@ -1,9 +1,7 @@
-import { useState } from "react";
+
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import JSON_DATA from "./json/cryptowhitepaper.json";
-
-import Navbar from "../../components/Navbar";
 import HeroSectionNewCls from "../../components/HeroSectionNewCls"
 
 const ServicesComponet = dynamic(() => import("../../components/ServicesSection/ServicesComponet"), {
@@ -14,15 +12,12 @@ const AboutComponent = dynamic(() => import("../../components/Abouts/AboutCompon
   ssr: true,
 });
 
-import Features from "../../components/Features"
-
 const CallToActionSection = dynamic(() => import("../../components/CallToActionSection"), {
   ssr: true,
 });
 
-import InformationSection from "../../components/InformationSection"
 import ReviewCard from "../../components/ReviewCard";
-import Emerging from "../../components/Emerging";
+
 const Consultancy = dynamic(() => import("../../components/Consultancy"), {
   ssr: true,
 });
@@ -30,9 +25,6 @@ const PortfolioSection = dynamic(() => import("../../components/PortfolioSection
   ssr: true,
 });
 
-const Solution = dynamic(() => import("../../components/Solution"), {
-  ssr: true,
-});
 import TechStacks from "../../components/TechStacks";
 
 const WhyChooseSection = dynamic(() => import("../../components/WhyChooseSection"), {
@@ -59,127 +51,10 @@ const BlogSection = dynamic(
   () => import("../../components/BlogSection"),
   { ssr: true }
 );
-import IndustryGrid from "../../components/IndustryGrid";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import HeroSectionForAllPages from "../../components/Newcomponet/SectionCompoent/HeroSectionForAllPages";
-
-const loader = () => (
-  <div className="h-96 bg-gray-100 animate-pulse" />
-);
-
-const AboutSection = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/AboutSection"),
-  { loading: loader, ssr: true }
-);
-
-const ServicesSec = dynamic(() => import("../../components/Newcomponet/SectionCompoent/ServicesSec"),
-  { loading: loader, ssr: true }
-);
-
-const CallToAction = dynamic(() => import("../../components/Newcomponet/SectionCompoent/CallToAction"),
-  { loading: loader, ssr: true }
-);
-
-
-const Portfolio = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Portfolio"),
-  { loading: loader, ssr: true }
-);
-
-const ProcessSec = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/ProcessSec"),
-  { loading: loader, ssr: true }
-)
-
-const TechStack = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/TechStack"),
-  { loading: loader, ssr: true }
-)
-const WhyChoose = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/WhyChooseUs"),
-  { loading: loader, ssr: true }
-)
-
-const HireDeveloper = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/HireDeveloper"),
-  { loading: loader, ssr: true }
-)
-
-const Faq = dynamic(
-  () => import("../../components/Newcomponet/SectionCompoent/Faq"),
-  { loading: loader, ssr: true }
-)
-
-
-
-import ConsultancyApproach from "../../components/Newcomponet/SectionCompoent/ConsultancyApproach"
-
-
 
 
 export default function MultiChain(props: any) {
   let { initialData } = props;
-  const [talkToExpertModal, setTalkToExpertModal] = useState(false);
-  const openModal = () => {
-    setTalkToExpertModal(true);
-  };
-  const closeModal = () => {
-    setTalkToExpertModal(false);
-  };
 
 
 
