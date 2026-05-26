@@ -1,372 +1,314 @@
-import React from 'react'
-
-import { MobileApp, Ai, BlockchainSer, coin, Healthcare, FullStackDev, Hire } from "../navData"
+// components/ServicesMenu.tsx
+import React, { useState, useEffect } from 'react';
+import { MobileApp, Ai, BlockchainSer, coin, Healthcare, FullStackDev, Hire } from "../navData";
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../../ui/Button';
+import styles from './ServicesMnue.module.css';
 
-const ServicesMnue = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabClick }: any) => {
+const ServicesMenu = ({ setActiveTab, activeTab, showNav, setShowNav, handleTabClick }: any) => {
+    const [isMobile, setIsMobile] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const handleToggle = () => {
+        if (isMobile) {
+            setIsOpen(!isOpen);
+        }
+    };
+
+    const handleMouseEnter = () => {
+        if (!isMobile) {
+            setActiveTab("Tab1");
+        }
+    };
+
     return (
-        <div className=''>
-            <div
-                className="group "
-                onMouseEnter={() => setActiveTab("Tab1")}
+        <div className={`${styles.servicesGroup} ${isOpen ? styles.open : ''}`}>
+            <button
+                onClick={handleToggle}
+                onMouseEnter={handleMouseEnter}
+                className={styles.servicesButton}
             >
-                <button
-                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
-                    className="inline-flex items-center py-8 text-sm border-b-2 border-transparent hover:text-black/100 text-black/80"
-                >
-                    <span
-                        className={showNav === 1 ? "font-medium " : " font-medium "}
-                    >
-                        Services
-                    </span>
-                    <ChevronDown
-                        className="hover:text-black/100 text-black/80"
-                        size={18}
-                    />
-                </button>
-                <div className="z-50 w-[95vw] max-w-7xl left-1/2 -translate-x-1/2 absolute top-24 lg:bg-white rounded-2xl shadow-xl border text-gray-700 hidden group-hover:block transition duration-200 origin-top">
-                    {/* <div className="absolute -top-2 2xl:inset-x-[34rem] xl:inset-x-[33rem] bg-white rotate-45   w-4 h-4"></div> */}
-                    <div className="2xl:p-10 p-5 mx-auto text-sm h-full">
-                        <div className="grid grid-cols-3 2xl:gap-10 gap-[1rem]">
-                            <div className="">
-                                <ul className="">
-                                    <div
-                                        onClick={() => handleTabClick("Tab1")}
-                                        className={
-                                            activeTab === "Tab1"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/mobile-app-development-header-icon.svg"
-                                            alt="mobile-app-development-header-icon"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-2">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                Mobile App Development
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal ">
-                                                Innovative Solutions for Every Platform
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <li
-                                        onClick={() => handleTabClick("Tab7")}
-                                        className={
-                                            activeTab === "Tab7"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/ai-development-icon.svg"
-                                            alt="AI Development"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-4 cursor-pointer">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                AI Development
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                Best AI Development Service
-                                            </span>
-                                        </div>
-                                    </li>
+                <span className={showNav === 1 ? styles.buttonTextActive : styles.buttonText}>
+                    Services
+                </span>
+                <ChevronDown className={`${styles.chevronIcon} ${isOpen ? styles.chevronRotated : ''}`} size={18} />
+            </button>
 
-                                    <li
-                                        onClick={() => handleTabClick("Tab2")}
-                                        className={
-                                            activeTab === "Tab2"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/blockchain-app-dev-header-icon.svg"
-                                            alt="blockchain-app-dev-header-icon.svg"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-4 cursor-pointer">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-            
-                                                Blockchain App Development
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                Secure Blockchain-Based App Solutions
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li
-                                        onClick={() => handleTabClick("Tab3")}
-                                        className={
-                                            activeTab === "Tab3"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/coin-and-tokens-dev-header-icon.svg"
-                                            alt="Coin And Tokens Development"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-4 cursor-pointer">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                Coin And Tokens Development
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                {" "}
-                                                Custom Cryptocurrency Creation Made Easy
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li
-                                        onClick={() => handleTabClick("Tab5")}
-                                        className={
-                                            activeTab === "Tab5"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/full-stack-dev-header-icon.svg"
-                                            alt="Full Stack Development"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-4 cursor-pointer">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                Full Stack Development
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                In-depth End-to-End Development Services
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li
-                                        onClick={() => handleTabClick("Tab6")}
-                                        className={
-                                            activeTab === "Tab6"
-                                                ? "flex items-start gap-2 bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                                : "flex items-start gap-2 hover:bg-[#5556D1]/10 p-2 py-3 rounded-md cursor-pointer"
-                                        }
-                                    >
-                                        <Image
-                                            src="https://www.comfygen.com/image/hire-dedicated-dev-header-icon.svg"
-                                            alt="Hire Dedicated Developers"
-                                            height={40}
-                                            width={40}
-                                        />
-                                        <div className="space-y-4 cursor-pointer">
-                                            <p className="2xl:text-lg xl:text-base font-medium  cursor-pointer text-[#212121]">
-                                                Hire Dedicated Developers
-                                            </p>
-                                            <span className="text-[#212121]/80 text-sm font-normal">
-                                                Skilled Developers for Your Projects
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                            <div className="space-y-10 ">
-                                <div>
-                                    {activeTab === "Tab1" && (
-                                        <div className="text-sm font-medium space-y-2">
-                                            {MobileApp.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <Link
-                                                        key={index}
-                                                        className="py-1.5 block text-black/80 hover:text-[#5556D1] whitespace-nowrap transition duration-200 transform hover:translate-x-4"
-                                                        onClick={() =>
-                                                            setShowNav(showNav === 1 ? 0 : 1)
-                                                        }
-                                                        href={url}
-                                                        passHref={true}
-                                                    >
-                                                        {name}
-                                                    </Link>
-                                                );
-                                            })}
-                                        </div>
-                                    )}
-
-                                    {activeTab === "Tab2" && (
-                                        <ul className="text-sm font-medium space-y-2 ">
-                                            {BlockchainSer.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                    {activeTab === "Tab3" && (
-                                        <ul className="text-sm font-medium space-y-2">
-                                            {coin.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                    {activeTab === "Tab4" && (
-                                        <ul className="text-sm font-medium space-y-2">
-                                            {Healthcare.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-
-                                    {activeTab === "Tab5" && (
-                                        <ul className="text-sm font-medium space-y-2">
-                                            {FullStackDev.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                    {activeTab === "Tab6" && (
-                                        <ul className="text-sm font-medium space-y-2">
-                                            {Hire.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                    {activeTab === "Tab7" && (
-                                        <ul className="text-sm font-medium space-y-2">
-                                            {Ai.map((elem: any, index: any) => {
-                                                const { name, num, url } = elem;
-                                                return (
-                                                    <li
-                                                        key={index}
-                                                        className="  py-1.5 text-black/80 hover:text-blue-500 whitespace-nowrap transition duration-200 transform hover:translate-x-4 "
-                                                    >
-                                                        <Link
-                                                            onClick={() =>
-                                                                setShowNav(showNav === 1 ? 0 : 1)
-                                                            }
-                                                            href={url}
-                                                            passHref={true}
-                                                        >
-                                                            {name}
-                                                        </Link>
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-                                    )}
-                                </div>
-                            </div>
-                            <div>
-                                <a href="/contact-us" className="relative">
+            <div className={`${styles.dropdownContainer} ${isOpen ? styles.dropdownOpen : ''}`}>
+                <div className={styles.dropdownInner}>
+                    <div className={styles.gridContainer}>
+                        {/* Left Column - Main Categories */}
+                        <div className={styles.leftColumn}>
+                            <ul className={styles.categoryList}>
+                                <li
+                                    onClick={() => handleTabClick("Tab1")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab1" ? styles.categoryItemActive : ''}`}
+                                >
                                     <Image
-                                        src="https://www.comfygen.com/image/mobile-app-development-services-img.webp"
-                                        alt=""
-                                        height={475}
-                                        width={452}
-                                        loading="lazy"
-                                        fetchPriority="low"
-                                        className="w-full"
+                                        src="https://www.comfygen.com/image/mobile-app-development-header-icon.svg"
+                                        alt="mobile-app-development-header-icon"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
                                     />
-                                    <span className="bg-[#fff] absolute bottom-0 right-0 p-4 block justify-end items-center rounded-tl-[50px]">
-                                        <Button variant="secondary" radius="full" className=" py-2 text-white rounded-full"> Connect to expert →</Button>
-                                    </span>
-                                </a>
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>Mobile App Development</p>
+                                        <span className={styles.categoryDesc}>Innovative Solutions for Every Platform</span>
+                                    </div>
+                                </li>
+
+                                <li
+                                    onClick={() => handleTabClick("Tab7")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab7" ? styles.categoryItemActive : ''}`}
+                                >
+                                    <Image
+                                        src="https://www.comfygen.com/image/ai-development-icon.svg"
+                                        alt="AI Development"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
+                                    />
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>AI Development</p>
+                                        <span className={styles.categoryDesc}>Best AI Development Service</span>
+                                    </div>
+                                </li>
+
+                                <li
+                                    onClick={() => handleTabClick("Tab2")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab2" ? styles.categoryItemActive : ''}`}
+                                >
+                                    <Image
+                                        src="https://www.comfygen.com/image/blockchain-app-dev-header-icon.svg"
+                                        alt="blockchain-app-dev-header-icon.svg"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
+                                    />
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>Blockchain App Development</p>
+                                        <span className={styles.categoryDesc}>Secure Blockchain-Based App Solutions</span>
+                                    </div>
+                                </li>
+
+                                <li
+                                    onClick={() => handleTabClick("Tab3")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab3" ? styles.categoryItemActive : ''}`}
+                                >
+                                    <Image
+                                        src="https://www.comfygen.com/image/coin-and-tokens-dev-header-icon.svg"
+                                        alt="Coin And Tokens Development"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
+                                    />
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>Coin And Tokens Development</p>
+                                        <span className={styles.categoryDesc}>Custom Cryptocurrency Creation Made Easy</span>
+                                    </div>
+                                </li>
+
+                                <li
+                                    onClick={() => handleTabClick("Tab5")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab5" ? styles.categoryItemActive : ''}`}
+                                >
+                                    <Image
+                                        src="https://www.comfygen.com/image/full-stack-dev-header-icon.svg"
+                                        alt="Full Stack Development"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
+                                    />
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>Full Stack Development</p>
+                                        <span className={styles.categoryDesc}>In-depth End-to-End Development Services</span>
+                                    </div>
+                                </li>
+
+                                <li
+                                    onClick={() => handleTabClick("Tab6")}
+                                    className={`${styles.categoryItem} ${activeTab === "Tab6" ? styles.categoryItemActive : ''}`}
+                                >
+                                    <Image
+                                        src="https://www.comfygen.com/image/hire-dedicated-dev-header-icon.svg"
+                                        alt="Hire Dedicated Developers"
+                                        height={40}
+                                        width={40}
+                                        className={styles.categoryIcon}
+                                        loading="eager"
+                                        priority={false}
+                                    />
+                                    <div className={styles.categoryContent}>
+                                        <p className={styles.categoryTitle}>Hire Dedicated Developers</p>
+                                        <span className={styles.categoryDesc}>Skilled Developers for Your Projects</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Middle Column - Dynamic Links */}
+                        <div className={styles.middleColumn}>
+                            <div>
+                                {activeTab === "Tab1" && (
+                                    <div className={styles.linkList}>
+                                        {MobileApp.map((elem: any, index: any) => (
+                                            <Link
+                                                key={index}
+                                                className={styles.link}
+                                                onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                href={elem.url}
+                                            >
+                                                {elem.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {activeTab === "Tab2" && (
+                                    <ul className={styles.linkList}>
+                                        {BlockchainSer.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {activeTab === "Tab3" && (
+                                    <ul className={styles.linkList}>
+                                        {coin.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {activeTab === "Tab4" && (
+                                    <ul className={styles.linkList}>
+                                        {Healthcare.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {activeTab === "Tab5" && (
+                                    <ul className={styles.linkList}>
+                                        {FullStackDev.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {activeTab === "Tab6" && (
+                                    <ul className={styles.linkList}>
+                                        {Hire.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {activeTab === "Tab7" && (
+                                    <ul className={styles.linkList}>
+                                        {Ai.map((elem: any, index: any) => (
+                                            <li key={index} className={styles.linkItem}>
+                                                <Link
+                                                    onClick={() => setShowNav(showNav === 1 ? 0 : 1)}
+                                                    href={elem.url}
+                                                    className={styles.link}
+                                                >
+                                                    {elem.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
+                        </div>
+
+                        {/* Right Column - Promotional Banner */}
+                        <div className={styles.rightColumn}>
+                            <a href="/contact-us" className={styles.promoLink}>
+                                <Image
+                                    src="https://www.comfygen.com/image/mobile-app-development-services-img.webp"
+                                    alt="Mobile App Development Services"
+                                    height={475}
+                                    width={452}
+                                    className={styles.promoImage}
+                                    loading="lazy"
+                                    priority={false}
+                                />
+                                <span className={styles.promoButtonWrapper}>
+                                    <Button variant="secondary" radius="full" className={styles.promoButton}>
+                                        Connect to expert →
+                                    </Button>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ServicesMnue
+export default ServicesMenu;

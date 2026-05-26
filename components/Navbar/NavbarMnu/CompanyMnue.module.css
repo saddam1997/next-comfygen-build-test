@@ -1,0 +1,341 @@
+/* CompanyMenu.module.css */
+
+.companyGroup {
+  position: relative;
+  z-index: 40;
+}
+
+.companyButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.2s ease;
+}
+
+.companyButton:hover {
+  color: #000;
+}
+
+.buttonText {
+  font-weight: 500;
+}
+
+.chevronIcon {
+  margin-left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.chevronRotate {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+
+.dropdownContainer {
+
+  position: fixed;
+
+  top: 120px;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(1280px, calc(100vw - 32px));
+
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+
+
+  /* position: absolute;
+  top: 4.5rem;
+  left: 50%;
+  transform: translateX(-70%);
+  z-index: 50;
+  width: 95vw;
+  max-width: 80rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease; */
+}
+
+.companyGroup:hover .dropdownContainer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdownInner {
+  padding: 1.25rem;
+  font-size: 0.875rem;
+}
+
+/* Grid */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* List */
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menuItemLink {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.menuItemLink:hover {
+  background: rgba(85, 86, 209, 0.1);
+}
+
+.menuImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menuTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212121;
+  line-height: 1.4;
+}
+
+.menuDesc {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 0.8);
+  line-height: 1.6;
+}
+
+/* Promo */
+
+.promoLink {
+  position: relative;
+  display: block;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.promoImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.promoButtonWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1.25rem;
+  background: #fff;
+  border-top-left-radius: 50px;
+}
+
+/* ========== 1536px ========== */
+
+@media (min-width: 1536px) {
+
+  .dropdownInner {
+    padding: 2.5rem;
+  }
+
+  .gridContainer {
+    gap: 2.5rem;
+  }
+
+  .menuTitle {
+    font-size: 1.125rem;
+  }
+}
+
+/* ========== 1440px ========== */
+
+@media (max-width: 1440px) {
+
+  /* .dropdownContainer {
+    top: 4.8rem;
+    left: 60%;
+    transform: translateX(-68%);
+  } */
+
+}
+
+
+/* ========== 1280px ========== */
+
+@media (max-width: 1280px) {
+
+  .gridContainer {
+    gap: 1rem;
+  }
+}
+
+/* ========== 1024px ========== */
+
+@media (max-width: 1024px) {
+
+  /* .dropdownContainer {
+    top: 4.5rem;
+    left: 10%;
+    transform: translateX(-91%);
+  } */
+
+
+
+  .gridContainer {
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .promoColumn {
+    grid-column: span 1;
+  }
+}
+
+/* ========== 768px ========== */
+
+@media (max-width: 768px) {
+
+  .companyGroup,
+  .dropdownContainer {
+    width: 100%;
+  }
+
+  .companyButton {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .dropdownContainer {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-right: none;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+
+  .showDropdown {
+    display: block;
+  }
+
+  .dropdownInner {
+    padding: 1rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .promoColumn {
+    grid-column: span 1;
+  }
+
+  .menuItemLink {
+    padding: 0.5rem;
+  }
+
+  .promoButtonWrapper {
+    padding: 0.75rem;
+  }
+}
+
+/* ========== 480px ========== */
+
+@media (max-width: 480px) {
+
+  .menuImage {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .menuTitle {
+    font-size: 0.875rem;
+  }
+
+  .menuDesc {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+/* ========== Reduced Motion ========== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .dropdownContainer,
+  .companyButton,
+  .menuItemLink,
+  .chevronIcon {
+    transition: none;
+    position: static;
+  }
+}
+
+/* ========== Print ========== */
+
+@media print {
+
+  .dropdownContainer {
+    display: none;
+  }
+}
+
+/* ========== High Contrast ========== */
+
+@media (prefers-contrast: high) {
+
+  .menuItemLink:hover {
+    outline: 2px solid #5556D1;
+    outline-offset: 2px;
+  }
+}

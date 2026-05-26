@@ -1,0 +1,231 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: #ffffff;
+  will-change: transform;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topBarWrapper {
+  display: none;
+  background: #fff;
+}
+
+.topBar {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.topLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #374151;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.topLink:hover {
+  color: #0152f2;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 208px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+/* =========================
+   DESKTOP MENU
+========================= */
+
+.desktopMenu {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  width: 0%;
+  height: 2px;
+
+  background: #0152f2;
+  border-radius: 999px;
+
+  transition: width 0.25s ease;
+}
+
+.navLink:hover {
+  color: #0152f2;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+.ctaWrapper {
+  display: none;
+  flex-shrink: 0;
+}
+
+.ctaButton {
+  padding: 0.72rem 1.4rem !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+/* =========================
+   MOBILE BUTTON
+========================= */
+
+.mobileToggle {
+  width: 46px;
+  height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.mobileToggle:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   HEADER SPACE
+========================= */
+
+.headerSpace {
+  width: 100%;
+  height: 70px;
+}
+
+/* =========================
+   BREAKPOINTS
+========================= */
+
+@media (min-width: 1024px) {
+  .topBarWrapper {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .logoWrapper {
+    width: 260px;
+    height: 60px;
+  }
+
+  .desktopMenu {
+    display: flex;
+  }
+
+  .mobileToggle {
+    display: none;
+  }
+
+  .headerSpace {
+    height: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ctaWrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 0.9rem;
+  }
+
+  .logoWrapper {
+    width: 180px;
+    height: 38px;
+  }
+
+  .mobileToggle {
+    width: 42px;
+    height: 42px;
+  }
+}

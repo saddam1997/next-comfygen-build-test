@@ -31,36 +31,8 @@ export default function MobileMenu({
                 ))}
 
 
-                {/* 
-                <Link className="pt-5" href="/contact-us" onClick={() => setMenu(false)}>
-                    <Button
-                        variant="secondary"
-                        radius="full"
-                        className="w-full py-3 mt-5 text-white rounded-full"
-                    >
-                        Get a Quote →
-                    </Button>
-                </Link> */}
-
-                {/* CONTACT */}
-
-                {/* <div className="pt-5 border-t space-y-4">
-                    <a
-                        href="mailto:sales@comfygen.com"
-                        className="flex items-center gap-2 text-sm text-gray-700"
-                    >
-                        <Mail size={18} />
-                        sales@comfygen.com
-                    </a>
-
-                    <a
-                        href="https://api.whatsapp.com/send?phone=919587867258"
-                        className="flex items-center gap-2 text-sm text-gray-700"
-                    >
-                        <PhoneMissed size={18} />
-                        +91 9587867258
-                    </a>
-                </div> */}
+             
+               
             </div>
         </div>
     );
