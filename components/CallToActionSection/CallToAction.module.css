@@ -1,0 +1,517 @@
+/* components/CallToAction.module.css */
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.section {
+  background-color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.666667%;
+  background-color: #0C0F18;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* ============================================
+   CONTENT WRAPPER STYLES
+   ============================================ */
+
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 2rem;
+}
+
+/* ============================================
+   TEXT SECTION STYLES
+   ============================================ */
+
+.textSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.buttonWrapper {
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #5556D1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.button:hover .buttonIcon {
+  transform: translateX(4px) translateY(-2px);
+}
+
+/* ============================================
+   IMAGE SECTION STYLES
+   ============================================ */
+
+.imageSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  display: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (640px) */
+@media (min-width: 640px) {
+  .contentWrapper {
+    padding: 1.25rem 2rem;
+  }
+  
+  .button {
+    padding: 0.625rem 2.5rem;
+    font-size: 1.063rem;
+  }
+}
+
+/* Tablet Large (768px) */
+@media (min-width: 768px) {
+  .section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .contentWrapper {
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+  }
+  
+  .image {
+    display: block;
+  }
+  
+  .button {
+    padding: 0.625rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .container {
+    width: 83.333333%;
+  }
+  
+  .contentWrapper {
+    flex-direction: row;
+    padding: 3rem 3.5rem;
+    gap: 2rem;
+  }
+  
+  .textSection {
+    width: 70%;
+  }
+  
+  .imageSection {
+    width: 30%;
+    margin-top: 0;
+  }
+  
+  .buttonWrapper {
+    margin-top: 1.75rem;
+  }
+  
+  .button {
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+  .container {
+    width: 83.333333%;
+  }
+  
+  .contentWrapper {
+    padding: 3rem 3.5rem;
+    gap: 2rem;
+  }
+  
+  .button {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+  .container {
+    width: 80%;
+    max-width: 1400px;
+  }
+  
+  .contentWrapper {
+    padding: 3.5rem 4rem;
+    gap: 2.5rem;
+  }
+  
+  .textSection {
+    width: 70%;
+  }
+  
+  .imageSection {
+    width: 30%;
+  }
+  
+  .button {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+  
+  .buttonIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+  .container {
+    width: 70%;
+    max-width: 1600px;
+  }
+  
+  .contentWrapper {
+    padding: 4rem 5rem;
+    gap: 3rem;
+  }
+  
+  .button {
+    padding: 0.875rem 3.5rem;
+    font-size: 1.375rem;
+  }
+  
+  .buttonIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+/* ============================================
+   MOBILE SPECIFIC BREAKPOINTS
+   ============================================ */
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .section {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .container {
+    width: 95%;
+    border-radius: 20px;
+  }
+  
+  .contentWrapper {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+  }
+  
+  .buttonWrapper {
+    margin-top: 1rem;
+  }
+  
+  .button {
+    padding: 0.375rem 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .buttonIcon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+  .contentWrapper {
+    padding: 0.625rem 0.875rem;
+  }
+  
+  .button {
+    padding: 0.313rem 1.25rem;
+    font-size: 0.813rem;
+  }
+  
+  .buttonIcon {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+/* ============================================
+   HEIGHT-BASED BREAKPOINTS
+   ============================================ */
+
+@media (min-width: 1024px) and (max-height: 700px) {
+  .contentWrapper {
+    padding: 1.5rem 3rem;
+  }
+  
+  .buttonWrapper {
+    margin-top: 1rem;
+  }
+  
+  .button {
+    padding: 0.375rem 2rem;
+    font-size: 0.938rem;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .buttonIcon,
+  .button:hover,
+  .button:hover .buttonIcon {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .section {
+    background: white;
+    padding: 0;
+  }
+  
+  .container {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .button {
+    border: 1px solid #000;
+    color: #000;
+  }
+  
+  .button:hover {
+    background: none;
+    color: #000;
+  }
+  
+  .image {
+    display: block;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .container {
+    background: #000;
+  }
+  
+  .button {
+    border: 2px solid #fff;
+  }
+  
+  .button:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .button:active {
+    background-color: #ffffff;
+    color: #5556D1;
+    transform: scale(0.98);
+  }
+  
+  .button:active .buttonIcon {
+    transform: translateX(4px) translateY(-2px);
+  }
+  
+  .button:hover {
+    transform: none;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ON MOBILE
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .section {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .contentWrapper {
+    flex-direction: row;
+    padding: 0.75rem 1.5rem;
+    gap: 1rem;
+  }
+  
+  .textSection {
+    width: 60%;
+  }
+  
+  .imageSection {
+    width: 40%;
+  }
+  
+  .buttonWrapper {
+    margin-top: 0.5rem;
+  }
+  
+  .button {
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .image {
+    display: block;
+    max-height: 100px;
+    width: auto;
+  }
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.button:focus-visible {
+  outline: 2px solid #5556D1;
+  outline-offset: 2px;
+  border-radius: 9999px;
+}
+
+/* ============================================
+   CSS CONTAINMENT FOR BETTER PERFORMANCE
+   ============================================ */
+
+.container {
+  contain: layout style paint;
+}
+
+.contentWrapper {
+  contain: layout style paint;
+}
+
+/* ============================================
+   LAZY LOADING OPTIMIZATIONS
+   ============================================ */
+
+.image {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 225px;
+}
+
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] .buttonIcon {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .button:hover .buttonIcon {
+  transform: translateX(-4px) translateY(-2px) scaleX(-1);
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  .section {
+    background-color: #ffffff; /* Keep white as per design */
+  }
+}
+
+/* ============================================
+   REDUCED MOTION SPECIFIC
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .buttonIcon {
+    transition-duration: 0.01ms;
+  }
+}

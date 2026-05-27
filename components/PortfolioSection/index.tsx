@@ -1,14 +1,14 @@
+// components/Portfolio.tsx
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 import Slider from "./Slider";
 import SliderWrapper from "./SliderWrapper";
+import styles from './index.module.css';
 
 export default function Portfolio({ Portfoliodata }) {
-
-
   return (
-    <div className="w-full py-5 ">
-      <section className="text-center space-y-2 lg:py-5 py-3 lg:px-16">
+    <div className={styles.container}>
+      <section className={styles.headerSection}>
         <HeadingTwo color="black" text={Portfoliodata?.heading} />
         <ParagraphText color="black" text={Portfoliodata?.description} />
       </section>
@@ -17,5 +17,4 @@ export default function Portfolio({ Portfoliodata }) {
     </div>
   );
 }
-
 

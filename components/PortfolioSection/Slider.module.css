@@ -1,0 +1,450 @@
+/* components/Slider.module.css */
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+  width: 100%;
+}
+
+/* ============================================
+   SLIDER CONTAINER STYLES
+   ============================================ */
+
+.sliderContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sliderContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ============================================
+   SLIDE ITEM STYLES
+   ============================================ */
+
+.slideItem {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* ============================================
+   NAVIGATION BUTTONS STYLES
+   ============================================ */
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.navButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  transition: all 0.2s ease;
+  color: #374151;
+}
+
+.navButton:hover {
+  background-color: #1f2937;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (640px) */
+@media (min-width: 640px) {
+  .slideItem {
+    width: 90%;
+  }
+  
+  .buttonWrapper {
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  
+  .navButton {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet Large (768px) */
+@media (min-width: 768px) {
+  .sliderContainer {
+    gap: 15px;
+  }
+  
+  .slideItem {
+    width: 85%;
+  }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+  .sliderContainer {
+    gap: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .slideItem {
+    width: auto;
+    max-width: 1200px;
+  }
+  
+  .buttonWrapper {
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .navButton {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.375rem;
+  }
+  
+  .navButton:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+  .sliderContainer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+  .sliderContainer {
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 25px;
+  }
+  
+  .buttonWrapper {
+    margin-top: 3rem;
+  }
+  
+  .navButton {
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+  .sliderContainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .slideItem {
+    max-width: 1400px;
+  }
+}
+
+/* ============================================
+   MOBILE SPECIFIC BREAKPOINTS
+   ============================================ */
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .sliderContainer {
+    gap: 8px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .slideItem {
+    width: 95%;
+  }
+  
+  .buttonWrapper {
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .navButton {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+  .sliderContainer {
+    gap: 6px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .slideItem {
+    width: 98%;
+  }
+  
+  .buttonWrapper {
+    gap: 0.625rem;
+    margin-top: 0.875rem;
+  }
+  
+  .navButton {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .sliderContainer {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .navButton:active {
+    background-color: #1f2937;
+    color: white;
+    transform: scale(0.95);
+  }
+  
+  .navButton:hover {
+    transform: none;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .sliderContainer {
+    scroll-behavior: auto;
+  }
+  
+  .slideItem {
+    transition: none;
+  }
+  
+  .navButton {
+    transition: none;
+  }
+  
+  .navButton:hover {
+    transform: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .sliderContainer {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .slideItem {
+    scroll-snap-align: none;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .buttonWrapper {
+    display: none;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .navButton {
+    border: 2px solid #000;
+  }
+  
+  .navButton:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ON MOBILE
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .sliderContainer {
+    gap: 10px;
+  }
+  
+  .slideItem {
+    width: 80%;
+  }
+  
+  .buttonWrapper {
+    margin-top: 0.75rem;
+  }
+  
+  .navButton {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.navButton:focus-visible {
+  outline: 2px solid #5556D1;
+  outline-offset: 2px;
+  border-radius: 9999px;
+}
+
+/* ============================================
+   CSS CONTAINMENT FOR BETTER PERFORMANCE
+   ============================================ */
+
+.container {
+  contain: layout style paint;
+}
+
+.sliderContainer {
+  contain: layout style paint;
+  will-change: scroll-position;
+}
+
+/* ============================================
+   SMOOTH SCROLLING OPTIMIZATIONS
+   ============================================ */
+
+.sliderContainer {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+/* For Webkit browsers - smooth scrolling with momentum */
+.sliderContainer {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* Prevent layout shift during scroll */
+.slideItem {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ============================================
+   LOADING STATE
+   ============================================ */
+
+.sliderContainer.loading {
+  min-height: 400px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sliderContainer.loading {
+    animation: none;
+  }
+}
+
+/* ============================================
+   DRAG SCROLLING OPTIMIZATION
+   ============================================ */
+
+.sliderContainer {
+  cursor: grab;
+  user-select: none;
+}
+
+.sliderContainer:active {
+  cursor: grabbing;
+}
+
+/* Disable grabbing when not needed on desktop */
+@media (min-width: 1024px) {
+  .sliderContainer {
+    cursor: default;
+  }
+}
+
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] .sliderContainer {
+  direction: rtl;
+}
+
+[dir="rtl"] .navButton:first-child::before {
+  content: "→";
+}
+
+[dir="rtl"] .navButton:last-child::before {
+  content: "←";
+}

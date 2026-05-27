@@ -1,20 +1,19 @@
-
+// components/ServicesTabs.tsx
+import React from 'react';
+import styles from './ServicesTabs.module.css';
 
 export default function ServicesTabs({ services, active, setActive }) {
   return (
-    <div className="space-y-2 w-full lg:pr-6 lg:h-[35rem] lg:overflow-y-auto">
-
-      {services.map((service:any, index:any) => {
+    <div className={styles.container}>
+      {services.map((service: any, index: number) => {
         const isActive = active === index;
 
         return (
-          <div key={index}>
+          <div key={index} className={styles.tabWrapper}>
             <button
               onClick={() => setActive(index)}
-              className={`border px-4 py-3 w-full text-left transition ${
-                isActive
-                  ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
-                  : "text-black border-[#00000018] bg-white"
+              className={`${styles.tabButton} ${
+                isActive ? styles.tabButtonActive : styles.tabButtonInactive
               }`}
             >
               {service.title}
@@ -22,35 +21,45 @@ export default function ServicesTabs({ services, active, setActive }) {
 
             {/* MOBILE VIEW */}
             {isActive && (
-              <div className="block lg:hidden bg-gradient-to-r from-[#272868] to-[#5556D1] px-6 py-10 text-white">
-
+              <div className={styles.mobileContent}>
                 {service.subtitle && (
-                  <p dangerouslySetInnerHTML={{ __html: service.subtitle }} />
+                  <p 
+                    className={styles.mobileSubtitle}
+                    dangerouslySetInnerHTML={{ __html: service.subtitle }} 
+                  />
                 )}
 
-                <h3 className="text-2xl font-bold mb-3">
+                <h3 className={styles.mobileTitle}>
                   {service.title}
                 </h3>
 
                 {service.description && (
-                  <p dangerouslySetInnerHTML={{ __html: service.description }} />
+                  <p 
+                    className={styles.mobileDescription}
+                    dangerouslySetInnerHTML={{ __html: service.description }} 
+                  />
                 )}
 
                 {service.description1 && (
-                  <p dangerouslySetInnerHTML={{ __html: service.description1 }} />
+                  <p 
+                    className={styles.mobileDescription1}
+                    dangerouslySetInnerHTML={{ __html: service.description1 }} 
+                  />
                 )}
 
                 {service.features?.length > 0 && (
-                  <ul className="space-y-2 mt-4">
-                    {service.features.map((f:any, i:any) => (
-                      <li key={i} className="flex gap-2">
-                        <div className="w-2 h-2 border border-white rounded-full mt-2" />
-                        <div dangerouslySetInnerHTML={{ __html: f }} />
+                  <ul className={styles.mobileFeaturesList}>
+                    {service.features.map((f: any, i: number) => (
+                      <li key={i} className={styles.mobileFeatureItem}>
+                        <div className={styles.mobileFeatureBullet} />
+                        <div 
+                          className={styles.mobileFeatureText}
+                          dangerouslySetInnerHTML={{ __html: f }} 
+                        />
                       </li>
                     ))}
                   </ul>
                 )}
-
               </div>
             )}
           </div>
@@ -59,6 +68,69 @@ export default function ServicesTabs({ services, active, setActive }) {
     </div>
   );
 }
+
+
+
+
+// export default function ServicesTabs({ services, active, setActive }) {
+//   return (
+//     <div className="space-y-2 w-full lg:pr-6 lg:h-[35rem] lg:overflow-y-auto">
+
+//       {services.map((service:any, index:any) => {
+//         const isActive = active === index;
+
+//         return (
+//           <div key={index}>
+//             <button
+//               onClick={() => setActive(index)}
+//               className={`border px-4 py-3 w-full text-left transition ${
+//                 isActive
+//                   ? "text-[#5556D1] border-[#5556D1] bg-[#5556D1]/10"
+//                   : "text-black border-[#00000018] bg-white"
+//               }`}
+//             >
+//               {service.title}
+//             </button>
+
+//             {/* MOBILE VIEW */}
+//             {isActive && (
+//               <div className="block lg:hidden bg-gradient-to-r from-[#272868] to-[#5556D1] px-6 py-10 text-white">
+
+//                 {service.subtitle && (
+//                   <p dangerouslySetInnerHTML={{ __html: service.subtitle }} />
+//                 )}
+
+//                 <h3 className="text-2xl font-bold mb-3">
+//                   {service.title}
+//                 </h3>
+
+//                 {service.description && (
+//                   <p dangerouslySetInnerHTML={{ __html: service.description }} />
+//                 )}
+
+//                 {service.description1 && (
+//                   <p dangerouslySetInnerHTML={{ __html: service.description1 }} />
+//                 )}
+
+//                 {service.features?.length > 0 && (
+//                   <ul className="space-y-2 mt-4">
+//                     {service.features.map((f:any, i:any) => (
+//                       <li key={i} className="flex gap-2">
+//                         <div className="w-2 h-2 border border-white rounded-full mt-2" />
+//                         <div dangerouslySetInnerHTML={{ __html: f }} />
+//                       </li>
+//                     ))}
+//                   </ul>
+//                 )}
+
+//               </div>
+//             )}
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// }
 
 
 

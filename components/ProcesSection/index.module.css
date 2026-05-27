@@ -1,0 +1,418 @@
+/* components/ProcessComponent.module.css */
+
+/* ============================================
+   WRAPPER STYLES
+   ============================================ */
+
+.wrapper {
+    width: 100%;
+}
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.section {
+    background-color: #ffffff;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 91.666667%;
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* ============================================
+   MOBILE SLIDER STYLES
+   ============================================ */
+/* 
+.mobileSlider {
+  display: block;
+} */
+
+
+
+
+@media (min-width: 640px) {
+    .mobileViewProsess {
+        display: block;
+    }
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (640px) */
+@media (min-width: 640px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Tablet Large (768px) */
+@media (min-width: 768px) {
+    .container {
+        width: 83.333333%;
+    }
+
+    .mobileSlider {
+        display: block;
+    }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+    .section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .container {
+        width: 83.333333%;
+    }
+
+    .header {
+        gap: 1rem;
+    }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+    .container {
+        width: 83.333333%;
+    }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+    .section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1400px;
+    }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+    .container {
+        width: 70%;
+        max-width: 1600px;
+    }
+
+    .section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* ============================================
+   MOBILE SPECIFIC BREAKPOINTS
+   ============================================ */
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        gap: 0.5rem;
+    }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+    .section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .container {
+        width: 91.666667%;
+    }
+
+    .header {
+        gap: 0.375rem;
+    }
+}
+
+/* ============================================
+   DESKTOP HIDE/SHOW (md: breakpoint)
+   ============================================ */
+
+/* Hide mobile slider on tablet and above if needed */
+@media (min-width: 768px) {
+
+    /* Keep visible as per original design */
+    .mobileSlider {
+        display: block;
+    }
+}
+
+/* ============================================
+   HEIGHT-BASED BREAKPOINTS
+   ============================================ */
+
+@media (min-width: 1024px) and (max-height: 700px) {
+    .section {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .header {
+        gap: 0.5rem;
+    }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .section,
+    .container,
+    .header {
+        transition: none;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .section {
+        background: white;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .mobileSlider {
+        display: block;
+    }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+    .section {
+        background: white;
+    }
+
+    .header {
+        border-bottom: 2px solid #000;
+    }
+}
+
+/* ============================================
+   CSS CONTAINMENT FOR BETTER PERFORMANCE
+   ============================================ */
+
+.section {
+    contain: layout style paint;
+}
+
+.container {
+    contain: layout style paint;
+}
+
+/* ============================================
+   LAZY LOADING OPTIMIZATIONS
+   ============================================ */
+
+.mobileSlider {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 400px;
+    display: none;
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.section:focus-within {
+    outline: none;
+}
+
+/* ============================================
+   SLIDER CONTAINER OPTIMIZATIONS
+   ============================================ */
+
+/* Ensure slider has proper spacing */
+.mobileSlider>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Prevent layout shift when slider loads */
+.mobileSlider :global(.slick-slider) {
+    visibility: visible;
+}
+
+/* Optimize slider rendering */
+.mobileSlider :global(.slick-list) {
+    will-change: transform;
+}
+
+/* Ensure slider images are optimized */
+.mobileSlider :global(img) {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================
+   LOADING STATE (Optional)
+   ============================================ */
+
+.mobileSlider.loading {
+    min-height: 300px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 0.5rem;
+    animation: skeletonLoading 1.5s infinite;
+
+}
+
+@keyframes skeletonLoading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mobileSlider.loading {
+        animation: none;
+
+    }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    .mobileSlider {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] .header {
+    direction: rtl;
+}
+
+[dir="rtl"] .container {
+    direction: rtl;
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    .section {
+        background-color: #ffffff;
+        /* Keep white as per design */
+    }
+}
+
+/* ============================================
+   REDUCED MOTION SPECIFIC
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .mobileSlider :global(.slick-slide) {
+        transition: none;
+
+    }
+}
+
+/* ============================================
+   SLIDER RESPONSIVE ENHANCEMENTS
+   ============================================ */
+
+/* Improve slider performance on mobile */
+@media (max-width: 768px) {
+    .mobileSlider {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .mobileSlider{
+        display: block;
+    }
+
+    .mobileSlider :global(.slick-track) {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mobileSlider :global(.slick-slide) {
+        scroll-snap-align: start;
+        width: auto;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================ */
+
+/* Ensure proper focus indicators */
+.mobileSlider :global(.slick-slide:focus-visible) {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+
+}
+
+/* High contrast mode for slider controls */
+@media (prefers-contrast: high) {
+    .mobileSlider :global(.slick-arrow) {
+        background: #000;
+        color: #fff;
+        border: 2px solid #fff;
+
+    }
+}
