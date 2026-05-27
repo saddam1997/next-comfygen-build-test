@@ -1,24 +1,22 @@
+// components/ProcessComponent.tsx
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
 import ProcessSlider from "./ProcessSlider";
+import style from "./index.module.css";
 import styles from "./styles.module.css";
 
 import { parseHTMLString } from "../../lib/parseHTML"
 
-
-
 const ProcessComponent = ({ ProcessData }: any) => {
-    const { heading, description, Process} = ProcessData
+    const { heading, description, Process } = ProcessData;
+
     return (
-        <div className="">
-
-
-            <section className="bg-white lg:py-4 py-10 lg:px-4 xl:px-0">
-                <div className="mx-auto 2xl:w-10/12 xl:w-5/6 w-11/12">
-                    <div className="text-center space-y-3">
-
-                        <HeadingTwo color={"black"} text={heading}/>
-                          <ParagraphText color={"black"} text={description}/>
+        <div className={style.wrapper}>
+            <section className={style.section}>
+                <div className={style.container}>
+                    <div className={style.header}>
+                        <HeadingTwo color={"black"} text={heading} />
+                        <ParagraphText color={"black"} text={description} />
                     </div>
                     <div className={styles.processContent}>
                         <div className={styles.processAnimation}>
@@ -136,21 +134,18 @@ const ProcessComponent = ({ ProcessData }: any) => {
                             </div>
                         </div>
 
-                        {Process && Process.length > 0 ? Process?.map((slide:any, index:any) => (
-                            <div key={index} className={`${styles.processStep} hidden md:block space-y-2`}>
+                        {Process && Process.length > 0 ? Process?.map((slide: any, index: any) => (
+                            <div key={index} className={`${styles.processStep} `}>
                                 <h3 className={styles.processStepTitle}>{slide.title}</h3>
                                 <p className={styles.processStepText}>{parseHTMLString(slide.description)}</p>
                             </div>
                         )) : null}
                     </div>
-                    <div className="md:hidden block">
+                    <div className={style.mobileSlider}>
                         <ProcessSlider slides={Process} />
                     </div>
                 </div>
             </section>
-
-
-
         </div>
     );
 };

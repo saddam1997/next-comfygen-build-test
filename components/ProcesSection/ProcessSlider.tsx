@@ -1,12 +1,14 @@
-// components/ImageSlider.tsx
+// components/ProcessSlider.tsx
 import { useState, useEffect } from "react";
 import HeadingThree from "../ui/HeadingThree";
 import ParagraphText from "../ui/ParagraphText";
+import styles from './ProcessSlider.module.css';
 
 interface SlideContent {
   title: string;
   description: string;
 }
+
 interface ImageSliderProps {
   slides: SlideContent[];
 }
@@ -14,23 +16,28 @@ interface ImageSliderProps {
 const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   if (!slides || slides.length === 0) {
-    return <p>No slides available</p>; // Fallback content for prerendering or empty slides
+    return <p className={styles.fallback}>No slides available</p>;
   }
 
-
-
   const handlePrev = (): void => {
+    if (isAnimating) return;
+    setIsAnimating(true);
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides?.length - 1 : prevIndex - 1
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
     );
+    setTimeout(() => setIsAnimating(false), 300);
   };
 
   const handleNext = (): void => {
+    if (isAnimating) return;
+    setIsAnimating(true);
     setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
     );
+    setTimeout(() => setIsAnimating(false), 300);
   };
 
   // Touch events for swipe
@@ -39,7 +46,7 @@ const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    if (touchStartX === null) return;
+    if (touchStartX === null || isAnimating) return;
 
     const touchCurrentX = e.touches[0].clientX;
     const diffX = touchStartX - touchCurrentX;
@@ -58,35 +65,41 @@ const ProcessSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   };
 
   const handleTouchEnd = () => {
-    setTouchStartX(null); // Reset touch start when touch ends
+    setTouchStartX(null);
   };
-
-  if (slides.length === 0) {
-    return <div>No slides available.</div>;
-  }
 
   return (
     <div
-      className="relative w-full max-w-xl mx-auto  "
+      className={styles.sliderContainer}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-hidden p-6 bg-[#26304F] text-white text-center rounded-md min-h-60">
-        <HeadingThree color={"white"} text={slides[currentIndex].title} />
-        <ParagraphText color={"white"} text={slides[currentIndex].description || ""} />
+      <div className={styles.slideWrapper}>
+        <div className={`${styles.slideContent} ${isAnimating ? styles.slideAnimating : ''}`}>
+          <HeadingThree color={"white"} text={slides[currentIndex].title} />
+          <ParagraphText color={"white"} text={slides[currentIndex].description || ""} />
+        </div>
       </div>
 
-      <div className="flex justify-center mt-4 space-x-2">
+      <div className={styles.navigationDots}>
         {slides.map((_, index) => (
-          <span
+          <button
             key={index}
-            className={`w-8 h-8 flex justify-center items-center rounded-full text-white cursor-pointer transition-colors duration-300 
-          ${index === currentIndex ? "bg-gray-900" : "bg-gray-400"}`}
-            onClick={() => setCurrentIndex(index)}
+            className={`${styles.dotButton} ${
+              index === currentIndex ? styles.dotActive : styles.dotInactive
+            }`}
+            onClick={() => {
+              if (!isAnimating && index !== currentIndex) {
+                setIsAnimating(true);
+                setCurrentIndex(index);
+                setTimeout(() => setIsAnimating(false), 300);
+              }
+            }}
+            aria-label={`Go to slide ${index + 1}`}
           >
-            {index + 1} {/* Display the slide number */}
-          </span>
+            {index + 1}
+          </button>
         ))}
       </div>
     </div>

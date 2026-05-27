@@ -194,6 +194,7 @@
 @media screen and (max-width: 767px) {
   .processStep {
     width: 100%;
+    display: none;
   }
 }
 

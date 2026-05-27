@@ -1,6 +1,8 @@
+// components/TestimonialsSlider.tsx
 import { useState, useEffect } from "react";
 import HeadingTwo from "../ui/HeadingTwo";
 import Card from "./Card";
+import styles from './index.module.css';
 
 const Index = ({ testimonials }: any) => {
   const [current, setCurrent] = useState(0);
@@ -19,7 +21,6 @@ const Index = ({ testimonials }: any) => {
   }, []);
 
   const totalSlides = testimonials?.Review?.length || 0;
-
   const maxIndex = Math.max(totalSlides - slidesToShow, 0);
 
   const next = () => {
@@ -31,18 +32,18 @@ const Index = ({ testimonials }: any) => {
   };
 
   return (
-    <section className="py-6 bg-white">
-      <div className="mx-auto container px-4">
+    <section className={styles.section}>
+      <div className={styles.container}>
 
         {/* Heading */}
-        <div className="text-center mb-6">
+        <div className={styles.header}>
           <HeadingTwo color="black" text={testimonials?.heading} />
         </div>
 
         {/* Slider */}
-        <div className="overflow-hidden">
+        <div className={styles.sliderWrapper}>
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className={styles.sliderTrack}
             style={{
               transform: `translateX(-${(current * 100) / slidesToShow}%)`,
             }}
@@ -50,7 +51,7 @@ const Index = ({ testimonials }: any) => {
             {testimonials?.Review?.map((item: any, i: number) => (
               <div
                 key={i}
-                className="px-3 shrink-0"
+                className={styles.slide}
                 style={{ width: `${100 / slidesToShow}%` }}
               >
                 <Card item={item} />
@@ -60,16 +61,16 @@ const Index = ({ testimonials }: any) => {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-4 mt-6">
+        <div className={styles.buttonWrapper}>
           <button
             onClick={prev}
-            className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition"
+            className={styles.navButton}
           >
             ←
           </button>
           <button
             onClick={next}
-            className="w-10 h-10 border border-gray-800 rounded-full hover:bg-gray-800 hover:text-white transition"
+            className={styles.navButton}
           >
             →
           </button>

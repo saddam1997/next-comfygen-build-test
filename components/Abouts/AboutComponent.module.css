@@ -1,0 +1,490 @@
+/* components/AboutComponent.module.css */
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.section {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+  width: 100%;
+}
+
+/* ============================================
+   GRID LAYOUT STYLES
+   ============================================ */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ============================================
+   IMAGE STYLES
+   ============================================ */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+/* ============================================
+   CONTENT STYLES
+   ============================================ */
+
+.contentWrapper {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ============================================
+   POINTS STYLES
+   ============================================ */
+
+.pointsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pointItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-height: 24px;
+}
+
+.pointBullet {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #5556D1;
+  border-radius: 9999px;
+  margin-top: 0.375rem;
+  flex-shrink: 0;
+}
+
+.pointText {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #000000;
+  flex: 1;
+}
+
+.pointText p {
+  margin: 0;
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.buttonWrapper {
+  min-height: 50px;
+  margin-top: 1rem;
+}
+
+.buttonLink {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  color: #5556D1;
+  background: transparent;
+  border: 1px solid #5556D1;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #5556D1;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.buttonArrow {
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.button:hover .buttonArrow {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (768px) */
+@media (min-width: 768px) {
+  .section {
+    padding: 2rem;
+  }
+  
+  .gridContainer {
+    gap: 1.5rem;
+  }
+  
+  .pointText {
+    font-size: 0.938rem;
+  }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+  .section {
+    padding: 4rem 1rem;
+  }
+  
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .image {
+    object-fit: contain;
+  }
+  
+  .pointText {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .gridContainer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .gridContainer {
+    max-width: 1400px;
+    gap: 3rem;
+  }
+  
+  .pointText {
+    font-size: 1.063rem;
+  }
+  
+  .pointBullet {
+    width: 12px;
+    height: 12px;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  
+  .gridContainer {
+    gap: 4rem;
+  }
+  
+  .contentWrapper {
+    min-height: 400px;
+  }
+  
+  .pointText {
+    font-size: 1.125rem;
+  }
+}
+
+/* ============================================
+   MOBILE SPECIFIC BREAKPOINTS
+   ============================================ */
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .section {
+    padding: 1rem;
+  }
+  
+  .gridContainer {
+    gap: 1rem;
+  }
+  
+  .contentWrapper {
+    min-height: 250px;
+  }
+  
+  .contentInner {
+    gap: 0.75rem;
+  }
+  
+  .textContent {
+    gap: 0.75rem;
+  }
+  
+  .pointItem {
+    gap: 0.5rem;
+  }
+  
+  .pointBullet {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.25rem;
+  }
+  
+  .pointText {
+    font-size: 0.813rem;
+  }
+  
+  .buttonWrapper {
+    min-height: 40px;
+  }
+  
+  .button {
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .buttonArrow {
+    margin-bottom: 0.15rem;
+  }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+  .contentWrapper {
+    min-height: 220px;
+  }
+  
+  .pointText {
+    font-size: 0.75rem;
+  }
+  
+  .pointBullet {
+    width: 7px;
+    height: 7px;
+    margin-top: 0.2rem;
+  }
+}
+
+/* ============================================
+   HEIGHT-BASED BREAKPOINTS
+   ============================================ */
+
+@media (min-width: 1024px) and (max-height: 700px) {
+  .contentWrapper {
+    min-height: 250px;
+  }
+  
+  .contentInner {
+    gap: 0.75rem;
+  }
+  
+  .textContent {
+    gap: 0.75rem;
+  }
+  
+  .buttonWrapper {
+    min-height: 40px;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .buttonArrow,
+  .button:hover,
+  .button:hover .buttonArrow {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .section {
+    background: white;
+    padding: 0;
+  }
+  
+  .imageWrapper {
+    break-inside: avoid;
+  }
+  
+  .buttonWrapper {
+    display: none;
+  }
+  
+  .pointBullet {
+    border-color: #000;
+  }
+  
+  .pointText {
+    color: #000;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .pointBullet {
+    border: 2px solid #000;
+  }
+  
+  .button {
+    border: 2px solid #5556D1;
+  }
+  
+  .button:hover {
+    background: #5556D1;
+    color: white;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .button:active {
+    background: #5556D1;
+    color: white;
+    transform: scale(0.98);
+  }
+  
+  .pointItem {
+    padding: 0.125rem 0;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ON MOBILE
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .section {
+    padding: 1rem;
+  }
+  
+  .gridContainer {
+    gap: 1.5rem;
+  }
+  
+  .contentWrapper {
+    min-height: 200px;
+  }
+  
+  .contentInner {
+    gap: 0.5rem;
+  }
+  
+  .textContent {
+    gap: 0.5rem;
+  }
+  
+  .pointText {
+    font-size: 0.75rem;
+  }
+  
+  .buttonWrapper {
+    min-height: 30px;
+  }
+  
+  .button {
+    margin-top: 0.5rem;
+    padding: 0.375rem 0.75rem;
+  }
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.buttonLink:focus-visible {
+  outline: 2px solid #5556D1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.button:focus-visible {
+  outline: none;
+}
+
+/* ============================================
+   SKELETON LOADING STATE (Optional)
+   ============================================ */
+
+.imageWrapper.loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

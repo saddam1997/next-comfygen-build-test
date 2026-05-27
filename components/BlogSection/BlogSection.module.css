@@ -1,0 +1,409 @@
+/* components/BlogSection.module.css */
+
+/* Section Styles */
+.section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Container Styles */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.666667%;
+}
+
+/* Heading Wrapper */
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headingContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 48rem;
+  text-align: center;
+}
+
+/* Blog List - Mobile (horizontal scroll) */
+.blogList {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.blogList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.blogList {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Blog Link */
+.blogLink {
+  display: block;
+  min-width: 85%;
+  scroll-snap-align: center;
+}
+
+/* Blog Card */
+.blogCard {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.blogCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Image Wrapper */
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.blogCard:hover .imageWrapper img {
+  transform: scale(1.05);
+}
+
+/* Blog Content */
+.blogContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Blog Title */
+.blogTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.blogLink:hover .blogTitle {
+  color: #5556D1;
+}
+
+/* Blog Description */
+.blogDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Blog CTA */
+.blogCta {
+  margin-top: 0;
+}
+
+.blogCtaText {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.blogLink:hover .blogCtaText {
+  color: #5556D1;
+}
+
+.blogCtaText svg {
+  transition: transform 0.2s ease;
+}
+
+.blogLink:hover .blogCtaText svg {
+  transform: translateX(4px);
+}
+
+/* Tablet (640px) */
+@media (min-width: 640px) {
+  .blogLink {
+    min-width: 70%;
+  }
+  
+  .blogTitle {
+    font-size: 1.25rem;
+  }
+  
+  .blogDescription {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet Large (768px) */
+@media (min-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .blogList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    overflow-x: visible;
+    padding-bottom: 0;
+    scroll-snap-type: none;
+  }
+  
+  .blogLink {
+    min-width: 0;
+    scroll-snap-align: none;
+  }
+  
+  .blogTitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .container {
+    width: 83.333333%;
+  }
+  
+  .blogList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .blogTitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+  .container {
+    width: 83.333333%;
+  }
+  
+  .blogList {
+    gap: 2rem;
+  }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+  .container {
+    width: 80%;
+    max-width: 1400px;
+  }
+  
+  .blogList {
+    gap: 3.5rem;
+  }
+  
+  .blogCard {
+    padding: 1.5rem;
+  }
+  
+  .blogTitle {
+    font-size: 1.2rem;
+  }
+  
+  .blogDescription {
+    font-size: 1rem;
+  }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+  .container {
+    width: 70%;
+    max-width: 1600px;
+  }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .headingContent {
+    gap: 0.5rem;
+  }
+  
+  .blogList {
+    margin-top: 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .blogLink {
+    min-width: 85%;
+  }
+  
+  .blogCard {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .blogTitle {
+    font-size: 1rem;
+  }
+  
+  .blogDescription {
+    font-size: 0.813rem;
+  }
+  
+  .blogCtaText {
+    font-size: 0.875rem;
+  }
+  
+  .blogCtaText svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+  .blogLink {
+    min-width: 90%;
+  }
+  
+  .blogCard {
+    padding: 0.875rem;
+  }
+  
+  .blogTitle {
+    font-size: 0.938rem;
+  }
+  
+  .blogDescription {
+    font-size: 0.75rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .blogCard,
+  .blogCard:hover,
+  .imageWrapper img,
+  .blogCtaText svg,
+  .blogLink:hover .blogCtaText svg {
+    transition: none;
+    transform: none;
+  }
+  
+  .imageWrapper img {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .section {
+    padding: 1rem;
+  }
+  
+  .blogList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    overflow: visible;
+  }
+  
+  .blogLink {
+    min-width: 0;
+  }
+  
+  .blogCard {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+  
+  .blogCta {
+    display: none;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .blogCard {
+    border: 2px solid #000;
+  }
+  
+  .blogLink:hover .blogTitle,
+  .blogLink:hover .blogCtaText {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+/* Touch device optimization */
+@media (hover: none) and (pointer: coarse) {
+  .blogCard:active {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogLink:active .blogTitle {
+    color: #5556D1;
+  }
+  
+  .blogLink:active .blogCtaText {
+    color: #5556D1;
+  }
+}
+
+/* Focus visible */
+.blogLink:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 0.75rem;
+}
+
+/* Image optimization */
+.imageWrapper {
+  background-color: #f9fafb;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

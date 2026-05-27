@@ -1,0 +1,561 @@
+/* components/WhyChoose.module.css */
+
+/* ============================================
+   SECTION STYLES
+   ============================================ */
+
+.section {
+  background: linear-gradient(135deg, rgba(254, 235, 200, 0.3), rgba(196, 181, 253, 0.2), rgba(165, 180, 252, 0.2));
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.666667%;
+}
+
+/* ============================================
+   HEADER SECTION STYLES
+   ============================================ */
+
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.headerContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.buttonWrapper {
+  flex-shrink: 0;
+}
+
+.buttonLink {
+  text-decoration: none;
+}
+
+.connectButton {
+  width: 225px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  border-radius: 9999px;
+}
+
+/* ============================================
+   GRID CONTAINER STYLES
+   ============================================ */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* ============================================
+   MAIN CARD STYLES (Desktop Only)
+   ============================================ */
+
+.mainCard {
+  position: relative;
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.mainCardImage {
+  object-fit: cover;
+  object-position: left;
+  z-index: 0;
+}
+
+.mainCardContent {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.4;
+}
+
+.mainCardButtonWrapper {
+  margin-top: 1rem;
+}
+
+.mainCardButton {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid white;
+  color: white;
+  border-radius: 9999px;
+  padding: 0.625rem 2rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mainCardButton:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ============================================
+   GRID ITEMS STYLES
+   ============================================ */
+
+.gridItemsWrapper {
+  grid-column: span 1;
+}
+
+.gridItems {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.gridItem {
+  border: 1px solid rgba(85, 86, 209, 0.2);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.gridItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-color: rgba(85, 86, 209, 0.4);
+}
+
+.gridItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gridItemTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* Tablet (640px) */
+@media (min-width: 640px) {
+  .gridItems {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  
+  .gridItem {
+    padding: 1.25rem;
+  }
+}
+
+/* Tablet Large (768px) */
+@media (min-width: 768px) {
+  .section {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .headerWrapper {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .gridItems {
+    gap: 1.5rem;
+  }
+  
+  .gridItem {
+    padding: 1.5rem;
+  }
+  
+  .gridItemTitle {
+    font-size: 18px;
+  }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .container {
+    width: 83.333333%;
+  }
+  
+  .gridContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
+  .mainCard {
+    display: flex;
+    grid-column: span 1;
+  }
+  
+  .gridItemsWrapper {
+    grid-column: span 3;
+  }
+  
+  .gridItems {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .gridItem {
+    padding: 2rem;
+  }
+  
+  .mainCardTitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop Large (1280px) */
+@media (min-width: 1280px) {
+  .container {
+    width: 83.333333%;
+  }
+  
+  .gridContainer {
+    gap: 1.75rem;
+  }
+  
+  .gridItems {
+    gap: 1.75rem;
+  }
+  
+  .mainCardTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Desktop XL (1440px) */
+@media (min-width: 1440px) {
+  .container {
+    width: 80%;
+    max-width: 1400px;
+  }
+  
+  .gridContainer {
+    gap: 2rem;
+  }
+  
+  .gridItems {
+    gap: 2rem;
+  }
+  
+  .mainCard {
+    padding: 2rem;
+    min-height: 350px;
+  }
+  
+  .mainCardTitle {
+    font-size: 1.75rem;
+  }
+}
+
+/* Ultra-wide (1920px) */
+@media (min-width: 1920px) {
+  .container {
+    width: 70%;
+    max-width: 1600px;
+  }
+  
+  .gridContainer {
+    gap: 2.5rem;
+  }
+  
+  .gridItems {
+    gap: 2.5rem;
+  }
+}
+
+/* ============================================
+   MOBILE SPECIFIC BREAKPOINTS
+   ============================================ */
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .section {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .gridContainer {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .gridItems {
+    gap: 0.75rem;
+  }
+  
+  .gridItem {
+    padding: 0.875rem;
+  }
+  
+  .gridItemTitle {
+    font-size: 1rem;
+  }
+  
+  .connectButton {
+    width: 200px;
+    font-size: 0.875rem;
+  }
+  
+  .mainCardButton {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.813rem;
+  }
+}
+
+/* Extra Small Mobile (375px) */
+@media (max-width: 375px) {
+  .gridItem {
+    padding: 0.75rem;
+  }
+  
+  .gridItemTitle {
+    font-size: 0.938rem;
+  }
+  
+  .connectButton {
+    width: 180px;
+    font-size: 0.813rem;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridItem,
+  .mainCardButton,
+  .mainCardButton:hover,
+  .gridItem:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .section {
+    background: white;
+    margin-top: 0;
+  }
+  
+  .mainCard {
+    display: flex;
+    background: #f0f0f0;
+  }
+  
+  .mainCardImage {
+    display: none;
+  }
+  
+  .mainCardTitle {
+    color: black;
+  }
+  
+  .mainCardButton {
+    display: none;
+  }
+  
+  .gridItem {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+  
+  .connectButton {
+    display: none;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .section {
+    background: #fff;
+  }
+  
+  .gridItem {
+    border: 2px solid #000;
+  }
+  
+  .mainCard {
+    background: #000;
+  }
+  
+  .mainCardButton {
+    border: 2px solid #fff;
+  }
+  
+  .mainCardButton:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .gridItem:active {
+    transform: translateY(-1px);
+  }
+  
+  .mainCardButton:active {
+    background-color: white;
+    color: black;
+  }
+  
+  .connectButton:active {
+    transform: scale(0.98);
+  }
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.mainCardButton:focus-visible,
+.connectButton:focus-visible,
+.gridItem:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* ============================================
+   CSS CONTAINMENT FOR BETTER PERFORMANCE
+   ============================================ */
+
+.section {
+  contain: layout style paint;
+}
+
+.container {
+  contain: layout style paint;
+}
+
+.gridItems {
+  contain: layout style paint;
+}
+
+.gridItem {
+  contain: layout style paint;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 120px;
+}
+
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] .mainCardImage {
+  object-position: right;
+}
+
+[dir="rtl"] .mainCardButton:hover {
+  transform: translateX(-2px);
+}
+
+/* ============================================
+   LOADING STATE (Optional)
+   ============================================ */
+
+.gridItems.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.gridItems.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gridItems.loading::after {
+    animation: none;
+  }
+}
+
+/* ============================================
+   REDUCED MOTION SPECIFIC
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .gridItem,
+  .mainCardButton,
+  .connectButton {
+    transition-duration: 0.01ms;
+  }
+}

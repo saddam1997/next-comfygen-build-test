@@ -1,0 +1,478 @@
+/* components/ServicesTabs.module.css */
+
+/* ============================================
+   CONTAINER STYLES
+   ============================================ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* ============================================
+   TAB WRAPPER STYLES
+   ============================================ */
+
+.tabWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* ============================================
+   TAB BUTTON STYLES
+   ============================================ */
+
+.tabButton {
+  border: 1px solid;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.tabButtonActive {
+  color: #5556D1;
+  border-color: #5556D1;
+  background-color: rgba(85, 86, 209, 0.1);
+}
+
+.tabButtonInactive {
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.094);
+  background-color: #ffffff;
+}
+
+.tabButtonInactive:hover {
+  background-color: rgba(85, 86, 209, 0.05);
+  border-color: #5556D1;
+  color: #5556D1;
+}
+
+/* ============================================
+   MOBILE CONTENT STYLES
+   ============================================ */
+
+.mobileContent {
+  display: block;
+  background: linear-gradient(to right, #272868, #5556D1);
+  padding: 2.5rem 1.5rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+/* ============================================
+   MOBILE TYPOGRAPHY STYLES
+   ============================================ */
+
+.mobileSubtitle {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+}
+
+.mobileTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.75rem 0;
+}
+
+.mobileDescription {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 0.5rem 0;
+}
+
+.mobileDescription1 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* ============================================
+   MOBILE FEATURES STYLES
+   ============================================ */
+
+.mobileFeaturesList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobileFeatureItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.mobileFeatureBullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid white;
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.mobileFeatureText {
+  flex: 1;
+  font-size: 0.813rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.mobileFeatureText p {
+  margin: 0;
+}
+
+/* ============================================
+   DESKTOP STYLES (lg: breakpoint)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .container {
+    padding-right: 1.5rem;
+    height: 35rem;
+    overflow-y: auto;
+    gap: 0.75rem;
+  }
+  
+  /* Custom scrollbar for desktop */
+  .container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .mobileContent {
+    display: none;
+  }
+  
+  .tabButton {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE STYLES (480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .mobileContent {
+    padding: 1.5rem 1rem;
+  }
+  
+  .mobileTitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobileSubtitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobileDescription,
+  .mobileDescription1 {
+    font-size: 0.75rem;
+  }
+  
+  .mobileFeaturesList {
+    gap: 0.375rem;
+    margin-top: 0.75rem;
+  }
+  
+  .mobileFeatureBullet {
+    width: 0.375rem;
+    height: 0.375rem;
+    margin-top: 0.375rem;
+  }
+  
+  .mobileFeatureText {
+    font-size: 0.688rem;
+  }
+  
+  .tabButton {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================
+   MEDIUM MOBILE STYLES (375px)
+   ============================================ */
+
+@media (max-width: 375px) {
+  .mobileContent {
+    padding: 1.25rem 0.875rem;
+  }
+  
+  .mobileTitle {
+    font-size: 1.125rem;
+  }
+  
+  .mobileDescription,
+  .mobileDescription1 {
+    font-size: 0.688rem;
+  }
+  
+  .mobileFeatureText {
+    font-size: 0.625rem;
+  }
+}
+
+/* ============================================
+   TABLET STYLES (768px - 1023px)
+   ============================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobileTitle {
+    font-size: 1.75rem;
+  }
+  
+  .mobileSubtitle {
+    font-size: 1rem;
+  }
+  
+  .mobileDescription,
+  .mobileDescription1 {
+    font-size: 1rem;
+  }
+  
+  .mobileFeaturesList {
+    gap: 0.75rem;
+  }
+  
+  .mobileFeatureBullet {
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-top: 0.5rem;
+  }
+  
+  .mobileFeatureText {
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP STYLES (1440px+)
+   ============================================ */
+
+@media (min-width: 1440px) {
+  .container {
+    height: 38rem;
+    padding-right: 2rem;
+  }
+  
+  .tabButton {
+    padding: 1rem 1.25rem;
+    font-size: 16px;
+  }
+}
+
+/* ============================================
+   ULTRA-WIDE SCREEN STYLES (1920px+)
+   ============================================ */
+
+@media (min-width: 1920px) {
+  .container {
+    height: 42rem;
+    padding-right: 2.5rem;
+  }
+  
+  .tabButton {
+    padding: 1.125rem 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* ============================================
+   HEIGHT-BASED ADJUSTMENTS
+   ============================================ */
+
+@media (min-width: 1024px) and (max-height: 700px) {
+  .container {
+    height: 28rem;
+  }
+  
+  .tabButton {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 600px) {
+  .container {
+    height: 24rem;
+  }
+  
+  .tabButton {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.813rem;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATION
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .tabButton {
+    padding: 1rem;
+  }
+  
+  .tabButtonInactive:active {
+    background-color: rgba(85, 86, 209, 0.1);
+    border-color: #5556D1;
+    color: #5556D1;
+  }
+  
+  .mobileFeatureItem {
+    padding: 0.25rem 0;
+  }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .tabButton {
+    transition: none;
+  }
+  
+  .tabButtonInactive:hover {
+    transition: none;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .container {
+    height: auto;
+    overflow: visible;
+  }
+  
+  .tabButton {
+    border: 1px solid #ccc;
+    background: none;
+    color: black;
+  }
+  
+  .tabButtonActive {
+    background: #f0f0f0;
+  }
+  
+  .mobileContent {
+    background: #f0f0f0;
+    color: black;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+  }
+  
+  .mobileFeatureBullet {
+    border-color: black;
+  }
+  
+  .mobileDescription,
+  .mobileDescription1,
+  .mobileFeatureText {
+    color: black;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .tabButtonActive {
+    outline: 2px solid #5556D1;
+    outline-offset: 2px;
+  }
+  
+  .mobileContent {
+    background: #000;
+  }
+  
+  .mobileFeatureBullet {
+    border: 2px solid white;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE ON MOBILE
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .mobileContent {
+    padding: 1rem;
+  }
+  
+  .mobileTitle {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .mobileSubtitle {
+    font-size: 0.688rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .mobileDescription,
+  .mobileDescription1 {
+    font-size: 0.688rem;
+  }
+  
+  .mobileFeaturesList {
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .mobileFeatureBullet {
+    width: 0.25rem;
+    height: 0.25rem;
+    margin-top: 0.25rem;
+  }
+  
+  .mobileFeatureText {
+    font-size: 0.625rem;
+  }
+}
+
+/* ============================================
+   FOCUS VISIBLE ACCESSIBILITY
+   ============================================ */
+
+.tabButton:focus-visible {
+  outline: 2px solid #5556D1;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

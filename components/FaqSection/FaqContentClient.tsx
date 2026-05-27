@@ -1,10 +1,9 @@
-
-
+// components/FaqSectionClient.tsx
 import { useState } from "react";
 import { Star } from 'lucide-react';
 import HeadingTwo from "../ui/HeadingTwo";
 import ParagraphText from "../ui/ParagraphText";
-
+import styles from './FaqSectionClient.module.css';
 
 export default function FaqSectionClient({
   title = "Frequently Asked Questions",
@@ -28,12 +27,12 @@ export default function FaqSectionClient({
   if (!Array.isArray(Data) || Data.length === 0) return null;
 
   return (
-    <section className="bg-white lg:py-16 py-10">
-      <div className="mx-auto 2xl:max-w-4xl w-full xl:w-5/6 xl:px-0 px-6">
-        <div className="space-y-8">
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
 
           {/* Heading */}
-          <div className="text-center space-y-2">
+          <div className={styles.header}>
             <HeadingTwo
               color="black"
               text={title?.trim() || "Frequently Asked Questions"}
@@ -44,7 +43,7 @@ export default function FaqSectionClient({
           </div>
 
           {/* FAQ */}
-          <div className="space-y-4">
+          <div className={styles.faqList}>
             {Data.map((item: any, index: number) => {
               const isOpen = currentIndex === index;
               const listItems = normalizeList(item);
@@ -52,7 +51,7 @@ export default function FaqSectionClient({
               return (
                 <div
                   key={item.id || item.title || `faq-${index}`}
-                  className="border rounded-[14px] overflow-hidden"
+                  className={styles.faqItem}
                 >
                   {/* Header */}
                   <button
@@ -60,18 +59,18 @@ export default function FaqSectionClient({
                     onClick={() =>
                       setCurrentIndex(isOpen ? null : index)
                     }
-                    className={`flex items-center justify-between w-full px-5 py-4 ${isOpen
-                        ? "bg-[#5556D1]/10"
-                        : "bg-white"
-                      }`}
+                    className={`${styles.faqButton} ${
+                      isOpen ? styles.faqButtonActive : styles.faqButtonInactive
+                    }`}
                   >
-                    <h3 className="text-sm md:text-lg font-semibold">
+                    <h3 className={styles.faqTitle}>
                       {item.title}
                     </h3>
 
                     <span
-                      className={`transition-transform ${isOpen ? "rotate-45" : ""
-                        }`}
+                      className={`${styles.faqIcon} ${
+                        isOpen ? styles.faqIconRotated : ""
+                      }`}
                     >
                       +
                     </span>
@@ -79,12 +78,11 @@ export default function FaqSectionClient({
 
                   {/* Content */}
                   <div
-                    className={`transition-all duration-300 ${isOpen
-                        ? "max-h-[1000px] opacity-100 px-5 pb-5"
-                        : "max-h-0 opacity-0 overflow-hidden px-5"
-                      }`}
+                    className={`${styles.faqContent} ${
+                      isOpen ? styles.faqContentOpen : styles.faqContentClosed
+                    }`}
                   >
-                    <div className="space-y-3 text-sm md:text-base text-gray-800">
+                    <div className={styles.faqContentInner}>
 
                       {/* TEXT */}
                       {item.desc && <p dangerouslySetInnerHTML={{ __html: item.desc }} />}
@@ -94,34 +92,32 @@ export default function FaqSectionClient({
 
                       {/* ✅ FINAL FIX (NO hydration issue) */}
                       {listItems.length > 0 && (
-                        <ul className="list-disc pl-5 space-y-1">
+                        <ul className={styles.faqListDisc}>
                           {listItems.map((li: string, i: number) => (
-                            <li key={`${item.id || index}-${i}`}  dangerouslySetInnerHTML={{ __html: li }}>
-                             
-                            </li>
+                            <li key={`${item.id || index}-${i}`} dangerouslySetInnerHTML={{ __html: li }} />
                           ))}
                         </ul>
                       )}
 
                       {/* Nested Cards */}
                       {item.cards?.length > 0 && (
-                        <div className="space-y-4">
+                        <div className={styles.nestedCards}>
                           {item.cards.map((card: any, i: number) => (
-                            <div key={`card-${index}-${i}`}>
+                            <div key={`card-${index}-${i}`} className={styles.nestedCard}>
                               {card.CardItem && (
-                                <h4 className="font-semibold">
+                                <h4 className={styles.nestedCardTitle}>
                                   {card.CardItem}
                                 </h4>
                               )}
 
-                              {card.CardDec && <p>{card.CardDec}</p>}
+                              {card.CardDec && <p className={styles.nestedCardDec}>{card.CardDec}</p>}
 
                               {card.items?.length > 0 && (
-                                <ul className="space-y-1">
+                                <ul className={styles.nestedCardList}>
                                   {card.items.map((li: string, j: number) => (
-                                    <li key={`item-${i}-${j}`} className="flex gap-2">
-                                      <Star className="mt-1 text-[#5556D1]" />
-                                      {li}
+                                    <li key={`item-${i}-${j}`} className={styles.nestedCardItem}>
+                                      <Star className={styles.nestedCardIcon} />
+                                      <span>{li}</span>
                                     </li>
                                   ))}
                                 </ul>

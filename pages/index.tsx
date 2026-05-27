@@ -150,10 +150,6 @@ export default function Home(props: any) {
       <ReviewCard testimonials={JSON_DATA.ReviewData} />
       <FaqSection faqData={JSON_DATA.Frequently} />
       <BlogSection initialData={initialData} />
-
-
-
-
     </>
   );
 }

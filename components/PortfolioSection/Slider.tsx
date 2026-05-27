@@ -1,16 +1,32 @@
-
-
-import { useRef } from "react";
+// components/Slider.tsx
+import { useRef, useEffect, useState } from "react";
 import Card from "./Card";
+import styles from './Slider.module.css';
 
 export default function Slider({ Portfoliodata }: any) {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [showButtons, setShowButtons] = useState(false);
+
+  useEffect(() => {
+    const checkScrollable = () => {
+      if (sliderRef.current) {
+        const container = sliderRef.current;
+        const isScrollable = container.scrollWidth > container.clientWidth;
+        setShowButtons(isScrollable);
+      }
+    };
+
+    checkScrollable();
+    window.addEventListener('resize', checkScrollable);
+    
+    return () => window.removeEventListener('resize', checkScrollable);
+  }, [Portfoliodata]);
 
   const scrollToCard = (dir: "next" | "prev") => {
     if (!sliderRef.current) return;
 
     const container = sliderRef.current;
-    const card = container.querySelector(".slide-item") as HTMLElement;
+    const card = container.querySelector(`.${styles.slideItem}`) as HTMLElement;
     if (!card) return;
 
     const gap = 10;
@@ -25,21 +41,43 @@ export default function Slider({ Portfoliodata }: any) {
   const slides = Portfoliodata?.portfolio ?? [];
 
   return (
-    <div className="w-full">
+    <div className={styles.container}>
       {/* SLIDER */}
-     <div ref={sliderRef} className="flex overflow-x-auto snap-x snap-mandatory gap-[10px] px-[5%]" style={{         scrollBehavior: "smooth", scrollbarWidth: "none", }} >
+      <div 
+        ref={sliderRef} 
+        className={styles.sliderContainer}
+        style={{ scrollBehavior: "smooth" }}
+      >
         {slides.map((item: any, i: number) => (
-          <div key={`${item.title}-${i}`} className="slide-item snap-center shrink-0 w-full lg:max-w-[1200px]">
+          <div 
+            key={`${item.title}-${i}`} 
+            className={styles.slideItem}
+          >
             <Card item={item} isActive={true} />
           </div>
-          ))}
+        ))}
       </div>
 
       {/* BUTTONS */}
-      <div className="flex justify-center gap-4 mt-6">
-        <button className="w-10 h-10 border rounded-full hover:bg-gray-800 hover:text-white" onClick={() => scrollToCard("prev")}>←</button>
-        <button className="w-10 h-10 border rounded-full hover:bg-gray-800 hover:text-white" onClick={() => scrollToCard("next")}>→</button>
-      </div>
+      {showButtons && slides.length > 1 && (
+        <div className={styles.buttonWrapper}>
+          <button 
+            className={styles.navButton} 
+            onClick={() => scrollToCard("prev")}
+            aria-label="Previous slide"
+          >
+            ←
+          </button>
+          <button 
+            className={styles.navButton} 
+            onClick={() => scrollToCard("next")}
+            aria-label="Next slide"
+          >
+            →
+          </button>
+        </div>
+      )}
     </div>
   );
 }
+
